@@ -1,124 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='GBK'?>
 <!-- Brazil -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BRAZIL_DESC</Tag>
-		<English>The Brazilians</English>
-		<French>
-			<Text>Les Br&#233;siliens</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>The Brazilians</German>
-		<Italian>The Brazilians</Italian>
-		<Spanish>The Brazilians</Spanish>
-	</TEXT>
+		<English>巴西文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴西文明</Chinese><French>The Brazilians</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BRAZIL_PEOPLES</Tag>
-		<English>Brazilian Peoples</English>
-		<French>
-			<Text>Peuplades br&#233;siliennes</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Brazilian Peoples</German>
-		<Italian>Brazilian Peoples</Italian>
-		<Spanish>Brazilian Peoples</Spanish>
-	</TEXT>
+		<English>巴西</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴西</Chinese><French>Brazilian Peoples</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BRAZIL_DEFAULT</Tag>
-		<English>Kingdom of %s1</English>
-		<French>
-			<Text>Royaume du %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>K&#246;nigreich %s1:K&#246;nigreich %s1:K&#246;nigreich %s1</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Regno del %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Reino de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>Brazil</English>
+		<L1/><L2/><L3/><L4/><Chinese>Brazil</Chinese><French>Kingdom of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BRAZIL_REPUBLIC</Tag>
-		<English>Federative Republic of %s1</English>
-		<French>
-			<Text>R&#233;publique f&#233;d&#233;rative du %s1</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Federative Republic of %s1</German>
-		<Italian>Federative Republic of %s1</Italian>
-		<Spanish>Federative Republic of %s1</Spanish>
-	</TEXT>
+		<English>%s1 联邦共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 联邦共和国</Chinese><French>Federative Republic of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BRAZIL_FASCIST</Tag>
-		<English>United States of %s1</English>
-		<French>
-			<Text>&#233;tats-Unis du %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>Vereinigte Staaten von %s1:Vereinigten Staaten von %s1:Vereinigten Staaten von %s1</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>1:1:1</Plural>
-		</German>
-		<Italian>
-			<Text>Stati Uniti d'%s1</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Estados Unidos de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
-	</TEXT>
+		<English>%s1 合众国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 合众国</Chinese><French>United States of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BRAZILIAN_ARGENTINA</Tag>
-		<English>Transplatine Province</English>
-		<French>
-			<Text>Province transplatine</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Transplatine Province</German>
-		<Italian>Transplatine Province</Italian>
-		<Spanish>Transplatine Province</Spanish>
-	</TEXT>
+		<English>巴西-阿根廷</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴西-阿根廷</Chinese><French>Transplatine Province</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BRAZIL_ADJECTIVE</Tag>
-		<English>Brazilian</English>
-		<French>
-			<Text>br&#233;silien:br&#233;silienne:br&#233;siliens:br&#233;siliennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Brazilian</German>
-		<Italian>Brazilian</Italian>
-		<Spanish>Brazilian</Spanish>
-	</TEXT>
+		<English>Brazil</English>
+		<L1/><L2/><L3/><L4/><Chinese>Brazil</Chinese><French>Brazilian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BRAZIL_SHORT_DESC</Tag>
 		<English>Brazil</English>
-		<French>
-			<Text>Br&#233;sil</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Brazil</German>
-		<Italian>Brazil</Italian>
-		<Spanish>Brazil</Spanish>
-	</TEXT>
+		<L1/><L2/><L3/><L4/><Chinese>Brazil</Chinese><French>Brazil</French></TEXT>
 </Civ4GameText>

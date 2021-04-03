@@ -1,1132 +1,336 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='GBK'?>
 <!-- Leaders -->
 <Civ4GameText>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_ABBAS</Tag>
-		<English>Abbas I</English>
-		<French>
-			<Text>Abbas Ier</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Abbas I.</German>
-		<Italian>Abbas I</Italian>
-		<Spanish>Abbas I</Spanish>
-	</TEXT>
+		<English>波斯-阿巴斯一世</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯-阿巴斯一世</Chinese><French>Abbas I</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_AFONSO</Tag>
-		<English>Afonso Henriques</English>
-		<French>
-			<Text>Alphonse Henriques</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Alfons Henriques</German>
-		<Italian>Afonso Henriques</Italian>
-		<Spanish>Afonso Henriques</Spanish>
-	</TEXT>
+		<English>葡萄牙-阿方索&#12539;恩里克斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙-阿方索&#12539;恩里克斯</Chinese><French>Afonso Henriques</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_AHOEITU</Tag>
-		<English>Aho'eitu</English>
-		<French>
-			<Text>Aho'eitu</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Aho'eitu</German>
-		<Italian>Aho'eitu</Italian>
-		<Spanish>Aho'eitu</Spanish>
-	</TEXT>
+		<English>汤加-图普六世</English>
+		<L1/><L2/><L3/><L4/><Chinese>汤加-图普六世</Chinese><French>Aho'eitu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_AKBAR</Tag>
-		<English>Akbar</English>
-		<French>
-			<Text>Akbar</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Akbar</German>
-		<Italian>Akbar</Italian>
-		<Spanish>Akbar</Spanish>
-	</TEXT>
+		<English>莫卧儿-阿克巴</English>
+		<L1/><L2/><L3/><L4/><Chinese>莫卧儿-阿克巴</Chinese><French>Akbar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_ALFRED</Tag>
-		<English>Alfred</English>
-		<French>
-			<Text>Alfred</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Alfred</German>
-		<Italian>Alfred</Italian>
-		<Spanish>Alfred</Spanish>
-	</TEXT>
+		<English>英格兰-阿尔弗雷德</English>
+		<L1/><L2/><L3/><L4/><Chinese>英格兰-阿尔弗雷德</Chinese><French>Alfred</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_ALP_ARSLAN</Tag>
-		<English>Alp Arslan</English>
-		<French>
-			<Text>Alp Arslan</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Alp Arslan</German>
-		<Italian>Alp Arslan</Italian>
-		<Spanish>Alp Arslan</Spanish>
-	</TEXT>
+		<English>塞尔柱-阿尔普·阿尔斯兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>塞尔柱-阿尔普·阿尔斯兰</Chinese><French>Alp Arslan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_ATATURK</Tag>
-		<English>Atat&#252;rk</English>
-		<French>
-			<Text>Atat&#252;rk</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Atat&#252;rk</German>
-		<Italian>Atat&#252;rk</Italian>
-		<Spanish>Atat&#252;rk</Spanish>
-	</TEXT>
+		<English>奥斯曼-凯末尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥斯曼-凯末尔</Chinese><French>Atatürk</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_AUGUSTUS</Tag>
-		<English>Augustus Caesar</English>
-		<French>
-			<Text>C&#233;sar Auguste</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Augustus C&#228;sar</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Cesare Augusto</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>C&#233;sar Augusto</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>罗马-奥古斯都&#12539;恺撒</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-奥古斯都&#12539;恺撒</Chinese><French>Augustus Caesar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_BAIBARS</Tag>
-		<English>Baibars</English>
-		<French>
-			<Text>Baybars</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Baibars</German>
-		<Italian>Baibars</Italian>
-		<Spanish>Baibars</Spanish>
-	</TEXT>
+		<English>埃及-拜巴尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及-拜巴尔</Chinese><French>Baibars</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_BARBAROSSA</Tag>
-		<English>Barbarossa</English>
-		<French>
-			<Text>Barberousse</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Barbarossa</German>
-		<Italian>Barbarossa</Italian>
-		<Spanish>
-			<Text>Barbarroja</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>神罗-巴巴罗萨</English>
+		<L1/><L2/><L3/><L4/><Chinese>神罗-巴巴罗萨</Chinese><French>Barbarossa</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_BASIL</Tag>
-		<English>Basil II</English>
-		<French>
-			<Text>Basile II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Basileios II.</German>
-		<Italian>
-			<Text>Basilio II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Basilio II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>拜占庭-巴西尔二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-巴西尔二世</Chinese><French>Basil II</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_BOLIVAR</Tag>
-		<English>Bolivar</English>
-		<French>
-			<Text>Bolivar</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Bolivar</German>
-		<Italian>Bolivar</Italian>
-		<Spanish>Bolivar</Spanish>
-	</TEXT>
+		<English>委内瑞拉-玻利瓦尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>委内瑞拉-玻利瓦尔</Chinese><French>Bolivar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_BUMIN</Tag>
-		<English>Bumin</English>
-		<French>
-			<Text>Bumin</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Bumin</German>
-		<Italian>Bumin</Italian>
-		<Spanish>Bumin</Spanish>
-	</TEXT>
+		<English>土库曼-布明</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼-布明</Chinese><French>Bumin</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_CARDENAS</Tag>
-		<English>Cardenas</English>
-		<French>
-			<Text>C&#225;rdenas</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Cardenas</German>
-		<Italian>Cardenas</Italian>
-		<Spanish>Cardenas</Spanish>
-	</TEXT>
+		<English>墨西哥-卡德纳斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>墨西哥-卡德纳斯</Chinese><French>Cardenas</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_CASIMIR</Tag>
-		<English>Casimir III</English>
-		<French>
-			<Text>Casimir III</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Casimir III</German>
-		<Italian>Casimir III</Italian>
-		<Spanish>Casimir III</Spanish>
-	</TEXT>
+		<English>波兰-卡齐米日三世</English>
+		<L1/><L2/><L3/><L4/><Chinese>波兰-卡齐米日三世</Chinese><French>Casimir III</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_CAVOUR</Tag>
-		<English>Cavour</English>
-		<French>
-			<Text>Cavour</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Cavour</German>
-		<Italian>Cavour</Italian>
-		<Spanish>Cavour</Spanish>
-	</TEXT>
+		<English>意大利-加富尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>意大利-加富尔</Chinese><French>Cavour</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_CHANDRAGUPTA</Tag>
-		<English>Chandragupta</English>
-		<French>
-			<Text>Chandragupta</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Chandragupta</German>
-		<Italian>Chandragupta</Italian>
-		<Spanish>Chandragupta</Spanish>
-	</TEXT>
+		<English>印度-旃陀罗笈多</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度-旃陀罗笈多</Chinese><French>Chandragupta</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_CHARLES</Tag>
-		<English>Charles V</English>
-		<French>
-			<Text>Charles Quint</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Karl V.</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Carlo V</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Carlos V</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>神罗-查理五世</English>
+		<L1/><L2/><L3/><L4/><Chinese>神罗-查理五世</Chinese><French>Charles V</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_DHARMASETU</Tag>
-		<English>Dharmasetu</English>
-		<French>
-			<Text>Dharmasetu</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Dharmasetu</German>
-		<Italian>Dharmasetu</Italian>
-		<Spanish>Dharmasetu</Spanish>
-	</TEXT>
+		<English>印尼-哈马舍陀</English>
+		<L1/><L2/><L3/><L4/><Chinese>印尼-哈马舍陀</Chinese><French>Dharmasetu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_DOM_PEDRO</Tag>
-		<English>Pedro II</English>
-		<French>
-			<Text>Pierre II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Pedro II</German>
-		<Italian>Pedro II</Italian>
-		<Spanish>Pedro II</Spanish>
-	</TEXT>
+		<English>巴西-佩德罗二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴西-佩德罗二世</Chinese><French>Pedro II</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_FILIPE</Tag>
-		<English>Philip II</English>
-		<French>
-			<Text>Philippe II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Philipp II.</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Filippo II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Felipe II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>西班牙-腓力二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-腓力二世</Chinese><French>Philip II</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_FRANCIS</Tag>
-		<English>Francis I</English>
-		<French>
-			<Text>Fran&#231;ois Ier</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Franz I.</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Francesco I</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Francisco I</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>神罗-弗朗茨一世</English>
+		<L1/><L2/><L3/><L4/><Chinese>神罗-弗朗茨一世</Chinese><French>Francis I</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_FRANCO</Tag>
-		<English>Franco</English>
-		<French>
-			<Text>Franco</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Franco</German>
-		<Italian>Franco</Italian>
-		<Spanish>Franco</Spanish>
-	</TEXT>
+		<English>西班牙-佛朗哥</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-佛朗哥</Chinese><French>Franco</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_GILGAMESH</Tag>
-		<English>Sargon</English>
-		<French>
-			<Text>Sargon</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Sargon</German>
-		<Italian>Sargon</Italian>
-		<Spanish>Sargon</Spanish>
-	</TEXT>
+		<English>巴比伦-萨尔贡</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦-萨尔贡</Chinese><French>Sargon</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_GUSTAV</Tag>
-		<English>Gustav Adolph</English>
-		<French>
-			<Text>Gustave II Adolphe</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Gustav Adolph</German>
-		<Italian>Gustav Adolph</Italian>
-		<Spanish>Gustav Adolph</Spanish>
-	</TEXT>
+		<English>瑞典-古斯塔夫&#12539;阿道夫</English>
+		<L1/><L2/><L3/><L4/><Chinese>瑞典-古斯塔夫&#12539;阿道夫</Chinese><French>Gustav Adolph</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MENELIK</Tag>
-		<English>Menelik</English>
-		<French>
-			<Text>M&#233;n&#233;lik</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Menelik</German>
-		<Italian>Menelik</Italian>
-		<Spanish>Menelik</Spanish>
-	</TEXT>
+		<English>埃塞尔比亚-梅内利克</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞尔比亚-梅内利克</Chinese><French>Menelik</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_HANNIBAL</Tag>
-		<English>Hannibal</English>
-		<French>
-			<Text>Hannibal</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Hannibal</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Annibale</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>An&#237;bal</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>迦太基-汉尼拔</English>
+		<L1/><L2/><L3/><L4/><Chinese>迦太基-汉尼拔</Chinese><French>Hannibal</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_HARUN</Tag>
-		<English>Harun al-Rashid</English>
-		<French>
-			<Text>H&#226;roun ar-Rach&#238;d</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Harun al-Rashid</German>
-		<Italian>Harun al-Rashid</Italian>
-		<Spanish>Harun al-Rashid</Spanish>
-	</TEXT>
+		<English>阿拉伯-哈伦&#12539;拉希德</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯-哈伦&#12539;拉希德</Chinese><French>Harun al-Rashid</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_HATSHEPSUT</Tag>
-		<English>Cleopatra</English>
-		<French>
-			<Text>Cl&#233;op&#226;tre</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Cleopatra</German>
-		<Italian>Cleopatra</Italian>
-		<Spanish>Cleopatra</Spanish>
-	</TEXT>
+		<English>埃及-克莉奥帕特拉</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及-克莉奥帕特拉</Chinese><French>Cleopatra</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_HAYAM_WURUK</Tag>
-		<English>Hayam Wuruk</English>
-		<French>
-			<Text>Hayam Wuruk</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Hayam Wuruk</German>
-		<Italian>Hayam Wuruk</Italian>
-		<Spanish>Hayam Wuruk</Spanish>
-	</TEXT>
+		<English>印尼-哈奄武禄</English>
+		<L1/><L2/><L3/><L4/><Chinese>印尼-哈奄武禄</Chinese><French>Hayam Wuruk</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_HIRAM</Tag>
-		<English>Hiram</English>
-		<French>
-			<Text>Hiram</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Hiram</German>
-		<Italian>Hiram</Italian>
-		<Spanish>Hiram</Spanish>
-	</TEXT>
+		<English>腓尼基-希兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>腓尼基-希兰</Chinese><French>Hiram</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_HITLER</Tag>
-		<English>Hitler</English>
-		<French>
-			<Text>Hitler</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Hitler</German>
-		<Italian>Hitler</Italian>
-		<Spanish>Hitler</Spanish>
-	</TEXT>
+		<English>德意志-希特勒</English>
+		<L1/><L2/><L3/><L4/><Chinese>德意志-希特勒</Chinese><French>Hitler</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_HONGWU</Tag>
-		<English>Hongwu</English>
-		<French>
-			<Text>Hongwu</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Hongwu</German>
-		<Italian>Hongwu</Italian>
-		<Spanish>Hongwu</Spanish>
-	</TEXT>
+		<English>明太祖</English>
+		<L1/><L2/><L3/><L4/><Chinese>明太祖</Chinese><French>Hongwu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_IBN_TUGHLUQ</Tag>
-		<English>Muhammad ibn Tughluq</English>
-		<French>
-			<Text>Mouhammed ibn Tughl&#251;q</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Muhammad ibn Tughluq</German>
-		<Italian>Muhammad ibn Tughluq</Italian>
-		<Spanish>Muhammad ibn Tughluq</Spanish>
-	</TEXT>
+		<English>德里苏丹-穆罕默德&#12539;宾&#12539;图格鲁克</English>
+		<L1/><L2/><L3/><L4/><Chinese>德里苏丹-穆罕默德&#12539;宾&#12539;图格鲁克</Chinese><French>Muhammad ibn Tughluq</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_INDEPENDENT</Tag>
-		<English>Independent Leader</English>
-		<French>
-			<Text>Dirigeant ind&#233;pendant</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Unabh&#228;ngigen-Staatsoberhaupt</Text>
-			<Gender>Neuter</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Leader indipendente</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>L&#237;der aut&#243;nomo</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>城邦领袖</English>
+		<L1/><L2/><L3/><L4/><Chinese>城邦领袖</Chinese><French>Independent Leader</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_KANGXI</Tag>
-		<English>Kangxi</English>
-		<French>
-			<Text>Kangxi</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Kangxi</German>
-		<Italian>Kangxi</Italian>
-		<Spanish>Kangxi</Spanish>
-	</TEXT>
+		<English>康熙</English>
+		<L1/><L2/><L3/><L4/><Chinese>康熙</Chinese><French>Kangxi</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_JIMMU</Tag>
-		<English>Kammu</English>
-		<French>
-			<Text>Kammu</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Kammu</German>
-		<Italian>Kammu</Italian>
-		<Spanish>Kammu</Spanish>
-	</TEXT>
+		<English>日本-桓武天皇</English>
+		<L1/><L2/><L3/><L4/><Chinese>日本-桓武天皇</Chinese><French>Kammu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_JUAREZ</Tag>
-		<English>Juarez</English>
-		<French>
-			<Text>Ju&#225;rez</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Juarez</German>
-		<Italian>Juarez</Italian>
-		<Spanish>Juarez</Spanish>
-	</TEXT>
+		<English>墨西哥-华雷斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>墨西哥-华雷斯</Chinese><French>Juarez</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_KHOMEINI</Tag>
-		<English>Khomeini</English>
-		<French>
-			<Text>Khomeini</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Chomeini</German>
-		<Italian>Khomeini</Italian>
-		<Spanish>Khomeini</Spanish>
-	</TEXT>
+		<English>伊朗-霍梅尼</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊朗-霍梅尼</Chinese><French>Khomeini</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_KRISHNA_DEVA_RAYA</Tag>
-		<English>Krishna Deva Raya</English>
-		<French>
-			<Text>Krishna Deva Raya</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Krishna Deva Raya</German>
-		<Italian>Krishna Deva Raya</Italian>
-		<Spanish>Krishna Deva Raya</Spanish>
-	</TEXT>
+		<English>德里苏丹-克里希纳</English>
+		<L1/><L2/><L3/><L4/><Chinese>德里苏丹-克里希纳</Chinese><French>Krishna Deva Raya</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_LOBSANG_GYATSO</Tag>
-		<English>Lobsang Gyatso</English>
-		<French>
-			<Text>Lobsang Gyatso</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Lobsang Gyatso</German>
-		<Italian>Lobsang Gyatso</Italian>
-		<Spanish>Lobsang Gyatso</Spanish>
-	</TEXT>
+		<English>中华吐蕃-罗桑嘉措</English>
+		<L1/><L2/><L3/><L4/><Chinese>中华吐蕃-罗桑嘉措</Chinese><French>Lobsang Gyatso</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_LORENZO</Tag>
-		<English>Lorenzo de' Medici</English>
-		<French>
-			<Text>Laurent de M&#233;dicis</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Lorenzo de' Medici</German>
-		<Italian>Lorenzo de' Medici</Italian>
-		<Spanish>Lorenzo de' Medici</Spanish>
-	</TEXT>
+		<English>意大利-洛伦佐</English>
+		<L1/><L2/><L3/><L4/><Chinese>意大利-洛伦佐</Chinese><French>Lorenzo de' Medici</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MARIA_II</Tag>
-		<English>Maria II</English>
-		<French>
-			<Text>Marie II</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Maria II</German>
-		<Italian>Maria II</Italian>
-		<Spanish>Maria II</Spanish>
-	</TEXT>
+		<English>葡萄牙-玛丽亚二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙-玛丽亚二世</Chinese><French>Maria II</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MBEMBA</Tag>
-		<English>Mbemba</English>
-		<French>
-			<Text>Mbemba</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Mbemba</German>
-		<Italian>Mbemba</Italian>
-		<Spanish>Mbemba</Spanish>
-	</TEXT>
+		<English>刚果-姆本巴</English>
+		<L1/><L2/><L3/><L4/><Chinese>刚果-姆本巴</Chinese><French>Mbemba</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MEHMED</Tag>
-		<English>Mehmed II</English>
-		<French>
-			<Text>Mehmet II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Mehmet II.</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Mehmet II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Mehmet II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>奥斯曼-穆罕默德二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥斯曼-穆罕默德二世</Chinese><French>Mehmed II</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MEIJI</Tag>
-		<English>Meiji</English>
-		<French>
-			<Text>Meiji</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Meiji</German>
-		<Italian>Meiji</Italian>
-		<Spanish>Meiji</Spanish>
-	</TEXT>
+		<English>明治天皇</English>
+		<L1/><L2/><L3/><L4/><Chinese>明治天皇</Chinese><French>Meiji</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MONGKUT</Tag>
-		<English>Mongkut</English>
-		<French>
-			<Text>Mongkut</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Mongkut</German>
-		<Italian>Mongkut</Italian>
-		<Spanish>Mongkut</Spanish>
-	</TEXT>
+		<English>泰国-拉玛四世</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰国-拉玛四世</Chinese><French>Mongkut</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_NARESUAN</Tag>
-		<English>Naresuan</English>
-		<French>
-			<Text>Naresuan</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Naresuan</German>
-		<Italian>Naresuan</Italian>
-		<Spanish>Naresuan</Spanish>
-	</TEXT>
+		<English>暹罗-纳瑞宣</English>
+		<L1/><L2/><L3/><L4/><Chinese>暹罗-纳瑞宣</Chinese><French>Naresuan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_NASSER</Tag>
-		<English>Nasser</English>
-		<French>
-			<Text>Nasser</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Nasser</German>
-		<Italian>Nasser</Italian>
-		<Spanish>Nasser</Spanish>
-	</TEXT>
+		<English>埃及-纳赛尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及-纳赛尔</Chinese><French>Nasser</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_NATIVE</Tag>
-		<English>Native Leader</English>
-		<French>
-			<Text>Dirigeant natif</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Eingeborenen-Staatsoberhaupt</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Leader dei nativi</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>L&#237;der nativo</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>土著首领</English>
+		<L1/><L2/><L3/><L4/><Chinese>土著首领</Chinese><French>Native Leader</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_ALEXANDER_II</Tag>
-		<English>Alexander II</English>
-		<French>
-			<Text>Alexandre II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Alexander II.</German>
-		<Italian>Alexander II</Italian>
-		<Spanish>Alexander II</Spanish>
-	</TEXT>
+		<English>俄罗斯-亚历山大二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯-亚历山大二世</Chinese><French>Alexander II</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_PERON</Tag>
-		<English>Per&#243;n</English>
-		<French>
-			<Text>Per&#243;n</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Per&#243;n</German>
-		<Italian>Per&#243;n</Italian>
-		<Spanish>Per&#243;n</Spanish>
-	</TEXT>
+		<English>阿根廷-庇隆</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿根廷-庇隆</Chinese><French>Perón</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_RAHMAN</Tag>
-		<English>Abd-ar-Rahman</English>
-		<French>
-			<Text>Abd al-Rahman</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Abd-ar-Rahman</German>
-		<Italian>Abd-ar-Rahman</Italian>
-		<Spanish>Abd-ar-Rahman</Spanish>
-	</TEXT>
+		<English>摩尔-阿卜杜&#12539;拉赫曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔-阿卜杜&#12539;拉赫曼</Chinese><French>Abd-ar-Rahman</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_RAJENDRA</Tag>
-		<English>Rajendra Chola</English>
-		<French>
-			<Text>Rajendra Chola</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Rajendra Chola</German>
-		<Italian>Rajendra Chola</Italian>
-		<Spanish>Rajendra Chola</Spanish>
-	</TEXT>
+		<English>拉金德拉&#12539;朱罗</English>
+		<L1/><L2/><L3/><L4/><Chinese>拉金德拉&#12539;朱罗</Chinese><French>Rajendra Chola</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_RAMESSES</Tag>
-		<English>Ramesses II</English>
-		<French>
-			<Text>Rams&#232;s II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Ramses II.</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Ramses II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Rams&#233;s II</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>埃及-拉美西斯二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及-拉美西斯二世</Chinese><French>Ramesses II</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_SAN_MARTIN</Tag>
-		<English>San Martin</English>
-		<French>
-			<Text>San Mart&#237;n</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>San Martin</German>
-		<Italian>San Martin</Italian>
-		<Spanish>San Martin</Spanish>
-	</TEXT>
+		<English>阿根廷-圣马丁</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿根廷-圣马丁</Chinese><French>San Martin</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_SANTA_ANNA</Tag>
-		<English>Santa Anna</English>
-		<French>
-			<Text>Santa Anna</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Santa Anna</German>
-		<Italian>Santa Anna</Italian>
-		<Spanish>Santa Anna</Spanish>
-	</TEXT>
+		<English>墨西哥-桑塔&#12539;安纳</English>
+		<L1/><L2/><L3/><L4/><Chinese>墨西哥-桑塔&#12539;安纳</Chinese><French>Santa Anna</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_SHIVAJI</Tag>
-		<English>Shahuji</English>
-		<French>
-			<Text>Shahu</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Shahuji</German>
-		<Italian>Shahuji</Italian>
-		<Spanish>Shahuji</Spanish>
-	</TEXT>
+		<English>印度-希瓦吉</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度-希瓦吉</Chinese><French>Shahuji</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_SOBIESKI</Tag>
-		<English>Sobieski</English>
-		<French>
-			<Text>Sobieski</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Sobieski</German>
-		<Italian>Sobieski</Italian>
-		<Spanish>Sobieski</Spanish>
-	</TEXT>
+		<English>波兰-索别斯基</English>
+		<L1/><L2/><L3/><L4/><Chinese>波兰-索别斯基</Chinese><French>Sobieski</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_SONGTSEN</Tag>
-		<English>Songtsen Gampo</English>
-		<French>
-			<Text>Songtsen Gampo</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Songtsen Gampo</German>
-		<Italian>Songtsen Gampo</Italian>
-		<Spanish>Songtsen Gampo</Spanish>
-	</TEXT>
+		<English>松赞干布</English>
+		<L1/><L2/><L3/><L4/><Chinese>松赞干布</Chinese><French>Songtsen Gampo</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_SUHARTO</Tag>
-		<English>Suharto</English>
-		<French>
-			<Text>Soeharto</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Suharto</German>
-		<Italian>Suharto</Italian>
-		<Spanish>Suharto</Spanish>
-	</TEXT>
+		<English>印尼-苏哈托</English>
+		<L1/><L2/><L3/><L4/><Chinese>印尼-苏哈托</Chinese><French>Suharto</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TAMERLANE</Tag>
-		<English>Tamerlane</English>
-		<French>
-			<Text>Tamerlan</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Tamerlane</German>
-		<Italian>Tamerlane</Italian>
-		<Spanish>Tamerlane</Spanish>
-	</TEXT>
+		<English>土库曼-塔梅兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼-塔梅兰</Chinese><French>Tamerlane</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TAIZONG</Tag>
-		<English>Tang Taizong</English>
-		<French>
-			<Text>Tang Taizong</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Tang Taizong</German>
-		<Italian>Tang Taizong</Italian>
-		<Spanish>Tang Taizong</Spanish>
-	</TEXT>
+		<English>唐太宗</English>
+		<L1/><L2/><L3/><L4/><Chinese>唐太宗</Chinese><French>Tang Taizong</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TOKUGAWA</Tag>
-		<English>Oda Nobunaga</English>
-		<French>
-			<Text>Oda Nobunaga</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Oda Nobunaga</German>
-		<Italian>Oda Nobunaga</Italian>
-		<Spanish>Oda Nobunaga</Spanish>
-	</TEXT>
+		<English>织田信长</English>
+		<L1/><L2/><L3/><L4/><Chinese>织田信长</Chinese><French>Oda Nobunaga</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TRUDEAU</Tag>
-		<English>Trudeau</English>
-		<French>
-			<Text>Trudeau</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Trudeau</German>
-		<Italian>Trudeau</Italian>
-		<Spanish>Trudeau</Spanish>
-	</TEXT>
+		<English>加拿大-特鲁多</English>
+		<L1/><L2/><L3/><L4/><Chinese>加拿大-特鲁多</Chinese><French>Trudeau</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TIPU_SULTAN</Tag>
-		<English>Tipu Sultan</English>
-		<French>
-			<Text>Tip&#251; Sult&#226;n</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Tipu Sultan</German>
-		<Italian>Tipu Sultan</Italian>
-		<Spanish>Tipu Sultan</Spanish>
-	</TEXT>
+		<English>泰米尔-提普苏丹</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔-提普苏丹</Chinese><French>Tipu Sultan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_VATAVELLI</Tag>
-		<English>Vatavelli</English>
-		<French>
-			<Text>Vatavelli</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Vatavelli</German>
-		<Italian>Vatavelli</Italian>
-		<Spanish>Vatavelli</Spanish>
-	</TEXT>
+		<English>哈拉帕-维塔维利</English>
+		<L1/><L2/><L3/><L4/><Chinese>哈拉帕-维塔维利</Chinese><French>Vatavelli</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_WANGKON</Tag>
-		<English>Wang Kon</English>
-		<French>
-			<Text>Wang Kon</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Wang Kon</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Wang Kon</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Wang Kon</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>高丽-王建</English>
+		<L1/><L2/><L3/><L4/><Chinese>高丽-王建</Chinese><French>Wang Kon</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_YAQUB</Tag>
-		<English>Yaqub al-Mansur</English>
-		<French>
-			<Text>Yaqub al-Mansur</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Yaqub al-Mansur</German>
-		<Italian>Yaqub al-Mansur</Italian>
-		<Spanish>Yaqub al-Mansur</Spanish>
-	</TEXT>
+		<English>摩尔-雅库布&#12539;曼苏尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔-雅库布&#12539;曼苏尔</Chinese><French>Yaqub al-Mansur</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_BHUTTO</Tag>
-		<English>Benazir Bhutto</English>
-		<French>
-			<Text>Benazir Bhutto</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Benazir Bhutto</German>
-		<Italian>Benazir Bhutto</Italian>
-		<Spanish>Benazir Bhutto</Spanish>
-	</TEXT>
+		<English>德里苏丹-布托·贝纳齐尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>德里苏丹-布托·贝纳齐尔</Chinese><French>Benazir Bhutto</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_GERHARDSEN</Tag>
-		<English>Gerhardsen</English>
-		<French>
-			<Text>Gerhardsen</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Gerhardsen</German>
-		<Italian>Gerhardsen</Italian>
-		<Spanish>Gerhardsen</Spanish>
-	</TEXT>
+		<English>挪威-盖哈德森</English>
+		<L1/><L2/><L3/><L4/><Chinese>挪威-盖哈德森</Chinese><French>Gerhardsen</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_IVAN_IV</Tag>
-		<English>Ivan IV</English>
-		<French>
-			<Text>Ivan IV</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Ivan IV</German>
-		<Italian>Ivan IV</Italian>
-		<Spanish>Ivan IV</Spanish>
-	</TEXT>
+		<English>俄国-伊凡四世</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄国-伊凡四世</Chinese><French>Ivan IV</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MACDONALD</Tag>
-		<English>MacDonald</English>
-		<French>
-			<Text>MacDonald</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>MacDonald</German>
-		<Italian>MacDonald</Italian>
-		<Spanish>MacDonald</Spanish>
-	</TEXT>
+		<English>加拿大-麦克唐纳</English>
+		<L1/><L2/><L3/><L4/><Chinese>加拿大-麦克唐纳</Chinese><French>MacDonald</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MUSSOLINI</Tag>
-		<English>Mussolini</English>
-		<French>
-			<Text>Mussolini</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Mussolini</German>
-		<Italian>Mussolini</Italian>
-		<Spanish>Mussolini</Spanish>
-	</TEXT>
+		<English>意大利-墨索里尼</English>
+		<L1/><L2/><L3/><L4/><Chinese>意大利-墨索里尼</Chinese><French>Mussolini</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_SEJONG</Tag>
-		<English>Sejong</English>
-		<French>
-			<Text>Sejong</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Sejong</German>
-		<Italian>Sejong</Italian>
-		<Spanish>Sejong</Spanish>
-	</TEXT>
+		<English>朝鲜世宗</English>
+		<L1/><L2/><L3/><L4/><Chinese>朝鲜世宗</Chinese><French>Sejong</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_PILSUDSKI</Tag>
-		<English>Pilsudski</English>
-		<French>
-			<Text>Pilsudski</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Pilsudski</German>
-		<Italian>Pilsudski</Italian>
-		<Spanish>Pilsudski</Spanish>
-	</TEXT>
+		<English>波兰-皮尔苏斯基</English>
+		<L1/><L2/><L3/><L4/><Chinese>波兰-皮尔苏斯基</Chinese><French>Pilsudski</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_VARGAS</Tag>
-		<English>Vargas</English>
-		<French>
-			<Text>Vargas</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Vargas</German>
-		<Italian>Vargas</Italian>
-		<Spanish>Vargas</Spanish>
-	</TEXT>
+		<English>巴西-瓦加斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴西-瓦加斯</Chinese><French>Vargas</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_WALESA</Tag>
-		<English>Walesa</English>
-		<French>
-			<Text>Walesa</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Walesa</German>
-		<Italian>Walesa</Italian>
-		<Spanish>Walesa</Spanish>
-	</TEXT>
+		<English>波兰-瓦尔萨</English>
+		<L1/><L2/><L3/><L4/><Chinese>波兰-瓦尔萨</Chinese><French>Walesa</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_CASTILLA</Tag>
-		<English>Castilla</English>
-		<French>
-			<Text>Castilla</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Castilla</German>
-		<Italian>Castilla</Italian>
-		<Spanish>Castilla</Spanish>
-	</TEXT>
+		<English>秘鲁-卡斯蒂尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>秘鲁-卡斯蒂尔</Chinese><French>Castilla</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_WILLIAM_III</Tag>
-		<English>William III</English>
-		<French>
-			<Text>Guillaume III</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>William III</German>
-		<Italian>William III</Italian>
-		<Spanish>William III</Spanish>
-	</TEXT>
+		<English>荷兰-威廉三世</English>
+		<L1/><L2/><L3/><L4/><Chinese>荷兰-威廉三世</Chinese><French>William III</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_GEORGE_I</Tag>
-		<English>George I</English>
-		<French>
-			<Text>Georges Ier</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>George I</German>
-		<Italian>George I</Italian>
-		<Spanish>George I</Spanish>
-	</TEXT>
+		<English>英国-乔治一世</English>
+		<L1/><L2/><L3/><L4/><Chinese>英国-乔治一世</Chinese><French>George I</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_KHOSROW</Tag>
-		<English>Khosrow I</English>
-		<French>
-			<Text>Khosro Ier</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Khosrow I</German>
-		<Italian>Khosrow I</Italian>
-		<Spanish>Khosrow I</Spanish>
-	</TEXT>
+		<English>伊朗-霍斯劳一世</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊朗-霍斯劳一世</Chinese><French>Khosrow I</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_EZANA</Tag>
-		<English>Ezana</English>
-		<French>
-			<Text>Ezana</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Ezana</German>
-		<Italian>Ezana</Italian>
-		<Spanish>Ezana</Spanish>
-	</TEXT>
+		<English>埃塞尔比亚-以萨纳</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞尔比亚-以萨纳</Chinese><French>Ezana</French></TEXT>
 </Civ4GameText>

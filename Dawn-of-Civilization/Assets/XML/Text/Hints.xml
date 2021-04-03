@@ -1,988 +1,497 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='GBK'?>
 <!-- Hints -->
 <Civ4GameText>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_1</Tag>
-		<English>You can check the parameters influencing your stability in the Financial Advisor</English>
-		<French>Vous pouvez consulter les param&#232;tres qui influencent votre stabilit&#233; dans l'&#233;cran du conseiller financier.</French>
-		<German>Sie k&#246;nnen die f&#252;r Ihre Stabilit&#228;t entscheidenden Parameter im Finanzberater &#252;berpr&#252;fen.</German>
-		<Italian>Puoi controllare i parametri che influenzano la tua stabilit&#224; nella schermata del consigliere economico.</Italian>
-		<Spanish>Puedes comprobar los par&#225;metros que afectan a tu estabilidad en el consejero financiero.</Spanish>
-	</TEXT>
+		<English>您可以在财务顾问栏中检查影响您稳定性的参数</English>
+		<L1/><L2/><L3/><L4/><Chinese>您可以在财务顾问栏中检查影响您稳定性的参数</Chinese><French>You can check the parameters influencing your stability in the Financial Advisor</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_2</Tag>
-		<English>Discovering Microbiology will keep you safe from plagues</English>
-		<French>D&#233;couvrir la microbiologie vous prot&#232;gera de la peste.</French>
-		<German>Die Erforschung der "Mikrobiologie" bewahrt Sie vor der Pest.</German>
-		<Italian>Discovering Microbiology will keep you safe from plagues</Italian>
-		<Spanish>Discovering Microbiology will keep you safe from plagues</Spanish>
-	</TEXT>
+		<English>发现微生物学可以让你远离瘟疫</English>
+		<L1/><L2/><L3/><L4/><Chinese>发现微生物学可以让你远离瘟疫</Chinese><French>Discovering Microbiology will keep you safe from plagues</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_3</Tag>
-		<English>Not every lake produces 2 food. Some are salt lakes, and thus produce 1 food, like coast.</English>
-		<French>Les lacs ne produisent pas tous 2 nourriture. Les lacs sal&#233;s produisent seulement 1 nourriture, comme les c&#244;tes.</French>
-		<German>Nicht jeder See produziert 2 Nahrung. Einige von ihnen sind Salzwasserseen, die aus diesem Grund wie K&#252;sten-Gel&#228;ndefelder nur 1 Nahrung produzieren.</German>
-		<Italian>Non tutti i laghi producono 2 cibo. Alcuni sono laghi salati, quindi producono 1 cibo, come la costa.</Italian>
-		<Spanish>No todos los lagos producen 2 alimentos. Algunos son salados y, por tanto, producen 1 alimento, como las costas.</Spanish>
-	</TEXT>
+		<English>不是每个水域地块都能产两个食物。有些是咸水水域，因此产生1个食物，如海岸。</English>
+		<L1/><L2/><L3/><L4/><Chinese>不是每个水域地块都能产两个食物。有些是咸水水域，因此产生1个食物，如海岸。</Chinese><French>Not every lake produces 2 food. Some are salt lakes, and thus produce 1 food, like coast.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_4</Tag>
-		<English>If you get a skull over your cities, it means they have the plague! The population and units in the city and in the surrounding region will probably decrease dramatically. To reduce the effects and the duration of plague, keep your cities healthy.</English>
-		<French>Si un cr&#226;ne appara&#238;t au-dessus d'une de vos villes, cela signifie qu'elle est frapp&#233;e par la peste ! Attendez-vous alors &#224; voir la population et les unit&#233;s dans la ville et la r&#233;gion environnante diminuer consid&#233;rablement. Pour r&#233;duire la dur&#233;e et les effets de la peste, gardez vos villes en bonne sant&#233;.</French>
-		<German>Wenn ein Totenkopf &#252;ber Ihren St&#228;dten eingeblendet wird, bedeutet dies, dass dort die Pest ausgebrochen ist! Die Anzahl der Bev&#246;lkerung und Einheiten in der betreffenden Stadt und ihrer n&#228;heren Umgebung werden aller Voraussicht nach dramatisch sinken. Um die Auswirkungen und Dauer der Pest zu reduzieren, sollten Sie den Gesundheitswert Ihrer St&#228;dte m&#246;glichst hoch halten.</German>
-		<Italian>Se vedi un teschio sulle tue citt&#224; significa che c'&#232; la peste! Popolazione e unit&#224; in citt&#224; e nella zona circostante diminuiranno drasticamente. Per ridurre effetti e durata della peste mantieni in salute le tue citt&#224;.</Italian>
-		<Spanish>Si aparece una calavera sobre tus ciudades... &#161;es por que tienen la peste! La poblaci&#243;n y las unidades de la ciudad y su regi&#243;n circundante probablemente comiencen a decrecer dram&#225;ticamente. Para reducir los efectos y la duraci&#243;n de la peste, mant&#233;n elevada la salud de tus ciudades.</Spanish>
-	</TEXT>
+		<English>如果你在你的城市发现一个头骨符号，那就意味着他们有瘟疫！城市和周边地区的人口和单位可能会急剧减少。为了减少瘟疫的影响和持续时间，保持你们城市的健康。</English>
+		<L1/><L2/><L3/><L4/><Chinese>如果你在你的城市发现一个头骨符号，那就意味着他们有瘟疫！城市和周边地区的人口和单位可能会急剧减少。为了减少瘟疫的影响和持续时间，保持你们城市的健康。</Chinese><French>If you get a skull over your cities, it means they have the plague! The population and units in the city and in the surrounding region will probably decrease dramatically. To reduce the effects and the duration of plague, keep your cities healthy.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_5</Tag>
-		<English>Plague can spread in many ways - through trade routes, along roads and between neighbouring cities.</English>
-		<French>La peste peut se propager de nombreuses fa&#231;ons. Elle peut &#234;tre apport&#233;e par les routes commerciales, les routes et les villes voisines.</French>
-		<German>Die Pest kann sich auf viele Arten ausbreiten - &#252;ber Handelswege, Stra&#223;en und zwischen benachbarten St&#228;dten.</German>
-		<Italian>La peste si pu&#242; diffondere in molti modi: attraverso rotte commerciali, lungo le strade e tra citt&#224; confinanti.</Italian>
-		<Spanish>La peste se puede propagar de muchas maneras, a trav&#233;s de las rutas comerciales, por los caminos o entre ciudades vecinas.</Spanish>
-	</TEXT>
+		<English>瘟疫可以通过多种途径传播——通过贸易路线、公路和邻近城市之间传播。</English>
+		<L1/><L2/><L3/><L4/><Chinese>瘟疫可以通过多种途径传播——通过贸易路线、公路和邻近城市之间传播。</Chinese><French>Plague can spread in many ways - through trade routes, along roads and between neighbouring cities.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_6</Tag>
-		<English>The civilization you choose to play affects your difficulty every bit as much as the difficulty level you choose. Make sure to pick a civ that suits your playing style and your level of expertise.</English>
-		<French>La difficult&#233; du jeu d&#233;pend tout autant du niveau de difficult&#233; s&#233;lectionn&#233; que de la civilisation avec laquelle vous jouez. Veillez &#224; choisir une civilisation qui correspond &#224; votre fa&#231;on de jouer et &#224; votre niveau d'exp&#233;rience.</French>
-		<German>Neben dem eingestellten Schwierigkeitsgrad wirkt sich auch die Wahl der Zivilisation auf das Schwierigkeitsniveau im Spiel aus. Achten Sie deshalb darauf, eine Zivilisation zu w&#228;hlen, die Ihrem Spielstil und Ihrem Erfahrungsstand entspricht.</German>
-		<Italian>La civilt&#224; che scegli influenza la difficolt&#224; tanto quanto il livello di difficolt&#224; che hai scelto. Assicurati di selezionare una civilt&#224; che sia adatta al tuo stile di gioco e al tuo livello di esperienza.</Italian>
-		<Spanish>La civilizaci&#243;n que elijas afecta a la dificultad tanto como el nivel de dificultad que elijas. Elige una civilizaci&#243;n que se acomode a tu estilo de juego y tu nivel de experiencia.</Spanish>
-	</TEXT>
+		<English>你选择玩的文明程度会影响你的难度和你选择的难度等级。一定要选择一个适合你的风格和你的水平的文明。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你选择玩的文明程度会影响你的难度和你选择的难度等级。一定要选择一个适合你的风格和你的水平的文明。</Chinese><French>The civilization you choose to play affects your difficulty every bit as much as the difficulty level you choose. Make sure to pick a civ that suits your playing style and your level of expertise.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_7</Tag>
-		<English>Every civ has hidden modifiers that influence their growth. This way, modern civs are not disadvantaged by their late start.</English>
-		<French>Des modificateurs cach&#233;s influent sur le d&#233;veloppement de chaque civilisation. Ainsi, les civilisations modernes ne sont pas d&#233;savantag&#233;es en commen&#231;ant plus tard.</French>
-		<German>Jede Zivilisation verf&#252;gt &#252;ber verborgene Modifikatoren, die ihr Wachstum beeinflussen. Auf diese Weise werden auch moderne Zivilisationen trotz ihres sp&#228;teren Spielstarts nicht benachteiligt.</German>
-		<Italian>Ogni civilt&#224; ha dei modificatori nascosti che ne influenzano la crescita. In questo modo le civilt&#224; moderne non sono svantaggiate dall'avvio in ritardo.</Italian>
-		<Spanish>Todas las civilizaciones tienen modificadores ocultos que afectan a su crecimiento. De este modo, el inicio tard&#237;o de las civilizaciones modernas no constituye una desventaja.</Spanish>
-	</TEXT>
+		<English>每个文明都有隐藏的修正，影响他们的成长。这样，现代文明就不会因为起步晚而处于不利地位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>每个文明都有隐藏的修正，影响他们的成长。这样，现代文明就不会因为起步晚而处于不利地位。</Chinese><French>Every civ has hidden modifiers that influence their growth. This way, modern civs are not disadvantaged by their late start.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_8</Tag>
-		<English>You can declare war on independent states and minor civs only by moving your units into their territory.</English>
-		<French>Vous ne pouvez d&#233;clarer la guerre aux &#233;tats ind&#233;pendants et aux petites civilisations qu'en envoyant des unit&#233;s sur leur territoire.</French>
-		<German>Sie k&#246;nnen unabh&#228;ngigen Staaten und unbedeutenderen Zivilisationen nur dadurch den Krieg erkl&#228;ren, dass Sie Ihre Einheiten in ihr Territorium einmarschieren lassen.</German>
-		<Italian>Puoi dichiarare guerra agli stati indipendenti e alle civilt&#224; minori solo facendo entrare le tue unit&#224; nel loro territorio.</Italian>
-		<Spanish>Puedes declarar la guerra a estados independientes y civilizaciones menores si mueves tus unidades a su territorio.</Spanish>
-	</TEXT>
+		<English>你可以向独立国家和小型文明宣战，只需把你的部队转移到他们的领土上。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你可以向独立国家和小型文明宣战，只需把你的部队转移到他们的领土上。</Chinese><French>You can declare war on independent states and minor civs only by moving your units into their territory.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_9</Tag>
-		<English>Combining certain civics will improve or harm the stability of your empire.</English>
-		<French>La combinaison de certaines doctrines peut am&#233;liorer ou r&#233;duire la stabilit&#233; de votre empire.</French>
-		<German>Die Kombination bestimmter Staatsformen kann die Stabilit&#228;t Ihrer Zivilisation verbessern oder auch beeintr&#228;chtigen.</German>
-		<Italian>Combinare alcune forme di governo pu&#242; migliorare o peggiorare la stabilit&#224; del tuo impero.</Italian>
-		<Spanish>Al combinar algunos principios mejorar&#225;s o perjudicar&#225;s la estabilidad de tu imperio.</Spanish>
-	</TEXT>
+		<English>某些政体组合将改善或损害你的帝国的稳定。</English>
+		<L1/><L2/><L3/><L4/><Chinese>某些政体组合将改善或损害你的帝国的稳定。</Chinese><French>Combining certain civics will improve or harm the stability of your empire.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_10</Tag>
-		<English>You can't see the current year until you discover calendar.</English>
-		<French>Vous ne pouvez pas conna&#238;tre l'ann&#233;e actuelle avant d'avoir d&#233;couvert le calendrier.</French>
-		<German>Das aktuelle Spieljahr ist bis zur Entdeckung des "Kalenders" nicht sichtbar.</German>
-		<Italian>Non puoi sapere in che anno ti trovi fino a quando non scopri il calendario.</Italian>
-		<Spanish>No podr&#225;s ver el a&#241;o actual hasta que descubras el calendario.</Spanish>
-	</TEXT>
+		<English>在发现历法之前，您无法看到当前年份。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在发现历法之前，您无法看到当前年份。</Chinese><French>You can't see the current year until you discover calendar.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_11</Tag>
-		<English>Remember that you can always take control of a newborn civ if you don't like the civilization you started with. You can also use this feature to play from 3000BC even when you want to pick a civ that starts later on.</English>
-		<French>N'oubliez pas que vous pouvez toujours prendre le contr&#244;le d'une civilisation &#233;mergente, si la civilisation avec laquelle vous avez commenc&#233; ne vous pla&#238;t pas. Vous pouvez aussi utiliser cette option pour jouer &#224; partir de 3000 av. J.-C., m&#234;me si vous voulez choisir une civilisation qui commence plus tard.</French>
-		<German>Beachten Sie, dass Sie jederzeit eine neu entstandene Zivilisation &#252;bernehmen k&#246;nnen, wenn Sie mit der Zivilisation, die Sie zuerst gew&#228;hlt haben, nicht zufrieden sind. Sie k&#246;nnen diese M&#246;glichkeit auch nutzen, um bereits ab dem Jahr 3000 v. Chr. zu spielen, obwohl Sie sich eigentlich eine Zivilisation ausgesucht haben, die erst sp&#228;ter im Spiel startet.</German>
-		<Italian>Ricorda che puoi sempre assumere il controllo di una civilt&#224; appena sorta, se non ti piace quella con cui hai iniziato. Inoltre puoi usare questa caratteristica per cominciare a giocare dal 3000 a.C. anche se vuoi scegliere una civilt&#224; che comincia pi&#249; tardi.</Italian>
-		<Spanish>Recuerda que siempre puedes asumir el control de una civilizaci&#243;n reciente si no te gusta la civilizaci&#243;n con la que has empezado. Tambi&#233;n puedes aprovechar esta opci&#243;n para jugar desde el a&#241;o 3000 a. C. si deseas jugar con una civilizaci&#243;n que empiece m&#225;s tarde.</Spanish>
-	</TEXT>
+		<English>记住，如果你不喜欢你开始的文明，你总是可以控制一个新生的文明。您也可以使用此功能从公元前3000年开始游玩，即使您想选择以后开始游玩的文明。</English>
+		<L1/><L2/><L3/><L4/><Chinese>记住，如果你不喜欢你开始的文明，你总是可以控制一个新生的文明。您也可以使用此功能从公元前3000年开始游玩，即使您想选择以后开始游玩的文明。</Chinese><French>Remember that you can always take control of a newborn civ if you don't like the civilization you started with. You can also use this feature to play from 3000BC even when you want to pick a civ that starts later on.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_12</Tag>
-		<English>Combining Totalitarianism and Constitution isn't a good idea.</English>
-		<French>Il est d&#233;conseill&#233; de donner une constitution &#224; un &#201;tat totalitaire.</French>
-		<German>Die Kombination von Totalitarismus und Verfassung ist keine gute Idee.</German>
-		<Italian>Combinare lo stato di polizia con la libert&#224; di parola non &#232; una buona idea.</Italian>
-		<Spanish>Combinar Estado policial y Libertad de expresi&#243;n no es una buena idea.</Spanish>
-	</TEXT>
+		<English>把极权主义和宪法结合起来不是个好主意。</English>
+		<L1/><L2/><L3/><L4/><Chinese>把极权主义和宪法结合起来不是个好主意。</Chinese><French>Combining Totalitarianism and Constitution isn't a good idea.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_13</Tag>
-		<English>In Rhye's and Fall of Civilization, vassals can declare war.</English>
-		<French>Dans Rhye's and Fall of Civilization, les vassaux peuvent d&#233;clarer la guerre.</French>
-		<German>In Rhye's and Fall of Civilization k&#246;nnen Vasallenstaaten Kriegserkl&#228;rungen ausgeben.</German>
-		<Italian>In Rhye's and Fall i vassalli possono dichiarare guerra.</Italian>
-		<Spanish>Los vasallos pueden declarar una guerra en Rhye's and Fall of Civilization.</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，附庸国可以宣战。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，附庸国可以宣战。</Chinese><French>In Rhye's and Fall of Civilization, vassals can declare war.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_14</Tag>
-		<English>In Rhye's and Fall of Civilization, movement through ocean tiles costs &#189; a movement point.</English>
-		<French>Dans Rhye's and Fall of Civilization, les d&#233;placements sur les cases d'oc&#233;an co&#251;tent &#189; point de mouvement.</French>
-		<German>In Rhye's and Fall of Civilization kostet die Fortbewegung auf Ozean-Gel&#228;ndefeldern &#189; Fortbewegungspunkt.</German>
-		<Italian>In Rhye's and Fall il movimento nelle caselle oceaniche costa &#189; punto movimento.</Italian>
-		<Spanish>En Rhye's and Fall of Civilization el movimiento a trav&#233;s de casillas de oc&#233;ano cuesta medio punto de movimiento.</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，穿越海洋瓦片的移动需要半个移动点。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，穿越海洋瓦片的移动需要半个移动点。</Chinese><French>In Rhye's and Fall of Civilization, movement through ocean tiles costs &#189; a movement point.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_15</Tag>
-		<English>In Rhye's and Fall of Civilization, the max income from a shrine is 20 gold per turn.</English>
-		<French>Dans Rhye's and Fall of Civilization, le revenu maximum d'un sanctuaire est de 20 pi&#232;ces d'or par tour.</French>
-		<German>In Rhye's and Fall of Civilization betr&#228;gt das maximale Einkommen durch Schreine 20 Gold pro Runde.</German>
-		<Italian>In Rhye's and Fall l'entrata massima da un santuario &#232; di 20 oro per turno.</Italian>
-		<Spanish>En Rhye's and Fall of Civilization los ingresos m&#225;ximos de un santuario o corporaci&#243;n son de 20 monedas por turno.</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，圣迹的最大收入是每回合20金币。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，圣迹的最大收入是每回合20金币。</Chinese><French>In Rhye's and Fall of Civilization, the max income from a shrine is 20 gold per turn.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_16</Tag>
-		<English>In Rhye's and Fall of Civilization, vassal states are enabled by the discovery of Contract.</English>
-		<French>Dans Rhye's and Fall of Civilization, la d&#233;couverte du contrat permet les &#201;tats vassaux.</French>
-		<German>In Rhye's and Fall of Civilization werden Vasallenstaaten durch die Entdeckung des "Vertragswesens" verf&#252;gbar.</German>
-		<Italian>In Rhye's and Fall gli stati vassalli sono abilitati dalla scoperta della monarchia.</Italian>
-		<Spanish>En Rhye's and Fall of Civilization los estados vasallos se activan con el descubrimiento de la Monarqu&#237;a.</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，附庸关系需要点出契约精神科技。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，附庸关系需要点出契约精神科技。</Chinese><French>In Rhye's and Fall of Civilization, vassal states are enabled by the discovery of Contract.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_17</Tag>
-		<English>If you like the mod, and if you have any ideas to improve it, or you just have a bug to report, make sure to check out the development forum at CivFanatics.com.</English>
-		<French>Si le mod vous pla&#238;t et que vous avez des id&#233;es pour l'am&#233;liorer, ou simplement un bug &#224; signaler, pensez &#224; consulter le forum de d&#233;veloppement sur CivFanatics.com.</French>
-		<German>Wenn Sie das Mod m&#246;gen und Verbesserungsvorschl&#228;ge haben oder einen Bug melden wollen, besuchen Sie das Entwicklerforum unter CivFanatics.com.</German>
-		<Italian>Se ti piace questo mod e hai delle idee per migliorarlo, o anche se devi semplicemente segnalare un problema, assicurati di controllare il forum di sviluppo su CivFanatics.com.</Italian>
-		<Spanish>Si te gusta el mod y tienes ideas para mejorarlo o has encontrado alg&#250;n error del que informar, visita el foro de dise&#241;o en CivFanatics.com.</Spanish>
-	</TEXT>
+		<English>如果你喜欢mod，如果你有任何改进的想法，或者你只是有一个bug要报告，一定要查看CivFanatics.com上的开发论坛。</English>
+		<L1/><L2/><L3/><L4/><Chinese>如果你喜欢mod，如果你有任何改进的想法，或者你只是有一个bug要报告，一定要查看CivFanatics.com上的开发论坛。</Chinese><French>If you like the mod, and if you have any ideas to improve it, or you just have a bug to report, make sure to check out the development forum at CivFanatics.com.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_18</Tag>
-		<English>If it's been a while since the last time you got an updated version of the mod, make sure to check CivFanatics.com for a new version. The mod is in active development, and updates are uploaded often. Every update is full of fixes and new features.</English>
-		<French>Si votre version du mod commence &#224; dater, rendez-vous sur CivFanatics.com pour t&#233;l&#233;charger une version mise &#224; jour. Le mod est en plein d&#233;veloppement et b&#233;n&#233;ficie de mises &#224; jour fr&#233;quentes. Chaque mise &#224; jour apporte une multitude de corrections et de nouvelles options.</French>
-		<German>Wenn es schon eine Weile her ist, seit Sie das letzte Mod-Update installiert haben, besuchen Sie CivFanatics.com, um eine neuere Version herunterzuladen. Bei diesem Mod handelt es sich um ein aktives Entwicklungsprojekt und dementsprechend h&#228;ufig werden neue Updates bereitgestellt, von denen jedes zahlreiche Fixes und neue Features enth&#228;lt.</German>
-		<Italian>Se &#232; passato un po' di tempo dall'ultima volta che hai scaricato una versione aggiornata del mod, assicurati di controllare su CivFanatics.com se ce n'&#232; una nuova. Il mod &#232; in continuo sviluppo e spesso vengono caricati degli aggiornamenti, ognuno dei quali &#232; pieno di novit&#224; e risolve i problemi di quelli precedenti.</Italian>
-		<Spanish>Si ya hace tiempo que conseguiste tu &#250;ltima versi&#243;n actualizada del mod, visita CivFanatics.com para ver si hay alguna nueva. El mod est&#225; en continuo desarrollo, por lo que las actualizaciones son frecuentes. Todas las actualizaciones incluyen nuevas caracter&#237;sticas y soluciones de errores.</Spanish>
-	</TEXT>
+		<English>如果你已经有一段时间没有得到更新版本的mod了，一定要在CivFanatics.com上找到一个新版本。我们正在积极开发中，经常有更新被上传。每个更新都充满了修复和新功能。</English>
+		<L1/><L2/><L3/><L4/><Chinese>如果你已经有一段时间没有得到更新版本的mod了，一定要在CivFanatics.com上找到一个新版本。我们正在积极开发中，经常有更新被上传。每个更新都充满了修复和新功能。</Chinese><French>If it's been a while since the last time you got an updated version of the mod, make sure to check CivFanatics.com for a new version. The mod is in active development, and updates are uploaded often. Every update is full of fixes and new features.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_19</Tag>
-		<English>In Rhye's and Fall of Civilization, camera flying mode hotkey has changed to [CTRL + F]</English>
-		<French>Dans Rhye's and Fall of Civilization, le raccourci pour activer la cam&#233;ra libre est [CTRL + F].</French>
-		<German>In Rhye's and Fall of Civilization ist die Schnelltaste f&#252;r den Kameraflugmodus [STRG + F]</German>
-		<Italian>In Rhye's and Fall la combinazione di tasti per la selezione rapida della visuale dall'alto &#232; diventata [CTRL + F]</Italian>
-		<Spanish>En Rhye's and Fall of Civilization se ha cambiado el atajo de teclado para la c&#225;mara a&#233;rea a [CTRL + F].</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，相机飞行模式热键已更改为[CTRL+F]</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，相机飞行模式热键已更改为[CTRL+F]</Chinese><French>In Rhye's and Fall of Civilization, camera flying mode hotkey has changed to [CTRL + F]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_20</Tag>
-		<English>In Rhye's and Fall of Civilization, city founding is not allowed in tundra, ice or desert if far from water.</English>
-		<French>Dans Rhye's and Fall of Civilization, il est impossible de fonder une ville sur une case de toundra, de d&#233;sert ou de glace trop loin de l'eau.</French>
-		<German>In Rhye's and Fall of Civilization ist die Gr&#252;ndung einer Stadt auf den Gel&#228;ndearten Tundra, Eis und W&#252;ste, sofern zu weit von einer Wasserquelle entfernt, nicht zul&#228;ssig.</German>
-		<Italian>In Rhye's and Fall non &#232; permessa la fondazione di citt&#224; nella tundra, sul ghiaccio o nel deserto, se distanti dall'acqua.</Italian>
-		<Spanish>En Rhye's and Fall of Civilization no se permite fundar ciudades en tundra, hielo o desierto si no hay agua cerca.</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，如果远离水的话，苔原、冰原或沙漠是不允许建立城市的。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，如果远离水的话，苔原、冰原或沙漠是不允许建立城市的。</Chinese><French>In Rhye's and Fall of Civilization, city founding is not allowed in tundra, ice or desert if far from water.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_21</Tag>
-		<English>In Rhye's and Fall of Civilization, jungle, rainforest and marshes are impassable to most land units.</English>
-		<French>Dans Rhye's and Fall of Civilization, la plupart des unit&#233;s terrestres ne peuvent pas franchir les marais, les for&#234;ts tropicales et les jungles.</French>
-		<German>In Rhye's and Fall of Civilization sind Dschungel-, Regenwald- und Sumpf-Gel&#228;ndefelder f&#252;r die meisten Landeinheiten unpassierbar.</German>
-		<Italian>In Rhye's and Fall giungle e paludi sono impossibili da attraversare per la maggior parte delle unit&#224; terrestri.</Italian>
-		<Spanish>En Rhye's and Fall of Civilization la mayor&#237;a de las unidades terrestres no pueden atravesar junglas ni ci&#233;nagas.</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，丛林、雨林和沼泽对大多数陆地单位来说都是无法逾越的。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，丛林、雨林和沼泽对大多数陆地单位来说都是无法逾越的。</Chinese><French>In Rhye's and Fall of Civilization, jungle, rainforest and marshes are impassable to most land units.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_22</Tag>
-		<English>If you attempt to stop the growth of newborn civs, some of your units will flip to their side.</English>
-		<French>Si vous tentez d'arr&#234;ter le d&#233;veloppement d'une civilisation &#233;mergente, certaines de vos unit&#233;s se rangeront de son c&#244;t&#233;.</French>
-		<German>Wenn Sie versuchen, das Wachstum neu entstandener Zivilisationen zu behindern, werden einige Ihrer Einheiten die Seiten wechseln.</German>
-		<Italian>Se provi a fermare la crescita delle civilt&#224; appena nate, alcune delle tue unit&#224; passeranno dalla loro parte.</Italian>
-		<Spanish>Si intentas frenar el crecimiento de civilizaciones recientes, algunas de tus unidades se unir&#225;n a ellas.</Spanish>
-	</TEXT>
+		<English>如果你试图阻止新生文明的崛起，你的一些单位会倒戈。</English>
+		<L1/><L2/><L3/><L4/><Chinese>如果你试图阻止新生文明的崛起，你的一些单位会倒戈。</Chinese><French>If you attempt to stop the growth of newborn civs, some of your units will flip to their side.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_23</Tag>
-		<English>In Rhye's and Fall of Civilization, many wonder effects have been changed</English>
-		<French>Dans Rhye's and Fall of Civilization, les effets de beaucoup de merveilles ont &#233;t&#233; modifi&#233;s.</French>
-		<German>In Rhye's and Fall of Civilization wurden die Auswirkungen vieler Wunder ge&#228;ndert.</German>
-		<Italian>In Rhye's and Fall sono stati cambiati gli effetti di molte Grandi Meraviglie.</Italian>
-		<Spanish>En Rhye's and Fall of Civilization se han cambiado los efectos de muchas maravillas.</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，许多奇迹的影响已经改变了。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，许多奇迹的影响已经改变了。</Chinese><French>In Rhye's and Fall of Civilization, many wonder effects have been changed</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_24</Tag>
-		<English>Never attack a city with only siege weapons. They may be the best way to damage a large number of enemy units, but once they inflict their maximum amount of damage, they will be unable to attack enemy units.</English>
-		<French>N'attaquez jamais une ville uniquement avec des armes de si&#232;ge. Il n'y a rien de mieux pour blesser un grand nombre d'unit&#233;s ennemies, mais une fois qu'elles auront inflig&#233; leur maximum de d&#233;g&#226;ts, elles ne pourront plus attaquer les unit&#233;s ennemies.</French>
-		<German>Greifen Sie eine Stadt niemals ausschlie&#223;lich mit Belagerungswaffen an! Sie m&#246;gen die beste Wahl sein, wenn es darum geht, einer gro&#223;en Zahl feindlicher Einheiten Schaden zuzuf&#252;gen, aber sobald sie ihren maximalen Schadenswert erreicht haben, k&#246;nnen sie keine weiteren Angriffe mehr ausf&#252;hren.</German>
-		<Italian>Non attaccare mai una citt&#224; solamente con unit&#224; d'assedio anche se possono essere il modo migliore per danneggiare molte unit&#224; nemiche ma, una volta inferto il massimo danno, non potranno pi&#249; attaccare.</Italian>
-		<Spanish>Nunca ataques una ciudad &#250;nicamente con armas de asedio. Puede que sean la mejor forma de da&#241;ar a un gran n&#250;mero de unidades enemigas, pero cuando hayan infligido su m&#225;xima cantidad de da&#241;o, no podr&#225;n atacar a las unidades enemigas.</Spanish>
-	</TEXT>
+		<English>不要只用攻城武器攻击城市。它们可能是破坏大量敌军的最佳方式，但一旦造成最大程度的破坏，就无法攻击敌军。</English>
+		<L1/><L2/><L3/><L4/><Chinese>不要只用攻城武器攻击城市。它们可能是破坏大量敌军的最佳方式，但一旦造成最大程度的破坏，就无法攻击敌军。</Chinese><French>Never attack a city with only siege weapons. They may be the best way to damage a large number of enemy units, but once they inflict their maximum amount of damage, they will be unable to attack enemy units.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_25</Tag>
-		<English>Good things come to spies who wait. Leaving a spy on a tile will reduce the costs of all Espionage Missions performed against objects in that tile. So leaving a Spy in an enemy city will make your Missions in that city significantly cheaper.</English>
-		<French>Un espion patient est toujours r&#233;compens&#233;. Si vous laissez un espion sur une case, cela r&#233;duira le co&#251;t de toutes les missions d'espionnage lanc&#233;es contre les &#233;l&#233;ments dans cette case. Si vous laissez un espion dans une ville &#233;trang&#232;re, vos missions dans cette ville vous co&#251;teront donc bien moins cher.</French>
-		<German>Gut Ding will Weile haben - das gilt auch f&#252;r Spione. Wenn Sie einen Spion auf einem Gel&#228;ndefeld belassen, reduziert dies die Kosten f&#252;r alle Spionagemissionen, die Sie gegen Objekte auf diesem Gel&#228;ndefeld ausf&#252;hren. Dementsprechend werden Missionen, die Sie in einer feindlichen Stadt durchf&#252;hren, ebenfalls erheblich preiswerter, wenn Sie Ihren Spion dort stationiert lassen.</German>
-		<Italian>La spia migliore &#232; quella che sa aspettare. Lasciando una spia su una casella riduce i costi di tutte le missioni di spionaggio verso quella casella. Perci&#242;, lasciando una spia in una citt&#224; nemica, le missioni verso di questa costeranno meno.</Italian>
-		<Spanish>Los esp&#237;as que saben esperar tienen sus ventajas. Dejar un esp&#237;a en una casilla reducir&#225; los costes de todas las misiones de espionaje realizadas contra los objetos de dicha casilla. Por tanto, dejar un esp&#237;a en una ciudad enemiga abaratar&#225; significativamente el coste de tus misiones en dicha ciudad.</Spanish>
-	</TEXT>
+		<English>等待的间谍会得到好处。将间谍留在一个地块上将减少对该地块中执行的所有间谍任务的成本。所以把间谍留在敌人的城市会使你在那个城市的任务难度大大降低。</English>
+		<L1/><L2/><L3/><L4/><Chinese>等待的间谍会得到好处。将间谍留在一个地块上将减少对该地块中执行的所有间谍任务的成本。所以把间谍留在敌人的城市会使你在那个城市的任务难度大大降低。</Chinese><French>Good things come to spies who wait. Leaving a spy on a tile will reduce the costs of all Espionage Missions performed against objects in that tile. So leaving a Spy in an enemy city will make your Missions in that city significantly cheaper.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_26</Tag>
-		<English>If you spend more Espionage Points than an opponent, then your missions towards that opponent will be cheaper. Every point you spend throughout the game is added towards this total, so if you see a fierce rival outspending you in Espionage Points, it would be wise to increase your Espionage spending.</English>
-		<French>Si vous d&#233;pensez plus de points d'espionnage qu'un de vos adversaires, vos missions contre lui vous co&#251;teront moins cher. Chaque point d&#233;pens&#233; dans le jeu est totalis&#233;, alors si vous avez un rival acharn&#233; qui d&#233;pense plus de points d'espionnage que vous, vous avez int&#233;r&#234;t &#224; augmenter vos d&#233;penses d'espionnage.</French>
-		<German>Wenn Sie mehr Spionagepunkte als eine gegnerische Zivilisation einsetzen, sinken die Kosten f&#252;r die Durchf&#252;hrung Ihrer Missionen gegen diese Nation. Jeder Punkt, den Sie im Laufe des Spiels einsetzen, wird in der Gesamtsumme addiert. Wenn Sie also feststellen, dass ein erbitterter Rivale mehr Spionagepunkte investiert als Sie selbst, w&#228;re es klug, Ihre eigenen Spionageinvestitionen zu erh&#246;hen.</German>
-		<Italian>Se spendi un maggior numero di punti spionaggio di un avversario, le tue missioni nei suoi confronti diventeranno pi&#249; economiche. Ogni punto che spendi durante la partita viene aggiunto a questo totale, perci&#242; se vedi un avversario che ti surclassa in punti spionaggio, &#232; una mossa saggia aumentare la spesa in questo senso.</Italian>
-		<Spanish>Si gastas m&#225;s puntos de espionaje que un rival, tus misiones contra dicho adversario ser&#225;n m&#225;s baratas. Cada punto que gastes a lo largo de la partida se suma a este total, de modo que si ves que un duro rival gasta m&#225;s que t&#250; en puntos de espionaje, es buena idea aumentar tu gasto en espionaje.</Spanish>
-	</TEXT>
+		<English>如果你比对手花费更多的间谍点数，那么你对对手的任务将更便宜。你在整个游戏中花费的每一分都会加到这个总数上，所以如果你看到一个劲敌在间谍点数上超过了你，那么增加你的间谍花费是明智的。</English>
+		<L1/><L2/><L3/><L4/><Chinese>如果你比对手花费更多的间谍点数，那么你对对手的任务将更便宜。你在整个游戏中花费的每一分都会加到这个总数上，所以如果你看到一个劲敌在间谍点数上超过了你，那么增加你的间谍花费是明智的。</Chinese><French>If you spend more Espionage Points than an opponent, then your missions towards that opponent will be cheaper. Every point you spend throughout the game is added towards this total, so if you see a fierce rival outspending you in Espionage Points, it would be wise to increase your Espionage spending.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_27</Tag>
-		<English>When on the defense, be sure to set your Fighters and Jet Fighters to the "Intercept" mission when they're not running missions. They will defend the skies from opposing Air Units, earning them valuable experience points.</English>
-		<French>Quand vous vous d&#233;fendez, pensez &#224; confier une mission d'interception &#224; vos chasseurs et vos chasseurs &#224; r&#233;action, si vous n'avez aucune autre mission &#224; leur confier. Ils chasseront les unit&#233;s a&#233;riennes ennemies dans le ciel et gagneront de pr&#233;cieux points d'exp&#233;rience.</French>
-		<German>Im Verteidigungsfall sollten Sie Ihre J&#228;ger und D&#252;senj&#228;ger anweisen, Abfangmissionen durchzuf&#252;hren, sofern keine anderen Missionen anstehen. Daraufhin werden sie den Luftraum gegen feindliche Lufteinheiten verteidigen und auf diese Weise gleichzeitig wertvolle Erfahrungspunkte sammeln.</German>
-		<Italian>Quando difendi, assicurati che i tuoi caccia e jet da combattimento siano impostati su "Intercetta" quando non hanno altre missioni assegnate. Cos&#236; facendo, difenderanno i cieli dalle unit&#224; aeree rivali, conquistando dei punti esperienza importanti.</Italian>
-		<Spanish>Cuando est&#233;s defendiendo y tus Cazas y Cazas a reacci&#243;n no est&#233;n cumpliendo otras misiones, aseg&#250;rate de que tengan activada la misi&#243;n "Interceptar". As&#237; defender&#225;n los cielos de unidades a&#233;reas rivales, lo cual les reportar&#225; unos valiosos puntos de experiencia.</Spanish>
-	</TEXT>
+		<English>当你处于防守状态时，确保你的战斗机和喷气式战斗机在不执行任务的情况下执行“拦截”任务。他们将保护天空免受敌方空军的攻击，为他们赢得宝贵的经验值。</English>
+		<L1/><L2/><L3/><L4/><Chinese>当你处于防守状态时，确保你的战斗机和喷气式战斗机在不执行任务的情况下执行“拦截”任务。他们将保护天空免受敌方空军的攻击，为他们赢得宝贵的经验值。</Chinese><French>When on the defense, be sure to set your Fighters and Jet Fighters to the "Intercept" mission when they're not running missions. They will defend the skies from opposing Air Units, earning them valuable experience points.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_28</Tag>
-		<English>During wartime, your ships may sever all naval trade routes entering an enemy city by using the "Blockade" Mission within range of the opposing metropolis. Using a Privateer to blockade a city during peace time will even allow you to plunder gold from your enemy's treasury!</English>
-		<French>En temps de guerre, vos navires peuvent couper toutes les routes commerciales maritimes rejoignant une ville ennemie, en ex&#233;cutant la mission Blocus pr&#232;s de la m&#233;tropole adverse. Utiliser des Corsaires pour bloquer une ville en tant de paix vous permet m&#234;me de piller l'or du tr&#233;sor ennemi !</French>
-		<German>Zu Kriegszeiten k&#246;nnen Ihre Schiffe alle Marinehandelswege zu einer gegnerischen Stadt mittels der Blockade-Mission innerhalb der Reichweite der gegnerischen Stadt blockieren. Wenn Sie eine Stadt zu Friedenszeiten mit Freibeutern blockieren, k&#246;nnen Sie sogar Gold aus der Schatzkammer des Gegners pl&#252;ndern!</German>
-		<Italian>In tempo di guerra, le tue navi possono bloccare tutte le rotte commerciali navali dirette verso una citt&#224; nemica compiendo la missione "Embargo" nel raggio della citt&#224;. Effettuando l'embargo con una nave corsara in tempo di pace potrai sottrarre oro al tesoro nemico!</Italian>
-		<Spanish>En tiempos de guerra, tus barcos pueden cortar todas las rutas comerciales que pasen por una ciudad enemiga si usan la misi&#243;n "Bloqueo" dentro del alcance de la metr&#243;polis contraria. Usar un corsario para bloquear una ciudad en tiempos de paz te permitir&#225; incluso saquear oro de la tesorer&#237;a de tu enemigo.</Spanish>
-	</TEXT>
+		<English>在战时，你的船可能会切断所有进入敌方城市的海上贸易路线，在敌方城市范围内执行“封锁”任务。在和平时期用私人船封锁一座城市甚至可以让你从敌人的宝库里掠夺黄金！</English>
+		<L1/><L2/><L3/><L4/><Chinese>在战时，你的船可能会切断所有进入敌方城市的海上贸易路线，在敌方城市范围内执行“封锁”任务。在和平时期用私人船封锁一座城市甚至可以让你从敌人的宝库里掠夺黄金！</Chinese><French>During wartime, your ships may sever all naval trade routes entering an enemy city by using the "Blockade" Mission within range of the opposing metropolis. Using a Privateer to blockade a city during peace time will even allow you to plunder gold from your enemy's treasury!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_29</Tag>
-		<English>Intercontinental trade routes now yield more gold than normal trade routes. Build a Customs House to further cash in.</English>
-		<French>Les routes commerciales intercontinentales rapportent d&#233;sormais plus d'or que les routes commerciales normales. Construisez un poste de douane pour augmenter encore vos recettes.</French>
-		<German>Interkontinentale Handelswege erwirtschaften nun mehr Gold als normale Handelswege. Errichten Sie f&#252;r zus&#228;tzliche Einnahmen ein Zollamt.</German>
-		<Italian>Le rotte commerciali intercontinentali ora producono pi&#249; oro di quelle normali. Costruisci delle dogane per aumentare gli introiti.</Italian>
-		<Spanish>Ahora, las rutas comerciales intercontinentales reportan m&#225;s oro que las rutas comerciales normales. Construye una aduana para aumentar los ingresos obtenidos.</Spanish>
-	</TEXT>
+		<English>洲际贸易路线现在比正常贸易路线产出更多的黄金。建一个海关以进一步兑现。</English>
+		<L1/><L2/><L3/><L4/><Chinese>洲际贸易路线现在比正常贸易路线产出更多的黄金。建一个海关以进一步兑现。</Chinese><French>Intercontinental trade routes now yield more gold than normal trade routes. Build a Customs House to further cash in.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_30</Tag>
-		<English>Naval Units performing "Blockade" Missions prevent all enemy trade from passing within their blockading range. Making sure an enemy city is within that range is a sure-fire way to stop enemy trade routes.</English>
-		<French>Les unit&#233;s navales faisant la mission Blocus emp&#234;chent tout le commerce ennemi de passer dans la port&#233;e du blocus. S'assurer que la ville ennemie est &#224; port&#233;e est un moyen s&#251;r de bloquer les routes commerciales ennemies.</French>
-		<German>Marineeinheiten, die die Blockade-Mission durchf&#252;hren, verhindern den gesamten gegnerischen Handel innerhalb der Blockadereichweite. Die Errichtung einer Blockade in Reichweite einer gegnerischen Stadt ist eine zuverl&#228;ssige Methode, gegnerischen Handel zu verhindern.</German>
-		<Italian>Le unit&#224; navali che compiono la missione "Embargo" impediscono a tutto il commercio nemico di attraversare l'area bloccata. Assicurati che nel raggio d'azione ricada una citt&#224; nemica per bloccare le rotte commerciali del nemico.</Italian>
-		<Spanish>Las unidades navales que lleven a cabo la misi&#243;n "Bloqueo" evitan que todo el comercio enemigo pase por el alcance de su bloqueo. Asegurarse de que una ciudad enemiga est&#233; dentro de ese alcance es un disparo certero para conseguir detener las rutas comerciales enemigas.</Spanish>
-	</TEXT>
+		<English>执行“封锁”任务的海军部队阻止所有敌方贸易进入其封锁范围。确保敌人的城市在这个范围内是阻止敌人贸易路线的一种可靠的火力方法。</English>
+		<L1/><L2/><L3/><L4/><Chinese>执行“封锁”任务的海军部队阻止所有敌方贸易进入其封锁范围。确保敌人的城市在这个范围内是阻止敌人贸易路线的一种可靠的火力方法。</Chinese><French>Naval Units performing "Blockade" Missions prevent all enemy trade from passing within their blockading range. Making sure an enemy city is within that range is a sure-fire way to stop enemy trade routes.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_31</Tag>
-		<English>The game is won when a Spaceship arrives on Alpha Centauri, not when it is launched. The more Engines and Thrusters you build, the faster the Spaceship will arrive.</English>
-		<French>Pour gagner la partie, il faut que votre vaisseau spatial soit le premier &#224; atteindre Alpha du Centaure. Il ne vous suffit pas de le faire d&#233;coller en premier. Plus vous construirez de moteurs et de propulseurs, plus votre vaisseau arrivera vite.</French>
-		<German>Dieses Spiel gilt mit der Ankunft eines Raumschiffs auf Alpha Centauri als gewonnen und nicht mit dem Start des Raumschiffs. Je mehr Motoren und Triebwerke Sie bauen, desto schneller wird das Raumschiff ankommen.</German>
-		<Italian>Si vince una partita quando l'astronave raggiunge Alpha Centauri e non quando viene lanciata. Pi&#249; motori e propulsori costruisci, pi&#249; rapidamente l'astronave arriver&#224; a destinazione.</Italian>
-		<Spanish>La partida se gana cuando una nave espacial llega a Alpha Centauri, no cuando &#233;sta se lanza. Cuantos m&#225;s motores y propulsores construyas, m&#225;s r&#225;pido llegar&#225; la nave espacial.</Spanish>
-	</TEXT>
+		<English>当宇宙飞船到达半人马座阿尔法星时，而不是当它发射时，游戏就赢了。你制造的发动机和推进器越多，宇宙飞船到达的速度就越快。</English>
+		<L1/><L2/><L3/><L4/><Chinese>当宇宙飞船到达半人马座阿尔法星时，而不是当它发射时，游戏就赢了。你制造的发动机和推进器越多，宇宙飞船到达的速度就越快。</Chinese><French>The game is won when a Spaceship arrives on Alpha Centauri, not when it is launched. The more Engines and Thrusters you build, the faster the Spaceship will arrive.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_32</Tag>
-		<English>Your Fighters can intercept multiple enemy planes per turn, but become less effective at it as they get damage, so take care to repair your defensive planes.</English>
-		<French>Vos chasseurs peuvent intercepter plusieurs avions ennemis par tour, mais sont moins efficaces quand ils sont endommag&#233;s. Pensez donc bien &#224; r&#233;parer vos avions de d&#233;fense.</French>
-		<German>Ihre J&#228;ger k&#246;nnen in jeder Runde mehrere feindliche Lufteinheiten abfangen, Ihre Schlagkraft sinkt allerdings, wenn sie besch&#228;digt werden. Sie sollten Ihre defensiven Lufteinheiten daher stets reparieren.</German>
-		<Italian>I tuoi caccia possono intercettare pi&#249; aerei per turno, ma diventano meno efficaci se subiscono danni, perci&#242; premurati di riparare i tuoi velivoli difensivi.</Italian>
-		<Spanish>Tus cazas pueden interceptar varios aviones por turno, pero se vuelven menos eficaces a medida que sufren da&#241;os, por lo que debes preocuparte de reparar tus aviones defensivos.</Spanish>
-	</TEXT>
+		<English>你的战斗机可以每回合拦截多架敌机，但当它们受到伤害时，效果会降低，所以要注意修理你的防御机。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你的战斗机可以每回合拦截多架敌机，但当它们受到伤害时，效果会降低，所以要注意修理你的防御机。</Chinese><French>Your Fighters can intercept multiple enemy planes per turn, but become less effective at it as they get damage, so take care to repair your defensive planes.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_33</Tag>
-		<English>Use the Submarine's stealth along with its ability to carry conventional and tactical nuclear missiles to launch a devastating opening attack on another landmass.</English>
-		<French>Tirez parti de la furtivit&#233; du sous-marin et de sa capacit&#233; &#224; transporter des missiles conventionnels et des missiles nucl&#233;aires pour lancer une attaque d&#233;vastatrice contre un autre continent.</French>
-		<German>Nutzen Sie die Tarnung Ihrer U-Boote und ihre F&#228;higkeit, konventionelle und taktische Atomraketen zu bef&#246;rdern, um vernichtende Startoffensiven auf gegnerische Landmassen auszuf&#252;hren.</German>
-		<Italian>Usa l'invisibilit&#224; del sottomarino oltre all'abilit&#224; di trasportare missili tattici e nucleari per lanciarli e scatenare l'inferno sulla terraferma.</Italian>
-		<Spanish>Utiliza la invisibilidad ante el radar del submarino junto a su capacidad para transportar misiles nucleares convencionales y t&#225;cticos para lanzar un devastador ataque inicial sobre otra masa de tierra.</Spanish>
-	</TEXT>
+		<English>利用潜艇的隐身能力以及携带常规和战术核导弹的能力，对另一块陆地发动毁灭性的开放式攻击。</English>
+		<L1/><L2/><L3/><L4/><Chinese>利用潜艇的隐身能力以及携带常规和战术核导弹的能力，对另一块陆地发动毁灭性的开放式攻击。</Chinese><French>Use the Submarine's stealth along with its ability to carry conventional and tactical nuclear missiles to launch a devastating opening attack on another landmass.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_34</Tag>
-		<English>Keep some spies in your borders for counter-espionage. Enemy spies can wreak havoc!</English>
-		<French>Gardez quelques espions &#224; l'int&#233;rieur de vos fronti&#232;res pour le contre-espionnage. Les espions ennemis peuvent faire des ravages !</French>
-		<German>Behalten Sie zum Zweck der Gegenspionage einige Spione innerhalb Ihrer Grenzen. Feindliche Spione k&#246;nnen verheerende Sch&#228;den anrichten!</German>
-		<Italian>Tieni alcune spie all'interno dei tuoi confini per effettuare il controspionaggio. Le spie nemiche possono scatenare il caos!</Italian>
-		<Spanish>Mant&#233;n algunos esp&#237;as en tus fronteras para practicar el contraespionaje. &#161;Los esp&#237;as enemigos pueden sembrar el caos!</Spanish>
-	</TEXT>
+		<English>在你的边境保留一些间谍进行反间谍活动。敌人的间谍会造成严重破坏！</English>
+		<L1/><L2/><L3/><L4/><Chinese>在你的边境保留一些间谍进行反间谍活动。敌人的间谍会造成严重破坏！</Chinese><French>Keep some spies in your borders for counter-espionage. Enemy spies can wreak havoc!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_35</Tag>
-		<English>Short on gold? Send your spies to steal from your neighbors!</English>
-		<French>Vous manquez d'or ? Envoyez vos espions en voler &#224; vos voisins !</French>
-		<German>Knapp bei Kasse? Dann senden Sie Ihre Spione aus, um die benachbarten Zivilisationen zu bestehlen!</German>
-		<Italian>Hai pochi soldi? Le tue spie possono rubare oro ai tuoi vicini!</Italian>
-		<Spanish>&#191;Andas escaso de oro? &#161;Env&#237;a a tus esp&#237;as a robar a tus vecinos!</Spanish>
-	</TEXT>
+		<English>黄金短缺？派你的间谍去偷你邻居的东西！</English>
+		<L1/><L2/><L3/><L4/><Chinese>黄金短缺？派你的间谍去偷你邻居的东西！</Chinese><French>Short on gold? Send your spies to steal from your neighbors!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_36</Tag>
-		<English>Mounted units cause flanking damage to certain Siege weapons. For example, all Cannons in an enemy stack are damaged if an attacking Cavalry unit survives the battle!</English>
-		<French>Les unit&#233;s mont&#233;es infligent des d&#233;g&#226;ts d'attaque de flanc &#224; certaines armes de si&#232;ge. Tous les canons d'un groupe ennemi seront endommag&#233;s, par exemple, si une unit&#233; de cavalerie les attaque et survit &#224; la bataille !</French>
-		<German>Berittene Einheiten verursachen Flankensch&#228;den an bestimmten Belagerungseinheiten. Zum Beispiel werden alle in einem Verband organisierten feindlichen Kanonen besch&#228;digt, wenn eine angreifende Kavallerieeinheit das Gefecht &#252;berlebt!</German>
-		<Italian>Le unit&#224; montate possono causare danno laterale contro alcune unit&#224; d'assedio. Per esempio, tutti i cannoni raggruppati vengono danneggiati se la cavalleria che effettua l'attacco sopravvive alla battaglia!</Italian>
-		<Spanish>Las unidades montadas causan da&#241;o de flanqueo a ciertas armas de asedio. Por ejemplo, &#161;todos los ca&#241;ones de un apilamiento enemigo quedar&#225;n da&#241;ados si una unidad de caballer&#237;a atacante sobrevive a la batalla!</Spanish>
-	</TEXT>
+		<English>骑兵对某些攻城武器造成迂回攻击。例如，如果一支进攻骑兵部队在战斗中幸存下来，那么敌军堆栈中的所有大炮都会受到损坏！</English>
+		<L1/><L2/><L3/><L4/><Chinese>骑兵对某些攻城武器造成迂回攻击。例如，如果一支进攻骑兵部队在战斗中幸存下来，那么敌军堆栈中的所有大炮都会受到损坏！</Chinese><French>Mounted units cause flanking damage to certain Siege weapons. For example, all Cannons in an enemy stack are damaged if an attacking Cavalry unit survives the battle!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_37</Tag>
-		<English>Random events are tied to what is happening within your civilization. If you want to experience all of the events that are possible, you will have to play numerous games using different approaches and strategies: war and peace, different religious approaches, different technological paths, different civics and more!</English>
-		<French>Les &#233;v&#233;nements al&#233;atoires sont li&#233;s &#224; la mani&#232;re dont vous g&#233;rez votre civilisation. Si vous voulez exp&#233;rimenter tous les &#233;v&#233;nements possibles, vous allez devoir jouer un nombre impressionnant de parties en variant sans cesse vos strat&#233;gies : pr&#233;f&#233;rer la guerre ou la paix, changer d'approche en mati&#232;re de religion, de technologie ou de doctrine, etc. Il n'y a pas de limite !</French>
-		<German>Zufallsereignisse h&#228;ngen davon ab, was innerhalb Ihrer Zivilisation geschieht. Wenn Sie alle m&#246;glichen Ereignisse erleben wollen, m&#252;ssen Sie zahlreiche Spiele mit unterschiedlichen Ans&#228;tzen und Strategien spielen: Krieg und Frieden, unterschiedliche religi&#246;se Ans&#228;tze, Technologiewege, Staatsformen und vieles mehr!</German>
-		<Italian>Gli eventi casuali sono collegati a quel che accade all'interno della tua civilt&#224;. Se vuoi sperimentare tutti gli eventi possibili, dovrai giocare diverse partite utilizzando vari approcci e strategie: guerra e pace, religioni e sviluppi tecnologici diversi, e persino cambiare le forme di governo!</Italian>
-		<Spanish>Los acontecimientos al azar est&#225;n ligados a lo que ocurra en tu civilizaci&#243;n. Si quieres probar todos los sucesos posibles, tendr&#225;s que jugar numerosas partidas con diferentes aproximaciones y estrategias: guerra y paz, distintas propuestas religiosas, diferentes caminos tecnol&#243;gicos, principios diversos y dem&#225;s.</Spanish>
-	</TEXT>
+		<English>随机事件与你们文明中正在发生的事情联系在一起。如果你想体验所有可能发生的事件，你将不得不用不同的方法和策略玩很多游戏：战争与和平，不同的宗教方法，不同的技术途径，不同的文明等等！</English>
+		<L1/><L2/><L3/><L4/><Chinese>随机事件与你们文明中正在发生的事情联系在一起。如果你想体验所有可能发生的事件，你将不得不用不同的方法和策略玩很多游戏：战争与和平，不同的宗教方法，不同的技术途径，不同的文明等等！</Chinese><French>Random events are tied to what is happening within your civilization. If you want to experience all of the events that are possible, you will have to play numerous games using different approaches and strategies: war and peace, different religious approaches, different technological paths, different civics and more!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_38</Tag>
-		<English>You may be wise to keep some reserve gold in your treasury. You never know when your savings may help mitigate the effects of a disastrous event or grant you access to additional opportunities when a positive event rolls around.</English>
-		<French>Faites en sorte de ne pas dilapider votre tr&#233;sor. Vos &#233;conomies pourraient un jour vous aider &#224; att&#233;nuer les effets d'un &#233;v&#232;nement catastrophique ou vous donner acc&#232;s &#224; de nouvelles opportunit&#233;s si un &#233;v&#232;nement positif devait survenir.</French>
-		<German>Es w&#228;re klug, ein paar Goldreserven in der Schatzkammer zu belassen. Man wei&#223; nie, wann das Ersparte dabei helfen k&#246;nnte, die Auswirkungen eines verheerenden Ereignisses zu mildern, oder Ihnen zus&#228;tzliche M&#246;glichkeiten bei einem positiven Ereignis verschafft.</German>
-		<Italian>Potrebbe essere saggio tenere una riserva d'oro nel tuo tesoro. Non si pu&#242; mai sapere quando potrebbe rendersi necessario mitigare gli effetti di un evento catastrofico, o quando una serie positiva di eventi potrebbe permetterti di accedere ad altre opportunit&#224;.</Italian>
-		<Spanish>Debes ser prudente y guardar algunas reservas de oro en tu tesoro. Nunca se sabe cu&#225;ndo tus ahorros pueden servir para mitigar los efectos de un suceso desastroso o para darte acceso a oportunidades adicionales cuando se produzca un suceso positivo.</Spanish>
-	</TEXT>
+		<English>你最好把一些储备黄金放在你的金库里。你永远不知道什么时候你的储蓄可能有助于减轻灾难性事件的影响，或者在积极事件发生时给你提供更多的机会。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你最好把一些储备黄金放在你的金库里。你永远不知道什么时候你的储蓄可能有助于减轻灾难性事件的影响，或者在积极事件发生时给你提供更多的机会。</Chinese><French>You may be wise to keep some reserve gold in your treasury. You never know when your savings may help mitigate the effects of a disastrous event or grant you access to additional opportunities when a positive event rolls around.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_39</Tag>
-		<English>A negative event that afflicts one of your rivals is, in effect, like a positive event for you! Keep an eye on the world news reports in case an event happening to other nations opens new opportunities for you.</English>
-		<French>Les &#233;v&#233;nements n&#233;gatifs qui frappent vos rivaux peuvent s'av&#233;rer extr&#234;mement positifs pour vous ! Gardez un oeil sur les informations en provenance des autres pays, au cas o&#249; un &#233;v&#233;nement vous offrirait de nouvelles opportunit&#233;s.</French>
-		<German>Ein negatives Ereignis, das einen Ihrer Gegner betrifft, ist ein positives Ereignis f&#252;r Sie! Achten Sie auf die Berichte in den Weltnachrichten, damit Sie von den Ereignissen in anderen Nationen erfahren, die Ihnen selbst neue M&#246;glichkeiten er&#246;ffnen.</German>
-		<Italian>Un evento negativo che colpisce un tuo avversario &#232; a tutti gli effetti un evento positivo per te! Tieni d'occhio le notizie dal mondo: eventi che si verificano in altre nazioni potrebbero aprirti nuove opportunit&#224;.</Italian>
-		<Spanish>Los sucesos negativos que aflijan a tus rivales son, de hecho, buenas noticias para ti. Estate atento a las noticias internacionales por si algo que ha ocurrido en otras naciones abriera nuevas oportunidades para ti.</Spanish>
-	</TEXT>
+		<English>一个消极的事件，折磨你的竞争对手之一，实际上，就像一个积极的事件为你！留意世界新闻报道，以防其他国家发生的事件为你打开新的机会。</English>
+		<L1/><L2/><L3/><L4/><Chinese>一个消极的事件，折磨你的竞争对手之一，实际上，就像一个积极的事件为你！留意世界新闻报道，以防其他国家发生的事件为你打开新的机会。</Chinese><French>A negative event that afflicts one of your rivals is, in effect, like a positive event for you! Keep an eye on the world news reports in case an event happening to other nations opens new opportunities for you.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_40</Tag>
-		<English>Rival civilizations led by computer opponents now pose a more significant threat from the sea. Stronger fleets, amphibious invasions... Don't be caught unprepared! The more warlike leaders can be very sneaky with their attack plans, as they have learned to think beyond the sword.</English>
-		<French>Les civilisations rivales men&#233;es par l'ordinateur sont d&#233;sormais plus promptes &#224; vous attaquer par la mer. Flottes plus puissantes, invasions amphibies... Ne vous laissez pas surprendre ! Les dirigeants les plus sanguinaires peuvent s'av&#233;rer tr&#232;s sournois maintenant que le mot "strat&#233;gie" ne leur est plus inconnu.</French>
-		<German>Von Computergegnern gef&#252;hrte gegnerische Zivilisationen stellen nun eine gro&#223;e Bedrohung vom Meer aus dar. St&#228;rkere Flotten, amphibische Angriffe ... Lassen Sie sich nicht &#252;berrumpeln! Kriegerische Zivilisationen k&#246;nnen in Bezug auf ihre Angriffspl&#228;ne sehr raffiniert vorgehen, da sie gelernt haben, &#252;ber den Rand der Klinge hinauszusehen.</German>
-		<Italian>Le civilt&#224; rivali controllate dal computer costituiscono una minaccia pi&#249; consistente dal mare: flotte pi&#249; forti, invasioni anfibie... Non farti cogliere di sorpresa! I leader pi&#249; bellicosi possono sviluppare piani di attacchi molto subdoli, perch&#233; hanno imparato tattiche diverse dai normali attacchi armati.</Italian>
-		<Spanish>Las civilizaciones rivales que lleva el ordenador plantean una amenaza mucho m&#225;s seria desde el mar. Mayores flotas, invasiones anfibias... 隆Que no te pillen desprevenido! Los l&#226;deres m&#225;s belicosos pueden ser mucho m&#225;s viles con sus planes de ataque, ya que han aprendido a pensar m&#225;s all&#225; de la espada.</Spanish>
-	</TEXT>
+		<English>以计算机对手为首的敌对文明现在构成了来自海洋的更大威胁。更强大的舰队，两栖入侵……别措手不及！越是好战的领导者，他们的攻击计划就越狡猾，因为他们已经学会了用剑以外的思维。</English>
+		<L1/><L2/><L3/><L4/><Chinese>以计算机对手为首的敌对文明现在构成了来自海洋的更大威胁。更强大的舰队，两栖入侵……别措手不及！越是好战的领导者，他们的攻击计划就越狡猾，因为他们已经学会了用剑以外的思维。</Chinese><French>Rival civilizations led by computer opponents now pose a more significant threat from the sea. Stronger fleets, amphibious invasions... Don't be caught unprepared! The more warlike leaders can be very sneaky with their attack plans, as they have learned to think beyond the sword.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_1</Tag>
-		<English>AI Mongols receive additional armies to attack Russia and the Middle East. Be prepared!</English>
-		<French>Lorsqu'ils sont contr&#244;l&#233;s par l'IA, les Mongols re&#231;oivent des arm&#233;es suppl&#233;mentaires pour attaquer la Russie et le Moyen-Orient. Soyez pr&#234;t !</French>
-		<German>AI Mongols receive additional armies to attack Russia and the Middle East. Be prepared!</German>
-		<Italian>AI Mongols receive additional armies to attack Russia and the Middle East. Be prepared!</Italian>
-		<Spanish>AI Mongols receive additional armies to attack Russia and the Middle East. Be prepared!</Spanish>
-	</TEXT>
+		<English>电脑控制的蒙古人将得到额外的军队攻击俄罗斯和中东。准备好了！</English>
+		<L1/><L2/><L3/><L4/><Chinese>电脑控制的蒙古人将得到额外的军队攻击俄罗斯和中东。准备好了！</Chinese><French>AI Mongols receive additional armies to attack Russia and the Middle East. Be prepared!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_2</Tag>
-		<English>In Dawn of Civilization, several civilizations like Byzantium, Italy and Thailand have conditional spawns, and don't appear in every game.</English>
-		<French>Dans Dawn of Civilizations, plusieurs civilisations, comme Byzance, l'Italie et la Tha&#239;lande, naissent seulement lorsque certaines conditions sont remplies. Elles n'apparaissent donc pas dans toutes les parties.</French>
-		<German>In Dawn of Civilization, several civilizations like Byzantium, Italy and Thailand have conditional spawns, and don't appear in every game.</German>
-		<Italian>In Dawn of Civilization, several civilizations like Byzantium, Italy and Thailand have conditional spawns, and don't appear in every game.</Italian>
-		<Spanish>In Dawn of Civilization, several civilizations like Byzantium, Italy and Thailand have conditional spawns, and don't appear in every game.</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，像拜占庭、意大利和泰国这样的几个文明都有出现的条件，并没有出现在每一局游戏中。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，像拜占庭、意大利和泰国这样的几个文明都有出现的条件，并没有出现在每一局游戏中。</Chinese><French>In Dawn of Civilization, several civilizations like Byzantium, Italy and Thailand have conditional spawns, and don't appear in every game.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_3</Tag>
-		<English>Several AI civilizations flip larger areas on spawn to help them along.</English>
-		<French>Plusieurs civilisations contr&#244;l&#233;es par l'IA re&#231;oivent un plus grand territoire &#224; leur naissance afin de les aider.</French>
-		<German>Several AI civilizations flip larger areas on spawn to help them along.</German>
-		<Italian>Several AI civilizations flip larger areas on spawn to help them along.</Italian>
-		<Spanish>Several AI civilizations flip larger areas on spawn to help them along.</Spanish>
-	</TEXT>
+		<English>几个计算机文明在出生时翻转更大的区域来帮助它们前进。</English>
+		<L1/><L2/><L3/><L4/><Chinese>几个计算机文明在出生时翻转更大的区域来帮助它们前进。</Chinese><French>Several AI civilizations flip larger areas on spawn to help them along.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_4</Tag>
-		<English>In Dawn of Civilization, free technology effects like the Oracle only allow you to choose technologies of your current or earlier eras.</English>
-		<French>Dans Dawn of Civilization, les technologies gratuites, comme celle que donne l'Oracle, doivent &#234;tre choisies parmi celles de l'&#232;re actuelle ou des &#232;res pass&#233;es.</French>
-		<German>In Dawn of Civilization, free technology effects like the Oracle only allow you to choose technologies of your current or earlier eras.</German>
-		<Italian>In Dawn of Civilization, free technology effects like the Oracle only allow you to choose technologies of your current or earlier eras.</Italian>
-		<Spanish>In Dawn of Civilization, free technology effects like the Oracle only allow you to choose technologies of your current or earlier eras.</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，像神谕宣示所这样的免费科技效果只允许你选择当前或更早时代的技术。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，像神谕宣示所这样的免费科技效果只允许你选择当前或更早时代的技术。</Chinese><French>In Dawn of Civilization, free technology effects like the Oracle only allow you to choose technologies of your current or earlier eras.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_5</Tag>
-		<English>If you're playing as a Western European civilization, build a Trading Company to expand to Africa or Asia.</English>
-		<French>Si vous contr&#244;lez une civilisation d'Europe de l'Ouest, la construction d'une compagnie commerciale vous permettra de prendre de l'expansion en Afrique ou en Asie.</French>
-		<German>If you're playing as a Western European civilization, build a Trading Company to expand to Africa or Asia.</German>
-		<Italian>If you're playing as a Western European civilization, build a Trading Company to expand to Africa or Asia.</Italian>
-		<Spanish>If you're playing as a Western European civilization, build a Trading Company to expand to Africa or Asia.</Spanish>
-	</TEXT>
+		<English>如果你是在扮演西欧文明的角色，那就建立一家贸易公司，将业务扩展到非洲或亚洲。</English>
+		<L1/><L2/><L3/><L4/><Chinese>如果你是在扮演西欧文明的角色，那就建立一家贸易公司，将业务扩展到非洲或亚洲。</Chinese><French>If you're playing as a Western European civilization, build a Trading Company to expand to Africa or Asia.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_6</Tag>
-		<English>Pagan Temples cannot be built in cities that have a religion, and when a religion spreads to a city with a Pagan Temple, it is replaced by that religion's temple instead.</English>
-		<French>Les temples pa&#239;ens ne peuvent &#234;tre construits dans les villes adeptes d'une religion. Lorsqu'une religion se propage dans une ville poss&#233;dant un temple pa&#239;en, ce dernier est remplac&#233; par un lieu de culte de la religion.</French>
-		<German>Pagan Temples cannot be built in cities that have a religion, and when a religion spreads to a city with a Pagan Temple, it is replaced by that religion's temple instead.</German>
-		<Italian>Pagan Temples cannot be built in cities that have a religion, and when a religion spreads to a city with a Pagan Temple, it is replaced by that religion's temple instead.</Italian>
-		<Spanish>Pagan Temples cannot be built in cities that have a religion, and when a religion spreads to a city with a Pagan Temple, it is replaced by that religion's temple instead.</Spanish>
-	</TEXT>
+		<English>异教徒庙宇不能建在有宗教的城市里，当一种宗教传播到有异教徒庙宇的城市时，它就会被该宗教的庙宇所取代。</English>
+		<L1/><L2/><L3/><L4/><Chinese>异教徒庙宇不能建在有宗教的城市里，当一种宗教传播到有异教徒庙宇的城市时，它就会被该宗教的庙宇所取代。</Chinese><French>Pagan Temples cannot be built in cities that have a religion, and when a religion spreads to a city with a Pagan Temple, it is replaced by that religion's temple instead.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_7</Tag>
-		<English>In Dawn of Civilization, civilisations can respawn in historically appropriate time periods, even before Nationalism has been discovered.</English>
-		<French>Dans Dawn of Civilization, les civilisations peuvent r&#233;appara&#238;tre pendant les p&#233;riodes appropri&#233;es, et ce, m&#234;me avant la d&#233;couverte du nationalisme.</French>
-		<German>In Dawn of Civilization, civilisations can respawn in historically appropriate time periods, even before Nationalism has been discovered.</German>
-		<Italian>In Dawn of Civilization, civilisations can respawn in historically appropriate time periods, even before Nationalism has been discovered.</Italian>
-		<Spanish>In Dawn of Civilization, civilisations can respawn in historically appropriate time periods, even before Nationalism has been discovered.</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，文明可以在历史上适当的时期重生，甚至在民族主义被发现之前。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，文明可以在历史上适当的时期重生，甚至在民族主义被发现之前。</Chinese><French>In Dawn of Civilization, civilisations can respawn in historically appropriate time periods, even before Nationalism has been discovered.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_8</Tag>
-		<English>You need to discover Exploration before you can vassalize far away civilizations.</English>
-		<French>Vous devez d&#233;couvrir l'exploration pour pouvoir vassaliser les civilisations lointaines.</French>
-		<German>You need to discover Exploration before you can vassalize far away civilizations.</German>
-		<Italian>You need to discover Exploration before you can vassalize far away civilizations.</Italian>
-		<Spanish>You need to discover Exploration before you can vassalize far away civilizations.</Spanish>
-	</TEXT>
+		<English>你需要先发现地理探索科技，然后才能将遥远的文明附庸。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你需要先发现地理探索科技，然后才能将遥远的文明附庸。</Chinese><French>You need to discover Exploration before you can vassalize far away civilizations.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_9</Tag>
-		<English>You need to discover Exploration before you can train settlers on other continents than your capital's.</English>
-		<French>Vous devez d&#233;couvrir l'explorarion pour pouvoir cr&#233;er des colons sur des continents autres que celui o&#249; est situ&#233;e votre capitale.</French>
-		<German>You need to discover Exploration before you can train settlers on other continents than your capital's.</German>
-		<Italian>You need to discover Exploration before you can train settlers on other continents than your capital's.</Italian>
-		<Spanish>You need to discover Exploration before you can train settlers on other continents than your capital's.</Spanish>
-	</TEXT>
+		<English>你需要先发现地理探索科技，然后才能在首都以外的其他大陆训练定居者。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你需要先发现地理探索科技，然后才能在首都以外的其他大陆训练定居者。</Chinese><French>You need to discover Exploration before you can train settlers on other continents than your capital's.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_10</Tag>
-		<English>In Dawn of Civilization, military units cannot be killed by the plague, only weakened.</English>
-		<French>Dans Dawn of Civilization, la peste affaiblit les unit&#233;s militaires mais ne les tue pas.</French>
-		<German>In Dawn of Civilization, military units cannot be killed by the plague, only weakened.</German>
-		<Italian>In Dawn of Civilization, military units cannot be killed by the plague, only weakened.</Italian>
-		<Spanish>In Dawn of Civilization, military units cannot be killed by the plague, only weakened.</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，军队不能被瘟疫杀死，只能被削弱。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，军队不能被瘟疫杀死，只能被削弱。</Chinese><French>In Dawn of Civilization, military units cannot be killed by the plague, only weakened.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_11</Tag>
-		<English>Related religions like Hinduism and Buddhism or Confucianism and Taoism don't create unhappiness if one of them is your state religion</English>
-		<French>Les religions apparent&#233;es, comme l'hindouisme et le bouddhisme ou encore le confucianisme et le tao&#239;sme, ne cr&#233;ent pas de malheur si l'une d'elles est votre religion d'&#201;tat.</French>
-		<German>Related religions like Hinduism and Buddhism or Confucianism and Taoism don't create unhappiness if one of them is your state religion</German>
-		<Italian>Related religions like Hinduism and Buddhism or Confucianism and Taoism don't create unhappiness if one of them is your state religion</Italian>
-		<Spanish>Related religions like Hinduism and Buddhism or Confucianism and Taoism don't create unhappiness if one of them is your state religion</Spanish>
-	</TEXT>
+		<English>相关联的宗教，如印度教和佛教或儒教，如果其中一个是你的国教，就不会产生不快乐</English>
+		<L1/><L2/><L3/><L4/><Chinese>相关联的宗教，如印度教和佛教或儒教，如果其中一个是你的国教，就不会产生不快乐</Chinese><French>Related religions like Hinduism and Buddhism or Confucianism and Taoism don't create unhappiness if one of them is your state religion</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_12</Tag>
-		<English>Related religions like Hinduism and Buddhism or Confucianism and Taoism create reduced diplomacy penalties</English>
-		<French>Les religions apparent&#233;es, comme l'hindouisme et le bouddhisme ou encore le confucianisme et le tao&#239;sme, cr&#233;ent des p&#233;nalit&#233;s diplomatiques moindres.</French>
-		<German>Related religions like Hinduism and Buddhism or Confucianism and Taoism create reduced diplomacy penalties</German>
-		<Italian>Related religions like Hinduism and Buddhism or Confucianism and Taoism create reduced diplomacy penalties</Italian>
-		<Spanish>Related religions like Hinduism and Buddhism or Confucianism and Taoism create reduced diplomacy penalties</Spanish>
-	</TEXT>
+		<English>印度教、佛教、儒教等相关联的宗教减少了外交惩罚</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度教、佛教、儒教等相关联的宗教减少了外交惩罚</Chinese><French>Related religions like Hinduism and Buddhism or Confucianism and Taoism create reduced diplomacy penalties</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_13</Tag>
-		<English>Corporation headquarters and executives have been removed, corporations spread on their own if the prerequisites are met.</English>
-		<French>Les si&#232;ges sociaux des soci&#233;t&#233;s commerciales ont &#233;t&#233; retir&#233;s du jeu ; les soci&#233;t&#233;s commerciales se propagent par elles-m&#234;mes lorsque les conditions sont r&#233;unies.</French>
-		<German>Corporation headquarters and executives have been removed, corporations spread on their own if the prerequisites are met.</German>
-		<Italian>Corporation headquarters and executives have been removed, corporations spread on their own if the prerequisites are met.</Italian>
-		<Spanish>Corporation headquarters and executives have been removed, corporations spread on their own if the prerequisites are met.</Spanish>
-	</TEXT>
+		<English>公司总部和高管已经被移除，如果满足了先决条件，公司将自行扩张。</English>
+		<L1/><L2/><L3/><L4/><Chinese>公司总部和高管已经被移除，如果满足了先决条件，公司将自行扩张。</Chinese><French>Corporation headquarters and executives have been removed, corporations spread on their own if the prerequisites are met.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_14</Tag>
-		<English>The Silk Route and Trading Company corporations can only spread in historically appropriate regions.</English>
-		<French>Les soci&#233;t&#233;s commerciales de la route de la soie et de la compagnie commerciale ne peuvent se propager que dans les r&#233;gions appropri&#233;es d'un point de vue historique.</French>
-		<German>The Silk Route and Trading Company corporations can only spread in historically appropriate regions.</German>
-		<Italian>The Silk Route and Trading Company corporations can only spread in historically appropriate regions.</Italian>
-		<Spanish>The Silk Route and Trading Company corporations can only spread in historically appropriate regions.</Spanish>
-	</TEXT>
+		<English>丝绸之路和贸易公司只能在历史上合适的地区进行扩张。</English>
+		<L1/><L2/><L3/><L4/><Chinese>丝绸之路和贸易公司只能在历史上合适的地区进行扩张。</Chinese><French>The Silk Route and Trading Company corporations can only spread in historically appropriate regions.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_15</Tag>
-		<English>To attract a corporation, acquire more of its resources, build associated buildings, or adopt the Free Enterprise civic.</English>
-		<French>Pour attirer une soci&#233;t&#233; commerciale, obtenez davantage de ressources reli&#233;es, construisez les b&#226;timents associ&#233;s, ou adoptez la doctrine de la libre entreprise.</French>
-		<German>To attract a corporation, acquire more of its resources, build associated buildings, or adopt the Free Enterprise civic.</German>
-		<Italian>To attract a corporation, acquire more of its resources, build associated buildings, or adopt the Free Enterprise civic.</Italian>
-		<Spanish>To attract a corporation, acquire more of its resources, build associated buildings, or adopt the Free Enterprise civic.</Spanish>
-	</TEXT>
+		<English>吸引公司，获取更多资源，建造相关建筑，或采用自由市场政体</English>
+		<L1/><L2/><L3/><L4/><Chinese>吸引公司，获取更多资源，建造相关建筑，或采用自由市场政体</Chinese><French>To attract a corporation, acquire more of its resources, build associated buildings, or adopt the Free Enterprise civic.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_16</Tag>
-		<English>In Dawn of Civilization, many wonders have religion or civic prerequisites to encourage their historical distribution.</English>
-		<French>Dans Dawn of Civilization, de nombreuses merveilles n&#233;cessitent des religions ou des doctrines sp&#233;cifiques afin d'encourager leur construction dans les r&#233;gions appropri&#233;es.</French>
-		<German>In Dawn of Civilization, many wonders have religion or civic prerequisites to encourage their historical distribution.</German>
-		<Italian>In Dawn of Civilization, many wonders have religion or civic prerequisites to encourage their historical distribution.</Italian>
-		<Spanish>In Dawn of Civilization, many wonders have religion or civic prerequisites to encourage their historical distribution.</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，许多奇迹都有宗教或政体的先决条件来鼓励它们的历史分布。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，许多奇迹都有宗教或政体的先决条件来鼓励它们的历史分布。</Chinese><French>In Dawn of Civilization, many wonders have religion or civic prerequisites to encourage their historical distribution.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_17</Tag>
-		<English>Researching Academia as a Catholic civilization starts the Reformation, prompting all Catholic civilizations to decide if they want to convert to Protestantism.</English>
-		<French>La premi&#232;re civilisation catholique &#224; d&#233;couvrir l'universit&#233; d&#233;clenche la R&#233;forme. Toutes les civilisations catholiques doivent alors d&#233;cider si elles se convertissent au protestantisme.</French>
-		<German>Researching Academia as a Catholic civilization starts the Reformation, prompting all Catholic civilizations to decide if they want to convert to Protestantism.</German>
-		<Italian>Researching Academia as a Catholic civilization starts the Reformation, prompting all Catholic civilizations to decide if they want to convert to Protestantism.</Italian>
-		<Spanish>Researching Academia as a Catholic civilization starts the Reformation, prompting all Catholic civilizations to decide if they want to convert to Protestantism.</Spanish>
-	</TEXT>
+		<English>天主教文明研究完成学术精神科技将会开始改革，促使所有天主教文明决定是否要皈依新教。</English>
+		<L1/><L2/><L3/><L4/><Chinese>天主教文明研究完成学术精神科技将会开始改革，促使所有天主教文明决定是否要皈依新教。</Chinese><French>Researching Academia as a Catholic civilization starts the Reformation, prompting all Catholic civilizations to decide if they want to convert to Protestantism.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_18</Tag>
-		<English>In Dawn of Civilization, vassals do not have to give up tile control to their masters in the first ring around their cities.</English>
-		<French>Dans Dawn of Civilization, les vassaux ne c&#232;dent pas &#224; leur ma&#238;tre le contr&#244;le des cases adjacentes &#224; leurs villes.</French>
-		<German>In Dawn of Civilization, vassals do not have to give up tile control to their masters in the first ring around their cities.</German>
-		<Italian>In Dawn of Civilization, vassals do not have to give up tile control to their masters in the first ring around their cities.</Italian>
-		<Spanish>In Dawn of Civilization, vassals do not have to give up tile control to their masters in the first ring around their cities.</Spanish>
-	</TEXT>
+		<English>在文明的曙光中，附庸不必在城市周围的第一圈把控制权交给他们的主人。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文明的曙光中，附庸不必在城市周围的第一圈把控制权交给他们的主人。</Chinese><French>In Dawn of Civilization, vassals do not have to give up tile control to their masters in the first ring around their cities.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_19</Tag>
-		<English>When a UHV goal asks to control a civilization, you need to own more cities in their core than they do.</English>
-		<French>Quand un objectif de VHU n&#233;cessite de contr&#244;ler une civilisation, il faut poss&#233;der plus de villes dans leur c&#156;ur historique qu'eux.</French>
-		<German>When a UHV goal asks to control a civilization, you need to own more cities in their core than they do.</German>
-		<Italian>When a UHV goal asks to control a civilization, you need to own more cities in their core than they do.</Italian>
-		<Spanish>When a UHV goal asks to control a civilization, you need to own more cities in their core than they do.</Spanish>
-	</TEXT>
+		<English>当一个历史胜利目标要求控制一个文明，你需要拥有在他们的核心比他们更多的城市。</English>
+		<L1/><L2/><L3/><L4/><Chinese>当一个历史胜利目标要求控制一个文明，你需要拥有在他们的核心比他们更多的城市。</Chinese><French>When a UHV goal asks to control a civilization, you need to own more cities in their core than they do.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_20</Tag>
-		<English>Areas that are relevant to your UHV are displayed in light blue in the tile tooltip.</English>
-		<French>Les r&#233;gions pertinentes pour votre VHU apparaissent en bleu p&#226;le dans l'information de chaque case.</French>
-		<German>Areas that are relevant to your UHV are displayed in light blue in the tile tooltip.</German>
-		<Italian>Areas that are relevant to your UHV are displayed in light blue in the tile tooltip.</Italian>
-		<Spanish>Areas that are relevant to your UHV are displayed in light blue in the tile tooltip.</Spanish>
-	</TEXT>
+		<English>与历史胜利相关的区域在平铺工具提示中显示为浅蓝色。</English>
+		<L1/><L2/><L3/><L4/><Chinese>与历史胜利相关的区域在平铺工具提示中显示为浅蓝色。</Chinese><French>Areas that are relevant to your UHV are displayed in light blue in the tile tooltip.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_21</Tag>
-		<English>Dawn of Civilization is still actively developed. You can get the latest bugfixes and additions by using the Git version of the mod. Visit the forum under http://forums.civfanatics.com/forumdisplay.php?f=452 to find out how.</English>
-		<French>Dawn of Civilization est encore en d&#233;veloppement. Vous pouvez obtenir les derni&#232;res mises &#224; jour gr&#226;ce &#224; la version Git du mod. Visitez le forum &#224; l'adresse http://forums.civfanatics.com/forumdisplay.php?f=452 pour en savoir plus.</French>
-		<German>Dawn of Civilization is still actively developed. You can get the latest bugfixes and additions by using the Git version of the mod. Visit the forum under http://forums.civfanatics.com/forumdisplay.php?f=452 to find out how.</German>
-		<Italian>Dawn of Civilization is still actively developed. You can get the latest bugfixes and additions by using the Git version of the mod. Visit the forum under http://forums.civfanatics.com/forumdisplay.php?f=452 to find out how.</Italian>
-		<Spanish>Dawn of Civilization is still actively developed. You can get the latest bugfixes and additions by using the Git version of the mod. Visit the forum under http://forums.civfanatics.com/forumdisplay.php?f=452 to find out how.</Spanish>
-	</TEXT>
+		<English>文明的曙光仍在积极发展。您可以通过使用Git版本的mod获得最新的错误修复和添加。访问论坛http://forums.civfanatics.com/forumdisplay.php？f=452来找出原因。</English>
+		<L1/><L2/><L3/><L4/><Chinese>文明的曙光仍在积极发展。您可以通过使用Git版本的mod获得最新的错误修复和添加。访问论坛http://forums.civfanatics.com/forumdisplay.php？f=452来找出原因。</Chinese><French>Dawn of Civilization is still actively developed. You can get the latest bugfixes and additions by using the Git version of the mod. Visit the forum under http://forums.civfanatics.com/forumdisplay.php?f=452 to find out how.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_22</Tag>
-		<English>Catholicism is founded by the Great Schism, which occurs when more than half of all Orthodox cities fall outside of the control of Orthodox civilisations.</English>
-		<French>Le catholicisme est fond&#233; au moment du Grand Schisme, qui se produit lorsque plus de la moiti&#233; des villes orthodoxes tombent hors du contr&#244;le des civilisations orthodoxes.</French>
-		<German>Catholicism is founded by the Great Schism, which occurs when more than half of all Orthodox cities fall outside of the control of Orthodox civilisations.</German>
-		<Italian>Catholicism is founded by the Great Schism, which occurs when more than half of all Orthodox cities fall outside of the control of Orthodox civilisations.</Italian>
-		<Spanish>Catholicism is founded by the Great Schism, which occurs when more than half of all Orthodox cities fall outside of the control of Orthodox civilisations.</Spanish>
-	</TEXT>
+		<English>天主教是由大分裂建立的，当超过一半的东正教城市不受东正教文明的控制时，就会发生大分裂。</English>
+		<L1/><L2/><L3/><L4/><Chinese>天主教是由大分裂建立的，当超过一半的东正教城市不受东正教文明的控制时，就会发生大分裂。</Chinese><French>Catholicism is founded by the Great Schism, which occurs when more than half of all Orthodox cities fall outside of the control of Orthodox civilisations.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_23</Tag>
-		<English>The amount of cultures that Great Artists can generate using Great Works depends on the game era.</English>
-		<French>La quantit&#233; de culture engendr&#233;e lorsqu'un artiste illustre cr&#233;e un chef d'&#339;uvre d&#233;pend de l'&#232;re actuelle.</French>
-		<German>The amount of cultures that Great Artists can generate using Great Works depends on the game era.</German>
-		<Italian>The amount of cultures that Great Artists can generate using Great Works depends on the game era.</Italian>
-		<Spanish>The amount of cultures that Great Artists can generate using Great Works depends on the game era.</Spanish>
-	</TEXT>
+		<English>大艺术家能用巨作创造多少文化取决于游戏时代。</English>
+		<L1/><L2/><L3/><L4/><Chinese>大艺术家能用巨作创造多少文化取决于游戏时代。</Chinese><French>The amount of cultures that Great Artists can generate using Great Works depends on the game era.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_24</Tag>
-		<English>Train a persecutor to remove non-state religions from your cities.</English>
-		<French>Formez un inquisiteur si vous voulez retirer les religions non officielles de vos villes.</French>
-		<German>Train a persecutor to remove non-state religions from your cities.</German>
-		<Italian>Train a persecutor to remove non-state religions from your cities.</Italian>
-		<Spanish>Train a persecutor to remove non-state religions from your cities.</Spanish>
-	</TEXT>
+		<English>训练宗教审判官将非国教宗教从你们的城市中移除。</English>
+		<L1/><L2/><L3/><L4/><Chinese>训练宗教审判官将非国教宗教从你们的城市中移除。</Chinese><French>Train a persecutor to remove non-state religions from your cities.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_25</Tag>
-		<English>Confused about the expansion and civic stability rules? Look them up under the Concepts section in the Civilopedia!</English>
-		<French>Confus quant aux r&#232;gles qui r&#233;gissent la stabilit&#233; li&#233;e &#224; l'expansion et aux doctrines ? Consultez la section Concepts de la Civilop&#233;dia !</French>
-		<German>Confused about the expansion and civic stability rules? Look them up under the Concepts section in the Civilopedia!</German>
-		<Italian>Confused about the expansion and civic stability rules? Look them up under the Concepts section in the Civilopedia!</Italian>
-		<Spanish>Confused about the expansion and civic stability rules? Look them up under the Concepts section in the Civilopedia!</Spanish>
-	</TEXT>
+		<English>对扩张和政体稳定规则感到困惑？在文明百科的概念部分中查找它们！</English>
+		<L1/><L2/><L3/><L4/><Chinese>对扩张和政体稳定规则感到困惑？在文明百科的概念部分中查找它们！</Chinese><French>Confused about the expansion and civic stability rules? Look them up under the Concepts section in the Civilopedia!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_26</Tag>
-		<English>The soundtracks you hear during the Classical, Medieval and Renaissance eras depend on your state religion.</English>
-		<French>La musique d'ambiance de l'&#232;re classique, du Moyen &#194;ge et de la Renaissance d&#233;pend de votre religion d'&#201;tat.</French>
-		<German>The soundtracks you hear during the Classical, Medieval and Renaissance eras depend on your state religion.</German>
-		<Italian>The soundtracks you hear during the Classical, Medieval and Renaissance eras depend on your state religion.</Italian>
-		<Spanish>The soundtracks you hear during the Classical, Medieval and Renaissance eras depend on your state religion.</Spanish>
-	</TEXT>
+		<English>你在古典、中世纪和文艺复兴时期听到的原声取决于你的国教。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你在古典、中世纪和文艺复兴时期听到的原声取决于你的国教。</Chinese><French>The soundtracks you hear during the Classical, Medieval and Renaissance eras depend on your state religion.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_27</Tag>
-		<English>AI Romans and Greeks will receive armies to conquer the Mediterranean and Mesopotamia. Be prepared!</English>
-		<French>Lorsqu'ils sont contr&#244;l&#233;s par l'IA, les Romains et les Grecs re&#231;oivent des arm&#233;es pour conqu&#233;rir la r&#233;gion m&#233;diterran&#233;enne et la M&#233;sopotamie. Soyez pr&#234;t !</French>
-		<German>AI Romans and Greeks will receive armies to conquer the Mediterranean and Mesopotamia. Be prepared!</German>
-		<Italian>AI Romans and Greeks will receive armies to conquer the Mediterranean and Mesopotamia. Be prepared!</Italian>
-		<Spanish>AI Romans and Greeks will receive armies to conquer the Mediterranean and Mesopotamia. Be prepared!</Spanish>
-	</TEXT>
+		<English>计算机控制的罗马和希腊人将接受军队征服地中海和美索不达米亚。准备好了！</English>
+		<L1/><L2/><L3/><L4/><Chinese>计算机控制的罗马和希腊人将接受军队征服地中海和美索不达米亚。准备好了！</Chinese><French>AI Romans and Greeks will receive armies to conquer the Mediterranean and Mesopotamia. Be prepared!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_28</Tag>
-		<English>Cities on islands of size five or less also act as improvements for the resource they are founded on, yielding the full production and commerce increase for the city tile.</English>
-		<French>Lorsqu'une ville se situe sur une case de ressource au sein d'une &#238;le de cinq cases ou moins, sa case rapporte autant que production et de commerce que si l'am&#233;nagement appropri&#233; y &#233;tait construit.</French>
-		<German>Cities on islands of size five or less also act as improvements for the resource they are founded on, yielding the full production and commerce increase for the city tile.</German>
-		<Italian>Cities on islands of size five or less also act as improvements for the resource they are founded on, yielding the full production and commerce increase for the city tile.</Italian>
-		<Spanish>Cities on islands of size five or less also act as improvements for the resource they are founded on, yielding the full production and commerce increase for the city tile.</Spanish>
-	</TEXT>
+		<English>五个或以下地块岛屿上的城市也可以作为设施利用其所建立的资源，使城市地块的产能和商业得到充分的增长。</English>
+		<L1/><L2/><L3/><L4/><Chinese>五个或以下地块岛屿上的城市也可以作为设施利用其所建立的资源，使城市地块的产能和商业得到充分的增长。</Chinese><French>Cities on islands of size five or less also act as improvements for the resource they are founded on, yielding the full production and commerce increase for the city tile.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_29</Tag>
-		<English>Defeating Native units on your territory while using Slavery has a chance to create a slave unit.</English>
-		<French>Vaincre des unit&#233;s indig&#232;nes sur votre territoire peut cr&#233;er une unit&#233; d'esclave si vous avez adopt&#233; la doctrine de l'esclavage.</French>
-		<German>Defeating Native units on your territory while using Slavery has a chance to create a slave unit.</German>
-		<Italian>Defeating Native units on your territory while using Slavery has a chance to create a slave unit.</Italian>
-		<Spanish>Defeating Native units on your territory while using Slavery has a chance to create a slave unit.</Spanish>
-	</TEXT>
+		<English>在使用奴隶制度的时候击败你领土上的原住民有机会创造一个奴隶单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在使用奴隶制度的时候击败你领土上的原住民有机会创造一个奴隶单位。</Chinese><French>Defeating Native units on your territory while using Slavery has a chance to create a slave unit.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_30</Tag>
-		<English>Acquire slaves to build slave plantations or settle them in your cities. This option is only available in North America or in Africa unless your capital is in Africa.</English>
-		<French>Obtenez des esclaves pour construire des plantations &#224; esclaves ou pour les ajouter &#224; vos villes. Cette option est possible uniquement en Am&#233;rique du Nord et en Afrique, sauf si votre capitale se situe en Afrique.</French>
-		<German>Acquire slaves to build slave plantations or settle them in your cities. This option is only available in North America or in Africa unless your capital is in Africa.</German>
-		<Italian>Acquire slaves to build slave plantations or settle them in your cities. This option is only available in North America or in Africa unless your capital is in Africa.</Italian>
-		<Spanish>Acquire slaves to build slave plantations or settle them in your cities. This option is only available in North America or in Africa unless your capital is in Africa.</Spanish>
-	</TEXT>
+		<English>获得奴隶来建造奴隶种植园或在你们的城市定居。此选项仅在北美或非洲可用，除非您的首都在非洲。</English>
+		<L1/><L2/><L3/><L4/><Chinese>获得奴隶来建造奴隶种植园或在你们的城市定居。此选项仅在北美或非洲可用，除非您的首都在非洲。</Chinese><French>Acquire slaves to build slave plantations or settle them in your cities. This option is only available in North America or in Africa unless your capital is in Africa.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_31</Tag>
-		<English>If you run Slavery or Colonialism, you can trade slaves when interacting with other civilizations in the diplomacy interface.</English>
-		<French>Si vous avez adopt&#233; l'esclavage ou le colonialisme, vous pouvez &#233;changer des esclaves dans l'interface de diplomatie avec les autres civilisations.</French>
-		<German>If you run Slavery or Colonialism, you can trade slaves when interacting with other civilizations in the diplomacy interface.</German>
-		<Italian>If you run Slavery or Colonialism, you can trade slaves when interacting with other civilizations in the diplomacy interface.</Italian>
-		<Spanish>If you run Slavery or Colonialism, you can trade slaves when interacting with other civilizations in the diplomacy interface.</Spanish>
-	</TEXT>
+		<English>如果你经营奴隶制度或殖民主义，你可以在与其他文明的外交交往中交换奴隶。</English>
+		<L1/><L2/><L3/><L4/><Chinese>如果你经营奴隶制度或殖民主义，你可以在与其他文明的外交交往中交换奴隶。</Chinese><French>If you run Slavery or Colonialism, you can trade slaves when interacting with other civilizations in the diplomacy interface.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_32</Tag>
-		<English>Tribal villages are placed randomly at the beginning of the game.</English>
-		<French>Les villages tribaux sont plac&#233;s al&#233;atoirement au d&#233;but du jeu.</French>
-		<German>Tribal villages are placed randomly at the beginning of the game.</German>
-		<Italian>Tribal villages are placed randomly at the beginning of the game.</Italian>
-		<Spanish>Tribal villages are placed randomly at the beginning of the game.</Spanish>
-	</TEXT>
+		<English>部落村庄在游戏开始时是随机放置的。</English>
+		<L1/><L2/><L3/><L4/><Chinese>部落村庄在游戏开始时是随机放置的。</Chinese><French>Tribal villages are placed randomly at the beginning of the game.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_33</Tag>
-		<English>The area certain civilisations flip on spawn is not always identical to their core. Several civilizations can flip larger areas.</English>
-		<French>Lorsqu'une nouvelle civilisation appara&#238;t, la r&#233;gion qui lui revient automatiquement n'est pas forc&#233;ment identique &#224; son c&#156;ur historique. Plusieurs civilisations re&#231;oivent des r&#233;gions beaucoup plus &#233;tendues.</French>
-		<German>The area certain civilisations flip on spawn is not always identical to their core. Several civilizations can flip larger areas.</German>
-		<Italian>The area certain civilisations flip on spawn is not always identical to their core. Several civilizations can flip larger areas.</Italian>
-		<Spanish>The area certain civilisations flip on spawn is not always identical to their core. Several civilizations can flip larger areas.</Spanish>
-	</TEXT>
+		<English>某些文明在出生时翻转的区域并不总是与其核心相同。几个文明可以翻转更大的区域。</English>
+		<L1/><L2/><L3/><L4/><Chinese>某些文明在出生时翻转的区域并不总是与其核心相同。几个文明可以翻转更大的区域。</Chinese><French>The area certain civilisations flip on spawn is not always identical to their core. Several civilizations can flip larger areas.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_34</Tag>
-		<English>The core of several civilisations expands on certain conditions, such as entering a new era.</English>
-		<French>Le c&#156;ur historique de plusieurs civilisations prend de l'expansion lorsque certaines conditions sont r&#233;unies, par exemple l'entr&#233;e dans une nouvelle &#232;re.</French>
-		<German>The core of several civilisations expands on certain conditions, such as entering a new era.</German>
-		<Italian>The core of several civilisations expands on certain conditions, such as entering a new era.</Italian>
-		<Spanish>The core of several civilisations expands on certain conditions, such as entering a new era.</Spanish>
-	</TEXT>
+		<English>几个文明的核心在某些条件下扩展，例如进入一个新时代。</English>
+		<L1/><L2/><L3/><L4/><Chinese>几个文明的核心在某些条件下扩展，例如进入一个新时代。</Chinese><French>The core of several civilisations expands on certain conditions, such as entering a new era.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_35</Tag>
-		<English>The stability and flip zone maps for all civilizations can be found in the Maps folder.</English>
-		<French>Des cartes montrant pour chaque civilisation les zones de stabilit&#233; et le territoire &#224; la naissance peuvent &#234;tre consult&#233;es dans le dossier Maps.</French>
-		<German>The stability and flip zone maps for all civilizations can be found in the Maps folder.</German>
-		<Italian>The stability and flip zone maps for all civilizations can be found in the Maps folder.</Italian>
-		<Spanish>The stability and flip zone maps for all civilizations can be found in the Maps folder.</Spanish>
-	</TEXT>
+		<English>所有文明的稳定性和翻转区域地图都可以在“地图”文件夹中找到。</English>
+		<L1/><L2/><L3/><L4/><Chinese>所有文明的稳定性和翻转区域地图都可以在“地图”文件夹中找到。</Chinese><French>The stability and flip zone maps for all civilizations can be found in the Maps folder.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_36</Tag>
-		<English>The Tamil, Moorish, Tibetan, Polish and Congolese civilizations can be configured not to appear in every game. Edit the XML\GlobalDefinesAlt.xml file.</English>
-		<French>Les civilisations tamoule, maure, tib&#233;taine, polonaise et congolaise peuvent &#234;tre configur&#233;es de telle sorte qu'elles n'apparaissent pas &#224; chaque partie. Pour ce faire, il faut modifier le fichier XML\GlobalDefinesAlt.xml.</French>
-		<German>The Tamil, Moorish, Tibetan, Polish and Congolese civilizations can be configured not to appear in every game. Edit the XML\GlobalDefinesAlt.xml file.</German>
-		<Italian>The Tamil, Moorish, Tibetan, Polish and Congolese civilizations can be configured not to appear in every game. Edit the XML\GlobalDefinesAlt.xml file.</Italian>
-		<Spanish>The Tamil, Moorish, Tibetan, Polish and Congolese civilizations can be configured not to appear in every game. Edit the XML\GlobalDefinesAlt.xml file.</Spanish>
-	</TEXT>
+		<English>泰米尔、摩尔、西藏、波兰和刚果的文明可以配置为不出现在每一个游戏中。编辑XML\GlobalDefinesAlt.XML文件。</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔、摩尔、西藏、波兰和刚果的文明可以配置为不出现在每一个游戏中。编辑XML\GlobalDefinesAlt.XML文件。</Chinese><French>The Tamil, Moorish, Tibetan, Polish and Congolese civilizations can be configured not to appear in every game. Edit the XML\GlobalDefinesAlt.xml file.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_37</Tag>
-		<English>The Polynesian civilization is intended for the human player only. You can enable it for the AI in XML\GlobalDefinesAlt.xml, however its AI will not be geared towards playing successfully or realistically.</English>
-		<French>The Polynesian civilization is intended for the human player only. You can enable it for the AI in XML\GlobalDefinesAlt.xml, however its AI will not be geared towards playing successfully or realistically.</French> <!-- translate -->
-		<German>The Polynesian civilization is intended for the human player only. You can enable it for the AI in XML\GlobalDefinesAlt.xml, however its AI will not be geared towards playing successfully or realistically.</German>
-		<Italian>The Polynesian civilization is intended for the human player only. You can enable it for the AI in XML\GlobalDefinesAlt.xml, however its AI will not be geared towards playing successfully or realistically.</Italian>
-		<Spanish>The Polynesian civilization is intended for the human player only. You can enable it for the AI in XML\GlobalDefinesAlt.xml, however its AI will not be geared towards playing successfully or realistically.</Spanish>
-	</TEXT>
+		<English>波利尼西亚文明只为人类玩家设计。您可以在XML\GlobalDefinesAlt.XML中为人工智能启用它，但是它的人工智能不适合成功或真实地游玩。</English>
+		<!-- translate -->
+		<L1/><L2/><L3/><L4/><Chinese>波利尼西亚文明只为人类玩家设计。您可以在XML\GlobalDefinesAlt.XML中为人工智能启用它，但是它的人工智能不适合成功或真实地游玩。</Chinese><French>The Polynesian civilization is intended for the human player only. You can enable it for the AI in XML\GlobalDefinesAlt.xml, however its AI will not be geared towards playing successfully or realistically.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_38</Tag>
-		<English>Watch your stability level closely. Depending on your situation, it can increase or decrease after significant game events. If your civilisation is collapsing and your stability does not improve until the next check, it will collapse!</English>
-		<French>Attention &#224; votre niveau de stabilit&#233;. Selon votre situation, il peut augmenter ou diminuer lors d'&#233;v&#233;nements importants. Si votre civilisation est au bord de la chute et que votre stabilit&#233; ne s'am&#233;liore pas avant la prochaine v&#233;rification, vous vous effondrerez !</French>
-		<German>Watch your stability level closely. Depending on your situation, it can increase or decrease after significant game events. If your civilisation is collapsing and your stability does not improve until the next check, it will collapse!</German>
-		<Italian>Watch your stability level closely. Depending on your situation, it can increase or decrease after significant game events. If your civilisation is collapsing and your stability does not improve until the next check, it will collapse!</Italian>
-		<Spanish>Watch your stability level closely. Depending on your situation, it can increase or decrease after significant game events. If your civilisation is collapsing and your stability does not improve until the next check, it will collapse!</Spanish>
-	</TEXT>
+		<English>仔细观察你的稳定性度。根据你的情况，它可以在重大游戏事件后增加或减少。如果你的文明的稳定度处于“崩溃中”，而你的稳定在下一次检查之前没有改善，它就会崩溃！</English>
+		<L1/><L2/><L3/><L4/><Chinese>仔细观察你的稳定性度。根据你的情况，它可以在重大游戏事件后增加或减少。如果你的文明的稳定度处于“崩溃中”，而你的稳定在下一次检查之前没有改善，它就会崩溃！</Chinese><French>Watch your stability level closely. Depending on your situation, it can increase or decrease after significant game events. If your civilisation is collapsing and your stability does not improve until the next check, it will collapse!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_39</Tag>
-		<English>Stability checks are triggered by a variety of events including discovering techs, changing civics and losing or acquiring cities.</English>
-		<French>Les v&#233;rifications de stabilit&#233; sont caus&#233;es par divers &#233;v&#233;nements, comme la d&#233;couverte de technologies, les changements de doctrines et la perte ou l'acquisition de villes.</French>
-		<German>Stability checks are triggered by a variety of events including discovering techs, changing civics and losing or acquiring cities.</German>
-		<Italian>Stability checks are triggered by a variety of events including discovering techs, changing civics and losing or acquiring cities.</Italian>
-		<Spanish>Stability checks are triggered by a variety of events including discovering techs, changing civics and losing or acquiring cities.</Spanish>
-	</TEXT>
+		<English>稳定性检查是由各种各样的事件触发的，包括发现技术，改变公民和失去或收购城市。</English>
+		<L1/><L2/><L3/><L4/><Chinese>稳定性检查是由各种各样的事件触发的，包括发现技术，改变公民和失去或收购城市。</Chinese><French>Stability checks are triggered by a variety of events including discovering techs, changing civics and losing or acquiring cities.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_40</Tag>
-		<English>Golden Ages protect you from most negative effects of being unstable. The protection only lasts as long as the Golden Age, however.</English>
-		<French>Les &#226;ges d'or vous prot&#232;gent de la plupart des effets n&#233;gatifs de l'instabilit&#233;. Cependant, cette protection prend fin en m&#234;me temps que l'&#226;ge d'or.</French>
-		<German>Golden Ages protect you from most negative effects of being unstable. The protection only lasts as long as the Golden Age, however.</German>
-		<Italian>Golden Ages protect you from most negative effects of being unstable. The protection only lasts as long as the Golden Age, however.</Italian>
-		<Spanish>Golden Ages protect you from most negative effects of being unstable. The protection only lasts as long as the Golden Age, however.</Spanish>
-	</TEXT>
+		<English>黄金时期保护你免受不稳定的负面影响。然而，这种保护只持续到黄金时代。</English>
+		<L1/><L2/><L3/><L4/><Chinese>黄金时期保护你免受不稳定的负面影响。然而，这种保护只持续到黄金时代。</Chinese><French>Golden Ages protect you from most negative effects of being unstable. The protection only lasts as long as the Golden Age, however.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_41</Tag>
-		<English>DoC adds a new terrain feature, Rainforests. They resemble Jungles, but cause no unhealthiness and can be improved after the discovery of Alloys.</English>
-		<French>Dans Dawn of Civilization, une nouvelle caract&#233;ristique de terrain fait son apparition : les for&#234;ts tropicales. Elles sont similaires aux jungles, mais ne causent pas de maladie et peuvent &#234;tre am&#233;nag&#233;es apr&#232;s la d&#233;couverte des alliages.</French>
-		<German>DoC adds a new terrain feature, Rainforests. They resemble Jungles, but cause no unhealthiness and can be improved after the discovery of Alloys.</German>
-		<Italian>DoC adds a new terrain feature, Rainforests. They resemble Jungles, but cause no unhealthiness and can be improved after the discovery of Alloys.</Italian>
-		<Spanish>DoC adds a new terrain feature, Rainforests. They resemble Jungles, but cause no unhealthiness and can be improved after the discovery of Alloys.</Spanish>
-	</TEXT>
+		<English>DoC增加了一个新的地形特征，雨林。它们类似于丛林，但不会造成不健康，在发现合金科技后可以在其上修建设施。</English>
+		<L1/><L2/><L3/><L4/><Chinese>DoC增加了一个新的地形特征，雨林。它们类似于丛林，但不会造成不健康，在发现合金科技后可以在其上修建设施。</Chinese><French>DoC adds a new terrain feature, Rainforests. They resemble Jungles, but cause no unhealthiness and can be improved after the discovery of Alloys.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_42</Tag>
-		<English>In DoC, Ocean tiles start out yielding no food. Improvements on Ocean tiles require Compass, but in turn provide one additional food.</English>
-		<French>Dans Dawn of Civilization, les cases d'oc&#233;an ne rapportent pas de nourriture pour commencer. Les am&#233;nagements sur les cases d'oc&#233;an n&#233;cessitent la d&#233;couverte de la boussole, mais ils fournissent une nourriture additionnelle.</French>
-		<German>In DoC, Ocean tiles start out yielding no food. Improvements on Ocean tiles require Compass, but in turn provide one additional food.</German>
-		<Italian>In DoC, Ocean tiles start out yielding no food. Improvements on Ocean tiles require Compass, but in turn provide one additional food.</Italian>
-		<Spanish>In DoC, Ocean tiles start out yielding no food. Improvements on Ocean tiles require Compass, but in turn provide one additional food.</Spanish>
-	</TEXT>
+		<English>在DoC中，海洋地块开始不产生食物。在海洋地块修建设施需要罗盘科技，但反过来又提供了一个额外的食物。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在DoC中，海洋地块开始不产生食物。在海洋地块修建设施需要罗盘科技，但反过来又提供了一个额外的食物。</Chinese><French>In DoC, Ocean tiles start out yielding no food. Improvements on Ocean tiles require Compass, but in turn provide one additional food.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_43</Tag>
-		<English>Islands are a new maritime terrain feature that provides additional production, tile defense and faster culture spread.</English>
-		<French>Les &#238;les sont une nouvelle caract&#233;ristique des terrains maritimes. Elles rapportent de la production, fournissent un bonus de d&#233;fense et facilitent l'expansion culturelle.</French>
-		<German>Islands are a new maritime terrain feature that provides additional production, tile defense and faster culture spread.</German>
-		<Italian>Islands are a new maritime terrain feature that provides additional production, tile defense and faster culture spread.</Italian>
-		<Spanish>Islands are a new maritime terrain feature that provides additional production, tile defense and faster culture spread.</Spanish>
-	</TEXT>
+		<English>岛屿是一个新的海洋地形特征，提供额外的产能，地块防御和更快的文化传播。</English>
+		<L1/><L2/><L3/><L4/><Chinese>岛屿是一个新的海洋地形特征，提供额外的产能，地块防御和更快的文化传播。</Chinese><French>Islands are a new maritime terrain feature that provides additional production, tile defense and faster culture spread.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_44</Tag>
-		<English>Instead of spreading their culture in rings with every new culture level, cities spread cultural control over individual tiles as their culture grows.</English>
-		<French>Au lieu de prendre de l'expansion en cercles concentriques &#224; chaque niveau culturel, les villes &#233;tendent leur contr&#244;le sur des cases individuelles &#224; mesure que cro&#238;t leur culture.</French>
-		<German>Instead of spreading their culture in rings with every new culture level, cities spread cultural control over individual tiles as their culture grows.</German>
-		<Italian>Instead of spreading their culture in rings with every new culture level, cities spread cultural control over individual tiles as their culture grows.</Italian>
-		<Spanish>Instead of spreading their culture in rings with every new culture level, cities spread cultural control over individual tiles as their culture grows.</Spanish>
-	</TEXT>
+		<English>城市没有在每一个新的文化层次上把他们的文化传播成环状，而是随着文化的发展，把文化控制力分散到各个瓷砖上。</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市没有在每一个新的文化层次上把他们的文化传播成环状，而是随着文化的发展，把文化控制力分散到各个瓷砖上。</Chinese><French>Instead of spreading their culture in rings with every new culture level, cities spread cultural control over individual tiles as their culture grows.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_45</Tag>
-		<English>The amount of culture needed to cover a tile depends on its terrain type and features, as well as the distance to cities.</English>
-		<French>La quantit&#233; de culture requise pour recouvrir une case d&#233;pend de son type de terrain et des caract&#233;ristiques du terrain, ainsi que de la distance entre la case et les villes.</French>
-		<German>The amount of culture needed to cover a tile depends on its terrain type and features, as well as the distance to cities.</German>
-		<Italian>The amount of culture needed to cover a tile depends on its terrain type and features, as well as the distance to cities.</Italian>
-		<Spanish>The amount of culture needed to cover a tile depends on its terrain type and features, as well as the distance to cities.</Spanish>
-	</TEXT>
+		<English>覆盖地块所需的文化量取决于其地形类型和特征，以及与城市的距离。</English>
+		<L1/><L2/><L3/><L4/><Chinese>覆盖地块所需的文化量取决于其地形类型和特征，以及与城市的距离。</Chinese><French>The amount of culture needed to cover a tile depends on its terrain type and features, as well as the distance to cities.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_46</Tag>
-		<English>City culture will never expand beyond the third ring.</English>
-		<French>La culture d'une ville ne s'&#233;tendra jamais au-del&#224; du troisi&#232;me cercle concentrique.</French>
-		<German>City culture will never expand beyond the third ring.</German>
-		<Italian>City culture will never expand beyond the third ring.</Italian>
-		<Spanish>City culture will never expand beyond the third ring.</Spanish>
-	</TEXT>
+		<English>城市文化绝不会扩展到三环以外。</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市文化绝不会扩展到三环以外。</Chinese><French>City culture will never expand beyond the third ring.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_47</Tag>
-		<English>The amount of culture required for the next tile to be covered is displayed as tick marks on the culture bar in the city screen.</English>
-		<French>La quantit&#233; de culture requise pour recouvrir la prochaine case est montr&#233;e sous forme de graduations sur la barre de culture dans l'&#233;cran de la ville.</French>
-		<German>The amount of culture required for the next tile to be covered is displayed as tick marks on the culture bar in the city screen.</German>
-		<Italian>The amount of culture required for the next tile to be covered is displayed as tick marks on the culture bar in the city screen.</Italian>
-		<Spanish>The amount of culture required for the next tile to be covered is displayed as tick marks on the culture bar in the city screen.</Spanish>
-	</TEXT>
+		<English>在城市屏幕的文化栏上，将要覆盖下一个地块所需的文化量显示为刻度线。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在城市屏幕的文化栏上，将要覆盖下一个地块所需的文化量显示为刻度线。</Chinese><French>The amount of culture required for the next tile to be covered is displayed as tick marks on the culture bar in the city screen.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_48</Tag>
-		<English>A purple circle marks the next tile to be culturally covered in the city screen.</English>
-		<French>Un cercle violet montre la prochaine case &#224; &#234;tre recouverte culturellement dans l'&#233;cran de la ville.</French>
-		<German>A purple circle marks the next tile to be culturally covered in the city screen.</German>
-		<Italian>A purple circle marks the next tile to be culturally covered in the city screen.</Italian>
-		<Spanish>A purple circle marks the next tile to be culturally covered in the city screen.</Spanish>
-	</TEXT>
+		<English>城市屏幕上一个紫色的圆圈标志着下一个将会被文化覆盖的地块。</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市屏幕上一个紫色的圆圈标志着下一个将会被文化覆盖的地块。</Chinese><French>A purple circle marks the next tile to be culturally covered in the city screen.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_49</Tag>
-		<English>A Great Statesman can put an end to war or anarchy, improve diplomatic relations, build an Administrative Center or reform your civics for free.</English>
-		<French>Un homme d'&#201;tat illustre peut mettre fin &#224; une guerre ou &#224; l'anarchie, am&#233;liorer les relations diplomatiques, construire un centre administratif, ou r&#233;former vos doctrines gratuitement.</French>
-		<German>A Great Statesman can put an end to war or anarchy, improve diplomatic relations, build an Administrative Center or reform your civics for free.</German>
-		<Italian>A Great Statesman can put an end to war or anarchy, improve diplomatic relations, build an Administrative Center or reform your civics for free.</Italian>
-		<Spanish>A Great Statesman can put an end to war or anarchy, improve diplomatic relations, build an Administrative Center or reform your civics for free.</Spanish>
-	</TEXT>
+		<English>一个大政治家可以结束战争或无政府状态，改善外交关系，建立一个行政中心或免费改革你的政体。</English>
+		<L1/><L2/><L3/><L4/><Chinese>一个大政治家可以结束战争或无政府状态，改善外交关系，建立一个行政中心或免费改革你的政体。</Chinese><French>A Great Statesman can put an end to war or anarchy, improve diplomatic relations, build an Administrative Center or reform your civics for free.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_50</Tag>
-		<English>Oases provide more food and less commerce. It is also possible to build Cottages on Oases.</English>
-		<French>Les oasis rapportent plus de nourriture et moins de commerce. Il est aussi possible de construire des cottages sur les oasis.</French>
-		<German>Oases provide more food and less commerce. It is also possible to build Cottages on Oases.</German>
-		<Italian>Oases provide more food and less commerce. It is also possible to build Cottages on Oases.</Italian>
-		<Spanish>Oases provide more food and less commerce. It is also possible to build Cottages on Oases.</Spanish>
-	</TEXT>
+		<English>绿洲提供更多的食物和更少的商业。在绿洲上建小屋也是可能的。</English>
+		<L1/><L2/><L3/><L4/><Chinese>绿洲提供更多的食物和更少的商业。在绿洲上建小屋也是可能的。</Chinese><French>Oases provide more food and less commerce. It is also possible to build Cottages on Oases.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_51</Tag>
-		<English>Spies can now accumulate experience and acquire promotions by successfully completing missions.</English>
-		<French>Les espions peuvent d&#233;sormais accumuler de l'exp&#233;rience et obtenir des promotions lorsqu'ils r&#233;ussissent des missions.</French>
-		<German>Spies can now accumulate experience and acquire promotions by successfully completing missions.</German>
-		<Italian>Spies can now accumulate experience and acquire promotions by successfully completing missions.</Italian>
-		<Spanish>Spies can now accumulate experience and acquire promotions by successfully completing missions.</Spanish>
-	</TEXT>
+		<English>间谍现在可以通过成功完成任务来积累经验和获得晋升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>间谍现在可以通过成功完成任务来积累经验和获得晋升。</Chinese><French>Spies can now accumulate experience and acquire promotions by successfully completing missions.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_52</Tag>
-		<English>Spy specialists have been removed. Instead, global spy experience is accumulated similar to military experience. If the bar is full, your most experienced spy becomes a Great Spy.</English>
-		<French>Il n'y a plus de sp&#233;cialistes espions. &#192; la place, l'exp&#233;rience de tous vous espions s'accumule globalement comme l'exp&#233;rience des unit&#233;s militaires. Quand la barre est pleine, votre espion le plus exp&#233;riment&#233; devient un espion illustre.</French>
-		<German>Spy specialists have been removed. Instead, global spy experience is accumulated similar to military experience. If the bar is full, your most experienced spy becomes a Great Spy.</German>
-		<Italian>Spy specialists have been removed. Instead, global spy experience is accumulated similar to military experience. If the bar is full, your most experienced spy becomes a Great Spy.</Italian>
-		<Spanish>Spy specialists have been removed. Instead, global spy experience is accumulated similar to military experience. If the bar is full, your most experienced spy becomes a Great Spy.</Spanish>
-	</TEXT>
+		<English>间谍专家已被撤职。相反，全球间谍经验的积累与军事经验类似。如果间谍点数槽满了，你最有经验的间谍就会成为一个大间谍。</English>
+		<L1/><L2/><L3/><L4/><Chinese>间谍专家已被撤职。相反，全球间谍经验的积累与军事经验类似。如果间谍点数槽满了，你最有经验的间谍就会成为一个大间谍。</Chinese><French>Spy specialists have been removed. Instead, global spy experience is accumulated similar to military experience. If the bar is full, your most experienced spy becomes a Great Spy.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_53</Tag>
-		<English>If you have problems with game performance in the late game, enabling graphics paging in the BUG menu can help on some machines.</English>
-		<French>Si vous &#233;prouvez des probl&#232;mes avec la performance de jeu vers la fin de la partie, vous pouvez activer la pagination graphique dans le menu BUG. Cela peut am&#233;liorer la situation sur certains ordinateurs.</French>
-		<German>If you have problems with game performance in the late game, enabling graphics paging in the BUG menu can help on some machines.</German>
-		<Italian>If you have problems with game performance in the late game, enabling graphics paging in the BUG menu can help on some machines.</Italian>
-		<Spanish>If you have problems with game performance in the late game, enabling graphics paging in the BUG menu can help on some machines.</Spanish>
-	</TEXT>
+		<English>如果您在游戏后期遇到游戏性能问题，在BUG菜单中启用图形分页可以帮助某些设备。</English>
+		<L1/><L2/><L3/><L4/><Chinese>如果您在游戏后期遇到游戏性能问题，在BUG菜单中启用图形分页可以帮助某些设备。</Chinese><French>If you have problems with game performance in the late game, enabling graphics paging in the BUG menu can help on some machines.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_54</Tag>
-		<English>Civic combinations with positive or negative effects on stability are highlighted in the civics advisor.</English>
-		<French>Les combinaisons de doctrines avec des effets positifs ou n&#233;gatifs sur la stabilit&#233; sont mises en &#233;vidence dans l'&#233;cran du conseillers aux doctrines.</French>
-		<German>Civic combinations with positive or negative effects on stability are highlighted in the civics advisor.</German>
-		<Italian>Civic combinations with positive or negative effects on stability are highlighted in the civics advisor.</Italian>
-		<Spanish>Civic combinations with positive or negative effects on stability are highlighted in the civics advisor.</Spanish>
-	</TEXT>
+		<English>政体顾问中强调了对稳定性有正面或负面影响的城市组合。</English>
+		<L1/><L2/><L3/><L4/><Chinese>政体顾问中强调了对稳定性有正面或负面影响的城市组合。</Chinese><French>Civic combinations with positive or negative effects on stability are highlighted in the civics advisor.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_55</Tag>
-		<English>Religions spread gradually from around cities where the religion is already present. The presence of religious buildings increases the spread range.</English>
-		<French>Une religion se propage graduellement &#224; partir des villes o&#249; elle est d&#233;j&#224; pr&#233;sente. L'existence de b&#226;timents religieux augmente la port&#233;e de la propagation.</French>
-		<German>Religions spread gradually from around cities where the religion is already present. The presence of religious buildings increases the spread range.</German>
-		<Italian>Religions spread gradually from around cities where the religion is already present. The presence of religious buildings increases the spread range.</Italian>
-		<Spanish>Religions spread gradually from around cities where the religion is already present. The presence of religious buildings increases the spread range.</Spanish>
-	</TEXT>
+		<English>宗教逐渐从宗教已经存在的城市周围传播开来。宗教建筑的存在增加了传播范围。</English>
+		<L1/><L2/><L3/><L4/><Chinese>宗教逐渐从宗教已经存在的城市周围传播开来。宗教建筑的存在增加了传播范围。</Chinese><French>Religions spread gradually from around cities where the religion is already present. The presence of religious buildings increases the spread range.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_56</Tag>
-		<English>Religions spread faster in regions where they were historically present. In some regions religions can only spread if they are the state religion of the owner.</English>
-		<French>Une religion se propagera plus vite dans les r&#233;gions o&#249; elle a une pr&#233;sence historique. Dans certaines r&#233;gions, une religion donn&#233;e ne pourra se propager que si elle est la religion d'&#201;tat du propri&#233;taire des villes.</French>
-		<German>Religions spread faster in regions where they were historically present. In some regions religions can only spread if they are the state religion of the owner.</German>
-		<Italian>Religions spread faster in regions where they were historically present. In some regions religions can only spread if they are the state religion of the owner.</Italian>
-		<Spanish>Religions spread faster in regions where they were historically present. In some regions religions can only spread if they are the state religion of the owner.</Spanish>
-	</TEXT>
+		<English>宗教在历史上存在的地区传播得更快。在某些地区，宗教只有在它是所有者的国教时才能传播。</English>
+		<L1/><L2/><L3/><L4/><Chinese>宗教在历史上存在的地区传播得更快。在某些地区，宗教只有在它是所有者的国教时才能传播。</Chinese><French>Religions spread faster in regions where they were historically present. In some regions religions can only spread if they are the state religion of the owner.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_57</Tag>
-		<English>There is a chance that an existing religion disappears when a new religion spreads to a city. Religions can also disappear when too many of them are present, especially in smaller cities.</English>
-		<French>Lorsqu'une nouvelle religion se propage dans une ville, il est possible qu'une religion d&#233;j&#224; pr&#233;sente disparaisse. Les religions peuvent &#233;galement dispara&#238;tre lorsque trop d'entre elles sont pr&#233;sentes, en particulier dans les petites villes.</French>
-		<German>There is a chance that an existing religion disappears when a new religion spreads to a city. Religions can also disappear when too many of them are present, especially in smaller cities.</German>
-		<Italian>There is a chance that an existing religion disappears when a new religion spreads to a city. Religions can also disappear when too many of them are present, especially in smaller cities.</Italian>
-		<Spanish>There is a chance that an existing religion disappears when a new religion spreads to a city. Religions can also disappear when too many of them are present, especially in smaller cities.</Spanish>
-	</TEXT>
+		<English>当一个新的宗教传播到一个城市时，一个现存的宗教有可能消失。宗教也会在宗教太多的时候消失，特别是在小城市。</English>
+		<L1/><L2/><L3/><L4/><Chinese>当一个新的宗教传播到一个城市时，一个现存的宗教有可能消失。宗教也会在宗教太多的时候消失，特别是在小城市。</Chinese><French>There is a chance that an existing religion disappears when a new religion spreads to a city. Religions can also disappear when too many of them are present, especially in smaller cities.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_58</Tag>
-		<English>Only proselytizing religions, that is Buddhism, Christianity and Islam, can be spread by missionaries in civilizations with a different state religion.</English>
-		<French>Seules les religions poss&#233;dant une tradition de pros&#233;lytisme, soit le bouddhisme, le christianisme et l'islam, peuvent &#234;tre propag&#233;es par des missionnaires dans les civilisations ayant adopt&#233; une religion d'&#201;tat diff&#233;rente.</French>
-		<German>Only proselytizing religions, that is Buddhism, Christianity and Islam, can be spread by missionaries in civilizations with a different state religion.</German>
-		<Italian>Only proselytizing religions, that is Buddhism, Christianity and Islam, can be spread by missionaries in civilizations with a different state religion.</Italian>
-		<Spanish>Only proselytizing religions, that is Buddhism, Christianity and Islam, can be spread by missionaries in civilizations with a different state religion.</Spanish>
-	</TEXT>
+		<English>传教士只能在不同国家宗教的文明中传播传教宗教，即佛教、基督教和伊斯兰教。</English>
+		<L1/><L2/><L3/><L4/><Chinese>传教士只能在不同国家宗教的文明中传播传教宗教，即佛教、基督教和伊斯兰教。</Chinese><French>Only proselytizing religions, that is Buddhism, Christianity and Islam, can be spread by missionaries in civilizations with a different state religion.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_59</Tag>
-		<English>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</English>
-		<French>Dawn of Civilization poss&#232;de un tout nouvel arbre technologique fait de 141 technologies r&#233;parties sur 7 &#232;res.</French>
-		<German>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</German>
-		<Italian>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</Italian>
-		<Spanish>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</Spanish>
-	</TEXT>
+		<English>文明的曙光拥有一棵全新的科技树，由遍布7个时代的141项科技组成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>文明的曙光拥有一棵全新的科技树，由遍布7个时代的141项科技组成。</Chinese><French>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_60</Tag>
-		<English>The last two eras are now called the Global and Digital eras.</English>
-		<French>Les deux derni&#232;res &#232;res s'appellent d&#233;sormais l'&#232;re mondiale et l'&#232;re num&#233;rique.</French>
-		<German>The last two eras are now called the Global and Digital eras.</German>
-		<Italian>The last two eras are now called the Global and Digital eras.</Italian>
-		<Spanish>The last two eras are now called the Global and Digital eras.</Spanish>
-	</TEXT>
+		<English>最后两个时代现在被称为全球化时代和数字化时代。</English>
+		<L1/><L2/><L3/><L4/><Chinese>最后两个时代现在被称为全球化时代和数字化时代。</Chinese><French>The last two eras are now called the Global and Digital eras.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_61</Tag>
-		<English>Siege units are now much more expensive, but their increased withdrawal chance also makes them less expendable.</English>
-		<French>Les unit&#233;s de si&#232;ge sont d&#233;sormais plus co&#251;teuses, mais leur chance &#233;lev&#233;e de battre en retraite les rend plus durables.</French>
-		<German>Siege units are now much more expensive, but their increased withdrawal chance also makes them less expendable.</German>
-		<Italian>Siege units are now much more expensive, but their increased withdrawal chance also makes them less expendable.</Italian>
-		<Spanish>Siege units are now much more expensive, but their increased withdrawal chance also makes them less expendable.</Spanish>
-	</TEXT>
+		<English>攻城单位现在要贵得多，但是他们增加的撤退机会也使他们的消耗量减少。</English>
+		<L1/><L2/><L3/><L4/><Chinese>攻城单位现在要贵得多，但是他们增加的撤退机会也使他们的消耗量减少。</Chinese><French>Siege units are now much more expensive, but their increased withdrawal chance also makes them less expendable.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_62</Tag>
-		<English>Instead of starting with no religion, each civilisation starts with its own specific pagan religion. These religions do not have any of the benefits of major religions, however.</English>
-		<French>Au lieu de commencer la partie sans religion, chaque civilisation na&#238;t avec sa propre religion pa&#239;enne. Ces religions n'ont toutefois aucun des avantages des religions majeures.</French>
-		<German>Instead of starting with no religion, each civilisation starts with its own specific pagan religion. These religions do not have any of the benefits of major religions, however.</German>
-		<Italian>Instead of starting with no religion, each civilisation starts with its own specific pagan religion. These religions do not have any of the benefits of major religions, however.</Italian>
-		<Spanish>Instead of starting with no religion, each civilisation starts with its own specific pagan religion. These religions do not have any of the benefits of major religions, however.</Spanish>
-	</TEXT>
+		<English>每个文明不是从没有宗教开始的，而是从自己特定的异教徒宗教开始的。然而，这些宗教没有任何主要宗教的好处。</English>
+		<L1/><L2/><L3/><L4/><Chinese>每个文明不是从没有宗教开始的，而是从自己特定的异教徒宗教开始的。然而，这些宗教没有任何主要宗教的好处。</Chinese><French>Instead of starting with no religion, each civilisation starts with its own specific pagan religion. These religions do not have any of the benefits of major religions, however.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_63</Tag>
-		<English>The presence of non-state religions causes unhappiness in your cities, unless you adopt the Tolerance civic.</English>
-		<French>La pr&#233;sence de religions non officielles cause du malheur dans vos villes, &#224; moins que vous n'adoptiez la doctrine de la tol&#233;rance.</French>
-		<German>The presence of non-state religions causes unhappiness in your cities, unless you adopt the Tolerance civic.</German>
-		<Italian>The presence of non-state religions causes unhappiness in your cities, unless you adopt the Tolerance civic.</Italian>
-		<Spanish>The presence of non-state religions causes unhappiness in your cities, unless you adopt the Tolerance civic.</Spanish>
-	</TEXT>
+		<English>非国教宗教的存在会导致你们城市的不幸福，除非你们采取求同存异的政体态度。</English>
+		<L1/><L2/><L3/><L4/><Chinese>非国教宗教的存在会导致你们城市的不幸福，除非你们采取求同存异的政体态度。</Chinese><French>The presence of non-state religions causes unhappiness in your cities, unless you adopt the Tolerance civic.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_64</Tag>
-		<English>Units lose all their promotions when upgraded. A portion of the experience earned is refunded, depending on the strength difference between the previous and current unit type.</English>
-		<French>Les unit&#233;s perdent toutes leurs promotions lorsqu'elles sont am&#233;lior&#233;es. Une partie de leur exp&#233;rience leur est alors rembours&#233;e selon la diff&#233;rence de puissance entre les deux types d'unit&#233;s.</French>
-		<German>Units lose all their promotions when upgraded. A portion of the experience earned is refunded, depending on the strength difference between the previous and current unit type.</German>
-		<Italian>Units lose all their promotions when upgraded. A portion of the experience earned is refunded, depending on the strength difference between the previous and current unit type.</Italian>
-		<Spanish>Units lose all their promotions when upgraded. A portion of the experience earned is refunded, depending on the strength difference between the previous and current unit type.</Spanish>
-	</TEXT>
+		<English>单位升级后会失去所有的晋升。所获经验的一部分将退还，这取决于以前和当前单位类型之间的战斗力差异。</English>
+		<L1/><L2/><L3/><L4/><Chinese>单位升级后会失去所有的晋升。所获经验的一部分将退还，这取决于以前和当前单位类型之间的战斗力差异。</Chinese><French>Units lose all their promotions when upgraded. A portion of the experience earned is refunded, depending on the strength difference between the previous and current unit type.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_65</Tag>
-		<English>City defense now also protects against collateral damage: unit strength can never be reduced below the current defense modifier.</English>
-		<French>La d&#233;fense des villes prot&#232;ge maintenant contre les dommages collat&#233;raux : la sant&#233; des unit&#233;s ne peut jamais &#234;tre diminu&#233;e par les dommages collat&#233;raux au-del&#224; du modificateur de d&#233;fense actuel.</French>
-		<German>City defense now also protects against collateral damage: unit strength can never be reduced below the current defense modifier.</German>
-		<Italian>City defense now also protects against collateral damage: unit strength can never be reduced below the current defense modifier.</Italian>
-		<Spanish>City defense now also protects against collateral damage: unit strength can never be reduced below the current defense modifier.</Spanish>
-	</TEXT>
+		<English>城市防御现在也可以防止附带伤害：单位强度永远不能降低到低于当前防御修正值。</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市防御现在也可以防止附带伤害：单位强度永远不能降低到低于当前防御修正值。</Chinese><French>City defense now also protects against collateral damage: unit strength can never be reduced below the current defense modifier.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_66</Tag>
-		<English>Entering enemy waters consumes all remaining movement points.</English>
-		<French>Entrer dans les eaux territoriales de l'ennemi utilise tous les points de mouvements restants.</French>
-		<German>Entering enemy waters consumes all remaining movement points.</German>
-		<Italian>Entering enemy waters consumes all remaining movement points.</Italian>
-		<Spanish>Entering enemy waters consumes all remaining movement points.</Spanish>
-	</TEXT>
+		<English>进入敌方水域消耗所有剩余的移动点。</English>
+		<L1/><L2/><L3/><L4/><Chinese>进入敌方水域消耗所有剩余的移动点。</Chinese><French>Entering enemy waters consumes all remaining movement points.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_67</Tag>
-		<English>Bad health from power is multiplied by the number of buildings that consume power.</English>
-		<French>La maladie cr&#233;&#233;e par la production d'&#233;lectricit&#233; est multipli&#233;e par le nombre de b&#226;timents qui consomment de l'&#233;lectricit&#233;.</French>
-		<German>Bad health from power is multiplied by the number of buildings that consume power.</German>
-		<Italian>Bad health from power is multiplied by the number of buildings that consume power.</Italian>
-		<Spanish>Bad health from power is multiplied by the number of buildings that consume power.</Spanish>
-	</TEXT>
+		<English>电力造成的健康不良会乘以消耗电力的建筑物的数量。</English>
+		<L1/><L2/><L3/><L4/><Chinese>电力造成的健康不良会乘以消耗电力的建筑物的数量。</Chinese><French>Bad health from power is multiplied by the number of buildings that consume power.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_68</Tag>
-		<English>Enemy workers cannot be captured unless enabled by a civic.</English>
-		<French>Les ouvriers ennemis ne peuvent &#234;tre captur&#233;s sauf si vous adoptez la doctrine appropri&#233;e.</French>
-		<German>Enemy workers cannot be captured unless enabled by a civic.</German>
-		<Italian>Enemy workers cannot be captured unless enabled by a civic.</Italian>
-		<Spanish>Enemy workers cannot be captured unless enabled by a civic.</Spanish>
-	</TEXT>
+		<English>除非有政体的支持，否则敌人的工人是不能被俘虏的。</English>
+		<L1/><L2/><L3/><L4/><Chinese>除非有政体的支持，否则敌人的工人是不能被俘虏的。</Chinese><French>Enemy workers cannot be captured unless enabled by a civic.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_69</Tag>
-		<English>The number of National Wonders and Great Wonders that can be built in a city is limited by its culture level.</English>
-		<French>Le nombre de merveilles nationales et de merveilles du monde pouvant &#234;tre construites dans une ville est limit&#233; par son niveau culturel.</French>
-		<German>The number of National Wonders and Great Wonders that can be built in a city is limited by its culture level.</German>
-		<Italian>The number of National Wonders and Great Wonders that can be built in a city is limited by its culture level.</Italian>
-		<Spanish>The number of National Wonders and Great Wonders that can be built in a city is limited by its culture level.</Spanish>
-	</TEXT>
+		<English>一个城市能够建造的民族奇观和世界奇观的数量受到其文化水平的限制。</English>
+		<L1/><L2/><L3/><L4/><Chinese>一个城市能够建造的民族奇观和世界奇观的数量受到其文化水平的限制。</Chinese><French>The number of National Wonders and Great Wonders that can be built in a city is limited by its culture level.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_70</Tag>
-		<English>Many classical wonders can only be built with no state religion in cities without any religions.</English>
-		<French>De nombreuses merveilles de l'&#232;re classique ne peuvent &#234;tre constuites que par des civilisations sans religion d'&#201;tat, et dans des villes sans religions.</French>
-		<German>Many classical wonders can only be built with no state religion in cities without any religions.</German>
-		<Italian>Many classical wonders can only be built with no state religion in cities without any religions.</Italian>
-		<Spanish>Many classical wonders can only be built with no state religion in cities without any religions.</Spanish>
-	</TEXT>
+		<English>在没有宗教的城市中，只有没有国教才能建立许多古典奇观。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在没有宗教的城市中，只有没有国教才能建立许多古典奇观。</Chinese><French>Many classical wonders can only be built with no state religion in cities without any religions.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_71</Tag>
-		<English>Mounted units have been split into Light Cavalry and Heavy Cavalry.</English>
-		<French>Les unit&#233;s mont&#233;es ont &#233;t&#233; divis&#233;es en deux cat&#233;gories : cavalerie l&#233;g&#232;re et cavalerie lourde.</French>
-		<German>Mounted units have been split into Light Cavalry and Heavy Cavalry.</German>
-		<Italian>Mounted units have been split into Light Cavalry and Heavy Cavalry.</Italian>
-		<Spanish>Mounted units have been split into Light Cavalry and Heavy Cavalry.</Spanish>
-	</TEXT>
+		<English>骑兵单位分为轻骑兵和重骑兵。</English>
+		<L1/><L2/><L3/><L4/><Chinese>骑兵单位分为轻骑兵和重骑兵。</Chinese><French>Mounted units have been split into Light Cavalry and Heavy Cavalry.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_72</Tag>
-		<English>Some units are stronger in open terrain. Tiles that are flat, have no features with defensive bonuses, and do not contain a city or fort count as open terrain.</English>
-		<French>Certaines unit&#233;s sont plus puissantes en terrain d&#233;gag&#233;. Pour compter comme un terrain d&#233;gag&#233;, une case doit &#234;tre plate, ne pas poss&#233;der de caract&#233;ristique avec un bonus de d&#233;fense, et ne pas contenir de ville ou de fort.</French>
-		<German>Some units are stronger in open terrain. Tiles that are flat, have no features with defensive bonuses, and do not contain a city or fort count as open terrain.</German>
-		<Italian>Some units are stronger in open terrain. Tiles that are flat, have no features with defensive bonuses, and do not contain a city or fort count as open terrain.</Italian>
-		<Spanish>Some units are stronger in open terrain. Tiles that are flat, have no features with defensive bonuses, and do not contain a city or fort count as open terrain.</Spanish>
-	</TEXT>
+		<English>有些单位在开阔的地形上更强大。平坦的地貌，没有防御加值的特征，并且不包含城市或堡垒，被视为开放地形。</English>
+		<L1/><L2/><L3/><L4/><Chinese>有些单位在开阔的地形上更强大。平坦的地貌，没有防御加值的特征，并且不包含城市或堡垒，被视为开放地形。</Chinese><French>Some units are stronger in open terrain. Tiles that are flat, have no features with defensive bonuses, and do not contain a city or fort count as open terrain.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_73</Tag>
-		<English>In addition to discovering the associated technology, to found a religion you also need to control a city in its historical core region.</English>
-		<French>Pour fonder une religion, vous devez non seulement d&#233;couvrir la technologie appropri&#233;e, mais aussi contr&#244;ler une ville dans le c&#156;ur historique de la religion.</French>
-		<German>In addition to discovering the associated technology, to found a religion you also need to control a city in its historical core region.</German>
-		<Italian>In addition to discovering the associated technology, to found a religion you also need to control a city in its historical core region.</Italian>
-		<Spanish>In addition to discovering the associated technology, to found a religion you also need to control a city in its historical core region.</Spanish>
-	</TEXT>
+		<English>除了发现相关的科技，要发现一个宗教，你还需要控制这个宗教历史核心区域的一个城市。</English>
+		<L1/><L2/><L3/><L4/><Chinese>除了发现相关的科技，要发现一个宗教，你还需要控制这个宗教历史核心区域的一个城市。</Chinese><French>In addition to discovering the associated technology, to found a religion you also need to control a city in its historical core region.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_74</Tag>
-		<English>Resources now only supply a limited number of cities with happiness or health. Acquire additional instances of a resource to keep your growing empire supplied!</English>
-		<French>Les ressources fournissent de la sant&#233; et du bonheur &#224; un nombre d&#233;sormais limit&#233; de villes. Obtenez davantage de copies d'une ressource pour approvisionner votre empire en expansion !</French>
-		<German>Resources now only supply a limited number of cities with happiness or health. Acquire additional instances of a resource to keep your growing empire supplied!</German>
-		<Italian>Resources now only supply a limited number of cities with happiness or health. Acquire additional instances of a resource to keep your growing empire supplied!</Italian>
-		<Spanish>Resources now only supply a limited number of cities with happiness or health. Acquire additional instances of a resource to keep your growing empire supplied!</Spanish>
-	</TEXT>
+		<English>现在，资源只能为有限数量的城市带来幸福或健康。 获取更多的资源，以保持您不断发展的帝国！</English>
+		<L1/><L2/><L3/><L4/><Chinese>现在，资源只能为有限数量的城市带来幸福或健康。 获取更多的资源，以保持您不断发展的帝国！</Chinese><French>Resources now only supply a limited number of cities with happiness or health. Acquire additional instances of a resource to keep your growing empire supplied!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_75</Tag>
-		<English>The late game has been expanded: the last technologies in the tech tree are more expensive to research, but also provide more content in the form of additional buildings and projects as well as the ability to build satellites.</English>
-		<French>The late game has been expanded: the last technologies in the tech tree are more expensive to research, but also provide more content in the form of additional buildings and projects as well as the ability to build satellites.</French>
-		<German>The late game has been expanded: the last technologies in the tech tree are more expensive to research, but also provide more content in the form of additional buildings and projects as well as the ability to build satellites.</German>
-		<Italian>The late game has been expanded: the last technologies in the tech tree are more expensive to research, but also provide more content in the form of additional buildings and projects as well as the ability to build satellites.</Italian>
-		<Spanish>The late game has been expanded: the last technologies in the tech tree are more expensive to research, but also provide more content in the form of additional buildings and projects as well as the ability to build satellites.</Spanish>
-	</TEXT>
+		<English>后期的游戏已得到扩展：科技树中的最新科技研究成本更高，但还可以通过其他建筑物和项目以及建造卫星的能力提供更多内容。</English>
+		<L1/><L2/><L3/><L4/><Chinese>后期的游戏已得到扩展：科技树中的最新科技研究成本更高，但还可以通过其他建筑物和项目以及建造卫星的能力提供更多内容。</Chinese><French>The late game has been expanded: the last technologies in the tech tree are more expensive to research, but also provide more content in the form of additional buildings and projects as well as the ability to build satellites.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_76</Tag>
-		<English>To win the Space Victory, you now have to construct a permanent base on Mars, instead of sending a colony ship to Alpha Centauri</English>
-		<French>To win the Space Victory, you now have to construct a permanent base on Mars, instead of sending a colony ship to Alpha Centauri</French>
-		<German>To win the Space Victory, you now have to construct a permanent base on Mars, instead of sending a colony ship to Alpha Centauri</German>
-		<Italian>To win the Space Victory, you now have to construct a permanent base on Mars, instead of sending a colony ship to Alpha Centauri</Italian>
-		<Spanish>To win the Space Victory, you now have to construct a permanent base on Mars, instead of sending a colony ship to Alpha Centauri</Spanish>
-	</TEXT>
+		<English>为了赢得太空胜利，你现在必须在火星上建立一个永久性的基地，而不是把殖民地飞船送到半人马座阿尔法星。</English>
+		<L1/><L2/><L3/><L4/><Chinese>为了赢得太空胜利，你现在必须在火星上建立一个永久性的基地，而不是把殖民地飞船送到半人马座阿尔法星。</Chinese><French>To win the Space Victory, you now have to construct a permanent base on Mars, instead of sending a colony ship to Alpha Centauri</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_77</Tag>
-		<English>The space race has become a lot more detailed: many projects are required to enable the Space Victory, each giving additional benefits to the first civilisation to complete them. Several projects unrelated to the Space Victory also synergise with investing in space production.</English>
-		<French>The space race has become a lot more detailed: many projects are required to enable the Space Victory, each giving additional benefits to the first civilisation to complete them. Several projects unrelated to the Space Victory also synergise with investing in space production.</French>
-		<German>The space race has become a lot more detailed: many projects are required to enable the Space Victory, each giving additional benefits to the first civilisation to complete them. Several projects unrelated to the Space Victory also synergise with investing in space production.</German>
-		<Italian>The space race has become a lot more detailed: many projects are required to enable the Space Victory, each giving additional benefits to the first civilisation to complete them. Several projects unrelated to the Space Victory also synergise with investing in space production.</Italian>
-		<Spanish>The space race has become a lot more detailed: many projects are required to enable the Space Victory, each giving additional benefits to the first civilisation to complete them. Several projects unrelated to the Space Victory also synergise with investing in space production.</Spanish>
-	</TEXT>
+		<English>太空竞赛已经变得更加详细：需要许多项目来实现太空胜利，而每一个项目都会给完成它们的第一个文明带来额外的利益。 与太空胜利无关的几个项目也与对太空竞赛的投资相互配合。</English>
+		<L1/><L2/><L3/><L4/><Chinese>太空竞赛已经变得更加详细：需要许多项目来实现太空胜利，而每一个项目都会给完成它们的第一个文明带来额外的利益。 与太空胜利无关的几个项目也与对太空竞赛的投资相互配合。</Chinese><French>The space race has become a lot more detailed: many projects are required to enable the Space Victory, each giving additional benefits to the first civilisation to complete them. Several projects unrelated to the Space Victory also synergise with investing in space production.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_78</Tag>
-		<English>Some major civilisations have a second unique unit.</English>
-		<French>Some major civilisations have a second unique unit.</French>
-		<German>Some major civilisations have a second unique unit.</German>
-		<Italian>Some major civilisations have a second unique unit.</Italian>
-		<Spanish>Some major civilisations have a second unique unit.</Spanish>
-	</TEXT>
+		<English>一些主要文明有第二个独特的单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>一些主要文明有第二个独特的单位。</Chinese><French>Some major civilisations have a second unique unit.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_77</Tag>
-		<English>When capturing a city, you now have the additional options to sack or spare it. More gold can be plundered in sacked cities, at the cost of more severe building damage and unrest. Sparing cities reduces unrest and building damage but instead costs money.</English>
-		<French>When capturing a city, you now have the additional options to sack or spare it. More gold can be plundered in sacked cities, at the cost of more severe building damage and unrest. Sparing cities reduces unrest and building damage but instead costs money.</French>
-		<German>When capturing a city, you now have the additional options to sack or spare it. More gold can be plundered in sacked cities, at the cost of more severe building damage and unrest. Sparing cities reduces unrest and building damage but instead costs money.</German>
-		<Italian>When capturing a city, you now have the additional options to sack or spare it. More gold can be plundered in sacked cities, at the cost of more severe building damage and unrest. Sparing cities reduces unrest and building damage but instead costs money.</Italian>
-		<Spanish>When capturing a city, you now have the additional options to sack or spare it. More gold can be plundered in sacked cities, at the cost of more severe building damage and unrest. Sparing cities reduces unrest and building damage but instead costs money.</Spanish>
-	</TEXT>
+		<English>当你占领一个城市时，你现在有了更多的选择，可以清理它或者洗劫它。洗劫一个城市带来更多的黄金，代价是更严重的建筑破坏和动乱。清理城市可以减少动乱时间和建筑破坏，但要花钱。</English>
+		<L1/><L2/><L3/><L4/><Chinese>当你占领一个城市时，你现在有了更多的选择，可以清理它或者洗劫它。洗劫一个城市带来更多的黄金，代价是更严重的建筑破坏和动乱。清理城市可以减少动乱时间和建筑破坏，但要花钱。</Chinese><French>When capturing a city, you now have the additional options to sack or spare it. More gold can be plundered in sacked cities, at the cost of more severe building damage and unrest. Sparing cities reduces unrest and building damage but instead costs money.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_78</Tag>
-		<English>Cities no longer just lose one population when captured. Large cities can lose additional population, especially if you decide to sack them.</English>
-		<French>Cities no longer just lose one population when captured. Large cities can lose additional population, especially if you decide to sack them.</French>
-		<German>Cities no longer just lose one population when captured. Large cities can lose additional population, especially if you decide to sack them.</German>
-		<Italian>Cities no longer just lose one population when captured. Large cities can lose additional population, especially if you decide to sack them.</Italian>
-		<Spanish>Cities no longer just lose one population when captured. Large cities can lose additional population, especially if you decide to sack them.</Spanish>
-	</TEXT>
+		<English>城市在被占领时不再仅仅失去一个人口。大城市会失去更多的人口，特别是如果你决定洗劫他们。</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市在被占领时不再仅仅失去一个人口。大城市会失去更多的人口，特别是如果你决定洗劫他们。</Chinese><French>Cities no longer just lose one population when captured. Large cities can lose additional population, especially if you decide to sack them.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_79</Tag>
-		<English>Cities cannot be instantly razed anymore. After ordering a city to be razed, it will lose population each turn while in unrest, and finally be destroyed when the population reaches zero.</English>
-		<French>Cities cannot be instantly razed anymore. After ordering a city to be razed, it will lose population each turn while in unrest, and finally be destroyed when the population reaches zero.</French>
-		<German>Cities cannot be instantly razed anymore. After ordering a city to be razed, it will lose population each turn while in unrest, and finally be destroyed when the population reaches zero.</German>
-		<Italian>Cities cannot be instantly razed anymore. After ordering a city to be razed, it will lose population each turn while in unrest, and finally be destroyed when the population reaches zero.</Italian>
-		<Spanish>Cities cannot be instantly razed anymore. After ordering a city to be razed, it will lose population each turn while in unrest, and finally be destroyed when the population reaches zero.</Spanish>
-	</TEXT>
+		<English>城市不能马上被夷为平地。命令摧毁城市后，它在动乱中每经过一个回合就会失去人口，最后在人口达到零时被摧毁。</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市不能马上被夷为平地。命令摧毁城市后，它在动乱中每经过一个回合就会失去人口，最后在人口达到零时被摧毁。</Chinese><French>Cities cannot be instantly razed anymore. After ordering a city to be razed, it will lose population each turn while in unrest, and finally be destroyed when the population reaches zero.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_80</Tag>
-		<English>You can use a settler to immediately construct buildings in a city. This will give all buildings that a new city would receive for free when founded.</English>
-		<French>You can use a settler to immediately construct buildings in a city. This will give all buildings that a new city would receive for free when founded.</French>
-		<German>You can use a settler to immediately construct buildings in a city. This will give all buildings that a new city would receive for free when founded.</German>
-		<Italian>You can use a settler to immediately construct buildings in a city. This will give all buildings that a new city would receive for free when founded.</Italian>
-		<Spanish>You can use a settler to immediately construct buildings in a city. This will give all buildings that a new city would receive for free when founded.</Spanish>
-	</TEXT>
+		<English>你可以使用一个移民立即在一个城市建造建筑物。这将提供一个新城市建成后将免费获得的所有建筑。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你可以使用一个移民立即在一个城市建造建筑物。这将提供一个新城市建成后将免费获得的所有建筑。</Chinese><French>You can use a settler to immediately construct buildings in a city. This will give all buildings that a new city would receive for free when founded.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
-	</TEXT>
+		<English/>
+		<L1/><L2/><L3/><L4/><French></French></TEXT>
 </Civ4GameText>

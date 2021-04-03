@@ -1,532 +1,269 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='GBK'?>
 <!-- Congress -->
 <Civ4GameText>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_ACCEPT</Tag>
-		<English>Accept</English>
-		<French>Accepter</French>
-		<German>Akzeptieren</German>
-		<Italian>Accept</Italian>
-		<Spanish>Accept</Spanish>
-	</TEXT>
+		<English>接受</English>
+		<L1/><L2/><L3/><L4/><Chinese>接受</Chinese><French>Accept</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_ACCEPT_DECISION</Tag>
-		<English>Accept the decision and leave the city</English>
-		<French>Accepter la d&#233;cision et quitter la ville</French>
-		<German>Votum akzeptieren und Stadt &#252;bereignen</German>
-		<Italian>Accetta la decisione e lascia la citt&#224;.</Italian>
-		<Spanish>Aceptar la decisi&#243;n y ceder la ciudad</Spanish>
-	</TEXT>
+		<English>同意放弃该城</English>
+		<L1/><L2/><L3/><L4/><Chinese>同意放弃该城</Chinese><French>Accept the decision and leave the city</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_BRIBE_GOLD</Tag>
-		<English>Attempt to bribe their representatives (%s2: %d1 [ICON_GOLD])</English>
-		<French>Tenter de soudoyer leurs d&#233;l&#233;gu&#233;s (%s2 : %d1 [ICON_GOLD])</French>
-		<German>Versucht, ihre Delegierten zu bestechen (%s2: %d1 [ICON_GOLD])</German>
-		<Italian>Attempt to bribe their representatives (%s2: %d1 [ICON_GOLD])</Italian>
-		<Spanish>Attempt to bribe their representatives (%s2: %d1 [ICON_GOLD])</Spanish>
-	</TEXT>
+		<English>试图贿赂他们的代表（%s2:%d1[ICON_GOLD]）</English>
+		<L1/><L2/><L3/><L4/><Chinese>试图贿赂他们的代表（%s2:%d1[ICON_GOLD]）</Chinese><French>Attempt to bribe their representatives (%s2: %d1 [ICON_GOLD])</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_BRIBE_OWN_CITY</Tag>
-		<English>The congress is currently debating the %s2 claim on our city of %s3, and it might be possible to influence the %s1 decision. What should we do?</English>
-		<French>Le congr&#232;s discute de la revendication %s2 sur notre ville de %s3, et il serait possible d'influencer la d&#233;cision %s1. Que devons-nous faire ?</French>
-		<German>Der Kongress debattiert im Moment die %s2 Forderung unserer Stadt %s3, und es k&#246;nnte m&#246;glich sein, die %s1 Entscheidung zu beeinflussen. Was sollen wir tun?</German>
-		<Italian>The congress is currently debating the %s2 claim on our city of %s3, and it might be possible to influence the %s1 decision. What should we do?</Italian>
-		<Spanish>The congress is currently debating the %s2 claim on our city of %s3, and it might be possible to influence the %s1 decision. What should we do?</Spanish>
-	</TEXT>
+		<English>国际会议目前正在就%s2在我们的城市%s3的主张进行辩论，可能会影响%s1的决定。我们该怎么办？</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际会议目前正在就%s2在我们的城市%s3的主张进行辩论，可能会影响%s1的决定。我们该怎么办？</Chinese><French>The congress is currently debating the %s2 claim on our city of %s3, and it might be possible to influence the %s1 decision. What should we do?</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_BRIBE_OWN_CLAIM_CITY</Tag>
-		<English>%s1 opinion on our claim on the %s2 city of %s3 is divided. It might be possible to influence their decision. What should we do?</English>
-		<French>L'opinion %s1 quant &#224; notre revendication de la ville %s2 de %s3 est partag&#233;e. Il serait possible d'influencer leur d&#233;cision. Que devons-nous faire ?</French>
-		<German>Die %s1 Meinungen zu unserer Forderung der %s2 Stadt %s3 sind gespalten. Es k&#246;nnte m&#246;glich sein, ihre Entscheidung zu beeinflussen. Was sollen wir tun?</German>
-		<Italian>%s1 opinion on our claim on the %s2 city of %s3 is divided. It might be possible to influence their decision. What should we do?</Italian>
-		<Spanish>%s1 opinion on our claim on the %s2 city of %s3 is divided. It might be possible to influence their decision. What should we do?</Spanish>
-	</TEXT>
+		<English>%s1我们对%s2城市%s3的索赔有不同的意见。可能会影响他们的决定。我们该怎么办？</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1我们对%s2城市%s3的索赔有不同的意见。可能会影响他们的决定。我们该怎么办？</Chinese><French>%s1 opinion on our claim on the %s2 city of %s3 is divided. It might be possible to influence their decision. What should we do?</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_BRIBE_OWN_CLAIM_COLONY</Tag>
-		<English>%s1 opinion on our request to colonize the %s2 territory near %s3 is divided. It might be possible to influence their decision. What should we do?</English>
-		<French>L'opinion %s1 quant &#224; notre demande de colonisation du territoire %s2 &#224; proximit&#233; de %s3 est partag&#233;e. Il serait possible d'influencer leur d&#233;cision. Que devons-nous faire ?</French>
-		<German>Die %s1 Meinungen zu unserem Antrag, das %s2 Gebiet nahe %s3 zu kolonisieren, ist gespalten. Es k&#246;nnte m&#246;glich sein, ihre Entscheidung zu beeinflussen. Was sollen wir tun?</German>
-		<Italian>%s1 opinion on our request to colonize the %s2 territory near %s3 is divided. It might be possible to influence their decision. What should we do?</Italian>
-		<Spanish>%s1 opinion on our request to colonize the %s2 territory near %s3 is divided. It might be possible to influence their decision. What should we do?</Spanish>
-	</TEXT>
+		<English>%s1对我们在%s3附近殖民%s2领土的要求，s1意见分歧。可能会影响他们的决定。我们该怎么办？</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1对我们在%s3附近殖民%s2领土的要求，s1意见分歧。可能会影响他们的决定。我们该怎么办？</Chinese><French>%s1 opinion on our request to colonize the %s2 territory near %s3 is divided. It might be possible to influence their decision. What should we do?</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_BRIBE_OWN_CLAIM_FAILURE</Tag>
-		<English>%s1 has rejected our clumsy attempts to influence their decision! They have voted against our claim, and our relations have soured in consequence.</English>
-		<French>[NUM1:Le:La] %s1 a rejet&#233; notre tentative maladroite d'influencer leur d&#233;cision ! Ils ont vot&#233; contre notre demande, et nos relations avec eux se sont d&#233;grad&#233;es.</French>
-		<German>%s1 hat unsere ungeschickten Versuche, ihre Entscheidung zu beeinflussen, zur&#252;ckgewiesen! Sie haben gegen unsere Forderung gestimmt, und in Folge haben sich unsere Beziehungen verschlechtert.</German>
-		<Italian>%s1 has rejected our clumsy attempts to influence their decision! They have voted against our claim, and our relations have soured in consequence.</Italian>
-		<Spanish>%s1 has rejected our clumsy attempts to influence their decision! They have voted against our claim, and our relations have soured in consequence.</Spanish>
-	</TEXT>
+		<English>%s1拒绝了我们影响他们决定的笨拙尝试！他们投票反对我们的要求，我们的关系因此恶化。</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1拒绝了我们影响他们决定的笨拙尝试！他们投票反对我们的要求，我们的关系因此恶化。</Chinese><French>%s1 has rejected our clumsy attempts to influence their decision! They have voted against our claim, and our relations have soured in consequence.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_BRIBE_OWN_CLAIM_SUCCESS</Tag>
-		<English>The attempt was successful! %s1 will now support our claim.</English>
-		<French>La tentative a r&#233;ussi ! [NUM1:Le:La] %s1 appuiera donc notre demande.</French>
-		<German>Der Versuch war erfolgreich! %s1 wird unsere Forderung nun unterst&#252;tzen.</German>
-		<Italian>The attempt was successful! %s1 will now support our claim.</Italian>
-		<Spanish>The attempt was successful! %s1 will now support our claim.</Spanish>
-	</TEXT>
+		<English>尝试成功了！%s1现在将支持我们的索赔。</English>
+		<L1/><L2/><L3/><L4/><Chinese>尝试成功了！%s1现在将支持我们的索赔。</Chinese><French>The attempt was successful! %s1 will now support our claim.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_BRIBE_OWN_TERRITORY</Tag>
-		<English>The congress is currently debating the %s2 request to colonize our territory near %s3, and it might be possible to influence the %s1 decision. What should we do?</English>
-		<French>Le congr&#232;s discute de la demande %s2 de coloniser notre territoire &#224; proximit&#233; de %s3, et il serait possible d'influencer la d&#233;cision %s1. Que devons-nous faire ?</French>
-		<German>Der Kongress debattiert im Moment den %s2 Antrag, unser Gebiet nahe %s3 zu kolonisieren, und es k&#246;nnte m&#246;glich sein, die %s1 Entscheidung zu beeinflussen. Was sollen wir tun?</German>
-		<Italian>The congress is currently debating the %s2 request to colonize our territory near %s3, and it might be possible to influence the %s1 decision. What should we do?</Italian>
-		<Spanish>The congress is currently debating the %s2 request to colonize our territory near %s3, and it might be possible to influence the %s1 decision. What should we do?</Spanish>
-	</TEXT>
+		<English>国际会议目前正在讨论%s2在%s3附近殖民我们领土的请求，可能会影响%s1的决定。我们该怎么办？</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际会议目前正在讨论%s2在%s3附近殖民我们领土的请求，可能会影响%s1的决定。我们该怎么办？</Chinese><French>The congress is currently debating the %s2 request to colonize our territory near %s3, and it might be possible to influence the %s1 decision. What should we do?</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_BRIBE_THEIR_CLAIM_FAILURE</Tag>
-		<English>%s1 has rejected our clumsy attempts to influence their decision! They will now support the claim against us, and our relations have soured in consequence.</English>
-		<French>[NUM1:Le:La] %s1 a rejet&#233; notre tentative maladroite d'influencer leur d&#233;cision ! Ils appuieront donc la demande contraire &#224; nos int&#233;r&#234;ts, et nos relations avec eux se sont d&#233;grad&#233;es.</French>
-		<German>%s1 hat unsere ungeschickten Versuche, ihre Entscheidung zu beeinflussen, zur&#252;ckgewiesen! Sie werden nun die gegen uns gerichtete Forderung unterst&#252;tzen, und in Folge haben sich unsere Beziehungen verschlechtert.</German>
-		<Italian>%s1 has rejected our clumsy attempts to influence their decision! They will now support the claim against us, and our relations have soured in consequence.</Italian>
-		<Spanish>%s1 has rejected our clumsy attempts to influence their decision! They will now support the claim against us, and our relations have soured in consequence.</Spanish>
-	</TEXT>
+		<English>%s1拒绝了我们影响他们决定的笨拙尝试！他们现在将支持对我们的要求，我们的关系因此恶化。</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1拒绝了我们影响他们决定的笨拙尝试！他们现在将支持对我们的要求，我们的关系因此恶化。</Chinese><French>%s1 has rejected our clumsy attempts to influence their decision! They will now support the claim against us, and our relations have soured in consequence.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_BRIBE_THEIR_CLAIM_SUCCESS</Tag>
-		<English>The attempt was successful! %s1 will now vote against the claim against us.</English>
-		<French>La tentative a r&#233;ussi ! [NUM1:Le:La] %s1 votera donc contre la demande contraire &#224; nos int&#233;r&#234;ts.</French>
-		<German>Der Versuch war erfolgreich! %s1 wird nun gegen die gegen uns gerichtete Forderung stimmen.</German>
-		<Italian>The attempt was successful! %s1 will now vote against the claim against us.</Italian>
-		<Spanish>The attempt was successful! %s1 will now vote against the claim against us.</Spanish>
-	</TEXT>
+		<English>尝试成功了！%s1现在将投票反对对我们的领土主张。</English>
+		<L1/><L2/><L3/><L4/><Chinese>尝试成功了！%s1现在将投票反对对我们的领土主张。</Chinese><French>The attempt was successful! %s1 will now vote against the claim against us.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_CANNOT_AFFORD_BRIBE</Tag>
-		<English>Unfortunately, we lack the means to do anything.</English>
-		<French>Nous n'avons malheureusement pas les moyens de faire quoi que ce soit.</French>
-		<German>Leider fehlen uns die Mittel, etwas zu tun.</German>
-		<Italian>Unfortunately, we lack the means to do anything.</Italian>
-		<Spanish>Unfortunately, we lack the means to do anything.</Spanish>
-	</TEXT>
+		<English>不幸的是，我们没有任何举措能够改变。</English>
+		<L1/><L2/><L3/><L4/><Chinese>不幸的是，我们没有任何举措能够改变。</Chinese><French>Unfortunately, we lack the means to do anything.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_CHANCE_AVERAGE</Tag>
-		<English>Average</English>
-		<French>Moyenne</French>
-		<German>Normal</German>
-		<Italian>Average</Italian>
-		<Spanish>Average</Spanish>
-	</TEXT>
+		<English>平均</English>
+		<L1/><L2/><L3/><L4/><Chinese>平均</Chinese><French>Average</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_CHANCE_HIGH</Tag>
-		<English>High</English>
-		<French>Haute</French>
-		<German>Hoch</German>
-		<Italian>High</Italian>
-		<Spanish>High</Spanish>
-	</TEXT>
+		<English>高</English>
+		<L1/><L2/><L3/><L4/><Chinese>高</Chinese><French>High</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_CHANCE_VERY_HIGH</Tag>
-		<English>Very High</English>
-		<French>Tr&#232;s haute</French>
-		<German>Sehr Hoch</German>
-		<Italian>Very High</Italian>
-		<Spanish>Very High</Spanish>
-	</TEXT>
+		<English>非常高</English>
+		<L1/><L2/><L3/><L4/><Chinese>非常高</Chinese><French>Very High</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_CLAIM_CITY</Tag>
-		<English>It is now our turn to make a demand.</English>
-		<French>C'est &#224; notre tour de faire une demande.</French>
-		<German>Wir sind nun an der Reihe, eine Forderung zu stellen.</German>
-		<Italian>It is now our turn to make a demand.</Italian>
-		<Spanish>It is now our turn to make a demand.</Spanish>
-	</TEXT>
+		<English>现在轮到我们提出要求了。</English>
+		<L1/><L2/><L3/><L4/><Chinese>现在轮到我们提出要求了。</Chinese><French>It is now our turn to make a demand.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_CORRUPTION_ENEMY</Tag>
-		<English>They refused our proposal with indignation. Now they might even vote against our interests!</English>
-		<French>Ils ont refus&#233; avec indignation notre proposition. &#192; pr&#233;sent, ils vont peut-&#234;tre voter contre notre int&#233;r&#234;t !</French>
-		<German>Sie haben unser Angebot emp&#246;rt abgelehnt. Jetzt werden sie vermutlich erst recht nicht in unserem Sinne abstimmen!</German>
-		<Italian>Hanno rifiutato la nostra proposta, indignandosi. Ora potrebbero addirittura votare contro i nostri interessi!</Italian>
-		<Spanish>Han rechazado nuestra propuesta con indignaci&#243;n. &#161;Ahora podr&#237;an incluso votar en contra de nuestros intereses!</Spanish>
-	</TEXT>
+		<English>他们严词拒绝了我们的贿赂。现在他们的投票甚至可能不利于我们！</English>
+		<L1/><L2/><L3/><L4/><Chinese>他们严词拒绝了我们的贿赂。现在他们的投票甚至可能不利于我们！</Chinese><French>They refused our proposal with indignation. Now they might even vote against our interests!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_CORRUPTION_GOLD</Tag>
-		<English>How much gold shall we use for this purpose?</English>
-		<French>Combien d'or devons-nous utiliser pour cela ?</French>
-		<German>Wie viel Gold wollt Ihr daf&#252;r aufwenden?</German>
-		<Italian>Quanto oro dovremmo usare a questo scopo?</Italian>
-		<Spanish>&#191;Cu&#225;nto oro debemos invertir en esta empresa?</Spanish>
-	</TEXT>
+		<English>我们需要为此花多少钱？</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们需要为此花多少钱？</Chinese><French>How much gold shall we use for this purpose?</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_CORRUPTION_NO</Tag>
-		<English>They refused our proposal.</English>
-		<French>Ils ont refus&#233; notre proposition.</French>
-		<German>Sie haben unser Angebot abgelehnt.</German>
-		<Italian>Hanno rifiutato la nostra proposta.</Italian>
-		<Spanish>Han rechazado nuestra propuesta.</Spanish>
-	</TEXT>
+		<English>他们拒绝受贿。</English>
+		<L1/><L2/><L3/><L4/><Chinese>他们拒绝受贿。</Chinese><French>They refused our proposal.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_CORRUPTION_REQUEST</Tag>
-		<English>We can use some of our gold to try to bribe another civilization to vote for our interests. Do you want to attempt?</English>
-		<French>Nous pouvons utiliser notre or pour soudoyer une autre civilisation, afin qu'elle vote selon notre int&#233;r&#234;t. Voulez-vous essayer ?</French>
-		<German>Wir k&#246;nnten versuchen, eine andere Nation mit Gold zu bestechen, damit sie in unserem Sinne abstimmt. Wollt Ihr es wagen?</German>
-		<Italian>Possiamo usare un po' del nostro oro per provare a convincere un'altra civilt&#224; a votare a nostro favore. Vuoi provare?</Italian>
-		<Spanish>Podemos usar parte de nuestro oro para sobornar a otra civilizaci&#243;n con objeto de que vote seg&#250;n nuestros intereses. &#191;Quer&#233;is intentarlo?</Spanish>
-	</TEXT>
+		<English>我们可以用金钱贿赂其他文明根据我们的利益投票。你愿意进行这种尝试吗？</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们可以用金钱贿赂其他文明根据我们的利益投票。你愿意进行这种尝试吗？</Chinese><French>We can use some of our gold to try to bribe another civilization to vote for our interests. Do you want to attempt?</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_CORRUPTION_YES</Tag>
-		<English>They accepted our proposal. They will vote for our interests.</English>
-		<French>Ils ont accept&#233; notre proposition. Ils voteront selon notre int&#233;r&#234;t.</French>
-		<German>Sie sind auf unser Angebot eingegangen und werden in unserem Sinne abstimmen.</German>
-		<Italian>Hanno accettato la nostra proposta. Voteranno a nostro favore.</Italian>
-		<Spanish>Han aceptado nuestra propuesta. Votar&#225;n a favor de nuestros intereses.</Spanish>
-	</TEXT>
+		<English>他们接受了贿赂。他们将根据我们的利益投票。</English>
+		<L1/><L2/><L3/><L4/><Chinese>他们接受了贿赂。他们将根据我们的利益投票。</Chinese><French>They accepted our proposal. They will vote for our interests.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_DEMAND_CITY</Tag>
-		<English>The congress has decided to hand over our city of %s2 to %s1. Shall we comply with their demand? Refusal may lead to war against the supporters of this decision. The following civilizations voted against us:[NEWLINE]%s3</English>
-		<French>Le congr&#232;s a d&#233;cid&#233; de c&#233;der notre ville de %s2 &#224; [NUM1:le:la] %s1. Devons-nous accepter ? Un refus pourra causer une guerre contre les partisans de cette d&#233;cision. Les civilisations suivantes ont vot&#233; contre nous :[NEWLINE]%s3</French>
-		<German>Der Kongress hat entschieden, unsere Stadt %s2 an %s1 zu &#252;bergeben. Sollen wir dieser Forderung nachkommen? Eine Weigerung kann zum Krieg gegen die Unterst&#252;tzer dieser Entscheidung f&#252;hren. Die folgenden Zivilisationen stimmten gegen uns:[NEWLINE]%s3</German>
-		<Italian>The congress has decided to hand over our city of %s2 to %s1. Shall we comply with their demand? Refusal may lead to war against the supporters of this decision. The following civilizations voted against us:[NEWLINE]%s3</Italian>
-		<Spanish>The congress has decided to hand over our city of %s2 to %s1. Shall we comply with their demand? Refusal may lead to war against the supporters of this decision. The following civilizations voted against us:[NEWLINE]%s3</Spanish>
-	</TEXT>
+		<English>国际会议决定把我们的城市从%s2移交给%s1。我们能满足他们的要求吗？拒绝可能导致对这个决定的支持者的战争。以下文明投票反对我们：[新线]%s3</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际会议决定把我们的城市从%s2移交给%s1。我们能满足他们的要求吗？拒绝可能导致对这个决定的支持者的战争。以下文明投票反对我们：[新线]%s3</Chinese><French>The congress has decided to hand over our city of %s2 to %s1. Shall we comply with their demand? Refusal may lead to war against the supporters of this decision. The following civilizations voted against us:[NEWLINE]%s3</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_DEMAND_TERRITORY</Tag>
-		<English>The congress has decided to allow %s1 to colonize our territory near %s2. Shall we comply with their demand? Refusal may lead to war against the supporters of this decision. The following civilizations voted against us:[NEWLINE]%s3</English>
-		<French>Le congr&#232;s a d&#233;cider de permettre &#224; [NUM1:le:la] %s1 de coloniser notre territoire &#224; proximit&#233; de %s2. Devons-nous accepter ? Un refus pourra causer une guerre contre les partisans de cette d&#233;cision. Les civilisations suivantes ont vot&#233; contre nous :[NEWLINE]%s3</French>
-		<German>Der Kongress hat entschieden, %s1 die Erlaubnis zu gew&#228;hren, unser Territorium nahe %s2 zu kolonisieren. Sollen wir dieser Forderung nachkommen? Eine Weigerung kann zum Krieg geegn die Unterst&#252;tzer dieser Entscheidung f&#252;hren. Die folgenden Zivilisationen stimmten gegen uns:[NEWLINE]%s3</German>
-		<Italian>The congress has decided to allow %s1 to colonize our territory near %s2. Shall we comply with their demand? Refusal may lead to war against the supporters of this decision. The following civilizations voted against us:[NEWLINE]%s3</Italian>
-		<Spanish>The congress has decided to allow %s1 to colonize our territory near %s2. Shall we comply with their demand? Refusal may lead to war against the supporters of this decision. The following civilizations voted against us:[NEWLINE]%s3</Spanish>
-	</TEXT>
+		<English>国际会议决定允许%s1在%s2附近殖民我们的领土。我们能满足他们的要求吗？拒绝可能导致对这个决定的支持者的战争。以下文明投票反对我们：[新线]%s3</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际会议决定允许%s1在%s2附近殖民我们的领土。我们能满足他们的要求吗？拒绝可能导致对这个决定的支持者的战争。以下文明投票反对我们：[新线]%s3</Chinese><French>The congress has decided to allow %s1 to colonize our territory near %s2. Shall we comply with their demand? Refusal may lead to war against the supporters of this decision. The following civilizations voted against us:[NEWLINE]%s3</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_HUMAN_REQUEST</Tag>
-		<English>What city shall we ask for?</English>
-		<French>Quelle ville allons-nous r&#233;clamer ?</French>
-		<German>Welche Stadt sollen wir fordern?</German>
-		<Italian>Che citt&#224; dovremmo richiedere?</Italian>
-		<Spanish>&#191;Qu&#233; ciudad debemos solicitar?</Spanish>
-	</TEXT>
+		<English>我们应该要求哪座城市?</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们应该要求哪座城市?</Chinese><French>What city shall we ask for?</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_INTRO</Tag>
-		<English>A new international Congress is about to start.[NEWLINE]The leaders of some of the most important nations will meet there to discuss the balance of the world.[NEWLINE][NEWLINE]Each side will have its turn to ask a city; if the decision is approved the owner of the city that is being traded must accept it.[NEWLINE]If you refuse a decision, you are likely to face a war against some of the sides that voted YES.</English>
-		<French>Un nouveau congr&#232;s international est sur le point de commencer.[NEWLINE]Les dirigeants des plus grandes nations vont s'y rencontrer pour discuter de l'&#233;quilibre mondial.[NEWLINE][NEWLINE]Chacun pourra &#224; son tour r&#233;clamer une ville ; si la d&#233;cision est approuv&#233;e, le possesseur de la ville &#233;chang&#233;e doit l'accepter.[NEWLINE]Si vous refusez une d&#233;cision, vous risquez d'entrer en guerre contre ceux qui ont vot&#233; OUI.</French>
-		<German>In K&#252;rze wird ein neuer internationaler Kongress beginnen.[NEWLINE]Die Staatsoberh&#228;upter einiger der wichtigsten Nationen werden dort zusammentreffen, um die Machtverh&#228;ltnisse in der Welt zu er&#246;rtern.[NEWLINE][NEWLINE]Jede Partei kann der Reihe nach eine Stadt fordern. Wird der Forderung per Votum entsprochen, muss der bisherige Besitzer der betreffenden Stadt diese Entscheidung akzeptieren.[NEWLINE]Die Widersetzung gegen diese Entscheidung kommt in der Regel einer Kriegserkl&#228;rung gegen&#252;ber einigen der Parteien gleich, die mit JA gestimmt haben.</German>
-		<Italian>Sta per cominciare un nuovo congresso internazionale.[NEWLINE]I leader di alcune delle nazioni pi&#249; importanti si incontreranno per discutere dell'equilibrio mondiale.[NEWLINE][NEWLINE]Ogni fazione avr&#224; modo di richiedere una citt&#224;, a turno; se la decisione viene approvata il possessore della citt&#224; dovr&#224; accettare la transazione.[NEWLINE]Se rifiuti potresti trovarti in guerra contro alcune delle fazioni che hanno votato S&#204;.</Italian>
-		<Spanish>Est&#225; a punto de comenzar un nuevo Congreso internacional.[NEWLINE]Los l&#237;deres de algunas de las naciones m&#225;s importantes se encuentran aqu&#237; para discutir sobre la estabilidad mundial.[NEWLINE][NEWLINE]Cada parte tendr&#225; un turno para solicitar una ciudad; si la decisi&#243;n es aprobada, el propietario de la ciudad a intercambiar debe aceptar.[NEWLINE]Si os neg&#225;is a aceptar una decisi&#243;n, podr&#237;ais ser objeto de una declaraci&#243;n de guerra por parte de los que votaron S&#205;.</Spanish>
-	</TEXT>
+		<English>一次国际会议即将召开。[NEWLINE]各主要国家的领袖齐聚一堂讨论如何保持世界的力量平衡。[NEWLINE][NEWLINE]各方均有机会要求一座城市的统治权，如在会议上获得通过，则城市现在的所有者必须接受。[NEWLINE]如果你拒绝接受会谈结果，可能与投下赞成票的国家开战。</English>
+		<L1/><L2/><L3/><L4/><Chinese>一次国际会议即将召开。[NEWLINE]各主要国家的领袖齐聚一堂讨论如何保持世界的力量平衡。[NEWLINE][NEWLINE]各方均有机会要求一座城市的统治权，如在会议上获得通过，则城市现在的所有者必须接受。[NEWLINE]如果你拒绝接受会谈结果，可能与投下赞成票的国家开战。</Chinese><French>A new international Congress is about to start.[NEWLINE]The leaders of some of the most important nations will meet there to discuss the balance of the world.[NEWLINE][NEWLINE]Each side will have its turn to ask a city; if the decision is approved the owner of the city that is being traded must accept it.[NEWLINE]If you refuse a decision, you are likely to face a war against some of the sides that voted YES.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_INTRO_NOT_INVITED</Tag>
-		<English>A World Congress is being held, but we haven't been invited. Maybe we aren't important enough.[NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</English>
-		<French>Un congr&#232;s mondial va avoir lieu, mais nous n'avons pas &#233;t&#233; invit&#233;. Nous ne sommes peut-&#234;tre pas suffisamment importants.[NEWLINE][NEWLINE]Nous ne pouvons qu'attendre leurs d&#233;cisions et avoir confiance en leur jugement.</French>
-		<German>Zurzeit findet ein Weltkongress statt, zu dem Ihr jedoch nicht eingeladen wurdet. Vielleicht ist unsere Nation einfach nicht bedeutend genug.[NEWLINE][NEWLINE]Uns bleibt nun wohl nichts anderes &#252;brig, als die Entscheidungen der Teilnehmer abzuwarten und zu hoffen, dass sie ihren gesunden Menschenverstand nutzen.</German>
-		<Italian>Si tiene un congresso internazionale, ma non siamo stati invitati. Forse non siamo abbastanza importanti.[NEWLINE][NEWLINE]Ora possiamo solo aspettare le loro decisioni e confidare nel loro buon senso.</Italian>
-		<Spanish>Se est&#225; celebrando un Congreso Mundial, pero no hemos sido invitados. Quiz&#225; no seamos lo bastante importantes.[NEWLINE][NEWLINE]Ahora solo podemos esperar sus decisiones y confiar en su sentido com&#250;n.</Spanish>
-	</TEXT>
+		<English>一次国际会议正在召开，但我们未获邀请。也许因为我们还不够强大。[NEWLINE][NEWLINE]目前我们只能期待他们的会谈能有合理的结果。</English>
+		<L1/><L2/><L3/><L4/><Chinese>一次国际会议正在召开，但我们未获邀请。也许因为我们还不够强大。[NEWLINE][NEWLINE]目前我们只能期待他们的会谈能有合理的结果。</Chinese><French>A World Congress is being held, but we haven't been invited. Maybe we aren't important enough.[NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_INTRODUCTION</Tag>
-		<English>[H1]Congress of %s1[\H1][NEWLINE]A new international congress is being held. The leaders of the world's most important civilizations convene to discuss the balance of the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Every civilization is allowed to either claim a city or request to colonize unsettled territory. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</English>
-		<French>[H1]Congr&#232;s de %s1[\H1][NEWLINE]Un nouveau congr&#232;s international est en cours. Les dirigeants des civilisations les plus importantes se r&#233;unissent pour discuter de l'&#233;quilibre mondial. En plus de notre civilisation, les participants sont :[NEWLINE]%s2[NEWLINE][NEWLINE]Chaque civilisation peut revendiquer une ville ou demander de coloniser un territoire inhabit&#233;. Si assez de civilisations donnent leur approbation, la demande est accord&#233;e. Tout refus d'accepter une d&#233;cision du congr&#232;s risque de causer une guerre avec les civilisations qui l'ont appuy&#233;e !</French>
-		<German>[H1]Kongress von %s1[\H1][NEWLINe]Ein neuer internationaler Kongress wird abgehalten. Die Anf&#252;hrer der wichtigsten Zivilisationen der Welt kommen zusammen, um das Gleichgewicht der Welt zu diskutieren. Neben unserer Zivilisation sind unter den Teilnehmern:[NEWLINE]%s2[NEWLINE][NEWLINE]Jede Zivilisation darf entweder eine Stadt beanspruchen oder um die Kolonisierung unbesiedelter Gebiete anfragen. Falls gen&#252;gen Zivilisationen zustimmen, wird der Anfrage stattgegeben. Eine Weigerung, der Entscheidung des Kongresses nachzukommen, kann zum Krieg mit den Zivilisationen f&#252;hren, die sie unterst&#252;tzt haben!</German>
-		<Italian>[H1]Congress of %s1[\H1][NEWLINE]A new international congress is being held. The leaders of the world's most important civilizations convene to discuss the balance of the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Every civilization is allowed to either claim a city or request to colonize unsettled territory. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</Italian>
-		<Spanish>[H1]Congress of %s1[\H1][NEWLINE]A new international congress is being held. The leaders of the world's most important civilizations convene to discuss the balance of the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Every civilization is allowed to either claim a city or request to colonize unsettled territory. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</Spanish>
-	</TEXT>
+		<English>[H1]Congress of %s1[\H1][NEWLINE]届大会新的国际会议正在举行。世界上最重要文明的领导人开会讨论世界的平衡。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]每个文明都被允许宣称拥有一座城市或要求殖民未定居的领土。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]Congress of %s1[\H1][NEWLINE]届大会新的国际会议正在举行。世界上最重要文明的领导人开会讨论世界的平衡。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]每个文明都被允许宣称拥有一座城市或要求殖民未定居的领土。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A new international congress is being held. The leaders of the world's most important civilizations convene to discuss the balance of the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Every civilization is allowed to either claim a city or request to colonize unsettled territory. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_INTRODUCTION_AI</Tag>
-		<English>[H1]Congress of %s1[\H1][NEWLINE]A world congress is being held, but we haven't been invited. Apparently we are not important enough. The fate of the world is now in the hands of the following civilizations:[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</English>
-		<French>[H1]Congr&#232;s de %s1[\H1][NEWLINE]Un congr&#232;s mondial est en cours, mais nous n'avons pas &#233;t&#233; invit&#233;s. Il semble que nous ne soyons pas assez importants. Le sort du monde est d&#233;sormais entre les mains des civilisations suivantes :[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]Nous ne pouvons qu'attendre leurs d&#233;cisions et avoir confiance en leur jugement.</French>
-		<German>[H1]Kongress von %s1[\H1][NEWLINE]Ein Weltkongress wird abgehalten, aber wir wurden nicht eingeladen. Scheinbar sind wir nicht wichtig genug. Das Schicksal der Welt liegt nun in den H&#228;nden der folgenden Zivilisationen:[NEWLINE]%s2[NEWLINE][NEWLINE]Jetzt k&#246;nnen wir nur noch ihre Entscheidungen abwarten und auf ihren gesunden Menschenverstand vertrauen.</German>
-		<Italian>[H1]Congress of %s1[\H1][NEWLINE]A world congress is being held, but we haven't been invited. Apparently we are not important enough. The fate of the world is now in the hands of the following civilizations:[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</Italian>
-		<Spanish>[H1]Congress of %s1[\H1][NEWLINE]A world congress is being held, but we haven't been invited. Apparently we are not important enough. The fate of the world is now in the hands of the following civilizations:[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</Spanish>
-	</TEXT>
+		<English>[H1]Congress of %s1[\H1][NEWLINE]一个国际会议正在举行，但是我们没有被邀请。显然我们不够重要。世界的命运现在掌握在下列文明的手中：[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]现在我们只能等待他们的决定，相信他们的常识。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]Congress of %s1[\H1][NEWLINE]一个国际会议正在举行，但是我们没有被邀请。显然我们不够重要。世界的命运现在掌握在下列文明的手中：[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]现在我们只能等待他们的决定，相信他们的常识。</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A world congress is being held, but we haven't been invited. Apparently we are not important enough. The fate of the world is now in the hands of the following civilizations:[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_INTRODUCTION_AI_WAR_EXCLUDED</Tag>
-		<English>[H1]Congress of %s1[\H1][NEWLINE]A congress is being held while we are involved in a global war, so he haven't been invited. The fate of the world is now in the hands of the following civilizations:[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</English>
-		<French>[H1]Congress of %s1[\H1][NEWLINE]A congress is being held while we are involved in a global war, so he haven't been invited. The fate of the world is now in the hands of the following civilizations:[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</French> <!-- needs translation -->
-		<German>[H1]Kongress von %s1[\H1][NEWLINE]Ein Weltkongress wird abgehalten w&#228;hrend wir in einem global Krieg involviert sind, also wurden wir nicht eingeladen. Das Schicksal der Welt liegt nun in den H&#228;nden der folgenden Zivilisationen:[NEWLINE]%s2[NEWLINE][NEWLINE]Jetzt k&#246;nnen wir nur noch ihre Entscheidungen abwarten und auf ihren gesunden Menschenverstand vertrauen.</German>
-		<Italian>[H1]Congress of %s1[\H1][NEWLINE]A congress is being held while we are involved in a global war, so he haven't been invited. The fate of the world is now in the hands of the following civilizations:[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</Italian>
-		<Spanish>[H1]Congress of %s1[\H1][NEWLINE]A congress is being held while we are involved in a global war, so he haven't been invited. The fate of the world is now in the hands of the following civilizations:[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</Spanish>
-	</TEXT>
+		<English>[H1]%s1[\H1][NEWLINE]国际会议正在举行，而我们正卷入一场全球战争，所以他没有被邀请。世界的命运现在掌握在下列文明的手中：[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]现在我们只能等待他们的决定，相信他们的常识。</English>
+		<!-- needs translation -->
+		<L1/><L2/><L3/><L4/><Chinese>[H1]%s1[\H1][NEWLINE]国际会议正在举行，而我们正卷入一场全球战争，所以他没有被邀请。世界的命运现在掌握在下列文明的手中：[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]现在我们只能等待他们的决定，相信他们的常识。</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A congress is being held while we are involved in a global war, so he haven't been invited. The fate of the world is now in the hands of the following civilizations:[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_INTRODUCTION_WAR</Tag>
-		<English>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. We were not involved, but were still invited due to our international importance. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Every civilization on the winning side of the war is allowed to claim a city from the losing side, while the civilizations that have lost may reclaim cities conquered during the war. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</English>
-		<French>[H1]Congr&#232;s de %s1[\H1][NEWLINE]Une grande guerre internationale a pris fin. Les puissances impliqu&#233;es se r&#233;unissent en congr&#232;s pour discuter de la restauration de l'ordre mondial. Nous n'avons pas particip&#233; &#224; la guerre, mais nous avons tout de m&#234;me &#233;t&#233; invit&#233;s en raison de notre poids international. En plus de notre civilisation, les participants sont :[NEWLINE]%s2[NEWLINE][NEWLINE]Chaque vainqueur peut revendiquer une ville appartenant &#224; une civilisation vaincue, tandis que chaque vaincu peut demander de r&#233;cup&#233;rer une ville perdue pendant la guerre. Si assez de civilisations donnent leur approbation, la demande est accord&#233;e. Tout refus d'accepter une d&#233;cision du congr&#232;s risque de causer une guerre avec les civilisations qui l'ont appuy&#233;e !</French>
-		<German>[H1]Kongress von %s1[\H1][NEWLINE]Ein gro&#223;er internationaler Krieg ist zu Ende gegangen. Die involvierten M&#228;chte kommen zusammen, um Ordnung in der Welt wiederherzustellen. Wir waren nicht beteiligt, aber wurden wegen unserer internationalen Bedeutung dennoch eingeladen. Neben unserer Zivilisation sind unter den Teilnehmern:[NEWLINE]%s2[NEWLINE][NEWLINE]Jede Zivilisation auf der Gewinnerseite des Kriegen darf eine Stadt von der Verliererseite beanspruchen, w&#228;hrend die Zivilisationen, die verloren haben, w&#228;hrend des Kriegens eroberte St&#228;dte zur&#252;ckfordern k&#246;nnen. Falls gen&#252;gen Zivilisationen zustimmen, wird der Anfrage stattgegeben. Eine Weigerung, der Entscheidung des Kongresses nachzukommen, kann zum Krieg mit den Zivilisationen f&#252;hren, die sie unterst&#252;tzt haben!</German>
-		<Italian>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. We were not involved, but were still invited due to our international importance. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Every civilization on the winning side of the war is allowed to claim a city from the losing side, while the civilizations that have lost may reclaim cities conquered during the war. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</Italian>
-		<Spanish>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. We were not involved, but were still invited due to our international importance. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Every civilization on the winning side of the war is allowed to claim a city from the losing side, while the civilizations that have lost may reclaim cities conquered during the war. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</Spanish>
-	</TEXT>
+		<English>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。有关权力在国际会议开会讨论如何恢复世界秩序。我们没有参与战争，但由于国际地位，我们仍然受到邀请。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]每一个处于战争胜利一方的文明都可以从失败的一方夺回一座城市，而那些已经失败的文明可能会夺回在战争中被征服的城市。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。有关权力在国际会议开会讨论如何恢复世界秩序。我们没有参与战争，但由于国际地位，我们仍然受到邀请。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]每一个处于战争胜利一方的文明都可以从失败的一方夺回一座城市，而那些已经失败的文明可能会夺回在战争中被征服的城市。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. We were not involved, but were still invited due to our international importance. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Every civilization on the winning side of the war is allowed to claim a city from the losing side, while the civilizations that have lost may reclaim cities conquered during the war. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_INTRODUCTION_WAR_WON</Tag>
-		<English>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Since we are on the winning side we can claim cities from the losers of the war, while they may attempt to reclaim cities conquered during the war. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</English>
-		<French>[H1]Congr&#232;s de %s1[\H1][NEWLINE]Une grande guerre internationale a pris fin. Les puissances impliqu&#233;es se r&#233;unissent en congr&#232;s pour discuter de la restauration de l'ordre mondial. En plus de notre civilisation, les participants sont :[NEWLINE]%s2[NEWLINE][NEWLINE]Puisque nous sommes du c&#244;t&#233; des vainqueurs, nous pouvons revendiquer des villes appartenant aux vaincus. Ces derniers tenteront quant &#224; eux de r&#233;cup&#233;rer des villes perdues durant la guerre. Si assez de civilisations donnent leur approbation, la demande est accord&#233;e. Tout refus d'accepter une d&#233;cision du congr&#232;s risque de causer une guerre avec les civilisations qui l'ont appuy&#233;e !</French>
-		<German>[H1]Kongress von %s1[\H1][NEWLINE]Ein gro&#223;er internationaler Krieg ist zu Ende gegangen. Die involvierten M&#228;chte kommen zusammen, um Ordnung in der Welt wiederherzustellen. Neben unserer Zivilisation sind unter den Teilnehmern:[NEWLINE]%s2[NEWLINE][NEWLINE]Da wir auf der Gewinnerseite sind, k&#246;nnen wir St&#228;dte von den Verlierern des Krieges beanspruchen, w&#228;hrend diese im Laufe des Krieges eroberte St&#228;dte zur&#252;ckfordern k&#246;nnen. Falls gen&#252;gen Zivilisationen zustimmen, wird der Anfrage stattgegeben. Eine Weigerung, der Entscheidung des Kongresses nachzukommen, kann zum Krieg mit den Zivilisationen f&#252;hren, die sie unterst&#252;tzt haben!</German>
-		<Italian>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Since we are on the winning side we can claim cities from the losers of the war, while they may attempt to reclaim cities conquered during the war. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</Italian>
-		<Spanish>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Since we are on the winning side we can claim cities from the losers of the war, while they may attempt to reclaim cities conquered during the war. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</Spanish>
-	</TEXT>
+		<English>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。有关权力在国际会议开会讨论如何恢复世界秩序。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]因为我们站在胜利的一边，我们可以从战争的失败者手中夺回城市，而他们可能试图夺回战争期间征服的城市。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。有关权力在国际会议开会讨论如何恢复世界秩序。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]因为我们站在胜利的一边，我们可以从战争的失败者手中夺回城市，而他们可能试图夺回战争期间征服的城市。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Since we are on the winning side we can claim cities from the losers of the war, while they may attempt to reclaim cities conquered during the war. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_INTRODUCTION_WAR_LOST</Tag>
-		<English>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]As a loser of the war we can attempt to reclaim cities lost during the war, while the winners may make additional claims against us. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</English>
-		<French>[H1]Congr&#232;s de %s1[\H1][NEWLINE]Une grande guerre internationale a pris fin. Les puissances impliqu&#233;es se r&#233;unissent en congr&#232;s pour discuter de la restauration de l'ordre mondial. En plus de notre civilisation, les participants sont :[NEWLINE]%s2[NEWLINE][NEWLINE]En tant que vaincus, nous pouvons tenter de r&#233;cup&#233;rer les villes perdues pendant la guerre, tandis que les vainqueurs peuvent faire des revendications additionnelles &#224; notre endroit. Si assez de civilisations donnent leur approbation, la demande est accord&#233;e. Tout refus d'accepter une d&#233;cision du congr&#232;s risque de causer une guerre avec les civilisations qui l'ont appuy&#233;e !</French>
-		<German>[H1]Kongress von %s1[\H1][NEWLINE]Ein gro&#223;er internationaler Krieg ist zu Ende gegangen. Die involvierten M&#228;chte kommen zusammen, um Ordnung in der Welt wiederherzustellen. Neben unserer Zivilisation sind unter den Teilnehmern:[NEWLINE]%s2[NEWLINE][NEWLINE]Als Verlierer des Krieges k&#246;nnen wir versuchen, im Laufe des Krieges verlorene St&#228;dte zur&#252;ckzufordern, w&#228;hrend die Gewinner zus&#228;tzliche Anspr&#252;che gegen uns geltend machen k&#246;nnen. Falls gen&#252;gen Zivilisationen zustimmen, wird der Anfrage stattgegeben. Eine Weigerung, der Entscheidung des Kongresses nachzukommen, kann zum Krieg mit den Zivilisationen f&#252;hren, die sie unterst&#252;tzt haben!</German>
-		<Italian>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]As a loser of the war we can attempt to reclaim cities lost during the war, while the winners may make additional claims against us. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</Italian>
-		<Spanish>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]As a loser of the war we can attempt to reclaim cities lost during the war, while the winners may make additional claims against us. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</Spanish>
-	</TEXT>
+		<English>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。有关权力在国际会议开会讨论如何恢复世界秩序。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]作为战争的失败者，我们可以试图收回在战争中失去的城市，而胜利者可能会对我们提出更多的要求。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。有关权力在国际会议开会讨论如何恢复世界秩序。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]作为战争的失败者，我们可以试图收回在战争中失去的城市，而胜利者可能会对我们提出更多的要求。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]As a loser of the war we can attempt to reclaim cities lost during the war, while the winners may make additional claims against us. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_INTRODUCTION_WAR_AI</Tag>
-		<English>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The belligerents convene in a congress to discuss how to restore order to the world, but we were neither involved nor important enough to influence the process:[NEWLINE]%s2[NEWLINE][NEWLINE]As a non-belligerent, nobody can claim our cities.</English>
-		<French>[H1]Congr&#232;s de %s1[\H1][NEWLINE]Une grande guerre internationale a pris fin. Les bellig&#233;rants se r&#233;unissent en congr&#232;s pour discuter de la restauration de l'ordre mondial, mais comme nous ne sommes pas concern&#233;s et ne sommes pas assez importants, nous ne pouvons pas influencer le processus :[NEWLINE]%s2[NEWLINE][NEWLINE]Puisque nous n'avons pas particip&#233; &#224; la guerre, personne ne peut revendiquer nos villes.</French>
-		<German>[H1]Kongress von %s1[\H1][NEWLINE]Ein gro&#223;er internationaler Krieg ist zu Ende gegangen. Die kriegf&#252;hrenden M&#228;chte kommen zusammen, um Ordnung in der Welt wiederherzustellen, aber wir waren nicht beteiligt und sind nicht wichtig genug um die Entscheidungen zu beeinflussen:[NEWLINE]%s2[NEWLINE][NEWLINE]Als Unbeteiligter kann niemand unsere St&#228;dte einfordern.</German>
-		<Italian>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The belligerents convene in a congress to discuss how to restore order to the world, but we were neither involved nor important enough to influence the process:[NEWLINE]%s2[NEWLINE][NEWLINE]As a non-belligerent, nobody can claim our cities.</Italian>
-		<Spanish>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The belligerents convene in a congress to discuss how to restore order to the world, but we were neither involved nor important enough to influence the process:[NEWLINE]%s2[NEWLINE][NEWLINE]As a non-belligerent, nobody can claim our cities.</Spanish>
-	</TEXT>
+		<English>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。交战国在国际会议开会讨论如何恢复世界秩序，但我们既没有参与，也没有重要到足以影响这一进程：[NEWLINE]%s2[NEWLINE][NEWLINE]作为一个非交战国，没有人可以宣称我们的城市。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。交战国在国际会议开会讨论如何恢复世界秩序，但我们既没有参与，也没有重要到足以影响这一进程：[NEWLINE]%s2[NEWLINE][NEWLINE]作为一个非交战国，没有人可以宣称我们的城市。</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The belligerents convene in a congress to discuss how to restore order to the world, but we were neither involved nor important enough to influence the process:[NEWLINE]%s2[NEWLINE][NEWLINE]As a non-belligerent, nobody can claim our cities.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_INVITATION</Tag>
-		<English>An international Congress is being held in 2 turns. You have been invited to participate. Will you accept the invitation?</English>
-		<French>Un Congr&#232;s international aura lieu dans 2 tours. Vous avez &#233;t&#233; invit&#233; &#224; y participer. Acceptez-vous l'invitation ?</French>
-		<German>In 2 Runden wird ein internationaler Kongress stattfinden. Ihr wurdet eingeladen, daran teilzunehmen. Nehmt Ihr die Einladung an?</German>
-		<Italian>Fra 2 turni si terr&#224; un congresso internazionale. Sei stato invitato a partecipare. Accetterai l'invito?</Italian>
-		<Spanish>Se va a celebrar un Congreso internacional en 2 turnos. Se os ha invitado a participar. &#191;Acept&#225;is la invitaci&#243;n?</Spanish>
-	</TEXT>
+		<English>两回合后将召开一次国际会议。我们已收到邀请函。你同意参加吗？</English>
+		<L1/><L2/><L3/><L4/><Chinese>两回合后将召开一次国际会议。我们已收到邀请函。你同意参加吗？</Chinese><French>An international Congress is being held in 2 turns. You have been invited to participate. Will you accept the invitation?</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_INVITE</Tag>
 		<English>[NEWLINE][ICON_BULLET]%s1</English>
-		<French>[NEWLINE][ICON_BULLET]%s1</French>
-		<German>[NEWLINE][ICON_BULLET]%s1</German>
-		<Italian>[NEWLINE][ICON_BULLET]%s1</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]%s1</Spanish>
-	</TEXT>
+		<L1/><L2/><L3/><L4/><Chinese>[NEWLINE][ICON_BULLET]%s1</Chinese><French>[NEWLINE][ICON_BULLET]%s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_MANIPULATION</Tag>
-		<English>Infiltrate their delegation (%s2: %d1 [ICON_ESPIONAGE])</English>
-		<French>Infiltrate their delegation (%s2: %d1 [ICON_ESPIONAGE])</French>
-		<German>Infiltriert ihre Delegation (%s2: %d1 [ICON_ESPIONAGE])</German>
-		<Italian>Infiltrate their delegation (%s2: %d1 [ICON_ESPIONAGE])</Italian>
-		<Spanish>Infiltrate their delegation (%s2: %d1 [ICON_ESPIONAGE])</Spanish>
-	</TEXT>
+		<English>渗透到他们的代表团中 (%s2: %d1 [ICON_ESPIONAGE])</English>
+		<L1/><L2/><L3/><L4/><Chinese>渗透到他们的代表团中 (%s2: %d1 [ICON_ESPIONAGE])</Chinese><French>Infiltrate their delegation (%s2: %d1 [ICON_ESPIONAGE])</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_NEW</Tag>
-		<English>New Congress</English>
-		<French>Nouveau Congr&#232;s</French>
-		<German>Neuer Kongress</German>
-		<Italian>Nuovo congresso</Italian>
-		<Spanish>Nuevo Congreso</Spanish>
-	</TEXT>
+		<English>新的国际会议</English>
+		<L1/><L2/><L3/><L4/><Chinese>新的国际会议</Chinese><French>New Congress</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_NO_AI_REQUEST</Tag>
-		<English>makes no requests</English>
-		<French>ne fait pas de requ&#234;tes</French>
-		<German>erhebt keine Forderungen</German>
-		<Italian>non avanza richieste</Italian>
-		<Spanish>no realiza solicitudes</Spanish>
-	</TEXT>
+		<English>无要求</English>
+		<L1/><L2/><L3/><L4/><Chinese>无要求</Chinese><French>makes no requests</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_NO_BRIBE</Tag>
-		<English>Let them vote as they please.</English>
-		<French>Let them vote as they please.</French>
-		<German>Lasst sie abstimmen, wie es ihnen gef&#228;llt.</German>
-		<Italian>Let them vote as they please.</Italian>
-		<Spanish>Let them vote as they please.</Spanish>
-	</TEXT>
+		<English>让他们随意投票</English>
+		<L1/><L2/><L3/><L4/><Chinese>让他们随意投票</Chinese><French>Let them vote as they please.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_NO_CITY</Tag>
-		<English>There is no appropriate city to ask</English>
-		<French>Il n'y a pas de ville appropri&#233;e &#224; r&#233;clamer</French>
-		<German>Es steht keine geeignete Stadt zur Auswahl</German>
-		<Italian>Non ci sono citt&#224; da richiedere</Italian>
-		<Spanish>No hay una ciudad apropiada que solicitar</Spanish>
-	</TEXT>
+		<English>没有可要求的城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>没有可要求的城市</Chinese><French>There is no appropriate city to ask</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_NO_REQUEST</Tag>
-		<English>NO REQUEST</English>
-		<French>PAS DE REQU&#202;TE</French>
-		<German>KEINE FORDERUNG</German>
-		<Italian>NESSUNA RICHIESTA</Italian>
-		<Spanish>SIN SOLICITUD</Spanish>
-	</TEXT>
+		<English>无要求</English>
+		<L1/><L2/><L3/><L4/><Chinese>无要求</Chinese><French>NO REQUEST</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_NO_RESULTS</Tag>
-		<English>[NEWLINE]The members decided to uphold the status quo.</English>
-		<French>[NEWLINE]Les d&#233;l&#233;gu&#233;s ont d&#233;cid&#233; de maintenir le status quo.</French>
-		<German>[NEWLINE]Die Mitglieder haben entschieden, den Status Quo aufrecht zu erhalten.</German>
-		<Italian>[NEWLINE]The members decided to uphold the status quo.</Italian>
-		<Spanish>[NEWLINE]The members decided to uphold the status quo.</Spanish>
-	</TEXT>
+		<English>成员们决定维持现状。</English>
+		<L1/><L2/><L3/><L4/><Chinese>成员们决定维持现状。</Chinese><French>[NEWLINE]The members decided to uphold the status quo.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_NOTIFY_YES</Tag>
-		<English>is passing under %s1 control</English>
-		<French>passe sous contr&#244;le %s1</French>
-		<German>wird dem %s1:2 Volk &#252;bereignet</German>
-		<Italian>sta passando sotto il controllo di %s1</Italian>
-		<Spanish>pasa al control de %s1</Spanish>
-	</TEXT>
+		<English>已移交给%s1统治</English>
+		<L1/><L2/><L3/><L4/><Chinese>已移交给%s1统治</Chinese><French>is passing under %s1 control</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_NOTIFY_YES1</Tag>
-		<English>is passing under</English>
-		<French>passe sous contr&#244;le</French>
-		<German>wird</German>
-		<Italian>sta passando sotto il controllo</Italian>
-		<Spanish>pasar&#225; a control del</Spanish>
-	</TEXT>
+		<English>已经移交给</English>
+		<L1/><L2/><L3/><L4/><Chinese>已经移交给</Chinese><French>is passing under</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_NOTIFY_YES2</Tag>
-		<English>control</English>
-		<French></French>
-		<German>&#252;bereignet</German>
-		<Italian>.</Italian>
-		<Spanish>control</Spanish>
-	</TEXT>
+		<English>统治</English>
+		<L1/><L2/><L3/><L4/><Chinese>统治</Chinese><French>control</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_OF</Tag>
-		<English>Congress of %s1</English>
-		<French>Congr&#232;s de %s1</French>
-		<German>Kongress von %s1</German>
-		<Italian>Congresso di %s1</Italian>
-		<Spanish>Congreso de %s1</Spanish>
-	</TEXT>
+		<English>国际会议:</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际会议:</Chinese><French>Congress of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_OK</Tag>
-		<English>OK</English>
-		<French>OK</French>
-		<German>OK</German>
-		<Italian>OK</Italian>
-		<Spanish>Aceptar</Spanish>
-	</TEXT>
+		<English>确定</English>
+		<L1/><L2/><L3/><L4/><Chinese>确定</Chinese><French>OK</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_POPUP_ABSTAINS</Tag>
-		<English>abstains[NEWLINE]</English>
-		<French>s'abstient[NEWLINE]</French>
-		<German>enth&#228;lt sich der Stimme[NEWLINE]</German>
-		<Italian>si astiene[NEWLINE]</Italian>
-		<Spanish>se abstiene[NEWLINE]</Spanish>
-	</TEXT>
+		<English>弃权票[NEWLINE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>弃权票[NEWLINE]</Chinese><French>abstains[NEWLINE]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_POPUP_NO_WINS</Tag>
-		<English>[NEWLINE]NO wins</English>
-		<French>[NEWLINE]Le NON l'emporte</French>
-		<German>[NEWLINE]NEIN-Stimmen &#252;berwiegen</German>
-		<Italian>[NEWLINE]Vincono i NO</Italian>
-		<Spanish>[NEWLINE]Gana el NO</Spanish>
-	</TEXT>
+		<English>[NEWLINE]未获通过</English>
+		<L1/><L2/><L3/><L4/><Chinese>[NEWLINE]未获通过</Chinese><French>[NEWLINE]NO wins</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_POPUP_VOTES_NO</Tag>
-		<English>votes NO[NEWLINE]</English>
-		<French>vote NON[NEWLINE]</French>
-		<German>stimmt mit NEIN[NEWLINE]</German>
-		<Italian>vota NO[NEWLINE]</Italian>
-		<Spanish>vota NO[NEWLINE]</Spanish>
-	</TEXT>
+		<English>反对票[NEWLINE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>反对票[NEWLINE]</Chinese><French>votes NO[NEWLINE]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_POPUP_VOTES_YES</Tag>
-		<English>votes YES[NEWLINE]</English>
-		<French>vote OUI[NEWLINE]</French>
-		<German>stimmt mit JA[NEWLINE]</German>
-		<Italian>vota S&#204;[NEWLINE]</Italian>
-		<Spanish>vota S&#205;[NEWLINE]</Spanish>
-	</TEXT>
+		<English>赞成票[NEWLINE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>赞成票[NEWLINE]</Chinese><French>votes YES[NEWLINE]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_POPUP_YES_WINS</Tag>
-		<English>[NEWLINE]YES wins</English>
-		<French>[NEWLINE]Le OUI l'emporte</French>
-		<German>[NEWLINE]JA-Stimmen &#252;berwiegen</German>
-		<Italian>[NEWLINE]Vincono i S&#204;</Italian>
-		<Spanish>[NEWLINE]Gana el S&#205;</Spanish>
-	</TEXT>
+		<English>[NEWLINE]获得通过</English>
+		<L1/><L2/><L3/><L4/><Chinese>[NEWLINE]获得通过</Chinese><French>[NEWLINE]YES wins</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_REFUSE</Tag>
-		<English>Refuse</English>
-		<French>Refuser</French>
-		<German>Verweigern</German>
-		<Italian>Refuse</Italian>
-		<Spanish>Refuse</Spanish>
-	</TEXT>
+		<English>拒绝</English>
+		<L1/><L2/><L3/><L4/><Chinese>拒绝</Chinese><French>Refuse</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_REFUSE_DECISION</Tag>
-		<English>Refuse leaving the city!</English>
-		<French>Refuser de quitter la ville !</French>
-		<German>&#220;bereignung der Stadt verweigern!</German>
-		<Italian>Rifiutati di lasciare la citt&#224;!</Italian>
-		<Spanish>&#161;Negarse a ceder la ciudad!</Spanish>
-	</TEXT>
+		<English>拒绝放弃该城!</English>
+		<L1/><L2/><L3/><L4/><Chinese>拒绝放弃该城!</Chinese><French>Refuse leaving the city!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_REQUEST</Tag>
-		<English>%s1 wants %s2 (%s3)</English>
-		<French>%s1 d&#233;sire %s2 (%s3)</French>
-		<German>%s1 fordert %s2 (%s3)</German>
-		<Italian>%s1 vuole %s2 (%s3)</Italian>
-		<Spanish>%s1 quiere %s2 (%s3)</Spanish>
-	</TEXT>
+		<English>%s1要求%s2(%s3)</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1要求%s2(%s3)</Chinese><French>%s1 wants %s2 (%s3)</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_REQUEST1</Tag>
-		<English>The Congress has decided that</English>
-		<French>Le congr&#232;s a d&#233;cid&#233; que</French>
-		<German>Der Kongress hat beschlossen, dass</German>
-		<Italian>Il congresso ha deciso che</Italian>
-		<Spanish>El Congreso ha decidido que</Spanish>
-	</TEXT>
+		<English>国际会议决定</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际会议决定</Chinese><French>The Congress has decided that</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_REQUEST2</Tag>
-		<English>should be assigned to</English>
-		<French>devrait &#234;tre assign&#233; au contr&#244;le de</French>
-		<German>an</German>
-		<Italian>debba essere assegnata a</Italian>
-		<Spanish>pase a estar bajo control</Spanish>
-	</TEXT>
+		<English>应该移交给</English>
+		<L1/><L2/><L3/><L4/><Chinese>应该移交给</Chinese><French>should be assigned to</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_REQUEST3</Tag>
-		<English>control.[NEWLINE]Do you agree? (Our refusal may lead to a war)</English>
-		<French>[NEWLINE]&#202;tes-vous d'accord ? (Notre refus pourrait causer une guerre)</French>
-		<German>&#252;bereignet werden sollte.[NEWLINE]Seid Ihr einverstanden? (Unsere Weigerung k&#246;nnte einen Krieg nach sich ziehen)</German>
-		<Italian>.[NEWLINE]Sei d'accordo? (Il rifiuto potrebbe portare a una guerra)</Italian>
-		<Spanish> [NEWLINE]&#191;Est&#225;is de acuerdo? (Una negativa podr&#237;a provocar una guerra)</Spanish>
-	</TEXT>
+		<English>统治。[NEWLINE]你同意吗？(拒绝可能导致战争)</English>
+		<L1/><L2/><L3/><L4/><Chinese>统治。[NEWLINE]你同意吗？(拒绝可能导致战争)</Chinese><French>control.[NEWLINE]Do you agree? (Our refusal may lead to a war)</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_REQUEST_CITY</Tag>
-		<English>%s1 claims the %s2 city of %s3</English>
-		<French>%s1 revendique la ville %s2 de %s3</French>
-		<German>%s1 fordert die %s2 Stadt %s3</German>
-		<Italian>%s1 claims the %s2 city of %s3</Italian>
-		<Spanish>%s1 claims the %s2 city of %s3</Spanish>
-	</TEXT>
+		<English>%s1声明%s3的%s2城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1声明%s3的%s2城市</Chinese><French>%s1 claims the %s2 city of %s3</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_REQUEST_SETTLE_EMPTY</Tag>
-		<English>%s1 claims unsettled territory to found %s2</English>
-		<French>%s1 revendique un territoire non colonis&#233; pour fonder %s2</French>
-		<German>%s1 fordert unbesiedeltes Gebiet, um %s2 zu gr&#252;nden</German>
-		<Italian>%s1 claims unsettled territory to found %s2</Italian>
-		<Spanish>%s1 claims unsettled territory to found %s2</Spanish>
-	</TEXT>
+		<English>%s1要求找到未结算区域%s2</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1要求找到未结算区域%s2</Chinese><French>%s1 claims unsettled territory to found %s2</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_REQUEST_SETTLE_FOREIGN</Tag>
-		<English>%s1 claims %s2 territory to found %s3</English>
-		<French>%s1 revendique un territoire %s2 pour fonder %s3</French>
-		<German>%s1 fordert %s2 Gebiet, um %s3 zu gr&#252;nden</German>
-		<Italian>%s1 claims %s2 territory to found %s3</Italian>
-		<Spanish>%s1 claims %s2 territory to found %s3</Spanish>
-	</TEXT>
+		<English>%s1声明找到%s3的%s2区域</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1声明找到%s3的%s2区域</Chinese><French>%s1 claims %s2 territory to found %s3</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_REQUEST_SETTLE_OWN</Tag>
-		<English>%s1 requests to found %s2 on their own territory</English>
-		<French>%s1 demande &#224; fonder %s2 sur son propre territoire</French>
-		<German>%s1 beantragt, %s2 im eigenen Gebiet zu gr&#252;nden</German>
-		<Italian>%s1 requests to found %s2 on their own territory</Italian>
-		<Spanish>%s1 requests to found %s2 on their own territory</Spanish>
-	</TEXT>
+		<English>%s1请求在其自己的领土上找到%s2</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1请求在其自己的领土上找到%s2</Chinese><French>%s1 requests to found %s2 on their own territory</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_RESULT_ASSIGNMENT</Tag>
-		<English>[NEWLINE][ICON_BULLET]%s2 %s1 falls under %s3 control.</English>
-		<French>[NEWLINE][ICON_BULLET]%s2 %s1 tombe sous contr&#244;le %s3.</French>
-		<German>[NEWLINE][ICON_BULLET]%s2 %s1 f&#228;llt unter %s3 Kontrolle.</German>
-		<Italian>[NEWLINE][ICON_BULLET]%s2 %s1 falls under %s3 control.</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]%s2 %s1 falls under %s3 control.</Spanish>
-	</TEXT>
+		<English>%s2 %s1 受 %s3控制。</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 %s1 受 %s3控制。</Chinese><French>[NEWLINE][ICON_BULLET]%s2 %s1 falls under %s3 control.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_RESULT_COLONY</Tag>
-		<English>[NEWLINE][ICON_BULLET]%s2 may found %s1.</English>
-		<French>[NEWLINE][ICON_BULLET]%s2 peut fonder %s1.</French>
-		<German>[NEWLINE][ICON_BULLET]%s2 darf %s1 gr&#252;nden.</German>
-		<Italian>[NEWLINE][ICON_BULLET]%s2 may found %s1.</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]%s2 may found %s1.</Spanish>
-	</TEXT>
+		<English>[NEWLINE][ICON_BULLET]%s2 可能找到 %s1。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[NEWLINE][ICON_BULLET]%s2 可能找到 %s1。</Chinese><French>[NEWLINE][ICON_BULLET]%s2 may found %s1.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_RESULT_COLONY_TERRITORY</Tag>
-		<English>[NEWLINE][ICON_BULLET]%s3 may found %s1 in %s2 territory.</English>
-		<French>[NEWLINE][ICON_BULLET]%s3 peut fonder %s1 en territoire %s2.</French>
-		<German>[NEWLINE][ICON_BULLET]%s3 darf %s1 in %s2 Territorium gr&#252;nden.</German>
-		<Italian>[NEWLINE][ICON_BULLET]%s3 may found %s1 in %s2 territory.</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]%s3 may found %s1 in %s2 territory.</Spanish>
-	</TEXT>
+		<English>[NEWLINE][ICON_BULLET]%s3 可能在%s2 区域中找到%s1 。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[NEWLINE][ICON_BULLET]%s3 可能在%s2 区域中找到%s1 。</Chinese><French>[NEWLINE][ICON_BULLET]%s3 may found %s1 in %s2 territory.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_RESULTS</Tag>
-		<English>[H1]Congress of %s1[\H1][NEWLINE]After long negotiations, the voting members of the Congress have come to the following decision:[NEWLINE]</English>
-		<French>[H1]Congr&#232;s de %s1[\H1][NEWLINE]Au bout de longues n&#233;gociations, les d&#233;l&#233;gu&#233;s du congr&#232;s en sont arriv&#233;s &#224; la d&#233;cision suivante :[NEWLINE]</French>
-		<German>[H1]Kongress von %s1[\H1][NEWLINE]Nach langen Verhandlung sind die stimmberechtigen Mitglieder des Kongresses zu folgender Entscheidung gekommen:[NEWLINE]</German>
-		<Italian>[H1]Congress of %s1[\H1][NEWLINE]After long negotiations, the voting members of the Congress have come to the following decision:[NEWLINE]</Italian>
-		<Spanish>[H1]Congress of %s1[\H1][NEWLINE]After long negotiations, the voting members of the Congress have come to the following decision:[NEWLINE]</Spanish>
-	</TEXT>
+		<English>[H1]Congress of %s1[\H1][NEWLINE]组成的国际会议经过长时间的谈判，有投票权的国际会议成员做出了如下决定：[NEWLINE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]Congress of %s1[\H1][NEWLINE]组成的国际会议经过长时间的谈判，有投票权的国际会议成员做出了如下决定：[NEWLINE]</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]After long negotiations, the voting members of the Congress have come to the following decision:[NEWLINE]</French></TEXT>
 </Civ4GameText>

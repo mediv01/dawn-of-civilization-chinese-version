@@ -1,402 +1,138 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='GBK'?>
 <!-- Barbarians -->
 <Civ4GameText>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_ASSYRIAN</Tag>
-		<English>Assyrian</English>
-		<French>
-			<Text>assyrien:assyrienne:assyriens:assyriennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Assyrian</German>
-		<Italian>Assyrian</Italian>
-		<Spanish>Assyrian</Spanish>
-	</TEXT>
+		<English>亚述</English>
+		<L1/><L2/><L3/><L4/><Chinese>亚述</Chinese><French>Assyrian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_AVAR</Tag>
-		<English>Avar</English>
-		<French>
-			<Text>avar:avar:avars:avars</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Avar</German>
-		<Italian>Avar</Italian>
-		<Spanish>Avar</Spanish>
-	</TEXT>
+		<English>阿瓦尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿瓦尔</Chinese><French>Avar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_BEDOUIN</Tag>
-		<English>Bedouin</English>
-		<French>
-			<Text>b&#233;douin:b&#233;douine:b&#233;douins:b&#233;douines</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Bedouin</German>
-		<Italian>Bedouin</Italian>
-		<Spanish>Bedouin</Spanish>
-	</TEXT>
+		<English>贝都因</English>
+		<L1/><L2/><L3/><L4/><Chinese>贝都因</Chinese><French>Bedouin</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_BERBER</Tag>
-		<English>Berber</English>
-		<French>
-			<Text>berb&#232;re:berb&#232;re:berb&#232;res:berb&#232;res</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Berber</German>
-		<Italian>Berber</Italian>
-		<Spanish>Berber</Spanish>
-	</TEXT>
+		<English>柏柏尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>柏柏尔</Chinese><French>Berber</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_BULGAR</Tag>
-		<English>Bulgar</English>
-		<French>
-			<Text>proto-bulgare:proto-bulgare:proto-bulgares:proto-bulgares</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Bulgar</German>
-		<Italian>Bulgar</Italian>
-		<Spanish>Bulgar</Spanish>
-	</TEXT>
+		<English>保加利亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>保加利亚</Chinese><French>Bulgar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_CUMAN</Tag>
-		<English>Cuman</English>
-		<French>
-			<Text>couman:coumane:coumans:coumanes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Cuman</German>
-		<Italian>Cuman</Italian>
-		<Spanish>Cuman</Spanish>
-	</TEXT>
+		<English>库曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>库曼</Chinese><French>Cuman</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_ELAMITE</Tag>
-		<English>Elamite</English>
-		<French>
-			<Text>&#233;lamite:&#233;lamite:&#233;lamites:&#233;lamites</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Elamite</German>
-		<Italian>Elamite</Italian>
-		<Spanish>Elamite</Spanish>
-	</TEXT>
+		<English>伊兰特</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊兰特</Chinese><French>Elamite</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_GAUL</Tag>
-		<English>Gaul</English>
-		<French>
-			<Text>gaulois:gauloise:gaulois:gauloises</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Gaul</German>
-		<Italian>Gaul</Italian>
-		<Spanish>Gaul</Spanish>
-	</TEXT>
+		<English>高卢</English>
+		<L1/><L2/><L3/><L4/><Chinese>高卢</Chinese><French>Gaul</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_GERMANIC</Tag>
-		<English>Germanic</English>
-		<French>
-			<Text>germanique:germanique:germaniques:germaniques</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Germanic</German>
-		<Italian>Germanic</Italian>
-		<Spanish>Germanic</Spanish>
-	</TEXT>
+		<English>日耳曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>日耳曼</Chinese><French>Germanic</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_GHANAIAN</Tag>
-		<English>Ghanaian</English>
-		<French>
-			<Text>ghan&#233;en:ghan&#233;enne:ghan&#233;ens:ghan&#233;ennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Ghanaian</German>
-		<Italian>Ghanaian</Italian>
-		<Spanish>Ghanaian</Spanish>
-	</TEXT>
+		<English>加纳人</English>
+		<L1/><L2/><L3/><L4/><Chinese>加纳人</Chinese><French>Ghanaian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_GOKTURK</Tag>
-		<English>G&#246;kt&#252;rk</English>
-		<French>
-			<Text>g&#246;kt&#252;rk:g&#246;kt&#252;rk:g&#246;kt&#252;rks:g&#246;kt&#252;rks</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>G&#246;kt&#252;rk</German>
-		<Italian>G&#246;kt&#252;rk</Italian>
-		<Spanish>G&#246;kt&#252;rk</Spanish>
-	</TEXT>
+		<English>西突厥</English>
+		<L1/><L2/><L3/><L4/><Chinese>西突厥</Chinese><French>G&#246;ktürk</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_HEPHTHALITE</Tag>
-		<English>Hephthalite</English>
-		<French>
-			<Text>hephthalite:hephthalite:hephthalites:hephthalites</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Hephthalite</German>
-		<Italian>Hephthalite</Italian>
-		<Spanish>Hephthalite</Spanish>
-	</TEXT>
+		<English>嚈哒</English>
+		<L1/><L2/><L3/><L4/><Chinese>嚈哒</Chinese><French>Hephthalite</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_HITTITE</Tag>
-		<English>Hittite</English>
-		<French>
-			<Text>hittite:hittite:hittites:hittites</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Hittite</German>
-		<Italian>Hittite</Italian>
-		<Spanish>Hittite</Spanish>
-	</TEXT>
+		<English>赫梯</English>
+		<L1/><L2/><L3/><L4/><Chinese>赫梯</Chinese><French>Hittite</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_HUNNIC</Tag>
-		<English>Hunnic</English>
-		<French>
-			<Text>hunnique:hunnique:hunniques:hunniques</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Hunnic</German>
-		<Italian>Hunnic</Italian>
-		<Spanish>Hunnic</Spanish>
-	</TEXT>
+		<English>匈人</English>
+		<L1/><L2/><L3/><L4/><Chinese>匈人</Chinese><French>Hunnic</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_INDO_SCYTHIAN</Tag>
-		<English>Indo-Scythian</English>
-		<French>
-			<Text>indo-scythe:indo-scythe:indo-scythes:indo-scythes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Indo-Scythian</German>
-		<Italian>Indo-Scythian</Italian>
-		<Spanish>Indo-Scythian</Spanish>
-	</TEXT>
+		<English>印度-西徐亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度-西徐亚</Chinese><French>Indo-Scythian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_JURCHEN</Tag>
-		<English>Jurchen</English>
-		<French>
-			<Text>j眉rchen:j眉rchen:j眉rchen:j眉rchen</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Jurchen</German>
-		<Italian>Jurchen</Italian>
-		<Spanish>Jurchen</Spanish>
-	</TEXT>
+		<English>女真</English>
+		<L1/><L2/><L3/><L4/><Chinese>女真</Chinese><French>Jurchen</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_KAZAKH</Tag>
-		<English>Kazakh</English>
-		<French>
-			<Text>kazakh:kazakhe:kazakhs:kazakhes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Kazakh</German>
-		<Italian>Kazakh</Italian>
-		<Spanish>Kazakh</Spanish>
-	</TEXT>
+		<English>哈萨克</English>
+		<L1/><L2/><L3/><L4/><Chinese>哈萨克</Chinese><French>Kazakh</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_KHITAN</Tag>
-		<English>Khitan</English>
-		<French>
-			<Text>khitan:khitan:khitan:khitan</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Khitan</German>
-		<Italian>Khitan</Italian>
-		<Spanish>Khitan</Spanish>
-	</TEXT>
+		<English>契丹</English>
+		<L1/><L2/><L3/><L4/><Chinese>契丹</Chinese><French>Khitan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_KUSHANA</Tag>
-		<English>Kushan</English>
-		<French>
-			<Text>kouchan:kouchane:kouchans:kouchanes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Kushan</German>
-		<Italian>Kushan</Italian>
-		<Spanish>Kushan</Spanish>
-	</TEXT>
+		<English>贵霜</English>
+		<L1/><L2/><L3/><L4/><Chinese>贵霜</Chinese><French>Kushan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_NOGAI</Tag>
-		<English>Nogai</English>
-		<French>
-			<Text>noga&#239;:noga&#239;e:noga&#239;s:noga&#239;es</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Nogai</German>
-		<Italian>Nogai</Italian>
-		<Spanish>Nogai</Spanish>
-	</TEXT>
+		<English>野井</English>
+		<L1/><L2/><L3/><L4/><Chinese>野井</Chinese><French>Nogai</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_NORSE</Tag>
-		<English>Norse</English>
-		<French>
-			<Text>scandinave:scandinave:scandinaves:scandinaves</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Norse</German>
-		<Italian>Norse</Italian>
-		<Spanish>Norse</Spanish>
-	</TEXT>
+		<English>挪威</English>
+		<L1/><L2/><L3/><L4/><Chinese>挪威</Chinese><French>Norse</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_NUBIAN</Tag>
-		<English>Nubian</English>
-		<French>
-			<Text>nubien:nubienne:nubiens:nubiennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Nubian</German>
-		<Italian>Nubian</Italian>
-		<Spanish>Nubian</Spanish>
-	</TEXT>
+		<English>努比亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>努比亚</Chinese><French>Nubian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_PARTHIAN</Tag>
-		<English>Parthian</English>
-		<French>
-			<Text>parthe:parthe:parthes:parthes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Parthian</German>
-		<Italian>Parthian</Italian>
-		<Spanish>Parthian</Spanish>
-	</TEXT>
+		<English>帕提亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>帕提亚</Chinese><French>Parthian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_SCYTHIAN</Tag>
-		<English>Scythian</English>
-		<French>
-			<Text>scythe:scythe:scythes:scythes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Scythian</German>
-		<Italian>Scythian</Italian>
-		<Spanish>Scythian</Spanish>
-	</TEXT>
+		<English>西徐亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>西徐亚</Chinese><French>Scythian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_SIBIR</Tag>
-		<English>Sibir</English>
-		<French>
-			<Text>sib&#233;rien:sib&#233;rienne:sib&#233;riens:sib&#233;riennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Sibir</German>
-		<Italian>Sibir</Italian>
-		<Spanish>Sibir</Spanish>
-	</TEXT>
+		<English>锡比尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>锡比尔</Chinese><French>Sibir</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_SONGHAI</Tag>
-		<English>Songhai</English>
-		<French>
-			<Text>songha&#239;:songha&#239;:songha&#239;s:songha&#239;s</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Songhai</German>
-		<Italian>Songhai</Italian>
-		<Spanish>Songhai</Spanish>
-	</TEXT>
+		<English>桑海</English>
+		<L1/><L2/><L3/><L4/><Chinese>桑海</Chinese><French>Songhai</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_TATAR</Tag>
-		<English>Tatar</English>
-		<French>
-			<Text>tatar:tatare:tatars:tatares</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Tatar</German>
-		<Italian>Tatar</Italian>
-		<Spanish>Tatar</Spanish>
-	</TEXT>
+		<English>鞑靼</English>
+		<L1/><L2/><L3/><L4/><Chinese>鞑靼</Chinese><French>Tatar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_TIBETAN</Tag>
-		<English>Tibetan</English>
-		<French>
-			<Text>tib&#233;tain:tib&#233;taine:tib&#233;tains:tib&#233;taines</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Tibetan</German>
-		<Italian>Tibetan</Italian>
-		<Spanish>Tibetan</Spanish>
-	</TEXT>
+		<English>吐蕃</English>
+		<L1/><L2/><L3/><L4/><Chinese>吐蕃</Chinese><French>Tibetan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_TURKIC</Tag>
-		<English>Turkic</English>
-		<French>
-			<Text>turc:turque:turcs:turques</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Turkic</German>
-		<Italian>Turkic</Italian>
-		<Spanish>Turkic</Spanish>
-	</TEXT>
+		<English>突厥</English>
+		<L1/><L2/><L3/><L4/><Chinese>突厥</Chinese><French>Turkic</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_UIGHUR</Tag>
-		<English>Uighur</English>
-		<French>
-			<Text>ou&#239;ghour:ou&#239;ghoure:ou&#239;ghours:ou&#239;ghoures</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Uighur</German>
-		<Italian>Uighur</Italian>
-		<Spanish>Uighur</Spanish>
-	</TEXT>
+		<English>回纥</English>
+		<L1/><L2/><L3/><L4/><Chinese>回纥</Chinese><French>Uighur</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_UZBEK</Tag>
-		<English>Uzbek</English>
-		<French>
-			<Text>ouzbek:ouzb&#232;ke:ouzbeks:ouzb&#232;kes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Uzbek</German>
-		<Italian>Uzbek</Italian>
-		<Spanish>Uzbek</Spanish>
-	</TEXT>
+		<English>乌兹别克</English>
+		<L1/><L2/><L3/><L4/><Chinese>乌兹别克</Chinese><French>Uzbek</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_VISIGOTHIC</Tag>
-		<English>Visigothic</English>
-		<French>
-			<Text>wisigothique:wisigothique:wisigothiques:wisigothiques</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Visigothic</German>
-		<Italian>Visigothic</Italian>
-		<Spanish>Visigothic</Spanish>
-	</TEXT>
+		<English>西哥特</English>
+		<L1/><L2/><L3/><L4/><Chinese>西哥特</Chinese><French>Visigothic</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_XIONGNU</Tag>
-		<English>Xiongnu</English>
-		<French>
-			<Text>xiongnu:xiongnu:xiongnu:xiongnu</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Xiongnu</German>
-		<Italian>Xiongnu</Italian>
-		<Spanish>Xiongnu</Spanish>
-	</TEXT>
+		<English>匈奴</English>
+		<L1/><L2/><L3/><L4/><Chinese>匈奴</Chinese><French>Xiongnu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERC_CELT_ADJECTIVE</Tag>
 		<English>
@@ -404,27 +140,8 @@
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</English>
-		<French>
-			<Text>celte:celte:celtes:celtes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>
-			<Text>Keltisch</Text>
-			<Gender>Neuter</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>del popolo celtico</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>celta</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<L1/><L2/><L3/><L4/><French>
+			</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERC_KOREA_ADJECTIVE</Tag>
 		<English>
@@ -432,27 +149,8 @@
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</English>
-		<French>
-			<Text>cor&#233;en:cor&#233;enne:cor&#233;ens:cor&#233;ennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>
-			<Text>Koreanisch</Text>
-			<Gender>Neuter</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>del popolo coreano</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>coreano</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<L1/><L2/><L3/><L4/><French>
+			</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERC_ZULU_ADJECTIVE</Tag>
 		<English>
@@ -460,1165 +158,386 @@
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</English>
-		<French>
-			<Text>zoulou:zouloue:zoulous:zouloues</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>
-			<Text>Zulul&#228;ndisch</Text>
-			<Gender>Neuter</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>del popolo zulu</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>zul&#250;</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<L1/><L2/><L3/><L4/><French>
+			</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_AINU</Tag>
-		<English>Ainu</English>
-		<French>
-			<Text>a&#239;nou:a&#239;noue:a&#239;nous:a&#239;noues</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Ainu</German>
-		<Italian>Ainu</Italian>
-		<Spanish>Ainu</Spanish>
-	</TEXT>
+		<English>阿伊努</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿伊努</Chinese><French>Ainu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_APACHE</Tag>
-		<English>Apache</English>
-		<French>
-			<Text>apache:apache:apaches:apaches</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Apache</German>
-		<Italian>Apache</Italian>
-		<Spanish>Apache</Spanish>
-	</TEXT>
+		<English>阿帕切</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿帕切</Chinese><French>Apache</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ARABIAN</Tag>
-		<English>Arabian</English>
-		<French>
-			<Text>arabe:arabe:arabes:arabes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Arabian</German>
-		<Italian>Arabian</Italian>
-		<Spanish>Arabian</Spanish>
-	</TEXT>
+		<English>阿拉伯</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯</Chinese><French>Arabian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ARYAN</Tag>
-		<English>Aryan</English>
-		<French>
-			<Text>aryen:aryenne:aryens:aryennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Aryan</German>
-		<Italian>Aryan</Italian>
-		<Spanish>Aryan</Spanish>
-	</TEXT>
+		<English>雅利安</English>
+		<L1/><L2/><L3/><L4/><Chinese>雅利安</Chinese><French>Aryan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ASHANTI</Tag>
-		<English>Ashanti</English>
-		<French>
-			<Text>ashanti:ashanti:ashantis:ashantis</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Ashanti</German>
-		<Italian>Ashanti</Italian>
-		<Spanish>Ashanti</Spanish>
-	</TEXT>
+		<English>阿善堤</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿善堤</Chinese><French>Ashanti</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ASSYRIAN</Tag>
-		<English>Assyrian</English>
-		<French>
-			<Text>assyrien:assyrienne:assyriens:assyriennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Assyrian</German>
-		<Italian>Assyrian</Italian>
-		<Spanish>Assyrian</Spanish>
-	</TEXT>
+		<English>亚述</English>
+		<L1/><L2/><L3/><L4/><Chinese>亚述</Chinese><French>Assyrian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BACTRIAN</Tag>
-		<English>Bactrian</English>
-		<French>
-			<Text>bactrien:bactrienne:bactriens:bactriennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Bactrian</German>
-		<Italian>Bactrian</Italian>
-		<Spanish>Bactrian</Spanish>
-	</TEXT>
+		<English>大夏</English>
+		<L1/><L2/><L3/><L4/><Chinese>大夏</Chinese><French>Bactrian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BANTU</Tag>
-		<English>Bantu</English>
-		<French>
-			<Text>bantou:bantoue:bantous:bantoues</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Bantu</German>
-		<Italian>Bantu</Italian>
-		<Spanish>Bantu</Spanish>
-	</TEXT>
+		<English>班图</English>
+		<L1/><L2/><L3/><L4/><Chinese>班图</Chinese><French>Bantu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BENGAL</Tag>
-		<English>Bengal</English>
-		<French>
-			<Text>bengali:bengali:bengalis:bengalis</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Bengal</German>
-		<Italian>Bengal</Italian>
-		<Spanish>Bengal</Spanish>
-	</TEXT>
+		<English>孟加拉</English>
+		<L1/><L2/><L3/><L4/><Chinese>孟加拉</Chinese><French>Bengal</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BERBER</Tag>
-		<English>Berber</English>
-		<French>
-			<Text>berb&#232;re:berb&#232;re:berb&#232;res:berb&#232;res</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Berber</German>
-		<Italian>Berber</Italian>
-		<Spanish>Berber</Spanish>
-	</TEXT>
+		<English>柏柏尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>柏柏尔</Chinese><French>Berber</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BOHEMIAN</Tag>
-		<English>Bohemian</English>
-		<French>
-			<Text>boh&#233;mien:boh&#233;mienne:boh&#233;miens:boh&#233;miennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Bohemian</German>
-		<Italian>Bohemian</Italian>
-		<Spanish>Bohemian</Spanish>
-	</TEXT>
+		<English>波西米亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>波西米亚</Chinese><French>Bohemian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BRITON</Tag>
-		<English>Briton</English>
-		<French>
-			<Text>breton:bretone:bretons:bretones</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Briton</German>
-		<Italian>Briton</Italian>
-		<Spanish>Briton</Spanish>
-	</TEXT>
+		<English>不列颠</English>
+		<L1/><L2/><L3/><L4/><Chinese>不列颠</Chinese><French>Briton</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BULGAR</Tag>
-		<English>Bulgar</English>
-		<French>
-			<Text>proto-bulgare:proto-bulgare:proto-bulgares:proto-bulgares</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Bulgar</German>
-		<Italian>Bulgar</Italian>
-		<Spanish>Bulgar</Spanish>
-	</TEXT>
+		<English>保加利亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>保加利亚</Chinese><French>Bulgar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BURGUNDIAN</Tag>
-		<English>Burgundian</English>
-		<French>
-			<Text>bourguignon:bourguignonne:bourguignons:bourguignonnes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Burgundian</German>
-		<Italian>Burgundian</Italian>
-		<Spanish>Burgundian</Spanish>
-	</TEXT>
+		<English>勃艮第</English>
+		<L1/><L2/><L3/><L4/><Chinese>勃艮第</Chinese><French>Burgundian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BURMESE</Tag>
-		<English>Burmese</English>
-		<French>
-			<Text>birman:birmane:birmans:birmanes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Burmese</German>
-		<Italian>Burmese</Italian>
-		<Spanish>Burmese</Spanish>
-	</TEXT>
+		<English>缅甸</English>
+		<L1/><L2/><L3/><L4/><Chinese>缅甸</Chinese><French>Burmese</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_CATALAN</Tag>
-		<English>Catalan</English>
-		<French>
-			<Text>catalan:catalane:catalans:catalanes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Catalan</German>
-		<Italian>Catalan</Italian>
-		<Spanish>Catalan</Spanish>
-	</TEXT>
+		<English>加泰隆</English>
+		<L1/><L2/><L3/><L4/><Chinese>加泰隆</Chinese><French>Catalan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_CELTIC</Tag>
-		<English>Celtic</English>
-		<French>
-			<Text>celte:celte:celtes:celtes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Celtic</German>
-		<Italian>Celtic</Italian>
-		<Spanish>Celtic</Spanish>
-	</TEXT>
+		<English>凯尔特</English>
+		<L1/><L2/><L3/><L4/><Chinese>凯尔特</Chinese><French>Celtic</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_CHAN_CHAN</Tag>
-		<English>Moche</English>
-		<French>
-			<Text>moche:moche:moches:moches</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Moche</German>
-		<Italian>Moche</Italian>
-		<Spanish>Moche</Spanish>
-	</TEXT>
+		<English>莫希</English>
+		<L1/><L2/><L3/><L4/><Chinese>莫希</Chinese><French>Moche</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_CHEYENNE</Tag>
-		<English>Cheyenne</English>
-		<French>
-			<Text>cheyenne:cheyenne:cheyennes:cheyennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Cheyenne</German>
-		<Italian>Cheyenne</Italian>
-		<Spanish>Cheyenne</Spanish>
-	</TEXT>
+		<English>夏延</English>
+		<L1/><L2/><L3/><L4/><Chinese>夏延</Chinese><French>Cheyenne</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_CIRCASSIAN</Tag>
-		<English>Circassian</English>
-		<French>
-			<Text>circassien:circassienne:circassiens:circassiennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Circassian</German>
-		<Italian>Circassian</Italian>
-		<Spanish>Circassian</Spanish>
-	</TEXT>
+		<English>切尔克斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>切尔克斯</Chinese><French>Circassian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_DACIAN</Tag>
-		<English>Dacian</English>
-		<French>
-			<Text>dace:dace:daces:daces</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Dacian</German>
-		<Italian>Dacian</Italian>
-		<Spanish>Dacian</Spanish>
-	</TEXT>
+		<English>达契亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>达契亚</Chinese><French>Dacian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_DRAVIDIAN</Tag>
-		<English>Dravidian</English>
-		<French>
-			<Text>dravidien:dravidienne:dravidiens:dravidiennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Dravidian</German>
-		<Italian>Dravidian</Italian>
-		<Spanish>Dravidian</Spanish>
-	</TEXT>
+		<English>达罗毗荼</English>
+		<L1/><L2/><L3/><L4/><Chinese>达罗毗荼</Chinese><French>Dravidian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ELAMITE</Tag>
-		<English>Elamite</English>
-		<French>
-			<Text>&#233;lamite:&#233;lamite:&#233;lamites:&#233;lamites</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Elamite</German>
-		<Italian>Elamite</Italian>
-		<Spanish>Elamite</Spanish>
-	</TEXT>
+		<English>埃兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃兰</Chinese><French>Elamite</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ETRUSCAN</Tag>
-		<English>Etruscan</English>
-		<French>
-			<Text>&#233;trusque:&#233;trusque:&#233;trusques:&#233;trusques</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Etruscan</German>
-		<Italian>Etruscan</Italian>
-		<Spanish>Etruscan</Spanish>
-	</TEXT>
+		<English>伊特鲁里亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊特鲁里亚</Chinese><French>Etruscan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_GAULISH</Tag>
-		<English>Gaulish</English>
-		<French>
-			<Text>gaulois:gauloise:gaulois:gauloises</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Gaulish</German>
-		<Italian>Gaulish</Italian>
-		<Spanish>Gaulish</Spanish>
-	</TEXT>
+		<English>高卢</English>
+		<L1/><L2/><L3/><L4/><Chinese>高卢</Chinese><French>Gaulish</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_GOTHIC</Tag>
-		<English>Gothic</English>
-		<French>
-			<Text>goth:gothe:goths:gothes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Gothic</German>
-		<Italian>Gothic</Italian>
-		<Spanish>Gothic</Spanish>
-	</TEXT>
+		<English>哥特</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥特</Chinese><French>Gothic</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_GUARANI</Tag>
-		<English>Guarani</English>
-		<French>
-			<Text>guarani:guarani:guaranis:guaranis</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Guarani</German>
-		<Italian>Guarani</Italian>
-		<Spanish>Guarani</Spanish>
-	</TEXT>
+		<English>瓜拉尼</English>
+		<L1/><L2/><L3/><L4/><Chinese>瓜拉尼</Chinese><French>Guarani</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_HAN</Tag>
-		<English>Han</English>
-		<French>
-			<Text>han:han:han:han</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Han</German>
-		<Italian>Han</Italian>
-		<Spanish>Han</Spanish>
-	</TEXT>
+		<English>汉族</English>
+		<L1/><L2/><L3/><L4/><Chinese>汉族</Chinese><French>Han</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_HARAPPAN</Tag>
-		<English>Harappan</English>
-		<French>
-			<Text>harapp&#233;en:harapp&#233;enne:harapp&#233;ens:harapp&#233;ennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Harappan</German>
-		<Italian>Harappan</Italian>
-		<Spanish>Harappan</Spanish>
-	</TEXT>
+		<English>哈拉帕</English>
+		<L1/><L2/><L3/><L4/><Chinese>哈拉帕</Chinese><French>Harappan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_HITTITE</Tag>
-		<English>Hittite</English>
-		<French>
-			<Text>hittite:hittite:hittites:hittites</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Hittite</German>
-		<Italian>Hittite</Italian>
-		<Spanish>Hittite</Spanish>
-	</TEXT>
+		<English>赫梯</English>
+		<L1/><L2/><L3/><L4/><Chinese>赫梯</Chinese><French>Hittite</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_HUNGARIAN</Tag>
-		<English>Hungarian</English>
-		<French>
-			<Text>hongrois:hongroise:hongrois:hongroises</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Hungarian</German>
-		<Italian>Hungarian</Italian>
-		<Spanish>Hungarian</Spanish>
-	</TEXT>
+		<English>匈牙利</English>
+		<L1/><L2/><L3/><L4/><Chinese>匈牙利</Chinese><French>Hungarian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_HURRIAN</Tag>
-		<English>Hurrian</English>
-		<French>
-			<Text>hourrite:hourrite:hourrites:hourrites</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Hurrian</German>
-		<Italian>Hurrian</Italian>
-		<Spanish>Hurrian</Spanish>
-	</TEXT>
+		<English>胡里特</English>
+		<L1/><L2/><L3/><L4/><Chinese>胡里特</Chinese><French>Hurrian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_HYKSOS</Tag>
-		<English>Hyksos</English>
-		<French>
-			<Text>hyks&#244;s:hyks&#244;s:hyks&#244;s:hyks&#244;s</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Hyksos</German>
-		<Italian>Hyksos</Italian>
-		<Spanish>Hyksos</Spanish>
-	</TEXT>
+		<English>希克索斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>希克索斯</Chinese><French>Hyksos</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_IBERIAN</Tag>
-		<English>Iberian</English>
-		<French>
-			<Text>ib&#232;re:ib&#232;re:ib&#232;res:ib&#232;res</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Iberian</German>
-		<Italian>Iberian</Italian>
-		<Spanish>Iberian</Spanish>
-	</TEXT>
+		<English>伊比利亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊比利亚</Chinese><French>Iberian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ILLYRIAN</Tag>
-		<English>Illyrian</English>
-		<French>
-			<Text>illyrien:illyrienne:illyriens:illyriennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Illyrian</German>
-		<Italian>Illyrian</Italian>
-		<Spanish>Illyrian</Spanish>
-	</TEXT>
+		<English>伊利里亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊利里亚</Chinese><French>Illyrian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_IRANIAN</Tag>
-		<English>Iranian</English>
-		<French>
-			<Text>iranien:iranienne:iraniens:iraniennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Iranian</German>
-		<Italian>Iranian</Italian>
-		<Spanish>Iranian</Spanish>
-	</TEXT>
+		<English>伊朗</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊朗</Chinese><French>Iranian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_IRAQI</Tag>
-		<English>Iraqi</English>
-		<French>
-			<Text>irakien:irakienne:irakiens:irakiennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Iraqi</German>
-		<Italian>Iraqi</Italian>
-		<Spanish>Iraqi</Spanish>
-	</TEXT>
+		<English>伊拉克</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊拉克</Chinese><French>Iraqi</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_IRISH</Tag>
-		<English>Irish</English>
-		<French>
-			<Text>irlandais:irlandaise:irlandais:irlandaises</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Irish</German>
-		<Italian>Irish</Italian>
-		<Spanish>Irish</Spanish>
-	</TEXT>
+		<English>爱尔兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>爱尔兰</Chinese><French>Irish</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_IROQUOIS</Tag>
-		<English>Iroquois</English>
-		<French>
-			<Text>iroquois:iroquoise:iroquois:iroquoises</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Iroquois</German>
-		<Italian>Iroquois</Italian>
-		<Spanish>Iroquois</Spanish>
-	</TEXT>
+		<English>易洛魁</English>
+		<L1/><L2/><L3/><L4/><Chinese>易洛魁</Chinese><French>Iroquois</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_JAVANESE</Tag>
-		<English>Javanese</English>
-		<French>
-			<Text>javanais:javanaise:javanais:javanaises</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Javanese</German>
-		<Italian>Javanese</Italian>
-		<Spanish>Javanese</Spanish>
-	</TEXT>
+		<English>爪哇</English>
+		<L1/><L2/><L3/><L4/><Chinese>爪哇</Chinese><French>Javanese</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_JUDEAN</Tag>
-		<English>Judean</English>
-		<French>
-			<Text>jud&#233;en:jud&#233;enne:jud&#233;ens:jud&#233;ennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Judean</German>
-		<Italian>Judean</Italian>
-		<Spanish>Judean</Spanish>
-	</TEXT>
+		<English>犹太</English>
+		<L1/><L2/><L3/><L4/><Chinese>犹太</Chinese><French>Judean</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KASSITE</Tag>
-		<English>Kassite</English>
-		<French>
-			<Text>kassite:kassite:kassites:kassites</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Kassite</German>
-		<Italian>Kassite</Italian>
-		<Spanish>Kassite</Spanish>
-	</TEXT>
+		<English>加喜特</English>
+		<L1/><L2/><L3/><L4/><Chinese>加喜特</Chinese><French>Kassite</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KHAZAR</Tag>
-		<English>Khazar</English>
-		<French>
-			<Text>khazar:khazare:khazars:khazares</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Khazar</German>
-		<Italian>Khazar</Italian>
-		<Spanish>Khazar</Spanish>
-	</TEXT>
+		<English>哈札尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>哈札尔</Chinese><French>Khazar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KHMER</Tag>
-		<English>Khmer</English>
-		<French>
-			<Text>khmer:khm&#232;re:khmers:khm&#232;res</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Khmer</German>
-		<Italian>Khmer</Italian>
-		<Spanish>Khmer</Spanish>
-	</TEXT>
+		<English>高棉</English>
+		<L1/><L2/><L3/><L4/><Chinese>高棉</Chinese><French>Khmer</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KHWAREZMID</Tag>
-		<English>Khwarezmid</English>
-		<French>
-			<Text>khwarezmien:khwarezmienne:khwarezmiens:khwarezmiennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Khwarezmid</German>
-		<Italian>Khwarezmid</Italian>
-		<Spanish>Khwarezmid</Spanish>
-	</TEXT>
+		<English>花剌子模</English>
+		<L1/><L2/><L3/><L4/><Chinese>花剌子模</Chinese><French>Khwarezmid</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KIMMERIAN</Tag>
-		<English>Kimmerian</English>
-		<French>
-			<Text>cimm&#233;rien:cimm&#233;rienne:cimm&#233;riens:cimm&#233;riennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Kimmerian</German>
-		<Italian>Kimmerian</Italian>
-		<Spanish>Kimmerian</Spanish>
-	</TEXT>
+		<English>辛梅里安</English>
+		<L1/><L2/><L3/><L4/><Chinese>辛梅里安</Chinese><French>Kimmerian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KURDISH</Tag>
-		<English>Kurdish</English>
-		<French>
-			<Text>kurde:kurde:kurdes:kurdes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Kurdish</German>
-		<Italian>Kurdish</Italian>
-		<Spanish>Kurdish</Spanish>
-	</TEXT>
+		<English>库尔德</English>
+		<L1/><L2/><L3/><L4/><Chinese>库尔德</Chinese><French>Kurdish</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KUSHAN</Tag>
-		<English>Kushan</English>
-		<French>
-			<Text>kouchan:kouchane:kouchans:kouchanes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Kushan</German>
-		<Italian>Kushan</Italian>
-		<Spanish>Kushan</Spanish>
-	</TEXT>
+		<English>贵霜</English>
+		<L1/><L2/><L3/><L4/><Chinese>贵霜</Chinese><French>Kushan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_LOMBARD</Tag>
-		<English>Lombard</English>
-		<French>
-			<Text>lombard:lombarde:lombards:lombardes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Lombard</German>
-		<Italian>Lombard</Italian>
-		<Spanish>Lombard</Spanish>
-	</TEXT>
+		<English>伦巴第</English>
+		<L1/><L2/><L3/><L4/><Chinese>伦巴第</Chinese><French>Lombard</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_LYDIAN</Tag>
-		<English>Lydian</English>
-		<French>
-			<Text>lydien:lydienne:lydiens:lydiennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Lydian</German>
-		<Italian>Lydian</Italian>
-		<Spanish>Lydian</Spanish>
-	</TEXT>
+		<English>吕底亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>吕底亚</Chinese><French>Lydian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_MALAY</Tag>
-		<English>Malay</English>
-		<French>
-			<Text>malais:malaise:malais:malaises</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Malay</German>
-		<Italian>Malay</Italian>
-		<Spanish>Malay</Spanish>
-	</TEXT>
+		<English>马来</English>
+		<L1/><L2/><L3/><L4/><Chinese>马来</Chinese><French>Malay</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_MANCHU</Tag>
-		<English>Manchu</English>
-		<French>
-			<Text>mandchou:mandchoue:mandchous:mandchoues</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Manchu</German>
-		<Italian>Manchu</Italian>
-		<Spanish>Manchu</Spanish>
-	</TEXT>
+		<English>满洲</English>
+		<L1/><L2/><L3/><L4/><Chinese>满洲</Chinese><French>Manchu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_MINOAN</Tag>
-		<English>Minoan</English>
-		<French>
-			<Text>minoen:minoenne:minoens:minoennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Minoan</German>
-		<Italian>Minoan</Italian>
-		<Spanish>Minoan</Spanish>
-	</TEXT>
+		<English>克里特</English>
+		<L1/><L2/><L3/><L4/><Chinese>克里特</Chinese><French>Minoan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_MOORISH</Tag>
-		<English>Moorish</English>
-		<French>
-			<Text>maure:maure:maures:maures</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Moorish</German>
-		<Italian>Moorish</Italian>
-		<Spanish>Moorish</Spanish>
-	</TEXT>
+		<English>摩尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔</Chinese><French>Moorish</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_NABATEAN</Tag>
-		<English>Nabatean</English>
-		<French>
-			<Text>nabat&#233;en:nabat&#233;enne:nabat&#233;ens:nabat&#233;ennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Nabatean</German>
-		<Italian>Nabatean</Italian>
-		<Spanish>Nabatean</Spanish>
-	</TEXT>
+		<English>纳巴泰</English>
+		<L1/><L2/><L3/><L4/><Chinese>纳巴泰</Chinese><French>Nabatean</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_NAZCAN</Tag>
-		<English>Nazcan</English>
-		<French>
-			<Text>nazca:nazca:nazcas:nazcas</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Nazcan</German>
-		<Italian>Nazcan</Italian>
-		<Spanish>Nazcan</Spanish>
-	</TEXT>
+		<English>纳斯卡</English>
+		<L1/><L2/><L3/><L4/><Chinese>纳斯卡</Chinese><French>Nazcan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_NORMAN</Tag>
-		<English>Norman</English>
-		<French>
-			<Text>normand:normande:normands:normandes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Norman</German>
-		<Italian>Norman</Italian>
-		<Spanish>Norman</Spanish>
-	</TEXT>
+		<English>诺曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>诺曼</Chinese><French>Norman</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_NUBIAN</Tag>
-		<English>Nubian</English>
-		<French>
-			<Text>nubien:nubienne:nubiens:nubiennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Nubian</German>
-		<Italian>Nubian</Italian>
-		<Spanish>Nubian</Spanish>
-	</TEXT>
+		<English>努比亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>努比亚</Chinese><French>Nubian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_NUMIDIAN</Tag>
-		<English>Numidian</English>
-		<French>
-			<Text>numide:numide:numides:numides</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Numidian</German>
-		<Italian>Numidian</Italian>
-		<Spanish>Numidian</Spanish>
-	</TEXT>
+		<English>努米底亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>努米底亚</Chinese><French>Numidian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_OCCITAN</Tag>
-		<English>Occitan</English>
-		<French>
-			<Text>occitan:occitane:occitans:occitanes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Occitan</German>
-		<Italian>Occitan</Italian>
-		<Spanish>Occitan</Spanish>
-	</TEXT>
+		<English>欧西坦尼亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>欧西坦尼亚</Chinese><French>Occitan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_OLMEC</Tag>
-		<English>Olmec</English>
-		<French>
-			<Text>olm&#232;que:olm&#232;que:olm&#232;ques:olm&#232;ques</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Olmec</German>
-		<Italian>Olmec</Italian>
-		<Spanish>Olmec</Spanish>
-	</TEXT>
+		<English>奥尔梅克</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥尔梅克</Chinese><French>Olmec</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_OMANI</Tag>
-		<English>Omani</English>
-		<French>
-			<Text>omanais:omanaise:omanais:omanaises</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Omani</German>
-		<Italian>Omani</Italian>
-		<Spanish>Omani</Spanish>
-	</TEXT>
+		<English>阿曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿曼</Chinese><French>Omani</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_PARTHIAN</Tag>
-		<English>Parthian</English>
-		<French>
-			<Text>parthe:parthe:parthes:parthes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Parthian</German>
-		<Italian>Parthian</Italian>
-		<Spanish>Parthian</Spanish>
-	</TEXT>
+		<English>帕提亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>帕提亚</Chinese><French>Parthian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_PASHTUN</Tag>
-		<English>Pashtun</English>
-		<French>
-			<Text>pachtoune:pachtoune:pachtounes:pachtounes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Pashtun</German>
-		<Italian>Pashtun</Italian>
-		<Spanish>Pashtun</Spanish>
-	</TEXT>
+		<English>普什图</English>
+		<L1/><L2/><L3/><L4/><Chinese>普什图</Chinese><French>Pashtun</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_PHILISTINE</Tag>
-		<English>Philistine</English>
-		<French>
-			<Text>philistin:philistine:philistins:philistines</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Philistine</German>
-		<Italian>Philistine</Italian>
-		<Spanish>Philistine</Spanish>
-	</TEXT>
+		<English>非利士</English>
+		<L1/><L2/><L3/><L4/><Chinese>非利士</Chinese><French>Philistine</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_POLISH</Tag>
-		<English>Polish</English>
-		<French>
-			<Text>polonais:polonaise:polonais:polonaises</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Polish</German>
-		<Italian>Polish</Italian>
-		<Spanish>Polish</Spanish>
-	</TEXT>
+		<English>波兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>波兰</Chinese><French>Polish</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_POLYNESIAN</Tag>
-		<English>Polynesian</English>
-		<French>
-			<Text>polyn&#233;sien:polyn&#233;sienne:polyn&#233;siens:polyn&#233;siennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Polynesian</German>
-		<Italian>Polynesian</Italian>
-		<Spanish>Polynesian</Spanish>
-	</TEXT>
+		<English>波利尼西亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>波利尼西亚</Chinese><French>Polynesian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_RAJPUT</Tag>
-		<English>Rajput</English>
-		<French>
-			<Text>rajput:rajput:rajputs:rajputs</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Rajput</German>
-		<Italian>Rajput</Italian>
-		<Spanish>Rajput</Spanish>
-	</TEXT>
+		<English>拉其普特</English>
+		<L1/><L2/><L3/><L4/><Chinese>拉其普特</Chinese><French>Rajput</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_RUS</Tag>
-		<English>Rus</English>
-		<French>
-			<Text>Rus:Rus:Rus:Rus</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Rus</German>
-		<Italian>Rus</Italian>
-		<Spanish>Rus</Spanish>
-	</TEXT>
+		<English>罗斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗斯</Chinese><French>Rus</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SABEAN</Tag>
-		<English>Sabean</English>
-		<French>
-			<Text>sab&#233;en:sab&#233;enne:sab&#233;ens:sab&#233;ennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Sabean</German>
-		<Italian>Sabean</Italian>
-		<Spanish>Sabean</Spanish>
-	</TEXT>
+		<English>塞巴</English>
+		<L1/><L2/><L3/><L4/><Chinese>塞巴</Chinese><French>Sabean</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SCOTS</Tag>
-		<English>Scottish</English>
-		<French>
-			<Text>&#233;cossais:&#233;cossaise:&#233;cossais:&#233;cossaises</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Scottish</German>
-		<Italian>Scottish</Italian>
-		<Spanish>Scottish</Spanish>
-	</TEXT>
+		<English>苏格兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>苏格兰</Chinese><French>Scottish</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SELJUK</Tag>
-		<English>Seljuk</English>
-		<French>
-			<Text>seldjoukide:seldjoukide:seldjoukides:seldjoukides</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Seljuk</German>
-		<Italian>Seljuk</Italian>
-		<Spanish>Seljuk</Spanish>
-	</TEXT>
+		<English>塞尔柱</English>
+		<L1/><L2/><L3/><L4/><Chinese>塞尔柱</Chinese><French>Seljuk</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SICILIAN</Tag>
-		<English>Sicilian</English>
-		<French>
-			<Text>sicilien:sicilienne:siciliens:siciliennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Sicilian</German>
-		<Italian>Sicilian</Italian>
-		<Spanish>Sicilian</Spanish>
-	</TEXT>
+		<English>西西里</English>
+		<L1/><L2/><L3/><L4/><Chinese>西西里</Chinese><French>Sicilian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SIKH</Tag>
-		<English>Sikh</English>
-		<French>
-			<Text>sikh:sikhe:sikhs:sikhes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Sikh</German>
-		<Italian>Sikh</Italian>
-		<Spanish>Sikh</Spanish>
-	</TEXT>
+		<English>锡克</English>
+		<L1/><L2/><L3/><L4/><Chinese>锡克</Chinese><French>Sikh</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SIOUX</Tag>
-		<English>Sioux</English>
-		<French>
-			<Text>sioux:sioux:sioux:sioux</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Sioux</German>
-		<Italian>Sioux</Italian>
-		<Spanish>Sioux</Spanish>
-	</TEXT>
+		<English>苏族</English>
+		<L1/><L2/><L3/><L4/><Chinese>苏族</Chinese><French>Sioux</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SLAVIC</Tag>
-		<English>Slavic</English>
-		<French>
-			<Text>slave:slave:slaves:slaves</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Slavic</German>
-		<Italian>Slavic</Italian>
-		<Spanish>Slavic</Spanish>
-	</TEXT>
+		<English>斯拉夫</English>
+		<L1/><L2/><L3/><L4/><Chinese>斯拉夫</Chinese><French>Slavic</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SONGHAI</Tag>
-		<English>Songhai</English>
-		<French>
-			<Text>songha&#239;:songha&#239;:songha&#239;s:songha&#239;s</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Songhai</German>
-		<Italian>Songhai</Italian>
-		<Spanish>Songhai</Spanish>
-	</TEXT>
+		<English>桑海</English>
+		<L1/><L2/><L3/><L4/><Chinese>桑海</Chinese><French>Songhai</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SUAHELI</Tag>
-		<English>Suaheli</English>
-		<French>
-			<Text>swahili:swahilie:swahilis:swahilies</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Suaheli</German>
-		<Italian>Suaheli</Italian>
-		<Spanish>Suaheli</Spanish>
-	</TEXT>
+		<English>斯瓦希里</English>
+		<L1/><L2/><L3/><L4/><Chinese>斯瓦希里</Chinese><French>Suaheli</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SUMERIAN</Tag>
-		<English>Sumerian</English>
-		<French>
-			<Text>sum&#233;rien:sum&#233;rienne:sum&#233;riens:sum&#233;riennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Sumerian</German>
-		<Italian>Sumerian</Italian>
-		<Spanish>Sumerian</Spanish>
-	</TEXT>
+		<English>苏美尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>苏美尔</Chinese><French>Sumerian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SWISS</Tag>
-		<English>Swiss</English>
-		<French>
-			<Text>suisse:suisse:suisses:suisses</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Swiss</German>
-		<Italian>Swiss</Italian>
-		<Spanish>Swiss</Spanish>
-	</TEXT>
+		<English>瑞士</English>
+		<L1/><L2/><L3/><L4/><Chinese>瑞士</Chinese><French>Swiss</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_TAMIL</Tag>
-		<English>Tamil</English>
-		<French>
-			<Text>tamoul:tamoule:tamouls:tamoules</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Tamil</German>
-		<Italian>Tamil</Italian>
-		<Spanish>Tamil</Spanish>
-	</TEXT>
+		<English>泰米尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔</Chinese><French>Tamil</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_TARTAR</Tag>
-		<English>Tartar</English>
-		<French>
-			<Text>tartare:tartare:tartares:tartares</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Tartar</German>
-		<Italian>Tartar</Italian>
-		<Spanish>Tartar</Spanish>
-	</TEXT>
+		<English>鞑靼</English>
+		<L1/><L2/><L3/><L4/><Chinese>鞑靼</Chinese><French>Tartar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_THAI</Tag>
-		<English>Thai</English>
-		<French>
-			<Text>tha&#239;:tha&#239;e:tha&#239;s:tha&#239;es</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Thai</German>
-		<Italian>Thai</Italian>
-		<Spanish>Thai</Spanish>
-	</TEXT>
+		<English>泰国</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰国</Chinese><French>Thai</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_THRACIAN</Tag>
-		<English>Thracian</English>
-		<French>
-			<Text>thrace:thrace:thraces:thraces</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Thracian</German>
-		<Italian>Thracian</Italian>
-		<Spanish>Thracian</Spanish>
-	</TEXT>
+		<English>色雷斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>色雷斯</Chinese><French>Thracian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_TIBETAN</Tag>
-		<English>Tibetan</English>
-		<French>
-			<Text>tib&#233;tain:tib&#233;taine:tib&#233;tains:tib&#233;taines</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Tibetan</German>
-		<Italian>Tibetan</Italian>
-		<Spanish>Tibetan</Spanish>
-	</TEXT>
+		<English>藏族</English>
+		<L1/><L2/><L3/><L4/><Chinese>藏族</Chinese><French>Tibetan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_TOLTEC</Tag>
-		<English>Toltec</English>
-		<French>
-			<Text>tolt&#232;que:tolt&#232;que:tolt&#232;ques:tolt&#232;ques</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Toltec</German>
-		<Italian>Toltec</Italian>
-		<Spanish>Toltec</Spanish>
-	</TEXT>
+		<English>托尔特克</English>
+		<L1/><L2/><L3/><L4/><Chinese>托尔特克</Chinese><French>Toltec</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_UZBEK</Tag>
-		<English>Uzbek</English>
-		<French>
-			<Text>ouzbek:ouzb&#232;ke:ouzbeks:ouzb&#232;kes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Uzbek</German>
-		<Italian>Uzbek</Italian>
-		<Spanish>Uzbek</Spanish>
-	</TEXT>
+		<English>乌兹别克</English>
+		<L1/><L2/><L3/><L4/><Chinese>乌兹别克</Chinese><French>Uzbek</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_VANDAL</Tag>
-		<English>Vandal</English>
-		<French>
-			<Text>vandale:vandale:vandales:vandales</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Vandal</German>
-		<Italian>Vandal</Italian>
-		<Spanish>Vandal</Spanish>
-	</TEXT>
+		<English>汪达尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>汪达尔</Chinese><French>Vandal</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_VARANGIAN</Tag>
-		<English>Varangian</English>
-		<French>
-			<Text>var&#232;gue:var&#232;gue:var&#232;gues:var&#232;gues</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Varangian</German>
-		<Italian>Varangian</Italian>
-		<Spanish>Varangian</Spanish>
-	</TEXT>
+		<English>瓦拉几亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>瓦拉几亚</Chinese><French>Varangian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_VIETNAMESE</Tag>
-		<English>Vietnamese</English>
-		<French>
-			<Text>vietnamien:vietnamienne:vietnamiens:vietnamiennes</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Vietnamese</German>
-		<Italian>Vietnamese</Italian>
-		<Spanish>Vietnamese</Spanish>
-	</TEXT>
+		<English>越南</English>
+		<L1/><L2/><L3/><L4/><Chinese>越南</Chinese><French>Vietnamese</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_XIONGNU</Tag>
-		<English>Xiongnu</English>
-		<French>
-			<Text>xiongnu:xiongnu:xiongnu:xiongnu</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Xiongnu</German>
-		<Italian>Xiongnu</Italian>
-		<Spanish>Xiongnu</Spanish>
-	</TEXT>
+		<English>匈奴</English>
+		<L1/><L2/><L3/><L4/><Chinese>匈奴</Chinese><French>Xiongnu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_YAMATO</Tag>
-		<English>Yamato</English>
-		<French>
-			<Text>yamato:yamato:yamato:yamato</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Yamato</German>
-		<Italian>Yamato</Italian>
-		<Spanish>Yamato</Spanish>
-	</TEXT>
+		<English>大和</English>
+		<L1/><L2/><L3/><L4/><Chinese>大和</Chinese><French>Yamato</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_YUEZHI</Tag>
-		<English>Yuezhi</English>
-		<French>
-			<Text>yuezhi:yuezhi:yuezhi:yuezhi</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Yuezhi</German>
-		<Italian>Yuezhi</Italian>
-		<Spanish>Yuezhi</Spanish>
-	</TEXT>
+		<English>月氏的</English>
+		<L1/><L2/><L3/><L4/><Chinese>月氏的</Chinese><French>Yuezhi</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ZAPOTEC</Tag>
-		<English>Zapotec</English>
-		<French>
-			<Text>zapot&#232;que:zapot&#232;que:zapot&#232;ques:zapot&#232;ques</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Zapotec</German>
-		<Italian>Zapotec</Italian>
-		<Spanish>Zapotec</Spanish>
-	</TEXT>
+		<English>萨波特克</English>
+		<L1/><L2/><L3/><L4/><Chinese>萨波特克</Chinese><French>Zapotec</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ZULU</Tag>
-		<English>Zulu</English>
-		<French>
-			<Text>zoulou:zouloue:zoulous:zouloues</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Zulu</German>
-		<Italian>Zulu</Italian>
-		<Spanish>Zulu</Spanish>
-	</TEXT>
+		<English>祖鲁</English>
+		<L1/><L2/><L3/><L4/><Chinese>祖鲁</Chinese><French>Zulu</French></TEXT>
 </Civ4GameText>

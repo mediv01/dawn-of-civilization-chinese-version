@@ -1,924 +1,464 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='GBK'?>
 <!-- Unique Powers -->
 <Civ4GameText>
 	<TEXT>
 		<Tag>TXT_KEY_UP_AME_TITLE</Tag>
-		<English>The Power of the American Dream:</English>
-		<French>Le pouvoir du r&#234;ve am&#233;ricain :</French>
-		<German>Die Macht des Amerikanischen Traums:</German>
-		<Italian>Il potere del sogno americano:</Italian>
-		<Spanish>El poder del sue&#241;o americano:</Spanish>
-	</TEXT>
+		<English>美国梦：</English>
+		<L1/><L2/><L3/><L4/><Chinese>美国梦：</Chinese><French>The Power of the American Dream:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_AME</Tag>
-		<English>Additional happiness from running Democracy, Constitution, Individualism and Free Enterprise</English>
-		<French>Bonheur additionnel avec les doctrines d&#233;mocratie, constitution, individualisme et libre entreprise</French>
-		<German>Zus&#228;tzliche Zufriedenheit unter Demokratie, Verfassung, Individualismus und Freiem Unternehmertum</German>
-		<Italian>Additional happiness from running Democracy, Constitution, Individualism and Free Enterprise</Italian>
-		<Spanish>Additional happiness from running Democracy, Constitution, Individualism and Free Enterprise</Spanish>
-	</TEXT>
+		<English>民主制度、宪法制度、个人主义和自由市场政体带来额外幸福</English>
+		<L1/><L2/><L3/><L4/><Chinese>民主制度、宪法制度、个人主义和自由市场政体带来额外幸福</Chinese><French>Additional happiness from running Democracy, Constitution, Individualism and Free Enterprise</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_AMERICAN_UP_HAPPINESS</Tag>
-		<English>[ICON_BULLET]%D1_Change%F2_HappyOrUn In All Cities</English>
-		<French>[ICON_BULLET]%D1_Change%F2_HappyOrUn dans toutes les villes</French>
-		<German>[ICON_BULLET]%D1_Change%F2_HappyOrUn In Allen St&#228;dten</German>
-		<Italian>[ICON_BULLET]%D1_Change%F2_HappyOrUn In All Cities</Italian>
-		<Spanish>[ICON_BULLET]%D1_Change%F2_HappyOrUn In All Cities</Spanish>
-	</TEXT>
+		<English>[ICON_BULLET]%D1_Change%F2_HappyOrUn在所有城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Change%F2_HappyOrUn在所有城市</Chinese><French>[ICON_BULLET]%D1_Change%F2_HappyOrUn In All Cities</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ARA_TITLE</Tag>
-		<English>The Power of Faith:</English>
-		<French>Le pouvoir de la foi :</French>
-		<German>Die Macht des Glaubens:</German>
-		<Italian>Il potere della fede:</Italian>
-		<Spanish>El poder de la fe:</Spanish>
-	</TEXT>
+		<English>信仰指挥者：</English>
+		<L1/><L2/><L3/><L4/><Chinese>信仰指挥者：</Chinese><French>The Power of Faith:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ARA</Tag>
-		<English>State religion spreads with temples to conquered cities</English>
-		<French>La religion d'&#201;tat se propage dans les villes conquises et un lieu de culte y est automatiquement construit</French>
-		<German>Ausbreitung der Staatsreligion inklusive Tempeln in eroberten St&#228;dten</German>
-		<Italian>La religione di stato si diffonde con templi e cattedrali nelle citt&#224; conquistate</Italian>
-		<Spanish>La religi&#243;n oficial se propaga con los templos y catedrales a las ciudades conquistadas</Spanish>
-	</TEXT>
+		<English>被征服的城市自动传播国教并建立寺庙</English>
+		<L1/><L2/><L3/><L4/><Chinese>被征服的城市自动传播国教并建立寺庙</Chinese><French>State religion spreads with temples to conquered cities</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ARG_TITLE</Tag>
-		<English>The Power of Juntas:</English>
-		<French>Le pouvoir des juntes :</French>
-		<German>Die Macht der Juntas:</German>
-		<Italian>The Power of Juntas:</Italian>
-		<Spanish>The Power of Juntas:</Spanish>
-	</TEXT>
+		<English>军人从政：</English>
+		<L1/><L2/><L3/><L4/><Chinese>军人从政：</Chinese><French>The Power of Juntas:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ARG</Tag>
-		<English>Great Generals can start Golden Ages</English>
-		<French>Les g&#233;n&#233;raux illustres peuvent d&#233;clencher un &#226;ge d'or</French>
-		<German>Gro&#223;e Gener&#228;le k&#246;nnen Goldene Zeitalter ausl&#246;sen</German>
-		<Italian>Great Generals can start Golden Ages</Italian>
-		<Spanish>Great Generals can start Golden Ages</Spanish>
-	</TEXT>
+		<English>伟大的将军可以开启黄金时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>伟大的将军可以开启黄金时代</Chinese><French>Great Generals can start Golden Ages</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_AZT_TITLE</Tag>
-		<English>The Power of Flower Wars:</English>
-		<French>Le pouvoir des guerres fleuries :</French>
-		<German>Die Macht der Blumenkriege:</German>
-		<Italian>Il potere del sacrificio:</Italian>
-		<Spanish>El poder del sacrificio:</Spanish>
-	</TEXT>
+		<English>花卉大战：</English>
+		<L1/><L2/><L3/><L4/><Chinese>花卉大战：</Chinese><French>The Power of Flower Wars:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_AZT</Tag>
-		<English>Military units can enslave defeated enemy units, can sacrifice slaves to increase city happiness</English>
-		<French>Les unit&#233;s militaires peuvent asservir les unit&#233;s vaincues, et il est possible de sacrifier des esclaves pour augmenter le bonheur des villes</French>
-		<German>Versklavung besiegter feindlicher Einheiten durch Milit&#228;reinheiten, can Sklaven opfern, um Zufriedenheit in St&#228;dten zu erh&#246;hen</German>
-		<Italian>Le unit&#224; militari possono schiavizzare le unit&#224; nemiche sconfitte</Italian>
-		<Spanish>Las unidades militares pueden esclavizar a las unidades enemigas derrotadas</Spanish>
-	</TEXT>
+		<English>军队可以奴役战败的敌军，可以牺牲奴隶来增加城市的幸福感</English>
+		<L1/><L2/><L3/><L4/><Chinese>军队可以奴役战败的敌军，可以牺牲奴隶来增加城市的幸福感</Chinese><French>Military units can enslave defeated enemy units, can sacrifice slaves to increase city happiness</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_BAB_TITLE</Tag>
-		<English>The Power of the Cradle of Civilization:</English>
-		<French>Le pouvoir du berceau de la civilisation :</French>
-		<German>Die Macht der Wiege der Zivilisation:</German>
-		<Italian>Il potere della legge:</Italian>
-		<Spanish>El poder de la ley:</Spanish>
-	</TEXT>
+		<English>文明摇篮：</English>
+		<L1/><L2/><L3/><L4/><Chinese>文明摇篮：</Chinese><French>The Power of the Cradle of Civilization:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_BAB</Tag>
-		<English>Receives a free technology for the first five technologies discovered</English>
-		<French>Une technologie gratuite pour les cinq premi&#232;res technologies d&#233;couvertes</French>
-		<German>Erh&#228;lt eine weitere Technologie f&#252;r die ersten f&#252;nf entdeckten Technologien</German>
-		<Italian>Receives a free technology for the first five technologies discovered</Italian>
-		<Spanish>Receives a free technology for the first five technologies discovered</Spanish>
-	</TEXT>
+		<English>获得发现的前五项技术的免费技术</English>
+		<L1/><L2/><L3/><L4/><Chinese>获得发现的前五项技术的免费技术</Chinese><French>Receives a free technology for the first five technologies discovered</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_BRA_TITLE</Tag>
-		<English>The Power of Ethanol:</English>
-		<French>Le pouvoir de l'&#233;thanol :</French>
-		<German>Die Macht des Ethanols:</German>
-		<Italian>The Power of Ethanol:</Italian>
-		<Spanish>The Power of Ethanol:</Spanish>
-	</TEXT>
+		<English>乙醇工业：</English>
+		<L1/><L2/><L3/><L4/><Chinese>乙醇工业：</Chinese><French>The Power of Ethanol:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_BRA</Tag>
-		<English>Sugar counts as oil for Oil Industry</English>
-		<French>Le sucre compte comme du p&#233;trole pour l'Industrie p&#233;troli&#232;re</French>
-		<German>Zucker z&#228;hlt als &#214;l f&#252;r die &#214;lindustrie</German>
-		<Italian>Sugar counts as oil for Oil Industry</Italian>
-		<Spanish>Sugar counts as oil for Oil Industry</Spanish>
-	</TEXT>
+		<English>糖可以作为石油工业的原料</English>
+		<L1/><L2/><L3/><L4/><Chinese>糖可以作为石油工业的原料</Chinese><French>Sugar counts as oil for Oil Industry</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_BYZ_TITLE</Tag>
-		<English>The Power of Bribery:</English>
-		<French>Le pouvoir des pots-de-vin :</French>
-		<German>Die Macht der Bestechung:</German>
-		<Italian>The Power of Bribery:</Italian>
-		<Spanish>The Power of Bribery:</Spanish>
-	</TEXT>
+		<English>精罗狂喜：</English>
+		<L1/><L2/><L3/><L4/><Chinese>精罗狂喜：</Chinese><French>The Power of Bribery:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_BYZ</Tag>
-		<English>Double gold value in trades, spies can bribe barbarian units</English>
-		<French>L'or vaut en double lors des &#233;changes, et les espions peuvent soudoyer les unit&#233;s barbares</French>
-		<German>Doppelter Wert von Gold beim Handeln, Spione k&#246;nnen barbarische Einheiten bestechen</German>
-		<Italian>Double gold value in trades, spies can bribe barbarian units</Italian>
-		<Spanish>Double gold value in trades, spies can bribe barbarian units</Spanish>
-	</TEXT>
+		<English>交易中的双倍黄金价值，间谍可以贿赂野蛮人单位</English>
+		<L1/><L2/><L3/><L4/><Chinese>交易中的双倍黄金价值，间谍可以贿赂野蛮人单位</Chinese><French>Double gold value in trades, spies can bribe barbarian units</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_BYZANTINE_UP</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Bribe Barbarians[COLOR_REVERT][NEWLINE]Allows your spy to offer gold to bribe one barbarian unit on this plot to join your army.</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Soudoyer les barbares[COLOR_REVERT][NEWLINE]Permet &#224; votre espion d'offrir de l'or afin de convaincre l'une des unit&#233;s barbares sur cette case de se joindre &#224; votre arm&#233;e.</French>
-		<German>[COLOR_HIGHLIGHT_TEXT]Bribe Barbarians[COLOR_REVERT][NEWLINE]Allows your spy to offer gold to bribe one barbarian unit on this plot to join your army.</German>
-		<Italian>[COLOR_HIGHLIGHT_TEXT]Bribe Barbarians[COLOR_REVERT][NEWLINE]Allows your spy to offer gold to bribe one barbarian unit on this plot to join your army.</Italian>
-		<Spanish>[COLOR_HIGHLIGHT_TEXT]Bribe Barbarians[COLOR_REVERT][NEWLINE]Allows your spy to offer gold to bribe one barbarian unit on this plot to join your army.</Spanish>
-	</TEXT>
+		<English>[COLOR_HIGHLIGHT_TEXT]贿赂野蛮人[COLOR_REVERT][NEWLINE]允许你的间谍提供黄金贿赂这个阴谋上的一个野蛮人单位加入你的军队。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_HIGHLIGHT_TEXT]贿赂野蛮人[COLOR_REVERT][NEWLINE]允许你的间谍提供黄金贿赂这个阴谋上的一个野蛮人单位加入你的军队。</Chinese><French>[COLOR_HIGHLIGHT_TEXT]Bribe Barbarians[COLOR_REVERT][NEWLINE]Allows your spy to offer gold to bribe one barbarian unit on this plot to join your army.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BYZANTINE_UP_BODY</Tag>
-		<English>Choose the barbarian unit you wish to bribe:</English>
-		<French>Choisissez l'unit&#233; barbare &#224; soudoyer :</French>
-		<German>Choose the barbarian unit you wish to bribe:</German>
-		<Italian>Choose the barbarian unit you wish to bribe:</Italian>
-		<Spanish>Choose the barbarian unit you wish to bribe:</Spanish>
-	</TEXT>
+		<English>选择你想贿赂的野蛮人单位：</English>
+		<L1/><L2/><L3/><L4/><Chinese>选择你想贿赂的野蛮人单位：</Chinese><French>Choose the barbarian unit you wish to bribe:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BYZANTINE_UP_BUTTON</Tag>
-		<English>%s1 (%d2 gold)</English>
-		<French>%s1 (%d2 or)</French>
-		<German>%s1 (%d2 gold)</German>
-		<Italian>%s1 (%d2 gold)</Italian>
-		<Spanish>%s1 (%d2 gold)</Spanish>
-	</TEXT>
+		<English>%s1 (%d2 黄金)</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 (%d2 黄金)</Chinese><French>%s1 (%d2 gold)</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BYZANTINE_UP_BUTTON_NONE</Tag>
-		<English>None</English>
-		<French>Aucun</French>
-		<German>None</German>
-		<Italian>None</Italian>
-		<Spanish>None</Spanish>
-	</TEXT>
+		<English>无</English>
+		<L1/><L2/><L3/><L4/><Chinese>无</Chinese><French>None</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BYZANTINE_UP_TITLE</Tag>
-		<English>Bribing Barbarians</English>
-		<French>Soudoyer les barbares</French>
-		<German>Bribing Barbarians</German>
-		<Italian>Bribing Barbarians</Italian>
-		<Spanish>Bribing Barbarians</Spanish>
-	</TEXT>
+		<English>贿赂野蛮人</English>
+		<L1/><L2/><L3/><L4/><Chinese>贿赂野蛮人</Chinese><French>Bribing Barbarians</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CAN_TITLE</Tag>
-		<English>The Power of Multiculturalism:</English>
-		<French>Le pouvoir du multiculturalisme :</French>
-		<German>The Power of Multiculturalism:</German>
-		<Italian>The Power of Multiculturalism:</Italian>
-		<Spanish>The Power of Multiculturalism:</Spanish>
-	</TEXT>
+		<English>多元文化：</English>
+		<L1/><L2/><L3/><L4/><Chinese>多元文化：</Chinese><French>The Power of Multiculturalism:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CAN</Tag>
-		<English>Immigrants bring [ICON_GREATPEOPLE] to your cities</English>
-		<French>Les immigrants apportent des [ICON_GREATPEOPLE] dans vos villes</French>
-		<German>Immigrants bring [ICON_GREATPEOPLE] to your cities</German>
-		<Italian>Immigrants bring [ICON_GREATPEOPLE] to your cities</Italian>
-		<Spanish>Immigrants bring [ICON_GREATPEOPLE] to your cities</Spanish>
-	</TEXT>
+		<English>移民把 [ICON_GREATPEOPLE] 带到你的城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>移民把 [ICON_GREATPEOPLE] 带到你的城市</Chinese><French>Immigrants bring [ICON_GREATPEOPLE] to your cities</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MULTICULTURALISM</Tag>
-		<English>Immigrants coming to our city of %s1 have brought it %d3 points closer to generating a %s2.</English>
-		<French>En s'&#233;tablissant &#224; %s1, des immigrants ont acc&#233;l&#233;r&#233; de %d3 points l'apparition d'un %s2.</French>
-		<German>Immigrants coming to our city of %s1 have brought it %d3 points closer to generating a %s2.</German>
-		<Italian>Immigrants coming to our city of %s1 have brought it %d3 points closer to generating a %s2.</Italian>
-		<Spanish>Immigrants coming to our city of %s1 have brought it %d3 points closer to generating a %s2.</Spanish>
-	</TEXT>
+		<English>来到我们的%s1城市的移民使它的%d3点更接近生成%s2</English>
+		<L1/><L2/><L3/><L4/><Chinese>来到我们的%s1城市的移民使它的%d3点更接近生成%s2</Chinese><French>Immigrants coming to our city of %s1 have brought it %d3 points closer to generating a %s2.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CAR_TITLE</Tag>
-		<English>The Power of Mercenaries:</English>
-		<French>Le pouvoir des mercenaires :</French>
-		<German>Die Macht der S&#246;ldner:</German>
-		<Italian>Il potere dei mercenari:</Italian>
-		<Spanish>El poder de los mercenarios:</Spanish>
-	</TEXT>
+		<English>雇佣战士：</English>
+		<L1/><L2/><L3/><L4/><Chinese>雇佣战士：</Chinese><French>The Power of Mercenaries:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CAR</Tag>
-		<English>Can always hurry units with gold and pays half the cost and no extra upkeep for hurried units</English>
-		<French>L'acc&#233;l&#233;ration des unit&#233;s est toujours disponible et co&#251;te deux fois moins cher ; pas de co&#251;t d'entretien suppl&#233;mentaire pour ces unit&#233;s</French>
-		<German>Kann immer Einheiten mit Gold beschleunigen und bezahlt halbe Kosten und keinen zus&#228;tzlicher Unterhalt f&#252;r beschleunigte Einheiten</German>
-		<Italian>Dimezzati i costi di assunzione e mantenimento dei mercenari</Italian>
-		<Spanish>Se reducen a la mitad los costes de contrataci&#243;n y mantenimiento de mercenarios</Spanish>
-	</TEXT>
+		<English>可以随时用黄金催促单位，并只需支付相比原来一半的费用，且对于被催促的单位没有额外的维护费</English>
+		<L1/><L2/><L3/><L4/><Chinese>可以随时用黄金催促单位，并只需支付相比原来一半的费用，且对于被催促的单位没有额外的维护费</Chinese><French>Can always hurry units with gold and pays half the cost and no extra upkeep for hurried units</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CHI_TITLE</Tag>
-		<English>The Power of Myriads:</English>
-		<French>Le pouvoir des myriades :</French>
-		<German>Die Macht der Myriaden:</German>
-		<Italian>Il potere del invenzione:</Italian>
-		<Spanish>El poder del invento:</Spanish>
-	</TEXT>
+		<English>无尽之力：</English>
+		<L1/><L2/><L3/><L4/><Chinese>无尽之力：</Chinese><French>The Power of Myriads:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CHI</Tag>
-		<English>Cities keep an additional 25% [ICON_FOOD] after growing</English>
-		<French>Les villes conservent 25 % [ICON_FOOD] de plus apr&#232;s la croissance</French>
-		<German>St&#228;dte behalten zus&#228;tzliche 25% [ICON_FOOD] nach dem Wachsen</German>
-		<Italian>Velocit&#224; di addestramento 1,5X per le unit&#224; da mischia e con armi da fuoco</Italian>
-		<Spanish>Velocidad de entrenamiento de unidades de cuerpo a cuerpo y con armas de p&#243;lvora multiplicada x1,5</Spanish>
-	</TEXT>
+		<English>城市在增长后还保留了25%的[ICON_FOOD] </English>
+		<L1/><L2/><L3/><L4/><Chinese>城市在增长后还保留了25%的[ICON_FOOD] </Chinese><French>Cities keep an additional 25% [ICON_FOOD] after growing</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_COL_TITLE</Tag>
-		<English>The Power of the Liberator:</English>
-		<French>Le pouvoir du lib&#233;rateur :</French>
-		<German>Die Macht des Befreiers:</German>
-		<Italian>The Power of the Liberator:</Italian>
-		<Spanish>The Power of the Liberator:</Spanish>
-	</TEXT>
+		<English>解放者：</English>
+		<L1/><L2/><L3/><L4/><Chinese>解放者：</Chinese><French>The Power of the Liberator:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_COL</Tag>
-		<English>No City Resistance on Conquest in Latin America</English>
-		<French>Pas de r&#233;sistance &#224; la conqu&#234;te de villes en Am&#233;rique latine</French>
-		<German>Keinen Widerstand in eroberten St&#228;dten in Lateinamerika</German>
-		<Italian>No City Resistance on Conquest in Latin America</Italian>
-		<Spanish>No City Resistance on Conquest in Latin America</Spanish>
-	</TEXT>
+		<English>拉丁美洲没有城市反抗你的征服</English>
+		<L1/><L2/><L3/><L4/><Chinese>拉丁美洲没有城市反抗你的征服</Chinese><French>No City Resistance on Conquest in Latin America</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CONQUESTS_TARGET</Tag>
-		<English>%s1 has fielded an army to conquer our civilization!</English>
-		<French>%s1 a lev&#233; une arm&#233;e pour conqu&#233;rir notre civilisation !</French>
-		<German>%s1 hat eine Armee zum Angriff auf unsere Zivilisation zusammengestellt!</German>
-		<Italian>%s1 has fielded an army to conquer our civilization!</Italian>
-		<Spanish>%s1 has fielded an army to conquer our civilization!</Spanish>
-	</TEXT>
+		<English>%s1派了一支军队去征服我们的文明！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1派了一支军队去征服我们的文明！</Chinese><French>%s1 has fielded an army to conquer our civilization!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_EGY_TITLE</Tag>
-		<English>The Power of the Pharaoh:</English>
-		<French>Le pouvoir du pharaon :</French>
-		<German>Die Macht des Pharaos:</German>
-		<Italian>Il potere del faraone:</Italian>
-		<Spanish>El poder del fara&#243;n:</Spanish>
-	</TEXT>
+		<English>法老制度：</English>
+		<L1/><L2/><L3/><L4/><Chinese>法老制度：</Chinese><French>The Power of the Pharaoh:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_EGY</Tag>
-		<English>Monarchy, Redistribution and Deification are enabled at start</English>
-		<French>La monarchie, la redistribution et la d&#233;ification sont activ&#233;es au d&#233;part</French>
-		<German>Aktivierung von Monarchie, Umverteilung und Verg&#246;tterung beim Spielstart</German>
-		<Italian>All'avvio sono abilitati governo ereditario e schiavit&#249;</Italian>
-		<Spanish>Gobierno hereditario y Esclavitud est&#225;n activados al principio</Spanish>
-	</TEXT>
+		<English>君主制、再分配和神化在一开始就被启用了</English>
+		<L1/><L2/><L3/><L4/><Chinese>君主制、再分配和神化在一开始就被启用了</Chinese><French>Monarchy, Redistribution and Deification are enabled at start</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ENG_TITLE</Tag>
-		<English>The Power of Indirect Rule:</English>
-		<French>Le pouvoir de l'indirect rule :</French>
-		<German>Die Macht der Indirekten Herrschaft:</German>
-		<Italian>Il potere della marina reale:</Italian>
-		<Spanish>El poder de la Royal Navy:</Spanish>
-	</TEXT>
+		<English>间接规则：</English>
+		<L1/><L2/><L3/><L4/><Chinese>间接规则：</Chinese><French>The Power of Indirect Rule:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ENG</Tag>
-		<English>Faraway Cities incur no extra Maintenance</English>
-		<French>Les villes lointaines ne n&#233;cessitent pas d'entretien suppl&#233;mentaire</French>
-		<German>Weit entfernte St&#228;dte kosten keinen zus&#228;tzlichen Unterhalt</German>
-		<Italian>Le unit&#224; navali hanno 2 possibilit&#224; di Attacchi improvvisi supplementari</Italian>
-		<Spanish>Las unidades navales tienen 2 posibilidades adicionales de ataque de iniciativa</Spanish>
-	</TEXT>
+		<English>遥远的城市不需要额外的维护</English>
+		<L1/><L2/><L3/><L4/><Chinese>遥远的城市不需要额外的维护</Chinese><French>Faraway Cities incur no extra Maintenance</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ETH_TITLE</Tag>
-		<English>The Power of Communion:</English>
-		<French>Le pouvoir de la communion :</French>
-		<German>Die Macht der Kommunion:</German>
-		<Italian>The Power of Communion:</Italian>
-		<Spanish>The Power of Communion:</Spanish>
-	</TEXT>
+		<English>交流之力：</English>
+		<L1/><L2/><L3/><L4/><Chinese>交流之力：</Chinese><French>The Power of Communion:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ETH</Tag>
-		<English>Cities have a trade connection to all other cities with your state religion</English>
-		<French>Vos villes ont une connexion commerciale avec toutes les villes adeptes de votre religion d'&#201;tat</French>
-		<German>St&#228;dte haben eine Handelsverbindung zu allen anderen St&#228;dten mit Ihrer Staatsreligion</German>
-		<Italian>Cities have a trade connection to all other cities with your state religion</Italian>
-		<Spanish>Cities have a trade connection to all other cities with your state religion</Spanish>
-	</TEXT>
+		<English>城市与你国宗教的所有其他城市都有贸易联系</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市与你国宗教的所有其他城市都有贸易联系</Chinese><French>Cities have a trade connection to all other cities with your state religion</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_FRA_TITLE</Tag>
-		<English>The Power of Diplomacy:</English>
-		<French>Le pouvoir de la diplomatie :</French>
-		<German>Die Macht der Diplomatie:</German>
-		<Italian>Il potere dell'entente:</Italian>
-		<Spanish>El poder de la entente:</Spanish>
-	</TEXT>
+		<English>长袖善舞：</English>
+		<L1/><L2/><L3/><L4/><Chinese>长袖善舞：</Chinese><French>The Power of Diplomacy:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_FRA</Tag>
-		<English>Diplomatic penalties expire faster, more likely to be voted for in congresses</English>
-		<French>Les p&#233;nalit&#233;s diplomatiques expirent plus vite, et les autres civilisations sont plus enclines &#224; voter pour vous lors des congr&#232;s</French>
-		<German>Diplomatische Mali verfallen schneller; h&#246;here Wahrscheinlichkeit, Stimmen in Kongressen zu erhalten</German>
-		<Italian>Le altre civilt&#224; hanno un atteggiamento pi&#249; amichevole</Italian>
-		<Spanish>Las dem&#225;s civilizaciones mantienen una actitud m&#225;s amistosa</Spanish>
-	</TEXT>
+		<English>外交惩罚到期更快，更有可能在国际会议被投票支持</English>
+		<L1/><L2/><L3/><L4/><Chinese>外交惩罚到期更快，更有可能在国际会议被投票支持</Chinese><French>Diplomatic penalties expire faster, more likely to be voted for in congresses</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_GER_TITLE</Tag>
-		<English>The Power of Doctrine:</English>
-		<French>Le pouvoir de la doctrine militaire :</French>
-		<German>Die Macht der Doktrin:</German>
-		<Italian>The Power of Doctrine:</Italian>
-		<Spanish>The Power of Doctrine:</Spanish>
-	</TEXT>
+		<English>神圣罗马：</English>
+		<L1/><L2/><L3/><L4/><Chinese>神圣罗马：</Chinese><French>The Power of Doctrine:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_GER</Tag>
-		<English>Units retain all their experience when upgraded</English>
-		<French>Les unit&#233;s conservent toute leur exp&#233;rience lorsqu'elles sont am&#233;lior&#233;es</French>
-		<German>Modernisierte Einheiten behalten ihre gesamte Erfahrung</German>
-		<Italian>Units retain all their experience when upgraded</Italian>
-		<Spanish>Units retain all their experience when upgraded</Spanish>
-	</TEXT>
+		<English>单位升级后保留所有经验</English>
+		<L1/><L2/><L3/><L4/><Chinese>单位升级后保留所有经验</Chinese><French>Units retain all their experience when upgraded</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_GRE_TITLE</Tag>
-		<English>The Power of Philosophy:</English>
-		<French>Le pouvoir de la philosophie :</French>
-		<German>Die Macht der Philosophie:</German>
-		<Italian>Il potere della filosofia:</Italian>
-		<Spanish>El poder de la filosof&#237;a:</Spanish>
-	</TEXT>
+		<English>哲人之思：</English>
+		<L1/><L2/><L3/><L4/><Chinese>哲人之思：</Chinese><French>The Power of Philosophy:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_GRE</Tag>
-		<English>+150% Great People birth rate until the end of the Classical Era</English>
-		<French>Le taux de natalit&#233; des personnages illustres est augment&#233; de 150 % jusqu'&#224; la fin de l'&#200;re classique</French>
-		<German>+150% Geburtenrate von Gro&#223;en Pers&#246;nlichkeiten bis zum Ende des klassischen Zeitalters</German>
-		<Italian>+150% tasso di natalit&#224; dei Grandi Personaggi fino alla fine del Medioevo</Italian>
-		<Spanish>+100% a la tasa de natalidad de grandes personajes hasta el final de la Edad Media</Spanish>
-	</TEXT>
+		<English>+150%的伟人出生率直到古典时代结束</English>
+		<L1/><L2/><L3/><L4/><Chinese>+150%的伟人出生率直到古典时代结束</Chinese><French>+150% Great People birth rate until the end of the Classical Era</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_GREEK_CONQUESTS_TARGET</Tag>
-		<English>The Greeks have fielded an army to conquer our civilization!</English>
-		<French>Les Grecs ont lev&#233; une arm&#233;e pour conqu&#233;rir notre civilisation !</French>
-		<German>Die Griechen haben eine Armee zum Angriff auf unsere Zivilisation zusammengestellt!</German>
-		<Italian>The Greeks have fielded an army to conquer our civilization!</Italian>
-		<Spanish>The Greeks have fielded an army to conquer our civilization!</Spanish>
-	</TEXT>
+		<English>希腊人派出了一支军队来征服我们的文明！</English>
+		<L1/><L2/><L3/><L4/><Chinese>希腊人派出了一支军队来征服我们的文明！</Chinese><French>The Greeks have fielded an army to conquer our civilization!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HAR_TITLE</Tag>
-		<English>The Power of Sanitation:</English>
-		<French>Le pouvoir de l'assainissement :</French>
-		<German>The Power of Sanitation:</German>
-		<Italian>The Power of Sanitation:</Italian>
-		<Spanish>The Power of Sanitation:</Spanish>
-	</TEXT>
+		<English>重视卫生：</English>
+		<L1/><L2/><L3/><L4/><Chinese>重视卫生：</Chinese><French>The Power of Sanitation:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HAR</Tag>
-		<English>Positive health contributes to city growth during the Ancient era</English>
-		<French>Les points de sant&#233; en exc&#232;s contribuent &#224; la croissance des villes pendant l'&#200;re antique</French>
-		<German>Positive health contributes to city growth during the Ancient era</German>
-		<Italian>Positive health contributes to city growth during the Ancient era</Italian>
-		<Spanish>Positive health contributes to city growth during the Ancient era</Spanish>
-	</TEXT>
+		<English>正的健康有助于上古时代城市的发展</English>
+		<L1/><L2/><L3/><L4/><Chinese>正的健康有助于上古时代城市的发展</Chinese><French>Positive health contributes to city growth during the Ancient era</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HOL_TITLE</Tag>
-		<English>The Power of Trading Companies:</English>
-		<French>Le pouvoir des compagnies commerciales :</French>
-		<German>Die Macht der Handelsgesellschaften:</German>
-		<Italian>Il potere delle compagnie commerciali:</Italian>
-		<Spanish>El poder de la Compa&#241;&#237;a de las Indias:</Spanish>
-	</TEXT>
+		<English>贸易公司：</English>
+		<L1/><L2/><L3/><L4/><Chinese>贸易公司：</Chinese><French>The Power of Trading Companies:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HOL</Tag>
-		<English>Doubled yield and commerce from the trading company corporation</English>
-		<French>Les rendements de la Compagnie commerciale sont doubl&#233;s</French>
-		<German>Doppeltes Einkommen durch Handelsgesellschaften</German>
-		<Italian>Tutte le unit&#224; marittime possono entrare in territorio nemico</Italian>
-		<Spanish>Todas las unidades mar&#237;timas pueden entrar en territorio enemigo</Spanish>
-	</TEXT>
+		<English>成倍的收益和贸易公司的贸易</English>
+		<L1/><L2/><L3/><L4/><Chinese>成倍的收益和贸易公司的贸易</Chinese><French>Doubled yield and commerce from the trading company corporation</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HRE_TITLE</Tag>
-		<English>The Power of Investiture:</English>
-		<French>Le pouvoir de l'investiture :</French>
-		<German>Die Macht der Investitur:</German>
-		<Italian>The Power of Investiture:</Italian>
-		<Spanish>The Power of Investiture:</Spanish>
-	</TEXT>
+		<English>君权神授：</English>
+		<L1/><L2/><L3/><L4/><Chinese>君权神授：</Chinese><French>The Power of Investiture:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HRE</Tag>
-		<English>Double construction speed of state religion buildings</English>
-		<French>La vistesse de construction des b&#226;timents li&#233;s &#224; la religion d'&#201;tat est doubl&#233;e</French>
-		<German>Doppelte Baugeschwindigkeit f&#252;r Geb&#228;ude der Staatsreligion</German>
-		<Italian>Double construction speed of state religion buildings</Italian>
-		<Spanish>Double construction speed of state religion buildings</Spanish>
-	</TEXT>
+		<English>国教建筑建造速率加倍</English>
+		<L1/><L2/><L3/><L4/><Chinese>国教建筑建造速率加倍</Chinese><French>Double construction speed of state religion buildings</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_IMMIGRATION</Tag>
-		<English>Our population in %s1 is growing due to immigrants from the Old World!</English>
-		<French>Notre population augmente gr&#226;ce aux immigrants du Vieux Monde !</French>
-		<German>Unsere Bev&#246;lkerung in %s1 w&#228;chst durch Einwanderer aus der Alten Welt!</German>
-		<Italian>La nostra popolazione sta crescendo grazie agli immigranti dal vecchio mondo!</Italian>
-		<Spanish>&#161;Nuestra poblaci&#243;n est&#225; creciendo como consecuencia de la inmigraci&#243;n procedente del Viejo Mundo!</Spanish>
-	</TEXT>
+		<English>由于来自旧大陆的移民，我们在%s1的人口正在增长！</English>
+		<L1/><L2/><L3/><L4/><Chinese>由于来自旧大陆的移民，我们在%s1的人口正在增长！</Chinese><French>Our population in %s1 is growing due to immigrants from the Old World!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_INC_TITLE</Tag>
-		<English>The Power of Terraces:</English>
-		<French>Le pouvoir des terrasses :</French>
-		<German>Die Macht der Terrassen:</German>
-		<Italian>Il potere delle terrazze:</Italian>
-		<Spanish>El poder de las terrazas:</Spanish>
-	</TEXT>
+		<English>梯田耕作：</English>
+		<L1/><L2/><L3/><L4/><Chinese>梯田耕作：</Chinese><French>The Power of Terraces:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_INC</Tag>
-		<English>Mountains produce 2 food and 1 hammer</English>
-		<French>Les montagnes produisent 2 nourritures et 1 marteau</French>
-		<German>Berge gew&#228;hren 2 Nahrung und 1 Hammer</German>
-		<Italian>Le montagne producono 2 cibo e 1 scudo</Italian>
-		<Spanish>Las monta&#241;as producen 2 alimentos y 1 martillo</Spanish>
-	</TEXT>
+		<English>山峰提供2食物和1锤子产出</English>
+		<L1/><L2/><L3/><L4/><Chinese>山峰提供2食物和1锤子产出</Chinese><French>Mountains produce 2 food and 1 hammer</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_IND_TITLE</Tag>
-		<English>The Power of Purity:</English>
-		<French>Le pouvoir de la puret&#233; :</French>
-		<German>Die Macht der Reinheit:</German>
-		<Italian>Il potere della spiritualit&#224;:</Italian>
-		<Spanish>El poder de la espiritualidad:</Spanish>
-	</TEXT>
+		<English>纯洁信仰：</English>
+		<L1/><L2/><L3/><L4/><Chinese>纯洁信仰：</Chinese><French>The Power of Purity:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_IND</Tag>
-		<English>One extra [ICON_HEALTHY] for every three excess [ICON_HAPPY]</English>
-		<French>Un [ICON_HEALTHY] pour chaque trois [ICON_HAPPY] en exc&#232;s</French>
-		<German>Eine zus&#228;tzliche [ICON_HAPPY] pro zwei &#252;berz&#228;hlige [ICON_HEALTHY]</German>
-		<Italian>Niente anarchia durante le rivoluzioni</Italian>
-		<Spanish>No hay anarqu&#237;a por las revoluciones</Spanish>
-	</TEXT>
+		<English>增加一个 [ICON_HEALTHY] 每多三个 [ICON_HAPPY]</English>
+		<L1/><L2/><L3/><L4/><Chinese>增加一个 [ICON_HEALTHY] 每多三个 [ICON_HAPPY]</Chinese><French>One extra [ICON_HEALTHY] for every three excess [ICON_HAPPY]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_INO_TITLE</Tag>
-		<English>The Power of Straits:</English>
-		<French>The pouvoir des d&#233;troits :</French>
-		<German>Die Macht der Meerengen:</German>
-		<Italian>The Power of Straits:</Italian>
-		<Spanish>The Power of Straits:</Spanish>
-	</TEXT>
+		<English>海峡主人：</English>
+		<L1/><L2/><L3/><L4/><Chinese>海峡主人：</Chinese><French>The Power of Straits:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_INO</Tag>
-		<English>Additional gold from foreign ships passing through your core</English>
-		<French>Les navires &#233;trangers qui passent par votre c&#156;ur historique rapportent de l'or additionnel</French>
-		<German>Zus&#228;tzliches Gold von ausl&#228;ndischen Schiffen, die unser Kerngebiet passieren</German>
-		<Italian>Additional gold from foreign ships passing through your core</Italian>
-		<Spanish>Additional gold from foreign ships passing through your core</Spanish>
-	</TEXT>
+		<English>从外国船只通过你核心的额外黄金</English>
+		<L1/><L2/><L3/><L4/><Chinese>从外国船只通过你核心的额外黄金</Chinese><French>Additional gold from foreign ships passing through your core</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_IRA_TITLE</Tag>
-		<English>The Power of Safaviyya:</English>
-		<French>Le pouvoir du Safavieh :</French>
-		<German>Die Macht der Safaviyya:</German>
-		<Italian>The Power of Safaviyya:</Italian>
-		<Spanish>The Power of Safaviyya:</Spanish>
-	</TEXT>
+		<English>萨菲教派：</English>
+		<L1/><L2/><L3/><L4/><Chinese>萨菲教派：</Chinese><French>The Power of Safaviyya:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_IRA</Tag>
-		<English>Religious buildings produce +2 [ICON_CULTURE] and +2 [ICON_RESEARCH]</English>
-		<French>Les b&#226;timents religieux produisent +2 [ICON_CULTURE] et +2 [ICON_RESEARCH]</French>
-		<German>Religi&#246;se Geb&#228;ude produzieren +2 [ICON_CULTUE] und +2 [ICON_RESEARCH]</German>
-		<Italian>Religious buildings produce +2 [ICON_CULTURE] and +2 [ICON_RESEARCH]</Italian>
-		<Spanish>Religious buildings produce +2 [ICON_CULTURE] and +2 [ICON_RESEARCH]</Spanish>
-	</TEXT>
+		<English>宗教建筑提供  +2 [ICON_CULTURE] 和 +2 [ICON_RESEARCH]</English>
+		<L1/><L2/><L3/><L4/><Chinese>宗教建筑提供  +2 [ICON_CULTURE] 和 +2 [ICON_RESEARCH]</Chinese><French>Religious buildings produce +2 [ICON_CULTURE] and +2 [ICON_RESEARCH]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ITA_TITLE</Tag>
-		<English>The Power of Renaissance:</English>
-		<French>Le pouvoir de la Renaissance :</French>
-		<German>Die Macht der Renaissance:</German>
-		<Italian>The Power of Renaissance:</Italian>
-		<Spanish>The Power of Renaissance:</Spanish>
-	</TEXT>
+		<English>文艺复兴：</English>
+		<L1/><L2/><L3/><L4/><Chinese>文艺复兴：</Chinese><French>The Power of Renaissance:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ITA</Tag>
-		<English>Free specialist in all of your cities until the Industrial Age</English>
-		<French>Un sp&#233;cialiste gratuit par ville jusqu'&#224; l'&#200;re industrielle</French>
-		<German>Zus&#228;tzlicher Spezialist in allen St&#228;dten bis zum Industriezeitalter</German>
-		<Italian>Free specialist in all of your cities until the Industrial Age</Italian>
-		<Spanish>Free specialist in all of your cities until the Industrial Age</Spanish>
-	</TEXT>
+		<English>在你们所有的城市都有免费的专家，直到工业时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>在你们所有的城市都有免费的专家，直到工业时代</Chinese><French>Free specialist in all of your cities until the Industrial Age</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_JAP_TITLE</Tag>
-		<English>The Power of Modernization:</English>
-		<French>Le pouvoir de la modernisation :</French>
-		<German>Die Macht der Modernisierung:</German>
-		<Italian>Il potere dell'onore:</Italian>
-		<Spanish>El poder del honor:</Spanish>
-	</TEXT>
+		<English>旧邦新造：</English>
+		<L1/><L2/><L3/><L4/><Chinese>旧邦新造：</Chinese><French>The Power of Modernization:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_JAP</Tag>
-		<English>After discovering all medieval techs, every tech three other civilizations are willing to trade costs -50% [ICON_RESEARCH]</English>
-		<French>Apr&#232;s avoir d&#233;couvert toutes les technologies m&#233;di&#233;vales, chaque technologie co&#251;te -50 % [ICON_RESEARCH] si trois civilisations sont dispos&#233;es &#224; l'&#233;changer</French>
-		<German>Nachdem alle Technologien des Mittelalters entdeckt wurden, kostet jede Technologie -50% [ICON_RESEARCH], die drei andere Zivilisationen zu tauschen bereit sind</German>
-		<Italian>Tutte le unit&#224; militari terrestri hanno un bonus in difesa delle citt&#224;</Italian>
-		<Spanish>Todas las unidades militares terrestres tienen una bonificaci&#243;n al defender ciudades</Spanish>
-	</TEXT>
+		<English>在发现了所有中世纪的技术之后，其他三个文明的每一项技术都愿意以50%的成本进行交易[ICON_RESEARCH]</English>
+		<L1/><L2/><L3/><L4/><Chinese>在发现了所有中世纪的技术之后，其他三个文明的每一项技术都愿意以50%的成本进行交易[ICON_RESEARCH]</Chinese><French>After discovering all medieval techs, every tech three other civilizations are willing to trade costs -50% [ICON_RESEARCH]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_KHM_TITLE</Tag>
-		<English>The Power of Monsoons:</English>
-		<French>Le pouvoir des moussons :</French>
-		<German>Die Macht des Monsuns:</German>
-		<Italian>Il potere dei monsoni:</Italian>
-		<Spanish>El poder de los monzones:</Spanish>
-	</TEXT>
+		<English>季风王国：</English>
+		<L1/><L2/><L3/><L4/><Chinese>季风王国：</Chinese><French>The Power of Monsoons:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_KHM</Tag>
-		<English>All land units can move through jungles and rainforests, can build farms on rainforest</English>
-		<French>Toutes les unit&#233;s terrestres peuvent se d&#233;placer &#224; travers la jungle, et les fermes peuvent &#234;tre construites dans la for&#234;t tropicale</French>
-		<German>Landeinheiten k&#246;nnen Dschungel und Regenwald durchqueren, kann Farmen in Regenwald errichten</German>
-		<Italian>Tutte le unit&#224; di terra si possono muovere attraverso la giungla</Italian>
-		<Spanish>Todas las unidades terrestres se pueden mover a trav&#233;s de las junglas</Spanish>
-	</TEXT>
+		<English>所有的陆地单位都可以穿过丛林和雨林，可以在雨林上建农场</English>
+		<L1/><L2/><L3/><L4/><Chinese>所有的陆地单位都可以穿过丛林和雨林，可以在雨林上建农场</Chinese><French>All land units can move through jungles and rainforests, can build farms on rainforest</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CON_TITLE</Tag>
-		<English>The Power of the Tropics:</English>
-		<French>Le pouvoir des tropiques :</French>
-		<German>Die Macht der Tropen:</German>
-		<Italian>The Power of the Tropics:</Italian>
-		<Spanish>The Power of the Tropics:</Spanish>
-	</TEXT>
+		<English>热带王国：</English>
+		<L1/><L2/><L3/><L4/><Chinese>热带王国：</Chinese><French>The Power of the Tropics:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CON</Tag>
-		<English>Jungles, rainforests and marshes yield extra food and production and cause no unhealthiness</English>
-		<French>Les jungles, les for&#234;ts tropicales et les mar&#233;cages rapportent de la nourriture et de la production, et ne causent pas de maladie</French>
-		<German>Dschungel, Regenw&#228;lder und Marschen geben zus&#228;tzliche Nahrung und Produktion und verursachen keine Krankheit</German>
-		<Italian>Jungles, rainforests and marshes yield extra food and production and cause no unhealthiness</Italian>
-		<Spanish>Jungles, rainforests and marshes yield extra food and production and cause no unhealthiness</Spanish>
-	</TEXT>
+		<English>丛林、雨林和沼泽产生额外的食物和产能，且不会造成不健康</English>
+		<L1/><L2/><L3/><L4/><Chinese>丛林、雨林和沼泽产生额外的食物和产能，且不会造成不健康</Chinese><French>Jungles, rainforests and marshes yield extra food and production and cause no unhealthiness</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_KOR_TITLE</Tag>
-		<English>The Power of Education:</English>
-		<French>Le pouvoir de l'&#233;ducation :</French>
-		<German>Die Macht der Bildung:</German>
-		<Italian>The Power of Education:</Italian>
-		<Spanish>The Power of Education:</Spanish>
-	</TEXT>
+		<English>教育之力：</English>
+		<L1/><L2/><L3/><L4/><Chinese>教育之力：</Chinese><French>The Power of Education:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_KOR</Tag>
-		<English>Double specialist slots in capital</English>
-		<French>Vous pouvez embaucher deux fois plus de sp&#233;cialistes dans la capitale</French>
-		<German>Doppelte Anzahl verf&#252;gbarer Spezialisten in der Hauptstadt</German>
-		<Italian>Double specialist slots in capital</Italian>
-		<Spanish>Double specialist slots in capital</Spanish>
-	</TEXT>
+		<English>首都专家槽位加倍</English>
+		<L1/><L2/><L3/><L4/><Chinese>首都专家槽位加倍</Chinese><French>Double specialist slots in capital</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MAL_TITLE</Tag>
-		<English>The Power of Wealth:</English>
-		<French>Le pouvoir de la richesse :</French>
-		<German>Die Macht des Wohlstands:</German>
-		<Italian>Il potere della ricchezza:</Italian>
-		<Spanish>El poder de la riqueza:</Spanish>
-	</TEXT>
+		<English>大富豪：</English>
+		<L1/><L2/><L3/><L4/><Chinese>大富豪：</Chinese><French>The Power of Wealth:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MAL</Tag>
-		<English>+1 commerce in every land plot</English>
-		<French>+1 commerce sur toutes les cases terrestres</French>
-		<German>+1 Kommerz auf jedem Land-Gel&#228;ndefeld</German>
-		<Italian>+1 commercio in ogni casella di terra</Italian>
-		<Spanish>+1 intercambio en cada casilla de tierra</Spanish>
-	</TEXT>
+		<English>+1商业在每个地块</English>
+		<L1/><L2/><L3/><L4/><Chinese>+1商业在每个地块</Chinese><French>+1 commerce in every land plot</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MAY_TITLE</Tag>
-		<English>The Power of the Long Count:</English>
-		<French>Le pouvoir du compte long :</French>
-		<German>Die Macht der Langen Z&#228;hlung:</German>
-		<Italian>The Power of the Long Count:</Italian>
-		<Spanish>The Power of the Long Count:</Spanish>
-	</TEXT>
+		<English>玛雅历法：</English>
+		<L1/><L2/><L3/><L4/><Chinese>玛雅历法：</Chinese><French>The Power of the Long Count:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MAY</Tag>
-		<English>Cities receive additional food whenever a technology is discovered before the Middle Ages</English>
-		<French>Les villes re&#231;oivent de la nourriture lors de la d&#233;couverte de technologies avant le Moyen &#194;ge</French>
-		<German>St&#228;dte erhalten zus&#228;tzliche Nahrung f&#252;r jede Technologie, die vor dem Mittelalter entdeckt wird</German>
-		<Italian>Cities receive additional food whenever a technology is discovered before the Middle Ages</Italian>
-		<Spanish>Cities receive additional food whenever a technology is discovered before the Middle Ages</Spanish>
-	</TEXT>
+		<English>在中世纪以前，只要一项科技被发现，城市就会得到额外的食物</English>
+		<L1/><L2/><L3/><L4/><Chinese>在中世纪以前，只要一项科技被发现，城市就会得到额外的食物</Chinese><French>Cities receive additional food whenever a technology is discovered before the Middle Ages</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MEX_TITLE</Tag>
-		<English>The Power of Arid Agriculture:</English>
-		<French>Le pouvoir de l'aridoculture :</French>
-		<German>Die Macht der Ariden Landwirtschaft:</German>
-		<Italian>The Power of Arid Agriculture:</Italian>
-		<Spanish>The Power of Arid Agriculture:</Spanish>
-	</TEXT>
+		<English>旱作农业：</English>
+		<L1/><L2/><L3/><L4/><Chinese>旱作农业：</Chinese><French>The Power of Arid Agriculture:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MEX</Tag>
-		<English>Can build farms on hills</English>
-		<French>Les fermes peuvent &#234;tre construites sur les collines</French>
-		<German>Kann Farmen auf H&#252;geln errichten</German>
-		<Italian>Can build farms on hills</Italian>
-		<Spanish>Can build farms on hills</Spanish>
-	</TEXT>
+		<English>可以在丘陵上建农场</English>
+		<L1/><L2/><L3/><L4/><Chinese>可以在丘陵上建农场</Chinese><French>Can build farms on hills</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MON_TITLE</Tag>
-		<English>The Power of Terror:</English>
-		<French>Le pouvoir de la terreur :</French>
-		<German>Die Macht des Schreckens:</German>
-		<Italian>Il potere dell'orda:</Italian>
-		<Spanish>El poder de la horda:</Spanish>
-	</TEXT>
+		<English>上帝之鞭：</English>
+		<L1/><L2/><L3/><L4/><Chinese>上帝之鞭：</Chinese><French>The Power of Terror:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MON</Tag>
-		<English>Cities threatened by your armies descend into unrest</English>
-		<French>Les villes menac&#233;es par vos arm&#233;es deviennent agit&#233;es</French>
-		<German>Von Ihren Streitkr&#228;ften bedrohte St&#228;dte verfallen in Unruhe</German>
-		<Italian>Ogni citt&#224; distrutta fa s&#236; che le citt&#224; nemiche vicine si arrendano, se avvicinate</Italian>
-		<Spanish>Una ciudad arrasada provoca que las ciudades enemigas cercanas se rindan al aproximarse</Spanish>
-	</TEXT>
+		<English>受你军队威胁的城市陷入动乱</English>
+		<L1/><L2/><L3/><L4/><Chinese>受你军队威胁的城市陷入动乱</Chinese><French>Cities threatened by your armies descend into unrest</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MONGOL_HORDE</Tag>
-		<English>Your successful conquests have made your horde grow!</English>
-		<French>Vos succ&#232;s de conqu&#234;te ont fait grandir votre horde !</French>
-		<German>Eure erfolgreichen Eroberungen haben Eure Horde wachsen lassen!</German>
-		<Italian>Your successful conquests have made your horde grow!</Italian>
-		<Spanish>Your successful conquests have made your horde grow!</Spanish>
-	</TEXT>
+		<English>你成功的征服使你的部落壮大了！</English>
+		<L1/><L2/><L3/><L4/><Chinese>你成功的征服使你的部落壮大了！</Chinese><French>Your successful conquests have made your horde grow!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MONGOL_TERROR</Tag>
-		<English>The citizens of %s1 tremble in fear before our approaching armies!</English>
-		<French>Les habitants de %s1 tremblent de peur &#224; l'approche de nos arm&#233;es !</French>
-		<German>Die B&#252;rger von %s1 erzittern vor Furcht vor unseren anr&#252;ckenden Truppen!</German>
-		<Italian>The citizens of %s1 tremble in fear before our approaching armies!</Italian>
-		<Spanish>The citizens of %s1 tremble in fear before our approaching armies!</Spanish>
-	</TEXT>
+		<English>在我们即将到来的军队面前，%s1的市民在恐惧中颤抖！</English>
+		<L1/><L2/><L3/><L4/><Chinese>在我们即将到来的军队面前，%s1的市民在恐惧中颤抖！</Chinese><French>The citizens of %s1 tremble in fear before our approaching armies!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MONGOL_TERROR_US</Tag>
-		<English>Frightened by the approaching Mongol armies, the citizens of %s1 have abandoned their defenses!</English>
-		<French>Effray&#233;s par l'approche des arm&#233;es mongoles, les habitants de %s1 ont abandonn&#233; leurs d&#233;fenses !</French>
-		<German>Aus Furcht vor den anr&#252;ckenden mongolischen Armeen haben die B&#252;rger von %s1 ihre Stellungen aufgegeben!</German>
-		<Italian>Frightened by the approaching Mongol armies, the citizens of %s1 have abandoned their defenses!</Italian>
-		<Spanish>Frightened by the approaching Mongol armies, the citizens of %s1 have abandoned their defenses!</Spanish>
-	</TEXT>
+		<English>由于受到即将到来的蒙古军队的惊吓，%s1的市民放弃了他们的防御！</English>
+		<L1/><L2/><L3/><L4/><Chinese>由于受到即将到来的蒙古军队的惊吓，%s1的市民放弃了他们的防御！</Chinese><French>Frightened by the approaching Mongol armies, the citizens of %s1 have abandoned their defenses!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_TERROR1</Tag>
-		<English>Citizens of</English>
-		<French>Les citoyens de</French>
-		<German>Die B&#252;rger von</German>
-		<Italian>I cittadini di</Italian>
-		<Spanish>Los ciudadanos de</Spanish>
-	</TEXT>
+		<English>公民</English>
+		<L1/><L2/><L3/><L4/><Chinese>公民</Chinese><French>Citizens of</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_TERROR2</Tag>
-		<English>fear the same fate of their neighbour inhabitants and surrender!</English>
-		<French>craignent de subir le m&#234;me sort que leurs voisins et se rendent !</French>
-		<German>f&#252;rchten, dass sie dasselbe Schicksal ereilt wie ihre Nachbarn, und kapitulieren!</German>
-		<Italian>temono di subire lo stesso fato dei vicini e si arrendono!</Italian>
-		<Spanish>temen sufrir el mismo destino que sus vecinos y se rinden.</Spanish>
-	</TEXT>
+		<English>害怕遭受到和邻居一样的命运，投降吧！</English>
+		<L1/><L2/><L3/><L4/><Chinese>害怕遭受到和邻居一样的命运，投降吧！</Chinese><French>fear the same fate of their neighbour inhabitants and surrender!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MOO_TITLE</Tag>
-		<English>The Power of Irrigation:</English>
-		<French>Le pouvoir de l'irrigation :</French>
-		<German>Die Macht der Bew&#228;sserung:</German>
-		<Italian>The Power of Irrigation:</Italian>
-		<Spanish>The Power of Irrigation:</Spanish>
-	</TEXT>
+		<English>灌溉之力：</English>
+		<L1/><L2/><L3/><L4/><Chinese>灌溉之力：</Chinese><French>The Power of Irrigation:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MOO</Tag>
-		<English>Improvements that yield food give one extra food on plains tiles until the Renaissance</English>
-		<French>Sur les cases de plaines, les am&#233;liorations qui rapportent de la nourriture en rapportent une de plus jusqu'&#224; la Renaissance</French>
-		<German>Verbesserungen, die Nahrung produzieren, geben eine zus&#228;tzliche Nahrungseinheit auf Ebenenfeldern bis zur Renaissance</German>
-		<Italian>Improvements that yield food give one extra food on plains tiles until the Renaissance</Italian>
-		<Spanish>Improvements that yield food give one extra food on plains tiles until the Renaissance</Spanish>
-	</TEXT>
+		<English>在文艺复兴之前，在平原地块上增加一点食物产出</English>
+		<L1/><L2/><L3/><L4/><Chinese>在文艺复兴之前，在平原地块上增加一点食物产出</Chinese><French>Improvements that yield food give one extra food on plains tiles until the Renaissance</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MUG_TITLE</Tag>
-		<English>The Power of Architecture:</English>
-		<French>Le pouvoir de l'architecture :</French>
-		<German>Die Macht der Architektur:</German>
-		<Italian>The Power of Architecture:</Italian>
-		<Spanish>The Power of Architecture:</Spanish>
-	</TEXT>
+		<English>建筑大师：</English>
+		<L1/><L2/><L3/><L4/><Chinese>建筑大师：</Chinese><French>The Power of Architecture:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MUG</Tag>
-		<English>Cities receive half the construction cost as culture after a building is completed</English>
-		<French>Au moment de compl&#233;ter un b&#226;timent, les villes re&#231;oivent en culture la moiti&#233; du co&#251;t de construction</French>
-		<German>St&#228;dte erhalten die H&#228;lfte der Baukosten als Kultur, wenn ein Geb&#228;ude errichtet wird</German>
-		<Italian>Cities receive half the construction cost as culture after a building is completed</Italian>
-		<Spanish>Cities receive half the construction cost as culture after a building is completed</Spanish>
-	</TEXT>
+		<English>一座建筑完成之后，建造它的一半产能将会转为文化。</English>
+		<L1/><L2/><L3/><L4/><Chinese>一座建筑完成之后，建造它的一半产能将会转为文化。</Chinese><French>Cities receive half the construction cost as culture after a building is completed</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_PER_TITLE</Tag>
-		<English>The Power of Satrapy:</English>
-		<French>Le pouvoir des satrapies :</French>
-		<German>Die Macht der Satrapie:</German>
-		<Italian>Il potere della satrapia:</Italian>
-		<Spanish>El poder de la satrap&#237;a:</Spanish>
-	</TEXT>
+		<English>总督辖地：</English>
+		<L1/><L2/><L3/><L4/><Chinese>总督辖地：</Chinese><French>The Power of Satrapy:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_PER</Tag>
-		<English>Additional stability for recently conquered cities</English>
-		<French>Stabilit&#233; additionnelle pour les villes r&#233;cemment conquises</French>
-		<German>Zus&#228;tzliche Stabilit&#228;t f&#252;r k&#252;rzlich eroberte St&#228;dte</German>
-		<Italian>Additional stability for recently conquered cities</Italian>
-		<Spanish>Additional stability for recently conquered cities</Spanish>
-	</TEXT>
+		<English>新征服城市的额外稳定性</English>
+		<L1/><L2/><L3/><L4/><Chinese>新征服城市的额外稳定性</Chinese><French>Additional stability for recently conquered cities</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_PLY_TITLE</Tag>
-		<English>The Power of Navigation:</English>
-		<French>Le pouvoir de la navigation :</French>
-		<German>The Power of Navigation:</German>
-		<Italian>The Power of Navigation:</Italian>
-		<Spanish>The Power of Navigation:</Spanish>
-	</TEXT>
+		<English>航海先驱：</English>
+		<L1/><L2/><L3/><L4/><Chinese>航海先驱：</Chinese><French>The Power of Navigation:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_PLY</Tag>
-		<English>No penalties for cultural expansion over Ocean tiles</English>
-		<French>Pas de p&#233;nalit&#233; pour l'expansion culturelle sur les cases d'oc&#233;an</French>
-		<German>No penalties for cultural expansion over Ocean tiles</German>
-		<Italian>No penalties for cultural expansion over Ocean tiles</Italian>
-		<Spanish>No penalties for cultural expansion over Ocean tiles</Spanish>
-	</TEXT>
+		<English>海洋地块上文化扩张更容易</English>
+		<L1/><L2/><L3/><L4/><Chinese>海洋地块上文化扩张更容易</Chinese><French>No penalties for cultural expansion over Ocean tiles</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_POL_TITLE</Tag>
-		<English>The Power of Golden Liberty:</English>
-		<French>Le pouvoir de la Libert&#233; dor&#233;e :</French>
-		<German>Die Macht der Goldenen Freiheit:</German>
-		<Italian>The Power of Golden Liberty:</Italian>
-		<Spanish>The Power of Golden Liberty:</Spanish>
-	</TEXT>
+		<English>平独镇露：</English>
+		<L1/><L2/><L3/><L4/><Chinese>平独镇露：</Chinese><French>The Power of Golden Liberty:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_POL</Tag>
-		<English>Additional food and commerce during Golden Ages</English>
-		<French>Les &#226;ges d'or rapportent davantage de nourriture et de commerce</French>
-		<German>Zus&#228;tzliche Nahrung und Kommerz durch Goldene Zeitalter</German>
-		<Italian>Additional food and commerce during Golden Ages</Italian>
-		<Spanish>Additional food and commerce during Golden Ages</Spanish>
-	</TEXT>
+		<English>黄金时期的额外食品和商业</English>
+		<L1/><L2/><L3/><L4/><Chinese>黄金时期的额外食品和商业</Chinese><French>Additional food and commerce during Golden Ages</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_POR_TITLE</Tag>
-		<English>The Power of Exploration:</English>
-		<French>Le pouvoir de l'exploration :</French>
-		<German>Die Macht des Kundschaftens:</German>
-		<Italian>Il potere dell'esplorazione:</Italian>
-		<Spanish>El poder de la exploraci&#243;n:</Spanish>
-	</TEXT>
+		<English>地理大发现：</English>
+		<L1/><L2/><L3/><L4/><Chinese>地理大发现：</Chinese><French>The Power of Exploration:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_POR</Tag>
-		<English>Ocean Trade allowed with Cartography, reduced instability for overseas colonies</English>
-		<French>Le commerce transoc&#233;anique est permis avec la Cartographie, et l'instabilit&#233; caus&#233;e par les colonies d'outre-mer est r&#233;duite</French>
-		<German>Ozeanhandel erm&#246;glicht durch Kartographie, verringerte Instabilit&#228;t durch &#220;bersee-Kolonien</German>
-		<Italian>Ocean Trade allowed with Cartography, reduced instability for overseas colonies</Italian>
-		<Spanish>Ocean Trade allowed with Cartography, reduced instability for overseas colonies</Spanish>
-	</TEXT>
+		<English>获得制图学后允许海洋贸易，减少了海外殖民地的不稳定性</English>
+		<L1/><L2/><L3/><L4/><Chinese>获得制图学后允许海洋贸易，减少了海外殖民地的不稳定性</Chinese><French>Ocean Trade allowed with Cartography, reduced instability for overseas colonies</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ROM_TITLE</Tag>
-		<English>The Power of Infrastructure:</English>
-		<French>Le pouvoir de l'infrastructure :</French>
-		<German>Die Macht der Infrastruktur:</German>
-		<Italian>Il potere delle infrastrutture:</Italian>
-		<Spanish>El poder de la infraestructura:</Spanish>
-	</TEXT>
+		<English>基建狂魔：</English>
+		<L1/><L2/><L3/><L4/><Chinese>基建狂魔：</Chinese><French>The Power of Infrastructure:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ROM</Tag>
-		<English>Buildings that already exist in your capital receive +30% construction speed.</English>
-		<French>Les b&#226;timents d&#233;j&#224; pr&#233;sents dans votre capitale sont construits 30 % plus vite</French>
-		<German>Geb&#228;ude, die bereits in der Hauptstadt errichtet wurden, erhalten +30% Baugeschwindigkeit.</German>
-		<Italian>Le strade all'interno dei confini romani permettono movimento delle unit&#224; 4X invece di 2X</Italian>
-		<Spanish>Las carreteras dentro de las fronteras romanas permiten un movimiento de unidades multiplicado x4 en lugar de x2</Spanish>
-	</TEXT>
+		<English>在你的首都已经存在的建筑将获得+30%的建造速度。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在你的首都已经存在的建筑将获得+30%的建造速度。</Chinese><French>Buildings that already exist in your capital receive +30% construction speed.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ROMAN_CONQUESTS</Tag>
-		<English>An army has been fielded to attack %s1_civ_adjective!</English>
-		<French>Une arm&#233;e a &#233;t&#233; lev&#233;e pour attaquer %s1_civ_adjective !</French>
-		<German>Eine Armee wurde zusammengestellt zum Angriff auf %s1_civ_adjective!</German>
-		<Italian>An army has been fielded to attack %s1_civ_adjective!</Italian>
-		<Spanish>An army has been fielded to attack %s1_civ_adjective!</Spanish>
-	</TEXT>
+		<English>一支军队被派去攻击%s1_civ_adjective！</English>
+		<L1/><L2/><L3/><L4/><Chinese>一支军队被派去攻击%s1_civ_adjective！</Chinese><French>An army has been fielded to attack %s1_civ_adjective!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ROMAN_CONQUESTS_TARGET</Tag>
-		<English>The Romans have fielded an army to conquer our civilization!</English>
-		<French>Les Romains ont lev&#233; une arm&#233;e pour conqu&#233;rir notre civilisation !</French>
-		<German>Die R&#246;mer haben eine Armee zum Angriff auf unsere Zivilisation zusammengestellt!</German>
-		<Italian>The Romans have fielded an army to conquer our civilization!</Italian>
-		<Spanish>The Romans have fielded an army to conquer our civilization!</Spanish>
-	</TEXT>
+		<English>罗马人已经派出军队来征服我们的文明！</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马人已经派出军队来征服我们的文明！</Chinese><French>The Romans have fielded an army to conquer our civilization!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ROMAN_TRIUMPH</Tag>
-		<English>Your triumphant victories have enabled you to field another legion!</English>
-		<French>Vos victoires triomphantes vous ont permis de lever une autre l&#233;gion !</French>
-		<German>Eure triumphalen Siege haben Euch erm&#246;glicht, eine weitere Legion auszuheben!</German>
-		<Italian>Your triumphant victories have enabled you to field another legion!</Italian>
-		<Spanish>Your triumphant victories have enabled you to field another legion!</Spanish>
-	</TEXT>
+		<English>你的胜利使你能发动另一个军团！</English>
+		<L1/><L2/><L3/><L4/><Chinese>你的胜利使你能发动另一个军团！</Chinese><French>Your triumphant victories have enabled you to field another legion!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_RUS_TITLE</Tag>
-		<English>The Power of General Winter:</English>
-		<French>Le pouvoir du g&#233;n&#233;ral Hiver :</French>
-		<German>Die Macht von "General Winter":</German>
-		<Italian>Il potere del Generale Inverno:</Italian>
-		<Spanish>El poder del General Invierno:</Spanish>
-	</TEXT>
+		<English>凛冬将至：</English>
+		<L1/><L2/><L3/><L4/><Chinese>凛冬将至：</Chinese><French>The Power of General Winter:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_RUS</Tag>
-		<English>Enemy units in Russia take damage every turn</English>
-		<French>Les unit&#233;s ennemies en Russie subissent des dommages &#224; chaque tour</French>
-		<German>Schaden in jeder Runde f&#252;r feindliche Einheiten in Russland</German>
-		<Italian>Le unit&#224; nemiche in Russia subiscono danni a ogni turno</Italian>
-		<Spanish>Las unidades enemigas en Rusia sufren da&#241;os cada turno</Spanish>
-	</TEXT>
+		<English>在俄罗斯的敌军每回合都受到伤害</English>
+		<L1/><L2/><L3/><L4/><Chinese>在俄罗斯的敌军每回合都受到伤害</Chinese><French>Enemy units in Russia take damage every turn</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_SPA_TITLE</Tag>
-		<English>The Power of Discovery:</English>
-		<French>Le pouvoir de la d&#233;couverte :</French>
-		<German>Die Macht der Entdeckungen:</German>
-		<Italian>Il potere della scoperta:</Italian>
-		<Spanish>El poder del descubrimiento:</Spanish>
-	</TEXT>
+		<English>无敌舰队：</English>
+		<L1/><L2/><L3/><L4/><Chinese>无敌舰队：</Chinese><French>The Power of Discovery:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_SPA</Tag>
-		<English>Naval units receive +2 movement points</English>
-		<French>Les unit&#233;s navales re&#231;oivent +2 points de mouvement</French>
-		<German>2 zus&#228;tzliche Fortbewegungspunkte f&#252;r Marineeinheiten</German>
-		<Italian>Le unit&#224; navali ricevono +2 punti di movimento</Italian>
-		<Spanish>Las unidades navales nuevas reciben +2 puntos de movimiento</Spanish>
-	</TEXT>
+		<English>海军单位获得+2移动点</English>
+		<L1/><L2/><L3/><L4/><Chinese>海军单位获得+2移动点</Chinese><French>Naval units receive +2 movement points</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_TAM_TITLE</Tag>
-		<English>The Power of Thalassocracy:</English>
-		<French>The pouvoir de la thalassocratie :</French>
-		<German>Die Macht der Thalassokratie:</German>
-		<Italian>The Power of Thalassocracy:</Italian>
-		<Spanish>The Power of Thalassocracy:</Spanish>
-	</TEXT>
+		<English>海权控制：</English>
+		<L1/><L2/><L3/><L4/><Chinese>海权控制：</Chinese><French>The Power of Thalassocracy:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_TAM</Tag>
-		<English>Extra commerce on coast and ocean tiles</English>
-		<French>Les cases d'oc&#233;an rapportent du commerce suppl&#233;mentaire</French>
-		<German>Zus&#228;tzlicher Kommerz auf K&#252;sten- und Ozeanfeldern</German>
-		<Italian>Extra commerce on coast and ocean tiles</Italian>
-		<Spanish>Extra commerce on coast and ocean tiles</Spanish>
-	</TEXT>
+		<English>沿海和海洋地块带来额外贸易</English>
+		<L1/><L2/><L3/><L4/><Chinese>沿海和海洋地块带来额外贸易</Chinese><French>Extra commerce on coast and ocean tiles</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_TAMIL_CONQUESTS_TARGET</Tag>
-		<English>The Tamils have fielded an army to conquer our civilization!</English>
-		<French>Les Tamouls ont lev&#233; une arm&#233;e pour conqu&#233;rir notre civilisation !</French>
-		<German>Die Tamilen haben eine Armee zum Angriff auf unsere Zivilisation zusammengestellt!</German>
-		<Italian>The Tamils have fielded an army to conquer our civilization!</Italian>
-		<Spanish>The Tamils have fielded an army to conquer our civilization!</Spanish>
-	</TEXT>
+		<English>泰米尔人派出了一支军队来征服我们的文明！</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔人派出了一支军队来征服我们的文明！</Chinese><French>The Tamils have fielded an army to conquer our civilization!</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_THA_TITLE</Tag>
-		<English>The Power of Father Governs Children:</English>
-		<French>Le pouvoir de la figure paternelle :</French>
-		<German>Die Macht von Vater Regiert Kinder:</German>
-		<Italian>The Power of Father Governs Children:</Italian>
-		<Spanish>The Power of Father Governs Children:</Spanish>
-	</TEXT>
+		<English>君父思想：</English>
+		<L1/><L2/><L3/><L4/><Chinese>君父思想：</Chinese><French>The Power of Father Governs Children:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_THA</Tag>
-		<English>+1 Commerce per Excess Happiness</English>
-		<French>+1 commerce par [ICON_HAPPY] en exc&#232;s</French>
-		<German>+1 Kommerz pro &#252;berz&#228;hlige Zufriedenheit</German>
-		<Italian>+1 Commerce per Excess Happiness</Italian>
-		<Spanish>+1 Commerce per Excess Happiness</Spanish>
-	</TEXT>
+		<English>每多一个快乐+1商业</English>
+		<L1/><L2/><L3/><L4/><Chinese>每多一个快乐+1商业</Chinese><French>+1 Commerce per Excess Happiness</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_TIB_TITLE</Tag>
-		<English>The Power of Missionaries:</English>
-		<French>Le pouvoir des missionnaires :</French>
-		<German>Die Macht der Missionare:</German>
-		<Italian>The Power of Missionaries:</Italian>
-		<Spanish>The Power of Missionaries:</Spanish>
-	</TEXT>
+		<English>信仰传播者：</English>
+		<L1/><L2/><L3/><L4/><Chinese>信仰传播者：</Chinese><French>The Power of Missionaries:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_TIB</Tag>
-		<English>Can train unlimited missionaries; Missionaries can enter foreign territory</English>
-		<French>Pas de limite de missionnaires ; les missionnaires peuvent entrer en territoire &#233;tranger</French>
-		<German>Kann unbegrenzt Missionare ausbilden; Missionare k&#246;nnen fremdes Territorium betreten</German>
-		<Italian>Can train unlimited missionaries; Missionaries can enter foreign territory</Italian>
-		<Spanish>Can train unlimited missionaries; Missionaries can enter foreign territory</Spanish>
-	</TEXT>
+		<English>可以训练无限的传教士；传教士可以进入外国领土</English>
+		<L1/><L2/><L3/><L4/><Chinese>可以训练无限的传教士；传教士可以进入外国领土</Chinese><French>Can train unlimited missionaries; Missionaries can enter foreign territory</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_TUR_TITLE</Tag>
-		<English>The Power of Orda:</English>
-		<French>Le pouvoir de la horde :</French>
-		<German>Die Macht der Orda:</German>
-		<Italian>The Power of Orda:</Italian>
-		<Spanish>The Power of Orda:</Spanish>
-	</TEXT>
+		<English>奥达之力：</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥达之力：</Chinese><French>The Power of Orda:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_TUR</Tag>
-		<English>Barbarians cannot enter your territory during peacetime and mounted barbarians will join your armies if attacked during wartime</English>
-		<French>En temps de paix, les barbares ne peuvent pas entrer dans votre territoire ; en temps de guerre, les barbares mont&#233;s se joignent &#224; votre arm&#233;e si vous les attaquez</French>
-		<German>Barbaren k&#246;nnen Ihr Territorium in Friedenszeiten nicht betreten und berittene Barbaren, die in Kriegszeiten angegriffen werden, treten Ihren Armeen bei</German>
-		<Italian>Barbarians cannot enter your territory during peacetime and mounted barbarians will join your armies if attacked during wartime</Italian>
-		<Spanish>Barbarians cannot enter your territory during peacetime and mounted barbarians will join your armies if attacked during wartime</Spanish>
-	</TEXT>
+		<English>野蛮人在和平时期不能进入你的领土，如果在战争期间受到攻击，骑在马上的野蛮人将加入你的军队</English>
+		<L1/><L2/><L3/><L4/><Chinese>野蛮人在和平时期不能进入你的领土，如果在战争期间受到攻击，骑在马上的野蛮人将加入你的军队</Chinese><French>Barbarians cannot enter your territory during peacetime and mounted barbarians will join your armies if attacked during wartime</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_OTT_TITLE</Tag>
-		<English>The Power of Devshirme:</English>
-		<French>Le pouvoir du devchirm&#233; :</French>
-		<German>Die Macht der Devshirme:</German>
-		<Italian>Il potere dell'assimilazione:</Italian>
-		<Spanish>El poder de la asimilaci&#243;n:</Spanish>
-	</TEXT>
+		<English>壮丁征召：</English>
+		<L1/><L2/><L3/><L4/><Chinese>壮丁征召：</Chinese><French>The Power of Devshirme:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_OTT</Tag>
-		<English>Can Conscript two extra Units in Cities with Non-State Religions</English>
-		<French>Vous pouvez enr&#244;ler deux unit&#233;s suppl&#233;mentaires dans les villes adeptes de religions non officielles</French>
-		<German>Kann zwei zus&#228;tzliche Einheiten in St&#228;dten mit Nicht-Staatsreligionen rekrutieren</German>
-		<Italian>La maggioranza di cultura straniera nelle citt&#224; turche &#232; convertita in cultura turca</Italian>
-		<Spanish>La mayor parte de la cultura extranjera en ciudades turcas se convierte a cultura turca</Spanish>
-	</TEXT>
+		<English>在有非国家宗教信仰的城市能多征募两个单位</English>
+		<L1/><L2/><L3/><L4/><Chinese>在有非国家宗教信仰的城市能多征募两个单位</Chinese><French>Can Conscript two extra Units in Cities with Non-State Religions</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_VIK_TITLE</Tag>
-		<English>The Power of Raids:</English>
-		<French>Le pouvoir des raids :</French>
-		<German>Die Macht des Raubens:</German>
-		<Italian>Il potere dell'incursione:</Italian>
-		<Spanish>El poder del pillaje:</Spanish>
-	</TEXT>
+		<English>突袭之力：</English>
+		<L1/><L2/><L3/><L4/><Chinese>突袭之力：</Chinese><French>The Power of Raids:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_VIK</Tag>
-		<English>Additional gold from pillaging, sacking cities and sinking ships during the Middle Ages</English>
-		<French>Piller, saccager des villes et couler des navires vous rapporte de l'or suppl&#233;mentaire pendant le Moyen &#194;ge</French>
-		<German>Zus&#228;tzliches gold durch Pl&#252;nderung von St&#228;dten und Verbesserungen und das Versenken von Schiffen w&#228;hrend des Mittelalters</German>
-		<Italian>5X oro ottenuto dai saccheggi</Italian>
-		<Spanish>Se obtiene oro x5 del pillaje</Spanish>
-	</TEXT>
+		<English>中世纪掠夺、洗劫城市和击沉船只带来额外黄金</English>
+		<L1/><L2/><L3/><L4/><Chinese>中世纪掠夺、洗劫城市和击沉船只带来额外黄金</Chinese><French>Additional gold from pillaging, sacking cities and sinking ships during the Middle Ages</French></TEXT>
 </Civ4GameText>

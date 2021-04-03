@@ -1,238 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='GBK'?>
 <!-- Byzantium -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_DESC</Tag>
-		<English>The Byzantines</English>
-		<French>
-			<Text>Les Byzantins</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>The Byzantines</German>
-		<Italian>The Byzantines</Italian>
-		<Spanish>The Byzantines</Spanish>
-	</TEXT>
+		<English>拜占庭文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭文明</Chinese><French>The Byzantines</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_PEOPLES</Tag>
-		<English>Byzantine Peoples</English>
-		<French>
-			<Text>Peuplades byzantines</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Byzantine Peoples</German>
-		<Italian>Byzantine Peoples</Italian>
-		<Spanish>Byzantine Peoples</Spanish>
-	</TEXT>
+		<English>拜占庭人民</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭人民</Chinese><French>Byzantine Peoples</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_DEFAULT</Tag>
-		<English>%s2 Empire</English>
-		<French>
-			<Text>Empire %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>%s2 Reich:%s2 Reich:%s2 Reich</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Impero %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Imperio %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>Byzantium</English>
+		<L1/><L2/><L3/><L4/><Chinese>Byzantium</Chinese><French>%s2 Empire</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_REPUBLIC</Tag>
-		<English>Republic of Rhomania</English>
-		<French>
-			<Text>R&#233;publique de Rhomanie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Republic of Rhomania</German>
-		<Italian>Republic of Rhomania</Italian>
-		<Spanish>Republic of Rhomania</Spanish>
-	</TEXT>
+		<English>罗马尼亚共和国（拜占庭）</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马尼亚共和国（拜占庭）</Chinese><French>Republic of Rhomania</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_FASCIST</Tag>
-		<English>Despotate of %s1</English>
-		<French>
-			<Text>Despotat de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Despotate of %s1</German>
-		<Italian>Despotate of %s1</Italian>
-		<Spanish>Despotate of %s1</Spanish>
-	</TEXT>
+		<English>拜占庭帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭帝国</Chinese><French>Despotate of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_EASTERN</Tag>
-		<English>Eastern Roman</English>
-		<French>
-			<Text>romain d'Orient</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Eastern Roman</German>
-		<Italian>Eastern Roman</Italian>
-		<Spanish>Eastern Roman</Spanish>
-	</TEXT>
+		<English>东罗马</English>
+		<L1/><L2/><L3/><L4/><Chinese>东罗马</Chinese><French>Eastern Roman</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_TREBIZOND</Tag>
-		<English>Trebizond</English>
-		<French>Tr&#233;bizonde</French>
-		<German>Trebizond</German>
-		<Italian>Trebizond</Italian>
-		<Spanish>Trebizond</Spanish>
-	</TEXT>
+		<English>拜占庭-特拉布松帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-特拉布松帝国</Chinese><French>Trebizond</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_DESPOTATE</Tag>
-		<English>Despotate of %s1</English>
-		<French>
-			<Text>Despotat de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Despotate of %s1</German>
-		<Italian>Despotate of %s1</Italian>
-		<Spanish>Despotate of %s1</Spanish>
-	</TEXT>
+		<English>拜占庭帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭帝国</Chinese><French>Despotate of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_RUM</Tag>
-		<English>R&#251;m</English>
-		<French>R&#251;m</French>
-		<German>R&#251;m</German>
-		<Italian>R&#251;m</Italian>
-		<Spanish>R&#251;m</Spanish>
-	</TEXT>
+		<English>拜占庭-朗姆</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-朗姆</Chinese><French>R&#251;m</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_MOREA</Tag>
-		<English>the Morea</English>
-		<French>Mor&#233;e</French>
-		<German>the Morea</German>
-		<Italian>the Morea</Italian>
-		<Spanish>the Morea</Spanish>
-	</TEXT>
+		<English>拜占庭-摩里亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-摩里亚</Chinese><French>the Morea</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_NICAEA</Tag>
-		<English>Nicaea</English>
-		<French>Nic&#233;e</French>
-		<German>Nicaea</German>
-		<Italian>Nicaea</Italian>
-		<Spanish>Nicaea</Spanish>
-	</TEXT>
+		<English>拜占庭-尼西亚帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-尼西亚帝国</Chinese><French>Nicaea</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_EPIRUS</Tag>
-		<English>Epirus</English>
-		<French>&#201;pire</French>
-		<German>Epirus</German>
-		<Italian>Epirus</Italian>
-		<Spanish>Epirus</Spanish>
-	</TEXT>
+		<English>拜占庭-伊庇鲁斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-伊庇鲁斯</Chinese><French>Epirus</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTINE_VASSAL</Tag>
-		<English>Exarchate of %s1</English>
-		<French>
-			<Text>Exarchat de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Exarchate of %s1</German>
-		<Italian>Exarchate of %s1</Italian>
-		<Spanish>Exarchate of %s1</Spanish>
-	</TEXT>
+		<English>东罗马帝国总督- %s1</English>
+		<L1/><L2/><L3/><L4/><Chinese>东罗马帝国总督- %s1</Chinese><French>Exarchate of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTINE_EGYPT</Tag>
-		<English>Exarchate of Alexandria</English>
-		<French>
-			<Text>Exarchat d'Alexandrie</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Exarchate of Alexandria</German>
-		<Italian>Exarchate of Alexandria</Italian>
-		<Spanish>Exarchate of Alexandria</Spanish>
-	</TEXT>
+		<English>拜占庭-埃及</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-埃及</Chinese><French>Exarchate of Alexandria</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTINE_BABYLONIA</Tag>
-		<English>Exarchate of Ctesiphon</English>
-		<French>
-			<Text>Exarchat de Ct&#233;siphon</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Exarchate of Ctesiphon</German>
-		<Italian>Exarchate of Ctesiphon</Italian>
-		<Spanish>Exarchate of Ctesiphon</Spanish>
-	</TEXT>
+		<English>拜占庭-巴比伦</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-巴比伦</Chinese><French>Exarchate of Ctesiphon</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTINE_GREECE</Tag>
-		<English>Exarchate of Achaia</English>
-		<French>
-			<Text>Exarchat d'Acha&#239;e</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Exarchate of Achaia</German>
-		<Italian>Exarchate of Achaia</Italian>
-		<Spanish>Exarchate of Achaia</Spanish>
-	</TEXT>
+		<English>拜占庭-希腊</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-希腊</Chinese><French>Exarchate of Achaia</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTINE_CARTHAGE</Tag>
-		<English>Exarchate of Africa</English>
-		<French>
-			<Text>Exarchat d'Afrique</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Exarchate of Africa</German>
-		<Italian>Exarchate of Africa</Italian>
-		<Spanish>Exarchate of Africa</Spanish>
-	</TEXT>
+		<English>拜占庭-迦太基</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-迦太基</Chinese><French>Exarchate of Africa</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTINE_PERSIA</Tag>
-		<English>Exarchate of Parthia</English>
-		<French>
-			<Text>Exarchat de Parthie</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Exarchate of Parthia</German>
-		<Italian>Exarchate of Parthia</Italian>
-		<Spanish>Exarchate of Parthia</Spanish>
-	</TEXT>
+		<English>拜占庭-波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-波斯</Chinese><French>Exarchate of Parthia</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTINE_ROME</Tag>
-		<English>Exarchate of Ravenna</English>
-		<French>
-			<Text>Exarchat de Ravenne</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Exarchate of Ravenna</German>
-		<Italian>Exarchate of Ravenna</Italian>
-		<Spanish>Exarchate of Ravenna</Spanish>
-	</TEXT>
+		<English>拜占庭-罗马</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-罗马</Chinese><French>Exarchate of Ravenna</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTINE_SPAIN</Tag>
-		<English>Exarchate of Spania</English>
-		<French>
-			<Text>Exarchat de Spania</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Exarchate of Spania</German>
-		<Italian>Exarchate of Spania</Italian>
-		<Spanish>Exarchate of Spania</Spanish>
-	</TEXT>
+		<English>拜占庭-西班牙</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-西班牙</Chinese><French>Exarchate of Spania</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_ADJECTIVE</Tag>
 		<English>
@@ -240,49 +88,9 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		<French>
-			<Text>byzantin:byzantine;byzantins:byzantines</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>
-			<Text>Byzantinisch:byzantinischen:byzantinische</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>bizantino:bizantina:bizantini:bizantine</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>bizantino:bizantina:bizantinos:bizantinas</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</Spanish>
-	</TEXT>
+		<L1/><L2/><L3/><L4/><French>Exarchate of Spania</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BYZANTIUM_SHORT_DESC</Tag>
 		<English>Byzantium</English>
-		<French>
-			<Text>Byzance</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>Byzanz</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Bisanzio</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Bizancio</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<L1/><L2/><L3/><L4/><Chinese>Byzantium</Chinese><French>Byzantium</French></TEXT>
 </Civ4GameText>

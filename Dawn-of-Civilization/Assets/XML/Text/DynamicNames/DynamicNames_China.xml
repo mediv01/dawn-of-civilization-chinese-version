@@ -1,468 +1,132 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='GBK'?>
 <!-- China -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_DESC</Tag>
-		<English>The Chinese</English>
-		<French>
-			<Text>Les Chinois</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>Chinesen:Die Chinesesen:Chinesen</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>1:1:1</Plural>
-		</German>
-		<Italian>
-			<Text>I Cinesi</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Los Chinos</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
-	</TEXT>
+		<English>华夏文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>华夏文明</Chinese><French>The Chinese</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_PEOPLES</Tag>
-		<English>Han Peoples</English>
-		<French>
-			<Text>Peuplades Han</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>Hanv&#246;lker:Hanv&#246;lker:Hanv&#246;lkern</Text>
-			<Gender>Female:Female:Female</Gender>
-			<Plural>1:1:1</Plural>
-		</German>
-		<Italian>
-			<Text>Popoli Han</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Pueblos Han</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
-	</TEXT>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Han Peoples</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_DEFAULT</Tag>
-		<English>Middle Kingdom of %s1</English>
-		<French>
-			<Text>Empire du Milieu</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Middle Kingdom of %s1</German>
-		<Italian>Middle Kingdom of %s1</Italian>
-		<Spanish>Middle Kingdom of %s1</Spanish>
-	</TEXT>
+		<English>China</English>
+		<L1/><L2/><L3/><L4/><Chinese>China</Chinese><French>Middle Kingdom of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_FASCIST</Tag>
-		<English>Nation of %s1</English>
-		<French>
-			<Text>Nation de Chine</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Nation of %s1</German>
-		<Italian>Nation of %s1</Italian>
-		<Spanish>Nation of %s1</Spanish>
-	</TEXT>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Nation of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_ZHOU</Tag>
-		<English>Zhou</English>
-		<French>Zhou</French>
-		<German>Zhou</German>
-		<Italian>Zhou</Italian>
-		<Spanish>Zhou</Spanish>
-	</TEXT>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Zhou</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_HAN</Tag>
-		<English>Han</English>
-		<French>
-			<Text>Han</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Han</German>
-		<Italian>
-			<Text>Han</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Han</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
-	</TEXT>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Han</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_QIN</Tag>
-		<English>Qin</English>
-		<French>Qin</French>
-		<German>Qin</German>
-		<Italian>Qin</Italian>
-		<Spanish>Qin</Spanish>
-	</TEXT>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Qin</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_SUI</Tag>
-		<English>Sui</English>
-		<French>Sui</French>
-		<German>Sui</German>
-		<Italian>Sui</Italian>
-		<Spanish>Sui</Spanish>
-	</TEXT>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Sui</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_TANG</Tag>
-		<English>Tang</English>
-		<French>Tang</French>
-		<German>Tang</German>
-		<Italian>Tang</Italian>
-		<Spanish>Tang</Spanish>
-	</TEXT>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Tang</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_SONG</Tag>
-		<English>Song</English>
-		<French>Song</French>
-		<German>Song</German>
-		<Italian>Song</Italian>
-		<Spanish>Song</Spanish>
-	</TEXT>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Song</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_MING</Tag>
-		<English>the Great Ming</English>
-		<French>le Grand Ming</French>
-		<German>the Great Ming</German>
-		<Italian>the Great Ming</Italian>
-		<Spanish>the Great Ming</Spanish>
-	</TEXT>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>the Great Ming</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_QING</Tag>
-		<English>the Great Qing</English>
-		<French>le Grand Qing</French>
-		<German>the Great Qing</German>
-		<Italian>the Great Qing</Italian>
-		<Spanish>the Great Qing</Spanish>
-	</TEXT>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>the Great Qing</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_VASSAL</Tag>
-		<English>Tributary %s4 State</English>
-		<French>
-			<Text>&#201;tat %s4 tributaire</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Tributstaat %s3:Tributstaat %s3:Tributstaat %s3</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Stato %s4 Tributario</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Estado %s4 Tributario</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English> %s4 封国</English>
+		<L1/><L2/><L3/><L4/><Chinese> %s4 封国</Chinese><French>Tributary %s4 State</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_KOREA</Tag>
-		<English>Protectorate General to Pacify the East</English>
-		<French>
-			<Text>Protectorat g&#233;n&#233;ral pour pacifier l'Est</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Protectorate General to Pacify the East</German>
-		<Italian>Protectorate General to Pacify the East</Italian>
-		<Spanish>Protectorate General to Pacify the East</Spanish>
-	</TEXT>
+		<English>安东都护府</English>
+		<L1/><L2/><L3/><L4/><Chinese>安东都护府</Chinese><French>Protectorate General to Pacify the East</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_TURKS</Tag>
-		<English>Protectorate General to Pacify the West</English>
-		<French>
-			<Text>Protectorat g&#233;n&#233;ral pour pacifier l'Ouest</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Protectorate General to Pacify the West</German>
-		<Italian>Protectorate General to Pacify the West</Italian>
-		<Spanish>Protectorate General to Pacify the West</Spanish>
-	</TEXT>
+		<English>安西都护府</English>
+		<L1/><L2/><L3/><L4/><Chinese>安西都护府</Chinese><French>Protectorate General to Pacify the West</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_MONGOLIA</Tag>
-		<English>Protectorate General to Pacify the North</English>
-		<French>
-			<Text>Protectorat g&#233;n&#233;ral pour pacifier le Nord</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Protectorate General to Pacify the North</German>
-		<Italian>Protectorate General to Pacify the North</Italian>
-		<Spanish>Protectorate General to Pacify the North</Spanish>
-	</TEXT>
+		<English>安北都护府</English>
+		<L1/><L2/><L3/><L4/><Chinese>安北都护府</Chinese><French>Protectorate General to Pacify the North</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_EGYPT</Tag>
-		<English>Haixi</English>
-		<French>Haixi</French>
-		<German>Haixi</German>
-		<Italian>Haixi</Italian>
-		<Spanish>Haixi</Spanish>
-	</TEXT>
+		<English>埃及</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及</Chinese><French>Haixi</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_INDIA</Tag>
-		<English>Shendu</English>
-		<French>
-			<Text>Shendu</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Shendu:Shendu:Shendu</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Shendu</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Shendu</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>印度</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度</Chinese><French>Shendu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_BABYLONIA</Tag>
-		<English>Tiaozhi</English>
-		<French>Tiaozhi</French>
-		<German>Tiaozhi</German>
-		<Italian>Tiaozhi</Italian>
-		<Spanish>Tiaozhi</Spanish>
-	</TEXT>
+		<English>巴比伦</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦</Chinese><French>Tiaozhi</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_PERSIA</Tag>
-		<English>Anxi</English>
-		<French>
-			<Text>Anxi</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Anxi:Anxi:Anxi</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Anxi</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Anxi</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯</Chinese><French>Anxi</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_ROME</Tag>
-		<English>Daqin</English>
-		<French>
-			<Text>Daqin</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Daqin:Daqin:Daqin</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Daqin</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Daqin</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>罗马</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马</Chinese><French>Daqin</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_JAPAN</Tag>
-		<English>Wo</English>
-		<French>
-			<Text>Wo</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Wo:Wo:Wo</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Wo</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Wo</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>日本</English>
+		<L1/><L2/><L3/><L4/><Chinese>日本</Chinese><French>Wo</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_KOREA</Tag>
-		<English>Chaoxian</English>
-		<French>Chaoxian</French>
-		<German>Chaoxian</German>
-		<Italian>Chaoxian</Italian>
-		<Spanish>Chaoxian</Spanish>
-	</TEXT>
+		<English>朝鲜</English>
+		<L1/><L2/><L3/><L4/><Chinese>朝鲜</Chinese><French>Chaoxian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_BYZANTIUM</Tag>
-		<English>Daqin</English>
-		<French>
-			<Text>Daqin</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Daqin:Daqin:Daqin</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Daqin</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Daqin</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>拜占庭</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭</Chinese><French>Daqin</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_ARABIA</Tag>
-		<English>Dashi</English>
-		<French>Dashi</French>
-		<German>Dashi</German>
-		<Italian>Dashi</Italian>
-		<Spanish>Dashi</Spanish>
-	</TEXT>
+		<English>阿拉伯</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯</Chinese><French>Dashi</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_KHMER</Tag>
-		<English>Jiaozhi</English>
-		<French>Jiaozhi</French>
-		<German>Jiaozhi</German>
-		<Italian>Jiaozhi</Italian>
-		<Spanish>Jiaozhi</Spanish>
-	</TEXT>
+		<English>安南（高棉）</English>
+		<L1/><L2/><L3/><L4/><Chinese>安南（高棉）</Chinese><French>Jiaozhi</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_MONGOLIA</Tag>
-		<English>Meng</English>
-		<French>
-			<Text>Meng</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Meng:Meng:Meng</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Meng</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Meng</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>蒙古</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古</Chinese><French>Meng</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_OTTOMANS</Tag>
-		<English>Tujue</English>
-		<French>Tujue</French>
-		<German>Tujue</German>
-		<Italian>Tujue</Italian>
-		<Spanish>Tujue</Spanish>
-	</TEXT>
+		<English>奥斯曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥斯曼</Chinese><French>Tujue</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_TIBET</Tag>
-		<English>Xizang</English>
-		<French>Xizang</French>
-		<German>Xizang</German>
-		<Italian>Xizang</Italian>
-		<Spanish>Xizang</Spanish>
-	</TEXT>
+		<English>西藏</English>
+		<L1/><L2/><L3/><L4/><Chinese>西藏</Chinese><French>Xizang</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_INDONESIA</Tag>
-		<English>Yindunixiya</English>
-		<French>Yindunixiya</French>
-		<German>Yindunixiya</German>
-		<Italian>Yindunixiya</Italian>
-		<Spanish>Yindunixiya</Spanish>
-	</TEXT>
+		<English>印度尼西亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度尼西亚</Chinese><French>Yindunixiya</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_ADJECTIVE</Tag>
-		<English>Chinese</English>
-		<French>
-			<Text>chinois:chinoise:chinois:chinoises</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>
-			<Text>Chinesisch:chinesischen:chinesische</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>cinese:cinese:cinesi:cinesi</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>chino:china:chinos:chinas</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</Spanish>
-	</TEXT>
+		<English>China</English>
+		<L1/><L2/><L3/><L4/><Chinese>China</Chinese><French>Chinese</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHINA_SHORT_DESC</Tag>
 		<English>China</English>
-		<French>
-			<Text>Chine</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>China</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Cina</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>China</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<L1/><L2/><L3/><L4/><Chinese>China</Chinese><French>China</French></TEXT>
 </Civ4GameText>

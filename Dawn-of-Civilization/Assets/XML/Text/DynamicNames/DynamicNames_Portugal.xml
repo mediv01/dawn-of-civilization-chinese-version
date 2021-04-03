@@ -1,222 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='GBK'?>
 <!-- Portugal -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_DESC</Tag>
-		<English>The Portuguese</English>
-		<French>
-			<Text>Les Portugais</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>Portugiesen:Die Portugiesen:den Portugiesen</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>1:1:1</Plural>
-		</German>
-		<Italian>
-			<Text>I Portoghesi</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Los Portugu&#233;ses</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
-	</TEXT>
+		<English>ÆÏÌÑÑÀÎÄÃ÷</English>
+		<L1/><L2/><L3/><L4/><Chinese>ÆÏÌÑÑÀÎÄÃ÷</Chinese><French>The Portuguese</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_PEOPLES</Tag>
-		<English>Lusitanian Peoples</English>
-		<French>
-			<Text>Peuplades lusitaniennes</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>Lusitanische V&#246;lker:Lusitanischen V&#246;lker:Lusitanischen V&#246;lkern</Text>
-			<Gender>Female:Female:Female</Gender>
-			<Plural>1:1:1</Plural>
-		</German>
-		<Italian>
-			<Text>Popoli Lusitani</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Pueblos Lusitanos</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
-	</TEXT>
+		<English>ÆÏÌÑÑÀ</English>
+		<L1/><L2/><L3/><L4/><Chinese>ÆÏÌÑÑÀ</Chinese><French>Lusitanian Peoples</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_DEFAULT</Tag>
-		<English>Kingdom of %s1</English>
-		<French>
-			<Text>Royaume du %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Kingdom of %s1</German>
-		<Italian>Kingdom of %s1</Italian>
-		<Spanish>Kingdom of %s1</Spanish>
-	</TEXT>
+		<English>Portugal</English>
+		<L1/><L2/><L3/><L4/><Chinese>Portugal</Chinese><French>Kingdom of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_COMMUNIST</Tag>
-		<English>%s2 Continuing Revolutionary Process</English>
-		<French>
-			<Text>Processus r&#233;volutionnaire %s2 en cours</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Fortlaufender %s2 Revolutionsprozess:Fortlaufende %s2 Revolutionsprozess:Fortlaufenden %s2 Revolutionsprozess</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Processo Rivoluzionario %s2 in Corso</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Proceso Revolucionario %s2 en Curso</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>ÆÏÌÑÑÀ</English>
+		<L1/><L2/><L3/><L4/><Chinese>ÆÏÌÑÑÀ</Chinese><French>%s2 Continuing Revolutionary Process</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_FASCIST</Tag>
-		<English>New State of %s1</English>
-		<French>
-			<Text>Estado Novo %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Neuer Staat %s1:Neue Staat %s1:Neuen Staat %s1</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Nuovo Stato del %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Nuevo Estado de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>ÆÏÌÑÑÀ</English>
+		<L1/><L2/><L3/><L4/><Chinese>ÆÏÌÑÑÀ</Chinese><French>New State of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_EMPIRE</Tag>
-		<English>Portuguese Empire</English>
-		<French>
-			<Text>Empire portugais</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Portuguese Empire</German>
-		<Italian>Portuguese Empire</Italian>
-		<Spanish>Portuguese Empire</Spanish>
-	</TEXT>
+		<English>ÆÏÌÑÑÀµÛ¹ú</English>
+		<L1/><L2/><L3/><L4/><Chinese>ÆÏÌÑÑÀµÛ¹ú</Chinese><French>Portuguese Empire</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_BRAZIL</Tag>
-		<English>United Kingdom of %s1 and Brazil</English>
-		<French>
-			<Text>Royaume-Uni de %s1 et du Br&#233;sil</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>United Kingdom of %s1 and Brazil</German>
-		<Italian>United Kingdom of %s1 and Brazil</Italian>
-		<Spanish>United Kingdom of %s1 and Brazil</Spanish>
-	</TEXT>
+		<English>ÆÏÌÑÑÀ-°ÍÎ÷ÁªºÏÍõ¹ú</English>
+		<L1/><L2/><L3/><L4/><Chinese>ÆÏÌÑÑÀ-°ÍÎ÷ÁªºÏÍõ¹ú</Chinese><French>United Kingdom of %s1 and Brazil</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_EXILE</Tag>
-		<English>%s2 Government in Exile</English>
-		<French>
-			<Text>Gouvernement %s2 en exil</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>%s2 Government in Exile</German>
-		<Italian>%s2 Government in Exile</Italian>
-		<Spanish>%s2 Government in Exile</Spanish>
-	</TEXT>
+		<English>ÆÏÌÑÑÀÁ÷ÍöÕþ¸®</English>
+		<L1/><L2/><L3/><L4/><Chinese>ÆÏÌÑÑÀÁ÷ÍöÕþ¸®</Chinese><French>%s2 Government in Exile</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGUESE_INDIA</Tag>
-		<English>Viceroyalty of %s2 %s1</English>
-		<French>
-			<Text>Vice-royaut&#233; de l'%s1 %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Vizek&#246;nigreich %s2 %s1:Vizek&#246;nigreich %s2 %s1:Vizek&#246;nigreich %s2 %s1</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Vicereame di %s2 %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Virreinato de %s2 %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>ÆÏÌÑÑÀ¡ªÓ¡¶È</English>
+		<L1/><L2/><L3/><L4/><Chinese>ÆÏÌÑÑÀ¡ªÓ¡¶È</Chinese><French>Viceroyalty of %s2 %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGUESE_INDONESIA</Tag>
-		<English>%s2 East Indies</English>
-		<French>
-			<Text>Indes orientales %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>%s2 East Indies</German>
-		<Italian>%s2 East Indies</Italian>
-		<Spanish>%s2 East Indies</Spanish>
-	</TEXT>
+		<English>ÆÏÌÑÑÀ¡ªÓ¡Äá</English>
+		<L1/><L2/><L3/><L4/><Chinese>ÆÏÌÑÑÀ¡ªÓ¡Äá</Chinese><French>%s2 East Indies</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGUESE_CONGO</Tag>
-		<English>%s2 West Africa</English>
-		<French>
-			<Text>Afrique occidentale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>%s2 West Africa</German>
-		<Italian>%s2 West Africa</Italian>
-		<Spanish>%s2 West Africa</Spanish>
-	</TEXT>
+		<English>ÆÏÌÑÑÀ¡ª¸Õ¹û</English>
+		<L1/><L2/><L3/><L4/><Chinese>ÆÏÌÑÑÀ¡ª¸Õ¹û</Chinese><French>%s2 West Africa</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGUESE_MALI</Tag>
-		<English>%s2 Gold Coast</English>
-		<French>
-			<Text>C&#244;te-de-l'Or %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>%s2 Gold Coast</German>
-		<Italian>%s2 Gold Coast</Italian>
-		<Spanish>%s2 Gold Coast</Spanish>
-	</TEXT>
+		<English>ÆÏÌÑÑÀ¡ªÂíÀï</English>
+		<L1/><L2/><L3/><L4/><Chinese>ÆÏÌÑÑÀ¡ªÂíÀï</Chinese><French>%s2 Gold Coast</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGUESE_BRAZIL</Tag>
-		<English>State of %s1</English>
-		<French>
-			<Text>Vice-royaut&#233; du %s1</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>State of %s1</German>
-		<Italian>State of %s1</Italian>
-		<Spanish>State of %s1</Spanish>
-	</TEXT>
+		<English>ÆÏÌÑÑÀ¡ª°ÝÕ¼Í¥</English>
+		<L1/><L2/><L3/><L4/><Chinese>ÆÏÌÑÑÀ¡ª°ÝÕ¼Í¥</Chinese><French>State of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_ADJECTIVE</Tag>
 		<English>
@@ -224,49 +60,9 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		<French>
-			<Text>portugais:portugaise:portugais:portugaises</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>
-			<Text>Portugiesisch:portugiesischen:portugiesische</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>portoghese:portoghese:portoghesi:portoghesi</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>portugu&#233;s:portuguesa:portugueses:portuguesas</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</Spanish>
-	</TEXT>
+		<L1/><L2/><L3/><L4/><French>State of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_SHORT_DESC</Tag>
 		<English>Portugal</English>
-		<French>
-			<Text>Portugal</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Portugal</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Portogallo</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Portugal</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<L1/><L2/><L3/><L4/><Chinese>Portugal</Chinese><French>Portugal</French></TEXT>
 </Civ4GameText>

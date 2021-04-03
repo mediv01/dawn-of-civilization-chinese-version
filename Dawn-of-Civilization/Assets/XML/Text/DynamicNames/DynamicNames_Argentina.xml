@@ -1,88 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='GBK'?>
 <!-- Argentina -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARGENTINA_DESC</Tag>
-		<English>The Argentinians</English>
-		<French>
-			<Text>Les Argentins</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>The Argentinians</German>
-		<Italian>The Argentinians</Italian>
-		<Spanish>The Argentinians</Spanish>
-	</TEXT>
+		<English>阿根廷文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿根廷文明</Chinese><French>The Argentinians</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARGENTINA_PEOPLES</Tag>
-		<English>Argentine Peoples</English>
-		<French>
-			<Text>Peuplades argentines</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Argentine Peoples</German>
-		<Italian>Argentine Peoples</Italian>
-		<Spanish>Argentine Peoples</Spanish>
-	</TEXT>
+		<English>阿根廷人民</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿根廷人民</Chinese><French>Argentine Peoples</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARGENTINA_DEFAULT</Tag>
-		<English>United Provinces of the River Plate</English>
-		<French>
-			<Text>Provinces-Unies du R&#237;o de la Plata</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>United Provinces of the River Plate</German>
-		<Italian>United Provinces of the River Plate</Italian>
-		<Spanish>United Provinces of the River Plate</Spanish>
-	</TEXT>
+		<English>Argentina</English>
+		<L1/><L2/><L3/><L4/><Chinese>Argentina</Chinese><French>United Provinces of the River Plate</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARGENTINA_FASCIST</Tag>
-		<English>Tacuara Nationalist Movement</English>
-		<French>
-			<Text>Mouvement nationaliste Tacuara</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Tacuara Nationalist Movement</German>
-		<Italian>Tacuara Nationalist Movement</Italian>
-		<Spanish>Tacuara Nationalist Movement</Spanish>
-	</TEXT>
+		<English>阿根廷塔库拉民族主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿根廷塔库拉民族主义</Chinese><French>Tacuara Nationalist Movement</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARGENTINA_CONFEDERATION</Tag>
-		<English>%s2 Confederation</English>
-		<French>
-			<Text>Conf&#233;d&#233;ration %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>%s2 Confederation</German>
-		<Italian>%s2 Confederation</Italian>
-		<Spanish>%s2 Confederation</Spanish>
-	</TEXT>
+		<English>%s2 联盟</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 联盟</Chinese><French>%s2 Confederation</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARGENTINA_ADJECTIVE</Tag>
-		<English>Argentine</English>
-		<French>
-			<Text>argentin:argentine:argentins:argentines</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Argentine</German>
-		<Italian>Argentine</Italian>
-		<Spanish>Argentine</Spanish>
-	</TEXT>
+		<English>Argentina</English>
+		<L1/><L2/><L3/><L4/><Chinese>Argentina</Chinese><French>Argentine</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARGENTINA_SHORT_DESC</Tag>
 		<English>Argentina</English>
-		<French>
-			<Text>Argentine</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Argentina</German>
-		<Italian>Argentina</Italian>
-		<Spanish>Argentina</Spanish>
-	</TEXT>
+		<L1/><L2/><L3/><L4/><Chinese>Argentina</Chinese><French>Argentina</French></TEXT>
 </Civ4GameText>

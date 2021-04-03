@@ -1,432 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='GBK'?>
 <!-- Monoglia -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOL_DESC</Tag>
-		<English>The Mongols</English>
-		<French>
-			<Text>Les Mongols</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>Mongolen:Die Mongolen:den Mongolen</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>1:1:1</Plural>
-		</German>
-		<Italian>
-			<Text>I Mongoli</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Los Mongoles</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
-	</TEXT>
+		<English>蒙古文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古文明</Chinese><French>The Mongols</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOLIA_PEOPLES</Tag>
-		<English>Mongolian Peoples</English>
-		<French>
-			<Text>Peuplades mongoles</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>Mongolische V&#246;lker: Mongolischen V&#246;lker:Mongolischen V&#246;lkern</Text>
-			<Gender>Female:Female:Female</Gender>
-			<Plural>1:1:1</Plural>
-		</German>
-		<Italian>
-			<Text>Popoli Mongoli</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Pueblos Mongoles</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
-	</TEXT>
+		<English>蒙古</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古</Chinese><French>Mongolian Peoples</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOLIA_DEFAULT</Tag>
-		<English>%s2 State</English>
-		<French>
-			<Text>&#201;tat %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>%s2 Staat:%s2 Staat:%s2 Staat</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Stato %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Estado %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>Mongolia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Mongolia</Chinese><French>%s2 State</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOLIA_REPUBLIC</Tag>
-		<English>United %s1</English>
-		<French>
-			<Text>%s1-Unie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Vereinigte %s2:Vereinigten %s2:Vereinigten %s2</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>1:1:1</Plural>
-		</German>
-		<Italian>
-			<Text>Uniti %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Unidos %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
-	</TEXT>
+		<English>蒙古</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古</Chinese><French>United %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOLIA_FASCIST</Tag>
-		<English>Nationalist %s1</English>
-		<French>
-			<Text>%s1 nationaliste</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Nationalistisches %s1:Nationalistische %s1:Nationalistischen %s1</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>%s1 Nazionalista</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>%s1 Nacionalista</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>蒙古</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古</Chinese><French>Nationalist %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOLIA_TIMURID</Tag>
-		<English>Timurid</English>
-		<French>timouride</French>
-		<German>Timurid</German>
-		<Italian>Timurid</Italian>
-		<Spanish>Timurid</Spanish>
-	</TEXT>
+		<English>蒙古-帖木儿帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古-帖木儿帝国</Chinese><French>Timurid</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOLIA_HULAGU</Tag>
-		<English>Hulagu</English>
-		<French>houlagide</French>
-		<German>Hulagu</German>
-		<Italian>Hulagu</Italian>
-		<Spanish>Hulagu</Spanish>
-	</TEXT>
+		<English>蒙古-旭烈兀汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古-旭烈兀汗国</Chinese><French>Hulagu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOLIA_ILKHANATE</Tag>
-		<English>Ilkhanate</English>
-		<French>
-			<Text>Ilkhanat</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Ilkhanate</German>
-		<Italian>Ilkhanate</Italian>
-		<Spanish>Ilkhanate</Spanish>
-	</TEXT>
+		<English>蒙古-伊尔汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古-伊尔汗国</Chinese><French>Ilkhanate</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOLIA_KHANATE</Tag>
-		<English>%s2 Khanate</English>
-		<French>
-			<Text>Khanat %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>		
-		<German>%s2 Khanate</German>
-		<Italian>%s2 Khanate</Italian>
-		<Spanish>%s2 Khanate</Spanish>
-	</TEXT>
+		<English>%s2 汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 汗国</Chinese><French>%s2 Khanate</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOLIA_CHAGATAI</Tag>
-		<English>Chagatai</English>
-		<French>de Djaghata&#239;</French>
-		<German>Chagatai</German>
-		<Italian>Chagatai</Italian>
-		<Spanish>Chagatai</Spanish>
-	</TEXT>
+		<English>蒙古-察合台汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古-察合台汗国</Chinese><French>Chagatai</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOLIA_YUAN</Tag>
-		<English>Yuan</English>
-		<French>Yuan</French>
-		<German>Yuan</German>
-		<Italian>Yuan</Italian>
-		<Spanish>Yuan</Spanish>
-	</TEXT>
+		<English>元</English>
+		<L1/><L2/><L3/><L4/><Chinese>元</Chinese><French>Yuan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOLIA_KHAMAG</Tag>
-		<English>Khamag Mongol</English>
-		<French>
-			<Text>Khamag Mongol</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Khamag Mongol</German>
-		<Italian>Khamag Mongol</Italian>
-		<Spanish>Khamag Mongol</Spanish>
-	</TEXT>
+		<English>蒙古汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古汗国</Chinese><French>Khamag Mongol</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOL_VASSAL</Tag>
-		<English>Khanate of %s1</English>
-		<French>
-			<Text>Khanat de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Khanat %s1:Khanat %s1:Khanat %s1</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Khanato del %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Janato de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>%s1 汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 汗国</Chinese><French>Khanate of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOL_ILKHANATE</Tag>
-		<English>Ilkhanate of %s1</English>
-		<French>
-			<Text>Ilkhanat de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Ilkhanat %s1:Ilkhanat %s1:Ilkhanat %s1</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Ilkhanato di %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Iljanato de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>蒙古-伊尔汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古-伊尔汗国</Chinese><French>Ilkhanate of %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOL_CHINA</Tag>
-		<English>Yuan Khanate</English>
-		<French>
-			<Text>Khanat Yuan</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Yuan Khanate</German>
-		<Italian>Yuan Khanate</Italian>
-		<Spanish>Yuan Khanate</Spanish>
-	</TEXT>
+		<English>元</English>
+		<L1/><L2/><L3/><L4/><Chinese>元</Chinese><French>Yuan Khanate</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOL_BABYLONIA</Tag>
-		<English>Ilkhanate of Mesopotamia</English>
-		<French>
-			<Text>Ilkhanat de M&#233;sopotamie</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Ilkhanate of Mesopotamia</German>
-		<Italian>Ilkhanate of Mesopotamia</Italian>
-		<Spanish>Ilkhanate of Mesopotamia</Spanish>
-	</TEXT>
+		<English>巴比伦汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦汗国</Chinese><French>Ilkhanate of Mesopotamia</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOL_PHOENICIA</Tag>
-		<English>Ilkhanate of Syria</English>
-		<French>
-			<Text>Ilkhanat de Syrie</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Ilkhanate of Syria</German>
-		<Italian>Ilkhanate of Syria</Italian>
-		<Spanish>Ilkhanate of Syria</Spanish>
-	</TEXT>
+		<English>叙利亚伊尔汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>叙利亚伊尔汗国</Chinese><French>Ilkhanate of Syria</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOL_BYZANTIUM</Tag>
-		<English>Khanate of Anatolia</English>
-		<French>
-			<Text>Khanat d'Anatolie</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Khanat Anatolien:Khanat Anatolien:Khanat Anatolien</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Khanato del Anatolia</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Janato de Anatolia</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>安纳托利亚汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>安纳托利亚汗国</Chinese><French>Khanate of Anatolia</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOL_RUSSIA</Tag>
-		<English>Khanate of the Golden Horde</English>
-		<French>
-			<Text>Khanat de la Horde d'or</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Khanat der Goldenen Horde:Khanat der Goldenen Horde:Khanat der Goldenen Horde</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Khanato dell'Orda d'Oro</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Janato de la Horda de Oro</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>罗斯汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗斯汗国</Chinese><French>Khanate of the Golden Horde</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOL_OTTOMANS</Tag>
-		<English>Khanate of Turkestan</English>
-		<French>
-			<Text>Khanat du Turkestan</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Khanat Turkistan:Khanat Turkistan:Khanat Turkistan</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Khanato di Turkestan</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Janato de Turquest&#225;n</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<English>土耳其斯坦汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>土耳其斯坦汗国</Chinese><French>Khanate of Turkestan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOL_MUGHALS</Tag>
-		<English>Khanate of Delhi</English>
-		<French>
-			<Text>Khanat de Delhi</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Khanate of Delhi</German>
-		<Italian>Khanate of Delhi</Italian>
-		<Spanish>Khanate of Delhi</Spanish>
-	</TEXT>
+		<English>德里汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>德里汗国</Chinese><French>Khanate of Delhi</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOLIA_MONGOL</Tag>
-		<English>Mongol</English>
-		<French>
-			<Text>mongol:mongole:mongols:mongoles</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Mongol</German>
-		<Italian>Mongol</Italian>
-		<Spanish>Mongol</Spanish>
-	</TEXT>
+		<English>蒙古</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古</Chinese><French>Mongol</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOL_NAME_TURKS</Tag>
-		<English>Moghulistan</English>
-		<French>
-			<Text>Mogholistan</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Moghulistan</German>
-		<Italian>Moghulistan</Italian>
-		<Spanish>Moghulistan</Spanish>
-	</TEXT>
+		<English>蒙古斯坦</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古斯坦</Chinese><French>Moghulistan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOL_ADJECTIVE</Tag>
 		<English>Mongolian</English>
-		<French>
-			<Text>mongol:mongole:mongols:mongoles</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>
-			<Text>Mongolisch:mongolischen:mongolische</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>mongolo:mongola:mongoli:mongole</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>mongol:mongola:mongoles:mongolas</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</Spanish>
-	</TEXT>
+		<L1/><L2/><L3/><L4/><Chinese>Mongolian</Chinese><French>Mongolian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MONGOL_SHORT_DESC</Tag>
 		<English>Mongolia</English>
-		<French>
-			<Text>Mongolie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Mongolei</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Mongolia</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Mongolia</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
+		<L1/><L2/><L3/><L4/><Chinese>Mongolia</Chinese><French>Mongolia</French></TEXT>
 </Civ4GameText>

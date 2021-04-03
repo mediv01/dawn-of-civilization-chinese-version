@@ -1,264 +1,132 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='GBK'?>
 <!-- Actions -->
 <Civ4GameText>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_DEFORESTATION</Tag>
-		<English>Deforestation</English>
-		<French>
-			<Text>D&#233;forestation</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Deforestation</German>
-		<Italian>Deforestation</Italian>
-		<Spanish>Deforestation</Spanish>
-	</TEXT>
+		<English>砍伐丛林</English>
+		<L1/><L2/><L3/><L4/><Chinese>砍伐丛林</Chinese><French>Deforestation</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_OCEAN_FISHERY</Tag>
-		<English>Create [LINK=IMPROVEMENT_OCEAN_FISHERY]Ocean Fishery[\LINK]</English>
-		<French>construire une [LINK=IMPROVEMENT_OCEAN_FISHERY]p&#234;cherie en haute mer[\LINK]</French>
-		<German>Create [LINK=IMPROVEMENT_OCEAN_FISHERY]Ocean Fishery[\LINK]</German>
-		<Italian>Create [LINK=IMPROVEMENT_OCEAN_FISHERY]Ocean Fishery[\LINK]</Italian>
-		<Spanish>Create [LINK=IMPROVEMENT_OCEAN_FISHERY]Ocean Fishery[\LINK]</Spanish>
-	</TEXT>
+		<English>建造 [LINK=IMPROVEMENT_OCEAN_FISHERY]海洋渔场[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>建造 [LINK=IMPROVEMENT_OCEAN_FISHERY]海洋渔场[\LINK]</Chinese><French>Create [LINK=IMPROVEMENT_OCEAN_FISHERY]Ocean Fishery[\LINK]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_SLAVE_PLANTATION</Tag>
-		<English>Create [LINK=IMPROVEMENT_SLAVE_PLANTATION]Slave Plantation[\LINK]</English>
-		<French>construire une [LINK=IMPROVEMENT_SLAVE_PLANTATION]plantation &#224; esclaves[\LINK]</French>
-		<German>Create [LINK=IMPROVEMENT_SLAVE_PLANTATION]Slave Plantation[\LINK]</German>
-		<Italian>Create [LINK=IMPROVEMENT_SLAVE_PLANTATION]Slave Plantation[\LINK]</Italian>
-		<Spanish>Create [LINK=IMPROVEMENT_SLAVE_PLANTATION]Slave Plantation[\LINK]</Spanish>
-	</TEXT>
+		<English>建造奴隶种植园</English>
+		<L1/><L2/><L3/><L4/><Chinese>建造奴隶种植园</Chinese><French>Create [LINK=IMPROVEMENT_SLAVE_PLANTATION]Slave Plantation[\LINK]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REMOVE_RAINFOREST</Tag>
-		<English>Remove [LINK=FEATURE_RAINFOREST]Rainforest[\LINK]</English>
-		<French>d&#233;fricher la [LINK=FEATURE_RAINFOREST]for&#234;t tropicale[\LINK]</French>
-		<German>Remove [LINK=FEATURE_RAINFOREST]Rainforest[\LINK]</German>
-		<Italian>Remove [LINK=FEATURE_RAINFOREST]Rainforest[\LINK]</Italian>
-		<Spanish>Remove [LINK=FEATURE_RAINFOREST]Rainforest[\LINK]</Spanish>
-	</TEXT>
+		<English>移除 [LINK=FEATURE_RAINFOREST]雨林[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>移除 [LINK=FEATURE_RAINFOREST]雨林[\LINK]</Chinese><French>Remove [LINK=FEATURE_RAINFOREST]Rainforest[\LINK]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_ROMAN_ROAD</Tag>
-		<English>Build a [LINK=ROUTE_ROMAN_ROAD]Roman Road[\LINK]</English>
-		<French>construire une [LINK=ROUTE_ROMAN_ROAD]voie romaine[\LINK]</French>
-		<German>Build a [LINK=ROUTE_ROMAN_ROAD]Roman Road[\LINK]</German>
-		<Italian>Build a [LINK=ROUTE_ROMAN_ROAD]Roman Road[\LINK]</Italian>
-		<Spanish>Build a [LINK=ROUTE_ROMAN_ROAD]Roman Road[\LINK]</Spanish>
-	</TEXT>
+		<English>建造一条[LINK=ROUTE_ROMAN_ROAD]罗马大道[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>建造一条[LINK=ROUTE_ROMAN_ROAD]罗马大道[\LINK]</Chinese><French>Build a [LINK=ROUTE_ROMAN_ROAD]Roman Road[\LINK]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_HIGHWAY</Tag>
-		<English>Build a [LINK=ROUTE_HIGHWAY]Highway[\LINK]</English>
-		<French>construire une [LINK=ROUTE_HIGHWAY]autoroute[\LINK]</French>
-		<German>Build a [LINK=ROUTE_HIGHWAY]Highway[\LINK]</German>
-		<Italian>Build a [LINK=ROUTE_HIGHWAY]Highway[\LINK]</Italian>
-		<Spanish>Build a [LINK=ROUTE_HIGHWAY]Highway[\LINK]</Spanish>
-	</TEXT>
+		<English>建造一条[LINK=ROUTE_HIGHWAY]公路[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>建造一条[LINK=ROUTE_HIGHWAY]公路[\LINK]</Chinese><French>Build a [LINK=ROUTE_HIGHWAY]Highway[\LINK]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_ORCHARD</Tag>
-		<English>Build a [LINK=IMPROVEMENT_ORCHARD]Orchard[\LINK]</English>
-		<French>construire un [LINK=IMPROVEMENT_ORCHARD]verger[\LINK]</French>
-		<German>Build a [LINK=IMPROVEMENT_ORCHARD]Orchard[\LINK]</German>
-		<Italian>Build a [LINK=IMPROVEMENT_ORCHARD]Orchard[\LINK]</Italian>
-		<Spanish>Build a [LINK=IMPROVEMENT_ORCHARD]Orchard[\LINK]</Spanish>
-	</TEXT>
+		<English>建造一个果园</English>
+		<L1/><L2/><L3/><L4/><Chinese>建造一个果园</Chinese><French>Build a [LINK=IMPROVEMENT_ORCHARD]Orchard[\LINK]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_PADDY_FIELD</Tag>
-		<English>Build a [LINK=IMPROVEMENT_PADDY_FIELD]Paddy Field[\LINK]</English>
-		<French>construire une [LINK=IMPROVEMENT_PADDY_FIELD]rizi&#232;re[\LINK]</French>
-		<German>Build a [LINK=IMPROVEMENT_PADDY_FIELD]Paddy Field[\LINK]</German>
-		<Italian>Build a [LINK=IMPROVEMENT_PADDY_FIELD]Paddy Field[\LINK]</Italian>
-		<Spanish>Build a [LINK=IMPROVEMENT_PADDY_FIELD]Paddy Field[\LINK]</Spanish>
-	</TEXT>
+		<English>建造 [LINK=IMPROVEMENT_PADDY_FIELD]稻田[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>建造 [LINK=IMPROVEMENT_PADDY_FIELD]稻田[\LINK]</Chinese><French>Build a [LINK=IMPROVEMENT_PADDY_FIELD]Paddy Field[\LINK]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_NATURE_RESERVE</Tag>
-		<English>Build a [LINK=IMPROVEMENT_NATURE_RESERVE]Nature Reserve[\LINK]</English>
-		<French>construire une [LINK=IMPROVEMENT_NATURE_RESERVE]r&#233;serve naturelle[\LINK]</French>
-		<German>Build a [LINK=IMPROVEMENT_NATURE_RESERVE]Nature Reserve[\LINK]</German>
-		<Italian>Build a [LINK=IMPROVEMENT_NATURE_RESERVE]Nature Reserve[\LINK]</Italian>
-		<Spanish>Build a [LINK=IMPROVEMENT_NATURE_RESERVE]Nature Reserve[\LINK]</Spanish>
-	</TEXT>
+		<English>建造 [LINK=IMPROVEMENT_NATURE_RESERVE]自然保护区[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>建造 [LINK=IMPROVEMENT_NATURE_RESERVE]自然保护区[\LINK]</Chinese><French>Build a [LINK=IMPROVEMENT_NATURE_RESERVE]Nature Reserve[\LINK]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_MARINE_RESERVE</Tag>
-		<English>Create [LINK=IMPROVEMENT_MARINE_RESERVE]Marine Reserve[\LINK]</English>
-		<French>construire une [LINK=IMPROVEMENT_MARINE_RESERVE]aire marine prot&#233;g&#233;e[\LINK]</French>
-		<German>Create [LINK=IMPROVEMENT_MARINE_RESERVE]Marine Reserve[\LINK]</German>
-		<Italian>Create [LINK=IMPROVEMENT_MARINE_RESERVE]Marine Reserve[\LINK]</Italian>
-		<Spanish>Create [LINK=IMPROVEMENT_MARINE_RESERVE]Marine Reserve[\LINK]</Spanish>
-	</TEXT>
+		<English>建造 [LINK=IMPROVEMENT_MARINE_RESERVE]海洋保护区[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>建造 [LINK=IMPROVEMENT_MARINE_RESERVE]海洋保护区[\LINK]</Chinese><French>Create [LINK=IMPROVEMENT_MARINE_RESERVE]Marine Reserve[\LINK]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_HAMLET</Tag>
-		<English>Build a [LINK=IMPROVEMENT_HAMLET]Hamlet[\LINK]</English>
-		<French>construire un [LINK=IMPROVEMENT_HAMLET]hameau[\LINK]</French>
-		<German>Build a [LINK=IMPROVEMENT_HAMLET]Hamlet[\LINK]</German>
-		<Italian>Build a [LINK=IMPROVEMENT_HAMLET]Hamlet[\LINK]</Italian>
-		<Spanish>Build a [LINK=IMPROVEMENT_HAMLET]Hamlet[\LINK]</Spanish>
-	</TEXT>
+		<English>建造 [LINK=IMPROVEMENT_HAMLET]小村庄[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>建造 [LINK=IMPROVEMENT_HAMLET]小村庄[\LINK]</Chinese><French>Build a [LINK=IMPROVEMENT_HAMLET]Hamlet[\LINK]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_SACRIFICE</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Sacrifice[COLOR_REVERT][NEWLINE]+1 [ICON_HAPPY] for %d1 turns.[NEWLINE]This order sacrifice the slave, leading to extra happiness and celebrations in the city for %d2 turns. This will consume the slave.</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Sacrifier[COLOR_REVERT][NEWLINE]+1 [ICON_HAPPY] pendant %d1 tours.[NEWLINE]Cet ordre sacrifie l'esclave, causant des c&#233;l&#233;brations et du bonheur dans la ville pendant %d2 tours. L'esclave sera d&#233;truit.</French>
-		<German>[COLOR_HIGHLIGHT_TEXT]Sacrifice[COLOR_REVERT][NEWLINE]+1 [ICON_HAPPY] for %d1 turns.[NEWLINE]This order sacrifice the slave, leading to extra happiness and celebrations in the city for %d2 turns. This will consume the slave.</German>
-		<Italian>[COLOR_HIGHLIGHT_TEXT]Sacrifice[COLOR_REVERT][NEWLINE]+1 [ICON_HAPPY] for %d1 turns.[NEWLINE]This order sacrifice the slave, leading to extra happiness and celebrations in the city for %d2 turns. This will consume the slave.</Italian>
-		<Spanish>[COLOR_HIGHLIGHT_TEXT]Sacrifice[COLOR_REVERT][NEWLINE]+1 [ICON_HAPPY] for %d1 turns.[NEWLINE]This order sacrifice the slave, leading to extra happiness and celebrations in the city for %d2 turns. This will consume the slave.</Spanish>
-	</TEXT>
+		<English>[COLOR_HIGHLIGHT_TEXT]牺牲[COLOR_REVERT]%d1回合[NEWLINE]+1 [ICON_HAPPY]。[NEWLINE]通过牺牲奴隶,为城市提供长达%d2回合额外的快乐点数和庆典回合（我们热爱领袖日），并且消耗此奴隶。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_HIGHLIGHT_TEXT]牺牲[COLOR_REVERT]%d1回合[NEWLINE]+1 [ICON_HAPPY]。[NEWLINE]通过牺牲奴隶,为城市提供长达%d2回合额外的快乐点数和庆典回合（我们热爱领袖日），并且消耗此奴隶。</Chinese><French>[COLOR_HIGHLIGHT_TEXT]Sacrifice[COLOR_REVERT][NEWLINE]+1 [ICON_HAPPY] for %d1 turns.[NEWLINE]This order sacrifice the slave, leading to extra happiness and celebrations in the city for %d2 turns. This will consume the slave.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_DIPLOMATIC_MISSION_PEACE</Tag>
-		<English>The Great Person will make another civilization forget your past transgressions and improve your relations. It consumes the Great Person.</English>
-		<French>Le personnage illustre fera oublier &#224; la civilisation vos transgressions pass&#233;es et am&#233;liorera vos relations. Cela consomme le personnage illustre.</French>
-		<German>Die Gro&#223;e Pers&#246;nlichkeit wird eine andere Zivilisation eure Vergehen aus der Vergangenheit vergessen lassen und eure Beziehungen verbessern. Die Gro&#223;e Pers&#246;nlichkeit wird dabei aufgebraucht.</German>
-		<Italian>The Great Person will make another civilization forget your past transgressions and improve your relations. It consumes the Great Person.</Italian>
-		<Spanish>The Great Person will make another civilization forget your past transgressions and improve your relations. It consumes the Great Person.</Spanish>
-	</TEXT>
+		<English>伟人将使另一个文明忘记你过去的冒犯，改善与你的关系。这将会消耗伟人。</English>
+		<L1/><L2/><L3/><L4/><Chinese>伟人将使另一个文明忘记你过去的冒犯，改善与你的关系。这将会消耗伟人。</Chinese><French>The Great Person will make another civilization forget your past transgressions and improve your relations. It consumes the Great Person.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_DIPLOMATIC_MISSION_WAR</Tag>
-		<English>The Great Person will broker an immediate peace treaty between you and your enemy. It consumes the Great Person.</English>
-		<French>Le personnage illustre n&#233;gociera un trait&#233; de paix imm&#233;diat entre vous et votre ennemi. Cela consomme le personnage illustre.</French>
-		<German>Die Gro&#223;e Pers&#246;nlichkeit wird einen unmittelbaren Friedensvertrag zwischen Euch und Eurem Feind aushandeln. Die Gro&#223;e Pers&#246;nlichkeit wird dabei aufgebraucht.</German>
-		<Italian>The Great Person will broker an immediate peace treaty between you and your enemy. It consumes the Great Person.</Italian>
-		<Spanish>The Great Person will broker an immediate peace treaty between you and your enemy. It consumes the Great Person.</Spanish>
-	</TEXT>
+		<English>伟人将在你和你的敌人之间促成一项即时的和平条约。这将会消耗伟人。</English>
+		<L1/><L2/><L3/><L4/><Chinese>伟人将在你和你的敌人之间促成一项即时的和平条约。这将会消耗伟人。</Chinese><French>The Great Person will broker an immediate peace treaty between you and your enemy. It consumes the Great Person.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_PERSECUTION</Tag>
-		<English>Attempts to remove one non-State religion from the city. This will consume the Prosecutor.</English>
-		<French>Tente de purger la ville d'une religion non officielle. Cela consomme l'inquisiteur.</French>
-		<German>Attempts to remove one non-State religion from the city. This will consume the Prosecutor.</German>
-		<Italian>Attempts to remove one non-State religion from the city. This will consume the Prosecutor.</Italian>
-		<Spanish>Attempts to remove one non-State religion from the city. This will consume the Prosecutor.</Spanish>
-	</TEXT>
+		<English>试图将一个非国教宗教从城市中移除。这将会消耗宗教审判官。</English>
+		<L1/><L2/><L3/><L4/><Chinese>试图将一个非国教宗教从城市中移除。这将会消耗宗教审判官。</Chinese><French>Attempts to remove one non-State religion from the city. This will consume the Prosecutor.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_REFORM_GOVERNMENT</Tag>
-		<English>This will order the Great Person to reform your government, allowing you to change civics this turn without any anarchy. It consumes the Great Person.</English>
-		<French>Ordonne au personnage illustre de r&#233;former votre gouvernement, ce qui vous permet de changer vos doctrines sans anarchie pour ce tour. Cela consomme le personnage illustre.</French>
-		<German>Dies wird die Gro&#223;en Pers&#246;nlichkeit veranlassen, Eure Regierung zu reformieren, was Euch erlaubt diese Runde Staatsformen ohne jegliche Anarchie zu wechseln. Die Gro&#223;e Pers&#246;nlichkeit wird dabei aufgebraucht.</German>
-		<Italian>This will order the Great Person to reform your government, allowing you to change civics this turn without any anarchy. It consumes the Great Person.</Italian>
-		<Spanish>This will order the Great Person to reform your government, allowing you to change civics this turn without any anarchy. It consumes the Great Person.</Spanish>
-	</TEXT>
+		<English>这将使伟人改革你的政府，允许你在这一回合改变政体且无需经过无政府状态。这将会消耗伟人。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这将使伟人改革你的政府，允许你在这一回合改变政体且无需经过无政府状态。这将会消耗伟人。</Chinese><French>This will order the Great Person to reform your government, allowing you to change civics this turn without any anarchy. It consumes the Great Person.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_RESOLVE_CRISIS</Tag>
-		<English>This will order the Great Person to end the anarchy in your civilization and the unrest in all your cities. It consumes the Great Person.</English>
-		<French>Ordonne au personnage illustre de mettre fin &#224; l'anarchie de votre civilisation et &#224; l'agitation dans toutes vos villes. Cela consomme le personnage illustre.</French>
-		<German>Dies wird die Gro&#223;e Pers&#246;nlichkeit veranlassen, the Anarchie in Eurer Zivilisation sowie den Aufruhr in all Euren St&#228;dten zu beenden. Die Gro&#223;e Pers&#246;nlichkeit wird dabei aufgebraucht.</German>
-		<Italian>This will order the Great Person to end the anarchy in your civilization and the unrest in all your cities. It consumes the Great Person.</Italian>
-		<Spanish>This will order the Great Person to end the anarchy in your civilization and the unrest in all your cities. It consumes the Great Person.</Spanish>
-	</TEXT>
+		<English>这将使伟大的人结束你文明的无政府状态和你所有城市的动乱。这将会消耗伟人。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这将使伟大的人结束你文明的无政府状态和你所有城市的动乱。这将会消耗伟人。</Chinese><French>This will order the Great Person to end the anarchy in your civilization and the unrest in all your cities. It consumes the Great Person.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_GREAT_MISSION</Tag>
-		<English>The Great Person will spread your state religion in several surrounding cities, potentially causing other religions to leave. It consumes the Great Person.</English>
-		<French>Le personnage illustre propagera votre religion d'&#201;tat dans plusieurs villes environnantes, faisant &#233;ventuellement dispara&#238;tre d'autres religions. Cela consomme le personnage illustre.</French>
-		<German>Die Gro&#223;e Pers&#246;nlichkeit wird Eure Staatsreligion in mehreren St&#228;dten in der Umgebung verbreiten und dabei m&#246;glicherweise andere Religionen entfernen. Die Gro&#223;e Pers&#246;nlichkeit wird dabei aufgebraucht.</German>
-		<Italian>The Great Person will spread your state religion in several surrounding cities, potentially causing other religions to leave. It consumes the Great Person.</Italian>
-		<Spanish>The Great Person will spread your state religion in several surrounding cities, potentially causing other religions to leave. It consumes the Great Person.</Spanish>
-	</TEXT>
+		<English>伟人将在周边几个城市传播你的国教，有可能导致原有的其他宗教离开。这将会消耗伟人。</English>
+		<L1/><L2/><L3/><L4/><Chinese>伟人将在周边几个城市传播你的国教，有可能导致原有的其他宗教离开。这将会消耗伟人。</Chinese><French>The Great Person will spread your state religion in several surrounding cities, potentially causing other religions to leave. It consumes the Great Person.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_DIPLOMATIC_MISSION</Tag>
-		<English>Diplomatic Mission</English>
-		<French>Mission diplomatique</French>
-		<German>Diplomatische Mission</German>
-		<Italian>Diplomatic Mission</Italian>
-		<Spanish>Diplomatic Mission</Spanish>
-	</TEXT>
+		<English>外交使团</English>
+		<L1/><L2/><L3/><L4/><Chinese>外交使团</Chinese><French>Diplomatic Mission</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_PERSECUTE</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Persecution[COLOR_REVERT]</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Pers&#233;cution[COLOR_REVERT]</French>
-		<German>[COLOR_HIGHLIGHT_TEXT]Persecution[COLOR_REVERT]</German>
-		<Italian>[COLOR_HIGHLIGHT_TEXT]Persecution[COLOR_REVERT]</Italian>
-		<Spanish>[COLOR_HIGHLIGHT_TEXT]Persecution[COLOR_REVERT]</Spanish>
-	</TEXT>
+		<English>[COLOR_HIGHLIGHT_TEXT]迫害[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_HIGHLIGHT_TEXT]迫害[COLOR_REVERT]</Chinese><French>[COLOR_HIGHLIGHT_TEXT]Persecution[COLOR_REVERT]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_REFORM_GOVERNMENT</Tag>
-		<English>Reform Government</English>
-		<French>R&#233;former le gouvernement</French>
-		<German>Regierung Reformieren</German>
-		<Italian>Reform Government</Italian>
-		<Spanish>Reform Government</Spanish>
-	</TEXT>
+		<English>改革政府</English>
+		<L1/><L2/><L3/><L4/><Chinese>改革政府</Chinese><French>Reform Government</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_RESOLVE_CRISIS</Tag>
-		<English>Resolve Crisis</English>
-		<French>R&#233;soudre la crise</French>
-		<German>Krise &#220;berwinden</German>
-		<Italian>Resolve Crisis</Italian>
-		<Spanish>Resolve Crisis</Spanish>
-	</TEXT>
+		<English>化解危机</English>
+		<L1/><L2/><L3/><L4/><Chinese>化解危机</Chinese><French>Resolve Crisis</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_GREAT_MISSION</Tag>
-		<English>Great Mission</English>
-		<French>Grande Mission</French>
-		<German>Gro&#223;e Mission</German>
-		<Italian>Great Mission</Italian>
-		<Spanish>Great Mission</Spanish>
-	</TEXT>
+		<English>伟大的使命</English>
+		<L1/><L2/><L3/><L4/><Chinese>伟大的使命</Chinese><French>Great Mission</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_START_GOLDENAGE_HELP</Tag>
-		<English>This order will consume one or more Great People (of different types) and initiate a Golden Age (extra [ICON_PRODUCTION], [ICON_COMMERCE], [ICON_GREATPEOPLE]).</English>
-		<French>Cet ordre consommera plusieurs personnages illustres (de types diff&#233;rents) et d&#233;clenchera un &#226;ge d'or ([ICON_PRODUCTION], [ICON_COMMERCE], [ICON_GREATPEOPLE] suppl&#233;mentaires).</French>
-		<German>Opfern Sie eine oder mehrere Gro&#223;e Pers&#246;nlichkeiten (unterschiedlicher Klassen), um ein Goldenes Zeitalter (zus&#228;tzliche [ICON_PRODUCTION], [ICON_COMMERCE], [ICON_GREATPEOPLE], keine Anarchie) zu begr&#252;nden.</German>
-		<Italian>Con questo ordine si consumano uno o pi&#249; Grandi Personaggi (di tipi differenti) e si avvia un'Et&#224; dell'Oro (extra [ICON_PRODUCTION], [ICON_COMMERCE], [ICON_GREATPEOPLE]).</Italian>
-		<Spanish>Esta orden consume uno o m&#225;s grandes personajes (de diferentes tipos) e inicia una edad de oro (extra [ICON_PRODUCTION], [ICON_COMMERCE], [ICON_GREATPEOPLE]).</Spanish>
-	</TEXT>
+		<English>这项命令将消耗掉一个或多个（不同类型的）伟人并开启黄金时代（额外增加[ICON_PRODUCTION]、[ICON_COMMERCE]与[ICON_GREATPEOPLE]）。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这项命令将消耗掉一个或多个（不同类型的）伟人并开启黄金时代（额外增加[ICON_PRODUCTION]、[ICON_COMMERCE]与[ICON_GREATPEOPLE]）。</Chinese><French>This order will consume one or more Great People (of different types) and initiate a Golden Age (extra [ICON_PRODUCTION], [ICON_COMMERCE], [ICON_GREATPEOPLE]).</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ESPIONAGE_SEE_ESPIONAGE</Tag>
-		<English>See Espionage</English>
-		<French>Voir l'espionnage</French>
-		<German>Spionage Anzeigen</German>
-		<Italian>See Espionage</Italian>
-		<Spanish>See Espionage</Spanish>
-	</TEXT>
+		<English>发现间谍</English>
+		<L1/><L2/><L3/><L4/><Chinese>发现间谍</Chinese><French>See Espionage</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ESPIONAGE_SEE_ESPIONAGE_HELP</Tag>
-		<English>Lets you see more details about a rival civilization's espionage against you in the Espionage Advisor.</English>
-		<French>Vous donne davantage de d&#233;tails (dans l'&#233;cran du conseiller &#224; l'espionnage) sur l'espionnage qu'une civilisation rivale a contre vous.</French>
-		<German>Zeigt zus&#228;tzliche Details &#252;ber die Spionage einer gegnerischen Zivilisation im Spionageberater an</German>
-		<Italian>Lets you see more details about a rival civilization's espionage against you in the Espionage Advisor.</Italian>
-		<Spanish>Lets you see more details about a rival civilization's espionage against you in the Espionage Advisor.</Spanish>
-	</TEXT>
+		<English>让你在间谍顾问栏目中看到更多关于敌对文明对你的间谍活动的细节。</English>
+		<L1/><L2/><L3/><L4/><Chinese>让你在间谍顾问栏目中看到更多关于敌对文明对你的间谍活动的细节。</Chinese><French>Lets you see more details about a rival civilization's espionage against you in the Espionage Advisor.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_SATELLITE_ATTACK</Tag>
-		<English>Destroy Satellite</English>
-		<French>D&#233;truire un satellite</French>
-		<German>Satellit Zerst&#246;ren</German>
-		<Italian>Satellite Attack</Italian>
-		<Spanish>Satellite Attack</Spanish>
-	</TEXT>
+		<English>摧毁卫星</English>
+		<L1/><L2/><L3/><L4/><Chinese>摧毁卫星</Chinese><French>Destroy Satellite</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_SATELLITE_ATTACK</Tag>
-		<English>The Satellite will destroy an enemy Satellite on the same tile.</English>
-		<French>Le satellite d&#233;truira un satellite ennemi sur la m&#234;me case.</French>
-		<German>Der Satellit wird einen gegnerischen Satellit auf demselben Feld zerst&#246;ren.</German>
-		<Italian>The Satellite will destroy an enemy Satellite on the same tile.</Italian>
-		<Spanish>The Satellite will destroy an enemy Satellite on the same tile.</Spanish>
-	</TEXT>
+		<English>卫星将摧毁同一地块上的敌方卫星。</English>
+		<L1/><L2/><L3/><L4/><Chinese>卫星将摧毁同一地块上的敌方卫星。</Chinese><French>The Satellite will destroy an enemy Satellite on the same tile.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_SOLAR_COLLECTOR</Tag>
-		<English>Create [LINK=IMPROVEMENT_SOLAR_COLLECTOR]Solar Collector[\LINK]</English>
-		<French>Cr&#233;er un [LINK=IMPROVEMENT_SOLAR_COLLECTOR]collecteur solaire[\LINK]</French>
-		<German>Create [LINK=IMPROVEMENT_SOLAR_COLLECTOR]Solar Collector[\LINK]</German>
-		<Italian>Create [LINK=IMPROVEMENT_SOLAR_COLLECTOR]Solar Collector[\LINK]</Italian>
-		<Spanish>Create [LINK=IMPROVEMENT_SOLAR_COLLECTOR]Solar Collector[\LINK]</Spanish>
-	</TEXT>
+		<English>建造 [LINK=IMPROVEMENT_SOLAR_COLLECTOR]太阳能收集器[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>建造 [LINK=IMPROVEMENT_SOLAR_COLLECTOR]太阳能收集器[\LINK]</Chinese><French>Create [LINK=IMPROVEMENT_SOLAR_COLLECTOR]Solar Collector[\LINK]</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_REBUILD</Tag>
-		<English>Rebuild</English>
-		<French>Reb&#226;tir</French>
-		<German>Wiederaufbauen</German>
-		<Italian>Rebuild</Italian>
-		<Spanish>Rebuild</Spanish>
-	</TEXT>
+		<English>重建</English>
+		<L1/><L2/><L3/><L4/><Chinese>重建</Chinese><French>Rebuild</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_REBUILD</Tag>
-		<English>Free buildings will be constructed in the city:</English>
-		<French>Des b&#226;timents gratuits seront construits dans la ville :</French>
-		<German>Frei verf&#252;gbare Geb&#228;ude werden in der Stadt errichtet:</German>
-		<Italian>Free buildings will be constructed in the city:</Italian>
-		<Spanish>Free buildings will be constructed in the city:</Spanish>
-	</TEXT>
+		<English>将在本市建造免费建筑：</English>
+		<L1/><L2/><L3/><L4/><Chinese>将在本市建造免费建筑：</Chinese><French>Free buildings will be constructed in the city:</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REBUILD</Tag>
-		<English>[ICON_BULLET]Can rebuild free buildings in cities</English>
-		<French>[ICON_BULLET]Peut reconstruire des b&#226;timents gratuits dans les villes</French>
-		<German>[ICON_BULLET]Kann frei verf&#252;gbare Geb&#228;ude in St&#228;dten wiedererrichten</German>
-		<Italian>[ICON_BULLET]Can rebuild free buildings in cities</Italian>
-		<Spanish>[ICON_BULLET]Can rebuild free buildings in cities</Spanish>
-	</TEXT>
+		<English>[ICON_BULLET]可以重建城市里的免费建筑</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以重建城市里的免费建筑</Chinese><French>[ICON_BULLET]Can rebuild free buildings in cities</French></TEXT>
 </Civ4GameText>
