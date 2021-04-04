@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Terrain -->
+<Civ4GameText>
+
+
+<TEXT><Tag>TXT_KEY_UNIT_CULTURE_GARRISON_VALUE</Tag><English>[ICON_BULLET]卫戍价值: %d1</English><L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]卫戍价值: %d1</Chinese><French>[ICON_BULLET]Garrison Value: %d1</French></TEXT><TEXT><Tag>TXT_KEY_BUILDING_GARRISON_UNHAPPY_MOD</Tag><English>[ICON_BULLET]%D1_Mod%% [ICON_UNHAPPY] 因为缺乏军事保护</English><L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Mod%% [ICON_UNHAPPY] 因为缺乏军事保护</Chinese><French>[ICON_BULLET]%D1_Mod%% [ICON_UNHAPPY] from lack of military protection</French></TEXT></Civ4GameText>

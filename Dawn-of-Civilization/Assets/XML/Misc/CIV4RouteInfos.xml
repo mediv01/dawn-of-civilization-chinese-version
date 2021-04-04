@@ -2,8 +2,8 @@
 <!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
 <!-- Sid Meier's Civilization 4 -->
 <!-- Copyright Firaxis Games 2005 -->
-<!-- -->
-<!-- Route Infos -->
+<!-- modify by mediv01 at 20200419-->
+<!-- Route Infos-->
 <Civ4RouteInfos xmlns="x-schema:CIV4MiscSchema.xml">
 	<RouteInfos>
 		<RouteInfo>
@@ -12,8 +12,8 @@
 			<iValue>1</iValue>
 			<iAdvancedStartCost>12</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iMovement>30</iMovement>
-			<iFlatMovement>30</iFlatMovement>
+			<iMovement>25</iMovement>
+			<iFlatMovement>25</iFlatMovement>
 			<BonusType>NONE</BonusType>
 			<PrereqOrBonuses/>
 			<Yields/>
@@ -31,7 +31,7 @@
 			<iValue>3</iValue>
 			<iAdvancedStartCost>18</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iMovement>20</iMovement>
+			<iMovement>15</iMovement>
 			<iFlatMovement>6</iFlatMovement>
 			<BonusType>NONE</BonusType>
 			<PrereqOrBonuses>
@@ -66,8 +66,8 @@
 			<iValue>3</iValue>
 			<iAdvancedStartCost>18</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iMovement>20</iMovement>
-			<iFlatMovement>6</iFlatMovement>
+			<iMovement>12</iMovement>
+			<iFlatMovement>8</iFlatMovement>
 			<BonusType>BONUS_OIL</BonusType>
 			<PrereqOrBonuses/>
 			<Yields/>

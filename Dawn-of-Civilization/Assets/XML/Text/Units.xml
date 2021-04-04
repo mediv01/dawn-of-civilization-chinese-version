@@ -811,8 +811,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>大间谍</Chinese><French>Great Spy</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JEWISH_MISSIONARY</Tag>
-		<English>新教传教士</English>
-		<L1/><L2/><L3/><L4/><Chinese>新教传教士</Chinese><French>Jewish Rabbi</French></TEXT>
+		<English>犹太教传教士</English>
+		<L1/><L2/><L3/><L4/><Chinese>犹太教传教士</Chinese><French>Jewish Rabbi</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JEWISH_MISSIONARY_STRATEGY</Tag>
 		<English>信仰并且在友好的城市积极传播[COLOR_HIGHLIGHT_TEXT]新教[COLOR_REVERT]（或与您签订[COLOR_HIGHLIGHT_TEXT]开放边界[COLOR_REVERT]的敌对城市)。 此时您拥有的[COLOR_BUILDING_TEXT]诸圣堂[COLOR_REVERT]便能增加您的收入。</English>

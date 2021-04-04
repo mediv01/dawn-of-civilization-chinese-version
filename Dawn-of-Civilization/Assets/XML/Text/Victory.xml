@@ -43,24 +43,24 @@
 		<L1/><L2/><L3/><L4/><Chinese>伊智提哈德</Chinese><French>Ijtihad</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARA1</Tag>
-		<English>在公元1300年时成为最先进的文明</English>
-		<L1/><L2/><L3/><L4/><Chinese>在公元1300年时成为最先进的文明</Chinese><French>Be the most advanced civilization in 1300 AD</French></TEXT>
+		<English>在公元1000年时成为最先进的文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>在公元1000年时成为最先进的文明</Chinese><French>Be the most advanced civilization in 1300 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARA2_TITLE</Tag>
 		<English>吉哈德圣战</English>
 		<L1/><L2/><L3/><L4/><Chinese>吉哈德圣战</Chinese><French>Jihad</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARA2</Tag>
-		<English>在公元1300年时征服埃及、马格里布、西班牙、美索不达米亚和波斯，或纳为附庸</English>
-		<L1/><L2/><L3/><L4/><Chinese>在公元1300年时征服埃及、马格里布、西班牙、美索不达米亚和波斯，或纳为附庸</Chinese><French>Control Egypt, the Maghreb, Spain, Mesopotamia and Persia directly or by vassal in 1300 AD</French></TEXT>
+		<English>在公元1100年时联合摩尔人、埃及马穆鲁克一起征服控制埃及、马格里布、西班牙、美索不达米亚和波斯，或纳为附庸</English>
+		<L1/><L2/><L3/><L4/><Chinese>在公元1100年时联合摩尔人、埃及马穆鲁克一起征服控制埃及、马格里布、西班牙、美索不达米亚和波斯，或纳为附庸</Chinese><French>Control Egypt, the Maghreb, Spain, Mesopotamia and Persia directly or by vassal in 1300 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARA3_TITLE</Tag>
 		<English>伊斯兰天命</English>
 		<L1/><L2/><L3/><L4/><Chinese>伊斯兰天命</Chinese><French>Dawah</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARA3</Tag>
-		<English>使伊斯兰教传播到全世界30%的城市</English>
-		<L1/><L2/><L3/><L4/><Chinese>使伊斯兰教传播到全世界30%的城市</Chinese><French>Spread Islam to 30% of the cities in the world</French></TEXT>
+		<English>使伊斯兰教传播到全世界20%的城市，在达到目标前麦加和耶路撒冷这2座圣城不允许落入异教徒手中</English>
+		<L1/><L2/><L3/><L4/><Chinese>使伊斯兰教传播到全世界20%的城市，在达到目标前麦加和耶路撒冷这2座圣城不允许落入异教徒手中</Chinese><French>Spread Islam to 30% of the cities in the world</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG1_TITLE</Tag>
 		<English>阿根廷悖论</English>
@@ -311,8 +311,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>率先发现罗盘、造纸、火药、印刷机</Chinese><French>Be first to discover Compass, Paper, Gunpowder and Printing</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CHI3_TITLE</Tag>
-		<English>盛世中国</English>
-		<L1/><L2/><L3/><L4/><Chinese>盛世中国</Chinese><French>Ten Thousand Years</French></TEXT>
+		<English>盛世中华</English>
+		<L1/><L2/><L3/><L4/><Chinese>盛世中华</Chinese><French>Ten Thousand Years</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CHI3</Tag>
 		<English>在公元1800年之前开创4个黄金时代</English>
@@ -687,12 +687,12 @@
 		<L1/><L2/><L3/><L4/><Chinese>繁荣昌盛</Chinese><French>Prosperous Excellence</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INO1</Tag>
-		<English>在公元1300年时拥有世界最多的人口</English>
-		<L1/><L2/><L3/><L4/><Chinese>在公元1300年时拥有世界最多的人口</Chinese><French>Have the largest population in the world in 1300 AD</French></TEXT>
+		<English>在公元1300年前拥有世界最多的人口</English>
+		<L1/><L2/><L3/><L4/><Chinese>在公元1300年前拥有世界最多的人口</Chinese><French>Have the largest population in the world in 1300 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INO2_TITLE</Tag>
-		<English>赤道绿宝石</English>
-		<L1/><L2/><L3/><L4/><Chinese>赤道绿宝石</Chinese><French>Emerald of the Equator</French></TEXT>
+		<English>香料帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>香料帝国</Chinese><French>Emerald of the Equator</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INO2</Tag>
 		<English>在公元1500年之前获得10种不同的快乐资源</English>
@@ -703,12 +703,12 @@
 		<L1/><L2/><L3/><L4/><Chinese>民族觉醒</Chinese><French>National Awakening</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INO3</Tag>
-		<English>公元1940年控制了世界人口的9%</English>
-		<L1/><L2/><L3/><L4/><Chinese>公元1940年控制了世界人口的9%</Chinese><French>Control 9% of the world's population in 1940 AD</French></TEXT>
+		<English>公元1940年前控制了世界人口的16%</English>
+		<L1/><L2/><L3/><L4/><Chinese>公元1940年前控制了世界人口的16%</Chinese><French>Control 9% of the world's population in 1940 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_IRA1_TITLE</Tag>
-		<English>欧洲大使馆</English>
-		<L1/><L2/><L3/><L4/><Chinese>欧洲大使馆</Chinese><French>European Embassies</French></TEXT>
+		<English>欧洲使馆</English>
+		<L1/><L2/><L3/><L4/><Chinese>欧洲使馆</Chinese><French>European Embassies</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_IRA1</Tag>
 		<English>公元1650年与6个欧洲文明有着开放的边界</English>
@@ -799,8 +799,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>吴哥窟</Chinese><French>Angkor Wat</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KHM1</Tag>
-		<English>在公元1200年建造四座佛教僧伽和印度教道场，并控制它们</English>
-		<L1/><L2/><L3/><L4/><Chinese>在公元1200年建造四座佛教僧伽和印度教道场，并控制它们</Chinese><French>Build four Buddhist Sanghas and Hindu Ashrams and Wat Preah Pisnulok and control them in 1200 AD</French></TEXT>
+		<English>在公元1200年前建造吴哥窟、4座佛教静修院和4座印度教静修院，并控制它们</English>
+		<L1/><L2/><L3/><L4/><Chinese>在公元1200年前建造吴哥窟、4座佛教静修院和4座印度教静修院，并控制它们</Chinese><French>Build four Buddhist Sanghas and Hindu Ashrams and Wat Preah Pisnulok and control them in 1200 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KHM2_TITLE</Tag>
 		<English>汤姆巴里</English>
@@ -1359,24 +1359,24 @@
 		<L1/><L2/><L3/><L4/><Chinese>国王和我</Chinese><French>The King and I</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_THA1</Tag>
-		<English>到公元1650年与10个文明有开放的边界</English>
-		<L1/><L2/><L3/><L4/><Chinese>到公元1650年与10个文明有开放的边界</Chinese><French>Have open borders with 10 civilizations by 1650 AD</French></TEXT>
+		<English>公元1650年前与10个文明有开放的边界</English>
+		<L1/><L2/><L3/><L4/><Chinese>公元1650年前与10个文明有开放的边界</Chinese><French>Have open borders with 10 civilizations by 1650 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_THA2_TITLE</Tag>
 		<English>东方威尼斯</English>
 		<L1/><L2/><L3/><L4/><Chinese>东方威尼斯</Chinese><French>Venice of the East</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_THA2</Tag>
-		<English>在公元1700年时使Ayutthaya成为世界上人口最多的城市</English>
-		<L1/><L2/><L3/><L4/><Chinese>在公元1700年时使Ayutthaya成为世界上人口最多的城市</Chinese><French>Make Ayutthaya the most populous city in the world in 1700 AD</French></TEXT>
+		<English>在公元1700年前使Ayutthaya成为世界上人口最多的城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>在公元1700年前使Ayutthaya成为世界上人口最多的城市</Chinese><French>Make Ayutthaya the most populous city in the world in 1700 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_THA3_TITLE</Tag>
 		<English>权力圈</English>
 		<L1/><L2/><L3/><L4/><Chinese>权力圈</Chinese><French>The Circle of Power</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_THA3</Tag>
-		<English>在公元1900年时确保南亚没有非南亚文明的殖民地</English>
-		<L1/><L2/><L3/><L4/><Chinese>在公元1900年时确保南亚没有非南亚文明的殖民地</Chinese><French>Allow no foreign powers in Southern Asia in 1900 AD</French></TEXT>
+		<English>在公元1800年时确保南亚没有非南亚文明的殖民地</English>
+		<L1/><L2/><L3/><L4/><Chinese>在公元1800年时确保南亚没有非南亚文明的殖民地</Chinese><French>Allow no foreign powers in Southern Asia in 1900 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TIB1_TITLE</Tag>
 		<English>吐蕃帝国</English>
@@ -1391,8 +1391,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>藏传佛教</Chinese><French>Tibetan Buddhism</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TIB2</Tag>
-		<English>在公元1400年之前使佛教传播到全世界30%的城市</English>
-		<L1/><L2/><L3/><L4/><Chinese>在公元1400年之前使佛教传播到全世界30%的城市</Chinese><French>Spread Buddhism to 25% by 1400 AD</French></TEXT>
+		<English>在公元1400年之前使佛教传播到全世界25%的城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>在公元1400年之前使佛教传播到全世界25%的城市</Chinese><French>Spread Buddhism to 25% by 1400 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TIB3_TITLE</Tag>
 		<English>佛教圣地</English>
@@ -1407,24 +1407,24 @@
 		<L1/><L2/><L3/><L4/><Chinese>哈加纳特</Chinese><French>The Khaganate</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TUR1</Tag>
-		<English>到公元900年控制6%的世界，掠夺20个改进</English>
-		<L1/><L2/><L3/><L4/><Chinese>到公元900年控制6%的世界，掠夺20个改进</Chinese><French>Control 6% of the world and pillage 20 improvements by 900 AD</French></TEXT>
+		<English>到公元1200年控制7%的世界，掠夺40个改进地块</English>
+		<L1/><L2/><L3/><L4/><Chinese>到公元1200年控制7%的世界，掠夺40个改进地块</Chinese><French>Control 6% of the world and pillage 20 improvements by 900 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TUR2_TITLE</Tag>
 		<English>丝绸之路</English>
 		<L1/><L2/><L3/><L4/><Chinese>丝绸之路</Chinese><French>The Silk Road</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TUR2</Tag>
-		<English>创建一条从中国任何城市到地中海港口的陆路贸易路线，并在公元1100年前将丝绸之路延伸到10个城市</English>
-		<L1/><L2/><L3/><L4/><Chinese>创建一条从中国任何城市到地中海港口的陆路贸易路线，并在公元1100年前将丝绸之路延伸到10个城市</Chinese><French>Create an overland trade route from any city in China to one of your Mediterranean ports and spread the Silk Route to 10 of your cities by 1100 AD</French></TEXT>
+		<English>创建一条从中国任何城市到地中海港口的陆路贸易路线，并在公元1300年前将丝绸之路延伸到7个城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>创建一条从中国任何城市到地中海港口的陆路贸易路线，并在公元1300年前将丝绸之路延伸到7个城市</Chinese><French>Create an overland trade route from any city in China to one of your Mediterranean ports and spread the Silk Route to 10 of your cities by 1100 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TUR3_TITLE</Tag>
 		<English>艺术赞助</English>
 		<L1/><L2/><L3/><L4/><Chinese>艺术赞助</Chinese><French>Patronage</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TUR3</Tag>
-		<English>公元900年首都文化为正在发展，公元1100年首都文化为精致优雅，公元1400年首都文化为影响深远</English>
-		<L1/><L2/><L3/><L4/><Chinese>公元900年首都文化为正在发展，公元1100年首都文化为精致优雅，公元1400年首都文化为影响深远</Chinese><French>Have a capital with developing culture by 900 AD, a different capital with refined culture by 1100 AD and another capital with influential culture by 1400 AD</French></TEXT>
+		<English>公元900年前第一个首都文化为正在发展，公元1100年前第二个首都文化为精致优雅，公元1400年前第三个首都文化为影响深远</English>
+		<L1/><L2/><L3/><L4/><Chinese>公元900年前第一个首都文化为正在发展，公元1100年前第二个首都文化为精致优雅，公元1400年前第三个首都文化为影响深远</Chinese><French>Have a capital with developing culture by 900 AD, a different capital with refined culture by 1100 AD and another capital with influential culture by 1400 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_VIK1_TITLE</Tag>
 		<English>诺曼征服</English>
@@ -2039,8 +2039,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>人均商业值最高的城市：%s1</Chinese><French>Highest commerce per capita: %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_HIGHEST_POPULATION_CIV</Tag>
-		<English>世界上人口最多的文明： </English>
-		<L1/><L2/><L3/><L4/><Chinese>世界上人口最多的文明： </Chinese><French>Civilization with the largest population: %s1</French></TEXT>
+		<English>世界上人口最多的文明： %s1</English>
+		<L1/><L2/><L3/><L4/><Chinese>世界上人口最多的文明： %s1</Chinese><French>Civilization with the largest population: %s1</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_HIGHEST_TRADE_CITY</Tag>
 		<English>贸易收入最高的城市：</English>
@@ -2147,8 +2147,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>文化程度最高的城市： %s1_city</Chinese><French>Most cultured city: %s1_city</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_MOST_CULTURED_CITY_VALUE</Tag>
-		<English>文化程度最高的城市： %s1_city (%d2 / %d1)</English>
-		<L1/><L2/><L3/><L4/><Chinese>文化程度最高的城市： %s1_city (%d2 / %d1)</Chinese><French>Most cultured city: %s1_city (%d2 / %d3)</French></TEXT>
+		<English>文化程度最高的城市： %s1_city (%d2 / %d3)</English>
+		<L1/><L2/><L3/><L4/><Chinese>文化程度最高的城市： %s1_city (%d2 / %d3)</Chinese><French>Most cultured city: %s1_city (%d2 / %d3)</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_MOST_POPULOUS_CITY</Tag>
 		<English>人口最多的城市： %s1_city</English>
@@ -2591,8 +2591,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>丝绸之路%d1/%d2</Chinese><French>Silk Route: %d1 / %d2</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NO_NEW_CAPITAL</Tag>
-		<English>没有新资本</English>
-		<L1/><L2/><L3/><L4/><Chinese>没有新资本</Chinese><French>No new capital</French></TEXT>
+		<English>没有新首都</English>
+		<L1/><L2/><L3/><L4/><Chinese>没有新首都</Chinese><French>No new capital</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_CAPITAL_CULTURE</Tag>
 		<English>%s1中的区域性：%d2/%d3</English>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Colors -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_ANYFUNMOD_WORLD_WR_BEGIN</Tag>
+		<English>%s1 开始建造 %s2!</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 开始建造 %s2!</Chinese><French>%s1 开始建造 %s2!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ANYFUNMOD_WORLD_WR_BEGIN_UNKNOWN</Tag>
+		<English>一个遥远的文明开始建造 %s1!</English>
+		<L1/><L2/><L3/><L4/><Chinese>一个遥远的文明开始建造 %s1!</Chinese><French>一个遥远的文明开始建造 %s1!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ANYFUNMOD_GAME_OPTION_CONQUEST_TECH_MSG</Tag>
+		<English>消灭其他文明获得科技:   </English>
+		<L1/><L2/><L3/><L4/><Chinese>Conquest Tech:</Chinese><French>Conquest Tech:</French></TEXT>
+</Civ4GameText>

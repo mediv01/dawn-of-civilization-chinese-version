@@ -3,8 +3,8 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TIBET_DESC</Tag>
-		<English>吐蕃</English>
-		<L1/><L2/><L3/><L4/><Chinese>吐蕃</Chinese><French>The Tibetans</French></TEXT>
+		<English>吐蕃文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>吐蕃文明</Chinese><French>The Tibetans</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TIBET_PEOPLES</Tag>
 		<English>吐蕃</English>

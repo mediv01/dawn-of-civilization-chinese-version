@@ -808,172 +808,6 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>    
 	
-	    <Define>
-        <DefineName>ANYFUN_CONQUEST_GET_GOLD</DefineName><!-- 1为彻底征服1个文明可以获得该文明的金币 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>	
-
-
-
-
-
-
-
-		
-		<!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  CVGAMETEXT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->	
-	    <Define>
-        <DefineName>GAME_TEXT_SHOW_CITY_NAME_IN_ALL_UNIT</DefineName><!-- 1为所有单位可以显示城市名称   0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>GAME_TEXT_SHOW_AREA_NAME_IN_ALL_UNIT</DefineName><!-- 1为所有单位可以显示区域名称   0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>GAME_TEXT_SHOW_CITY_X_AND_Y</DefineName><!-- 1为可以显示城市的坐标   0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>GAME_TEXT_SHOW_SETTLER_MAP</DefineName><!-- 1为可以显示城市SETTLERMAP的数值  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    
-    <Define>
-        <DefineName>CVGAMETEXT_HURRY_ALERT_MORE_THAN_ONCE</DefineName><!-- 1为允许多次提醒加速人口信息  0为默认模式， 暂时无作用，先用0  mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>    
-    <Define>
-        <DefineName>CVGAMETEXT_HURRY_ALERT_INTERVAL</DefineName><!-- 1为允许多次提醒加速人口信息的间隔  0为默认模式，暂时无作用，先用0  mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>        
-    
-    <Define>
-        <DefineName>GAME_TEXT_SHOW_RELIGION_MAP</DefineName><!-- 1为可以显示地块宗教值的数值  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    
-    <Define>
-        <DefineName>GAME_TEXT_SHOW_FOREGIN_CORE</DefineName><!-- 1为可以显示外国核心的具体信息  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>GAME_TEXT_DISABLE_DYNAMIC_NAMES</DefineName><!-- 1为关闭动态国家名称  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>    	
-		
-			<Define>
-        <DefineName>CVGAMETEXT_SHOW_FLIP_ZONE_IN_MAP</DefineName><!-- 地块显示是否是翻转区，0为默认模式  mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define> 
-	
-	
-	<Define>
-        <DefineName>CVGAMETEXT_SHOW_MINOR_BIRTH_IN_MAP</DefineName><!-- 地块显示是否有独立城邦，0为默认模式  mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define> 
-	
-	
-		<Define>
-        <DefineName>CVGAMETEXT_SHOW_COMPANY_IN_MAP</DefineName><!-- 地块显示是否有公司，0为默认模式  mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define> 
-	
-	
-	<Define>
-        <DefineName>CVGAMETEXT_AIWAR_IN_MAP</DefineName><!-- 地块显示是否有AIWAR的内容，0为默认模式  mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define> 
-	
-	<Define>
-        <DefineName>CVGAMETEXT_AIWAR_IN_MAP_SHOW_ANCIENT</DefineName><!-- 地块显示古代部分（1750前）的AIWAR，0为默认模式  mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define> 
-	
-	
-	<Define>
-        <DefineName>CVGAMETEXT_AIWAR_IN_MAP_SHOW_EARLY_MODERN</DefineName><!-- 地块显示近代部分（1800-1910）的AIWAR，0为默认模式  mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define> 
-	
-	
-		<Define>
-        <DefineName>CVGAMETEXT_AIWAR_IN_MAP_SHOW_LATE_MODERN</DefineName><!-- 地块显示近代部分（1911-2020）的AIWAR，0为默认模式  mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define> 
-		
-		
-		
-		
-		
-	    <Define>
-        <DefineName>CVGAMETEXT_SHOW_TRADE_GOLD_IN_MAP</DefineName><!-- 地图上显示大商业家贸易金额，0为默认模式  mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>   	
-		
-    <Define>
-        <DefineName>CVTECH_SHOW_TECH_DISCOVERY1</DefineName><!-- 1为显示科技树科技是否首发 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    
-    <Define>
-        <DefineName>CVTECH_SHOW_TECH_DISCOVERY2</DefineName><!-- 1为显示科技树科技被哪些国家研究 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>    
-	
-	    <Define>
-        <DefineName>CVTECH_SHOW_TECH_DISCOVERY2_SHOW_DEAD</DefineName><!-- 1为显示科技树科技研究列表是否显示已经崩溃的国家 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>  
-    <Define>
-        <DefineName>CVTECH_SHOW_TECH_DISCOVERY2_MAX</DefineName><!-- 1为显示科技树科技被哪些国家研究列表的最大数量 999为默认模式 mediv01 -->
-        <iDefineIntVal>5</iDefineIntVal>
-    </Define>
-    
-    <Define>
-        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3</DefineName><!-- 1为显示科技树科技尚未被哪些国家研究 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>    
-    <Define>
-        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3_MAX</DefineName><!-- 1为显示科技树科技尚未被哪些国家研究列表的最大数量 999为默认模式 mediv01 -->
-        <iDefineIntVal>5</iDefineIntVal>
-    </Define>
-    
-
-    
-    <Define>
-        <DefineName>CVTECH_SHOW_TECH_DISCOVERY_INFO</DefineName><!-- 1为显示伟人点科技的科技值 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>		
-
-
-	    <Define>
-        <DefineName>CVGAMETEXT_TRADE_SHOW_VALUE</DefineName><!-- 1为交易价值 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>	
-	
-		    <Define>
-        <DefineName>CVGAMETEXT_TRADE_SHOW_ASK_VALUE</DefineName><!-- 1为显示交勒索价值 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>	
-	
-			    <Define>
-        <DefineName>CVGAMETEXT_SHOW_ENERMY_AREA</DefineName><!-- 1为显示敌人区域 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-		<Define>
-        <DefineName>CVGAMETEXT_SHOW_CONNECT_TO_CAPITAL</DefineName><!-- 1为显示是否与首都相连 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-
-
-
-	
-	
-	
 	
 	<!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  DLL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
      <Define>
@@ -1089,7 +923,7 @@
     
     <Define>
         <DefineName>CVGAMECORE_NOT_ALLOW_TO_LOG</DefineName><!-- 1为取消LOG功能 0为默认模式， mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 	
 	
@@ -1137,7 +971,7 @@
     </Define>
     <Define>
         <DefineName>CVUNIT_SHIP_CAN_ALWAYS_ENTER_TERRITORY</DefineName><!-- 1为船只可以随便出入他国国境 0为默认模式，  mediv01  -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>    
     
     
@@ -1265,7 +1099,10 @@
         <DefineName>CVCITY_SPREAD_RELIGION_ANYWHERE</DefineName><!-- 1为城市传播宗教无限制 宗教可以在任何地方首发 0为默认模式， mediv01  -->
         <iDefineIntVal>0</iDefineIntVal>
     </Define>    
-  
+    <Define>
+        <DefineName>CVCITY_INCREASE_RELIGON_CHANCE</DefineName><!-- 100为城市传播宗教概率为100% 0为默认模式百分之一概率， mediv01  -->
+        <iDefineIntVal>50</iDefineIntVal>
+    </Define>    
     <Define>
         <DefineName>CVCITY_RELIGON_NO_DISAPPEAR</DefineName><!-- 1为城市传播宗教不消失 mediv01  -->
         <iDefineIntVal>1</iDefineIntVal>
@@ -1311,12 +1148,12 @@
     </Define>	
 	<Define>
         <DefineName>CVPLYER_CAN_ALWAYS_DO_ESPIONAGE_AI</DefineName><!-- 1为AI都可以永远查看别人 0为默认模式 mediv01 -->
-        <iDefineIntVal>10000</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>		
 	
 	 <Define>
         <DefineName>CVPLYER_CAN_DO_ESPIONAGE_POINT_BONUS</DefineName><!-- 为大于0为执行谍报任务的谍报加成，可以设置100000000，用于查看其他国家的信息 0为默认模式 mediv01 -->
-        <iDefineIntVal>10000</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>	
 	
 	<Define>
@@ -1361,11 +1198,6 @@
         <DefineName>CVPLAYERAI_CAN_ALWAYS_TRADE_TECH</DefineName><!-- 1为AI愿意交易科技 0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
-	
-		    <Define>
-        <DefineName>CVGAMECORE_ENABLE_ERROR_LOG</DefineName><!-- 1为允许在游戏中提示PYTHON错误，方便定位错误原因，建议设置为1 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
 
 	    <Define>
         <DefineName>CVPLAYERAI_CAN_ALWAYS_TRADE_CITY</DefineName><!-- 1为AI愿意交易城市 0为默认模式 mediv01 -->
@@ -1379,15 +1211,9 @@
 
 
     <Define>
-        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC</DefineName><!-- 1为根据难度动态平衡各个玩家的科技进度，确保各个难度下AI在同一时期的科技进度相近 0为默认模式  mediv01  -->
+        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC</DefineName><!-- 1为根据难度动态平衡AI的科技进度，确保各个难度下AI在同一时期的科技进度相近 0为默认模式  mediv01  -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>    
-	
-	
-	<Define>
-        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_NOT_INCLUDE_HUMAN</DefineName><!-- 1为动态平衡不包含人类玩家 0为默认模式  mediv01  -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>  
 
     <Define>
         <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H1</DefineName><!-- 1等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
@@ -1396,75 +1222,506 @@
 
     <Define>
         <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H2</DefineName><!-- 2等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
-        <iDefineIntVal>150</iDefineIntVal>
-    </Define> 
-	    <Define>
-        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H3</DefineName><!-- 3等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
         <iDefineIntVal>200</iDefineIntVal>
     </Define> 
 	    <Define>
-        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H4</DefineName><!-- 4等难度下AI科研费用的乘数百分比 100为默认模式  已校准 mediv01  -->
+        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H3</DefineName><!-- 3等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
         <iDefineIntVal>300</iDefineIntVal>
     </Define> 
 	    <Define>
-        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H5</DefineName><!-- 5等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
+        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H4</DefineName><!-- 4等难度下AI科研费用的乘数百分比 100为默认模式  已校准 mediv01  -->
         <iDefineIntVal>400</iDefineIntVal>
     </Define> 
-
 	    <Define>
-        <DefineName>CVUNIT_AI_NOT_TAKE_GOODY</DefineName><!-- 1为AI不会主动采集部落村庄 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
+        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H5</DefineName><!-- 5等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
+        <iDefineIntVal>500</iDefineIntVal>
+    </Define> 
 
 
+
+	
+		<!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  CVGAMETEXT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->	
 	    <Define>
-        <DefineName>CVPLAYERAI_AI_DONNOT_TRADE_MAP_EACH_OTHER</DefineName><!-- 1为AI不会主动向其他AI交换地图  0为默认模式 mediv01 -->
+        <DefineName>GAME_TEXT_SHOW_CITY_NAME_IN_ALL_UNIT</DefineName><!-- 1为所有单位可以显示城市名称   0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>GAME_TEXT_SHOW_AREA_NAME_IN_ALL_UNIT</DefineName><!-- 1为所有单位可以显示区域名称   0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>GAME_TEXT_SHOW_CITY_X_AND_Y</DefineName><!-- 1为可以显示城市的坐标   0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>GAME_TEXT_SHOW_SETTLER_MAP</DefineName><!-- 1为可以显示城市SETTLERMAP的数值  0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
-	<Define>
-        <DefineName>CVCITY_UHV_HELPER_AI_NOT_BUILD_WONDER_OF_HUMAN_UHV</DefineName><!-- 1为AI不会建玩家UHV所需建筑 0为默认模式 mediv01 -->
+    
+    <Define>
+        <DefineName>CVGAMETEXT_HURRY_ALERT_MORE_THAN_ONCE</DefineName><!-- 1为允许多次提醒加速人口信息  0为默认模式， 暂时无作用，先用0  mediv01  -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>    
+    <Define>
+        <DefineName>CVGAMETEXT_HURRY_ALERT_INTERVAL</DefineName><!-- 1为允许多次提醒加速人口信息的间隔  0为默认模式，暂时无作用，先用0  mediv01  -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>        
+    
+    <Define>
+        <DefineName>GAME_TEXT_SHOW_RELIGION_MAP</DefineName><!-- 1为可以显示地块宗教值的数值  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+    
+    <Define>
+        <DefineName>GAME_TEXT_SHOW_FOREGIN_CORE</DefineName><!-- 1为可以显示外国核心的具体信息  0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
+    <Define>
+        <DefineName>GAME_TEXT_DISABLE_DYNAMIC_NAMES</DefineName><!-- 1为关闭动态国家名称  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>    	
+		
+			<Define>
+        <DefineName>CVGAMETEXT_SHOW_FLIP_ZONE_IN_MAP</DefineName><!-- 地块显示是否是翻转区，0为默认模式  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define> 
+	
+	
 	<Define>
-        <DefineName>CVCITY_PROB_REBELT_MULTIPLIER_WHEN_CULTURE_IN_LOW</DefineName><!-- -1 为取消叛乱机制 大于0的数字为城市在低文化时叛乱概率的倍数 1为默认模式 mediv01 -->
-        <iDefineIntVal>-1</iDefineIntVal>
-    </Define>
+        <DefineName>CVGAMETEXT_SHOW_MINOR_BIRTH_IN_MAP</DefineName><!-- 地块显示是否有独立城邦，0为默认模式  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define> 
+	
 	
 		<Define>
-        <DefineName>CVUNIT_GREAT_ENGINEER_ACCELERATE_UNLIMITED</DefineName><!-- 大于0的数字为大工程师加速建筑的锤子数可以溢出 0为默认模式 mediv01 -->
+        <DefineName>CVGAMETEXT_SHOW_COMPANY_IN_MAP</DefineName><!-- 地块显示是否有公司，0为默认模式  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define> 
+	
+	
+	<Define>
+        <DefineName>CVGAMETEXT_AIWAR_IN_MAP</DefineName><!-- 地块显示是否有AIWAR的内容，0为默认模式  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define> 
+	
+	<Define>
+        <DefineName>CVGAMETEXT_AIWAR_IN_MAP_SHOW_ANCIENT</DefineName><!-- 地块显示古代部分（1750前）的AIWAR，0为默认模式  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define> 
+	
+	
+	<Define>
+        <DefineName>CVGAMETEXT_AIWAR_IN_MAP_SHOW_EARLY_MODERN</DefineName><!-- 地块显示近代部分（1800-1910）的AIWAR，0为默认模式  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define> 
+	
+	
+		<Define>
+        <DefineName>CVGAMETEXT_AIWAR_IN_MAP_SHOW_LATE_MODERN</DefineName><!-- 地块显示近代部分（1911-2020）的AIWAR，0为默认模式  mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define> 
+		
+		
+		
+		
+		
+	    <Define>
+        <DefineName>CVGAMETEXT_SHOW_TRADE_GOLD_IN_MAP</DefineName><!-- 地图上显示大商业家贸易金额，0为默认模式  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>   	
+		
+    <Define>
+        <DefineName>CVTECH_SHOW_TECH_DISCOVERY1</DefineName><!-- 1为显示科技树科技是否首发 0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
-
+    
     <Define>
-        <DefineName>CVTEAMAI_WARTRADEVAL_MULTIPLIERTIMES10000</DefineName>	<!-- 大于0的数字为AI与人类进行战争交易时的乘数，数字需要除以10000  0和10000为默认模式， mediv01  -->
-        <iDefineIntVal>100</iDefineIntVal>
+        <DefineName>CVTECH_SHOW_TECH_DISCOVERY2</DefineName><!-- 1为显示科技树科技被哪些国家研究 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>    
+	
+	    <Define>
+        <DefineName>CVTECH_SHOW_TECH_DISCOVERY2_SHOW_DEAD</DefineName><!-- 1为显示科技树科技研究列表是否显示已经崩溃的国家 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>  
+    <Define>
+        <DefineName>CVTECH_SHOW_TECH_DISCOVERY2_MAX</DefineName><!-- 1为显示科技树科技被哪些国家研究列表的最大数量 999为默认模式 mediv01 -->
+        <iDefineIntVal>5</iDefineIntVal>
     </Define>
+    
+    <Define>
+        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3</DefineName><!-- 1为显示科技树科技尚未被哪些国家研究 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>    
+    <Define>
+        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3_MAX</DefineName><!-- 1为显示科技树科技尚未被哪些国家研究列表的最大数量 999为默认模式 mediv01 -->
+        <iDefineIntVal>5</iDefineIntVal>
+    </Define>
+    
+
+    
+    <Define>
+        <DefineName>CVTECH_SHOW_TECH_DISCOVERY_INFO</DefineName><!-- 1为显示伟人点科技的科技值 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>		
+
 
 	    <Define>
-        <DefineName>CVTEAMAI_CAN_ALWAYS_TRADE_WAR_WITH_HUMAN</DefineName><!-- 1为AI愿意与人类进行战争交易 0为默认模式 mediv01 -->
+        <DefineName>CVGAMETEXT_TRADE_SHOW_VALUE</DefineName><!-- 1为AI愿意交易科技 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  PYTHON !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->			
+
+    <Define>
+        <DefineName>AIWAR_PY_HUMAN_CAN_USE_RISE_AND_FALL</DefineName><!-- 1为人类可以使用AI殖民加成  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+    
+    <Define>
+        <DefineName>PYTHON_CONGRESS_CANNOT_ASK_HUMAN_CITY</DefineName><!-- 1为国际会议不能要求玩家的城市 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+    
+    <Define>
+        <DefineName>PYTHON_ONLY_RESPAWN_IN_CORE</DefineName><!-- 1为只在核心区复活 0为默认模式，在历史区复活 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+    
+    <Define>
+        <DefineName>PYTHON_CHECK_RESPAWN_TURN</DefineName><!-- 检查复活的回合间隔 10为默认模式，此选项为了减少卡顿 mediv01 -->
+        <iDefineIntVal>10</iDefineIntVal>
+    </Define>
+	
+	    <Define>
+        <DefineName>PYTHON_ARMY_NOT_FLIP</DefineName><!-- 1为翻转区内的军队不会叛变 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	    <Define>
+        <DefineName>PYTHON_UHV_HELPER</DefineName><!-- 1为启用某些帮助完成UHV的选项 0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 	
+	    <Define>
+        <DefineName>PYTHON_NO_UHV_AND_URV_CHECK</DefineName><!-- 1为禁用UHV和URV，0为默认模式，mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
     <Define>
-        <DefineName>CVCITY_FIX_GENERATE_GREAT_PEOPLE</DefineName><!-- 大于0的数字为产生固定类型的伟人  0为默认模式 mediv01 -->
+        <DefineName>PYTHON_NO_URV_CHECK</DefineName><!-- 1为禁用URV，0为默认模式，mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+	
+    <Define>
+        <DefineName>AIWAR_NO_MONGO_MEET_WAR</DefineName><!-- 1为取消蒙古见面刷兵的AIWAR  0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>    	
+	
+
+
+
+	
+	<Define>
+        <DefineName>PYTHON_VIC_CONNECTED_BY_ROAD_WITH_NEW_METHOD</DefineName><!-- 计算丝绸之路连接的新方式，只要途中不经过野蛮人的国家即可，0为默认模式  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define> 
+
+
+
+
+	
+	
+
+	
+	
+	<Define>
+        <DefineName>PYTHON_DYNAMIC_NAME_ONLY_CHINESE</DefineName><!-- 动态城市名有限使用中文名称，0为默认模式  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+
+
+
+
+
+
+
+
+    <Define>
+        <DefineName>STABILITY_PY_AI_STABILITY_BONUS</DefineName><!-- AI负面稳定度修正系数，最终AI的稳定度=稳定度/2，减小AI负面稳定度的惩罚  2为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    
+    
+    <Define>
+        <DefineName>STABILITY_PY_DIPO_STABILITY_MODIFIER</DefineName><!-- 外交稳定度修正系数，真实外交稳定度=外交稳定度/修正系数  1为默认模式 mediv01 -->
+        <iDefineIntVal>5</iDefineIntVal>
+    </Define>   
+	
+	
+	<Define>
+        <DefineName>STABILITY_PY_ERA_STABILITY_FOR_BIG_COUNTRY</DefineName><!-- 1为设立时代稳定度  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>    
+
+
+
+    
+    <Define>
+        <DefineName>STABILITY_PY_BONUS_FOR_SOCIALIST_COUNTRY</DefineName><!-- 1为不同难度下稳定度的红利  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>    
+    
+    <Define>
+        <DefineName>STABILITY_PY_NOT_CHECK_STABILITY</DefineName><!-- 1为不检查稳定度，稳定度恒为0，相当于取消了稳定度机制  0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+    
+
+    
+
+
+    
+<Define>
+        <DefineName>STABILITY_CORE_POPULATION_MULTIPLIER</DefineName><!-- 玩家控制的文明的核心人口扩张倍数，0为默认模式  mediv01 -->
         <iDefineIntVal>0</iDefineIntVal>
     </Define>	
 	
-	    <Define>
-        <DefineName>CVCITY_CAN_BUILD_OBSOLUTE_BUILDING</DefineName><!-- 1为城市可以建过时的建筑  0为默认模式 mediv01 -->
+	<Define>
+        <DefineName>STABILITY_PY_FOR_CHECK_STABILITY_FOR_AI</DefineName><!-- 强制每5回合检查AI的稳定度，0为默认模式  mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>	
 	
+	    
+        <Define>
+        <DefineName>STABILITY_PY_ONLY_COLLAPSE_TO_INDEPENDENT</DefineName><!-- 1为崩溃时仅允许崩溃给独立城邦,代码在stability.py   0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+    
+    
+    <Define>
+        <DefineName>STABILITY_PY_AI_COLLAPSE_TO_CORE_REGULARLY</DefineName><!-- 1为AI控制的大帝国会经历不稳定时期，崩溃至核心,代码在stability.py   0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+    
+    <Define>
+        <DefineName>PYTHON_ALLOW_DYNAMIC_CORE</DefineName><!-- 1为允许动态核心机制   0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>    
+    
+    <Define>
+        <DefineName>STABILITY_PY_COLONY_COLLAPSE</DefineName><!-- 1为按照历史时期设定殖民体系的崩溃   0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>    
+    
+    <Define>
+        <DefineName>STABILITY_PY_FOR_CHECK_STABILITY_FOR_HUMAN</DefineName><!-- 1为每5回合强制检测人类玩家的稳定度   0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+    
+    <Define>
+        <DefineName>STABILITY_PY_HANDICAP_BONUS</DefineName><!-- 1为不同难度下稳定度的红利  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    
+
+ 
+    <Define>
+        <DefineName>PYTHON_RISEANDFALL_NO_TRADE_COMPANY_WAR</DefineName><!-- 1为AI贸易公司不会要求玩家城市 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+    
+
+    <Define>
+        <DefineName>PY_RISE_ALL_CIV_CAN_BIRTH</DefineName><!-- 1为土耳其、拜占庭、意大利等文明不检查条件就可以诞生，在riseandfall.py里有对接的代码 0为默认模式，  mediv01  -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>    
+    <Define>
+        <DefineName>PYTHON_DIPO_NO_DECAY</DefineName><!-- 1为Communication.py里不自动切断外交关系 0为默认模式，  mediv01  -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>    
 	
 
 
 
+    <Define>
+        <DefineName>AIWAR_PY_HUMAN_CAN_USE_AI_WAR</DefineName><!-- 1为人类可以使用AIWAR  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+        <Define>
+        <DefineName>AIWAR_PY_DEAD_CIV_CANNOT_USE_AI_WAR</DefineName><!-- 1为死亡文明不能AIWAR刷兵  0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>    
+
+
+	
+       <Define>
+        <DefineName>AIWAR_PY_CAN_USE_AI_WAR_TO_DEAD_CIV</DefineName><!-- 1为可以对死亡文明刷兵  1为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>     
+
+     
+     <Define>
+        <DefineName>AIWAR_PY_CAN_USE_SUPER_AI_WAR</DefineName><!-- 1为可以使用新增的一战二战AIWAR  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>    
+    
+
+
+    
+
+
+	
+    <Define>
+        <DefineName>PYTHON_USE_ADVANCE_ALERT</DefineName><!-- 1为可以使用高级提示信息 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>	
+	<Define>
+        <DefineName>PYTHON_SHOW_MINOR_CITY_TEXT</DefineName><!-- 1为显示独立城邦建城的信息  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+   
+    <Define>
+        <DefineName>PYTHON_SHOW_BARBARIAN_TEXT</DefineName><!-- 1为显示野蛮人入侵的信息  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>   
+	
+	
+	
+    <Define>
+        <DefineName>AIWAR_PY_HUMAN_AI_WAR_ALERT</DefineName><!-- 1为AIWAR.py里的提前预警  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	   <Define>
+        <DefineName>PYTHON_ALWAYS_SHOW_WONDER_BEING_BUILD</DefineName><!-- 1为永远显示正在建筑的奇观 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+
+	
+	   <Define>
+        <DefineName>STABILITY_EGYPT_CAN_RESPAWN_FROM_ARABIA</DefineName><!-- 1为埃及可以从阿拉伯崩溃中复活 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	
+		   <Define>
+        <DefineName>STABILITY_RESURRECTION_TECH_PROB</DefineName><!-- 大于0的数字为复活文明有多大概率获得邻国的科技 0和50为默认模式 mediv01 -->
+        <iDefineIntVal>20</iDefineIntVal>
+    </Define>
+	
+
+	
+		<Define>
+        <DefineName>PYTHON_INFO_CITY_RANK_WITH_POPULATION</DefineName><!-- 1为信息界面的城市排名按照人口排 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+	
+	
+	<Define>
+        <DefineName>PYTHON_AUTO_SAVE_EVERY_TURN</DefineName><!-- 1为每回合都自动保存 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	<Define>
+        <DefineName>PYTHON_AUTO_SAVE_EVERY_TURN_DIR</DefineName><!-- 1为每回合都自动保存到SINGLE下 0为保存到AUTO下 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>	
+	
+		<Define>
+        <DefineName>PYTHON_AUTO_SAVE_WHEN_AUTO_PLAY</DefineName><!-- 1为自动过回合时也自动保存，此操作大部分情况下无意义，建议设置为0 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>	
+	
+	
+	
+	<Define>
+        <DefineName>PYTHON_SCREEN_VICTORY_TIPS</DefineName><!-- 1为显示高级信息提示系统 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+	<Define>
+        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_00</DefineName><!-- 1为显示游戏基本信息 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>	
+	
+	<Define>
+        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_01</DefineName><!-- 1为显示国际会议回合进度 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+		<Define>
+        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_02</DefineName><!-- 1为显示殖民地进度 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_03</DefineName><!-- 1为显示瘟疫进度 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	
+	<Define>
+        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_04</DefineName><!-- 1为显示科技排名 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	
+		<Define>
+        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_05</DefineName><!-- 1为显示军事实力排名 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		<!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  LOG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->		
 
 	<Define>
-        <DefineName>PYTHON_USE_LOG</DefineName><!-- 1为打开日志功能 默认输出位置：我的文档\My Games\Beyond the Sword\Saves\logs   0为默认模式 mediv01 -->
+        <DefineName>PYTHON_USE_LOG</DefineName><!-- 1为打开日志功能 0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
@@ -1474,10 +1731,6 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
-		<Define>
-        <DefineName>PYTHON_LOG_ON_AIACTION</DefineName><!-- 1为记录AI行为的日志 此选项开启后会PYTHON报错，建议设置为0  0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>	
 	
 	<Define>
         <DefineName>PYTHON_LOG_ON_CONGRESS</DefineName><!-- 1为记录国际会议的日志 0为默认模式 mediv01 -->
@@ -1535,8 +1788,6 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>	
 	
-
-	
 	
 		
 	<Define>
@@ -1579,472 +1830,6 @@
         <DefineName>PYTHON_LOG_MANUAL_DEBUG_SCORE</DefineName><!-- 1为在打开信息界面时自动输出每回合科技、军事排名信息，仅为调试时使用 0为默认模式 mediv01 -->
         <iDefineIntVal>0</iDefineIntVal>
     </Define>
-	
-		<Define>
-        <DefineName>PYTHON_LOG_ON_RANDOMEVENT</DefineName><!-- 1为记录随机事件和部落村庄 似乎会报错 建议不开启 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>	
-
-
-    <Define>
-        <DefineName>CVGAMECORE_LOG_AI_ACTION</DefineName>	<!-- 1为新增了DLL的LOG函数 0为默认模式， mediv01  -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-
-	<Define>
-		<DefineName>CVGAMECORE_LOG_PATH</DefineName>
-		<DefineTextVal>D:\\DoC_Log\\</DefineTextVal>
-	</Define>
-	
-	
-    <Define>
-        <DefineName>CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST</DefineName>	<!-- 1为使用日志检查AI过回合耗时情况  0为默认模式， mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-
-
-
-
-	
-		<!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  PYTHON !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->			
-
-
-    
-    <Define>
-        <DefineName>PYTHON_ONLY_RESPAWN_IN_CORE</DefineName><!-- 1为只在核心区复活 0为默认模式，在历史区复活 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    
-
-	
-
-	    <Define>
-        <DefineName>PYTHON_UHV_HELPER</DefineName><!-- 1为启用某些帮助完成UHV的选项 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	    <Define>
-        <DefineName>PYTHON_NO_UHV_AND_URV_CHECK</DefineName><!-- 1为禁用UHV和URV，0为默认模式，mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>PYTHON_NO_URV_CHECK</DefineName><!-- 1为禁用URV，0为默认模式，mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-	
-	<Define>
-        <DefineName>PYTHON_DYNAMIC_NAME_ONLY_CHINESE</DefineName><!-- 动态城市名有限使用中文名称，0为默认模式  mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-
-
-	
-    <Define>
-        <DefineName>PYTHON_USE_ADVANCE_ALERT</DefineName><!-- 1为可以使用高级提示信息 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>	
-	<Define>
-        <DefineName>PYTHON_SHOW_MINOR_CITY_TEXT</DefineName><!-- 1为显示独立城邦建城的信息  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-   
-    <Define>
-        <DefineName>PYTHON_SHOW_BARBARIAN_TEXT</DefineName><!-- 1为显示野蛮人入侵的信息  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>   
-	
-	
-	
-    <Define>
-        <DefineName>AIWAR_PY_HUMAN_AI_WAR_ALERT</DefineName><!-- 1为AIWAR.py里的提前预警  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	   <Define>
-        <DefineName>PYTHON_ALWAYS_SHOW_WONDER_BEING_BUILD</DefineName><!-- 1为永远显示正在建筑的奇观 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-
-	
-	   <Define>
-        <DefineName>STABILITY_EGYPT_CAN_RESPAWN_FROM_ARABIA</DefineName><!-- 1为埃及可以从阿拉伯崩溃中复活 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	
-
-
-	
-		<Define>
-        <DefineName>PYTHON_INFO_CITY_RANK_WITH_POPULATION</DefineName><!-- 1为信息界面的城市排名按照人口排 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-	
-	
-	<Define>
-        <DefineName>PYTHON_AUTO_SAVE_EVERYTURN</DefineName><!-- 1为每回合都自动保存 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-	<Define>
-        <DefineName>PYTHON_AUTO_SAVE_EVERY_TURN_DIR</DefineName><!-- 1为每回合都自动保存到SINGLE下 0为保存到AUTO下 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>	
-	
-		<Define>
-        <DefineName>PYTHON_AUTO_SAVE_WHEN_AUTO_PLAY</DefineName><!-- 1为自动过回合时也自动保存，此操作大部分情况下无意义，建议设置为0 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>	
-	
-	
-	
-	<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS</DefineName><!-- 1为显示高级信息提示系统 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-	<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_00</DefineName><!-- 1为显示游戏基本信息 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>	
-	
-	<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_01</DefineName><!-- 1为显示国际会议回合进度 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-		<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_02</DefineName><!-- 1为显示殖民地进度 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_03</DefineName><!-- 1为显示瘟疫进度 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	
-	<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_04</DefineName><!-- 大于0的数字为显示世界科技最先进的N个文明 0为默认模式 mediv01 -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>
-	
-	
-		<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_05</DefineName><!-- 大于0的数字为显示世界军力最强大的N个文明 0为默认模式 mediv01 -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>
-	
-	<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_06</DefineName><!-- 大于0的数字为显示世界最大N座城市的排名 0为默认模式 mediv01 -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>
-	
-		<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_07</DefineName><!-- 大于0的数字为显示世界文化昌盛N座城市的排名 0为默认模式 mediv01 -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>
-	
-		<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_08</DefineName><!-- 大于0的数字为显示世界工业产出最高N座城市的排名 0为默认模式 mediv01 -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>
-	
-		<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_09</DefineName><!-- 大于0的数字为显示世界商业产出最高N座城市的排名 0为默认模式 mediv01 -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>
-	
-		<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_10</DefineName><!-- 大于0的数字为显示世界粮食产出最高N座城市的排名 0为默认模式 mediv01 -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>
-	
-			<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_11</DefineName><!-- 大于0的数字为提示部落村庄的位置 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	
-				<Define>
-        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_12</DefineName><!-- 大于0的数字为提示每个国家稳定度、战争的免疫信息 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	    <Define>
-        <DefineName>PYTHON_DISABLE_DYNAMIC_NAMES</DefineName><!-- 1为在PYTHON中关闭动态国家名称  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>  
-	
-	
-	
-			   <Define>
-        <DefineName>STABILITY_RESURRECTION_TECH_PROB</DefineName><!-- 大于0的数字为复活文明有多大概率获得邻国的科技 0和50为默认模式 mediv01 -->
-        <iDefineIntVal>30</iDefineIntVal>
-    </Define>
-	
-	
-	<Define>
-        <DefineName>STABILITY_RESURRECTION_TECH_WITH_WORLD_IMPORTANT_CIV</DefineName><!-- 大于0的数字为采用复活科技的新算法，在周边国家小于等于N个时，增加世界主要文明作为复活科技的参考 0为默认模式 mediv01 -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>
-	
-	
-		    <Define>
-        <DefineName>PYTHON_DISABLE_HARAPPA_DESTROY_CITY</DefineName><!-- 1为关闭哈拉帕崩溃时自动毁灭城市 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>  
-	
-	
-			    <Define>
-        <DefineName>PYTHON_DISABLE_AIWAR_TO_INCA_WHEN_HUMAN_PLAY</DefineName><!-- 1为当人类玩家玩印加和阿兹特克时，关闭对新大陆刷兵的AIWAR 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-
-	<Define>
-        <DefineName>PYTHON_UHV_FRANCE_SHOW_OTHER_COUNTRY</DefineName><!-- 大于0的数字表示在UHV界面显示其他国家占领欧洲领土的面积 0为默认模式 mediv01 -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>
-
-	<Define>
-        <DefineName>PLAGUE_DONNOT_INFECT_HUMAN</DefineName><!-- 1为瘟疫不会感染人类的城市 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-	<Define>
-        <DefineName>PYTHON_UHV_FRANCE_CONTROL_TILES_IN_COUNTRY</DefineName><!-- 1为法国UHV2只计入有城市的格子 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-
-  
-
-    
-    
-
-    
-
-    
-
-
-    
-
-
-    
-
- 
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!平衡性选项  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-    <Define>
-        <DefineName>PYTHON_CHECK_RESPAWN_TURN</DefineName><!-- 检查复活的回合间隔 10为默认模式，此选项为了减少卡顿 mediv01 -->
-        <iDefineIntVal>100</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>STABILITY_PY_DIPO_STABILITY_MODIFIER</DefineName><!-- 外交稳定度修正系数，真实外交稳定度=外交稳定度/修正系数  1为默认模式 mediv01 -->
-        <iDefineIntVal>5</iDefineIntVal>
-    </Define>   
-	
-	
-	<Define>
-        <DefineName>STABILITY_PY_ERA_STABILITY_FOR_BIG_COUNTRY</DefineName><!-- 1为设立时代稳定度  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>    
-
-
-
-    
-    <Define>
-        <DefineName>STABILITY_PY_BONUS_FOR_SOCIALIST_COUNTRY</DefineName><!-- 1为不同难度下稳定度的红利  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>    
-    
-    <Define>
-        <DefineName>STABILITY_PY_NOT_CHECK_STABILITY</DefineName><!-- 1为不检查稳定度，稳定度恒为0，相当于取消了稳定度机制  0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-	
-	
-<Define>
-        <DefineName>STABILITY_CORE_POPULATION_MULTIPLIER</DefineName><!-- 玩家控制的文明的核心人口扩张倍数，0为默认模式  mediv01 -->
-        <iDefineIntVal>20</iDefineIntVal>
-    </Define>	
-	
-	<Define>
-        <DefineName>STABILITY_PY_FOR_CHECK_STABILITY_FOR_AI</DefineName><!-- 强制每5回合检查AI的稳定度，0为默认模式  mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>	
-	
-	    
-        <Define>
-        <DefineName>STABILITY_PY_ONLY_COLLAPSE_TO_INDEPENDENT</DefineName><!-- 1为崩溃时仅允许崩溃给独立城邦,代码在stability.py   0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    
-    
-    <Define>
-        <DefineName>STABILITY_PY_AI_COLLAPSE_TO_CORE_REGULARLY</DefineName><!-- 1为AI控制的大帝国会经历不稳定时期，崩溃至核心,代码在stability.py   0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	  <Define>
-        <DefineName>STABILITY_PY_AI_STABILITY_BONUS</DefineName><!-- AI负面稳定度修正系数，最终AI的稳定度=稳定度/2，减小AI负面稳定度的惩罚  2为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	
-    
-    <Define>
-        <DefineName>PYTHON_ALLOW_DYNAMIC_CORE</DefineName><!-- 1为允许动态核心机制   0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>    
-    
-    <Define>
-        <DefineName>STABILITY_PY_COLONY_COLLAPSE</DefineName><!-- 1为按照历史时期设定殖民体系的崩溃   0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>    
-    
-    <Define>
-        <DefineName>STABILITY_PY_FOR_CHECK_STABILITY_FOR_HUMAN</DefineName><!-- 1为每5回合强制检测人类玩家的稳定度   0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-    
-    <Define>
-        <DefineName>STABILITY_PY_HANDICAP_BONUS</DefineName><!-- 1为不同难度下稳定度的红利  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	
-    <Define>
-        <DefineName>AIWAR_PY_HUMAN_CAN_USE_AI_WAR</DefineName><!-- 1为人类可以使用AIWAR  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-        <Define>
-        <DefineName>AIWAR_PY_DEAD_CIV_CANNOT_USE_AI_WAR</DefineName><!-- 1为死亡文明不能AIWAR刷兵  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>    
-
-
-	
-       <Define>
-        <DefineName>AIWAR_PY_CAN_USE_AI_WAR_TO_DEAD_CIV</DefineName><!-- 1为可以对死亡文明刷兵  1为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>     
-
-     
-     <Define>
-        <DefineName>AIWAR_PY_CAN_USE_SUPER_AI_WAR</DefineName><!-- 1为可以使用新增的一战二战AIWAR  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>    
-    
-	    <Define>
-        <DefineName>AIWAR_NO_MONGO_MEET_WAR</DefineName><!-- 1为取消蒙古见面刷兵的AIWAR  0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>    	
-	
-
-    <Define>
-        <DefineName>PY_RISE_ALL_CIV_CAN_BIRTH</DefineName><!-- 1为土耳其、拜占庭、意大利等文明不检查条件就可以诞生，在riseandfall.py里有对接的代码 0为默认模式，  mediv01  -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>    
-    <Define>
-        <DefineName>PYTHON_DIPO_NO_DECAY</DefineName><!-- 1为Communication.py里不自动切断外交关系 0为默认模式，  mediv01  -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>    
-    
-	    <Define>
-        <DefineName>PYTHON_RISEANDFALL_NO_TRADE_COMPANY_WAR</DefineName><!-- 1为AI贸易公司不会要求玩家城市 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    
-	
-		    <Define>
-        <DefineName>PYTHON_ARMY_NOT_FLIP</DefineName><!-- 1为翻转区内的军队不会叛变 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	
-	    <Define>
-        <DefineName>AIWAR_PY_HUMAN_CAN_USE_RISE_AND_FALL</DefineName><!-- 1为人类可以使用AI殖民加成  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    
-    <Define>
-        <DefineName>PYTHON_CONGRESS_CANNOT_ASK_HUMAN_CITY</DefineName><!-- 1为国际会议不能要求玩家的城市 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-		<Define>
-        <DefineName>PYTHON_VIC_CONNECTED_BY_ROAD_WITH_NEW_METHOD</DefineName><!-- 计算丝绸之路连接的新方式，只要途中不经过野蛮人的国家即可，0为默认模式  mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define> 
-	
-	    <Define>
-        <DefineName>CVCITY_INCREASE_RELIGION_CHANCE</DefineName><!-- 100为城市传播宗教概率为100% 0为默认模式百分之一概率， mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>  
-	
-	<Define>
-        <DefineName>CVCITY_INCREASE_RELIGION_CHANCE_ONLY_FOR_STATERELIGION</DefineName><!-- 大于0的参数为传播参数仅仅对人类文明的国教有效，对其他宗教无效 需要CVCITY_INCREASE_RELIGION_CHANCE参数为0才起作用  0为默认模式， mediv01  -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>  
-	
-    <Define>
-        <DefineName>STABILITY_RESURRECTION_NOT_FLIP_HUMAN_CITY</DefineName><!-- 1为复活时不翻转人类控制的城市 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>	
-	
-    <Define>
-        <DefineName>STABILITY_RESURRECTION_ARMY_SIZE</DefineName><!-- 大于0的数字为复活军队的数量 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>		
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-	
-	
 </Civ4Defines>
 <!-- TODO  
 工人加入城市 在XML中实现，在DLL控制开关
@@ -2063,16 +1848,10 @@
 
 
 
-if(GC.getDefineINT("XXX") == 1)
+if(GC.getDefineINT("XXX") == 1): 
 DLL
 
 
 if(gc.getDefineINT("XXX") == 1):
  PYTHON
   mediv01  -->
-  
- 
-  
-  
-  
-  

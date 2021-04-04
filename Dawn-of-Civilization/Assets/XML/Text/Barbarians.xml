@@ -19,16 +19,16 @@
 		<L1/><L2/><L3/><L4/><Chinese>柏柏尔</Chinese><French>Berber</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_BULGAR</Tag>
-		<English>保加利亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>保加利亚</Chinese><French>Bulgar</French></TEXT>
+		<English>保加尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>保加尔</Chinese><French>Bulgar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_CUMAN</Tag>
 		<English>库曼</English>
 		<L1/><L2/><L3/><L4/><Chinese>库曼</Chinese><French>Cuman</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_ELAMITE</Tag>
-		<English>伊兰特</English>
-		<L1/><L2/><L3/><L4/><Chinese>伊兰特</Chinese><French>Elamite</French></TEXT>
+		<English>埃兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃兰</Chinese><French>Elamite</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_GAUL</Tag>
 		<English>高卢</English>
@@ -39,12 +39,12 @@
 		<L1/><L2/><L3/><L4/><Chinese>日耳曼</Chinese><French>Germanic</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_GHANAIAN</Tag>
-		<English>加纳人</English>
-		<L1/><L2/><L3/><L4/><Chinese>加纳人</Chinese><French>Ghanaian</French></TEXT>
+		<English>加纳</English>
+		<L1/><L2/><L3/><L4/><Chinese>加纳</Chinese><French>Ghanaian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_GOKTURK</Tag>
-		<English>西突厥</English>
-		<L1/><L2/><L3/><L4/><Chinese>西突厥</Chinese><French>G&#246;ktürk</French></TEXT>
+		<English>蓝突厥（阿史那突厥）</English>
+		<L1/><L2/><L3/><L4/><Chinese>蓝突厥（阿史那突厥）</Chinese><French>G&#246;ktürk</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_HEPHTHALITE</Tag>
 		<English>嚈哒</English>
@@ -55,12 +55,12 @@
 		<L1/><L2/><L3/><L4/><Chinese>赫梯</Chinese><French>Hittite</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_HUNNIC</Tag>
-		<English>匈人</English>
-		<L1/><L2/><L3/><L4/><Chinese>匈人</Chinese><French>Hunnic</French></TEXT>
+		<English>匈</English>
+		<L1/><L2/><L3/><L4/><Chinese>匈</Chinese><French>Hunnic</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_INDO_SCYTHIAN</Tag>
-		<English>印度-西徐亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>印度-西徐亚</Chinese><French>Indo-Scythian</French></TEXT>
+		<English>塞种</English>
+		<L1/><L2/><L3/><L4/><Chinese>塞种</Chinese><French>Indo-Scythian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_JURCHEN</Tag>
 		<English>女真</English>
@@ -79,12 +79,12 @@
 		<L1/><L2/><L3/><L4/><Chinese>贵霜</Chinese><French>Kushan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_NOGAI</Tag>
-		<English>野井</English>
-		<L1/><L2/><L3/><L4/><Chinese>野井</Chinese><French>Nogai</French></TEXT>
+		<English>诺盖</English>
+		<L1/><L2/><L3/><L4/><Chinese>诺盖</Chinese><French>Nogai</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_NORSE</Tag>
-		<English>挪威</English>
-		<L1/><L2/><L3/><L4/><Chinese>挪威</Chinese><French>Norse</French></TEXT>
+		<English>诺斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>诺斯</Chinese><French>Norse</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_NUBIAN</Tag>
 		<English>努比亚</English>
@@ -95,12 +95,12 @@
 		<L1/><L2/><L3/><L4/><Chinese>帕提亚</Chinese><French>Parthian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_SCYTHIAN</Tag>
-		<English>西徐亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>西徐亚</Chinese><French>Scythian</French></TEXT>
+		<English>斯泰基</English>
+		<L1/><L2/><L3/><L4/><Chinese>斯泰基</Chinese><French>Scythian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_SIBIR</Tag>
-		<English>锡比尔</English>
-		<L1/><L2/><L3/><L4/><Chinese>锡比尔</Chinese><French>Sibir</French></TEXT>
+		<English>西伯利亚（失必儿）</English>
+		<L1/><L2/><L3/><L4/><Chinese>西伯利亚（失必儿）</Chinese><French>Sibir</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADJECTIVE_SONGHAI</Tag>
 		<English>桑海</English>
@@ -135,409 +135,406 @@
 		<L1/><L2/><L3/><L4/><Chinese>匈奴</Chinese><French>Xiongnu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERC_CELT_ADJECTIVE</Tag>
-		<English>
-			<Text>Celtic</Text>
+		<English>凯尔特<Text>Celtic</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</English>
-		<L1/><L2/><L3/><L4/><French>
+		<L1/><L2/><L3/><L4/><Chinese>凯尔特</Chinese><French>
 			</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERC_KOREA_ADJECTIVE</Tag>
-		<English>
-			<Text>Korean</Text>
+		<English>高丽<Text>Korean</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</English>
-		<L1/><L2/><L3/><L4/><French>
+		<L1/><L2/><L3/><L4/><Chinese>高丽</Chinese><French>
 			</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERC_ZULU_ADJECTIVE</Tag>
-		<English>
-			<Text>Zulu</Text>
+		<English>祖鲁<Text>Zulu</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</English>
-		<L1/><L2/><L3/><L4/><French>
+		<L1/><L2/><L3/><L4/><Chinese>祖鲁</Chinese><French>
 			</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_AINU</Tag>
-		<English>阿伊努</English>
-		<L1/><L2/><L3/><L4/><Chinese>阿伊努</Chinese><French>Ainu</French></TEXT>
+		<English>阿伊努人</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿伊努人</Chinese><French>Ainu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_APACHE</Tag>
-		<English>阿帕切</English>
-		<L1/><L2/><L3/><L4/><Chinese>阿帕切</Chinese><French>Apache</French></TEXT>
+		<English>阿帕奇人</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿帕奇人</Chinese><French>Apache</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ARABIAN</Tag>
-		<English>阿拉伯</English>
-		<L1/><L2/><L3/><L4/><Chinese>阿拉伯</Chinese><French>Arabian</French></TEXT>
+		<English>阿拉伯人</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯人</Chinese><French>Arabian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ARYAN</Tag>
-		<English>雅利安</English>
-		<L1/><L2/><L3/><L4/><Chinese>雅利安</Chinese><French>Aryan</French></TEXT>
+		<English>雅利安人</English>
+		<L1/><L2/><L3/><L4/><Chinese>雅利安人</Chinese><French>Aryan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ASHANTI</Tag>
-		<English>阿善堤</English>
-		<L1/><L2/><L3/><L4/><Chinese>阿善堤</Chinese><French>Ashanti</French></TEXT>
+		<English>阿散蒂人</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿散蒂人</Chinese><French>Ashanti</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ASSYRIAN</Tag>
-		<English>亚述</English>
-		<L1/><L2/><L3/><L4/><Chinese>亚述</Chinese><French>Assyrian</French></TEXT>
+		<English>亚述人</English>
+		<L1/><L2/><L3/><L4/><Chinese>亚述人</Chinese><French>Assyrian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BACTRIAN</Tag>
-		<English>大夏</English>
-		<L1/><L2/><L3/><L4/><Chinese>大夏</Chinese><French>Bactrian</French></TEXT>
+		<English>吐火罗人</English>
+		<L1/><L2/><L3/><L4/><Chinese>吐火罗人</Chinese><French>Bactrian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BANTU</Tag>
-		<English>班图</English>
-		<L1/><L2/><L3/><L4/><Chinese>班图</Chinese><French>Bantu</French></TEXT>
+		<English>班图人</English>
+		<L1/><L2/><L3/><L4/><Chinese>班图人</Chinese><French>Bantu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BENGAL</Tag>
-		<English>孟加拉</English>
-		<L1/><L2/><L3/><L4/><Chinese>孟加拉</Chinese><French>Bengal</French></TEXT>
+		<English>孟加拉人</English>
+		<L1/><L2/><L3/><L4/><Chinese>孟加拉人</Chinese><French>Bengal</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BERBER</Tag>
-		<English>柏柏尔</English>
-		<L1/><L2/><L3/><L4/><Chinese>柏柏尔</Chinese><French>Berber</French></TEXT>
+		<English>柏柏尔人</English>
+		<L1/><L2/><L3/><L4/><Chinese>柏柏尔人</Chinese><French>Berber</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BOHEMIAN</Tag>
-		<English>波西米亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>波西米亚</Chinese><French>Bohemian</French></TEXT>
+		<English>波西米亚人</English>
+		<L1/><L2/><L3/><L4/><Chinese>波西米亚人</Chinese><French>Bohemian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BRITON</Tag>
-		<English>不列颠</English>
-		<L1/><L2/><L3/><L4/><Chinese>不列颠</Chinese><French>Briton</French></TEXT>
+		<English>不列颠凯尔特人</English>
+		<L1/><L2/><L3/><L4/><Chinese>不列颠凯尔特人</Chinese><French>Briton</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BULGAR</Tag>
-		<English>保加利亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>保加利亚</Chinese><French>Bulgar</French></TEXT>
+		<English>保加尔人</English>
+		<L1/><L2/><L3/><L4/><Chinese>保加尔人</Chinese><French>Bulgar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BURGUNDIAN</Tag>
-		<English>勃艮第</English>
-		<L1/><L2/><L3/><L4/><Chinese>勃艮第</Chinese><French>Burgundian</French></TEXT>
+		<English>勃艮第人</English>
+		<L1/><L2/><L3/><L4/><Chinese>勃艮第人</Chinese><French>Burgundian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_BURMESE</Tag>
-		<English>缅甸</English>
-		<L1/><L2/><L3/><L4/><Chinese>缅甸</Chinese><French>Burmese</French></TEXT>
+		<English>缅甸人</English>
+		<L1/><L2/><L3/><L4/><Chinese>缅甸人</Chinese><French>Burmese</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_CATALAN</Tag>
-		<English>加泰隆</English>
-		<L1/><L2/><L3/><L4/><Chinese>加泰隆</Chinese><French>Catalan</French></TEXT>
+		<English>加泰罗尼亚人</English>
+		<L1/><L2/><L3/><L4/><Chinese>加泰罗尼亚人</Chinese><French>Catalan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_CELTIC</Tag>
-		<English>凯尔特</English>
-		<L1/><L2/><L3/><L4/><Chinese>凯尔特</Chinese><French>Celtic</French></TEXT>
+		<English>凯尔特人</English>
+		<L1/><L2/><L3/><L4/><Chinese>凯尔特人</Chinese><French>Celtic</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_CHAN_CHAN</Tag>
-		<English>莫希</English>
-		<L1/><L2/><L3/><L4/><Chinese>莫希</Chinese><French>Moche</French></TEXT>
+		<English>莫切人</English>
+		<L1/><L2/><L3/><L4/><Chinese>莫切人</Chinese><French>Moche</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_CHEYENNE</Tag>
-		<English>夏延</English>
-		<L1/><L2/><L3/><L4/><Chinese>夏延</Chinese><French>Cheyenne</French></TEXT>
+		<English>夏延人</English>
+		<L1/><L2/><L3/><L4/><Chinese>夏延人</Chinese><French>Cheyenne</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_CIRCASSIAN</Tag>
-		<English>切尔克斯</English>
-		<L1/><L2/><L3/><L4/><Chinese>切尔克斯</Chinese><French>Circassian</French></TEXT>
+		<English>彻尔克斯人</English>
+		<L1/><L2/><L3/><L4/><Chinese>彻尔克斯人</Chinese><French>Circassian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_DACIAN</Tag>
-		<English>达契亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>达契亚</Chinese><French>Dacian</French></TEXT>
+		<English>达契亚人</English>
+		<L1/><L2/><L3/><L4/><Chinese>达契亚人</Chinese><French>Dacian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_DRAVIDIAN</Tag>
-		<English>达罗毗荼</English>
-		<L1/><L2/><L3/><L4/><Chinese>达罗毗荼</Chinese><French>Dravidian</French></TEXT>
+		<English>达罗毗荼人</English>
+		<L1/><L2/><L3/><L4/><Chinese>达罗毗荼人</Chinese><French>Dravidian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ELAMITE</Tag>
-		<English>埃兰</English>
-		<L1/><L2/><L3/><L4/><Chinese>埃兰</Chinese><French>Elamite</French></TEXT>
+		<English>埃兰人</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃兰人</Chinese><French>Elamite</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ETRUSCAN</Tag>
-		<English>伊特鲁里亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>伊特鲁里亚</Chinese><French>Etruscan</French></TEXT>
+		<English>伊特鲁里亚人</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊特鲁里亚人</Chinese><French>Etruscan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_GAULISH</Tag>
-		<English>高卢</English>
-		<L1/><L2/><L3/><L4/><Chinese>高卢</Chinese><French>Gaulish</French></TEXT>
+		<English>高卢人</English>
+		<L1/><L2/><L3/><L4/><Chinese>高卢人</Chinese><French>Gaulish</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_GOTHIC</Tag>
-		<English>哥特</English>
-		<L1/><L2/><L3/><L4/><Chinese>哥特</Chinese><French>Gothic</French></TEXT>
+		<English>哥特人</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥特人</Chinese><French>Gothic</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_GUARANI</Tag>
-		<English>瓜拉尼</English>
-		<L1/><L2/><L3/><L4/><Chinese>瓜拉尼</Chinese><French>Guarani</French></TEXT>
+		<English>瓜拉尼人</English>
+		<L1/><L2/><L3/><L4/><Chinese>瓜拉尼人</Chinese><French>Guarani</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_HAN</Tag>
-		<English>汉族</English>
-		<L1/><L2/><L3/><L4/><Chinese>汉族</Chinese><French>Han</French></TEXT>
+		<English>汉人</English>
+		<L1/><L2/><L3/><L4/><Chinese>汉人</Chinese><French>Han</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_HARAPPAN</Tag>
-		<English>哈拉帕</English>
-		<L1/><L2/><L3/><L4/><Chinese>哈拉帕</Chinese><French>Harappan</French></TEXT>
+		<English>哈拉帕人</English>
+		<L1/><L2/><L3/><L4/><Chinese>哈拉帕人</Chinese><French>Harappan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_HITTITE</Tag>
-		<English>赫梯</English>
-		<L1/><L2/><L3/><L4/><Chinese>赫梯</Chinese><French>Hittite</French></TEXT>
+		<English>赫梯人</English>
+		<L1/><L2/><L3/><L4/><Chinese>赫梯人</Chinese><French>Hittite</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_HUNGARIAN</Tag>
-		<English>匈牙利</English>
-		<L1/><L2/><L3/><L4/><Chinese>匈牙利</Chinese><French>Hungarian</French></TEXT>
+		<English>马扎尔人</English>
+		<L1/><L2/><L3/><L4/><Chinese>马扎尔人</Chinese><French>Hungarian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_HURRIAN</Tag>
-		<English>胡里特</English>
-		<L1/><L2/><L3/><L4/><Chinese>胡里特</Chinese><French>Hurrian</French></TEXT>
+		<English>胡里特人</English>
+		<L1/><L2/><L3/><L4/><Chinese>胡里特人</Chinese><French>Hurrian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_HYKSOS</Tag>
-		<English>希克索斯</English>
-		<L1/><L2/><L3/><L4/><Chinese>希克索斯</Chinese><French>Hyksos</French></TEXT>
+		<English>希克索斯人</English>
+		<L1/><L2/><L3/><L4/><Chinese>希克索斯人</Chinese><French>Hyksos</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_IBERIAN</Tag>
-		<English>伊比利亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>伊比利亚</Chinese><French>Iberian</French></TEXT>
+		<English>伊比利亚人</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊比利亚人</Chinese><French>Iberian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ILLYRIAN</Tag>
-		<English>伊利里亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>伊利里亚</Chinese><French>Illyrian</French></TEXT>
+		<English>伊利里亚人</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊利里亚人</Chinese><French>Illyrian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_IRANIAN</Tag>
-		<English>伊朗</English>
-		<L1/><L2/><L3/><L4/><Chinese>伊朗</Chinese><French>Iranian</French></TEXT>
+		<English>伊朗人</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊朗人</Chinese><French>Iranian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_IRAQI</Tag>
-		<English>伊拉克</English>
-		<L1/><L2/><L3/><L4/><Chinese>伊拉克</Chinese><French>Iraqi</French></TEXT>
+		<English>伊拉克人</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊拉克人</Chinese><French>Iraqi</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_IRISH</Tag>
-		<English>爱尔兰</English>
-		<L1/><L2/><L3/><L4/><Chinese>爱尔兰</Chinese><French>Irish</French></TEXT>
+		<English>爱尔兰人</English>
+		<L1/><L2/><L3/><L4/><Chinese>爱尔兰人</Chinese><French>Irish</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_IROQUOIS</Tag>
-		<English>易洛魁</English>
-		<L1/><L2/><L3/><L4/><Chinese>易洛魁</Chinese><French>Iroquois</French></TEXT>
+		<English>易洛魁人</English>
+		<L1/><L2/><L3/><L4/><Chinese>易洛魁人</Chinese><French>Iroquois</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_JAVANESE</Tag>
-		<English>爪哇</English>
-		<L1/><L2/><L3/><L4/><Chinese>爪哇</Chinese><French>Javanese</French></TEXT>
+		<English>爪哇人</English>
+		<L1/><L2/><L3/><L4/><Chinese>爪哇人</Chinese><French>Javanese</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_JUDEAN</Tag>
-		<English>犹太</English>
-		<L1/><L2/><L3/><L4/><Chinese>犹太</Chinese><French>Judean</French></TEXT>
+		<English>犹太人</English>
+		<L1/><L2/><L3/><L4/><Chinese>犹太人</Chinese><French>Judean</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KASSITE</Tag>
-		<English>加喜特</English>
-		<L1/><L2/><L3/><L4/><Chinese>加喜特</Chinese><French>Kassite</French></TEXT>
+		<English>喀西特人 </English>
+		<L1/><L2/><L3/><L4/><Chinese>喀西特人 </Chinese><French>Kassite</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KHAZAR</Tag>
-		<English>哈札尔</English>
-		<L1/><L2/><L3/><L4/><Chinese>哈札尔</Chinese><French>Khazar</French></TEXT>
+		<English>可萨人</English>
+		<L1/><L2/><L3/><L4/><Chinese>可萨人</Chinese><French>Khazar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KHMER</Tag>
-		<English>高棉</English>
-		<L1/><L2/><L3/><L4/><Chinese>高棉</Chinese><French>Khmer</French></TEXT>
+		<English>高棉人</English>
+		<L1/><L2/><L3/><L4/><Chinese>高棉人</Chinese><French>Khmer</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KHWAREZMID</Tag>
-		<English>花剌子模</English>
-		<L1/><L2/><L3/><L4/><Chinese>花剌子模</Chinese><French>Khwarezmid</French></TEXT>
+		<English>花剌子模人</English>
+		<L1/><L2/><L3/><L4/><Chinese>花剌子模人</Chinese><French>Khwarezmid</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KIMMERIAN</Tag>
-		<English>辛梅里安</English>
-		<L1/><L2/><L3/><L4/><Chinese>辛梅里安</Chinese><French>Kimmerian</French></TEXT>
+		<English>基梅里人</English>
+		<L1/><L2/><L3/><L4/><Chinese>基梅里人</Chinese><French>Kimmerian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KURDISH</Tag>
-		<English>库尔德</English>
-		<L1/><L2/><L3/><L4/><Chinese>库尔德</Chinese><French>Kurdish</French></TEXT>
+		<English>库尔德人</English>
+		<L1/><L2/><L3/><L4/><Chinese>库尔德人</Chinese><French>Kurdish</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_KUSHAN</Tag>
-		<English>贵霜</English>
-		<L1/><L2/><L3/><L4/><Chinese>贵霜</Chinese><French>Kushan</French></TEXT>
+		<English>贵霜人</English>
+		<L1/><L2/><L3/><L4/><Chinese>贵霜人</Chinese><French>Kushan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_LOMBARD</Tag>
-		<English>伦巴第</English>
-		<L1/><L2/><L3/><L4/><Chinese>伦巴第</Chinese><French>Lombard</French></TEXT>
+		<English>伦巴第人</English>
+		<L1/><L2/><L3/><L4/><Chinese>伦巴第人</Chinese><French>Lombard</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_LYDIAN</Tag>
-		<English>吕底亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>吕底亚</Chinese><French>Lydian</French></TEXT>
+		<English>吕底亚人</English>
+		<L1/><L2/><L3/><L4/><Chinese>吕底亚人</Chinese><French>Lydian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_MALAY</Tag>
-		<English>马来</English>
-		<L1/><L2/><L3/><L4/><Chinese>马来</Chinese><French>Malay</French></TEXT>
+		<English>马来人</English>
+		<L1/><L2/><L3/><L4/><Chinese>马来人</Chinese><French>Malay</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_MANCHU</Tag>
-		<English>满洲</English>
-		<L1/><L2/><L3/><L4/><Chinese>满洲</Chinese><French>Manchu</French></TEXT>
+		<English>满人</English>
+		<L1/><L2/><L3/><L4/><Chinese>满人</Chinese><French>Manchu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_MINOAN</Tag>
-		<English>克里特</English>
-		<L1/><L2/><L3/><L4/><Chinese>克里特</Chinese><French>Minoan</French></TEXT>
+		<English>米诺斯人</English>
+		<L1/><L2/><L3/><L4/><Chinese>米诺斯人</Chinese><French>Minoan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_MOORISH</Tag>
-		<English>摩尔</English>
-		<L1/><L2/><L3/><L4/><Chinese>摩尔</Chinese><French>Moorish</French></TEXT>
+		<English>摩尔人</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔人</Chinese><French>Moorish</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_NABATEAN</Tag>
-		<English>纳巴泰</English>
-		<L1/><L2/><L3/><L4/><Chinese>纳巴泰</Chinese><French>Nabatean</French></TEXT>
+		<English>纳巴泰人</English>
+		<L1/><L2/><L3/><L4/><Chinese>纳巴泰人</Chinese><French>Nabatean</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_NAZCAN</Tag>
-		<English>纳斯卡</English>
-		<L1/><L2/><L3/><L4/><Chinese>纳斯卡</Chinese><French>Nazcan</French></TEXT>
+		<English>纳斯卡人</English>
+		<L1/><L2/><L3/><L4/><Chinese>纳斯卡人</Chinese><French>Nazcan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_NORMAN</Tag>
-		<English>诺曼</English>
-		<L1/><L2/><L3/><L4/><Chinese>诺曼</Chinese><French>Norman</French></TEXT>
+		<English>诺斯人</English>
+		<L1/><L2/><L3/><L4/><Chinese>诺斯人</Chinese><French>Norman</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_NUBIAN</Tag>
-		<English>努比亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>努比亚</Chinese><French>Nubian</French></TEXT>
+		<English>努比亚人</English>
+		<L1/><L2/><L3/><L4/><Chinese>努比亚人</Chinese><French>Nubian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_NUMIDIAN</Tag>
-		<English>努米底亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>努米底亚</Chinese><French>Numidian</French></TEXT>
+		<English>努米底亚人</English>
+		<L1/><L2/><L3/><L4/><Chinese>努米底亚人</Chinese><French>Numidian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_OCCITAN</Tag>
-		<English>欧西坦尼亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>欧西坦尼亚</Chinese><French>Occitan</French></TEXT>
+		<English>欧西坦人</English>
+		<L1/><L2/><L3/><L4/><Chinese>欧西坦人</Chinese><French>Occitan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_OLMEC</Tag>
 		<English>奥尔梅克</English>
 		<L1/><L2/><L3/><L4/><Chinese>奥尔梅克</Chinese><French>Olmec</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_OMANI</Tag>
-		<English>阿曼</English>
-		<L1/><L2/><L3/><L4/><Chinese>阿曼</Chinese><French>Omani</French></TEXT>
+		<English>阿曼人</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿曼人</Chinese><French>Omani</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_PARTHIAN</Tag>
-		<English>帕提亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>帕提亚</Chinese><French>Parthian</French></TEXT>
+		<English>帕提亚人</English>
+		<L1/><L2/><L3/><L4/><Chinese>帕提亚人</Chinese><French>Parthian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_PASHTUN</Tag>
-		<English>普什图</English>
-		<L1/><L2/><L3/><L4/><Chinese>普什图</Chinese><French>Pashtun</French></TEXT>
+		<English>普什图人</English>
+		<L1/><L2/><L3/><L4/><Chinese>普什图人</Chinese><French>Pashtun</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_PHILISTINE</Tag>
-		<English>非利士</English>
-		<L1/><L2/><L3/><L4/><Chinese>非利士</Chinese><French>Philistine</French></TEXT>
+		<English>非利士人</English>
+		<L1/><L2/><L3/><L4/><Chinese>非利士人</Chinese><French>Philistine</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_POLISH</Tag>
-		<English>波兰</English>
-		<L1/><L2/><L3/><L4/><Chinese>波兰</Chinese><French>Polish</French></TEXT>
+		<English>波兰人</English>
+		<L1/><L2/><L3/><L4/><Chinese>波兰人</Chinese><French>Polish</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_POLYNESIAN</Tag>
-		<English>波利尼西亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>波利尼西亚</Chinese><French>Polynesian</French></TEXT>
+		<English>波利尼西亚人</English>
+		<L1/><L2/><L3/><L4/><Chinese>波利尼西亚人</Chinese><French>Polynesian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_RAJPUT</Tag>
-		<English>拉其普特</English>
-		<L1/><L2/><L3/><L4/><Chinese>拉其普特</Chinese><French>Rajput</French></TEXT>
+		<English>拉杰普特人</English>
+		<L1/><L2/><L3/><L4/><Chinese>拉杰普特人</Chinese><French>Rajput</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_RUS</Tag>
-		<English>罗斯</English>
-		<L1/><L2/><L3/><L4/><Chinese>罗斯</Chinese><French>Rus</French></TEXT>
+		<English>罗斯人</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗斯人</Chinese><French>Rus</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SABEAN</Tag>
-		<English>塞巴</English>
-		<L1/><L2/><L3/><L4/><Chinese>塞巴</Chinese><French>Sabean</French></TEXT>
+		<English>塞巴人（示巴人）</English>
+		<L1/><L2/><L3/><L4/><Chinese>塞巴人（示巴人）</Chinese><French>Sabean</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SCOTS</Tag>
-		<English>苏格兰</English>
-		<L1/><L2/><L3/><L4/><Chinese>苏格兰</Chinese><French>Scottish</French></TEXT>
+		<English>苏格兰人</English>
+		<L1/><L2/><L3/><L4/><Chinese>苏格兰人</Chinese><French>Scottish</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SELJUK</Tag>
-		<English>塞尔柱</English>
-		<L1/><L2/><L3/><L4/><Chinese>塞尔柱</Chinese><French>Seljuk</French></TEXT>
+		<English>塞尔柱人</English>
+		<L1/><L2/><L3/><L4/><Chinese>塞尔柱人</Chinese><French>Seljuk</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SICILIAN</Tag>
-		<English>西西里</English>
-		<L1/><L2/><L3/><L4/><Chinese>西西里</Chinese><French>Sicilian</French></TEXT>
+		<English>西西里人</English>
+		<L1/><L2/><L3/><L4/><Chinese>西西里人</Chinese><French>Sicilian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SIKH</Tag>
-		<English>锡克</English>
-		<L1/><L2/><L3/><L4/><Chinese>锡克</Chinese><French>Sikh</French></TEXT>
+		<English>锡克人</English>
+		<L1/><L2/><L3/><L4/><Chinese>锡克人</Chinese><French>Sikh</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SIOUX</Tag>
 		<English>苏族</English>
 		<L1/><L2/><L3/><L4/><Chinese>苏族</Chinese><French>Sioux</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SLAVIC</Tag>
-		<English>斯拉夫</English>
-		<L1/><L2/><L3/><L4/><Chinese>斯拉夫</Chinese><French>Slavic</French></TEXT>
+		<English>斯拉夫人</English>
+		<L1/><L2/><L3/><L4/><Chinese>斯拉夫人</Chinese><French>Slavic</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SONGHAI</Tag>
-		<English>桑海</English>
-		<L1/><L2/><L3/><L4/><Chinese>桑海</Chinese><French>Songhai</French></TEXT>
+		<English>桑海人</English>
+		<L1/><L2/><L3/><L4/><Chinese>桑海人</Chinese><French>Songhai</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SUAHELI</Tag>
-		<English>斯瓦希里</English>
-		<L1/><L2/><L3/><L4/><Chinese>斯瓦希里</Chinese><French>Suaheli</French></TEXT>
+		<English>斯瓦西里人</English>
+		<L1/><L2/><L3/><L4/><Chinese>斯瓦西里人</Chinese><French>Suaheli</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SUMERIAN</Tag>
-		<English>苏美尔</English>
-		<L1/><L2/><L3/><L4/><Chinese>苏美尔</Chinese><French>Sumerian</French></TEXT>
+		<English>苏美尔人</English>
+		<L1/><L2/><L3/><L4/><Chinese>苏美尔人</Chinese><French>Sumerian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_SWISS</Tag>
-		<English>瑞士</English>
-		<L1/><L2/><L3/><L4/><Chinese>瑞士</Chinese><French>Swiss</French></TEXT>
+		<English>瑞士人</English>
+		<L1/><L2/><L3/><L4/><Chinese>瑞士人</Chinese><French>Swiss</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_TAMIL</Tag>
-		<English>泰米尔</English>
-		<L1/><L2/><L3/><L4/><Chinese>泰米尔</Chinese><French>Tamil</French></TEXT>
+		<English>泰米尔人</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔人</Chinese><French>Tamil</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_TARTAR</Tag>
-		<English>鞑靼</English>
-		<L1/><L2/><L3/><L4/><Chinese>鞑靼</Chinese><French>Tartar</French></TEXT>
+		<English>鞑靼人</English>
+		<L1/><L2/><L3/><L4/><Chinese>鞑靼人</Chinese><French>Tartar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_THAI</Tag>
-		<English>泰国</English>
-		<L1/><L2/><L3/><L4/><Chinese>泰国</Chinese><French>Thai</French></TEXT>
+		<English>傣人</English>
+		<L1/><L2/><L3/><L4/><Chinese>傣人</Chinese><French>Thai</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_THRACIAN</Tag>
-		<English>色雷斯</English>
-		<L1/><L2/><L3/><L4/><Chinese>色雷斯</Chinese><French>Thracian</French></TEXT>
+		<English>色雷斯人</English>
+		<L1/><L2/><L3/><L4/><Chinese>色雷斯人</Chinese><French>Thracian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_TIBETAN</Tag>
-		<English>藏族</English>
-		<L1/><L2/><L3/><L4/><Chinese>藏族</Chinese><French>Tibetan</French></TEXT>
+		<English>吐蕃人</English>
+		<L1/><L2/><L3/><L4/><Chinese>吐蕃人</Chinese><French>Tibetan</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_TOLTEC</Tag>
-		<English>托尔特克</English>
-		<L1/><L2/><L3/><L4/><Chinese>托尔特克</Chinese><French>Toltec</French></TEXT>
+		<English>托尔特克人</English>
+		<L1/><L2/><L3/><L4/><Chinese>托尔特克人</Chinese><French>Toltec</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_UZBEK</Tag>
-		<English>乌兹别克</English>
-		<L1/><L2/><L3/><L4/><Chinese>乌兹别克</Chinese><French>Uzbek</French></TEXT>
+		<English>乌兹别克人</English>
+		<L1/><L2/><L3/><L4/><Chinese>乌兹别克人</Chinese><French>Uzbek</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_VANDAL</Tag>
-		<English>汪达尔</English>
-		<L1/><L2/><L3/><L4/><Chinese>汪达尔</Chinese><French>Vandal</French></TEXT>
+		<English>汪达尔人</English>
+		<L1/><L2/><L3/><L4/><Chinese>汪达尔人</Chinese><French>Vandal</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_VARANGIAN</Tag>
-		<English>瓦拉几亚</English>
-		<L1/><L2/><L3/><L4/><Chinese>瓦拉几亚</Chinese><French>Varangian</French></TEXT>
+		<English>瓦兰吉人</English>
+		<L1/><L2/><L3/><L4/><Chinese>瓦兰吉人</Chinese><French>Varangian</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_VIETNAMESE</Tag>
-		<English>越南</English>
-		<L1/><L2/><L3/><L4/><Chinese>越南</Chinese><French>Vietnamese</French></TEXT>
+		<English>越南人</English>
+		<L1/><L2/><L3/><L4/><Chinese>越南人</Chinese><French>Vietnamese</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_XIONGNU</Tag>
-		<English>匈奴</English>
-		<L1/><L2/><L3/><L4/><Chinese>匈奴</Chinese><French>Xiongnu</French></TEXT>
+		<English>匈奴人</English>
+		<L1/><L2/><L3/><L4/><Chinese>匈奴人</Chinese><French>Xiongnu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_YAMATO</Tag>
-		<English>大和</English>
-		<L1/><L2/><L3/><L4/><Chinese>大和</Chinese><French>Yamato</French></TEXT>
+		<English>倭人</English>
+		<L1/><L2/><L3/><L4/><Chinese>倭人</Chinese><French>Yamato</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_YUEZHI</Tag>
-		<English>月氏的</English>
-		<L1/><L2/><L3/><L4/><Chinese>月氏的</Chinese><French>Yuezhi</French></TEXT>
+		<English>月氏人</English>
+		<L1/><L2/><L3/><L4/><Chinese>月氏人</Chinese><French>Yuezhi</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ZAPOTEC</Tag>
-		<English>萨波特克</English>
-		<L1/><L2/><L3/><L4/><Chinese>萨波特克</Chinese><French>Zapotec</French></TEXT>
+		<English>萨波特克人</English>
+		<L1/><L2/><L3/><L4/><Chinese>萨波特克人</Chinese><French>Zapotec</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MERCENARY_ZULU</Tag>
-		<English>祖鲁</English>
-		<L1/><L2/><L3/><L4/><Chinese>祖鲁</Chinese><French>Zulu</French></TEXT>
+		<English>祖鲁人</English>
+		<L1/><L2/><L3/><L4/><Chinese>祖鲁人</Chinese><French>Zulu</French></TEXT>
 </Civ4GameText>

@@ -889,8 +889,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]市民广场[COLOR_REVERT]增加城市的文化输出。他们还提高了一个城市的[COLOR_HIGHLIGHT_TEXT]伟人[COLOR_REVERT]出生率，并允许你雇用一位[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]专家。</Chinese><French>[COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] increase a city's cultural output. They also increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SEWER</Tag>
-		<English>城市排水系统</English>
-		<L1/><L2/><L3/><L4/><Chinese>城市排水系统</Chinese><French>Sewer</French></TEXT>
+		<English>城市排水系统（可由阿倍米尔斯排水站提供）</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市排水系统（可由阿倍米尔斯排水站提供）</Chinese><French>Sewer</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SEWER_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]下水道[COLOR_REVERT]改善城市健康。[COLOR_BUILDING_TEXT]建造[COLOR_BUILDING_TEXT]修道院米尔斯[COLOR_REVERT]世界奇观需要下水道[COLOR_REVERT]。</English>
@@ -945,8 +945,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]太阳能发电厂[COLOR_REVERT]提供无污染电力。</Chinese><French>[COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT] provide pollution-free power.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ESTATE</Tag>
-		<English>庄园</English>
-		<L1/><L2/><L3/><L4/><Chinese>庄园</Chinese><French>Estate</French></TEXT>
+		<English>庄园（凡尔赛宫可提供）</English>
+		<L1/><L2/><L3/><L4/><Chinese>庄园（凡尔赛宫可提供）</Chinese><French>Estate</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ESTATE_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]庄园[COLOR_REVERT]大幅增加了一个城市的文化产出。它们还可以通过使用文化滑块增加幸福感输出，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_HIGHLIGHT_TEXT]和[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_HIGHLIGHT_TEXT]专家。</English>
@@ -961,8 +961,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]药房[COLOR_REVERT]通过访问[COLOR_HIGHLIGHT_TEXT]香蕉[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]香料[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]葡萄酒[COLOR_REVERT]，增加城市的健康，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]科学家[COLOR_REVERT]专家。</Chinese><French>[COLOR_BUILDING_TEXT]Pharmacies[COLOR_REVERT] increase the city's healthiness with access to [COLOR_HIGHLIGHT_TEXT]Banana[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_RAILWAY_STATION</Tag>
-		<English>火车站</English>
-		<L1/><L2/><L3/><L4/><Chinese>火车站</Chinese><French>Railway Station</French></TEXT>
+		<English>火车站（芳提娜城堡可提供）</English>
+		<L1/><L2/><L3/><L4/><Chinese>火车站（芳提娜城堡可提供）</Chinese><French>Railway Station</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_RAILWAY_STATION_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]火车站[COLOR_REVERT]增加城市的不健康，提供额外的贸易路线，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]专家。[COLOR_BUILDING_TEXT]火车站[COLOR_REVERT]需要建造[COLOR_BUILDING_TEXT]城堡Frontenac[COLOR_REVERT]world wonder</English>
@@ -1137,8 +1137,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]阿斯塔神庙[COLOR_REVERT]是埃塞俄比亚的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Astar Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of Ethiopia.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MONUMENT_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]可提供少量文化点数，适宜在早期扩展城市的文化边界。</English>
-		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]可提供少量文化点数，适宜在早期扩展城市的文化边界。</Chinese><French>[COLOR_BUILDING_TEXT]Monuments[COLOR_REVERT] increase a city's cultural output. They are also required to build [COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Monument[COLOR_REVERT] national wonder.</French></TEXT>
+		<English>[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]可提供少量文化点数，适宜在早期扩展城市的文化边界。可以由阿帕达那宫提供。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]可提供少量文化点数，适宜在早期扩展城市的文化边界。可以由阿帕达那宫提供。</Chinese><French>[COLOR_BUILDING_TEXT]Monuments[COLOR_REVERT] increase a city's cultural output. They are also required to build [COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Monument[COLOR_REVERT] national wonder.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TURKIC_DIVAN</Tag>
 		<English>迪凡</English>

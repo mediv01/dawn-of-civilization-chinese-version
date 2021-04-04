@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Colors -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARABIA_UHV3_JERUSALEM</Tag>
+		<English>控制耶路撒冷</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制耶路撒冷</Chinese><French>控制耶路撒冷</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARABIA_UHV3_MECCA</Tag>
+		<English>控制麦加</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制麦加</Chinese><French>控制麦加</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN</Tag>
+		<English>***************信息提示系统****************</English>
+		<L1/><L2/><L3/><L4/><Chinese>***************信息提示系统****************</Chinese><French>***************信息提示系统****************</French></TEXT>
+		
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_BASIC</Tag>
+		<English>0.游戏基本信息：</English>
+		<L1/><L2/><L3/><L4/><Chinese>0.游戏基本信息：</Chinese><French>0.游戏基本信息：</French></TEXT>	
+		
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CONGRESS</Tag>
+		<English>1.国际会议剩余回合：</English>
+		<L1/><L2/><L3/><L4/><Chinese>1.国际会议剩余回合：</Chinese><French>1.国际会议剩余回合：</French></TEXT>	
+		
+		
+		
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_COLONIST</Tag>
+		<English>2.西欧国家殖民地进度：</English>
+		<L1/><L2/><L3/><L4/><Chinese>2.西欧国家殖民地进度：</Chinese><French>2.西欧国家殖民地进度：</French></TEXT>	
+		
+		
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_PLAGUE</Tag>
+		<English>3.全球瘟疫进度：</English>
+		<L1/><L2/><L3/><L4/><Chinese>3.全球瘟疫进度：</Chinese><French>3.全球瘟疫进度：</French></TEXT>	
+		
+		
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_TECHRANK</Tag>
+		<English>4.全球科技排名：</English>
+		<L1/><L2/><L3/><L4/><Chinese>4.全球科技排名：</Chinese><French>4.全球科技排名：</French></TEXT>
+		
+		
+		
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_ARMYRANK</Tag>
+		<English>5.全球军力排名：</English>
+		<L1/><L2/><L3/><L4/><Chinese>5.全球军力排名：</Chinese><French>5.全球军力排名：</French></TEXT>	
+
+
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CITY_RANK_POP</Tag>
+		<English>6.全球城市排名（人口）：</English>
+		<L1/><L2/><L3/><L4/><Chinese>6.全球城市排名（人口）</Chinese><French>6.全球城市排名（人口）</French></TEXT>		
+
+
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CITY_RANK_CUL</Tag>
+		<English>7.全球城市排名（文化）：</English>
+		<L1/><L2/><L3/><L4/><Chinese>7.全球城市排名（文化）：</Chinese><French>7.全球城市排名（文化）：</French></TEXT>	
+
+
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CITY_RANK_PRO</Tag>
+		<English>8.全球城市排名（产量）：</English>
+		<L1/><L2/><L3/><L4/><Chinese>8.全球城市排名（产量）：</Chinese><French>8.全球城市排名（产量）：</French></TEXT>		
+
+
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CITY_RANK_COM</Tag>
+		<English>9.全球城市排名（金币）：</English>
+		<L1/><L2/><L3/><L4/><Chinese>9.全球城市排名（金币）：</Chinese><French>9.全球城市排名（金币）：</French></TEXT>	
+
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CITY_RANK_FOOD</Tag>
+		<English>10.全球城市排名（食物）：</English>
+		<L1/><L2/><L3/><L4/><Chinese>10.全球城市排名（食物）：</Chinese><French>10.全球城市排名（食物）：</French></TEXT>		
+
+
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CITY_RANK_GOODY</Tag>
+		<English>部落村庄情况：</English>
+		<L1/><L2/><L3/><L4/><Chinese>部落村庄情况：</Chinese><French>部落村庄情况：</French></TEXT>			
+</Civ4GameText>

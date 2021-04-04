@@ -6077,7 +6077,7 @@
 			<ShortDescription>TXT_KEY_CIV_INDEPENDENT_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_INDEPENDENT_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_INDEPENDENT_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY2</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_GREYISH_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INDEPENDENT</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
 			<Identifier>MIN</Identifier>

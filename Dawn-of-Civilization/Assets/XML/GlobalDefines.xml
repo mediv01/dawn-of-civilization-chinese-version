@@ -145,18 +145,7 @@
 		<DefineName>TERRAIN_POINTS</DefineName>
 		<fDefineFloatVal>5</fDefineFloatVal>
 	</Define>
-	<Define>
-		<DefineName>RECON_VISIBILITY_RANGE</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>PLOT_VISIBILITY_RANGE</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>UNIT_VISIBILITY_RANGE</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>PEAK_SEE_FROM_CHANGE</DefineName>
 		<iDefineIntVal>2</iDefineIntVal>
@@ -221,18 +210,9 @@
 		<DefineName>MIN_BARBARIAN_CITY_STARTING_DISTANCE</DefineName>
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>MIN_CITY_RANGE</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>FREE_CITY_CULTURE</DefineName>
-		<iDefineIntVal>2</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>FREE_CITY_ADJACENT_CULTURE</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
-	</Define>
+
+
+
 	<Define>
 		<DefineName>CITY_FREE_CULTURE_GROWTH_FACTOR</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
@@ -245,10 +225,7 @@
 		<DefineName>OWNERSHIP_SCORE_DURATION_THRESHOLD</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>NUM_DO_GOODY_ATTEMPTS</DefineName>
-		<iDefineIntVal>10</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>MAX_CIVIC_OPTIONS</DefineName>
 		<iDefineIntVal>6</iDefineIntVal>
@@ -265,10 +242,7 @@
 		<DefineName>COMMERCE_PERCENT_CHANGE_INCREMENTS</DefineName>
 		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>INITIAL_TRADE_ROUTES</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>NUM_OR_TECH_PREREQS</DefineName>
 		<iDefineIntVal>4</iDefineIntVal>
@@ -321,14 +295,8 @@
 		<DefineName>MAX_NATIONAL_WONDERS_PER_CITY_FOR_OCC</DefineName>
 		<iDefineIntVal>5</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>MAX_BUILDINGS_PER_CITY</DefineName>
-		<iDefineIntVal>-1</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>INITIAL_CITY_POPULATION</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
-	</Define>
+
+
 	<Define>
 		<DefineName>INITIAL_AI_CITY_PRODUCTION</DefineName>
 		<iDefineIntVal>10</iDefineIntVal>
@@ -341,10 +309,7 @@
 		<DefineName>CITY_GROWTH_MULTIPLIER</DefineName>
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>FOOD_CONSUMPTION_PER_POPULATION</DefineName>
-		<iDefineIntVal>2</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>NEW_HURRY_MODIFIER</DefineName>
 		<iDefineIntVal>50</iDefineIntVal>
@@ -361,30 +326,14 @@
 		<DefineName>CONSCRIPT_MIN_CULTURE_PERCENT</DefineName>
 		<iDefineIntVal>50</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>FRESH_WATER_HEALTH_CHANGE</DefineName>
-		<iDefineIntVal>2</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>POWER_HEALTH_CHANGE</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>DIRTY_POWER_HEALTH_CHANGE</DefineName>
-		<iDefineIntVal>-2</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>INITIAL_CITY_MAINTENANCE</DefineName>
-		<iDefineIntVal>0</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>MAX_DISTANCE_CITY_MAINTENANCE</DefineName>
-		<iDefineIntVal>20</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>MAX_TRADE_ROUTES</DefineName>
-		<iDefineIntVal>10</iDefineIntVal>
-	</Define>
+
+
+
 	<Define>
 		<DefineName>MIN_TIMER_UNIT_DOUBLE_MOVES</DefineName>
 		<iDefineIntVal>32</iDefineIntVal>
@@ -429,66 +378,15 @@
 		<DefineName>COMBAT_DIE_SIDES</DefineName>
 		<iDefineIntVal>1000</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>HILLS_EXTRA_DEFENSE</DefineName>
-		<iDefineIntVal>25</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>RIVER_ATTACK_MODIFIER</DefineName>
-		<iDefineIntVal>-25</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>AMPHIB_ATTACK_MODIFIER</DefineName>
-		<iDefineIntVal>-50</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>ENEMY_HEAL_RATE</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>NEUTRAL_HEAL_RATE</DefineName>
-		<iDefineIntVal>10</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>FRIENDLY_HEAL_RATE</DefineName>
-		<iDefineIntVal>15</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>CITY_HEAL_RATE</DefineName>
-		<iDefineIntVal>20</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>FOUND_RELIGION_CITY_RAND</DefineName>
-		<iDefineIntVal>20</iDefineIntVal> <!-- Default: 10 -->
-	</Define>
+
+
+
 	<Define>
 		<DefineName>FOUND_CORPORATION_CITY_RAND</DefineName>
 		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>GREAT_PEOPLE_THRESHOLD_INCREASE</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>GREAT_PEOPLE_THRESHOLD_INCREASE_TEAM</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>GREAT_PEOPLE_THRESHOLD</DefineName>
-		<iDefineIntVal>100</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>GREAT_GENERALS_THRESHOLD_INCREASE</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>GREAT_GENERALS_THRESHOLD_INCREASE_TEAM</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>GREAT_GENERALS_THRESHOLD</DefineName>
-		<iDefineIntVal>30</iDefineIntVal>
-	</Define>
+
+
 	<Define>
 		<DefineName>BASE_SPY_SABOTAGE_COST</DefineName>
 		<iDefineIntVal>200</iDefineIntVal>
@@ -537,14 +435,7 @@
 		<DefineName>LAKE_MAX_AREA_SIZE</DefineName>
 		<iDefineIntVal>9</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>INITIAL_BASE_FREE_UNITS</DefineName>
-		<iDefineIntVal>4</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>INITIAL_BASE_FREE_MILITARY_UNITS</DefineName>
-		<iDefineIntVal>2</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>INITIAL_FREE_UNITS_POPULATION_PERCENT</DefineName>
 		<iDefineIntVal>24</iDefineIntVal>
@@ -557,22 +448,12 @@
 		<DefineName>INITIAL_GOLD_PER_UNIT</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>INITIAL_FREE_OUTSIDE_UNITS</DefineName>
-		<iDefineIntVal>4</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>INITIAL_OUTSIDE_UNIT_GOLD_PERCENT</DefineName>
 		<iDefineIntVal>50</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>ANIMAL_MAX_XP_VALUE</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>BARBARIAN_MAX_XP_VALUE</DefineName>
-		<iDefineIntVal>10</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>BASE_GOLDEN_AGE_UNITS</DefineName>
 		<iDefineIntVal>2</iDefineIntVal>
@@ -581,18 +462,12 @@
 		<DefineName>GOLDEN_AGE_UNITS_MULTIPLIER</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>GOLDEN_AGE_LENGTH</DefineName>
-		<iDefineIntVal>8</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>GOLDEN_AGE_GREAT_PEOPLE_MODIFIER</DefineName>
 		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>HILLS_EXTRA_MOVEMENT</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>FEATURE_GROWTH_MODIFIER</DefineName>
 		<iDefineIntVal>25</iDefineIntVal>
@@ -605,10 +480,7 @@
 		<DefineName>THEIR_POPULATION_TRADE_PERCENT</DefineName>
 		<iDefineIntVal>50</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>CAPITAL_TRADE_MODIFIER</DefineName>
-		<iDefineIntVal>25</iDefineIntVal>
-	</Define>
+
 	<Define><!-- Leoreth: removed for now, introduced a distance modifier in turn -->
 		<DefineName>OVERSEAS_TRADE_MODIFIER</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
@@ -693,46 +565,8 @@
 		<DefineName>WW_DECAY_PEACE_PERCENT</DefineName>
 		<iDefineIntVal>99</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>NUKE_FALLOUT_PROB</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>NUKE_UNIT_DAMAGE_BASE</DefineName>
-		<iDefineIntVal>70</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>NUKE_UNIT_DAMAGE_RAND_1</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>NUKE_UNIT_DAMAGE_RAND_2</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>NUKE_NON_COMBAT_DEATH_THRESHOLD</DefineName>
-		<iDefineIntVal>60</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>NUKE_BUILDING_DESTRUCTION_PROB</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>NUKE_POPULATION_DEATH_BASE</DefineName>
-		<iDefineIntVal>60</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>NUKE_POPULATION_DEATH_RAND_1</DefineName>
-		<iDefineIntVal>20</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>NUKE_POPULATION_DEATH_RAND_2</DefineName>
-		<iDefineIntVal>20</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>GLOBAL_WARMING_PROB</DefineName>
-		<iDefineIntVal>20</iDefineIntVal>
-	</Define>
+
+
 	<Define>
 		<DefineName>GLOBAL_WARMING_FOREST</DefineName>
 		<iDefineIntVal>50</iDefineIntVal>
@@ -757,10 +591,7 @@
 		<DefineName>TECH_COST_KNOWN_PREREQ_MODIFIER</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>PEACE_TREATY_LENGTH</DefineName>
-		<iDefineIntVal>10</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>MAX_ANARCHY_TURNS</DefineName>
 		<iDefineIntVal>100</iDefineIntVal>
@@ -777,10 +608,7 @@
 		<DefineName>OCCUPATION_CULTURE_PERCENT_THRESHOLD</DefineName>
 		<iDefineIntVal>75</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>BASE_OCCUPATION_TURNS</DefineName>
-		<iDefineIntVal>3</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>OCCUPATION_TURNS_POPULATION_PERCENT</DefineName>
 		<iDefineIntVal>50</iDefineIntVal>
@@ -917,10 +745,7 @@
 		<DefineName>MAXED_PROJECT_GOLD_PERCENT</DefineName>
 		<iDefineIntVal>50</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>MAX_CITY_DEFENSE_DAMAGE</DefineName>
-		<iDefineIntVal>100</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>CITY_DEFENSE_DAMAGE_HEAL_RATE</DefineName>
 		<iDefineIntVal>5</iDefineIntVal>
@@ -949,26 +774,7 @@
 		<DefineName>BASE_CAPTURE_GOLD</DefineName>
 		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>CAPTURE_GOLD_PER_POPULATION</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>CAPTURE_GOLD_PER_BUILDING_COST</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>CAPTURE_GOLD_RAND1</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>CAPTURE_GOLD_RAND2</DefineName>
-		<iDefineIntVal>25</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>CAPTURE_GOLD_MAX_TURNS</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>CITY_BARBARIAN_DEFENSE_MODIFIER</DefineName>
 		<iDefineIntVal>25</iDefineIntVal>
@@ -989,22 +795,9 @@
 		<DefineName>MAX_EXPERIENCE_AFTER_UPGRADE</DefineName>
 		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>BUILDING_PRODUCTION_DECAY_TIME</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>BUILDING_PRODUCTION_DECAY_PERCENT</DefineName>
-		<iDefineIntVal>99</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>UNIT_PRODUCTION_DECAY_TIME</DefineName>
-		<iDefineIntVal>10</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>UNIT_PRODUCTION_DECAY_PERCENT</DefineName>
-		<iDefineIntVal>98</iDefineIntVal>
-	</Define>
+
+
+
 	<Define>
 		<DefineName>BASE_UNIT_UPGRADE_COST</DefineName>
 		<iDefineIntVal>10</iDefineIntVal>
@@ -1437,10 +1230,7 @@
 		<DefineName>MAX_EVASION_PROBABILITY</DefineName>
 		<iDefineIntVal>90</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>PLAYER_ALWAYS_RAZES_CITIES</DefineName>
-		<iDefineIntVal>0</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>MIN_WATER_SIZE_FOR_OCEAN</DefineName>
 		<iDefineIntVal>10</iDefineIntVal>
@@ -1630,10 +1420,7 @@
 		<DefineName>IGNORE_PLOT_GROUP_FOR_TRADE_ROUTES</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>EVENT_PROBABILITY_ROLL_SIDES</DefineName>
-		<iDefineIntVal>100</iDefineIntVal>
-	</Define>
+
 	<Define>
 		<DefineName>FIRST_EVENT_DELAY_TURNS</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>

@@ -242,6 +242,7 @@
 			<Civilopedia>TXT_KEY_UNIT_SETTLER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_SETTLER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
+			<bRivalTerritory>1</bRivalTerritory>
 			<bFood>1</bFood>
 			<bFound>1</bFound>
 			<UnitAIs>
@@ -289,6 +290,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bFood>1</bFood>
 			<bFound>1</bFound>
+			<bRivalTerritory>1</bRivalTerritory>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_SETTLE</UnitAIType>
@@ -377,6 +379,7 @@
 			<Civilopedia>TXT_KEY_UNIT_WORKER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_WORKER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bRivalTerritory>1</bRivalTerritory>
 			<bFood>1</bFood>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
@@ -495,6 +498,12 @@
 			<iNukeRange>-1</iNukeRange>
 			<iWorkRate>100</iWorkRate>
 			<iAsset>2</iAsset>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_SLAVE</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
 			<UnitMeshGroups>
 				<iGroupSize>2</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>
@@ -518,6 +527,7 @@
 			<Civilopedia>TXT_KEY_UNIT_INDIAN_PUNJABI_WORKER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_INDIAN_PUNJABI_WORKER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bRivalTerritory>1</bRivalTerritory>
 			<bFood>1</bFood>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
@@ -939,6 +949,7 @@
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bOnlyDefensive>1</bOnlyDefensive>
 			<bMilitarySupport>1</bMilitarySupport>
+			<bRivalTerritory>1</bRivalTerritory>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
@@ -992,6 +1003,7 @@
 			<bOnlyDefensive>1</bOnlyDefensive>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
+			<bRivalTerritory>1</bRivalTerritory>
 			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
 			<UnitAIs>
 				<UnitAI>
@@ -1564,6 +1576,7 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
+			<bRivalTerritory>1</bRivalTerritory>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
 					<UnitClassUpgradeType>UNITCLASS_AXEMAN</UnitClassUpgradeType>
@@ -1649,6 +1662,7 @@
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
+			<bRivalTerritory>1</bRivalTerritory>
 			<bPillage>1</bPillage>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
@@ -12636,7 +12650,7 @@
 			<Civilopedia>TXT_KEY_UNIT_PHOENICIAN_BIREME_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_PHOENICIAN_BIREME_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<bRivalTerritory>1</bRivalTerritory>
+			
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
@@ -13016,6 +13030,7 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
+			<bHiddenNationality>1</bHiddenNationality>
 			<bMechanized>1</bMechanized>
 			<bRenderBelowWater>1</bRenderBelowWater>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -13137,6 +13152,7 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
+			
 			<bMechanized>1</bMechanized>
 			<bRenderBelowWater>1</bRenderBelowWater>
 			<iWithdrawalProb>25</iWithdrawalProb>
@@ -13703,7 +13719,7 @@
 			<Civilopedia>TXT_KEY_UNIT_CARAVEL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_CARAVEL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<bRivalTerritory>1</bRivalTerritory>
+			
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bMechanized>1</bMechanized>
@@ -13779,7 +13795,7 @@
 			<Civilopedia>TXT_KEY_UNIT_PORTUGUESE_CARRACK_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_PORTUGUESE_CARRACK_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<bRivalTerritory>1</bRivalTerritory>
+			
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bMechanized>1</bMechanized>
@@ -13872,6 +13888,7 @@
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
 			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
+			
 			<bMechanized>1</bMechanized>
 			<bRenderBelowWater>1</bRenderBelowWater>
 			<iWithdrawalProb>25</iWithdrawalProb>
@@ -14014,12 +14031,6 @@
 			<bHiddenNationality>1</bHiddenNationality>
 			<bAlwaysHostile>1</bAlwaysHostile>
 			<iWithdrawalProb>50</iWithdrawalProb>
-			<UnitClassUpgrades>
-				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_IRONCLAD</UnitClassUpgradeType>
-					<bUnitClassUpgrade>1</bUnitClassUpgrade>
-				</UnitClassUpgrade>
-			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_PIRATE_SEA</UnitAIType>
@@ -14670,6 +14681,7 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
+			
 			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
 			<bMechanized>1</bMechanized>
 			<bRenderBelowWater>1</bRenderBelowWater>

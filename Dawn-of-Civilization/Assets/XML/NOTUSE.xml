@@ -1,0 +1,42 @@
+<notuse>
+	    <Define>
+        <DefineName>CVGAMETEXT_SHOW_ENERY_ATTACK_COMBAT_INFO</DefineName><!-- 1为显示敌人攻击我方的战斗详情 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+
+	    <Define>
+        <DefineName>CVGAMETEXT_SHOW_ENERY_ATTACK_COMBAT_INFO_PART2</DefineName><!-- 1为显示第二部分详情 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+		    <Define>
+        <DefineName>CVGAMETEXT_SHOW_ENERY_ATTACK_COMBAT_INFO_PART3</DefineName><!-- 1为显示第3部分详情 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+		    <Define>
+        <DefineName>CVGAMETEXT_SHOW_ENERY_ATTACK_COMBAT_INFO_PART4</DefineName><!-- 1为显示第4部分详情 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+		    <Define>
+        <DefineName>CVGAMETEXT_SHOW_ENERY_ATTACK_COMBAT_INFO_PART5</DefineName><!-- 1为显示第5部分详情 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>	
+	
+		    <Define>
+        <DefineName>CVGAMETEXT_SHOW_ENERY_ATTACK_COMBAT_INFO_PART6</DefineName><!-- 1为显示第6部分详情 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>	
+	
+		    <Define>
+        <DefineName>CVGAMETEXT_SHOW_ENERY_ATTACK_COMBAT_INFO_PART7</DefineName><!-- 1为显示第7部分详情 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>	
+		    <Define>
+        <DefineName>CVGAMETEXT_SHOW_ENERY_ATTACK_COMBAT_INFO_PART8</DefineName><!-- 1为显示第8部分详情 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+</notuse> 

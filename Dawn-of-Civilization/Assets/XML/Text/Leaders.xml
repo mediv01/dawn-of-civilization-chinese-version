@@ -11,8 +11,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>葡萄牙-阿方索&#12539;恩里克斯</Chinese><French>Afonso Henriques</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_AHOEITU</Tag>
-		<English>汤加-图普六世</English>
-		<L1/><L2/><L3/><L4/><Chinese>汤加-图普六世</Chinese><French>Aho'eitu</French></TEXT>
+		<English>汤加-阿霍·埃图</English>
+		<L1/><L2/><L3/><L4/><Chinese>汤加-阿霍·埃图</Chinese><French>Aho'eitu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_AKBAR</Tag>
 		<English>莫卧儿-阿克巴</English>
@@ -35,8 +35,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>罗马-奥古斯都&#12539;恺撒</Chinese><French>Augustus Caesar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_BAIBARS</Tag>
-		<English>埃及-拜巴尔</English>
-		<L1/><L2/><L3/><L4/><Chinese>埃及-拜巴尔</Chinese><French>Baibars</French></TEXT>
+		<English>埃及-拜伯尔斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及-拜伯尔斯</Chinese><French>Baibars</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_BARBAROSSA</Tag>
 		<English>神罗-巴巴罗萨</English>
@@ -51,8 +51,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>委内瑞拉-玻利瓦尔</Chinese><French>Bolivar</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_BUMIN</Tag>
-		<English>土库曼-布明</English>
-		<L1/><L2/><L3/><L4/><Chinese>土库曼-布明</Chinese><French>Bumin</French></TEXT>
+		<English>土库曼-阿史那土门</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼-阿史那土门</Chinese><French>Bumin</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_CARDENAS</Tag>
 		<English>墨西哥-卡德纳斯</English>
@@ -95,8 +95,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>西班牙-佛朗哥</Chinese><French>Franco</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_GILGAMESH</Tag>
-		<English>巴比伦-萨尔贡</English>
-		<L1/><L2/><L3/><L4/><Chinese>巴比伦-萨尔贡</Chinese><French>Sargon</French></TEXT>
+		<English>巴比伦-吉尔伽美什</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦-吉尔伽美什</Chinese><French>Sargon</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_GUSTAV</Tag>
 		<English>瑞典-古斯塔夫&#12539;阿道夫</English>
@@ -115,12 +115,14 @@
 		<L1/><L2/><L3/><L4/><Chinese>阿拉伯-哈伦&#12539;拉希德</Chinese><French>Harun al-Rashid</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_HATSHEPSUT</Tag>
-		<English>埃及-克莉奥帕特拉</English>
-		<L1/><L2/><L3/><L4/><Chinese>埃及-克莉奥帕特拉</Chinese><French>Cleopatra</French></TEXT>
+		<English>古埃及-克里奥帕特拉
+   </English>
+		<L1/><L2/><L3/><L4/><Chinese>古埃及-克里奥帕特拉
+   </Chinese><French>Cleopatra</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_HAYAM_WURUK</Tag>
-		<English>印尼-哈奄武禄</English>
-		<L1/><L2/><L3/><L4/><Chinese>印尼-哈奄武禄</Chinese><French>Hayam Wuruk</French></TEXT>
+		<English>印尼-哈奄·武禄</English>
+		<L1/><L2/><L3/><L4/><Chinese>印尼-哈奄·武禄</Chinese><French>Hayam Wuruk</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_HIRAM</Tag>
 		<English>腓尼基-希兰</English>
@@ -167,8 +169,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>中华吐蕃-罗桑嘉措</Chinese><French>Lobsang Gyatso</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_LORENZO</Tag>
-		<English>意大利-洛伦佐</English>
-		<L1/><L2/><L3/><L4/><Chinese>意大利-洛伦佐</Chinese><French>Lorenzo de' Medici</French></TEXT>
+		<English>意大利-洛伦佐·德·美第奇</English>
+		<L1/><L2/><L3/><L4/><Chinese>意大利-洛伦佐·德·美第奇</Chinese><French>Lorenzo de' Medici</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MARIA_II</Tag>
 		<English>葡萄牙-玛丽亚二世</English>
@@ -247,16 +249,16 @@
 		<L1/><L2/><L3/><L4/><Chinese>印尼-苏哈托</Chinese><French>Suharto</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TAMERLANE</Tag>
-		<English>土库曼-塔梅兰</English>
-		<L1/><L2/><L3/><L4/><Chinese>土库曼-塔梅兰</Chinese><French>Tamerlane</French></TEXT>
+		<English>土库曼-帖木儿</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼-帖木儿</Chinese><French>Tamerlane</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TAIZONG</Tag>
 		<English>唐太宗</English>
 		<L1/><L2/><L3/><L4/><Chinese>唐太宗</Chinese><French>Tang Taizong</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TOKUGAWA</Tag>
-		<English>织田信长</English>
-		<L1/><L2/><L3/><L4/><Chinese>织田信长</Chinese><French>Oda Nobunaga</French></TEXT>
+		<English>德川家康</English>
+		<L1/><L2/><L3/><L4/><Chinese>德川家康</Chinese><French>Oda Nobunaga</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TRUDEAU</Tag>
 		<English>加拿大-特鲁多</English>
@@ -303,8 +305,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>朝鲜世宗</Chinese><French>Sejong</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_PILSUDSKI</Tag>
-		<English>波兰-皮尔苏斯基</English>
-		<L1/><L2/><L3/><L4/><Chinese>波兰-皮尔苏斯基</Chinese><French>Pilsudski</French></TEXT>
+		<English>波兰-毕苏斯基</English>
+		<L1/><L2/><L3/><L4/><Chinese>波兰-毕苏斯基</Chinese><French>Pilsudski</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_VARGAS</Tag>
 		<English>巴西-瓦加斯</English>
@@ -315,8 +317,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>波兰-瓦尔萨</Chinese><French>Walesa</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_CASTILLA</Tag>
-		<English>秘鲁-卡斯蒂尔</English>
-		<L1/><L2/><L3/><L4/><Chinese>秘鲁-卡斯蒂尔</Chinese><French>Castilla</French></TEXT>
+		<English>秘鲁-卡斯蒂利亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>秘鲁-卡斯蒂利亚</Chinese><French>Castilla</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_WILLIAM_III</Tag>
 		<English>荷兰-威廉三世</English>
