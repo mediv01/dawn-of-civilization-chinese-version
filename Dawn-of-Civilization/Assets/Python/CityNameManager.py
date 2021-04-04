@@ -15,7 +15,7 @@ PyPlayer = PyHelpers.PyPlayer
 iNumLanguages = 41
 (iLangEgyptian, iLangEgyptianArabic, iLangIndian, iLangChinese, iLangTibetan, 
 iLangBabylonian, iLangPersian, iLangGreek, iLangPhoenician, iLangLatin, 
- iLangMayan,iLangJapanese, iLangEthiopian, iLangKorean, iLangByzantine, 
+iLangMayan,iLangJapanese, iLangEthiopian, iLangKorean, iLangByzantine, 
 iLangViking, iLangArabian, iLangKhmer, iLangIndonesian, iLangSpanish, 
 iLangFrench, iLangEnglish, iLangGerman, iLangRussian, iLangDutch, 
 iLangMalian, iLangPolish, iLangPortuguese, iLangQuechua, iLangItalian, 
@@ -23,6 +23,15 @@ iLangMongolian, iLangAztec, iLangTurkish, iLangThai, iLangCongolese,
 iLangPrussian, iLangAmerican, iLangCeltic, iLangMexican, iLangPolynesian,
 iLangHarappan) = range(iNumLanguages)
 
+tAllLanguage=(iLangChinese, iLangEnglish, iLangAmerican,iLangFrench, iLangGerman, iLangRussian, iLangSpanish, iLangLatin,
+iLangEgyptian,iLangEgyptianArabic, iLangIndian, iLangTibetan, 
+iLangBabylonian, iLangPersian, iLangGreek, iLangPhoenician, 
+iLangMayan,iLangJapanese, iLangEthiopian, iLangKorean, iLangByzantine, 
+iLangViking, iLangArabian, iLangKhmer, iLangIndonesian, iLangDutch, 
+iLangMalian, iLangPolish, iLangPortuguese, iLangQuechua, iLangItalian, 
+iLangMongolian, iLangAztec, iLangTurkish, iLangThai, iLangCongolese, 
+iLangPrussian, iLangCeltic, iLangMexican, iLangPolynesian,
+iLangHarappan)
 # methods
 
 def isResurrected(iCiv):
@@ -30,7 +39,6 @@ def isResurrected(iCiv):
 
 def getLanguages(iCiv):
 	pCiv = gc.getPlayer(iCiv)
-
 	if iCiv == iEgypt:
 		if pCiv.getStateReligion() == iIslam: return (iLangEgyptianArabic, iLangArabian)
 		return (iLangEgyptian,)
@@ -102,28 +110,58 @@ def getNativeLanguages(tPlot):
 
 def getFoundName(iCiv, tPlot):
 	x, y = tPlot
-	tLanguages = getLanguages(iCiv)
-	if not tLanguages: return None
 	
+	#if not tLanguages: return None
+	sName="-1"
+	if (gc.getDefineINT("PYTHON_DYNAMIC_NAME_ONLY_CHINESE") == 1):#动态城市名优先显示中文和英文名
+		tLanguages = (iLangChinese,iLangEnglish,iLangAmerican) 
+	else:
+		tLanguages = getLanguages(iCiv)	 
 	for iLanguage in tLanguages:
 		if iLanguage in dFoundMaps:
 			sName = dFoundMaps[iLanguage][67-y][x]
 			if sName != "-1":
 				return sName
-				
+	tLanguages = getLanguages(iCiv)	 							#如果城市没有中文名和英文名，则优先选择玩家当前文明的城市名
+	for iLanguage in tLanguages:
+		if iLanguage in dFoundMaps:
+			sName = dFoundMaps[iLanguage][67-y][x]
+			if sName != "-1":
+				return sName
+	if (sName=="-1"):											#如果还没有名字，遍历41个语言，寻找该位置的城市名
+		for iLanguage in tAllLanguage: 
+			if iLanguage in dFoundMaps:      
+				sName = dFoundMaps[iLanguage][67-y][x]
+				if sName != "-1":
+					return sName	  				
 	return None
 	
 def getNativeName(iCiv, tPlot):
 	x, y = tPlot
-	tLanguages = getNativeLanguages(tPlot)
-	if not tLanguages: return None
-	
+
+	#if not tLanguages: return None
+	sName="-1"
+	if (gc.getDefineINT("PYTHON_DYNAMIC_NAME_ONLY_CHINESE") == 1):#取消动态城市名的选项
+		tLanguages = (iLangChinese,iLangEnglish,iLangAmerican) 
+	else:
+		tLanguages = getLanguages(iCiv)	  	
 	for iLanguage in tLanguages:
 		if iLanguage in dFoundMaps:
 			sName = dFoundMaps[iLanguage][67-y][x]
 			if sName != "-1":
 				return getRenameName(iCiv, sName)
-				
+	tLanguages = getNativeLanguages(tPlot)
+	for iLanguage in tLanguages:
+		if iLanguage in dFoundMaps:
+			sName = dFoundMaps[iLanguage][67-y][x]
+			if sName != "-1":
+				return getRenameName(iCiv, sName)
+	if (sName=="-1"):
+		for iLanguage in tAllLanguage:
+			if iLanguage in dFoundMaps:       
+				sName = dFoundMaps[iLanguage][67-y][x]
+				if sName != "-1":
+					return getRenameName(iCiv, sName)  				
 	return None
 	
 def getIdentifier(sName):

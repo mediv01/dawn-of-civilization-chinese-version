@@ -518,7 +518,10 @@ class TeamScores:
 		
 	def rank(self):
 		if self.isVassal():
-			return self._master.rank()
+			if(self._master):
+				return self._master.rank()
+			else:
+				self._rank
 		else:
 			return self._rank
 		

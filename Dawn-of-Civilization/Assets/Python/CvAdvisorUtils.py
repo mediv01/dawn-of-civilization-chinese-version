@@ -428,12 +428,12 @@ def endTurnFeats(iPlayer):
 						gc.getPlayer(iPlayer).setFeatAccomplished(FeatTypes.FEAT_CORPORATION_ENABLED, True)
 						
 						szBonusList = u""
-						bFirst = true
+						bFirst = True
 						for iPrereq in range(gc.getDefineINT("NUM_CORPORATION_PREREQ_BONUSES")):
 							eBonus = gc.getCorporationInfo(eCorporation).getPrereqBonus(iPrereq)
 							if eBonus != -1:
 								if bFirst:
-									bFirst = false
+									bFirst = False
 								else:
 									szBonusList += localText.getText("TXT_KEY_OR", ())
 								szBonusList += gc.getBonusInfo(eBonus).getDescription()

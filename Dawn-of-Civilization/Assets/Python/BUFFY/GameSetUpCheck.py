@@ -134,7 +134,7 @@ def saveGameStart():
 	      Do not try to optimize this unless you are sure you know what's up!
 	"""
 	if not CyGame().isGameMultiPlayer() and not MapFinder.isActive():
-		fileName = AutoSave.saveGame()
+		fileName = AutoSave.gc.getGame().autosave()
 		if isNeedToCheckCRCs():
 			checkCRCs(fileName)
 			if not settingsOK():

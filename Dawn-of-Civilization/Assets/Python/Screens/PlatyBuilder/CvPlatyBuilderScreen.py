@@ -149,6 +149,7 @@ class CvWorldBuilderScreen:
 		self.m_iCurrentY = self.m_pCurrentPlot.getY()
 		if not CyInterface().isInAdvancedStart():
 			sText = "<font=3b>%s, X: %d, Y: %d</font>" %(CyTranslator().getText("TXT_KEY_WB_LATITUDE",(self.m_pCurrentPlot.getLatitude(),)), self.m_iCurrentX, self.m_iCurrentY)
+			sText=sText+''#mediv01
 			screen.setLabel( "WBCoords", "Background", sText, CvUtil.FONT_CENTER_JUSTIFY, screen.getXResolution()/2, 6, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 			if self.iPlayerAddMode in self.DoCMapMode:
@@ -162,6 +163,7 @@ class CvWorldBuilderScreen:
 					if iRegion != -1:
 						TextKey = u"TXT_KEY_REGION_%d" % iRegion
 						sDoCText += "<font=3b>%s</font>" % CyTranslator().getText(str(TextKey), ())
+						sDoCText +=''#mediv01
 				elif self.iPlayerAddMode == "VictoryMap":
 					iVictoryRegion = CvScreensInterface.getUHVTileInfo((self.m_iCurrentX, self.m_iCurrentY, self.m_iCurrentPlayer))
 					if iVictoryRegion != -1:

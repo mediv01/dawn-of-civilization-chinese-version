@@ -115,9 +115,18 @@ class Resources:
 			for x, y in lNewfoundlandCapes:
 				gc.getMap().plot(x, y).setFeatureType(iCape, 0)
 				
-			if utils.getHumanID() == iVikings:
-				gc.getMap().plot(41, 58).setFeatureType(-1, 0)
-		
+#			if utils.getHumanID() == iVikings:
+			if 1==1:
+				gc.getMap().plot(41, 58).setFeatureType(iCape, 0)
+				gc.getMap().plot(8, 17).setFeatureType(iCape, 0)
+				gc.getMap().plot(12, 21).setFeatureType(-1, 0)
+				gc.getMap().plot(13, 22).setFeatureType(-1, 0)
+				gc.getMap().plot(15, 17).setFeatureType(-1, 0)
+				gc.getMap().plot(19, 17).setFeatureType(-1, 0)
+				gc.getMap().plot(121, 17).setFeatureType(iCape, 0)
+				gc.getMap().plot(120, 12).setFeatureType(iCape, 0)
+
+                
 		# Leoreth: for respawned Egypt
 		elif iGameTurn == getTurnForYear(900):
 			self.createResource(71, 34, iIron)

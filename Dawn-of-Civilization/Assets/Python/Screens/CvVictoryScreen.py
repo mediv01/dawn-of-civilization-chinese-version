@@ -252,7 +252,7 @@ class CvVictoryScreen:
 			for j in range(gc.getNumVoteSourceInfos()):
 				if (gc.getBuildingInfo(i).getVoteSourceType() == j):
 					iUNTeam = -1
-					bUnknown = true
+					bUnknown = True
 					for iLoopTeam in range(gc.getMAX_CIV_TEAMS()):
 						if (gc.getTeam(iLoopTeam).isAlive() and not gc.getTeam(iLoopTeam).isMinorCiv() and not gc.getTeam(iLoopTeam).isBarbarian()):
 							if (gc.getTeam(iLoopTeam).getBuildingClassCount(gc.getBuildingInfo(i).getBuildingClassType()) > 0):
@@ -665,15 +665,15 @@ class CvVictoryScreen:
 				iSecretaryGeneralVote = -1
 				if (gc.getGame().canHaveSecretaryGeneral(i) and -1 != gc.getGame().getSecretaryGeneral(i)):
 					for j in range(gc.getNumVoteInfos()):
-						print j
+						print(j)
 						if gc.getVoteInfo(j).isVoteSourceType(i):
-							print "votesource"
+							print("votesource")
 							if gc.getVoteInfo(j).isSecretaryGeneral():
-								print "secgen"
+								print("secgen")
 								iSecretaryGeneralVote = j
 								break
 
-				print iSecretaryGeneralVote
+				print(iSecretaryGeneralVote)
 				for j in range(gc.getMAX_PLAYERS()):
 					if gc.getPlayer(j).isAlive() and gc.getTeam(iActiveTeam).isHasMet(gc.getPlayer(j).getTeam()):
 						#szPlayerText = gc.getPlayer(j).getName() #Rhye
@@ -748,7 +748,7 @@ class CvVictoryScreen:
 			return False, localText.getText("TXT_KEY_TOPCIVS_UNKNOWN", ())
 
 	def getVoteTotalColor(self, iVoteReq, iVoteTotal, iVoteCand, bWinner, bVictoryVote):
-		print "%i %i %i" % (iVoteReq, iVoteTotal, iVoteCand)
+		print("%i %i %i" % (iVoteReq, iVoteTotal, iVoteCand))
 		if not bWinner:
 			return -1
 		if (iVoteCand > iVoteReq
@@ -1119,7 +1119,7 @@ class CvVictoryScreen:
 			for j in range(gc.getNumVoteSourceInfos()):
 				if (gc.getBuildingInfo(i).getVoteSourceType() == j):
 					iUNTeam = -1
-					bUnknown = true 
+					bUnknown = True
 					for iLoopTeam in range(gc.getMAX_CIV_TEAMS()):
 						if (gc.getTeam(iLoopTeam).isAlive() and not gc.getTeam(iLoopTeam).isMinorCiv() and not gc.getTeam(iLoopTeam).isBarbarian()):
 							if (gc.getTeam(iLoopTeam).getBuildingClassCount(gc.getBuildingInfo(i).getBuildingClassType()) > 0):
@@ -1623,6 +1623,19 @@ class CvVictoryScreen:
 				if (bEntriesFound):
 					screen.appendTableRow(szTable)
 					screen.appendTableRow(szTable)
+		if (gc.getDefineINT("PYTHON_SCREEN_VICTORY_TIPS") == 1):
+			iRow = screen.appendTableRow(szTable)
+			screen.setTableText(szTable, 0, iRow, localText.getText("TXT_KEY_VICTORY_TIPS_IN_SCREEN", ()), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+
+			import ScreenTips
+			aHelpStrings=ScreenTips.getScreenHelp()
+			if len(aHelpStrings) > 0:
+				for szHelp in aHelpStrings:
+					iRow = screen.appendTableRow(szTable)
+					szHelp = '    ' + szHelp
+					screen.setTableText(szTable, 0, iRow, szHelp, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+
+		screen.appendTableRow(szTable)
 
 		# civ picker dropdown
 		if (CyGame().isDebugMode()):

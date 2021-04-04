@@ -235,7 +235,15 @@ class Congress:
 			x, y, iValue = tCity
 			plot = gc.getMap().plot(x, y)
 			if plot.isCity():
-				popup.addPythonButton(plot.getPlotCity().getName(), gc.getCivilizationInfo(gc.getPlayer(plot.getPlotCity().getOwner()).getCivilizationType()).getButton())
+				#civname=gc.getPlayer(plot.getPlotCity().getOwner()).getCivilizationAdjectiveKey()
+#				chinesename=CyTranslator().getText("TXT_KEY_", (civname,))
+#				f=open("z:\\test.csv",'a')
+#				f.write(str(chinesename))
+#				f.close
+#				tem_civname=str(civname[12:civname.rfind('_')])#将TXT_KEY_CIVNAME_CHINA显示为CHINA
+				#tem_civname=CyTranslator().getText(str(civname), (civname,))#将TXT_KEY_CIVNAME_CHINA显示为中国
+				tem_civname=gc.getPlayer(plot.getPlotCity().getOwner()).getCivilizationAdjective(0)
+				popup.addPythonButton(plot.getPlotCity().getName()+str(' from ')+tem_civname+str(' in (')+str(x)+str(' , ')+str(y)+str(' )'), gc.getCivilizationInfo(gc.getPlayer(plot.getPlotCity().getOwner()).getCivilizationType()).getButton())
 			else:
 				popup.addPythonButton(cnm.getFoundName(utils.getHumanID(), (x, y)), 'Art/Interface/Buttons/Actions/FoundCity.dds')
 			
@@ -345,6 +353,11 @@ class Congress:
 		if iEspionageSpent >= iCost / 2: self.lBriberyOptions.append((3, iCost / 2, iLowChance))
 		if iEspionageSpent >= iCost: self.lBriberyOptions.append((3, iCost, iMediumChance))
 		if iEspionageSpent >= iCost * 2: self.lBriberyOptions.append((3, iCost * 2, iHighChance))
+		if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+			utils.log_congress(' Low chance is '+str(iLowChance)+' and the cost is '+str(iCost / 2))
+			utils.log_congress(' Medium chance is ' + str(iMediumChance) + ' and the cost is ' + str(iCost))
+			utils.log_congress(' High chance is ' + str(iHighChance) + ' and the cost is ' + str(iCost*2))
+
 		
 		popup = CyPopupInfo()
 		popup.setText(sText)
@@ -388,15 +401,26 @@ class Congress:
 			
 			bHumanClaim = (utils.getHumanID() == iClaimant)
 			bSuccess = (iRand < iThreshold)
+			if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+				utils.log_congress(u' Bribery(VOTE) Player: '+str(gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0)))
+				utils.log_congress(u' iClaimant Player: ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
+				utils.log_congress(u' The Bribed Prob is '+str(iRand)+' and the threshold is '+str(iThreshold))
 			
 			self.startBriberyResultEvent(iBribedPlayer, iClaimant, bHumanClaim, bSuccess)
 		else:
 			# if no bribery option was chosen, the civ votes randomly as usual
 			iRand = gc.getGame().getSorenRandNum(50, 'Uninfluenced voting')
+			if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+				utils.log_congress(' The prob of random vote is '+str(iRand))
+				utils.log_congress(' The threshold of random vote is ' + str(iClaimValidity))
 			if iRand < iClaimValidity:
 				self.vote(iBribedPlayer, iClaimant, 1)
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(' Player vote yes: ' + str(gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0)))
 			else:
 				self.vote(iBribedPlayer, iClaimant, -1)
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(' Player vote no: ' + str(gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0)))
 				
 			# to continue the process
 			self.applyBriberyResultEvent()
@@ -406,16 +430,32 @@ class Congress:
 			if bHumanClaim:
 				sText = localText.getText("TXT_KEY_CONGRESS_BRIBE_OWN_CLAIM_SUCCESS", (gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0),))
 				self.vote(iBribedPlayer, iClaimant, 1)
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(u' Bribery(VOTE) Player: ' + str(gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0)))
+					utils.log_congress(u' iClaimant Player: ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
+					utils.log_congress(' Player vote yes: ' + str(gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0)))
 			else:
 				sText = localText.getText("TXT_KEY_CONGRESS_BRIBE_THEIR_CLAIM_SUCCESS", (gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0),))
 				self.vote(iBribedPlayer, iClaimant, -1)
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(u' Bribery(VOTE) Player: ' + str(gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0)))
+					utils.log_congress(u' iClaimant Player: ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
+					utils.log_congress(' Player vote yes: ' + str(gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0)))
 		else:
 			if bHumanClaim:
 				sText = localText.getText("TXT_KEY_CONGRESS_BRIBE_OWN_CLAIM_FAILURE", (gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0),))
 				self.vote(iBribedPlayer, iClaimant, -1)
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(u'Bribery(VOTE) Player: ' + str(gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0)))
+					utils.log_congress(u'iClaimant Player: ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
+					utils.log_congress('Player vote no: ' + str(gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0)))
 			else:
 				sText = localText.getText("TXT_KEY_CONGRESS_BRIBE_THEIR_CLAIM_FAILURE", (gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0),))
 				self.vote(iBribedPlayer, iClaimant, 1)
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(u'Bribery(VOTE) Player: ' + str(gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0)))
+					utils.log_congress(u'iClaimant Player: ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
+					utils.log_congress('Player vote no: ' + str(gc.getPlayer(iBribedPlayer).getCivilizationShortDescription(0)))
 				
 			gc.getPlayer(iBribedPlayer).AI_changeMemoryCount(utils.getHumanID(), MemoryTypes.MEMORY_STOPPED_TRADING_RECENT, 1)
 			gc.getPlayer(iBribedPlayer).AI_changeAttitudeExtra(utils.getHumanID(), -2)
@@ -425,6 +465,7 @@ class Congress:
 		popup.setOnClickedPythonCallback("applyBriberyResultEvent")
 		popup.setText(sText)
 		popup.addPythonButton(localText.getText("TXT_KEY_CONGRESS_OK", ()), '')
+
 		
 		popup.addPopup(utils.getHumanID())
 		
@@ -693,6 +734,10 @@ class Congress:
 		for iBelligerent in self.dPossibleBelligerents:
 			iRand = gc.getGame().getSorenRandNum(100, 'Random declaration of war')
 			iThreshold = 10 + tPatienceThreshold[iBelligerent] - 5 * self.dPossibleBelligerents[iBelligerent] - iGlobalWarModifier
+			if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+				utils.log_congress(' End of a congress ')
+				utils.log_congress(' The War prob: ' + str(iRand))
+				utils.log_congress(' The War threshold: '+str(iThreshold))
 			if iRand >= iThreshold:
 				gc.getTeam(iBelligerent).setDefensivePact(utils.getHumanID(), False)
 				gc.getTeam(iBelligerent).declareWar(utils.getHumanID(), False, WarPlanTypes.WARPLAN_DOGPILE)
@@ -724,13 +769,16 @@ class Congress:
 			
 			if utils.getHumanID() in lVoters: lVoters.remove(utils.getHumanID())
 			if iClaimant in lVoters: lVoters.remove(iClaimant)
-			
+			if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+				utils.log_congress('*****************START vote city AI************************')
 			for iVoter in lVoters:
+
 				tResult = self.voteOnCityClaimAI(iVoter, iClaimant, (x, y), iValue)
 				
 				# if a human bribe is possible, a set of data has been returned, so add it to the list of possible bribes
 				if tResult: self.lPossibleBribes.append(tResult)
-						
+			if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+				utils.log_congress('*****************END vote city AI************************')
 		# if bribes are possible, handle them now, votes are applied after the last bribe event
 		if len(self.lPossibleBribes) > 0:
 			iVoter, iClaimant, tPlot, iDifference, iClaimValidity = self.lPossibleBribes[0]
@@ -766,8 +814,10 @@ class Congress:
 		sDebugText = '\nVote City AI Debug\nVoter: ' + gc.getPlayer(iVoter).getCivilizationShortDescription(0) + '\nClaimant: ' + gc.getPlayer(iClaimant).getCivilizationShortDescription(0)
 		if bCity: sDebugText += '\nCity claim: ' + city.getName()
 		if bOwner: sDebugText += '\nOwner: ' + gc.getPlayer(iOwner).getCivilizationShortDescription(0)
-		
-		print sDebugText
+
+		print(sDebugText)
+		if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+			utils.log_congress(sDebugText)
 		
 		# everyone agrees on AI American claims in the west, unless owner is native to the Americas
 		if iClaimant == iAmerica and iVoter != iOwner and iOwner not in lCivGroups[5]:
@@ -904,8 +954,10 @@ class Congress:
 		sDebugText = 'FavorClaimant: ' + str(iFavorClaimant)
 		sDebugText += '\nFavorOwner: ' + str(iFavorOwner)
 		sDebugText += '\nClaim Validity: ' + str(iClaimValidity)
-		
-		print sDebugText + '\n'
+
+		print(sDebugText + '\n')
+		if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+			utils.log_congress(sDebugText)
 				
 		bThreatenedClaimant = (2 * tVoter.getPower(True) < gc.getTeam(iClaimant).getPower(True))
 		if bOwner: bThreatenedOwner = (2 * tVoter.getPower(True) < gc.getTeam(iOwner).getPower(True))
@@ -913,38 +965,50 @@ class Congress:
 		# always vote for claims on empty territory unless claim is invalid
 		if not bOwner:
 			if iClaimValidity >= 0:
-				print 'Voted YES: empty territory'
+				print('Voted YES: empty territory')
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(str(gc.getPlayer(iVoter).getCivilizationShortDescription(0)) + ' Voted YES: empty territory towards ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
 				self.vote(iVoter, iClaimant, 1)
 				return
 		
 		# always vote for own claims unless threatened by owner
 		if bOwnClaim:
 			if not bOwner or not bThreatenedOwner:
-				print 'Voted YES: own claim'
+				print('Voted YES: own claim')
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(str(gc.getPlayer(iVoter).getCivilizationShortDescription(0)) + ' Voted YES: own claim towards to ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
 				self.vote(iVoter, iClaimant, 1)
 				return
 				
 		# always vote against claims on own cities unless threatened by owner
 		if bOwner and bOwnCity:
 			if not bThreatenedClaimant:
-				print 'Voted NO: claim on own city'
+				print('Voted NO: claim on own city')
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(str(gc.getPlayer(iVoter).getCivilizationShortDescription(0))+' Voted NO: claim on own city towards to '+str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
 				self.vote(iVoter, iClaimant, -1)
 				return
 				
 		# vote yes to asking minor cities if there is a valid claim
 		if bOwner and bMinor:
 			if iClaimValidity > 0:
-				print 'Voted YES: valid claim on minors'
+				print('Voted YES: valid claim on minors')
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(str(gc.getPlayer(iVoter).getCivilizationShortDescription(0))+' Voted YES: valid claim on minors to '+str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
 				self.vote(iVoter, iClaimant, 1)
 			else:
-				print 'Voted NO: invalid claim on minors'
+				print('Voted NO: invalid claim on minors')
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(str(gc.getPlayer(iVoter).getCivilizationShortDescription(0)) + ' Voted NO: invalid claim on minors to ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
 				self.vote(iVoter, iClaimant, -1)
 			return
 			
 		# always vote no against claims against a common enemy
 		if bOwner and not bOwnClaim:
 			if tVoter.isAtWar(iClaimant) and gc.getTeam(iOwner).isAtWar(iClaimant) and not tVoter.isAtWar(iOwner):
-				print 'Voted NO: claimant is common enemy'
+				print('Voted NO: claimant is common enemy')
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(str(gc.getPlayer(iVoter).getCivilizationShortDescription(0)) + ' Voted NO: claimant is common enemy to ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
 				self.vote(iVoter, iClaimant, -1)
 			
 		# maybe include threatened here?
@@ -952,38 +1016,54 @@ class Congress:
 		if iClaimValidity > 0 or (bOwner and bWarClaim):
 			# claim insufficient to overcome dislike
 			if iFavorClaimant + iClaimValidity < iFavorOwner:
-				print 'Voted NO: claimant favor and validity lower than owner favor'
+				print('Voted NO: claimant favor and validity lower than owner favor')
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(str(gc.getPlayer(iVoter).getCivilizationShortDescription(0)) + ' Voted NO: claimant favor and validity lower than owner favor to ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
 				self.vote(iVoter, iClaimant, -1)
 			# valid claim and claimant is more liked
 			elif iFavorClaimant > iFavorOwner:
-				print 'Voted YES: claimant favor higher than owner favor'
+				print('Voted YES: claimant favor higher than owner favor')
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(str(gc.getPlayer(iVoter).getCivilizationShortDescription(0)) + ' Voted YES: claimant favor higher than owner favor to ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
 				self.vote(iVoter, iClaimant, 1)
 			# less liked, but justified by claim
 			elif iFavorClaimant + iClaimValidity >= iFavorOwner:
 				# human can bribe on a close call if own claim or own city
 				if (iClaimant == utils.getHumanID() or (bOwner and iOwner == utils.getHumanID())) and iClaimValidity < 50 and iFavorOwner - iFavorClaimant > 0:
 					# return the relevant data to be added to the list of possible bribes in the calling method
-					print 'NO VOTE: open for bribes'
+					print('NO VOTE: open for bribes')
+					if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+						utils.log_congress(str(gc.getPlayer(iVoter).getCivilizationShortDescription(0)) + ' NO VOTE: open for bribes to ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
 					return (iVoter, iClaimant, tPlot, iFavorOwner - iFavorClaimant, iClaimValidity)
 				else:
 					iRand = gc.getGame().getSorenRandNum(50, 'Random vote outcome')
 					if iRand < iClaimValidity:
-						print 'Voted YES: random'
+						print('Voted YES: random')
+						if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+							utils.log_congress(str(gc.getPlayer(iVoter).getCivilizationShortDescription(0)) + ' Voted YES: random to ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
 						self.vote(iVoter, iClaimant, 1)
 					else:
-						print 'Voted NO: random'
+						print('Voted NO: random')
+						if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+							utils.log_congress(str(gc.getPlayer(iVoter).getCivilizationShortDescription(0)) + ' Voted NO: random to ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
 						self.vote(iVoter, iClaimant, -1)
 				
 		else:
 			# like them enough to overcome bad claim
 			if iFavorClaimant + iClaimValidity > iFavorOwner:
-				print 'Voted YES: likes claimant enough despite bad claim'
+				print('Voted YES: likes claimant enough despite bad claim')
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(str(gc.getPlayer(iVoter).getCivilizationShortDescription(0)) + ' Voted YES: likes claimant enough despite bad claim to ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
 				self.vote(iVoter, iClaimant, 1)
 			else:
-				print 'Voted NO: bad claim'
+				print('Voted NO: bad claim')
+				if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+					utils.log_congress(str(gc.getPlayer(iVoter).getCivilizationShortDescription(0)) + ' Voted NO: bad claim to ' + str(gc.getPlayer(iClaimant).getCivilizationShortDescription(0)))
 				self.vote(iVoter, iClaimant, -1)
-				
-		print 'End vote city AI'
+
+		print('End vote city AI')
+		if (gc.getDefineINT("PYTHON_LOG_ON_CONGRESS") == 1):
+			utils.log_congress('End vote city AI')
 				
 		# return none to signify that no bribe is possible
 		return None
@@ -1046,6 +1126,11 @@ class Congress:
 			
 			# Palace of Nations effect
 			if gc.getPlayer(iLoopPlayer).isHasBuildingEffect(iPalaceOfNations): continue
+
+			
+			#低难度下人类城市不能被要求
+			if utils.getHumanID()==iLoopPlayer and gc.getDefineINT("PYTHON_CONGRESS_CANNOT_ASK_HUMAN_CITY") == 1:continue
+			
 			
 			for city in utils.getCityList(iLoopPlayer):
 				x, y = city.getX(), city.getY()

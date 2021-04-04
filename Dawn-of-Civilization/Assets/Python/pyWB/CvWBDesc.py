@@ -9,7 +9,10 @@ from array import *
 # globals
 gc = CyGlobalContext()
 version = 11
-#fileencoding = "latin_1"	# aka "iso-8859-1"
+# >>> CYBERFRONT // character code: codepage
+##fileencoding = "latin_1"	# aka "iso-8859-1"
+fileencoding = "utf-8"
+# <<< CYBERFRONT
 fileencoding = "utf-8"
 
 ## self.bSpecial True will load the following additional special effects:
@@ -1824,7 +1827,10 @@ class CvSignDesc:
 		f.write("\tplotX=%d\n" %(sign.getPlot().getX(),))
 		f.write("\tplotY=%d\n" %(sign.getPlot().getY(),))
 		f.write("\tplayerType=%d, (%s)\n" %(sign.getPlayerType(), gc.getPlayer(sign.getPlayerType()).getName().encode(fileencoding)))
-		f.write("\tcaption=%s\n" %(sign.getCaption(),))
+# >>> CYBERFRONT // text: wb landmark
+#		f.write("\tcaption=%s\n" %(sign.getCaption(),))
+		f.write("\tcaption=%s\n" %(sign.getCaption().encode(fileencoding),))
+# <<< CYBERFRONT
 		f.write("EndSign\n")
 
 	def read(self, f):
@@ -1857,7 +1863,10 @@ class CvSignDesc:
 
 			v = parser.findTokenValue(toks, "caption")
 			if v!=-1:
-				self.szCaption = v
+# >>> CYBERFRONT // text: wb landmark
+#				self.szCaption = v
+				self.szCaption = (v).decode(fileencoding)
+# <<< CYBERFRONT
 				continue
 
 			if parser.findTokenValue(toks, "EndSign")!=-1:
@@ -1883,7 +1892,9 @@ class CvWBDesc:
 
 	def write(self, fileName):
 		"Save out a high-level desc of the world, and height/terrainmaps"
-		fileName = os.path.normpath(fileName)
+# >>> CYBERFRONT // save: wb
+#		fileName = os.path.normpath(fileName)
+# <<< CYBERFRONT
 		fileName,ext = os.path.splitext(fileName)
 		fileName = fileName.encode(fileencoding)
 		CvUtil.pyPrint( 'saveDesc:%s, curDir:%s' %(fileName,os.getcwd()) )
@@ -2106,7 +2117,9 @@ class CvWBDesc:
 
 	def read(self, fileName):
 		"Load in a high-level desc of the world, and height/terrainmaps"
-		fileName = os.path.normpath(fileName)
+# >>> CYBERFRONT // load: wb
+#		fileName = os.path.normpath(fileName)
+# <<< CYBERFRONT
 		fileName,ext=os.path.splitext(fileName)
 		if len(ext) == 0:
 			ext = getWBSaveExtension()

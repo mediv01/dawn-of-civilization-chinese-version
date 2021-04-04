@@ -14,8 +14,9 @@ lOffsets = [[[0 for i in range(iNumEras)] for j in lTypes] for i in range(iNumCi
 
 def testunit(iPlayer, iUnit):
 	unit = gc.getPlayer(iPlayer).initUnit(utils.getUniqueUnit(iPlayer, iUnit), 0, 0, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-	print getName(unit)
-	
+	print(getName(unit))
+
+
 def create(iPlayer, iUnit, (x, y)):
 	gc.getPlayer(iPlayer).createGreatPeople(utils.getUniqueUnit(iPlayer, iUnit), True, True, x, y)
 
@@ -112,10 +113,10 @@ def setup():
 				if lCurrentOffsets[i] < lCurrentOffsets[i-1]: lCurrentOffsets[i] = lCurrentOffsets[i-1]
 				
 			lCurrentOffsets[iDigital] = len(lGreatPeople[iCiv][lTypes.index(iType)])
-				
-	print lGreatPeople
 
-		
+	print(lGreatPeople)
+
+
 dGreatPeople = {
 iCivEgypt : {
 	iGreatProphet : [
@@ -258,7 +259,7 @@ iCivChina : {
 		iGlobal,
 		"Xiong Shili", # 20th
 		"Sheng Yen", # 20th
-		"Li Hongzhi", # 20th
+		"Li Wen", # 20th
 	],
 	iGreatArtist : [
 		"Ling Lun", # legendary
@@ -317,8 +318,8 @@ iCivChina : {
 		"Yishiha", # 15th
 		"Pan Qiguan", # 18th
 		iGlobal,
-		"Zeng Junchen", # 20th
-		"Deng Xiaoping", # 20th
+		"Ma Huateng", # 20th
+		"Ma Yun", # 20th
 	],
 	iGreatEngineer : [
 		"fLeizu", # 27th BC
@@ -355,7 +356,7 @@ iCivChina : {
 		"Sun Yat-sen", # 19th
 		iGlobal,
 		"Zhou Enlai", # 20th
-		"fJiang Qing", # 20th
+		"Deng Xiaoping", # 20th
 	],
 	iGreatGeneral : [
 		"fFu Hao", # 13th BC
@@ -389,7 +390,7 @@ iCivChina : {
 		"Wei Zhongxian", # 16th
 		iGlobal,
 		"Dai Li", # 20th
-		"Kang Sheng", # 20th
+		"Li Jing", # 20th
 		"fXu Lai", # 20th
 		"Li Bai", # 20th
 	],
@@ -1882,7 +1883,7 @@ iCivTibet : {
 		"Yonten Gyatso", # 16-17th
 		"Tsangyang Gyatso", # 17th
 		iGlobal,
-		"Tenzin Gyatso", # 20th
+		"Ngapoi Ngawang Jigme", # 20th
 	],
 	iGreatArtist : [
 		"fYeshe Tsogyal", # 8th

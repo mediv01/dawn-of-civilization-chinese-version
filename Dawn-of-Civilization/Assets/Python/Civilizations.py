@@ -162,9 +162,9 @@ iCivByzantium :	Techs([iArchitecture, iPolitics, iEthics], column=5),
 iCivJapan :	Techs([iNobility, iSteel, iArtisanry, iPolitics], column=5),
 iCivVikings : 	Techs([iNobility, iSteel, iArtisanry, iPolitics, iScholarship, iArchitecture, iGuilds], column=5),
 iCivTurks :	Techs([iNobility, iSteel], column=5, exceptions=[iNavigation, iMedicine, iPhilosophy]),
-iCivArabia :	Techs([iAlchemy, iTheology], column=6, exceptions=[iPolitics]),
+iCivArabia :	Techs([iAlchemy, iTheology,iFeudalism], column=6, exceptions=[iPolitics]),#,iCivilService  #曾经是Techs([iAlchemy, iTheology], column=6, exceptions=[iPolitics])
 iCivTibet :	Techs([iNobility, iScholarship, iEthics], column=5),
-iCivIndonesia :	Techs([iEthics], column=5, exceptions=[iGeneralship]),
+iCivIndonesia :	Techs([iEthics], column=5, exceptions=[]),#exceptions=[iGeneralship]
 iCivMoors :	Techs([iMachinery, iAlchemy, iTheology], column=6, exceptions=[iPolitics]),
 iCivSpain : 	Techs([iFeudalism, iAlchemy, iGuilds], column=6),
 iCivFrance :	Techs([iFeudalism, iTheology], column=6),

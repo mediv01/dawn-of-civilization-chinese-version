@@ -7,6 +7,8 @@ import traceback
 # for file ops
 import os
 import sys
+#reload(sys)
+
 
 #Alexius08: import RFC-specific constants and functions for new score calc formula
 from Consts import *
@@ -117,13 +119,19 @@ FONT_LEFT_JUSTIFY=1<<0
 def convertToUnicode(s):
 	"if the string is non unicode, convert it to unicode by decoding it using 8859-1, latin_1"
 	if (isinstance(s, str)):
-		return s.decode("latin_1")
+# >>> CYBERFRONT // character code: codepage
+#		return s.decode("latin_1")
+		return s.decode("utf-8")
+# <<< CYBERFRONT
 	return s
 	
 def convertToStr(s):
 	"if the string is unicode, convert it to str by encoding it using 8859-1, latin_1"
 	if (isinstance(s, unicode)):
-		return s.encode("latin_1")
+# >>> CYBERFRONT // character code: codepage
+#		return s.encode("latin_1")
+		return s.encode("utf-8")
+# <<< CYBERFRONT
 	return s
 
 class RedirectDebug:
@@ -160,9 +168,38 @@ def myExceptHook(type, value, tb):
 	else:
 		sys.stdout.write(total)
 
+
+# 新增输出日志的功能
+def log_path():
+	import BugPath
+	# filepath='D:\\DoC_Log\\'
+	filepath = BugPath.join(BugPath.getRootDir(), 'Saves', 'logs', '')
+	return filepath
+
+
+def log_gettime():
+	import time
+	curtime1 = str(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
+	# curtime1 = str(time.strftime('%Y-%m-%d %H:%M:%S', time.time()))
+	strturn = u' [' + str(gc.getGame().getGameTurnYear()) + ']  T[' + str(gc.getGame().getGameTurn()) + ']  '
+	log_gettime = curtime1 + strturn
+	return log_gettime
+
+def log2(strText, LogName):
+	if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
+		f = open(log_path() + LogName + ".log", 'a')
+		f.write((log_gettime() + strText + u''))
+		f.write('\n')
+		f.close
+		#f.write((log_gettime() + strText + u'').encode('utf8', 'xmlcharrefreplace'))
+
+
+
 def pyPrint(stuff):
 	stuff = 'PY:' + stuff + "\n"
-	sys.stdout.write(stuff)
+	#sys.stdout.write(stuff)
+	if (gc.getDefineINT("PYTHON_LOG_ON_RANDOMEVENT") == 1):
+		log2(stuff,'DoC_SmallMap_Log_RandomEvent')
 
 def pyAssert(cond, msg):
 	if (cond==False):

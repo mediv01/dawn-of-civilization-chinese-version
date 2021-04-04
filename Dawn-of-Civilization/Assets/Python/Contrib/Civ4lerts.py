@@ -154,6 +154,8 @@ def addMessage(iPlayer, szString, szIcon, iFlashX=-1, iFlashY=-1, bOffArrow=Fals
 	Culture:  Zoom to City, Ignore
 	"""
 	eventMessageTimeLong = gc.getDefineINT("EVENT_MESSAGE_TIME_LONG")
+	#eventMessageTimeLong=1 #mediv01
+	#utils.show(str(111)) #mediv01
 	CyInterface().addMessage(iPlayer, True, eventMessageTimeLong,
 							 szString, None, InterfaceMessageTypes.MESSAGE_TYPE_INFO, 
 							 szIcon, ColorTypes(-1),
@@ -328,11 +330,13 @@ class AbstractCityTestAlert(AbstractCityAlert):
 		AbstractCityAlert.__init__(self, eventManager)
 
 	def checkCity(self, cityId, city, iPlayer, player):
+		
 		message = None
 		passes = self._passesTest(city)
 		passed = cityId in self.cities
 		if (passes != passed):
 			# City switched this turn, save new state and display an alert
+			#utils.show(str(222))#mediv01 test
 			if (passes):
 				self.cities.add(cityId)
 				if (self._isShowAlert(passes)):
@@ -669,6 +673,7 @@ class AbstractCanHurry(AbstractCityTestAlert):
 		return city.canHurry(self.keHurryType, False)
 	
 	def _getAlertMessageIcon(self, city, passes):
+		#utils.show(str(111))  #mediv01  没有重复执行这个语句
 		if (passes):
 			info = None
 			if (city.isProductionBuilding()):
@@ -685,10 +690,11 @@ class AbstractCanHurry(AbstractCityTestAlert):
 				if (iType >= 0):
 					info = gc.getProjectInfo(iType)
 			if (info):
+				#utils.show(str(111))  #mediv01  没有重复执行这个语句
 				return (self._getAlertMessage(city, info), info.getButton())
 		return (None, None)
 
-class CanHurryPopulation(AbstractCanHurry):
+class CanHurryPopulation(AbstractCanHurry): #mediv01 
 	"""
 	Displays an alert when a city can hurry using population.
 	"""
@@ -699,7 +705,8 @@ class CanHurryPopulation(AbstractCanHurry):
 		AbstractCanHurry.init(self, "HURRY_POPULATION")
 		
 	def _isShowAlert(self, passes):
-		return passes and Civ4lertsOpt.isShowCityCanHurryPopAlert()
+		return passes and Civ4lertsOpt.isShowCityCanHurryPopAlert()#mediv01
+		#return Civ4lertsOpt.isShowCityCanHurryPopAlert()#mediv01
 	
 	def _getAlertMessage(self, city, info):
 		iPop = city.hurryPopulation(self.keHurryType)
@@ -711,10 +718,11 @@ class CanHurryPopulation(AbstractCanHurry):
 		iMaxOverflow = min(city.getProductionNeeded(), iOverflow)
 		iOverflowGold = max(0, iOverflow - iMaxOverflow) * gc.getDefineINT("MAXED_UNIT_GOLD_PERCENT") / 100
 		iOverflow =  100 * iMaxOverflow / city.getBaseYieldRateModifier(gc.getInfoTypeForString("YIELD_PRODUCTION"), city.getProductionModifier())
+		#iAnger = city.getHurryAngerTimer() #mediv01 这个是连续杀人附加的红脸
 		if (iOverflowGold > 0):
-			return localText.getText("TXT_KEY_CIV4LERTS_ON_CITY_CAN_HURRY_POP_PLUS_GOLD", (city.getName(), info.getDescription(), iPop, iOverflow, iAnger, iOverflowGold))
+			return localText.getText("TXT_KEY_CIV4LERTS_ON_CITY_CAN_HURRY_POP_PLUS_GOLD", (city.getName(), info.getDescription(), iPop, iOverflow, iAnger, iOverflowGold))# 在这里提醒加速人口
 		else:
-			return localText.getText("TXT_KEY_CIV4LERTS_ON_CITY_CAN_HURRY_POP", (city.getName(), info.getDescription(), iPop, iOverflow, iAnger))
+			return localText.getText("TXT_KEY_CIV4LERTS_ON_CITY_CAN_HURRY_POP", (city.getName(), info.getDescription(), iPop, iOverflow, iAnger))# 在这里提醒加速人口
 
 class CanHurryGoldUnits(AbstractCanHurry):
 	"""

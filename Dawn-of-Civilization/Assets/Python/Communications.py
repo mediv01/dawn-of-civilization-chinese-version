@@ -99,8 +99,9 @@ class Communications:
 	def canDecay(self, iGameTurn, iCiv):
 		if 0 <= iCiv < iNumMajorPlayers:
 			if gc.getPlayer(iCiv).isAlive() and iGameTurn >= getTurnForYear(tBirth[iCiv]+utils.getTurns(15)): # edead: RFCM
-				if not gc.getTeam(gc.getPlayer(iCiv).getTeam()).isHasTech(iElectricity):
-					self.decay(iCiv)
+				if not gc.getTeam(gc.getPlayer(iCiv).getTeam()).isHasTech(iElectricity):#mediv01 外交关系遗忘
+					if not (gc.getDefineINT("PYTHON_DIPO_NO_DECAY")==1):#mediv01 外交关系遗忘
+						self.decay(iCiv)
 
 	def decay(self, iCiv):
 		teamCiv = gc.getTeam(gc.getPlayer(iCiv).getTeam())

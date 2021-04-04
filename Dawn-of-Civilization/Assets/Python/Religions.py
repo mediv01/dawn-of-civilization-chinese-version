@@ -307,6 +307,7 @@ class Religions:
 	def checkChristianity(self, iGameTurn):
 		if not gc.getGame().isReligionFounded(iJudaism): return
 		if gc.getGame().isReligionFounded(iOrthodoxy): return
+		if (iGameTurn <= getTurnForYear(476) and utils.getHumanID()==12 and gc.getDefineINT("PYTHON_UHV_HELPER") == 1):return  #mediv01 for 埃塞尔比亚
 		
 		iOffset = utils.getTurns(data.iSeed % 15)
 		

@@ -144,9 +144,9 @@ tSpreadFactors = (
 },
 # Buddhism
 {
-	iCore : 	[rIndia, rTibet, rIndochina],
-	iHistorical : 	[rCentralAsia, rChina, rManchuria, rKorea, rJapan, rIndonesia],
-	iMinority :	[rPersia],
+	iCore : 	[rIndia, rTibet, rIndochina,rDeccan],
+	iHistorical : 	[rCentralAsia, rChina, rManchuria, rKorea, rJapan, rIndonesia,rPersia],
+	iMinority :	[rSiberia],
 },
 # Confucianism
 {

@@ -1,5 +1,6 @@
 from Consts import *
 
+
 # Peak that change to hills during the game, like Bogota
 lPeakExceptions = [(31, 13), (32, 19), (27, 29), (88, 47), (40, 66)]
 
@@ -9,6 +10,105 @@ def isReborn(iPlayer):
 def getOrElse(dDictionary, key, default):
 	if key in dDictionary: return dDictionary[key]
 	return default
+
+
+tCoreArea = [
+[[67, 32],	[69, 36]],	# Egypt
+[[75, 39],	[77, 42]],	# Babylonia
+[[85, 37],	[88, 41]],	# Harappa
+[[100, 43],	[104, 46]],	# China  # China  #修改前是[[99, 43], 	[107, 47]], 	# China，修改后是[99, 38],	[107, 49]
+[[64, 39],	[70, 45]],	# Greece
+[[86, 35],	[96, 40]],	# India
+[[73, 39],	[74, 41]],	# Phoenicia
+[[4, 18],	[6, 21]],	# Polynesia
+[[79, 37],	[85, 44]],	# Persia
+[[59, 41],	[63, 47]],	# Rome
+[[21, 35],	[23, 37]],	# Maya
+[[90, 27],	[93, 32]],	# Tamils  #[[90, 27],	[93, 32]]  修改后是[[88, 27],	[94, 34]]
+[[70, 27],	[73, 30]],	# Ethiopia
+[[108, 45],	[110, 48]],	# Korea
+[[64, 40],	[72, 46]],	# Byzantium
+[[111, 41],	[116, 52]],	# Japan
+[[58, 56],	[64, 62]],	# Vikings
+[[81, 42],	[89, 51]],	# Turks   #[[81, 44],	[89, 51]]
+[[72, 33],	[78, 42]],	# Arabia
+[[92, 42],	[98, 45]],	# Tibet
+[[98, 24],	[107, 30]],	# Indonesia
+[[51, 37],	[53, 42]],	# Moors
+[[49, 43],	[53, 46]],	# Spain
+[[51, 46],	[57, 51]],	# France
+[[100, 32],	[103, 36]],	# Khmer
+[[50, 53],	[54, 60]],	# England
+[[58, 49],	[63, 52]],	# HolyRome
+[[68, 49],	[84, 59]],	# Russia
+[[50, 29], 	[55, 32]], 	# Mali
+[[63, 50],	[67, 55]],	# Poland
+[[44, 42],	[50, 44]],	# Portugal
+[[26, 20],	[28, 22]],	# Inca
+[[58, 45],	[62, 47]],	# Italy
+[[95, 47],	[105, 52]],	# Mongolia
+[[16, 35],	[19, 38]],	# Aztecs
+[[86, 38],	[91, 43]],	# Mughals
+[[69, 42],	[76, 46]],	# Ottomans
+[[100, 32],	[103, 36]],	# Thailand
+[[61, 19],	[65, 22]],	# Congo
+[[56, 52],	[58, 54]],	# Netherlands
+[[58, 49],	[65, 55]],	# Germany
+[[11, 43],	[32, 50]],	# America
+[[31, 6],	[35, 12]],	# Argentina
+[[37, 15],	[41, 22]],	# Brazil
+[[27, 50],	[35, 52]],	# Canada
+]
+
+### Birth Area ###
+
+tBirthArea = (
+((66, 30), 	(70, 36)), 	# Egypt
+((75, 39), 	(77, 42)), 	# Babylonia
+((85, 37), 	(88, 41)), 	# Harappa
+((99, 43), 	(107, 47)), 	# China
+((65, 39), 	(70, 45)), 	# Greece
+((87, 36), 	(96, 40)), 	# India
+((71, 39), 	(74, 41)), 	# Carthage
+((3, 17), 	(7, 22)), 	# Polynesia
+((79, 37), 	(85, 44)), 	# Persia
+((59, 41), 	(63, 47)), 	# Rome
+((20, 35), 	(23, 37)), 	# Maya
+((88, 27), 	(94, 35)), 	# Tamils  #used to be ((90, 27), 	(93, 32))
+((70, 27),	(73, 30)),	# Ethiopia
+((108, 45), 	(110, 49)), 	# Korea
+((64, 38), 	(74, 45)), 	# Byzantium
+((111, 41), 	(116, 49)), 	# Japan
+((58, 56), 	(64, 62)), 	# Vikings
+((79, 45),	(98, 52)),	# Turks
+((67, 30), 	(80, 40)), 	# Arabia
+((92, 41), 	(98, 45)), 	# Tibet
+((98, 24), 	(107, 31)), 	# Indonesia
+((51, 37), 	(58, 43)), 	# Moors
+((49, 43), 	(53, 46)), 	# Spain
+((51, 46), 	(57, 52)), 	# France
+((100, 32), 	(103, 36)), 	# Khmer
+((50, 53), 	(54, 60)), 	# England
+((58, 48), 	(64, 54)), 	# Holy Rome
+((67, 50), 	(74, 58)), 	# Russia
+((50, 29), 	(55, 32)), 	# Mali
+((63, 50), 	(67, 55)), 	# Poland
+((44, 42), 	(50, 44)), 	# Portugal
+((26, 20), 	(29, 24)), 	# Inca
+((58, 45), 	(63, 47)), 	# Italy
+((87, 46), 	(105, 54)), 	# Mongolia
+((15, 36), 	(20, 41)), 	# Aztecs
+((86, 38), 	(91, 43)), 	# Mughals
+((69, 41), 	(76, 48)), 	# Ottomans
+((100, 32), 	(103, 36)), 	# Thailand
+((61, 19), 	(65, 22)), 	# Congo
+((56, 52), 	(58, 54)), 	# Holland
+((58, 49), 	(65, 55)), 	# Germany
+((25, 43), 	(32, 50)), 	# America
+((31, 3), 	(35, 13)), 	# Argentina
+((36, 15), 	(43, 27)), 	# Brazil
+((20, 50), 	(35, 60)), 	# Canada
+)
 	
 def getArea(iPlayer, tRectangle, dExceptions, bReborn=None, dChangedRectangle={}, dChangedExceptions={}):
 	if bReborn is None: bReborn = isReborn(iPlayer)
@@ -21,7 +121,7 @@ def getArea(iPlayer, tRectangle, dExceptions, bReborn=None, dChangedRectangle={}
 			lExceptions = getOrElse(dChangedExceptions, iPlayer, [])
 	
 	left, bottom = tBL
-	right, top = tTR		
+	right, top = tTR
 	return [(x, y) for x in range(left, right+1) for y in range(bottom, top+1) if (x, y) not in lExceptions]
 
 def getCapital(iPlayer, bReborn=None):
@@ -62,7 +162,11 @@ def getBroaderArea(iPlayer, bReborn=None):
 	
 def getRespawnArea(iPlayer):
 	if iPlayer in dRespawnArea: return getArea(iPlayer, dRespawnArea, {})
-	return getNormalArea(iPlayer)
+	if (gc.getDefineINT("PYTHON_ONLY_RESPAWN_IN_CORE") == 1):
+		return getCoreArea(iPlayer)#used to be getNormalArea
+	else:
+		return getNormalArea(iPlayer)#used to be getNormalArea
+
 	
 def getRebirthArea(iPlayer):
 	if iPlayer in dRebirthArea: return getArea(iPlayer, dRebirthArea, dRebirthAreaExceptions)
@@ -103,7 +207,7 @@ tCapitals = (
 (69, 33), # Thebes
 (76, 40), # Babylon
 (87, 40), # Harappa
-(100, 44), # Chang'an
+(102, 44), # Chang'an
 (67, 41), # Athens
 (94, 40), # Pataliputra
 (73, 40), # Sur
@@ -187,55 +291,7 @@ iMughals : (85, 37),	# Karachi
 iOttomans : (68, 45),	# Istanbul
 }
 
-### Birth Area ###
 
-tBirthArea = (
-((66, 30), 	(70, 36)), 	# Egypt
-((75, 39), 	(77, 42)), 	# Babylonia
-((85, 37), 	(88, 41)), 	# Harappa
-((99, 43), 	(107, 47)), 	# China
-((65, 39), 	(70, 45)), 	# Greece
-((87, 36), 	(96, 40)), 	# India
-((71, 39), 	(74, 41)), 	# Carthage
-((3, 17), 	(7, 22)), 	# Polynesia
-((79, 37), 	(85, 44)), 	# Persia
-((59, 41), 	(63, 47)), 	# Rome
-((20, 35), 	(23, 37)), 	# Maya
-((90, 27), 	(93, 32)), 	# Tamils
-((70, 27),	(73, 30)),	# Ethiopia
-((107, 45), 	(110, 49)), 	# Korea
-((64, 38), 	(74, 45)), 	# Byzantium
-((111, 41), 	(116, 49)), 	# Japan
-((58, 56), 	(64, 62)), 	# Vikings
-((79, 45),	(98, 52)),	# Turks
-((67, 30), 	(80, 40)), 	# Arabia
-((92, 41), 	(98, 45)), 	# Tibet
-((98, 24), 	(107, 31)), 	# Indonesia
-((51, 37), 	(58, 43)), 	# Moors
-((49, 43), 	(53, 46)), 	# Spain
-((51, 46), 	(57, 52)), 	# France
-((100, 32), 	(103, 36)), 	# Khmer
-((50, 53), 	(54, 60)), 	# England
-((58, 48), 	(64, 54)), 	# Holy Rome
-((67, 50), 	(74, 58)), 	# Russia
-((50, 29), 	(55, 32)), 	# Mali
-((63, 50), 	(67, 55)), 	# Poland
-((44, 42), 	(50, 44)), 	# Portugal
-((26, 20), 	(29, 24)), 	# Inca
-((58, 45), 	(63, 47)), 	# Italy
-((87, 46), 	(105, 54)), 	# Mongolia
-((15, 36), 	(20, 41)), 	# Aztecs
-((86, 38), 	(91, 43)), 	# Mughals
-((69, 41), 	(76, 48)), 	# Ottomans
-((100, 32), 	(103, 36)), 	# Thailand
-((61, 19), 	(65, 22)), 	# Congo
-((56, 52), 	(58, 54)), 	# Holland
-((58, 49), 	(65, 55)), 	# Germany
-((25, 43), 	(32, 50)), 	# America
-((31, 3), 	(35, 13)), 	# Argentina
-((36, 15), 	(43, 27)), 	# Brazil
-((20, 50), 	(35, 60)), 	# Canada
-)
 
 dChangedBirthArea = {
 iPersia :	((74, 37), 	(85, 44)), 	# includes Assyria and Anatolia
@@ -277,53 +333,6 @@ iCanada : [(20, 50), (21, 50), (22, 50), (23, 50), (24, 50), (25, 50), (29, 50),
 
 ### Core Area ###
 
-tCoreArea = (
-((67, 32),	(69, 36)),	# Egypt
-((75, 39),	(77, 42)),	# Babylonia
-((85, 37),	(88, 41)),	# Harappa
-((99, 43),	(107, 47)),	# China
-((64, 39),	(70, 45)),	# Greece
-((90, 38),	(96, 40)),	# India
-((73, 39),	(74, 41)),	# Phoenicia
-((4, 18),	(6, 21)),	# Polynesia
-((79, 37),	(85, 44)),	# Persia
-((59, 41),	(63, 47)),	# Rome
-((21, 35),	(23, 37)),	# Maya
-((90, 27),	(93, 32)),	# Tamils
-((70, 27),	(73, 30)),	# Ethiopia
-((108, 45),	(110, 48)),	# Korea
-((64, 40),	(72, 46)),	# Byzantium
-((112, 45),	(116, 47)),	# Japan
-((58, 56),	(64, 62)),	# Vikings
-((81, 44),	(89, 51)),	# Turks
-((72, 33),	(78, 42)),	# Arabia
-((92, 42),	(98, 45)),	# Tibet
-((98, 24),	(107, 30)),	# Indonesia
-((51, 37),	(53, 42)),	# Moors
-((49, 43),	(53, 46)),	# Spain
-((51, 46),	(57, 51)),	# France
-((100, 32),	(103, 36)),	# Khmer
-((50, 53),	(54, 60)),	# England
-((58, 49),	(63, 52)),	# HolyRome
-((68, 49),	(75, 59)),	# Russia
-((50, 29), 	(55, 32)), 	# Mali
-((63, 50),	(67, 55)),	# Poland
-((44, 42),	(50, 44)),	# Portugal
-((26, 20),	(28, 22)),	# Inca
-((58, 45),	(62, 47)),	# Italy
-((95, 47),	(105, 52)),	# Mongolia
-((16, 35),	(19, 38)),	# Aztecs
-((86, 38),	(91, 43)),	# Mughals
-((69, 42),	(76, 46)),	# Ottomans
-((100, 32),	(103, 36)),	# Thailand
-((61, 19),	(65, 22)),	# Congo
-((56, 52),	(58, 54)),	# Netherlands
-((58, 49),	(65, 55)),	# Germany
-((23, 45),	(32, 50)),	# America
-((31, 6),	(35, 12)),	# Argentina
-((37, 15),	(41, 22)),	# Brazil
-((27, 50),	(35, 52)),	# Canada
-)
 
 dChangedCoreArea = {
 iChina : 	((99, 42),	(107, 47)),
@@ -350,7 +359,7 @@ iGermany : 	((58, 49),	(63, 55)),
 
 dCoreAreaExceptions = {
 iHarappa : [(85, 41), (88, 37), (88, 38)],
-iChina : [(99, 46), (99, 47), (104, 43), (105, 43), (106, 43), (107, 43), (105, 44), (106, 44), (106, 47)],
+iChina : [(99, 46), (99, 47)],
 iGreece : [(64, 45), (65, 45)],
 iPersia : [(85, 37), (85, 38), (85, 39)],
 iByzantium : [(71, 40)],
@@ -391,7 +400,7 @@ tNormalArea = (
 ((65, 30), 	(72, 37)), 	# Egypt
 ((74, 38), 	(79, 44)), 	# Babylonia
 ((84, 35), 	(88, 42)), 	# Harappa
-((99, 39), 	(108, 50)), 	# China
+((98, 37), 	(110, 55)), 	# China
 ((64, 39), 	(68, 44)), 	# Greece
 ((89, 38), 	(96, 42)), 	# India
 ((72, 39), 	(74, 41)), 	# Carthage
@@ -477,7 +486,7 @@ tBroaderArea = (
 ((60, 26), 	(74, 38)), 	# Egypt
 ((72, 37), 	(78, 44)), 	# Babylonia
 ((90, 40), 	(90, 40)), 	# Harappa
-((95, 38), 	(108, 50)), 	# China
+((95, 38), 	(111, 56)), 	# China
 ((62, 39), 	(77, 47)), 	# Greece
 ((85, 28), 	(99, 43)), 	# India
 ((71, 39), 	(74, 41)), 	# Carthage

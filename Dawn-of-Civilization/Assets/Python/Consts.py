@@ -55,6 +55,61 @@ l0ArrayTotal =  [0 for i in range(iNumTotalPlayers)]
 
 lm1Array =      [-1 for i in range(iNumPlayers)]
 
+# converted to years - edead
+tBirth = (
+-3000, # 0, #3000BC			# Egypt
+-3000, # 0, #3000BC			# Babylonia
+-3000,					# Harappa
+-2070,					# China  was 2070
+-1600, # 50, #1600BC			# Greece
+-1500, # 0, #3000BC			# India
+-1200, # 66, #814BC # Leoreth: 1200 BC	# Carthage
+-1000,					# Polynesia
+-850, # 84, #844BC			# Persia
+-753, # 90, #753BC			# Rome
+-400, 					# Maya
+-300,					# Tamils
+-290, # 121, #300BC			# Ethiopia
+-50,					# Korea
+330,					# Byzantium
+525, # 97, #660BC			# Japan
+551, # 177, #551AD			# Vikings
+552,					# Turks
+620, # 183, #622AD			# Arabia
+630,					# Tibet was 630
+650,					# Indonesia
+711,					# Moors
+722, # 193, #718AD			# Spain
+750, # 196, #751AD			# France
+800, # 187, #657AD			# Khmer
+820, # 203, #829AD			# England
+840, # 205, #843AD			# Holy Rome
+860, # 207, #860AD			# Russia
+989, # 220, #989AD			# Mali
+1025,					# Poland
+1130, # 234, #1128AD			# Portugal
+1150, # 236, #1150AD			# Inca
+1167, # Italy				# Italy
+1190, # 240, #1190AD			# Mongolia
+1195, # 241, #1195AD			# Aztecs
+1206,					# Mughals
+1280, # 249, #1280AD (1071AD)		# Turkey
+1350,					# Thailand
+1390,					# Congo
+1580, # 281, #922AD # Leoreth: 1500 AD	# Netherlands
+1700,					# Germany
+1775, # 346, #1775AD #332 for 1733AD	# America
+1810,					# Argentina
+1822,					# Brazil
+1867,					# Canada  #1867
+-3000, # 0,
+-3000, # 0,
+-3000, # 0,
+-3000, # 0,
+-3000, # 0,
+-3000
+)
+
 # civilizations, not players
 iNumCivilizations = 57
 (iCivAmerica, iCivArabia, iCivArgentina, iCivAztec, iCivBabylonia, iCivBrazil, iCivByzantium, iCivCanada, iCivCarthage, iCivCelt, 
@@ -140,10 +195,10 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 40
+iNumMinorCities = 40 +201
 
-# scripted conquerors
-iNumConquests = 13
+# scripted conquerors was 13 by mediv01
+iNumConquests = 13+201
 
 #neighbours
 lNeighbours = [
@@ -245,78 +300,26 @@ lOlderNeighbours = [
 
 # civ birth dates
 
-# converted to years - edead
-tBirth = (
--3000, # 0, #3000BC			# Egypt
--3000, # 0, #3000BC			# Babylonia
--3000,					# Harappa
--2070,					# China
--1600, # 50, #1600BC			# Greece
--1500, # 0, #3000BC			# India
--1200, # 66, #814BC # Leoreth: 1200 BC	# Carthage
--1000,					# Polynesia
--850, # 84, #844BC			# Persia
--753, # 90, #753BC			# Rome
--400, 					# Maya
--300,					# Tamils
--290, # 121, #300BC			# Ethiopia
--50,					# Korea
-330,					# Byzantium
-525, # 97, #660BC			# Japan
-551, # 177, #551AD			# Vikings
-552,					# Turks
-620, # 183, #622AD			# Arabia
-630,					# Tibet
-650,					# Indonesia
-711,					# Moors
-722, # 193, #718AD			# Spain
-750, # 196, #751AD			# France
-800, # 187, #657AD			# Khmer
-820, # 203, #829AD			# England
-840, # 205, #843AD			# Holy Rome
-860, # 207, #860AD			# Russia
-989, # 220, #989AD			# Mali
-1025,					# Poland
-1130, # 234, #1128AD			# Portugal
-1150, # 236, #1150AD			# Inca
-1167, # Italy				# Italy
-1190, # 240, #1190AD			# Mongolia
-1195, # 241, #1195AD			# Aztecs
-1206,					# Mughals
-1280, # 249, #1280AD (1071AD)		# Turkey
-1350,					# Thailand
-1390,					# Congo
-1580, # 281, #922AD # Leoreth: 1500 AD	# Netherlands
-1700,					# Germany
-1775, # 346, #1775AD #332 for 1733AD	# America
-1810,					# Argentina
-1822,					# Brazil
-1867,					# Canada
--3000, # 0,
--3000, # 0,
--3000, # 0,
--3000, # 0,
--3000, # 0,
--3000
-)
+
 
 # Leoreth: stability penalty from this date on
+
 tFall = (
 -343,					# Egypt
 -539,					# Babylonia
 -1700,					# Harappa
-1127,					# China
+2020,					# China
 -146,					# Greece
-600, # end of Gupta Empire		# India
+1200, # end of Gupta Empire		# India
 -146,					# Phoenicia
 1200,					# Polynesia
 651,					# Persia
-235, # crisis of the third century	# Rome
+395, # crisis of the third century	# Rome
 900,					# Maya
-1000,					# Tamils
-960,					# Ethiopia
+1200,					# Tamils
+1530,					# Ethiopia
 1255, #Mongol invasion			# Korea
-1204, #fourth crusade			# Byzantium
+1453, #fourth crusade			# Byzantium
 2020,					# Japan
 1300,					# Vikings
 1507,					# Turks
@@ -338,7 +341,7 @@ tFall = (
 1368,					# Mongolia
 1521,					# Aztecs
 1640,					# Mughals
-2020,					# Turkey
+1914,					# Turkey
 2020,					# Thailand
 1800,					# Congo
 2020,					# Netherlands
@@ -436,7 +439,7 @@ tResurrectionIntervals = (
 [(1900, 2020)], #Indonesia
 [(1000, 2020)],	#Moors
 [(1700, 2020)], #Spain
-[(1700, 2020)], #France
+[(1800, 2020)], #France
 [(1950, 2020)], #Khmer
 [(1700, 2020)], #England
 [(1800, 2020)], #Holy Rome
@@ -446,7 +449,7 @@ tResurrectionIntervals = (
 [(1700, 2020)], #Portugal
 [(1800, 1930)], #Inca
 [(1820, 2020)], #Italy
-[(1910, 2020)], #Mongolia
+[], #Mongolia
 [], 		#Aztec
 [(1940, 2020)], #Mughals
 [(1700, 2020)], #Ottomans
@@ -629,7 +632,7 @@ tAIStopBirthThreshold = (
     80, #Japan
     80, #Viking
     50, #Turks
-    80, #Arabia
+    100, #Arabia
     80, #Tibet
     80, #Indonesia
     80, #Moors
@@ -644,7 +647,7 @@ tAIStopBirthThreshold = (
     40, #Portugal
     70, #Inca
     60, #Italy
-    70, #Mongolia
+    100, #Mongolia was 70
     50, #Aztec
     70, #Mughals
     70, #Turkey
@@ -678,13 +681,13 @@ tResurrectionProb = (
 30, #Maya
 10, #Tamils
 80, #Ethopia
-80, #Korea
+80, #Korea  #was 80
 65, #Byzantium
 100, #Japan
 60, #Viking
 30, #Turks
 100, #Arabia
-60, #Tibet
+0, #Tibet  #was 60
 80, #Indonesia
 70, #Moors
 100, #Spain
@@ -777,6 +780,8 @@ iGermany : 2
 # initialise religion variables to religion indices from XML
 iNumReligions = 10
 (iJudaism, iOrthodoxy, iCatholicism, iProtestantism, iIslam, iHinduism, iBuddhism, iConfucianism, iTaoism, iZoroastrianism) = range(iNumReligions)
+
+txtReligions=('Judaism', 'Orthodoxy', 'Catholicism', 'Protestantism', 'Islam', 'Hinduism', 'Buddhism', 'Confucianism', 'Taoism', 'Zoroastrianism')
 
 #Persecution preference
 tPersecutionPreference = (

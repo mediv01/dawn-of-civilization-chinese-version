@@ -30,6 +30,12 @@ import Civilizations
 import AIParameters
 import GreatPeople as gp
 
+
+import DynamicCore
+import AITrade
+
+
+
 gc = CyGlobalContext()
 PyPlayer = PyHelpers.PyPlayer
 localText = CyTranslator()
@@ -123,7 +129,9 @@ class CvRFCEventHandler:
 		tCity = (city.getX(), city.getY())
 		
 		cnm.onCityAcquired(city, iPlayer)
-		
+		if (gc.getDefineINT("PYTHON_LOG_ON_CITY_CONQUEST") == 1):
+			utils.logwithid_city_conquest(iPlayer,' City '+city.getName()+' of '+gc.getPlayer(iOwner).getCivilizationShortDescription(0)+' is conquest by '+gc.getPlayer(iPlayer).getCivilizationShortDescription(0)+' in : ( '+str(city.getX())+' , '+str(city.getY())+' )')
+			pass
 		if bConquest:
 			sta.onCityAcquired(city, iOwner, iPlayer)
 			
@@ -254,10 +262,14 @@ class CvRFCEventHandler:
 		iOwner = city.getOwner()
 		tCity = (city.getX(), city.getY())
 		x, y = tCity
+
 		
 		if iOwner < iNumActivePlayers: 
 			cnm.onCityBuilt(city)
-			
+
+		if (gc.getDefineINT("PYTHON_LOG_ON_CITY_BUILD") == 1):
+			utils.logwithid_city_build(iOwner,' City '+city.getName()+' build in : ( '+str(x)+' , '+str(y)+' )')
+			pass
 		# starting workers
 		if city.isCapital():
 			self.rnf.createStartingWorkers(iOwner, tCity)
@@ -446,7 +458,9 @@ class CvRFCEventHandler:
 	def onReligionFounded(self, argsList):
 		'Religion Founded'
 		iReligion, iFounder = argsList
-		
+		if (gc.getDefineINT("PYTHON_LOG_ON_MAIN_RISE_AND_FALL") == 1):
+			#utils.logwithid(iFounder,' Found a religion '+txtReligions[iReligion]+' in '+gc.getGame().getHolyCity(iReligion).getName())
+			pass
 		if gc.getGame().getGameTurn() == utils.getScenarioStartTurn():
 			return
 	
@@ -546,6 +560,15 @@ class CvRFCEventHandler:
 			
 	def onUnitBuilt(self, argsList):
 		city, unit = argsList
+
+		if (gc.getDefineINT("PYTHON_LOG_ON_UNIT") == 1):
+			iBuildingType=unit.getUnitType()
+			buildingtext_tag = gc.getUnitInfo(iBuildingType).getTextKey()
+			buildingtext = buildingtext_tag
+			if (buildingtext_tag[0:13] == 'TXT_KEY_UNIT_'):
+				buildingtext = buildingtext_tag[13:len(buildingtext_tag)]
+				pass
+			utils.logwithid_unit(city.getOwner(), u' finish unit ' + str(buildingtext) + ' in ' + city.getName())
 		
 		if unit.getUnitType() == iSettler and city.getOwner() == iChina and utils.getHumanID() != iChina:
 			utils.handleChineseCities(unit)
@@ -575,7 +598,25 @@ class CvRFCEventHandler:
 		
 		if isWorldWonderClass(gc.getBuildingInfo(iBuildingType).getBuildingClassType()):
 			sta.onWonderBuilt(iOwner, iBuildingType)
-			
+
+			if (gc.getDefineINT("PYTHON_LOG_ON_WONDER") == 1):
+				buildingtext_tag=gc.getBuildingInfo(iBuildingType).getTextKey()
+				buildingtext=buildingtext_tag
+				if (buildingtext_tag[0:17]=='TXT_KEY_BUILDING_'):
+					buildingtext=buildingtext_tag[17:len(buildingtext_tag)]
+				#buildingtext_tag=gc.getBuildingInfo(iBuildingType).getDescription()
+				#buildingtext2=(CyTranslator().getText(buildingtext_tag,()))
+				utils.logwithid_wonder(iOwner,u' finish building wonder '+str(buildingtext)+' in '+city.getName())
+		else:
+			if (gc.getDefineINT("PYTHON_LOG_ON_BUILDING") == 1):
+				buildingtext_tag=gc.getBuildingInfo(iBuildingType).getTextKey()
+				buildingtext=buildingtext_tag
+				if (buildingtext_tag[0:17]=='TXT_KEY_BUILDING_'):
+					buildingtext=buildingtext_tag[17:len(buildingtext_tag)]
+				#buildingtext_tag=gc.getBuildingInfo(iBuildingType).getDescription()
+				#buildingtext2=(CyTranslator().getText(buildingtext_tag,()))
+				utils.logwithid_building(iOwner,u' finish building '+str(buildingtext)+' in '+city.getName())
+
 		if iBuildingType == iPalace:
 			sta.onPalaceMoved(iOwner)
 			dc.onPalaceMoved(iOwner)
@@ -646,7 +687,12 @@ class CvRFCEventHandler:
 		
 	def onBeginGameTurn(self, argsList):
 		iGameTurn = argsList[0]
-		
+		import Autosave_Checkturn
+		Autosave_Checkturn.checkTurn(iGameTurn)
+		AITrade.checkturn(iGameTurn)		
+		DynamicCore.checkturn(iGameTurn)
+		import DoResurrectionManual
+		DoResurrectionManual.checkTurn(iGameTurn)
 		self.rnf.checkTurn(iGameTurn)
 		self.barb.checkTurn(iGameTurn)
 		rel.checkTurn(iGameTurn)
@@ -659,6 +705,9 @@ class CvRFCEventHandler:
 		
 		sta.checkTurn(iGameTurn)
 		cong.checkTurn(iGameTurn)
+		import GameScore
+		GameScore.checkTurn(iGameTurn)
+
 		
 		if iGameTurn % 10 == 0:
 			dc.checkTurn(iGameTurn)
@@ -693,6 +742,8 @@ class CvRFCEventHandler:
 		gp.onGreatPersonBorn(pUnit, iPlayer, pCity)
 		vic.onGreatPersonBorn(iPlayer, pUnit)
 		sta.onGreatPersonBorn(iPlayer)
+		if (gc.getDefineINT("PYTHON_LOG_ON_GREATPEOPLE") == 1):
+			utils.logwithid_great_people(iPlayer,' A Great Person '+pUnit.getName()+' born in '+pCity.getName())
 		
 		# Leoreth: Silver Tree Fountain effect
 		if gc.getUnitInfo(pUnit.getUnitType()).getLeaderExperience() > 0 and gc.getPlayer(iPlayer).isHasBuildingEffect(iSilverTreeFountain):
@@ -725,6 +776,9 @@ class CvRFCEventHandler:
 		iReligion, iOwner, pSpreadCity = argsList
 		
 		cnm.onReligionSpread(iReligion, iOwner, pSpreadCity)
+		if (gc.getDefineINT("PYTHON_LOG_ON_RELIGION") == 1):
+			utils.logwithid_religion(iOwner,' Religion '+txtReligions[iReligion]+' has spread in '+pSpreadCity.getName())
+			pass
 
 	def onFirstContact(self, argsList):
 		iTeamX,iHasMetTeamY = argsList
@@ -742,6 +796,16 @@ class CvRFCEventHandler:
 		
 		iEra = gc.getTechInfo(iTech).getEra()
 		iGameTurn = gc.getGame().getGameTurn()
+		if (gc.getDefineINT("PYTHON_LOG_ON_TECH") == 1):
+
+			text_tag = gc.getTechInfo(iTech).getTextKey()
+			text = text_tag
+			if (text_tag[0:13] == 'TXT_KEY_TECH_'):
+				text = text_tag[13:len(text_tag)]
+				pass
+			utils.logwithid_tech(iPlayer, u' acquire tech ' + str(text) )
+
+			pass
 
 		if iGameTurn == utils.getScenarioStartTurn():
 			return

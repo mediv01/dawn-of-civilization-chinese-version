@@ -792,6 +792,12 @@ def text(sTextKey, tInput=()):
 	return localText.getText(sTextKey.encode(encoding), tInput)
 	
 def desc(iPlayer, sTextKey=str("%s1")):
+	if(gc.getDefineINT("PYTHON_DISABLE_DYNAMIC_NAMES") == 1):
+		#txt="TXT_KEY_CIV_" + gc.getPlayer(iPlayer).getCivilizationShortDescriptionKey().replace(" ", "_").upper() + '_DESC'
+		#txt=gc.getPlayer(iPlayer).getCivilizationShortDescriptionKey()
+		txt=gc.getPlayer(iPlayer).getCivilizationDescriptionKey()
+		#return localText.getText(txt.encode(encoding),())
+		return txt.encode(encoding)
 	if isVassal(iPlayer): return text(sTextKey, (name(iPlayer), adjective(iPlayer), name(iPlayer, True), adjective(iPlayer, True)))
 
 	return text(sTextKey, (name(iPlayer), adjective(iPlayer)))

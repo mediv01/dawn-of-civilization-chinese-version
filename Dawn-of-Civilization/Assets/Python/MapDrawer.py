@@ -5,7 +5,7 @@ from SettlerMaps import *
 from RFCUtils import utils
 import csv
 
-IMAGE_LOCATION = "D:\DoC Maps"
+IMAGE_LOCATION = "E:\\DoC Maps"
 
 DISPLAY_FOREIGN_CORE = False
 DISPLAY_CONTESTED = True
@@ -19,6 +19,7 @@ def createMaps():
 		createMap(iPlayer, 0)
 		if iPlayer in dRebirth:
 			createMap(iPlayer, 1)
+			pass
 			
 	print 'Maps Created'
 			

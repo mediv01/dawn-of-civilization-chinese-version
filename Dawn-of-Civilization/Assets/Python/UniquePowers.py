@@ -184,8 +184,8 @@ class UniquePowers:
 					iExtra = 1
 					if iEnemy == iPersia: iExtra = 2
 				
-				utils.makeUnitAI(iHoplite, iGreece, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2+iExtra*2)
-				utils.makeUnitAI(iCatapult, iGreece, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1+iExtra*2)
+				utils.makeUnitAI(iHoplite, iGreece, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 20+iExtra*2)
+				utils.makeUnitAI(iCatapult, iGreece, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 10+iExtra*2)
 				
 		CyInterface().addMessage(iEnemy, False, iDuration, CyTranslator().getText("TXT_KEY_UP_GREEK_CONQUESTS_TARGET", ()), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
 		

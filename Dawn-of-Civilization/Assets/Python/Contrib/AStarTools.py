@@ -140,7 +140,7 @@ class AStar:
 					if (dx != 0) and (dy != 0) and (self.eDomain == DomainTypes.DOMAIN_SEA):
 						bCont = not self.fnCheckLandBridge(pPlot, dx, dy)
 					else: 
-						bCont = true
+						bCont = True
 					if bCont:
 						# check if the plot is passable
 						if self.pUnit.canMoveOrAttackInto(pNewPlot, true):
@@ -190,7 +190,7 @@ class AStar:
 		if self.bResultValid:
 			pWorkPlot 	= self.pTargetPlot
 			pParentPlot	= self.pTargetPlot
-			while true:
+			while True:
 				# adding target plot to the path
 				lPath.append(self.pCloseList.getXY(pWorkPlot))
 				# looking for the parent of the 
@@ -245,7 +245,7 @@ class AStar:
 		if ((pFromPlot.getX() == pToPlot.getX()) and (pFromPlot.getY() == pToPlot.getY())):
 			# From and To plot are equal -> break
 			return -1
-		if not (self.pUnit.canMoveOrAttackInto(pToPlot, true)):
+		if not (self.pUnit.canMoveOrAttackInto(pToPlot, True)):
 			# To plot not passable -> break
 			return -1		
 		
@@ -256,7 +256,7 @@ class AStar:
 		self.pOpenList.set(pCurrentPlot, pCurrentPlot, 0, self.calcHeuristic(pNewPlot))	
 
 		# repeat until target plot is reached
-		while (true):
+		while (True):
 			self.addAdjacents(pCurrentPlot)
 			self.moveToClose(pCurrentPlot)	
 			if (self.pCloseList.exists(self.pTargetPlot)):
@@ -264,7 +264,7 @@ class AStar:
 				break
 			if (self.pOpenList.len() == 0):
 				# no path found
-				bBreak = true
+				bBreak = True
 				break
 			# find the plot with the lowest costs on the open list
 			pCurrentPlot = self.pOpenList.findMinFCost()
@@ -274,10 +274,10 @@ class AStar:
 		if bBreak:
 			# no path found
 			iReturn = -1
-			self.bResultValid = false
+			self.bResultValid = False
 		else:
 			iReturn = int(self.pCloseList.getGCosts(pCurrentPlot))
-			self.bResultValid = true
+			self.bResultValid = True
 			
 		return iReturn
 
@@ -344,7 +344,7 @@ class AStar:
 		self.pOpenList.set(pCurrentPlot, pCurrentPlot, 0, self.calcHeuristic(pNewPlot))	
 
 		# repeat until target plot is reached
-		while (true):
+		while (True):
 			self.addAdjacents(pCurrentPlot)
 			self.moveToClose(pCurrentPlot)	
 			if (self.pOpenList.len() == 0):

@@ -118,7 +118,7 @@ class IconGrid_BUG:
 		self.rowBorderWidth = 3
 		self.scrollSpace = 3
 
-		iTemp = [0, 0, 35, 30, 0]
+		iTemp = [0, 0, 35, 30, 0, 0]#modify by mediv01
 		self.iconColWidth = 55 + iTemp[CyGame().getCurrentLanguage()]
 
 		self.groupBorder = 10
