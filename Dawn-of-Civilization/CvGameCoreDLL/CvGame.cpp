@@ -1,5 +1,5 @@
 // game.cpp
-
+//mediv01 20200813 游戏非常底层的内容，逻辑不多
 #include "CvGameCoreDLL.h"
 #include "CvGameCoreUtils.h"
 #include "CvGame.h"
@@ -37,6 +37,7 @@
 
 #include "CvRhyes.h" //Rhye
 #include <algorithm>
+
 
 // Public Functions...
 
@@ -211,6 +212,7 @@ void CvGame::init(HandicapTypes eHandicap)
 	}
 
 	//edead: start hack to allow late start with different game speeds
+	//mediv01 游戏回合带一定随机
 	if (getScenario() == SCENARIO_600AD) //late start condition
 	{
 		if (getGameTurn() == 181)
@@ -554,37 +556,41 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 		m_aiTechRankTeam[iI] = 0; // Leoreth
 	}
 
+	m_bBeforeHuman = false;
 	if (!bConstructorCall)
 	{
-		FAssertMsg(m_paiUnitCreatedCount==NULL, "about to leak memory, CvGame::m_paiUnitCreatedCount");
+		// PerformanceUP
+		m_bBeforeHuman = getGameTurn() < GET_PLAYER(getActivePlayer()).getBirthTurn();
+
+		FAssertMsg(m_paiUnitCreatedCount == NULL, "about to leak memory, CvGame::m_paiUnitCreatedCount");
 		m_paiUnitCreatedCount = new int[GC.getNumUnitInfos()];
 		for (iI = 0; iI < GC.getNumUnitInfos(); iI++)
 		{
 			m_paiUnitCreatedCount[iI] = 0;
 		}
 
-		FAssertMsg(m_paiUnitClassCreatedCount==NULL, "about to leak memory, CvGame::m_paiUnitClassCreatedCount");
+		FAssertMsg(m_paiUnitClassCreatedCount == NULL, "about to leak memory, CvGame::m_paiUnitClassCreatedCount");
 		m_paiUnitClassCreatedCount = new int[GC.getNumUnitClassInfos()];
 		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 		{
 			m_paiUnitClassCreatedCount[iI] = 0;
 		}
 
-		FAssertMsg(m_paiBuildingClassCreatedCount==NULL, "about to leak memory, CvGame::m_paiBuildingClassCreatedCount");
+		FAssertMsg(m_paiBuildingClassCreatedCount == NULL, "about to leak memory, CvGame::m_paiBuildingClassCreatedCount");
 		m_paiBuildingClassCreatedCount = new int[GC.getNumBuildingClassInfos()];
 		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
 		{
 			m_paiBuildingClassCreatedCount[iI] = 0;
 		}
 
-		FAssertMsg(m_paiProjectCreatedCount==NULL, "about to leak memory, CvGame::m_paiProjectCreatedCount");
+		FAssertMsg(m_paiProjectCreatedCount == NULL, "about to leak memory, CvGame::m_paiProjectCreatedCount");
 		m_paiProjectCreatedCount = new int[GC.getNumProjectInfos()];
 		for (iI = 0; iI < GC.getNumProjectInfos(); iI++)
 		{
 			m_paiProjectCreatedCount[iI] = 0;
 		}
 
-		FAssertMsg(m_paiForceCivicCount==NULL, "about to leak memory, CvGame::m_paiForceCivicCount");
+		FAssertMsg(m_paiForceCivicCount == NULL, "about to leak memory, CvGame::m_paiForceCivicCount");
 		m_paiForceCivicCount = new int[GC.getNumCivicInfos()];
 		for (iI = 0; iI < GC.getNumCivicInfos(); iI++)
 		{
@@ -592,7 +598,7 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 		}
 
 		FAssertMsg(0 < GC.getNumVoteInfos(), "GC.getNumVoteInfos() is not greater than zero in CvGame::reset");
-		FAssertMsg(m_paiVoteOutcome==NULL, "about to leak memory, CvGame::m_paiVoteOutcome");
+		FAssertMsg(m_paiVoteOutcome == NULL, "about to leak memory, CvGame::m_paiVoteOutcome");
 		m_paiVoteOutcome = new PlayerVoteTypes[GC.getNumVoteInfos()];
 		for (iI = 0; iI < GC.getNumVoteInfos(); iI++)
 		{
@@ -600,32 +606,32 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 		}
 
 		FAssertMsg(0 < GC.getNumVoteSourceInfos(), "GC.getNumVoteSourceInfos() is not greater than zero in CvGame::reset");
-		FAssertMsg(m_aiDiploVote==NULL, "about to leak memory, CvGame::m_aiDiploVote");
+		FAssertMsg(m_aiDiploVote == NULL, "about to leak memory, CvGame::m_aiDiploVote");
 		m_aiDiploVote = new int[GC.getNumVoteSourceInfos()];
 		for (iI = 0; iI < GC.getNumVoteSourceInfos(); iI++)
 		{
 			m_aiDiploVote[iI] = 0;
 		}
 
-		FAssertMsg(m_pabSpecialUnitValid==NULL, "about to leak memory, CvGame::m_pabSpecialUnitValid");
+		FAssertMsg(m_pabSpecialUnitValid == NULL, "about to leak memory, CvGame::m_pabSpecialUnitValid");
 		m_pabSpecialUnitValid = new bool[GC.getNumSpecialUnitInfos()];
 		for (iI = 0; iI < GC.getNumSpecialUnitInfos(); iI++)
 		{
 			m_pabSpecialUnitValid[iI] = false;
 		}
 
-		FAssertMsg(m_pabSpecialBuildingValid==NULL, "about to leak memory, CvGame::m_pabSpecialBuildingValid");
+		FAssertMsg(m_pabSpecialBuildingValid == NULL, "about to leak memory, CvGame::m_pabSpecialBuildingValid");
 		m_pabSpecialBuildingValid = new bool[GC.getNumSpecialBuildingInfos()];
 		for (iI = 0; iI < GC.getNumSpecialBuildingInfos(); iI++)
 		{
 			m_pabSpecialBuildingValid[iI] = false;
 		}
 
-		FAssertMsg(m_paiReligionGameTurnFounded==NULL, "about to leak memory, CvGame::m_paiReligionGameTurnFounded");
+		FAssertMsg(m_paiReligionGameTurnFounded == NULL, "about to leak memory, CvGame::m_paiReligionGameTurnFounded");
 		m_paiReligionGameTurnFounded = new int[GC.getNumReligionInfos()];
-		FAssertMsg(m_abReligionSlotTaken==NULL, "about to leak memory, CvGame::m_abReligionSlotTaken");
+		FAssertMsg(m_abReligionSlotTaken == NULL, "about to leak memory, CvGame::m_abReligionSlotTaken");
 		m_abReligionSlotTaken = new bool[GC.getNumReligionInfos()];
-		FAssertMsg(m_paHolyCity==NULL, "about to leak memory, CvGame::m_paHolyCity");
+		FAssertMsg(m_paHolyCity == NULL, "about to leak memory, CvGame::m_paHolyCity");
 		m_paHolyCity = new IDInfo[GC.getNumReligionInfos()];
 		for (iI = 0; iI < GC.getNumReligionInfos(); iI++)
 		{
@@ -634,7 +640,7 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 			m_abReligionSlotTaken[iI] = false;
 		}
 
-		FAssertMsg(m_paiCorporationGameTurnFounded==NULL, "about to leak memory, CvGame::m_paiCorporationGameTurnFounded");
+		FAssertMsg(m_paiCorporationGameTurnFounded == NULL, "about to leak memory, CvGame::m_paiCorporationGameTurnFounded");
 		m_paiCorporationGameTurnFounded = new int[GC.getNumCorporationInfos()];
 		m_paHeadquarters = new IDInfo[GC.getNumCorporationInfos()];
 		for (iI = 0; iI < GC.getNumCorporationInfos(); iI++)
@@ -643,18 +649,18 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 			m_paHeadquarters[iI].reset();
 		}
 
-		FAssertMsg(m_aiShrineBuilding==NULL, "about to leak memory, CvGame::m_aiShrineBuilding");
-		FAssertMsg(m_aiShrineReligion==NULL, "about to leak memory, CvGame::m_aiShrineReligion");
+		FAssertMsg(m_aiShrineBuilding == NULL, "about to leak memory, CvGame::m_aiShrineBuilding");
+		FAssertMsg(m_aiShrineReligion == NULL, "about to leak memory, CvGame::m_aiShrineReligion");
 		m_aiShrineBuilding = new int[GC.getNumBuildingInfos()];
 		m_aiShrineReligion = new int[GC.getNumBuildingInfos()];
 		for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
 		{
-			m_aiShrineBuilding[iI] = (int) NO_BUILDING;
-			m_aiShrineReligion[iI] = (int) NO_RELIGION;
+			m_aiShrineBuilding[iI] = (int)NO_BUILDING;
+			m_aiShrineReligion[iI] = (int)NO_RELIGION;
 		}
 
-		FAssertMsg(m_aiSecretaryGeneralTimer==NULL, "about to leak memory, CvGame::m_aiSecretaryGeneralTimer");
-		FAssertMsg(m_aiVoteTimer==NULL, "about to leak memory, CvGame::m_aiVoteTimer");
+		FAssertMsg(m_aiSecretaryGeneralTimer == NULL, "about to leak memory, CvGame::m_aiSecretaryGeneralTimer");
+		FAssertMsg(m_aiVoteTimer == NULL, "about to leak memory, CvGame::m_aiVoteTimer");
 		m_aiSecretaryGeneralTimer = new int[GC.getNumVoteSourceInfos()];
 		m_aiVoteTimer = new int[GC.getNumVoteSourceInfos()];
 		for (iI = 0; iI < GC.getNumVoteSourceInfos(); iI++)
@@ -2290,6 +2296,8 @@ void CvGame::update()
 
 		if (getNumGameTurnActive() == 0)
 		{
+			// PerformanceUP
+			m_bBeforeHuman = getGameTurn() < GET_PLAYER(getActivePlayer()).getBirthTurn();
 			if (!isPbem() || !getPbemTurnSent())
 			{
 				doTurn();
@@ -2320,18 +2328,20 @@ void CvGame::update()
 
 		changeTurnSlice(1);
 
-		if (NO_PLAYER != getActivePlayer() && GET_PLAYER(getActivePlayer()).getAdvancedStartPoints() >= 0 && !gDLL->getInterfaceIFace()->isInAdvancedStart())
-		{
-			gDLL->getInterfaceIFace()->setInAdvancedStart(true);
-			gDLL->getInterfaceIFace()->setWorldBuilder(true);
-		}
+		// Performance UP
+		//if (NO_PLAYER != getActivePlayer() && GET_PLAYER(getActivePlayer()).getAdvancedStartPoints() >= 0 && !gDLL->getInterfaceIFace()->isInAdvancedStart())
+		//{
+			//gDLL->getInterfaceIFace()->setInAdvancedStart(true);
+			//gDLL->getInterfaceIFace()->setWorldBuilder(true);
+		//}
 		
 		// Leoreth
 		if (getGameTurn() == getScenarioStartTurn() && GET_PLAYER(getActivePlayer()).getBirthTurn() > getScenarioStartTurn())
 		{
 			setAIAutoPlay(1);
 		}
-		else if (getGameTurn() <= GET_PLAYER(getActivePlayer()).getBirthTurn())
+		// Performance UP
+		else if (isBeforeHumanStart())
 		{
 			setAIAutoPlayCatapult(1);
 		}
@@ -5817,7 +5827,7 @@ void CvGame::makeSpecialBuildingValid(SpecialBuildingTypes eIndex, bool bAnnounc
 
 bool CvGame::isNukesValid() const
 {
-	return m_bNukesValid;
+	return m_bNukesValid;//mediv01 有很多和核弹相关的代码在这个文件中
 }
 
 
@@ -7454,6 +7464,7 @@ void CvGame::testAlive()
 
 bool CvGame::testVictory(VictoryTypes eVictory, TeamTypes eTeam, bool* pbEndScore) const
 {
+	//mediv01 胜利方式判定
 	FAssert(eVictory >= 0 && eVictory < GC.getNumVictoryInfos());
 	FAssert(eTeam >=0 && eTeam < MAX_CIV_TEAMS);
 	FAssert(GET_TEAM(eTeam).isAlive());

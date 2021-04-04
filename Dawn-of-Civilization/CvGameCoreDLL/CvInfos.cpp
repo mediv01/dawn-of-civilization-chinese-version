@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------------------------
 //  Copyright (c) 2003 Firaxis Games, Inc. All rights reserved.
 //------------------------------------------------------------------------------------------------
+//mediv01 20200815 阅读，主要是返回一些变量，需要时修改即可。
 #include "CvGameCoreDLL.h"
 #include "CvInfos.h"
 #include "CvGlobals.h"
@@ -1306,7 +1307,14 @@ int CvTechInfo::getAITradeModifier() const
 
 int CvTechInfo::getResearchCost() const
 {
-	return m_iResearchCost;
+	int modify = 1;
+	if (GC.getDefineINT("ANYFUN_REAEARCH_COST_MULTIPLIER") > 0) {
+		modify = modify * GC.getDefineINT("ANYFUN_REAEARCH_COST_MULTIPLIER")/100;
+	}
+
+
+
+	return m_iResearchCost* modify; //mediv01 科研费用修正参数
 }
 
 int CvTechInfo::getAdvancedStartCost() const
@@ -3597,6 +3605,13 @@ void CvUnitInfo::setCombat(int iNum)
 
 int CvUnitInfo::getCombatLimit() const
 {
+	// add PLAYEROPTION_DISABLE_COMBAT_LIMIT
+	//mediv01 取消单位伤害上限
+	if (GC.getDefineINT("ANYFUN_DISABLE_COMBAT_LIMIT") == 1)
+	{
+		return 100;
+	}
+	// end add
 	return m_iCombatLimit;
 }
 
@@ -11463,7 +11478,7 @@ int CvHandicapInfo::getResearchPercent() const
 
 int CvHandicapInfo::getResearchPercentByID(PlayerTypes ePlayer) const
 {
-	int iResearchPercent = m_iResearchPercent;
+	float iResearchPercent = m_iResearchPercent;
 
 	PlayerTypes eHuman = GC.getGameINLINE().getActivePlayer();
 	EraTypes eCurrentEra = GET_PLAYER(ePlayer).getCurrentEra();
@@ -11516,6 +11531,37 @@ int CvHandicapInfo::getResearchPercentByID(PlayerTypes ePlayer) const
 		iResearchPercent *= iHumanSpawnModifier;
 		iResearchPercent /= 100;
 	}
+
+	if (GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC") > 0) { //mediv01 按照难度进行科研惩罚
+		float modify = 1;
+		HandicapTypes eHandicap = GC.getGameINLINE().getHandicapType();
+		if (eHandicap == 0) {
+			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H1") / 100;
+		}
+		else if (eHandicap == 1) {
+			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H2") / 100;
+		}
+		else if (eHandicap == 2) {
+			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H3") / 100;
+		}
+		else if (eHandicap == 3) {
+			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H4") / 100;
+		}
+		else if (eHandicap == 4) {
+			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H5") / 100;
+		}
+
+		if (GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_NOT_INCLUDE_HUMAN") == 1) { //mediv01 科研惩罚不包含人类
+			if (bHuman) {
+				modify = 1;
+			}
+		}
+		iResearchPercent *= modify;
+
+	}
+
+
+
 
 	return iResearchPercent;
 }
@@ -12548,6 +12594,7 @@ bool CvBuildInfo::isFeatureRemove(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_pabFeatureRemove ? m_pabFeatureRemove[i] : false;
 }
+
 
 bool CvBuildInfo::read(CvXMLLoadUtility* pXML)
 {
@@ -22190,6 +22237,18 @@ const char* CvEventTriggerInfo::getPythonCanDoUnit() const
 {
 	return m_szPythonCanDoUnit;
 }
+
+// add PLAYEROPTION_EVENT_GOODBAD_CHOOSE
+//mediv01 ANYFUN 好坏事件
+int CvEventTriggerInfo::getGoodOrDad() const
+{
+	return m_iGoodOrDad;
+}
+void CvEventTriggerInfo::setGoodOrDad(int i)
+{
+	m_iGoodOrDad = i;
+}
+// end add
 
 void CvEventTriggerInfo::read(FDataStreamBase* stream)
 {

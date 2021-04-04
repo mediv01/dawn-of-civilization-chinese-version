@@ -5,7 +5,7 @@
 #include "CvGlobals.h"
 #include "CvGameAI.h"
 #include "CvPlayerAI.h"
-
+//mediv01 统计信息的相关函数 20200821
 CvGameRecord::CvGameRecord()
 {
 	init();

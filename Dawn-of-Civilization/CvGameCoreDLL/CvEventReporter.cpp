@@ -2,7 +2,7 @@
 #include "CvEventReporter.h"
 #include "CvDllPythonEvents.h"
 #include "CvInitCore.h"
-
+//mediv01 一些事件触发机制 20200813
 //
 // static, singleton accessor
 //

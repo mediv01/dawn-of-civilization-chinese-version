@@ -13,7 +13,7 @@
 //
 // published python interface for CyUnit
 //
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 {
 	OutputDebugString("Python Extension Module - CyUnitPythonInterface1\n");

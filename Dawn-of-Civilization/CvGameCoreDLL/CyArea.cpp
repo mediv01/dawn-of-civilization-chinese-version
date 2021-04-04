@@ -5,7 +5,7 @@
 #include "CyCity.h"
 #include "CyArea.h"
 #include "CvArea.h"
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 CyArea::CyArea() : m_pArea(NULL)
 {
 }

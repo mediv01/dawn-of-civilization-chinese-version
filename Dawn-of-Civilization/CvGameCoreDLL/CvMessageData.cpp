@@ -4,7 +4,7 @@
 #include "CvDLLUtilityIFaceBase.h"
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvEventReporter.h"
-
+//mediv01 增加信息的底层代码
 CvMessageData* CvMessageData::createMessage(GameMessageTypes eType)
 {
 	switch (eType)

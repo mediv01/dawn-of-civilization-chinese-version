@@ -13,7 +13,7 @@
 #include "FProfiler.h"
 #include "CyPlot.h"
 #include "CyArgsList.h"
-
+//mediv01 生产随机地图用的 比如增加资源，增加地貌、增加河流的底层代码
 //
 // static
 //
@@ -44,6 +44,7 @@ CvMapGenerator::~CvMapGenerator()
 
 bool CvMapGenerator::canPlaceBonusAt(BonusTypes eBonus, int iX, int iY, bool bIgnoreLatitude)
 {
+	//mediv01 是否可以放置资源
 	PROFILE_FUNC();
 
 	CvArea* pArea;
@@ -298,6 +299,7 @@ void CvMapGenerator::addLakes()
 
 void CvMapGenerator::addRivers()
 {
+	//mediv01 增加河流的代码
 	PROFILE("CvMapGenerator::addRivers");
 
 	if (gDLL->getPythonIFace()->callFunction(gDLL->getPythonIFace()->getMapScriptModule(), "addRivers"))

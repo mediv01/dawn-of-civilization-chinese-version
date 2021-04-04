@@ -1,6 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include ".\cvpopupinfo.h"
-
+//mediv01 20200821 弹出窗口的基础函数
 CvPopupInfo::CvPopupInfo(ButtonPopupTypes eButtonPopupType, int iData1, int iData2, int iData3, int iFlags, bool bOption1, bool bOption2) :
 	m_iData1(iData1),
 	m_iData2(iData2),

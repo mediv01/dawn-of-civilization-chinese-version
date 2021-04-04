@@ -21,7 +21,7 @@
 #include "CvMessageControl.h"
 
 #include "CvRhyes.h" //Rhye
-
+//mediv01  阅读修改于20200813 主要是各种提示信息
 // BUG - start
 #include "BugMod.h"
 #include "CvBugOptions.h"
@@ -2021,6 +2021,12 @@ void CvDLLWidgetData::parseHurryHelp(CvWidgetDataStruct &widgetDataStruct, CvWSt
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HURRY_POP", iHurryPopulation));
 
+
+			
+
+
+
+
 			if (iHurryPopulation > pHeadSelectedCity->maxHurryPopulation())
 			{
 				szBuffer.append(gDLL->getText("TXT_KEY_MISC_MAX_POP_HURRY", pHeadSelectedCity->maxHurryPopulation()));
@@ -2043,6 +2049,10 @@ void CvDLLWidgetData::parseHurryHelp(CvWidgetDataStruct &widgetDataStruct, CvWSt
 						szTempBuffer.Format(L"%d%c", iOverflowProduction, GC.getYieldInfo(YIELD_PRODUCTION).getChar());
 						setListHelp(szOverflowBuffer, NULL, szTempBuffer, L", ", bFirst);
 						bFirst = false;
+
+
+
+						
 					}
 					if (iOverflowGold > 0)
 					{
@@ -2052,6 +2062,8 @@ void CvDLLWidgetData::parseHurryHelp(CvWidgetDataStruct &widgetDataStruct, CvWSt
 					}
 					szBuffer.append(NEWLINE);
 					szBuffer.append(gDLL->getText("TXT_KEY_MISC_HURRY_OVERFLOW", szOverflowBuffer));
+
+
 				}
 			}
 		}
@@ -2103,6 +2115,70 @@ void CvDLLWidgetData::parseHurryHelp(CvWidgetDataStruct &widgetDataStruct, CvWSt
 			{
 				szBuffer.append(ENDCOLR);
 			}
+		}
+		if (GC.getDefineINT("CVCITY_SHOW_DETAILED_HURRY_INFO") == 1) {//显示详细加速信息
+			CvWString szTempBuffer1;
+			HurryTypes eHurry = (HurryTypes)(widgetDataStruct.m_iData1);
+
+			int iOverflowProduction = 0;
+			int iOverflowGold = 0;
+			pHeadSelectedCity->hurryOverflow((HurryTypes)(widgetDataStruct.m_iData1), &iOverflowProduction, &iOverflowGold, getBugOptionBOOL("MiscHover__HurryOverflowIncludeCurrent", false, "BUG_HURRY_OVERFLOW_HOVER_INCLUDE_CURRENT"));
+
+			szBuffer.append(NEWLINE);
+			//int iHurryPopulation1 = pHeadSelectedCity->getHurryCostModifier() * iHurryPopulation;
+			int iHurryProduction_all = pHeadSelectedCity->hurryProduction((HurryTypes)(widgetDataStruct.m_iData1));
+
+			int iProduction = (pHeadSelectedCity->getProduction());//城市已经生产的锤子数
+			int iProductionNeeded = (pHeadSelectedCity->getProductionNeeded());//城市需要生产的锤子数总数
+			int iProduction_city_per = pHeadSelectedCity->getCurrentProductionDifference(true, true);//城市锤子数
+
+			int iHurryProduction_per;
+			if (iHurryPopulation > 0) {
+				iHurryProduction_per = iHurryProduction_all / iHurryPopulation;
+			}
+			else {
+				iHurryProduction_per = 0;
+			}
+
+			//int iHurryProduction_per = GC.getHurryInfo(eHurry).getProductionPerPopulation();
+
+
+			int iHurryTime_left = 999;
+			int iOverflowProduction2;
+			if (iProduction_city_per > 0) {
+				if (iProduction > 0 ){
+					iHurryTime_left = (iHurryProduction_per - iOverflowProduction) / iProduction_city_per + 1;
+				}
+				else {
+					iOverflowProduction2 = (iHurryPopulation - 1) * iHurryProduction_per * 1.5- (iHurryProduction_all - iOverflowProduction) ;
+					iHurryTime_left = (iHurryProduction_per * 1.5 - iOverflowProduction2) / (iProduction_city_per) + 1;
+
+					//iHurryTime_left = (iHurryProduction_per * 1.5 - iOverflowProduction2-2* iProduction_city_per) / (iProduction_city_per) + 1;
+				}
+			}
+			else {
+			}
+
+
+			int iHurryTime_left2 = 999;
+			if (iProduction_city_per > 0) {
+				if (iProduction > 0) {
+					iHurryTime_left2 = (iHurryProduction_per*2 - iOverflowProduction) / iProduction_city_per + 1;
+					szBuffer.append(gDLL->getText("TXT_KEY_MISC_HURRY_POP_DETAIL", iHurryProduction_per, iHurryTime_left, iHurryPopulation - 1, iHurryTime_left2, iHurryPopulation - 2));
+				}
+				else {
+					iOverflowProduction2 = (iHurryPopulation - 1) * iHurryProduction_per * 1.5 - (iHurryProduction_all - iOverflowProduction);
+					//iHurryTime_left2 = (iHurryProduction_per * 1.5*2 - iOverflowProduction2 - 2 * iProduction_city_per) / (iProduction_city_per ) + 1;
+					iHurryTime_left2 = (iHurryProduction_per * 1.5*2 - iOverflowProduction2 ) / (iProduction_city_per ) + 1;
+
+					szBuffer.append(gDLL->getText("TXT_KEY_MISC_HURRY_POP_DETAIL", iHurryProduction_per, iHurryTime_left, iHurryPopulation - 2, iHurryTime_left2, iHurryPopulation - 3));
+				}
+			}
+			else {
+			}
+			//szTempBuffer1.Format(L"  详细加速信息：每个人口加速：%d    城市产量:%d     加速剩余回合 %d", iHurryProduction_per, (pHeadSelectedCity->getProduction()), iHurryTime_left);
+			//szBuffer.append(szTempBuffer);
+			
 		}
 	}
 }
@@ -2663,12 +2739,25 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 
 						if (iFirstResearch >= iFirstResearchLeft)
 						{
-							szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_TECH_TEXT"), GC.getTechInfo(eFirstDiscovery).getDescription());
-							szBuffer.append(szTempBuffer);
+							//mediv01 伟人点科技的详细提示信息
+							if (GC.getDefineINT("CVTECH_SHOW_TECH_DISCOVERY_INFO") == 1) {
+								szTempBuffer.Format(SETCOLR L"%s ( 科研值 %d )" ENDCOLR, TEXT_COLOR("COLOR_TECH_TEXT"), GC.getTechInfo(eFirstDiscovery).getDescription(), iFirstResearchLeft);
+								szBuffer.append(szTempBuffer);
+							}
+							else {
+								szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_TECH_TEXT"), GC.getTechInfo(eFirstDiscovery).getDescription());
+								szBuffer.append(szTempBuffer);
+							}
 						}
 						else
 						{
-							szBuffer.append(gDLL->getText("TXT_KEY_ACTION_EXTRA_RESEARCH", iFirstResearch, GC.getTechInfo(eFirstDiscovery).getTextKeyWide()));
+							if (GC.getDefineINT("CVTECH_SHOW_TECH_DISCOVERY_INFO") == 1) {
+								szBuffer.append(gDLL->getText("TXT_KEY_ACTION_EXTRA_RESEARCH", iFirstResearch, GC.getTechInfo(eFirstDiscovery).getTextKeyWide()));
+							}
+							else {
+								szBuffer.append(gDLL->getText("TXT_KEY_ACTION_EXTRA_RESEARCH", iFirstResearch, GC.getTechInfo(eFirstDiscovery).getTextKeyWide()));
+							}
+
 						}
 
 						if (iSecondResearch > 0)
@@ -2677,13 +2766,24 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 
 							if (iSecondResearch >= iSecondResearchLeft)
 							{
-								szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_TECH_TEXT"), GC.getTechInfo(eSecondDiscovery).getDescription());
-								szBuffer.append(szTempBuffer);
+								if (GC.getDefineINT("CVTECH_SHOW_TECH_DISCOVERY_INFO") == 1) {
+									szTempBuffer.Format(SETCOLR L"%s ( 科研值 %d )" ENDCOLR, TEXT_COLOR("COLOR_TECH_TEXT"), GC.getTechInfo(eSecondDiscovery).getDescription(), iSecondResearch);
+									szBuffer.append(szTempBuffer);
+								}
+								else {
+									szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_TECH_TEXT"), GC.getTechInfo(eSecondDiscovery).getDescription());
+									szBuffer.append(szTempBuffer);
+								}
 							}
 							else
 							{
 								szBuffer.append(gDLL->getText("TXT_KEY_ACTION_EXTRA_RESEARCH", iSecondResearch, GC.getTechInfo(eSecondDiscovery).getTextKeyWide()));
 							}
+						}
+
+						if (GC.getDefineINT("CVTECH_SHOW_TECH_DISCOVERY_INFO") == 1) {
+							szTempBuffer.Format(SETCOLR L"   总科研值 ( %d )" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_CYAN"), iFirstResearch);
+							szBuffer.append(szTempBuffer);
 						}
 
 						break;
@@ -2727,12 +2827,20 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 								if (NULL != pcKey && pSelectedUnit->getHurryProduction(pMissionPlot) >= pMissionCity->productionLeft())
 								{
 									szBuffer.append(NEWLINE);
-									szBuffer.append(gDLL->getText("TXT_KEY_ACTION_FINISH_CONSTRUCTION", pcKey));
+									//原始的代码 没显示能加速多少
+									//szBuffer.append(gDLL->getText("TXT_KEY_ACTION_FINISH_CONSTRUCTION", pcKey));
+									szBuffer.append(gDLL->getText("TXT_KEY_ACTION_EXTRA_CONSTRUCTION", pSelectedUnit->getHurryProduction(pMissionPlot), pcKey));
+
+									//szTempBuffer.Format(L"Hurry1 %d, Hurry2 %d", pSelectedUnit->getHurryProduction(pMissionPlot), pMissionCity->productionLeft());
+									//szBuffer.append(szTempBuffer);
 								}
 								else
 								{
 									szBuffer.append(NEWLINE);
 									szBuffer.append(gDLL->getText("TXT_KEY_ACTION_EXTRA_CONSTRUCTION", pSelectedUnit->getHurryProduction(pMissionPlot), pcKey));
+		
+
+
 								}
 								break;
 							}
@@ -4122,6 +4230,31 @@ void CvDLLWidgetData::parseTradeItem(CvWidgetDataStruct &widgetDataStruct, CvWSt
 		if (eDenial != NO_DENIAL)
 		{
 			szTempBuffer.Format(L"%s: " SETCOLR L"%s" ENDCOLR, GET_PLAYER(eWhoDenies).getName(), TEXT_COLOR("COLOR_WARNING_TEXT"), GC.getDenialInfo(eDenial).getDescription());
+			szBuffer.append(NEWLINE);
+			szBuffer.append(szTempBuffer);
+		}
+		if (GC.getDefineINT("CVGAMETEXT_TRADE_SHOW_VALUE") == 1) { //mediv01 显示物品交易价值
+			CLinkList<TradeData> pOurList;
+			//TradeData item;
+			//setTradeItem(&item, ((TradeableItems)(widgetDataStruct.m_iData1)), widgetDataStruct.m_iData2);;
+			pOurList.insertAtEnd(item);
+			//int iOurValue = GET_PLAYER(eWhoTo).AI_dealVal(eWhoFrom, &pOurList, false, -1) / GET_PLAYER(eWhoTo).AI_goldTradeValuePercent(eWhoFrom) * 100;
+			int iOurValue = GET_PLAYER(eWhoTo).AI_dealVal(eWhoFrom, &pOurList, false, -1) / GET_PLAYER(eWhoFrom).AI_goldTradeValuePercent(eWhoTo) * 100;
+			szTempBuffer.Format(SETCOLR L"交易价值：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), iOurValue);
+			szBuffer.append(NEWLINE);
+			szBuffer.append(szTempBuffer);
+		}
+
+		if (GC.getDefineINT("CVGAMETEXT_TRADE_SHOW_ASK_VALUE") == 1) { //mediv01 显示勒索交易价值
+			//CLinkList<TradeData> pOurList;
+
+			//pOurList.insertAtEnd(item);
+
+			//int iOurValue = GET_PLAYER(eWhoTo).AI_dealVal(eWhoFrom, &pOurList, false, -1) / GET_PLAYER(eWhoFrom).AI_goldTradeValuePercent(eWhoTo) * 100;
+			int iOurValue = GET_PLAYER(eWhoTo).AI_considerOffer_Threshold(eWhoTo, eWhoFrom);
+			int iOurValue2 = GET_PLAYER(eWhoFrom).AI_considerOffer_Threshold(eWhoFrom, eWhoTo);
+			int iOurValue_f = std::max(iOurValue, iOurValue2);
+			szTempBuffer.Format(SETCOLR L"可勒索价值：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), iOurValue_f);
 			szBuffer.append(NEWLINE);
 			szBuffer.append(szTempBuffer);
 		}

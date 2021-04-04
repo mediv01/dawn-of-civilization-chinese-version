@@ -7,6 +7,7 @@
 //-----------------------------------------------------------------------------
 //
 
+//mediv01 地图相关的函数 比如说查找城市等，建议不要修改
 
 #include "CvGameCoreDLL.h"
 #include "CvMap.h"
@@ -735,6 +736,7 @@ CvPlot* CvMap::syncRandPlot(int iFlags, int iArea, int iMinUnitDistance, int iTi
 
 CvCity* CvMap::findCity(int iX, int iY, PlayerTypes eOwner, TeamTypes eTeam, bool bSameArea, bool bCoastalOnly, TeamTypes eTeamAtWarWith, DirectionTypes eDirection, CvCity* pSkipCity)
 {
+	//mediv01 寻找城市
 	PROFILE_FUNC();
 
 	CvCity* pLoopCity;

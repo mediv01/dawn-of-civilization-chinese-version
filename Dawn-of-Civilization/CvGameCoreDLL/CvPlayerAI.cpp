@@ -26,7 +26,7 @@
 #include "CvEventReporter.h"
 
 #include "CvRhyes.h" //Rhye
-
+//mediv01 20200821阅读
 #define DANGER_RANGE						(4)
 #define GREATER_FOUND_RANGE			(5)
 #define CIVIC_CHANGE_DELAY			(25)
@@ -324,6 +324,15 @@ void CvPlayerAI::AI_doTurnPre()
 	FAssertMsg(getPersonalityType() != NO_LEADER, "getPersonalityType() is not expected to be equal with NO_LEADER");
 	FAssertMsg(getLeaderType() != NO_LEADER, "getLeaderType() is not expected to be equal with NO_LEADER");
 	FAssertMsg(getCivilizationType() != NO_CIVILIZATION, "getCivilizationType() is not expected to be equal with NO_CIVILIZATION");
+	CvString log_CvString;
+
+
+	//LOG开始
+	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
+		log_CvString = log_CvString.format("PlayerAI_AI_doTurnPre开始，当前玩家为 %d ", (int)getID());
+		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
+	}
+	//LOG结束
 
 	AI_invalidateCloseBordersAttitudeCache();
 
@@ -374,13 +383,25 @@ void CvPlayerAI::AI_doTurnPre()
 	{
 		return;
 	}
+	//LOG开始
+	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
+		log_CvString = log_CvString.format("PlayerAI_AI_doTurnPre结束，当前玩家为 %d ", (int)getID());
+		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
+	}
+	//LOG结束
 }
 
 
 void CvPlayerAI::AI_doTurnPost()
 {
 	PROFILE_FUNC();
-
+	CvString log_CvString;
+	//LOG开始
+	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
+		log_CvString = log_CvString.format("PlayerAI_AI_doTurnPost开始，当前玩家为 %d ", (int)getID());
+		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
+	}
+	//LOG结束
 	if (isHuman())
 	{
 		return;
@@ -404,6 +425,10 @@ void CvPlayerAI::AI_doTurnPost()
 	for (int i = 0; i < GC.getNumVictoryInfos(); ++i)
 	{
 		AI_launch((VictoryTypes)i);
+	}
+	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
+		log_CvString = log_CvString.format("PlayerAI_AI_doTurnPost结束，当前玩家为 %d ", (int)getID());
+		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
 	}
 }
 
@@ -884,6 +909,7 @@ void CvPlayerAI::AI_doPeace()
 
 void CvPlayerAI::AI_updateFoundValues(bool bStartingLoc) const
 {
+	//mediv01 AI更新建城地址决策
 	PROFILE_FUNC();
 
 	CvArea* pLoopArea;
@@ -1360,7 +1386,7 @@ void CvPlayerAI::AI_conquerCity(CvCity* pCity, PlayerTypes ePreviousOwner, Playe
 			}
 		}
 		//Rhye - moved here
-
+		//mediv01 一些地图硬编码
 		//Rhye - start
 		int iX = pCity->getX_INLINE();
 		int iY = pCity->getY_INLINE();
@@ -1425,6 +1451,7 @@ void CvPlayerAI::AI_conquerCity(CvCity* pCity, PlayerTypes ePreviousOwner, Playe
 
 	if (!bRaze && canSack(pCity))
 	{
+		//mediv01 AI是否会选择洗劫城市
 		if (ePreviousOwner != getID() && eHighestCulturePlayer != getID())
 		{
 			int iSackValue = GC.getLeaderHeadInfo(getPersonalityType()).getRazeCityProb();	
@@ -1842,11 +1869,44 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 
 	pPlot = GC.getMapINLINE().plotINLINE(iX, iY);
 
-    int tempX = pPlot->getX_INLINE();
+	int tempX = pPlot->getX_INLINE();
 	int tempY = pPlot->getY_INLINE();
-    int reborn = GET_PLAYER(getID()).getReborn();
+	int reborn = GET_PLAYER(getID()).getReborn();
 
-    int iSettlerMapValue = GET_PLAYER(getID()).getSettlerValue(iX, iY);
+	
+
+	//mediv01
+	int iSettlerMapValue = GET_PLAYER(getID()).getSettlerValue(iX, iY);
+//mediv01
+//if (iSettlerMapValue == 1688) {
+	//return 100000;
+//}
+//mediv01
+	if (GC.getDefineINT("PLAYER_AI_ONLY_SETTLE_BY_SETTLER_MAP") == 1) {	//mediv01 我觉得这个代码不成熟，最好不用吧
+		if (iSettlerMapValue >= 900) {
+			return 100000;
+		}
+		else if (iSettlerMapValue >= 700) {
+			return 100000/2;
+		}
+		else if (iSettlerMapValue >= 500) {
+			return 100000 / 4;
+		}
+		else if (iSettlerMapValue >= 300) {
+			return 100000 / 5;
+		}
+		else if (iSettlerMapValue >= 200) {
+			return 100000 / 100;
+		}
+		else if (iSettlerMapValue >= 90) {
+			return 100000 / 1000;
+		}
+		else {
+			return 0;
+		}
+	}
+//mediv01
+
 
     // Leoreth: settler map entry of 1000 (never used by Rhye) to force a city no matter the environment
     //if (settlersMaps[reborn][getID()][EARTH_Y - 1 - tempY][tempX] == 1000)
@@ -1856,7 +1916,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 	{
 		return 0;
 	}
-
+	//mediv01 一些地图硬编码
 	//Leoreth: prevent France from founding Metz
 	if (iX == 57 && iY == 50)
 	{
@@ -2472,12 +2532,22 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 
 	if (pPlot->isHills())
 	{
-		iValue += 200;
+		int hilltmpvalue = 200;
+		if (GC.getDefineINT("CVPLAYERAI_SETTLE_VALUE_NEAR_HILL") > 0) {
+			hilltmpvalue = GC.getDefineINT("CVPLAYERAI_SETTLE_VALUE_NEAR_HILL");
+		}
+		iValue += hilltmpvalue;//mediv01 可以在XML调整
+		//iValue += 200;
 	}
 
 	if (pPlot->isRiver())
 	{
-		iValue += 40;
+		int rivertmpvalue = 40;
+		if (GC.getDefineINT("CVPLAYERAI_SETTLE_VALUE_NEAR_RIVER") > 0) {
+			rivertmpvalue = GC.getDefineINT("CVPLAYERAI_SETTLE_VALUE_NEAR_RIVER");
+		}
+		iValue += rivertmpvalue;//mediv01 曾经是40 我改成1000加大河流建城权重，历史上大多数河流沿河而建，可以在XML调整
+		//iValue += 40;
 	}
 
 	if (pPlot->isFreshWater())
@@ -2767,6 +2837,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 	// Leoreth: more English settlements in North America
 	if (getID() == ENGLAND)
 	{
+		//mediv01 地图硬编码
 		if (pArea->getID() == GC.getMap().plot(27, 46)->getArea()) // Washington tile
 		{
 			iValue *= 2;
@@ -2815,6 +2886,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 	}
 
 	iValue /= (std::max(0, (iBadTile - (NUM_CITY_PLOTS / 4))) + 3);
+	//mediv01 地图硬编码
 	if (!(iX >= 67 && iX <= 70 && iY >= 43 && iY <= 46) && !(iX >= 79 && iX <= 18 && iY >= 110 && iY <= 10)) { //Rhye (exclude Turkey and Siberia)
 	if (bStartingLoc)
 	{
@@ -2924,6 +2996,7 @@ int CvPlayerAI::AI_militaryWeight(CvArea* pArea) const
 
 int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreAttackers) const
 {
+	//mediv01 AI对目标城市价值的判断
 	PROFILE_FUNC();
 
 	CvCity* pNearestCity;
@@ -3040,7 +3113,7 @@ int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreA
 		}
 	}
 	//Rhye - end
-
+	//地图硬编码
 	if (getID() == FRANCE && pCity->getX() == 69 && pCity->getY() == 52 && pCity->getOwner() >= NUM_MAJOR_PLAYERS)
 	{
 		return 0;
@@ -3089,6 +3162,7 @@ int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreA
 	}
 
 	//Rhye - start switch
+	//mediv01 地图硬编码
 	if (pCity->getX_INLINE() <= 43) { //wars in America
 		switch (getID())
 		{
@@ -4696,7 +4770,7 @@ TechTypes CvPlayerAI::AI_bestTech(int iMaxPathLength, bool bIgnoreCost, bool bAs
 			}
 		}
 	}
-
+	//mediv01 选择最适合的科技
     SAFE_DELETE_ARRAY(paiBonusClassRevealed);
     SAFE_DELETE_ARRAY(paiBonusClassUnrevealed);
     SAFE_DELETE_ARRAY(paiBonusClassHave);
@@ -5005,6 +5079,7 @@ AttitudeTypes CvPlayerAI::AI_getAttitude(PlayerTypes ePlayer, bool bForced) cons
 
 int CvPlayerAI::AI_getAttitudeVal(PlayerTypes ePlayer, bool bForced) const
 {
+	//mediv01 AI之间关系的计算
 	PROFILE_FUNC();
 
 	int iRankDifference;
@@ -5385,14 +5460,24 @@ int CvPlayerAI::AI_getWarAttitude(PlayerTypes ePlayer) const
 int CvPlayerAI::AI_getPeaceAttitude(PlayerTypes ePlayer) const
 {
 	int iAttitudeChange;
-
+	iAttitudeChange = 0;
+	if ((GET_PLAYER(ePlayer).isHuman()) && GC.getDefineINT("CVPLAYERAI_ATTITUDE_BONUS") != 0)
+	{
+		iAttitudeChange += GC.getDefineINT("CVPLAYERAI_ATTITUDE_BONUS"); //mediv01 外交态度红利
+	}
 	if (GC.getLeaderHeadInfo(getPersonalityType()).getAtPeaceAttitudeDivisor() != 0)
 	{
-		iAttitudeChange = (GET_TEAM(getTeam()).AI_getAtPeaceCounter(GET_PLAYER(ePlayer).getTeam()) / GC.getLeaderHeadInfo(getPersonalityType()).getAtPeaceAttitudeDivisor());
-		return range(iAttitudeChange, -(abs(GC.getLeaderHeadInfo(getPersonalityType()).getAtPeaceAttitudeChangeLimit())), abs(GC.getLeaderHeadInfo(getPersonalityType()).getAtPeaceAttitudeChangeLimit()));
+		iAttitudeChange += (GET_TEAM(getTeam()).AI_getAtPeaceCounter(GET_PLAYER(ePlayer).getTeam()) / GC.getLeaderHeadInfo(getPersonalityType()).getAtPeaceAttitudeDivisor());
+		if (GC.getDefineINT("CVPLAYERAI_ATTITUDE_BONUS") != 0) {
+			return iAttitudeChange;
+		}
+		else 
+		{
+			return range(iAttitudeChange, -(abs(GC.getLeaderHeadInfo(getPersonalityType()).getAtPeaceAttitudeChangeLimit())), abs(GC.getLeaderHeadInfo(getPersonalityType()).getAtPeaceAttitudeChangeLimit()));
+		}
 	}
 
-	return 0;
+	return iAttitudeChange;
 }
 
 
@@ -5458,7 +5543,7 @@ int CvPlayerAI::AI_getDifferentReligionAttitude(PlayerTypes ePlayer) const
 	int iAttitude;
 
 	iAttitude = 0;
-
+	//mediv01 不同宗教的态度
 	// Leoreth: if state religion, even have negative relations with non-state religion civs
 	if ((getStateReligion() != NO_RELIGION) && (getStateReligion() != GET_PLAYER(ePlayer).getStateReligion()))
 	{
@@ -5546,6 +5631,7 @@ int CvPlayerAI::AI_getBonusTradeAttitude(PlayerTypes ePlayer) const
 int CvPlayerAI::AI_getOpenBordersAttitude(PlayerTypes ePlayer) const
 {
 	int iAttitudeChange;
+	//mediv01 开边的态度
 
 	if (!atWar(getTeam(), GET_PLAYER(ePlayer).getTeam()))
 	{
@@ -6267,6 +6353,7 @@ PlayerVoteTypes CvPlayerAI::AI_diploVote(const VoteSelectionSubData& kVoteData, 
 
 int CvPlayerAI::AI_dealVal(PlayerTypes ePlayer, const CLinkList<TradeData>* pList, bool bIgnoreAnnual, int iChange) const
 {
+	//mediv01 交易价值计算入口
 	CLLNode<TradeData>* pNode;
 	CvCity* pCity;
 	int iValue;
@@ -6386,12 +6473,13 @@ bool CvPlayerAI::AI_goldDeal(const CLinkList<TradeData>* pList) const
 
 bool CvPlayerAI::AI_considerOffer(PlayerTypes ePlayer, const CLinkList<TradeData>* pTheirList, const CLinkList<TradeData>* pOurList, int iChange) const
 {
+	//mediv01 AI是否可以选择交易
 	CLLNode<TradeData>* pNode;
 	int iThreshold;
 
 	FAssertMsg(ePlayer != getID(), "shouldn't call this function on ourselves");
 
-	if (AI_goldDeal(pTheirList) && AI_goldDeal(pOurList))
+	if (AI_goldDeal(pTheirList) && AI_goldDeal(pOurList)&& (!GC.getDefineINT("CVPLAYERAI_CAN_TRADE_GOLD_BOTH_SIDE")==1))//mediv01 双方都可以交易金币
 	{
 		return false;
 	}
@@ -6448,7 +6536,14 @@ bool CvPlayerAI::AI_considerOffer(PlayerTypes ePlayer, const CLinkList<TradeData
 
 			if (AI_getMemoryCount(ePlayer, MEMORY_MADE_DEMAND_RECENT) > 0)
 			{
-				return false;
+				if (GC.getDefineINT("PLAYER_AI_ALLOW_TO_TRADE_MORE_IN_ONE_TURN") == 1) {
+					//mediv01  可以连续交易
+				}
+				else {
+					return false;//mediv01
+				}
+
+				
 			}
 		}
 
@@ -6477,7 +6572,137 @@ bool CvPlayerAI::AI_considerOffer(PlayerTypes ePlayer, const CLinkList<TradeData
 	return (iTheirValue >= iOurValue);
 }
 
+//mediv01 by 20200723 可以勒索金币数量的接口
+int CvPlayerAI::AI_considerOffer_Threshold (int ePlayer1, int myPlayer1) const
+{
+	//CLLNode<TradeData>* pNode;
+	//return 0;
+	PlayerTypes ePlayer = ((PlayerTypes)ePlayer1);//human 
+	PlayerTypes myPlayer = ((PlayerTypes)myPlayer1);//AI
+	int iThreshold;
+	if (GC.getDefineINT("PLAYER_AI_ALLOW_TO_USE_CONSIDEROFFER_THRESHOLD") == 0) {
+		return 0;//mediv01
+	}
 
+	//FAssertMsg(ePlayer != getID(), "shouldn't call this function on ourselves");
+
+		if (GET_PLAYER(myPlayer).AI_getAttitude(ePlayer) < ATTITUDE_PLEASED)
+		{
+			
+			if (GET_TEAM(GET_PLAYER(myPlayer).getTeam()).getPower(false) > ((GET_TEAM(GET_PLAYER(ePlayer).getTeam()).getPower(false) * 4) / 3))
+			{
+				return 0;
+			}
+			
+		}
+
+		if (GET_PLAYER(myPlayer).AI_getMemoryCount(ePlayer, MEMORY_MADE_DEMAND_RECENT) > 0)
+		{
+			return 0;
+		}
+	
+	
+
+		iThreshold = (GET_TEAM(GET_PLAYER(myPlayer).getTeam()).AI_getHasMetCounter(GET_PLAYER(ePlayer).getTeam()) + 50);
+
+		iThreshold *= 2;
+		
+		if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).AI_isLandTarget(GET_PLAYER(myPlayer).getTeam()))
+		{
+			iThreshold *= 3;
+		}
+
+		iThreshold *= (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).getPower(false) + 100);
+		iThreshold /= (GET_TEAM(GET_PLAYER(myPlayer).getTeam()).getPower(false) + 100);
+		
+
+		iThreshold -= GET_PLAYER(ePlayer).AI_getPeacetimeGrantValue(myPlayer);
+
+		//int iOurValue = GET_PLAYER(ePlayer).AI_dealVal(getID(), pOurList, false, iChange);
+		//iTheirValue=0
+		//int AI_dealVal = AI_goldTradeValuePercent(myPlayer);
+		iThreshold = iThreshold / GET_PLAYER(ePlayer).AI_goldTradeValuePercent(myPlayer) * 100;
+		return iThreshold;
+		
+		//iThreshold = 100;
+		
+	
+
+
+}
+
+int CvPlayerAI::AI_considerOffer_Threshold_Map(int ePlayer1, int myPlayer1) const
+{
+	//CLLNode<TradeData>* pNode;
+	//return 0;
+	PlayerTypes ePlayer = ((PlayerTypes)ePlayer1);//human 
+	PlayerTypes myPlayer = ((PlayerTypes)myPlayer1);//AI
+	int iThreshold=0;
+	if (GC.getDefineINT("PLAYER_AI_ALLOW_TO_USE_CONSIDEROFFER_THRESHOLD_MAP") == 0) {
+		return 0;//mediv01
+	}
+
+	CLinkList<TradeData> pOurList;
+	TradeData item;
+	setTradeItem(&item, TRADE_MAPS, 0);
+	pOurList.insertAtEnd(item);
+
+	int iChange = -1;
+	int iOurValue = GET_PLAYER(ePlayer).AI_dealVal(getID(), &pOurList, false, iChange);
+	iThreshold = iOurValue; 
+
+
+	//int iOurValue = GET_PLAYER(ePlayer).AI_dealVal(getID(), pOurList, false, iChange);
+	//int iTheirValue = AI_dealVal(ePlayer, pTheirList, false, iChange);
+
+	/* //mediv01 以下代码为勒索的代码
+	//FAssertMsg(ePlayer != getID(), "shouldn't call this function on ourselves");
+
+	if (GET_PLAYER(myPlayer).AI_getAttitude(ePlayer) < ATTITUDE_PLEASED)
+	{
+
+		if (GET_TEAM(GET_PLAYER(myPlayer).getTeam()).getPower(false) > ((GET_TEAM(GET_PLAYER(ePlayer).getTeam()).getPower(false) * 4) / 3))
+		{
+			return 0;
+		}
+
+	}
+
+	if (GET_PLAYER(myPlayer).AI_getMemoryCount(ePlayer, MEMORY_MADE_DEMAND_RECENT) > 0)
+	{
+		return 0;
+	}
+
+
+
+	iThreshold = (GET_TEAM(GET_PLAYER(myPlayer).getTeam()).AI_getHasMetCounter(GET_PLAYER(ePlayer).getTeam()) + 50);
+
+	iThreshold *= 2;
+
+	if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).AI_isLandTarget(GET_PLAYER(myPlayer).getTeam()))
+	{
+		iThreshold *= 3;
+	}
+
+	iThreshold *= (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).getPower(false) + 100);
+	iThreshold /= (GET_TEAM(GET_PLAYER(myPlayer).getTeam()).getPower(false) + 100);
+
+
+	iThreshold -= GET_PLAYER(ePlayer).AI_getPeacetimeGrantValue(myPlayer);
+	*/
+
+	//int iOurValue = GET_PLAYER(ePlayer).AI_dealVal(getID(), pOurList, false, iChange);
+	//iTheirValue=0
+	//int AI_dealVal = AI_goldTradeValuePercent(myPlayer);
+	iThreshold = iThreshold / GET_PLAYER(ePlayer).AI_goldTradeValuePercent(myPlayer) * 100;
+	return iThreshold;
+
+	//iThreshold = 100;
+
+
+
+
+}
 bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeData>* pTheirList, const CLinkList<TradeData>* pOurList, CLinkList<TradeData>* pTheirInventory, CLinkList<TradeData>* pOurInventory, CLinkList<TradeData>* pTheirCounter, CLinkList<TradeData>* pOurCounter) const
 {
 	CLLNode<TradeData>* pNode;
@@ -7075,6 +7300,7 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 
 int CvPlayerAI::AI_maxGoldTrade(PlayerTypes ePlayer) const
 {
+	//mediv01 AI最大能够交易的金额
 	int iMaxGold;
 	int iResearchBuffer;
 
@@ -7105,7 +7331,9 @@ int CvPlayerAI::AI_maxGoldTrade(PlayerTypes ePlayer) const
 
 		iMaxGold -= (iMaxGold % GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
 	}
-
+	if (GC.getDefineINT("CVPLAYERAI_CAN_TRADE_GOLD_UNLIMITED") == 1) {  //无限制交易金币
+		iMaxGold = getGold();
+	}
 	return std::max(0, iMaxGold);
 }
 
@@ -7128,6 +7356,7 @@ int CvPlayerAI::AI_maxGoldPerTurnTrade(PlayerTypes ePlayer) const
 	{
 		iMaxGoldPerTurn = (calculateGoldRate() + (getGold() / GC.getDefineINT("PEACE_TREATY_LENGTH")));
 		iMaxGoldPerTurn += iResearchSurplus;
+
 	}
 	else
 	{
@@ -7137,9 +7366,20 @@ int CvPlayerAI::AI_maxGoldPerTurnTrade(PlayerTypes ePlayer) const
 		iMaxGoldPerTurn /= 100;
 
 		iMaxGoldPerTurn += std::min(0, getGoldPerTurnByPlayer(ePlayer));
+		if (GC.getDefineINT("CVPLAYERAI_CAN_TRADE_GOLD_TURN_BASE_ON_POPULATION") > 0) {  //无限制交易金币
+			iMaxGoldPerTurn += getTotalPopulation() / GC.getDefineINT("CVPLAYERAI_CAN_TRADE_GOLD_TURN_BASE_ON_POPULATION");
+		}
 	}
 
-	return std::max(0, std::min(iMaxGoldPerTurn, calculateGoldRate() + iResearchSurplus));
+
+
+	int goldrate = calculateGoldRate()+ iResearchSurplus;
+	if (GC.getDefineINT("CVPLAYERAI_CAN_TRADE_GOLD_TURN_UNLIMITED_MULTI") >0) {  //无限制交易金币
+		iMaxGoldPerTurn = getTotalPopulation()* GC.getDefineINT("CVPLAYERAI_CAN_TRADE_GOLD_TURN_UNLIMITED_MULTI");
+		goldrate = (calculateGoldRate()+1) * GC.getDefineINT("CVPLAYERAI_CAN_TRADE_GOLD_TURN_UNLIMITED_MULTI") + iResearchSurplus;
+	}
+
+	return std::max(0, std::min(iMaxGoldPerTurn, goldrate));
 }
 
 
@@ -7231,7 +7471,7 @@ int CvPlayerAI::AI_bonusEffectVal(BonusTypes eBonus, int iChange) const
 int CvPlayerAI::AI_baseBonusVal(BonusTypes eBonus, int iChange) const
 {
 	PROFILE_FUNC();
-
+	//mediv01 计算交易时资源的价值
 	//recalculate if not defined
 	if (m_aiBonusValue[eBonus] == -1 || m_aiLastBonusValueChange[eBonus] == -1)
 	{
@@ -7637,6 +7877,9 @@ DenialTypes CvPlayerAI::AI_bonusTrade(BonusTypes eBonus, PlayerTypes ePlayer) co
 	bool bStrategic;
 	int iI, iJ;
 
+	if (GC.getDefineINT("CVPLAYERAI_CAN_ALWAYS_TRADE_RESOURCE") == 1) {//mediv01 
+		return NO_DENIAL;
+	}
 	FAssertMsg(ePlayer != getID(), "shouldn't call this function on ourselves");
 
 	if (isHuman() && GET_PLAYER(ePlayer).isHuman())
@@ -7752,6 +7995,7 @@ DenialTypes CvPlayerAI::AI_bonusTrade(BonusTypes eBonus, PlayerTypes ePlayer) co
 
 int CvPlayerAI::AI_cityTradeVal(CvCity* pCity) const
 {
+	//mediv01 城市的交易价值
 	CvPlot* pLoopPlot;
 	int iValue;
 	int iI;
@@ -7804,7 +8048,7 @@ int CvPlayerAI::AI_cityTradeVal(CvCity* pCity) const
 
 	// Leoreth: help Canada acquire cities
 	if (getID() == CANADA) iValue /= 2;
-
+	//mediv01 返回购买城市的价值
 	if (isHuman())
 	{
 		return std::max(iValue, GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
@@ -7821,7 +8065,9 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 	CvCity* pNearestCity;
 
 	FAssert(pCity->getOwnerINLINE() == getID());
-
+	if (GC.getDefineINT("CVPLAYERAI_CAN_ALWAYS_TRADE_CITY") == 1) {//mediv01 
+		return NO_DENIAL;
+	}
 	//Rhye - start
 	if (isHuman() && GET_PLAYER(ePlayer).getNumCities() == 0)
 	{
@@ -10854,6 +11100,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	}
 
 	// Leoreth: take American UP into account
+	//mediv01 美国的内政选择
 	if (getID() == AMERICA)
 	{
 		if (eCivic == CIVIC_DEMOCRACY || eCivic == CIVIC_CONSTITUTION || eCivic == CIVIC_INDIVIDUALISM || eCivic == CIVIC_FREE_ENTERPRISE)
@@ -16329,6 +16576,7 @@ int CvPlayerAI::AI_getStrategyHash() const
 	//Turn off inappropriate strategies.
 	if (GC.getGameINLINE().isOption(GAMEOPTION_ALWAYS_PEACE))
 	{
+		//mediv01 AI策略选择
 		m_iStrategyHash &= ~AI_STRATEGY_DAGGER;
 		m_iStrategyHash &= ~AI_STRATEGY_CRUSH;
 		m_iStrategyHash &= ~AI_STRATEGY_OWABWNW;
@@ -16669,6 +16917,7 @@ int CvPlayerAI::AI_goldToUpgradeAllUnits(int iExpThreshold) const
 
 int CvPlayerAI::AI_goldTradeValuePercent(PlayerTypes eOtherPlayer) const
 {
+	//mediv01 AI交易价值计算
 	int iValue = 2;
 	if (AI_isFinancialTrouble())
 	{
@@ -16676,6 +16925,7 @@ int CvPlayerAI::AI_goldTradeValuePercent(PlayerTypes eOtherPlayer) const
 	}
 
 	// Leoreth: Byzantine UP: double value of Byzantine gold
+	//mediv01 拜占庭UP 双倍交易价值
 	if (eOtherPlayer == BYZANTIUM)
 	{
 		iValue *= 2;
@@ -19159,6 +19409,7 @@ void CvPlayerAI::AI_invalidatePlotDangerCache(int iIndex)
 // Sanguo Mod Performance, end
 int CvPlayerAI::AI_slaveTradeVal(CvUnit* pUnit) const
 {
+	//mediv01 AI交易奴隶的价值判断
 	if (!(GC.getUnitInfo(pUnit->getUnitType()).isSlave()))
 	{
 		return 0;

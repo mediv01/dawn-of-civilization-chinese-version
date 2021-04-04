@@ -1,5 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include "CvDiploParameters.h"
+//mediv01 没啥可以阅读修改的  20200813
 
 CvDiploParameters::CvDiploParameters(PlayerTypes ePlayer) :
 	m_eWhoTalkingTo(ePlayer),

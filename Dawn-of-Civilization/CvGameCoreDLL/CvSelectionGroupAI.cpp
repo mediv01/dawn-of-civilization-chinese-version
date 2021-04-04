@@ -1,5 +1,5 @@
 // selectionGroupAI.cpp
-
+//mediv01 群组操作中AI的一些基础函数，20200821
 #include "CvGameCoreDLL.h"
 #include "CvSelectionGroupAI.h"
 #include "CvPlayerAI.h"

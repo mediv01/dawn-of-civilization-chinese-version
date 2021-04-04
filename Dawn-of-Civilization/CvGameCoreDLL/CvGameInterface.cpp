@@ -10,7 +10,7 @@
 #include "FAStarNode.h"
 #include "CvGameTextMgr.h"
 #include "CvMessageControl.h"
-
+//mediv01 界面相关函数 20200813
 // BUG - start
 #include "CvBugOptions.h"
 // BUG - end

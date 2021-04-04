@@ -5,7 +5,7 @@
 //
 // published python interface for CyTeam
 //
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 void CyTeamPythonInterface()
 {
 	OutputDebugString("Python Extension Module - CyTeamPythonInterface\n");

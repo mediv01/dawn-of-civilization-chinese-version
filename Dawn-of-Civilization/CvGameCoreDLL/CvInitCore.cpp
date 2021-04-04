@@ -9,7 +9,7 @@
 #include "CvDLLUtilityIFaceBase.h"
 #include "CvGameAI.h"
 #include "CvGameCoreUtils.h"
-
+//mediv01 底层函数，无需修改
 // BUG - Save Format - start
 #include "BugMod.h"
 // BUG - Save Format - end

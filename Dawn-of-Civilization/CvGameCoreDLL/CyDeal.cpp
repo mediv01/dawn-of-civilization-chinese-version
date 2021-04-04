@@ -5,7 +5,7 @@
 #include "CvGameCoreDLL.h"
 #include "CyDeal.h"
 #include "CvDeal.h"
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 CyDeal::CyDeal(CvDeal* pDeal) :
 	m_pDeal(pDeal)
 {

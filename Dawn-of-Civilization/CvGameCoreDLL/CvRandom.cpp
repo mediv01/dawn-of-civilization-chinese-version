@@ -9,7 +9,7 @@
 #define RANDOM_A      (1103515245)
 #define RANDOM_C      (12345)
 #define RANDOM_SHIFT  (16)
-
+//mediv01 定义随机函数的底层实现 20200821
 CvRandom::CvRandom()
 { 
 	reset();

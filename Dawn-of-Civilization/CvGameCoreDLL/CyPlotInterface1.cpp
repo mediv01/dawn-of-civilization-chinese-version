@@ -1,16 +1,19 @@
 #include "CvGameCoreDLL.h"
 #include "CyPlot.h"
+
 #include "CyCity.h"
 #include "CyArea.h"
 #include "CyUnit.h"
 #include "CvPlot.h"
+
+
 //# include <boost/python/manage_new_object.hpp>
 //# include <boost/python/return_value_policy.hpp>
 
 //
 // published python interface for CyPlot
 //
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 {
 	OutputDebugString("Python Extension Module - CyPlotPythonInterface1\n");
@@ -118,6 +121,7 @@ void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 		.def("isValidDomainForAction", &CyPlot::isValidDomainForAction, "bool (CyUnit* pUnit)")
 		.def("isImpassable", &CyPlot::isImpassable, "bool ()")
 
+		.def("getRegionName", &CyPlot::getRegionName, "int ()") //不要调用这个函数
 		.def("getX", &CyPlot::getX, "int ()")
 		.def("getY", &CyPlot::getY, "int ()")
 		.def("at", &CyPlot::at, "bool (int iX, int iY)")

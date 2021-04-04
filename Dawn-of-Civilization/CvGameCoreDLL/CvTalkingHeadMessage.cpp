@@ -2,7 +2,7 @@
 #include "CvTalkingHeadMessage.h"
 #include "CvGameAI.h"
 #include "CvGlobals.h"
-
+//mediv01 Ò»Ð©µ×²ãº¯Êý
 CvTalkingHeadMessage::CvTalkingHeadMessage(int iMessageTurn, int iLen, LPCWSTR pszDesc, LPCTSTR pszSound, InterfaceMessageTypes eType, LPCTSTR pszIcon, ColorTypes eColor, int iX, int iY, bool bShowOffScreenArrows, bool bShowOnScreenArrows) :
 	m_iTurn(iMessageTurn),
 	m_szDescription(pszDesc),

@@ -1,5 +1,5 @@
 // unit.cpp
-
+//mediv01 20200821  跟单位相关的代码
 #include "CvGameCoreDLL.h"
 #include "CvUnit.h"
 #include "CvArea.h"
@@ -496,6 +496,7 @@ void CvUnit::convert(CvUnit* pUnit)
 	iNewExperience /= iOldModifier;
 
 	// Leoreth: includes German UP
+	//mediv01 德国的UP
 	if (getLeaderUnitType() == NO_UNIT && getOwner() != GERMANY)
 	{
 		int iOldCombat = GC.getUnitInfo(pUnit->getUnitType()).getCombat();
@@ -565,6 +566,7 @@ void CvUnit::convert(CvUnit* pUnit)
 
 void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 {
+	//mediv01 杀死单位的代码
 	PROFILE_FUNC();
 
 	CLLNode<IDInfo>* pUnitNode;
@@ -723,6 +725,7 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	eCaptureUnitType = ((eCapturingPlayer != NO_PLAYER) ? getCaptureUnitType(GET_PLAYER(eCapturingPlayer).getCivilizationType()) : NO_UNIT);
 
 	// captured workers become slaves with Slavery (disabled)
+	//mediv01 老代码 抓工人做奴隶
 	/*if (eCaptureUnitType != NO_UNIT && GC.getUnitInfo(eCaptureUnitType).isWorker())
 	{
 		if (eCapturingPlayer != NO_PLAYER && GET_PLAYER(eCapturingPlayer).isSlavery())
@@ -732,6 +735,7 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	}*/
 
 	// Leoreth: Turkic UP
+	//mediv01 突厥UP 
 	if (getOwner() == BARBARIAN && eCapturingPlayer == TURKS && GET_TEAM(GET_PLAYER(eCapturingPlayer).getTeam()).isAtWarWithMajorPlayer())
 	{
 		// mounted units
@@ -768,18 +772,31 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 
 		if (bCanCapture && !GET_PLAYER(eCapturingPlayer).canTrain(eOwnCaptureUnitType))
 		{
-			bCanCapture = false;
+			if (GC.getDefineINT("CVUNIT_CAN_CAPTURE_ALL_UNIT") == 1) {
+
+			}
+			else {
+				bCanCapture = false;
+			}
 		}
 
-		if (bCanCapture && GC.getUnitInfo(eCaptureUnitType).getCombat() == 0 && !GET_PLAYER(eCapturingPlayer).isSlavery())
-		{
-			bCanCapture = false;
-		}
+
 
 		if (bCanCapture && !GET_PLAYER(eCapturingPlayer).isHuman() && !GET_PLAYER(eCapturingPlayer).AI_captureUnit(eOwnCaptureUnitType, pPlot) && 0 != GC.getDefineINT("AI_CAN_DISBAND_UNITS"))
 		{
 			bCanCapture = false;
 		}
+		/* mediv01 原来的代码
+		if (bCanCapture && GC.getUnitInfo(eCaptureUnitType).getCombat() == 0 && !GET_PLAYER(eCapturingPlayer).isSlavery())//mediv01 感觉抓工人和这个有关
+		{
+			bCanCapture = false;
+		}
+		*/
+		if (bCanCapture && GC.getUnitInfo(eCaptureUnitType).getCombat() == 0 && !GET_PLAYER(eCapturingPlayer).isSlavery())//mediv01 感觉抓工人和这个有关
+		{
+			bCanCapture = false;
+		}
+
 
 		if (bCanCapture)
 		{
@@ -879,7 +896,7 @@ void CvUnit::doTurn()
 
 	if (hasMoved())
 	{
-		if (isAlwaysHeal())
+		if (isAlwaysHeal()|| GC.getDefineINT("CVUNIT_CAN_HEAL_WHEN_MOVE") == 1)//mediv01 行走后可以疗伤
 		{
 			doHeal();
 		}
@@ -934,6 +951,7 @@ void CvUnit::updateAirStrike(CvPlot* pPlot, bool bQuick, bool bFinish)
 		}
 
 		// Leoreth/Dale: nuclear bomber
+		//mediv01 核弹
 		if (canNuke(pPlot))
 		{
 			kill(true);
@@ -2431,6 +2449,22 @@ bool CvUnit::generatePath(const CvPlot* pToPlot, int iFlags, bool bReuse, int* p
 
 bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage) const
 {
+
+
+	//mediv01 所有单位是否能进入领土
+	if (GC.getDefineINT("CVUNIT_CAN_ALWAYS_ENTER_TERRITORY") == 1) {
+		if (isHuman()) {
+			return true;
+		}
+	}
+	//mediv01 海上单位是否能进入领土
+	if (GC.getDefineINT("CVUNIT_SHIP_CAN_ALWAYS_ENTER_TERRITORY") == 1 && DOMAIN_SEA == getDomainType()) {
+		if (isHuman()) {
+			return true;
+		}
+		
+	}
+
 	// Leoreth: allow entering enemy territory while you have no cities to avoid being pushed out after spawn
 	if (!GET_PLAYER(getOwnerINLINE()).isBarbarian() && GET_PLAYER(getOwner()).getNumCities() == 0)
 	{
@@ -2485,6 +2519,7 @@ bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage) cons
 	}
 
 	//Leoreth: Tibetan UP
+	//mediv01 吐蕃UP 传教士进入他国领土
 	if (getOwnerINLINE() == TIBET)
 	{
 		for (int iI = 0; iI < GC.getNumReligionInfos(); iI++)
@@ -2512,6 +2547,25 @@ bool CvUnit::canEnterArea(TeamTypes eTeam, const CvArea* pArea, bool bIgnoreRigh
 		return false;
 	}
 
+
+	
+	if (isBarbarian() && GET_PLAYER(getOwnerINLINE()).isMinorCiv() && DOMAIN_LAND == getDomainType()  &&GC.getDefineINT("CVUNIT_BARBARIAN_CANNOT_ENTER") == 1)//mediv01 设置参数，野蛮人不进入国境
+	{
+		return false;
+	}
+
+	
+	if (isBarbarian() && GET_PLAYER(getOwnerINLINE()).isMinorCiv() && DOMAIN_LAND == getDomainType()&& GC.getDefineINT("CVUNIT_OLD_GREAT_WALL_EFFECT") == 1)//mediv01 旧的长城特效
+	{
+		if (eTeam != NO_TEAM && eTeam != getTeam())
+		{
+			if (pArea && pArea->isBorderObstacle(eTeam))
+			{
+				return false;
+			}
+		}
+	}
+	
 	// Leoreth: changed Great Wall effect
 	/*if (isBarbarian() && DOMAIN_LAND == getDomainType())
 	{
@@ -2593,10 +2647,15 @@ bool CvUnit::willRevealByMove(const CvPlot* pPlot) const
 
 bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bool bIgnoreLoad) const
 {
+	//mediv01 单位是否可以进入某个地块判定
 	PROFILE_FUNC();
 
 	FAssertMsg(pPlot != NULL, "Plot is not assigned a valid value");
-
+	if (GC.getDefineINT("CVUNIT_AI_NOT_TAKE_GOODY") > 0) {
+		if (!isHuman() && pPlot->isGoody()) {
+			return false;
+		}
+	}
 	if (atPlot(pPlot))
 	{
 		return false;
@@ -2610,6 +2669,12 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		}
 	}
 
+	//mediv01 限制单元格最大单位数
+	if (GC.getDefineINT("CVUNIT_MAX_UNIT_PER_PLOT") > 0) {
+		if (pPlot->getNumUnits() >= GC.getDefineINT("CVUNIT_MAX_UNIT_PER_PLOT") && !pPlot->isCity()) {
+			return false;
+		}
+	}
 	// Cannot move around in unrevealed land freely
 	if (m_pUnitInfo->isNoRevealMap() && willRevealByMove(pPlot))
 	{
@@ -2639,6 +2704,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 			bImpassableFeature = m_pUnitInfo->getFeatureImpassable(pPlot->getFeatureType()) && (pPlot->getImprovementType() == NO_IMPROVEMENT);
 
 			// Leoreth: Khmer UP
+			//mediv01 高棉UP 可以通过地形
 			if (getOwnerINLINE() == KHMER && (pPlot->getFeatureType() == 1 || pPlot->getFeatureType() == 8))
 			{
 				bImpassableFeature = false;
@@ -2731,7 +2797,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	case DOMAIN_LAND:
 		if (pPlot->isWater() && !canMoveAllTerrain())
 		{
-			if (!pPlot->isCity() || 0 == GC.getDefineINT("LAND_UNITS_CAN_ATTACK_WATER_CITIES"))
+			if (!pPlot->isCity() || 0 == GC.getDefineINT("LAND_UNITS_CAN_ATTACK_WATER_CITIES"))//mediv01 陆地单位可以攻击海上城市
 			{
 				if (bIgnoreLoad || !isHuman() || plot()->isWater() || !canLoad(pPlot))
 				{
@@ -2741,6 +2807,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		}
 
 		// Leoreth: make sure that hidden nationality units that entered cities through open borders cannot attack from there
+		//mediv01 某些单位带劫掠属性可以不开边攻击
 		if (bAttack && m_pUnitInfo->isHiddenNationality() && plot()->isCity() && plot()->getPlotCity()->getOwner() != getOwner())
 		{
 			return false;
@@ -2758,7 +2825,8 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 	if (isAnimal())
 	{
-		if (pPlot->isOwned())
+		if (pPlot->isOwned() && (!GC.getDefineINT("CVUNIT_ANIMAL_CAN_ENTER_COUNTRY") == 1))
+			//mediv01 动物不能进入国界内
 		{
 			return false;
 		}
@@ -3327,12 +3395,27 @@ bool CvUnit::canScrap() const
 
 void CvUnit::scrap()
 {
+	//mediv01 删除单位
 	if (!canScrap())
 	{
 		return;
 	}
-
 	kill(true);
+
+
+	if (GC.getDefineINT("CVUNIT_DISBAND_CAN_GIVE_GOLD") ==1) {//mediv01 解散单位获得收入
+
+		int money = getUnitInfo().getProductionCost()* GC.getDefineINT("CVUNIT_DISBAND_GIVE_GOLD_PERCENT") /100;
+		
+
+		if (GC.getDefineINT("CVUNIT_DISBAND_GIVE_GOLD") > 0) {
+			money = GC.getDefineINT("CVUNIT_DISBAND_GIVE_GOLD");
+		}
+
+		GET_PLAYER(getOwnerINLINE()).changeGold(money);
+		
+	}
+	
 }
 
 
@@ -3340,7 +3423,9 @@ bool CvUnit::canGift(bool bTestVisible, bool bTestTransport)
 {
 	CvPlot* pPlot = plot();
 	CvUnit* pTransport = getTransportUnit();
-
+	if (GC.getDefineINT("CVUNIT_CAN_GIFT_UNIT_TO_OTHER") == 1) {//mediv01 可以将单位任意赠送
+		return true;
+	}
 	if (!(pPlot->isOwned()))
 	{
 		return false;
@@ -3352,10 +3437,13 @@ bool CvUnit::canGift(bool bTestVisible, bool bTestTransport)
 	}
 
 	// Leoreth: can only gift units to vassals and defensive pact partners
-	if (!GET_TEAM(pPlot->getTeam()).isVassal(getTeam()) && !GET_TEAM(pPlot->getTeam()).isDefensivePact(getTeam()))
-	{
-		return false;
-	}
+	//只可以将单位赠送给附庸和防御协定的
+	
+		if (!GET_TEAM(pPlot->getTeam()).isVassal(getTeam()) && !GET_TEAM(pPlot->getTeam()).isDefensivePact(getTeam()))
+		{
+			return false;
+		}
+	
 
 	if (pPlot->isVisibleEnemyUnit(this))
 	{
@@ -3860,11 +3948,12 @@ void CvUnit::airCircle(bool bStart)
 
 bool CvUnit::canHeal(const CvPlot* pPlot) const
 {
+	//mediv01 回复HP相关的代码
 	if (!isHurt())
 	{
 		return false;
 	}
-
+	//mediv01 等待状态不能疗伤
 	if (isWaiting())
 	{
 		return false;
@@ -3876,10 +3965,17 @@ bool CvUnit::canHeal(const CvPlot* pPlot) const
 	}
 
 	// Leoreth: hidden nationality units can enter cities with open borders but don't let them heal there because it's an easy area to retreat to
-	if (m_pUnitInfo->isHiddenNationality() && pPlot->isCity() && pPlot->getPlotCity()->getOwnerINLINE() != getOwnerINLINE())
-	{
-		return false;
+	//mediv01 私掠单位可以在中立领土疗伤
+	if (GC.getDefineINT("CVUNIT_CAN_HEAL_FOR_SACK") == 1) {
+
 	}
+	else {
+		if (m_pUnitInfo->isHiddenNationality() && pPlot->isCity() && pPlot->getPlotCity()->getOwnerINLINE() != getOwnerINLINE())
+		{
+			return false;
+		}
+	}
+
 
 	return true;
 }
@@ -3903,6 +3999,8 @@ bool CvUnit::canSentry(const CvPlot* pPlot) const
 
 int CvUnit::healRate(const CvPlot* pPlot) const
 {
+	//mediv01 疗伤执行代码 
+	//城市内、友好领土、中立领土和敌对领土的疗伤率不同
 	PROFILE_FUNC();
 
 	CLLNode<IDInfo>* pUnitNode;
@@ -4197,6 +4295,7 @@ bool CvUnit::canNuke(const CvPlot* pPlot) const
 
 bool CvUnit::canNukeAt(const CvPlot* pPlot, int iX, int iY) const
 {
+	//mediv01 核弹距离在这里设置
 	CvPlot* pTargetPlot;
 	int iI;
 
@@ -4235,6 +4334,7 @@ bool CvUnit::canNukeAt(const CvPlot* pPlot, int iX, int iY) const
 
 bool CvUnit::nuke(int iX, int iY)
 {
+	//mediv01 核弹代码的实现
 	CvPlot* pPlot;
 	CvWString szBuffer;
 	bool abTeamsAffected[MAX_TEAMS];
@@ -4560,6 +4660,7 @@ bool CvUnit::recon(int iX, int iY)
 
 bool CvUnit::canParadrop(const CvPlot* pPlot) const
 {
+	//mediv01 可以空投的条件
 	if (getDropRange() <= 0)
 	{
 		return false;
@@ -4960,6 +5061,7 @@ bool CvUnit::bombard()
 
 bool CvUnit::canPillage(const CvPlot* pPlot) const
 {
+	//mediv01 判断能否劫掠的代码
 	if (!(m_pUnitInfo->isPillage()))
 	{
 		return false;
@@ -5007,6 +5109,7 @@ bool CvUnit::canPillage(const CvPlot* pPlot) const
 
 bool CvUnit::pillage()
 {
+	//mediv01 劫掠金币的代码
 	CvWString szBuffer;
 	int iPillageGold = 0;
 	long lPillageGold;
@@ -5072,6 +5175,7 @@ bool CvUnit::pillage()
 			iPillageGold = (int)lPillageGold;
 
 			//Rhye - start UP (Viking)
+			//mediv01 维京UP：劫掠金币*5 
 			if (getOwnerINLINE() == VIKINGS && GET_PLAYER(getOwnerINLINE()).getCurrentEra() <= ERA_MEDIEVAL)
 			{
 				iPillageGold *= 5;
@@ -5137,6 +5241,7 @@ bool CvUnit::pillage()
 
 bool CvUnit::canPlunder(const CvPlot* pPlot, bool bTestVisible) const
 {
+	//mediv01 海上劫掠代码
 	if (getDomainType() != DOMAIN_SEA)
 	{
 		return false;
@@ -5248,6 +5353,7 @@ int CvUnit::sabotageCost(const CvPlot* pPlot) const
 // XXX compare with destroy prob...
 int CvUnit::sabotageProb(const CvPlot* pPlot, ProbabilityTypes eProbStyle) const
 {
+	//mediv01 摧毁设施
 	CvPlot* pLoopPlot;
 	int iDefenseCount;
 	int iCounterSpyCount;
@@ -5403,6 +5509,7 @@ bool CvUnit::sabotage()
 
 int CvUnit::destroyCost(const CvPlot* pPlot) const
 {
+	//mediv01 间谍摧毁设施的费用
 	CvCity* pCity;
 	bool bLimited;
 
@@ -5780,6 +5887,7 @@ bool CvUnit::found()
 
 bool CvUnit::canSpread(const CvPlot* pPlot, ReligionTypes eReligion, bool bTestVisible, bool bAI) const
 {
+	//mediv01 传教士相关代码
 	CvCity* pCity;
 
 /************************************************************************************************/
@@ -6126,8 +6234,13 @@ bool CvUnit::spreadCorporation(CorporationTypes eCorporation)
 
 bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistTypes eSpecialist) const
 {
+	//mediv01 可以加入城市的相关代码 
+	//mediv01 未来工人加入城市的代码可以在这里实现
+	
 	CvCity* pCity;
-
+	if (isWorker() && GC.getDefineINT("CVUNIT_WORKER_CAN_JOIN_CITY") != 1) {//mediv01 工人能够加入城市
+		return false;
+	}
 	if (eSpecialist == NO_SPECIALIST)
 	{
 		return false;
@@ -6337,6 +6450,7 @@ bool CvUnit::canDiscover(const CvPlot* pPlot) const
 
 
 bool CvUnit::discover()
+//mediv01 伟人点科技
 {
 	TechTypes eFirstDiscoveryTech, eSecondDiscoveryTech;
 
@@ -6407,7 +6521,12 @@ int CvUnit::getHurryProduction(const CvPlot* pPlot) const
 
 	iProduction = getMaxHurryProduction(pCity);
 
-	iProduction = std::min(pCity->productionLeft(), iProduction);
+	if (GC.getDefineINT("CVUNIT_GREAT_ENGINEER_ACCELERATE_UNLIMITED") > 0) {
+
+	}
+	else {
+		iProduction = std::min(pCity->productionLeft(), iProduction);
+	}
 
 	return std::max(0, iProduction);
 }
@@ -6480,6 +6599,7 @@ bool CvUnit::hurry()
 
 int CvUnit::getTradeGold(const CvPlot* pPlot) const
 {
+	//mediv01 大商业家贸易金币
 	CvCity* pCapitalCity;
 	CvCity* pCity;
 	int iGold;
@@ -6495,6 +6615,7 @@ int CvUnit::getTradeGold(const CvPlot* pPlot) const
 	iGold = (m_pUnitInfo->getBaseTrade() + (m_pUnitInfo->getTradeMultiplier() * ((pCapitalCity != NULL) ? pCity->calculateTradeProfit(pCapitalCity) : 0)));
 
 	// Leoreth: to help Mali
+	//mediv01 圣城最低收入是2000
 	if (pCity->isHolyCity() && iGold < 2000)
 	{
 		iGold = std::min(iGold*2, 2000);
@@ -6545,6 +6666,7 @@ bool CvUnit::canTrade(const CvPlot* pPlot, bool bTestVisible) const
 
 bool CvUnit::trade()
 {
+	//mediv01 贸易
 	if (!canTrade(plot()))
 	{
 		return false;
@@ -6825,6 +6947,7 @@ bool CvUnit::awardSpyExperience(TeamTypes eTargetTeam, EspionageMissionTypes eMi
 //SuperSpies: glider1 start
 bool CvUnit::canAssassin(const CvPlot* pPlot, bool bTestVisible) const
 {
+	//mediv01 可以刺杀
 	if (isDelayedDeath())
 	{
 		return false;
@@ -6887,6 +7010,7 @@ bool CvUnit::canAssassin(const CvPlot* pPlot, bool bTestVisible) const
 
 bool CvUnit::canBribe(const CvPlot* pPlot, bool bTestVisible) const
 {
+	//mediv01 可以贿赂
 	if (isDelayedDeath())
 	{
 		return false;
@@ -7256,6 +7380,7 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 	{
 		return false;
 	}
+	
 
 	if (!(GET_PLAYER(getOwnerINLINE()).canBuild(pPlot, eBuild, false, bTestVisible)))
 	{
@@ -7313,7 +7438,13 @@ bool CvUnit::build(BuildTypes eBuild)
 	{
 		if (GC.getBuildInfo(eBuild).isKill())
 		{
-			kill(true);
+			//mediv01 渔船建造后可以重复利用
+			if (GC.getDefineINT("CVUNIT_FISHING_BOAT_CAN_BE_REUSED") == 1) {
+
+			}
+			else {
+				kill(true);
+			}
 		}
 	}
 
@@ -7683,6 +7814,14 @@ bool CvUnit::canUpgrade(UnitTypes eUnit, bool bTestVisible) const
 		return false;
 	}
 
+	//if (!bTestVisible)
+	//{
+		if (GET_PLAYER(getOwnerINLINE()).getGold() < upgradePrice(eUnit))
+		{
+			return false;
+		}
+	//}
+
 	if(!isReadyForUpgrade())
 	{
 		return false;
@@ -7694,13 +7833,7 @@ bool CvUnit::canUpgrade(UnitTypes eUnit, bool bTestVisible) const
 		return false;
 	}
 
-	if (!bTestVisible)
-	{
-		if (GET_PLAYER(getOwnerINLINE()).getGold() < upgradePrice(eUnit))
-		{
-			return false;
-		}
-	}
+
 
 	if (hasUpgrade(eUnit))
 	{
@@ -8103,6 +8236,13 @@ int CvUnit::baseMoves() const
 	int iMoves = m_pUnitInfo->getMoves() + getExtraMoves() + GET_TEAM(getTeam()).getExtraMoves(getDomainType());
 
 	// Leoreth: Kremlin effect
+	//mediv01 平民单位+1移动力
+
+	//mediv01 多倍移动力选项
+	if (GC.getDefineINT("CVUNIT_MOVE_MULTIPILIER") >0) {
+		iMoves = iMoves * GC.getDefineINT("CVUNIT_MOVE_MULTIPILIER");
+	}
+
 	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)KREMLIN))
 	{
 		if (!canFight() && getDomainType() == DOMAIN_LAND)
@@ -8129,6 +8269,7 @@ int CvUnit::movesLeft() const
 
 bool CvUnit::canMove() const
 {
+	//mediv01 是否可以移动的条件
 	if (isDead())
 	{
 		return false;
@@ -8175,8 +8316,14 @@ bool CvUnit::canBuildRoute() const
 	{
 		if (GC.getBuildInfo((BuildTypes)iI).getRoute() != NO_ROUTE)
 		{
-			if (m_pUnitInfo->getBuilds(iI))
+			bool iMilitaryBuildRoad = false;//mediv01 考虑加入军人可以修路的选项，暂时不启用代码
+			//if (GC.getDefineINT("CVUNIT_MILITARY_BUILD_ROAD") == 1 && m_pUnitInfo->getCombat()>0) {
+				//iMilitaryBuildRoad = true;
+			//}
+
+			if (m_pUnitInfo->getBuilds(iI)|| iMilitaryBuildRoad)
 			{
+				//mediv01 可以修路的前置科技
 				if (GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getBuildInfo((BuildTypes)iI).getTechPrereq())))
 				{
 					return true;
@@ -8470,6 +8617,7 @@ int CvUnit::baseCombatStr() const
 //			values may be unexpectedly reversed in this case (iModifierTotal will be the negative sum)
 int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDetails* pCombatDetails) const
 {
+	//mediv01 战斗相关内容
 	int iCombat;
 
 	FAssertMsg((pPlot == NULL) || (pPlot->getTerrainType() != NO_TERRAIN), "(pPlot == NULL) || (pPlot->getTerrainType() is not expected to be equal with NO_TERRAIN)");
@@ -12847,7 +12995,8 @@ bool CvUnit::canAdvance(const CvPlot* pPlot, int iThreshold) const
 		bool bImpassableFeature = m_pUnitInfo->getFeatureImpassable(pPlot->getFeatureType()) && (pPlot->getImprovementType() == NO_IMPROVEMENT);
 
 		// Leoreth: Khmer UP
-		if (getOwnerINLINE() == KHMER && (pPlot->getFeatureType() == 1 || pPlot->getFeatureType() == 8))
+		
+		if (getOwnerINLINE() == KHMER && (pPlot->getFeatureType() == FEATURE_JUNGLE || pPlot->getFeatureType() == FEATURE_RAINFOREST))
 		{
 			bImpassableFeature = false;
 		}
@@ -13948,7 +14097,7 @@ void CvUnit::applyEvent(EventTypes eEvent)
 
 	if (kEvent.isDisbandUnit())
 	{
-		kill(false);
+		kill(false);//mediv01 主动删除单位不是这里
 	}
 }
 
@@ -14175,6 +14324,11 @@ void CvUnit::getLayerAnimationPaths(std::vector<AnimationPathTypes>& aAnimationP
 
 int CvUnit::getSelectionSoundScript() const
 {
+	// Performance UP
+	if (GC.getGameINLINE().isBeforeHumanStart()) {
+		static int fastId = GC.getCivilizationInfo(getCivilizationType()).getSelectionSoundScriptId();;
+		return fastId;
+	}
 	int iScriptId = getArtInfo(0, GET_PLAYER(getOwnerINLINE()).getCurrentEra())->getSelectionSoundScriptId();
 	if (iScriptId == -1)
 	{
@@ -14185,6 +14339,7 @@ int CvUnit::getSelectionSoundScript() const
 
 int CvUnit::getOriginalArtStyle(int regionID)
 {
+	//mediv01 不同国家的美术风格不同
 	int id = regionID;
 
 	if (id == REGION_ALASKA || id == REGION_CANADA || id == REGION_UNITED_STATES || id == REGION_BRITAIN)
@@ -14766,6 +14921,7 @@ bool CvUnit::isWorker() const
 
 bool CvUnit::canRebuild(const CvPlot* pPlot) const
 {
+	//mediv01 移民重建城市
 	if (!m_pUnitInfo->isFound())
 	{
 		return false;

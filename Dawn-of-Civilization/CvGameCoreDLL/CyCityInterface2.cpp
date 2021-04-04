@@ -5,7 +5,7 @@
 #include "CyPlot.h"
 #include "CyArea.h"
 #include "CvInfos.h"
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 //# include <boost/python/manage_new_object.hpp>
 //# include <boost/python/return_value_policy.hpp>
 

@@ -1,5 +1,5 @@
 // gameAI.cpp
-
+//mediv01 Ã»É¶ÄÚÈÝ 20200813
 #include "CvGameCoreDLL.h"
 #include "CvGameAI.h"
 #include "CvPlayerAI.h"

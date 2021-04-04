@@ -5,7 +5,7 @@
 #include "CyArtFileMgr.h"
 #include "CvArtFileMgr.h"
 #include "CyGlobalContext.h"
-
+//mediv01 美术文件 ，不修改
 CyArtFileMgr::CyArtFileMgr() : m_pArtFileMgr(NULL)
 {
 	m_pArtFileMgr = &ARTFILEMGR;

@@ -1,5 +1,5 @@
 // selectionGroup.cpp
-
+//mediv01 20200821 选中单位的操作的相关函数，没啥游戏逻辑
 #include "CvGameCoreDLL.h"
 #include "CvGlobals.h"
 #include "CvSelectionGroup.h"
@@ -1536,6 +1536,7 @@ void CvSelectionGroup::startMission()
 					break;
 
 				case MISSION_GOLDEN_AGE:
+					//mediv01 黄金时代任务
 					//just play animation, not golden age - JW
 					if (headMissionQueueNode()->m_data.iData1 != -1)
 					{
@@ -3552,6 +3553,7 @@ void CvSelectionGroup::groupMove(CvPlot* pPlot, bool bCombat, CvUnit* pCombatUni
 #endif
 // BUG - Sentry Actions - end
 		{
+			//mediv01 可以移动的条件
 			pLoopUnit->move(pPlot, true);
 		}
 		else

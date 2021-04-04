@@ -8,7 +8,7 @@
 // Exposed directly - no wrapper
 // Author - Mustafa Thamer
 //
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 void CyStructsPythonInterface1()
 {
 	OutputDebugString("Python Extension Module - CyStructsPythonInterface1\n");

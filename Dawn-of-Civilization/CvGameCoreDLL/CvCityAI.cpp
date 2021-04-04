@@ -1,5 +1,5 @@
 // cityAI.cpp
-
+//mediv01 20200813阅读修改
 #include "CvGameCoreDLL.h"
 #include "CvGlobals.h"
 #include "CvGameCoreUtils.h"
@@ -153,7 +153,18 @@ void CvCityAI::AI_reset()
 
 void CvCityAI::AI_doTurn()
 {
+	//mediv01 ai过回合 可以多线程优化
 	PROFILE_FUNC();
+	CvString log_CvString;
+
+
+	//LOG开始
+	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
+		log_CvString = log_CvString.format("CvCityAI::AI_doTurn()开始，当前玩家为 %d ", (int)getID());
+		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
+	}
+	//LOG结束
+
 
 	int iI;
 
@@ -192,6 +203,13 @@ void CvCityAI::AI_doTurn()
 	AI_doHurry();
 
 	AI_doEmphasize();
+
+	//LOG开始
+	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
+		log_CvString = log_CvString.format("CvCityAI::AI_doTurn()结束，当前玩家为 %d ", (int)getID());
+		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
+	}
+	//LOG结束
 }
 
 
@@ -3143,6 +3161,7 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 											}
 										}
 									}
+								//mediv01 UHV建筑的偏好度计算
 
 								if (iI == STATUE_OF_LIBERTY) //for the UHV
 									if (getOwnerINLINE() != AMERICA) {
@@ -3819,6 +3838,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 				if (iHasMetCount > 0 && iMilitaryProductionModifier > 0)
 				{
 					// either not a wonder, or a wonder and we are a high production city
+					//mediv01 AI选择城市建造奇观
 					if (!bIsLimitedWonder || bIsHighProductionCity)
 					{
 						iValue += (iMilitaryProductionModifier / 4);
@@ -9979,7 +9999,7 @@ int CvCityAI::AI_cityThreat(bool bDangerPercent)
 				}
 				else
 				{
-					switch (GET_PLAYER(getOwnerINLINE()).AI_getAttitude((PlayerTypes)iI))
+					switch (GET_PLAYER(getOwnerINLINE()).AI_getAttitude((PlayerTypes)iI))//mediv01 外交关系对AI威胁度的影响
 					{
 					case ATTITUDE_FURIOUS:
 						iTempValue *= 180;
@@ -10334,6 +10354,7 @@ ReligionTypes CvCityAI::AI_getPersecutionReligion(ReligionTypes eIgnoredReligion
 }
 
 // Leoreth: building AI weights, civ specific preferences and special conditions for some wonders
+//mediv01 AI对建奇观的喜好度
 int CvCityAI::AI_buildingWeight(BuildingTypes eBuilding) const
 {
 	CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);

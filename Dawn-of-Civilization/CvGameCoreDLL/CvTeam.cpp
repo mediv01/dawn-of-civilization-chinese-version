@@ -1,5 +1,5 @@
 // team.cpp
-
+//mediv01 重要的游戏逻辑，跟外交相关的逻辑在这里 20200821
 #include "CvGameCoreDLL.h"
 #include "CvPlayerAI.h"
 #include "CvDefines.h"
@@ -1054,6 +1054,7 @@ void CvTeam::updateCommerce()
 
 bool CvTeam::canChangeWarPeace(TeamTypes eTeam, bool bAllowVassal) const
 {
+	//mediv01 能否改变和平或者战争状态
 	if (GC.getGameINLINE().isOption(GAMEOPTION_NO_CHANGING_WAR_PEACE))
 	{
 		return false;
@@ -1112,6 +1113,7 @@ bool CvTeam::canChangeWarPeace(TeamTypes eTeam, bool bAllowVassal) const
 
 bool CvTeam::canDeclareWar(TeamTypes eTeam) const
 {
+	//mediv01 是否能够宣战
 	if (eTeam == getID())
 	{
 		return false;
@@ -1136,6 +1138,10 @@ bool CvTeam::canDeclareWar(TeamTypes eTeam) const
 	{
 		return false;
 	}
+	//	TO-DO 人类附庸不能擅自发动战争
+	//if (isVassal(eTeam)) {
+
+	//}
 
 	for (int i = 0; i < MAX_TEAMS; ++i)
 	{
@@ -1159,6 +1165,7 @@ bool CvTeam::canDeclareWar(TeamTypes eTeam) const
 	}
 
 	// Leoreth: protect recently spawned civs for ten turns to avoid early attack exploits
+	//mediv01 最近出生的文明不能宣战
 	if (eTeam < NUM_MAJOR_PLAYERS)
 	{
 		int iGameTurn = GC.getGameINLINE().getGameTurn();
@@ -1833,6 +1840,7 @@ void CvTeam::makePeace(TeamTypes eTeam, bool bBumpUnits)
 
 bool CvTeam::canContact(TeamTypes eTeam) const
 {
+	//mediv01 能否接触该文明
 	int iI, iJ;
 
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
@@ -1874,6 +1882,7 @@ void CvTeam::meet(TeamTypes eTeam, bool bNewDiplo)
 
 void CvTeam::signOpenBorders(TeamTypes eTeam)
 {
+	//mediv01 开边相关的函数
 	CLinkList<TradeData> ourList;
 	CLinkList<TradeData> theirList;
 	TradeData item;
@@ -1901,6 +1910,7 @@ void CvTeam::signOpenBorders(TeamTypes eTeam)
 
 void CvTeam::signDefensivePact(TeamTypes eTeam)
 {
+	//mediv01 防御协定相关函数
 	CLinkList<TradeData> ourList;
 	CLinkList<TradeData> theirList;
 	TradeData item;
@@ -1927,6 +1937,7 @@ void CvTeam::signDefensivePact(TeamTypes eTeam)
 
 bool CvTeam::canSignDefensivePact(TeamTypes eTeam)
 {
+	//mediv01 判断能否签订防御协定
 	for (int iTeam = 0; iTeam < MAX_CIV_TEAMS; ++iTeam)
 	{
 		if (iTeam != getID() && iTeam != eTeam)
@@ -3777,6 +3788,10 @@ void CvTeam::setWarWeariness(TeamTypes eIndex, int iNewValue)
 void CvTeam::changeWarWeariness(TeamTypes eIndex, int iChange)
 {
 	FAssert(eIndex >= 0 && eIndex < MAX_TEAMS);
+	if (GC.getDefineINT("ANYFUN_WARNESS_MULTIPLIER") > 0) {
+		iChange *= GC.getDefineINT("ANYFUN_WARNESS_MULTIPLIER") / 100; //mediv01 修正厌战情绪乘数
+	}
+
 	setWarWeariness(eIndex, getWarWeariness(eIndex) + iChange);
 }
 
@@ -3882,6 +3897,12 @@ bool CvTeam::isHasMet(TeamTypes eIndex)	const
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
 	//FAssert((eIndex != getID()) || m_abHasMet[eIndex]);
+
+	//mediv01 永久联系选项1 有一点点小问题，试试永久联系选项2改进
+	if (GC.getDefineINT("CVTEAM_CAN_ALWAYS_CONTACT_IF_MEET") == 1) {
+		return m_abHasEverMet[eIndex];
+	}
+
 	return m_abHasMet[eIndex];
 }
 
@@ -4040,9 +4061,19 @@ void CvTeam::setPermanentWarPeace(TeamTypes eIndex, bool bNewValue)
 
 bool CvTeam::isFreeTrade(TeamTypes eIndex) const
 {
-	if (!isHasMet(eIndex))
-	{
-		return false;
+	//mediv01 这里定义没遇见文明不能贸易
+	//mediv01 使用第二种方法实现不切边，试了一下，还不如方法1
+	if (GC.getDefineINT("CVTEAM_CAN_ALWAYS_CONTACT_IF_MEET2") == 1) {
+		if (!isHasEverMet(eIndex))
+		{
+			return false;
+		}
+	}
+	else {
+		if (!isHasMet(eIndex))
+		{
+			return false;
+		}
 	}
 
 	// Leoreth: Salsal Buddha effect
@@ -4060,10 +4091,13 @@ bool CvTeam::isFreeTrade(TeamTypes eIndex) const
 	}
 
 	// Porcelain Tower effect: no open borders required for trade
+	//mediv01 大报恩寺的效果，不开边也能贸易
 	if (GET_PLAYER(getLeaderID()).isHasBuildingEffect((BuildingTypes)PORCELAIN_TOWER))
 	{
 		return true;
 	}
+	//mediv01 增加一个不开边也能贸易的参数
+
 
 	return (isOpenBorders(eIndex) || GC.getGameINLINE().isFreeTrade());
 }
@@ -5100,6 +5134,10 @@ int CvTeam::getObsoleteBuildingCount(BuildingTypes eIndex) const
 
 bool CvTeam::isObsoleteBuilding(BuildingTypes eIndex) const				
 {
+	if (GC.getDefineINT("CVCITY_CAN_BUILD_OBSOLUTE_BUILDING") > 0) {
+		
+		return false;
+	}
 	return (getObsoleteBuildingCount(eIndex) > 0);
 }
 
@@ -5834,7 +5872,7 @@ void CvTeam::setHasTech(TechTypes eIndex, bool bNewValue, PlayerTypes ePlayer, b
 			}
 
 			int iFreeTechs = 0;
-
+			//mediv01 首发科技创建伟人
 			if (bFirst)
 			{
 				if (GC.getGameINLINE().countKnownTechNumTeams(eIndex) == 1)
@@ -5862,6 +5900,7 @@ void CvTeam::setHasTech(TechTypes eIndex, bool bNewValue, PlayerTypes ePlayer, b
 				{
 					iFreeTechs += 1;
 					szBuffer = gDLL->getText("TXT_KEY_BABYLONIAN_UP");
+					//mediv01 巴比伦UP 免费科技
 					GET_PLAYER(ePlayer).changeFreeTechsOnDiscovery(-1);
 				}
 			}
@@ -6545,6 +6584,7 @@ void CvTeam::cancelDefensivePacts()
 
 bool CvTeam::isFriendlyTerritory(TeamTypes eTeam) const
 {
+	//mediv01 判断是否处于友方领土
 	if (eTeam == NO_TEAM)
 	{
 		return false;
@@ -6572,7 +6612,19 @@ int CvTeam::getEspionagePointsAgainstTeam(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiEspionagePointsAgainstTeam[eIndex];
+	int iEspionagePoints = m_aiEspionagePointsAgainstTeam[eIndex];
+	//mediv01 谍报点加成
+	if (GC.getDefineINT("CVPLYER_GET_ESPIONAGE_POINT_BONUS") != 0) {
+		if (isHuman()) {
+			iEspionagePoints += GC.getDefineINT("CVPLYER_GET_ESPIONAGE_POINT_BONUS");
+		}
+		else {
+			if (GC.getDefineINT("CVPLYER_GET_ESPIONAGE_POINT_BONUS_FOR_AI") == 1) {
+				iEspionagePoints += GC.getDefineINT("CVPLYER_GET_ESPIONAGE_POINT_BONUS");
+			}
+		}
+	}
+	return iEspionagePoints;
 }
 
 void CvTeam::setEspionagePointsAgainstTeam(TeamTypes eIndex, int iValue)

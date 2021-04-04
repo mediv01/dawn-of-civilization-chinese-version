@@ -9,7 +9,7 @@
 #include "CyUnit.h"
 #include "CvDLLPythonIFaceBase.h"
 #include "CvGlobals.h"
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 CyCity::CyCity() : m_pCity(NULL)
 {
 

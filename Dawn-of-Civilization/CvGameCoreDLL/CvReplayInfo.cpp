@@ -9,7 +9,7 @@
 #include "CvGameTextMgr.h"
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvInitCore.h"
-
+//mediv01 一些基础函数 20200821
 int CvReplayInfo::REPLAY_VERSION = 4;
 
 CvReplayInfo::CvReplayInfo() :

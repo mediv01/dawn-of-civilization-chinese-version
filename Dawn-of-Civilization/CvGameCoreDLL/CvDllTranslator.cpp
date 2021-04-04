@@ -1,6 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include "CvDllTranslator.h"
-
+//mediv01 20200813 阅读 跟图标相关的内容
 void CvDllTranslator::initializeTags(CvWString& szTagStartIcon, CvWString& szTagStartOur, CvWString& szTagStartCT, CvWString& szTagStartColor, CvWString& szTagStartLink, CvWString& szTagEndLink, CvWString& szEndLinkReplacement, std::map<std::wstring, CvWString>& aIconMap, std::map<std::wstring, CvWString>& aColorMap)
 {
 	szTagStartIcon = L"[ICON_";

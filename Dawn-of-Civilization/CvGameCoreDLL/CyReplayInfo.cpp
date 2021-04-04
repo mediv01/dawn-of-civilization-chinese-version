@@ -1,7 +1,7 @@
 #include "CvGameCoreDLL.h"
 #include "CyReplayInfo.h"
 #include "CyMap.h"
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 CyReplayInfo::CyReplayInfo()
 {
 	m_pHoF = &m_replay;

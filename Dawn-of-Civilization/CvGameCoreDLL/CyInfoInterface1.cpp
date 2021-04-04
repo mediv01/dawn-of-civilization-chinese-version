@@ -5,7 +5,7 @@
 // Python interface for info classes (formerly structs)
 // These are simple enough to be exposed directly - no wrappers
 //
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 void CyInfoPythonInterface1()
 {
 	OutputDebugString("Python Extension Module - CyInfoPythonInterface1\n");

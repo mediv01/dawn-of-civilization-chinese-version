@@ -1,5 +1,5 @@
 // plot.cpp
-
+//mediv 01 阅读完成 20200812 主要是地图相关内容
 #include "CvGameCoreDLL.h"
 #include "CvPlot.h"
 #include "CvCity.h"
@@ -563,6 +563,45 @@ void CvPlot::updateGraphicEra()
 		gDLL->getFlagEntityIFace()->updateGraphicEra(m_pFlagSymbol);
 }
 
+// Performance UP
+void CvPlot::erase()
+{
+	// kill units
+	std::vector<IDInfo> oldUnits;
+
+	for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
+	{
+		oldUnits.push_back(pUnitNode->m_data);
+	}
+
+	for (size_t i = 0; i < oldUnits.size(); i++) {
+		CvUnit* pLoopUnit = ::getUnit(oldUnits[i]);
+		if (pLoopUnit != NULL)
+		{
+			pLoopUnit->kill(false);
+		}
+	}
+
+	// kill cities
+	CvCity* pCity = getPlotCity();
+	if (pCity != NULL)
+	{
+		pCity->kill(false);
+	}
+
+	setBonusType(NO_BONUS);
+	setImprovementType(NO_IMPROVEMENT);
+	setRouteType(NO_ROUTE, false);
+	setFeatureType(NO_FEATURE);
+
+	// disable rivers
+	setNOfRiver(false, NO_CARDINALDIRECTION);
+	setWOfRiver(false, NO_CARDINALDIRECTION);
+	setRiverID(-1);
+}
+
+
+/* //mediv01 旧的代码，有性能问题
 void CvPlot::erase()
 {
 	CLLNode<IDInfo>* pUnitNode;
@@ -611,6 +650,7 @@ void CvPlot::erase()
 	setWOfRiver(false, NO_CARDINALDIRECTION);
 	setRiverID(-1);
 }
+*/
 
 //Rhye - start
 void CvPlot::eraseAIDevelopment()
@@ -711,6 +751,10 @@ float CvPlot::getSymbolSize() const
 
 float CvPlot::getSymbolOffsetX(int iOffset) const
 {
+	// Performance UP
+	if (GC.getGameINLINE().isBeforeHumanStart()) {
+		return ((40.0f + (((float)iOffset) * 28.0f * 0.8f)) - (GC.getPLOT_SIZE() / 2.0f));
+	}
 	return ((40.0f + (((float)iOffset) * 28.0f * getSymbolSize())) - (GC.getPLOT_SIZE() / 2.0f));
 }
 
@@ -760,6 +804,7 @@ void CvPlot::doTurn()
 	verifyUnitValidPlot();
 
 	// Leoreth: Great Wall effect
+	//mediv01 新长城特效，野蛮人进入受伤
 	if (isWithinGreatWall() && isOwned())
 	{
 		if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)GREAT_WALL))
@@ -817,6 +862,9 @@ void CvPlot::doImprovement()
 		if (getBonusType() == NO_BONUS)
 		{
 			FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlot::doImprovement");
+
+			
+			
 			for (iI = 0; iI < GC.getNumBonusInfos(); ++iI)
 			{
 				if (GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getBonusInfo((BonusTypes) iI).getTechReveal())))
@@ -838,6 +886,9 @@ void CvPlot::doImprovement()
 					{
 						iOdds *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getVictoryDelayPercent();
 						iOdds /= 100;
+						if (GC.getDefineINT("ANYFUN_BONUS_MULTIPLIER")>0) {
+							iOdds *= GC.getDefineINT("ANYFUN_BONUS_MULTIPLIER") / 100;
+						}
 
 						if( GC.getGameINLINE().getSorenRandNum(iOdds, "Bonus Discovery") == 0)
 						{
@@ -1274,7 +1325,7 @@ void CvPlot::verifyUnitValidPlot()
 }
 
 
-void CvPlot::nukeExplosion(int iRange, CvUnit* pNukeUnit)
+void CvPlot::nukeExplosion(int iRange, CvUnit* pNukeUnit) //mediv01 核泄漏效果
 {
 	CLLNode<IDInfo>* pUnitNode;
 	CvCity* pLoopCity;
@@ -1700,7 +1751,7 @@ bool CvPlot::isLake() const
 	pArea = area();
 
 	//Rhye - start (salt lake)
-	int saltLakePlots[13][2] = {
+	int saltLakePlots[13][2] = { //mediv01 地图硬编码
 	{76, 43}, //Van
 	{82, 48}, //Aral sea
 	{82, 49},
@@ -2186,6 +2237,7 @@ void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, C
 
 bool CvPlot::canSeePlot(CvPlot *pPlot, TeamTypes eTeam, int iRange, DirectionTypes eFacingDirection) const
 {
+	//mediv01 处理单位视野距离的函数
 	iRange++;
 
 	if (pPlot == NULL)
@@ -2570,7 +2622,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 		return false;
 	}
 
-	if (isImpassable())
+	if (isImpassable()) 
 	{
 		return false;
 	}
@@ -2750,19 +2802,22 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 			}
 		}
 
-		// Leoreth: no adjacent acts as city improvements
-		CvPlot* pAdjacentPlot;
-		if (GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).isActsAsCity())
-		{
-			for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
-			{
-				pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		// Leoreth: no adjacent acts as city improvements  //mediv01 要塞不能临近城市的代码
+		if (!GC.getDefineINT("CVPLOT_BUILD_FORT_NEAR_CITY_OR_FORT") == 1) {
 
-				if (pAdjacentPlot != NULL)
+			CvPlot* pAdjacentPlot;
+			if (GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).isActsAsCity())
+			{
+				for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
 				{
-					if (pAdjacentPlot->isCity() || (pAdjacentPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pAdjacentPlot->getImprovementType()).isActsAsCity()))
+					pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+
+					if (pAdjacentPlot != NULL)
 					{
-						return false;
+						if (pAdjacentPlot->isCity() || (pAdjacentPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pAdjacentPlot->getImprovementType()).isActsAsCity()))
+						{
+							return false;
+						}
 					}
 				}
 			}
@@ -2796,16 +2851,18 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 			if (GET_PLAYER(ePlayer).getTeam() != getTeam())
 			{
 				//outside borders can't be built in other's culture
-				if (GC.getImprovementInfo(eImprovement).isOutsideBorders())
-				{
-					if (getTeam() != NO_TEAM)
+				if (!GC.getDefineINT("CVPLOT_BUILD_IMPROVEMENT_OUTSIDE_BORDER") == 1) { //mediv01 可以在边境外修建设施
+					if (GC.getImprovementInfo(eImprovement).isOutsideBorders())
+					{
+						if (getTeam() != NO_TEAM)
+						{
+							return false;
+						}
+					}
+					else //only buildable in own culture
 					{
 						return false;
 					}
-				}
-				else //only buildable in own culture
-				{
-					return false;
 				}
 			}
 		}
@@ -3276,7 +3333,8 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 			iRegularCost += GC.getHILLS_EXTRA_MOVEMENT();
 		}
 
-		// Leoreth: Great Wall effect (+1 movement cost for enemies within the great wall)
+		// Leoreth: Great Wall effect (+1 movement cost for enemies within the great wall) 
+		//mediv01 长城阻挡敌人进攻特效
 		if (isWithinGreatWall() && isOwned())
 		{
 			if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)GREAT_WALL) && GET_TEAM((TeamTypes)getOwnerINLINE()).isAtWar((TeamTypes)pUnit->getOwner()))
@@ -3494,7 +3552,7 @@ PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 				{
 					if (isCore((PlayerTypes)iI)) 
 					{
-						iCulture *= 4;
+						iCulture *= 4; //mediv01 核心区4倍文化加成
 					}
 				}
 
@@ -6135,7 +6193,9 @@ BonusTypes CvPlot::getBonusType(TeamTypes eTeam) const
 	{
 		if (m_eBonusType != NO_BONUS)
 		{
-			if (!GET_TEAM(eTeam).isHasTech((TechTypes)(GC.getBonusInfo((BonusTypes)m_eBonusType).getTechReveal())) && !GET_TEAM(eTeam).isForceRevealedBonus((BonusTypes)m_eBonusType))
+			//if (!GET_TEAM(eTeam).isHasTech((TechTypes)(GC.getBonusInfo((BonusTypes)m_eBonusType).getTechReveal())) && !GET_TEAM(eTeam).isForceRevealedBonus((BonusTypes)m_eBonusType))
+			// Performance UP
+			if (!GET_TEAM(eTeam).isHasTech(m_eBonusVisableTechs) && !GET_TEAM(eTeam).isForceRevealedBonus((BonusTypes)m_eBonusType))
 			{
 				return NO_BONUS;
 			}
@@ -6169,6 +6229,8 @@ void CvPlot::setBonusType(BonusTypes eNewValue)
 	{
 		if (getBonusType() != NO_BONUS)
 		{
+			// Performance UP
+			m_eBonusVisableTechs = (TechTypes)(GC.getBonusInfo((BonusTypes)m_eBonusType).getTechReveal());
 			if (area())
 			{
 				area()->changeNumBonuses(getBonusType(), -1);
@@ -6772,7 +6834,7 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 	//Rhye - start UP
 	if (isPeak())
 	{
-		if (eTeam == INCA && !GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).isReborn())
+		if (eTeam == INCA && !GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).isReborn()) //mediv01 印加 UP 山峰加食物和产能
 		{
 			if (eYield == YIELD_FOOD) 
 			{
@@ -6795,7 +6857,7 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 
 	FAssertMsg(getTerrainType() != NO_TERRAIN, "TerrainType is not assigned a valid value");
 
-	iYield = GC.getTerrainInfo(getTerrainType()).getYield(eYield);
+	iYield = GC.getTerrainInfo(getTerrainType()).getYield(eYield);//mediv01 返回XML上每个地形的产出值
 
 	if (isHills())
 	{
@@ -6839,7 +6901,7 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 			iYield += GC.getFeatureInfo(getFeatureType()).getYieldChange(eYield);
 
 			//Leoreth: Congo UP: +1 food, +1 production on jungle, rainforest and marsh tiles
-			if (getOwnerINLINE() == CONGO)
+			if (getOwnerINLINE() == CONGO) //mediv01 刚果UP 加产出
 			{
 				if (getFeatureType() == GC.getInfoTypeForString("FEATURE_JUNGLE") ||
 					getFeatureType() == GC.getInfoTypeForString("FEATURE_RAINFOREST") ||
@@ -7123,6 +7185,46 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 	if (bCity)
 	{
 		iYield = std::max(iYield, GC.getYieldInfo(eYield).getMinCity());
+		if (GC.getDefineINT("PLOT_CITY_FULL_YIELD_WHEN_SETTLE") == 1) {//mediv01  城市坐在资源上满产出
+			//eImprovement = getImprovementType();
+			//iYield += calculateImprovementYieldChange(eImprovement, eYield, ePlayer);
+			//iYield += calculateImprovementYieldChange((ImprovementTypes)iAppliedImprovement, eYield, ePlayer);
+			int iAppliedImprovement = -1;
+
+			// Leoreth (edead): city counts as correct improvement wrt. bonus yields on small islands, except food
+			if (GC.getMap().getArea(getArea())->getNumTiles() <= 5 || 1==1)
+			{
+				if (getBonusType(GET_PLAYER(ePlayer).getTeam()) != NO_BONUS && eYield != (YieldTypes)0 ||1==1)
+				{
+					for (int iImprovement = 0; iImprovement < GC.getNumImprovementInfos(); iImprovement++)
+					{
+						if (GC.getImprovementInfo((ImprovementTypes)iImprovement).isImprovementBonusMakesValid(getBonusType(GET_PLAYER(ePlayer).getTeam())))
+						{
+							for (int iBuild = 0; iBuild < GC.getNumBuildInfos(); iBuild++)
+							{
+								if (GC.getBuildInfo((BuildTypes)iBuild).getImprovement() == iImprovement && GET_TEAM((TeamTypes)ePlayer).isHasTech((TechTypes)GC.getBuildInfo((BuildTypes)iBuild).getTechPrereq()))
+								{
+									if (!GC.getBuildInfo((BuildTypes)iBuild).isKill())
+									{
+										iAppliedImprovement = iImprovement;
+										break;
+										break;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			if (iAppliedImprovement != -1)
+			{
+				iYield += calculateImprovementYieldChange((ImprovementTypes)iAppliedImprovement, eYield, ePlayer);
+			}
+		}
+		else {
+
+		
 		int iAppliedImprovement = -1;
 
 		// Leoreth (edead): city counts as correct improvement wrt. bonus yields on small islands, except food
@@ -7154,6 +7256,7 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 		if (iAppliedImprovement != -1)
 		{
 			iYield += calculateImprovementYieldChange((ImprovementTypes)iAppliedImprovement, eYield, ePlayer);
+		}
 		}
 	}
 
@@ -7195,7 +7298,7 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			}
 		}
 
-		//Rhye - start UP (not shown in debug mode)
+		//Rhye - start UP (not shown in debug mode) //mediv01 马里UP 
 		if (ePlayer == MALI)
 		{
 			//if (getYield((YieldTypes)2) == 1)
@@ -7533,7 +7636,7 @@ int CvPlot::getFoundValue(PlayerTypes eIndex)
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
 
-	if (eIndex == KOREA && getX_INLINE() == 108 && getY_INLINE() == 48)
+	if (eIndex == KOREA && getX_INLINE() == 108 && getY_INLINE() == 48) //mediv01 小地图硬编码
 	{
 		return 82393;
 	}
@@ -8701,6 +8804,7 @@ bool CvPlot::changeBuildProgress(BuildTypes eBuild, int iChange, TeamTypes eTeam
 		if (getBuildProgress(eBuild) >= getBuildTime(eBuild))
 		{
 			m_paiBuildProgress[eBuild] = 0;
+			//mediv01 改进设施完成后的代码一般加在这里
 
 			if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
 			{
@@ -9554,6 +9658,10 @@ void CvPlot::doFeature()
 
 							if (iProbability > 0)
 							{
+								//mediv01 森林生长几率修正
+								if (GC.getDefineINT("CVPLOT_FOREST_GROWTH_RATE") > 0) {
+									iProbability *= (GC.getDefineINT("CVPLOT_FOREST_GROWTH_RATE")) / 100;
+								}
 /************************************************************************************************/
 /* UNOFFICIAL_PATCH                       03/04/10                                jdog5000      */
 /*                                                                                              */
@@ -9681,6 +9789,58 @@ void CvPlot::doCulture()
 			}
 		}
 	}
+
+	// add PLAYEROPTION_FORT_CULTURE
+	//mediv01 要塞驻军产生文化
+	if (GC.getDefineINT("CVGAME_FORT_CAN_CULTURE") == 1) { 
+		if (getImprovementType() != NO_IMPROVEMENT)
+		{
+			if (GC.getImprovementInfo(getImprovementType()).isActsAsCity())
+			{
+				if (getNumUnits() > 0)
+				{
+					CLLNode<IDInfo>* pUnitNode;
+					CvUnit* pLoopUnit;
+					PlayerTypes ePlayer = NO_PLAYER;
+
+					pUnitNode = headUnitNode();
+					while (pUnitNode != NULL)
+					{
+						pLoopUnit = ::getUnit(pUnitNode->m_data);
+						pUnitNode = nextUnitNode(pUnitNode);
+
+						if (!pLoopUnit->getUnitInfo().isHiddenNationality() && !pLoopUnit->getUnitInfo().isSpy() && pLoopUnit->getUnitInfo().isMilitaryProduction())
+						{
+							ePlayer = (PlayerTypes)pLoopUnit->getOwnerINLINE();
+							break;
+						}
+					}
+
+					if (ePlayer != NO_PLAYER)
+					{
+						if (getOwnerINLINE() == NO_PLAYER)
+						{
+							setOwner(ePlayer, true, true);
+						}
+
+						CvPlot* pAdjacentPlot;
+						for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+						{
+							pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+							if (pAdjacentPlot != NULL)
+							{
+								if (pAdjacentPlot->getOwnerINLINE() == NO_PLAYER)
+								{
+									pAdjacentPlot->setOwner(ePlayer, true, true);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	// end add
 
 	updateCulture(true, true);
 }
@@ -11473,7 +11633,7 @@ void CvPlot::setWarValue(PlayerTypes ePlayer, int iNewValue)
 }
 
 
-int CvPlot::getSpreadFactor(ReligionTypes eReligion) const
+int CvPlot::getSpreadFactor(ReligionTypes eReligion) const //mediv01 宗教能否传播涉及的函数
 {
 	int iSpreadFactor = m_aiReligionSpreadFactor[eReligion];
 
@@ -11557,7 +11717,7 @@ int CvPlot::calculateCultureCost() const
 }
 
 // Leoreth
-bool CvPlot::canUseSlave(PlayerTypes ePlayer) const
+bool CvPlot::canUseSlave(PlayerTypes ePlayer) const  //mediv01 是否可以使用奴隶 
 {
 	if (GET_PLAYER(ePlayer).isMinorCiv() || GET_PLAYER(ePlayer).isBarbarian()) return false;
 

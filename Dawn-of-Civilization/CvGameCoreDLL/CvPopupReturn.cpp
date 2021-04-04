@@ -1,6 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include "CvPopupReturn.h"
-
+//mediv01 20200821 弹出窗口的基础函数
 #define CvPopup_SetAtGrow(kArray, iIdx, kValue)\
 	if((int)kArray.size() <= iIdx) kArray.resize(iIdx+1);\
 	kArray[iIdx] = kValue;

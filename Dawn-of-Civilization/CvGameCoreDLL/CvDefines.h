@@ -93,7 +93,7 @@
 #define CIV4_ASSETS_PYTHON										".\\Assets\\Python"
 #define CIV4_ASSETS_XML												".\\Assets\\XML"
 
-#define MAX_PLAYER_NAME_LEN										(64)
+#define MAX_PLAYER_NAME_LEN										(1024)//mediv01 used to be 64
 #define MAX_VOTE_CHOICES											(8)
 #define VOTE_TIMEOUT													(600000)	// 10 minute vote timeout - temporary
 

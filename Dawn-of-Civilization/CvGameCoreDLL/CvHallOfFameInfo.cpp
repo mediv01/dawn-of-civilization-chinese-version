@@ -1,7 +1,7 @@
 #include "CvGameCoreDLL.h"
 #include "CvHallOfFameInfo.h"
 #include "CvGlobals.h"
-
+//mediv01 20200815  ËÆºõÊÇµ×²ãÎÄ¼þ
 CvHallOfFameInfo::CvHallOfFameInfo()
 {
 }

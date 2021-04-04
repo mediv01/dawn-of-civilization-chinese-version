@@ -1,6 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include ".\cvreplaymessage.h"
-
+//mediv01 一些基础函数 20200821
 CvReplayMessage::CvReplayMessage(int iTurn, ReplayMessageTypes eType, PlayerTypes ePlayer) :
 	m_iTurn(iTurn),
 	m_ePlayer(ePlayer),

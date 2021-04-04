@@ -1,5 +1,5 @@
 // buttonPopup.cpp
-
+//mediv01 弹窗内容在此  阅读修改于20200813
 #include "CvGameCoreDLL.h"
 #include "CvDLLButtonPopup.h"
 #include "CvGlobals.h"
@@ -2568,7 +2568,7 @@ bool CvDLLButtonPopup::launchFreeColonyPopup(CvPopup* pPopup, CvPopupInfo &info)
 	PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
 	if (ePlayer == NO_PLAYER)
 	{
-		return false;
+		return false; 
 	}
 
 	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_FREE_COLONY"));
@@ -2614,7 +2614,9 @@ bool CvDLLButtonPopup::launchFreeColonyPopup(CvPopup* pPopup, CvPopupInfo &info)
 	{
 		PlayerTypes eOtherPlayer = (PlayerTypes)iI;
 		int iYear = GC.getGame().getGameTurnYear();
-		if (eOtherPlayer != ePlayer && !GET_PLAYER(eOtherPlayer).isAlive() && GET_PLAYER(eOtherPlayer).canRespawn())
+		//if (eOtherPlayer != ePlayer && !GET_PLAYER(eOtherPlayer).isAlive() && GET_PLAYER(eOtherPlayer).canRespawn()) // mediv01 选择是否允许复活文明
+
+		if (eOtherPlayer != ePlayer && !GET_PLAYER(eOtherPlayer).isAlive() && GET_PLAYER(eOtherPlayer).canRespawn()&& (GC.getDefineINT("CITY_NO_ALLOW_TO_LIBERATE_TO_PLAYER") == 0))//mediv01  是否允许解放的城市给现有玩家
 		{
 			CvWString szCityList;
 			int iCityLoop;
@@ -2622,7 +2624,8 @@ bool CvDLLButtonPopup::launchFreeColonyPopup(CvPopup* pPopup, CvPopupInfo &info)
 
 			for (CvCity* pLoopCity = GET_PLAYER(ePlayer).firstCity(&iCityLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(ePlayer).nextCity(&iCityLoop))
 			{
-				if (pLoopCity->plot()->isCore(eOtherPlayer) && !pLoopCity->plot()->isCore(ePlayer) && !pLoopCity->isCapital())
+				if (pLoopCity->plot()->isCore(eOtherPlayer) && !pLoopCity->plot()->isCore(ePlayer) && !pLoopCity->isCapital()) //by mediv01
+				//if (!pLoopCity->isCapital())
 				{
 					if (!szCityList.empty())
 					{
@@ -2658,15 +2661,22 @@ bool CvDLLButtonPopup::launchFreeColonyPopup(CvPopup* pPopup, CvPopupInfo &info)
 			CvWString szCity = gDLL->getText("TXT_KEY_CITY_LIBERATE", pLoopCity->getNameKey(), GET_PLAYER(eLiberationPlayer).getCivilizationShortDescription()); //Rhye
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szCity, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CITYSELECTION")->getPath(), -pLoopCity->getID(), WIDGET_GENERAL);
 		}
-		else if (pLoopCity->plot()->getSettlerValue(ePlayer) < 90)
+		//else if (pLoopCity->plot()->getSettlerValue(ePlayer) < 90)//mediv01
+		else if (pLoopCity->plot()->getSettlerValue(ePlayer) < 90 || (GC.getDefineINT("CITY_ALLOW_TO_LIBERATE_ALL_CITY") == 1))//mediv01 是否允许释放所有的城市
 		{
 			bool bFound = false;
 			for (int iI = 0; iI < NUM_MAJOR_PLAYERS; iI++)
 			{
 				if (abPlayerFound[iI] && pLoopCity->plot()->isCore((PlayerTypes)iI))
 				{
-					bFound = true;
-					break;
+					if (GC.getDefineINT("CITY_ALLOW_TO_LIBERATE_ALL_CITY") == 1) {//mediv01 是否允许释放所有的城市
+					}
+					else
+					{
+					bFound = true;//mediv01
+					break;//mediv01
+					}
+					
 				}
 			}
 

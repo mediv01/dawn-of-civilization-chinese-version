@@ -135,7 +135,9 @@ public:
 
 	int AI_dealVal(PlayerTypes ePlayer, const CLinkList<TradeData>* pList, bool bIgnoreAnnual = false, int iExtra = 1) const;
 	bool AI_goldDeal(const CLinkList<TradeData>* pList) const;
-	bool AI_considerOffer(PlayerTypes ePlayer, const CLinkList<TradeData>* pTheirList, const CLinkList<TradeData>* pOurList, int iChange = 1) const;
+	DllExport bool AI_considerOffer(PlayerTypes ePlayer, const CLinkList<TradeData>* pTheirList, const CLinkList<TradeData>* pOurList, int iChange = 1) const;
+	DllExport int AI_considerOffer_Threshold(int ePlayer, int myPlayer)const;
+	DllExport int AI_considerOffer_Threshold_Map(int ePlayer, int myPlayer)const;
 	bool AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeData>* pTheirList, const CLinkList<TradeData>* pOurList, CLinkList<TradeData>* pTheirInventory, CLinkList<TradeData>* pOurInventory, CLinkList<TradeData>* pTheirCounter, CLinkList<TradeData>* pOurCounter) const;
 
 	DllExport int AI_maxGoldTrade(PlayerTypes ePlayer) const;

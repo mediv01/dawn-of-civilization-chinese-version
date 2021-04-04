@@ -2,7 +2,7 @@
 // published python interface for CyGlobalContext
 // Author - Mustafa Thamer
 //
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 #include "CvGameCoreDLL.h"
 #include "CyMap.h"
 #include "CyPlayer.h"
@@ -14,11 +14,17 @@
 #include "CyTeam.h"
 
 
+
+
 void CyGlobalContextPythonInterface1(python::class_<CyGlobalContext>& x)
 {
 	OutputDebugString("Python Extension Module - CyGlobalContextPythonInterface1\n");
 
 	x
+		
+		.def("AI_considerOfferThreshold", &CyGlobalContext::AI_considerOfferThreshold, "int (int ePlayer, int myPlayer) - returns money AI accept to tribute")
+		.def("AI_considerOfferThreshold_Map", &CyGlobalContext::AI_considerOfferThreshold_Map, "int (int ePlayer, int myPlayer) - returns money AI accept to tribute")
+		.def("AI_considerOffer", &CyGlobalContext::AI_considerOffer, "bool() - returns how AI consider the deal")
 		.def("isDebugBuild", &CyGlobalContext::isDebugBuild, "() - returns true if running a debug build")
 		.def("getGame", &CyGlobalContext::getCyGame, python::return_value_policy<python::reference_existing_object>(), "() - CyGame()")
 		.def("getMap", &CyGlobalContext::getCyMap, python::return_value_policy<python::reference_existing_object>(), "() - CyMap()")

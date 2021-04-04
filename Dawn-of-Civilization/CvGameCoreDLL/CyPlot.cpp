@@ -2,6 +2,7 @@
 // Python wrapper class for CvPlot 
 // 
 //
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 #include "CvGameCoreDLL.h"
 #include "CyPlot.h"
 #include "CyCity.h"
@@ -453,6 +454,14 @@ bool CyPlot::isImpassable()
 int CyPlot::getX() 
 {
 	return m_pPlot ? m_pPlot->getX_INLINE() : -1;
+}
+
+int CyPlot::getRegionName()
+{
+	CvWString tem_a;
+	tem_a.append(CvWString::format(L"     X :"));
+	//return m_pPlot ? tem_a : tem_a;
+	return m_pPlot ? m_pPlot->getRegionID() : -1;
 }
 
 int CyPlot::getY() 

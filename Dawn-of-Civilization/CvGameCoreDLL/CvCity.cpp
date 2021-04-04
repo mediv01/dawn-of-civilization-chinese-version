@@ -1,5 +1,5 @@
 // city.cpp
-
+//mediv01 阅读修改于20200812
 #include "CvGameCoreDLL.h"
 #include "CvGlobals.h"
 #include "CvCity.h"
@@ -20,6 +20,7 @@
 #include "FProfiler.h"
 #include "CvGameTextMgr.h"
 
+
 // interfaces used
 #include "CvDLLEngineIFaceBase.h"
 #include "CvDLLPythonIFaceBase.h"
@@ -29,8 +30,9 @@
 
 #include "CvRhyes.h" //Rhye
 #include <algorithm>
-
+#include<string>
 // Public Functions...
+
 
 CvCity::CvCity()
 {
@@ -185,6 +187,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 	//--------------------------------
 	// Log this event
+	
 	if (GC.getLogging())
 	{
 		if (gDLL->getChtLvl() > 0)
@@ -242,9 +245,9 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 		if (pAdjacentPlot != NULL)
 		{
-			if (pAdjacentPlot->getCulture(getOwnerINLINE()) < GC.getDefineINT("FREE_CITY_ADJACENT_CULTURE"))
+			if (pAdjacentPlot->getCulture(getOwnerINLINE()) < GC.getDefineINT("FREE_CITY_ADJACENT_CULTURE"))//mediv01 免费城市文化
 			{
-				pAdjacentPlot->setCulture(getOwnerINLINE(), GC.getDefineINT("FREE_CITY_ADJACENT_CULTURE"), bBumpUnits, false);
+				pAdjacentPlot->setCulture(getOwnerINLINE(), GC.getDefineINT("FREE_CITY_ADJACENT_CULTURE"), bBumpUnits, false);//mediv01 免费城市文化
 			}
 			pAdjacentPlot->updateCulture(bBumpUnits, false);
 		}
@@ -318,7 +321,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		changeReligionYieldChange(GET_PLAYER(eOwner).getStateReligion(), (YieldTypes)iI, GET_PLAYER(eOwner).getReligionYieldChange((YieldTypes)iI));
 	}
 
-	// Leoreth: Chinese UP: +25% food kept on city growth
+	// Leoreth: Chinese UP: +25% food kept on city growth  //mediv01 中国UP 食物增长特效
 	if (getOwnerINLINE() == CHINA)
 	{
 		changeMaxFoodKeptPercent(25);
@@ -344,7 +347,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	}
 
 	// Leoreth: Las Lajas Sanctuary effect: +10% heal rate in all cities
-	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)LAS_LAJAS_SANCTUARY))
+	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)LAS_LAJAS_SANCTUARY))  //mediv01 医疗效果
 	{
 		changeHealRate(10);
 	}
@@ -360,17 +363,17 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		}
 	}
 
-    // Leoreth: Harappan UU (City Builder)
+    // Leoreth: Harappan UU (City Builder) //mediv01 哈拉帕UP 城市人口为2
 	if (getOwnerINLINE() == HARAPPA)
 	{
 		iExtraPopulation += 1;
 	}
 
-	changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPopulation);
+	changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPopulation);//mediv01 初始城市人口
 	//changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPop);
 	//Rhye - end switch
 
-	changeAirUnitCapacity(GC.getDefineINT("CITY_AIR_UNIT_CAPACITY"));
+	changeAirUnitCapacity(GC.getDefineINT("CITY_AIR_UNIT_CAPACITY"));//mediv01 城市容纳空军数量
 
 	updateFreshWaterHealth();
 	updateFeatureHealth();
@@ -1210,6 +1213,10 @@ void CvCity::doTurn()
 			setWeLoveTheKingDay(false);
 		}
 	}
+	//mediv01 重新绘制万里长城
+	if (GC.getDefineINT("CVUNIT_GREAT_WALL_DYNAMIC") == 1) {
+		//updateGreatWall();
+	}
 
 	// Leoreth: update art style type once per turn
 	updateArtStyleType();
@@ -1269,6 +1276,12 @@ bool CvCity::isCitySelected()
 
 bool CvCity::canBeSelected() const
 {
+
+	if (GC.getGameINLINE().getGameTurn() < GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getBirthTurn())
+	{
+		return false;
+	}
+
 	if ((getTeam() == GC.getGameINLINE().getActiveTeam()) || GC.getGameINLINE().isDebugMode())
 	{
 		return true;
@@ -1302,6 +1315,11 @@ bool CvCity::canBeSelected() const
 
 void CvCity::updateSelectedCity(bool bTestProduction)
 {
+	// Performance UP
+	if (GC.getGameINLINE().isBeforeHumanStart()) {
+		return;
+	}
+
 	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		CvPlot* pLoopPlot = getCityIndexPlot(iI);
@@ -1360,12 +1378,12 @@ void CvCity::createGreatPeople(UnitTypes eGreatPersonUnit, bool bIncrementThresh
 }
 
 
-void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool bAlt, bool bShift, bool bCtrl)
+void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool bAlt, bool bShift, bool bCtrl)//mediv01 攻入城市时的几个选项
 {
 	switch (eTask)
 	{
 	case TASK_RAZE:
-		GET_PLAYER(getOwnerINLINE()).raze(this);
+		GET_PLAYER(getOwnerINLINE()).raze(this);//mediv01 烧毁城市
 		break;
 
 	case TASK_DISBAND:
@@ -1913,6 +1931,20 @@ bool CvCity::isWorldWondersMaxed() const
 
 	int iWonderLimit = GC.getCultureLevelInfo(getCultureLevel()).getWonderLimit();
 
+	//mediv01  no limit for wonder 奇观无限制
+	if (GC.getDefineINT("MAX_WORLD_WONDERS_PER_CITY_MEDIV01") == -1)
+	{
+		return false;
+	}
+
+	if (GC.getDefineINT("MAX_WORLD_WONDERS_PER_CITY_MEDIV01") >= 1)
+	{
+		iWonderLimit= GC.getDefineINT("MAX_WORLD_WONDERS_PER_CITY_MEDIV01");
+	}
+
+	//mediv01  no limit for wonder
+
+
 	if (isCapital())
 	{
 		iWonderLimit++;
@@ -1954,6 +1986,18 @@ bool CvCity::isNationalWondersMaxed() const
 
 	int iMaxNumWonders = GC.getCultureLevelInfo(getCultureLevel()).getNationalWonderLimit();
 
+	//mediv01  no limit for national wonder
+	if (GC.getDefineINT("MAX_WORLD_NATIONAL_WONDERS_PER_CITY_MEDIV01") == -1)
+	{
+		return false;
+	}
+
+	if (GC.getDefineINT("MAX_WORLD_NATIONAL_WONDERS_PER_CITY_MEDIV01") >= 1)
+	{
+		iMaxNumWonders = GC.getDefineINT("MAX_WORLD_NATIONAL_WONDERS_PER_CITY_MEDIV01");
+	}
+	//mediv01  no limit for national wonder
+
 	if (iMaxNumWonders == -1)
 	{
 		return false;
@@ -1968,7 +2012,7 @@ bool CvCity::isNationalWondersMaxed() const
 }
 
 
-bool CvCity::isBuildingsMaxed() const
+bool CvCity::isBuildingsMaxed() const//mediv01 最大建筑数量
 {
 	if (GC.getGameINLINE().isOption(GAMEOPTION_ONE_CITY_CHALLENGE) && isHuman())
 	{
@@ -1996,6 +2040,32 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 		return false;
 	}
 
+
+	//mediv01 增加最大城市和最大单位数限制
+	// add PLAYEROPTION_MAX_NUM_UNIT
+	if (GC.getDefineINT("ANYFUN_MAX_UNIT") > 0)
+	{
+		if (GET_PLAYER(getOwnerINLINE()).getNumUnits() >= GC.getDefineINT("ANYFUN_MAX_UNIT"))
+		{
+			return false;
+		}
+	}
+	// end add
+
+	// add PLAYEROPTION_MAX_NUM_CITY
+	if (GC.getUnitInfo(eUnit).isFound())
+	{
+		if (GC.getDefineINT("ANYFUN_MAX_CITY") > 0)
+		{
+			if (GET_PLAYER(getOwnerINLINE()).getNumCities() >= GC.getDefineINT("ANYFUN_MAX_CITY"))
+			{
+				return false;
+			}
+		}
+	}
+	// end add
+
+
 	if(GC.getUSE_CAN_TRAIN_CALLBACK())
 	{
 		CyCity* pyCity = new CyCity((CvCity*)this);
@@ -2014,7 +2084,9 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 			return true;
 		}
 	}
-
+	if (GC.getDefineINT("CVCITY_CAN_TRAIN_ANYTHING") == 1) { //mediv01 高权限，可以训练任何东西
+		return true;
+	}
 	if (!(GET_PLAYER(getOwnerINLINE()).canTrain(eUnit, bContinue, bTestVisible, bIgnoreCost)))
 	{
 		return false;
@@ -2053,6 +2125,7 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 	}
 
 	// Leoreth - build settlers only in cities on the same continent as the capital until the discovery of Exploration
+	//mediv01 建造开拓者需要在同一大陆，除非发现地理大发现
 	if((int)eUnit == 4) // settler
 	{
 		int iCapitalRegion = GET_PLAYER(getOwner()).getCapitalCity()->getRegionID();
@@ -2209,9 +2282,12 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 	}
 
 	// Leoreth: can't train slaves
-	if (GC.getUnitInfo(eUnit).isSlave())
-	{
-		return false;
+	//mediv01 增加可以训练奴隶的选项
+	if (!GC.getDefineINT("CVCITY_CAN_TRAIN_SLAVE") == 1 || !isHuman()) {
+		if (GC.getUnitInfo(eUnit).isSlave())
+		{
+			return false;
+		}
 	}
 
 	return true;
@@ -2261,7 +2337,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		argsList.add(bContinue);
 		argsList.add(bTestVisible);
 		argsList.add(bIgnoreCost);
-		long lResult=0;
+		long lResult = 0;
 		gDLL->getPythonIFace()->callFunction(PYGameModule, "canConstruct", argsList.makeFunctionArgs(), &lResult);
 		delete pyCity;	// python fxn must not hold on to this pointer
 		if (lResult == 1)
@@ -2269,8 +2345,10 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 			return true;
 		}
 	}
-
-	if (!(GET_PLAYER(getOwnerINLINE()).canConstruct(eBuilding, bContinue, bTestVisible, bIgnoreCost)))
+	if (GC.getDefineINT("CVCITY_CAN_BUILD_ANYTHING") == 1) { //mediv01 高权限，可以建造任何东西
+		return true;
+	}
+	if (!(GET_PLAYER(getOwnerINLINE()).canConstruct(eBuilding, bContinue, bTestVisible, bIgnoreCost)))//mediv01 这个是低权限的
 	{
 		return false;
 	}
@@ -2279,41 +2357,43 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 	{
 		return false;
 	}
-
+	if (!GC.getDefineINT("CVCITY_CAN_BUILD_WITHOUT_RELIGION") == 1) { //mediv01 破除宗教限制建奇观 单独在这里不起作用 需要配合CvPlayer
 	// Leoreth: pagan buildings require no religion in the city
-	if (GC.getBuildingInfo(eBuilding).isPagan())
-	{
-		if ((getReligionCount() > 0 && (!isHasReligion(JUDAISM) || GET_PLAYER(getOwnerINLINE()).getStateReligion() == JUDAISM)) || getReligionCount() > 1)
+		if (GC.getBuildingInfo(eBuilding).isPagan())
+		{
+			if ((getReligionCount() > 0 && (!isHasReligion(JUDAISM) || GET_PLAYER(getOwnerINLINE()).getStateReligion() == JUDAISM)) || getReligionCount() > 1)
+			{
+				return false;
+			}
+		}
+	
+		if (GC.getBuildingInfo(eBuilding).isPrereqReligion())
+		{
+			if (getReligionCount() > 0)
+			{
+				return false;
+			}
+		}
+
+		if (GC.getBuildingInfo(eBuilding).isStateReligion())
+		{
+			ReligionTypes eStateReligion = GET_PLAYER(getOwnerINLINE()).getStateReligion();
+			if (NO_RELIGION == eStateReligion || !isHasReligion(eStateReligion))
+			{
+				return false;
+			}
+		}
+
+		// Leoreth: two alternative religion requirements
+		bool bReligion = GC.getBuildingInfo(eBuilding).getPrereqReligion() == NO_RELIGION || isHasReligion((ReligionTypes)GC.getBuildingInfo(eBuilding).getPrereqReligion());
+		bool bOrReligion = GC.getBuildingInfo(eBuilding).getOrPrereqReligion() != NO_RELIGION && isHasReligion((ReligionTypes)GC.getBuildingInfo(eBuilding).getOrPrereqReligion());
+
+		if (!bReligion && !bOrReligion)
 		{
 			return false;
 		}
 	}
 
-	if (GC.getBuildingInfo(eBuilding).isPrereqReligion())
-	{
-		if (getReligionCount() > 0)
-		{
-			return false;
-		}
-	}
-
-	if (GC.getBuildingInfo(eBuilding).isStateReligion())
-	{
-		ReligionTypes eStateReligion = GET_PLAYER(getOwnerINLINE()).getStateReligion();
-		if (NO_RELIGION == eStateReligion || !isHasReligion(eStateReligion))
-		{
-			return false;
-		}
-	}
-
-	// Leoreth: two alternative religion requirements
-	bool bReligion = GC.getBuildingInfo(eBuilding).getPrereqReligion() == NO_RELIGION || isHasReligion((ReligionTypes)GC.getBuildingInfo(eBuilding).getPrereqReligion());
-	bool bOrReligion = GC.getBuildingInfo(eBuilding).getOrPrereqReligion() != NO_RELIGION && isHasReligion((ReligionTypes)GC.getBuildingInfo(eBuilding).getOrPrereqReligion());
-
-	if (!bReligion && !bOrReligion)
-	{
-		return false;
-	}
 
 	eCorporation = (CorporationTypes)GC.getBuildingInfo(eBuilding).getPrereqCorporation();
 	if (eCorporation != NO_CORPORATION)
@@ -2467,6 +2547,58 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		}
 	}
 
+	//mediv01 AI不能建玩家UHV的建筑
+	const bool mediv01 = GC.getDefineINT("CVCITY_UHV_HELPER_AI_NOT_BUILD_WONDER_OF_HUMAN_UHV");
+	if (mediv01 == 1) {
+		const int active_player = GC.getGameINLINE().getActivePlayer();
+		if (active_player == FRANCE) {
+			//GC.logs("GC.getGameINLINE().getActivePlayer()== FRANCE", "TEST.LOG");
+			//人类玩家为法国
+			const int getowner = (int) getOwner();
+			if (getowner != (int) FRANCE) { //如果AI不是法国
+
+				//CvString log_CvString;
+				//int playerid = (int)GC.getGameINLINE().getActivePlayer();				
+				//log_CvString = log_CvString.format("当前人类玩家为 %d ，城市的坐标为( %d , %d) getID()为 %d，法国的ID为 %d", playerid, getX(), getY(), (int) getOwner(), (int)FRANCE);
+				//GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_String.log");
+				if (eBuilding == NOTRE_DAME)
+				{
+					return false;
+				}
+
+				if (eBuilding == VERSAILLES)
+				{
+					return false;
+				}
+
+				if (eBuilding == LOUVRE)
+				{
+					return false;
+				}
+
+				if (eBuilding == EIFFEL_TOWER)
+				{
+					return false;
+				}
+
+				if (eBuilding == METROPOLITAIN)
+				{
+					return false;
+				}
+
+			}
+
+		}
+		else { 
+
+
+			
+
+
+		}
+
+	}
+
 	if (!bTestVisible)
 	{
 		if (!bContinue)
@@ -2604,6 +2736,9 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 				}
 			}
 		}
+
+
+
 	}
 
 	if(GC.getUSE_CANNOT_CONSTRUCT_CALLBACK())
@@ -2906,7 +3041,7 @@ int CvCity::getProductionExperience(UnitTypes eUnit)
 			}
 		}
 	}
-	
+	//mediv01 军事单位经验代码
 	// Leoreth: Chapultepec Castle
 	if (eUnit != NO_UNIT)
 	{
@@ -3706,7 +3841,7 @@ int CvCity::getProductionModifier(BuildingTypes eBuilding) const
 		}
 	}
 
-	// Leoreth: new Roman UP
+	// Leoreth: new Roman UP //mediv01 罗马UP的实现，建筑效率
 	if (getOwnerINLINE() == ROME)
 	{
 		if (GET_PLAYER(getOwnerINLINE()).getCapitalCity()->isHasRealBuilding(eBuilding))
@@ -3802,10 +3937,10 @@ int CvCity::getExtraProductionDifference(int iExtra, int iModifier) const
 
 bool CvCity::canHurry(HurryTypes eHurry, bool bTestVisible) const
 {
-	if (!(GET_PLAYER(getOwnerINLINE()).canHurry(eHurry)))
-	{
-		return false;
+	if (GC.getDefineINT("CVCITY_CAN_ALWAYS_HURRY") == 1) {
+
 	}
+	else {
 
 	if (isDisorder())
 	{
@@ -3817,28 +3952,53 @@ bool CvCity::canHurry(HurryTypes eHurry, bool bTestVisible) const
 		return false;
 	}
 
+
+
+
+		if (!(GET_PLAYER(getOwnerINLINE()).canHurry(eHurry)))
+		{
+			return false;
+		}
+	}
+	
+
+
+
+
+
 	if (!bTestVisible)
 	{
-		if (!isProductionUnit() && !isProductionBuilding())
-		{
-			return false;
-		}
+		if (GC.getDefineINT("CVCITY_CAN_ALWAYS_HURRY") == 1) {
 
-		// Leoreth: hurry gold now split into buildings and units
-		if (isProductionUnit() && !GC.getHurryInfo(eHurry).isUnits())
-		{
-			return false;
 		}
+		else {
+			if (!isProductionUnit() && !isProductionBuilding())
+			{
+				return false;
+			}
 
-		if (isProductionBuilding() && !GC.getHurryInfo(eHurry).isBuildings())
-		{
-			return false;
-		}
 
-		// non-military units cannot be hurried
-		if (isProductionUnit() && !GC.getUnitInfo(getProductionUnit()).isMilitaryProduction() && hurryGold(eHurry) > 0)
-		{
-			return false;
+			// Leoreth: hurry gold now split into buildings and units
+			if (isProductionUnit() && !GC.getHurryInfo(eHurry).isUnits()) //总是可以加速
+			{
+				return false;
+			}
+
+			if (isProductionBuilding() && !GC.getHurryInfo(eHurry).isBuildings()) //总是可以加速
+			{
+				return false;
+			}
+
+			// non-military units cannot be hurried
+			if (GC.getDefineINT("CVCITY_CAN_HURRY_NONARMY") == 1) { //非军事单位可以加速
+
+			}
+			else {
+				if (isProductionUnit() && !GC.getUnitInfo(getProductionUnit()).isMilitaryProduction() && hurryGold(eHurry) > 0)
+				{
+					return false;
+				}
+			}
 		}
 
 		if (GET_PLAYER(getOwnerINLINE()).getGold() < hurryGold(eHurry))
@@ -3926,7 +4086,7 @@ bool CvCity::canHurryBuilding(HurryTypes eHurry, BuildingTypes eBuilding, bool b
 }
 
 
-void CvCity::hurry(HurryTypes eHurry)
+void CvCity::hurry(HurryTypes eHurry) //mediv01 砍人口加速生产的代码，总入口
 {
 	int iHurryGold;
 	int iHurryPopulation;
@@ -3938,11 +4098,11 @@ void CvCity::hurry(HurryTypes eHurry)
 		return;
 	}
 
-	iHurryGold = hurryGold(eHurry);
-	iHurryPopulation = hurryPopulation(eHurry);
-	iHurryAngerLength = hurryAngerLength(eHurry);
+	iHurryGold = hurryGold(eHurry);//黄金加速入口
+	iHurryPopulation = hurryPopulation(eHurry);//加速人口计算入口
+	iHurryAngerLength = hurryAngerLength(eHurry);//加速人口红脸计算入口
 
-	changeProduction(hurryProduction(eHurry));
+	changeProduction(hurryProduction(eHurry));//获取加速的建筑产出
 
 	// Leoreth: remember if a unit is being hurried to apply the mercenary promotion, includes Phoenician UP
 	if (isProductionUnit() && iHurryGold > 0 && getOwnerINLINE() != PHOENICIA)
@@ -4814,7 +4974,7 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 				}
 			}
 		}
-
+		//mediv01 一大堆奇观的作用在这里实现，对生产的贡献
 		// Berlaymont
 		else if (eBuilding == BERLAYMONT)
 		{
@@ -5548,7 +5708,7 @@ int CvCity::getHurryPercentAnger(int iExtra) const
 		return std::min(iHurryPercentAnger, 100);
 	}
 
-	return iHurryPercentAnger;
+	return iHurryPercentAnger;//mediv01 砍人的红脸计算在这里
 }
 
 
@@ -5912,7 +6072,7 @@ int CvCity::goodHealth(bool bSpecial) const
 			iTotalHealth += iHealth;
 		}
 	}*/
-
+	//mediv01 健康度的计算
 	// Leoreth: Indian UP: +1 health for every 3 excess happiness
 	if (bSpecial && getOwner() == INDIA)
 	{
@@ -6193,6 +6353,7 @@ int CvCity::hurryPopulation(HurryTypes eHurry) const
 
 int CvCity::getHurryPopulation(HurryTypes eHurry, int iHurryCost) const
 {
+	//mediv01 加速生产所需人口的计算
 	if (GC.getHurryInfo(eHurry).getProductionPerPopulation() == 0)
 	{
 		return 0;
@@ -6248,9 +6409,20 @@ int CvCity::hurryAngerLength(HurryTypes eHurry) const
 }
 
 
-int CvCity::maxHurryPopulation() const
+int CvCity::maxHurryPopulation() const //mediv01 
 {
-	return (getPopulation() / 2);
+	if (GC.getDefineINT("CVCITY_MAX_HURRY_POPULATION") == -1) {
+		return (getPopulation() -1);
+	}
+	else if (GC.getDefineINT("CVCITY_MAX_HURRY_POPULATION") == 0) {
+		return (getPopulation() / 2);//mediv01 最大能加速的人口
+	}
+	else if (GC.getDefineINT("CVCITY_MAX_HURRY_POPULATION") > 0) {
+		return min((getPopulation() - 1), GC.getDefineINT("CVCITY_MAX_HURRY_POPULATION"));
+	}
+	else {
+		return (getPopulation() / 2);//mediv01 最大能加速的人口
+	}
 }
 
 
@@ -6614,7 +6786,7 @@ int CvCity::getPopulation() const
 }
 
 
-void CvCity::setPopulation(int iNewValue)
+void CvCity::setPopulation(int iNewValue)//mediv01 设置人口
 {
 	int iOldPopulation;
 
@@ -6811,7 +6983,7 @@ int CvCity::getTotalGreatPeopleRateModifier() const
 		iModifier += GC.getDefineINT("GOLDEN_AGE_GREAT_PEOPLE_MODIFIER");
 	}
 
-	// Leoreth: Greek UP
+	// Leoreth: Greek UP  //mediv01 伟人点数
 	if (getOwnerINLINE() == GREECE && GET_PLAYER(getOwnerINLINE()).getCurrentEra() <= ERA_CLASSICAL)
 	{
 		iModifier += 150;
@@ -7086,7 +7258,7 @@ void CvCity::updateMaintenance()
 
 	if (!isDisorder() && !isWeLoveTheKingDay() && (getPopulation() > 0))
 	{
-		iNewMaintenance = (calculateBaseMaintenanceTimes100() * std::max(0, (getMaintenanceModifier() + 100))) / 100;
+		iNewMaintenance = (calculateBaseMaintenanceTimes100() * std::max(0, (getMaintenanceModifier() + 100))) / 100;//mediv01 维护费计算
 	}
 
 	if (iOldMaintenance != iNewMaintenance)
@@ -8485,6 +8657,9 @@ void CvCity::changeExtraHealth(int iChange)
 
 int CvCity::getHurryAngerTimer() const
 {
+	if (GC.getDefineINT("CVCITY_NOT_HURRY_ANGRY_PUNISHMENT") == 1) {
+		return 0;
+	}
 	return m_iHurryAngerTimer;
 }
 
@@ -9555,7 +9730,8 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue, bool bUpdatePlotGroups
 {
 	CvWString szBuffer;
 	CultureLevelTypes eOldValue;
-	int iI, iSpecialistCount;
+	//int iI, iSpecialistCount;
+	int iI;//mediv01
 
 	eOldValue = getCultureLevel();
 
@@ -9617,6 +9793,11 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue, bool bUpdatePlotGroups
 						}
 					}
 				}
+
+
+
+
+
 
 				// ONEVENT - Culture growth
 				//CvEventReporter::getInstance().cultureExpansion(this, getOwnerINLINE());
@@ -9993,7 +10174,7 @@ int CvCity::getBaseYieldRateModifier(YieldTypes eIndex, int iExtra) const
 int CvCity::getYieldRate(YieldTypes eIndex) const
 {
 	int iYieldRateTimes100 = getBaseYieldRate(eIndex) * getBaseYieldRateModifier(eIndex);
-
+	// mediv01 哈拉帕UP的实现 
 	// Harappan UP: Sanitation: positive health contributes to city growth
 	if (eIndex == YIELD_FOOD && getOwnerINLINE() == HARAPPA && GET_PLAYER(getOwnerINLINE()).getCurrentEra() == ERA_ANCIENT  && !isFoodProduction())
 	{
@@ -10371,7 +10552,7 @@ int CvCity::calculateTradeProfit(CvCity* pCity) const
 #endif
 // BUG - Fractional Trade Routes - end
 
-int CvCity::calculateTradeYield(YieldTypes eIndex, int iTradeProfit) const
+int CvCity::calculateTradeYield(YieldTypes eIndex, int iTradeProfit) const//mediv01 计算商路收益
 {
 	if ((iTradeProfit > 0) && (GET_PLAYER(getOwnerINLINE()).getTradeYieldModifier(eIndex) > 0))
 	{
@@ -10669,7 +10850,7 @@ int CvCity::getCommerceFromPercent(CommerceTypes eIndex, int iYieldRate) const
         iCommerce += (iYieldRate - iCommerce - getCommerceFromPercent(COMMERCE_RESEARCH, iYieldRate) - getCommerceFromPercent(COMMERCE_CULTURE, iYieldRate) - getCommerceFromPercent(COMMERCE_ESPIONAGE, iYieldRate));
 	    //}
 	}
-
+	//mediv01 商业收益的UP
 	// Leoreth: Byzantine UP DISABLED
 	/*if ((int)getOwner() == BYZANTIUM)
 	{
@@ -11377,7 +11558,7 @@ int CvCity::getCorporationCommerceByCorporation(CommerceTypes eIndex, Corporatio
 
 			iNumBonuses += getNumBonuses(eBonus);
 		}
-
+		//mediv01 公司商业相关代码
 		// Leoreth: Brazilian UP (sugar counts as oil for oil industry)
 		if (getOwner() == BRAZIL && eCorporation == (CorporationTypes)6)
 		{
@@ -12019,6 +12200,7 @@ void CvCity::changeNumRevolts(PlayerTypes eIndex, int iChange)
 
 int CvCity::getRevoltTestProbability() const
 {
+	//mediv01 计算城市低文化时的叛乱概率
 	int iBestModifier = 0;
 
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
@@ -12034,7 +12216,18 @@ int CvCity::getRevoltTestProbability() const
 	}
 	iBestModifier = range(iBestModifier, 0, 100);
 
-	return ((GC.getDefineINT("REVOLT_TEST_PROB") * (100 - iBestModifier)) / 100) / (isHuman() ? 1 : 2); // Leoreth
+
+	//mediv01 文化叛乱的概率
+	int rebelt_prob = ((GC.getDefineINT("REVOLT_TEST_PROB") * (100 - iBestModifier)) / 100) / (isHuman() ? 1 : 2);
+	if (GC.getDefineINT("CVCITY_PROB_REBELT_MULTIPLIER_WHEN_CULTURE_IN_LOW") >0) {
+		rebelt_prob = rebelt_prob * GC.getDefineINT("CVCITY_PROB_REBELT_MULTIPLIER_WHEN_CULTURE_IN_LOW");
+	}
+	else if (GC.getDefineINT("CVCITY_PROB_REBELT_MULTIPLIER_WHEN_CULTURE_IN_LOW") == -1) {
+		rebelt_prob = 0;
+	}
+	rebelt_prob = min(rebelt_prob, 100);
+
+	return rebelt_prob; // Leoreth
 }
 
 bool CvCity::isEverOwned(PlayerTypes eIndex) const
@@ -12352,7 +12545,13 @@ bool CvCity::hasBonus(BonusTypes eIndex) const
 // Leoreth
 bool CvCity::hasBonusEffect(BonusTypes eBonus) const
 {
-	return getNumBonuses(eBonus) * GC.getBonusInfo(eBonus).getAffectedCities() > getCultureRank();
+	//mediv01 资源有限分配给文化程度高的
+	int ranknum = getCultureRank();
+	if (GC.getDefineINT("CVCITY_RANK_BONUS_TYPE") == 1) {
+		ranknum = findPopulationRank();
+	}
+	
+	return getNumBonuses(eBonus) * GC.getBonusInfo(eBonus).getAffectedCities() > ranknum;
 }
 
 
@@ -12918,7 +13117,7 @@ int CvCity::getMaxSpecialistCount(SpecialistTypes eIndex) const
 	{
 		iMaxSpecialistCount *= 2;
 	}
-
+	//mediv01 最大数量的专家
 	// Leoreth: Korean UP
 	if (getOwnerINLINE() == KOREA && isCapital())
 	{
@@ -14826,7 +15025,7 @@ const std::vector< std::pair<float, float> >& CvCity::getWallOverridePoints() co
 void CvCity::doGrowth()
 {
 	int iDiff;
-
+	
 	//Rhye - start
 //Speed: Modified by Kael 04/19/2007
 //	CyArgsList argsList;
@@ -14841,6 +15040,8 @@ void CvCity::doGrowth()
 //FfH: End Modify
 	//Rhye - end
 
+
+	//mediv01 城市人口增长代码
 	iDiff = foodDifference();
 
 	changeFood(iDiff);
@@ -14879,6 +15080,7 @@ void CvCity::doCulture()
 {
 	changeCultureTimes100(getOwnerINLINE(), getModifiedCultureRateTimes100(), false, true);
 
+	//mediv01 城市文化增长代码
 	// Leoreth: let culture of dead civilizations decay
 	int iTotalCultureTimes100 = countTotalCultureTimes100();
 
@@ -15168,6 +15370,13 @@ bool CvCity::doCheckProduction()
 			bMaxedOut = GET_PLAYER(getOwnerINLINE()).isProductionMaxedBuildingClass((BuildingClassTypes)(GC.getBuildingInfo((BuildingTypes)iI).getBuildingClassType()));
 			bObsolete = isWorldWonderClass((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)iI).getBuildingClassType()) && GC.getBuildingInfo((BuildingTypes)iI).getObsoleteTech() != NO_TECH && GC.getGameINLINE().countKnownTechNumTeams((TechTypes)GC.getBuildingInfo((BuildingTypes)iI).getObsoleteTech()) > 0;
 
+			if (GC.getDefineINT("CVCITY_CAN_BUILD_OBSOLUTE_BUILDING") > 0) {
+				//mediv01
+				bObsolete = FALSE;
+
+			}
+
+
 			if (bMaxedOut || bObsolete)
 			{
 				iProductionGold = ((getBuildingProduction((BuildingTypes)iI) * GC.getDefineINT("MAXED_BUILDING_GOLD_PERCENT")) / 100);
@@ -15287,7 +15496,7 @@ void CvCity::doProduction(bool bAllowNoProduction)
 //	}
 //Speed: End Modify
 	//Rhye - end
-
+	//mediv01 城市生产入口
 	if (!isHuman() || isProductionAutomated())
 	{
 		if (!isProduction() || isProductionProcess() || AI_isChooseProductionDirty())
@@ -15323,6 +15532,74 @@ void CvCity::doProduction(bool bAllowNoProduction)
 	{
 		return;
 	}
+	// add PLAYEROPTION_ALERT_BUILD_WORLD_WR   //mediv01 from anyfun 城市建造奇观会提醒
+	if (GC.getDefineINT("ANYFUN_ALERT_FOR_WORLD_WONDER") == 1 || GC.getDefineINT("ANYFUN_ALERT_FOR_ANY_BUILDING") == 1)
+	{
+		if (!isBarbarian())
+		{
+			CLLNode<OrderData>* pOrderNode = headOrderQueueNode();
+			if (pOrderNode != NULL)
+			{
+				CvWString szBuffer;
+				if (pOrderNode->m_data.eOrderType == ORDER_CONSTRUCT)
+				{
+					BuildingTypes eBuilding = (BuildingTypes)pOrderNode->m_data.iData1;
+					if (isLimitedWonderClass((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType()) || GC.getDefineINT("ANYFUN_ALERT_FOR_ANY_BUILDING") == 1)
+					//if (isWorldWonderClass((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType())) //mediv01 这个isWorldWonderClass是BTS原版里的，在DOC里不起作用，要使用isLimitedWonderClass
+					{
+						if (getBuildingProduction(eBuilding) == 0)
+						{
+							for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
+							{
+								if (GET_PLAYER((PlayerTypes)iI).isAlive())
+								{
+									if (isRevealed(GET_PLAYER((PlayerTypes)iI).getTeam(), false))
+									{
+										szBuffer = gDLL->getText("TXT_KEY_ANYFUNMOD_WORLD_WR_BEGIN", GET_PLAYER(getOwnerINLINE()).getCivilizationAdjectiveKey(), GC.getBuildingInfo(eBuilding).getTextKeyWide());
+
+										gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_WONDER_BUILDING_BUILD", MESSAGE_TYPE_MAJOR_EVENT, GC.getBuildingInfo(eBuilding).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+									}
+									else
+									{
+										szBuffer = gDLL->getText("TXT_KEY_ANYFUNMOD_WORLD_WR_BEGIN_UNKNOWN", GC.getBuildingInfo(eBuilding).getTextKeyWide());
+										gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_WONDER_BUILDING_BUILD", MESSAGE_TYPE_MAJOR_EVENT, GC.getBuildingInfo(eBuilding).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+									}
+								}
+							}
+						}
+					}
+				}
+				else if (pOrderNode->m_data.eOrderType == ORDER_CREATE)
+				{
+					ProjectTypes eProject = (ProjectTypes)pOrderNode->m_data.iData1;
+					if (isWorldProject(eProject))
+					{
+						if (getProjectProduction(eProject) == 0)
+						{
+							for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
+							{
+								if (GET_PLAYER((PlayerTypes)iI).isAlive())
+								{
+									if (isRevealed(GET_PLAYER((PlayerTypes)iI).getTeam(), false))
+									{
+										szBuffer = gDLL->getText("TXT_KEY_ANYFUNMOD_WORLD_WR_BEGIN", GET_PLAYER(getOwnerINLINE()).getNameKey(), GC.getProjectInfo(eProject).getTextKeyWide());
+										gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_WONDER_BUILDING_BUILD", MESSAGE_TYPE_MAJOR_EVENT, GC.getProjectInfo(eProject).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+									}
+									else
+									{
+										szBuffer = gDLL->getText("TXT_KEY_ANYFUNMOD_WORLD_WR_BEGIN_UNKNOWN", GC.getProjectInfo(eProject).getTextKeyWide());
+										gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_WONDER_BUILDING_BUILD", MESSAGE_TYPE_MAJOR_EVENT, GC.getProjectInfo(eProject).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+									}
+								}
+							}
+						}
+					}
+				}
+				pOrderNode = NULL;
+			}
+		}
+	}
+	// end add
 
 	if (isProduction())
 	{
@@ -15405,6 +15682,10 @@ bool CvCity::canSpread(ReligionTypes eReligion, bool bMissionary) const
 
 	if (bMissionary) return true;
 
+	if (GC.getDefineINT("CVCITY_SPREAD_RELIGION_ANYWHERE") == 1) { //mediv01 可以随意传播宗教
+		return true;
+	}
+
 	if (!plot()->canSpread(eReligion)) return false;
 
 	ReligionSpreadTypes eSpread = GET_PLAYER(getOwner()).getSpreadType(plot(), eReligion);
@@ -15418,6 +15699,7 @@ bool CvCity::canSpread(ReligionTypes eReligion, bool bMissionary) const
 
 int CvCity::getTurnsToSpread(ReligionTypes eReligion) const
 {
+	//mediv01 宗教传播回合计算
 	bool bDistant = GET_PLAYER(getOwner()).isDistantSpread(this, eReligion);
 	ReligionSpreadTypes eSpread = GET_PLAYER(getOwner()).getSpreadType(plot(), eReligion, bDistant);
 	ReligionTypes eStateReligion = GET_PLAYER(getOwner()).getStateReligion();
@@ -15491,6 +15773,7 @@ bool CvCity::isHasConflicting(ReligionTypes eReligion) const
 
 int CvCity::getReligionPopulation(ReligionTypes eReligion) const
 {
+	//mediv01 宗教人口计算
 	if (!isHasReligion(eReligion)) return 0;
 
 	if (getReligionCount() == 1) return getPopulation();
@@ -15506,6 +15789,7 @@ int CvCity::getReligionPopulation(ReligionTypes eReligion) const
 
 void CvCity::doReligion()
 {
+	//mediv01 宗教传播的真正入口
 	int iI;
 	ReligionTypes eReligion, eDisappearingReligion;
 	int iChance, iRand;
@@ -15517,9 +15801,55 @@ void CvCity::doReligion()
 		if (!canSpread(eReligion) && !(GET_PLAYER(getOwner()).isDistantSpread(this, eReligion))) continue;
 
 		iChance = getTurnsToSpread(eReligion);
-		iRand = GC.getGameINLINE().getSorenRandNum(iChance, "Religion spread");
+		iRand = GC.getGameINLINE().getSorenRandNum(iChance, "Religion spread");//mediv01 宗教传播与随机数有关 1/100几率
+
+		int temp_a = 0;
+
+
 		
-		if (iRand == 0)
+
+		if (GC.getDefineINT("CVCITY_INCREASE_RELIGION_CHANCE_ONLY_FOR_STATERELIGION") >0) {
+			ReligionTypes eStateReligion = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getStateReligion();
+
+
+
+			if (eReligion == eStateReligion)
+			{
+				temp_a = max(GC.getDefineINT("CVCITY_INCREASE_RELIGION_CHANCE_ONLY_FOR_STATERELIGION"), 0);
+				
+				
+			}
+			
+		//tem_string = ("Player is  %d , eStateReligion is %d , eReligion is %d", (int)GC.getGameINLINE().getActivePlayer(), (int)eStateReligion, (int)eReligion);
+			
+			
+		
+
+		/*
+
+		CvWString log_CWstring;
+		CvWStringBuffer CvWStringBuffer_temp;
+		log_CWstring = gDLL->getText("TXT_KEY_VICTORY_ARABIA_UHV3_JERUSALEM");
+		GC.logs(log_CWstring, (CvString)"DoCGameCoreDLL_WS.log");
+
+
+		CvString log_CvString;
+		int playerid = (int)GC.getGameINLINE().getActivePlayer();
+		log_CvString = log_CvString.format("当前玩家为 %d ", playerid);		
+		GC.logs2(log_CvString, (CvString)"DoCGameCoreDLL_String.log");
+		*/
+
+
+
+		}
+		else {
+			temp_a = max(GC.getDefineINT("CVCITY_INCREASE_RELIGION_CHANCE"), 0);
+		}
+		
+
+
+
+		if (iRand <= 0+ temp_a )
 		{
 			spreadReligion(eReligion);
 			return;
@@ -15533,7 +15863,7 @@ void CvCity::doReligion()
 		iChance = GET_PLAYER(getOwner()).getSpreadType(plot(), eDisappearingReligion) * 25 + 25;
 		iRand = GC.getGame().getSorenRandNum(iChance, "Religion disappearance");
 		
-		if (iRand == 0)
+		if (iRand == 0 && (!GC.getDefineINT("CVCITY_RELIGON_NO_DISAPPEAR")==1))//mediv01 禁止移除宗教参数
 		{
 			removeReligion(eReligion);
 		}
@@ -15716,6 +16046,7 @@ void CvCity::doReligion()
 
 void CvCity::doGreatPeople()
 {
+	//创建伟人的代码  
 	//Rhye - start
 //Speed: Modified by Kael 04/19/2007
 //	CyCity* pyCity = new CyCity(this);
@@ -15737,6 +16068,8 @@ void CvCity::doGreatPeople()
 	}
 
 	changeGreatPeopleProgress(getGreatPeopleRate());
+	CvString log_CvString;
+	CvWString log_CWstring;
 
 	for (int iI = 0; iI < GC.getNumUnitInfos(); iI++)
 	{
@@ -15749,6 +16082,10 @@ void CvCity::doGreatPeople()
 		for (int iI = 0; iI < GC.getNumUnitInfos(); iI++)
 		{
 			iTotalGreatPeopleUnitProgress += getGreatPeopleUnitProgress((UnitTypes)iI);
+
+			//log_CWstring.Format(L"%d 的名字为 %s", iI, GC.getUnitInfo((UnitTypes)iI).getTextKeyWide());
+			//GC.logs(log_CWstring, "TEST.log");
+
 		}
 
 		int iGreatPeopleUnitRand = GC.getGameINLINE().getSorenRandNum(iTotalGreatPeopleUnitProgress, "Great Person");
@@ -15765,6 +16102,35 @@ void CvCity::doGreatPeople()
 			{
 				iGreatPeopleUnitRand -= getGreatPeopleUnitProgress((UnitTypes)iI);
 			}
+		}
+
+		//固定伟人点
+		const int mediv01 = GC.getDefineINT("CVCITY_FIX_GENERATE_GREAT_PEOPLE");
+		if ( mediv01> 0) {
+			if (mediv01 == 1) {  //大预言家
+				eGreatPeopleUnit= ((UnitTypes)190);
+			}
+			else if (mediv01 == 2) {  //大艺术家
+				eGreatPeopleUnit = ((UnitTypes)191);
+			}
+			else if (mediv01 == 3) {  //大科学家
+				eGreatPeopleUnit = ((UnitTypes)192);
+			}
+			else if (mediv01 == 4) {  //大商业家
+				eGreatPeopleUnit = ((UnitTypes)193);
+			}
+			else if (mediv01 == 5) {  //大工程师
+				eGreatPeopleUnit = ((UnitTypes)194);
+			}
+			else if (mediv01 == 6) {  //大政治家
+				eGreatPeopleUnit = ((UnitTypes)195);
+			}
+			else {
+
+			}
+
+			
+
 		}
 
 		if (eGreatPeopleUnit != NO_UNIT)
@@ -15785,6 +16151,7 @@ void CvCity::doGreatPeople()
 void CvCity::doMeltdown()
 {
 	int iI;
+	//mediv01 核泄漏相关代码
 
 /*************************************************************************************************/
 /**	SPEEDTWEAK (Block Python) Sephi                                               	            **/
@@ -16689,6 +17056,10 @@ bool CvCity::getFoodBarPercentages(std::vector<float>& afPercentages) const
 
 bool CvCity::getProductionBarPercentages(std::vector<float>& afPercentages) const
 {
+	// Performance UP
+	if (GC.getGameINLINE().isBeforeHumanStart()) {
+		return false;
+	}
 	if (!canBeSelected())
 	{
 		return false;
@@ -16723,6 +17094,7 @@ bool CvCity::isStarCity() const
 
 bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
 {
+	//mediv01 建筑位置限制
 	// if both the river and water flags are set, we require one of the two conditions, not both
 	if (GC.getBuildingInfo(eBuilding).isWater())
 	{
@@ -17842,7 +18214,7 @@ void CvCity::liberate(bool bConquest)
 	CvPlot* pPlot = plot();
 	PlayerTypes ePlayer = getLiberationPlayer(bConquest);
 	PlayerTypes eOwner = getOwnerINLINE();
-
+	//mediv01 解放城市相关内容
 	// Leoreth: release to independents
 	if (ePlayer == NO_PLAYER)
 	{
@@ -17909,6 +18281,10 @@ void CvCity::liberate(bool bConquest)
 
 PlayerTypes CvCity::getLiberationPlayer(bool bConquest) const
 {
+	if (GC.getDefineINT("CITY_NO_ALLOW_TO_LIBERATE_TO_PLAYER") == 1) {
+		return NO_PLAYER;    //mediv01            //检测DIPLO_ALLOW_TO_CANCEL_VASSAL，如果值为1则永远返回独立城邦
+	}
+	
 	if (isCapital())
 	{
 		return NO_PLAYER;
@@ -18074,6 +18450,7 @@ int CvCity::getBestYieldAvailable(YieldTypes eYield) const
 bool CvCity::isAutoRaze() const
 {
 	// Leoreth: don't raze holy cities
+	//mediv01 是否自动摧毁城市
 	if (isHolyCity())
 	{
 		return false;
@@ -18081,7 +18458,7 @@ bool CvCity::isAutoRaze() const
 
 	if (!GC.getGameINLINE().isOption(GAMEOPTION_NO_CITY_RAZING))
 	{
-		if (getHighestPopulation() == 1)
+		if (getHighestPopulation() == 1 && (!GC.getDefineINT("CVCITY_NOT_AUTO_RAZE_CITY")==1))//mediv01 设置选项不自动摧毁
 		{
 			return true;
 		}
@@ -18132,6 +18509,11 @@ int CvCity::getMusicScriptId() const
 
 int CvCity::getSoundscapeScriptId() const
 {
+	static int fastId = GC.getEraInfo(GET_PLAYER(getOwnerINLINE()).getCurrentEra()).getCitySoundscapeSciptId(getCitySizeType());
+	// Performance UP
+	if (GC.getGameINLINE().isBeforeHumanStart()) {
+		return fastId;
+	}
 	return GC.getEraInfo(GET_PLAYER(getOwnerINLINE()).getCurrentEra()).getCitySoundscapeSciptId(getCitySizeType());
 }
 
@@ -18194,7 +18576,7 @@ int CvCity::getRegionID() const
 //Leoreth: to protect Middle Eastern cities from repeated invasions
 bool CvCity::isMiddleEast() const
 {
-	return (getRegionID() == REGION_PERSIA || getRegionID() == REGION_MESOPOTAMIA || getRegionID() == REGION_ANATOLIA || (getX_INLINE() == 68 && getY_INLINE() == 45));
+	return (getRegionID() == REGION_PERSIA || getRegionID() == REGION_MESOPOTAMIA || getRegionID() == REGION_ANATOLIA || (getX_INLINE() == 68 && getY_INLINE() == 45));//mediv01 硬编码
 }
 
 int CvCity::getSpecialistGoodHappiness() const
@@ -18359,6 +18741,7 @@ bool CvCity::isColony() const
 // Leoreth: at most half of the population may be slaves
 bool CvCity::canSlaveJoin() const
 {
+	//mediv01 奴隶加入城市是否有限制
 	if (!GET_PLAYER(getOwnerINLINE()).canUseSlaves()) return false;
 
 	if (!isColony()) return false;
@@ -18402,7 +18785,7 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 	else iCost += std::min(3, iDistance) * GC.getDefineINT("CULTURE_COST_DISTANCE");
 
 	if (plot()->isRiver() && pPlot->isRiver()) iCost += GC.getDefineINT("CULTURE_COST_RIVER");
-
+	//mediv01 城市文化增长的UP在这里
 	// Leoreth: Inca UP
 	if (getOwnerINLINE() == INCA && !GET_PLAYER(getOwnerINLINE()).isReborn() && pPlot->isPeak()) iCost += GC.getDefineINT("CULTURE_COST_HILL") - GC.getDefineINT("CULTURE_COST_PEAK");
 
@@ -18650,6 +19033,7 @@ bool CvCity::isCoveredBeforeExpansion(int i) const
 
 // Leoreth: redraw Great Wall around this city
 void CvCity::updateGreatWall()
+//mediv01 重新绘制万里长城，这个函数很重要！
 {
 	gDLL->getEngineIFace()->RemoveGreatWall(this);
 	gDLL->getEngineIFace()->AddGreatWall(this);
@@ -19187,7 +19571,7 @@ bool CvCity::canSatelliteJoin() const
 int CvCity::getSpecialistGreatPeopleRateChange(SpecialistTypes eSpecialist) const
 {
 	CvSpecialistInfo& kSpecialist = GC.getSpecialistInfo(eSpecialist);
-	int iGreatPeopleRate = kSpecialist.getGreatPeopleRateChange();
+	int iGreatPeopleRate = kSpecialist.getGreatPeopleRateChange();//mediv01 伟人点数目
 
 	if (!kSpecialist.isNoGlobalEffects())
 	{
@@ -19399,7 +19783,7 @@ void CvCity::completeAcquisition(int iCaptureGold)
 	}
 	else
 	{
-		applyBuildingDamage(iTotalBuildingDamage);
+		applyBuildingDamage(iTotalBuildingDamage);//mediv01
 
 		if (getPopulation() > getTotalPopulationLoss())
 		{
@@ -19413,6 +19797,55 @@ void CvCity::completeAcquisition(int iCaptureGold)
 	}
 }
 
+// add PLAYEROPTION_CONQUEST_UB //mediv01 征服获取科技
+void CvCity::updateCityBuildingOrder(const BuildingTypes& eOldBuilding, const BuildingTypes& eNewBuilding)
+{
+	CLLNode<OrderData>* pOrderNode = headOrderQueueNode();
+
+	while (pOrderNode != NULL)
+	{
+		if (pOrderNode->m_data.eOrderType == ORDER_CONSTRUCT)
+		{
+			if (pOrderNode->m_data.iData1 == eOldBuilding)
+			{
+				pOrderNode->m_data.iData1 = eNewBuilding;
+				break;
+			}
+		}
+		pOrderNode = nextOrderQueueNode(pOrderNode);
+	}
+}
+
+// add PLAYEROPTION_CONQUEST_UU
+void CvCity::updateCityUnitOrder(const UnitTypes& eOldUnit, const UnitTypes& eNewUnit)
+{
+	CLLNode<OrderData>* pOrderNode = headOrderQueueNode();
+
+	while (pOrderNode != NULL)
+	{
+		if (pOrderNode->m_data.eOrderType == ORDER_TRAIN)
+		{
+			if (pOrderNode->m_data.iData1 == eOldUnit)
+			{
+				pOrderNode->m_data.iData1 = eNewUnit;
+				if (GET_PLAYER(getOwnerINLINE()).AI_unitValue(eNewUnit, ((UnitAITypes)(pOrderNode->m_data.iData2)), area()) == 0)
+				{
+					area()->changeNumTrainAIUnits(getOwnerINLINE(), ((UnitAITypes)(pOrderNode->m_data.iData2)), -1);
+					GET_PLAYER(getOwnerINLINE()).AI_changeNumTrainAIUnits(((UnitAITypes)(pOrderNode->m_data.iData2)), -1);
+					pOrderNode->m_data.iData2 = GC.getUnitInfo(eNewUnit).getDefaultUnitAIType();
+					area()->changeNumTrainAIUnits(getOwnerINLINE(), ((UnitAITypes)(pOrderNode->m_data.iData2)), 1);
+					GET_PLAYER(getOwnerINLINE()).AI_changeNumTrainAIUnits(((UnitAITypes)(pOrderNode->m_data.iData2)), 1);
+				}
+			}
+		}
+		pOrderNode = nextOrderQueueNode(pOrderNode);
+	}
+}
+// end add //mediv01
+
+
+
+
 void CvCity::sack(PlayerTypes eHighestCulturePlayer, int iCaptureGold) 
 {
 	if (!GET_PLAYER(getOwnerINLINE()).isNoResistance())
@@ -19425,6 +19858,7 @@ void CvCity::sack(PlayerTypes eHighestCulturePlayer, int iCaptureGold)
 
 	int iSackGold = iCaptureGold / 2;
 
+	//mediv01 维京劫掠 UP
 	// Leoreth: Viking UP
 	if (getOwnerINLINE() == VIKINGS && GET_PLAYER(getOwnerINLINE()).getCurrentEra() <= ERA_MEDIEVAL)
 	{
@@ -19435,7 +19869,7 @@ void CvCity::sack(PlayerTypes eHighestCulturePlayer, int iCaptureGold)
 
 	for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
 	{
-		if (isHasRealBuilding((BuildingTypes)iI))
+		if (isHasRealBuilding((BuildingTypes)iI))//mediv01
 		{
 			CvBuildingInfo& kBuilding = GC.getBuildingInfo((BuildingTypes)iI);
 			if (kBuilding.getDefenseModifier() > 0 || kBuilding.getBombardDefenseModifier() > 0 || kBuilding.getUnignorableBombardDefenseModifier() > 0)
@@ -19509,24 +19943,29 @@ void CvCity::completeRaze()
 	doTask(TASK_RAZE);
 }
 
-bool CvCity::canLiberate() const
+bool CvCity::canLiberate() const //mediv01 20200726 是否能解放自己的城市
 {
-	if (isOccupation())
-	{
-		return false;
+	if (GC.getDefineINT("CITY_ALLOW_TO_LIBERATE_ALL_CITY") == 1) {//mediv01
+		return true;//mediv01
 	}
+	else {
+		if (isOccupation())
+		{
+			return false;
+		}
 
-	if (getOwner() == getOriginalOwner())
-	{
-		return false;
+		if (getOwner() == getOriginalOwner())
+		{
+			return false;
+		}
+
+		if (GC.getGameINLINE().getGameTurn() - getGameTurnAcquired() < getTurns(10))
+		{
+			return false;
+		}
+
+		return true;
 	}
-
-	if (GC.getGameINLINE().getGameTurn() - getGameTurnAcquired() < getTurns(10))
-	{
-		return false;
-	}
-
-	return true;
 }
 
 int CvCity::calculateBaseYieldRate(YieldTypes eYield) const

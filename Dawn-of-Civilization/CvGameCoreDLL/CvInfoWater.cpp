@@ -12,6 +12,7 @@
 //------------------------------------------------------------------------------------------------
 //  Copyright (c) 2003 Firaxis Games, Inc. All rights reserved.
 //------------------------------------------------------------------------------------------------
+//mediv01 阅读，返回一些变量值，需要时查阅。
 #include "CvGameCoreDLL.h"
 #include "CvInfoWater.h"
 #include "CvXMLLoadUtility.h"

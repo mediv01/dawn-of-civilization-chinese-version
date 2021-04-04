@@ -4,7 +4,7 @@
 //
 // published python interface for CyMessageControl
 //
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 void CyMessageControlInterface()
 {
 	python::class_<CyMessageControl>("CyMessageControl")

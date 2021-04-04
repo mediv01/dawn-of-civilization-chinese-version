@@ -7,7 +7,7 @@
 #include "CvGameCoreUtils.h"
 #include "FProfiler.h"
 
-
+//mediv01  一些数值计算的函数
 #define FLOAT_PRECISION		(1000)
 
 

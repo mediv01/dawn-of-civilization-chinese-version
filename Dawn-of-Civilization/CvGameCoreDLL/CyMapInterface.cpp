@@ -12,7 +12,7 @@
 //
 // published python interface for CyMap
 //
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 void CyMapPythonInterface()
 {
 	OutputDebugString("Python Extension Module - CyMapPythonInterface\n");

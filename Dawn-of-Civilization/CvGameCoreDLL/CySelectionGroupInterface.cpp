@@ -10,7 +10,7 @@
 //
 // published python interface for CySelectionGroup
 //
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 void CySelectionGroupInterface()
 {
 	OutputDebugString("Python Extension Module - CySelectionGroupInterface\n");

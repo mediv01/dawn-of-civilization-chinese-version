@@ -7,7 +7,7 @@
 #include "CyCity.h"
 #include "CyDeal.h"
 #include "CyUnit.h"
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 CyGameTextMgr::CyGameTextMgr() : 
 m_pGameTextMgr(NULL)
 {

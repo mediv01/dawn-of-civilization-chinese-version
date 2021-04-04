@@ -8,7 +8,7 @@
 //	Copyright (c) 2005 Firaxis Games, Inc. All rights reserved.
 //-----------------------------------------------------------------------------
 //
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 #include "CvGameCoreDLL.h"
 #include "CyMapGenerator.h"
 #include "CvGlobals.h"

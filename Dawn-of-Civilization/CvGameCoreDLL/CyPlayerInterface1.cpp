@@ -14,7 +14,7 @@
 //
 // published python interface for CyPlayer
 //
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 {
 	OutputDebugString("Python Extension Module - CyPlayerPythonInterface1\n");

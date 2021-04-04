@@ -79,6 +79,13 @@ public:
 	bool canMaintain(ProcessTypes eProcess, bool bContinue = false) const;														// Exposed to Python  
 	bool canJoin() const;																													// Exposed to Python
 
+
+	//mediv01 add
+	void updateCityBuildingOrder(const BuildingTypes& eOldBuilding, const BuildingTypes& eNewBuilding);
+	void updateCityUnitOrder(const UnitTypes& eOldUnit, const UnitTypes& eNewUnit);
+
+	//mediv01 end add
+
 	int getFoodTurnsLeft() const;																				// Exposed to Python
 	bool isProduction() const;																					// Exposed to Python
 	bool isProductionLimited() const;																							// Exposed to Python

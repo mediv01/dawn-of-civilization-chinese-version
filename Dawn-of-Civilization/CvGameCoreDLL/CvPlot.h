@@ -670,6 +670,9 @@ protected:
 
 	// added so under cheat mode we can access protected stuff
 	friend class CvGameTextMgr;
+
+	// Performance UP
+	TechTypes m_eBonusVisableTechs;
 };
 
 #endif

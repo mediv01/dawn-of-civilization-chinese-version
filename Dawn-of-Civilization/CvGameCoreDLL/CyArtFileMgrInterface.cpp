@@ -1,7 +1,7 @@
 #include "CvGameCoreDLL.h"
 #include "CyArtFileMgr.h"
 #include "CvInfos.h"
-
+//暴露给Python的图像接口，不修改 mediv01
 //
 // published python interface for CyArea
 //

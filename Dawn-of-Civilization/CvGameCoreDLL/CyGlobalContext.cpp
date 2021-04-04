@@ -2,7 +2,7 @@
 // Python wrapper class for global vars and fxns
 // Author - Mustafa Thamer
 //
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 #include "CvGameCoreDLL.h"
 #include "CyGlobalContext.h"
 #include "CyGame.h"
@@ -16,6 +16,8 @@
 #include "CyTeam.h"
 #include "CvTeamAI.h"
 #include "CyArtFileMgr.h"
+
+#include "CvPlayerAI.h"
 
 CyGlobalContext::CyGlobalContext()
 {
@@ -38,6 +40,24 @@ bool CyGlobalContext::isDebugBuild() const
 #else
 	return false;
 #endif
+}
+
+int CyGlobalContext::AI_considerOfferThreshold(int ePlayer, int myPlayer) const
+{
+	int aa = CvPlayerAI().AI_considerOffer_Threshold(ePlayer, myPlayer);
+	return aa;//test by mediv01
+}
+
+int CyGlobalContext::AI_considerOfferThreshold_Map(int ePlayer, int myPlayer) const
+{
+	int aa = CvPlayerAI().AI_considerOffer_Threshold_Map(ePlayer, myPlayer);
+	return aa;//test by mediv01
+}
+
+bool CyGlobalContext::AI_considerOffer(PlayerTypes ePlayer, const CLinkList<TradeData>* pTheirList, const CLinkList<TradeData>* pOurList, int iChange) const
+{
+	bool aa = CvPlayerAI().AI_considerOffer(ePlayer, pTheirList, pOurList, iChange);
+	return aa;//test by mediv01
 }
 
 CyGame* CyGlobalContext::getCyGame() const

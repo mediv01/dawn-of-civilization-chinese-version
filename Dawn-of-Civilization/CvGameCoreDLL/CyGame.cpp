@@ -1,7 +1,7 @@
 //
 // Python wrapper class for CvGame 
 // 
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 #include "CvGameCoreDLL.h"
 #include "CyGame.h"
 #include "CvGameAI.h"

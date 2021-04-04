@@ -6203,6 +6203,14 @@ public:
 
 	bool read(CvXMLLoadUtility* pXML);
 
+
+	// add PLAYEROPTION_EVENT_GOODBAD_CHOOSE
+	int getGoodOrDad() const;
+	// add AnyFunMod Xml system, add v10b12.005
+	void setGoodOrDad(int i);
+	// end add
+
+
 private:
 	int m_iPercentGamesActive;
 	int m_iProbability;
@@ -6277,6 +6285,12 @@ private:
 	CvString m_szPythonCanDo;
 	CvString m_szPythonCanDoCity;
 	CvString m_szPythonCanDoUnit;
+
+
+
+	// add PLAYEROPTION_EVENT_GOODBAD_CHOOSE
+	int m_iGoodOrDad;
+	// end add
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -6385,6 +6399,8 @@ public:
 	bool read(CvXMLLoadUtility* pXML);
 	bool readPass2(CvXMLLoadUtility* pXML);
 
+
+
 private:
 	bool m_bQuest;
 	bool m_bGlobal;
@@ -6466,6 +6482,8 @@ private:
 	CvWString m_szQuestFailText;
 	CvWString m_szLocalInfoText;
 	std::vector<CvWString> m_aszWorldNews;
+
+
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

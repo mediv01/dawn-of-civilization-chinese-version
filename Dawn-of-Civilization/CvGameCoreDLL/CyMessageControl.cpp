@@ -3,7 +3,7 @@
 #include "CvMessageControl.h"
 #include "CvDLLPythonIFaceBase.h"
 #include "CvDLLUtilityIFaceBase.h"
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 202000822
 void CyMessageControl::sendPushOrder(int iCityID, int eOrder, int iData, bool bAlt, bool bShift, bool bCtrl)
 {
 	CvMessageControl::getInstance().sendPushOrder(iCityID, (OrderTypes) eOrder, iData, bAlt, bShift, bCtrl);

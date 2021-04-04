@@ -1,5 +1,5 @@
 // plotGroup.cpp
-
+//mediv01 20200821 地图中的一些基础函数
 #include "CvGameCoreDLL.h"
 #include "CvPlotGroup.h"
 #include "CvPlot.h"

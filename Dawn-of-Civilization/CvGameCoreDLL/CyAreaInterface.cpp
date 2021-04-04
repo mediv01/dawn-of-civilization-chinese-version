@@ -4,7 +4,7 @@
 //
 // published python interface for CyArea
 //
-
+//mediv01 CY系列主要是接口函数，对接CV中的游戏逻辑 这个文件是暴露Area的Python接口 202000822
 void CyAreaPythonInterface()
 {
 	OutputDebugString("Python Extension Module - CyAreaPythonInterface\n");

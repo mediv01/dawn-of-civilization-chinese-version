@@ -11,6 +11,7 @@
 //---------------------------------------------------------------------------------------
 //  Copyright (c) 2004 Firaxis Games, Inc. All rights reserved.
 //---------------------------------------------------------------------------------------
+//mediv01 没啥可以阅读修改的  20200813
 #include "CvGameCoreDLL.h"
 #include "CvArtFileMgr.h"
 #include "CvXMLLoadUtility.h"

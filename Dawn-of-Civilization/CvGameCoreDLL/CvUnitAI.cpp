@@ -1,5 +1,5 @@
 // unitAI.cpp
-
+//mediv01 20200822 ÔÄ¶ÁÐÞ¸Ä Ö÷ÒªºÍµ¥Î»ÒÆ¶¯µÄAI²Ù×÷Ïà¹Ø
 #include "CvGameCoreDLL.h"
 #include "CvUnitAI.h"
 #include "CvMap.h"
@@ -72,6 +72,16 @@ void CvUnitAI::AI_reset(UnitAITypes eUnitAI)
 // AI_update returns true when we should abort the loop and wait until next slice
 bool CvUnitAI::AI_update()
 {
+	//AI×ÜÈë¿Ú
+	CvString log_CvString;
+	//LOG¿ªÊ¼
+	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
+		log_CvString = log_CvString.format("UnitAI_AI_update¿ªÊ¼£¬µ±Ç°Íæ¼ÒÎª %d ", (int)getID());
+		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
+	}
+	//LOG½áÊø
+
+
 	PROFILE_FUNC();
 
 	CvUnit* pTransportUnit;
@@ -412,7 +422,12 @@ bool CvUnitAI::AI_update()
 			break;
 		}
 	}
-
+	//LOG¿ªÊ¼
+	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
+		log_CvString = log_CvString.format("UnitAI_AI_update½áÊø£¬µ±Ç°Íæ¼ÒÎª %d ", (int)getID());
+		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
+	}
+	//LOG½áÊø
 	return false;
 }
 
@@ -10973,6 +10988,11 @@ bool CvUnitAI::AI_goody(int iRange)
 		return false;
 	}
 
+	//mediv01 AIÄÜ·ñ×Ô¶¯Ñ°ÕÒÄ¢¹½µÄÑ¡Ïî
+	if (GC.getDefineINT("CVUNITAI_AI_CAN_NOT_TAKE_GOODY") == 1) {
+		return false;
+	}
+
 	iSearchRange = AI_searchRange(iRange);
 
 	iBestValue = 0;
@@ -12908,7 +12928,7 @@ bool CvUnitAI::AI_found_map(int modifier)
 										{
 											iValue *= 1000;
 
-											iValue /= (iPathTurns + 2); //Rhye - più aumenta il valore (default +1) più preferisce fondare lontano
+											iValue /= (iPathTurns + 2); //Rhye - pi?aumenta il valore (default +1) pi?preferisce fondare lontano
 
 											if (iValue > iBestValue)
 											{
@@ -17443,7 +17463,10 @@ int CvUnitAI::AI_pillageValue(CvPlot* pPlot, int iBonusValueThreshold)
 			}
 		}
 	}
-
+	//mediv01   ²»»á×Ô¶¯½ÙÂÓ
+	if (GC.getDefineINT("CVUNITAI_AI_NOT_PILLAGE") == 1) {
+		iValue = 0;
+	}
 	return iValue;
 }
 

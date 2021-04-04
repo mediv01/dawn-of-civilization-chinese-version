@@ -122,6 +122,7 @@ public:
 	bool isValidDomainForAction(CyUnit* pUnit) const;
 	bool isImpassable();
 
+	int getRegionName();
 	int getX();
 	int getY();
 	bool at(int iX, int iY);

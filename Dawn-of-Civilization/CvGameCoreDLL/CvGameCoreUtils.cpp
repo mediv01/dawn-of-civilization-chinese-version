@@ -20,6 +20,8 @@
 
 #include "CvRhyes.h"
 
+
+//mediv01 20200813 基础函数库
 #define PATH_MOVEMENT_WEIGHT									(1000)
 #define PATH_RIVER_WEIGHT											(100)
 #define PATH_CITY_WEIGHT											(100)
@@ -622,6 +624,7 @@ __int64 getBinomialCoefficient(int iN, int iK)
 // Written by DeepO
 int getCombatOdds(CvUnit* pAttacker, CvUnit* pDefender)
 {
+	//mediv01 战斗机制相关函数
 	float fOddsEvent;
 	float fOddsAfterEvent;
 	int iAttackerStrength;
@@ -1192,6 +1195,7 @@ bool isPlotEventTrigger(EventTriggerTypes eTrigger)
 
 TechTypes getDiscoveryTech(UnitTypes eUnit, PlayerTypes ePlayer, TechTypes eIgnoreTech)
 {
+	//mediv01 伟人点科技相关
 	TechTypes eBestTech = NO_TECH;
 	int iBestValue = 0;
 
@@ -1202,7 +1206,7 @@ TechTypes getDiscoveryTech(UnitTypes eUnit, PlayerTypes ePlayer, TechTypes eIgno
 			continue;
 		}
 
-		if (GET_PLAYER(ePlayer).canResearch((TechTypes)iI, false, eIgnoreTech))
+		if (GET_PLAYER(ePlayer).canResearch((TechTypes)iI, false, eIgnoreTech) )//mediv01 
 		{
 			int iValue = 0;
 
@@ -1225,6 +1229,7 @@ TechTypes getDiscoveryTech(UnitTypes eUnit, PlayerTypes ePlayer, TechTypes eIgno
 
 int getDiscoverResearch(UnitTypes eUnit, PlayerTypes ePlayer, TechTypes eTech)
 {
+	//mediv01 伟人点科技值的计算
 	int iResearch;
 	CvUnitInfo& kUnitInfo = GC.getUnitInfo(eUnit);
 	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
@@ -1235,6 +1240,7 @@ int getDiscoverResearch(UnitTypes eUnit, PlayerTypes ePlayer, TechTypes eTech)
 	iResearch /= 100;
 
 	// Leoreth: House of Wisdom effect
+	//mediv01 智慧之家 伟人点乘以3
 	if (GET_PLAYER(ePlayer).isHasBuildingEffect((BuildingTypes)HOUSE_OF_WISDOM))
 	{
 		iResearch *= 3;
@@ -1690,6 +1696,7 @@ int pathHeuristic(int iFromX, int iFromY, int iToX, int iToY)
 
 int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
+	//mediv01 地形导致的行动力损失在此
 	CLLNode<IDInfo>* pUnitNode;
 	CvSelectionGroup* pSelectionGroup;
 	CvUnit* pLoopUnit;
@@ -2249,6 +2256,7 @@ void shuffleArray(int* piShuffle, int iNum, CvRandom& rand)
 
 int getTurnYearForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed)
 {
+	//mediv01 常用函数，计算年份和回合
 	return (getTurnMonthForGame(iGameTurn, iStartYear, eCalendar, eSpeed) / GC.getNumMonthInfos());
 }
 
@@ -2705,9 +2713,13 @@ bool isPrecursor(ReligionTypes ePrecursor, ReligionTypes eReligion)
 
 	return false;
 }
-
+//mediv01 可以考虑禁用LOG加速
 void log(char* format, ...)
 {
+	if (GC.getDefineINT("CVGAMECORE_NOT_ALLOW_TO_LOG") == 1) {
+		return ;//mediv01 可以考虑禁用LOG加速
+	}
+
 	static char buf[2048];
 	_vsnprintf( buf, 2048-4, format, (char*)(&format+1) );
 	gDLL->logMsg("sdkDbg.log", buf);
@@ -2715,11 +2727,17 @@ void log(char* format, ...)
 
 void log(CvWString message)
 {
+	if (GC.getDefineINT("CVGAMECORE_NOT_ALLOW_TO_LOG") == 1) {
+		return;//mediv01 可以考虑禁用LOG加速
+	}
 	gDLL->logMsg("sdkDbg.log", CvString(message));
 }
 
 void log(CvString logfile, CvString message)
 {
+	if (GC.getDefineINT("CVGAMECORE_NOT_ALLOW_TO_LOG") == 1) {
+		return;//mediv01 可以考虑禁用LOG加速
+	}
 	gDLL->logMsg(logfile, message);
 }
 

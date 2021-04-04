@@ -7,7 +7,7 @@
 #include "CvGlobals.h"
 #include "FProfiler.h"
 #include "CvDLLInterfaceIFaceBase.h"
-
+// mediv01 ÓÎÏ·µ×²ã Ã»É¶ÄÚÈÝ
 //
 // operator global new and delete override for gamecore DLL 
 //

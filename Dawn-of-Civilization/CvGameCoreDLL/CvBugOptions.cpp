@@ -9,6 +9,7 @@ Created:	2009-01-21
 **********************************************************************/
 
 // This file has been edited for K-Mod
+//mediv01 没啥可以阅读修改的  20200813 关于BUG MOD的
 
 #include "CvGameCoreDLL.h"
 #include "CyArgsList.h"

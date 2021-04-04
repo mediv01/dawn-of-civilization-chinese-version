@@ -2,7 +2,7 @@
 #include "CvMessageControl.h"
 #include "CvMessageData.h"
 #include "CvDLLUtilityIFaceBase.h"
-
+//mediv01 增加提醒信息的底层代码
 CvMessageControl& CvMessageControl::getInstance()
 {
 	static CvMessageControl m_sInstance;

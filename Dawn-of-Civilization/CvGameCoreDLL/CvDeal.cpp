@@ -1,5 +1,5 @@
 // CvDeal.cpp
-
+//mediv01 20200813阅读修改
 #include "CvGameCoreDLL.h"
 #include "CvGlobals.h"
 #include "CvGameAI.h"
@@ -484,7 +484,13 @@ bool CvDeal::isUncancelableVassalDeal(PlayerTypes eByPlayer, CvWString* pszReaso
 {
 	CLLNode<TradeData>* pNode;
 	CvWStringBuffer szBuffer;
-
+	//mediv01
+	//多用GC.getDefineINT(),getDefineFloat和getDefineString() by wunshare
+	if (GC.getDefineINT("DIPLO_ALLOW_TO_CANCEL_VASSAL") == 1){
+		return false;//检测DIPLO_ALLOW_TO_CANCEL_VASSAL，如果值为1允许主动取消附庸
+	}
+	
+	//mediv01
 	for (pNode = headFirstTradesNode(); (pNode != NULL); pNode = nextFirstTradesNode(pNode))
 	{
 		if (isVassal(pNode->m_data.m_eItemType))
@@ -751,12 +757,15 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 	bool bSave;
 	int iI;
 	CvUnit* pUnit; // edead
-
+	CvWString log_CWstring;
 	bSave = false;
 
 	switch (trade.m_eItemType)
 	{
 	case TRADE_TECHNOLOGIES:
+		
+		log_CWstring.Format(L"%s 与 %s 给予科技 %s", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription(), GC.getTechInfo((TechTypes)trade.m_iData).getDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		GET_TEAM(GET_PLAYER(eToPlayer).getTeam()).setHasTech(((TechTypes)trade.m_iData), true, eToPlayer, true, true);
 		GET_TEAM(GET_PLAYER(eToPlayer).getTeam()).setNoTradeTech(((TechTypes)trade.m_iData), true);
 
@@ -782,11 +791,15 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 	case TRADE_RESOURCES:
 		GET_PLAYER(eFromPlayer).changeBonusExport(((BonusTypes)trade.m_iData), 1);
 		GET_PLAYER(eToPlayer).changeBonusImport(((BonusTypes)trade.m_iData), 1);
+		log_CWstring.Format(L"%s 与 %s 给予资源 %s", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription(), GC.getBonusInfo((BonusTypes)trade.m_iData).getDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		bSave = true;
 		break;
 
 	case TRADE_CITIES:
 		pCity = GET_PLAYER(eFromPlayer).getCity(trade.m_iData);
+		log_CWstring.Format(L"%s 与 %s 给予城市 %s", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription(), pCity->getName());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		if (pCity != NULL)
 		{
 			pCity->doTask(TASK_GIFT, eToPlayer);
@@ -796,6 +809,8 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 	// edead: start Relic trade based on Afforess' Advanced Diplomacy (Leoreth)
 	case TRADE_SLAVE:
         pUnit = GET_PLAYER(eFromPlayer).getUnit(trade.m_iData);
+		log_CWstring.Format(L"%s 与 %s 给予奴隶", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
         if (pUnit != NULL)
         {
 			if (pUnit->isCargo()) // Leoreth: should fix the invisible slave bug
@@ -810,6 +825,8 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 	case TRADE_GOLD:
 		GET_PLAYER(eFromPlayer).changeGold(-(trade.m_iData));
 		GET_PLAYER(eToPlayer).changeGold(trade.m_iData);
+		log_CWstring.Format(L"%s 与 %s 给予金币： %d", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription(),(int) trade.m_iData);
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		GET_PLAYER(eFromPlayer).AI_changeGoldTradedTo(eToPlayer, trade.m_iData);
 
 		// Python Event
@@ -818,12 +835,16 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 		break;
 
 	case TRADE_GOLD_PER_TURN:
+		log_CWstring.Format(L"%s 与 %s 给予回合金： %d", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription(), (int)trade.m_iData);
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		GET_PLAYER(eFromPlayer).changeGoldPerTurnByPlayer(eToPlayer, -(trade.m_iData));
 		GET_PLAYER(eToPlayer).changeGoldPerTurnByPlayer(eFromPlayer, trade.m_iData);
 		bSave = true;
 		break;
 
 	case TRADE_MAPS:
+		log_CWstring.Format(L"%s 与 %s 给予地图", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 		{
 			pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
@@ -848,6 +869,8 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 
 	case TRADE_SURRENDER:
 	case TRADE_VASSAL:
+		log_CWstring.Format(L"%s 与成为了 %s 的附庸！", GET_PLAYER(eToPlayer).getCivilizationDescription(), GET_PLAYER(eFromPlayer).getCivilizationDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		if (trade.m_iData == 0)
 		{
 			startTeamTrade(trade.m_eItemType, GET_PLAYER(eFromPlayer).getTeam(), GET_PLAYER(eToPlayer).getTeam(), false);
@@ -862,11 +885,15 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 		break;
 
 	case TRADE_PEACE:
+		log_CWstring.Format(L"%s 与 %s 签订了和平协议交易", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		GET_TEAM(GET_PLAYER(eFromPlayer).getTeam()).makePeace((TeamTypes)trade.m_iData);
 		CvEventReporter::getInstance().peaceBrokered(eToPlayer, eFromPlayer, GET_TEAM((TeamTypes)trade.m_iData).getLeaderID());
 		break;
 
 	case TRADE_WAR:
+		log_CWstring.Format(L"%s 与 %s 进行了战争交易！", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		GET_TEAM(GET_PLAYER(eFromPlayer).getTeam()).declareWar(((TeamTypes)trade.m_iData), true, NO_WARPLAN);
 
 		for (iI = 0; iI < MAX_PLAYERS; iI++)
@@ -882,6 +909,8 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 		break;
 
 	case TRADE_EMBARGO:
+		log_CWstring.Format(L"%s 与 %s 进行了停止贸易交易", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		GET_PLAYER(eFromPlayer).stopTradingWithTeam((TeamTypes)trade.m_iData);
 
 		for (iI = 0; iI < MAX_PLAYERS; iI++)
@@ -897,6 +926,8 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 		break;
 
 	case TRADE_CIVIC:
+		log_CWstring.Format(L"%s 与 %s 进行了内政交易", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		paeNewCivics = new CivicTypes[GC.getNumCivicOptionInfos()];
 
 		for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
@@ -917,6 +948,8 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 		break;
 
 	case TRADE_RELIGION:
+		log_CWstring.Format(L"%s 与 %s 进行了国教交易", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		GET_PLAYER(eFromPlayer).convert((ReligionTypes)trade.m_iData);
 
 		if (GET_PLAYER(eFromPlayer).AI_getReligionTimer() < GC.getDefineINT("PEACE_TREATY_LENGTH"))
@@ -926,6 +959,8 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 		break;
 
 	case TRADE_OPEN_BORDERS:
+		log_CWstring.Format(L"%s 与 %s 进行了开边交易", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		if (trade.m_iData == 0)
 		{
 			startTeamTrade(TRADE_OPEN_BORDERS, GET_PLAYER(eFromPlayer).getTeam(), GET_PLAYER(eToPlayer).getTeam(), true);
@@ -938,6 +973,8 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 		break;
 
 	case TRADE_DEFENSIVE_PACT:
+		log_CWstring.Format(L"%s 与 %s 进行了防御协定交易", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		if (trade.m_iData == 0)
 		{
 			startTeamTrade(TRADE_DEFENSIVE_PACT, GET_PLAYER(eFromPlayer).getTeam(), GET_PLAYER(eToPlayer).getTeam(), true);
@@ -950,9 +987,13 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 		break;
 
 	case TRADE_PERMANENT_ALLIANCE:
+		log_CWstring.Format(L"%s 与 %s 进行了永久联盟交易", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		break;
 
 	case TRADE_PEACE_TREATY:
+		log_CWstring.Format(L"%s 与 %s 进行了和平协议交易", GET_PLAYER(eFromPlayer).getCivilizationDescription(), GET_PLAYER(eToPlayer).getCivilizationDescription());
+		GC.logs(log_CWstring, "DocDLLTrade.log");
 		GET_TEAM(GET_PLAYER(eFromPlayer).getTeam()).setForcePeace(((TeamTypes)(GET_PLAYER(eToPlayer).getTeam())), true);
 		bSave = true;
 		break;
@@ -1170,6 +1211,15 @@ bool CvDeal::isCancelable(PlayerTypes eByPlayer, CvWString* pszReason)
 
 int CvDeal::turnsToCancel(PlayerTypes eByPlayer)
 {
+	//mediv01 可以随时取消交易
+	if (GC.getDefineINT("CVDEAL_ALLOW_TO_CANCEL_DEAL_ANYTIME") == 1) {
+		return 0;
+	}
+	//mediv01 禁止主动取消任何交易（只有战争）
+	if (GC.getDefineINT("CVDEAL_NOT_ALLOW_TO_CANCEL_DEAL_ANYTIME") == 1) {
+		return 10;
+	}
+
 	return (getInitialGameTurn() + GC.getDefineINT("PEACE_TREATY_LENGTH") - GC.getGameINLINE().getGameTurn());
 }
 
