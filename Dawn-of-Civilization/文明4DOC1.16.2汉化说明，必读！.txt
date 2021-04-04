@@ -1,5 +1,25 @@
 ﻿！！！游戏系统语言请选择"英文",否则进入游戏会出BUG！！！
 
+
+
+
+DOC 1.16.2.1.107版汉化修改版更新提要
+1.本版本对DLL源码进行了修改，新融入了100多项新功能，包括移民坐资源满产出，工人可以进城、地块详细信息显示、见面永久联系、城市训练奴隶等新功能，可以在XML中开启或者关闭功能。
+2.本版本融入了部分ANYFUN 模组的功能，包括要塞驻军可以产生文化、征服对手获得科技等功能，可以在XML中关闭或者开启功能。
+3.本版本对PYTHON部分代码做了修改，部分新增功能加入了开关，例如动态核心区、时代稳定度等功能。
+4.发布文件中包含了DLL源代码的C++文件，方便后续修改。
+5.修正了一些汉化错误。
+
+
+
+
+
+
+
+
+
+
+
 DOC1.16.2.1.106版汉化修改版更新提要
 1.修正了之前的汉化错误，以及游戏中政治错误部分内容。
 2.增加了十字军、英法百年战争、拿破仑、一战和二战场景，低难度下玩家也可以享受AIWAR加成，并针对AIWAR设置了信息提示。
@@ -24,11 +44,11 @@ DOC1.16.2.1.106版汉化修改版更新提要
 汉化修改by mediv01
 https://github.com/mediv01/CIV4_DoC_Chinese_Patch
 https://pan.baidu.com/s/1wDmg3RQ5iSl5RExFqsdT4g 提取关键词:doc1
-https://tieba.baidu.com/home/main?id=tb.1.c5ea7c4d.2yQ-jRNcDkqoE9ZUz6eIrg&fr=userbar
+https://tieba.baidu.com/f?kw=文明4
 https://www.zhihu.com/people/mediv01
 https://space.bilibili.com/371626239
 
-有问题的欢迎进入QQ群538912983和QQ群580170439 反馈。
+有问题的欢迎进入QQ群870873511和QQ群580170439 反馈。
 
 
  
