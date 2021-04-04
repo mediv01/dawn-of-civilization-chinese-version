@@ -26856,7 +26856,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=70,y=7
-	BonusType=BONUS_PEARL_GIBRALTAR
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
