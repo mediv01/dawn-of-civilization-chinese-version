@@ -36,7 +36,8 @@ GLOBALPYTHON = $(INSTALLDIR)\CvGameCoreDLL\Python24
 
 #### MOD Info ####
 ## Uncomment to have newly compiled dlls copied to your mod's Assets directory
-OUTPUT = $(INSTALLDIR)\dll
+OUTPUT = D:\Civilization4\Beyond the Sword\Mods\RFC Dawn of Civilization 1.16.2\Assets
+## OUTPUT = $(INSTALLDIR)\dll  ##by mediv01
 Debug_MOD_CFLAGS =
 Release_MOD_CFLAGS =
 Final_Release_MOD_CFLAGS =

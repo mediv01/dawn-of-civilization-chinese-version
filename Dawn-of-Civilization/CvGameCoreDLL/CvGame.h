@@ -744,6 +744,11 @@ protected:
 	CvPlot* normalizeFindLakePlot(PlayerTypes ePlayer);
 
 	void doUpdateCacheOnTurn();
+	// Performance UP
+	public:
+		bool isBeforeHumanStart() const { return m_bBeforeHuman; }
+	private:
+	bool m_bBeforeHuman;
 };
 
 #endif

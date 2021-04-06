@@ -690,6 +690,15 @@ public:
 	DllExport void cacheGlobals();
 
 	// ***** EXPOSED TO PYTHON *****
+	DllExport void logs(CvWString& buf, CvString filename) const;
+	DllExport void logs(CvString buf, CvString filename) const;
+	DllExport void logs(wchar* buf, CvString filename) const;
+	DllExport void logs(char* buf, CvString filename) const;
+	DllExport void logs(const CvWString& buf, CvString filename) const;
+	//DllExport void logs(const CvString buf, CvString filename) const;
+	DllExport void logs(const wchar* buf, CvString filename) const;
+	DllExport void logs(const char* buf, CvString filename) const;
+	
 	DllExport int getDefineINT( const char * szName ) const;
 	DllExport float getDefineFLOAT( const char * szName ) const;
 	DllExport const char * getDefineSTRING( const char * szName ) const;

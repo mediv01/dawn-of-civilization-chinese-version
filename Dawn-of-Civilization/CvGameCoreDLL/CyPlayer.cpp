@@ -67,7 +67,9 @@ void CyPlayer::killCities()
 
 std::wstring CyPlayer::getNewCityName()
 {
-	return m_pPlayer ? m_pPlayer->getNewCityName() : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getNewCityName() : empty_str;
 }
 
 CyUnit* CyPlayer::initUnit(int /*UnitTypes*/ iIndex, int iX, int iY, UnitAITypes eUnitAI, DirectionTypes eFacingDirection)
@@ -103,7 +105,9 @@ bool CyPlayer::isBarbarian()
 
 std::wstring CyPlayer::getName()
 {
-	return m_pPlayer ? m_pPlayer->getName() : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getName() : empty_str;
 }
 
 //Rhye (jdog) -  start ---------------------
@@ -116,17 +120,23 @@ void CyPlayer::setName(std::wstring szNewValue)
 
 std::wstring CyPlayer::getNameForm(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getName((uint)iForm) : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getName((uint)iForm) : empty_str;
 }
 
 std::wstring CyPlayer::getNameKey()
 {
-	return m_pPlayer ? m_pPlayer->getNameKey() : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getNameKey() : empty_str;
 }
 
 std::wstring CyPlayer::getCivilizationDescription(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationDescription((uint)iForm) : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getCivilizationDescription((uint)iForm) : empty_str;
 }
 
 //Rhye (jdog) -  start ---------------------
@@ -156,32 +166,44 @@ void CyPlayer::setCivAdjective(std::wstring szNewAdj)
 
 std::wstring CyPlayer::getCivilizationDescriptionKey()
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationDescriptionKey() : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getCivilizationDescriptionKey() : empty_str;
 }
 
 std::wstring CyPlayer::getCivilizationShortDescription(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationShortDescription((uint)iForm) : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getCivilizationShortDescription((uint)iForm) : empty_str;
 }
 
 std::wstring CyPlayer::getCivilizationShortDescriptionKey()
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationShortDescriptionKey() : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getCivilizationShortDescriptionKey() : empty_str;
 }
 
 std::wstring CyPlayer::getCivilizationAdjective(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationAdjective((uint)iForm) : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getCivilizationAdjective((uint)iForm) : empty_str;
 }
 
-std::wstring CyPlayer::getCivilizationAdjectiveKey( )
+std::wstring CyPlayer::getCivilizationAdjectiveKey()
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationAdjectiveKey() : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getCivilizationAdjectiveKey() : empty_str;
 }
 
-std::wstring CyPlayer::getFlagDecal( )
+std::wstring CyPlayer::getFlagDecal()
 {
-	return m_pPlayer ? m_pPlayer->getFlagDecal() : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getFlagDecal() : empty_str;
 }
 
 bool CyPlayer::isWhiteFlag()
@@ -191,28 +213,39 @@ bool CyPlayer::isWhiteFlag()
 
 std::wstring CyPlayer::getStateReligionName(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getStateReligionName((int)iForm) : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getStateReligionName((int)iForm) : empty_str;
 }
 
-std::wstring CyPlayer::getStateReligionKey( )
+std::wstring CyPlayer::getStateReligionKey()
 {
-	return m_pPlayer ? m_pPlayer->getStateReligionKey() : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getStateReligionKey() : empty_str;
 }
 
 std::wstring CyPlayer::getBestAttackUnitName(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getBestAttackUnitName((uint)iForm) : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getBestAttackUnitName((uint)iForm) : empty_str;
 }
 
 std::wstring CyPlayer::getWorstEnemyName()
 {
-	return m_pPlayer ? m_pPlayer->getWorstEnemyName() : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getWorstEnemyName() : empty_str;
 }
 
 std::wstring CyPlayer::getBestAttackUnitKey()
 {
-	return m_pPlayer ? m_pPlayer->getBestAttackUnitKey() : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getBestAttackUnitKey() : empty_str;
 }
+
 
 int /*ArtStyleTypes*/ CyPlayer::getArtStyleType()
 {
@@ -2014,7 +2047,9 @@ int CyPlayer::getNumCityNames()
 
 std::wstring CyPlayer::getCityName(int iIndex)
 {
-	return m_pPlayer ? m_pPlayer->getCityName(iIndex) : std::wstring();
+	// Performance UP
+	static std::wstring empty_str;
+	return m_pPlayer ? m_pPlayer->getCityName(iIndex) : empty_str;
 }
 
 // returns tuple of (CyCity, iterOut)

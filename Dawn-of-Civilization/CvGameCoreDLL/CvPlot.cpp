@@ -563,6 +563,45 @@ void CvPlot::updateGraphicEra()
 		gDLL->getFlagEntityIFace()->updateGraphicEra(m_pFlagSymbol);
 }
 
+// Performance UP
+void CvPlot::erase()
+{
+	// kill units
+	std::vector<IDInfo> oldUnits;
+
+	for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
+	{
+		oldUnits.push_back(pUnitNode->m_data);
+	}
+
+	for (size_t i = 0; i < oldUnits.size(); i++) {
+		CvUnit* pLoopUnit = ::getUnit(oldUnits[i]);
+		if (pLoopUnit != NULL)
+		{
+			pLoopUnit->kill(false);
+		}
+	}
+
+	// kill cities
+	CvCity* pCity = getPlotCity();
+	if (pCity != NULL)
+	{
+		pCity->kill(false);
+	}
+
+	setBonusType(NO_BONUS);
+	setImprovementType(NO_IMPROVEMENT);
+	setRouteType(NO_ROUTE, false);
+	setFeatureType(NO_FEATURE);
+
+	// disable rivers
+	setNOfRiver(false, NO_CARDINALDIRECTION);
+	setWOfRiver(false, NO_CARDINALDIRECTION);
+	setRiverID(-1);
+}
+
+
+/* //mediv01 旧的代码，有性能问题
 void CvPlot::erase()
 {
 	CLLNode<IDInfo>* pUnitNode;
@@ -611,6 +650,7 @@ void CvPlot::erase()
 	setWOfRiver(false, NO_CARDINALDIRECTION);
 	setRiverID(-1);
 }
+*/
 
 //Rhye - start
 void CvPlot::eraseAIDevelopment()
@@ -711,6 +751,10 @@ float CvPlot::getSymbolSize() const
 
 float CvPlot::getSymbolOffsetX(int iOffset) const
 {
+	// Performance UP
+	if (GC.getGameINLINE().isBeforeHumanStart()) {
+		return ((40.0f + (((float)iOffset) * 28.0f * 0.8f)) - (GC.getPLOT_SIZE() / 2.0f));
+	}
 	return ((40.0f + (((float)iOffset) * 28.0f * getSymbolSize())) - (GC.getPLOT_SIZE() / 2.0f));
 }
 
@@ -6149,7 +6193,9 @@ BonusTypes CvPlot::getBonusType(TeamTypes eTeam) const
 	{
 		if (m_eBonusType != NO_BONUS)
 		{
-			if (!GET_TEAM(eTeam).isHasTech((TechTypes)(GC.getBonusInfo((BonusTypes)m_eBonusType).getTechReveal())) && !GET_TEAM(eTeam).isForceRevealedBonus((BonusTypes)m_eBonusType))
+			//if (!GET_TEAM(eTeam).isHasTech((TechTypes)(GC.getBonusInfo((BonusTypes)m_eBonusType).getTechReveal())) && !GET_TEAM(eTeam).isForceRevealedBonus((BonusTypes)m_eBonusType))
+			// Performance UP
+			if (!GET_TEAM(eTeam).isHasTech(m_eBonusVisableTechs) && !GET_TEAM(eTeam).isForceRevealedBonus((BonusTypes)m_eBonusType))
 			{
 				return NO_BONUS;
 			}
@@ -6183,6 +6229,8 @@ void CvPlot::setBonusType(BonusTypes eNewValue)
 	{
 		if (getBonusType() != NO_BONUS)
 		{
+			// Performance UP
+			m_eBonusVisableTechs = (TechTypes)(GC.getBonusInfo((BonusTypes)m_eBonusType).getTechReveal());
 			if (area())
 			{
 				area()->changeNumBonuses(getBonusType(), -1);

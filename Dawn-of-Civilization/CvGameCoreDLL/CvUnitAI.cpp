@@ -72,6 +72,16 @@ void CvUnitAI::AI_reset(UnitAITypes eUnitAI)
 // AI_update returns true when we should abort the loop and wait until next slice
 bool CvUnitAI::AI_update()
 {
+	//AI总入口
+	CvString log_CvString;
+	//LOG开始
+	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
+		log_CvString = log_CvString.format("UnitAI_AI_update开始，当前玩家为 %d ", (int)getID());
+		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
+	}
+	//LOG结束
+
+
 	PROFILE_FUNC();
 
 	CvUnit* pTransportUnit;
@@ -412,7 +422,12 @@ bool CvUnitAI::AI_update()
 			break;
 		}
 	}
-
+	//LOG开始
+	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
+		log_CvString = log_CvString.format("UnitAI_AI_update结束，当前玩家为 %d ", (int)getID());
+		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
+	}
+	//LOG结束
 	return false;
 }
 

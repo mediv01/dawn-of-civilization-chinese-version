@@ -1312,26 +1312,6 @@ int CvTechInfo::getResearchCost() const
 		modify = modify * GC.getDefineINT("ANYFUN_REAEARCH_COST_MULTIPLIER")/100;
 	}
 
-	if (GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC") > 0) {
-		HandicapTypes eHandicap = GC.getGameINLINE().getHandicapType();
-		if (eHandicap == 0) {
-			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H1") / 100;
-		}
-		else if (eHandicap == 1) {
-			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H2") / 100;
-		}
-		else if (eHandicap == 2) {
-			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H3") / 100;
-		}
-		else if (eHandicap == 3) {
-			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H4") / 100;
-		}
-		else if (eHandicap == 4) {
-			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H5") / 100;
-		}
-
-	}
-
 
 
 	return m_iResearchCost* modify; //mediv01 科研费用修正参数
@@ -11498,7 +11478,7 @@ int CvHandicapInfo::getResearchPercent() const
 
 int CvHandicapInfo::getResearchPercentByID(PlayerTypes ePlayer) const
 {
-	int iResearchPercent = m_iResearchPercent;
+	float iResearchPercent = m_iResearchPercent;
 
 	PlayerTypes eHuman = GC.getGameINLINE().getActivePlayer();
 	EraTypes eCurrentEra = GET_PLAYER(ePlayer).getCurrentEra();
@@ -11551,6 +11531,37 @@ int CvHandicapInfo::getResearchPercentByID(PlayerTypes ePlayer) const
 		iResearchPercent *= iHumanSpawnModifier;
 		iResearchPercent /= 100;
 	}
+
+	if (GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC") > 0) { //mediv01 按照难度进行科研惩罚
+		float modify = 1;
+		HandicapTypes eHandicap = GC.getGameINLINE().getHandicapType();
+		if (eHandicap == 0) {
+			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H1") / 100;
+		}
+		else if (eHandicap == 1) {
+			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H2") / 100;
+		}
+		else if (eHandicap == 2) {
+			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H3") / 100;
+		}
+		else if (eHandicap == 3) {
+			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H4") / 100;
+		}
+		else if (eHandicap == 4) {
+			modify = modify * GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H5") / 100;
+		}
+
+		if (GC.getDefineINT("CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_NOT_INCLUDE_HUMAN") == 1) { //mediv01 科研惩罚不包含人类
+			if (bHuman) {
+				modify = 1;
+			}
+		}
+		iResearchPercent *= modify;
+
+	}
+
+
+
 
 	return iResearchPercent;
 }
