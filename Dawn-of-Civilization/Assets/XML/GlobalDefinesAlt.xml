@@ -1465,7 +1465,7 @@
 
 	<Define>
         <DefineName>PYTHON_USE_LOG</DefineName><!-- 1为打开日志功能 默认输出位置：我的文档\My Games\Beyond the Sword\Saves\logs   0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
 	
@@ -1588,7 +1588,7 @@
 
     <Define>
         <DefineName>CVGAMECORE_LOG_AI_ACTION</DefineName>	<!-- 1为新增了DLL的LOG函数 0为默认模式， mediv01  -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
 
@@ -1818,6 +1818,16 @@
 
 	<Define>
         <DefineName>PYTHON_UHV_FRANCE_CONTROL_TILES_IN_COUNTRY</DefineName><!-- 1为法国UHV2只计入有城市的格子 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>PYTHON_MANUAL_RESURRECTION_CIV</DefineName><!-- 1为启用主动复活文明的机制，在特定的节点复活比较重要的文明 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+		<Define>
+        <DefineName>PYTHON_MANUAL_RESURRECTION_AFTER_MONGOLIA</DefineName><!-- 1为蒙古崩溃后主动复活明朝、帖木儿和瓦剌 0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
