@@ -2453,16 +2453,11 @@ bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage) cons
 
 	//mediv01 所有单位是否能进入领土
 	if (GC.getDefineINT("CVUNIT_CAN_ALWAYS_ENTER_TERRITORY") == 1) {
-		if (isHuman()) {
-			return true;
-		}
+		return true;
 	}
 	//mediv01 海上单位是否能进入领土
 	if (GC.getDefineINT("CVUNIT_SHIP_CAN_ALWAYS_ENTER_TERRITORY") == 1 && DOMAIN_SEA == getDomainType()) {
-		if (isHuman()) {
-			return true;
-		}
-		
+		return true;
 	}
 
 	// Leoreth: allow entering enemy territory while you have no cities to avoid being pushed out after spawn
@@ -2651,11 +2646,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	PROFILE_FUNC();
 
 	FAssertMsg(pPlot != NULL, "Plot is not assigned a valid value");
-	if (GC.getDefineINT("CVUNIT_AI_NOT_TAKE_GOODY") > 0) {
-		if (!isHuman() && pPlot->isGoody()) {
-			return false;
-		}
-	}
+
 	if (atPlot(pPlot))
 	{
 		return false;
@@ -6521,12 +6512,7 @@ int CvUnit::getHurryProduction(const CvPlot* pPlot) const
 
 	iProduction = getMaxHurryProduction(pCity);
 
-	if (GC.getDefineINT("CVUNIT_GREAT_ENGINEER_ACCELERATE_UNLIMITED") > 0) {
-
-	}
-	else {
-		iProduction = std::min(pCity->productionLeft(), iProduction);
-	}
+	iProduction = std::min(pCity->productionLeft(), iProduction);
 
 	return std::max(0, iProduction);
 }
@@ -14324,11 +14310,6 @@ void CvUnit::getLayerAnimationPaths(std::vector<AnimationPathTypes>& aAnimationP
 
 int CvUnit::getSelectionSoundScript() const
 {
-	// Performance UP
-	if (GC.getGameINLINE().isBeforeHumanStart()) {
-		static int fastId = GC.getCivilizationInfo(getCivilizationType()).getSelectionSoundScriptId();;
-		return fastId;
-	}
 	int iScriptId = getArtInfo(0, GET_PLAYER(getOwnerINLINE()).getCurrentEra())->getSelectionSoundScriptId();
 	if (iScriptId == -1)
 	{

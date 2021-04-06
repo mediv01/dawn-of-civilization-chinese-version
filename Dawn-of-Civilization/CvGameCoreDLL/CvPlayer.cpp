@@ -1733,10 +1733,6 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 		eOriginalOwner = getID();
 	}
 
-	if (bConquest)
-	{
-		GET_PLAYER(eOldOwner).setCILastKillMe(getID());
-	}
 	pOldCity->kill(false);
 
 	if (bTrade)
@@ -2693,8 +2689,7 @@ void CvPlayer::updateHuman()
 
 bool CvPlayer::isBarbarian() const
 {
-	const bool isBarbarian = (getID() == BARBARIAN_PLAYER);
-	return isBarbarian;
+	return (getID() == BARBARIAN_PLAYER);
 }
 
 
@@ -11943,7 +11938,7 @@ void CvPlayer::doConquestIncentive(const PlayerTypes& eOldOwner)
 	}
 
 
-	CvWString log_CWstring;
+
 	CvPlayer& kTragePlayer = GET_PLAYER(eOldOwner);
 
 	CvWString szBuffer;
@@ -11951,28 +11946,7 @@ void CvPlayer::doConquestIncentive(const PlayerTypes& eOldOwner)
 	int iI, iLoop;
 
 	
-	if (GC.getDefineINT("ANYFUN_CONQUEST_GET_GOLD") == 1)
-	{
-		const int year = GC.getGame().getGameTurnYear();
-		if ((year == -3000 || year == 600 || year == 1700) && getID()==0) {
-		}
-		else {
 
-		
-		int old_player_gold = kTragePlayer.getGold();
-		GET_PLAYER(kTragePlayer.getCILastKillMe()).changeGold(old_player_gold);
-		
-		
-		log_CWstring.Format(L"%s 征服了 %s", GET_PLAYER(getID()).getCivilizationDescription(), kTragePlayer.getCivilizationDescription());
-		GC.logs(log_CWstring, "DocDLLConquest.log");
-		log_CWstring.Format(L"%s 征服文明获得金币 %d", GET_PLAYER(getID()).getCivilizationDescription(), old_player_gold);
-		GC.logs(log_CWstring,"DocDLLConquest.log");
-
-
-
-		}
-
-	}
 	
 
 	// add PLAYEROPTION_CONQUEST_TECH  //mediv01 征服获得科技
@@ -11982,11 +11956,8 @@ void CvPlayer::doConquestIncentive(const PlayerTypes& eOldOwner)
 		{
 			if (GET_TEAM(kTragePlayer.getTeam()).isHasTech((TechTypes)iI))
 			{
-				
 				if (!GET_TEAM(getTeam()).isHasTech((TechTypes)iI))
 				{
-					log_CWstring.Format(L"%s 征服文明获得科技 %s", GET_PLAYER(getID()).getCivilizationDescription(),GC.getTechInfo((TechTypes)iI).getDescription());
-					GC.logs(log_CWstring, "DocDLLConquest.log");
 					GET_TEAM(getTeam()).setHasTech((TechTypes)iI, true, NO_PLAYER, false, false);
 					szBuffer.Format(L"%s" SETCOLR L"%s" ENDCOLR, gDLL->getText("TXT_KEY_ANYFUNMOD_GAME_OPTION_CONQUEST_TECH_MSG").GetCString(), TEXT_COLOR("COLOR_YELLOW"), GC.getTechInfo((TechTypes)iI).getDescription());
 					gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MAJOR_EVENT);
@@ -18316,11 +18287,6 @@ int CvPlayer::getAdvancedStartTechCost(TechTypes eTech, bool bAdd) const
 
 int CvPlayer::getAdvancedStartVisibilityCost(bool bAdd, CvPlot* pPlot) const
 {
-	// Performance UP
-	//mediv01 视野距离参数
-	return -1;
-
-
 	if (0 == getNumCities())
 	{
 		return -1;

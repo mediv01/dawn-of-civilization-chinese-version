@@ -19,8 +19,6 @@
 #include "CvDLLFAStarIFaceBase.h"
 
 #include "CvRhyes.h"
-
-
 //mediv01 20200813 »ù´¡º¯Êý¿â
 #define PATH_MOVEMENT_WEIGHT									(1000)
 #define PATH_RIVER_WEIGHT											(100)

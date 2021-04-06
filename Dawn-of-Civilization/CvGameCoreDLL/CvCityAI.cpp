@@ -155,16 +155,6 @@ void CvCityAI::AI_doTurn()
 {
 	//mediv01 ai过回合 可以多线程优化
 	PROFILE_FUNC();
-	CvString log_CvString;
-
-
-	//LOG开始
-	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
-		log_CvString = log_CvString.format("CvCityAI::AI_doTurn()开始，当前玩家为 %d ", (int)getID());
-		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
-	}
-	//LOG结束
-
 
 	int iI;
 
@@ -203,13 +193,6 @@ void CvCityAI::AI_doTurn()
 	AI_doHurry();
 
 	AI_doEmphasize();
-
-	//LOG开始
-	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
-		log_CvString = log_CvString.format("CvCityAI::AI_doTurn()结束，当前玩家为 %d ", (int)getID());
-		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
-	}
-	//LOG结束
 }
 
 

@@ -20,7 +20,6 @@
 #include "FProfiler.h"
 #include "CvGameTextMgr.h"
 
-
 // interfaces used
 #include "CvDLLEngineIFaceBase.h"
 #include "CvDLLPythonIFaceBase.h"
@@ -30,9 +29,8 @@
 
 #include "CvRhyes.h" //Rhye
 #include <algorithm>
-#include<string>
-// Public Functions...
 
+// Public Functions...
 
 CvCity::CvCity()
 {
@@ -187,7 +185,6 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 	//--------------------------------
 	// Log this event
-	
 	if (GC.getLogging())
 	{
 		if (gDLL->getChtLvl() > 0)
@@ -1276,12 +1273,6 @@ bool CvCity::isCitySelected()
 
 bool CvCity::canBeSelected() const
 {
-
-	if (GC.getGameINLINE().getGameTurn() < GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getBirthTurn())
-	{
-		return false;
-	}
-
 	if ((getTeam() == GC.getGameINLINE().getActiveTeam()) || GC.getGameINLINE().isDebugMode())
 	{
 		return true;
@@ -1315,11 +1306,6 @@ bool CvCity::canBeSelected() const
 
 void CvCity::updateSelectedCity(bool bTestProduction)
 {
-	// Performance UP
-	if (GC.getGameINLINE().isBeforeHumanStart()) {
-		return;
-	}
-
 	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		CvPlot* pLoopPlot = getCityIndexPlot(iI);
@@ -2547,58 +2533,6 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		}
 	}
 
-	//mediv01 AI不能建玩家UHV的建筑
-	const bool mediv01 = GC.getDefineINT("CVCITY_UHV_HELPER_AI_NOT_BUILD_WONDER_OF_HUMAN_UHV");
-	if (mediv01 == 1) {
-		const int active_player = GC.getGameINLINE().getActivePlayer();
-		if (active_player == FRANCE) {
-			//GC.logs("GC.getGameINLINE().getActivePlayer()== FRANCE", "TEST.LOG");
-			//人类玩家为法国
-			const int getowner = (int) getOwner();
-			if (getowner != (int) FRANCE) { //如果AI不是法国
-
-				//CvString log_CvString;
-				//int playerid = (int)GC.getGameINLINE().getActivePlayer();				
-				//log_CvString = log_CvString.format("当前人类玩家为 %d ，城市的坐标为( %d , %d) getID()为 %d，法国的ID为 %d", playerid, getX(), getY(), (int) getOwner(), (int)FRANCE);
-				//GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_String.log");
-				if (eBuilding == NOTRE_DAME)
-				{
-					return false;
-				}
-
-				if (eBuilding == VERSAILLES)
-				{
-					return false;
-				}
-
-				if (eBuilding == LOUVRE)
-				{
-					return false;
-				}
-
-				if (eBuilding == EIFFEL_TOWER)
-				{
-					return false;
-				}
-
-				if (eBuilding == METROPOLITAIN)
-				{
-					return false;
-				}
-
-			}
-
-		}
-		else { 
-
-
-			
-
-
-		}
-
-	}
-
 	if (!bTestVisible)
 	{
 		if (!bContinue)
@@ -2736,9 +2670,6 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 				}
 			}
 		}
-
-
-
 	}
 
 	if(GC.getUSE_CANNOT_CONSTRUCT_CALLBACK())
@@ -12200,7 +12131,6 @@ void CvCity::changeNumRevolts(PlayerTypes eIndex, int iChange)
 
 int CvCity::getRevoltTestProbability() const
 {
-	//mediv01 计算城市低文化时的叛乱概率
 	int iBestModifier = 0;
 
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
@@ -12216,18 +12146,7 @@ int CvCity::getRevoltTestProbability() const
 	}
 	iBestModifier = range(iBestModifier, 0, 100);
 
-
-	//mediv01 文化叛乱的概率
-	int rebelt_prob = ((GC.getDefineINT("REVOLT_TEST_PROB") * (100 - iBestModifier)) / 100) / (isHuman() ? 1 : 2);
-	if (GC.getDefineINT("CVCITY_PROB_REBELT_MULTIPLIER_WHEN_CULTURE_IN_LOW") >0) {
-		rebelt_prob = rebelt_prob * GC.getDefineINT("CVCITY_PROB_REBELT_MULTIPLIER_WHEN_CULTURE_IN_LOW");
-	}
-	else if (GC.getDefineINT("CVCITY_PROB_REBELT_MULTIPLIER_WHEN_CULTURE_IN_LOW") == -1) {
-		rebelt_prob = 0;
-	}
-	rebelt_prob = min(rebelt_prob, 100);
-
-	return rebelt_prob; // Leoreth
+	return ((GC.getDefineINT("REVOLT_TEST_PROB") * (100 - iBestModifier)) / 100) / (isHuman() ? 1 : 2); // Leoreth
 }
 
 bool CvCity::isEverOwned(PlayerTypes eIndex) const
@@ -15370,12 +15289,6 @@ bool CvCity::doCheckProduction()
 			bMaxedOut = GET_PLAYER(getOwnerINLINE()).isProductionMaxedBuildingClass((BuildingClassTypes)(GC.getBuildingInfo((BuildingTypes)iI).getBuildingClassType()));
 			bObsolete = isWorldWonderClass((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)iI).getBuildingClassType()) && GC.getBuildingInfo((BuildingTypes)iI).getObsoleteTech() != NO_TECH && GC.getGameINLINE().countKnownTechNumTeams((TechTypes)GC.getBuildingInfo((BuildingTypes)iI).getObsoleteTech()) > 0;
 
-			if (GC.getDefineINT("CVCITY_CAN_BUILD_OBSOLUTE_BUILDING") > 0) {
-				//mediv01
-				bObsolete = FALSE;
-
-			}
-
 
 			if (bMaxedOut || bObsolete)
 			{
@@ -15802,53 +15715,7 @@ void CvCity::doReligion()
 
 		iChance = getTurnsToSpread(eReligion);
 		iRand = GC.getGameINLINE().getSorenRandNum(iChance, "Religion spread");//mediv01 宗教传播与随机数有关 1/100几率
-
-		int temp_a = 0;
-
-
-		
-
-		if (GC.getDefineINT("CVCITY_INCREASE_RELIGION_CHANCE_ONLY_FOR_STATERELIGION") >0) {
-			ReligionTypes eStateReligion = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getStateReligion();
-
-
-
-			if (eReligion == eStateReligion)
-			{
-				temp_a = max(GC.getDefineINT("CVCITY_INCREASE_RELIGION_CHANCE_ONLY_FOR_STATERELIGION"), 0);
-				
-				
-			}
-			
-		//tem_string = ("Player is  %d , eStateReligion is %d , eReligion is %d", (int)GC.getGameINLINE().getActivePlayer(), (int)eStateReligion, (int)eReligion);
-			
-			
-		
-
-		/*
-
-		CvWString log_CWstring;
-		CvWStringBuffer CvWStringBuffer_temp;
-		log_CWstring = gDLL->getText("TXT_KEY_VICTORY_ARABIA_UHV3_JERUSALEM");
-		GC.logs(log_CWstring, (CvString)"DoCGameCoreDLL_WS.log");
-
-
-		CvString log_CvString;
-		int playerid = (int)GC.getGameINLINE().getActivePlayer();
-		log_CvString = log_CvString.format("当前玩家为 %d ", playerid);		
-		GC.logs2(log_CvString, (CvString)"DoCGameCoreDLL_String.log");
-		*/
-
-
-
-		}
-		else {
-			temp_a = max(GC.getDefineINT("CVCITY_INCREASE_RELIGION_CHANCE"), 0);
-		}
-		
-
-
-
+		int temp_a = max(GC.getDefineINT("CVCITY_INCREASE_RELIGON_CHANCE"),0);
 		if (iRand <= 0+ temp_a )
 		{
 			spreadReligion(eReligion);
@@ -16046,7 +15913,6 @@ void CvCity::doReligion()
 
 void CvCity::doGreatPeople()
 {
-	//创建伟人的代码  
 	//Rhye - start
 //Speed: Modified by Kael 04/19/2007
 //	CyCity* pyCity = new CyCity(this);
@@ -16068,8 +15934,6 @@ void CvCity::doGreatPeople()
 	}
 
 	changeGreatPeopleProgress(getGreatPeopleRate());
-	CvString log_CvString;
-	CvWString log_CWstring;
 
 	for (int iI = 0; iI < GC.getNumUnitInfos(); iI++)
 	{
@@ -16082,10 +15946,6 @@ void CvCity::doGreatPeople()
 		for (int iI = 0; iI < GC.getNumUnitInfos(); iI++)
 		{
 			iTotalGreatPeopleUnitProgress += getGreatPeopleUnitProgress((UnitTypes)iI);
-
-			//log_CWstring.Format(L"%d 的名字为 %s", iI, GC.getUnitInfo((UnitTypes)iI).getTextKeyWide());
-			//GC.logs(log_CWstring, "TEST.log");
-
 		}
 
 		int iGreatPeopleUnitRand = GC.getGameINLINE().getSorenRandNum(iTotalGreatPeopleUnitProgress, "Great Person");
@@ -16102,35 +15962,6 @@ void CvCity::doGreatPeople()
 			{
 				iGreatPeopleUnitRand -= getGreatPeopleUnitProgress((UnitTypes)iI);
 			}
-		}
-
-		//固定伟人点
-		const int mediv01 = GC.getDefineINT("CVCITY_FIX_GENERATE_GREAT_PEOPLE");
-		if ( mediv01> 0) {
-			if (mediv01 == 1) {  //大预言家
-				eGreatPeopleUnit= ((UnitTypes)190);
-			}
-			else if (mediv01 == 2) {  //大艺术家
-				eGreatPeopleUnit = ((UnitTypes)191);
-			}
-			else if (mediv01 == 3) {  //大科学家
-				eGreatPeopleUnit = ((UnitTypes)192);
-			}
-			else if (mediv01 == 4) {  //大商业家
-				eGreatPeopleUnit = ((UnitTypes)193);
-			}
-			else if (mediv01 == 5) {  //大工程师
-				eGreatPeopleUnit = ((UnitTypes)194);
-			}
-			else if (mediv01 == 6) {  //大政治家
-				eGreatPeopleUnit = ((UnitTypes)195);
-			}
-			else {
-
-			}
-
-			
-
 		}
 
 		if (eGreatPeopleUnit != NO_UNIT)
@@ -17056,10 +16887,6 @@ bool CvCity::getFoodBarPercentages(std::vector<float>& afPercentages) const
 
 bool CvCity::getProductionBarPercentages(std::vector<float>& afPercentages) const
 {
-	// Performance UP
-	if (GC.getGameINLINE().isBeforeHumanStart()) {
-		return false;
-	}
 	if (!canBeSelected())
 	{
 		return false;
@@ -18509,11 +18336,6 @@ int CvCity::getMusicScriptId() const
 
 int CvCity::getSoundscapeScriptId() const
 {
-	static int fastId = GC.getEraInfo(GET_PLAYER(getOwnerINLINE()).getCurrentEra()).getCitySoundscapeSciptId(getCitySizeType());
-	// Performance UP
-	if (GC.getGameINLINE().isBeforeHumanStart()) {
-		return fastId;
-	}
 	return GC.getEraInfo(GET_PLAYER(getOwnerINLINE()).getCurrentEra()).getCitySoundscapeSciptId(getCitySizeType());
 }
 
