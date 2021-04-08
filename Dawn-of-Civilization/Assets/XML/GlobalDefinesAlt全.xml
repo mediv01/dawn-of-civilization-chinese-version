@@ -2035,10 +2035,7 @@
     </Define>		
 	
 	
-		<Define>
-        <DefineName>PYTHON_VIC_CONNECTED_BY_ROAD_WITH_NEW_METHOD_INCA</DefineName><!-- 计算丝绸之路连接的新方式，只要途中不经过野蛮人的国家即可，0为默认模式  mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define> 	
+	
 	
 	
 	

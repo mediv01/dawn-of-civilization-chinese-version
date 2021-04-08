@@ -18,29 +18,28 @@ localText = CyTranslator()
 def checkTurn(iGameTurn):
 
     if(gc.getDefineINT("PYTHON_MANUAL_RESURRECTION_CIV")==1):
-        if iGameTurn % 5 == 0:
-            Check_Resurrection_Civ(iGameTurn)
-        pass
+        #if iGameTurn % 5 == 0:
+        Check_Resurrection_Civ(iGameTurn)
+        #pass
 
 def Check_Resurrection_Civ(iGameTurn):
 
 
-    if (iGameTurn <= getTurnForYear(900)):
+    if (iGameTurn == getTurnForYear(650)):
         # 贞观之治的复兴
         Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 600, 900)
 
-    if (iGameTurn >= getTurnForYear(1500) and iGameTurn <= getTurnForYear(1800)):
+    elif (iGameTurn == getTurnForYear(1500)):
         # 康乾盛世的复兴
-        Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 1500, 1800)
+        Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 1450, 1800)
 
         # 百年战争后的复兴
-        Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1500, 1800)
+        Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1450, 1800)
 
 
 
-    if (iGameTurn>=getTurnForYear(1900)):
-        # 中华人民共和国
-        Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 1949, 2020)
+    elif (iGameTurn==getTurnForYear(1925)):
+
 
         # 一战法国
         Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1918, 1939)
@@ -51,23 +50,33 @@ def Check_Resurrection_Civ(iGameTurn):
         # 苏联
         Check_Resurrection_Civ_with_Year(iGameTurn, iRussia, 1918, 1990)
 
-        # 二战法国
-        Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1960, 2020)
 
+
+    elif (iGameTurn==getTurnForYear(1955)):
+        # 二战法国
+        Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1945, 2020)
+
+        # 中华人民共和国
+        Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 1949, 2020)
+
+    elif (iGameTurn == getTurnForYear(1995)):
         # 二战德国
         Check_Resurrection_Civ_with_Year(iGameTurn, iGermany, 1990, 2020)
 
     # 蒙古灭亡后的复兴
     if (gc.getDefineINT("PYTHON_MANUAL_RESURRECTION_AFTER_MONGOLIA") == 1):
-        if (not gc.getPlayer(iMongolia).isAlive() and iGameTurn<=getTurnForYear(1500)):
-            #瓦剌
-            Check_Resurrection_Civ_with_Year(iGameTurn, iMongolia, 1400, 1500)
+        if (not gc.getPlayer(iMongolia).isAlive()):
 
-            # 帖木儿
-            Check_Resurrection_Civ_with_Year(iGameTurn, iTurks, 1400, 1500)
+            if(iGameTurn==getTurnForYear(1450)  or iGameTurn==getTurnForYear(1360)):
 
-            # 蒙古后中华文明的复兴
-            Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 1350, 1500)
+                #瓦剌
+                Check_Resurrection_Civ_with_Year(iGameTurn, iMongolia, 1400, 1500)
+
+                # 帖木儿
+                Check_Resurrection_Civ_with_Year(iGameTurn, iTurks, 1400, 1500)
+
+                # 蒙古后中华文明的复兴
+                Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 1368, 1500)
 
     pass
 

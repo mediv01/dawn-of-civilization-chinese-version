@@ -3034,7 +3034,10 @@ def isRoad(iPlayer, lPlots):
     for tPlot in lPlots:
         x, y = tPlot
         plot = gc.getMap().plot(x, y)
-        if plot.getOwner() != iPlayer: return False
+        if (gc.getDefineINT("PYTHON_VIC_CONNECTED_BY_ROAD_WITH_NEW_METHOD_INCA")==1):
+            pass
+        else:
+            if plot.getOwner() != iPlayer: return False
         if not plot.getRouteType() == iRoad and not plot.isCity(): return False
 
     return True
