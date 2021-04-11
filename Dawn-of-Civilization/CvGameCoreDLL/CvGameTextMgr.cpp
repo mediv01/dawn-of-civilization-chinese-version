@@ -42,6 +42,27 @@
 #include "AdvancedCombatOdds.h"
 // BUG - Advanced Combat Odds - end
 
+
+void cvdebug_show_bonus_techinfo() {
+	for (int iI = 0; iI < GC.getNumBonusInfos(); iI++) {
+		//(GC.getBonusInfo((BonusTypes)iI).getText()
+		GC.logs(CvWString::format(L"%d %d",( iI, GC.getBonusInfo((BonusTypes)iI).getTechReveal())), "CvDebug.log");
+		//GC.logs(CvWString::format(L"%d", GC.getBonusInfo((BonusTypes)iI).getTechReveal()), "CvDebug.log");
+	}
+}
+
+
+void cvdebug_debug_main() {
+
+
+	return;
+
+	GC.logs("Debugging !", "CvDebug.log");
+	cvdebug_show_bonus_techinfo();
+}
+
+
+
 int shortenID(int iId)
 {
 	return iId;
@@ -5974,6 +5995,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 	bShift = gDLL->shiftKey();
 	bAlt = gDLL->altKey();
 	bCtrl = gDLL->ctrlKey();
+
 	
 	if (bCtrl && (gDLL->getChtLvl() > 0))
 	{
@@ -6671,25 +6693,40 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			}
 		}
 		//mediv01 核心区颜色展示
+		if (GC.getDefineINT("CVGAMETEXT_MANUAL_DEBUG_TRIGGER") == 1) {
+
+			const int debug_plot_x = pPlot->getX();
+			const int debug_plot_y = pPlot->getY();
+			//szString.append(CvWString::format(L" debugtext"));
+			if (debug_plot_x == 36 && debug_plot_y == 1) {
+
+				cvdebug_debug_main();
+
+			}
+
+		}
+
+		if (GC.getDefineINT("GAME_TEXT_SHOW_AREA_NAME_IN_ALL_UNIT") == 1) {
+			//szString.append(CvWString::format(SETCOLR, TEXT_COLOR("COLOR_PLAYER_CYAN")));//蓝色
+			szString.append(CvWString::format(SETCOLR, TEXT_COLOR("COLOR_PLAYER_YELLOW")));
+			szString.append(pPlot->getRegionName());//mediv01  加入地区名称
+			szString.append(CvWString::format(SETCOLR, TEXT_COLOR("COLOR_PLAYER_WHITE")));
+
+			if (GC.getDefineINT("GAME_TEXT_SHOW_CITY_X_AND_Y") == 1)
+			{
+				//szString.append(CvWString::format(SETCOLR, TEXT_COLOR("COLOR_PLAYER_WHITE")));
+				szString.append(CvWString::format(L"     X : %d", (pPlot->getX())));
+				szString.append(CvWString::format(L" , Y : %d", (pPlot->getY())));
+				szString.append(CvWString::format(L" , L : %d", (pPlot->getLatitude())));
+
+
+			}
+			szString.append(NEWLINE);
+		}
+
 	    if (pPlot->getPlotType() == PLOT_LAND || pPlot->getPlotType() == PLOT_HILLS)
 	    {
-			if (GC.getDefineINT("GAME_TEXT_SHOW_AREA_NAME_IN_ALL_UNIT") == 1) {
-				//szString.append(CvWString::format(SETCOLR, TEXT_COLOR("COLOR_PLAYER_CYAN")));//蓝色
-				szString.append(CvWString::format(SETCOLR, TEXT_COLOR("COLOR_PLAYER_YELLOW")));
-				szString.append(pPlot->getRegionName());//mediv01  加入地区名称
-				szString.append(CvWString::format(SETCOLR, TEXT_COLOR("COLOR_PLAYER_WHITE")));
 
-				if (GC.getDefineINT("GAME_TEXT_SHOW_CITY_X_AND_Y") == 1)
-				{
-					//szString.append(CvWString::format(SETCOLR, TEXT_COLOR("COLOR_PLAYER_WHITE")));
-					szString.append(CvWString::format(L"     X : %d", (pPlot->getX())));
-					szString.append(CvWString::format(L" , Y : %d", (pPlot->getY())));
-					szString.append(CvWString::format(L" , L : %d", (pPlot->getLatitude())));
-
-
-				}
-				szString.append(NEWLINE);
-			}
 
 			if (GC.getDefineINT("GAME_TEXT_SHOW_CITY_NAME_IN_ALL_UNIT") == 1) //mediv01 所有单位都显示城市名称
 			{

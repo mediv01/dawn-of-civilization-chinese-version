@@ -449,7 +449,7 @@
 			<NIF>Art/Terrain/Resources/Stone/Stone.nif</NIF>
 			<KFM>Art/Terrain/Resources/Stone/Stone.kfm</KFM>
 			<Button>Art/Interface/Buttons/Mountain.dds</Button>
-			<FontButtonIndex>170</FontButtonIndex>
+			<FontButtonIndex>46</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_WATERFALL</Type>
@@ -458,7 +458,7 @@
 			<NIF>Art/Terrain/Resources/Stone/Stone.nif</NIF>
 			<KFM>Art/Terrain/Resources/Stone/Stone.kfm</KFM>
 			<Button>Art/Interface/Buttons/WaterFall.dds</Button>
-			<FontButtonIndex>171</FontButtonIndex>
+			<FontButtonIndex>46</FontButtonIndex>
 		</BonusArtInfo>		
 		
 		<BonusArtInfo>
@@ -468,7 +468,7 @@
 			<NIF>Art/Terrain/Resources/Pearl/clam.nif</NIF>
 			<KFM>Art/Terrain/Resources/Pearl/clam.kfm</KFM>
 			<Button>Art/Interface/Buttons/Harbour.dds</Button>
-			<FontButtonIndex>172</FontButtonIndex>
+			<FontButtonIndex>46</FontButtonIndex>
 		</BonusArtInfo>	
 		
 		<BonusArtInfo>
@@ -478,7 +478,7 @@
 			<NIF>Art/Terrain/Resources/Pearl/clam.nif</NIF>
 			<KFM>Art/Terrain/Resources/Pearl/clam.kfm</KFM>
 			<Button>Art/Interface/Buttons/CANAL.dds</Button>
-			<FontButtonIndex>173</FontButtonIndex>
+			<FontButtonIndex>46</FontButtonIndex>
 		</BonusArtInfo>	
 		
 		<BonusArtInfo>
@@ -488,7 +488,7 @@
 			<NIF>Art/Terrain/Resources/Pearl/clam.nif</NIF>
 			<KFM>Art/Terrain/Resources/Pearl/clam.kfm</KFM>
 			<Button>Art/Interface/Buttons/GREAT_BARRIER_REEF.dds</Button>
-			<FontButtonIndex>174</FontButtonIndex>
+			<FontButtonIndex>46</FontButtonIndex>
 		</BonusArtInfo>	
 		
 		
@@ -499,7 +499,7 @@
 			<NIF>Art/Terrain/Resources/Gold/Gold.nif</NIF>
 			<KFM>Art/Terrain/Resources/Gold/Gold.KFM</KFM>
 			<Button>Art/Interface/Buttons/GOLDEN_ONE.dds</Button>
-			<FontButtonIndex>175</FontButtonIndex>
+			<FontButtonIndex>46</FontButtonIndex>
 		</BonusArtInfo>	
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_GREAT_LAKE</Type>
@@ -508,7 +508,7 @@
 			<NIF>Art/Terrain/Resources/Fish/Fish.nif</NIF>
 			<KFM>Art/Terrain/Resources/Fish/Fish.kfm</KFM>
 			<Button>Art/Interface/Buttons/GREAT_LAKE.dds</Button>
-			<FontButtonIndex>176</FontButtonIndex>
+			<FontButtonIndex>46</FontButtonIndex>
 		</BonusArtInfo>		
 		
 	</BonusArtInfos>

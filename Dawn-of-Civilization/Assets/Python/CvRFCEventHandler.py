@@ -708,6 +708,9 @@ class CvRFCEventHandler:
 		import GameScore
 		GameScore.checkTurn(iGameTurn)
 
+		import DynamicLand
+		DynamicLand.checkturn(iGameTurn)
+
 		
 		if iGameTurn % 10 == 0:
 			dc.checkTurn(iGameTurn)

@@ -1457,7 +1457,10 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>	
 	
-	
+        <Define>
+        <DefineName>CVGAMETEXT_MANUAL_DEBUG_TRIGGER</DefineName><!-- 数值为1的时候，开启DLL自定义调试，引用CvDebug.cpp里的内容 mediv01 调试开关 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>   	
 
 
 

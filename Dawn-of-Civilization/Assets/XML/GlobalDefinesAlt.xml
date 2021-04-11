@@ -1457,7 +1457,10 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>	
 	
-	
+        <Define>
+        <DefineName>CVGAMETEXT_MANUAL_DEBUG_TRIGGER</DefineName><!-- 数值为1的时候，开启DLL自定义调试，当X=36 Y=1时引用CvDebug.cpp里的内容 mediv01 调试开关 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>   	
 
 
 
@@ -1588,7 +1591,7 @@
 
     <Define>
         <DefineName>CVGAMECORE_LOG_AI_ACTION</DefineName>	<!-- 1为新增了DLL的LOG函数 0为默认模式， mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -2035,8 +2038,8 @@
     </Define>		
 	
 	
-		<Define>
-        <DefineName>PYTHON_VIC_CONNECTED_BY_ROAD_WITH_NEW_METHOD_INCA</DefineName><!-- 计算丝绸之路连接的新方式，只要途中不经过野蛮人的国家即可，0为默认模式  mediv01 -->
+	<Define>
+        <DefineName>PYTHON_VIC_CONNECTED_BY_ROAD_WITH_NEW_METHOD_INCA</DefineName><!--  1为印加UHV时只需要修建道路，不需要文化覆盖，0为默认模式  mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define> 	
 	

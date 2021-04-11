@@ -84,4 +84,47 @@
 		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CITY_RANK_GOODY</Tag>
 		<English>部落村庄情况：</English>
 		<L1/><L2/><L3/><L4/><Chinese>部落村庄情况：</Chinese><French>部落村庄情况：</French></TEXT>			
+		
+		
+		
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_INCA_MachuPicchu</Tag>
+		<English>控制马丘比丘</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制马丘比丘</Chinese><French>控制马丘比丘</French></TEXT>	
+		
+		
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_INCA_Goleden_One</Tag>
+		<English>控制黄金国</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制黄金国</Chinese><French>控制黄金国</French></TEXT>	
+		
+		
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_INCA_Resouce_GOLD</Tag>
+		<English>控制贵金属资源的数量： %d1 / %d2</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制贵金属资源的数量： %d1 / %d2</Chinese><French>控制贵金属资源的数量： %d1 / %d2</French></TEXT>		
+
+
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_INCA_CONTROL_SOUTH_PACIFIC</Tag>
+		<English>控制南太平洋的复活节岛</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制南太平洋的复活节岛</Chinese><French>控制南太平洋的复活节岛</French></TEXT>	
+
+
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_INCA_CONTROL_WestAmazon</Tag>
+		<English>控制西亚马逊丛林，已建立的据点： %d1 / %d2</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制西亚马逊丛林，已建立的据点： %d1 / %d2</Chinese><French>控制西亚马逊丛林，已建立的据点： %d1 / %d2</French></TEXT>	
+
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_INCA_CONTROL_LaPlata</Tag>
+		<English>控制拉普拉塔入海口（布宜诺斯艾利斯）</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制拉普拉塔入海口（布宜诺斯艾利斯）</Chinese><French>控制拉普拉塔入海口（布宜诺斯艾利斯）</French></TEXT>		
+
+
+		<TEXT>
+		<Tag>TXT_KEY_REGION_-1</Tag>
+		<English>未知领地</English>
+		<L1/><L2/><L3/><L4/><Chinese>未知领地</Chinese><French>未知领地</French></TEXT>			
+		
 </Civ4GameText>

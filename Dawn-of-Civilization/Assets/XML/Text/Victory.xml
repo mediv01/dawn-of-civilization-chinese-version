@@ -619,8 +619,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>到公元1850年，在维也纳定居了十位伟大的艺术家和政治家，并与八个独立的欧洲文明建立了至少满意的关系</Chinese><French>Settle a total of ten great artists and statesmen in Vienna and have at least pleased relations with eight independent European civilisations by 1850 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INC1_TITLE</Tag>
-		<English>安第斯公路系统</English>
-		<L1/><L2/><L3/><L4/><Chinese>安第斯公路系统</Chinese><French>Andean Road System</French></TEXT>
+		<English>安第斯帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>安第斯帝国</Chinese><French>Andean Road System</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INC1</Tag>
 		<English>在公元1500年之前建造5所土堡驿站，并修建一条安第斯大道（沿着安第斯海岸）</English>
@@ -631,24 +631,24 @@
 		<L1/><L2/><L3/><L4/><Chinese>拉普拉塔山脉</Chinese><French>Sierra de la Plata</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INC2</Tag>
-		<English>公元1550年拥有2500金币</English>
-		<L1/><L2/><L3/><L4/><Chinese>公元1550年拥有2500金币</Chinese><French>Have 2500 gold in 1550 AD</French></TEXT>
+		<English>控制马丘比丘、黄金国以及4个贵金属资源（金或者银）</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制马丘比丘、黄金国以及4个贵金属资源（金或者银）</Chinese><French>Have 2500 gold in 1550 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INC2_EPIC</Tag>
-		<English>公元1550年拥有3750金币</English>
-		<L1/><L2/><L3/><L4/><Chinese>公元1550年拥有3750金币</Chinese><French>Have 3750 gold in 1550 AD</French></TEXT>
+		<English>控制马丘比丘、黄金国以及4个贵金属资源（金或者银）</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制马丘比丘、黄金国以及4个贵金属资源（金或者银）</Chinese><French>Have 3750 gold in 1550 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INC2_MARATHON</Tag>
-		<English>公元1550年有7500金币</English>
-		<L1/><L2/><L3/><L4/><Chinese>公元1550年有7500金币</Chinese><French>Have 7500 gold in 1550 AD</French></TEXT>
+		<English>控制马丘比丘、黄金国以及4个贵金属资源（金或者银）</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制马丘比丘、黄金国以及4个贵金属资源（金或者银）</Chinese><French>Have 7500 gold in 1550 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INC3_TITLE</Tag>
-		<English>印加八地</English>
-		<L1/><L2/><L3/><L4/><Chinese>印加八地</Chinese><French>Eight Incan Regions</French></TEXT>
+		<English>印加帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>印加帝国</Chinese><French>Eight Incan Regions</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INC3</Tag>
-		<English>公元1700年不允许外国城市进入南美</English>
-		<L1/><L2/><L3/><L4/><Chinese>公元1700年不允许外国城市进入南美</Chinese><French>Allow no foreign cities in South America in 1700 AD</French></TEXT>
+		<English>公元1700年前殖民复活节岛、布宜诺斯艾利斯，并在亚马逊丛林建立3个城市据点</English>
+		<L1/><L2/><L3/><L4/><Chinese>公元1700年前殖民复活节岛、布宜诺斯艾利斯，并在亚马逊丛林建立3个城市据点</Chinese><French>Allow no foreign cities in South America in 1700 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_IND1_TITLE</Tag>
 		<English>达摩宗教</English>
@@ -2641,4 +2641,24 @@
 		<Tag>TXT_KEY_VICTORY_COMMUNISM</Tag>
 		<English>共产主义</English>
 		<L1/><L2/><L3/><L4/><Chinese>共产主义</Chinese><French>Communism</French></TEXT>
+		
+<civ4notuse>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_INC2_OLD</Tag>
+		<English>公元1550年拥有2500金币</English>
+		<L1/><L2/><L3/><L4/><Chinese>公元1550年拥有2500金币</Chinese><French>Have 2500 gold in 1550 AD</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_INC2_EPIC_OLD</Tag>
+		<English>公元1550年拥有3750金币</English>
+		<L1/><L2/><L3/><L4/><Chinese>公元1550年拥有3750金币</Chinese><French>Have 3750 gold in 1550 AD</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_INC2_MARATHON_OLD</Tag>
+		<English>公元1550年有7500金币</English>
+		<L1/><L2/><L3/><L4/><Chinese>公元1550年有7500金币</Chinese><French>Have 7500 gold in 1550 AD</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_INC3_NOTUSE</Tag>
+		<English>公元1700年不允许外国城市进入南美</English>
+		<L1/><L2/><L3/><L4/><Chinese>公元1700年不允许外国城市进入南美</Chinese><French>Allow no foreign cities in South America in 1700 AD</French></TEXT>
+</civ4notuse>	
 </Civ4GameText>
+
