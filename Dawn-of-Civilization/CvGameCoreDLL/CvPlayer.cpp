@@ -1480,12 +1480,6 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 	int iCaptureMaxTurns = GC.getDefineINT("CAPTURE_GOLD_MAX_TURNS");
 
 	pCityPlot = pOldCity->plot();
-	// 没有判空保护，显然此处的逻辑必须要执行下去的
-	// wunshare
-	FAssert(NULL != pCityPlot);
-	if (NULL == pCityPlot) {
-		return; // 上层逻辑出现错误，需跟踪调用栈
-	}
 
 	pUnitNode = pCityPlot->headUnitNode();
 
@@ -3980,11 +3974,10 @@ int CvPlayer::countUnimprovedBonuses(CvArea* pArea, CvPlot* pFromPlot) const
 					if (eNonObsoleteBonus != NO_BONUS)
 					{
 						eImprovement = pLoopPlot->getImprovementType();
-						// 显然此处是笔误，居然还用了这么多年
-						// wunshare
-						if ((eImprovement != NO_IMPROVEMENT) || !(GC.getImprovementInfo(eImprovement).isImprovementBonusTrade(eNonObsoleteBonus)))
+
+						if ((eImprovement == NO_IMPROVEMENT) || !(GC.getImprovementInfo(eImprovement).isImprovementBonusTrade(eNonObsoleteBonus)))
 						{
-							if ((pFromPlot != NULL) || gDLL->getFAStarIFace()->GeneratePath(&GC.getBorderFinder(), pFromPlot->getX_INLINE(), pFromPlot->getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), false, getID(), true))
+							if ((pFromPlot == NULL) || gDLL->getFAStarIFace()->GeneratePath(&GC.getBorderFinder(), pFromPlot->getX_INLINE(), pFromPlot->getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), false, getID(), true))
 							{
 								for (iJ = 0; iJ < GC.getNumBuildInfos(); iJ++)
 								{
@@ -4566,21 +4559,15 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 		{
 			CvCity* pCityTraded = getCity(item.m_iData);
 
-			// wunshare
-			// 没有判空保护
-			if (pCityTraded == NULL) {
-				return false;
-			}
-			if (NULL != pCityTraded && pCityTraded->isOccupation())
-			{
-				return false;
-			}
-			// 没有判空保护
-			if (NULL != pCityTraded && !pCityTraded->isRevealed(GET_PLAYER(eWhoTo).getTeam(), false))
+			if (pCityTraded->isOccupation())
 			{
 				return false;
 			}
 
+			if (!pCityTraded->isRevealed(GET_PLAYER(eWhoTo).getTeam(), false))
+			{
+				return false;
+			}
 
 			if (NULL != pCityTraded && pCityTraded->getLiberationPlayer(false) == eWhoTo)
 			{
@@ -9062,13 +9049,6 @@ void CvPlayer::killGoldenAgeUnits(CvUnit* pUnitAlive)
 
 	iUnitsRequired = unitsRequiredForGoldenAge();
 
-	// wunshare
-	// 显然此处pUnitALive不能为空，下面的逻辑要调用
-	FAssert(pUnitAlive != NULL);
-	// 如果为NULL，则需要往上查看调用栈
-	if (pUnitAlive == NULL) {
-		return;
-	}
 	if (pUnitAlive != NULL)
 	{
 		//pabUnitUsed[pUnitAlive->getUnitType()] = true;
@@ -16442,22 +16422,19 @@ bool CvPlayer::doEspionageMission(EspionageMissionTypes eMission, PlayerTypes eT
 
 	if (kMission.getDestroyUnitCostFactor() > 0)
 	{
-		// 显然别处有保护，这里没有判空保护
-		// wunshare
-		if (NULL != pPlot) {
-			if (pSpyUnit->canAssassin(pPlot, false))
+
+		if (pSpyUnit->canAssassin(pPlot, false))
+		{
+			SpecialistTypes theGreatSpecialistTarget = (SpecialistTypes)iExtraData;
+			if (theGreatSpecialistTarget >= SPECIALIST_GREAT_PRIEST)
 			{
-				SpecialistTypes theGreatSpecialistTarget = (SpecialistTypes)iExtraData;
-				if (theGreatSpecialistTarget >= SPECIALIST_GREAT_PRIEST)
+				//Assassinate
+				CvCity* pCity = pPlot->getPlotCity();
+				if (NULL != pCity)
 				{
-					//Assassinate
-					CvCity* pCity = pPlot->getPlotCity();
-					if (NULL != pCity)
-					{
-						pCity->changeFreeSpecialistCount(theGreatSpecialistTarget, -1);
-						szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_ASSASSINATED", GC.getSpecialistInfo(theGreatSpecialistTarget).getDescription(), pCity->getNameKey()).GetCString();
-						bSomethingHappened = true;
-					}
+					pCity->changeFreeSpecialistCount(theGreatSpecialistTarget, -1);
+					szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_ASSASSINATED", GC.getSpecialistInfo(theGreatSpecialistTarget).getDescription(), pCity->getNameKey()).GetCString();
+					bSomethingHappened = true;
 				}
 			}
 		}
@@ -16491,52 +16468,48 @@ bool CvPlayer::doEspionageMission(EspionageMissionTypes eMission, PlayerTypes eT
 
 	if (kMission.getBuyUnitCostFactor() > 0)
 	{
-		// 显然别处有保护，这里没有判空保护
-		// wunshare
-		if (NULL != pPlot) {
-			if (pSpyUnit->canBribe(pPlot, false))
+		if(pSpyUnit->canBribe(pPlot, false))
+		{
+			CvUnit* pTargetUnit;
+			if (pPlot->plotCheck(PUF_isOtherTeam, getID(), -1, NO_PLAYER, NO_TEAM, PUF_isVisible, getID()))
 			{
-				CvUnit* pTargetUnit;
-				if (pPlot->plotCheck(PUF_isOtherTeam, getID(), -1, NO_PLAYER, NO_TEAM, PUF_isVisible, getID()))
+				for (int i = 0; i < pPlot->getNumUnits(); i++) 
 				{
-					for (int i = 0; i < pPlot->getNumUnits(); i++)
+					pTargetUnit = pPlot->getUnitByIndex(i);
+					if (NULL != pTargetUnit && pTargetUnit->AI_getUnitAIType() == UNITAI_WORKER) 
 					{
-						pTargetUnit = pPlot->getUnitByIndex(i);
-						if (NULL != pTargetUnit && pTargetUnit->AI_getUnitAIType() == UNITAI_WORKER)
-						{
-							if (pTargetUnit->getTeam() == eTargetTeam) break;
-							pTargetUnit = NULL;
-						}
+						if (pTargetUnit->getTeam() == eTargetTeam) break;
+						pTargetUnit = NULL;
 					}
 				}
-
-				if (NO_PLAYER != eTargetPlayer)
+			}
+								
+			if (NO_PLAYER != eTargetPlayer)
+			{
+				if (NULL != pTargetUnit)
 				{
-					if (NULL != pTargetUnit)
+					if (pTargetUnit->getTeam() == eTargetTeam)
 					{
-						if (pTargetUnit->getTeam() == eTargetTeam)
-						{
-							FAssert(pTargetUnit->plot() == pPlot);
-							CvCity* pNearCity = GC.getMapINLINE().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), eTargetPlayer, GET_PLAYER(eTargetPlayer).getTeam(), true, false);
-							if (pNearCity != NULL)
-								szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_BRIBED_NEAR_CITY", pTargetUnit->getNameKey(), pNearCity->getNameKey()).GetCString();
-							else
-								szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_BRIBED", pTargetUnit->getNameKey()).GetCString();
+						FAssert(pTargetUnit->plot() == pPlot);
+						CvCity* pNearCity = GC.getMapINLINE().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), eTargetPlayer, GET_PLAYER(eTargetPlayer).getTeam(), true, false);
+						if (pNearCity != NULL)
+							szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_BRIBED_NEAR_CITY", pTargetUnit->getNameKey(), pNearCity->getNameKey()).GetCString();
+						else
+							szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_BRIBED", pTargetUnit->getNameKey()).GetCString();
 
-							int iX = pTargetUnit->getX_INLINE();
-							int iY = pTargetUnit->getY_INLINE();
-							pTargetUnit->kill(false, getID());
-							CvUnit* acquiredWorker = initUnit(pTargetUnit->getUnitType(), iX, iY, UNITAI_WORKER);
-							CvCity* pCapital = this->getCapitalCity();
-							if (NULL != pCapital)
-							{
-								iX = pCapital->getX_INLINE();
-								iY = pCapital->getY_INLINE();
-								acquiredWorker->setXY(iX, iY, false, false, false);
-								acquiredWorker->finishMoves();
-							}
-							bSomethingHappened = true;
-						}
+						int iX = pTargetUnit->getX_INLINE();
+						int iY = pTargetUnit->getY_INLINE();
+						pTargetUnit->kill(false, getID());
+						CvUnit* acquiredWorker = initUnit(pTargetUnit->getUnitType(), iX, iY, UNITAI_WORKER);
+						CvCity* pCapital = this->getCapitalCity();
+						if (NULL != pCapital)
+						{
+							iX = pCapital->getX_INLINE();
+							iY = pCapital->getY_INLINE();
+							acquiredWorker->setXY(iX, iY, false, false, false);
+							acquiredWorker->finishMoves();
+						}	
+						bSomethingHappened = true;
 					}
 				}
 			}

@@ -6522,14 +6522,15 @@ int CvUnit::getHurryProduction(const CvPlot* pPlot) const
 	}
 
 	iProduction = getMaxHurryProduction(pCity);
-	
+
+
 	/*
 		CvString log_CvString;
 		int playerid = (int)GC.getGameINLINE().getActivePlayer();
 		log_CvString = log_CvString.format("当前建筑为 %d ", (int)eBuilding);
 		GC.logs(log_CvString, (CvString)"TEST.log");
 	*/
-	
+
 
 	if (GC.getDefineINT("CVUNIT_GREAT_ENGINEER_ACCELERATE_USE_MODIFIER") > 0) {
 		//加速锤子数和修正系数有关
@@ -6539,7 +6540,7 @@ int CvUnit::getHurryProduction(const CvPlot* pPlot) const
 		//这里需要做判断 如果城市处于反抗状态，返回的值是-1，会报错
 		if (eBuilding == NULL || eBuilding == NO_BUILDING || (int)eBuilding == -1) {
 		}
-		else{
+		else {
 
 			iProductionModifier = pCity->getProductionModifier(eBuilding);
 			iProduction = iProduction * (1 + iProductionModifier / 100);

@@ -6563,14 +6563,10 @@ void CvGame::doGlobalWarming()
 		if (getSorenRandNum(100, "Nuclear Fallout") + iGlobalWarmingDefense < GC.getDefineINT("NUCLEAR_WINTER_PROB"))
 		{
 			CvPlot* pPlot = GC.getMapINLINE().syncRandPlot(RANDPLOT_LAND | RANDPLOT_NOT_CITY);
-			
+			FeatureTypes eFeature = pPlot->getFeatureType();
 
 			if (pPlot != NULL)
 			{
-				//wunshare
-
-				//·Ç¿Õ±£»¤
-				FeatureTypes eFeature = pPlot->getFeatureType();
 				bool bChanged = false;
 				if (pPlot->getFeatureType() != NO_FEATURE)
 				{

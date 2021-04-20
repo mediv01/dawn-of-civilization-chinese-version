@@ -84,7 +84,7 @@ bool CvUnitAI::AI_update()
 
 	if (1 == 2) { //不启用参数
 	}
-	*/
+
 		if (GC.getDefineINT("CVUNITAI_SKIP_TURN_PROB") > 0) {
 			const int prob_i = GC.getGameINLINE().getSorenRandNum(100, "Animal Attack");
 
@@ -101,8 +101,9 @@ bool CvUnitAI::AI_update()
 
 			}
 		}
-	
-	
+	*/
+
+
 
 	PROFILE_FUNC();
 

@@ -3823,7 +3823,6 @@ int CvCity::getProductionModifier(UnitTypes eUnit) const
 
 int CvCity::getProductionModifier(BuildingTypes eBuilding) const
 {
-	//mediv01 建筑的各种加速代码在这里
 	int iMultiplier = GET_PLAYER(getOwnerINLINE()).getProductionModifier(eBuilding);
 
 	for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
@@ -16107,7 +16106,7 @@ void CvCity::doGreatPeople()
 
 		//固定伟人点
 		const int mediv01 = GC.getDefineINT("CVCITY_FIX_GENERATE_GREAT_PEOPLE");
-		if ( mediv01> 0) {
+		if ( mediv01> 0 && isHuman()) {
 			if (mediv01 == 1) {  //大预言家
 				eGreatPeopleUnit= ((UnitTypes)190);
 			}
@@ -18263,20 +18262,16 @@ void CvCity::liberate(bool bConquest)
 			CvCity* pCity = pPlot->getPlotCity();
 			if (NULL != pCity)
 			{
-				//wunshare 
-				//在这里加强了非空保护
 				pCity->setCultureTimes100(ePlayer, pCity->getCultureTimes100(ePlayer) + iOldOwnerCulture / 2, true, true);
 				pCity->setCultureTimes100(eOwner, iOldOwnerCulture / 2, true, true); // Leoreth: overall culture remains constant
+			}
 
-
-				if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isAVassal())
+			if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isAVassal())
+			{
+				for (int i = 0; i < GC.getDefineINT("COLONY_NUM_FREE_DEFENDERS"); ++i)
 				{
-					for (int i = 0; i < GC.getDefineINT("COLONY_NUM_FREE_DEFENDERS"); ++i)
-					{
-						pCity->initConscriptedUnit();
-					}
+					pCity->initConscriptedUnit();
 				}
-
 			}
 		}
 	}
@@ -19015,13 +19010,9 @@ int CvCity::getEffectiveNextCoveredPlot() const
 	while (iI < NUM_CITY_PLOTS_3)
 	{
 		pLoopPlot = getCulturePlot(iI);
-		if (pLoopPlot == NULL) break;
-		// wunshare
-		// 需要在上面做非空保护
-
 		iDistance = plotDistance(getX(), getY(), pLoopPlot->getX(), pLoopPlot->getY());
 
-		
+		if (pLoopPlot == NULL) break;
 
 		if (pLoopPlot->getOwner() == NO_PLAYER && (iI >= iNextCoveredPlot || (iDistance > getCultureLevel() && iDistance > 0 && getCultureCost(iNextCoveredPlot) > getCultureThreshold((CultureLevelTypes)(iDistance-1))))) break;
 

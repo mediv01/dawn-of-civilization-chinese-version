@@ -2740,11 +2740,6 @@ void CvGlobals::cacheGlobals()
 /************************************************************************************************/
 }
 
-int CvGlobals::rand_int(int max, int min) const {
-	srand((unsigned)time(NULL));
-	return (rand() % (max - min + 1)) + min; //[min, max]
-}
-
 const char* logs_gettime() {
 	
 	const int BUFLEN = 255;
