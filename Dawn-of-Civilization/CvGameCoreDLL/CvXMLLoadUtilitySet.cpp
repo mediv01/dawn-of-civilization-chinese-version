@@ -29,12 +29,6 @@ bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObje
 			return false;
 		}
 
-		// Leoreth: force logging and Python exceptions
-		if (GC.getDefineINT("CVGAMECORE_ENABLE_ERROR_LOG") == 1){  //mediv01 ÔÊÐíÏÔÊ¾PYTHON´íÎó
-			gDLL->ChangeINIKeyValue("CONFIG", "HidePythonExceptions", "0");
-			gDLL->ChangeINIKeyValue("CONFIG", "LoggingEnabled", "1");
-		}
-
 		// load the new FXml variable with the szXMLFileName file
 		bLoaded = LoadCivXml(m_pFXml, szXMLFileName);
 		if (!bLoaded)

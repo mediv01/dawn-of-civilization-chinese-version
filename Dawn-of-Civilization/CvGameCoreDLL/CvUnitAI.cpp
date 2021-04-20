@@ -72,39 +72,6 @@ void CvUnitAI::AI_reset(UnitAITypes eUnitAI)
 // AI_update returns true when we should abort the loop and wait until next slice
 bool CvUnitAI::AI_update()
 {
-	//AI总入口
-	CvString log_CvString;
-	//LOG开始
-	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
-		log_CvString = log_CvString.format("UnitAI_AI_update开始，当前玩家为 %d ", (int)getID());
-		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
-	}
-	//LOG结束
-	/*
-
-	if (1 == 2) { //不启用参数
-	}
-
-		if (GC.getDefineINT("CVUNITAI_SKIP_TURN_PROB") > 0) {
-			const int prob_i = GC.getGameINLINE().getSorenRandNum(100, "Animal Attack");
-
-
-			if (prob_i <= GC.getDefineINT("CVUNITAI_SKIP_TURN_PROB")) {
-				//只有PROB=100才生效，也就是AI完全不动。很奇怪，建议在XML里不要启用该参数
-				//log_CvString = log_CvString.format("UnitAI_AI_update开始，当前玩家为 %d  概率为%d 【跳过】", (int)getID(), prob_i);
-				//GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
-				return false;
-			}
-			else {
-				//log_CvString = log_CvString.format("UnitAI_AI_update开始，当前玩家为 %d  概率为%d 【不跳过】", (int)getID(), prob_i);
-				//GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
-
-			}
-		}
-	*/
-
-
-
 	PROFILE_FUNC();
 
 	CvUnit* pTransportUnit;
@@ -445,12 +412,7 @@ bool CvUnitAI::AI_update()
 			break;
 		}
 	}
-	//LOG开始
-	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
-		log_CvString = log_CvString.format("UnitAI_AI_update结束，当前玩家为 %d ", (int)getID());
-		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
-	}
-	//LOG结束
+
 	return false;
 }
 

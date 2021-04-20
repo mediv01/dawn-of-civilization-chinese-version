@@ -324,15 +324,6 @@ void CvPlayerAI::AI_doTurnPre()
 	FAssertMsg(getPersonalityType() != NO_LEADER, "getPersonalityType() is not expected to be equal with NO_LEADER");
 	FAssertMsg(getLeaderType() != NO_LEADER, "getLeaderType() is not expected to be equal with NO_LEADER");
 	FAssertMsg(getCivilizationType() != NO_CIVILIZATION, "getCivilizationType() is not expected to be equal with NO_CIVILIZATION");
-	CvString log_CvString;
-
-
-	//LOG开始
-	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
-		log_CvString = log_CvString.format("PlayerAI_AI_doTurnPre开始，当前玩家为 %d ", (int)getID());
-		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
-	}
-	//LOG结束
 
 	AI_invalidateCloseBordersAttitudeCache();
 
@@ -383,25 +374,13 @@ void CvPlayerAI::AI_doTurnPre()
 	{
 		return;
 	}
-	//LOG开始
-	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
-		log_CvString = log_CvString.format("PlayerAI_AI_doTurnPre结束，当前玩家为 %d ", (int)getID());
-		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
-	}
-	//LOG结束
 }
 
 
 void CvPlayerAI::AI_doTurnPost()
 {
 	PROFILE_FUNC();
-	CvString log_CvString;
-	//LOG开始
-	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
-		log_CvString = log_CvString.format("PlayerAI_AI_doTurnPost开始，当前玩家为 %d ", (int)getID());
-		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
-	}
-	//LOG结束
+
 	if (isHuman())
 	{
 		return;
@@ -425,10 +404,6 @@ void CvPlayerAI::AI_doTurnPost()
 	for (int i = 0; i < GC.getNumVictoryInfos(); ++i)
 	{
 		AI_launch((VictoryTypes)i);
-	}
-	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
-		log_CvString = log_CvString.format("PlayerAI_AI_doTurnPost结束，当前玩家为 %d ", (int)getID());
-		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
 	}
 }
 
@@ -7878,9 +7853,7 @@ DenialTypes CvPlayerAI::AI_bonusTrade(BonusTypes eBonus, PlayerTypes ePlayer) co
 	int iI, iJ;
 
 	if (GC.getDefineINT("CVPLAYERAI_CAN_ALWAYS_TRADE_RESOURCE") == 1) {//mediv01 
-		if (GET_PLAYER(ePlayer).isHuman()) {
-			return NO_DENIAL;
-		}
+		return NO_DENIAL;
 	}
 	FAssertMsg(ePlayer != getID(), "shouldn't call this function on ourselves");
 
@@ -8068,12 +8041,7 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 
 	FAssert(pCity->getOwnerINLINE() == getID());
 	if (GC.getDefineINT("CVPLAYERAI_CAN_ALWAYS_TRADE_CITY") == 1) {//mediv01 
-		if (GET_PLAYER(ePlayer).isHuman()) {
-			//这里需要加上对手是人类方，否则会出现闪退
-
-
-			return NO_DENIAL;
-		}
+		return NO_DENIAL;
 	}
 	//Rhye - start
 	if (isHuman() && GET_PLAYER(ePlayer).getNumCities() == 0)

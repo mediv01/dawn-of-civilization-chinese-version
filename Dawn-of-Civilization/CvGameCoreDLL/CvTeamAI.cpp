@@ -152,17 +152,6 @@ void CvTeamAI::AI_reset(bool bConstructor)
 
 void CvTeamAI::AI_doTurnPre()
 {
-
-	CvString log_CvString;
-
-
-	//LOG开始
-	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
-		log_CvString = log_CvString.format("CvTeamAI::AI_doTurnPre()开始，当前玩家为 %d ", (int)getID());
-		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
-	}
-	//LOG结束
-
 	AI_doCounter();
 
 	// Sanguo Mod Performance, start, added by poyuzhe 7.31.09
@@ -183,26 +172,11 @@ void CvTeamAI::AI_doTurnPre()
 	{
 		return;
 	}
-	//LOG开始
-	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
-		log_CvString = log_CvString.format("CvTeamAI::AI_doTurnPre()结束，当前玩家为 %d ", (int)getID());
-		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
-	}
-	//LOG结束
 }
 
 
 void CvTeamAI::AI_doTurnPost()
 {
-	CvString log_CvString;
-
-
-	//LOG开始
-	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
-		log_CvString = log_CvString.format("CvTeamAI::AI_doTurnPost()开始，当前玩家为 %d ", (int)getID());
-		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
-	}
-	//LOG结束
 	AI_updateWorstEnemy();
 
 	AI_updateAreaStragies(false);
@@ -223,12 +197,6 @@ void CvTeamAI::AI_doTurnPost()
 	}
 
 	AI_doWar();
-	//LOG开始
-	if (GC.getDefineINT("CVPLAYERAI_DEBUG_AIDOTURN_TIME_COST") == 1) {
-		log_CvString = log_CvString.format("CvTeamAI::AI_doTurnPost()结束，当前玩家为 %d ", (int)getID());
-		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
-	}
-	//LOG结束
 }
 
 
@@ -1427,7 +1395,7 @@ DenialTypes CvTeamAI::AI_techTrade(TechTypes eTech, TeamTypes eTeam, bool bIgnor
 
 	FAssertMsg(eTeam != getID(), "shouldn't call this function on ourselves");
 	
-	if (GC.getDefineINT("CVPLAYERAI_CAN_ALWAYS_TRADE_TECH") == 1 && GET_TEAM(eTeam).isHuman()) {
+	if (GC.getDefineINT("CVPLAYERAI_CAN_ALWAYS_TRADE_TECH") == 1) {
 		return NO_DENIAL;
 	}
 	//Rhye
@@ -1690,16 +1658,6 @@ DenialTypes CvTeamAI::AI_mapTrade(TeamTypes eTeam) const
 
 	FAssertMsg(eTeam != getID(), "shouldn't call this function on ourselves");
 
-	//mediv01 AI相互不交易地图
-	if (GC.getDefineINT("CVPLAYERAI_AI_DONNOT_TRADE_MAP_EACH_OTHER") == 1) {
-		if (GET_TEAM(eTeam).isHuman()|| isHuman()) {
-			 
-		}
-		else {
-			return DENIAL_WORST_ENEMY;
-		}
-		
-	}
 	if (isHuman())
 	{
 		return NO_DENIAL;
@@ -2425,12 +2383,8 @@ int CvTeamAI::AI_declareWarTradeVal(TeamTypes eWarTeam, TeamTypes eTeam) const
 
 	iValue -= (iValue % GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
 
-
 	if (isHuman())
 	{
-		if (GC.getDefineINT("CVTEAMAI_WARTRADEVAL_MULTIPLIERTIMES10000") > 0) {
-			return iValue * GC.getDefineINT("CVTEAMAI_WARTRADEVAL_MULTIPLIERTIMES10000") / 10000;
-		}
 		return std::max(iValue, GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
 	}
 	else
@@ -2454,11 +2408,6 @@ DenialTypes CvTeamAI::AI_declareWarTrade(TeamTypes eWarTeam, TeamTypes eTeam, bo
 	FAssertMsg(GET_TEAM(eWarTeam).isAlive(), "GET_TEAM(eWarTeam).isAlive is expected to be true");
 	FAssertMsg(!isAtWar(eWarTeam), "should be at peace with eWarTeam");
 
-	if (GC.getDefineINT("CVTEAMAI_CAN_ALWAYS_TRADE_WAR_WITH_HUMAN") == 1) {
-		if (GET_TEAM(eTeam).isHuman()) {
-			return NO_DENIAL;
-		}
-	}
 	if (GET_TEAM(eWarTeam).isVassal(eTeam) || GET_TEAM(eWarTeam).isDefensivePact(eTeam))
 	{
 		return DENIAL_JOKING;
@@ -2603,18 +2552,13 @@ DenialTypes CvTeamAI::AI_openBordersTrade(TeamTypes eTeam) const
 	eAttitude = AI_getAttitude(eTeam);
 	if (GC.getDefineINT("PLAYER_TEAMAI_OPEN_BORDER_ATTITUDE_BONUS") != 0) { //开边态度福利
 		int AttitudeBonus = GC.getDefineINT("PLAYER_TEAMAI_OPEN_BORDER_ATTITUDE_BONUS");
-		if (GET_TEAM(eTeam).isHuman()) {
-			if (AttitudeBonus >= 5) {
-				AttitudeBonus = 5;
-			}
-			if (AttitudeBonus <= -5) {
-				AttitudeBonus = -5;
-			}
-		}
-		else {
-			AttitudeBonus = 0;
-		}
 
+		if (AttitudeBonus >= 5) {
+			AttitudeBonus = 5;
+		}
+		if (AttitudeBonus <= -5) {
+			AttitudeBonus = -5;
+		}
 		eAttitude = (AttitudeTypes)((int)eAttitude + AttitudeBonus);
 	}
 	

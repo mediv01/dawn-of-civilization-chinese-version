@@ -1138,10 +1138,6 @@ bool CvTeam::canDeclareWar(TeamTypes eTeam) const
 	{
 		return false;
 	}
-	//	TO-DO 人类附庸不能擅自发动战争
-	//if (isVassal(eTeam)) {
-
-	//}
 
 	for (int i = 0; i < MAX_TEAMS; ++i)
 	{
@@ -5134,13 +5130,7 @@ int CvTeam::getObsoleteBuildingCount(BuildingTypes eIndex) const
 
 bool CvTeam::isObsoleteBuilding(BuildingTypes eIndex) const				
 {
-	//这行代码有BUG，加了之后运行时间会增加一倍时间
-	/*
-	if (GC.getDefineINT("CVCITY_CAN_BUILD_OBSOLUTE_BUILDING") > 0) {
-		
-		return false;
-	}
-	*/
+
 	return (getObsoleteBuildingCount(eIndex) > 0);
 }
 
