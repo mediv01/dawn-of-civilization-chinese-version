@@ -11699,19 +11699,24 @@ int CvPlayerAI::AI_espionageVal(PlayerTypes eTargetPlayer, EspionageMissionTypes
 		steal tech (180-17080)
 		*/
 		SpecialistTypes theGreatSpecialistTarget = (SpecialistTypes)0;
+		// wunshare
+		// ·Ç¿Õ±£»¤
+		if (pPlot != NULL) {
 
-		CvCity* pCity = pPlot->getPlotCity();
-		if (NULL != pCity)
-		{
-			for (int iSpecialist = SPECIALIST_GREAT_PRIEST; iSpecialist <= SPECIALIST_GREAT_SPY; iSpecialist++)
+			CvCity* pCity = pPlot->getPlotCity();
+
+			if (NULL != pCity)
 			{
-				SpecialistTypes tempSpecialist = (SpecialistTypes)0;
-				if (pCity->getFreeSpecialistCount((SpecialistTypes)iSpecialist) > 0)
+				for (int iSpecialist = SPECIALIST_GREAT_PRIEST; iSpecialist <= SPECIALIST_GREAT_SPY; iSpecialist++)
 				{
-					tempSpecialist = (SpecialistTypes)iSpecialist;
-					if (tempSpecialist > theGreatSpecialistTarget)
+					SpecialistTypes tempSpecialist = (SpecialistTypes)0;
+					if (pCity->getFreeSpecialistCount((SpecialistTypes)iSpecialist) > 0)
 					{
-						theGreatSpecialistTarget = tempSpecialist;
+						tempSpecialist = (SpecialistTypes)iSpecialist;
+						if (tempSpecialist > theGreatSpecialistTarget)
+						{
+							theGreatSpecialistTarget = tempSpecialist;
+						}
 					}
 				}
 			}

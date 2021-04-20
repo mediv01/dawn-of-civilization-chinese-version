@@ -5552,9 +5552,19 @@ int CvCityAI::AI_clearFeatureValue(int iIndex)
 {
 	CvPlot* pPlot = plotCity(getX_INLINE(), getY_INLINE(), iIndex);
 	FAssert(pPlot != NULL);
+	if (NULL == pPlot) {
+		return 0;
+	}
+	//wunshare
+	//非空保护
 
 	FeatureTypes eFeature = pPlot->getFeatureType();
 	FAssert(eFeature != NO_FEATURE);
+	if (NO_FEATURE == eFeature) {
+		return 0;
+	}
+	// wunshare
+	//非空保护
 
 	CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(eFeature);
 

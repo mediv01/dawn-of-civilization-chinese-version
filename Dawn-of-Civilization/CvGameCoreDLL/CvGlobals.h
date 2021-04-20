@@ -690,6 +690,7 @@ public:
 	DllExport void cacheGlobals();
 
 	// ***** EXPOSED TO PYTHON *****
+	int CvGlobals::rand_int(int max, int min) const;
 	DllExport void logs(CvWString& buf, CvString filename) const;
 	DllExport void logs(CvString buf, CvString filename) const;
 	DllExport void logs(wchar* buf, CvString filename) const;

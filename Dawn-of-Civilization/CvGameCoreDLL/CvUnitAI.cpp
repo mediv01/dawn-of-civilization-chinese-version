@@ -80,7 +80,29 @@ bool CvUnitAI::AI_update()
 		GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
 	}
 	//LOG结束
+	/*
 
+	if (1 == 2) { //不启用参数
+	}
+	*/
+		if (GC.getDefineINT("CVUNITAI_SKIP_TURN_PROB") > 0) {
+			const int prob_i = GC.getGameINLINE().getSorenRandNum(100, "Animal Attack");
+
+
+			if (prob_i <= GC.getDefineINT("CVUNITAI_SKIP_TURN_PROB")) {
+				//只有PROB=100才生效，也就是AI完全不动。很奇怪，建议在XML里不要启用该参数
+				//log_CvString = log_CvString.format("UnitAI_AI_update开始，当前玩家为 %d  概率为%d 【跳过】", (int)getID(), prob_i);
+				//GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
+				return false;
+			}
+			else {
+				//log_CvString = log_CvString.format("UnitAI_AI_update开始，当前玩家为 %d  概率为%d 【不跳过】", (int)getID(), prob_i);
+				//GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_AIDoturn.log");
+
+			}
+		}
+	
+	
 
 	PROFILE_FUNC();
 
