@@ -2827,7 +2827,13 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 								if (NULL != pcKey && pSelectedUnit->getHurryProduction(pMissionPlot) >= pMissionCity->productionLeft())
 								{
 									szBuffer.append(NEWLINE);
-									szBuffer.append(gDLL->getText("TXT_KEY_ACTION_FINISH_CONSTRUCTION", pcKey));
+									if (1 == 1) {
+										szBuffer.append(gDLL->getText("TXT_KEY_ACTION_EXTRA_CONSTRUCTION", pSelectedUnit->getHurryProduction(pMissionPlot), pcKey));
+									}
+									else {
+										szBuffer.append(gDLL->getText("TXT_KEY_ACTION_FINISH_CONSTRUCTION", pcKey));
+									}
+								
 								}
 								else
 								{
@@ -4233,6 +4239,20 @@ void CvDLLWidgetData::parseTradeItem(CvWidgetDataStruct &widgetDataStruct, CvWSt
 			//int iOurValue = GET_PLAYER(eWhoTo).AI_dealVal(eWhoFrom, &pOurList, false, -1) / GET_PLAYER(eWhoTo).AI_goldTradeValuePercent(eWhoFrom) * 100;
 			int iOurValue = GET_PLAYER(eWhoTo).AI_dealVal(eWhoFrom, &pOurList, false, -1) / GET_PLAYER(eWhoFrom).AI_goldTradeValuePercent(eWhoTo) * 100;
 			szTempBuffer.Format(SETCOLR L"交易价值：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), iOurValue);
+			szBuffer.append(NEWLINE);
+			szBuffer.append(szTempBuffer);
+		}
+
+		if (GC.getDefineINT("CVGAMETEXT_TRADE_SHOW_ASK_VALUE") == 1) { //mediv01 显示勒索交易价值
+			//CLinkList<TradeData> pOurList;
+
+			//pOurList.insertAtEnd(item);
+
+			//int iOurValue = GET_PLAYER(eWhoTo).AI_dealVal(eWhoFrom, &pOurList, false, -1) / GET_PLAYER(eWhoFrom).AI_goldTradeValuePercent(eWhoTo) * 100;
+			int iOurValue = GET_PLAYER(eWhoTo).AI_considerOffer_Threshold(eWhoTo, eWhoFrom);
+			int iOurValue2 = GET_PLAYER(eWhoFrom).AI_considerOffer_Threshold(eWhoFrom, eWhoTo);
+			int iOurValue_f = std::max(iOurValue, iOurValue2);
+			szTempBuffer.Format(SETCOLR L"可勒索价值：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), iOurValue_f);
 			szBuffer.append(NEWLINE);
 			szBuffer.append(szTempBuffer);
 		}

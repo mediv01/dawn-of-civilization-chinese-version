@@ -29,12 +29,18 @@ bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObje
 			return false;
 		}
 
+		// Leoreth: force logging and Python exceptions
+		if (GC.getDefineINT("CVGAMECORE_ENABLE_ERROR_LOG") == 1) {  //mediv01 ÔÊÐíÏÔÊ¾PYTHON´íÎó
+			gDLL->ChangeINIKeyValue("CONFIG", "HidePythonExceptions", "0");
+			gDLL->ChangeINIKeyValue("CONFIG", "LoggingEnabled", "1");
+		}
+
 		// load the new FXml variable with the szXMLFileName file
 		bLoaded = LoadCivXml(m_pFXml, szXMLFileName);
 		if (!bLoaded)
 		{
 			char	szMessage[1024];
-			sprintf( szMessage, "LoadXML call failed for %s \n Current XML file is: %s", szXMLFileName, GC.getCurrentXMLFile().GetCString());
+			sprintf(szMessage, "LoadXML call failed for %s \n Current XML file is: %s", szXMLFileName, GC.getCurrentXMLFile().GetCString());
 			gDLL->MessageBox(szMessage, "XML Load Error");
 		}
 
@@ -42,7 +48,7 @@ bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObje
 		if (bLoaded)
 		{
 			// locate the first define tag in the xml
-			if (gDLL->getXMLIFace()->LocateNode(m_pFXml,"Civ4Defines/Define"))
+			if (gDLL->getXMLIFace()->LocateNode(m_pFXml, "Civ4Defines/Define"))
 			{
 				int i;	// loop counter
 				// get the number of other Define tags in the xml file
@@ -51,7 +57,7 @@ bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObje
 				iNumDefines++;
 
 				// loop through all the Define tags
-				for (i=0;i<iNumDefines;i++)
+				for (i = 0; i < iNumDefines; i++)
 				{
 					char szNodeType[256];	// holds the type of the current node
 					char szName[256];
@@ -70,13 +76,13 @@ bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObje
 								if (SkipToNextVal())
 								{
 									// if we successfuly get the node type for the current tag
-									if (gDLL->getXMLIFace()->GetLastLocatedNodeType(GetXML(),szNodeType))
+									if (gDLL->getXMLIFace()->GetLastLocatedNodeType(GetXML(), szNodeType))
 									{
 										// if the node type of the current tag isn't null
-										if (strcmp(szNodeType,"")!=0)
+										if (strcmp(szNodeType, "") != 0)
 										{
 											// if the node type of the current tag is a float then
-											if (strcmp(szNodeType,"float")==0)
+											if (strcmp(szNodeType, "float") == 0)
 											{
 												// get the float value for the define
 												float fVal;
@@ -84,7 +90,7 @@ bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObje
 												GC.getDefinesVarSystem()->SetValue(szName, fVal);
 											}
 											// else if the node type of the current tag is an int then
-											else if (strcmp(szNodeType,"int")==0)
+											else if (strcmp(szNodeType, "int") == 0)
 											{
 												// get the int value for the define
 												int iVal;
@@ -92,7 +98,7 @@ bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObje
 												GC.getDefinesVarSystem()->SetValue(szName, iVal);
 											}
 											// else if the node type of the current tag is a boolean then
-											else if (strcmp(szNodeType,"boolean")==0)
+											else if (strcmp(szNodeType, "boolean") == 0)
 											{
 												// get the boolean value for the define
 												bool bVal;
@@ -140,7 +146,7 @@ bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObje
 				if (!bOk)
 				{
 					char	szMessage[1024];
-					sprintf( szMessage, "Failed writing to global defines cache. \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
+					sprintf(szMessage, "Failed writing to global defines cache. \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
 					gDLL->MessageBox(szMessage, "XML Caching Error");
 				}
 				else
@@ -160,6 +166,7 @@ bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObje
 
 	return true;
 }
+
 
 //------------------------------------------------------------------------------------------------------
 //

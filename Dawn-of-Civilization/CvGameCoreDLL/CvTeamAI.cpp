@@ -1395,7 +1395,7 @@ DenialTypes CvTeamAI::AI_techTrade(TechTypes eTech, TeamTypes eTeam, bool bIgnor
 
 	FAssertMsg(eTeam != getID(), "shouldn't call this function on ourselves");
 	
-	if (GC.getDefineINT("CVPLAYERAI_CAN_ALWAYS_TRADE_TECH") == 1) {
+	if (GC.getDefineINT("CVPLAYERAI_CAN_ALWAYS_TRADE_TECH") == 1 && GET_TEAM(eTeam).isHuman()) {
 		return NO_DENIAL;
 	}
 	//Rhye
@@ -1657,6 +1657,16 @@ DenialTypes CvTeamAI::AI_mapTrade(TeamTypes eTeam) const
 	//int iI;
 
 	FAssertMsg(eTeam != getID(), "shouldn't call this function on ourselves");
+
+	if (GC.getDefineINT("CVPLAYERAI_AI_DONNOT_TRADE_MAP_EACH_OTHER") == 1) {
+		if (GET_TEAM(eTeam).isHuman() || isHuman()) {
+
+		}
+		else {
+			return DENIAL_WORST_ENEMY;
+		}
+
+	}
 
 	if (isHuman())
 	{
@@ -2383,8 +2393,12 @@ int CvTeamAI::AI_declareWarTradeVal(TeamTypes eWarTeam, TeamTypes eTeam) const
 
 	iValue -= (iValue % GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
 
+
 	if (isHuman())
 	{
+		if (GC.getDefineINT("CVTEAMAI_WARTRADEVAL_MULTIPLIERTIMES10000") > 0) {
+			return iValue * GC.getDefineINT("CVTEAMAI_WARTRADEVAL_MULTIPLIERTIMES10000") / 10000;
+		}
 		return std::max(iValue, GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
 	}
 	else
@@ -2408,6 +2422,11 @@ DenialTypes CvTeamAI::AI_declareWarTrade(TeamTypes eWarTeam, TeamTypes eTeam, bo
 	FAssertMsg(GET_TEAM(eWarTeam).isAlive(), "GET_TEAM(eWarTeam).isAlive is expected to be true");
 	FAssertMsg(!isAtWar(eWarTeam), "should be at peace with eWarTeam");
 
+	if (GC.getDefineINT("CVTEAMAI_CAN_ALWAYS_TRADE_WAR_WITH_HUMAN") == 1) {
+		if (GET_TEAM(eTeam).isHuman()) {
+			return NO_DENIAL;
+		}
+	}
 	if (GET_TEAM(eWarTeam).isVassal(eTeam) || GET_TEAM(eWarTeam).isDefensivePact(eTeam))
 	{
 		return DENIAL_JOKING;
@@ -2465,10 +2484,10 @@ DenialTypes CvTeamAI::AI_declareWarTrade(TeamTypes eWarTeam, TeamTypes eTeam, bo
 	for (std::vector<PlayerTypes>::const_iterator iter = m_aePlayerMembers.begin(); iter != m_aePlayerMembers.end(); ++iter)
 	{
 		if (eAttitude <= GC.getLeaderHeadInfo(GET_PLAYER(*iter).getPersonalityType()).getDeclareWarRefuseAttitudeThreshold())
-				{
-					return DENIAL_ATTITUDE;
-				}
-			}
+		{
+			return DENIAL_ATTITUDE;
+		}
+	}
 	// Sanguo Mod Performance, end
 
 	eAttitudeThem = AI_getAttitude(eWarTeam);
@@ -2490,10 +2509,10 @@ DenialTypes CvTeamAI::AI_declareWarTrade(TeamTypes eWarTeam, TeamTypes eTeam, bo
 	for (std::vector<PlayerTypes>::const_iterator iter = m_aePlayerMembers.begin(); iter != m_aePlayerMembers.end(); ++iter)
 	{
 		if (eAttitudeThem > GC.getLeaderHeadInfo(GET_PLAYER(*iter).getPersonalityType()).getDeclareWarThemRefuseAttitudeThreshold())
-				{
-					return DENIAL_ATTITUDE_THEM;
-				}
-			}
+		{
+			return DENIAL_ATTITUDE_THEM;
+		}
+	}
 	// Sanguo Mod Performance, end
 
 	if (!atWar(eWarTeam, eTeam))
@@ -2552,16 +2571,21 @@ DenialTypes CvTeamAI::AI_openBordersTrade(TeamTypes eTeam) const
 	eAttitude = AI_getAttitude(eTeam);
 	if (GC.getDefineINT("PLAYER_TEAMAI_OPEN_BORDER_ATTITUDE_BONUS") != 0) { //¿ª±ßÌ¬¶È¸£Àû
 		int AttitudeBonus = GC.getDefineINT("PLAYER_TEAMAI_OPEN_BORDER_ATTITUDE_BONUS");
+		if (GET_TEAM(eTeam).isHuman()) {
+			if (AttitudeBonus >= 5) {
+				AttitudeBonus = 5;
+			}
+			if (AttitudeBonus <= -5) {
+				AttitudeBonus = -5;
+			}
+		}
+		else {
+			AttitudeBonus = 0;
+		}
 
-		if (AttitudeBonus >= 5) {
-			AttitudeBonus = 5;
-		}
-		if (AttitudeBonus <= -5) {
-			AttitudeBonus = -5;
-		}
 		eAttitude = (AttitudeTypes)((int)eAttitude + AttitudeBonus);
 	}
-	
+
 	//Leoreth: Indonesian UP: AI more likely to open borders - disabled
 	//if ((int)eTeam == INDONESIA)
 	//	eAttitude = (AttitudeTypes)((int)eAttitude + 1);
@@ -2581,16 +2605,17 @@ DenialTypes CvTeamAI::AI_openBordersTrade(TeamTypes eTeam) const
 		// }
 	// }
 	for (std::vector<PlayerTypes>::const_iterator iter = m_aePlayerMembers.begin(); iter != m_aePlayerMembers.end(); ++iter)
-			{
+	{
 		if (eAttitude <= GC.getLeaderHeadInfo(GET_PLAYER(*iter).getPersonalityType()).getOpenBordersRefuseAttitudeThreshold())
-				{
-					return DENIAL_ATTITUDE;
-				}
-			}
+		{
+			return DENIAL_ATTITUDE;
+		}
+	}
 	// Sanguo Mod Performance, end
 
 	return NO_DENIAL;
 }
+
 
 
 int CvTeamAI::AI_defensivePactTradeVal(TeamTypes eTeam) const

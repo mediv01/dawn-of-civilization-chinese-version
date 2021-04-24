@@ -1337,6 +1337,7 @@ class RiseAndFall:
                 utils.convertPlotCulture(gc.getMap().plot(x, y), iCiv, 100, True)
 
             reborn = utils.getReborn(iCiv)
+            #出生翻转区入口
             tTopLeft, tBottomRight = Areas.getBirthRectangle(iCiv)
             tBroaderTopLeft, tBroaderBottomRight = Areas.tBroaderArea[iCiv]
 

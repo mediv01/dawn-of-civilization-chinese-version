@@ -278,7 +278,8 @@ def checkTurn(iGameTurn, iPlayer):
     if not gc.getPlayer(iPlayer).isAlive(): return
 
     # Don't check AI civilizations to improve speed
-    if utils.getHumanID() != iPlayer and data.bIgnoreAI: return
+    # and data.bIgnoreAI
+    if utils.getHumanID() != iPlayer: return
 
     pPlayer = gc.getPlayer(iPlayer)
     if (gc.getDefineINT("PYTHON_NO_UHV_AND_URV_CHECK") == 1):
@@ -1520,7 +1521,7 @@ def checkTurn(iGameTurn, iPlayer):
             expire(iAmerica, 2)
 
     elif iPlayer == iArgentina:
-
+        '''
         # first goal: experience two golden ages by 1930 AD
         if isPossible(iArgentina, 0):
             if data.iArgentineGoldenAgeTurns >= utils.getTurns(16):
@@ -1547,6 +1548,8 @@ def checkTurn(iGameTurn, iPlayer):
 
         if pArgentina.isGoldenAge() and not pArgentina.isAnarchy():
             data.iArgentineGoldenAgeTurns += 1
+        '''
+        pass
 
     elif iPlayer == iBrazil:
 
@@ -2741,8 +2744,8 @@ def isControlledTile(iPlayer, lPlots):
         x, y = tPlot
         plot = gc.getMap().plot(x, y)
         iOwner = plot.getOwner()
-        utils.log2(str(iOwner), "test.log")
-        if iOwner not in lOwners and iOwner < iNumPlayers:
+        #utils.log2(str(iOwner), "test.log")
+        if iOwner not in lOwners and iOwner>=0:
             lOwners.append(iOwner)
 
     return iPlayer in lOwners and len(lOwners) == 1
@@ -2756,6 +2759,30 @@ def isControlled(iPlayer, lPlots):
             lOwners.append(iOwner)
 
     return iPlayer in lOwners and len(lOwners) == 1
+
+def isControlledOrVassalizedwithPlayer(iPlayer, iVassalPlayer): #给阿根廷附庸南美洲国家用的函数
+    if not gc.getPlayer(iVassalPlayer).isAlive():
+        return True
+    else:
+        if gc.getTeam(gc.getPlayer(iVassalPlayer).getTeam()).isVassal(iPlayer):
+            return True
+    return False
+    pass
+
+
+def isControlledOrVassalized_deatil(iPlayer, lPlots): #返回具体的国家
+    bControlled = True
+    lOwners = []
+    lValidOwners = [iPlayer]
+    for city in utils.getAreaCities(lPlots):
+        iOwner = city.getOwner()
+        if iOwner not in lOwners and iOwner < iNumPlayers and iOwner not in lValidOwners:
+            if gc.getTeam(gc.getPlayer(iOwner).getTeam()).isVassal(iPlayer):
+                pass
+            else:
+                lOwners.append(iOwner)
+                bControlled=False
+    return [bControlled,lOwners]
 
 
 def isControlledOrVassalized(iPlayer, lPlots):
@@ -3007,6 +3034,16 @@ def isConnectedByTradeRoute(iPlayer, lStarts, lTargets):
 
     return False
 
+
+def isConnectedByRailroad_withoutCulture(iPlayer, tStart, lTargets):
+    if not gc.getTeam(iPlayer).isHasTech(iRailroad): return False
+
+    startPlot = utils.plot(tStart)
+    if not (startPlot.isCity() and startPlot.getOwner() == iPlayer): return False
+
+    plotFunction = lambda tPlot:  (utils.plot(tPlot).isCity() or utils.plot(tPlot).getRouteType() == iRouteRailroad)
+
+    return isConnected(tStart, lTargets, plotFunction)
 
 def isConnectedByRailroad(iPlayer, tStart, lTargets):
     if not gc.getTeam(iPlayer).isHasTech(iRailroad): return False
@@ -4483,6 +4520,54 @@ def getUHVHelp(iPlayer, iGoal):
 
     elif iPlayer == iArgentina:
         if iGoal == 0:
+            #tExceptions = list(set([]).union(set([(26, 29), (27, 22), (28, 22), (30, 20), (31, 19)])))
+            tExceptions=[]
+            lLapulata = utils.getPlotList((34, 10), (41, 19), tExceptions)
+            bLapulata=isControlledTile(iArgentina,lLapulata)
+            lIguacu = utils.getPlotList((36, 15), (36, 15), tExceptions)
+            bIguacu=isControlledTile(iArgentina,lIguacu)
+            lUyuni= utils.getPlotList((35, 17), (35, 17), tExceptions)
+            bUyuni=isControlledTile(iArgentina,lUyuni)
+            txt1=getIcon(bLapulata) +localText.getText("TXT_KEY_VICTORY_ARG1_CONTROL_Lapulata", ())+" "
+            txt2 = getIcon(bIguacu) + localText.getText("TXT_KEY_VICTORY_ARG1_CONTROL_bIguacu", ()) + " "
+            txt3 = getIcon(bUyuni) + localText.getText("TXT_KEY_VICTORY_ARG1_CONTROL_bUyuni", ()) + " "
+            aHelp.append(txt1+txt2+txt3)
+        elif iGoal == 1:
+            Area_SouthAmerican=utils.getPlotList(tSAmericaTL, tSAmericaBR, tSouthAmericaExceptions)
+            [bSouthAmerican,list_SouthAmerican]=isControlledOrVassalized_deatil(iArgentina,Area_SouthAmerican)
+            #
+            txt1=getIcon(bSouthAmerican) +localText.getText("TXT_KEY_VICTORY_ARG2_CONTROL_SouthAmerican", ())+" "
+            lFalkland= utils.getPlotList((41, 6), (41, 6), [])
+            bFalkland = isControlledTile(iArgentina, lFalkland)
+            txt2=getIcon(bFalkland) +localText.getText("TXT_KEY_VICTORY_ARG2_CONTROL_Falkland", ())+" "
+            bSiberianRailway = isConnectedByRailroad_withoutCulture(iArgentina, Areas.getCapital(iArgentina), [(11,47)])
+            txt3 = getIcon(bSiberianRailway) + localText.getText("TXT_KEY_VICTORY_ARG2_Railway", ()) + " "
+            aHelp.append(txt1+txt2+txt3)
+
+            txt11=localText.getText("TXT_KEY_VICTORY_ARG2_CONTROL_SouthAmerican_Tip", ())
+
+            for iCiv in list_SouthAmerican:
+                civname = gc.getPlayer(iCiv).getCivilizationDescription(0)
+                txt11=txt11+civname+'  '
+
+            aHelp.append(txt11)
+        elif iGoal == 2:
+            iRankGDP=cal_rank(iArgentina,1)
+            iRankScore=cal_rank(iArgentina,0)
+            iRankMoney=cal_rank(iArgentina,8)
+            bRankGDP=cal_rank(iArgentina,1)==1
+            bRankScore=cal_rank(iArgentina,0)==1
+            bRankMoney=cal_rank(iArgentina,8)==1
+            txt1 = getIcon(bRankScore) + localText.getText("TXT_KEY_VICTORY_ARG3_SCORE", (iRankScore,45))
+            txt2=getIcon(bRankGDP) + localText.getText("TXT_KEY_VICTORY_ARG3_GDP", (iRankGDP,45))
+            txt3=getIcon(bRankMoney) + localText.getText("TXT_KEY_VICTORY_ARG3_MONEY", (iRankMoney,45))
+            iCulture = getCityCulture(iArgentina, Areas.getCapital(iArgentina))
+            txt4=getIcon(iCulture >= utils.getTurns(10000)) + localText.getText("TXT_KEY_VICTORY_ARG3_CULTURE", (iCulture, utils.getTurns(10000)))
+            iCulture = getCityCulture(iArgentina, Areas.getCapital(iArgentina))
+            aHelp.append(txt1+txt2+txt3+txt4)
+            pass
+        '''
+        if iGoal == 0:
             iGoldenAgeTurns = data.iArgentineGoldenAgeTurns
             aHelp.append(getIcon(iGoldenAgeTurns >= utils.getTurns(16)) + localText.getText("TXT_KEY_VICTORY_GOLDEN_AGES", (iGoldenAgeTurns / utils.getTurns(8), 2)))
         elif iGoal == 1:
@@ -4491,6 +4576,8 @@ def getUHVHelp(iPlayer, iGoal):
         elif iGoal == 2:
             iGoldenAgeTurns = data.iArgentineGoldenAgeTurns
             aHelp.append(getIcon(iGoldenAgeTurns >= utils.getTurns(48)) + localText.getText("TXT_KEY_VICTORY_GOLDEN_AGES", (iGoldenAgeTurns / utils.getTurns(8), 6)))
+        '''
+        pass
 
     elif iPlayer == iBrazil:
         if iGoal == 0:
@@ -4526,6 +4613,63 @@ def getUHVHelp(iPlayer, iGoal):
             aHelp.append(getIcon(iPeaceDeals >= 12) + localText.getText("TXT_KEY_VICTORY_CANADIAN_PEACE_DEALS", (iPeaceDeals, 12)))
 
     return aHelp
+
+def cal_rank(iPlayer,scoreType):
+    TOTAL_SCORE = 0
+    ECONOMY_SCORE = 1
+    INDUSTRY_SCORE = 2
+    AGRICULTURE_SCORE = 3
+    POWER_SCORE = 4
+    CULTURE_SCORE = 5
+    ESPIONAGE_SCORE = 6
+    TECH_SCORE = 7
+    MONEY_SCORE=8
+    NUM_SCORES = 9
+    RANGE_SCORES = range(NUM_SCORES)
+    scorelist = []
+    valuelist = []
+    return_list=[]
+    for iCiv in range(iNumPlayers):
+        if (gc.getPlayer(iCiv).isAlive()):
+            iTurn=gc.getGame().getGameTurn() - 1
+
+            if (scoreType == TOTAL_SCORE):
+                iValue= gc.getPlayer(iCiv).getScoreHistory(iTurn)
+            elif (scoreType == ECONOMY_SCORE):
+                iValue= gc.getPlayer(iCiv).getEconomyHistory(iTurn)
+            elif (scoreType == INDUSTRY_SCORE):
+                iValue= gc.getPlayer(iCiv).getIndustryHistory(iTurn)
+            elif (scoreType == AGRICULTURE_SCORE):
+                iValue= gc.getPlayer(iCiv).getAgricultureHistory(iTurn)
+            elif (scoreType == POWER_SCORE):
+                iValue= gc.getPlayer(iCiv).getPowerHistory(iTurn)
+            elif (scoreType == CULTURE_SCORE):
+                iValue= gc.getPlayer(iCiv).getCultureHistory(iTurn)
+            elif (scoreType == ESPIONAGE_SCORE):
+                iValue= gc.getPlayer(iCiv).getEspionageHistory(iTurn)
+            elif (scoreType == TECH_SCORE):
+                iValue= gc.getPlayer(iCiv).getTechHistory(iTurn)
+            elif (scoreType == MONEY_SCORE):
+                iValue=gc.getPlayer(iCiv).getGold()
+            valuelist.append(iValue)
+            scorelist.append([iCiv, iValue])
+
+
+
+        pass
+    AveragePoint = 1
+    if (len(valuelist) > 0 and sum(valuelist) > 0):
+        AveragePoint = sum(valuelist) / len(valuelist)
+
+
+    scorelist.sort(key=lambda x: -x[1])
+    
+    for i in range(len(scorelist)):
+        iciv=scorelist[i][0]
+        if(iciv==iPlayer):
+            rank=i+1
+            return rank
+    return -1
 
 
 def getLandPercentInEurope(iCountryInEurope):

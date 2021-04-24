@@ -125,6 +125,67 @@
 		<TEXT>
 		<Tag>TXT_KEY_REGION_-1</Tag>
 		<English>未知领地</English>
-		<L1/><L2/><L3/><L4/><Chinese>未知领地</Chinese><French>未知领地</French></TEXT>			
+		<L1/><L2/><L3/><L4/><Chinese>未知领地</Chinese><French>未知领地</French></TEXT>		
+
+
+
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG1_CONTROL_Lapulata</Tag>
+		<English>控制拉普拉塔河流域</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制拉普拉塔河流域</Chinese><French>控制拉普拉塔河流域</French></TEXT>			
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG1_CONTROL_bIguacu</Tag>
+		<English>控制伊瓜苏大瀑布</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制伊瓜苏大瀑布</Chinese><French>控制伊瓜苏大瀑布</French></TEXT>		
+
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG1_CONTROL_bUyuni</Tag>
+		<English>控制乌尤尼盐沼</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制乌尤尼盐沼</Chinese><French>控制乌尤尼盐沼</French></TEXT>			
+
+
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG2_CONTROL_SouthAmerican</Tag>
+		<English>控制南美洲</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制南美洲</Chinese><French>控制南美洲</French></TEXT>				
+	
+
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG2_CONTROL_SouthAmerican_Tip</Tag>
+		<English>尚未控制的国家：</English>
+		<L1/><L2/><L3/><L4/><Chinese>尚未控制的国家：</Chinese><French>尚未控制的国家：</French></TEXT>	
+		
+		
+				<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG2_CONTROL_Falkland</Tag>
+		<English>控制马尔维纳斯群岛</English>
+		<L1/><L2/><L3/><L4/><Chinese>控制马尔维纳斯群岛</Chinese><French>控制马尔维纳斯群岛</French></TEXT>	
+		
+					<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG2_Railway</Tag>
+		<English>连接布宜诺斯艾利斯到洛杉矶的铁路</English>
+		<L1/><L2/><L3/><L4/><Chinese>连接布宜诺斯艾利斯到洛杉矶的铁路</Chinese><French>连接布宜诺斯艾利斯到洛杉矶的铁路</French></TEXT>		
+		
+		
+							<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG3_GDP</Tag>
+		<English>GDP排名:  %d1 / %d2  </English>
+		<L1/><L2/><L3/><L4/><Chinese>GDP排名:  %d1 / %d2  </Chinese><French>GDP排名:  %d1 / %d2  </French></TEXT>	
+		
+							<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG3_MONEY</Tag>
+		<English>金币储量排名:  %d1 / %d2 </English>
+		<L1/><L2/><L3/><L4/><Chinese>金币储量排名:  %d1 / %d2  </Chinese><French>金币储量排名:  %d1 / %d2  </French></TEXT>	
+
+							<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG3_SCORE</Tag>
+		<English>综合国力排名:  %d1 / %d2  </English>
+		<L1/><L2/><L3/><L4/><Chinese>综合国力排名:  %d1 / %d2  </Chinese><French>综合国力排名:  %d1 / %d2 </French></TEXT>			
+		
+		
+									<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG3_CULTURE</Tag>
+		<English>布宜诺斯艾利斯的文化： %d1 / %d2 </English>
+		<L1/><L2/><L3/><L4/><Chinese>布宜诺斯艾利斯的文化： %d1 / %d2 </Chinese><French>布宜诺斯艾利斯的文化： %d1 / %d2 </French></TEXT>	
 		
 </Civ4GameText>

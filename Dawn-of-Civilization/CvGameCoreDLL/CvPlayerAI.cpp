@@ -7853,7 +7853,9 @@ DenialTypes CvPlayerAI::AI_bonusTrade(BonusTypes eBonus, PlayerTypes ePlayer) co
 	int iI, iJ;
 
 	if (GC.getDefineINT("CVPLAYERAI_CAN_ALWAYS_TRADE_RESOURCE") == 1) {//mediv01 
-		return NO_DENIAL;
+		if (GET_PLAYER(ePlayer).isHuman()) {
+			return NO_DENIAL;
+		}
 	}
 	FAssertMsg(ePlayer != getID(), "shouldn't call this function on ourselves");
 
@@ -8041,7 +8043,12 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 
 	FAssert(pCity->getOwnerINLINE() == getID());
 	if (GC.getDefineINT("CVPLAYERAI_CAN_ALWAYS_TRADE_CITY") == 1) {//mediv01 
-		return NO_DENIAL;
+		if (GET_PLAYER(ePlayer).isHuman()) {
+			//这里需要加上对手是人类方，否则会出现闪退
+
+
+			return NO_DENIAL;
+		}
 	}
 	//Rhye - start
 	if (isHuman() && GET_PLAYER(ePlayer).getNumCities() == 0)

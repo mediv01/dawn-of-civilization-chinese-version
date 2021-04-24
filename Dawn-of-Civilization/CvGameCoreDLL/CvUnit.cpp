@@ -2453,11 +2453,15 @@ bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage) cons
 
 	//mediv01 所有单位是否能进入领土
 	if (GC.getDefineINT("CVUNIT_CAN_ALWAYS_ENTER_TERRITORY") == 1) {
-		return true;
+		if (isHuman()) {
+			return true;
+		}
 	}
 	//mediv01 海上单位是否能进入领土
 	if (GC.getDefineINT("CVUNIT_SHIP_CAN_ALWAYS_ENTER_TERRITORY") == 1 && DOMAIN_SEA == getDomainType()) {
-		return true;
+		if (isHuman()) {
+			return true;
+		}
 	}
 
 	// Leoreth: allow entering enemy territory while you have no cities to avoid being pushed out after spawn
@@ -2646,7 +2650,12 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	PROFILE_FUNC();
 
 	FAssertMsg(pPlot != NULL, "Plot is not assigned a valid value");
-
+	// mediv01
+	if (GC.getDefineINT("CVUNIT_AI_NOT_TAKE_GOODY") > 0) {
+		if (!isHuman() && pPlot->isGoody()) {
+			return false;
+		}
+	}
 	if (atPlot(pPlot))
 	{
 		return false;
@@ -6502,6 +6511,8 @@ int CvUnit::getHurryProduction(const CvPlot* pPlot) const
 {
 	CvCity* pCity;
 	int iProduction;
+	BuildingTypes eBuilding;
+	int iProductionModifier;
 
 	pCity = pPlot->getPlotCity();
 
@@ -6512,7 +6523,45 @@ int CvUnit::getHurryProduction(const CvPlot* pPlot) const
 
 	iProduction = getMaxHurryProduction(pCity);
 
-	iProduction = std::min(pCity->productionLeft(), iProduction);
+
+	/*
+		CvString log_CvString;
+		int playerid = (int)GC.getGameINLINE().getActivePlayer();
+		log_CvString = log_CvString.format("当前建筑为 %d ", (int)eBuilding);
+		GC.logs(log_CvString, (CvString)"TEST.log");
+	*/
+
+
+	if (GC.getDefineINT("CVUNIT_GREAT_ENGINEER_ACCELERATE_USE_MODIFIER") > 0) {
+		//加速锤子数和修正系数有关
+
+
+		eBuilding = pCity->getProductionBuilding();
+		//这里需要做判断 如果城市处于反抗状态，返回的值是-1，会报错
+		if (eBuilding == NULL || eBuilding == NO_BUILDING || (int)eBuilding == -1) {
+		}
+		else {
+
+			iProductionModifier = pCity->getProductionModifier(eBuilding);
+			iProduction = iProduction * (1 + iProductionModifier / 100);
+		}
+
+		/*
+		CvString log_CvString;
+		int playerid = (int)GC.getGameINLINE().getActivePlayer();
+		log_CvString = log_CvString.format("当前修正量为 %d ", iProductionModifier);
+		GC.logs(log_CvString, (CvString)"TEST.log");
+		*/
+
+
+	}
+
+	if (GC.getDefineINT("CVUNIT_GREAT_ENGINEER_ACCELERATE_UNLIMITED") > 0) {
+
+	}
+	else {
+		iProduction = std::min(pCity->productionLeft(), iProduction);
+	}
 
 	return std::max(0, iProduction);
 }
@@ -12981,7 +13030,8 @@ bool CvUnit::canAdvance(const CvPlot* pPlot, int iThreshold) const
 		bool bImpassableFeature = m_pUnitInfo->getFeatureImpassable(pPlot->getFeatureType()) && (pPlot->getImprovementType() == NO_IMPROVEMENT);
 
 		// Leoreth: Khmer UP
-		if (getOwnerINLINE() == KHMER && (pPlot->getFeatureType() == 1 || pPlot->getFeatureType() == 8))
+
+		if (getOwnerINLINE() == KHMER && (pPlot->getFeatureType() == FEATURE_JUNGLE || pPlot->getFeatureType() == FEATURE_RAINFOREST))
 		{
 			bImpassableFeature = false;
 		}

@@ -63,28 +63,28 @@
 		<L1/><L2/><L3/><L4/><Chinese>使伊斯兰教传播到全世界20%的城市，在达到目标前麦加和耶路撒冷这2座圣城不允许落入异教徒手中</Chinese><French>Spread Islam to 30% of the cities in the world</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG1_TITLE</Tag>
-		<English>阿根廷悖论</English>
-		<L1/><L2/><L3/><L4/><Chinese>阿根廷悖论</Chinese><French>The Argentinian Paradox</French></TEXT>
+		<English>三国同盟战争</English>
+		<L1/><L2/><L3/><L4/><Chinese>三国同盟战争</Chinese><French>The Argentinian Paradox</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG1</Tag>
-		<English>公元1930年时经历2次黄金时代</English>
-		<L1/><L2/><L3/><L4/><Chinese>公元1930年时经历2次黄金时代</Chinese><French>Experience two golden ages by 1930 AD</French></TEXT>
+		<English>在1920年时，收复拉普拉塔流域，确保流域内没有外国城市；控制乌尤尼盐沼和伊瓜苏瀑布</English>
+		<L1/><L2/><L3/><L4/><Chinese>在1920年时，收复拉普拉塔流域，确保流域内没有外国城市；控制乌尤尼盐沼和伊瓜苏瀑布</Chinese><French>Experience two golden ages by 1930 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG2_TITLE</Tag>
-		<English>探戈与诗歌</English>
-		<L1/><L2/><L3/><L4/><Chinese>探戈与诗歌</Chinese><French>Tango and Poetry</French></TEXT>
+		<English>圣马丁之梦</English>
+		<L1/><L2/><L3/><L4/><Chinese>圣马丁之梦</Chinese><French>Tango and Poetry</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG2</Tag>
-		<English>在公元1960年时布宜诺斯艾利斯获得传奇的文化成就</English>
-		<L1/><L2/><L3/><L4/><Chinese>在公元1960年时布宜诺斯艾利斯获得传奇的文化成就</Chinese><French>Have legendary culture in Buenos Aires by 1960 AD</French></TEXT>
+		<English>在1980年前，驱逐英军，收复马尔维纳斯群岛；控制或附庸拉丁美洲所有国家，并建立一条由洛杉矶通往布宜诺斯艾利斯的阿根廷铁路</English>
+		<L1/><L2/><L3/><L4/><Chinese>在1980年前，驱逐英军，收复马尔维纳斯群岛；控制或附庸拉丁美洲所有国家，并建立一条由洛杉矶通往布宜诺斯艾利斯的阿根廷铁路</Chinese><French>Have legendary culture in Buenos Aires by 1960 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG3_TITLE</Tag>
-		<English>庇隆主义</English>
-		<L1/><L2/><L3/><L4/><Chinese>庇隆主义</Chinese><French>Peronism</French></TEXT>
+		<English>逃离中等收入陷阱</English>
+		<L1/><L2/><L3/><L4/><Chinese>逃离中等收入陷阱</Chinese><French>Peronism</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG3</Tag>
-		<English>公元2000年时经历6次黄金时代</English>
-		<L1/><L2/><L3/><L4/><Chinese>公元2000年时经历6次黄金时代</Chinese><French>Experience six golden ages by 2000 AD</French></TEXT>
+		<English>在公元2000年前，GDP（每回合收入），金币储量和综合国力达到世界第1；布宜诺斯艾利斯达到影响深远的文化水平</English>
+		<L1/><L2/><L3/><L4/><Chinese>在公元2000年前，GDP（每回合收入），金币储量和综合国力达到世界第1；布宜诺斯艾利斯达到影响深远的文化水平</Chinese><French>Experience six golden ages by 2000 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AZT1_TITLE</Tag>
 		<English>漂浮花园</English>
@@ -171,8 +171,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>奇观王国</Chinese><French>Maracana, Cristo Redentor, Itaipu</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BRA2</Tag>
-		<English>建造温布利球场、救世基督像和1座世界级大水坝</English>
-		<L1/><L2/><L3/><L4/><Chinese>建造温布利球场、救世基督像和1座世界级大水坝</Chinese><French>Build Wembley, Cristo Redentor and the Itaipu Dam</French></TEXT>
+		<English>建造温布利球场、救世基督像</English>
+		<L1/><L2/><L3/><L4/><Chinese>建造温布利球场、救世基督像</Chinese><French>Build Wembley, Cristo Redentor and the Itaipu Dam</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BRA3_TITLE</Tag>
 		<English>平多拉玛</English>
@@ -459,8 +459,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>帝国制度</Chinese><French>Ancien Regime</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA1</Tag>
-		<English>在公元1700年时使巴黎拥有传奇文化（25000点文化值）</English>
-		<L1/><L2/><L3/><L4/><Chinese>在公元1700年时使巴黎拥有传奇文化（25000点文化值）</Chinese><French>Have legendary culture in Paris in 1700 AD</French></TEXT>
+		<English>在公元1700年时使巴黎拥有传奇文化（50000点文化值）</English>
+		<L1/><L2/><L3/><L4/><Chinese>在公元1700年时使巴黎拥有传奇文化（50000点文化值）</Chinese><French>Have legendary culture in Paris in 1700 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA2_TITLE</Tag>
 		<English>拿破仑帝国</English>
@@ -867,8 +867,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>在1200年之前建成一座佛寺和一座学宫</Chinese><French>Build a Buddhist Chaitya and a Confucian Guozijian by 1200 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KOR2_TITLE</Tag>
-		<English>崔允仪</English>
-		<L1/><L2/><L3/><L4/><Chinese>崔允仪</Chinese><French>Choe Yun-ui</French></TEXT>
+		<English>逆袭中华</English>
+		<L1/><L2/><L3/><L4/><Chinese>逆袭中华</Chinese><French>Choe Yun-ui</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KOR2</Tag>
 		<English>率先发现印刷机技术</English>
@@ -1163,8 +1163,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>公元1000年前定居夏威夷、新西兰、马奎萨和复活节岛</Chinese><French>Settle Hawaii, New Zealand, Marquesas and Easter Island by 1000 AD</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PLY3_TITLE</Tag>
-		<English>拉鲁早安</English>
-		<L1/><L2/><L3/><L4/><Chinese>拉鲁早安</Chinese><French>Rano Raraku</French></TEXT>
+		<English>拉鲁神力</English>
+		<L1/><L2/><L3/><L4/><Chinese>拉鲁神力</Chinese><French>Rano Raraku</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PLY3</Tag>
 		<English>公元1200年建造摩埃雕像</English>
@@ -2659,6 +2659,31 @@
 		<Tag>TXT_KEY_UHV_INC3_NOTUSE</Tag>
 		<English>公元1700年不允许外国城市进入南美</English>
 		<L1/><L2/><L3/><L4/><Chinese>公元1700年不允许外国城市进入南美</Chinese><French>Allow no foreign cities in South America in 1700 AD</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_ARG1_TITLE</Tag>
+		<English>阿根廷悖论</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿根廷悖论</Chinese><French>The Argentinian Paradox</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_ARG1</Tag>
+		<English>公元1930年时经历2次黄金时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>公元1930年时经历2次黄金时代</Chinese><French>Experience two golden ages by 1930 AD</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_ARG2_TITLE</Tag>
+		<English>探戈与诗歌</English>
+		<L1/><L2/><L3/><L4/><Chinese>探戈与诗歌</Chinese><French>Tango and Poetry</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_ARG2</Tag>
+		<English>在公元1960年时布宜诺斯艾利斯获得传奇的文化成就</English>
+		<L1/><L2/><L3/><L4/><Chinese>在公元1960年时布宜诺斯艾利斯获得传奇的文化成就</Chinese><French>Have legendary culture in Buenos Aires by 1960 AD</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_ARG3_TITLE</Tag>
+		<English>庇隆主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>庇隆主义</Chinese><French>Peronism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_ARG3</Tag>
+		<English>公元2000年时经历6次黄金时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>公元2000年时经历6次黄金时代</Chinese><French>Experience six golden ages by 2000 AD</French></TEXT>
+	
 </civ4notuse>	
 </Civ4GameText>
 

@@ -45,6 +45,12 @@ def foundCity(iPlayer, tPlot, sName, iPopulation, iUnitType=-1, iNumUnits=-1, lR
     return False
 
 
+def declareWar(iPlayer, iTarget, iWarPlan=WarPlanTypes.WARPLAN_TOTAL):
+    if gc.getTeam(iPlayer).isVassal(iTarget):
+        gc.getTeam(iPlayer).setVassal(iTarget, False, False)
+
+    gc.getTeam(iPlayer).declareWar(iTarget, True, iWarPlan)
+
 def checkturn(iGameTurn):
     # 阿根廷出生前1回合，设置马岛，并将马岛设置为阿根廷的UHV
     if iGameTurn == getTurnForYear(1805): #1805
@@ -58,3 +64,8 @@ def checkturn(iGameTurn):
         utils.makeUnitAI(iBestInfantry, iEngland, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1+gc.getGame().getHandicapType())
         pass
         #self.createResource(88, 37, iHorse)
+    if iGameTurn == getTurnForYear(1870): #1805
+        if(utils.getHumanID()==iArgentina):
+            if(gc.getPlayer(iBrazil).isAlive() and gc.getPlayer(iArgentina).isAlive()):
+                pass
+                #declareWar(iBrazil,iArgentina)

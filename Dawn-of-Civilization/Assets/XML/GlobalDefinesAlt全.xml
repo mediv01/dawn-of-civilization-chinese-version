@@ -578,11 +578,11 @@
     </Define>    
     <Define>
         <DefineName>GREAT_GENERALS_THRESHOLD_INCREASE</DefineName><!-- 大将军门槛点增长，默认50  mediv01 本体就有的参数 -->
-        <iDefineIntVal>50</iDefineIntVal>
+        <iDefineIntVal>30</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>GREAT_GENERALS_THRESHOLD_INCREASE_TEAM</DefineName><!-- 大将军门槛点增长，默认50  mediv01 本体就有的参数 -->
-        <iDefineIntVal>50</iDefineIntVal>
+        <iDefineIntVal>30</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>GREAT_GENERALS_THRESHOLD</DefineName><!-- 初始大将军点门槛，默认30 mediv01 本体就有的参数 -->
@@ -1458,7 +1458,7 @@
     </Define>	
 	
         <Define>
-        <DefineName>CVGAMETEXT_MANUAL_DEBUG_TRIGGER</DefineName><!-- 数值为1的时候，开启DLL自定义调试，引用CvDebug.cpp里的内容 mediv01 调试开关 -->
+        <DefineName>CVGAMETEXT_MANUAL_DEBUG_TRIGGER</DefineName><!-- 数值为1的时候，开启DLL自定义调试，当X=36 Y=1时引用CvDebug.cpp里的内容 mediv01 调试开关 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>   	
 
@@ -1591,7 +1591,7 @@
 
     <Define>
         <DefineName>CVGAMECORE_LOG_AI_ACTION</DefineName>	<!-- 1为新增了DLL的LOG函数 0为默认模式， mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1606,7 +1606,10 @@
         <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
-
+    <Define>
+        <DefineName>CVUNITAI_SKIP_TURN_PROB</DefineName>	<!-- 大于0的数字为AI保持当前回合不更新状态的概率 该参数基本不能提速，而且影响游戏AI，建议不要改设置为0 0为默认模式， mediv01  -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
 
 
 
@@ -1835,7 +1838,10 @@
     </Define>
 
 
-  
+		<Define>
+        <DefineName>PYTHON_ADJUST_FLIPZONE_FOR_HUMAN</DefineName><!-- 1为针对新版UHV，对翻转区做了难度调整。低难度的部分文明翻转区更大，更容易通关 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>  
 
     
     
@@ -2038,7 +2044,10 @@
     </Define>		
 	
 	
-	
+	<Define>
+        <DefineName>PYTHON_VIC_CONNECTED_BY_ROAD_WITH_NEW_METHOD_INCA</DefineName><!--  1为印加UHV时只需要修建道路，不需要文化覆盖，0为默认模式  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define> 	
 	
 	
 	
