@@ -584,6 +584,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 			}
 			if (!GC.getGameINLINE().isGameMultiPlayer())
 			{
+				//mediv01 无法理解 疑似个BUG？
 				if (pPopupReturn->getCheckboxBitfield(2) && pPopupReturn->getCheckboxBitfield(2) > 0)
 				{
 					gDLL->setChtLvl(1);
@@ -1663,6 +1664,9 @@ bool CvDLLButtonPopup::launchChangeCivicsPopup(CvPopup* pPopup, CvPopupInfo &inf
 	CivicTypes* paeNewCivics = new CivicTypes[GC.getNumCivicOptionInfos()];
 	if (NULL == paeNewCivics)
 	{
+		if (CVGAMECORE_FIX_NULL_POINTER_BUG2) {
+			SAFE_DELETE(paeNewCivics);
+		}
 		return (false);
 	}
 
@@ -1673,6 +1677,9 @@ bool CvDLLButtonPopup::launchChangeCivicsPopup(CvPopup* pPopup, CvPopupInfo &inf
 	// Leoreth: suppress for Egypt due to their UP
 	if (eCivicType == NO_CIVIC && GC.getGameINLINE().getActivePlayer() == EGYPT)
 	{
+		if (CVGAMECORE_FIX_NULL_POINTER_BUG2) {
+			SAFE_DELETE(paeNewCivics);
+		}
 		return false;
 	}
 

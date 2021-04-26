@@ -1737,6 +1737,21 @@ DenialTypes CvTeamAI::AI_vassalTrade(TeamTypes eTeam) const
 		return DENIAL_NO_GAIN;
 	}
 
+	if (GC.getDefineINT("CVTEAMAI_AI_CANNOT_VASSAL_TO_OTHER_WHEN_AT_WAR") >= 1) {
+		//mediv01 
+		PlayerTypes human_id = GC.getGame().getActivePlayer();
+		TeamTypes human_team_id = GET_PLAYER((PlayerTypes)human_id).getTeam();		
+		bool bAtwarwithHuman = isAtWar(human_team_id);
+		if (bAtwarwithHuman) {
+			if (GET_TEAM((TeamTypes)eTeam).isHuman()) {
+
+			}
+			else {
+				return DENIAL_WAR_NOT_POSSIBLE_YOU;
+			}
+		}
+	}
+
 	for (int iLoopTeam = 0; iLoopTeam < MAX_TEAMS; iLoopTeam++)
 	{
 		CvTeam& kLoopTeam = GET_TEAM((TeamTypes)iLoopTeam);
@@ -1805,6 +1820,23 @@ DenialTypes CvTeamAI::AI_surrenderTrade(TeamTypes eTeam, int iPowerMultiplier) c
 
 	//Rhye - start
 	//for (int iLoopTeam = 0; iLoopTeam < MAX_TEAMS; iLoopTeam++)
+
+	if (GC.getDefineINT("CVTEAMAI_AI_CANNOT_VASSAL_TO_OTHER_WHEN_AT_WAR") >= 1) {
+		//mediv01 
+		PlayerTypes human_id = GC.getGame().getActivePlayer();
+		TeamTypes human_team_id = GET_PLAYER((PlayerTypes)human_id).getTeam();
+		bool bAtwarwithHuman = isAtWar(human_team_id);
+		if (bAtwarwithHuman) {
+			if (GET_TEAM((TeamTypes)eTeam).isHuman()) {
+
+			}
+			else {
+				return DENIAL_WAR_NOT_POSSIBLE_YOU;
+			}
+		}
+	}
+
+
 	for (int iLoopTeam = 0; iLoopTeam < NUM_MAJOR_PLAYERS; iLoopTeam++)
 	//Rhye - end
 	{

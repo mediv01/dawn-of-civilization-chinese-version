@@ -6335,7 +6335,11 @@ void CvGame::doGlobalWarming()
 	for (int i = 0; i < GC.getMapINLINE().numPlotsINLINE(); ++i)
 	{
 		CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(i);
-
+		if (CVGAMECORE_FIX_NULL_POINTER_BUG1) {
+			if (pPlot == NULL) {
+				continue;
+			}	
+		}
 #ifdef _MOD_GWARM
 		if (pPlot->getFeatureType() != NO_FEATURE)
 		{

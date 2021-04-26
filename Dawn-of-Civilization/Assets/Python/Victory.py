@@ -1521,6 +1521,52 @@ def checkTurn(iGameTurn, iPlayer):
             expire(iAmerica, 2)
 
     elif iPlayer == iArgentina:
+        if isPossible(iArgentina, 0):
+            tExceptions = []
+            lLapulata = utils.getPlotList((34, 10), (41, 19), tExceptions)
+            bLapulata = isControlledTile(iArgentina, lLapulata)
+            lIguacu = utils.getPlotList((36, 15), (36, 15), tExceptions)
+            bIguacu = isControlledTile(iArgentina, lIguacu)
+            lUyuni = utils.getPlotList((35, 17), (35, 17), tExceptions)
+            bUyuni = isControlledTile(iArgentina, lUyuni)
+            if bLapulata and bIguacu and bUyuni:
+                win(iArgentina, 0)
+
+        if iGameTurn == getTurnForYear(1920):
+            expire(iArgentina, 0)
+
+        if isPossible(iArgentina, 1):
+            Area_SouthAmerican=utils.getPlotList(tSAmericaTL, tSAmericaBR, tSouthAmericaExceptions)
+            [bSouthAmerican,list_SouthAmerican]=isControlledOrVassalized_deatil(iArgentina,Area_SouthAmerican)
+            #
+            lFalkland= utils.getPlotList((41, 6), (41, 6), [])
+            bFalkland = isControlledTile(iArgentina, lFalkland)
+            bRailway = isConnectedByRailroad_withoutCulture(iArgentina, Areas.getCapital(iArgentina), [(11,47)])
+
+
+            if bSouthAmerican and bFalkland and bRailway:
+                win(iArgentina, 1)
+
+        if iGameTurn == getTurnForYear(1980):
+            expire(iArgentina, 1)
+
+
+        if isPossible(iArgentina, 2):
+
+            iRankGDP=cal_rank(iArgentina,1)
+            iRankScore=cal_rank(iArgentina,0)
+            iRankMoney=cal_rank(iArgentina,8)
+            bRankGDP=cal_rank(iArgentina,1)==1
+            bRankScore=cal_rank(iArgentina,0)==1
+            bRankMoney=cal_rank(iArgentina,8)==1
+            iCulture = getCityCulture(iArgentina, Areas.getCapital(iArgentina))
+
+
+            if bRankGDP and bRankScore and bRankMoney and iCulture >= utils.getTurns(5000):
+                win(iArgentina, 2)
+
+        if iGameTurn == getTurnForYear(2000):
+            expire(iArgentina, 2)
         '''
         # first goal: experience two golden ages by 1930 AD
         if isPossible(iArgentina, 0):
@@ -4540,8 +4586,8 @@ def getUHVHelp(iPlayer, iGoal):
             lFalkland= utils.getPlotList((41, 6), (41, 6), [])
             bFalkland = isControlledTile(iArgentina, lFalkland)
             txt2=getIcon(bFalkland) +localText.getText("TXT_KEY_VICTORY_ARG2_CONTROL_Falkland", ())+" "
-            bSiberianRailway = isConnectedByRailroad_withoutCulture(iArgentina, Areas.getCapital(iArgentina), [(11,47)])
-            txt3 = getIcon(bSiberianRailway) + localText.getText("TXT_KEY_VICTORY_ARG2_Railway", ()) + " "
+            bRailway = isConnectedByRailroad_withoutCulture(iArgentina, Areas.getCapital(iArgentina), [(11,47)])
+            txt3 = getIcon(bRailway) + localText.getText("TXT_KEY_VICTORY_ARG2_Railway", ()) + " "
             aHelp.append(txt1+txt2+txt3)
 
             txt11=localText.getText("TXT_KEY_VICTORY_ARG2_CONTROL_SouthAmerican_Tip", ())
@@ -4562,7 +4608,7 @@ def getUHVHelp(iPlayer, iGoal):
             txt2=getIcon(bRankGDP) + localText.getText("TXT_KEY_VICTORY_ARG3_GDP", (iRankGDP,45))
             txt3=getIcon(bRankMoney) + localText.getText("TXT_KEY_VICTORY_ARG3_MONEY", (iRankMoney,45))
             iCulture = getCityCulture(iArgentina, Areas.getCapital(iArgentina))
-            txt4=getIcon(iCulture >= utils.getTurns(10000)) + localText.getText("TXT_KEY_VICTORY_ARG3_CULTURE", (iCulture, utils.getTurns(10000)))
+            txt4=getIcon(iCulture >= utils.getTurns(5000)) + localText.getText("TXT_KEY_VICTORY_ARG3_CULTURE", (iCulture, utils.getTurns(5000)))
             iCulture = getCityCulture(iArgentina, Areas.getCapital(iArgentina))
             aHelp.append(txt1+txt2+txt3+txt4)
             pass

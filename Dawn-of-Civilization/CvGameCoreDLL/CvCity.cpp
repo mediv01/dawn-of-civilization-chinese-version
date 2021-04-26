@@ -18241,17 +18241,35 @@ void CvCity::liberate(bool bConquest)
 		if (NULL != pPlot)
 		{
 			CvCity* pCity = pPlot->getPlotCity();
-			if (NULL != pCity)
-			{
-				pCity->setCultureTimes100(ePlayer, pCity->getCultureTimes100(ePlayer) + iOldOwnerCulture / 2, true, true);
-				pCity->setCultureTimes100(eOwner, iOldOwnerCulture / 2, true, true); // Leoreth: overall culture remains constant
-			}
-
-			if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isAVassal())
-			{
-				for (int i = 0; i < GC.getDefineINT("COLONY_NUM_FREE_DEFENDERS"); ++i)
+			if (CVGAMECORE_FIX_NULL_POINTER_BUG1>0) {  //¿ÕÖ¸Õë´íÎó
+				if (NULL != pCity)
 				{
-					pCity->initConscriptedUnit();
+					pCity->setCultureTimes100(ePlayer, pCity->getCultureTimes100(ePlayer) + iOldOwnerCulture / 2, true, true);
+					pCity->setCultureTimes100(eOwner, iOldOwnerCulture / 2, true, true); // Leoreth: overall culture remains constant
+
+
+					if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isAVassal())
+					{
+						for (int i = 0; i < GC.getDefineINT("COLONY_NUM_FREE_DEFENDERS"); ++i)
+						{
+							pCity->initConscriptedUnit();
+						}
+					}
+				}
+			}
+			else {
+				if (NULL != pCity)
+				{
+					pCity->setCultureTimes100(ePlayer, pCity->getCultureTimes100(ePlayer) + iOldOwnerCulture / 2, true, true);
+					pCity->setCultureTimes100(eOwner, iOldOwnerCulture / 2, true, true); // Leoreth: overall culture remains constant
+				}
+
+				if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isAVassal())
+				{
+					for (int i = 0; i < GC.getDefineINT("COLONY_NUM_FREE_DEFENDERS"); ++i)
+					{
+						pCity->initConscriptedUnit();
+					}
 				}
 			}
 		}
@@ -18985,10 +19003,18 @@ int CvCity::getEffectiveNextCoveredPlot() const
 	int iDistance;
 	while (iI < NUM_CITY_PLOTS_3)
 	{
-		pLoopPlot = getCulturePlot(iI);
-		iDistance = plotDistance(getX(), getY(), pLoopPlot->getX(), pLoopPlot->getY());
-
-		if (pLoopPlot == NULL) break;
+		if (CVGAMECORE_FIX_NULL_POINTER_BUG1 > 0) {
+			
+			pLoopPlot = getCulturePlot(iI);
+			if (pLoopPlot == NULL) break;
+			iDistance = plotDistance(getX(), getY(), pLoopPlot->getX(), pLoopPlot->getY());			
+		}
+		else {
+			pLoopPlot = getCulturePlot(iI);
+			iDistance = plotDistance(getX(), getY(), pLoopPlot->getX(), pLoopPlot->getY());
+			if (pLoopPlot == NULL) break;
+		}
+	
 
 		if (pLoopPlot->getOwner() == NO_PLAYER && (iI >= iNextCoveredPlot || (iDistance > getCultureLevel() && iDistance > 0 && getCultureCost(iNextCoveredPlot) > getCultureThreshold((CultureLevelTypes)(iDistance-1))))) break;
 
@@ -19469,6 +19495,13 @@ void CvCity::setCultureRank(int iNewValue)
 				processBonusEffect((BonusTypes)iI, hasBonusEffect((BonusTypes)iI) ? 1 : -1);
 			}
 		}
+
+		if (CVGAMECORE_FIX_NULL_POINTER_BUG2) {
+			//delete [] bOldHasBonusEffect;
+			//bOldHasBonusEffect = NULL;
+			SAFE_DELETE(bOldHasBonusEffect);
+		}
+
 	}
 }
 

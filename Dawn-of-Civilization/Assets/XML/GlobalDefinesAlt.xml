@@ -1474,6 +1474,24 @@
     </Define>   	
 
 
+	    <Define>
+        <DefineName>CVTEAMAI_AI_CANNOT_VASSAL_TO_OTHER_WHEN_AT_WAR</DefineName><!-- 1为AI在和人类打仗时，不允许投降给其他文明  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>	
+	
+	
+			<!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  BUGFIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->	
+	
+	<Define>
+        <DefineName>CVGAMECORE_FIX_NULL_POINTER_BUG1</DefineName><!-- 1为修正游戏中的PLOT的空指针错误， 0为默认模式 此项目不可XML配置，写死在CvRHYE.h里，需要修改的话可以重新生成DLL mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>	
+	
+		<Define>
+        <DefineName>CVGAMECORE_FIX_NULL_POINTER_BUG2</DefineName><!-- 1为修正游戏中的内存泄露错误， 0为默认模式 此项目不可XML配置，写死在CvRHYE.h里，需要修改的话可以重新生成DLL mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>	
+
 
 		<!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  LOG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->		
 

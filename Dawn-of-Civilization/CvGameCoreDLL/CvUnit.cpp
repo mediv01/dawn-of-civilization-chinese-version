@@ -10208,96 +10208,195 @@ void CvUnit::joinGroup(CvSelectionGroup* pSelectionGroup, bool bRemoveSelected, 
 
 	pOldSelectionGroup = GET_PLAYER(getOwnerINLINE()).getSelectionGroup(getGroupID());
 
-	if ((pSelectionGroup != pOldSelectionGroup) || (pOldSelectionGroup == NULL))
-	{
-		pPlot = plot();
+	if (CVGAMECORE_FIX_NULL_POINTER_BUG4) {
+		if ((pSelectionGroup != pOldSelectionGroup) || (pOldSelectionGroup == NULL))
+		{
+			pPlot = plot();
 
-		if (pSelectionGroup != NULL)
-		{
-			pNewSelectionGroup = pSelectionGroup;
-		}
-		else
-		{
-			if (bRejoin)
+			if (pSelectionGroup != NULL)
 			{
-				pNewSelectionGroup = GET_PLAYER(getOwnerINLINE()).addSelectionGroup();
-				pNewSelectionGroup->init(pNewSelectionGroup->getID(), getOwnerINLINE());
+				pNewSelectionGroup = pSelectionGroup;
 			}
 			else
 			{
-				pNewSelectionGroup = NULL;
-			}
-		}
-
-		if ((pNewSelectionGroup == NULL) || canJoinGroup(pPlot, pNewSelectionGroup))
-		{
-			if (pOldSelectionGroup != NULL)
-			{
-				bool bWasHead = false;
-				if (!isHuman())
+				if (bRejoin)
 				{
-					if (pOldSelectionGroup->getNumUnits() > 1)
+					pNewSelectionGroup = GET_PLAYER(getOwnerINLINE()).addSelectionGroup();
+					if (pNewSelectionGroup != NULL) {
+						pNewSelectionGroup->init(pNewSelectionGroup->getID(), getOwnerINLINE());
+					}
+				}
+				else
+				{
+					pNewSelectionGroup = NULL;
+				}
+			}
+
+			if ((pNewSelectionGroup == NULL) || canJoinGroup(pPlot, pNewSelectionGroup))
+			{
+				if (pOldSelectionGroup != NULL)
+				{
+					bool bWasHead = false;
+					if (!isHuman())
 					{
-						if (pOldSelectionGroup->getHeadUnit() == this)
+						if (pOldSelectionGroup->getNumUnits() > 1)
 						{
-							bWasHead = true;
+							if (pOldSelectionGroup->getHeadUnit() == this)
+							{
+								bWasHead = true;
+							}
+						}
+					}
+
+					pOldSelectionGroup->removeUnit(this);
+
+					// if we were the head, if the head unitAI changed, then force the group to separate (non-humans)
+					if (bWasHead)
+					{
+						FAssert(pOldSelectionGroup->getHeadUnit() != NULL);
+						if (pOldSelectionGroup->getHeadUnit()->AI_getUnitAIType() != AI_getUnitAIType())
+						{
+							pOldSelectionGroup->AI_makeForceSeparate();
 						}
 					}
 				}
 
-				pOldSelectionGroup->removeUnit(this);
-
-				// if we were the head, if the head unitAI changed, then force the group to separate (non-humans)
-				if (bWasHead)
+				if ((pNewSelectionGroup != NULL) && pNewSelectionGroup->addUnit(this, false))
 				{
-					FAssert(pOldSelectionGroup->getHeadUnit() != NULL);
-					if (pOldSelectionGroup->getHeadUnit()->AI_getUnitAIType() != AI_getUnitAIType())
-					{
-						pOldSelectionGroup->AI_makeForceSeparate();
-					}
-				}
-			}
-
-			if ((pNewSelectionGroup != NULL) && pNewSelectionGroup->addUnit(this, false))
-			{
-				m_iGroupID = pNewSelectionGroup->getID();
-			}
-			else
-			{
-				m_iGroupID = FFreeList::INVALID_INDEX;
-			}
-
-			if (getGroup() != NULL)
-			{
-				if (getGroup()->getNumUnits() > 1)
-				{
-					getGroup()->setActivityType(ACTIVITY_AWAKE);
+					m_iGroupID = pNewSelectionGroup->getID();
 				}
 				else
 				{
-					GET_PLAYER(getOwnerINLINE()).updateGroupCycle(this);
+					m_iGroupID = FFreeList::INVALID_INDEX;
 				}
-			}
 
-			if (getTeam() == GC.getGameINLINE().getActiveTeam())
-			{
-				if (pPlot != NULL)
+				if (getGroup() != NULL)
 				{
-					pPlot->setFlagDirty(true);
+					if (getGroup()->getNumUnits() > 1)
+					{
+						getGroup()->setActivityType(ACTIVITY_AWAKE);
+					}
+					else
+					{
+						GET_PLAYER(getOwnerINLINE()).updateGroupCycle(this);
+					}
+				}
+
+				if (getTeam() == GC.getGameINLINE().getActiveTeam())
+				{
+					if (pPlot != NULL)
+					{
+						pPlot->setFlagDirty(true);
+					}
+				}
+
+				if (pPlot == gDLL->getInterfaceIFace()->getSelectionPlot())
+				{
+					gDLL->getInterfaceIFace()->setDirty(PlotListButtons_DIRTY_BIT, true);
 				}
 			}
 
-			if (pPlot == gDLL->getInterfaceIFace()->getSelectionPlot())
+			if (bRemoveSelected)
 			{
-				gDLL->getInterfaceIFace()->setDirty(PlotListButtons_DIRTY_BIT, true);
+				if (IsSelected())
+				{
+					gDLL->getInterfaceIFace()->removeFromSelectionList(this);
+				}
 			}
 		}
-
-		if (bRemoveSelected)
+	}
+	else {
+		if ((pSelectionGroup != pOldSelectionGroup) || (pOldSelectionGroup == NULL))
 		{
-			if (IsSelected())
+			pPlot = plot();
+
+			if (pSelectionGroup != NULL)
 			{
-				gDLL->getInterfaceIFace()->removeFromSelectionList(this);
+				pNewSelectionGroup = pSelectionGroup;
+			}
+			else
+			{
+				if (bRejoin)
+				{
+					pNewSelectionGroup = GET_PLAYER(getOwnerINLINE()).addSelectionGroup();
+					pNewSelectionGroup->init(pNewSelectionGroup->getID(), getOwnerINLINE());
+				}
+				else
+				{
+					pNewSelectionGroup = NULL;
+				}
+			}
+
+			if ((pNewSelectionGroup == NULL) || canJoinGroup(pPlot, pNewSelectionGroup))
+			{
+				if (pOldSelectionGroup != NULL)
+				{
+					bool bWasHead = false;
+					if (!isHuman())
+					{
+						if (pOldSelectionGroup->getNumUnits() > 1)
+						{
+							if (pOldSelectionGroup->getHeadUnit() == this)
+							{
+								bWasHead = true;
+							}
+						}
+					}
+
+					pOldSelectionGroup->removeUnit(this);
+
+					// if we were the head, if the head unitAI changed, then force the group to separate (non-humans)
+					if (bWasHead)
+					{
+						FAssert(pOldSelectionGroup->getHeadUnit() != NULL);
+						if (pOldSelectionGroup->getHeadUnit()->AI_getUnitAIType() != AI_getUnitAIType())
+						{
+							pOldSelectionGroup->AI_makeForceSeparate();
+						}
+					}
+				}
+
+				if ((pNewSelectionGroup != NULL) && pNewSelectionGroup->addUnit(this, false))
+				{
+					m_iGroupID = pNewSelectionGroup->getID();
+				}
+				else
+				{
+					m_iGroupID = FFreeList::INVALID_INDEX;
+				}
+
+				if (getGroup() != NULL)
+				{
+					if (getGroup()->getNumUnits() > 1)
+					{
+						getGroup()->setActivityType(ACTIVITY_AWAKE);
+					}
+					else
+					{
+						GET_PLAYER(getOwnerINLINE()).updateGroupCycle(this);
+					}
+				}
+
+				if (getTeam() == GC.getGameINLINE().getActiveTeam())
+				{
+					if (pPlot != NULL)
+					{
+						pPlot->setFlagDirty(true);
+					}
+				}
+
+				if (pPlot == gDLL->getInterfaceIFace()->getSelectionPlot())
+				{
+					gDLL->getInterfaceIFace()->setDirty(PlotListButtons_DIRTY_BIT, true);
+				}
+			}
+
+			if (bRemoveSelected)
+			{
+				if (IsSelected())
+				{
+					gDLL->getInterfaceIFace()->removeFromSelectionList(this);
+				}
 			}
 		}
 	}
@@ -13215,11 +13314,20 @@ void CvUnit::collateralCombat(const CvPlot* pPlot, CvUnit* pSkipUnit)
 
 void CvUnit::flankingStrikeCombat(const CvPlot* pPlot, int iAttackerStrength, int iAttackerFirepower, int iDefenderOdds, int iDefenderDamage, CvUnit* pSkipUnit)
 {
-	if (pPlot->isCity(true, pSkipUnit->getTeam()))
-	{
-		return;
+	if (CVGAMECORE_FIX_NULL_POINTER_BUG1) {
+		if (pSkipUnit != NULL) {
+			if (pPlot->isCity(true, pSkipUnit->getTeam()))
+			{
+				return;
+			}
+		}
 	}
-
+	else {
+		if (pPlot->isCity(true, pSkipUnit->getTeam()))
+		{
+			return;
+		}
+	}
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 
 	std::vector< std::pair<CvUnit*, int> > listFlankedUnits;
@@ -14721,7 +14829,17 @@ bool CvUnit::persecute(ReligionTypes eReligion)
 
 		if (GC.getGame().getSorenRandNum(100, "Persecution chance") < iChance)
 		{
-			int iLootModifier = 1 + pCity->getPopulation() / pCity->getReligionCount();
+			int iLootModifier = 0;
+			if (CVGAMECORE_FIX_NULL_POINTER_BUG1) {
+				if (pCity != NULL) {
+					if (pCity->getReligionCount() > 0) {
+						iLootModifier = 1 + pCity->getPopulation() / pCity->getReligionCount();
+					}
+				}
+			}
+			else {
+				iLootModifier = 1 + pCity->getPopulation() / pCity->getReligionCount();
+			}
 			int iLoot = 1 + iLootModifier;
 
 			for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
@@ -14735,10 +14853,19 @@ bool CvUnit::persecute(ReligionTypes eReligion)
 					}
 				}
 			}
-
-			if (pCity->getPopulation() > 1)
-			{
-				pCity->changePopulation(-pCity->getPopulation() / 5);
+			if (CVGAMECORE_FIX_NULL_POINTER_BUG1) {
+				if (pCity != NULL) {
+					if (pCity->getPopulation() > 1)
+					{
+						pCity->changePopulation(-pCity->getPopulation() / 5);
+					}
+				}
+			}
+			else {
+				if (pCity->getPopulation() > 1)
+				{
+					pCity->changePopulation(-pCity->getPopulation() / 5);
+				}
 			}
 
 			iLoot += GC.getGame().getSorenRandNum(iLoot, "Random loot");

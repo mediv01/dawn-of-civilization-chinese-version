@@ -20040,6 +20040,7 @@ int CvArtInfoFeature::getConnectionMaskFromString(const CvString &connectionStri
 int CvArtInfoFeature::getRotatedConnectionMask(int connectionMask, RotationTypes rotation)
 {
 	if(rotation == ROTATE_NONE)
+		//mediv01 警告性提示 a=a赋值
 		connectionMask = connectionMask;
 	else if(rotation == ROTATE_90CW)
 		connectionMask = connectionMask << 2; //rotate two directions CW

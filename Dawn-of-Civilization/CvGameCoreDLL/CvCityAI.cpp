@@ -5535,10 +5535,18 @@ int CvCityAI::AI_clearFeatureValue(int iIndex)
 {
 	CvPlot* pPlot = plotCity(getX_INLINE(), getY_INLINE(), iIndex);
 	FAssert(pPlot != NULL);
-
+	if (CVGAMECORE_FIX_NULL_POINTER_BUG1) {
+		if (pPlot == NULL) {
+			return 0;
+		}
+	}
 	FeatureTypes eFeature = pPlot->getFeatureType();
 	FAssert(eFeature != NO_FEATURE);
-
+	if (CVGAMECORE_FIX_NULL_POINTER_BUG1) {
+		if (eFeature == NO_FEATURE) {
+			return 0;
+		}
+	}
 	CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(eFeature);
 
 	int iValue = 0;

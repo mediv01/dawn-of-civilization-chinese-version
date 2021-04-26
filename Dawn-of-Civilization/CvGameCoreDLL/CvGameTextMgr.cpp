@@ -10707,6 +10707,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTypes eBuilding, bool bCivilopediaText, bool bStrategyText, bool bTechChooserText, CvCity* pCity, bool bActual)
 // BUG - Building Actual Effects - end
 {
+	//城市建筑界面
 	PROFILE_FUNC();
 
 	CvWString szFirstBuffer;

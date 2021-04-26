@@ -1480,7 +1480,11 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 	int iCaptureMaxTurns = GC.getDefineINT("CAPTURE_GOLD_MAX_TURNS");
 
 	pCityPlot = pOldCity->plot();
-
+	if (CVGAMECORE_FIX_NULL_POINTER_BUG1) {
+		if (pCityPlot == NULL) {
+			return;
+		}
+	}
 	pUnitNode = pCityPlot->headUnitNode();
 
 	while (pUnitNode != NULL)
@@ -3960,38 +3964,83 @@ int CvPlayer::countUnimprovedBonuses(CvArea* pArea, CvPlot* pFromPlot) const
 	gDLL->getFAStarIFace()->ForceReset(&GC.getBorderFinder());
 
 	iCount = 0;
-
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
-	{
-		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
-
-		if (pLoopPlot == NULL || pLoopPlot->area() == pArea)
+	if (CVGAMECORE_FIX_NULL_POINTER_BUG4) {
+		for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 		{
-			if (pLoopPlot->getOwnerINLINE() == getID())
+			pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+
+			if (pLoopPlot != NULL && pLoopPlot->area() == pArea)
 			{
-				if (!(pLoopPlot->isCity()))
+				if (pLoopPlot->getOwnerINLINE() == getID())
 				{
-					eNonObsoleteBonus = pLoopPlot->getNonObsoleteBonusType(getTeam());
-
-					if (eNonObsoleteBonus != NO_BONUS)
+					if (!(pLoopPlot->isCity()))
 					{
-						eImprovement = pLoopPlot->getImprovementType();
+						eNonObsoleteBonus = pLoopPlot->getNonObsoleteBonusType(getTeam());
 
-						if ((eImprovement == NO_IMPROVEMENT) || !(GC.getImprovementInfo(eImprovement).isImprovementBonusTrade(eNonObsoleteBonus)))
+						if (eNonObsoleteBonus != NO_BONUS)
 						{
-							if ((pFromPlot == NULL) || gDLL->getFAStarIFace()->GeneratePath(&GC.getBorderFinder(), pFromPlot->getX_INLINE(), pFromPlot->getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), false, getID(), true))
-							{
-								for (iJ = 0; iJ < GC.getNumBuildInfos(); iJ++)
-								{
-									eBuild = ((BuildTypes)iJ);
+							eImprovement = pLoopPlot->getImprovementType();
 
-									if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
+							if ((eImprovement == NO_IMPROVEMENT) || !(GC.getImprovementInfo(eImprovement).isImprovementBonusTrade(eNonObsoleteBonus)))
+							{
+								if ((pFromPlot == NULL) || gDLL->getFAStarIFace()->GeneratePath(&GC.getBorderFinder(), pFromPlot->getX_INLINE(), pFromPlot->getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), false, getID(), true))
+								{
+									for (iJ = 0; iJ < GC.getNumBuildInfos(); iJ++)
 									{
-										if (GC.getImprovementInfo((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement())).isImprovementBonusTrade(eNonObsoleteBonus))
+										eBuild = ((BuildTypes)iJ);
+
+										if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
 										{
-											if (canBuild(pLoopPlot, eBuild))
+											if (GC.getImprovementInfo((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement())).isImprovementBonusTrade(eNonObsoleteBonus))
 											{
-												iCount++;
+												if (canBuild(pLoopPlot, eBuild))
+												{
+													iCount++;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	else {
+		for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		{
+			pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+
+			if (pLoopPlot == NULL || pLoopPlot->area() == pArea)
+			{
+				if (pLoopPlot->getOwnerINLINE() == getID())
+				{
+					if (!(pLoopPlot->isCity()))
+					{
+						eNonObsoleteBonus = pLoopPlot->getNonObsoleteBonusType(getTeam());
+
+						if (eNonObsoleteBonus != NO_BONUS)
+						{
+							eImprovement = pLoopPlot->getImprovementType();
+
+							if ((eImprovement == NO_IMPROVEMENT) || !(GC.getImprovementInfo(eImprovement).isImprovementBonusTrade(eNonObsoleteBonus)))
+							{
+								if ((pFromPlot == NULL) || gDLL->getFAStarIFace()->GeneratePath(&GC.getBorderFinder(), pFromPlot->getX_INLINE(), pFromPlot->getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), false, getID(), true))
+								{
+									for (iJ = 0; iJ < GC.getNumBuildInfos(); iJ++)
+									{
+										eBuild = ((BuildTypes)iJ);
+
+										if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
+										{
+											if (GC.getImprovementInfo((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement())).isImprovementBonusTrade(eNonObsoleteBonus))
+											{
+												if (canBuild(pLoopPlot, eBuild))
+												{
+													iCount++;
+												}
 											}
 										}
 									}
@@ -4560,8 +4609,12 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 	case TRADE_CITIES://mediv01 玩家主动交易城市的条件
 		{
 			CvCity* pCityTraded = getCity(item.m_iData);
-
-			if (pCityTraded->isOccupation())
+			if (CVGAMECORE_FIX_NULL_POINTER_BUG1) {
+				if (pCityTraded == NULL) {
+					return false;
+				}
+			}
+			if (pCityTraded->isOccupation()) 
 			{
 				return false;
 			}
@@ -8686,6 +8739,7 @@ void CvPlayer::foundReligion(ReligionTypes eReligion, ReligionTypes eSlotReligio
 			if (eReligion == (ReligionTypes)PROTESTANTISM)
 			{
 				int iRegion = pLoopCity->getRegionID();
+				//mediv01 编译器报了警告，但我觉得没问题，不是严重错误
 				if (iRegion != REGION_BRITAIN || iRegion != REGION_IBERIA || iRegion != REGION_ITALY || iRegion != REGION_BALKANS || iRegion != REGION_EUROPE || iRegion != REGION_SCANDINAVIA || iRegion != REGION_RUSSIA)
 				{
 					iValue = 5;
@@ -9062,22 +9116,50 @@ void CvPlayer::killGoldenAgeUnits(CvUnit* pUnitAlive)
 	{
 		iBestValue = 0;
 		pBestUnit = NULL;
-
-		for(pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
-		{
-			if (pLoopUnit->isGoldenAge())
-			{
-				//if (!(pabUnitUsed[pLoopUnit->getUnitType()]))
-				if (pLoopUnit->getSettledSpecialist() != NO_SPECIALIST && !pabSpecialistUsed[pLoopUnit->getSettledSpecialist()])
+		if (CVGAMECORE_FIX_NULL_POINTER_BUG4) {
+			if (pUnitAlive != NULL) {
+				for (pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
 				{
-					iValue = 10000;
+					if (pLoopUnit != NULL) {
+						if (pLoopUnit->isGoldenAge())
+						{
+							//if (!(pabUnitUsed[pLoopUnit->getUnitType()]))
+							if (pLoopUnit->getSettledSpecialist() != NO_SPECIALIST && !pabSpecialistUsed[pLoopUnit->getSettledSpecialist()])
+							{
+								iValue = 10000;
+								int distance = (plotDistance(pLoopUnit->getX_INLINE(), pLoopUnit->getY_INLINE(), pUnitAlive->getX_INLINE(), pUnitAlive->getY_INLINE()) + 1);
+								if (distance > 0) {
+									iValue /= distance;
+								}
 
-					iValue /= (plotDistance(pLoopUnit->getX_INLINE(), pLoopUnit->getY_INLINE(), pUnitAlive->getX_INLINE(), pUnitAlive->getY_INLINE()) + 1);
-
-					if (iValue > iBestValue)
+								if (iValue > iBestValue)
+								{
+									iBestValue = iValue;
+									pBestUnit = pLoopUnit;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		else {
+			for (pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
+			{
+				if (pLoopUnit->isGoldenAge())
+				{
+					//if (!(pabUnitUsed[pLoopUnit->getUnitType()]))
+					if (pLoopUnit->getSettledSpecialist() != NO_SPECIALIST && !pabSpecialistUsed[pLoopUnit->getSettledSpecialist()])
 					{
-						iBestValue = iValue;
-						pBestUnit = pLoopUnit;
+						iValue = 10000;
+
+						iValue /= (plotDistance(pLoopUnit->getX_INLINE(), pLoopUnit->getY_INLINE(), pUnitAlive->getX_INLINE(), pUnitAlive->getY_INLINE()) + 1);
+
+						if (iValue > iBestValue)
+						{
+							iBestValue = iValue;
+							pBestUnit = pLoopUnit;
+						}
 					}
 				}
 			}
@@ -16424,19 +16506,40 @@ bool CvPlayer::doEspionageMission(EspionageMissionTypes eMission, PlayerTypes eT
 
 	if (kMission.getDestroyUnitCostFactor() > 0)
 	{
-
-		if (pSpyUnit->canAssassin(pPlot, false))
-		{
-			SpecialistTypes theGreatSpecialistTarget = (SpecialistTypes)iExtraData;
-			if (theGreatSpecialistTarget >= SPECIALIST_GREAT_PRIEST)
-			{
-				//Assassinate
-				CvCity* pCity = pPlot->getPlotCity();
-				if (NULL != pCity)
+		if (CVGAMECORE_FIX_NULL_POINTER_BUG1) {
+			if (pPlot != NULL) {
+				if (pSpyUnit->canAssassin(pPlot, false))
 				{
-					pCity->changeFreeSpecialistCount(theGreatSpecialistTarget, -1);
-					szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_ASSASSINATED", GC.getSpecialistInfo(theGreatSpecialistTarget).getDescription(), pCity->getNameKey()).GetCString();
-					bSomethingHappened = true;
+					SpecialistTypes theGreatSpecialistTarget = (SpecialistTypes)iExtraData;
+					if (theGreatSpecialistTarget >= SPECIALIST_GREAT_PRIEST)
+					{
+						//Assassinate
+						CvCity* pCity = pPlot->getPlotCity();
+						if (NULL != pCity)
+						{
+							pCity->changeFreeSpecialistCount(theGreatSpecialistTarget, -1);
+							szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_ASSASSINATED", GC.getSpecialistInfo(theGreatSpecialistTarget).getDescription(), pCity->getNameKey()).GetCString();
+							bSomethingHappened = true;
+						}
+					}
+				}
+			}
+		}
+		else {
+
+			if (pSpyUnit->canAssassin(pPlot, false))
+			{
+				SpecialistTypes theGreatSpecialistTarget = (SpecialistTypes)iExtraData;
+				if (theGreatSpecialistTarget >= SPECIALIST_GREAT_PRIEST)
+				{
+					//Assassinate
+					CvCity* pCity = pPlot->getPlotCity();
+					if (NULL != pCity)
+					{
+						pCity->changeFreeSpecialistCount(theGreatSpecialistTarget, -1);
+						szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_ASSASSINATED", GC.getSpecialistInfo(theGreatSpecialistTarget).getDescription(), pCity->getNameKey()).GetCString();
+						bSomethingHappened = true;
+					}
 				}
 			}
 		}

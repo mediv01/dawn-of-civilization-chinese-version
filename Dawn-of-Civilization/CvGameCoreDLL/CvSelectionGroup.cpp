@@ -22,6 +22,8 @@
 #include "CvDLLPythonIFaceBase.h"
 #include <set>
 #include "CvEventReporter.h"
+#include "CvRhyes.h" //Rhye
+
 
 // BUG - start
 #include "CvBugOptions.h"
@@ -3815,8 +3817,17 @@ void CvSelectionGroup::setTransportUnit(CvUnit* pTransportUnit)
 	{
 		CvUnit* pHeadUnit = getHeadUnit();
 		FAssertMsg(pHeadUnit != NULL, "non-zero group without head unit");
+		int iCargoSpaceAvailable = 0 ;
+		if (CVGAMECORE_FIX_NULL_POINTER_BUG1) 
+		{ 
+			if (pHeadUnit != NULL) {
+				iCargoSpaceAvailable = pTransportUnit->cargoSpaceAvailable(pHeadUnit->getSpecialUnitType(), pHeadUnit->getDomainType());
+			}
+		}
+		else {
+			iCargoSpaceAvailable = pTransportUnit->cargoSpaceAvailable(pHeadUnit->getSpecialUnitType(), pHeadUnit->getDomainType());
+		}
 		
-		int iCargoSpaceAvailable = pTransportUnit->cargoSpaceAvailable(pHeadUnit->getSpecialUnitType(), pHeadUnit->getDomainType());
 		
 		// if no space at all, give up
 		if (iCargoSpaceAvailable < 1)
@@ -4238,9 +4249,19 @@ CvPlot* CvSelectionGroup::getPathFirstPlot() const
 
 	pNode = getPathLastNode();
 
-	if (pNode->m_pParent == NULL)
-	{
-		return GC.getMapINLINE().plotSorenINLINE(pNode->m_iX, pNode->m_iY);
+	if (CVGAMECORE_FIX_NULL_POINTER_BUG1) {
+		if (pNode != NULL) {
+			if (pNode->m_pParent == NULL)
+			{
+				return GC.getMapINLINE().plotSorenINLINE(pNode->m_iX, pNode->m_iY);
+			}
+		}
+	}
+	else {
+		if (pNode->m_pParent == NULL)
+		{
+			return GC.getMapINLINE().plotSorenINLINE(pNode->m_iX, pNode->m_iY);
+		}
 	}
 
 	while (pNode != NULL)

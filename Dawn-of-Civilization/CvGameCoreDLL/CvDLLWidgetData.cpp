@@ -3006,6 +3006,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_REBUILD)
 			{
+			//mediv01 重建城市的建筑
 				if (pMissionCity != NULL)
 				{
 					szBuffer.append(NEWLINE);
@@ -4424,20 +4425,37 @@ void CvDLLWidgetData::parseNationalityHelp(CvWidgetDataStruct &widgetDataStruct,
 		// Leoreth: stability effects of cultural control
 		int iOwnCulture = iTotalCulture == 0 ? 100 : 100 * pHeadSelectedCity->plot()->getCulture(pHeadSelectedCity->getOwnerINLINE()) / iTotalCulture;
 
-		if (pHeadSelectedCity->getOwnerINLINE() != PERSIA || (pHeadSelectedCity->getOwnerINLINE() == PERSIA && GET_PLAYER((PlayerTypes)PERSIA).isReborn()))
-		{
-			if (iOwnCulture < 20)
+		//mediv01 疑似判断条件写的不严谨
+		if (CVGAMECORE_FIX_NULL_POINTER_BUG3) {
+			if ((pHeadSelectedCity->getOwnerINLINE() != PERSIA) || ((pHeadSelectedCity->getOwnerINLINE() == PERSIA && GET_PLAYER((PlayerTypes)PERSIA).isReborn())))
 			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_INTERFACE_HIGH_INSTABILITY_CULTURE"));
-			}
-			else if (iOwnCulture < 50)
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_INTERFACE_INSTABILITY_CULTURE"));
+				if (iOwnCulture < 20)
+				{
+					szBuffer.append(NEWLINE);
+					szBuffer.append(gDLL->getText("TXT_KEY_INTERFACE_HIGH_INSTABILITY_CULTURE"));
+				}
+				else if (iOwnCulture < 50)
+				{
+					szBuffer.append(NEWLINE);
+					szBuffer.append(gDLL->getText("TXT_KEY_INTERFACE_INSTABILITY_CULTURE"));
+				}
 			}
 		}
-
+		else {
+			if (pHeadSelectedCity->getOwnerINLINE() != PERSIA || (pHeadSelectedCity->getOwnerINLINE() == PERSIA && GET_PLAYER((PlayerTypes)PERSIA).isReborn()))
+			{
+				if (iOwnCulture < 20)
+				{
+					szBuffer.append(NEWLINE);
+					szBuffer.append(gDLL->getText("TXT_KEY_INTERFACE_HIGH_INSTABILITY_CULTURE"));
+				}
+				else if (iOwnCulture < 50)
+				{
+					szBuffer.append(NEWLINE);
+					szBuffer.append(gDLL->getText("TXT_KEY_INTERFACE_INSTABILITY_CULTURE"));
+				}
+			}
+		}
 		eCulturalOwner = pHeadSelectedCity->plot()->calculateCulturalOwner();
 
 		if (eCulturalOwner != NO_PLAYER)

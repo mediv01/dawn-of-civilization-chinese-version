@@ -2274,12 +2274,27 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 						if(outerRing) //check strictly higher level
 						{
 							CvPlot *passThroughPlot = plotXY(getX_INLINE(), getY_INLINE(), nextDX, nextDY);
-							int passThroughLevel = passThroughPlot->seeThroughLevel();
-							if (fromLevel >= passThroughLevel)
-							{
-								if((fromLevel > passThroughLevel) || (pPlot->seeFromLevel(eTeam) > fromLevel)) //either we can see through to it or it is high enough to see from far
+							if (CVGAMECORE_FIX_NULL_POINTER_BUG1) {
+								if (passThroughPlot != NULL) {
+									int passThroughLevel = passThroughPlot->seeThroughLevel();
+
+									if (fromLevel >= passThroughLevel)
+									{
+										if ((fromLevel > passThroughLevel) || (pPlot->seeFromLevel(eTeam) > fromLevel)) //either we can see through to it or it is high enough to see from far
+										{
+											return true;
+										}
+									}
+								}
+							}
+							else {
+								int passThroughLevel = passThroughPlot->seeThroughLevel();
+								if (fromLevel >= passThroughLevel)
 								{
-									return true;
+									if ((fromLevel > passThroughLevel) || (pPlot->seeFromLevel(eTeam) > fromLevel)) //either we can see through to it or it is high enough to see from far
+									{
+										return true;
+									}
 								}
 							}
 						}

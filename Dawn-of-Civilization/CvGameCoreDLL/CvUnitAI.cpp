@@ -15519,7 +15519,15 @@ bool CvUnitAI::AI_travelToUpgradeCity()
 
 			int iClosestCityPathTurns;
 			CvPlot* pThisTurnPlotForAirlift = NULL;
-			bool bCanPathToClosestCity = generatePath(pClosestCity->plot(), 0, true, &iClosestCityPathTurns);
+			bool bCanPathToClosestCity = false;
+			if (CVGAMECORE_FIX_NULL_POINTER_BUG4) {
+				if (pClosestCity != NULL) {
+					bCanPathToClosestCity = generatePath(pClosestCity->plot(), 0, true, &iClosestCityPathTurns);
+				}
+			}
+			else {
+				bCanPathToClosestCity = generatePath(pClosestCity->plot(), 0, true, &iClosestCityPathTurns);
+			}
 			if (bCanPathToClosestCity)
 			{
 				pThisTurnPlotForAirlift = getPathEndTurnPlot();

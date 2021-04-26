@@ -11674,26 +11674,51 @@ int CvPlayerAI::AI_espionageVal(PlayerTypes eTargetPlayer, EspionageMissionTypes
 		steal tech (180-17080)
 		*/
 		SpecialistTypes theGreatSpecialistTarget = (SpecialistTypes)0;
-
-		CvCity* pCity = pPlot->getPlotCity();
-		if (NULL != pCity)
-		{
-			for (int iSpecialist = SPECIALIST_GREAT_PRIEST; iSpecialist <= SPECIALIST_GREAT_SPY; iSpecialist++)
-			{
-				SpecialistTypes tempSpecialist = (SpecialistTypes)0;
-				if (pCity->getFreeSpecialistCount((SpecialistTypes)iSpecialist) > 0)
+		if (CVGAMECORE_FIX_NULL_POINTER_BUG1) {
+			if (pPlot != NULL) {
+				CvCity* pCity = pPlot->getPlotCity();
+				if (NULL != pCity)
 				{
-					tempSpecialist = (SpecialistTypes)iSpecialist;
-					if (tempSpecialist > theGreatSpecialistTarget)
+					for (int iSpecialist = SPECIALIST_GREAT_PRIEST; iSpecialist <= SPECIALIST_GREAT_SPY; iSpecialist++)
 					{
-						theGreatSpecialistTarget = tempSpecialist;
+						SpecialistTypes tempSpecialist = (SpecialistTypes)0;
+						if (pCity->getFreeSpecialistCount((SpecialistTypes)iSpecialist) > 0)
+						{
+							tempSpecialist = (SpecialistTypes)iSpecialist;
+							if (tempSpecialist > theGreatSpecialistTarget)
+							{
+								theGreatSpecialistTarget = tempSpecialist;
+							}
+						}
 					}
+				}
+				if (theGreatSpecialistTarget >= 7)
+				{
+					iValue += 1000;
 				}
 			}
 		}
-		if (theGreatSpecialistTarget >= 7) 
-		{
-			iValue += 1000;
+		else {
+			CvCity* pCity = pPlot->getPlotCity();
+			if (NULL != pCity)
+			{
+				for (int iSpecialist = SPECIALIST_GREAT_PRIEST; iSpecialist <= SPECIALIST_GREAT_SPY; iSpecialist++)
+				{
+					SpecialistTypes tempSpecialist = (SpecialistTypes)0;
+					if (pCity->getFreeSpecialistCount((SpecialistTypes)iSpecialist) > 0)
+					{
+						tempSpecialist = (SpecialistTypes)iSpecialist;
+						if (tempSpecialist > theGreatSpecialistTarget)
+						{
+							theGreatSpecialistTarget = tempSpecialist;
+						}
+					}
+				}
+			}
+			if (theGreatSpecialistTarget >= 7)
+			{
+				iValue += 1000;
+			}
 		}
 	}
 	
@@ -17553,7 +17578,20 @@ bool CvPlayerAI::AI_advancedStartPlaceExploreUnits(bool bLand)
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 		CvPlot* pLoopPlot = pLoopCity->plot();
-		CvArea* pLoopArea = bLand ? pLoopCity->area() : pLoopPlot->waterArea();
+
+		CvArea* pLoopArea = NULL;
+		if (CVGAMECORE_FIX_NULL_POINTER_BUG1) {
+			if (pLoopPlot==NULL) 
+			{
+				
+			}
+			else {
+				CvArea* pLoopArea = bLand ? pLoopCity->area() : pLoopPlot->waterArea();
+			}
+		}
+		else {
+			CvArea* pLoopArea = bLand ? pLoopCity->area() : pLoopPlot->waterArea();
+		}
 
 		if (pLoopArea != NULL)
 			{
