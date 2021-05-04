@@ -18,6 +18,7 @@
 #include "FProfiler.h"
 #include "FAStarNode.h"
 #include "CvRhyes.h" //Rhye
+#include "CvGlobals.h"
 
 // interface uses
 #include "CvDLLInterfaceIFaceBase.h"
@@ -9677,7 +9678,8 @@ bool CvUnitAI::AI_discover(bool bThisTurnOnly, bool bFirstResearchOnly)
 {
 	TechTypes eFirstDiscoverTech, eSecondDiscoverTech;
 	bool bIsFirstTech;
-	int iFirstLeft, iSecondLeft;
+	int iFirstLeft = 0;
+	int iSecondLeft = 0;
 	int iFirstResearch, iSecondResearch;
 	int iPercentWasted = 0;
 

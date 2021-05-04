@@ -14844,12 +14844,26 @@ bool CvUnit::persecute(ReligionTypes eReligion)
 
 			for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
 			{
-				if (pCity->isHasRealBuilding((BuildingTypes)iI) && GC.getBuildingInfo((BuildingTypes)iI).getPrereqReligion() == eReligion)
-				{
-					iLoot += iLootModifier;
-					if (GC.getBuildingClassInfo((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)iI).getBuildingClassType()).getMaxGlobalInstances() > 1)
+				if (CVGAMECORE_FIX_NULL_POINTER_BUG5) {
+					if (pCity != NULL) {
+						if (pCity->isHasRealBuilding((BuildingTypes)iI) && GC.getBuildingInfo((BuildingTypes)iI).getPrereqReligion() == eReligion)
+						{
+							iLoot += iLootModifier;
+							if (GC.getBuildingClassInfo((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)iI).getBuildingClassType()).getMaxGlobalInstances() > 1)
+							{
+								pCity->setHasRealBuilding((BuildingTypes)iI, false);
+							}
+						}
+					}
+				}
+				else {
+					if (pCity->isHasRealBuilding((BuildingTypes)iI) && GC.getBuildingInfo((BuildingTypes)iI).getPrereqReligion() == eReligion)
 					{
-						pCity->setHasRealBuilding((BuildingTypes)iI, false);
+						iLoot += iLootModifier;
+						if (GC.getBuildingClassInfo((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)iI).getBuildingClassType()).getMaxGlobalInstances() > 1)
+						{
+							pCity->setHasRealBuilding((BuildingTypes)iI, false);
+						}
 					}
 				}
 			}

@@ -1,6 +1,32 @@
 #pragma once
 
 // CvGlobals.h
+//mediv01  游戏BUG修复参数开始
+
+//第一阶段修复使用的参数
+static const int CVGAMECORE_FIX_NULL_POINTER_BUG1 = 1; //mediv01 主要是PLOT空指针错误
+static const int CVGAMECORE_FIX_NULL_POINTER_BUG2 = 1; //mediv01 主要是内存泄露错误
+static const int CVGAMECORE_FIX_NULL_POINTER_BUG3 = 1; //mediv01 IF条件里重复判断的BUG
+static const int CVGAMECORE_FIX_NULL_POINTER_BUG4 = 1; //mediv01 不太有把握的空指针
+
+//第二阶段修复使用的参数
+static const int CVGAMECORE_FIX_NULL_POINTER_BUG5 = 1; //mediv01 主要是PLOT空指针错误
+static const int CVGAMECORE_FIX_NULL_POINTER_BUG6 = 1; //mediv01 主要是内存泄露错误
+static const int CVGAMECORE_FIX_NULL_POINTER_BUG7 = 1; //mediv01 不太有把握的空指针
+static const int CVGAMECORE_FIX_NULL_POINTER_BUG8 = 1; //mediv01 预留
+
+//引入Wunshare Performance UP中的内容
+static const int CVGAMECORE_FIX_BUG_PERFORMANCE_UP01 = 1; //mediv01 修正Cyplayer中的部分性能问题
+static const int CVGAMECORE_FIX_BUG_PERFORMANCE_UP02 = 1; //mediv01 预留
+static const int CVGAMECORE_FIX_BUG_PERFORMANCE_UP03 = 1; //mediv01 预留
+static const int CVGAMECORE_FIX_BUG_PERFORMANCE_UP04 = 1; //mediv01 预留
+
+
+//mediv01  游戏BUG修复参数结束
+
+
+
+
 
 #ifndef CIV4_GLOBALS_H
 #define CIV4_GLOBALS_H

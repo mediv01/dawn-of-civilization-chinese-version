@@ -188,4 +188,8 @@
 		<English>布宜诺斯艾利斯的文化： %d1 / %d2 </English>
 		<L1/><L2/><L3/><L4/><Chinese>布宜诺斯艾利斯的文化： %d1 / %d2 </Chinese><French>布宜诺斯艾利斯的文化： %d1 / %d2 </French></TEXT>	
 		
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_BRZ2_BRAZILIA</Tag>
+		<English>在巴西利亚建立首都，并且拥有1座飞机场</English>
+		<L1/><L2/><L3/><L4/><Chinese>在巴西利亚建立首都，并且拥有1座飞机场</Chinese><French>在巴西利亚建立首都，并且拥有1座飞机场</French></TEXT>		
 </Civ4GameText>

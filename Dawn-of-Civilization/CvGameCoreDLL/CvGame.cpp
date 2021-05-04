@@ -1185,6 +1185,12 @@ void CvGame::normalizeStartingPlotLocations()
 				{
 					if (GET_PLAYER((PlayerTypes)iJ).isAlive())
 					{
+						if (CVGAMECORE_FIX_NULL_POINTER_BUG6) {
+							if (iI >= MAX_CIV_PLAYERS || iJ >= MAX_CIV_PLAYERS) {
+								continue;
+							}
+						}
+					
 						int iTemp = aiStartingLocs[iI];
 						aiStartingLocs[iI] = aiStartingLocs[iJ];
 						aiStartingLocs[iJ] = iTemp;
@@ -2169,6 +2175,11 @@ int CvGame::getTeamClosenessScore(int** aaiDistances, int* aiStartingLocs)
 							if (GET_PLAYER((PlayerTypes)iOtherPlayer).getTeam() == (TeamTypes)iTeam)
 							{
 								// Add the edge between these two players that are on the same team
+								if (CVGAMECORE_FIX_NULL_POINTER_BUG6) {
+									if (iPlayer >= MAX_CIV_PLAYERS || iOtherPlayer >= MAX_CIV_PLAYERS) {
+										continue;
+									}
+								}
 								iNumEdges++;
 								int iPlayerStart = aiStartingLocs[iPlayer];
 								int iOtherPlayerStart = aiStartingLocs[iOtherPlayer];

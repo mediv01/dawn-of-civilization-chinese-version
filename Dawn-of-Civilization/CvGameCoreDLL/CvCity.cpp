@@ -2532,6 +2532,10 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 			return false;
 		}
 	}
+	if (GC.getDefineINT("CVCITY_UHV_HELPER_AI_NOT_BUILD_WONDER_OF_HUMAN_UHV") > 0) {
+		
+
+	}
 
 	//mediv01 AI不能建玩家UHV的建筑
 	const bool mediv01 = GC.getDefineINT("CVCITY_UHV_HELPER_AI_NOT_BUILD_WONDER_OF_HUMAN_UHV");
@@ -19028,6 +19032,11 @@ int CvCity::getEffectiveNextCoveredPlot() const
 bool CvCity::isCoveredBeforeExpansion(int i) const
 {
 	CvPlot* pPlot = getCulturePlot(i);
+	if (CVGAMECORE_FIX_NULL_POINTER_BUG5) {
+		if (pPlot == NULL) {
+			return false;
+		}
+	}
 	int iDistance = plotDistance(getX(), getY(), pPlot->getX(), pPlot->getY());
 
 	return (getCultureCost(i) < getCultureThreshold((CultureLevelTypes)iDistance));

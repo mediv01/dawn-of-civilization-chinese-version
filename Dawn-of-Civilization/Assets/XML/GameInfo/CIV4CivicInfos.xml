@@ -628,12 +628,6 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
-			<Hurrys>
-				<Hurry>
-					<HurryType>HURRY_GOLD_BUILDINGS</HurryType>
-					<bHurry>1</bHurry>
-				</Hurry>
-			</Hurrys>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>

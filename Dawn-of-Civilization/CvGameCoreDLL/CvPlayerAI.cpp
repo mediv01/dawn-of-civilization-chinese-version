@@ -11728,13 +11728,27 @@ int CvPlayerAI::AI_espionageVal(PlayerTypes eTargetPlayer, EspionageMissionTypes
 		Bribe iValues compete with:
 		destroy improvement (1-60)
 		*/
-		if (pPlot->plotCount(PUF_isOtherTeam, getID(), -1, NO_PLAYER, NO_TEAM, PUF_isVisible, getID()) >= 1)
-		{
-			if (pPlot->plotCount(PUF_isUnitAIType, UNITAI_WORKER, -1) >= 1)
-			{
-				iValue += 100;
+		if (CVGAMECORE_FIX_NULL_POINTER_BUG5) {
+			if (pPlot != NULL) {
+				if (pPlot->plotCount(PUF_isOtherTeam, getID(), -1, NO_PLAYER, NO_TEAM, PUF_isVisible, getID()) >= 1)
+				{
+					if (pPlot->plotCount(PUF_isUnitAIType, UNITAI_WORKER, -1) >= 1)
+					{
+						iValue += 100;
+					}
+				}
 			}
 		}
+		else {
+			if (pPlot->plotCount(PUF_isOtherTeam, getID(), -1, NO_PLAYER, NO_TEAM, PUF_isVisible, getID()) >= 1)
+			{
+				if (pPlot->plotCount(PUF_isUnitAIType, UNITAI_WORKER, -1) >= 1)
+				{
+					iValue += 100;
+				}
+			}
+		}
+		
 	}
 	//SuperSpies: glider1 end
 

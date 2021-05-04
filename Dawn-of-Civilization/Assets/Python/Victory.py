@@ -227,7 +227,8 @@ dWonderGoals = {
     iItaly: (0, [iSanMarcoBasilica, iSistineChapel, iSantaMariaDelFiore], True),
     iMughals: (1, [iTajMahal, iRedFort, iShalimarGardens], True),
     iAmerica: (1, [iStatueOfLiberty, iBrooklynBridge, iEmpireStateBuilding, iGoldenGateBridge, iPentagon, iUnitedNations], True),
-    iBrazil: (1, [iWembley, iCristoRedentor, iItaipuDam], True),
+
+    #iBrazil: (1, [iWembley, iCristoRedentor, iItaipuDam], True),
 }
 
 dReligionGoals = {}
@@ -1607,7 +1608,17 @@ def checkTurn(iGameTurn, iPlayer):
                 lose(iBrazil, 0)
 
         # second goal: build Wembley, Cristo Redentor and the Three Gorges Dam
+        if isPossible(iBrazil, 1):
+            bWembley = (getNumBuildings(iBrazil, iWembley) > 0)
+            bCristoRedentor = (getNumBuildings(iBrazil, iCristoRedentor) > 0)
+            bBrazilia = False
+            for tPlot in [(38, 21), (39, 22), (38, 22), (39, 21)]:
+                if (not bBrazilia):
+                    if isControlledTile(iBrazil, [tPlot]):
+                        bBrazilia = isBuildingInCity(tPlot, iAirport) and isBuildingInCity(tPlot, iPalace)
 
+            if(bWembley and bCristoRedentor and bBrazilia):
+                win(iBrazil, 1)
         # third goal: control 20 forest preserves and have a national park in your capital by 1950 AD
         if isPossible(iBrazil, 2):
             if countImprovements(iBrazil, iForestPreserve) >= 20 and pBrazil.getCapitalCity() and pBrazil.getCapitalCity().isHasRealBuilding(iNationalPark):
@@ -4631,10 +4642,25 @@ def getUHVHelp(iPlayer, iGoal):
             iPastures = countImprovements(iBrazil, iPasture)
             aHelp.append(getIcon(iSlavePlantations >= 8) + localText.getText("TXT_KEY_VICTORY_NUM_IMPROVEMENTS", (gc.getImprovementInfo(iSlavePlantation).getText(), iSlavePlantations, 8)) + ' ' + getIcon(iPastures >= 4) + localText.getText("TXT_KEY_VICTORY_NUM_IMPROVEMENTS", (gc.getImprovementInfo(iPasture).getText(), iPastures, 4)))
         elif iGoal == 1:
-            bWembley = data.getWonderBuilder(iWembley) == iBrazil
-            bCristoRedentor = data.getWonderBuilder(iCristoRedentor) == iBrazil
-            bItaipuDam = data.getWonderBuilder(iItaipuDam) == iBrazil
-            aHelp.append(getIcon(bWembley) + localText.getText("TXT_KEY_BUILDING_WEMBLEY", ()) + ' ' + getIcon(bCristoRedentor) + localText.getText("TXT_KEY_BUILDING_CRISTO_REDENTOR", ()) + ' ' + getIcon(bItaipuDam) + localText.getText("TXT_KEY_BUILDING_ITAIPU_DAM", ()))
+            bWembley = (getNumBuildings(iBrazil, iWembley)>0)
+            bCristoRedentor = (getNumBuildings(iBrazil, iCristoRedentor)>0)
+
+
+            bBrazilia=False
+            for tPlot in [(38,21),(39,22),(38,22),(39,21)]:
+                if (not bBrazilia):
+                    if isControlledTile(iBrazil,[tPlot]):
+                        bBrazilia=isBuildingInCity(tPlot,iAirport) and isBuildingInCity(tPlot,iPalace)
+
+            txt3= getIcon(bBrazilia) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA", ())
+            aHelp.append(getIcon(bWembley) + localText.getText("TXT_KEY_BUILDING_WEMBLEY", ()) + ' ' + getIcon(bCristoRedentor) + localText.getText("TXT_KEY_BUILDING_CRISTO_REDENTOR", ()) + ' '+txt3)
+
+
+
+            #bWembley = data.getWonderBuilder(iWembley) == iBrazil
+            #bCristoRedentor = data.getWonderBuilder(iCristoRedentor) == iBrazil
+            #bItaipuDam = data.getWonderBuilder(iItaipuDam) == iBrazil
+            #aHelp.append(getIcon(bWembley) + localText.getText("TXT_KEY_BUILDING_WEMBLEY", ()) + ' ' + getIcon(bCristoRedentor) + localText.getText("TXT_KEY_BUILDING_CRISTO_REDENTOR", ()) + ' ' + getIcon(bItaipuDam) + localText.getText("TXT_KEY_BUILDING_ITAIPU_DAM", ()))
         elif iGoal == 2:
             iForestPreserves = countImprovements(iBrazil, iForestPreserve)
             bNationalPark = False

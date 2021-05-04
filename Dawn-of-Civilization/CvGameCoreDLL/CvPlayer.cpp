@@ -16573,48 +16573,100 @@ bool CvPlayer::doEspionageMission(EspionageMissionTypes eMission, PlayerTypes eT
 
 	if (kMission.getBuyUnitCostFactor() > 0)
 	{
-		if(pSpyUnit->canBribe(pPlot, false))
-		{
-			CvUnit* pTargetUnit;
-			if (pPlot->plotCheck(PUF_isOtherTeam, getID(), -1, NO_PLAYER, NO_TEAM, PUF_isVisible, getID()))
-			{
-				for (int i = 0; i < pPlot->getNumUnits(); i++) 
+		if (CVGAMECORE_FIX_NULL_POINTER_BUG5) {
+			if (pPlot != NULL) {
+				if (pSpyUnit->canBribe(pPlot, false))
 				{
-					pTargetUnit = pPlot->getUnitByIndex(i);
-					if (NULL != pTargetUnit && pTargetUnit->AI_getUnitAIType() == UNITAI_WORKER) 
+					CvUnit* pTargetUnit;
+					if (pPlot->plotCheck(PUF_isOtherTeam, getID(), -1, NO_PLAYER, NO_TEAM, PUF_isVisible, getID()))
 					{
-						if (pTargetUnit->getTeam() == eTargetTeam) break;
-						pTargetUnit = NULL;
+						for (int i = 0; i < pPlot->getNumUnits(); i++)
+						{
+							pTargetUnit = pPlot->getUnitByIndex(i);
+							if (NULL != pTargetUnit && pTargetUnit->AI_getUnitAIType() == UNITAI_WORKER)
+							{
+								if (pTargetUnit->getTeam() == eTargetTeam) break;
+								pTargetUnit = NULL;
+							}
+						}
+					}
+
+					if (NO_PLAYER != eTargetPlayer)
+					{
+						if (NULL != pTargetUnit)
+						{
+							if (pTargetUnit->getTeam() == eTargetTeam)
+							{
+								FAssert(pTargetUnit->plot() == pPlot);
+								CvCity* pNearCity = GC.getMapINLINE().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), eTargetPlayer, GET_PLAYER(eTargetPlayer).getTeam(), true, false);
+								if (pNearCity != NULL)
+									szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_BRIBED_NEAR_CITY", pTargetUnit->getNameKey(), pNearCity->getNameKey()).GetCString();
+								else
+									szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_BRIBED", pTargetUnit->getNameKey()).GetCString();
+
+								int iX = pTargetUnit->getX_INLINE();
+								int iY = pTargetUnit->getY_INLINE();
+								pTargetUnit->kill(false, getID());
+								CvUnit* acquiredWorker = initUnit(pTargetUnit->getUnitType(), iX, iY, UNITAI_WORKER);
+								CvCity* pCapital = this->getCapitalCity();
+								if (NULL != pCapital)
+								{
+									iX = pCapital->getX_INLINE();
+									iY = pCapital->getY_INLINE();
+									acquiredWorker->setXY(iX, iY, false, false, false);
+									acquiredWorker->finishMoves();
+								}
+								bSomethingHappened = true;
+							}
+						}
 					}
 				}
 			}
-								
-			if (NO_PLAYER != eTargetPlayer)
+		}
+		else {
+			if (pSpyUnit->canBribe(pPlot, false))
 			{
-				if (NULL != pTargetUnit)
+				CvUnit* pTargetUnit;
+				if (pPlot->plotCheck(PUF_isOtherTeam, getID(), -1, NO_PLAYER, NO_TEAM, PUF_isVisible, getID()))
 				{
-					if (pTargetUnit->getTeam() == eTargetTeam)
+					for (int i = 0; i < pPlot->getNumUnits(); i++)
 					{
-						FAssert(pTargetUnit->plot() == pPlot);
-						CvCity* pNearCity = GC.getMapINLINE().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), eTargetPlayer, GET_PLAYER(eTargetPlayer).getTeam(), true, false);
-						if (pNearCity != NULL)
-							szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_BRIBED_NEAR_CITY", pTargetUnit->getNameKey(), pNearCity->getNameKey()).GetCString();
-						else
-							szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_BRIBED", pTargetUnit->getNameKey()).GetCString();
-
-						int iX = pTargetUnit->getX_INLINE();
-						int iY = pTargetUnit->getY_INLINE();
-						pTargetUnit->kill(false, getID());
-						CvUnit* acquiredWorker = initUnit(pTargetUnit->getUnitType(), iX, iY, UNITAI_WORKER);
-						CvCity* pCapital = this->getCapitalCity();
-						if (NULL != pCapital)
+						pTargetUnit = pPlot->getUnitByIndex(i);
+						if (NULL != pTargetUnit && pTargetUnit->AI_getUnitAIType() == UNITAI_WORKER)
 						{
-							iX = pCapital->getX_INLINE();
-							iY = pCapital->getY_INLINE();
-							acquiredWorker->setXY(iX, iY, false, false, false);
-							acquiredWorker->finishMoves();
-						}	
-						bSomethingHappened = true;
+							if (pTargetUnit->getTeam() == eTargetTeam) break;
+							pTargetUnit = NULL;
+						}
+					}
+				}
+
+				if (NO_PLAYER != eTargetPlayer)
+				{
+					if (NULL != pTargetUnit)
+					{
+						if (pTargetUnit->getTeam() == eTargetTeam)
+						{
+							FAssert(pTargetUnit->plot() == pPlot);
+							CvCity* pNearCity = GC.getMapINLINE().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), eTargetPlayer, GET_PLAYER(eTargetPlayer).getTeam(), true, false);
+							if (pNearCity != NULL)
+								szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_BRIBED_NEAR_CITY", pTargetUnit->getNameKey(), pNearCity->getNameKey()).GetCString();
+							else
+								szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_SOMETHING_BRIBED", pTargetUnit->getNameKey()).GetCString();
+
+							int iX = pTargetUnit->getX_INLINE();
+							int iY = pTargetUnit->getY_INLINE();
+							pTargetUnit->kill(false, getID());
+							CvUnit* acquiredWorker = initUnit(pTargetUnit->getUnitType(), iX, iY, UNITAI_WORKER);
+							CvCity* pCapital = this->getCapitalCity();
+							if (NULL != pCapital)
+							{
+								iX = pCapital->getX_INLINE();
+								iY = pCapital->getY_INLINE();
+								acquiredWorker->setXY(iX, iY, false, false, false);
+								acquiredWorker->finishMoves();
+							}
+							bSomethingHappened = true;
+						}
 					}
 				}
 			}

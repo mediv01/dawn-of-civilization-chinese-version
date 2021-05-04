@@ -14,6 +14,7 @@
 #include "FVariableSystem.h"
 #include "CvGameCoreUtils.h"
 
+
 // Macro for Setting Global Art Defines
 #define INIT_XML_GLOBAL_LOAD(xmlInfoPath, infoArray, numInfos)  SetGlobalClassInfo(infoArray, xmlInfoPath, numInfos);
 
@@ -1802,6 +1803,11 @@ void CvXMLLoadUtility::SetFeatureStruct(int** ppiFeatureTech, int** ppiFeatureTi
 						gDLL->MessageBox(szMessage, "XML Error");
 					}
 					GetChildXmlValByName(szTextVal, "PrereqTech");
+					if (CVGAMECORE_FIX_NULL_POINTER_BUG7) {
+						if (iFeatureIndex == -1) {
+							iFeatureIndex = 0;
+						}
+					}
 					paiFeatureTech[iFeatureIndex] = FindInInfoClass(szTextVal);
 					GetChildXmlValByName(&paiFeatureTime[iFeatureIndex], "iTime");
 					GetChildXmlValByName(&paiFeatureProduction[iFeatureIndex], "iProduction");
