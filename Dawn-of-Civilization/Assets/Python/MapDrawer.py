@@ -21,7 +21,7 @@ def createMaps():
 			createMap(iPlayer, 1)
 			pass
 			
-	print 'Maps Created'
+	print('Maps Created')
 			
 def createMap(iPlayer, iReborn):
 	iCivilization = gc.getPlayer(iPlayer).getCivilizationType()

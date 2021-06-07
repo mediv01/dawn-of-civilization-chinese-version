@@ -38378,7 +38378,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=76,y=20
-	BonusType=BONUS_STONE_IGUAZU
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=30,

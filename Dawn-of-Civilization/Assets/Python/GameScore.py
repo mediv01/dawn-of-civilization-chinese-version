@@ -29,13 +29,16 @@ def log_gettime(iGameTurn):
 
 
 def manual_debug():
+    pass
+
+    '''
     if (gc.getDefineINT("PYTHON_LOG_MANUAL_DEBUG_SCORE") == 1):
         log_reset()
         for i in range(gc.getGame().getGameTurn()):
             ignoredeath=True
             log_tech_score(i,ignoredeath)
             log_power_score(i,ignoredeath)
-
+    '''
 
 def checkTurn(iGameTurn):
     ignoredeath=False

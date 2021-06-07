@@ -13,7 +13,7 @@ def getOrElse(dDictionary, key, default):
     if key in dDictionary: return dDictionary[key]
     return default
 
-
+# 核心区
 tCoreArea = [
     [[67, 32], [69, 36]],  # Egypt
     [[75, 39], [77, 42]],  # Babylonia
@@ -42,7 +42,7 @@ tCoreArea = [
     [[100, 32], [103, 36]],  # Khmer
     [[50, 53], [54, 60]],  # England
     [[58, 49], [63, 52]],  # HolyRome
-    [[68, 49], [84, 59]],  # Russia
+    [[68, 49], [80, 59]],  # Russia
     [[50, 29], [55, 32]],  # Mali
     [[63, 50], [67, 55]],  # Poland
     [[44, 42], [50, 44]],  # Portugal
@@ -63,7 +63,7 @@ tCoreArea = [
 ]
 
 ### Birth Area ###
-
+# 出生翻转区
 tBirthArea = (
     ((66, 30), (70, 36)),  # Egypt
     ((75, 39), (77, 42)),  # Babylonia
@@ -97,7 +97,7 @@ tBirthArea = (
     ((63, 50), (67, 55)),  # Poland
     ((44, 42), (50, 44)),  # Portugal
     ((26, 20), (29, 24)),  # Inca
-    ((58, 45), (63, 47)),  # Italy
+    ((58, 44), (63, 47)),  # Italy
     ((87, 46), (105, 54)),  # Mongolia
     ((15, 36), (20, 41)),  # Aztecs
     ((86, 38), (91, 43)),  # Mughals

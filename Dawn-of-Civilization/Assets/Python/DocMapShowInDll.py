@@ -19,8 +19,38 @@ def isCityInArea(tCityPos, tTL, tBR):
     return ((x >= tlx) and (x <= brx) and (y >= tly) and (y <= bry))
 
 
+def SearchTradingCompany(x, y):
+    # 在地图上显示公司信息
+
+
+    tList = []
+    plotCity = (x, y)
+
+    tPlot = (x, y)
+    lTradingCompanyCiv=(iSpain,iFrance,iEngland,iPortugal,iNetherlands)
+    for i in range(len(tTradingCompanyPlotLists)):
+        PlotList=tTradingCompanyPlotLists[i]
+        if (tPlot in PlotList):
+            tList.append(i)
+
+
+
+
+
+    '''
+    for i in range(len(Areas.tBirthArea)):
+        tArea = Areas.getBirthArea(i)
+        if (x, y) in tArea:
+            tList.append(i)
+        pass
+    '''
+    return tList
+
+
+
 def SearchCompany(x, y):
     #在地图上显示公司信息
+
     tSilkRouteTL = (80, 46)
     tSilkRouteBR = (99, 52)
 

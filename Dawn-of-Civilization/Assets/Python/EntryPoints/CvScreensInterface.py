@@ -88,6 +88,14 @@ def SearchCompanyInDll(argsList):
 	tList=DocMapShowInDll.SearchCompany(x,y)
 	return tList
 
+def SearchTradingCompanyInDll(argsList):
+	#tlist=DocMapShowInDll.SearchCore(x,y)
+	x=argsList[0]
+	y=argsList[1]
+	tList=[]
+	tList=DocMapShowInDll.SearchTradingCompany(x,y)
+	return tList
+
 
 def SearchAIWARInDll(argsList):
     	#tlist=DocMapShowInDll.SearchCore(x,y)

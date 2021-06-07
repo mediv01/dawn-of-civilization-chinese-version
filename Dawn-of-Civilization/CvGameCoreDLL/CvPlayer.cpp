@@ -41,6 +41,11 @@
 #include <algorithm>
 #include <map>
 
+#define DANGER_RANGE						(4)
+#define GREATER_FOUND_RANGE			(5)
+#define CIVIC_CHANGE_DELAY			(25)
+#define RELIGION_CHANGE_DELAY		(15)
+
 // Public Functions...
 
 CvPlayer::CvPlayer()
@@ -6014,6 +6019,7 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 
 void CvPlayer::found(int iX, int iY)
 {
+	//mediv01 建立城市
 	CvCity* pCity;
 	BuildingTypes eLoopBuilding;
 	UnitTypes eDefenderUnit;
@@ -7639,6 +7645,7 @@ int CvPlayer::calculateTotalCityUnhealthiness() const
 
 int CvPlayer::calculateUnitCost(int& iFreeUnits, int& iFreeMilitaryUnits, int& iPaidUnits, int& iPaidMilitaryUnits, int& iBaseUnitCost, int& iMilitaryCost, int& iExtraCost) const
 {
+	//mediv01 计算单位维护费
 	int iSupport;
 
 	// Leoreth: help AIs, especially those that start with large stacks, so they don't disband them
@@ -7671,12 +7678,20 @@ int CvPlayer::calculateUnitCost(int& iFreeUnits, int& iFreeMilitaryUnits, int& i
 
 	iPaidUnits = std::max(0, getNumUnits() - iSlaveUnits - iFreeUnits);
 	iPaidMilitaryUnits = std::max(0, getNumMilitaryUnits() - iFreeMilitaryUnits);
-
+	
 	iSupport = 0;
 
 	iBaseUnitCost = iPaidUnits * getGoldPerUnit();
 	iMilitaryCost = iPaidMilitaryUnits * getGoldPerMilitaryUnit();
-	iExtraCost = getExtraUnitCost();
+
+	//加速军事单位产生的费用
+	if (GC.getDefineINT("CVPLAYER_NO_EXTRA_COST_FOR_HURRY") > 0) {
+		iExtraCost = 0;
+	}
+	else {
+		iExtraCost = getExtraUnitCost();
+	}
+	
 
 	iSupport = iMilitaryCost + iBaseUnitCost + iExtraCost;
 
@@ -12048,10 +12063,10 @@ void CvPlayer::doConquestIncentive(const PlayerTypes& eOldOwner)
 
 
 			log_CWstring.Format(L"%s 征服了 %s", GET_PLAYER(getID()).getCivilizationDescription(), kTragePlayer.getCivilizationDescription());
-			GC.logs(log_CWstring, "DocDLLConquest.log");
-			log_CWstring.Format(L"%s 征服文明获得金币 %d", GET_PLAYER(getID()).getCivilizationDescription(), old_player_gold);
-			GC.logs(log_CWstring, "DocDLLConquest.log");
-
+			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
+			log_CWstring.Format(L"%s 征服文明获得金币: %d ", GET_PLAYER(getID()).getCivilizationDescription(), old_player_gold);
+			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
+			gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), log_CWstring, NULL, MESSAGE_TYPE_MAJOR_EVENT);
 
 
 		}
@@ -12069,8 +12084,8 @@ void CvPlayer::doConquestIncentive(const PlayerTypes& eOldOwner)
 
 				if (!GET_TEAM(getTeam()).isHasTech((TechTypes)iI))
 				{
-					log_CWstring.Format(L"%s 征服文明获得科技 %s", GET_PLAYER(getID()).getCivilizationDescription(), GC.getTechInfo((TechTypes)iI).getDescription());
-					GC.logs(log_CWstring, "DocDLLConquest.log");
+					log_CWstring.Format(L"%s 征服文明获得科技: %s", GET_PLAYER(getID()).getCivilizationDescription(), GC.getTechInfo((TechTypes)iI).getDescription());
+					GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
 					GET_TEAM(getTeam()).setHasTech((TechTypes)iI, true, NO_PLAYER, false, false);
 					szBuffer.Format(L"%s" SETCOLR L"%s" ENDCOLR, gDLL->getText("TXT_KEY_ANYFUNMOD_GAME_OPTION_CONQUEST_TECH_MSG").GetCString(), TEXT_COLOR("COLOR_YELLOW"), GC.getTechInfo((TechTypes)iI).getDescription());
 					gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MAJOR_EVENT);
@@ -12562,6 +12577,1118 @@ void CvPlayer::setStrike(bool bNewValue)
 PlayerTypes CvPlayer::getID() const
 {
 	return m_eID;
+}
+
+
+// Improved as per Blake - thanks!
+int CvPlayer::AI_foundValue2(int PlayerID, int iX, int iY, int iMinRivalRange, bool bStartingLoc) const
+{
+	CvCity* pNearestCity;
+	CvArea* pArea;
+	CvPlot* pPlot;
+	CvPlot* pLoopPlot;
+	FeatureTypes eFeature;
+	BonusTypes eBonus;
+	ImprovementTypes eBonusImprovement;
+	bool bHasGoodBonus;
+	int iOwnedTiles;
+	int iBadTile;
+	int iTakenTiles;
+	int iTeammateTakenTiles;
+	int iDifferentAreaTile;
+	int iTeamAreaCities;
+	int iHealth;
+	int iValue;
+	int iTempValue;
+	int iRange;
+	int iDX, iDY;
+	int iI;
+	bool bIsCoastal;
+	int iResourceValue = 0;
+	int iSpecialFood = 0;
+	int iSpecialFoodPlus = 0;
+	int iSpecialFoodMinus = 0;
+	int iSpecialProduction = 0;
+	int iSpecialCommerce = 0;
+
+	bool bNeutralTerritory = true;
+
+	int iGreed;
+	int iNumAreaCities;
+
+
+
+
+	PlayerTypes iPlayer = (PlayerTypes)PlayerID;
+
+	pPlot = GC.getMapINLINE().plotINLINE(iX, iY);
+
+	int tempX = pPlot->getX_INLINE();
+	int tempY = pPlot->getY_INLINE();
+	int reborn = GET_PLAYER(iPlayer).getReborn();
+
+
+
+	//mediv01
+	int iSettlerMapValue = GET_PLAYER(iPlayer).getSettlerValue(iX, iY);
+	//mediv01
+	//if (iSettlerMapValue == 1688) {
+		//return 100000;
+	//}
+	//mediv01
+	if (GC.getDefineINT("PLAYER_AI_ONLY_SETTLE_BY_SETTLER_MAP") == 1) {	//mediv01 我觉得这个代码不成熟，最好不用吧
+		if (iSettlerMapValue >= 900) {
+			return 100000;
+		}
+		else if (iSettlerMapValue >= 700) {
+			return 100000 / 2;
+		}
+		else if (iSettlerMapValue >= 500) {
+			return 100000 / 4;
+		}
+		else if (iSettlerMapValue >= 300) {
+			return 100000 / 5;
+		}
+		else if (iSettlerMapValue >= 200) {
+			return 100000 / 100;
+		}
+		else if (iSettlerMapValue >= 90) {
+			return 100000 / 1000;
+		}
+		else {
+			return 0;
+		}
+	}
+	//mediv01
+
+
+		// Leoreth: settler map entry of 1000 (never used by Rhye) to force a city no matter the environment
+		//if (settlersMaps[reborn][iPlayer][EARTH_Y - 1 - tempY][tempX] == 1000)
+		//    return 100000;
+
+	if (!GET_PLAYER(iPlayer).canFound(iX, iY))
+	{
+		return 0;
+	}
+	//mediv01 一些地图硬编码
+	//Leoreth: prevent France from founding Metz
+	if (iX == 57 && iY == 50)
+	{
+		return 0;
+	}
+
+	//Leoreth: prevent HRE from founding Bremen
+	if (iX == 58 && iY == 53)
+	{
+		return 0;
+	}
+
+	if (iX == 62 && (iY == 51 || iY == 52 || iY == 54))
+	{
+		return 0;
+	}
+
+	//Leoreth: if Poland exists, prevent HRE from founding cities in its core
+	if (iPlayer == HOLY_ROME && GET_PLAYER((PlayerTypes)POLAND).isPlayable() /* better option later when it exists */)
+	{
+		if (iX >= 63 && iY >= 49)
+		{
+			return 0;
+		}
+	}
+
+	bIsCoastal = pPlot->isCoastalLand(GC.getMIN_WATER_SIZE_FOR_OCEAN());
+	pArea = pPlot->area();
+	iNumAreaCities = pArea->getCitiesPerPlayer(iPlayer);
+
+	bool bAdvancedStart = (GET_PLAYER(iPlayer).getAdvancedStartPoints() >= 0);
+
+	//Rhye - start switch
+	/*if (!bStartingLoc && !bAdvancedStart)
+	{
+		if (!bIsCoastal && iNumAreaCities == 0)
+		{
+			return 0;
+		}
+	}*/
+
+
+	if (iPlayer != RUSSIA)
+		if (!bStartingLoc && !bAdvancedStart)
+		{
+			if (!bIsCoastal && iNumAreaCities == 0)
+			{
+				return 0;
+			}
+		}
+	//Rhye - end
+
+
+	if (bAdvancedStart)
+	{
+		//FAssert(!bStartingLoc);
+		FAssert(GC.getGameINLINE().isOption(GAMEOPTION_ADVANCED_START));
+		if (bStartingLoc)
+		{
+			bAdvancedStart = false;
+		}
+	}
+
+	//Explaination of city site adjustment:
+	//Any plot which is otherwise within the radius of a city site
+	//is basically treated as if it's within an existing city radius
+	std::vector<bool> abCitySiteRadius(NUM_CITY_PLOTS, false);
+
+	//Rhye - start comment ?
+
+	if (!bStartingLoc)
+	{
+		if (!GET_PLAYER(iPlayer).AI_isPlotCitySite(pPlot))
+		{
+			for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+			{
+				pLoopPlot = plotCity(iX, iY, iI);
+				if (pLoopPlot != NULL)
+				{
+					for (int iJ = 0; iJ < GET_PLAYER(iPlayer).AI_getNumCitySites(); iJ++)
+					{
+						CvPlot* pCitySitePlot = GET_PLAYER(iPlayer).AI_getCitySite(iJ);
+						if (pCitySitePlot != pPlot)
+						{
+							if (plotDistance(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), pCitySitePlot->getX_INLINE(), pCitySitePlot->getY_INLINE()) <= CITY_PLOTS_RADIUS)
+							{
+								//Plot is inside the radius of a city site
+								abCitySiteRadius[iI] = true;
+								break;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//Rhye - end comment?
+
+	std::vector<int> paiBonusCount;
+
+	for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+	{
+		paiBonusCount.push_back(0);
+	}
+
+	if (iMinRivalRange != -1)
+	{
+		for (iDX = -(iMinRivalRange); iDX <= iMinRivalRange; iDX++)
+		{
+			for (iDY = -(iMinRivalRange); iDY <= iMinRivalRange; iDY++)
+			{
+				pLoopPlot = plotXY(iX, iY, iDX, iDY);
+
+				if (pLoopPlot != NULL)
+				{
+					if (pLoopPlot->plotCheck(PUF_isOtherTeam, iPlayer) != NULL && iSettlerMapValue < 800)
+					{
+						return 0;
+					}
+				}
+			}
+		}
+	}
+
+	if (bStartingLoc)
+	{
+		if (pPlot->isGoody())
+		{
+			return 0;
+		}
+
+		for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		{
+			pLoopPlot = plotCity(iX, iY, iI);
+
+			if (pLoopPlot == NULL)
+			{
+				return 0;
+			}
+		}
+	}
+
+	iOwnedTiles = 0;
+
+	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	{
+		pLoopPlot = plotCity(iX, iY, iI);
+
+		if (pLoopPlot == NULL)
+		{
+			iOwnedTiles++;
+		}
+		else if (pLoopPlot->isOwned())
+		{
+			if (pLoopPlot->getTeam() != GET_PLAYER(iPlayer).getTeam())
+			{
+				iOwnedTiles++;
+			}
+		}
+	}
+
+	//Rhye - start
+	/*if (iOwnedTiles > (NUM_CITY_PLOTS / 3))
+	{
+		return 0;
+	}*/
+	if (iOwnedTiles > (NUM_CITY_PLOTS * 2 / 3) && iSettlerMapValue < 800) //+1?
+	{
+		return 0;
+	}
+	//Rhye - end
+
+	iBadTile = 0;
+
+	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	{
+		pLoopPlot = plotCity(iX, iY, iI);
+
+		if (iI != CITY_HOME_PLOT)
+		{
+			if ((pLoopPlot == NULL) || pLoopPlot->isImpassable())
+			{
+				iBadTile += 2;
+			}
+			else if (!(pLoopPlot->isFreshWater()) && !(pLoopPlot->isHills()))
+			{
+				if ((pLoopPlot->calculateBestNatureYield(YIELD_FOOD, GET_PLAYER(iPlayer).getTeam()) == 0) || (pLoopPlot->calculateTotalBestNatureYield(GET_PLAYER(iPlayer).getTeam()) <= 1))
+				{
+					iBadTile += 2;
+				}
+				else if (pLoopPlot->isWater() && !bIsCoastal && (pLoopPlot->calculateBestNatureYield(YIELD_FOOD, GET_PLAYER(iPlayer).getTeam()) <= 1))
+				{
+					iBadTile++;
+				}
+			}
+			/*else if (pLoopPlot->isOwned())
+			{
+				if (pLoopPlot->getTeam() == getTeam())
+				{
+					if (pLoopPlot->isCityRadius() || abCitySiteRadius[iI])
+					{
+						iBadTile += bAdvancedStart ? 2 : 1;
+					}
+				}
+			}*/
+		}
+	}
+
+	iBadTile /= 2;
+
+	if (!bStartingLoc)
+	{
+		if ((iBadTile > (NUM_CITY_PLOTS / 2)) || (pArea->getNumTiles() <= 2))
+		{
+			bHasGoodBonus = false;
+
+			for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+			{
+				pLoopPlot = plotCity(iX, iY, iI);
+
+				if (pLoopPlot != NULL)
+				{
+					if (!(pLoopPlot->isOwned()))
+					{
+						if (pLoopPlot->isWater() || (pLoopPlot->area() == pArea) || (pLoopPlot->area()->getCitiesPerPlayer(iPlayer) > 0))
+						{
+							eBonus = pLoopPlot->getBonusType(GET_PLAYER(iPlayer).getTeam());
+
+							if (eBonus != NO_BONUS)
+							{
+								if ((GET_PLAYER(iPlayer).getNumTradeableBonuses(eBonus) == 0) || (GET_PLAYER(iPlayer).AI_bonusVal(eBonus) > 10)
+									|| (GC.getBonusInfo(eBonus).getYieldChange(YIELD_FOOD) > 0))
+								{
+									bHasGoodBonus = true;
+									break;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			if (!bHasGoodBonus)
+			{
+				return 0;
+			}
+		}
+	}
+
+	iTakenTiles = 0;
+	iTeammateTakenTiles = 0;
+	iHealth = 0;
+	iValue = 1000;
+
+	iGreed = 100;
+
+	if (bAdvancedStart)
+	{
+		iGreed = 150;
+	}
+	else if (!bStartingLoc)
+	{
+		for (iI = 0; iI < GC.getNumTraitInfos(); iI++)
+		{
+			if (GET_PLAYER(iPlayer).hasTrait((TraitTypes)iI))
+			{
+				//Greedy founding means getting the best possible sites - fitting maximum
+				//resources into the fat cross.
+				iGreed += (GC.getTraitInfo((TraitTypes)iI).getUpkeepModifier() / 2);
+				iGreed += 20 * (GC.getTraitInfo((TraitTypes)iI).getCommerceChange(COMMERCE_CULTURE));
+			}
+		}
+	}
+	//iClaimThreshold is the culture required to pop the 2nd borders.
+	int iClaimThreshold = GC.getGameINLINE().getCultureThreshold((CultureLevelTypes)(std::min(2, (GC.getNumCultureLevelInfos() - 1))));
+	iClaimThreshold = std::max(1, iClaimThreshold);
+	iClaimThreshold *= (std::max(100, iGreed));
+	/************************************************************************************************/
+	/* UNOFFICIAL_PATCH                       04/25/10                          denev & jdog5000    */
+	/*                                                                                              */
+	/* Bugfix                                                                                       */
+	/************************************************************************************************/
+		// Was missing this
+	iClaimThreshold /= 100;
+	/************************************************************************************************/
+	/* UNOFFICIAL_PATCH                        END                                                  */
+	/************************************************************************************************/
+
+	int iYieldLostHere = 0;
+
+	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	{
+		pLoopPlot = plotCity(iX, iY, iI);
+
+		if (pLoopPlot == NULL)
+		{
+			iTakenTiles++;
+		}
+		else if (pLoopPlot->isCityRadius() || abCitySiteRadius[iI])
+		{
+			iTakenTiles++;
+
+			if (abCitySiteRadius[iI])
+			{
+				iTeammateTakenTiles++;
+			}
+		}
+		else
+		{
+			iTempValue = 0;
+
+			eFeature = pLoopPlot->getFeatureType();
+			eBonus = pLoopPlot->getBonusType((bStartingLoc) ? NO_TEAM : GET_PLAYER(iPlayer).getTeam());
+			eBonusImprovement = NO_IMPROVEMENT;
+
+			int iCultureMultiplier;
+			if (!pLoopPlot->isOwned() || (pLoopPlot->getOwnerINLINE() == iPlayer))
+			{
+				iCultureMultiplier = 100;
+			}
+			else
+			{
+				bNeutralTerritory = false;
+				int iOurCulture = pLoopPlot->getCulture(iPlayer);
+				int iOtherCulture = std::max(1, pLoopPlot->getCulture(pLoopPlot->getOwnerINLINE()));
+				iCultureMultiplier = 100 * (iOurCulture + iClaimThreshold);
+				iCultureMultiplier /= (iOtherCulture + iClaimThreshold);
+				iCultureMultiplier = std::min(100, iCultureMultiplier);
+				//The multiplier is basically normalized...
+				//100% means we own (or rightfully own) the tile.
+				//50% means the hostile culture is fairly firmly entrenched.
+			}
+
+			if (iCultureMultiplier < ((iNumAreaCities > 0) ? 25 : 50))
+			{
+				//discourage hopeless cases, especially on other continents.
+				iTakenTiles += (iNumAreaCities > 0) ? 1 : 2;
+			}
+
+			if (eBonus != NO_BONUS)
+			{
+				for (int iImprovement = 0; iImprovement < GC.getNumImprovementInfos(); ++iImprovement)
+				{
+					CvImprovementInfo& kImprovement = GC.getImprovementInfo((ImprovementTypes)iImprovement);
+
+					if (kImprovement.isImprovementBonusMakesValid(eBonus))
+					{
+						eBonusImprovement = (ImprovementTypes)iImprovement;
+						break;
+					}
+				}
+			}
+
+			int aiYield[NUM_YIELD_TYPES];
+
+			for (int iYieldType = 0; iYieldType < NUM_YIELD_TYPES; ++iYieldType)
+			{
+				YieldTypes eYield = (YieldTypes)iYieldType;
+				aiYield[eYield] = pLoopPlot->getYield(eYield);
+
+				if (iI == CITY_HOME_PLOT)
+				{
+					int iBasePlotYield = aiYield[eYield];
+					aiYield[eYield] += GC.getYieldInfo(eYield).getCityChange();
+
+					if (eFeature != NO_FEATURE)
+					{
+						aiYield[eYield] -= GC.getFeatureInfo(eFeature).getYieldChange(eYield);
+						iBasePlotYield = std::max(iBasePlotYield, aiYield[eYield]);
+					}
+
+					if (eBonus == NO_BONUS)
+					{
+						aiYield[eYield] = std::max(aiYield[eYield], GC.getYieldInfo(eYield).getMinCity());
+					}
+					else
+					{
+						int iBonusYieldChange = GC.getBonusInfo(eBonus).getYieldChange(eYield);
+						aiYield[eYield] += iBonusYieldChange;
+						iBasePlotYield += iBonusYieldChange;
+
+						aiYield[eYield] = std::max(aiYield[eYield], GC.getYieldInfo(eYield).getMinCity());
+					}
+
+					if (eBonusImprovement != NO_IMPROVEMENT)
+					{
+						iBasePlotYield += GC.getImprovementInfo(eBonusImprovement).getImprovementBonusYield(eBonus, eYield);
+
+						if (iBasePlotYield > aiYield[eYield])
+						{
+							aiYield[eYield] -= 2 * (iBasePlotYield - aiYield[eYield]);
+						}
+						else
+						{
+							aiYield[eYield] += aiYield[eYield] - iBasePlotYield;
+						}
+					}
+				}
+			}
+
+			if (iI == CITY_HOME_PLOT)
+			{
+				iTempValue += aiYield[YIELD_FOOD] * 60;
+				iTempValue += aiYield[YIELD_PRODUCTION] * 60;
+				iTempValue += aiYield[YIELD_COMMERCE] * 40;
+			}
+			else if (aiYield[YIELD_FOOD] >= GC.getFOOD_CONSUMPTION_PER_POPULATION())
+			{
+				iTempValue += aiYield[YIELD_FOOD] * 40;
+				iTempValue += aiYield[YIELD_PRODUCTION] * 40;
+				iTempValue += aiYield[YIELD_COMMERCE] * 30;
+
+				if (bStartingLoc)
+				{
+					iTempValue *= 2;
+				}
+			}
+			else if (aiYield[YIELD_FOOD] == GC.getFOOD_CONSUMPTION_PER_POPULATION() - 1)
+			{
+				iTempValue += aiYield[YIELD_FOOD] * 25;
+				iTempValue += aiYield[YIELD_PRODUCTION] * 25;
+				iTempValue += aiYield[YIELD_COMMERCE] * 20;
+			}
+			else
+			{
+				iTempValue += aiYield[YIELD_FOOD] * 15;
+				iTempValue += aiYield[YIELD_PRODUCTION] * 15;
+				iTempValue += aiYield[YIELD_COMMERCE] * 10;
+			}
+
+			if (pLoopPlot->isWater())
+			{
+				if (aiYield[YIELD_COMMERCE] > 1)
+				{
+					iTempValue += bIsCoastal ? 30 : -20;
+					if (bIsCoastal && (aiYield[YIELD_FOOD] >= GC.getFOOD_CONSUMPTION_PER_POPULATION()))
+					{
+						iSpecialFoodPlus += 1;
+					}
+					if (bStartingLoc && !pPlot->isStartingPlot())
+					{
+						// I'm pretty much forbidding starting 1 tile inland non-coastal.
+						// with more than a few coast tiles.
+						iTempValue += bIsCoastal ? 0 : -400;
+					}
+				}
+			}
+
+			if (pLoopPlot->isRiver())
+			{
+				iTempValue += 10;
+			}
+
+			if (iI == CITY_HOME_PLOT)
+			{
+				iTempValue *= 2;
+			}
+			else if ((pLoopPlot->getOwnerINLINE() == iPlayer) || (stepDistance(iX, iY, pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()) == 1))
+			{
+				iTempValue *= 3;
+				iTempValue /= 2;
+			}
+			else
+			{
+				iTempValue *= iGreed;
+				iTempValue /= 100;
+			}
+
+			iTempValue *= iCultureMultiplier;
+			iTempValue /= 100;
+
+			iValue += iTempValue;
+
+			if (iCultureMultiplier > 33) //ignore hopelessly entrenched tiles.
+			{
+				if (eFeature != NO_FEATURE)
+				{
+					if (iI != CITY_HOME_PLOT)
+					{
+						iHealth += GC.getFeatureInfo(eFeature).getHealthPercent();
+
+						iSpecialFoodPlus += std::max(0, aiYield[YIELD_FOOD] - GC.getFOOD_CONSUMPTION_PER_POPULATION());
+					}
+				}
+
+				if ((eBonus != NO_BONUS) && ((pLoopPlot->area() == pPlot->area()) ||
+					(pLoopPlot->area()->getCitiesPerPlayer(iPlayer) > 0)))
+				{
+					paiBonusCount[eBonus]++;
+					FAssert(paiBonusCount[eBonus] > 0);
+
+					iTempValue = (GET_PLAYER(iPlayer).AI_bonusVal(eBonus) * ((!bStartingLoc && (GET_PLAYER(iPlayer).getNumTradeableBonuses(eBonus) == 0) && (paiBonusCount[eBonus] == 1)) ? 80 : 20));
+					iTempValue *= ((bStartingLoc) ? 100 : iGreed);
+					iTempValue /= 100;
+
+					if (iI != CITY_HOME_PLOT && !bStartingLoc)
+					{
+						if ((pLoopPlot->getOwnerINLINE() != iPlayer) && stepDistance(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()) > 1)
+						{
+							iTempValue *= 2;
+							iTempValue /= 3;
+
+							iTempValue *= std::min(150, iGreed);
+							iTempValue /= 100;
+						}
+					}
+
+					iValue += (iTempValue + 10);
+
+					if (iI != CITY_HOME_PLOT)
+					{
+						if (eBonusImprovement != NO_IMPROVEMENT)
+						{
+							int iSpecialFoodTemp;
+							iSpecialFoodTemp = pLoopPlot->calculateBestNatureYield(YIELD_FOOD, getTeam()) + GC.getImprovementInfo(eBonusImprovement).getImprovementBonusYield(eBonus, YIELD_FOOD);
+
+							iSpecialFood += iSpecialFoodTemp;
+
+							iSpecialFoodTemp -= GC.getFOOD_CONSUMPTION_PER_POPULATION();
+
+							iSpecialFoodPlus += std::max(0, iSpecialFoodTemp);
+							iSpecialFoodMinus -= std::min(0, iSpecialFoodTemp);
+							iSpecialProduction += pLoopPlot->calculateBestNatureYield(YIELD_PRODUCTION, getTeam()) + GC.getImprovementInfo(eBonusImprovement).getImprovementBonusYield(eBonus, YIELD_PRODUCTION);
+							iSpecialCommerce += pLoopPlot->calculateBestNatureYield(YIELD_COMMERCE, getTeam()) + GC.getImprovementInfo(eBonusImprovement).getImprovementBonusYield(eBonus, YIELD_COMMERCE);
+						}
+
+						if (eFeature != NO_FEATURE)
+						{
+							if (GC.getFeatureInfo(eFeature).getYieldChange(YIELD_FOOD) < 0)
+							{
+								iResourceValue -= 30;
+							}
+						}
+
+						if (pLoopPlot->isWater())
+						{
+							iValue += (bIsCoastal ? 100 : -800);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	iResourceValue += iSpecialFood * 50;
+	iResourceValue += iSpecialProduction * 50;
+	iResourceValue += iSpecialCommerce * 50;
+	if (bStartingLoc)
+	{
+		iResourceValue /= 2;
+	}
+
+	iValue += std::max(0, iResourceValue);
+
+	//Rhye - start
+	/*if (iTakenTiles > (NUM_CITY_PLOTS / 3) && iResourceValue < 250)
+	{
+		return 0;
+	}*/
+	if (iTakenTiles > (NUM_CITY_PLOTS * 2 / 3) && iResourceValue < 250 && iSettlerMapValue < 800)
+	{
+		return 0;
+	}
+	//Rhye - end
+
+	if (iTakenTiles > GET_PLAYER(iPlayer).AI_getTakenTilesThreshold())
+	{
+		return 0;
+	}
+
+	/*if (iTeammateTakenTiles > 1)
+	{
+		return 0;
+	}*/
+	if (iTeammateTakenTiles > (NUM_CITY_PLOTS * 2 / 3) && iSettlerMapValue < 800)
+	{
+		return 0;
+	}
+	//Rhye - end
+
+	iValue += (iHealth / 5);
+
+	if (bIsCoastal)
+	{
+		if (!bStartingLoc)
+		{
+			if (pArea->getCitiesPerPlayer(iPlayer) == 0)
+			{
+				if (bNeutralTerritory)
+				{
+					iValue += (iResourceValue > 0) ? 800 : 100;
+				}
+			}
+			else
+			{
+				iValue += 400;
+			}
+		}
+		else
+		{
+			//let other penalties bring this down.
+			iValue += 600;
+			if (!pPlot->isStartingPlot())
+			{
+				if (pArea->getNumStartingPlots() == 0)
+				{
+					iValue += 1000;
+				}
+			}
+		}
+	}
+
+	if (pPlot->isHills())
+	{
+		int hilltmpvalue = 200;
+		if (GC.getDefineINT("CVPLAYERAI_SETTLE_VALUE_NEAR_HILL") > 0) {
+			hilltmpvalue = GC.getDefineINT("CVPLAYERAI_SETTLE_VALUE_NEAR_HILL");
+		}
+		iValue += hilltmpvalue;//mediv01 可以在XML调整
+		//iValue += 200;
+	}
+
+	if (pPlot->isRiver())
+	{
+		int rivertmpvalue = 40;
+		if (GC.getDefineINT("CVPLAYERAI_SETTLE_VALUE_NEAR_RIVER") > 0) {
+			rivertmpvalue = GC.getDefineINT("CVPLAYERAI_SETTLE_VALUE_NEAR_RIVER");
+		}
+		iValue += rivertmpvalue;//mediv01 曾经是40 我改成1000加大河流建城权重，历史上大多数河流沿河而建，可以在XML调整
+		//iValue += 40;
+	}
+
+	if (pPlot->isFreshWater())
+	{
+		iValue += 40;
+		iValue += (GC.getDefineINT("FRESH_WATER_HEALTH_CHANGE") * 30);
+	}
+
+	if (bStartingLoc)
+	{
+		iRange = GREATER_FOUND_RANGE;
+		int iGreaterBadTile = 0;
+
+		for (iDX = -(iRange); iDX <= iRange; iDX++)
+		{
+			for (iDY = -(iRange); iDY <= iRange; iDY++)
+			{
+				pLoopPlot = plotXY(iX, iY, iDX, iDY);
+
+				if (pLoopPlot != NULL)
+				{
+					if (pLoopPlot->isWater() || (pLoopPlot->area() == pArea))
+					{
+						if (plotDistance(iX, iY, pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()) <= iRange)
+						{
+							iTempValue = 0;
+							iTempValue += (pLoopPlot->getYield(YIELD_FOOD) * 15);
+							iTempValue += (pLoopPlot->getYield(YIELD_PRODUCTION) * 11);
+							iTempValue += (pLoopPlot->getYield(YIELD_COMMERCE) * 5);
+							iValue += iTempValue;
+							if (iTempValue < 21)
+							{
+
+								iGreaterBadTile += 2;
+								if (pLoopPlot->getFeatureType() != NO_FEATURE)
+								{
+									if (pLoopPlot->calculateBestNatureYield(YIELD_FOOD, GET_PLAYER(iPlayer).getTeam()) > 1)
+									{
+										iGreaterBadTile--;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		if (!pPlot->isStartingPlot())
+		{
+			iGreaterBadTile /= 2;
+			if (iGreaterBadTile > 12)
+			{
+				iValue *= 11;
+				iValue /= iGreaterBadTile;
+			}
+		}
+
+		int iWaterCount = 0;
+
+		for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		{
+			pLoopPlot = plotCity(iX, iY, iI);
+
+			if (pLoopPlot != NULL)
+			{
+				if (pLoopPlot->isWater())
+				{
+					iWaterCount++;
+					if (pLoopPlot->getYield(YIELD_FOOD) <= 1)
+					{
+						iWaterCount++;
+					}
+				}
+			}
+		}
+		iWaterCount /= 2;
+
+		int iLandCount = (NUM_CITY_PLOTS - iWaterCount);
+
+		if (iLandCount < (NUM_CITY_PLOTS / 2))
+		{
+			//discourage very water-heavy starts.
+			iValue *= 1 + iLandCount;
+			iValue /= (1 + (NUM_CITY_PLOTS / 2));
+		}
+	}
+
+	if (bStartingLoc)
+	{
+		if (pPlot->getMinOriginalStartDist() == -1)
+		{
+			iValue += (GC.getMapINLINE().maxStepDistance() * 100);
+		}
+		else
+		{
+			iValue *= (1 + 4 * pPlot->getMinOriginalStartDist());
+			iValue /= (1 + 2 * GC.getMapINLINE().maxStepDistance());
+		}
+
+		//nice hacky way to avoid this messing with normalizer, use elsewhere?
+		if (!pPlot->isStartingPlot())
+		{
+			int iMinDistanceFactor = MAX_INT;
+			int iMinRange = GET_PLAYER(iPlayer).startingPlotRange();
+
+			iValue *= 100;
+			for (int iJ = 0; iJ < MAX_CIV_PLAYERS; iJ++)
+			{
+				if (GET_PLAYER((PlayerTypes)iJ).isAlive())
+				{
+					if (iJ != iPlayer)
+					{
+						int iClosenessFactor = GET_PLAYER((PlayerTypes)iJ).startingPlotDistanceFactor(pPlot, iPlayer, iMinRange);
+						iMinDistanceFactor = std::min(iClosenessFactor, iMinDistanceFactor);
+
+						if (iClosenessFactor < 1000)
+						{
+							iValue *= 2000 + iClosenessFactor;
+							iValue /= 3000;
+						}
+					}
+				}
+			}
+
+			if (iMinDistanceFactor > 1000)
+			{
+				//give a maximum boost of 25% for somewhat distant locations, don't go overboard.
+				iMinDistanceFactor = std::min(1500, iMinDistanceFactor);
+				iValue *= (1000 + iMinDistanceFactor);
+				iValue /= 2000;
+			}
+			else if (iMinDistanceFactor < 1000)
+			{
+				//this is too close so penalize again.
+				iValue *= iMinDistanceFactor;
+				iValue /= 1000;
+				iValue *= iMinDistanceFactor;
+				iValue /= 1000;
+			}
+
+			iValue /= 10;
+
+			if (pPlot->getBonusType() != NO_BONUS)
+			{
+				iValue /= 2;
+			}
+		}
+	}
+
+	if (bAdvancedStart)
+	{
+		if (pPlot->getBonusType() != NO_BONUS)
+		{
+			iValue *= 70;
+			iValue /= 100;
+		}
+	}
+
+	pNearestCity = GC.getMapINLINE().findCity(iX, iY, ((GET_PLAYER(iPlayer).isBarbarian()) ? NO_PLAYER : iPlayer));
+
+	if (pNearestCity != NULL)
+	{
+		if (GET_PLAYER(iPlayer).isBarbarian())
+		{
+			//iValue -= (std::max(0, (8 - plotDistance(iX, iY, pNearestCity->getX_INLINE(), pNearestCity->getY_INLINE()))) * 200); //Rhye
+			iValue -= (std::max(0, (5 - plotDistance(iX, iY, pNearestCity->getX_INLINE(), pNearestCity->getY_INLINE()))) * 200);
+		}
+		else
+		{
+			int iDistance = plotDistance(iX, iY, pNearestCity->getX_INLINE(), pNearestCity->getY_INLINE());
+			int iNumCities = GET_PLAYER(iPlayer).getNumCities();
+
+			// Leoreth
+			iValue -= (abs(iDistance) - GET_PLAYER(iPlayer).AI_getDistanceSubtrahend()) * GET_PLAYER(iPlayer).AI_getDistanceFactor();
+
+			iValue *= (8 + iNumCities * 4);
+			iValue /= (2 + (iNumCities * 4) + iDistance);
+			if (pNearestCity->isCapital())
+			{
+				iValue *= 150;
+				iValue /= 100;
+			}
+			else if (getCapitalCity() != NULL)
+			{
+				//Provide up to a 50% boost to value (80% for adv.start)
+				//for city sites which are relatively close to the core
+				//compared with the most distance city from the core
+				//(having a boost rather than distance penalty avoids some distortion)
+
+				//This is not primarly about maitenance but more about empire
+				//shape as such forbidden palace/state property are not big deal.
+				CvCity* pLoopCity;
+				int iLoop;
+				int iMaxDistanceFromCapital = 0;
+
+				int iCapitalX = getCapitalCity()->getX();
+				int iCapitalY = getCapitalCity()->getY();
+
+				for (pLoopCity = GET_PLAYER(iPlayer).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(iPlayer).nextCity(&iLoop))
+				{
+					iMaxDistanceFromCapital = std::max(iMaxDistanceFromCapital, plotDistance(iCapitalX, iCapitalY, pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE()));
+				}
+
+				int iDistanceToCapital = plotDistance(iCapitalX, iCapitalY, iX, iY);
+
+				FAssert(iMaxDistanceFromCapital > 0);
+
+				// Rhye
+				//iValue *= 100 + (((bAdvancedStart ? 80 : 50) * std::max(0, (iMaxDistanceFromCapital - iDistance))) / iMaxDistanceFromCapital);
+				iValue *= 100 + (((bAdvancedStart ? 80 : GET_PLAYER(iPlayer).AI_getCompactnessModifier()) * std::max(0, (iMaxDistanceFromCapital - iDistance))) / iMaxDistanceFromCapital);
+
+				iValue /= 100;
+			}
+		}
+	}
+	else
+	{
+		pNearestCity = GC.getMapINLINE().findCity(iX, iY, ((GET_PLAYER(iPlayer).isBarbarian()) ? NO_PLAYER : iPlayer), ((isBarbarian()) ? NO_TEAM : GET_PLAYER(iPlayer).getTeam()), false);
+		if (pNearestCity != NULL)
+		{
+			int iDistance = plotDistance(iX, iY, pNearestCity->getX_INLINE(), pNearestCity->getY_INLINE());
+			iValue -= std::min(500 * iDistance, (8000 * iDistance) / GC.getMapINLINE().maxPlotDistance());
+		}
+	}
+
+	if (iValue <= 0)
+	{
+		return 1;
+	}
+
+	if (pArea->getNumCities() == 0)
+	{
+		iValue *= 2;
+	}
+	else
+	{
+		iTeamAreaCities = GET_TEAM(GET_PLAYER(iPlayer).getTeam()).countNumCitiesByArea(pArea);
+
+		if (pArea->getNumCities() == iTeamAreaCities)
+		{
+			iValue *= 3;
+			iValue /= 2;
+		}
+		//else if (pArea->getNumCities() == (iTeamAreaCities + GET_TEAM(BARBARIAN_TEAM).countNumCitiesByArea(pArea))) //Rhye
+		else if (pArea->getNumCities() == (iTeamAreaCities + GET_TEAM(BARBARIAN_TEAM).countNumCitiesByArea(pArea) + GET_TEAM((TeamTypes)NATIVE).countNumCitiesByArea(pArea))) //Rhye
+		{
+			iValue *= 4;
+			iValue /= 3;
+		}
+		else if (iTeamAreaCities > 0)
+		{
+			iValue *= 5;
+			iValue /= 4;
+		}
+	}
+
+	//Rhye - start switch
+	if (GET_TEAM(GET_PLAYER(iPlayer).getTeam()).isHasTech((TechTypes)COMPASS)) {
+		iTeamAreaCities = GET_TEAM(GET_PLAYER(iPlayer).getTeam()).countNumCitiesByArea(pArea);
+		if (iTeamAreaCities == 0) {
+			switch (iPlayer)
+			{
+			case FRANCE:
+				iValue *= 5;
+				iValue /= 4;
+				break;
+			case ENGLAND:
+				iValue *= 5;
+				iValue /= 3;
+				break;
+			case NETHERLANDS:
+				iValue *= 5;
+				iValue /= 3;
+				break;
+			case PORTUGAL:
+				iValue *= 5;
+				iValue /= 4;
+				break;
+			default:
+				break;
+			}
+		}
+	}
+	//Rhye - end
+
+	// Leoreth: more English settlements in North America
+	if (iPlayer == ENGLAND)
+	{
+		//mediv01 地图硬编码
+		if (pArea->getID() == GC.getMap().plot(27, 46)->getArea()) // Washington tile
+		{
+			iValue *= 2;
+		}
+	}
+
+	if (!bStartingLoc)
+	{
+		int iFoodSurplus = std::max(0, iSpecialFoodPlus - iSpecialFoodMinus);
+		int iFoodDeficit = std::max(0, iSpecialFoodMinus - iSpecialFoodPlus);
+
+		iValue *= 100 + 20 * std::max(0, std::min(iFoodSurplus, 2 * GC.getFOOD_CONSUMPTION_PER_POPULATION()));
+		iValue /= 100 + 20 * std::max(0, iFoodDeficit);
+	}
+
+	if ((!bStartingLoc) && (GET_PLAYER(iPlayer).getNumCities() > 0))
+	{
+		int iBonusCount = 0;
+		int iUniqueBonusCount = 0;
+		for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+		{
+			iBonusCount += paiBonusCount[iI];
+			iUniqueBonusCount += (paiBonusCount[iI] > 0) ? 1 : 0;
+		}
+		if (iBonusCount > 4)
+		{
+			iValue *= 5;
+			iValue /= (1 + iBonusCount);
+		}
+		else if (iUniqueBonusCount > 2)
+		{
+			iValue *= 5;
+			iValue /= (3 + iUniqueBonusCount);
+		}
+	}
+	//Rhye - value with bonus
+
+	if (!bStartingLoc)
+	{
+		int iDeadLockCount = GET_PLAYER(iPlayer).AI_countDeadlockedBonuses(pPlot);
+		if (bAdvancedStart && (iDeadLockCount > 0))
+		{
+			iDeadLockCount += 2;
+		}
+		iValue /= (1 + iDeadLockCount);
+	}
+
+	iValue /= (std::max(0, (iBadTile - (NUM_CITY_PLOTS / 4))) + 3);
+	//mediv01 地图硬编码
+	if (!(iX >= 67 && iX <= 70 && iY >= 43 && iY <= 46) && !(iX >= 79 && iX <= 18 && iY >= 110 && iY <= 10)) { //Rhye (exclude Turkey and Siberia)
+		if (bStartingLoc)
+		{
+			iDifferentAreaTile = 0;
+
+			for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+			{
+				pLoopPlot = plotCity(iX, iY, iI);
+
+				if ((pLoopPlot == NULL) || !(pLoopPlot->isWater() || pLoopPlot->area() == pArea))
+				{
+					iDifferentAreaTile++;
+				}
+			}
+
+			iValue /= (std::max(0, (iDifferentAreaTile - ((NUM_CITY_PLOTS * 2) / 3))) + 2);
+		}
+	} //Rhye
+
+	//Rhye - start
+
+	int iTempSettlerMapValue = GET_PLAYER(iPlayer).getSettlerValue(tempX, tempY);
+
+	iValue *= iTempSettlerMapValue;
+	iValue /= 100;
+
+	if (iTempSettlerMapValue <= 3)
+		return 0;
+	if (iTempSettlerMapValue <= 60)
+		iValue /= 2;
+	/*if (settlersMaps[iPlayer][EARTH_Y - 1 - tempY][tempX] >= 200) {
+		iValue *= 11;
+		iValue /= 10;
+	}
+	if (settlersMaps[iPlayer][EARTH_Y - 1 - tempY][tempX] >= 400) {
+		iValue *= 11;
+		iValue /= 10;
+	}*/
+	if (iTempSettlerMapValue > 60)
+		//	iValue += GC.getGameINLINE().getSorenRandNum(1000, "Random Value");
+	{
+		//iValue *= 100 + GC.getASyncRand().get(40, "Random Value");
+		iValue *= (100 + ((GC.getGameINLINE().getSorenRand().getSeed() % ((tempX + 10) * (tempY + 10) + (EARTH_X - tempX) + (EARTH_Y - tempY))) % 50)); //RFCMP
+		iValue /= 100;
+	}
+	//Rhye - end
+
+	return std::max(1, iValue);
 }
 
 

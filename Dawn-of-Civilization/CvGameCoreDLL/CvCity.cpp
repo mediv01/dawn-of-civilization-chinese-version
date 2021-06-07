@@ -170,6 +170,7 @@ CvCity::~CvCity()
 
 void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, bool bUpdatePlotGroups)
 {
+	//建立城市初始化的代码
 	CvPlot* pAdjacentPlot;
 	CvPlot* pPlot;
 	BuildingTypes eLoopBuilding;
@@ -266,6 +267,16 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 	if (lResult == 1)
 	{
+		if (GC.getDefineINT("CVCITY_FOUND_CITY_CAN_USE_FOREST") > 0) {
+			if (pPlot->getFeatureType() == FEATURE_FOREST) {
+				 CvCity* pCity = pPlot->getPlotCity();
+				 int iProduction = GC.getDefineINT("CVCITY_FOUND_CITY_CAN_USE_FOREST") * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getConstructPercent()/100;;
+				 pCity->changeFeatureProduction(iProduction);
+				//CvWString log_CWstring;
+				//log_CWstring.Format(L"地块有森林！ ");
+				//GC.logs(log_CWstring, "test.log");
+			}
+		}
 		if (pPlot->getFeatureType() != NO_FEATURE && pPlot->getFeatureType() != (FeatureTypes)GC.getInfoTypeForString("FEATURE_FLOOD_PLAINS")) //Leoreth: flood plains are not removed by cities
 		{
 			pPlot->setFeatureType(NO_FEATURE);
@@ -2532,10 +2543,17 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 			return false;
 		}
 	}
-	if (GC.getDefineINT("CVCITY_UHV_HELPER_AI_NOT_BUILD_WONDER_OF_HUMAN_UHV") > 0) {
-		
+	//mediv01  AI不能建造奇观，奇观控的福音
+	if (GC.getDefineINT("CVCITY_AI_CANNOT_BUILD_WONDER") > 0) {
+		if ((int)getOwner() != GC.getGameINLINE().getActivePlayer()) {
+			if (isWorldWonderClass((BuildingClassTypes)(GC.getBuildingInfo(eBuilding).getBuildingClassType()))) {
+				return false;
+			}
+		}
 
 	}
+	
+	
 
 	//mediv01 AI不能建玩家UHV的建筑
 	const bool mediv01 = GC.getDefineINT("CVCITY_UHV_HELPER_AI_NOT_BUILD_WONDER_OF_HUMAN_UHV");
@@ -4100,14 +4118,26 @@ void CvCity::hurry(HurryTypes eHurry) //mediv01 砍人口加速生产的代码，总入口
 	GET_PLAYER(getOwnerINLINE()).changeGold(-(iHurryGold));
 	changePopulation(-(iHurryPopulation));
 
-	// Leoreth: amount of sacrificed population increases hurry anger
-	iHurryAngerModifier = (iHurryPopulation + 1) / 2;
+	//红脸计算
+	if (GC.getDefineINT("CVCITY_HURRY_CALCULATION_WITH_FLOAT") > 0) {
+		float iHurryAngerModifier_Float = ((float)iHurryPopulation) / 2;
+		int Angertimer = (int)((float)iHurryAngerLength * iHurryAngerModifier_Float);
+		changeHurryAngerTimer(Angertimer);
 
-	// Leoreth: Pyramids negate unhappiness scaling
-	//if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)PYRAMIDS))
-	//	iHurryAngerModifier = 1;
 
-	changeHurryAngerTimer(iHurryAngerLength * iHurryAngerModifier);
+	}
+	else {
+
+		// Leoreth: amount of sacrificed population increases hurry anger
+		iHurryAngerModifier = (iHurryPopulation + 1) / 2;
+
+		// Leoreth: Pyramids negate unhappiness scaling
+		//if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)PYRAMIDS))
+		//	iHurryAngerModifier = 1;
+
+		changeHurryAngerTimer(iHurryAngerLength * iHurryAngerModifier);
+
+	}
 
 	if ((getOwnerINLINE() == GC.getGameINLINE().getActivePlayer()) && isCitySelected())
 	{
@@ -7313,6 +7343,13 @@ int CvCity::calculateDistanceMaintenanceTimes100() const
 	}
 
 	iTempMaintenance = std::min(iWorstCityMaintenance, iBestCapitalMaintenance);
+
+
+	if (GC.getDefineINT("CVCITY_MAX_CITY_MAINTENANCE_OF_DISTANCE") > 0) {
+		if (getOwner() == getOwnerINLINE()) {
+			iTempMaintenance = std::min(GC.getDefineINT("CVCITY_MAX_CITY_MAINTENANCE_OF_DISTANCE") * 100, iTempMaintenance);
+		}
+	}
 	FAssert(iTempMaintenance >= 0);
 
 	return iTempMaintenance;
@@ -7368,6 +7405,11 @@ int CvCity::calculateNumCitiesMaintenanceTimes100() const
 	iNumCitiesMaintenance /= 100;
 
 	FAssert(iNumCitiesMaintenance >= 0);
+	if (GC.getDefineINT("CVCITY_MAX_CITY_MAINTENANCE_OF_NUMBER") > 0) {
+		if (getOwner() == getOwnerINLINE()) {
+			iNumCitiesMaintenance = std::min(GC.getDefineINT("CVCITY_MAX_CITY_MAINTENANCE_OF_NUMBER") * 100, iNumCitiesMaintenance);
+		}
+	}
 
 	return iNumCitiesMaintenance;
 }
@@ -7496,7 +7538,17 @@ int CvCity::calculateCorporationMaintenanceTimes100(CorporationTypes eCorporatio
 
 int CvCity::calculateBaseMaintenanceTimes100() const
 {
-	return (calculateDistanceMaintenanceTimes100() + calculateNumCitiesMaintenanceTimes100() + calculateColonyMaintenanceTimes100() + calculateCorporationMaintenanceTimes100());
+	int re= (calculateDistanceMaintenanceTimes100() + calculateNumCitiesMaintenanceTimes100() + calculateColonyMaintenanceTimes100() + calculateCorporationMaintenanceTimes100());
+	if (GC.getDefineINT("CVCITY_MAX_CITY_MAINTENANCE_TOTAL") > 0) {
+		if (getOwner() == getOwnerINLINE()) {
+			re = std::min(re, GC.getDefineINT("CVCITY_MAX_CITY_MAINTENANCE_TOTAL") * 100);
+		}
+		
+	}
+	else {
+		
+	}
+	return re;
 }
 
 
@@ -14576,11 +14628,19 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 
 			// max overflow is the value of the item produced (to eliminate prebuild exploits)
 			iOverflow = getUnitProduction(eTrainUnit) - iProductionNeeded;
+
+
+
+
 			int iMaxOverflow = std::max(iProductionNeeded, getCurrentProductionDifference(false, false));
 // BUG - Overflow Gold Fix - start
 			int iLostProduction = std::max(0, iOverflow - iMaxOverflow);
 // BUG - Overflow Gold Fix - end
 			iOverflow = std::min(iMaxOverflow, iOverflow);
+
+
+
+
 			if (iOverflow > 0)
 			{
 				changeOverflowProduction(iOverflow, getProductionModifier(eTrainUnit));
@@ -14672,11 +14732,24 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 			iProductionNeeded = getProductionNeeded(eConstructBuilding);
 			// max overflow is the value of the item produced (to eliminate prebuild exploits)
 			int iOverflow = getBuildingProduction(eConstructBuilding) - iProductionNeeded;
-			int iMaxOverflow = std::max(iProductionNeeded, getCurrentProductionDifference(false, false));
-// BUG - Overflow Gold Fix - start
-			int iLostProduction = std::max(0, iOverflow - iMaxOverflow);
-// BUG - Overflow Gold Fix - end
-			iOverflow = std::min(iMaxOverflow, iOverflow);
+			int iMaxOverflow = iOverflow;
+			int iLostProduction = 0;
+
+			if (GC.getDefineINT("CVCITY_BUILDING_NO_MAXOVERFLOW_LIMIT") > 0) {
+
+			}
+
+			else {
+
+				iMaxOverflow = std::max(iProductionNeeded, getCurrentProductionDifference(false, false));
+				// BUG - Overflow Gold Fix - start
+				iLostProduction = std::max(0, iOverflow - iMaxOverflow);
+				// BUG - Overflow Gold Fix - end
+				iOverflow = std::min(iMaxOverflow, iOverflow);
+
+			}
+
+
 			if (iOverflow > 0)
 			{
 				changeOverflowProduction(iOverflow, getProductionModifier(eConstructBuilding));
@@ -15365,7 +15438,9 @@ bool CvCity::doCheckProduction()
 			bObsolete = isWorldWonderClass((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)iI).getBuildingClassType()) && GC.getBuildingInfo((BuildingTypes)iI).getObsoleteTech() != NO_TECH && GC.getGameINLINE().countKnownTechNumTeams((TechTypes)GC.getBuildingInfo((BuildingTypes)iI).getObsoleteTech()) > 0;
 			if (GC.getDefineINT("CVCITY_CAN_BUILD_OBSOLUTE_BUILDING") > 0) {
 				//mediv01
-				bObsolete = FALSE;
+				if (isHuman()) {
+					bObsolete = FALSE;
+				}
 
 			}
 

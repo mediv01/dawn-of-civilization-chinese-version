@@ -92,7 +92,11 @@ def calculateTopCities_FOOD():
     return lCities
 
 def getScreenHelp():
-    GameScore.manual_debug()
+
+    import Debug
+    Debug.main()
+
+
     aHelp = []
     #游戏基本信息
     if(gc.getDefineINT("PYTHON_SCREEN_VICTORY_TIPS_00") == 1):
@@ -127,7 +131,7 @@ def getScreenHelp():
             x=goody_list[i][1]
             y = goody_list[i][2]
             if regionid >= 0:
-                regionname = CyTranslator().getText("TXT_KEY_REGION_" + str(regionid), ())
+                regionname = utils.getRegionNameCn(regionid)
                 aHelp.append('Goody ['+str(i)+'] in X:' + str(x) + '  Y: ' + str(y) + ' RegionName: ' + regionname)
             else:
 
@@ -242,6 +246,36 @@ def getScreenHelp():
         if(len(valuelist)>0 and sum(valuelist)>0):
             AveragePoint=sum(valuelist)/len(valuelist)
         aHelp.append(localText.getText("TXT_KEY_VICTORY_TIPS_IN_SCREEN_ARMYRANK", ()))
+
+
+        techlist.sort(key=lambda x:-x[1])
+        for i in range(len(techlist)):
+            if (i < gc.getDefineINT("PYTHON_SCREEN_VICTORY_TIPS_05")):
+                iCiv = techlist[i][0]
+                iTechValue=techlist[i][1]
+                civname=gc.getPlayer(iCiv).getCivilizationShortDescription(0)
+                if (isDecline(iCiv)):
+                    civname=civname+'[F]'
+
+                rank_percent=iTechValue*100/AveragePoint
+                aHelp.append(' RANK ('+str(i+1)+') : '+civname+'             with '+str(iTechValue)+'  ('+str(rank_percent)+'%)')
+
+
+    # 5.文化实力
+    if (gc.getDefineINT("PYTHON_SCREEN_VICTORY_TIPS_05") >0):
+        aHelp.append(' ')
+        techlist=[]
+        valuelist=[]
+        for iCiv in range(iNumPlayers):
+            if (gc.getPlayer(iCiv).isAlive()):
+                iTechValue = gc.getPlayer(iCiv).getCultureHistory(gc.getGame().getGameTurn()-1)
+                valuelist.append(iTechValue)
+                techlist.append([iCiv,iTechValue])
+            pass
+        AveragePoint=1
+        if(len(valuelist)>0 and sum(valuelist)>0):
+            AveragePoint=sum(valuelist)/len(valuelist)
+        aHelp.append(localText.getText("TXT_KEY_VICTORY_TIPS_IN_SCREEN_CULTURERANK", ()))
 
 
         techlist.sort(key=lambda x:-x[1])

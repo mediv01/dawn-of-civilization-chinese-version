@@ -127,7 +127,7 @@ class CvFinanceAdvisor:
 		self.drawContents()
 		
 	def drawFinance(self):
-	
+		#绘制维护费、稳定度的界面
 		# Create a new screen, called FinanceAdvisor, using the file FinanceAdvisor.py for input
 		screen = self.getScreen()
 	

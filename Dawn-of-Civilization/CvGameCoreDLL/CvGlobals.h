@@ -715,6 +715,8 @@ public:
 	DllExport FVariableSystem* getDefinesVarSystem();
 	DllExport void cacheGlobals();
 
+
+	DllExport int AI_foundValue(int PlayerID, int iX, int iY, int iMinRivalRange, bool bStartingLoc) const;
 	DllExport void logs(CvWString& buf, CvString filename) const;
 	DllExport void logs(CvString buf, CvString filename) const;
 	DllExport void logs(wchar* buf, CvString filename) const;

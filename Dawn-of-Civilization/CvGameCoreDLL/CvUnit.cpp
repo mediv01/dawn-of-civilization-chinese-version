@@ -7863,9 +7863,16 @@ bool CvUnit::canUpgrade(UnitTypes eUnit, bool bTestVisible) const
 	}
 
 	// Leoreth
-	if (isNoUpgrade())
-	{
-		return false;
+
+	//mediv01 加速后的单位可以升级
+	if (GC.getDefineINT("CVUNIT_UNIT_CAN_UPGRADE_WHEN_ACCELERATE") > 0) {
+
+	}
+	else {
+		if (isNoUpgrade())
+		{
+			return false;
+		}
 	}
 
 

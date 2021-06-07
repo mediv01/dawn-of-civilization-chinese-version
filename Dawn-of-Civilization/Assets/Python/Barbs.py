@@ -623,28 +623,21 @@ class Barbs:
         plot.setOwner(iPlayer)
         pPlayer.found(x, y)
         if (len(sName) > 0 and gc.getDefineINT("PYTHON_SHOW_MINOR_CITY_TEXT") == 1):
-            #a= localText.getText(sAdj, ())
-            #name=lAdj[0]
+
             name = sName
             civname = name
-            #a=CyTranslator().getText(str(name ), (name ,))
-            #utils.show(str(name))  #mediv01
-            ##TXT_KEY_ADJECTIVE_NUBIAN
-            #civname_show=str(civname[18:-1])
-            #civname_show=civname_show.capitalize()
-            #tem_text="独立城邦"+civname_show+"已经建立于"
-            #regionid=0
+
             regionid = plot.getRegionID()
             if regionid>0:
-            	regionname = CyTranslator().getText("TXT_KEY_REGION_" + str(regionid), ())
+            	regionname = utils.getRegionNameCn(regionid)
             else:
                 regionname=' '
             #tem_text = "&#29420;&#31435;&#22478;&#37030;" + civname + "&#24050;&#32463;&#24314;&#31435;"
-            tem_text = '&#22312;&#20844;&#20803;'+str(gc.getGame().getGameTurnYear())+"&#24180;, &#29420;&#31435;&#22478;&#37030;" + civname + "&#24050;&#32463;&#24314;&#31435;&#20110;" + regionname + "&#22320;&#21306;&#65292;&#22352;&#26631;&#65306; ("+str(x)+","+str(y)+")"
-            #utils.show(tem_text)
+            tem_text = utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_BEFORE_AD')+str(gc.getGame().getGameTurnYear())+utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_INDIPENDENT') + civname + utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_INDIPENDENT_START') + regionname + utils.getText("TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_INDIPENDENT_START_LOCATION") +" ("+str(x)+","+str(y)+")"
             CyInterface().addMessage(gc.getGame().getActivePlayer(), False, iDuration, tem_text, "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
             if (gc.getDefineINT("PYTHON_LOG_ON_MAIN_MINOR") == 1):
-                utils.log(u'Minor City: '+civname+' has been build in '+ "("+str(x)+","+str(y)+")")
+                utils.log(tem_text)
+                #utils.log(u'Minor City: '+civname+' has been build in '+ "("+str(x)+","+str(y)+")")
 
         if plot.isCity():
             city = gc.getMap().plot(x, y).getPlotCity()
@@ -786,12 +779,13 @@ class Barbs:
                 
                 regionid = plot.getRegionID()
                 if (regionid > 0):
-                    regionname = CyTranslator().getText("TXT_KEY_REGION_" + str(regionid), ()) + "&#22320;&#21306;"
+                    regionname = utils.getRegionNameCn(regionid)
                 else:
                     regionname = "!"
-                #utils.show("&#34542;&#26063; " + civname_show + " &#21363;&#23558;&#24320;&#22987;&#22823;&#35268;&#27169;&#20837;&#20405;"+ regionname + " &#22352;&#26631;&#33539;&#22260;&#65306;(" )
+                #utils.show("&#34542;&#26063; " + civname_show + utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_START_TO_INVADE')+ regionname + utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_LOCATION') )
                 #tem_text="蛮族"+civname_show+"即将开始大规模入侵" + regionname+"地区"
-                tem_text = '&#22312;&#20844;&#20803;'+str(gc.getGame().getGameTurnYear())+"&#24180;, &#34542;&#26063; " + civname_show + " &#21363;&#23558;&#24320;&#22987;&#22823;&#35268;&#27169;&#20837;&#20405;" + regionname + " &#22352;&#26631;&#33539;&#22260;&#65306;(" + str(x1) + "," + str(y1) + ") &#33267; (" + str(x2) + "," + str(y2) + ")"
+                tem_text = utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_BEFORE_AD')+str(gc.getGame().getGameTurnYear())+utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_AND_YEAR') + civname_show + utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_START_TO_INVADE') + regionname + utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_LOCATION') + str(x1) + "," + str(y1) + ") To (" + str(x2) + "," + str(y2) + ")"
+                
                 #utils.show(tem_text)
                 CyInterface().addMessage(gc.getGame().getActivePlayer(), False, iDuration, tem_text, "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
 
@@ -800,12 +794,8 @@ class Barbs:
                 #a= localText.getText(sAdj, ())
                 name = lAdj[0]
                 civname = name
-                #a=CyTranslator().getText(str(name ), (name ,))
-                #utils.show(str(name))  #mediv01
-                ##TXT_KEY_ADJECTIVE_NUBIAN
 
-                #civname_show=str(civname[18:-1])
-                #civname_show=civname_show.capitalize()
+
                 civname_show = civname
                 if civname[0:4]=='TXT_':
                     civname_show = CyTranslator().getText(civname, ())+" "
@@ -818,21 +808,25 @@ class Barbs:
                 
                 regionid = plot.getRegionID()
                 if (regionid > 0):
-                    regionname = CyTranslator().getText("TXT_KEY_REGION_" + str(regionid), ()) + "&#22320;&#21306;"
+                    regionname = utils.getRegionNameCn(regionid)
                 else:
                     regionname = "!"
-                #utils.show('6789')
-                #tem_text="蛮族"+civname_show+"即将开始大规模入侵" + regionname+"地区"
-                tem_text = '&#22312;&#20844;&#20803;'+str(gc.getGame().getGameTurnYear())+"&#24180;, &#34542;&#26063; " + civname_show + " &#24050;&#32463;&#20837;&#20405;" + regionname + " &#22352;&#26631;&#33539;&#22260;&#65306;(" + str(x1) + "," + str(y1) + ") &#33267; (" + str(x2) + "," + str(y2) + ")"
-                #utils.show(tem_text)
+
+                #tem_text="蛮族"+civname_show+"已经开始大规模入侵" + regionname+"地区"
+                tem_text = utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_BEFORE_AD')+str(gc.getGame().getGameTurnYear())+utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_AND_YEAR') + civname_show + utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_START_TO_INVADE2') + regionname + utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_LOCATION') + str(x1) + "," + str(y1) + ") To (" + str(x2) + "," + str(y2) + ")"
+                
                 CyInterface().addMessage(gc.getGame().getActivePlayer(), False, iDuration, tem_text, "", 0, "", ColorTypes(iRed), -1, -1, True, True)
                 if (gc.getDefineINT("PYTHON_LOG_ON_MAIN_BARBS") == 1):
+
+                    utils.log(tem_text)
+
+                    #老版本代码，废弃
+                    '''
                     civname_english=civname
                     if (len(civname)>18):
                         civname_english = str(civname[18:-1]+civname[-1])
-                        #civname_english2 = CyTranslator().getText(civname, ()).encode('utf8', 'xmlcharrefreplace')
-
                     utils.log(u'Barb: ' + civname_english + ' invade at ' + "(" + str(x) + "," + str(y) + ")")
+                    '''
             spawnFunction(iPlayer, iUnitType, iNumUnits, tTL, tBR, sAdj)
 
     def possibleTiles(self, tTL, tBR, bWater=False, bTerritory=False, bBorder=False, bImpassable=False, bNearCity=False):

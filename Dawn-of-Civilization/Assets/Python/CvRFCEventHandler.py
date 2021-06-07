@@ -31,8 +31,7 @@ import AIParameters
 import GreatPeople as gp
 
 
-import DynamicCore
-import AITrade
+
 
 
 
@@ -130,7 +129,7 @@ class CvRFCEventHandler:
 		
 		cnm.onCityAcquired(city, iPlayer)
 		if (gc.getDefineINT("PYTHON_LOG_ON_CITY_CONQUEST") == 1):
-			utils.logwithid_city_conquest(iPlayer,' City '+city.getName()+' of '+gc.getPlayer(iOwner).getCivilizationShortDescription(0)+' is conquest by '+gc.getPlayer(iPlayer).getCivilizationShortDescription(0)+' in : ( '+str(city.getX())+' , '+str(city.getY())+' )')
+			utils.logwithid_city_conquest(iPlayer,' City '+city.getName()+' of '+utils.getCivChineseName(iOwner)+' is conquest by '+utils.getCivChineseName(iPlayer)+' in : ( '+str(city.getX())+' , '+str(city.getY())+' )')
 			pass
 		if bConquest:
 			sta.onCityAcquired(city, iOwner, iPlayer)
@@ -564,10 +563,13 @@ class CvRFCEventHandler:
 		if (gc.getDefineINT("PYTHON_LOG_ON_UNIT") == 1):
 			iBuildingType=unit.getUnitType()
 			buildingtext_tag = gc.getUnitInfo(iBuildingType).getTextKey()
+			'''
 			buildingtext = buildingtext_tag
 			if (buildingtext_tag[0:13] == 'TXT_KEY_UNIT_'):
 				buildingtext = buildingtext_tag[13:len(buildingtext_tag)]
 				pass
+			'''
+			buildingtext=gc.getUnitInfo(iBuildingType).getDescription()
 			utils.logwithid_unit(city.getOwner(), u' finish unit ' + str(buildingtext) + ' in ' + city.getName())
 		
 		if unit.getUnitType() == iSettler and city.getOwner() == iChina and utils.getHumanID() != iChina:
@@ -601,20 +603,26 @@ class CvRFCEventHandler:
 
 			if (gc.getDefineINT("PYTHON_LOG_ON_WONDER") == 1):
 				buildingtext_tag=gc.getBuildingInfo(iBuildingType).getTextKey()
+				'''
 				buildingtext=buildingtext_tag
 				if (buildingtext_tag[0:17]=='TXT_KEY_BUILDING_'):
 					buildingtext=buildingtext_tag[17:len(buildingtext_tag)]
 				#buildingtext_tag=gc.getBuildingInfo(iBuildingType).getDescription()
 				#buildingtext2=(CyTranslator().getText(buildingtext_tag,()))
+				'''
+				buildingtext = gc.getBuildingInfo(iBuildingType).getDescription()
 				utils.logwithid_wonder(iOwner,u' finish building wonder '+str(buildingtext)+' in '+city.getName())
 		else:
 			if (gc.getDefineINT("PYTHON_LOG_ON_BUILDING") == 1):
 				buildingtext_tag=gc.getBuildingInfo(iBuildingType).getTextKey()
+				'''
 				buildingtext=buildingtext_tag
 				if (buildingtext_tag[0:17]=='TXT_KEY_BUILDING_'):
 					buildingtext=buildingtext_tag[17:len(buildingtext_tag)]
 				#buildingtext_tag=gc.getBuildingInfo(iBuildingType).getDescription()
 				#buildingtext2=(CyTranslator().getText(buildingtext_tag,()))
+				'''
+				buildingtext = gc.getBuildingInfo(iBuildingType).getDescription()
 				utils.logwithid_building(iOwner,u' finish building '+str(buildingtext)+' in '+city.getName())
 
 		if iBuildingType == iPalace:
@@ -687,12 +695,9 @@ class CvRFCEventHandler:
 		
 	def onBeginGameTurn(self, argsList):
 		iGameTurn = argsList[0]
-		import Autosave_Checkturn
-		Autosave_Checkturn.checkTurn(iGameTurn)
-		AITrade.checkturn(iGameTurn)		
-		DynamicCore.checkturn(iGameTurn)
-		import DoResurrectionManual
-		DoResurrectionManual.checkTurn(iGameTurn)
+
+
+
 		self.rnf.checkTurn(iGameTurn)
 		self.barb.checkTurn(iGameTurn)
 		rel.checkTurn(iGameTurn)
@@ -705,11 +710,13 @@ class CvRFCEventHandler:
 		
 		sta.checkTurn(iGameTurn)
 		cong.checkTurn(iGameTurn)
-		import GameScore
-		GameScore.checkTurn(iGameTurn)
 
-		import DynamicLand
-		DynamicLand.checkturn(iGameTurn)
+
+		import Mediv01EventManager
+		Mediv01EventManager.checkturn(iGameTurn)
+
+
+
 
 		
 		if iGameTurn % 10 == 0:
@@ -801,12 +808,8 @@ class CvRFCEventHandler:
 		iGameTurn = gc.getGame().getGameTurn()
 		if (gc.getDefineINT("PYTHON_LOG_ON_TECH") == 1):
 
-			text_tag = gc.getTechInfo(iTech).getTextKey()
-			text = text_tag
-			if (text_tag[0:13] == 'TXT_KEY_TECH_'):
-				text = text_tag[13:len(text_tag)]
-				pass
-			utils.logwithid_tech(iPlayer, u' acquire tech ' + str(text) )
+			text=utils.getTechNameCn(iTech)
+			utils.logwithid_tech(iPlayer, u' acquire tech: ' + str(text) )
 
 			pass
 

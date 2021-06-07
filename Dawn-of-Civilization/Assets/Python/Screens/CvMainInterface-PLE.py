@@ -4621,7 +4621,7 @@ class CvMainInterface:
 		
 	# Will update the scores
 	def updateScoreStrings( self ):
-	
+	# 显示屏幕上的排名
 		screen = CyGInterfaceScreen( "MainInterface", CvScreenEnums.MAIN_INTERFACE )
 
 		xResolution = screen.getXResolution()

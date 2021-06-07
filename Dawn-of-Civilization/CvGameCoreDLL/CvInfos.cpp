@@ -11557,7 +11557,7 @@ int CvHandicapInfo::getResearchPercentByID(PlayerTypes ePlayer) const
 				modify = 1;
 			}
 		}
-		iResearchPercent *= modify;
+		iResearchPercent = (int)((float)iResearchPercent * modify);
 
 	}
 
@@ -14008,7 +14008,7 @@ void CvBonusInfo::setChar(int i)
 }
 
 int CvBonusInfo::getTechReveal() const
-{
+{	
 	return m_iTechReveal;
 }
 

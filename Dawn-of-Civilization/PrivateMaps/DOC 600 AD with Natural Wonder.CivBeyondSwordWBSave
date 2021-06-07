@@ -28685,6 +28685,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=71,y=23
+	BonusType=BONUS_STONE_KILIMAN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -29115,7 +29116,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=72,y=24
-	BonusType=BONUS_STONE_KILIMAN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot

@@ -14,6 +14,10 @@ import WarMaps
 import CvScreenEnums
 import time
 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 # globals
 MainOpt = BugCore.game.MainInterface
 gc = CyGlobalContext()
@@ -153,6 +157,30 @@ class RFCUtils:
     def minimalDistance(self, tuple, list, entryFunction = lambda x: True):
         return self.getHighestEntry([self.calculateDistanceTuples(tuple, x) for x in list if entryFunction(x)], lambda x: -x)
 
+
+    def getCivName(self,iPlayer):
+        return gc.getCivilizationInfo(iPlayer).getShortDescription(0)
+
+    def getCivChineseName(self,iPlayer):
+        return gc.getPlayer(iPlayer).getCivilizationDescription(0)
+
+    def getTechNameEn(self,iTech):
+        text_tag = gc.getTechInfo(iTech).getTextKey()
+        text = text_tag
+        if (text_tag[0:13] == 'TXT_KEY_TECH_'):
+            text = text_tag[13:len(text_tag)]
+            text=text
+            pass
+        return str(text).lower().capitalize()
+    def getTechNameCn(self,iTech):
+        text = gc.getTechInfo(iTech).getDescription() +'( ' + self.getTechNameEn(iTech) + ' )'
+        return text
+
+    def getRegionNameCn(self,iRegionID):
+        return CyTranslator().getText("TXT_KEY_REGION_" + str(iRegionID), ()) + self.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_LOCATION')
+
+    def getText(self,TextKey):
+        return CyTranslator().getText(TextKey,())
     #RiseAndFall
     #新增输出日志的功能
     def log_path(self):
@@ -170,7 +198,9 @@ class RFCUtils:
     def log(self,strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
             f = open(self.log_path()+"DoC_SmallMap_Log.log", 'a')
-            f.write((self.log_gettime()+str(strText)+u'').encode('utf8', 'xmlcharrefreplace'))
+            import HTMLParser
+            strText=HTMLParser.HTMLParser().unescape(strText)
+            f.write((self.log_gettime()+strText.decode('utf-8')+u''))
             f.write('\n')
             f.close
 
@@ -270,7 +300,7 @@ class RFCUtils:
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
             f = open(self.log_path()+"DoC_SmallMap_Log.log", 'a')
             f.write((str(self.log_gettime()+'['+gc.getPlayer(id).getCivilizationShortDescription(0))+'] ').encode('utf8', 'xmlcharrefreplace'))
-            f.write(str(u''+strText).encode('utf8', 'xmlcharrefreplace'))
+            f.write(str(u''+strText))
             f.write('\n')
             f.close
 
@@ -1121,8 +1151,10 @@ class RFCUtils:
         else:
             iNumCities = 3
 
-        if iPlayer == iPortugal and self.getHumanID() != iPortugal:
+        if iPlayer == iPortugal:
             iNumCities = 5
+
+
 
         lCivList = [iSpain, iFrance, iEngland, iPortugal, iNetherlands]
         id = lCivList.index(iPlayer)

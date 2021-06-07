@@ -452,7 +452,7 @@
     <!-- DOC自带的比较有意思的参数 mediv01     -->
     <Define>
         <DefineName>UNIT_VISIBILITY_RANGE</DefineName>        <!-- 单位默认视野 1为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>2</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>RECON_VISIBILITY_RANGE</DefineName>        <!-- 侦查默认视野 5为默认模式，  mediv01 本体就有的参数 -->
@@ -460,11 +460,11 @@
     </Define>
     <Define>
         <DefineName>PLOT_VISIBILITY_RANGE</DefineName>        <!-- 城市默认视野 1为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>3</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>BUILDING_PRODUCTION_DECAY_TIME</DefineName>        <!-- 建筑生产超过50回合就会衰减 50为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>50</iDefineIntVal>
+        <iDefineIntVal>500</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>BUILDING_PRODUCTION_DECAY_PERCENT</DefineName>        <!-- 建筑生产每回合衰减1% 99为默认模式，  mediv01 本体就有的参数 -->
@@ -472,16 +472,16 @@
     </Define>
     <Define>
         <DefineName>UNIT_PRODUCTION_DECAY_TIME</DefineName>        <!-- 单位生产超过10回合就会衰减 10为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>10</iDefineIntVal>
+        <iDefineIntVal>100</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>UNIT_PRODUCTION_DECAY_PERCENT</DefineName>        <!-- 单位生产每回合衰减2% 98为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>98</iDefineIntVal>
+        <iDefineIntVal>99</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>FREE_CITY_CULTURE</DefineName>        <!-- 城市默认文化 2为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>2</iDefineIntVal>
+        <iDefineIntVal>3</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>FREE_CITY_ADJACENT_CULTURE</DefineName>        <!-- 相邻城市默认文化 1为默认模式，  mediv01 本体就有的参数 -->
@@ -553,7 +553,7 @@
     </Define>
     <Define>
         <DefineName>MAX_TRADE_ROUTES</DefineName>        <!-- 城市最大拥有的商路 10为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>10</iDefineIntVal>
+        <iDefineIntVal>20</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>DIRTY_POWER_HEALTH_CHANGE</DefineName>        <!-- 城市不洁净的影响 -2为默认模式，  mediv01 本体就有的参数 -->
@@ -561,15 +561,15 @@
     </Define>
     <Define>
         <DefineName>FOUND_RELIGION_CITY_RAND</DefineName>        <!-- 创建圣城的随机数选择 20为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>10</iDefineIntVal>        <!-- Default: 10 -->
+        <iDefineIntVal>20</iDefineIntVal>        <!-- Default: 10 -->
     </Define>
     <Define>
         <DefineName>GREAT_PEOPLE_THRESHOLD_INCREASE</DefineName>        <!-- 伟人门槛点增长，默认50  mediv01 本体就有的参数 -->
-        <iDefineIntVal>50</iDefineIntVal>
+        <iDefineIntVal>20</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>GREAT_PEOPLE_THRESHOLD_INCREASE_TEAM</DefineName>        <!-- 伟人门槛点增长，默认50  mediv01 本体就有的参数 -->
-        <iDefineIntVal>50</iDefineIntVal>
+        <iDefineIntVal>20</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>GREAT_PEOPLE_THRESHOLD</DefineName>        <!-- 初始伟人点门槛，默认100 mediv01 本体就有的参数 -->
@@ -577,11 +577,11 @@
     </Define>
     <Define>
         <DefineName>GREAT_GENERALS_THRESHOLD_INCREASE</DefineName>        <!-- 大将军门槛点增长，默认50  mediv01 本体就有的参数 -->
-        <iDefineIntVal>50</iDefineIntVal>
+        <iDefineIntVal>30</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>GREAT_GENERALS_THRESHOLD_INCREASE_TEAM</DefineName>        <!-- 大将军门槛点增长，默认50  mediv01 本体就有的参数 -->
-        <iDefineIntVal>50</iDefineIntVal>
+        <iDefineIntVal>30</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>GREAT_GENERALS_THRESHOLD</DefineName>        <!-- 初始大将军点门槛，默认30 mediv01 本体就有的参数 -->
@@ -589,11 +589,11 @@
     </Define>
     <Define>
         <DefineName>INITIAL_BASE_FREE_UNITS</DefineName>        <!-- 初始免费支持单位，默认4 mediv01 本体就有的参数 -->
-        <iDefineIntVal>4</iDefineIntVal>
+        <iDefineIntVal>10</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>INITIAL_BASE_FREE_MILITARY_UNITS</DefineName>        <!-- 初始免费支持军事单位，默认2 mediv01 本体就有的参数 -->
-        <iDefineIntVal>2</iDefineIntVal>
+        <iDefineIntVal>20</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>INITIAL_FREE_OUTSIDE_UNITS</DefineName>        <!-- 初始免费远程支持单位，默认4 mediv01 本体就有的参数 -->
@@ -606,7 +606,7 @@
     </Define>
     <Define>
         <DefineName>BARBARIAN_MAX_XP_VALUE</DefineName>        <!-- 攻击野蛮人获取的最大XP，默认10 mediv01 本体就有的参数 -->
-        <iDefineIntVal>10</iDefineIntVal>
+        <iDefineIntVal>100</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>GOLDEN_AGE_LENGTH</DefineName>        <!-- 黄金时代回合长度，默认8 mediv01 本体就有的参数 -->
@@ -783,7 +783,7 @@
 
     <Define>
         <DefineName>ANYFUN_DISABLE_COMBAT_LIMIT</DefineName>        <!-- 为1时取消单位伤害上限，例如投石车等攻城武器不再有75%的伤害上限  0为默认模式  mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -810,7 +810,7 @@
     </Define>
     <Define>
         <DefineName>GAME_TEXT_SHOW_SETTLER_MAP</DefineName>        <!-- 1为可以显示城市SETTLERMAP的数值  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
     <Define>
@@ -932,10 +932,22 @@
         <DefineName>CVGAMETEXT_SHOW_CONNECT_TO_CAPITAL</DefineName>        <!-- 1为显示是否与首都相连 0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
+	
+	
+    <Define>
+        <DefineName>CVGAMETEXT_SHOW_BUILDING_CAN_BE_BUILD_BY_SETTLER</DefineName>        <!-- 1为显示建筑能否被移民重建 0为默认模式    mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
+    <Define>
+        <DefineName>CVGAMETEXT_SHOW_BUILDING_CAN_BE_BUILD_BY_WONDER</DefineName>        <!-- 1为显示建筑能否被奇观提供 0为默认模式    mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
-
-
+    <Define>
+        <DefineName>CVGAMETEXT_SHOW_TRADING_COMPANY_IN_MAP</DefineName>        <!-- 地块显示是否有贸易公司刷兵点，0为默认模式  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
 
 
@@ -943,19 +955,19 @@
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  DLL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
     <Define>
         <DefineName>DIPLO_ALLOW_TO_CANCEL_VASSAL</DefineName>        <!-- 允许主动取消附庸  0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>CITY_NO_ALLOW_TO_LIBERATE_TO_PLAYER</DefineName>        <!-- 解放城市是否一定给独立城邦，1不允许给现有玩家,0则可以   0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>CITY_ALLOW_TO_LIBERATE_ALL_CITY</DefineName>        <!-- 1为可以解放自己的所有城市  0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>PLAYER_AI_ALLOW_TO_TRADE_MORE_IN_ONE_TURN</DefineName>        <!-- 可以在1回合内连续交易  0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>PLAYER_AI_ALLOW_TO_USE_CONSIDEROFFER_THRESHOLD</DefineName>        <!-- 1为可以提示勒索信息，0为禁用 0为默认模式  mediv01 -->
@@ -994,7 +1006,7 @@
 
     <Define>
         <DefineName>CVCITY_CAN_TRAIN_SLAVE</DefineName>        <!-- 1为城市可以训练奴隶，0为默认模式 mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>CVCITY_CAN_TRAIN_ANYTHING</DefineName>        <!-- 1为城市无视科技、宗教、资源等限制，可以训练任何单位，黑暗时代可以训练主战坦克，建议不要开启，0为默认模式 mediv01  -->
@@ -1025,7 +1037,7 @@
 
     <Define>
         <DefineName>CVCITY_MAX_HURRY_POPULATION</DefineName>        <!-- -1为城市无最大的加速人口限制，0为默认模式，其他数值为固定限制 mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>-1</iDefineIntVal>
     </Define>
 
 
@@ -1065,7 +1077,7 @@
     </Define>
     <Define>
         <DefineName>CVPLAYER_CAN_CONTACT_BARBARIAN</DefineName>        <!-- 1为可以联系野蛮人和独立城邦  0为默认模式，  mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1102,7 +1114,7 @@
     </Define>
     <Define>
         <DefineName>CVUNIT_SHIP_CAN_ALWAYS_ENTER_TERRITORY</DefineName>        <!-- 1为船只不开边可以随便出入他国国境 0为默认模式，  mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1119,12 +1131,12 @@
 
     <Define>
         <DefineName>CVUNIT_CAN_HEAL_WHEN_MOVE</DefineName>        <!-- 1为可以行走后可以疗伤 0为默认模式，  mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>CVUNIT_CAN_HEAL_FOR_SACK</DefineName>        <!-- 1为私掠舰可以在中立单位疗伤 0为默认模式，  mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1135,24 +1147,24 @@
 
     <Define>
         <DefineName>CVUNITAI_AI_CAN_NOT_TAKE_GOODY</DefineName>        <!-- 1为AI不自动采蘑菇的选项 0为默认模式，  mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>CVUNIT_OLD_GREAT_WALL_EFFECT</DefineName>        <!-- 1为之前长城特效的代码，野蛮人不能进入 0为默认模式，  mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>CVUNIT_BARBARIAN_CANNOT_ENTER</DefineName>        <!-- 1为野蛮人不进入国境 0为默认模式，  mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>CVUNIT_DISBAND_CAN_GIVE_GOLD</DefineName>        <!-- 1为解散单位可以获得金币收入 0为默认模式，  mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>CVUNIT_DISBAND_GIVE_GOLD</DefineName>        <!-- 大于1的数值为解散单位获得的固定金币收入 0为按照生产费用的比例分成  mediv01  -->
@@ -1160,12 +1172,12 @@
     </Define>
     <Define>
         <DefineName>CVUNIT_DISBAND_GIVE_GOLD_PERCENT</DefineName>        <!-- 1为解散单位可以获得金币收入占生产费用的百分比 0为默认模式，50为推荐值（文明6）  mediv01  -->
-        <iDefineIntVal>50</iDefineIntVal>
+        <iDefineIntVal>100</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>CVGAME_HUMAN_CAN_VASSAL_TO_AI</DefineName>        <!-- 为1时人类可以向AI附庸  0为默认模式  mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1178,7 +1190,7 @@
 
     <Define>
         <DefineName>CVUNIT_WORKER_CAN_JOIN_CITY</DefineName>        <!-- 1为工人可以加入城市  0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1205,7 +1217,7 @@
 
     <Define>
         <DefineName>CVCITY_CAN_HURRY_NONARMY</DefineName>        <!-- 可以黄金加速非军事单位，0为默认模式  mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1223,18 +1235,18 @@
 
     <Define>
         <DefineName>CVCITY_RELIGON_NO_DISAPPEAR</DefineName>        <!-- 1为城市传播宗教不消失 mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>CVPLAYERAI_ATTITUDE_BONUS</DefineName>        <!-- AI对人类的态度加成，0为默认模式  mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>3</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>CVUNITAI_AI_NOT_PILLAGE</DefineName>        <!-- AI不会劫掠设备，0为默认模式  mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1245,7 +1257,7 @@
 
     <Define>
         <DefineName>PLAYER_TEAMAI_OPEN_BORDER_ATTITUDE_BONUS</DefineName>        <!-- 开边态度福利，数值越大越容易开边，可正可负，0为默认模式  mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>2</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1262,7 +1274,7 @@
 
     <Define>
         <DefineName>CVPLYER_CAN_ALWAYS_DO_ESPIONAGE_HUMAN</DefineName>        <!-- 1为人类都可以永远查看别的文明的发展情况 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>CVPLYER_CAN_ALWAYS_DO_ESPIONAGE_AI</DefineName>        <!-- 1为AI可以永远查看别的文明的发展情况 0为默认模式 mediv01 -->
@@ -1271,7 +1283,7 @@
 
     <Define>
         <DefineName>CVPLYER_CAN_DO_ESPIONAGE_POINT_BONUS</DefineName>        <!-- 为大于0为执行谍报任务的谍报加成，可以设置100000000，用于查看其他国家的信息 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>10000</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1291,13 +1303,13 @@
     </Define>
     <Define>
         <DefineName>CVCITY_RANK_BONUS_TYPE</DefineName>        <!-- 资源按照什么顺序优先分配 1为按照人口排名，0为按照文化排名 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>CVPLAYERAI_CAN_TRADE_GOLD_UNLIMITED</DefineName>        <!-- 1为AI交易金币无限制，可以交易国库中所有的金币 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1308,13 +1320,13 @@
 
     <Define>
         <DefineName>CVPLAYERAI_CAN_TRADE_GOLD_TURN_BASE_ON_POPULATION</DefineName>        <!-- 大于0的数字为根据总人口的几分之一设置回合金加成 推荐设置为3 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>CVPLAYERAI_CAN_ALWAYS_TRADE_TECH</DefineName>        <!-- 1为AI愿意交易科技 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1324,12 +1336,12 @@
 
     <Define>
         <DefineName>CVPLAYERAI_CAN_ALWAYS_TRADE_CITY</DefineName>        <!-- 1为AI愿意交易城市 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>CVPLAYERAI_CAN_ALWAYS_TRADE_RESOURCE</DefineName>        <!-- 1为AI愿意交易资源 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1368,53 +1380,53 @@
 
     <Define>
         <DefineName>CVUNIT_AI_NOT_TAKE_GOODY</DefineName>        <!-- 1为AI不会主动采集部落村庄 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>CVPLAYERAI_AI_DONNOT_TRADE_MAP_EACH_OTHER</DefineName>        <!-- 1为AI不会主动向其他AI交换地图  0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>CVCITY_UHV_HELPER_AI_NOT_BUILD_WONDER_OF_HUMAN_UHV</DefineName>        <!-- 1为AI不会建玩家UHV所需建筑 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
-        <DefineName>CVCITY_PROB_REBELT_MULTIPLIER_WHEN_CULTURE_IN_LOW</DefineName>        <!-- -1 为取消文化低城市叛乱机制 大于0的数字为城市在低文化时叛乱概率的倍数 1或者0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <DefineName>CVCITY_PROB_REBELT_MULTIPLIER_WHEN_CULTURE_IN_LOW</DefineName>        <!-- -1 为取消文化低城市叛乱机制 大于0的数字为城市在低文化时叛乱概率的倍数 1为默认模式 mediv01 -->
+        <iDefineIntVal>-1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>CVUNIT_GREAT_ENGINEER_ACCELERATE_UNLIMITED</DefineName>        <!-- 大于0的数字为大工程师加速建筑的锤子数可以溢出 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>CVUNIT_GREAT_ENGINEER_ACCELERATE_USE_MODIFIER</DefineName>        <!-- 大于0的数字为大工程师加速建筑的锤子和资源等修正系数有关 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>CVTEAMAI_WARTRADEVAL_MULTIPLIERTIMES10000</DefineName>        <!-- 大于0的数字为AI与人类进行战争交易时的乘数，数字需要除以10000  0和10000为默认模式， mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>100</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>CVTEAMAI_CAN_ALWAYS_TRADE_WAR_WITH_HUMAN</DefineName>        <!-- 1为AI愿意与人类进行战争交易 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>CVCITY_FIX_GENERATE_GREAT_PEOPLE</DefineName>        <!-- 大于0的数字为产生固定类型的伟人 1为大预言家 2为大艺术家 3为大科学家 4为大商业家  5为大工程师 6为大政治家 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>5</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>CVCITY_CAN_BUILD_OBSOLUTE_BUILDING</DefineName>        <!-- 1为城市可以建过时的建筑  0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1424,6 +1436,92 @@
         <DefineName>CVTEAMAI_AI_CANNOT_VASSAL_TO_OTHER_WHEN_AT_WAR</DefineName>        <!-- 1为AI在和人类打仗时，不允许投降给其他文明  0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
+
+    <Define>
+        <DefineName>CVUNIT_UNIT_CAN_UPGRADE_WHEN_ACCELERATE</DefineName>        <!-- 1为加速生成的单位也允许升级  0为默认模式    mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVCITY_NATURAL_WONDER_WITHOUT_ERA_LIMITED</DefineName>        <!-- 1为自然奇观取消启用时间限制  0为默认模式 此参数尚未成功    mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVCITY_AI_CANNOT_BUILD_WONDER</DefineName>        <!-- 1为 AI不能建造奇观，奇观控的福音  0为默认模式    mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVTEAMAI_PEACE_TRADEVAL_MULTIPLIERTIMES10000</DefineName>        <!-- 大于0的数字为AI与人类进行战争交易时的乘数，数字需要除以10000  0和10000为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+
+
+    <Define>
+        <DefineName>CVCITY_MAX_CITY_MAINTENANCE_OF_NUMBER</DefineName>        <!-- 大于0的数字为最大的城市数量维护费（每座城市）  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>3</iDefineIntVal>
+    </Define>
+
+
+    <Define>
+        <DefineName>CVCITY_MAX_CITY_MAINTENANCE_OF_DISTANCE</DefineName>        <!-- 大于0的数字为最大的城市距离维护费（每座城市）  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>3</iDefineIntVal>
+    </Define>
+
+
+    <Define>
+        <DefineName>CVCITY_MAX_CITY_MAINTENANCE_TOTAL</DefineName>        <!-- 大于0的数字为每座城市最大的总维护费  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>8</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVCITY_HURRY_CALCULATION_WITH_FLOAT</DefineName>        <!-- 大于0的数字为使用浮点数计算加速人口，可以避免加速3人口和4人口红脸数相等的情况  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+
+    <Define>
+        <DefineName>CVPLAYER_NO_EXTRA_COST_FOR_HURRY</DefineName>        <!-- 大于0的数字为金币加速军事单位生产时没有额外费用  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVPLAYER_NO_EXTRA_COST_FOR_HURRY</DefineName>        <!-- 大于0的数字为金币加速军事单位生产时没有额外费用  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVCITY_FOUND_CITY_CAN_USE_FOREST</DefineName>        <!-- 大于0的数字为建立城市时移除城市所在地块的树林可以增加锤子数量  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>30</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVTEAMAI_AI_CAN_VASSAL_TO_HUMAN_WHEN_PLEASED_TIMES100</DefineName>        <!-- 大于0的数字表明当AI和人类的关系为亲密（黄脸）时，人类的军力到达AI的几倍就可以附庸。选项的数字若为150，则人类玩家的军力为AI的1.5倍才可以附庸  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>150</iDefineIntVal>
+    </Define>
+
+
+    <Define>
+        <DefineName>CVCITY_BUILDING_NO_MAXOVERFLOW_LIMIT</DefineName>        <!-- 大于0的数字表明建造建筑时没有最大溢出锤子数的限制  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+
+    <Define>
+        <DefineName>CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN</DefineName>        <!-- 大于0的数字表明AI不会发起请求帮助的交易  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVPLAYERAI_AI_CANNOT_ASK_FOR_TRADE_TO_HUMAN</DefineName>        <!-- 大于0的数字表明AI不会发起请求帮助的交易  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+
+
+
+
 
 
 
@@ -1453,7 +1551,7 @@
 
     <Define>
         <DefineName>PYTHON_USE_LOG</DefineName>        <!-- 1为打开日志功能 此选项为日志功能的总开关   0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1741,12 +1839,12 @@
 
     <Define>
         <DefineName>PYTHON_ONLY_RESPAWN_IN_CORE</DefineName>        <!-- 1为只在核心区复活 0为默认模式，在历史区复活 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>PYTHON_UHV_HELPER</DefineName>        <!-- 1为启用某些帮助完成UHV的选项 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1773,23 +1871,23 @@
 
     <Define>
         <DefineName>PYTHON_DISABLE_HARAPPA_DESTROY_CITY</DefineName>        <!-- 1为关闭哈拉帕崩溃时自动毁灭城市 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>PYTHON_DISABLE_AIWAR_TO_INCA_WHEN_HUMAN_PLAY</DefineName>        <!-- 1为当人类玩家玩印加和阿兹特克时，关闭对新大陆刷兵的AIWAR 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>PLAGUE_DONNOT_INFECT_HUMAN</DefineName>        <!-- 1为瘟疫不会感染人类的城市 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>PYTHON_UHV_FRANCE_CONTROL_TILES_IN_COUNTRY</DefineName>        <!-- 1为法国UHV2只计入有城市的格子 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1805,17 +1903,17 @@
 
     <Define>
         <DefineName>PYTHON_ADJUST_FLIPZONE_FOR_HUMAN</DefineName>        <!-- 1为针对新版UHV，对翻转区做了难度调整。低难度的部分文明翻转区更大，更容易通关 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>PYTHON_CHECK_RESPAWN_TURN</DefineName>        <!-- 检查复活的回合间隔 10为默认模式，此选项为了减少卡顿 mediv01 -->
-        <iDefineIntVal>10</iDefineIntVal>
+        <iDefineIntVal>100</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>STABILITY_PY_DIPO_STABILITY_MODIFIER</DefineName>        <!-- 外交稳定度修正系数，真实外交稳定度=外交稳定度/修正系数  1为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>5</iDefineIntVal>
     </Define>
 
 
@@ -1829,7 +1927,7 @@
 
     <Define>
         <DefineName>STABILITY_PY_BONUS_FOR_SOCIALIST_COUNTRY</DefineName>        <!-- 1为不同难度下稳定度的红利  0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1840,7 +1938,7 @@
 
     <Define>
         <DefineName>STABILITY_CORE_POPULATION_MULTIPLIER</DefineName>        <!-- 玩家控制的文明的核心人口扩张倍数，0为默认模式  mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>20</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1851,18 +1949,18 @@
 
     <Define>
         <DefineName>STABILITY_PY_ONLY_COLLAPSE_TO_INDEPENDENT</DefineName>        <!-- 1为崩溃时仅允许崩溃给独立城邦,代码在stability.py   0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>STABILITY_PY_AI_COLLAPSE_TO_CORE_REGULARLY</DefineName>        <!-- 1为AI控制的大帝国会经历不稳定时期，崩溃至核心,代码在stability.py   0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>STABILITY_PY_AI_STABILITY_BONUS</DefineName>        <!-- AI负面稳定度修正系数，最终AI的稳定度=稳定度/2，减小AI负面稳定度的惩罚  2为默认模式 mediv01 -->
-        <iDefineIntVal>2</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1890,9 +1988,16 @@
 
     <Define>
         <DefineName>AIWAR_PY_HUMAN_CAN_USE_AI_WAR</DefineName>        <!-- 1为人类可以使用AIWAR  0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
+
+    <Define>
+        <DefineName>AIWAR_PY_CANNOT_DO_AIWAR_TO_HUMAN</DefineName>        <!-- 1为不可以对人类进行AIWAR刷兵  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	
     <Define>
         <DefineName>AIWAR_PY_DEAD_CIV_CANNOT_USE_AI_WAR</DefineName>        <!-- 1为死亡文明不能AIWAR刷兵  0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
@@ -1928,13 +2033,13 @@
 
     <Define>
         <DefineName>PYTHON_RISEANDFALL_NO_TRADE_COMPANY_WAR</DefineName>        <!-- 1为AI贸易公司不会要求玩家城市 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>PYTHON_ARMY_NOT_FLIP</DefineName>        <!-- 1为翻转区内的军队不会叛变 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1945,12 +2050,12 @@
 
     <Define>
         <DefineName>PYTHON_CONGRESS_CANNOT_ASK_HUMAN_CITY</DefineName>        <!-- 1为国际会议不能要求玩家的城市 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>PYTHON_VIC_CONNECTED_BY_ROAD_WITH_NEW_METHOD</DefineName>        <!-- 计算丝绸之路连接的新方式，只要途中不经过野蛮人的国家即可，0为默认模式  mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1960,28 +2065,52 @@
 
     <Define>
         <DefineName>CVCITY_INCREASE_RELIGION_CHANCE_ONLY_FOR_STATERELIGION</DefineName>        <!-- 大于0的参数为传播参数仅仅对人类文明的国教有效，对其他宗教无效 需要CVCITY_INCREASE_RELIGION_CHANCE参数为0才起作用  0为默认模式， mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>10</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>STABILITY_RESURRECTION_NOT_FLIP_HUMAN_CITY</DefineName>        <!-- 1为复活时不翻转人类控制的城市 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>STABILITY_RESURRECTION_ARMY_SIZE</DefineName>        <!-- 大于0的数字为复活军队的数量 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>PYTHON_VIC_CONNECTED_BY_ROAD_WITH_NEW_METHOD_INCA</DefineName>        <!--  1为印加UHV时只需要修建道路，不需要文化覆盖，0为默认模式  mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 	
+
+
+    <Define>
+        <DefineName>PYTHON_ALLOW_HISTORY_FORTUNE_TO_AI</DefineName>        <!--  1为仿照欧陆风云，对AI设置历史幸运，0为默认模式  mediv01 2021年8月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_ALLOW_HISTORY_FORTUNE_TO_HUMAN</DefineName>        <!--  1为仿照欧陆风云，对人类设置历史幸运，0为默认模式  mediv01 2021年8月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_NOAIWAR_WHEN_VASSAL</DefineName>        <!--  1为当AIWAR的发起国和目标国存在任意附庸关系时，不能发动AIWAR，0为默认模式  mediv01 2021年8月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 	
+    <Define>
+        <DefineName>PYTHON_NOAIWAR_WHEN_VASSAL_MASTER</DefineName>        <!--  1为当AIWAR的发起国附庸其他人时，不能发动AIWAR，0为默认模式  mediv01 2021年8月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 	
-	 
+	<Define>
+        <DefineName>PYTHON_NOAIWAR_WHEN_VASSAL_TO_OTHER</DefineName>        <!--  1为当AIWAR的对象附庸其他人时，不能发动AIWAR，0为默认模式  mediv01 2021年8月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
 	<![CDATA[ 
     <Define>
         <DefineName>ANYFUN_EVENT_CONTROL</DefineName><!-- 1为启用ANYFUN的事件控制机制，0为默认模式，这个代码貌似还没起作用，建议设置为0  mediv01 -->
@@ -2044,6 +2173,7 @@ if(gc.getDefineINT("XXX") == 1):
  PYTHON
   mediv01  -->
   
+ 
  
 
 

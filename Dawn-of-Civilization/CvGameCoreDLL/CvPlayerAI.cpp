@@ -629,6 +629,8 @@ void CvPlayerAI::AI_doPeace()
 											{
 												if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 												{
+
+
 													AI_changeContactTimer(((PlayerTypes)iI), CONTACT_PEACE_TREATY, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_PEACE_TREATY));
 													pDiplo = new CvDiploParameters(getID());
 													FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -851,6 +853,7 @@ void CvPlayerAI::AI_doPeace()
 														{
 															if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 															{
+
 																AI_changeContactTimer(((PlayerTypes)iI), CONTACT_PEACE_TREATY, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_PEACE_TREATY));
 																pDiplo = new CvDiploParameters(getID());
 																FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13049,6 +13052,9 @@ void CvPlayerAI::AI_doDiplo()
 
 													if (pLoopDeal->isVassalDeal())
 													{
+														if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_TRADE_TO_HUMAN") > 0) {
+															continue;
+														}
 														pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_NO_VASSAL"));
 														pDiplo->setAIContact(true);
 														gDLL->beginDiplomacy(pDiplo, ((PlayerTypes)iI));
@@ -13056,6 +13062,9 @@ void CvPlayerAI::AI_doDiplo()
 													}
 													else
 													{
+														if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_TRADE_TO_HUMAN") > 0) {
+															continue;
+														}
 														pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_CANCEL_DEAL"));
 														pDiplo->setAIContact(true);
 														pDiplo->setOurOfferList(theirList);
@@ -13117,6 +13126,9 @@ void CvPlayerAI::AI_doDiplo()
 									{
 										if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 										{
+											if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+												continue;
+											}
 											pDiplo = new CvDiploParameters(getID());
 											FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
 											pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_GIVE_HELP"));
@@ -13169,6 +13181,9 @@ void CvPlayerAI::AI_doDiplo()
 									{
 										if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 										{
+											if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+												continue;
+											}
 											pDiplo = new CvDiploParameters(getID());
 											FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
 											pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_GIVE_HELP"));
@@ -13221,6 +13236,9 @@ void CvPlayerAI::AI_doDiplo()
 										{
 											if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 											{
+												if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+													continue;
+												}
 												CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_VASSAL_GRANT_TRIBUTE, getID(), eBestGiveBonus);
 												if (pInfo)
 												{
@@ -13278,6 +13296,7 @@ void CvPlayerAI::AI_doDiplo()
 															{
 																//if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 																{
+
 																	pDiplo = new CvDiploParameters(getID());
 																	FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
 																	pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_CITY"));
@@ -13321,6 +13340,9 @@ void CvPlayerAI::AI_doDiplo()
 													{
 														if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 														{
+															if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_TRADE_TO_HUMAN") > 0) {
+																continue;
+															}
 															AI_changeContactTimer(((PlayerTypes)iI), CONTACT_PERMANENT_ALLIANCE, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_PERMANENT_ALLIANCE));
 															pDiplo = new CvDiploParameters(getID());
 															FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13355,6 +13377,9 @@ void CvPlayerAI::AI_doDiplo()
 													{
 														if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 														{
+															if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_TRADE_TO_HUMAN") > 0) {
+																continue;
+															}
 															AI_changeContactTimer(((PlayerTypes)iI), CONTACT_PERMANENT_ALLIANCE, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_PERMANENT_ALLIANCE));
 															pDiplo = new CvDiploParameters(getID());
 															FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13407,6 +13432,9 @@ void CvPlayerAI::AI_doDiplo()
 													{
 														if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 														{
+															if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+																continue;
+															}
 															AI_changeContactTimer(((PlayerTypes)iI), CONTACT_RELIGION_PRESSURE, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_RELIGION_PRESSURE));
 															pDiplo = new CvDiploParameters(getID());
 															FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13439,6 +13467,9 @@ void CvPlayerAI::AI_doDiplo()
 															{
 																if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 																{
+																	if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+																		continue;
+																	}
 																	AI_changeContactTimer(((PlayerTypes)iI), CONTACT_CIVIC_PRESSURE, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_CIVIC_PRESSURE));
 																	pDiplo = new CvDiploParameters(getID());
 																	FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13496,6 +13527,9 @@ void CvPlayerAI::AI_doDiplo()
 													{
 														if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 														{
+															if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+																continue;
+															}
 															AI_changeContactTimer(((PlayerTypes)iI), CONTACT_JOIN_WAR, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_JOIN_WAR));
 															pDiplo = new CvDiploParameters(getID());
 															FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13528,6 +13562,9 @@ void CvPlayerAI::AI_doDiplo()
 
 														if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 														{
+															if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+																continue;
+															}
 															AI_changeContactTimer(((PlayerTypes)iI), CONTACT_STOP_TRADING, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_STOP_TRADING));
 															pDiplo = new CvDiploParameters(getID());
 															FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13583,6 +13620,9 @@ void CvPlayerAI::AI_doDiplo()
 
 															if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 															{
+																if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+																	continue;
+																}
 																AI_changeContactTimer(((PlayerTypes)iI), CONTACT_GIVE_HELP, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_GIVE_HELP));
 																pDiplo = new CvDiploParameters(getID());
 																FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13635,6 +13675,9 @@ void CvPlayerAI::AI_doDiplo()
 
 														if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 														{
+															if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+																continue;
+															}
 															AI_changeContactTimer(((PlayerTypes)iI), CONTACT_ASK_FOR_HELP, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_ASK_FOR_HELP));
 															pDiplo = new CvDiploParameters(getID());
 															FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13688,6 +13731,9 @@ void CvPlayerAI::AI_doDiplo()
 
 																if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 																{
+																	if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+																		continue;
+																	}
 																	AI_changeContactTimer(((PlayerTypes)iI), CONTACT_DEMAND_TRIBUTE, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_DEMAND_TRIBUTE));
 																	pDiplo = new CvDiploParameters(getID());
 																	FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13739,6 +13785,9 @@ void CvPlayerAI::AI_doDiplo()
 
 																if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 																{
+																	if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+																		continue;
+																	}
 																	AI_changeContactTimer(((PlayerTypes)iI), CONTACT_DEMAND_TRIBUTE, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_DEMAND_TRIBUTE));
 																	pDiplo = new CvDiploParameters(getID());
 																	FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13812,6 +13861,9 @@ void CvPlayerAI::AI_doDiplo()
 
 																if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 																{
+																	if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+																		continue;
+																	}
 																	AI_changeContactTimer(((PlayerTypes)iI), CONTACT_DEMAND_TRIBUTE, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_DEMAND_TRIBUTE));
 																	pDiplo = new CvDiploParameters(getID());
 																	FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13888,6 +13940,9 @@ void CvPlayerAI::AI_doDiplo()
 
 																if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 																{
+																	if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+																		continue;
+																	}
 																	AI_changeContactTimer(((PlayerTypes)iI), CONTACT_DEMAND_TRIBUTE, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_DEMAND_TRIBUTE));
 																	pDiplo = new CvDiploParameters(getID());
 																	FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13925,6 +13980,9 @@ void CvPlayerAI::AI_doDiplo()
 													{
 														if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 														{
+															if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_HELP_TO_HUMAN") > 0) {
+																continue;
+															}
 															AI_changeContactTimer(((PlayerTypes)iI), CONTACT_OPEN_BORDERS, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_OPEN_BORDERS));
 															pDiplo = new CvDiploParameters(getID());
 															FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -13965,6 +14023,10 @@ void CvPlayerAI::AI_doDiplo()
 													{
 														if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 														{
+															if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_TRADE_TO_HUMAN") > 0) {
+																continue;
+															}
+
 															AI_changeContactTimer(((PlayerTypes)iI), CONTACT_DEFENSIVE_PACT, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_DEFENSIVE_PACT));
 															pDiplo = new CvDiploParameters(getID());
 															FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -14121,6 +14183,9 @@ void CvPlayerAI::AI_doDiplo()
 															{
 																if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 																{
+																	if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_TRADE_TO_HUMAN") > 0) {
+																		continue;
+																	}
 																	AI_changeContactTimer(((PlayerTypes)iI), CONTACT_TRADE_TECH, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_TRADE_TECH));
 																	pDiplo = new CvDiploParameters(getID());
 																	FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -14190,6 +14255,9 @@ void CvPlayerAI::AI_doDiplo()
 																{
 																	if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 																	{
+																		if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_TRADE_TO_HUMAN") > 0) {
+																			continue;
+																		}
 																		AI_changeContactTimer(((PlayerTypes)iI), CONTACT_TRADE_SLAVE, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_TRADE_SLAVE));
 																		pDiplo = new CvDiploParameters(getID());
 																		FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -14295,6 +14363,9 @@ void CvPlayerAI::AI_doDiplo()
 														{
 															if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 															{
+																if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_TRADE_TO_HUMAN") > 0) {
+																	continue;
+																}
 																AI_changeContactTimer(((PlayerTypes)iI), CONTACT_TRADE_BONUS, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_TRADE_BONUS));
 																pDiplo = new CvDiploParameters(getID());
 																FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
@@ -14339,6 +14410,9 @@ void CvPlayerAI::AI_doDiplo()
 													{
 														if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
 														{
+															if (GC.getDefineINT("CVPLAYERAI_AI_CANNOT_ASK_FOR_TRADE_TO_HUMAN") > 0) {
+																continue;
+															}
 															AI_changeContactTimer(((PlayerTypes)iI), CONTACT_TRADE_MAP, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_TRADE_MAP));
 															pDiplo = new CvDiploParameters(getID());
 															FAssertMsg(pDiplo != NULL, "pDiplo must be valid");

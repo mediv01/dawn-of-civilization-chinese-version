@@ -4668,6 +4668,21 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 
 					}
 					if (GC.getDefineINT("GAME_TEXT_SHOW_SETTLER_MAP") == 1) {
+
+						for (int iJ = 0; iJ < MAX_PLAYERS; iJ++)
+						{
+							int iSettlerValue = GET_PLAYER((PlayerTypes)iJ).getSettlerValue(pPlot->getX(), pPlot->getY());
+							int iSettlerValue2 = GET_PLAYER((PlayerTypes)iJ).AI_foundValue(pPlot->getX(), pPlot->getY(),-1,true);
+							if (iSettlerValue2 > 0) {
+								szTempBuffer.Format(L"%s   ", GET_PLAYER((PlayerTypes)iJ).getCivilizationDescription());
+								szString.append(szTempBuffer);
+								szString.append(CvWString::format(L" V1 : %d", (iSettlerValue)));//mediv01 显示SettlerMap的数值
+								szString.append(CvWString::format(L"   V2 : %d", (iSettlerValue2)));//mediv01 显示AIFoundValue的数值
+								szString.append(NEWLINE);
+							}
+						}
+
+						/*
 						int iSettlerValue = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getSettlerValue(pPlot->getX(), pPlot->getY());
 						//CvPlayerAI cv1;
 						int iSettlerValue2 = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).AI_foundValue(pPlot->getX(), pPlot->getY());
@@ -4676,6 +4691,8 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 							szString.append(CvWString::format(L"   V2 : %d", (iSettlerValue2)));//mediv01 显示AIFoundValue的数值
 							szString.append(NEWLINE);
 						}
+
+						*/
 					}
 				}
 			}
@@ -4737,12 +4754,12 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 				argsList.add(pPlot->getX());
 				argsList.add(pPlot->getY());
 				gDLL->getPythonIFace()->callFunction(PYScreensModule, "CheckCoreInDll", argsList.makeFunctionArgs(), &pIntList1);
-				if (pIntList1.size() > 0) {
+				if ((int)(pIntList1.size()) > 0) {
 					szString.append(NEWLINE);
 					//szTempBuffer.Format(L", " SETCOLR L"d=%d" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"), iDeadlockCount);
 					szTempBuffer.Format(SETCOLR L"核心翻转区：" ENDCOLR, TEXT_COLOR("COLOR_ALT_HIGHLIGHT_TEXT"));//绿色
 					szString.append(szTempBuffer);
-					for (int i = 1; i <= pIntList1.size(); i++) {
+					for (int i = 1; i <= (int)(pIntList1.size()); i++) {
 						int PlayerNum = pIntList1[i - 1];
 						szTempBuffer.Format(L"%s   ", GET_PLAYER((PlayerTypes)PlayerNum).getCivilizationDescription());
 						szString.append(szTempBuffer);
@@ -4761,12 +4778,12 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 				argsList.add(pPlot->getX());
 				argsList.add(pPlot->getY());
 				gDLL->getPythonIFace()->callFunction(PYScreensModule, "CheckMinorInDll", argsList.makeFunctionArgs(), &pIntList1);
-				if (pIntList1.size() > 0) {
+				if ((int)(pIntList1.size()) > 0) {
 
 					//szTempBuffer.Format(L", " SETCOLR L"d=%d" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"), iDeadlockCount);
 					szTempBuffer.Format(SETCOLR L"独立城邦诞生年份：" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"));
 					szString.append(szTempBuffer);
-					for (int i = 1; i <= pIntList1.size(); i++) {
+					for (int i = 1; i <= (int)(pIntList1.size()); i++) {
 						int PlayerNum = pIntList1[i - 1];
 						szTempBuffer.Format(L"%d   ", PlayerNum);
 						szString.append(szTempBuffer);
@@ -4839,12 +4856,12 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 				argsList.add(pPlot->getX());
 				argsList.add(pPlot->getY());
 				gDLL->getPythonIFace()->callFunction(PYScreensModule, "SearchCompanyInDll", argsList.makeFunctionArgs(), &pIntList1);
-				if (pIntList1.size() > 0) {
+				if ((int)(pIntList1.size()) > 0) {
 
 					//szTempBuffer.Format(L", " SETCOLR L"d=%d" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"), iDeadlockCount);
 					szTempBuffer.Format(SETCOLR L"公司类型：" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"));
 					szString.append(szTempBuffer);
-					for (int i = 1; i <= pIntList1.size(); i++) {
+					for (int i = 1; i <= (int)(pIntList1.size()); i++) {
 						int PlayerNum = pIntList1[i - 1];
 						if (PlayerNum == 0) {
 							szTempBuffer.Format(L"  丝绸之路  ");
@@ -4867,6 +4884,46 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 				}
 			}
 
+
+			if (GC.getDefineINT("CVGAMETEXT_SHOW_TRADING_COMPANY_IN_MAP") == 1) {//mediv01 显示地块是否为贸易公司刷兵点
+//long lResult = 0;
+				//lTradingCompanyCiv=(iSpain,iFrance,iEngland,iPortugal,iNetherlands)
+				std::vector<int> pIntList1;
+				CyArgsList argsList;
+				argsList.add(pPlot->getX());
+				argsList.add(pPlot->getY());
+				gDLL->getPythonIFace()->callFunction(PYScreensModule, "SearchTradingCompanyInDll", argsList.makeFunctionArgs(), &pIntList1);
+				if ((int)(pIntList1.size()) > 0) {
+
+					//szTempBuffer.Format(L", " SETCOLR L"d=%d" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"), iDeadlockCount);
+					szTempBuffer.Format(SETCOLR L"贸易公司刷兵点：" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_CYAN"));
+					szString.append(szTempBuffer);
+					for (int i = 1; i <= (int)(pIntList1.size()); i++) {
+						int PlayerNum = pIntList1[i - 1];
+						if (PlayerNum == 0) {
+							szTempBuffer.Format(L"  西班牙  ");
+						}
+						else if (PlayerNum == 1) {
+							szTempBuffer.Format(L"  法国  ");
+						}
+						else if (PlayerNum == 2) {
+							szTempBuffer.Format(L"  英国  ");
+						}
+						else if (PlayerNum == 3) {
+							szTempBuffer.Format(L"  葡萄牙  ");
+						}
+						else if (PlayerNum == 4) {
+							szTempBuffer.Format(L"  荷兰  ");
+						}
+						else {
+							szTempBuffer.Format(L"");
+						}
+						szString.append(szTempBuffer);
+					}
+					szString.append(NEWLINE);
+				}
+			}
+
 			if (GC.getDefineINT("CVGAMETEXT_AIWAR_IN_MAP") == 1) {//mediv01 显示AIWAR地块
 //long lResult = 0;
 				std::vector<int> pIntList1;
@@ -4874,7 +4931,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 				argsList.add(pPlot->getX());
 				argsList.add(pPlot->getY());
 				gDLL->getPythonIFace()->callFunction(PYScreensModule, "SearchAIWARInDll", argsList.makeFunctionArgs(), &pIntList1);
-				if (pIntList1.size() > 0) {
+				if ((int)(pIntList1.size()) > 0) {
 
 					//szTempBuffer.Format(L", " SETCOLR L"d=%d" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"), iDeadlockCount);
 					szTempBuffer.Format(SETCOLR L"AIWAR刷兵地块：" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"));
@@ -4882,7 +4939,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 
 
 					list<int> record_list;
-					for (int i = 1; i <= pIntList1.size(); i++) {
+					for (int i = 1; i <= (int)(pIntList1.size()); i++) {
 						int PlayerNum = pIntList1[i - 1];
 						szTempBuffer.Format(L"");
 						if (GC.getDefineINT("CVGAMETEXT_AIWAR_IN_MAP_SHOW_ANCIENT") == 1) {
@@ -10742,6 +10799,92 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 		szTempBuffer.Format( SETCOLR L"<link=literal>%s</link>" ENDCOLR , TEXT_COLOR("COLOR_BUILDING_TEXT"), kBuilding.getDescription());
 		szBuffer.append(szTempBuffer);
 
+		if (GC.getDefineINT("CVGAMETEXT_SHOW_BUILDING_CAN_BE_BUILD_BY_WONDER") >= 1) {
+
+			//设置移民可以建造的提示
+			int free_area = kBuilding.getFreeStartEra();
+			if (free_area != NO_ERA)
+			{
+				CvWString era_text= L"未知时代";
+				if (free_area == ERA_ANCIENT) {
+					era_text = L"远古时代";
+				}
+				else if (free_area == ERA_CLASSICAL) {
+					era_text = L"古典时代";
+				}
+				else if (free_area == ERA_MEDIEVAL) {
+					era_text = L"中古时代";
+				}
+				else if (free_area == ERA_RENAISSANCE) {
+					era_text = L"启蒙时代";
+				}
+				else if (free_area == ERA_INDUSTRIAL) {
+					era_text = L"工业时代";
+				}
+				else if (free_area == ERA_GLOBAL) {
+					era_text = L"全球化时代";
+				}
+				else if (free_area == ERA_DIGITAL) {
+					era_text = L"数字化时代";
+				}
+				if (GET_PLAYER(ePlayer).getCurrentEra() >= free_area) {
+					szBuffer.append(NEWLINE);
+					szTempBuffer.Format(SETCOLR L"<link=literal>（当前可被移民重建，%s 的免费建筑）</link>" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_YELLOW"), era_text.c_str());
+					szBuffer.append(szTempBuffer);
+				}
+				else {
+
+					szBuffer.append(NEWLINE);
+					szTempBuffer.Format(SETCOLR L"<link=literal>（可在 %s 被移民重建）</link>" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_YELLOW"), era_text.c_str());
+					szBuffer.append(szTempBuffer);
+
+				}
+			}
+		}
+
+
+		if (GC.getDefineINT("CVGAMETEXT_SHOW_BUILDING_CAN_BE_BUILD_BY_SETTLER") >= 1) {
+			//设置移民可以重建的提示
+
+			for (int i = 0; i < GC.getNumBuildingClassInfos(); i++)
+			{
+				BuildingTypes eBuilding2 = (BuildingTypes)GC.getCivilizationInfo(GC.getGameINLINE().getActiveCivilizationType()).getCivilizationBuildings(i);
+				CvBuildingInfo& kBuilding2 = GC.getBuildingInfo(eBuilding2);
+				if (kBuilding2.getFreeBuildingClass() != NO_BUILDINGCLASS)
+				{
+					BuildingTypes eFreeBuilding2;
+					if (ePlayer != NO_PLAYER)
+					{
+						eFreeBuilding2 = ((BuildingTypes)(GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationBuildings(kBuilding2.getFreeBuildingClass())));
+					}
+					else
+					{
+						eFreeBuilding2 = (BuildingTypes)GC.getBuildingClassInfo((BuildingClassTypes)kBuilding2.getFreeBuildingClass()).getDefaultBuildingIndex();
+					}
+
+					if (NO_BUILDING != eFreeBuilding2)
+					{
+						if (eFreeBuilding2 == eBuilding) {
+							szBuffer.append(NEWLINE);
+							szTempBuffer.Format(SETCOLR L"<link=literal>%s</link>" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_CYAN"), L"（可被 ");
+							szBuffer.append(szTempBuffer);
+							szTempBuffer.Format(SETCOLR L"<link=literal>%s</link>" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_CYAN"), gDLL->getText(GC.getBuildingInfo(eBuilding2).getTextKeyWide()).c_str());
+							szBuffer.append(szTempBuffer);
+							szTempBuffer.Format(SETCOLR L"<link=literal>%s</link>" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_CYAN"), L" 提供）  ");
+							szBuffer.append(szTempBuffer);
+							
+							//szBuffer.append(NEWLINE);
+							//szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_FREE_IN_CITY", GC.getBuildingInfo(eFreeBuilding2).getTextKeyWide()));
+						}
+					}
+				}
+			}
+
+
+			
+		}
+
+
 		int iHappiness;
 		if (NULL != pCity)
 		{
@@ -10979,6 +11122,7 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 		}
 	}
 
+	//mediv01 显示能给免费提供建筑的代码
 	if (kBuilding.getFreeBuildingClass() != NO_BUILDINGCLASS)
 	{
 		BuildingTypes eFreeBuilding;

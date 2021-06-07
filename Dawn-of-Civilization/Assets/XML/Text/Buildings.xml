@@ -945,8 +945,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]太阳能发电厂[COLOR_REVERT]提供无污染电力。</Chinese><French>[COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT] provide pollution-free power.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ESTATE</Tag>
-		<English>庄园（凡尔赛宫可提供）</English>
-		<L1/><L2/><L3/><L4/><Chinese>庄园（凡尔赛宫可提供）</Chinese><French>Estate</French></TEXT>
+		<English>庄园</English>
+		<L1/><L2/><L3/><L4/><Chinese>庄园</Chinese><French>Estate</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ESTATE_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]庄园[COLOR_REVERT]大幅增加了一个城市的文化产出。它们还可以通过使用文化滑块增加幸福感输出，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_HIGHLIGHT_TEXT]和[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_HIGHLIGHT_TEXT]专家。</English>
@@ -961,8 +961,8 @@
 		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]药房[COLOR_REVERT]通过访问[COLOR_HIGHLIGHT_TEXT]香蕉[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]香料[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]葡萄酒[COLOR_REVERT]，增加城市的健康，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]科学家[COLOR_REVERT]专家。</Chinese><French>[COLOR_BUILDING_TEXT]Pharmacies[COLOR_REVERT] increase the city's healthiness with access to [COLOR_HIGHLIGHT_TEXT]Banana[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_RAILWAY_STATION</Tag>
-		<English>火车站（芳提娜城堡可提供）</English>
-		<L1/><L2/><L3/><L4/><Chinese>火车站（芳提娜城堡可提供）</Chinese><French>Railway Station</French></TEXT>
+		<English>火车站</English>
+		<L1/><L2/><L3/><L4/><Chinese>火车站</Chinese><French>Railway Station</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_RAILWAY_STATION_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]火车站[COLOR_REVERT]增加城市的不健康，提供额外的贸易路线，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]专家。[COLOR_BUILDING_TEXT]火车站[COLOR_REVERT]需要建造[COLOR_BUILDING_TEXT]城堡Frontenac[COLOR_REVERT]world wonder</English>

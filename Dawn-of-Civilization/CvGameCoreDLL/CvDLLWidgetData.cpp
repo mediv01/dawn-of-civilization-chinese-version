@@ -2070,15 +2070,34 @@ void CvDLLWidgetData::parseHurryHelp(CvWidgetDataStruct &widgetDataStruct, CvWSt
 // BUG - Hurry Overflow - end
 
 		iHurryAngerLength = pHeadSelectedCity->hurryAngerLength((HurryTypes)(widgetDataStruct.m_iData1));
+		int iHurryAnger = 0;
+		int iHurryAngerModifier = 0;
+		int hurrylength = 0;
+		//红脸计算
+		if (GC.getDefineINT("CVCITY_HURRY_CALCULATION_WITH_FLOAT") > 0) {
+			float iHurryAngerModifier_Float = ((float)iHurryPopulation) / 2;
+			int Angertimer = (int)((float) GC.getDefineINT("HURRY_POP_ANGER") * iHurryAngerModifier_Float);
+			iHurryAnger = (int) iHurryAngerModifier_Float + 1;
+			hurrylength =(int)( (float)iHurryAngerLength * iHurryAngerModifier_Float);
 
-		// Leoreth: anger scales with amount of sacrificed population
-		int iHurryAngerModifier = (1 + iHurryPopulation) / 2;
+		}
+		else {
 
-		// Leoreth: Pyramids negate unhappiness scaling
-		//if (GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)PYRAMIDS))
-		//	iHurryAngerModifier = 1;
+			
 
-		int iHurryAnger = GC.getDefineINT("HURRY_POP_ANGER") * iHurryAngerModifier;
+			// Leoreth: anger scales with amount of sacrificed population
+			iHurryAngerModifier = (1 + iHurryPopulation) / 2;
+
+			// Leoreth: Pyramids negate unhappiness scaling
+			//if (GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)PYRAMIDS))
+			//	iHurryAngerModifier = 1;
+
+			iHurryAnger = GC.getDefineINT("HURRY_POP_ANGER") * iHurryAngerModifier;
+			
+
+			hurrylength = iHurryAngerLength * iHurryAngerModifier;
+
+		}
 
 		if (pHeadSelectedCity->isHasBuildingEffect((BuildingTypes)BLUE_MOSQUE))
 		{
@@ -2087,8 +2106,11 @@ void CvDLLWidgetData::parseHurryHelp(CvWidgetDataStruct &widgetDataStruct, CvWSt
 
 		if (iHurryAngerLength > 0)
 		{
+
+
+
 			szBuffer.append(NEWLINE);
-			szBuffer.append(gDLL->getText("TXT_KEY_MISC_ANGER_TURNS", iHurryAnger, (iHurryAngerLength * iHurryAngerModifier + pHeadSelectedCity->getHurryAngerTimer())));
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_ANGER_TURNS", iHurryAnger, (hurrylength + pHeadSelectedCity->getHurryAngerTimer())));
 		}
 
 		if (!(pHeadSelectedCity->isProductionUnit()) && !(pHeadSelectedCity->isProductionBuilding()))
@@ -2150,8 +2172,8 @@ void CvDLLWidgetData::parseHurryHelp(CvWidgetDataStruct &widgetDataStruct, CvWSt
 					iHurryTime_left = (iHurryProduction_per - iOverflowProduction) / iProduction_city_per + 1;
 				}
 				else {
-					iOverflowProduction2 = (iHurryPopulation - 1) * iHurryProduction_per * 1.5- (iHurryProduction_all - iOverflowProduction) ;
-					iHurryTime_left = (iHurryProduction_per * 1.5 - iOverflowProduction2) / (iProduction_city_per) + 1;
+					iOverflowProduction2 = (int)((iHurryPopulation - 1) * iHurryProduction_per * 1.5- (iHurryProduction_all - iOverflowProduction) );
+					iHurryTime_left = (int)((iHurryProduction_per * 1.5 - iOverflowProduction2) / (iProduction_city_per) + 1);
 
 					//iHurryTime_left = (iHurryProduction_per * 1.5 - iOverflowProduction2-2* iProduction_city_per) / (iProduction_city_per) + 1;
 				}
@@ -2167,9 +2189,9 @@ void CvDLLWidgetData::parseHurryHelp(CvWidgetDataStruct &widgetDataStruct, CvWSt
 					szBuffer.append(gDLL->getText("TXT_KEY_MISC_HURRY_POP_DETAIL", iHurryProduction_per, iHurryTime_left, iHurryPopulation - 1, iHurryTime_left2, iHurryPopulation - 2));
 				}
 				else {
-					iOverflowProduction2 = (iHurryPopulation - 1) * iHurryProduction_per * 1.5 - (iHurryProduction_all - iOverflowProduction);
+					iOverflowProduction2 = (int)((iHurryPopulation - 1) * iHurryProduction_per * 1.5 - (iHurryProduction_all - iOverflowProduction));
 					//iHurryTime_left2 = (iHurryProduction_per * 1.5*2 - iOverflowProduction2 - 2 * iProduction_city_per) / (iProduction_city_per ) + 1;
-					iHurryTime_left2 = (iHurryProduction_per * 1.5*2 - iOverflowProduction2 ) / (iProduction_city_per ) + 1;
+					iHurryTime_left2 = (int)((iHurryProduction_per * 1.5*2 - iOverflowProduction2 ) / (iProduction_city_per ) + 1);
 
 					szBuffer.append(gDLL->getText("TXT_KEY_MISC_HURRY_POP_DETAIL", iHurryProduction_per, iHurryTime_left, iHurryPopulation - 2, iHurryTime_left2, iHurryPopulation - 3));
 				}
@@ -4232,16 +4254,81 @@ void CvDLLWidgetData::parseTradeItem(CvWidgetDataStruct &widgetDataStruct, CvWSt
 			szBuffer.append(NEWLINE);
 			szBuffer.append(szTempBuffer);
 		}
+
+
+		PlayerTypes pHuman = eWhoTo;
+		PlayerTypes pAI = eWhoFrom;
+
+
 		if (GC.getDefineINT("CVGAMETEXT_TRADE_SHOW_VALUE") == 1) { //mediv01 显示物品交易价值
+
+
+
+
 			CLinkList<TradeData> pOurList;
 			//TradeData item;
 			//setTradeItem(&item, ((TradeableItems)(widgetDataStruct.m_iData1)), widgetDataStruct.m_iData2);;
 			pOurList.insertAtEnd(item);
-			//int iOurValue = GET_PLAYER(eWhoTo).AI_dealVal(eWhoFrom, &pOurList, false, -1) / GET_PLAYER(eWhoTo).AI_goldTradeValuePercent(eWhoFrom) * 100;
-			int iOurValue = GET_PLAYER(eWhoTo).AI_dealVal(eWhoFrom, &pOurList, false, -1) / GET_PLAYER(eWhoFrom).AI_goldTradeValuePercent(eWhoTo) * 100;
+			//int iOurValue = GET_PLAYER(pHuman).AI_dealVal(pAI, &pOurList, false, -1) / GET_PLAYER(pHuman).AI_goldTradeValuePercent(pAI) * 100;
+			int iOurValue = 0;
+
+
+
+			iOurValue = GET_PLAYER(pHuman).AI_dealVal(pAI, &pOurList, false, -1) / GET_PLAYER(pAI).AI_goldTradeValuePercent(pHuman) * 100;
 			szTempBuffer.Format(SETCOLR L"交易价值：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), iOurValue);
 			szBuffer.append(NEWLINE);
 			szBuffer.append(szTempBuffer);
+
+			//这个是错的
+			//iOurValue = GET_PLAYER(pAI).AI_dealVal(pAI, &pOurList, false, -1) / GET_PLAYER(pAI).AI_goldTradeValuePercent(pHuman) * 100;
+			//iOurValue = GET_PLAYER(pHuman).AI_dealVal(pAI, &pOurList, false, -1) / GET_PLAYER(pHuman).AI_goldTradeValuePercent(pAI) * 100;
+
+
+			/*
+			szTempBuffer.Format(SETCOLR L"交易价值：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), iOurValue);
+			szBuffer.append(NEWLINE);
+			szBuffer.append(szTempBuffer);
+			*/
+
+
+
+			if (widgetDataStruct.m_iData1 == TRADE_GOLD_PER_TURN) {
+				int maxgoldperturn = 0;
+
+
+
+				//显示成人类的
+				/*
+				maxgoldperturn = GET_PLAYER(pHuman).AI_maxGoldPerTurnTrade(pAI);
+				szTempBuffer.Format(SETCOLR L"最大交易回合金：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), maxgoldperturn);
+				szBuffer.append(NEWLINE);
+				szBuffer.append(szTempBuffer);
+				*/
+
+				//显示成AI的回合金
+				maxgoldperturn = GET_PLAYER(pAI).AI_maxGoldPerTurnTrade(pHuman);
+				szTempBuffer.Format(SETCOLR L"最大交易回合金：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), maxgoldperturn);
+				szBuffer.append(NEWLINE);
+				szBuffer.append(szTempBuffer);
+
+
+				//显示成AI的
+				/*
+				maxgoldperturn = GET_PLAYER(pAI).AI_maxGoldPerTurnTrade(pAI);
+				szTempBuffer.Format(SETCOLR L"最大交易回合金：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), maxgoldperturn);
+				szBuffer.append(NEWLINE);
+				szBuffer.append(szTempBuffer);
+
+				*/
+
+				//显示成人类的
+				/*
+				maxgoldperturn = GET_PLAYER(pHuman).AI_maxGoldPerTurnTrade(pHuman);
+				szTempBuffer.Format(SETCOLR L"最大交易回合金：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), maxgoldperturn);
+				szBuffer.append(NEWLINE);
+				szBuffer.append(szTempBuffer);
+				*/
+			}
 		}
 
 		if (GC.getDefineINT("CVGAMETEXT_TRADE_SHOW_ASK_VALUE") == 1) { //mediv01 显示勒索交易价值
@@ -4249,9 +4336,9 @@ void CvDLLWidgetData::parseTradeItem(CvWidgetDataStruct &widgetDataStruct, CvWSt
 
 			//pOurList.insertAtEnd(item);
 
-			//int iOurValue = GET_PLAYER(eWhoTo).AI_dealVal(eWhoFrom, &pOurList, false, -1) / GET_PLAYER(eWhoFrom).AI_goldTradeValuePercent(eWhoTo) * 100;
-			int iOurValue = GET_PLAYER(eWhoTo).AI_considerOffer_Threshold(eWhoTo, eWhoFrom);
-			int iOurValue2 = GET_PLAYER(eWhoFrom).AI_considerOffer_Threshold(eWhoFrom, eWhoTo);
+			//int iOurValue = GET_PLAYER(pHuman).AI_dealVal(pAI, &pOurList, false, -1) / GET_PLAYER(pAI).AI_goldTradeValuePercent(pHuman) * 100;
+			int iOurValue = GET_PLAYER(pHuman).AI_considerOffer_Threshold(pHuman, pAI);
+			int iOurValue2 = GET_PLAYER(pAI).AI_considerOffer_Threshold(pAI, pHuman);
 			int iOurValue_f = std::max(iOurValue, iOurValue2);
 			szTempBuffer.Format(SETCOLR L"可勒索价值：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), iOurValue_f);
 			szBuffer.append(NEWLINE);

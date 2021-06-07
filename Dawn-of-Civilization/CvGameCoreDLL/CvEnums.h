@@ -142,6 +142,16 @@ enum WrapDirection
 enum ColorTypes						// Exposed to Python
 {
 	NO_COLOR = -1,
+	/*
+	COLOR_PLAYER_WHITE
+	COLOR_PLAYER_DARK_YELLOW
+	COLOR_PLAYER_YELLOW
+	COLOR_PLAYER_RED
+	COLOR_PLAYER_BLACK
+	COLOR_PLAYER_BLUE
+	
+	
+	*/
 };
 
 enum PlayerColorTypes			// Exposed to Python

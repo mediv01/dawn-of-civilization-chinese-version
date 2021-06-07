@@ -6073,9 +6073,9 @@
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_INDEPENDENT2</Type>
-			<Description>TXT_KEY_CIV_INDEPENDENT_DESC</Description>
-			<ShortDescription>TXT_KEY_CIV_INDEPENDENT_SHORT_DESC</ShortDescription>
-			<Adjective>TXT_KEY_CIV_INDEPENDENT_ADJECTIVE</Adjective>
+			<Description>TXT_KEY_CIV_INDEPENDENT2_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_INDEPENDENT2_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_INDEPENDENT2_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_INDEPENDENT_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_GREYISH_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INDEPENDENT</ArtDefineTag>

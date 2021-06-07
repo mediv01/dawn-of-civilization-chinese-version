@@ -755,6 +755,8 @@ public:
 	DllExport bool isStrike() const;																																	// Exposed to Python
 	void setStrike(bool bNewValue);
 
+	DllExport int AI_foundValue2(int PlayerID, int iX, int iY, int iMinRivalRange, bool bStartingLoc) const;
+
 	DllExport PlayerTypes getID() const;																												// Exposed to Python
 
 	DllExport HandicapTypes getHandicapType() const;																									// Exposed to Python

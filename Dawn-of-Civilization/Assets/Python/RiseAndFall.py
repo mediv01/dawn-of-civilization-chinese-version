@@ -904,7 +904,7 @@ class RiseAndFall:
                     #civname=gc.getPlayer(iLoopCiv).getCivilizationAdjectiveKey()
                     #newcivname=str(civname[12:civname.rfind('_')])
                     #newcivname=newcivname.capitalize()
-                    civname = gc.getPlayer(iLoopCiv).getCivilizationShortDescription(0)
+                    civname = utils.getCivChineseName(iLoopCiv)
                     newcivname = civname
                     tem_text = "&#22312;&#20844;&#20803; " + str(tBirth[iLoopCiv]) + " ,&#19968;&#20010;&#26032;&#30340;&#25991;&#26126;" + newcivname + "&#21363;&#23558;&#35806;&#29983;&#65281;"  #iLoopCiv
                     CyInterface().addMessage(gc.getGame().getActivePlayer(), False, iDuration, tem_text, "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
@@ -1318,6 +1318,10 @@ class RiseAndFall:
 
                 if iIndependentCities == 0:
                     return
+
+        import GlobalDefineAlt
+        if (iCiv in GlobalDefineAlt.PYTHON_NO_BIRTH_COUNTRY and iHuman != iCiv):
+            return
 
         tCapital = Areas.getCapital(iCiv)
 
@@ -1894,10 +1898,6 @@ class RiseAndFall:
     def giveColonists(self, iCiv):
         pCiv = gc.getPlayer(iCiv)
         teamCiv = gc.getTeam(pCiv.getTeam())
-        tem_text = '&#26032;&#33322;&#36335;&#30340;&#24320;&#36767;&#65306;&#27431;&#27954;&#27542;&#27665;&#32773;&#24050;&#32463;&#22312;&#26032;&#22823;&#38470;&#35774;&#31435;&#20102;&#19968;&#20123;&#27542;&#27665;&#28857;&#65281;'
-        #		utils.show(tem_text)
-        #		CyInterface().addMessage(gc.getGame().getActivePlayer(), False, iDuration, tem_text, "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
-        #
         #		if pCiv.isAlive() and utils.getHumanID() != iCiv and iCiv in dMaxColonists:#禁用人类玩家
         ihuman = gc.getDefineINT("AIWAR_PY_HUMAN_CAN_USE_RISE_AND_FALL") == 0 and utils.getHumanID() == iCiv
         if pCiv.isAlive() and iCiv in dMaxColonists and not ihuman:  #参数控制
@@ -1927,6 +1927,9 @@ class RiseAndFall:
                     utils.makeUnitAI(iSettler, iCiv, tSeaPlot, UnitAITypes.UNITAI_SETTLE, 1)
                     utils.makeUnit(utils.getBestDefender(iCiv), iCiv, tSeaPlot, 1)
                     utils.makeUnit(iWorker, iCiv, tSeaPlot, 1)
+
+                    tem_text = utils.getCivChineseName(iCiv) + " " + localText.getText("TXT_KEY_RISEANDFALL_NEWSETTLER", ())
+                    CyInterface().addMessage(gc.getGame().getActivePlayer(), False, iDuration, tem_text, "", 0, "", ColorTypes(iYellow), -1, -1, True, True)
 
                     data.players[iCiv].iColonistsAlreadyGiven += 1
 
@@ -2240,7 +2243,7 @@ class RiseAndFall:
             if iTargetCiv == utils.getHumanID():
                 if (gc.getDefineINT("PYTHON_RISEANDFALL_NO_TRADE_COMPANY_WAR") == 1):  #mediv01
                     targetList = []
-                    return
+                    continue
                 askCityList = []
                 sAskCities = ""
                 sPlayer = pPlayer.getCivilizationAdjectiveKey()

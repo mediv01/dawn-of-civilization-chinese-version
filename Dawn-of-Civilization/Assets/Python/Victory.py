@@ -1105,14 +1105,38 @@ def checkTurn(iGameTurn, iPlayer):
 
         # third goal: settle a total of ten great artists and statesmen in Vienna and have pleased or better relations with eight independent European civilizations by 1850 AD
         if isPossible(iHolyRome, 2):
+            iCount, iTotal = countControlledTiles_history(iHolyRome, iRome)
+            fPercent = iCount * 100 / iTotal
+            bHolyRomanUHV3_01 = (fPercent >= 80)
+
+
+            bHolyRomanUHV3_02_Constantinople_city = controlOrVassalCity(iPlayer, tConstantinople)
+            bHolyRomanUHV3_02_Roman_city = controlOrVassalCity(iPlayer, tRome)
+            bHolyRomanUHV3_02 = bHolyRomanUHV3_02_Constantinople_city and bHolyRomanUHV3_02_Roman_city
+
+
+            Culture_Request = utils.getTurns(5000)
+            mostCulturedCity = getMostCulturedCity(iHolyRome)
+            if mostCulturedCity.getCulture(iHolyRome) >= Culture_Request:
+                bHolyRomanUHV3_03 = True
+            else:
+                bHolyRomanUHV3_03 = False
+
+
+            if(bHolyRomanUHV3_01 and bHolyRomanUHV3_02 and bHolyRomanUHV3_03):
+                win(iHolyRome, 2)
+
+
+            '''
             iGreatArtists = countCitySpecialists(iHolyRome, tVienna, iSpecialistGreatArtist)
             iGreatStatesmen = countCitySpecialists(iHolyRome, tVienna, iSpecialistGreatStatesman)
             iPleasedOrBetterEuropeans = countPlayersWithAttitudeInGroup(iHolyRome, AttitudeTypes.ATTITUDE_PLEASED, lCivGroups[0])
 
             if iGreatArtists + iGreatStatesmen >= 10 and iPleasedOrBetterEuropeans >= 8:
                 win(iHolyRome, 2)
+            '''
 
-        if iGameTurn == getTurnForYear(1850):
+        if iGameTurn == getTurnForYear(1700):
             expire(iHolyRome, 2)
 
     elif iPlayer == iRussia:
@@ -1200,15 +1224,15 @@ def checkTurn(iGameTurn, iPlayer):
             expire(iPortugal, 1)
 
         # third goal: control 15 cities in Brazil, Africa and Asia in 1700 AD
-        if iGameTurn == getTurnForYear(1700):
+        if isPossible(iPortugal, 2):
             iCount = 0
             iCount += getNumCitiesInArea(iPortugal, utils.getPlotList(tBrazilTL, tBrazilBR))
             iCount += getNumCitiesInRegions(iPortugal, lAfrica)
             iCount += getNumCitiesInRegions(iPortugal, lAsia)
             if iCount >= 15:
                 win(iPortugal, 2)
-            else:
-                lose(iPortugal, 2)
+        if iGameTurn == getTurnForYear(1700):
+            expire(iPortugal, 2)
 
     elif iPlayer == iInca:
 
@@ -1265,20 +1289,42 @@ def checkTurn(iGameTurn, iPlayer):
             expire(iItaly, 0)
 
         # second goal: have three cities with influential culture by 1600 AD
+
+        '''
         if isPossible(iItaly, 1):
             if countCitiesWithCultureLevel(iItaly, 5) >= 3:
                 win(iItaly, 1)
 
         if iGameTurn == getTurnForYear(1600):
             expire(iItaly, 1)
+        '''
 
         # third goal: control 65% of the Mediterranean by 1930 AD
         if isPossible(iItaly, 2):
+            bVassalFrance = isControlledOrVassalizedwithPlayer(iPlayer, iFrance)
+            bVassalHolyRoman = isControlledOrVassalizedwithPlayer(iPlayer, iHolyRome)
+
+
+            bHolyRomanUHV3_02_Constantinople_city = controlOrVassalCity(iPlayer, tConstantinople)
+            bHolyRomanUHV3_02_Roman_city = controlOrVassalCity(iPlayer, tRome)
+            bUHV3_02 = bHolyRomanUHV3_02_Constantinople_city and bHolyRomanUHV3_02_Roman_city
+
+
+
+
+            iMediterranean, iTotalMediterranean = countControlledTiles(iItaly, tMediterraneanTL, tMediterraneanBR, False, tMediterraneanExceptions, True)
+            fMediterranean = iMediterranean * 100.0 / iTotalMediterranean
+            bUHV2 = bVassalFrance and bVassalHolyRoman and bUHV3_02 and (fMediterranean >= 65.0)
+
+            if(bUHV2):
+                win(iItaly, 2)
+            ''''
             iMediterranean, iTotalMediterranean = countControlledTiles(iItaly, tMediterraneanTL, tMediterraneanBR, False, tMediterraneanExceptions, True)
             fMediterranean = iMediterranean * 100.0 / iTotalMediterranean
 
             if fMediterranean >= 65.0:
                 win(iItaly, 2)
+            '''
 
         if iGameTurn == getTurnForYear(1930):
             expire(iItaly, 2)
@@ -1878,6 +1924,23 @@ def onTechAcquired(iPlayer, iTech):
                         lose(iEngland, 2)
                 if not isFirstDiscoveredPossible(iEngland, iRenaissance, 8) or not isFirstDiscoveredPossible(iEngland, iIndustrial, 8):
                     lose(iEngland, 2)
+
+
+        # 意大利新UHV2 率先发现8项启蒙科技
+        if isPossible(iItaly, 1):
+            if iEra in [iRenaissance]:
+                if countFirstDiscovered(iPlayer, iRenaissance) >= 8:
+                    if iPlayer == iItaly:
+                        ITotalCulture = pItaly.countTotalCulture()
+                        bTotalCulture = (ITotalCulture >= utils.getTurns(20000))
+                        if (bTotalCulture):
+                            win(iItaly, 1)
+                    else:
+                        lose(iItaly, 1)
+                if not isFirstDiscoveredPossible(iItaly, iRenaissance, 8):
+                    lose(iItaly, 1)
+
+
 
         # third German goal: be the first to discover ten Industrial and ten Global technologies
         if isPossible(iGermany, 2):
@@ -2910,6 +2973,33 @@ def countControlledTiles(iPlayer, tTopLeft, tBottomRight, bVassals=False, lExcep
     return iCount, iTotal
 
 
+def countControlledTiles_history(iPlayer, iPlayer_history):
+    lValidOwners = [iPlayer]
+    iCount = 0
+    iTotal = 0
+    bVassals = True
+    lExceptions = []
+
+
+    if bVassals:
+        for iLoopPlayer in range(iNumPlayers):
+            if gc.getTeam(gc.getPlayer(iLoopPlayer).getTeam()).isVassal(iPlayer):
+                lValidOwners.append(iLoopPlayer)
+
+    for x in range(iWorldX):
+        for y in range(iWorldY):
+            plot = gc.getMap().plot(x, y)
+            if plot.isWater() or (plot.isPeak()): continue
+            # 历史区域
+            if plot.getSettlerValue(iPlayer_history) >= 90:
+                if plot.getOwner()>=0:
+                    iTotal += 1
+                    if plot.getOwner() in lValidOwners: iCount += 1
+                    pass
+    return iCount, iTotal
+
+
+
 def countWonders(iPlayer):
     iCount = 0
     for iWonder in range(iBeginWonders, iNumBuildings):
@@ -3209,6 +3299,23 @@ def controlsCity(iPlayer, tPlot):
             return True
     return False
 
+
+def controlOrVassalCity(iPlayer, tPlot):
+    lValidOwners = [iPlayer]
+    bVassals = True
+    lExceptions = []
+
+
+    if bVassals:
+        for iLoopPlayer in range(iNumPlayers):
+            if gc.getTeam(gc.getPlayer(iLoopPlayer).getTeam()).isVassal(iPlayer):
+                lValidOwners.append(iLoopPlayer)
+    for (x, y) in utils.surroundingPlots(tPlot):
+        plot = gc.getMap().plot(x, y)
+        if plot.isCity():
+            if plot.getPlotCity().getOwner() in lValidOwners:
+                return True
+    return False
 
 def getTotalCulture(lPlayers):
     iTotalCulture = 0
@@ -4311,12 +4418,38 @@ def getUHVHelp(iPlayer, iGoal):
             iNumVassals = countVassals(iHolyRome, lCivGroups[0], iCatholicism)
             aHelp.append(getIcon(iNumVassals >= 3) + localText.getText("TXT_KEY_VICTORY_CATHOLIC_EUROPEAN_VASSALS", (iNumVassals, 3)))
         elif iGoal == 2:
+
+            iCount, iTotal= countControlledTiles_history(iHolyRome, iRome)
+            fPercent=iCount*100/iTotal
+            bHolyRomanUHV3_01= (fPercent >= 80)
+            txt1=getIcon(bHolyRomanUHV3_01) + localText.getText("TXT_KEY_VICTORY_HRE3_TIP1", ())+str(u"%.2f%%" % fPercent)+"( "+str(iCount) + " / " + str(iTotal)+" ) "
+            aHelp.append(txt1)
+            bHolyRomanUHV3_02_Constantinople_city=controlOrVassalCity(iPlayer, tConstantinople)
+            bHolyRomanUHV3_02_Roman_city = controlOrVassalCity(iPlayer, tRome)
+            bHolyRomanUHV3_02=bHolyRomanUHV3_02_Constantinople_city and bHolyRomanUHV3_02_Roman_city
+            txt2=getIcon(bHolyRomanUHV3_02_Roman_city) +' ' +localText.getText("TXT_KEY_VICTORY_HRE3_TIP2_1", ())+getIcon(bHolyRomanUHV3_02_Constantinople_city) +' ' +localText.getText("TXT_KEY_VICTORY_HRE3_TIP2_2", ())
+            aHelp.append(txt2)
+
+            bHolyRomanUHV3_03 = False
+            Culture_Request=utils.getTurns(5000)
+            mostculture=0
+            mostCulturedCity = getMostCulturedCity(iHolyRome)
+            if (mostCulturedCity):
+                mostculture=mostCulturedCity.getCulture(iHolyRome)
+                if mostculture >= Culture_Request:
+                    bHolyRomanUHV3_03=True
+                else:
+                    bHolyRomanUHV3_03=False
+            txt3=getIcon(bHolyRomanUHV3_03) +' '+localText.getText("TXT_KEY_VICTORY_HRE3_TIP3", ())+'  ('+ str(mostculture) + '/' +str(Culture_Request)+ ' ) '
+            aHelp.append(txt3)
+            '''
             iGreatArtists = countCitySpecialists(iHolyRome, tVienna, iSpecialistGreatArtist)
             iGreatStatesmen = countCitySpecialists(iHolyRome, tVienna, iSpecialistGreatStatesman)
             iPleasedOrBetterEuropeans = countPlayersWithAttitudeInGroup(iHolyRome, AttitudeTypes.ATTITUDE_PLEASED, lCivGroups[0])
             aHelp.append(getIcon(iGreatArtists + iGreatStatesmen >= 10) + localText.getText("TXT_KEY_VICTORY_GREAT_ARTISTS_AND_STATESMEN_SETTLED", ('Vienna', iGreatArtists + iGreatStatesmen, 10)))
             aHelp.append(getIcon(iPleasedOrBetterEuropeans >= 8) + localText.getText("TXT_KEY_VICTORY_PLEASED_OR_FRIENDLY_EUROPEANS", (iPleasedOrBetterEuropeans, 8)))
-
+            
+            '''
     elif iPlayer == iRussia:
         if iGoal == 0:
             iSiberia = getNumFoundedCitiesInArea(iRussia, utils.getPlotList(tSiberiaTL, tSiberiaBR))
@@ -4413,19 +4546,58 @@ def getUHVHelp(iPlayer, iGoal):
             bSouthAmerica = isAreaOnlyCivs(tSAmericaTL, tSAmericaBR, [iInca])
             aHelp.append(getIcon(bSouthAmerica) + localText.getText("TXT_KEY_VICTORY_NO_FOREIGN_CITIES_SOUTH_AMERICA", ()))
         '''
+
+
     elif iPlayer == iItaly:
+
+
         if iGoal == 0:
             bSanMarcoBasilica = data.getWonderBuilder(iSanMarcoBasilica) == iItaly
             bSistineChapel = data.getWonderBuilder(iSistineChapel) == iItaly
             bSantaMariaDelFiore = data.getWonderBuilder(iSantaMariaDelFiore) == iItaly
+
             aHelp.append(getIcon(bSanMarcoBasilica) + localText.getText("TXT_KEY_BUILDING_SAN_MARCO_BASILICA", ()) + ' ' + getIcon(bSistineChapel) + localText.getText("TXT_KEY_BUILDING_SISTINE_CHAPEL", ()) + ' ' + getIcon(bSantaMariaDelFiore) + localText.getText("TXT_KEY_BUILDING_SANTA_MARIA_DEL_FIORE", ()))
+
         elif iGoal == 1:
+            pass
+            iRenaissanceTechs = countFirstDiscovered(iItaly, iRenaissance)
+            aHelp.append(getIcon(iRenaissanceTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iRenaissance).getText(), iRenaissanceTechs, 8)) + ' ')
+            ITotalCulture=pItaly.countTotalCulture()
+            bTotalCulture=(ITotalCulture>= utils.getTurns(20000))
+            aHelp.append(getIcon(bTotalCulture) + localText.getText("TXT_KEY_VICTORY_TOTAL_CULTURE", (ITotalCulture, utils.getTurns(20000))))
+
+
+            '''
             iCount = countCitiesWithCultureLevel(iItaly, 5)
             aHelp.append(getIcon(iCount >= 3) + localText.getText("TXT_KEY_VICTORY_NUM_CITIES_INFLUENTIAL_CULTURE", (iCount, 3)))
+            '''
+
+
+
         elif iGoal == 2:
+            bVassalFrance=isControlledOrVassalizedwithPlayer(iPlayer, iFrance)
+            bVassalHolyRoman=isControlledOrVassalizedwithPlayer(iPlayer, iHolyRome)
+
+            txt1=getIcon(bVassalFrance)+' ' +localText.getText("TXT_KEY_VICTORY_ITA3_TIP3_1", ())+getIcon(bVassalHolyRoman)+' ' +localText.getText("TXT_KEY_VICTORY_ITA3_TIP3_2", ())
+            aHelp.append(txt1)
+
+
+
+            bHolyRomanUHV3_02_Constantinople_city=controlOrVassalCity(iPlayer, tConstantinople)
+            bHolyRomanUHV3_02_Roman_city = controlOrVassalCity(iPlayer, tRome)
+            bHolyRomanUHV3_02=bHolyRomanUHV3_02_Constantinople_city and bHolyRomanUHV3_02_Roman_city
+
+            txt2=getIcon(bHolyRomanUHV3_02_Roman_city) +' ' +localText.getText("TXT_KEY_VICTORY_HRE3_TIP2_1", ())+getIcon(bHolyRomanUHV3_02_Constantinople_city) +' ' +localText.getText("TXT_KEY_VICTORY_HRE3_TIP2_2", ())
+            aHelp.append(txt2)
+
             iMediterranean, iTotalMediterranean = countControlledTiles(iItaly, tMediterraneanTL, tMediterraneanBR, False, tMediterraneanExceptions, True)
             fMediterranean = iMediterranean * 100.0 / iTotalMediterranean
             aHelp.append(getIcon(fMediterranean >= 65.0) + localText.getText("TXT_KEY_VICTORY_MEDITERRANEAN_TERRITORY", (str(u"%.2f%%" % fMediterranean), str(65))))
+
+            bUHV2 = bVassalFrance and bVassalHolyRoman and bHolyRomanUHV3_02 and (fMediterranean >= 65.0)
+
+
+
 
     elif iPlayer == iMongolia:
         if iGoal == 1:
@@ -4647,12 +4819,27 @@ def getUHVHelp(iPlayer, iGoal):
 
 
             bBrazilia=False
+            bBrazilia01=False
+            bBrazilia02 = False
+            bBrazilia03 = False
             for tPlot in [(38,21),(39,22),(38,22),(39,21)]:
+
                 if (not bBrazilia):
                     if isControlledTile(iBrazil,[tPlot]):
+                        bBrazilia01 = True
+                        if isBuildingInCity(tPlot,iPalace):
+                            bBrazilia02 = True
+                        if (isBuildingInCity(tPlot,iAirport)):
+                            bBrazilia03 = True
+
                         bBrazilia=isBuildingInCity(tPlot,iAirport) and isBuildingInCity(tPlot,iPalace)
 
-            txt3= getIcon(bBrazilia) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA", ())
+            #txt3= getIcon(bBrazilia) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA", ())
+            txt3_1= getIcon(bBrazilia01) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA_TIP1", ())
+            txt3_2= getIcon(bBrazilia02) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA_TIP2", ())
+            txt3_3= getIcon(bBrazilia03) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA_TIP3", ())
+
+            txt3=txt3_1+txt3_2+txt3_3
             aHelp.append(getIcon(bWembley) + localText.getText("TXT_KEY_BUILDING_WEMBLEY", ()) + ' ' + getIcon(bCristoRedentor) + localText.getText("TXT_KEY_BUILDING_CRISTO_REDENTOR", ()) + ' '+txt3)
 
 

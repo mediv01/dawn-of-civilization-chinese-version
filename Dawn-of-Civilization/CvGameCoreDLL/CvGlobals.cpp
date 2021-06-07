@@ -2765,6 +2765,10 @@ const CvString logs_getgameturn() {
 	return Return_Text;
 }
 
+
+
+
+
 void CvGlobals::logs(const CvWString& buf, CvString filename) const {
 	/*
 	//日志函数用法
@@ -2786,7 +2790,7 @@ void CvGlobals::logs(const CvWString& buf, CvString filename) const {
 		std::wfstream flog;
 		CvString filenamepath;
 		if (filename == "") {
-			filename = "DocDLL.log";
+			filename = "DoC_SmallMap_DLL_Log_Default.log";
 		}
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
@@ -2797,7 +2801,7 @@ void CvGlobals::logs(const CvWString& buf, CvString filename) const {
 		flog << "\n";
 		flog.close();
 
-		filename = "DocDLL_ALL.log";
+		filename = "DoC_SmallMap_DLL_Log_ALL.log";
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
 		flog << logs_gettime();
@@ -2833,7 +2837,7 @@ void CvGlobals::logs(CvWString& buf, CvString filename) const {
 		std::wfstream flog;
 		CvString filenamepath;
 		if (filename == "") {
-			filename = "DocDLL.log";
+			filename = "DoC_SmallMap_DLL_Log_Default.log";
 		}
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
@@ -2843,7 +2847,7 @@ void CvGlobals::logs(CvWString& buf, CvString filename) const {
 		flog << "\n";
 		flog.close();
 
-		filename = "DocDLL_ALL.log";
+		filename = "DoC_SmallMap_DLL_Log_ALL.log";
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
 		flog << logs_gettime();
@@ -2871,7 +2875,7 @@ void CvGlobals::logs(const wchar* buf, CvString filename) const {
 		std::wfstream flog;
 		CvString filenamepath;
 		if (filename == "") {
-			filename = "DocDLL.log";
+			filename = "DoC_SmallMap_DLL_Log_Default.log";
 		}
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
@@ -2882,7 +2886,7 @@ void CvGlobals::logs(const wchar* buf, CvString filename) const {
 		flog.close();
 
 
-		filename = "DocDLL_ALL.log";
+		filename = "DoC_SmallMap_DLL_Log_ALL.log";
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
 		flog << logs_gettime();
@@ -2910,7 +2914,7 @@ void CvGlobals::logs(wchar* buf, CvString filename) const {
 		std::wfstream flog;
 		CvString filenamepath;
 		if (filename == "") {
-			filename = "DocDLL.log";
+			filename = "DoC_SmallMap_DLL_Log_Default.log";
 		}
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
@@ -2920,7 +2924,7 @@ void CvGlobals::logs(wchar* buf, CvString filename) const {
 		flog << "\n";
 		flog.close();
 
-		filename = "DocDLL_ALL.log";
+		filename = "DoC_SmallMap_DLL_Log_ALL.log";
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
 		flog << logs_gettime();
@@ -2946,7 +2950,7 @@ void CvGlobals::logs(CvString buf, CvString filename) const {
 		std::wfstream flog;
 		CvString filenamepath;
 		if (filename == "") {
-			filename = "DocDLL.log";
+			filename = "DoC_SmallMap_DLL_Log_Default.log";
 		}
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
@@ -2955,7 +2959,7 @@ void CvGlobals::logs(CvString buf, CvString filename) const {
 		flog << "" << buf.c_str() << "\n";
 		flog.close();
 
-		filename = "DocDLL_ALL.log";
+		filename = "DoC_SmallMap_DLL_Log_ALL.log";
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
 		flog << logs_gettime();
@@ -2973,7 +2977,7 @@ void CvGlobals::logs(char* buf, CvString filename) const {
 		std::wfstream flog;
 		CvString filenamepath;
 		if (filename == "") {
-			filename = "DocDLL.log";
+			filename = "DoC_SmallMap_DLL_Log_Default.log";
 		}
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
@@ -2982,7 +2986,7 @@ void CvGlobals::logs(char* buf, CvString filename) const {
 		flog << "" << buf << "\n";
 		flog.close();
 
-		filename = "DocDLL_ALL.log";
+		filename = "DoC_SmallMap_DLL_Log_ALL.log";
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
 		flog << logs_gettime();
@@ -3000,7 +3004,7 @@ void CvGlobals::logs(const char* buf, CvString filename) const {
 		std::wfstream flog;
 		CvString filenamepath;
 		if (filename == "") {
-			filename = "DocDLL.log";
+			filename = "DoC_SmallMap_DLL_Log_Default.log";
 		}
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
@@ -3009,7 +3013,7 @@ void CvGlobals::logs(const char* buf, CvString filename) const {
 		flog << "" << buf << "\n";
 		flog.close();
 
-		filename = "DocDLL_ALL.log";
+		filename = "DoC_SmallMap_DLL_Log_ALL.log";
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);
 		flog << logs_gettime();
@@ -3032,7 +3036,7 @@ void CvGlobals::logs(const CvString buf, CvString filename) const {
 		std::wfstream flog;
 		CvString filenamepath;
 		if (filename == "") {
-			filename = "DocDLL.log";
+			filename = "DoC_SmallMap_DLL_Log_Default.log";
 		}
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
 		flog.open(filenamepath, std::ios::app | std::ios::out);

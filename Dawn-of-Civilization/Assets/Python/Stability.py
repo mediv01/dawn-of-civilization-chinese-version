@@ -146,11 +146,12 @@ def scheduleCollapse(iPlayer):
 
     if (gc.getDefineINT("PYTHON_USE_ADVANCE_ALERT") == 1):  # 增加提示信息参数控制
         tem_civname = ''
-        tem_civname = gc.getPlayer(iPlayer).getCivilizationAdjective(0)
-        #	tem_text=" "+str(civname[12:civname.rfind('_')])+"&#25991;&#26126;&#21363;&#23558;&#23849;&#28291;&#65281;"#iLoopCiv
-        tem_text = " " + tem_civname + "&#25991;&#26126;&#21363;&#23558;&#23849;&#28291;&#65281;"  # iLoopCiv
+        #tem_civname = gc.getPlayer(iPlayer).getCivilizationAdjective(0)
+        tem_civname=utils.getCivChineseName(iPlayer)
+        tem_text = " " + tem_civname + utils.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_START_FALL')  # iLoopCiv
         CyInterface().addMessage(gc.getGame().getActivePlayer(), False, iDuration, tem_text, "", 0, "",
                                  ColorTypes(iWhite), -1, -1, True, True)
+        utils.log(tem_text)
 
     epoch = "BC"
     if gc.getGame().getGameTurnYear() > 0: epoch = "AD"
@@ -2362,13 +2363,8 @@ def getResurrectionTechs_old_20210221(iPlayer): #LEO版定义的复活科技，�
                 lTechList.append(iTech)
                 #utils.debug_manual('iThreshold:'+str(iThreshold)+'  iCount:'+str(iCount),'TECHPROB')
                 if (gc.getDefineINT("PYTHON_LOG_ON_MAIN_RISE_AND_FALL") == 1):
-                    text_tag = gc.getTechInfo(iTech).getTextKey()
-                    text = text_tag
-                    if (text_tag[0:13] == 'TXT_KEY_TECH_'):
-                        text = text_tag[13:len(text_tag)]
-                        pass
-
-                    utils.logwithid(iPlayer,'RESURRECTION TECH:'+str(text))
+                    Techname=utils.getTechNameCn(iTech)
+                    utils.logwithid(iPlayer,'RESURRECTION TECH:'+Techname)
         else:
             if 2 * iCount >= len(lSourceCivs):
                 lTechList.append(iTech)
@@ -2415,19 +2411,18 @@ def getResurrectionTechs(iPlayer):
             if gc.getTeam(iOtherCiv).isHasTech(iTech):
                 iCount += 1
         if (gc.getDefineINT("STABILITY_RESURRECTION_TECH_PROB")>0):
+            Techname = utils.getTechNameCn(iTech)
             iThreshold=len(lSourceCivs)*(100-gc.getDefineINT("STABILITY_RESURRECTION_TECH_PROB"))/100
-            utils.logwithid(iPlayer, 'Tech '+str(iTech)+' iThreshold:' + str(iThreshold) + '  iCount:' + str(iCount))
+
             if  iCount > iThreshold:
                 lTechList.append(iTech)
                 #utils.debug_manual('iThreshold:'+str(iThreshold)+'  iCount:'+str(iCount),'TECHPROB')
                 if (gc.getDefineINT("PYTHON_LOG_ON_MAIN_RISE_AND_FALL") == 1):
-                    text_tag = gc.getTechInfo(iTech).getTextKey()
-                    text = text_tag
-                    if (text_tag[0:13] == 'TXT_KEY_TECH_'):
-                        text = text_tag[13:len(text_tag)]
-                        pass
-
-                    utils.logwithid(iPlayer,'RESURRECTION TECH:'+str(text))
+                    utils.logwithid(iPlayer, 'Tech ' + str(iTech)  + ' iThreshold:' + str(iThreshold) + '  iCount:' + str(iCount))
+                    utils.logwithid(iPlayer,'Resurrection Tech:  '+str(Techname))
+            else:
+                if (gc.getDefineINT("PYTHON_LOG_ON_MAIN_RISE_AND_FALL") == 1):
+                    utils.logwithid(iPlayer, 'Tech ' + str(iTech)  + ' iThreshold:' + str(iThreshold) + '  iCount:' + str(iCount)+ '    ' + Techname)
         else:
             if 2 * iCount >= len(lSourceCivs):
                 lTechList.append(iTech)

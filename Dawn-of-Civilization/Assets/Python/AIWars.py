@@ -260,6 +260,27 @@ class AIWars:
 
         if ((not gc.getPlayer(iPreferredTarget).isAlive()) and gc.getDefineINT("AIWAR_PY_CAN_USE_AI_WAR_TO_DEAD_CIV") == 0): return  #参数控制    #刷兵目标不存在，返回
         if gc.getTeam(gc.getPlayer(iPlayer).getTeam()).isDefensivePact(iPreferredTarget): return
+        if gc.getDefineINT("PYTHON_NOAIWAR_WHEN_VASSAL"):
+            if (gc.getTeam(gc.getPlayer(iPreferredTarget).getTeam()).isVassal(iPlayer)):
+                return
+            if (gc.getTeam(gc.getPlayer(iPlayer).getTeam()).isVassal(iPreferredTarget)):
+                return
+
+
+
+        if gc.getDefineINT("PYTHON_NOAIWAR_WHEN_VASSAL_MASTER") or gc.getDefineINT("PYTHON_NOAIWAR_WHEN_VASSAL_TO_OTHER"):
+            for iLoopPlayer in range(iNumPlayers):
+                #AIWAR目标附庸他人时，无法发动战争
+                if gc.getTeam(gc.getPlayer(iPreferredTarget).getTeam()).isVassal(iLoopPlayer):
+                    if (gc.getDefineINT("PYTHON_NOAIWAR_WHEN_VASSAL_TO_OTHER")):
+                        return
+
+                #附庸其他人时，无法发动AIWAR
+                if gc.getTeam(gc.getPlayer(iPlayer).getTeam()).isVassal(iLoopPlayer):
+                    if (iLoopPlayer is not iPlayer and gc.getDefineINT("PYTHON_NOAIWAR_WHEN_VASSAL_MASTER")):
+                        return
+            pass
+
 
         if(iID<len(data.lConquest)):
             if data.lConquest[iID]: return
@@ -267,6 +288,8 @@ class AIWars:
             return
         if iPreferredTarget >= 0 and gc.getPlayer(iPreferredTarget).isAlive() and gc.getTeam(iPreferredTarget).isVassal(iPlayer): return
 
+        import GlobalDefineAlt
+        if (iID in GlobalDefineAlt.PYTHON_NO_AIWAR_ID): return
 
 
 
@@ -309,7 +332,10 @@ class AIWars:
         lCities = []
         for city in utils.getAreaCities(utils.getPlotList(tTL, tBR)):
             if city.getOwner() != iPlayer and not gc.getTeam(city.getOwner()).isVassal(iPlayer):
-                lCities.append(city)
+                if (gc.getDefineINT("AIWAR_PY_CANNOT_DO_AIWAR_TO_HUMAN") > 0 and (city.getOwner() == utils.getHumanID())):
+                    pass
+                else:
+                    lCities.append(city)
 
         capital = gc.getPlayer(iPlayer).getCapitalCity()
 
@@ -327,7 +353,10 @@ class AIWars:
                 lOwners.append(city.getOwner())
 
         if iPreferredTarget >= 0 and iPreferredTarget not in lOwners and gc.getPlayer(iPreferredTarget).isAlive():
-            self.declareWar(iPlayer, iPreferredTarget, iWarPlan)
+            if (gc.getDefineINT("AIWAR_PY_CANNOT_DO_AIWAR_TO_HUMAN") > 0 and (iPreferredTarget == utils.getHumanID())):
+                pass
+            else:
+                self.declareWar(iPlayer, iPreferredTarget, iWarPlan)
 
         for iOwner in lOwners:
             self.declareWar(iPlayer, iOwner, iWarPlan)

@@ -22,13 +22,25 @@
 		<English>Independents</English>
 		<L1/><L2/><L3/><L4/><Chinese>Independents</Chinese><French>Independent</French></TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIV_INDEPENDENT2_ADJECTIVE</Tag>
+		<English>Independents2</English>
+		<L1/><L2/><L3/><L4/><Chinese>Independents2</Chinese><French>Independent2</French></TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIV_INDEPENDENT_DESC</Tag>
 		<English>独立城邦</English>
 		<L1/><L2/><L3/><L4/><Chinese>独立城邦</Chinese><French>Independent Cities</French></TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIV_INDEPENDENT2_DESC</Tag>
+		<English>独立城邦2</English>
+		<L1/><L2/><L3/><L4/><Chinese>独立城邦2</Chinese><French>Independent Cities2</French></TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIV_INDEPENDENT_SHORT_DESC</Tag>
 		<English>Independents</English>
 		<L1/><L2/><L3/><L4/><Chinese>Independents</Chinese><French>Independents</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDEPENDENT2_SHORT_DESC</Tag>
+		<English>Independents2</English>
+		<L1/><L2/><L3/><L4/><Chinese>Independents2</Chinese><French>Independents2</French></TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NATIVE_ADJECTIVE</Tag>
 		<English>Natives</English>
