@@ -29,37 +29,39 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AME1</Tag>
-		<English>确保在公元1900年时的北美洲、中美洲和加勒比地区没有欧洲人的殖民地；控制墨西哥地区，或纳为附庸</English>
+		<English>确保在公元1900年前控制所有美国本土领土；在美国中西部建立5个城市，并控制洛杉矶和西雅图，并修建1条修建连通纽约、华盛顿、洛杉矶和西雅图的铁路</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>确保在公元1900年时的北美洲、中美洲和加勒比地区没有欧洲人的殖民地；控制墨西哥地区，或纳为附庸</Chinese>
+		<Chinese>确保在公元1900年前控制所有美国本土领土；在美国中西部建立5个城市，并控制洛杉矶和西雅图，并修建1条修建连通纽约、华盛顿、洛杉矶和西雅图的铁路</Chinese>
 		<French>Allow no European colonies in North and Central America and in the Caribbean and control or vassalize Mexico in 1900 AD</French>
 	</TEXT>
+	
+	
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AME2_TITLE</Tag>
-		<English>人类灯塔</English>
+		<English>世界灯塔</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>人类灯塔</Chinese>
+		<Chinese>世界灯塔</Chinese>
 		<French>Shining City on a Hill</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AME2</Tag>
-		<English>在公元1950年之前建成自由女神像、帝国大厦、五角大楼以及联合国</English>
+		<English>在公元1960年之前建成自由女神像、帝国大厦、金州大桥、布鲁克林大桥、五角大楼、好莱坞以及联合国，并首先发现核裂变、电子计算机以及核能科技；率先完成曼哈顿工程、因特网工程</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>在公元1950年之前建成自由女神像、帝国大厦、五角大楼以及联合国</Chinese>
+		<Chinese>在公元1960年之前建成自由女神像、帝国大厦、金州大桥、布鲁克林大桥、五角大楼、好莱坞以及联合国，并首先发现核裂变、电子计算机以及核能科技；率先完成曼哈顿工程、因特网工程</Chinese>
 		<French>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, the Golden Gate Bridge, the Pentagon and the United Nations by 1950 AD</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AME3_TITLE</Tag>
-		<English>美式和平</English>
+		<English>美苏争霸</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>美式和平</Chinese>
+		<Chinese>美苏争霸</Chinese>
 		<French>Pax Americana</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AME3</Tag>
-		<English>在公元1990年时和你的附庸国、同盟国控制世界上 75%的商业活动和军事力量</English>
+		<English>在公元2000年前率先发现太空飞行和人造卫星科技；率先完成第一颗卫星、太空人、登月工程；率先修建哈勃太空望远镜以及国际空间站；和你的附庸国、同盟国控制世界上 75%的商业活动和军事力量</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>在公元1990年时和你的附庸国、同盟国控制世界上 75%的商业活动和军事力量</Chinese>
+		<Chinese>在公元2000年前率先发现太空飞行和人造卫星科技；率先完成第一颗卫星、太空人、登月工程；率先修建哈勃太空望远镜以及国际空间站；和你的附庸国、同盟国控制世界上 75%的商业活动和军事力量</Chinese>
 		<French>Control 75% of the world's commerce and military power between you, your vassals and allies by 1990 AD</French>
 	</TEXT>
 	<TEXT>
@@ -1536,9 +1538,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CON1</Tag>
-		<English>到公元1650年在教皇宫获得15%的选票</English>
+		<English>到公元1650年在教皇宫获得10%的选票</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>到公元1650年在教皇宫获得15%的选票</Chinese>
+		<Chinese>到公元1650年在教皇宫获得10%的选票</Chinese>
 		<French>Acquire 15% of the votes in the Apostolic Palace by 1650 AD</French>
 	</TEXT>
 	<TEXT>
@@ -1550,23 +1552,23 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CON2</Tag>
-		<English>到公元1800年通过奴隶贸易获得1000金币</English>
+		<English>到公元1800年通过奴隶贸易获得500金币</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>到公元1800年通过奴隶贸易获得1000金币</Chinese>
+		<Chinese>到公元1800年通过奴隶贸易获得500金币</Chinese>
 		<French>Gain 1000 gold through slave trade by 1800 AD</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CON2_EPIC</Tag>
-		<English>到公元1800年通过奴隶贸易获得1500金币</English>
+		<English>到公元1800年通过奴隶贸易获得750金币</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>到公元1800年通过奴隶贸易获得1500金币</Chinese>
+		<Chinese>到公元1800年通过奴隶贸易获得750金币</Chinese>
 		<French>Gain 1500 gold through slave trade by 1800 AD</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CON2_MARATHON</Tag>
-		<English>到公元1800年通过奴隶贸易获得3000金币</English>
+		<English>到公元1800年通过奴隶贸易获得1500金币</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>到公元1800年通过奴隶贸易获得3000金币</Chinese>
+		<Chinese>到公元1800年通过奴隶贸易获得1500金币</Chinese>
 		<French>Gain 3000 gold through slave trade by 1800 AD</French>
 	</TEXT>
 	<TEXT>
@@ -4806,7 +4808,49 @@
 			<Chinese>公元2000年时经历6次黄金时代</Chinese>
 			<French>Experience six golden ages by 2000 AD</French>
 		</TEXT>
-
+		
+			<TEXT>
+		<Tag>TXT_KEY_UHV_AME1</Tag>
+		<English>确保在公元1900年时的北美洲、中美洲和加勒比地区没有欧洲人的殖民地；控制墨西哥地区，或纳为附庸</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>确保在公元1900年时的北美洲、中美洲和加勒比地区没有欧洲人的殖民地；控制墨西哥地区，或纳为附庸</Chinese>
+		<French>Allow no European colonies in North and Central America and in the Caribbean and control or vassalize Mexico in 1900 AD</French>
+	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_UHV_GER1</Tag>
+		<English>在公元1900年时在柏林入驻7位历史伟人</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>在公元1900年时在柏林入驻7位历史伟人</Chinese>
+		<French>Have 7 great people in Berlin in 1900 AD</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_GER2_TITLE</Tag>
+		<English>生存空间</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>生存空间</Chinese>
+		<French>Lebensraum</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_GER2</Tag>
+		<English>在公元1940年时控制意大利、法兰西、斯堪的纳维亚、英格兰和俄罗斯地区</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>在公元1940年时控制意大利、法兰西、斯堪的纳维亚、英格兰和俄罗斯地区</Chinese>
+		<French>Control Italy, France, Scandinavia, England and Russia in 1940 AD</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_GER3_TITLE</Tag>
+		<English>技术进步</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>技术进步</Chinese>
+		<French>Vorsprung durch Technik</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_GER3</Tag>
+		<English>率先发现八项工业和八项全球时代的技术</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>率先发现八项工业和八项全球时代的技术</Chinese>
+		<French>Be the first to discover eight Industrial and eight Global era technologies</French>
+	</TEXT>
 	</civ4notuse>
 </Civ4GameText>
 

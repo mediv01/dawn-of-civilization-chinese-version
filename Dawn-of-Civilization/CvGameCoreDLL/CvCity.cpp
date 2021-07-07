@@ -15894,13 +15894,13 @@ void CvCity::doReligion()
 
 			/*
 
-			CvWString log_CWstring;
+			//CvWString log_CWstring;
 			CvWStringBuffer CvWStringBuffer_temp;
 			log_CWstring = gDLL->getText("TXT_KEY_VICTORY_ARABIA_UHV3_JERUSALEM");
 			GC.logs(log_CWstring, (CvString)"DoCGameCoreDLL_WS.log");
 
 
-			CvString log_CvString;
+			//CvString log_CvString;
 			int playerid = (int)GC.getGameINLINE().getActivePlayer();
 			log_CvString = log_CvString.format("当前玩家为 %d ", playerid);
 			GC.logs2(log_CvString, (CvString)"DoCGameCoreDLL_String.log");
@@ -16114,8 +16114,8 @@ void CvCity::doReligion()
 
 void CvCity::doGreatPeople()
 {
-	CvString log_CvString;
-	CvWString log_CWstring;
+	//CvString log_CvString;
+	//CvWString log_CWstring;
 	//Rhye - start
 //Speed: Modified by Kael 04/19/2007
 //	CyCity* pyCity = new CyCity(this);

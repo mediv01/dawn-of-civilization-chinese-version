@@ -384,8 +384,14 @@ int getWonderScore(BuildingClassTypes eWonderClass)
 		return 5;
 	}
 	else
-	{
-		return 0;
+	{   
+		
+		if (GC.getDefineINT("CVPLAYER_NEW_GAMESCORE_METHOD_BUILDING_SCORE") > 0) {
+			return GC.getDefineINT("CVPLAYER_NEW_GAMESCORE_METHOD_BUILDING_SCORE");
+		}
+		
+			return 0;
+		
 	}
 }
 

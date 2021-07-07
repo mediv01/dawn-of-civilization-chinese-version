@@ -226,9 +226,9 @@ dWonderGoals = {
     iMali: (1, [iUniversityOfSankore], False),
     iItaly: (0, [iSanMarcoBasilica, iSistineChapel, iSantaMariaDelFiore], True),
     iMughals: (1, [iTajMahal, iRedFort, iShalimarGardens], True),
-    iAmerica: (1, [iStatueOfLiberty, iBrooklynBridge, iEmpireStateBuilding, iGoldenGateBridge, iPentagon, iUnitedNations], True),
+    # iAmerica: (1, [iStatueOfLiberty, iBrooklynBridge, iEmpireStateBuilding, iGoldenGateBridge, iPentagon, iUnitedNations], True),
 
-    #iBrazil: (1, [iWembley, iCristoRedentor, iItaipuDam], True),
+    # iBrazil: (1, [iWembley, iCristoRedentor, iItaipuDam], True),
 }
 
 dReligionGoals = {}
@@ -1109,11 +1109,9 @@ def checkTurn(iGameTurn, iPlayer):
             fPercent = iCount * 100 / iTotal
             bHolyRomanUHV3_01 = (fPercent >= 80)
 
-
             bHolyRomanUHV3_02_Constantinople_city = controlOrVassalCity(iPlayer, tConstantinople)
             bHolyRomanUHV3_02_Roman_city = controlOrVassalCity(iPlayer, tRome)
             bHolyRomanUHV3_02 = bHolyRomanUHV3_02_Constantinople_city and bHolyRomanUHV3_02_Roman_city
-
 
             Culture_Request = utils.getTurns(5000)
             mostCulturedCity = getMostCulturedCity(iHolyRome)
@@ -1122,10 +1120,8 @@ def checkTurn(iGameTurn, iPlayer):
             else:
                 bHolyRomanUHV3_03 = False
 
-
-            if(bHolyRomanUHV3_01 and bHolyRomanUHV3_02 and bHolyRomanUHV3_03):
+            if (bHolyRomanUHV3_01 and bHolyRomanUHV3_02 and bHolyRomanUHV3_03):
                 win(iHolyRome, 2)
-
 
             '''
             iGreatArtists = countCitySpecialists(iHolyRome, tVienna, iSpecialistGreatArtist)
@@ -1263,7 +1259,7 @@ def checkTurn(iGameTurn, iPlayer):
                 win(iInca, 2)
                 pass
             if iGameTurn == getTurnForYear(1700):
-                expire(iInca,2)
+                expire(iInca, 2)
         '''
         # second goal: have 2500 gold in 1550 AD
         if iGameTurn == getTurnForYear(1550):
@@ -1304,19 +1300,15 @@ def checkTurn(iGameTurn, iPlayer):
             bVassalFrance = isControlledOrVassalizedwithPlayer(iPlayer, iFrance)
             bVassalHolyRoman = isControlledOrVassalizedwithPlayer(iPlayer, iHolyRome)
 
-
             bHolyRomanUHV3_02_Constantinople_city = controlOrVassalCity(iPlayer, tConstantinople)
             bHolyRomanUHV3_02_Roman_city = controlOrVassalCity(iPlayer, tRome)
             bUHV3_02 = bHolyRomanUHV3_02_Constantinople_city and bHolyRomanUHV3_02_Roman_city
-
-
-
 
             iMediterranean, iTotalMediterranean = countControlledTiles(iItaly, tMediterraneanTL, tMediterraneanBR, False, tMediterraneanExceptions, True)
             fMediterranean = iMediterranean * 100.0 / iTotalMediterranean
             bUHV2 = bVassalFrance and bVassalHolyRoman and bUHV3_02 and (fMediterranean >= 65.0)
 
-            if(bUHV2):
+            if (bUHV2):
                 win(iItaly, 2)
             ''''
             iMediterranean, iTotalMediterranean = countControlledTiles(iItaly, tMediterraneanTL, tMediterraneanBR, False, tMediterraneanExceptions, True)
@@ -1486,7 +1478,7 @@ def checkTurn(iGameTurn, iPlayer):
 
         # first goal: acquire 15% of the votes in the Apostolic Palace by 1650 AD
         if isPossible(iCongo, 0):
-            if getApostolicVotePercent(iCongo) >= 15.0:
+            if getApostolicVotePercent(iCongo) >= 10.0:
                 win(iCongo, 0)
 
         if iGameTurn == getTurnForYear(1650):
@@ -1547,7 +1539,87 @@ def checkTurn(iGameTurn, iPlayer):
         # third goal: be the first to complete the tech tree
 
     elif iPlayer == iAmerica:
+        if isPossible(iAmerica, 0):
+            bAmerican= isControlledOrVassalized(iAmerica, utils.getPlotList([11, 43], [32, 50], []))
+            lLosAngles = utils.getPlotList((11, 47), (11, 47), [])
+            bLosAngles = isControlledTile(iAmerica, lLosAngles)
+            lSeatle = utils.getPlotList((11, 50), (11, 50), [])
+            bSeatle = isControlledTile(iAmerica, lSeatle)
+            lPlots=utils.getPlotList((11, 44), (21, 52), [])
+            iNumCity=countCitiesinRegion(iAmerica,lPlots)
+            bCity=(iNumCity>=5)
 
+            bRailway1 = isConnectedByRailroad_withoutCulture(iAmerica, [30,48], [(11, 47)])
+            bRailway2 = isConnectedByRailroad_withoutCulture(iAmerica, [30,48], [(11,51)])
+            bRailway3 = isConnectedByRailroad_withoutCulture(iAmerica, [30,48], [(27,46)])
+            bRailway = bRailway1 and bRailway2 and bRailway3
+            if(bAmerican and bLosAngles and bSeatle and bRailway and bCity):
+                win(iAmerica,0)
+            pass
+
+        if iGameTurn == getTurnForYear(1900):
+            expire(iAmerica, 0)
+
+
+
+        if isPossible(iAmerica, 1):
+            bUnitedNations = data.getWonderBuilder(iUnitedNations) == iAmerica
+            bBrooklynBridge = data.getWonderBuilder(iBrooklynBridge) == iAmerica
+            bStatueOfLiberty = data.getWonderBuilder(iStatueOfLiberty) == iAmerica
+            bGoldenGateBridge = data.getWonderBuilder(iGoldenGateBridge) == iAmerica
+            bPentagon = data.getWonderBuilder(iPentagon) == iAmerica
+            bEmpireState = data.getWonderBuilder(iEmpireStateBuilding) == iAmerica
+            bHollyWood = data.getWonderBuilder(iHollywood) == iAmerica
+            bWonder=bUnitedNations and bBrooklynBridge and bStatueOfLiberty and bGoldenGateBridge and bPentagon and bEmpireState and bHollyWood
+
+            lTechList = [iFission, iComputers, iNuclearPower]
+            bFission = checkTechGoal(iAmerica, [iFission])
+            bComputor = checkTechGoal(iAmerica, [iComputers])
+            bNuclearPower = checkTechGoal(iAmerica, [iNuclearPower])
+            bTech=bFission and bComputor and bNuclearPower
+
+
+            bManhattanProject = teamAmerica.getProjectCount(iManhattanProject) > 0
+            bInternetProject = teamAmerica.getProjectCount(iTheInternet) > 0
+            bProject= bManhattanProject and bInternetProject
+
+            if(bWonder and bTech and bProject):
+                win(iAmerica,1)
+            pass
+
+        if iGameTurn == getTurnForYear(1960):
+            expire(iAmerica, 1)
+
+
+        if isPossible(iAmerica, 2):
+            lTechList=[iSpaceflight,iSatellites]
+            bSpaceflight=checkTechGoal(iAmerica,[iSpaceflight])
+            bSatellites=checkTechGoal(iAmerica,[iSatellites])
+            bTech = bSpaceflight and bSatellites
+
+            bFIRST_SATELLITE = teamAmerica.getProjectCount(iFirstSatellite) > 0
+            bManinSpace = teamAmerica.getProjectCount(iManInSpace) > 0
+            bApolloProgram = teamAmerica.getProjectCount(iLunarLanding) > 0
+            bISS = teamAmerica.getProjectCount(iISS) > 0
+            bHubble=data.getWonderBuilder(iHubbleSpaceTelescope) == iAmerica
+            bWTC=data.getWonderBuilder(iWorldTradeCenter) == iAmerica
+            bWonder = bFIRST_SATELLITE and bManinSpace and bApolloProgram and bISS and bHubble and bWTC
+
+
+
+            bAllied = calculateAlliedCommercePercent(iAmerica) >= 75.0 and calculateAlliedPowerPercent(iAmerica) >= 75.0
+
+
+
+
+
+            if(bWonder and bTech and bAllied):
+                win(iAmerica,2)
+            pass
+
+        if iGameTurn == getTurnForYear(2000):
+            expire(iAmerica, 2)
+        '''
         # first goal: allow no European colonies in North America, Central America and the Caribbean and control or vassalize Mexico in 1930 AD
         if iGameTurn == getTurnForYear(1900):
             if isAreaFreeOfCivs(utils.getPlotList(tNCAmericaTL, tNCAmericaBR), lCivGroups[0]) and isControlledOrVassalized(iAmerica, Areas.getCoreArea(iAztecs, True)):
@@ -1556,6 +1628,15 @@ def checkTurn(iGameTurn, iPlayer):
                 lose(iAmerica, 0)
 
         # second goal: build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, the Golden Gate Bridge, the Pentagon and the United Nations by 1950 AD
+        if isPossible(iAmerica, 1):
+            bUnitedNations = data.getWonderBuilder(iUnitedNations) == iAmerica
+            bBrooklynBridge = data.getWonderBuilder(iBrooklynBridge) == iAmerica
+            bStatueOfLiberty = data.getWonderBuilder(iStatueOfLiberty) == iAmerica
+            bGoldenGateBridge = data.getWonderBuilder(iGoldenGateBridge) == iAmerica
+            bPentagon = data.getWonderBuilder(iPentagon) == iAmerica
+            bEmpireState = data.getWonderBuilder(iEmpireStateBuilding) == iAmerica
+            bWonder = (bUnitedNations and bBrooklynBridge and bStatueOfLiberty and bPentagon and bEmpireState and bGoldenGateBridge)
+
         if iGameTurn == getTurnForYear(1950):
             expire(iAmerica, 1)
 
@@ -1566,6 +1647,7 @@ def checkTurn(iGameTurn, iPlayer):
 
         if iGameTurn == getTurnForYear(1990):
             expire(iAmerica, 2)
+        '''
 
     elif iPlayer == iArgentina:
         if isPossible(iArgentina, 0):
@@ -1583,13 +1665,12 @@ def checkTurn(iGameTurn, iPlayer):
             expire(iArgentina, 0)
 
         if isPossible(iArgentina, 1):
-            Area_SouthAmerican=utils.getPlotList(tSAmericaTL, tSAmericaBR, tSouthAmericaExceptions)
-            [bSouthAmerican,list_SouthAmerican]=isControlledOrVassalized_deatil(iArgentina,Area_SouthAmerican)
+            Area_SouthAmerican = utils.getPlotList(tSAmericaTL, tSAmericaBR, tSouthAmericaExceptions)
+            [bSouthAmerican, list_SouthAmerican] = isControlledOrVassalized_deatil(iArgentina, Area_SouthAmerican)
             #
-            lFalkland= utils.getPlotList((41, 6), (41, 6), [])
+            lFalkland = utils.getPlotList((41, 6), (41, 6), [])
             bFalkland = isControlledTile(iArgentina, lFalkland)
-            bRailway = isConnectedByRailroad_withoutCulture(iArgentina, Areas.getCapital(iArgentina), [(11,47)])
-
+            bRailway = isConnectedByRailroad_withoutCulture(iArgentina, Areas.getCapital(iArgentina), [(11, 47)])
 
             if bSouthAmerican and bFalkland and bRailway:
                 win(iArgentina, 1)
@@ -1597,17 +1678,15 @@ def checkTurn(iGameTurn, iPlayer):
         if iGameTurn == getTurnForYear(1980):
             expire(iArgentina, 1)
 
-
         if isPossible(iArgentina, 2):
 
-            iRankGDP=cal_rank(iArgentina,1)
-            iRankScore=cal_rank(iArgentina,0)
-            iRankMoney=cal_rank(iArgentina,8)
-            bRankGDP=cal_rank(iArgentina,1)==1
-            bRankScore=cal_rank(iArgentina,0)==1
-            bRankMoney=cal_rank(iArgentina,8)==1
+            iRankGDP = cal_rank(iArgentina, 1)
+            iRankScore = cal_rank(iArgentina, 0)
+            iRankMoney = cal_rank(iArgentina, 8)
+            bRankGDP = cal_rank(iArgentina, 1) == 1
+            bRankScore = cal_rank(iArgentina, 0) == 1
+            bRankMoney = cal_rank(iArgentina, 8) == 1
             iCulture = getCityCulture(iArgentina, Areas.getCapital(iArgentina))
-
 
             if bRankGDP and bRankScore and bRankMoney and iCulture >= utils.getTurns(5000):
                 win(iArgentina, 2)
@@ -1663,7 +1742,7 @@ def checkTurn(iGameTurn, iPlayer):
                     if isControlledTile(iBrazil, [tPlot]):
                         bBrazilia = isBuildingInCity(tPlot, iAirport) and isBuildingInCity(tPlot, iPalace)
 
-            if(bWembley and bCristoRedentor and bBrazilia):
+            if (bWembley and bCristoRedentor and bBrazilia):
                 win(iBrazil, 1)
         # third goal: control 20 forest preserves and have a national park in your capital by 1950 AD
         if isPossible(iBrazil, 2):
@@ -1925,7 +2004,6 @@ def onTechAcquired(iPlayer, iTech):
                 if not isFirstDiscoveredPossible(iEngland, iRenaissance, 8) or not isFirstDiscoveredPossible(iEngland, iIndustrial, 8):
                     lose(iEngland, 2)
 
-
         # 意大利新UHV2 率先发现8项启蒙科技
         if isPossible(iItaly, 1):
             if iEra in [iRenaissance]:
@@ -1939,8 +2017,6 @@ def onTechAcquired(iPlayer, iTech):
                         lose(iItaly, 1)
                 if not isFirstDiscoveredPossible(iItaly, iRenaissance, 8):
                     lose(iItaly, 1)
-
-
 
         # third German goal: be the first to discover ten Industrial and ten Global technologies
         if isPossible(iGermany, 2):
@@ -2255,7 +2331,7 @@ def onPlayerSlaveTrade(iPlayer, iGold):
     if iPlayer == iCongo:
         if isPossible(iCongo, 1):
             data.iCongoSlaveCounter += iGold
-            if data.iCongoSlaveCounter >= utils.getTurns(1000):
+            if data.iCongoSlaveCounter >= utils.getTurns(500):
                 win(iCongo, 1)
 
 
@@ -2864,8 +2940,8 @@ def isControlledTile(iPlayer, lPlots):
         x, y = tPlot
         plot = gc.getMap().plot(x, y)
         iOwner = plot.getOwner()
-        #utils.log2(str(iOwner), "test.log")
-        if iOwner not in lOwners and iOwner>=0:
+        # utils.log2(str(iOwner), "test.log")
+        if iOwner not in lOwners and iOwner >= 0:
             lOwners.append(iOwner)
 
     return iPlayer in lOwners and len(lOwners) == 1
@@ -2880,7 +2956,8 @@ def isControlled(iPlayer, lPlots):
 
     return iPlayer in lOwners and len(lOwners) == 1
 
-def isControlledOrVassalizedwithPlayer(iPlayer, iVassalPlayer): #给阿根廷附庸南美洲国家用的函数
+
+def isControlledOrVassalizedwithPlayer(iPlayer, iVassalPlayer):  # 给阿根廷附庸南美洲国家用的函数
     if not gc.getPlayer(iVassalPlayer).isAlive():
         return True
     else:
@@ -2890,7 +2967,7 @@ def isControlledOrVassalizedwithPlayer(iPlayer, iVassalPlayer): #给阿根廷附
     pass
 
 
-def isControlledOrVassalized_deatil(iPlayer, lPlots): #返回具体的国家
+def isControlledOrVassalized_deatil(iPlayer, lPlots):  # 返回具体的国家
     bControlled = True
     lOwners = []
     lValidOwners = [iPlayer]
@@ -2901,8 +2978,8 @@ def isControlledOrVassalized_deatil(iPlayer, lPlots): #返回具体的国家
                 pass
             else:
                 lOwners.append(iOwner)
-                bControlled=False
-    return [bControlled,lOwners]
+                bControlled = False
+    return [bControlled, lOwners]
 
 
 def isControlledOrVassalized(iPlayer, lPlots):
@@ -2980,7 +3057,6 @@ def countControlledTiles_history(iPlayer, iPlayer_history):
     bVassals = True
     lExceptions = []
 
-
     if bVassals:
         for iLoopPlayer in range(iNumPlayers):
             if gc.getTeam(gc.getPlayer(iLoopPlayer).getTeam()).isVassal(iPlayer):
@@ -2992,12 +3068,11 @@ def countControlledTiles_history(iPlayer, iPlayer_history):
             if plot.isWater() or (plot.isPeak()): continue
             # 历史区域
             if plot.getSettlerValue(iPlayer_history) >= 90:
-                if plot.getOwner()>=0:
+                if plot.getOwner() >= 0:
                     iTotal += 1
                     if plot.getOwner() in lValidOwners: iCount += 1
                     pass
     return iCount, iTotal
-
 
 
 def countWonders(iPlayer):
@@ -3188,9 +3263,10 @@ def isConnectedByRailroad_withoutCulture(iPlayer, tStart, lTargets):
     startPlot = utils.plot(tStart)
     if not (startPlot.isCity() and startPlot.getOwner() == iPlayer): return False
 
-    plotFunction = lambda tPlot:  (utils.plot(tPlot).isCity() or utils.plot(tPlot).getRouteType() == iRouteRailroad)
+    plotFunction = lambda tPlot: (utils.plot(tPlot).isCity() or utils.plot(tPlot).getRouteType() == iRouteRailroad)
 
     return isConnected(tStart, lTargets, plotFunction)
+
 
 def isConnectedByRailroad(iPlayer, tStart, lTargets):
     if not gc.getTeam(iPlayer).isHasTech(iRailroad): return False
@@ -3233,6 +3309,13 @@ def countCitiesOfSize(iPlayer, iThreshold):
     iCount = 0
     for city in utils.getCityList(iPlayer):
         if city.getPopulation() >= iThreshold:
+            iCount += 1
+    return iCount
+
+def countCitiesinRegion(iPlayer, lPlots):
+    iCount = 0
+    for city in utils.getCityList(iPlayer):
+        if (city.getX(), city.getY()) in lPlots :
             iCount += 1
     return iCount
 
@@ -3305,7 +3388,6 @@ def controlOrVassalCity(iPlayer, tPlot):
     bVassals = True
     lExceptions = []
 
-
     if bVassals:
         for iLoopPlayer in range(iNumPlayers):
             if gc.getTeam(gc.getPlayer(iLoopPlayer).getTeam()).isVassal(iPlayer):
@@ -3316,6 +3398,7 @@ def controlOrVassalCity(iPlayer, tPlot):
             if plot.getPlotCity().getOwner() in lValidOwners:
                 return True
     return False
+
 
 def getTotalCulture(lPlayers):
     iTotalCulture = 0
@@ -3958,6 +4041,13 @@ def getUHVHelp(iPlayer, iGoal):
         if not AdvisorOpt.UHVProgressAfterFinish():
             return aHelp
 
+    aHelp = checkUHVhelp3000(iPlayer, iGoal, aHelp)
+    aHelp = checkUHVhelp600(iPlayer, iGoal, aHelp)
+    aHelp = checkUHVhelp1700(iPlayer, iGoal, aHelp)
+    return aHelp
+
+
+def checkUHVhelp3000(iPlayer, iGoal, aHelp):
     if iPlayer == iEgypt:
         if iGoal == 0:
             iCulture = pEgypt.countTotalCulture()
@@ -4253,8 +4343,10 @@ def getUHVHelp(iPlayer, iGoal):
                     aHelp.append(getIcon(False) + localText.getText("TXT_KEY_VICTORY_NO_NEW_CAPITAL", ()))
                 else:
                     aHelp.append(getIcon(iCulture >= iRequiredCulture) + localText.getText("TXT_KEY_VICTORY_CAPITAL_CULTURE", (capital.getName(), iCulture, iRequiredCulture)))
+    return aHelp
 
-    elif iPlayer == iArabia:  # mediv01 修改UHV
+def checkUHVhelp600(iPlayer, iGoal, aHelp):
+    if iPlayer == iArabia:  # mediv01 修改UHV
         if iGoal == 0:
             iMostAdvancedCiv = getBestPlayer(iArabia, playerTechs)
             aHelp.append(getIcon(iMostAdvancedCiv == iArabia) + localText.getText("TXT_KEY_VICTORY_MOST_ADVANCED_CIV", (str(gc.getPlayer(iMostAdvancedCiv).getCivilizationShortDescriptionKey()),)))
@@ -4419,28 +4511,28 @@ def getUHVHelp(iPlayer, iGoal):
             aHelp.append(getIcon(iNumVassals >= 3) + localText.getText("TXT_KEY_VICTORY_CATHOLIC_EUROPEAN_VASSALS", (iNumVassals, 3)))
         elif iGoal == 2:
 
-            iCount, iTotal= countControlledTiles_history(iHolyRome, iRome)
-            fPercent=iCount*100/iTotal
-            bHolyRomanUHV3_01= (fPercent >= 80)
-            txt1=getIcon(bHolyRomanUHV3_01) + localText.getText("TXT_KEY_VICTORY_HRE3_TIP1", ())+str(u"%.2f%%" % fPercent)+"( "+str(iCount) + " / " + str(iTotal)+" ) "
+            iCount, iTotal = countControlledTiles_history(iHolyRome, iRome)
+            fPercent = iCount * 100 / iTotal
+            bHolyRomanUHV3_01 = (fPercent >= 80)
+            txt1 = getIcon(bHolyRomanUHV3_01) + localText.getText("TXT_KEY_VICTORY_HRE3_TIP1", ()) + str(u"%.2f%%" % fPercent) + "( " + str(iCount) + " / " + str(iTotal) + " ) "
             aHelp.append(txt1)
-            bHolyRomanUHV3_02_Constantinople_city=controlOrVassalCity(iPlayer, tConstantinople)
+            bHolyRomanUHV3_02_Constantinople_city = controlOrVassalCity(iPlayer, tConstantinople)
             bHolyRomanUHV3_02_Roman_city = controlOrVassalCity(iPlayer, tRome)
-            bHolyRomanUHV3_02=bHolyRomanUHV3_02_Constantinople_city and bHolyRomanUHV3_02_Roman_city
-            txt2=getIcon(bHolyRomanUHV3_02_Roman_city) +' ' +localText.getText("TXT_KEY_VICTORY_HRE3_TIP2_1", ())+getIcon(bHolyRomanUHV3_02_Constantinople_city) +' ' +localText.getText("TXT_KEY_VICTORY_HRE3_TIP2_2", ())
+            bHolyRomanUHV3_02 = bHolyRomanUHV3_02_Constantinople_city and bHolyRomanUHV3_02_Roman_city
+            txt2 = getIcon(bHolyRomanUHV3_02_Roman_city) + ' ' + localText.getText("TXT_KEY_VICTORY_HRE3_TIP2_1", ()) + getIcon(bHolyRomanUHV3_02_Constantinople_city) + ' ' + localText.getText("TXT_KEY_VICTORY_HRE3_TIP2_2", ())
             aHelp.append(txt2)
 
             bHolyRomanUHV3_03 = False
-            Culture_Request=utils.getTurns(5000)
-            mostculture=0
+            Culture_Request = utils.getTurns(5000)
+            mostculture = 0
             mostCulturedCity = getMostCulturedCity(iHolyRome)
             if (mostCulturedCity):
-                mostculture=mostCulturedCity.getCulture(iHolyRome)
+                mostculture = mostCulturedCity.getCulture(iHolyRome)
                 if mostculture >= Culture_Request:
-                    bHolyRomanUHV3_03=True
+                    bHolyRomanUHV3_03 = True
                 else:
-                    bHolyRomanUHV3_03=False
-            txt3=getIcon(bHolyRomanUHV3_03) +' '+localText.getText("TXT_KEY_VICTORY_HRE3_TIP3", ())+'  ('+ str(mostculture) + '/' +str(Culture_Request)+ ' ) '
+                    bHolyRomanUHV3_03 = False
+            txt3 = getIcon(bHolyRomanUHV3_03) + ' ' + localText.getText("TXT_KEY_VICTORY_HRE3_TIP3", ()) + '  (' + str(mostculture) + '/' + str(Culture_Request) + ' ) '
             aHelp.append(txt3)
             '''
             iGreatArtists = countCitySpecialists(iHolyRome, tVienna, iSpecialistGreatArtist)
@@ -4448,7 +4540,7 @@ def getUHVHelp(iPlayer, iGoal):
             iPleasedOrBetterEuropeans = countPlayersWithAttitudeInGroup(iHolyRome, AttitudeTypes.ATTITUDE_PLEASED, lCivGroups[0])
             aHelp.append(getIcon(iGreatArtists + iGreatStatesmen >= 10) + localText.getText("TXT_KEY_VICTORY_GREAT_ARTISTS_AND_STATESMEN_SETTLED", ('Vienna', iGreatArtists + iGreatStatesmen, 10)))
             aHelp.append(getIcon(iPleasedOrBetterEuropeans >= 8) + localText.getText("TXT_KEY_VICTORY_PLEASED_OR_FRIENDLY_EUROPEANS", (iPleasedOrBetterEuropeans, 8)))
-            
+
             '''
     elif iPlayer == iRussia:
         if iGoal == 0:
@@ -4527,15 +4619,15 @@ def getUHVHelp(iPlayer, iGoal):
         elif iGoal == 2:
             bSouthAmerica = isAreaOnlyCivs(tSAmericaTL, tSAmericaBR, [iInca])
             bSouthPacific = isControlledTile(iInca, [[21, 16]])
-            tExceptions=  list(set(lAndeanCoast).union(set([(26,29),(27,22),(28,22),(30,20),(31,19)])))
-            lWestAmazon = utils.getPlotList((23, 18), (34, 28),tExceptions)
+            tExceptions = list(set(lAndeanCoast).union(set([(26, 29), (27, 22), (28, 22), (30, 20), (31, 19)])))
+            lWestAmazon = utils.getPlotList((23, 18), (34, 28), tExceptions)
             bWestAmazon = getNumCitiesInArea(iInca, lWestAmazon) >= 3
 
-            bLaPlata=isControlledTile(iInca, [[34, 12]])
+            bLaPlata = isControlledTile(iInca, [[34, 12]])
             txt1 = getIcon(bSouthPacific) + localText.getText("TXT_KEY_VICTORY_INCA_CONTROL_SOUTH_PACIFIC", ()) + ' '
-            txt2 = getIcon(bWestAmazon) + localText.getText("TXT_KEY_VICTORY_INCA_CONTROL_WestAmazon", (getNumCitiesInArea(iInca, lWestAmazon),3)) + ' '
+            txt2 = getIcon(bWestAmazon) + localText.getText("TXT_KEY_VICTORY_INCA_CONTROL_WestAmazon", (getNumCitiesInArea(iInca, lWestAmazon), 3)) + ' '
             txt3 = getIcon(bLaPlata) + localText.getText("TXT_KEY_VICTORY_INCA_CONTROL_LaPlata", ()) + ' '
-            aHelp.append(txt1+txt2+txt3)
+            aHelp.append(txt1 + txt2 + txt3)
 
         '''
         #以前的UHV代码
@@ -4550,7 +4642,6 @@ def getUHVHelp(iPlayer, iGoal):
 
     elif iPlayer == iItaly:
 
-
         if iGoal == 0:
             bSanMarcoBasilica = data.getWonderBuilder(iSanMarcoBasilica) == iItaly
             bSistineChapel = data.getWonderBuilder(iSistineChapel) == iItaly
@@ -4562,10 +4653,9 @@ def getUHVHelp(iPlayer, iGoal):
             pass
             iRenaissanceTechs = countFirstDiscovered(iItaly, iRenaissance)
             aHelp.append(getIcon(iRenaissanceTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iRenaissance).getText(), iRenaissanceTechs, 8)) + ' ')
-            ITotalCulture=pItaly.countTotalCulture()
-            bTotalCulture=(ITotalCulture>= utils.getTurns(20000))
+            ITotalCulture = pItaly.countTotalCulture()
+            bTotalCulture = (ITotalCulture >= utils.getTurns(20000))
             aHelp.append(getIcon(bTotalCulture) + localText.getText("TXT_KEY_VICTORY_TOTAL_CULTURE", (ITotalCulture, utils.getTurns(20000))))
-
 
             '''
             iCount = countCitiesWithCultureLevel(iItaly, 5)
@@ -4575,19 +4665,17 @@ def getUHVHelp(iPlayer, iGoal):
 
 
         elif iGoal == 2:
-            bVassalFrance=isControlledOrVassalizedwithPlayer(iPlayer, iFrance)
-            bVassalHolyRoman=isControlledOrVassalizedwithPlayer(iPlayer, iHolyRome)
+            bVassalFrance = isControlledOrVassalizedwithPlayer(iPlayer, iFrance)
+            bVassalHolyRoman = isControlledOrVassalizedwithPlayer(iPlayer, iHolyRome)
 
-            txt1=getIcon(bVassalFrance)+' ' +localText.getText("TXT_KEY_VICTORY_ITA3_TIP3_1", ())+getIcon(bVassalHolyRoman)+' ' +localText.getText("TXT_KEY_VICTORY_ITA3_TIP3_2", ())
+            txt1 = getIcon(bVassalFrance) + ' ' + localText.getText("TXT_KEY_VICTORY_ITA3_TIP3_1", ()) + getIcon(bVassalHolyRoman) + ' ' + localText.getText("TXT_KEY_VICTORY_ITA3_TIP3_2", ())
             aHelp.append(txt1)
 
-
-
-            bHolyRomanUHV3_02_Constantinople_city=controlOrVassalCity(iPlayer, tConstantinople)
+            bHolyRomanUHV3_02_Constantinople_city = controlOrVassalCity(iPlayer, tConstantinople)
             bHolyRomanUHV3_02_Roman_city = controlOrVassalCity(iPlayer, tRome)
-            bHolyRomanUHV3_02=bHolyRomanUHV3_02_Constantinople_city and bHolyRomanUHV3_02_Roman_city
+            bHolyRomanUHV3_02 = bHolyRomanUHV3_02_Constantinople_city and bHolyRomanUHV3_02_Roman_city
 
-            txt2=getIcon(bHolyRomanUHV3_02_Roman_city) +' ' +localText.getText("TXT_KEY_VICTORY_HRE3_TIP2_1", ())+getIcon(bHolyRomanUHV3_02_Constantinople_city) +' ' +localText.getText("TXT_KEY_VICTORY_HRE3_TIP2_2", ())
+            txt2 = getIcon(bHolyRomanUHV3_02_Roman_city) + ' ' + localText.getText("TXT_KEY_VICTORY_HRE3_TIP2_1", ()) + getIcon(bHolyRomanUHV3_02_Constantinople_city) + ' ' + localText.getText("TXT_KEY_VICTORY_HRE3_TIP2_2", ())
             aHelp.append(txt2)
 
             iMediterranean, iTotalMediterranean = countControlledTiles(iItaly, tMediterraneanTL, tMediterraneanBR, False, tMediterraneanExceptions, True)
@@ -4692,10 +4780,10 @@ def getUHVHelp(iPlayer, iGoal):
     elif iPlayer == iCongo:
         if iGoal == 0:
             fPercent = getApostolicVotePercent(iCongo)
-            aHelp.append(getIcon(fPercent >= 15.0) + localText.getText("TXT_KEY_VICTORY_APOSTOLIC_VOTE_PERCENT", (str(u"%.2f%%" % fPercent), str(15))))
+            aHelp.append(getIcon(fPercent >= 10.0) + localText.getText("TXT_KEY_VICTORY_APOSTOLIC_VOTE_PERCENT", (str(u"%.2f%%" % fPercent), str(15))))
         elif iGoal == 1:
             iSlaves = data.iCongoSlaveCounter
-            aHelp.append(getIcon(iSlaves >= utils.getTurns(1000)) + localText.getText("TXT_KEY_VICTORY_SLAVES_TRADED", (iSlaves, utils.getTurns(1000))))
+            aHelp.append(getIcon(iSlaves >= utils.getTurns(500)) + localText.getText("TXT_KEY_VICTORY_SLAVES_TRADED", (iSlaves, utils.getTurns(1000))))
 
     elif iPlayer == iNetherlands:
         if iGoal == 0:
@@ -4707,8 +4795,10 @@ def getUHVHelp(iPlayer, iGoal):
         elif iGoal == 2:
             iNumSpices = pNetherlands.getNumAvailableBonuses(iSpices)
             aHelp.append(getIcon(iNumSpices >= 7) + localText.getText("TXT_KEY_VICTORY_AVAILABLE_SPICE_RESOURCES", (iNumSpices, 7)))
+    return aHelp
 
-    elif iPlayer == iGermany:
+def checkUHVhelp1700(iPlayer, iGoal, aHelp):
+    if iPlayer == iGermany:
         if iGoal == 0:
             iCounter = 0
             for iSpecialist in lGreatPeople:
@@ -4729,9 +4819,30 @@ def getUHVHelp(iPlayer, iGoal):
 
     elif iPlayer == iAmerica:
         if iGoal == 0:
+            bAmerican= isControlledOrVassalized(iAmerica, utils.getPlotList([11, 43], [32, 50], []))
+            lLosAngles = utils.getPlotList((11, 47), (11, 47), [])
+            bLosAngles = isControlledTile(iAmerica, lLosAngles)
+            lSeatle = utils.getPlotList((11, 50), (11, 50), [])
+            bSeatle = isControlledTile(iAmerica, lSeatle)
+            bRailway1 = isConnectedByRailroad_withoutCulture(iAmerica, [30,48], [(11, 47)])
+            bRailway2 = isConnectedByRailroad_withoutCulture(iAmerica, [30,48], [(11,51)])
+            bRailway3 = isConnectedByRailroad_withoutCulture(iAmerica, [30,48], [(27,46)])
+            bRailway = bRailway1 and bRailway2 and bRailway3
+            txt1=getIcon(bAmerican) +utils.getText("TXT_KEY_VICTORY_AME1_TIP1_1")+getIcon(bLosAngles) +utils.getText("TXT_KEY_VICTORY_AME1_TIP1_2")+getIcon(bSeatle) +utils.getText("TXT_KEY_VICTORY_AME1_TIP1_3")
+            aHelp.append(txt1)
+            lPlots=utils.getPlotList((11, 44), (21, 52), [])
+            iNumCity=countCitiesinRegion(iAmerica,lPlots)
+            bCity=(iNumCity>=5)
+            txt1=getIcon(bCity) +utils.getText('TXT_KEY_VICTORY_AME1_TIP1_5')+str(iNumCity)+' / '+str(5)
+            aHelp.append(txt1)
+            txt1=getIcon(bRailway) +utils.getText("TXT_KEY_VICTORY_AME1_TIP1_4")
+            aHelp.append(txt1)
+            '''
             bAmericas = isAreaFreeOfCivs(utils.getPlotList(tNCAmericaTL, tNCAmericaBR), lCivGroups[0])
             bMexico = isControlledOrVassalized(iAmerica, Areas.getCoreArea(iAztecs, True))
             aHelp.append(getIcon(bAmericas) + localText.getText("TXT_KEY_VICTORY_NO_NORTH_AMERICAN_COLONIES", ()) + ' ' + getIcon(bMexico) + localText.getText("TXT_KEY_CIV_MEXICO_SHORT_DESC", ()))
+            '''
+
         elif iGoal == 1:
             bUnitedNations = data.getWonderBuilder(iUnitedNations) == iAmerica
             bBrooklynBridge = data.getWonderBuilder(iBrooklynBridge) == iAmerica
@@ -4739,61 +4850,111 @@ def getUHVHelp(iPlayer, iGoal):
             bGoldenGateBridge = data.getWonderBuilder(iGoldenGateBridge) == iAmerica
             bPentagon = data.getWonderBuilder(iPentagon) == iAmerica
             bEmpireState = data.getWonderBuilder(iEmpireStateBuilding) == iAmerica
+            bHollyWood = data.getWonderBuilder(iHollywood) == iAmerica
             aHelp.append(getIcon(bStatueOfLiberty) + localText.getText("TXT_KEY_BUILDING_STATUE_OF_LIBERTY", ()) + ' ' + getIcon(bBrooklynBridge) + localText.getText("TXT_KEY_BUILDING_BROOKLYN_BRIDGE", ()) + ' ' + getIcon(bEmpireState) + localText.getText("TXT_KEY_BUILDING_EMPIRE_STATE_BUILDING", ()))
-            aHelp.append(getIcon(bGoldenGateBridge) + localText.getText("TXT_KEY_BUILDING_GOLDEN_GATE_BRIDGE", ()) + ' ' + getIcon(bPentagon) + localText.getText("TXT_KEY_BUILDING_PENTAGON", ()) + ' ' + getIcon(bUnitedNations) + localText.getText("TXT_KEY_BUILDING_UNITED_NATIONS", ()))
+            aHelp.append(getIcon(bGoldenGateBridge) + localText.getText("TXT_KEY_BUILDING_GOLDEN_GATE_BRIDGE", ()) + ' ' + getIcon(bPentagon) + localText.getText("TXT_KEY_BUILDING_PENTAGON", ()) + ' ' + getIcon(bUnitedNations) + localText.getText("TXT_KEY_BUILDING_UNITED_NATIONS", ())+getIcon(bHollyWood) + localText.getText("TXT_KEY_BUILDING_HOLLYWOOD", ()))
+
+            lTechList=[iFission,iComputers,iNuclearPower]
+            bFission=checkTechGoal(iAmerica,[iFission])
+            bComputor=checkTechGoal(iAmerica,[iComputers])
+            bNuclearPower=checkTechGoal(iAmerica,[iNuclearPower])
+            txt1=utils.getText('TXT_KEY_VICTORY_AME2_TIP1_1')+getIcon(bFission) +utils.getTechNameCn(iFission)+getIcon(bComputor) +utils.getTechNameCn(iComputers)+getIcon(bNuclearPower) +utils.getTechNameCn(iNuclearPower)
+            aHelp.append(txt1)
+
+
+            bManhattanProject = teamAmerica.getProjectCount(iManhattanProject) > 0
+            bInternetProject = teamAmerica.getProjectCount(iTheInternet) > 0
+            txt1=utils.getText('TXT_KEY_VICTORY_AME2_TIP1_2')+getIcon(bManhattanProject) + localText.getText("TXT_KEY_PROJECT_MANHATTAN_PROJECT", ()) + ' '+getIcon(bInternetProject) + localText.getText("TXT_KEY_PROJECT_THEINTERNET_PROJECT", ())
+            aHelp.append(txt1)
+
+
         elif iGoal == 2:
+            lTechList=[iSpaceflight,iSatellites]
+            bSpaceflight=checkTechGoal(iAmerica,[iSpaceflight])
+            bSatellites=checkTechGoal(iAmerica,[iSatellites])
+            txt1=utils.getText('TXT_KEY_VICTORY_AME2_TIP1_1')+getIcon(bSpaceflight) +utils.getTechNameCn(iSpaceflight)+getIcon(bSatellites) +utils.getTechNameCn(iSatellites)
+
+            aHelp.append(txt1)
+            txt1=''+utils.getText('TXT_KEY_VICTORY_AME2_TIP1_2')
+            bFIRST_SATELLITE = teamAmerica.getProjectCount(iFirstSatellite) > 0
+            txt1+= getIcon(bFIRST_SATELLITE) + localText.getText("TXT_KEY_PROJECT_FIRST_SATELLITE", ())
+
+            bManinSpace = teamAmerica.getProjectCount(iManInSpace) > 0
+            txt1+= getIcon(bManinSpace) + localText.getText("TXT_KEY_PROJECT_MAN_IN_SPACE", ())
+
+            bApolloProgram = teamAmerica.getProjectCount(iLunarLanding) > 0
+            txt1+= getIcon(bApolloProgram) + localText.getText("TXT_KEY_PROJECT_LUNAR_LANDING", ())
+
+            bISS = teamAmerica.getProjectCount(iISS) > 0
+            txt1+= getIcon(bISS) + localText.getText("TXT_KEY_PROJECT_INTERNATIONAL_SPACE_STATION", ())
+
+            bHubble=data.getWonderBuilder(iHubbleSpaceTelescope) == iAmerica
+            txt1+= getIcon(bHubble) + localText.getText("TXT_KEY_BUILDING_HUBBLE_SPACE_TELESCOPE", ())
+
+            bWTC=data.getWonderBuilder(iWorldTradeCenter) == iAmerica
+            txt1+= getIcon(bWTC) + localText.getText("TXT_KEY_BUILDING_WORLD_TRADE_CENTER", ())
+
+            aHelp.append(txt1)
+
+
             fAlliedCommercePercent = calculateAlliedCommercePercent(iAmerica)
             fAlliedPowerPercent = calculateAlliedPowerPercent(iAmerica)
             aHelp.append(getIcon(fAlliedCommercePercent >= 75.0) + localText.getText("TXT_KEY_VICTORY_ALLIED_COMMERCE_PERCENT", (str(u"%.2f%%" % fAlliedCommercePercent), str(75))))
             aHelp.append(getIcon(fAlliedPowerPercent >= 75.0) + localText.getText("TXT_KEY_VICTORY_ALLIED_POWER_PERCENT", (str(u"%.2f%%" % fAlliedPowerPercent), str(75))))
 
+
+
+
+
+
+
     elif iPlayer == iArgentina:
         if iGoal == 0:
-            #tExceptions = list(set([]).union(set([(26, 29), (27, 22), (28, 22), (30, 20), (31, 19)])))
-            tExceptions=[]
+            # tExceptions = list(set([]).union(set([(26, 29), (27, 22), (28, 22), (30, 20), (31, 19)])))
+            tExceptions = []
             lLapulata = utils.getPlotList((34, 10), (41, 19), tExceptions)
-            bLapulata=isControlledTile(iArgentina,lLapulata)
+            bLapulata = isControlledTile(iArgentina, lLapulata)
             lIguacu = utils.getPlotList((36, 15), (36, 15), tExceptions)
-            bIguacu=isControlledTile(iArgentina,lIguacu)
-            lUyuni= utils.getPlotList((35, 17), (35, 17), tExceptions)
-            bUyuni=isControlledTile(iArgentina,lUyuni)
-            txt1=getIcon(bLapulata) +localText.getText("TXT_KEY_VICTORY_ARG1_CONTROL_Lapulata", ())+" "
+            bIguacu = isControlledTile(iArgentina, lIguacu)
+            lUyuni = utils.getPlotList((35, 17), (35, 17), tExceptions)
+            bUyuni = isControlledTile(iArgentina, lUyuni)
+            txt1 = getIcon(bLapulata) + localText.getText("TXT_KEY_VICTORY_ARG1_CONTROL_Lapulata", ()) + " "
             txt2 = getIcon(bIguacu) + localText.getText("TXT_KEY_VICTORY_ARG1_CONTROL_bIguacu", ()) + " "
             txt3 = getIcon(bUyuni) + localText.getText("TXT_KEY_VICTORY_ARG1_CONTROL_bUyuni", ()) + " "
-            aHelp.append(txt1+txt2+txt3)
+            aHelp.append(txt1 + txt2 + txt3)
         elif iGoal == 1:
-            Area_SouthAmerican=utils.getPlotList(tSAmericaTL, tSAmericaBR, tSouthAmericaExceptions)
-            [bSouthAmerican,list_SouthAmerican]=isControlledOrVassalized_deatil(iArgentina,Area_SouthAmerican)
+            Area_SouthAmerican = utils.getPlotList(tSAmericaTL, tSAmericaBR, tSouthAmericaExceptions)
+            [bSouthAmerican, list_SouthAmerican] = isControlledOrVassalized_deatil(iArgentina, Area_SouthAmerican)
             #
-            txt1=getIcon(bSouthAmerican) +localText.getText("TXT_KEY_VICTORY_ARG2_CONTROL_SouthAmerican", ())+" "
-            lFalkland= utils.getPlotList((41, 6), (41, 6), [])
+            txt1 = getIcon(bSouthAmerican) + localText.getText("TXT_KEY_VICTORY_ARG2_CONTROL_SouthAmerican", ()) + " "
+            lFalkland = utils.getPlotList((41, 6), (41, 6), [])
             bFalkland = isControlledTile(iArgentina, lFalkland)
-            txt2=getIcon(bFalkland) +localText.getText("TXT_KEY_VICTORY_ARG2_CONTROL_Falkland", ())+" "
-            bRailway = isConnectedByRailroad_withoutCulture(iArgentina, Areas.getCapital(iArgentina), [(11,47)])
+            txt2 = getIcon(bFalkland) + localText.getText("TXT_KEY_VICTORY_ARG2_CONTROL_Falkland", ()) + " "
+            bRailway = isConnectedByRailroad_withoutCulture(iArgentina, Areas.getCapital(iArgentina), [(11, 47)])
             txt3 = getIcon(bRailway) + localText.getText("TXT_KEY_VICTORY_ARG2_Railway", ()) + " "
-            aHelp.append(txt1+txt2+txt3)
+            aHelp.append(txt1 + txt2 + txt3)
 
-            txt11=localText.getText("TXT_KEY_VICTORY_ARG2_CONTROL_SouthAmerican_Tip", ())
+            txt11 = localText.getText("TXT_KEY_VICTORY_ARG2_CONTROL_SouthAmerican_Tip", ())
 
             for iCiv in list_SouthAmerican:
                 civname = gc.getPlayer(iCiv).getCivilizationDescription(0)
-                txt11=txt11+civname+'  '
+                txt11 = txt11 + civname + '  '
 
             aHelp.append(txt11)
         elif iGoal == 2:
-            iRankGDP=cal_rank(iArgentina,1)
-            iRankScore=cal_rank(iArgentina,0)
-            iRankMoney=cal_rank(iArgentina,8)
-            bRankGDP=cal_rank(iArgentina,1)==1
-            bRankScore=cal_rank(iArgentina,0)==1
-            bRankMoney=cal_rank(iArgentina,8)==1
-            txt1 = getIcon(bRankScore) + localText.getText("TXT_KEY_VICTORY_ARG3_SCORE", (iRankScore,45))
-            txt2=getIcon(bRankGDP) + localText.getText("TXT_KEY_VICTORY_ARG3_GDP", (iRankGDP,45))
-            txt3=getIcon(bRankMoney) + localText.getText("TXT_KEY_VICTORY_ARG3_MONEY", (iRankMoney,45))
+            iRankGDP = cal_rank(iArgentina, 1)
+            iRankScore = cal_rank(iArgentina, 0)
+            iRankMoney = cal_rank(iArgentina, 8)
+            bRankGDP = cal_rank(iArgentina, 1) == 1
+            bRankScore = cal_rank(iArgentina, 0) == 1
+            bRankMoney = cal_rank(iArgentina, 8) == 1
+            txt1 = getIcon(bRankScore) + localText.getText("TXT_KEY_VICTORY_ARG3_SCORE", (iRankScore, 45))
+            txt2 = getIcon(bRankGDP) + localText.getText("TXT_KEY_VICTORY_ARG3_GDP", (iRankGDP, 45))
+            txt3 = getIcon(bRankMoney) + localText.getText("TXT_KEY_VICTORY_ARG3_MONEY", (iRankMoney, 45))
             iCulture = getCityCulture(iArgentina, Areas.getCapital(iArgentina))
-            txt4=getIcon(iCulture >= utils.getTurns(5000)) + localText.getText("TXT_KEY_VICTORY_ARG3_CULTURE", (iCulture, utils.getTurns(5000)))
+            txt4 = getIcon(iCulture >= utils.getTurns(5000)) + localText.getText("TXT_KEY_VICTORY_ARG3_CULTURE", (iCulture, utils.getTurns(5000)))
             iCulture = getCityCulture(iArgentina, Areas.getCapital(iArgentina))
-            aHelp.append(txt1+txt2+txt3+txt4)
+            aHelp.append(txt1 + txt2 + txt3 + txt4)
             pass
         '''
         if iGoal == 0:
@@ -4814,40 +4975,37 @@ def getUHVHelp(iPlayer, iGoal):
             iPastures = countImprovements(iBrazil, iPasture)
             aHelp.append(getIcon(iSlavePlantations >= 8) + localText.getText("TXT_KEY_VICTORY_NUM_IMPROVEMENTS", (gc.getImprovementInfo(iSlavePlantation).getText(), iSlavePlantations, 8)) + ' ' + getIcon(iPastures >= 4) + localText.getText("TXT_KEY_VICTORY_NUM_IMPROVEMENTS", (gc.getImprovementInfo(iPasture).getText(), iPastures, 4)))
         elif iGoal == 1:
-            bWembley = (getNumBuildings(iBrazil, iWembley)>0)
-            bCristoRedentor = (getNumBuildings(iBrazil, iCristoRedentor)>0)
+            bWembley = (getNumBuildings(iBrazil, iWembley) > 0)
+            bCristoRedentor = (getNumBuildings(iBrazil, iCristoRedentor) > 0)
 
-
-            bBrazilia=False
-            bBrazilia01=False
+            bBrazilia = False
+            bBrazilia01 = False
             bBrazilia02 = False
             bBrazilia03 = False
-            for tPlot in [(38,21),(39,22),(38,22),(39,21)]:
+            for tPlot in [(38, 21), (39, 22), (38, 22), (39, 21)]:
 
                 if (not bBrazilia):
-                    if isControlledTile(iBrazil,[tPlot]):
+                    if isControlledTile(iBrazil, [tPlot]):
                         bBrazilia01 = True
-                        if isBuildingInCity(tPlot,iPalace):
+                        if isBuildingInCity(tPlot, iPalace):
                             bBrazilia02 = True
-                        if (isBuildingInCity(tPlot,iAirport)):
+                        if (isBuildingInCity(tPlot, iAirport)):
                             bBrazilia03 = True
 
-                        bBrazilia=isBuildingInCity(tPlot,iAirport) and isBuildingInCity(tPlot,iPalace)
+                        bBrazilia = isBuildingInCity(tPlot, iAirport) and isBuildingInCity(tPlot, iPalace)
 
-            #txt3= getIcon(bBrazilia) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA", ())
-            txt3_1= getIcon(bBrazilia01) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA_TIP1", ())
-            txt3_2= getIcon(bBrazilia02) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA_TIP2", ())
-            txt3_3= getIcon(bBrazilia03) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA_TIP3", ())
+            # txt3= getIcon(bBrazilia) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA", ())
+            txt3_1 = getIcon(bBrazilia01) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA_TIP1", ())
+            txt3_2 = getIcon(bBrazilia02) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA_TIP2", ())
+            txt3_3 = getIcon(bBrazilia03) + localText.getText("TXT_KEY_VICTORY_BRZ2_BRAZILIA_TIP3", ())
 
-            txt3=txt3_1+txt3_2+txt3_3
-            aHelp.append(getIcon(bWembley) + localText.getText("TXT_KEY_BUILDING_WEMBLEY", ()) + ' ' + getIcon(bCristoRedentor) + localText.getText("TXT_KEY_BUILDING_CRISTO_REDENTOR", ()) + ' '+txt3)
+            txt3 = txt3_1 + txt3_2 + txt3_3
+            aHelp.append(getIcon(bWembley) + localText.getText("TXT_KEY_BUILDING_WEMBLEY", ()) + ' ' + getIcon(bCristoRedentor) + localText.getText("TXT_KEY_BUILDING_CRISTO_REDENTOR", ()) + ' ' + txt3)
 
-
-
-            #bWembley = data.getWonderBuilder(iWembley) == iBrazil
-            #bCristoRedentor = data.getWonderBuilder(iCristoRedentor) == iBrazil
-            #bItaipuDam = data.getWonderBuilder(iItaipuDam) == iBrazil
-            #aHelp.append(getIcon(bWembley) + localText.getText("TXT_KEY_BUILDING_WEMBLEY", ()) + ' ' + getIcon(bCristoRedentor) + localText.getText("TXT_KEY_BUILDING_CRISTO_REDENTOR", ()) + ' ' + getIcon(bItaipuDam) + localText.getText("TXT_KEY_BUILDING_ITAIPU_DAM", ()))
+            # bWembley = data.getWonderBuilder(iWembley) == iBrazil
+            # bCristoRedentor = data.getWonderBuilder(iCristoRedentor) == iBrazil
+            # bItaipuDam = data.getWonderBuilder(iItaipuDam) == iBrazil
+            # aHelp.append(getIcon(bWembley) + localText.getText("TXT_KEY_BUILDING_WEMBLEY", ()) + ' ' + getIcon(bCristoRedentor) + localText.getText("TXT_KEY_BUILDING_CRISTO_REDENTOR", ()) + ' ' + getIcon(bItaipuDam) + localText.getText("TXT_KEY_BUILDING_ITAIPU_DAM", ()))
         elif iGoal == 2:
             iForestPreserves = countImprovements(iBrazil, iForestPreserve)
             bNationalPark = False
@@ -4870,10 +5028,10 @@ def getUHVHelp(iPlayer, iGoal):
         elif iGoal == 2:
             iPeaceDeals = data.iCanadianPeaceDeals
             aHelp.append(getIcon(iPeaceDeals >= 12) + localText.getText("TXT_KEY_VICTORY_CANADIAN_PEACE_DEALS", (iPeaceDeals, 12)))
-
     return aHelp
 
-def cal_rank(iPlayer,scoreType):
+
+def cal_rank(iPlayer, scoreType):
     TOTAL_SCORE = 0
     ECONOMY_SCORE = 1
     INDUSTRY_SCORE = 2
@@ -4882,51 +5040,48 @@ def cal_rank(iPlayer,scoreType):
     CULTURE_SCORE = 5
     ESPIONAGE_SCORE = 6
     TECH_SCORE = 7
-    MONEY_SCORE=8
+    MONEY_SCORE = 8
     NUM_SCORES = 9
     RANGE_SCORES = range(NUM_SCORES)
     scorelist = []
     valuelist = []
-    return_list=[]
+    return_list = []
     for iCiv in range(iNumPlayers):
         if (gc.getPlayer(iCiv).isAlive()):
-            iTurn=gc.getGame().getGameTurn() - 1
+            iTurn = gc.getGame().getGameTurn() - 1
 
             if (scoreType == TOTAL_SCORE):
-                iValue= gc.getPlayer(iCiv).getScoreHistory(iTurn)
+                iValue = gc.getPlayer(iCiv).getScoreHistory(iTurn)
             elif (scoreType == ECONOMY_SCORE):
-                iValue= gc.getPlayer(iCiv).getEconomyHistory(iTurn)
+                iValue = gc.getPlayer(iCiv).getEconomyHistory(iTurn)
             elif (scoreType == INDUSTRY_SCORE):
-                iValue= gc.getPlayer(iCiv).getIndustryHistory(iTurn)
+                iValue = gc.getPlayer(iCiv).getIndustryHistory(iTurn)
             elif (scoreType == AGRICULTURE_SCORE):
-                iValue= gc.getPlayer(iCiv).getAgricultureHistory(iTurn)
+                iValue = gc.getPlayer(iCiv).getAgricultureHistory(iTurn)
             elif (scoreType == POWER_SCORE):
-                iValue= gc.getPlayer(iCiv).getPowerHistory(iTurn)
+                iValue = gc.getPlayer(iCiv).getPowerHistory(iTurn)
             elif (scoreType == CULTURE_SCORE):
-                iValue= gc.getPlayer(iCiv).getCultureHistory(iTurn)
+                iValue = gc.getPlayer(iCiv).getCultureHistory(iTurn)
             elif (scoreType == ESPIONAGE_SCORE):
-                iValue= gc.getPlayer(iCiv).getEspionageHistory(iTurn)
+                iValue = gc.getPlayer(iCiv).getEspionageHistory(iTurn)
             elif (scoreType == TECH_SCORE):
-                iValue= gc.getPlayer(iCiv).getTechHistory(iTurn)
+                iValue = gc.getPlayer(iCiv).getTechHistory(iTurn)
             elif (scoreType == MONEY_SCORE):
-                iValue=gc.getPlayer(iCiv).getGold()
+                iValue = gc.getPlayer(iCiv).getGold()
             valuelist.append(iValue)
             scorelist.append([iCiv, iValue])
-
-
 
         pass
     AveragePoint = 1
     if (len(valuelist) > 0 and sum(valuelist) > 0):
         AveragePoint = sum(valuelist) / len(valuelist)
 
-
     scorelist.sort(key=lambda x: -x[1])
-    
+
     for i in range(len(scorelist)):
-        iciv=scorelist[i][0]
-        if(iciv==iPlayer):
-            rank=i+1
+        iciv = scorelist[i][0]
+        if (iciv == iPlayer):
+            rank = i + 1
             return rank
     return -1
 

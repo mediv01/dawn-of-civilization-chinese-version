@@ -29,7 +29,7 @@ def checkturn_main():
         return
     if gc.getDefineINT("PLAYER_AI_ALLOW_TO_USE_CONSIDEROFFER_THRESHOLD") == 0:
         return
-    for iPlayer in range(45):
+    for iPlayer in range(iNumPlayers):
         human=utils.getHumanID()
         
         if gc.getPlayer(iPlayer).isAlive() and human!=iPlayer :
@@ -75,7 +75,7 @@ def checkturn_map_main():
         return
     if gc.getDefineINT("PLAYER_AI_ALLOW_TO_USE_CONSIDEROFFER_THRESHOLD_MAP") == 0:
         return
-    for iPlayer in range(45):
+    for iPlayer in range(iNumPlayers):
         human=utils.getHumanID()
         
         if gc.getPlayer(iPlayer).isAlive() and human!=iPlayer :

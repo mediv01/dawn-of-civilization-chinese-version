@@ -290,6 +290,33 @@ def getScreenHelp():
                 rank_percent=iTechValue*100/AveragePoint
                 aHelp.append(' RANK ('+str(i+1)+') : '+civname+'             with '+str(iTechValue)+'  ('+str(rank_percent)+'%)')
 
+    # 5.AI性格
+    if (gc.getDefineINT("PYTHON_SCREEN_VICTORY_TIPS_05") >0 and 1==2):
+        aHelp.append(' ')
+        techlist=[]
+        valuelist=[]
+        for iCiv in range(iNumPlayers):
+            if (gc.getPlayer(iCiv).isAlive()):
+                #iTechValue = gc.getPlayer(iCiv).getCultureHistory(gc.getGame().getGameTurn()-1)
+                iStrategyNum=gc.showAIstrategy(iCiv)
+                #iStrategyNum=1
+                iTechValue=iStrategyNum
+                valuelist.append(iTechValue)
+                techlist.append([iCiv,iTechValue])
+            pass
+
+
+
+        for i in range(len(techlist)):
+
+            iCiv = techlist[i][0]
+            iTechValue=techlist[i][1]
+            civname=gc.getPlayer(iCiv).getCivilizationShortDescription(0)
+            if (isDecline(iCiv)):
+                civname=civname+'[F]'
+            txt1=civname+' 的策略是 '+str(iTechValue)
+            aHelp.append(txt1)
+
 
     #6.世界最大城市排名
     if (gc.getDefineINT("PYTHON_SCREEN_VICTORY_TIPS_06") >0):

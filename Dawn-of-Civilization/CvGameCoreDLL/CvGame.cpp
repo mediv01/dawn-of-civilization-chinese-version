@@ -77,6 +77,8 @@ CvGame::CvGame()
 	m_aiShrineReligion = NULL;
 
 	reset(NO_HANDICAP, true);
+
+
 }
 
 
@@ -116,6 +118,8 @@ void CvGame::init(HandicapTypes eHandicap)
 	//--------------------------------
 	// Init saved data
 	reset(eHandicap);
+
+
 
 	//--------------------------------
 	// Init containers
@@ -2221,6 +2225,30 @@ int CvGame::getTeamClosenessScore(int** aaiDistances, int* aiStartingLocs)
 void CvGame::update()
 {
 	PROFILE("CvGame::update");
+
+	if (GC.getDefineINT("CVGAMECORE_DLL_AUTO_DEBUGMODE") == 1) {
+		GC.setDefineINT("CVGAMECORE_DLL_AUTO_DEBUGMODE", 2);
+
+		gDLL->setChtLvl(1);
+
+
+		GC.getMapINLINE().updateVisibility();
+		GC.getMapINLINE().updateSymbols();
+		GC.getMapINLINE().updateMinimapColor();
+
+		gDLL->getInterfaceIFace()->setDirty(GameData_DIRTY_BIT, true);
+		gDLL->getInterfaceIFace()->setDirty(Score_DIRTY_BIT, true);
+		gDLL->getInterfaceIFace()->setDirty(MinimapSection_DIRTY_BIT, true);
+		gDLL->getInterfaceIFace()->setDirty(UnitInfo_DIRTY_BIT, true);
+		gDLL->getInterfaceIFace()->setDirty(CityInfo_DIRTY_BIT, true);
+		gDLL->getInterfaceIFace()->setDirty(GlobeLayer_DIRTY_BIT, true);
+
+		//gDLL->getEngineIFace()->SetDirty(GlobeTexture_DIRTY_BIT, true);
+		gDLL->getEngineIFace()->SetDirty(MinimapTexture_DIRTY_BIT, true);
+		gDLL->getEngineIFace()->SetDirty(CultureBorders_DIRTY_BIT, true);
+		gDLL->getEngineIFace()->PushFogOfWar(FOGOFWARMODE_OFF);
+		gDLL->getEngineIFace()->setFogOfWarFromStack();
+	}
 
 	CvPlot* lookatPlot = gDLL->getInterfaceIFace()->getLookAtPlot();
 	if ( lookatPlot != NULL )
@@ -4846,6 +4874,7 @@ bool CvGame::isValidVoteSelection(VoteSourceTypes eVoteSource, const VoteSelecti
 
 bool CvGame::isDebugMode() const
 {
+
 	return m_bDebugModeCache;
 }
 
@@ -4879,6 +4908,8 @@ void CvGame::toggleDebugMode()
 		gDLL->getEngineIFace()->PopFogOfWar();
 	}
 	gDLL->getEngineIFace()->setFogOfWarFromStack();
+
+
 }
 
 void CvGame::updateDebugModeCache()

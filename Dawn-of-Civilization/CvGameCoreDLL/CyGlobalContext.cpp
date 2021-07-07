@@ -42,6 +42,13 @@ bool CyGlobalContext::isDebugBuild() const
 #endif
 }
 
+int CyGlobalContext::showAIstrategy(int iPlayer) const
+{
+	int aa = GC.showAIstrategy(iPlayer);
+	return aa;//test by mediv01
+}
+
+
 int CyGlobalContext::AI_considerOfferThreshold(int ePlayer, int myPlayer) const
 {
 	int aa = CvPlayerAI().AI_considerOffer_Threshold(ePlayer, myPlayer);

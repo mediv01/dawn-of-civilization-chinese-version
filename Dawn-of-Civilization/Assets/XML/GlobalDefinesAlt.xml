@@ -14,7 +14,7 @@
               set to 0 to reenable them -->
     <Define>
         <DefineName>NO_AI_UHV_CHECKS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>AI_SLAVE_VALUE</DefineName>
@@ -810,7 +810,17 @@
     </Define>
     <Define>
         <DefineName>GAME_TEXT_SHOW_SETTLER_MAP</DefineName>        <!-- 1为可以显示城市SETTLERMAP的数值  0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>GAME_TEXT_SHOW_SETTLER_MAP_MINVALUE</DefineName>        <!-- 1为仅在城市VALUE大于特定数值时显示  0为默认模式 mediv01 -->
+        <iDefineIntVal>90</iDefineIntVal>
+    </Define>
+	
+		<Define>
+        <DefineName>GAME_TEXT_SHOW_SETTLER_MAP_MAXCOUNTRY</DefineName>        <!-- 1为仅在城市VALUE排名前N的国家  0为默认模式 mediv01 -->
+        <iDefineIntVal>6</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1518,16 +1528,35 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
+    <Define>
+        <DefineName>CVPLAYERAI_CONGO_CAN_ALWAYS_TRADE_SLAVES</DefineName>        <!-- 大于0的数字表明当人类玩家为刚果时，交易奴隶可以减少限制。此项为刚果三角贸易新的UP  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
+    <Define>
+        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD</DefineName>        <!-- 大于0的数字表明是游戏分数的新计算方式 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
+    <Define>
+        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_BUILDING_SCORE</DefineName>        <!-- 大于0的数字表明普通建筑的分数，奇观分数为5 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>2</iDefineIntVal>
+    </Define>
+	
+    <Define>
+        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_MONEY_SCORE</DefineName>        <!-- 大于0的数字表明每10000金币的分数 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
 
+    <Define>
+        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_MONEY_SCORE_PER_TURN</DefineName>        <!-- 大于0的数字表明每1回合金币的分数 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
-
-
-
-
-
-
+    <Define>
+        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_ARMY_SCORE</DefineName>        <!-- 大于0的数字表明每100点军力的分数 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>10</iDefineIntVal>
+    </Define>
 
 
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  BUGFIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
@@ -1545,6 +1574,19 @@
     <Define>
         <DefineName>CVGAMECORE_FIX_BUG_PERFORMANCE_UP01</DefineName>        <!-- 1为修正游戏中的内存泄露错误， 0为默认模式 此项目不可XML配置，写死在CvGLOBAL.h里，需要修改的话可以重新生成DLL mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+
+    <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  调试相关 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	
+	<Define>
+        <DefineName>CVGAMECORE_DLL_DEBUG</DefineName>        <!-- 大于0的数字为触发手动DEBUG事件  仅为调试输出使用，请设置为0  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>CVGAMECORE_DLL_AUTO_DEBUGMODE</DefineName>        <!-- 1为自动进入系统调试模式 仅为调试输出使用，请设置为0 0为默认模式， mediv01  -->
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  LOG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
@@ -1572,7 +1614,7 @@
 
     <Define>
         <DefineName>PYTHON_LOG_ON_STABILITY</DefineName>        <!-- 1为记录稳定度详情的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1596,7 +1638,7 @@
     </Define>
 
     <Define>
-        <DefineName>PYTHON_LOG_ON_MAIN_PLAGUE</DefineName>        <!-- 1为记录AIWAR的日志 0为默认模式 mediv01 -->
+        <DefineName>PYTHON_LOG_ON_MAIN_PLAGUE</DefineName>        <!-- 1为记录瘟疫的日志 0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
@@ -1612,13 +1654,13 @@
 
     <Define>
         <DefineName>PYTHON_LOG_ON_BUILDING</DefineName>        <!-- 1为记录普通建筑的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>PYTHON_LOG_ON_UNIT</DefineName>        <!-- 1为记录普通单位的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1639,18 +1681,18 @@
 
     <Define>
         <DefineName>PYTHON_LOG_ON_RELIGION</DefineName>        <!-- 1为记录城市宗教传播的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>PYTHON_LOG_ON_TECHSCORE</DefineName>        <!-- 1为记录科技得分的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>PYTHON_LOG_ON_POWERSCORE</DefineName>        <!-- 1为记录军事实力传播的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
 
@@ -1660,21 +1702,27 @@
     </Define>
 
     <Define>
-        <DefineName>PYTHON_LOG_ON_RANDOMEVENT</DefineName>        <!-- 1为记录随机事件和部落村庄 似乎会报错 建议不开启 0为默认模式 mediv01 -->
+        <DefineName>PYTHON_LOG_ON_RANDOMEVENT</DefineName>        <!-- 1为记录日常随机事件 0为默认模式 mediv01 -->
         <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
-    <Define>
-        <DefineName>CVGAMECORE_LOG_AI_ACTION</DefineName>        <!-- 1为新增了DLL的LOG函数 0为默认模式， mediv01  -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
+
 
     <Define>
         <DefineName>CVGAMECORE_LOG_PATH</DefineName>
         <DefineTextVal>D:\\DoC_Log\\</DefineTextVal>
     </Define>
 
-
+    <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  DLL LOG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->	
+	<Define>
+        <DefineName>CVGAMECORE_LOG_AI_ACTION</DefineName>        <!-- 1为新增了DLL的LOG函数IO总开关 0为默认模式， mediv01  -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>CVGAMECORE_LOG_AI_BUILDCITY</DefineName>        <!-- 1为新增了DLL的LOG函数，记录AI建城决策 0为默认模式， mediv01  -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
 
 
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  PYTHON 第一部分 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
@@ -1990,7 +2038,8 @@
         <DefineName>AIWAR_PY_HUMAN_CAN_USE_AI_WAR</DefineName>        <!-- 1为人类可以使用AIWAR  0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
-
+	
+	
 
     <Define>
         <DefineName>AIWAR_PY_CANNOT_DO_AIWAR_TO_HUMAN</DefineName>        <!-- 1为不可以对人类进行AIWAR刷兵  0为默认模式 mediv01 -->
@@ -2020,6 +2069,11 @@
         <DefineName>AIWAR_NO_MONGO_MEET_WAR</DefineName>        <!-- 1为取消蒙古见面刷兵的AIWAR  0为默认模式 mediv01 -->
         <iDefineIntVal>0</iDefineIntVal>
     </Define>
+	
+	    <Define>
+        <DefineName>AIWAR_NO_MONGO_MEET_WAR_TO_HUMAN</DefineName>        <!-- 1为取消蒙古给人类的见面刷兵的AIWAR  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
 
     <Define>
@@ -2039,6 +2093,11 @@
 
     <Define>
         <DefineName>PYTHON_ARMY_NOT_FLIP</DefineName>        <!-- 1为翻转区内的军队不会叛变 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	    <Define>
+        <DefineName>PYTHON_CITY_NOT_FLIP</DefineName>        <!-- 1为翻转区内的城市不会叛变 0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
@@ -2065,7 +2124,7 @@
 
     <Define>
         <DefineName>CVCITY_INCREASE_RELIGION_CHANCE_ONLY_FOR_STATERELIGION</DefineName>        <!-- 大于0的参数为传播参数仅仅对人类文明的国教有效，对其他宗教无效 需要CVCITY_INCREASE_RELIGION_CHANCE参数为0才起作用  0为默认模式， mediv01  -->
-        <iDefineIntVal>10</iDefineIntVal>
+        <iDefineIntVal>40</iDefineIntVal>
     </Define>
 
     <Define>
@@ -2108,6 +2167,12 @@
 	
 	<Define>
         <DefineName>PYTHON_NOAIWAR_WHEN_VASSAL_TO_OTHER</DefineName>        <!--  1为当AIWAR的对象附庸其他人时，不能发动AIWAR，0为默认模式  mediv01 2021年8月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	
+	<Define>
+        <DefineName>PYTHON_CONGRESS_VOTE_FOR_EMPTY_TERROR_WITH_RANDOM</DefineName>        <!--  1为当投票发现未知领土时，不再是ALWAYS YES，按照概率计算，0为默认模式  mediv01 2021年8月版本 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 

@@ -24,7 +24,9 @@ static const int CVGAMECORE_FIX_BUG_PERFORMANCE_UP04 = 1; //mediv01 预留
 
 //mediv01  游戏BUG修复参数结束
 
-
+//全局变量区
+static CvWString log_CWstring;
+static CvString log_CvString;
 
 
 
@@ -725,6 +727,8 @@ public:
 	//DllExport void logs(const CvString buf, CvString filename) const;
 	DllExport void logs(const wchar* buf, CvString filename) const;
 	DllExport void logs(const char* buf, CvString filename) const;
+	DllExport void debug() const;
+	DllExport int showAIstrategy(int iPlayer) const;
 
 	// ***** EXPOSED TO PYTHON *****
 	DllExport int getDefineINT( const char * szName ) const;

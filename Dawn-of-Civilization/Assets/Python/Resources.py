@@ -117,7 +117,7 @@ class Resources:
                 gc.getMap().plot(x, y).setFeatureType(iCape, 0)
 
             #			if utils.getHumanID() == iVikings:
-            if 1 == 1:
+            if utils.getHumanID() in[iVikings,iEngland] :
                 gc.getMap().plot(41, 58).setFeatureType(iCape, 0)
                 gc.getMap().plot(8, 17).setFeatureType(iCape, 0)
                 gc.getMap().plot(12, 21).setFeatureType(-1, 0)

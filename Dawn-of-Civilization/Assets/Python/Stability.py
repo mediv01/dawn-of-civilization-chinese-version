@@ -1165,19 +1165,22 @@ def calculateStability(iPlayer):
 
             if gc.getGame().getGameTurn() >= getTurnForYear(1840) and gc.getGame().getGameTurn() <= getTurnForYear(
                     1949):  # 鸦片战争到新中国成立
-                iCivicEraTechStability -= 5
+                #iCivicEraTechStability -= 5
+                pass
+
             if gc.getGame().getGameTurn() >= getTurnForYear(800) and gc.getGame().getGameTurn() <= getTurnForYear(
                     979):  # 唐末五代十国
-                iCivicEraTechStability -= 5
+                #iCivicEraTechStability -= 5
+                pass
             if gc.getGame().getGameTurn() >= getTurnForYear(299) and gc.getGame().getGameTurn() <= getTurnForYear(
                     580):  # 八王之乱到南北朝结束
-                iCivicEraTechStability -= 3
+                #iCivicEraTechStability -= 3
+                pass
             if gc.getGame().getGameTurn() >= getTurnForYear(1127) and gc.getGame().getGameTurn() <= getTurnForYear(
                     1368):  # 南宋到明朝初期
-                iCivicEraTechStability -= 5
-        #		if gc.getGame().getGameTurn() >= getTurnForYear(-770) and gc.getGame().getGameTurn() <= getTurnForYear(-221):#春秋战国
-        #			iCivicEraTechStability -= 3
-        ##			utils.show(str(iCivicEraTechStability))
+                #iCivicEraTechStability -= 5
+                pass
+
         if iPlayer == iRussia:
             if gc.getGame().getGameTurn() >= getTurnForYear(1991) and gc.getGame().getGameTurn() <= getTurnForYear(
                     2020):  # 苏联解体

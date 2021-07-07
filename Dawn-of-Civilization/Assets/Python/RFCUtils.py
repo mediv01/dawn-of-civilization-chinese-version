@@ -224,6 +224,13 @@ class RFCUtils:
             f.write('\n')
             f.close
 
+    def log_congress_prob(self,strText):
+        if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
+            f = open(self.log_path()+"DoC_SmallMap_Log_Congress_Prob.log", 'a')
+            f.write((self.log_gettime()+str(strText)+u'').encode('utf8', 'xmlcharrefreplace'))
+            f.write('\n')
+            f.close
+
     def log_AI_Action(self,strText): #可能会报错
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
 
@@ -293,6 +300,10 @@ class RFCUtils:
 
             f = open(self.log_path() + "DoC_SmallMap_Log_AIWar.log", 'w')
             f.write('')
+
+            f = open(self.log_path() + "DoC_SmallMap_Log_Congress_Prob.log", 'w')
+            f.write('')
+
             f.close
 
 

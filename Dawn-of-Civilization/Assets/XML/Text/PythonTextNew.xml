@@ -464,7 +464,7 @@
 		<French>地区</French>
 	</TEXT>
 	
-		<TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_START_FALL</Tag>
 		<English>即将崩溃！</English>
 		<L1/><L2/><L3/><L4/>
@@ -473,5 +473,74 @@
 	</TEXT>
 	
 	
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME1_TIP1_1</Tag>
+		<English>控制美国所有的核心地区</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制美国所有的核心地区</Chinese>
+		<French>控制美国所有的核心地区</French>
+	</TEXT>
+	
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME1_TIP1_2</Tag>
+		<English>控制洛杉矶</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制洛杉矶</Chinese>
+		<French>控制洛杉矶</French>
+	</TEXT>	
+	
+	
+	
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME1_TIP1_3</Tag>
+		<English>控制西雅图</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制西雅图</Chinese>
+		<French>控制西雅图</French>
+	</TEXT>	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME1_TIP1_4</Tag>
+		<English>修建连通纽约、华盛顿、洛杉矶和西雅图的铁路</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>修建连通纽约、华盛顿、洛杉矶和西雅图的铁路</Chinese>
+		<French>修建连通纽约、华盛顿、洛杉矶和西雅图的铁路</French>
+	</TEXT>	
+	
+	
+		<TEXT>
+		<Tag>TXT_KEY_PROJECT_THEINTERNET_PROJECT</Tag>
+		<English>因特网工程</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>因特网工程</Chinese>
+		<French>因特网工程</French>
+	</TEXT>	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME2_TIP1_1</Tag>
+		<English>率先发现：  </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>率先发现：  </Chinese>
+		<French>率先发现：  </French>
+	</TEXT>	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME2_TIP1_2</Tag>
+		<English>率先建成：  </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>率先建成：  </Chinese>
+		<French>率先建成：  </French>
+	</TEXT>	
+	
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME1_TIP1_5</Tag>
+		<English>美国中西部城市数量：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>美国中西部城市数量：</Chinese>
+		<French>美国中西部城市数量：</French>
+	</TEXT>	
 
 </Civ4GameText>

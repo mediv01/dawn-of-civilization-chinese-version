@@ -142,6 +142,7 @@ class RiseAndFall:
         data.lTempPlots = lPlots
 
     def eventApply7615(self, popupReturn):
+        # 翻转城市
         iHuman = utils.getHumanID()
         lPlots = data.lTempPlots
         iNewCivFlip = data.iNewCivFlip
@@ -149,7 +150,8 @@ class RiseAndFall:
         iNumCities = gc.getPlayer(iNewCivFlip).getNumCities()
 
         lHumanCityList = [city for city in self.getConvertedCities(iNewCivFlip, lPlots) if city.getOwner() == iHuman]
-
+        if(gc.getDefineINT("PYTHON_CITY_NOT_FLIP")>0):
+            lHumanCityList=[]
         if popupReturn.getButtonClicked() == 0:  # 1st button
             print("Flip agreed")
             CyInterface().addMessage(iHuman, True, iDuration, CyTranslator().getText("TXT_KEY_FLIP_AGREED", ()), "", 0, "", ColorTypes(iGreen), -1, -1, True, True)
@@ -1958,6 +1960,8 @@ class RiseAndFall:
                 if (gc.getDefineINT("PYTHON_DISABLE_AIWAR_TO_INCA_WHEN_HUMAN_PLAY") == 1):
                     if(utils.getHumanID() in [iInca,iAztecs]):
                         return
+                    if iOldWorldCiv is not utils.getHumanID():
+                        return
 
                 if not bAlreadyContacted:
                     if iNewWorldCiv == iMaya:
@@ -2071,6 +2075,7 @@ class RiseAndFall:
 
                     teamTarget = gc.getTeam(iTeamX)
                     if gc.getDefineINT("AIWAR_NO_MONGO_MEET_WAR") == 1: return
+                    if gc.getDefineINT("AIWAR_NO_MONGO_MEET_WAR_TO_HUMAN") == 1 and utils.getHumanID()==iTeamX: return
                     if iTeamX == iArabia:
                         tTL = (73, 31)
                         tBR = (84, 43)

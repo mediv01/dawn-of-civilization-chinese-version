@@ -33,6 +33,10 @@ public:
 	int AI_considerOfferThreshold(int ePlayer, int myPlayer) const;
 	int AI_considerOfferThreshold_Map(int ePlayer, int myPlayer) const;
 	bool AI_considerOffer(PlayerTypes ePlayer, const CLinkList<TradeData>* pTheirList, const CLinkList<TradeData>* pOurList, int iChange = 1) const;
+	int showAIstrategy(int iPlayer) const;
+
+
+
 	CyGame* getCyGame() const;
 	CyMap* getCyMap() const;
 	CyPlayer* getCyPlayer(int idx);

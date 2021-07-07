@@ -7657,12 +7657,21 @@ int CvPlot::getFoundValue(PlayerTypes eIndex)
 bool CvPlot::isBestAdjacentFound(PlayerTypes eIndex)
 {
 	CvPlot* pAdjacentPlot;
+	int iNearPlotValue;
 	int iI;
-
+	
 	int iPlotValue = GET_PLAYER(eIndex).AI_foundValue(getX_INLINE(), getY_INLINE());
+	if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
+		log_CWstring.Format(L"***************** %s 开始搜索附近坐标( %d , %d )************", GET_PLAYER(eIndex).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
+		GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+	}
 
 	if (iPlotValue == 0)
 	{
+		if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
+			log_CWstring.Format(L"***************** %s 结束搜索附近坐标( %d , %d )************", GET_PLAYER(eIndex).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
+			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+		}
 		return false;
 	}
 
@@ -7673,13 +7682,31 @@ bool CvPlot::isBestAdjacentFound(PlayerTypes eIndex)
 		if ((pAdjacentPlot != NULL) && pAdjacentPlot->isRevealed(GET_PLAYER(eIndex).getTeam(), false))
 		{
 			//if (pAdjacentPlot->getFoundValue(eIndex) >= getFoundValue(eIndex))
-			if (GET_PLAYER(eIndex).AI_foundValue(pAdjacentPlot->getX_INLINE(), pAdjacentPlot->getY_INLINE()) > iPlotValue)
+			iNearPlotValue = GET_PLAYER(eIndex).AI_foundValue(pAdjacentPlot->getX_INLINE(), pAdjacentPlot->getY_INLINE());
+
+			if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
+				log_CWstring.Format(L"%s 搜索附近坐标，附近坐标( %d , %d) 附近城市价值： %d  当前点城市价值： %d", GET_PLAYER(eIndex).getCivilizationDescription(), pAdjacentPlot->getX_INLINE(), pAdjacentPlot->getY_INLINE(), iNearPlotValue, iPlotValue);
+				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+			}
+
+
+			if (iNearPlotValue > iPlotValue)
 			{
+				if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
+					log_CWstring.Format(L"%s 搜索附近坐标，附近坐标( %d , %d) 附近城市价值大于当前点城市价值，决定不建城", GET_PLAYER(eIndex).getCivilizationDescription(), pAdjacentPlot->getX_INLINE(), pAdjacentPlot->getY_INLINE());
+					GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+					log_CWstring.Format(L"***************** %s 结束搜索附近坐标( %d , %d )************", GET_PLAYER(eIndex).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
+					GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+				}
+
 				return false;
 			}
 		}
 	}
-
+	if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
+		log_CWstring.Format(L"***************** %s 结束搜索附近坐标( %d , %d )************", GET_PLAYER(eIndex).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
+		GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+	}
 	return true;
 }
 

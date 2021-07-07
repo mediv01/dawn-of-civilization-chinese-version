@@ -235,6 +235,7 @@ class CvGameUtils:
 		return False
 
 	def calculateScore(self,argsList):
+		# 计算分数
 		ePlayer = argsList[0]
 		bFinal = argsList[1]
 		bVictory = argsList[2]
