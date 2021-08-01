@@ -248,7 +248,7 @@ class RFCUtils:
             f = open(self.log_path()+"DoC_SmallMap_Log_AI.log", 'w')
             f.write('')
             f.close
-            f = open(self.log_path()+"DoC_SmallMap_Log.log", 'w')
+            f = open(self.log_path()+"DoC_SmallMap_Log_Main.log", 'w')
             f.write('')
             f.close
             f = open(self.log_path()+"DoC_SmallMap_Log_Stability.log", 'w')
@@ -312,7 +312,7 @@ class RFCUtils:
 
     def logwithid(self,id,strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log.log", 'a')
+            f = open(self.log_path()+"DoC_SmallMap_Log_Main.log", 'a')
             f.write((str(self.log_gettime()+'['+gc.getPlayer(id).getCivilizationShortDescription(0))+'] ').encode('utf8', 'xmlcharrefreplace'))
             f.write(str(u''+strText))
             f.write('\n')

@@ -849,7 +849,7 @@ def getCivChineseNameKey(iPlayer):
     keytxt=keytxt.upper()
 
     if iPlayer in [iAztecs,iMaya,iPersia]:
-        if (utils.isReborn(iPlayer) and gc.getGame().getGameTurn() >=dRebirth[iPlayer]):
+        if (gc.getGame().getGameTurn() >=getTurnForYear(dRebirth[iPlayer])):
             keytxt=iPlayerRebornHashMap.get(iPlayer)
             keytxt=keytxt.upper()
 

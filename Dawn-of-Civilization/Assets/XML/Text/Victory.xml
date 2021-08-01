@@ -3210,16 +3210,16 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_CATHOLIC_SAINTS</Tag>
-		<English>天主教伟大先知：%d1/%d2</English>
+		<English>天主教伟大先知：%d1 / %d2</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>天主教伟大先知：%d1/%d2</Chinese>
+		<Chinese>天主教伟大先知：%d1 / %d2</Chinese>
 		<French>Catholic great prophets: %d1 / %d2</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_CATHOLIC_WORLD_TERRITORY</Tag>
-		<English>天主教文明控制的领土：1/%2%</English>
+		<English>天主教文明控制的领土：%s1 / %s2  %</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>天主教文明控制的领土：1/%2%</Chinese>
+		<Chinese>天主教文明控制的领土：%s1 / %s2  %</Chinese>
 		<French>Territory controlled by Catholic civilizations: %s1 / %s2%</French>
 	</TEXT>
 	<TEXT>
@@ -3630,9 +3630,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_HEALTH_TURNS</Tag>
-		<English>预期寿命等级最高的匝数：%d1/%d2</English>
+		<English>预期寿命等级最高的回合：%d1/%d2</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>预期寿命等级最高的匝数：%d1/%d2</Chinese>
+		<Chinese>预期寿命等级最高的回合：%d1/%d2</Chinese>
 		<French>Turns with highest life expectancy rating: %d1 / %d2</French>
 	</TEXT>
 	<TEXT>
@@ -4232,9 +4232,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_PIRACY</Tag>
-		<English>来自海盗的黄金%d1/%d2</English>
+		<English>来自海盗的黄金 %d1/%d2</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>来自海盗的黄金%d1/%d2</Chinese>
+		<Chinese>来自海盗的黄金 %d1/%d2</Chinese>
 		<French>Gold from piracy: %d1 / %d2</French>
 	</TEXT>
 	<TEXT>

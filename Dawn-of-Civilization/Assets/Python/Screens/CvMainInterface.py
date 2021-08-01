@@ -1057,6 +1057,7 @@ class CvMainInterface:
 		screen.addPanel( "ScoreBackground", u"", u"", True, False, 0, 0, 0, 0, PanelStyles.PANEL_STYLE_HUD_HELP )
 		screen.hide( "ScoreBackground" )
 
+		# mediv01 不显示最后野蛮人拜占庭
 		for i in range( gc.getMAX_PLAYERS() ):
 			szName = "ScoreText" + str(i)
 			screen.setText( szName, "Background", u"", CvUtil.FONT_RIGHT_JUSTIFY, 996, 622, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CONTACT_CIV, i, -1 )
@@ -4996,6 +4997,7 @@ class CvMainInterface:
 		screen.hide( "ScoreBackground" )
 		
 # BUG - Align Icons - start
+		# mediv01 不显示最后野蛮人拜占庭
 		for i in range( gc.getMAX_PLAYERS() ):
 			szName = "ScoreText" + str(i)
 			screen.hide( szName )
@@ -5059,8 +5061,8 @@ class CvMainInterface:
 								if (gc.getPlayer(ePlayer).isEverAlive() and not gc.getPlayer(ePlayer).isBarbarian()
 									and (gc.getPlayer(ePlayer).isAlive() or ScoreOpt.isShowDeadCivs())):
 # BUG - Dead Civs - end
-# BUG - Minor Civs - start
-									if (not gc.getPlayer(ePlayer).isMinorCiv() or ScoreOpt.isShowMinorCivs()):
+# BUG - Minor Civs - start			# 排除野蛮人拜占庭
+									if ((not gc.getPlayer(ePlayer).isMinorCiv() or ScoreOpt.isShowMinorCivs()) and ePlayer<=iCanada+3):
 # BUG - Minor Civs - end
 										if (gc.getPlayer(ePlayer).getTeam() == eTeam):
 											szBuffer = u"<font=2>"
