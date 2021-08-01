@@ -835,7 +835,7 @@
 
     <Define>
         <DefineName>GAME_TEXT_DISABLE_DYNAMIC_NAMES</DefineName>        <!-- 1为关闭动态国家名称  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
     <Define>
@@ -899,7 +899,7 @@
 
     <Define>
         <DefineName>CVTECH_SHOW_TECH_DISCOVERY2_SHOW_DEAD</DefineName>        <!-- 1为显示科技树科技研究列表是否显示已经崩溃的国家 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>CVTECH_SHOW_TECH_DISCOVERY2_MAX</DefineName>        <!-- 1为显示科技树科技被哪些国家研究列表的最大数量 999为默认模式 mediv01 -->
@@ -912,8 +912,24 @@
     </Define>
     <Define>
         <DefineName>CVTECH_SHOW_TECH_DISCOVERY3_MAX</DefineName>        <!-- 1为显示科技树科技尚未被哪些国家研究列表的最大数量 999为默认模式 mediv01 -->
-        <iDefineIntVal>5</iDefineIntVal>
+        <iDefineIntVal>999</iDefineIntVal>
     </Define>
+	
+	    <Define>
+        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3_MINVALUE</DefineName>        <!-- 大于0的数字为显示可出售的科技的值 999为默认模式 mediv01 -->
+        <iDefineIntVal>200</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3_HIGHLIGHT_MINVALUE</DefineName>        <!-- 大于0的数字为高亮显示科技交易的价值比例 80代表是80% 0为默认模式 mediv01 -->
+        <iDefineIntVal>80</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVTECH_SHOW_TECH_BEING_RESEARCH</DefineName>        <!-- 1为显示科技树科技正在被哪些国家研究 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
 
 
 
@@ -929,8 +945,8 @@
     </Define>
 
     <Define>
-        <DefineName>CVGAMETEXT_TRADE_SHOW_ASK_VALUE</DefineName>        <!-- 1为显示交勒索价值 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <DefineName>CVGAMETEXT_TRADE_SHOW_ASK_VALUE</DefineName>        <!-- 1为显示交勒索价值 感觉没什么用，建议关闭，0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
     <Define>
@@ -956,6 +972,16 @@
 
     <Define>
         <DefineName>CVGAMETEXT_SHOW_TRADING_COMPANY_IN_MAP</DefineName>        <!-- 地块显示是否有贸易公司刷兵点，0为默认模式  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>CVGAMETEXT_SHOW_PLANTATION_CAN_BE_BUILD_BY_SLAVE</DefineName>        <!-- 地块显示该资源能否被奴隶建造种植园，0为默认模式  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+		<Define>
+        <DefineName>CVGAMETEXT_SHOW_BONUS_TRADE_VALUE</DefineName>        <!-- 显示该资源交易价值的最小阈值 0为默认模式  mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
@@ -1557,7 +1583,33 @@
         <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_ARMY_SCORE</DefineName>        <!-- 大于0的数字表明每100点军力的分数 0为默认模式， mediv01  2021年8月版本新增内容 -->
         <iDefineIntVal>10</iDefineIntVal>
     </Define>
+	
+    <Define>
+        <DefineName>CVTEAMAI_CITY_TRADEVAL_MULTIPLIERTIMES10000</DefineName>        <!-- 大于0的数字为AI与人类进行城市交易时的乘数，数字需要除以10000  0和10000为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1000</iDefineIntVal>
+    </Define>
+	
+	
+    <Define>
+        <DefineName>CVPLAYER_CAN_ALWAYS_TRADE_CITY</DefineName>        <!-- 大于0的数字为总是可以交易城市（包括首都）  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
+    <Define>
+        <DefineName>CVTEAMAI_CITY_TRADEVAL_FOR_VASSAL_MULTIPLIERTIMES10000</DefineName>        <!-- 大于0的数字为AI与人类附庸后，进行城市交易时的乘数，数字需要除以10000  0和10000为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+	
+	
+	<Define>
+        <DefineName>CVUNIT_CAN_CAPTURE_WORKER_WITHOUT_SLAVERY</DefineName>        <!-- 大于0的数字为无需奴隶制也能抓工人 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>CVUNIT_HUMAN_SPY_CANNOT_REVEAL</DefineName>        <!-- 大于0的数字为人类的间谍不会被暴露杀害 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  BUGFIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
@@ -1573,6 +1625,12 @@
 
     <Define>
         <DefineName>CVGAMECORE_FIX_BUG_PERFORMANCE_UP01</DefineName>        <!-- 1为修正游戏中的内存泄露错误， 0为默认模式 此项目不可XML配置，写死在CvGLOBAL.h里，需要修改的话可以重新生成DLL mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	
+	<Define>
+        <DefineName>CVGAMECORE_NEW_AUTOSAVE_FEATURE</DefineName>        <!-- 在游戏回合结束时保存游戏，而不是游戏回合开始时 0为默认模式 此项目不可XML配置，写死在CvGLOBAL.h里，需要修改的话可以重新生成DLL mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
@@ -1599,11 +1657,11 @@
 
     <Define>
         <DefineName>PYTHON_OUTPUT_DEBUG_TEXT_TO_LOG</DefineName>        <!-- 1为将DEBUG的信息输出为LOG文件 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
     <Define>
-        <DefineName>PYTHON_LOG_ON_AIACTION</DefineName>        <!-- 1为记录AI行为的日志 此选项开启后会PYTHON报错，建议设置为0  0为默认模式 mediv01 -->
+        <DefineName>PYTHON_LOG_ON_AIACTION</DefineName>        <!-- 1为记录AI行为的日志 0为默认模式 mediv01 -->
         <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
@@ -1649,7 +1707,7 @@
 
     <Define>
         <DefineName>PYTHON_LOG_ON_GREATPEOPLE</DefineName>        <!-- 1为记录伟人的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1665,18 +1723,18 @@
 
     <Define>
         <DefineName>PYTHON_LOG_ON_TECH</DefineName>        <!-- 1为记录科技获取的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
 
     <Define>
         <DefineName>PYTHON_LOG_ON_CITY_BUILD</DefineName>        <!-- 1为记录城市建立的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
     <Define>
         <DefineName>PYTHON_LOG_ON_CITY_CONQUEST</DefineName>        <!-- 1为记录城市被攻占的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1715,12 +1773,17 @@
 
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  DLL LOG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->	
 	<Define>
-        <DefineName>CVGAMECORE_LOG_AI_ACTION</DefineName>        <!-- 1为新增了DLL的LOG函数IO总开关 0为默认模式， mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <DefineName>CVGAMECORE_DLL_LOG</DefineName>        <!-- 1为新增了DLL的LOG函数IO总开关 0为默认模式， mediv01  -->
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 	
 	<Define>
         <DefineName>CVGAMECORE_LOG_AI_BUILDCITY</DefineName>        <!-- 1为新增了DLL的LOG函数，记录AI建城决策 0为默认模式， mediv01  -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>CVGAMECORE_LOG_SHOW_CITY_TRADE_VALUE</DefineName>        <!-- 1为在DLL记录城市的价值 0为默认模式， mediv01  -->
         <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
@@ -1944,6 +2007,16 @@
     </Define>
 
     <Define>
+        <DefineName>PYTHON_MANUAL_RESURRECTION_CIV_MAINCIV</DefineName>        <!-- 1为启用主动复活英法等主要文明的机制，在特定的节点复活比较重要的文明 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>PYTHON_LEADER_DISABLE_MAO</DefineName>        <!-- 1为启用在领袖菜单中禁用毛主席，主要为了视频合规写的参数 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
         <DefineName>PYTHON_MANUAL_RESURRECTION_AFTER_MONGOLIA</DefineName>        <!-- 1为蒙古崩溃后主动复活明朝、帖木儿和瓦剌 0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
@@ -2056,7 +2129,7 @@
 
     <Define>
         <DefineName>AIWAR_PY_CAN_USE_AI_WAR_TO_DEAD_CIV</DefineName>        <!-- 1为可以对死亡文明刷兵  1为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
 
@@ -2174,6 +2247,36 @@
 	<Define>
         <DefineName>PYTHON_CONGRESS_VOTE_FOR_EMPTY_TERROR_WITH_RANDOM</DefineName>        <!--  1为当投票发现未知领土时，不再是ALWAYS YES，按照概率计算，0为默认模式  mediv01 2021年8月版本 -->
         <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	
+		<Define>
+        <DefineName>PYTHON_DISABLE_RAILWAY_WAR_TO_HUMAN</DefineName>        <!--  1为当投票发现未知领土时，不再是ALWAYS YES，按照概率计算，0为默认模式  mediv01 2021年8月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	
+	<Define>
+        <DefineName>PYTHON_AZTEC_COMBAT_SLAVE_PROB</DefineName>        <!--  大于0的数字为阿兹特克战斗抓获奴隶的概率，0或者35为默认模式  mediv01 2021年8月版本 -->
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+	
+	
+	<Define>
+        <DefineName>PYTHON_SHOW_CIV_MONEY_ON_PANNEL</DefineName>        <!--  大于0的数字为在界面显示国家可用金币，0为默认模式  mediv01 2021年8月版本 -->
+        <iDefineIntVal>1000</iDefineIntVal>
+    </Define>
+	
+
+	<Define>
+        <DefineName>PYTHON_CAN_USE_TECHTRADE_VALUE_ALERT</DefineName>        <!--  大于0的数字为开启科技交易提示功能，0为默认模式  mediv01 2021年8月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>	
+	
+	
+	<Define>
+        <DefineName>PYTHON_TECHTRADE_VALUE_MIN_PERCENT</DefineName>        <!--  大于0的数字为在界面显示国家可用金币，0为默认模式  mediv01 2021年8月版本 -->
+        <iDefineIntVal>95</iDefineIntVal>
     </Define>
 
 	<![CDATA[ 

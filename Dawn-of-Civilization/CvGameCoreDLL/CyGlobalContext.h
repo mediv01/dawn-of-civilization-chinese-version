@@ -30,6 +30,9 @@ public:
 	static CyGlobalContext& getInstance();		// singleton accessor
 
 	bool isDebugBuild() const;
+
+
+	int getAIdealValuetoMoney(int ePlayerID, int myPlayerID, int tradetypeID, int tradeitemID) const;
 	int AI_considerOfferThreshold(int ePlayer, int myPlayer) const;
 	int AI_considerOfferThreshold_Map(int ePlayer, int myPlayer) const;
 	bool AI_considerOffer(PlayerTypes ePlayer, const CLinkList<TradeData>* pTheirList, const CLinkList<TradeData>* pOurList, int iChange = 1) const;

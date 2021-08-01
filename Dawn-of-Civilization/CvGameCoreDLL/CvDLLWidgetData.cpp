@@ -4256,26 +4256,40 @@ void CvDLLWidgetData::parseTradeItem(CvWidgetDataStruct &widgetDataStruct, CvWSt
 		}
 
 
-		PlayerTypes pHuman = eWhoTo;
-		PlayerTypes pAI = eWhoFrom;
-
+		PlayerTypes pBuyResourcePlayer = eWhoTo;
+		PlayerTypes pSellResourcePlayer = eWhoFrom;
+		CLinkList<TradeData> pSellingResourceList;
+		//TradeData item;
+		//setTradeItem(&item, ((TradeableItems)(widgetDataStruct.m_iData1)), widgetDataStruct.m_iData2);;
+		pSellingResourceList.insertAtEnd(item);
+		//int iOurValue = GET_PLAYER(pHuman).AI_dealVal(pAI, &pOurList, false, -1) / GET_PLAYER(pHuman).AI_goldTradeValuePercent(pAI) * 100;
 
 		if (GC.getDefineINT("CVGAMETEXT_TRADE_SHOW_VALUE") == 1) { //mediv01 显示物品交易价值
 
 
 
 
-			CLinkList<TradeData> pOurList;
-			//TradeData item;
-			//setTradeItem(&item, ((TradeableItems)(widgetDataStruct.m_iData1)), widgetDataStruct.m_iData2);;
-			pOurList.insertAtEnd(item);
-			//int iOurValue = GET_PLAYER(pHuman).AI_dealVal(pAI, &pOurList, false, -1) / GET_PLAYER(pHuman).AI_goldTradeValuePercent(pAI) * 100;
+
 			int iOurValue = 0;
 
 
 
-			iOurValue = GET_PLAYER(pHuman).AI_dealVal(pAI, &pOurList, false, -1) / GET_PLAYER(pAI).AI_goldTradeValuePercent(pHuman) * 100;
-			szTempBuffer.Format(SETCOLR L"交易价值：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), iOurValue);
+			iOurValue = GET_PLAYER(pBuyResourcePlayer).AI_dealVal(pSellResourcePlayer, &pSellingResourceList, false, -1) / GET_PLAYER(pBuyResourcePlayer).AI_goldTradeValuePercent(pSellResourcePlayer) * 100;
+			
+			//在卖资源的时候
+			//实测 此处的pAI为人类玩家，pHuman为AI
+			//CvWString log_CWstring;
+			//log_CWstring.Format(L"%s 的交易价值1111： %d", GET_PLAYER(pBuyResourcePlayer).getCivilizationDescription(), iOurValue);
+			//GC.logs(log_CWstring, "testrade.log");
+
+
+			TradeableItems TradeItem = (TradeableItems)(widgetDataStruct.m_iData1);
+			if (TradeItem == TRADE_RESOURCES) {
+				szTempBuffer.Format(SETCOLR L"交易回合金：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), (int)(iOurValue/10));
+			}
+			else {
+				szTempBuffer.Format(SETCOLR L"交易价值：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), iOurValue);
+			}
 			szBuffer.append(NEWLINE);
 			szBuffer.append(szTempBuffer);
 
@@ -4306,7 +4320,7 @@ void CvDLLWidgetData::parseTradeItem(CvWidgetDataStruct &widgetDataStruct, CvWSt
 				*/
 
 				//显示成AI的回合金
-				maxgoldperturn = GET_PLAYER(pAI).AI_maxGoldPerTurnTrade(pHuman);
+				maxgoldperturn = GET_PLAYER(pSellResourcePlayer).AI_maxGoldPerTurnTrade(pBuyResourcePlayer);
 				szTempBuffer.Format(SETCOLR L"最大交易回合金：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), maxgoldperturn);
 				szBuffer.append(NEWLINE);
 				szBuffer.append(szTempBuffer);
@@ -4337,13 +4351,17 @@ void CvDLLWidgetData::parseTradeItem(CvWidgetDataStruct &widgetDataStruct, CvWSt
 			//pOurList.insertAtEnd(item);
 
 			//int iOurValue = GET_PLAYER(pHuman).AI_dealVal(pAI, &pOurList, false, -1) / GET_PLAYER(pAI).AI_goldTradeValuePercent(pHuman) * 100;
-			int iOurValue = GET_PLAYER(pHuman).AI_considerOffer_Threshold(pHuman, pAI);
-			int iOurValue2 = GET_PLAYER(pAI).AI_considerOffer_Threshold(pAI, pHuman);
+			int iOurValue = GET_PLAYER(pBuyResourcePlayer).AI_considerOffer_Threshold(pBuyResourcePlayer, pSellResourcePlayer);
+			int iOurValue2 = GET_PLAYER(pSellResourcePlayer).AI_considerOffer_Threshold(pSellResourcePlayer, pBuyResourcePlayer);
 			int iOurValue_f = std::max(iOurValue, iOurValue2);
 			szTempBuffer.Format(SETCOLR L"可勒索价值：%d" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), iOurValue_f);
 			szBuffer.append(NEWLINE);
 			szBuffer.append(szTempBuffer);
 		}
+
+
+
+		
 	}
 }
 

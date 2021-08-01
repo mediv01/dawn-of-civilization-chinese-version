@@ -4620,7 +4620,7 @@ class CvMainInterface:
 		return 0
 		
 	# Will update the scores
-	def updateScoreStrings( self ):
+	def setNumCitiesupdateScoreStrings( self ):
 	# 显示屏幕上的排名
 		screen = CyGInterfaceScreen( "MainInterface", CvScreenEnums.MAIN_INTERFACE )
 
@@ -4844,7 +4844,7 @@ class CvMainInterface:
 														szTempBuffer = u"-%s (%d)" %(gc.getTechInfo(gc.getPlayer(ePlayer).getCurrentResearch()).getDescription(), gc.getPlayer(ePlayer).getResearchTurnsLeft(gc.getPlayer(ePlayer).getCurrentResearch(), True))
 														szBuffer = szBuffer + szTempBuffer
 														if (bAlignIcons):
-															scores.setResearch(gc.getPlayer(ePlayer).getCurrentResearch(), gc.getPlayer(ePlayer).getResearchTurnsLeft(gc.getPlayer(ePlayer).getCurrentResearch(), True))
+															scores.setResearch(gc.getPlayer(ePlayer).getCurrentResearch(), gc.getPlayer(ePlayer).getResearchTurnsLeft(gc.getPlayer(ePlayer).getCurrentResearch(), True),ePlayer)
 												# BUG: ...end of indentation
 # BUG - Dead Civs - end
 # BUG - Power Rating - start
@@ -4909,8 +4909,18 @@ class CvMainInterface:
 												if (ScoreOpt.isShowCountCities()):
 													if (PlayerUtil.canSeeCityList(ePlayer)):
 														szTempBuffer = u"%d" % PlayerUtil.getNumCities(ePlayer)
+														iGoldThrehold=gc.getDefineINT("PYTHON_SHOW_CIV_MONEY_ON_PANNEL")
+														if (iGoldThrehold > 0):
+															iGold = gc.getPlayer(ePlayer).AI_maxGoldTrade(gc.getGame().getActivePlayer())
+															if (iGold>=iGoldThrehold):
+																szTempBuffer = u"C:%d  G:%d" % (PlayerUtil.getNumCities(ePlayer),iGold)
 													else:
 														szTempBuffer = BugUtil.colorText(u"%d" % PlayerUtil.getNumRevealedCities(ePlayer), "COLOR_CYAN")
+														iGoldThrehold=gc.getDefineINT("PYTHON_SHOW_CIV_MONEY_ON_PANNEL")
+														if (iGoldThrehold > 0):
+															iGold = gc.getPlayer(ePlayer).AI_maxGoldTrade(gc.getGame().getActivePlayer())
+															if (iGold>=iGoldThrehold):
+																szTempBuffer = BugUtil.colorText(u"C:%d  G:%d" % (PlayerUtil.getNumRevealedCities(ePlayer),iGold), "COLOR_CYAN")
 													szBuffer = szBuffer + " " + szTempBuffer
 													if (bAlignIcons):
 														scores.setNumCities(szTempBuffer)

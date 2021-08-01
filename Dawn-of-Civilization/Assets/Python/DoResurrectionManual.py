@@ -28,31 +28,32 @@ def Check_Resurrection_Civ(iGameTurn):
 
     # 贞观之治的复兴
     # 康乾盛世的复兴
-    if (not gc.getPlayer(iChina).isAlive()):
-        Check_Resurrection_Civ_with_Year(iGameTurn, iChina, -220, 100)
-        Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 600, 850)
-        Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 1368, 1500)
-        Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 1700, 1750)
-        Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 1949, 2020)
+    if (gc.getDefineINT("PYTHON_MANUAL_RESURRECTION_CIV_MAINCIV") == 1):
+        if (not gc.getPlayer(iChina).isAlive()):
+            Check_Resurrection_Civ_with_Year(iGameTurn, iChina, -220, 100)
+            Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 600, 850)
+            Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 1368, 1500)
+            Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 1700, 1750)
+            Check_Resurrection_Civ_with_Year(iGameTurn, iChina, 1949, 2020)
 
-    # 百年战争后的复兴
-    if (not gc.getPlayer(iFrance).isAlive()):
-        Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1400, 1500)
-        Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1720, 1830)
-        Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1870, 1910)
-        Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1925, 1939)
-        Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1950, 2020)
+        # 百年战争后的复兴
+        if (not gc.getPlayer(iFrance).isAlive()):
+            Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1400, 1500)
+            Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1720, 1830)
+            Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1870, 1910)
+            Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1925, 1939)
+            Check_Resurrection_Civ_with_Year(iGameTurn, iFrance, 1950, 2020)
 
-    # 一战德国
-    if (not gc.getPlayer(iGermany).isAlive()):
-        Check_Resurrection_Civ_with_Year(iGameTurn, iGermany, 1850, 1880)
-        Check_Resurrection_Civ_with_Year(iGameTurn, iGermany, 1900, 1915)
-        Check_Resurrection_Civ_with_Year(iGameTurn, iGermany, 1925, 1942)
-        Check_Resurrection_Civ_with_Year(iGameTurn, iGermany, 1990, 2020)
+        # 一战德国
+        if (not gc.getPlayer(iGermany).isAlive()):
+            Check_Resurrection_Civ_with_Year(iGameTurn, iGermany, 1850, 1880)
+            Check_Resurrection_Civ_with_Year(iGameTurn, iGermany, 1900, 1915)
+            Check_Resurrection_Civ_with_Year(iGameTurn, iGermany, 1925, 1942)
+            Check_Resurrection_Civ_with_Year(iGameTurn, iGermany, 1990, 2020)
 
-    # 苏联
-    if (not gc.getPlayer(iRussia).isAlive()):
-        Check_Resurrection_Civ_with_Year(iGameTurn, iRussia, 1870, 1990)
+        # 苏联
+        if (not gc.getPlayer(iRussia).isAlive()):
+            Check_Resurrection_Civ_with_Year(iGameTurn, iRussia, 1870, 1990)
 
 
 

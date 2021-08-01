@@ -4651,7 +4651,18 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 					return false;
 				}
 			}
-			if (pCityTraded->isOccupation()) 
+
+
+			if (NULL != pCityTraded && pCityTraded->getLiberationPlayer(false) == eWhoTo)
+			{
+				return true;
+			}
+
+			if (GC.getDefineINT("CVPLAYER_CAN_ALWAYS_TRADE_CITY") > 0) {
+				return true;
+			}
+
+			if (pCityTraded->isOccupation())
 			{
 				return false;
 			}
@@ -4660,12 +4671,6 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 			{
 				return false;
 			}
-
-			if (NULL != pCityTraded && pCityTraded->getLiberationPlayer(false) == eWhoTo)
-			{
-				return true;
-			}
-
 			if (GET_PLAYER(eWhoTo).canReceiveTradeCity())
 			{
 				if (0 == GC.getGameINLINE().getMaxCityElimination())
@@ -15945,7 +15950,7 @@ int CvPlayer::getEspionageMissionBaseCost(EspionageMissionTypes eMission, Player
 	{
 		// Steal Treasury
 		int iNumTotalGold = (GET_PLAYER(eTargetPlayer).getGold() * kMission.getStealTreasuryTypes()) / 100;
-
+		// 间谍能偷的钱
 		if (NULL != pCity)
 		{
 			iNumTotalGold *= pCity->getPopulation();
@@ -16908,7 +16913,7 @@ bool CvPlayer::doEspionageMission(EspionageMissionTypes eMission, PlayerTypes eT
 
 	//////////////////////////////
 	// Steal Treasury
-
+	// 间谍偷钱
 	if (kMission.getStealTreasuryTypes() > 0)
 	{
 		if (NO_PLAYER != eTargetPlayer)

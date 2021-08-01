@@ -2226,6 +2226,8 @@ void CvGame::update()
 {
 	PROFILE("CvGame::update");
 
+
+
 	if (GC.getDefineINT("CVGAMECORE_DLL_AUTO_DEBUGMODE") == 1) {
 		GC.setDefineINT("CVGAMECORE_DLL_AUTO_DEBUGMODE", 2);
 
@@ -2322,7 +2324,8 @@ void CvGame::update()
 			// edead: disable autosave during autoplay
 			if ((GC.getDefineINT("NO_AUTOSAVE_DURING_AUTOPLAY") == 0) || ((getGameTurn() > 0) && !(getGameTurn() < getGameTurnForYear(GET_PLAYER(getActivePlayer()).getBirthYear(), getStartYear(), getCalendar(), getGameSpeedType()))))
 			{
-				gDLL->getEngineIFace()->AutoSave(true);
+				//mediv01 禁用其他AutoSave
+				//gDLL->getEngineIFace()->AutoSave(true);
 			}
 			// edead: end
 			//gDLL->getEngineIFace()->AutoSave(true);
@@ -6199,11 +6202,20 @@ void CvGame::doTurn()
 	int iLoopPlayer;
 	int iI;
 
+	// mediv01 这里的AutoSave太迟了，去Update里设置
+	// edead: disable autosave during autoplay
+	if ((GC.getDefineINT("NO_AUTOSAVE_DURING_AUTOPLAY") == 0) || ((getGameTurn() > 0) && !(getGameTurn() < getGameTurnForYear(GET_PLAYER(getActivePlayer()).getBirthYear(), getStartYear(), getCalendar(), getGameSpeedType()))))
+	{
+		//gDLL->getEngineIFace()->AutoSave();
+	}
+
 	//Rhye
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		GET_PLAYER((PlayerTypes)iI).m_bTurnPlayed = false;
 	}
+
+
 
 	// END OF TURN
 	CvEventReporter::getInstance().beginGameTurn( getGameTurn() );
@@ -6323,11 +6335,14 @@ void CvGame::doTurn()
 
 	stopProfilingDLL();
 
+	// mediv01 这里的AUTOSAVE 太晚了，往前挪
+	/*
 	// edead: disable autosave during autoplay
 	if ((GC.getDefineINT("NO_AUTOSAVE_DURING_AUTOPLAY") == 0) || ((getGameTurn() > 0) && !(getGameTurn() < getGameTurnForYear(GET_PLAYER(getActivePlayer()).getBirthYear(), getStartYear(), getCalendar(), getGameSpeedType()))))
 	{
-		gDLL->getEngineIFace()->AutoSave();
+		//gDLL->getEngineIFace()->AutoSave();
 	}
+	*/
 	// edead: end
 	//gDLL->getEngineIFace()->AutoSave();
 }

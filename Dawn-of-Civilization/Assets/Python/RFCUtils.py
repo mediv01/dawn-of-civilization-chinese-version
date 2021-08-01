@@ -197,7 +197,7 @@ class RFCUtils:
 
     def log(self,strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log.log", 'a')
+            f = open(self.log_path()+"DoC_SmallMap_Log_Main.log", 'a')
             import HTMLParser
             strText=HTMLParser.HTMLParser().unescape(strText)
             f.write((self.log_gettime()+strText.decode('utf-8')+u''))
@@ -225,7 +225,10 @@ class RFCUtils:
             f.close
 
     def log_congress_prob(self,strText):
+        # 模拟计算统一不进行日志IO
+        return 0
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
+
             f = open(self.log_path()+"DoC_SmallMap_Log_Congress_Prob.log", 'a')
             f.write((self.log_gettime()+str(strText)+u'').encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
@@ -2079,6 +2082,7 @@ class RFCUtils:
         return [(x, y) for x in range(iWorldX) for y in range(iWorldY)]
 
     def captureUnit(self, pLosingUnit, pWinningUnit, iUnit, iChance):
+        # 抓取奴隶的函数
         if pLosingUnit.isAnimal(): return
 
         if pLosingUnit.getDomainType() != DomainTypes.DOMAIN_LAND: return

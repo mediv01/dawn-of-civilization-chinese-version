@@ -7,6 +7,22 @@
 
 #include "CvDefines.h"
 
+enum TextColorTypes {
+	COLOR_PLAYER_CYAN,  //亮蓝色
+	COLOR_PLAYER_GREEN, //墨绿色
+	COLOR_PLAYER_YELLOW, //亮黄色 高亮颜色
+	COLOR_PLAYER_RED_TEXT,  //深红色 警告标记
+	COLOR_PLAYER_WHITE  //白色
+
+};
+
+enum OperationType {
+	MIN,
+	MAX,
+	AVERAGE
+};
+
+
 enum GameStateTypes					// Exposed to Python
 {
 	GAMESTATE_ON,
@@ -2412,6 +2428,8 @@ enum TradeableItems						// Exposed to Python
 	NUM_TRADEABLE_ITEMS = NUM_TRADEABLE_HEADINGS,
 #endif
 };
+
+
 
 enum DiploEventTypes					// Exposed to Python
 {

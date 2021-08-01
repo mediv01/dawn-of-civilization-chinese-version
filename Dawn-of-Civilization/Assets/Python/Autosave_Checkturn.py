@@ -64,7 +64,7 @@ def saveGame(type="auto", variant=None):
     else:
         savedir='auto'
     epoch = "BC"
-    names='mediv01 - '+gc.getPlayer(human_id).getCivilizationShortDescription(0)+' - '
+    names='AutoSave - '+gc.getPlayer(human_id).getCivilizationShortDescription(0)+' - '
     curtime1 = str(' ['+time.strftime('%Y_%m_%d %H_%M_%S', time.localtime(time.time()))+'] ')
     if gc.getGame().getGameTurnYear() > 0: epoch = "AD"
     filePath = BugPath.join(BugPath.getRootDir(), 'Saves', 'single', savedir,

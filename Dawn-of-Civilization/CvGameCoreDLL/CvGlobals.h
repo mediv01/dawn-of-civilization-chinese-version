@@ -21,14 +21,13 @@ static const int CVGAMECORE_FIX_BUG_PERFORMANCE_UP02 = 1; //mediv01 预留
 static const int CVGAMECORE_FIX_BUG_PERFORMANCE_UP03 = 1; //mediv01 预留
 static const int CVGAMECORE_FIX_BUG_PERFORMANCE_UP04 = 1; //mediv01 预留
 
-
+static const int CVGAMECORE_NEW_AUTOSAVE_FEATURE = 1;
+// 启用新的AutoSave机制，在游戏回合结束时保存游戏，而不是游戏回合开始时
 //mediv01  游戏BUG修复参数结束
 
 //全局变量区
 static CvWString log_CWstring;
 static CvString log_CvString;
-
-
 
 #ifndef CIV4_GLOBALS_H
 #define CIV4_GLOBALS_H
@@ -719,6 +718,11 @@ public:
 
 
 	DllExport int AI_foundValue(int PlayerID, int iX, int iY, int iMinRivalRange, bool bStartingLoc) const;
+
+	//mediv01
+	int AItradeTechValList(PlayerTypes eWhoTo, PlayerTypes eMyPlayer, TechTypes iTech, OperationType Operation) const;
+	bool CvGlobals::AIcantradeTech(PlayerTypes eWhoTo, PlayerTypes eMyPlayer, TechTypes iTech) const;
+
 	DllExport void logs(CvWString& buf, CvString filename) const;
 	DllExport void logs(CvString buf, CvString filename) const;
 	DllExport void logs(wchar* buf, CvString filename) const;

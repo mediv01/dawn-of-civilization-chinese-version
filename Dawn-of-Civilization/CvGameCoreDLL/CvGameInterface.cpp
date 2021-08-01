@@ -1640,6 +1640,15 @@ void CvGame::doControl(ControlTypes eControl)
 
 	case CONTROL_ENDTURN:
 	case CONTROL_ENDTURN_ALT:
+		// 游戏回合结束时自动保存 mediv01
+		if (CVGAMECORE_NEW_AUTOSAVE_FEATURE) {
+			// edead: disable autosave during autoplay
+			if ((GC.getDefineINT("NO_AUTOSAVE_DURING_AUTOPLAY") == 0) || ((getGameTurn() > 0) && !(getGameTurn() < getGameTurnForYear(GET_PLAYER(getActivePlayer()).getBirthYear(), getStartYear(), getCalendar(), getGameSpeedType()))))
+			{
+				gDLL->getEngineIFace()->AutoSave();
+			}
+		}
+
 		if (gDLL->getInterfaceIFace()->isEndTurnMessage())
 		{
 			CvMessageControl::getInstance().sendTurnComplete();
@@ -1647,6 +1656,15 @@ void CvGame::doControl(ControlTypes eControl)
 		break;
 
 	case CONTROL_FORCEENDTURN:
+		// 游戏回合结束时自动保存 mediv01
+		if (CVGAMECORE_NEW_AUTOSAVE_FEATURE) {
+			// edead: disable autosave during autoplay
+			if ((GC.getDefineINT("NO_AUTOSAVE_DURING_AUTOPLAY") == 0) || ((getGameTurn() > 0) && !(getGameTurn() < getGameTurnForYear(GET_PLAYER(getActivePlayer()).getBirthYear(), getStartYear(), getCalendar(), getGameSpeedType()))))
+			{
+				gDLL->getEngineIFace()->AutoSave();
+			}
+		}
+
 		CvMessageControl::getInstance().sendTurnComplete();
 		break;
 

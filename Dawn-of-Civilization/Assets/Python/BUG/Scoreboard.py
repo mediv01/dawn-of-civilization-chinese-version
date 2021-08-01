@@ -241,7 +241,8 @@ class Scoreboard:
 		self._set(WHEOOH)
 		
 	def setNumCities(self, value):
-		self._set(CITIES, smallText(value))
+		Text=smallText(value)
+		self._set(CITIES, Text)
 		
 	def setWar(self):
 		self._set(WAR, WAR_ICON)
@@ -252,12 +253,26 @@ class Scoreboard:
 	def setPower(self, value):
 		self._set(POWER, smallText(value))
 		
-	def setResearch(self, tech, turns):
+	def setResearch(self, tech, turns,iPlayer):
 		if (ScoreOpt.isShowResearchIcons()):
 			self._set(RESEARCH, tech)
 		else:
 			self._set(RESEARCH, smallText(gc.getTechInfo(tech).getDescription()))
-		self._set(RESEARCH_TURNS, smallText(u"(%d)" % turns))
+
+		tradeString=''
+		if (gc.getDefineINT("PYTHON_CAN_USE_TECHTRADE_VALUE_ALERT") > 0):
+			import AITradeValue
+
+			canTradeTech = AITradeValue.isTechTradalbeAndWorthy(iPlayer, tech)
+			if (canTradeTech):
+				tradeString = '[T]'
+		reSearchText=smallText(u"(%d) %s" % (turns,tradeString))
+		'''
+		if (gc.getDefineINT("PYTHON_SHOW_CIV_MONEY_ON_PANNEL") > 0):
+			iGold=gc.getPlayer(iPlayer).AI_maxGoldTrade(utils.getHumanID())
+			Text = smallText(u"%d    (G:%d)" % (value,iGold))
+		'''
+		self._set(RESEARCH_TURNS, reSearchText)
 		
 	def setEspionage(self):
 		self._set(ESPIONAGE)

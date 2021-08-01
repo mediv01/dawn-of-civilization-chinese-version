@@ -416,7 +416,10 @@ class CvRFCEventHandler:
 		
 		# capture slaves
 		if iWinningPlayer == iAztecs and not pAztecs.isReborn():
-			utils.captureUnit(pLosingUnit, pWinningUnit, iAztecSlave, 35)
+			iProb = 35
+			if gc.getDefineINT("PYTHON_AZTEC_COMBAT_SLAVE_PROB")>0:
+				iProb=gc.getDefineINT("PYTHON_AZTEC_COMBAT_SLAVE_PROB")
+			utils.captureUnit(pLosingUnit, pWinningUnit, iAztecSlave, iProb)
 			
 		elif iLosingPlayer == iNative:
 			if iWinningPlayer not in lCivBioNewWorld or True in data.lFirstContactConquerors:

@@ -168,6 +168,13 @@ class Resources:
             # silk near Astrakhan
             self.createResource(78, 51, iSilk)
 
+        if iGameTurn == getTurnForYear(1300):
+            if utils.getHumanID()==iAztecs:
+                if gc.getDefineINT("PYTHON_UHV_HELPER")>0:
+                    self.createResource(17, 35, iFish)  # Help Aztec UHV
+                    self.createResource(16, 37, iCorn)  # Help Aztec UHV
+
+
         if iGameTurn == getTurnForYear(1250):
             # gc.getMap().plot(57, 52).setBonusType(iWheat) #Amsterdam
             self.createResource(96, 36, iFish)  # Calcutta, Dhaka, Pagan

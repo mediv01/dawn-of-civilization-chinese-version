@@ -7491,7 +7491,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_ADMINISTRATIVE_CENTER</ArtDefineTag>
 			<PrereqTech>TECH_POLITICS</PrereqTech>
 			<bGovernmentCenter>1</bGovernmentCenter>
-			<iCost>-1</iCost>
+			<iCost>120</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>

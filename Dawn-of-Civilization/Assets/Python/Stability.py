@@ -62,6 +62,8 @@ def checkTurn(iGameTurn):
             completeCollapse(iPlayer)
         elif data.players[iPlayer].iTurnsToCollapse > 0:
             data.players[iPlayer].iTurnsToCollapse -= 1
+            import DynamicCivs
+            DynamicCivs.checkName(iPlayer)
 
         if getCrisisCountdown(iPlayer) > 0:
             changeCrisisCountdown(iPlayer, -1)
@@ -141,7 +143,7 @@ def triggerCollapse(iPlayer):
 
 
 def scheduleCollapse(iPlayer):
-    data.players[iPlayer].iTurnsToCollapse = 1
+    data.players[iPlayer].iTurnsToCollapse = 2
     #civname = gc.getPlayer(iPlayer).getCivilizationAdjectiveKey()
 
     if (gc.getDefineINT("PYTHON_USE_ADVANCE_ALERT") == 1):  # 增加提示信息参数控制
@@ -152,6 +154,8 @@ def scheduleCollapse(iPlayer):
         CyInterface().addMessage(gc.getGame().getActivePlayer(), False, iDuration, tem_text, "", 0, "",
                                  ColorTypes(iWhite), -1, -1, True, True)
         utils.log(tem_text)
+        import DynamicCivs
+        DynamicCivs.checkName(iPlayer)
 
     epoch = "BC"
     if gc.getGame().getGameTurnYear() > 0: epoch = "AD"

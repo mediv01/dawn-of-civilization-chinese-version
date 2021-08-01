@@ -1515,7 +1515,25 @@ def checkTurn(iGameTurn, iPlayer):
     elif iPlayer == iGermany:
 
         # first goal: settle seven great people in Berlin in 1900 AD
+        if isPossible(iGermany, 0):
+            lCity = utils.getPlotList((55, 50), (55, 50), [])
+            bParis = isControlledTile(iPlayer, lCity)
+            lCity = utils.getPlotList((65, 52), (65, 52), [])
+            bPoland1 = isControlledTile(iPlayer, lCity)
+            lCity = utils.getPlotList((67, 55), (67, 55), [])
+            bPoland2 = isControlledTile(iPlayer, lCity)
+
+
+            bBrandenburgGate = data.getWonderBuilder(iBrandenburgGate) == iPlayer
+
+            bEngine=checkTechGoal(iGermany,[iEngine])
+            bElectricity=checkTechGoal(iGermany,[iElectricity])
+            bRefrigeration=checkTechGoal(iGermany,[iRefrigeration])
+            if (bParis and bPoland1 and bPoland2 and bBrandenburgGate and bEngine and bElectricity and bRefrigeration):
+                win(iGermany,0)
         if iGameTurn == getTurnForYear(1900):
+            expire(iGermany, 0)
+            '''
             iCount = 0
             for iSpecialist in lGreatPeople:
                 iCount += countCitySpecialists(iPrussia, Areas.getCapital(iGermany), iSpecialist)
@@ -1523,8 +1541,10 @@ def checkTurn(iGameTurn, iPlayer):
                 win(iGermany, 0)
             else:
                 lose(iGermany, 0)
+            '''
 
         # second goal: control Italy, France, England, Scandinavia and Russia
+        '''
         if iGameTurn == getTurnForYear(1940):
             bItaly = checkOwnedCiv(iGermany, iItaly)
             bFrance = checkOwnedCiv(iGermany, iFrance)
@@ -1535,8 +1555,36 @@ def checkTurn(iGameTurn, iPlayer):
                 win(iGermany, 1)
             else:
                 lose(iGermany, 0)
+        '''
+        if isPossible(iGermany, 1):
+            bItaly = checkOwnedCiv(iGermany, iItaly)
+            bFrance = checkOwnedCiv(iGermany, iFrance)
+            bEngland = checkOwnedCiv(iGermany, iEngland)
+            bScandinavia = checkOwnedCiv(iGermany, iVikings)
+            bRussia = checkOwnedCiv(iGermany, iRussia)
+            if bItaly and bFrance and bEngland and bScandinavia and bRussia:
+                win(iGermany, 1)
+
+        if iGameTurn == getTurnForYear(1950):
+            expire(iGermany, 1)
 
         # third goal: be the first to complete the tech tree
+        # third German goal: be the first to discover ten Industrial and ten Global technologies
+        if isPossible(iGermany, 2):
+            bFission=checkTechGoal(iGermany,[iFission])
+            bComputor=checkTechGoal(iGermany,[iComputers])
+            bRocketry=checkTechGoal(iGermany,[iRocketry])
+            bPneumatics=checkTechGoal(iGermany,[iPneumatics])
+            bAviation=checkTechGoal(iGermany,[iAviation])
+            bFlight=checkTechGoal(iGermany,[iFlight])
+            bManhattanProject = teamGermany.getProjectCount(iManhattanProject) > 0
+
+            if(bFission and bComputor and bRocketry and bPneumatics and bAviation and bFlight and bManhattanProject):
+                if countFirstDiscovered(iPlayer, iIndustrial) >= 8 and countFirstDiscovered(iPlayer, iGlobal) >= 8:
+                    if iPlayer == iGermany:
+                        win(iGermany, 2)
+
+
 
     elif iPlayer == iAmerica:
         if isPossible(iAmerica, 0):
@@ -1779,7 +1827,7 @@ def checkTurn(iGameTurn, iPlayer):
             if fCanada >= 90.0 and bAllCitiesEast and bAllCitiesWest:
                 win(iCanada, 1)
 
-        if iGameTurn == getTurnForYear(1950):
+        if iGameTurn == getTurnForYear(1990):
             expire(iCanada, 1)
 
         # third goal: end twelve wars through diplomacy by 2000 AD
@@ -2018,16 +2066,7 @@ def onTechAcquired(iPlayer, iTech):
                 if not isFirstDiscoveredPossible(iItaly, iRenaissance, 8):
                     lose(iItaly, 1)
 
-        # third German goal: be the first to discover ten Industrial and ten Global technologies
-        if isPossible(iGermany, 2):
-            if iEra in [iIndustrial, iGlobal]:
-                if countFirstDiscovered(iPlayer, iIndustrial) >= 8 and countFirstDiscovered(iPlayer, iGlobal) >= 8:
-                    if iPlayer == iGermany:
-                        win(iGermany, 2)
-                    else:
-                        lose(iGermany, 2)
-                if not isFirstDiscoveredPossible(iGermany, iIndustrial, 8) or not isFirstDiscoveredPossible(iGermany, iGlobal, 8):
-                    lose(iGermany, 2)
+
 
     # handle all "be the first to enter" goals
     if not isEntered(iEra):
@@ -2928,6 +2967,13 @@ def getNumConqueredCitiesInArea(iPlayer, lPlots):
 
 
 def checkOwnedCiv(iPlayer, iOwnedPlayer):
+    iPlayerCities = getNumCitiesInArea(iPlayer, Areas.getCoreArea(iOwnedPlayer, False))
+    iOwnedCities = getNumCitiesInArea(iOwnedPlayer, Areas.getCoreArea(iOwnedPlayer, False))
+
+    return (iPlayerCities >= 2 and iPlayerCities > iOwnedCities) or (iPlayerCities >= 1 and not gc.getPlayer(iOwnedPlayer).isAlive()) or (iPlayerCities >= 1 and iOwnedPlayer == iCarthage) or ( isControlledOrVassalizedwithPlayer(iPlayer,iOwnedPlayer))
+
+
+def checkOwnedCiv_old(iPlayer, iOwnedPlayer):
     iPlayerCities = getNumCitiesInArea(iPlayer, Areas.getNormalArea(iOwnedPlayer, False))
     iOwnedCities = getNumCitiesInArea(iOwnedPlayer, Areas.getNormalArea(iOwnedPlayer, False))
 
@@ -4800,10 +4846,33 @@ def checkUHVhelp600(iPlayer, iGoal, aHelp):
 def checkUHVhelp1700(iPlayer, iGoal, aHelp):
     if iPlayer == iGermany:
         if iGoal == 0:
+            pass
+            '''
             iCounter = 0
             for iSpecialist in lGreatPeople:
                 iCounter += countCitySpecialists(iPrussia, Areas.getCapital(iGermany), iSpecialist)
             aHelp.append(getIcon(iCounter >= 7) + localText.getText("TXT_KEY_VICTORY_GREAT_PEOPLE_IN_CITY", ("Berlin", iCounter, 7)))
+            '''
+            lCity = utils.getPlotList((55, 50), (55, 50), [])
+            bParis = isControlledTile(iPlayer, lCity)
+            lCity = utils.getPlotList((65, 52), (65, 52), [])
+            bPoland1 = isControlledTile(iPlayer, lCity)
+            lCity = utils.getPlotList((67, 55), (67, 55), [])
+            bPoland2 = isControlledTile(iPlayer, lCity)
+            txt1=getIcon(bParis) +' 巴黎 '+getIcon(bPoland1) +' 华沙 '+getIcon(bPoland2) +'维尔纽斯'
+            aHelp.append(txt1)
+
+            bBrandenburgGate = data.getWonderBuilder(iBrandenburgGate) == iPlayer
+            aHelp.append(getIcon(bBrandenburgGate) + localText.getText("TXT_KEY_BUILDING_BRANDENBURG_GATE", ()) )
+
+            bEngine=checkTechGoal(iGermany,[iEngine])
+            bElectricity=checkTechGoal(iGermany,[iElectricity])
+            bRefrigeration=checkTechGoal(iGermany,[iRefrigeration])
+            txt1 = utils.getText('TXT_KEY_VICTORY_AME2_TIP1_1') + getIcon(bEngine) + utils.getTechNameCn(iEngine) + getIcon(bElectricity) + utils.getTechNameCn(iElectricity)+ getIcon(bRefrigeration) + utils.getTechNameCn(iRefrigeration)
+            aHelp.append(txt1)
+
+
+
         elif iGoal == 1:
             bFrance = checkOwnedCiv(iGermany, iFrance)
             bRome = checkOwnedCiv(iGermany, iItaly)
@@ -4812,10 +4881,47 @@ def checkUHVhelp1700(iPlayer, iGoal, aHelp):
             bScandinavia = checkOwnedCiv(iGermany, iVikings)
             aHelp.append(getIcon(bRome) + localText.getText("TXT_KEY_CIV_ITALY_SHORT_DESC", ()) + ' ' + getIcon(bFrance) + localText.getText("TXT_KEY_CIV_FRANCE_SHORT_DESC", ()) + ' ' + getIcon(bScandinavia) + localText.getText("TXT_KEY_VICTORY_SCANDINAVIA", ()))
             aHelp.append(getIcon(bEngland) + localText.getText("TXT_KEY_CIV_ENGLAND_SHORT_DESC", ()) + ' ' + getIcon(bRussia) + localText.getText("TXT_KEY_CIV_RUSSIA_SHORT_DESC", ()))
+
+
+
         elif iGoal == 2:
+
+
             iIndustrialTechs = countFirstDiscovered(iGermany, iIndustrial)
             iGlobalTechs = countFirstDiscovered(iGermany, iGlobal)
             aHelp.append(getIcon(iIndustrialTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iIndustrial).getText(), iIndustrialTechs, 8)) + ' ' + getIcon(iGlobalTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iGlobal).getText(), iGlobalTechs, 8)))
+
+
+            bFission=checkTechGoal(iGermany,[iFission])
+            bComputor=checkTechGoal(iGermany,[iComputers])
+            bRocketry=checkTechGoal(iGermany,[iRocketry])
+            bPneumatics=checkTechGoal(iGermany,[iPneumatics])
+            bAviation=checkTechGoal(iGermany,[iAviation])
+            bFlight=checkTechGoal(iGermany,[iFlight])
+            bManhattanProject = teamGermany.getProjectCount(iManhattanProject) > 0
+
+
+            txt1=utils.getText('TXT_KEY_VICTORY_AME2_TIP1_1')+getIcon(bFission) +utils.getTechNameCn(iFission)+getIcon(bComputor) +utils.getTechNameCn(iComputers)
+            txt1+=getIcon(bRocketry) +utils.getTechNameCn(iRocketry)+getIcon(bPneumatics) +utils.getTechNameCn(iPneumatics)
+            txt1+=getIcon(bAviation) +utils.getTechNameCn(iAviation)+getIcon(bFlight) +utils.getTechNameCn(iFlight)
+            aHelp.append(txt1)
+
+
+            txt1 = utils.getText('TXT_KEY_VICTORY_AME2_TIP1_2') + getIcon(bManhattanProject) + localText.getText("TXT_KEY_PROJECT_MANHATTAN_PROJECT", ())
+            aHelp.append(txt1)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     elif iPlayer == iAmerica:
         if iGoal == 0:

@@ -4007,7 +4007,25 @@ const CvString logs_getgameturn() {
 	return Return_Text;
 }
 
+void Vector_Template() {
 
+	int iI = 1;
+	int Tradegold = 1;
+	int iValue = 1;
+
+
+	int iMaxCountry = MAX_CIV_PLAYERS;
+	int iCols = 3;  //三维数组 第一列存放国家ID，第二列存放可交易回合金，第三列存放潜在最大可交易回合金
+	vector<vector<int> > iValueVector(iMaxCountry, vector<int>(iCols)); //定义二维动态数组
+
+
+	iValueVector[iI][0] = iI; //国家
+	iValueVector[iI][1] = Tradegold; //可交易回合金
+	iValueVector[iI][2] = iValue; //潜在价值
+
+
+	//std::sort(iValueVector.begin(), iValueVector.end(), VectorComparator);
+}
 
 void CvGlobals::logs(const CvWString& buf, CvString filename) const {
 	/*
@@ -4020,7 +4038,7 @@ void CvGlobals::logs(const CvWString& buf, CvString filename) const {
 			log_CWstring.Format(L"%s 准备在AI_getCitySite建立城市，坐标( %d , %d) 城市价值： %d", GET_PLAYER(getOwner()).getCivilizationDescription(), plot()->getX(), plot()->getY(), iPlotValue);
 			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 	*/
-	const int mediv01 = getDefineINT("CVGAMECORE_LOG_AI_ACTION");
+	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
 	if (mediv01 == 1) {
 
 
@@ -4065,7 +4083,7 @@ void CvGlobals::logs(CvWString& buf, CvString filename) const {
 			log_CWstring.Format(L"%s 准备在AI_getCitySite建立城市，坐标( %d , %d) 城市价值： %d", GET_PLAYER(getOwner()).getCivilizationDescription(), plot()->getX(), plot()->getY(), iPlotValue);
 			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 	*/
-	const int mediv01 = getDefineINT("CVGAMECORE_LOG_AI_ACTION");
+	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
 	if (mediv01 == 1) {
 
 
@@ -4108,7 +4126,7 @@ void CvGlobals::logs(CvString buf, CvString filename) const {
 	GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_String.log");
 	*/
 
-	const int mediv01 = getDefineINT("CVGAMECORE_LOG_AI_ACTION");
+	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
 	if (mediv01 == 1) {
 
 
@@ -4136,7 +4154,7 @@ void CvGlobals::logs(CvString buf, CvString filename) const {
 
 void CvGlobals::logs(char* buf, CvString filename) const {
 	//日志用法 建议不再使用
-	const int mediv01 = getDefineINT("CVGAMECORE_LOG_AI_ACTION");
+	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
 	if (mediv01 == 1) {
 
 
@@ -4166,7 +4184,7 @@ void CvGlobals::logs(const wchar* buf, CvString filename) const {
 	/*
 
 	*/
-	const int mediv01 = getDefineINT("CVGAMECORE_LOG_AI_ACTION");
+	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
 	if (mediv01 == 1) {
 
 
@@ -4205,7 +4223,7 @@ void CvGlobals::logs(wchar* buf, CvString filename) const {
 	/*
 
 	*/
-	const int mediv01 = getDefineINT("CVGAMECORE_LOG_AI_ACTION");
+	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
 	if (mediv01 == 1) {
 
 
@@ -4242,7 +4260,7 @@ void CvGlobals::logs(wchar* buf, CvString filename) const {
 
 
 void CvGlobals::logs(const char* buf, CvString filename) const {
-	const int mediv01 = getDefineINT("CVGAMECORE_LOG_AI_ACTION");
+	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
 	if (mediv01 == 1) {
 
 
@@ -4272,7 +4290,7 @@ void CvGlobals::logs(const char* buf, CvString filename) const {
 void CvGlobals::logs(const CvString buf, CvString filename) const {
 
 
-	if (getDefineINT("CVGAMECORE_LOG_AI_ACTION") == 1) {
+	if (getDefineINT("CVGAMECORE_DLL_LOG") == 1) {
 		const int BUFLEN = 255;
 		time_t t1 = time(0);
 		char TimeStr[BUFLEN];
@@ -4292,9 +4310,101 @@ void CvGlobals::logs(const CvString buf, CvString filename) const {
 	}
 	}
 	*/
+int CvGlobals::AItradeTechValList(PlayerTypes eWhoTo, PlayerTypes eMyPlayer, TechTypes iTech, OperationType Operation) const {
+	// eMyPlayer为 -1表示为AI卖科技给我们，遍历的是AI，因此eWhoTo 为 human
+	// eWhoTo 为-1 表示我们卖科技给AI，遍历的是AI，，因此eMyPlayer 为human
+	// 具体情况 可看CvGameTextMGR.cpp
+	bool SellTechtoAI = (int)eWhoTo == -1;
+	bool AISellTechtoHuman = (int)eMyPlayer == -1;
+	int iMaxVal=-1;
+	int iMinVal = -1;
+	int iAvgVal = -1;
+	if (SellTechtoAI || AISellTechtoHuman) {
 
 
+		//list<int> iValueList(MAX_CIV_PLAYERS + 1);
+		int iValueArray[50 + 1];
+		for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)//包含独立城邦
+		{
+			PlayerTypes PlayerHuman = GC.getGame().getActivePlayer();
+			if ((int)PlayerHuman != iI) {
 
+
+				bool CivHasTech = GET_TEAM(GET_PLAYER((PlayerTypes)iI).getTeam()).isHasTech(iTech);
+				bool isalive = GET_PLAYER((PlayerTypes)iI).isAlive();
+
+				if (CivHasTech && isalive) {
+
+					int iValue = 0;
+					int iTechValuePercent = 100;
+					int iActualTradeValue = 0;
+					int iMaxMoney = 0;
+
+					if (AISellTechtoHuman) {
+						iMaxMoney = GET_PLAYER((PlayerTypes)PlayerHuman).getGold();
+						iValue = CvPlayerAI().getAIdealValuetoMoney(iI, (int)(PlayerHuman), (int)TRADE_TECHNOLOGIES, (int)iTech);
+						iActualTradeValue = iValue;
+					}
+
+					if (SellTechtoAI) {
+						
+						iValue = CvPlayerAI().getAIdealValuetoMoney((int)(PlayerHuman), iI, (int)TRADE_TECHNOLOGIES, (int)iTech);
+						iMaxMoney = GET_PLAYER((PlayerTypes)iI).AI_maxGoldTrade(PlayerHuman);
+						iActualTradeValue = std::min(iValue, iMaxMoney);
+					}
+					iValueArray[iI] = iActualTradeValue;
+					iMaxVal = std::max(iMaxVal, iActualTradeValue);
+					iMinVal = std::min(iMinVal, iActualTradeValue);
+
+						
+					
+				}
+			}
+		}
+		if (Operation == MIN) {
+			return iMinVal;
+		}
+		if (Operation == MAX) {
+			return iMaxVal;
+		}
+	}
+
+	// 异常情况 返回-1
+	return -1;
+}
+
+bool CvGlobals::AIcantradeTech(PlayerTypes eWhoTo, PlayerTypes eMyPlayer, TechTypes iTech) const {
+	//eMyPlayer 是 拥有科技的一方，卖科技
+	//eWhoTo 是买科技的一方，没有科技
+	if (!(GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_TRADING)))
+	{
+		if (GC.getTechInfo((TechTypes)(iTech)).isTrade() && (GET_PLAYER(eMyPlayer).canTradeNetworkWith(eWhoTo) || atWar(GET_PLAYER(eMyPlayer).getTeam(), GET_PLAYER(eWhoTo).getTeam())))
+		{
+			if (GET_TEAM(GET_PLAYER(eMyPlayer).getTeam()).isHasTech((TechTypes)(iTech)) && !(GET_TEAM(GET_PLAYER(eMyPlayer).getTeam()).isNoTradeTech((TechTypes)(iTech))))
+			{
+				if (!GET_TEAM(GET_PLAYER(eWhoTo).getTeam()).isHasTech((TechTypes)(iTech)))
+				{
+					if (GC.getDefineINT("CVPLAYER_CAN_TRADE_TECH_WITH_NOT_RESEARCH") == 1) { //mediv01 
+						return true;
+					}
+					//if (GET_PLAYER(eWhoTo).isHuman() || (GET_PLAYER(eWhoTo).getCurrentResearch() != item.m_iData))
+					{
+						if (GET_TEAM(GET_PLAYER(eMyPlayer).getTeam()).isTechTrading() || GET_TEAM(GET_PLAYER(eWhoTo).getTeam()).isTechTrading()) //mediv01
+						{
+							FAssertMsg(iTech >= 0, "item.m_iData is expected to be non-negative (invalid Index)");
+
+							if (GET_PLAYER(eWhoTo).canResearch(((TechTypes)iTech), true))
+							{
+								return true;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	return false;
+}
 
 
 int CvGlobals::getDefineINT( const char * szName ) const

@@ -48,6 +48,12 @@ int CyGlobalContext::showAIstrategy(int iPlayer) const
 	return aa;//test by mediv01
 }
 
+int CyGlobalContext::getAIdealValuetoMoney(int ePlayerID, int myPlayerID, int tradetypeID, int tradeitemID) const
+{
+	int aa = CvPlayerAI().getAIdealValuetoMoney(ePlayerID, myPlayerID, tradetypeID, tradeitemID);
+	return aa;//test by mediv01
+}
+
 
 int CyGlobalContext::AI_considerOfferThreshold(int ePlayer, int myPlayer) const
 {

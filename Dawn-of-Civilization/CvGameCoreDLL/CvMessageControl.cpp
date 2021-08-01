@@ -27,6 +27,7 @@ void CvMessageControl::sendAutoMoves()
 
 void CvMessageControl::sendTurnComplete()
 {
+	// mediv01 测试自动保存，似乎这里不行
 	if (NO_PLAYER != GC.getGameINLINE().getActivePlayer())
 	{
 		gDLL->sendMessageData(new CvNetTurnComplete(GC.getGameINLINE().getActivePlayer()));

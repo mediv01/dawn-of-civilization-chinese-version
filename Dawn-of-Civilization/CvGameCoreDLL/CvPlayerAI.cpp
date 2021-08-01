@@ -6329,6 +6329,64 @@ PlayerVoteTypes CvPlayerAI::AI_diploVote(const VoteSelectionSubData& kVoteData, 
 
 }
 
+
+
+
+int CvPlayerAI::getAIdealValuetoMoney(int ePlayerID, int myPlayerID,int tradetypeID,int tradeitemID) const {
+	// 实现人类卖东西给AI的函数
+	
+	PlayerTypes ePlayer = (PlayerTypes)ePlayerID;    //Human
+	PlayerTypes myPlayer = (PlayerTypes)myPlayerID;  //AI
+	TradeableItems tradetype = (TradeableItems)tradetypeID;
+	int iValue = 0;
+	int iMoney = 0;
+
+	if (myPlayer >= NUM_MAJOR_PLAYERS) {
+		return 0;
+	}
+
+	if (tradetype == TRADE_TECHNOLOGIES) {
+		TechTypes tradeTech = (TechTypes)tradeitemID;
+
+
+
+		bool cantrade = false;
+		
+		//TradeData item;
+		//setTradeItem(&item, TRADE_TECHNOLOGIES, tradeitemID);
+		//cantrade = canTradeItem(ePlayer, item);
+
+		cantrade = GC.AIcantradeTech(myPlayer, ePlayer, tradeTech);
+		cantrade = true;
+		if (cantrade) {
+			iValue = GET_TEAM(GET_PLAYER(myPlayer).getTeam()).AI_techTradeVal((TechTypes)(tradeTech), GET_PLAYER(ePlayer).getTeam());
+			iMoney = iValue / GET_PLAYER(ePlayer).AI_goldTradeValuePercent(myPlayer) * 100;
+
+		}
+	}
+
+	if (tradetype == TRADE_RESOURCES) {
+		// 不成熟的代码
+		BonusTypes tradeBonus = (BonusTypes)(tradeitemID);
+
+
+		int iChange = -1;
+		iValue = 1000;
+		iValue = GET_PLAYER(myPlayer).AI_bonusTradeVal(tradeBonus, ePlayer, iChange);
+		iMoney = iValue / GET_PLAYER(ePlayer).AI_goldTradeValuePercent(myPlayer) * 100;
+
+		iMoney = iValue;
+
+		CvWString log_CWstring;
+		log_CWstring.Format(L"玩家ID %d ，资源ID： %d  资源价值： %d", (int)ePlayer, tradetypeID, 0);
+		GC.logs(log_CWstring, "TESTBonusTrade.log");
+
+	}
+
+
+	
+	return iMoney;
+}
 int CvPlayerAI::AI_dealVal(PlayerTypes ePlayer, const CLinkList<TradeData>* pList, bool bIgnoreAnnual, int iChange) const
 {
 	//mediv01 交易价值计算入口
@@ -6366,6 +6424,12 @@ int CvPlayerAI::AI_dealVal(PlayerTypes ePlayer, const CLinkList<TradeData>* pLis
 			{
 				iValue += AI_cityTradeVal(pCity);
 			}
+			if (GC.getDefineINT("CVTEAMAI_CITY_TRADEVAL_FOR_VASSAL_MULTIPLIERTIMES10000") >= 0) {
+				if (GET_TEAM(getTeam()).isVassal(GET_PLAYER(ePlayer).getTeam()) || GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isVassal(getTeam())) {
+					iValue = (int)(iValue * GC.getDefineINT("CVTEAMAI_CITY_TRADEVAL_FOR_VASSAL_MULTIPLIERTIMES10000") / 10000);
+				}
+			}
+			
 			break;
 		case TRADE_GOLD:
 			iValue += (pNode->m_data.m_iData * AI_goldTradeValuePercent(ePlayer)) / 100;
@@ -8029,14 +8093,25 @@ int CvPlayerAI::AI_cityTradeVal(CvCity* pCity) const
 	// Leoreth: help Canada acquire cities
 	if (getID() == CANADA) iValue /= 2;
 	//mediv01 返回购买城市的价值
+	
+	if (GC.getDefineINT("CVGAMECORE_LOG_SHOW_CITY_TRADE_VALUE") > 0) {
+		log_CWstring.Format(L"%s 城市，坐标( %d , %d) 城市价值： %d", GET_PLAYER(pCity->getOwnerINLINE()).getCivilizationDescription(), pCity->getX_INLINE(), pCity->getY_INLINE(), iValue);
+		GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_TradeCityVal.log");
+	}
+
+	int returnVal = 0;
 	if (isHuman())
 	{
-		return std::max(iValue, GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
+		returnVal = std::max(iValue, GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
 	}
 	else
 	{
-		return iValue;
+		returnVal = iValue;
 	}
+	if (GC.getDefineINT("CVTEAMAI_CITY_TRADEVAL_MULTIPLIERTIMES10000") > 0) {
+		returnVal = (int)(returnVal * GC.getDefineINT("CVTEAMAI_CITY_TRADEVAL_MULTIPLIERTIMES10000") / 10000);
+	}
+	return returnVal;
 }
 
 
@@ -8050,6 +8125,10 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 			//这里需要加上对手是人类方，否则会出现闪退
 
 
+			return NO_DENIAL;
+		}
+
+		if (isHuman()) {
 			return NO_DENIAL;
 		}
 	}
@@ -8251,6 +8330,9 @@ int CvPlayerAI::AI_stopTradingTradeVal(TeamTypes eTradeTeam, PlayerTypes ePlayer
 
 	if (isHuman())
 	{
+		if (GC.getDefineINT("CVTEAMAI_PEACE_TRADEVAL_MULTIPLIERTIMES10000") > 0) {
+			return iValue * GC.getDefineINT("CVTEAMAI_PEACE_TRADEVAL_MULTIPLIERTIMES10000") / 10000;
+		}
 		return std::max(iValue, GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
 	}
 	else
@@ -8349,6 +8431,9 @@ int CvPlayerAI::AI_civicTradeVal(CivicTypes eCivic, PlayerTypes ePlayer) const
 
 	if (isHuman())
 	{
+		if (GC.getDefineINT("CVTEAMAI_PEACE_TRADEVAL_MULTIPLIERTIMES10000") > 0) {
+			return iValue * GC.getDefineINT("CVTEAMAI_PEACE_TRADEVAL_MULTIPLIERTIMES10000") / 10000;
+		}
 		return std::max(iValue, GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
 	}
 	else
@@ -8434,6 +8519,9 @@ int CvPlayerAI::AI_religionTradeVal(ReligionTypes eReligion, PlayerTypes ePlayer
 
 	if (isHuman())
 	{
+		if (GC.getDefineINT("CVTEAMAI_PEACE_TRADEVAL_MULTIPLIERTIMES10000") > 0) {
+			return iValue * GC.getDefineINT("CVTEAMAI_PEACE_TRADEVAL_MULTIPLIERTIMES10000") / 10000;
+		}
 		return std::max(iValue, GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
 	}
 	else

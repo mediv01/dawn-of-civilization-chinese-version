@@ -947,9 +947,11 @@ class RiseAndFall:
         icheckturn = 10
         if (gc.getDefineINT("PYTHON_CHECK_RESPAWN_TURN")>0):
             icheckturn = max(gc.getDefineINT("PYTHON_CHECK_RESPAWN_TURN"), 1)
-        logtext="Resurrection Check Turn Left:" + str(iGameTurn - (iGameTurn - 1) % utils.getTurns(icheckturn))
-        utils.log2(logtext, "DoC_SmallMap_Log_Stability")
+
         if iGameTurn % utils.getTurns(icheckturn) == 0:  #used to be 10
+            if (gc.getDefineINT("PYTHON_LOG_ON_STABILITY")>0):
+                logtext = "Resurrection Check Turn Left:" + str(iGameTurn - (iGameTurn - 1) % utils.getTurns(icheckturn))
+                utils.log2(logtext, "DoC_SmallMap_Log_Stability")
             sta.checkResurrection(iGameTurn)
 
         # Leoreth: check for scripted rebirths
@@ -2164,6 +2166,9 @@ class RiseAndFall:
                     x, y = tPlot
                     pPlot = gc.getMap().plot(x, y)
                     if pPlot.isCity():
+                        if gc.getDefineINT("PYTHON_DISABLE_RAILWAY_WAR_TO_HUMAN")>0 :
+                            if pPlot.getPlotCity().getOwner()==utils.getHumanID():
+                                continue
                         if pPlot.getPlotCity().getOwner() != iAmerica:
                             iCount += 1
                             lWestCoast.remove((x, y))
@@ -2198,6 +2203,9 @@ class RiseAndFall:
                 pPlot = gc.getMap().plot(x, y)
                 utils.convertPlotCulture(pPlot, iRussia, 100, True)
                 if pPlot.isCity():
+                    if gc.getDefineINT("PYTHON_DISABLE_RAILWAY_WAR_TO_HUMAN" > 0):
+                        if pPlot.getPlotCity().getOwner() == utils.getHumanID():
+                            return 0
                     if pPlot.getPlotCity().getOwner() != iRussia:
                         for (i, j) in utils.surroundingPlots(tVladivostok):
                             plot = gc.getMap().plot(i, j)

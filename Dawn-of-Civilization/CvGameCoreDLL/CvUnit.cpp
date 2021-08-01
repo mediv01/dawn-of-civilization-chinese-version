@@ -792,7 +792,11 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 			bCanCapture = false;
 		}
 		*/
-		if (bCanCapture && GC.getUnitInfo(eCaptureUnitType).getCombat() == 0 && !GET_PLAYER(eCapturingPlayer).isSlavery())//mediv01 感觉抓工人和这个有关
+		bool bNoSlavery = !GET_PLAYER(eCapturingPlayer).isSlavery();
+		if (GC.getDefineINT("CVUNIT_CAN_CAPTURE_WORKER_WITHOUT_SLAVERY") > 0) {
+			bNoSlavery = false;
+		}
+		if (bCanCapture && GC.getUnitInfo(eCaptureUnitType).getCombat() == 0 && bNoSlavery)//mediv01 感觉抓工人和这个有关
 		{
 			bCanCapture = false;
 		}
@@ -7181,6 +7185,7 @@ bool CvUnit::espionage(EspionageMissionTypes eMission, int iData)
 
 bool CvUnit::testSpyIntercepted(PlayerTypes eTargetPlayer, int iModifier)
 {
+	// 判断间谍执行任务是否成功
 	CvPlayer& kTargetPlayer = GET_PLAYER(eTargetPlayer);
 
 	if (kTargetPlayer.isBarbarian() || kTargetPlayer.isMinorCiv()) //Rhye
@@ -7202,6 +7207,13 @@ bool CvUnit::testSpyIntercepted(PlayerTypes eTargetPlayer, int iModifier)
 	if (GC.getGameINLINE().getSorenRandNum(10000, "Spy Interception") >= getSpyInterceptPercent(kTargetPlayer.getTeam()) * (100 + iModifier))
 	{
 		return false;
+	}
+
+	// mediv01 人类玩家间谍暴露不会被杀害
+	if (GC.getDefineINT("CVUNIT_HUMAN_SPY_CANNOT_REVEAL") > 0) {
+		if (getID() == GC.getGame().getActivePlayer()) {
+			return false;
+		}
 	}
 
 	CvString szFormatNoReveal;
