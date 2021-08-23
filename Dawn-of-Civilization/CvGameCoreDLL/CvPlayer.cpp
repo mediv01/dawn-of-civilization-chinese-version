@@ -4659,7 +4659,9 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 			}
 
 			if (GC.getDefineINT("CVPLAYER_CAN_ALWAYS_TRADE_CITY") > 0) {
-				return true;
+				if (GET_PLAYER(eWhoTo).isHuman()) {
+					return true;
+				}
 			}
 
 			if (pCityTraded->isOccupation())
@@ -6574,6 +6576,7 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 		}
 
 		// Leoreth
+		// 特拉法加广场：必须要3级的海军单位
 		if (eBuilding == (BuildingTypes)TRAFALGAR_SQUARE)
 		{
 			if (getHighestNavalUnitLevel() < 3)
@@ -7075,6 +7078,7 @@ int CvPlayer::getProductionModifier(BuildingTypes eBuilding) const
 	// Leoreth: civics
 	iMultiplier += getBuildingProductionModifier(eBuilding);
 
+	// mediv01 克久拉霍效果：国教建筑增加食物
 	// Khajuraho effect
 	if (GET_PLAYER((PlayerTypes)getID()).isHasBuilding((BuildingTypes)SHWEDAGON_PAYA))
 	{
@@ -7142,6 +7146,7 @@ int CvPlayer::getBuildingClassPrereqBuildingStatic(BuildingTypes eBuilding, Buil
 	iPrereqs *= std::max(0, (GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getBuildingClassPrereqModifier() + 100));
 	iPrereqs /= 100;
 
+	// mediv01 巴黎圣母院特效
 	// Leoreth: Notre Dame effect
 	if (isHasBuildingEffect((BuildingTypes)NOTRE_DAME) && kBuilding.getReligionType() != NO_RELIGION)
 	{
@@ -7360,6 +7365,7 @@ void CvPlayer::processBuilding(BuildingTypes eBuilding, int iChange, CvArea* pAr
 		updateYield();
 	}
 
+	// mediv01 圣家族大教堂效果
 	// Sagrada Familia
 	else if (eBuilding == SAGRADA_FAMILIA)
 	{
@@ -9039,6 +9045,10 @@ int CvPlayer::getReligionAnarchyLength() const
 int CvPlayer::unitsRequiredForGoldenAge() const
 {
 	//mediv01 黄金时代消耗的伟人数量
+	if (GC.getDefineINT("CVPLAYER_GOLEN_AGE_UNIT_REQUIRED")>0) {
+		return GC.getDefineINT("CVPLAYER_GOLEN_AGE_UNIT_REQUIRED");
+	}
+
 	return (GC.getDefineINT("BASE_GOLDEN_AGE_UNITS") + (getNumUnitGoldenAges() * GC.getDefineINT("GOLDEN_AGE_UNITS_MULTIPLIER")));
 }
 
@@ -9619,11 +9629,13 @@ int CvPlayer::getGoldenAgeLength() const
 
 int CvPlayer::getNumUnitGoldenAges() const
 {
+	// 黄金时代额外消耗的伟人数量
 	// Leoreth: Eiffel Tower effect: golden age cost capped at 3 GPs
 	if (isHasBuildingEffect((BuildingTypes)EIFFEL_TOWER))
 	{
 		return std::min(m_iNumUnitGoldenAges, 1);
 	}
+
 
 	return m_iNumUnitGoldenAges;
 }
@@ -10151,6 +10163,7 @@ void CvPlayer::changeNumNukeUnits(int iChange)
 	m_iNumNukeUnits = (m_iNumNukeUnits + iChange);
 	FAssert(getNumNukeUnits() >= 0);
 
+	// mediv01 原子塔的效果
 	// Leoreth: Atomium effect
 	if (GC.getGame().getBuildingClassCreatedCount((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)ATOMIUM).getBuildingClassType()) > 0)
 	{
@@ -12116,12 +12129,13 @@ void CvPlayer::doConquestIncentive(const PlayerTypes& eOldOwner)
 
 			int old_player_gold = kTragePlayer.getGold();
 			GET_PLAYER(kTragePlayer.getCILastKillMe()).changeGold(old_player_gold);
-
-
-			log_CWstring.Format(L"%s 征服了 %s", GET_PLAYER(getID()).getCivilizationDescription(), kTragePlayer.getCivilizationDescription());
-			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
-			log_CWstring.Format(L"%s 征服文明获得金币: %d ", GET_PLAYER(getID()).getCivilizationDescription(), old_player_gold);
-			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
+			
+			if (GC.getDefineINT("CVGAMECORE_LOG_AI_CONQUEST_TECH_AND_GOLD") > 0) {
+				log_CWstring.Format(L"%s 征服了 %s", GET_PLAYER(getID()).getCivilizationDescription(), kTragePlayer.getCivilizationDescription());
+				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
+				log_CWstring.Format(L"%s 征服文明获得金币: %d ", GET_PLAYER(getID()).getCivilizationDescription(), old_player_gold);
+				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
+			}
 			gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), log_CWstring, NULL, MESSAGE_TYPE_MAJOR_EVENT);
 
 
@@ -12140,8 +12154,10 @@ void CvPlayer::doConquestIncentive(const PlayerTypes& eOldOwner)
 
 				if (!GET_TEAM(getTeam()).isHasTech((TechTypes)iI))
 				{
-					log_CWstring.Format(L"%s 征服文明获得科技: %s", GET_PLAYER(getID()).getCivilizationDescription(), GC.getTechInfo((TechTypes)iI).getDescription());
-					GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
+					if (GC.getDefineINT("CVGAMECORE_LOG_AI_CONQUEST_TECH_AND_GOLD") > 0) {
+						log_CWstring.Format(L"%s 征服文明获得科技: %s", GET_PLAYER(getID()).getCivilizationDescription(), GC.getTechInfo((TechTypes)iI).getDescription());
+						GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
+					}
 					GET_TEAM(getTeam()).setHasTech((TechTypes)iI, true, NO_PLAYER, false, false);
 					szBuffer.Format(L"%s" SETCOLR L"%s" ENDCOLR, gDLL->getText("TXT_KEY_ANYFUNMOD_GAME_OPTION_CONQUEST_TECH_MSG").GetCString(), TEXT_COLOR("COLOR_YELLOW"), GC.getTechInfo((TechTypes)iI).getDescription());
 					gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MAJOR_EVENT);
@@ -12152,7 +12168,7 @@ void CvPlayer::doConquestIncentive(const PlayerTypes& eOldOwner)
 
 
 	// add PLAYEROPTION_CONQUEST_UB 这个会闪退
-	if (GC.getDefineINT("ANYFUN_CONQUEST_GET_UB") == 1)
+	if (GC.getDefineINT("ANYFUN_CONQUEST_GET_UB") == 1 && 1 == 2)
 	{
 		for (iI = 0; iI < GC.getNumBuildingClassInfos(); ++iI)
 		{
@@ -12199,7 +12215,7 @@ void CvPlayer::doConquestIncentive(const PlayerTypes& eOldOwner)
 	}
 
 	// add PLAYEROPTION_CONQUEST_UU 这个也会闪退
-	if (GC.getDefineINT("ANYFUN_CONQUEST_GET_UU") == 1)
+	if (GC.getDefineINT("ANYFUN_CONQUEST_GET_UU") == 1 && 1 == 2)
 	{
 		for (iI = 0; iI < GC.getNumUnitClassInfos(); ++iI)
 		{
@@ -26799,6 +26815,7 @@ int CvPlayer::getSatelliteExtraCommerce(CommerceTypes eCommerce) const
 {
 	int iCommerce = 0;
 
+	// mediv01 哈勃望远镜的效果
 	if (eCommerce == COMMERCE_RESEARCH)
 	{
 		if (isHasBuildingEffect((BuildingTypes)HUBBLE_SPACE_TELESCOPE))

@@ -235,7 +235,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_SETTLER</Class>
 			<Type>UNIT_SETTLER</Type>
-			<Capture>UNITCLASS_WORKER</Capture>
+			<Capture>UNITCLASS_SETTLER</Capture>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_SETTLER</Description>
@@ -280,7 +280,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_SETTLER</Class>
 			<Type>UNIT_HARAPPAN_CITY_BUILDER</Type>
-			<Capture>UNITCLASS_WORKER</Capture>
+			<Capture>UNITCLASS_SETTLER</Capture>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_HARAPPAN_CITY_BUILDER</Description>
@@ -326,7 +326,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_SETTLER</Class>
 			<Type>UNIT_AMERICAN_PIONEER</Type>
-			<Capture>UNITCLASS_WORKER</Capture>
+			<Capture>UNITCLASS_SETTLER</Capture>
 			<Combat>UNITCOMBAT_GUN</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>

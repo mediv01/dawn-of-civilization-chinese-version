@@ -1643,6 +1643,18 @@ enum UnitTypes				// Exposed to Python
 	NO_UNIT = -1,
 };
 
+enum GreatPeopleTypes				// Exposed to Python
+{
+	NO_GREATEOPLE = -1,
+	iGreatProphet = 190,
+	iGreatArtist = 191,
+	iGreatScientist = 192,
+	iGreatMerchant = 193,
+	iGreatEngineer = 194,
+	iGreatStatesman = 195,
+
+};
+
 enum SpecialUnitTypes	// Exposed to Python
 {
 	NO_SPECIALUNIT = -1,

@@ -1,5 +1,5 @@
 // area.cpp
-//mediv01 阅读 20200812 基本是return 参数
+//mediv01 阅读 20200812 基本是GET SET方法，游戏逻辑很少
 #include "CvGameCoreDLL.h"
 #include "CvArea.h"
 #include "CvMap.h"

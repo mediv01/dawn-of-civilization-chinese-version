@@ -400,6 +400,10 @@ def checkLostCoreCollapse(iPlayer):
             pPlayer.setReborn(True)
             return
 
+        # 帮助荷兰，防止崩溃
+        if (gc.getDefineINT("STABILITY_CORE_POPULATION_HELPER_WITH_NETHERLAND") > 0):
+            if iPlayer == iNetherlands:
+                return
         utils.debugTextPopup('Collapse from lost core: ' + pPlayer.getCivilizationShortDescription(0))
         scheduleCollapse(iPlayer)
 
@@ -1054,6 +1058,11 @@ def calculateStability(iPlayer):
     if (gc.getDefineINT("STABILITY_CORE_POPULATION_MULTIPLIER") > 0 and utils.getHumanID() == iPlayer):
         iCorePopulation *= gc.getDefineINT("STABILITY_CORE_POPULATION_MULTIPLIER")
 
+    # 帮助荷兰，防止崩溃
+    if (gc.getDefineINT("STABILITY_CORE_POPULATION_HELPER_WITH_NETHERLAND") > 0 ):
+        if iPlayer==iNetherlands:
+            iCorePopulation += gc.getDefineINT("STABILITY_CORE_POPULATION_HELPER_WITH_NETHERLAND")
+
     iCurrentPower = pPlayer.getPower()
     iPreviousPower = pPlayer.getPowerHistory(iGameTurn - utils.getTurns(10))
 
@@ -1322,6 +1331,11 @@ def calculateStability(iPlayer):
             iCivicEraTechStability -= 2
         elif iHandicap == 4 and utils.getHumanID() == iPlayer:
             iCivicEraTechStability -= 5
+
+    # 人类玩家固定的稳定度红利，属于WB选项，觉得自己的稳定度常年太低可以调高这个数值
+    if (gc.getDefineINT("STABILITY_PY_HUMAN_BONUS") > 0):
+        if utils.getHumanID() == iPlayer:
+            iCivicEraTechStability += gc.getDefineINT("STABILITY_PY_HUMAN_BONUS")
 
     if iCivicLegitimacy == iVassalage:
         # 分封制度,中世纪的分封制度：+2   工业时代或以后的分封制度：-3

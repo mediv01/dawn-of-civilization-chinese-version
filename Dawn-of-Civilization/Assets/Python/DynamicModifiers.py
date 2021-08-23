@@ -26,8 +26,9 @@ bHistoryFortune = bHistoryFortuneAI or bHistoryFortuneHuman
 
 def logSetModifiers(iPlayer, iModifier):
     NewModifier = gc.getPlayer(iPlayer).getModifier(iModifier)
-    txt = utils.getCivName(iPlayer) + ' Modifier of ' + ModifiersName[iModifier] + ' is ' + str(NewModifier)
-    utils.log2(txt, 'DoC_SmallMap_Log_ModifiersChange')
+    if (gc.getDefineINT('PYTHON_LOG_ON_MODIFIER_CHANGE')>0):
+        txt = utils.getCivName(iPlayer) + ' Modifier of ' + ModifiersName[iModifier] + ' is ' + str(NewModifier)
+        utils.log2(txt, 'DoC_SmallMap_Log_ModifiersChange')
     pass
 
 
@@ -119,7 +120,7 @@ def adjustItaly():
     # 意大利文艺复兴结束
     if iGameTurn == getTurnForYear(1600):
         setModifier(iPlayer, iModifierCulture, 120)
-        setModifier(iPlayer, iModifierResearchCost, 80)
+        setModifier(iPlayer, iModifierResearchCost, 100)
         setModifier(iPlayer, iModifierBuildingCost, 80)
         setModifier(iPlayer, iModifierUnitCost, 80)
         setModifier(iPlayer, iModifierWonderCost, 80)

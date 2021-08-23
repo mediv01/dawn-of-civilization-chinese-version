@@ -1395,11 +1395,14 @@ def checkTurn(iGameTurn, iPlayer):
                 expire(iAztecs, 1)
 
             # third goal: make Mexico City the largest city in the world in 1960 AD
-            if iGameTurn == getTurnForYear(1960):
+            if isPossible(iAztecs, 2):
                 if isBestCity(iAztecs, (18, 37), cityPopulation):
                     win(iAztecs, 2)
                 else:
                     lose(iAztecs, 2)
+            if iGameTurn == getTurnForYear(1960):
+                expire(iAztecs, 1)
+
 
     elif iPlayer == iOttomans:
 

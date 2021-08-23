@@ -708,7 +708,6 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				CLinkList<TradeData> ourList;
 				CLinkList<TradeData> theirList;
 				theirList.insertAtEnd(item);
-
 				if (GET_PLAYER(eVassal).AI_considerOffer(GC.getGameINLINE().getActivePlayer(), &ourList, &theirList))
 				{
 					gDLL->sendImplementDealMessage(eVassal, &ourList, &theirList);
@@ -718,13 +717,20 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				}
 				else
 				{
-					CvMessageControl::getInstance().sendChangeWar(GET_PLAYER(eVassal).getTeam(), true);
+					// mediv01 勒索不成功导致战争 与这里无关
+					if (GC.getDefineINT("CVPLAYER_ASK_RESOURCE_CANNOT_BE_DECLARED_WAR") > 0) {
+
+					}
+					
+						CvMessageControl::getInstance().sendChangeWar(GET_PLAYER(eVassal).getTeam(), true);
+					
 				}
 			}
 		}
 		break;
 
 	case BUTTONPOPUP_VASSAL_GRANT_TRIBUTE:
+
 		if (pPopupReturn->getButtonClicked() == 0)
 		{
 			TradeData item;

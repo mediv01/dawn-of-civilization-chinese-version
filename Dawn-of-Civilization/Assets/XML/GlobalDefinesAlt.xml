@@ -5,704 +5,6 @@
 <!-- -->
 <!-- Global Defines -->
 <Civ4Defines xmlns="x-schema:CIV4GlobalDefinesSchema.xml">
-    <Define>
-        <!-- edead: change this to 0 if you want autosaves work during AI autoplay for some reason -->
-        <DefineName>NO_AUTOSAVE_DURING_AUTOPLAY</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Leoreth: if set to 1, UHV goals are not checked for AI civilizations so they can never complete them (increases speed)
-              set to 0 to reenable them -->
-    <Define>
-        <DefineName>NO_AI_UHV_CHECKS</DefineName>
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>AI_SLAVE_VALUE</DefineName>
-        <iDefineIntVal>50</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>CAPTURE_GOLD_FOR_CAPTURED_SLAVES</DefineName>
-        <iDefineIntVal>50</iDefineIntVal>
-    </Define>
-    <!-- Merijn: Additional options for game personalization -->
-    <Define>
-        <DefineName>UNLIMITED_SWITCHING</DefineName>
-        <iDefineIntVal>0</iDefineIntVal>        <!-- default: 0 -->
-    </Define>
-    <Define>
-        <DefineName>NO_CONGRESSES</DefineName>
-        <iDefineIntVal>0</iDefineIntVal>        <!-- default: 0 -->
-    </Define>
-    <Define>
-        <DefineName>NO_PLAGUES</DefineName>
-        <iDefineIntVal>0</iDefineIntVal>        <!-- default: 0 -->
-    </Define>
-    <!--Leoreth: define how often these optional civs should appear value=0    Civilization never appears
-            value>0    Civilization roughly appears in every i-th game, where i is the entered value
-                (so to make this civilization appear every time, enter 1)
-        Note that if certain civilizations are controlled by the player, these civs will spawn regardless to provide a historical opponent -->
-    <Define>
-        <DefineName>PLAYER_OCCURRENCE_TAMILS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>        <!-- default: 1 -->
-    </Define>
-    <Define>
-        <DefineName>PLAYER_OCCURRENCE_TIBET</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>        <!-- default: 1 -->
-    </Define>
-    <Define>
-        <DefineName>PLAYER_OCCURRENCE_MOORS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>        <!-- default: 1 -->
-    </Define>
-    <Define>
-        <DefineName>PLAYER_OCCURRENCE_POLAND</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>        <!-- default: 1 -->
-    </Define>
-    <Define>
-        <DefineName>PLAYER_OCCURRENCE_CONGO</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>        <!-- default: 1 -->
-    </Define>
-    <Define>
-        <DefineName>PLAYER_OCCURRENCE_ARGENTINA</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>        <!-- default: 1 -->
-    </Define>
-    <Define>
-        <DefineName>PLAYER_OCCURRENCE_BRAZIL</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>        <!-- default: 1 -->
-    </Define>
-    <Define>
-        <DefineName>PLAYER_OCCURRENCE_HARAPPA</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>        <!-- default: 1 -->
-    </Define>
-    <Define>
-        <DefineName>PLAYER_OCCURRENCE_POLYNESIA</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>        <!-- default: 0 -->
-    </Define>
-    <!-- Disable the respawn by setting the value to 0 -->
-    <Define>
-        <DefineName>PLAYER_REBIRTH_MEXICO</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>PLAYER_REBIRTH_COLOMBIA</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <!-- BULL User Settings
-    This file is used only when BULL is running without BUG, but it will cause no harm to include it with BUG.
-    Copyright (c) 2009 The BUG Mod -->
-
-    <!-- City Bar -->
-    <Define>
-        <DefineName>BUG_CITYBAR_AIRPORT_ICONS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_STARVATION_TURNS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- City Bar Hover -->
-    <Define>
-        <DefineName>BUG_CITYBAR_BASE_VALUES</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_HEALTH</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_HAPPINESS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_HURRY_ANGER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_DRAFT_ANGER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_FOOD_ASSIST</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_BASE_PRODUCTION</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_BUILDING_ACTUAL_EFFECTS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_HURRY_ASSIST</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_HURRY_ASSIST_INCLUDE_CURRENT</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_TRADE_DETAIL</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_COMMERCE</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_BUILDING_ICONS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_CULTURE_TURNS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_GREAT_PERSON_TURNS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_SPECIALISTS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_REVOLT_CHANCE</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITYBAR_HIDE_INSTRUCTIONS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Miscellaneous Hovers -->
-    <!-- Production Decay (Buildings/Units) -->
-    <Define>
-        <DefineName>BUG_PRODUCTION_DECAY_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_PRODUCTION_DECAY_HOVER_BUILDING_THRESHOLD</DefineName>
-        <iDefineIntVal>20</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_PRODUCTION_DECAY_HOVER_UNIT_THRESHOLD</DefineName>
-        <iDefineIntVal>5</iDefineIntVal>
-    </Define>
-    <!-- Leaderhead -->
-    <Define>
-        <DefineName>BUG_LEADERHEAD_HOVER_HIDDEN_ATTITUDE</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_LEADERHEAD_HOVER_WORST_ENEMY</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_LEADERHEAD_HOVER_DEFENSIVE_PACTS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Plot -->
-    <Define>
-        <DefineName>BUG_PLOT_HOVER_LAT_LONG</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_PLOT_HOVER_PARTIAL_BUILDS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Building -->
-    <Define>
-        <DefineName>BUG_BUILDING_HOVER_ACTUAL_EFFECTS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Unit -->
-    <Define>
-        <DefineName>BUG_UPDATE_UNIT_NAME_ON_UPGRADE</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_UNIT_EXPERIENCE_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_UNIT_EXPERIENCE_MODIFIERS_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Specialist -->
-    <Define>
-        <DefineName>BUG_SPECIALIST_HOVER_ACTUAL_EFFECTS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Tech -->
-    <Define>
-        <DefineName>BUG_SPED_UP_TECHS_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_TECH_TRADE_DENIAL_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Bonus -->
-    <Define>
-        <DefineName>BUG_BONUS_TRADE_DENIAL_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Action Buttons -->
-    <Define>
-        <DefineName>BUG_CONSCRIPT_UNIT_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CONSCRIPT_LIMIT_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_HURRY_OVERFLOW_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_HURRY_OVERFLOW_HOVER_INCLUDE_CURRENT</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CITY_SCREEN_REMOVE_SPECIALIST_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_CDA_ZOOM_CITY_DETAILS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- City Screen -->
-    <Define>
-        <DefineName>BUG_CITY_SCREEN_BASE_COMMERCE_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_GREAT_PEOPLE_RATE_BREAKDOWN_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_BUILDING_SAVED_MAINTENANCE_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_BUILDING_ADDITIONAL_FOOD_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_BUILDING_ADDITIONAL_PRODUCTION_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_BUILDING_ADDITIONAL_COMMERCE_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_BUILDING_ADDITIONAL_HEALTH_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_BUILDING_ADDITIONAL_HAPPINESS_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_BUILDING_ADDITIONAL_GREAT_PEOPLE_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_BUILDING_ADDITIONAL_DEFENSE_HOVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Production Popup Unit Training -->
-    <Define>
-        <DefineName>BUG_PRODUCTION_POPUP_TRAIN_CIVILIAN_UNITS_FOREVER</DefineName>
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_PRODUCTION_POPUP_TRAIN_MILITARY_UNITS_FOREVER</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Actions -->
-    <!-- Ask Declare War -->
-    <Define>
-        <DefineName>BUG_ASK_DECLARE_WAR_UNITS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Sentry Healing -->
-    <Define>
-        <DefineName>BUG_SENTRY_HEALING</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_SENTRY_HEALING_ONLY_NEUTRAL</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Ignore Harmless Barbarians -->
-    <Define>
-        <DefineName>BUG_IGNORE_HARMLESS_BARBARIANS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Pre-Chop -->
-    <Define>
-        <DefineName>BUG_PRECHOP_FORESTS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUG_PRECHOP_IMPROVEMENTS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <!-- Advanced Combat Odds -->
-    <Define>
-        <DefineName>ACO_ENABLED</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_DEBUG</DefineName>
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_FORCE_ORIGINAL_ODDS</DefineName>
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_IGNORE_BARB_FREE_WINS</DefineName>
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SWAP_VIEWS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_MERGE_SHORT_BARS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SHOW_MODIFIER_LABELS</DefineName>
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-    <!-- The following use 0 for hidden, 1 for view A, 2 for view B, and 3 for both views -->
-    <Define>
-        <DefineName>ACO_SHOW_BASIC_INFO</DefineName>
-        <iDefineIntVal>3</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SHOW_ATTACKER_INFO</DefineName>
-        <iDefineIntVal>3</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SHOW_DEFENDER_INFO</DefineName>
-        <iDefineIntVal>3</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SHOW_SURVIVAL_ODDS</DefineName>
-        <iDefineIntVal>3</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SHOW_UNHARMED_ODDS</DefineName>
-        <iDefineIntVal>2</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SHOW_AVERAGE_HEALTH</DefineName>
-        <iDefineIntVal>2</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SHOW_ATTACKER_HEALTH_BARS</DefineName>
-        <iDefineIntVal>2</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SHOW_DEFENDER_HEALTH_BARS</DefineName>
-        <iDefineIntVal>2</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SHOW_UNROUNDED_EXPERIENCE</DefineName>
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SHOW_EXPERIENCE_RANGE</DefineName>
-        <iDefineIntVal>2</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SHOW_DEFENSE_MODIFIERS</DefineName>
-        <iDefineIntVal>3</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SHOW_TOTAL_DEFENSE_MODIFIER</DefineName>
-        <iDefineIntVal>2</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ACO_SHOW_SHIFT_INSTRUCTIONS</DefineName>
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- DOC自带的比较有意思的参数 mediv01     -->
-    <Define>
-        <DefineName>UNIT_VISIBILITY_RANGE</DefineName>        <!-- 单位默认视野 1为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>2</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>RECON_VISIBILITY_RANGE</DefineName>        <!-- 侦查默认视野 5为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>5</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>PLOT_VISIBILITY_RANGE</DefineName>        <!-- 城市默认视野 1为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>3</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUILDING_PRODUCTION_DECAY_TIME</DefineName>        <!-- 建筑生产超过50回合就会衰减 50为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>500</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BUILDING_PRODUCTION_DECAY_PERCENT</DefineName>        <!-- 建筑生产每回合衰减1% 99为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>99</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>UNIT_PRODUCTION_DECAY_TIME</DefineName>        <!-- 单位生产超过10回合就会衰减 10为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>100</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>UNIT_PRODUCTION_DECAY_PERCENT</DefineName>        <!-- 单位生产每回合衰减2% 98为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>99</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>FREE_CITY_CULTURE</DefineName>        <!-- 城市默认文化 2为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>3</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>FREE_CITY_ADJACENT_CULTURE</DefineName>        <!-- 相邻城市默认文化 1为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>MIN_CITY_RANGE</DefineName>        <!-- 城市最小间距 1为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>NUM_DO_GOODY_ATTEMPTS</DefineName>        <!-- 最大部落村庄次数限制 10为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>20</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>INITIAL_TRADE_ROUTES</DefineName>        <!-- 城市一开始拥有的商路 1为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>MAX_BUILDINGS_PER_CITY</DefineName>        <!-- 城市可以建筑的最大建筑数量 -1为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>-1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>FOOD_CONSUMPTION_PER_POPULATION</DefineName>        <!-- 每个人口消耗的食物数量 2为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>2</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>FRESH_WATER_HEALTH_CHANGE</DefineName>        <!-- 淡水带来的健康度 2为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>2</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>INITIAL_CITY_MAINTENANCE</DefineName>        <!-- 初始城市维护费 0为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>MAX_DISTANCE_CITY_MAINTENANCE</DefineName>        <!-- 最大城市距离维护费 20为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>20</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>HILLS_EXTRA_DEFENSE</DefineName>        <!-- 丘陵最大的防御加成 25为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>25</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>RIVER_ATTACK_MODIFIER</DefineName>        <!-- 跨河攻击最大的攻击削减 2-5为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>-25</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>AMPHIB_ATTACK_MODIFIER</DefineName>        <!-- 两栖作战最大的攻击削减 -50为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>-50</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>ENEMY_HEAL_RATE</DefineName>        <!-- 敌方领土每回合回复HP，默认是5，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>5</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>NEUTRAL_HEAL_RATE</DefineName>        <!-- 中立领土每回合回复HP，默认是10，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>FRIENDLY_HEAL_RATE</DefineName>        <!-- 友方领土每回合回复HP，默认是15，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>15</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>CITY_HEAL_RATE</DefineName>        <!-- 城市领土每回合回复HP，默认是20，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>20</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>INITIAL_CITY_POPULATION</DefineName>        <!-- 城市初始人口，默认是1，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>MAX_TRADE_ROUTES</DefineName>        <!-- 城市最大拥有的商路 10为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>20</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>DIRTY_POWER_HEALTH_CHANGE</DefineName>        <!-- 城市不洁净的影响 -2为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>-2</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>FOUND_RELIGION_CITY_RAND</DefineName>        <!-- 创建圣城的随机数选择 20为默认模式，  mediv01 本体就有的参数 -->
-        <iDefineIntVal>20</iDefineIntVal>        <!-- Default: 10 -->
-    </Define>
-    <Define>
-        <DefineName>GREAT_PEOPLE_THRESHOLD_INCREASE</DefineName>        <!-- 伟人门槛点增长，默认50  mediv01 本体就有的参数 -->
-        <iDefineIntVal>20</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>GREAT_PEOPLE_THRESHOLD_INCREASE_TEAM</DefineName>        <!-- 伟人门槛点增长，默认50  mediv01 本体就有的参数 -->
-        <iDefineIntVal>20</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>GREAT_PEOPLE_THRESHOLD</DefineName>        <!-- 初始伟人点门槛，默认100 mediv01 本体就有的参数 -->
-        <iDefineIntVal>100</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>GREAT_GENERALS_THRESHOLD_INCREASE</DefineName>        <!-- 大将军门槛点增长，默认50  mediv01 本体就有的参数 -->
-        <iDefineIntVal>30</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>GREAT_GENERALS_THRESHOLD_INCREASE_TEAM</DefineName>        <!-- 大将军门槛点增长，默认50  mediv01 本体就有的参数 -->
-        <iDefineIntVal>30</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>GREAT_GENERALS_THRESHOLD</DefineName>        <!-- 初始大将军点门槛，默认30 mediv01 本体就有的参数 -->
-        <iDefineIntVal>30</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>INITIAL_BASE_FREE_UNITS</DefineName>        <!-- 初始免费支持单位，默认4 mediv01 本体就有的参数 -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>INITIAL_BASE_FREE_MILITARY_UNITS</DefineName>        <!-- 初始免费支持军事单位，默认2 mediv01 本体就有的参数 -->
-        <iDefineIntVal>20</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>INITIAL_FREE_OUTSIDE_UNITS</DefineName>        <!-- 初始免费远程支持单位，默认4 mediv01 本体就有的参数 -->
-        <iDefineIntVal>4</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>ANIMAL_MAX_XP_VALUE</DefineName>        <!-- 攻击动物获取的最大XP，默认5 mediv01 本体就有的参数 -->
-        <iDefineIntVal>5</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BARBARIAN_MAX_XP_VALUE</DefineName>        <!-- 攻击野蛮人获取的最大XP，默认10 mediv01 本体就有的参数 -->
-        <iDefineIntVal>100</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>GOLDEN_AGE_LENGTH</DefineName>        <!-- 黄金时代回合长度，默认8 mediv01 本体就有的参数 -->
-        <iDefineIntVal>8</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>HILLS_EXTRA_MOVEMENT</DefineName>        <!-- 丘陵额外消耗的移动力，默认1 mediv01 本体就有的参数 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>CAPITAL_TRADE_MODIFIER</DefineName>        <!-- 首都贸易加成，默认25 mediv01 本体就有的参数 -->
-        <iDefineIntVal>25</iDefineIntVal>
-    </Define>
-    <!-- 核弹相关参数 -->
-    <Define>
-        <DefineName>NUKE_FALLOUT_PROB</DefineName>
-        <iDefineIntVal>50</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>NUKE_UNIT_DAMAGE_BASE</DefineName>
-        <iDefineIntVal>70</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>NUKE_UNIT_DAMAGE_RAND_1</DefineName>
-        <iDefineIntVal>50</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>NUKE_UNIT_DAMAGE_RAND_2</DefineName>
-        <iDefineIntVal>50</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>NUKE_NON_COMBAT_DEATH_THRESHOLD</DefineName>
-        <iDefineIntVal>60</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>NUKE_BUILDING_DESTRUCTION_PROB</DefineName>
-        <iDefineIntVal>50</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>NUKE_POPULATION_DEATH_BASE</DefineName>
-        <iDefineIntVal>60</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>NUKE_POPULATION_DEATH_RAND_1</DefineName>
-        <iDefineIntVal>20</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>NUKE_POPULATION_DEATH_RAND_2</DefineName>
-        <iDefineIntVal>20</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>GLOBAL_WARMING_PROB</DefineName>        <!-- 全球变暖概率，默认20 mediv01 本体就有的参数 -->
-        <iDefineIntVal>20</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>PEACE_TREATY_LENGTH</DefineName>        <!-- 和平协议回合，默认10 mediv01 本体就有的参数 -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>BASE_OCCUPATION_TURNS</DefineName>        <!-- 占领新城市基础反抗回合，默认3 mediv01 本体就有的参数 -->
-        <iDefineIntVal>3</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>MAX_CITY_DEFENSE_DAMAGE</DefineName>        <!-- 城市最大防御力，默认100 mediv01 本体就有的参数 -->
-        <iDefineIntVal>100</iDefineIntVal>
-    </Define>
-    <!-- 占领新城市相关参数 -->
-    <Define>
-        <DefineName>CAPTURE_GOLD_PER_POPULATION</DefineName>
-        <iDefineIntVal>5</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>CAPTURE_GOLD_PER_BUILDING_COST</DefineName>
-        <iDefineIntVal>5</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>CAPTURE_GOLD_RAND1</DefineName>
-        <iDefineIntVal>50</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>CAPTURE_GOLD_RAND2</DefineName>
-        <iDefineIntVal>25</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>CAPTURE_GOLD_MAX_TURNS</DefineName>
-        <iDefineIntVal>50</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>PLAYER_ALWAYS_RAZES_CITIES</DefineName>        <!-- 玩家总是烧毁城市，默认0 mediv01 本体就有的参数 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>EVENT_PROBABILITY_ROLL_SIDES</DefineName>        <!-- 随机事件发生器，默认100 mediv01 本体就有的参数 -->
-        <iDefineIntVal>100</iDefineIntVal>
-    </Define>
 
     <!-- 汉化修改版小地图新增的DLL功能接口开关 mediv01     GC.getDefineINT("XXX") == 1-->
 
@@ -813,16 +115,6 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 	
-	<Define>
-        <DefineName>GAME_TEXT_SHOW_SETTLER_MAP_MINVALUE</DefineName>        <!-- 1为仅在城市VALUE大于特定数值时显示  0为默认模式 mediv01 -->
-        <iDefineIntVal>90</iDefineIntVal>
-    </Define>
-	
-		<Define>
-        <DefineName>GAME_TEXT_SHOW_SETTLER_MAP_MAXCOUNTRY</DefineName>        <!-- 1为仅在城市VALUE排名前N的国家  0为默认模式 mediv01 -->
-        <iDefineIntVal>6</iDefineIntVal>
-    </Define>
-
     <Define>
         <DefineName>GAME_TEXT_SHOW_RELIGION_MAP</DefineName>        <!-- 1为可以显示地块宗教值的数值  0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
@@ -906,30 +198,6 @@
         <iDefineIntVal>5</iDefineIntVal>
     </Define>
 
-    <Define>
-        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3</DefineName>        <!-- 1为显示科技树科技尚未被哪些国家研究 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3_MAX</DefineName>        <!-- 1为显示科技树科技尚未被哪些国家研究列表的最大数量 999为默认模式 mediv01 -->
-        <iDefineIntVal>999</iDefineIntVal>
-    </Define>
-	
-	    <Define>
-        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3_MINVALUE</DefineName>        <!-- 大于0的数字为显示可出售的科技的值 999为默认模式 mediv01 -->
-        <iDefineIntVal>200</iDefineIntVal>
-    </Define>
-	
-	<Define>
-        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3_HIGHLIGHT_MINVALUE</DefineName>        <!-- 大于0的数字为高亮显示科技交易的价值比例 80代表是80% 0为默认模式 mediv01 -->
-        <iDefineIntVal>80</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>CVTECH_SHOW_TECH_BEING_RESEARCH</DefineName>        <!-- 1为显示科技树科技正在被哪些国家研究 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
 
 
 
@@ -959,8 +227,7 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 	
-	
-    <Define>
+	<Define>
         <DefineName>CVGAMETEXT_SHOW_BUILDING_CAN_BE_BUILD_BY_SETTLER</DefineName>        <!-- 1为显示建筑能否被移民重建 0为默认模式    mediv01  2021年8月版本新增内容 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
@@ -979,12 +246,47 @@
         <DefineName>CVGAMETEXT_SHOW_PLANTATION_CAN_BE_BUILD_BY_SLAVE</DefineName>        <!-- 地块显示该资源能否被奴隶建造种植园，0为默认模式  mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
+ 
+     <Define>
+        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3</DefineName>        <!-- 1为显示科技树科技尚未被哪些国家研究 0为默认模式 mediv01 临时重置 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3_MAX</DefineName>        <!-- 1为显示科技树科技尚未被哪些国家研究列表的最大数量 999为默认模式 mediv01 -->
+        <iDefineIntVal>999</iDefineIntVal>
+    </Define>
 	
-		<Define>
+	    <Define>
+        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3_MINVALUE</DefineName>        <!-- 大于0的数字为显示可出售的科技的值 999为默认模式 mediv01 -->
+        <iDefineIntVal>200</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>CVTECH_SHOW_TECH_DISCOVERY3_HIGHLIGHT_MINVALUE</DefineName>        <!-- 大于0的数字为高亮显示科技交易的价值比例 80代表是80% 0为默认模式 mediv01 -->
+        <iDefineIntVal>80</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVTECH_SHOW_TECH_BEING_RESEARCH</DefineName>        <!-- 1为显示科技树科技正在被哪些国家研究 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+	<Define>
         <DefineName>CVGAMETEXT_SHOW_BONUS_TRADE_VALUE</DefineName>        <!-- 显示该资源交易价值的最小阈值 0为默认模式  mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
+
+
+	<Define>
+        <DefineName>GAME_TEXT_SHOW_SETTLER_MAP_MINVALUE</DefineName>        <!-- 1为仅在城市VALUE大于特定数值时显示  0为默认模式 mediv01 -->
+        <iDefineIntVal>90</iDefineIntVal>
+    </Define>
+	
+		<Define>
+        <DefineName>GAME_TEXT_SHOW_SETTLER_MAP_MAXCOUNTRY</DefineName>        <!-- 1为仅在城市VALUE排名前N的国家  0为默认模式 mediv01 -->
+        <iDefineIntVal>6</iDefineIntVal>
+    </Define>
 
 
 
@@ -1042,7 +344,7 @@
 
     <Define>
         <DefineName>CVCITY_CAN_TRAIN_SLAVE</DefineName>        <!-- 1为城市可以训练奴隶，0为默认模式 mediv01  -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>CVCITY_CAN_TRAIN_ANYTHING</DefineName>        <!-- 1为城市无视科技、宗教、资源等限制，可以训练任何单位，黑暗时代可以训练主战坦克，建议不要开启，0为默认模式 mediv01  -->
@@ -1493,6 +795,38 @@
         <iDefineIntVal>100</iDefineIntVal>
     </Define>
 
+    <Define>
+        <DefineName>CVPLAYERAI_AI_CANNOT_ASK_FOR_TRADE_TO_HUMAN</DefineName>        <!-- 大于0的数字表明AI不会发起请求帮助的交易  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+
+    <Define>
+        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD</DefineName>        <!-- 大于0的数字表明是游戏分数的新计算方式 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_BUILDING_SCORE</DefineName>        <!-- 大于0的数字表明普通建筑的分数，奇观分数为5 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>2</iDefineIntVal>
+    </Define>
+	
+    <Define>
+        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_MONEY_SCORE</DefineName>        <!-- 大于0的数字表明每10000金币的分数 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_MONEY_SCORE_PER_TURN</DefineName>        <!-- 大于0的数字表明每1回合金币的分数 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_ARMY_SCORE</DefineName>        <!-- 大于0的数字表明每100点军力的分数 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>10</iDefineIntVal>
+    </Define>
+	
+
 
     <Define>
         <DefineName>CVCITY_MAX_CITY_MAINTENANCE_OF_NUMBER</DefineName>        <!-- 大于0的数字为最大的城市数量维护费（每座城市）  0为默认模式， mediv01  2021年8月版本新增内容 -->
@@ -1549,10 +883,7 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
-    <Define>
-        <DefineName>CVPLAYERAI_AI_CANNOT_ASK_FOR_TRADE_TO_HUMAN</DefineName>        <!-- 大于0的数字表明AI不会发起请求帮助的交易  0为默认模式， mediv01  2021年8月版本新增内容 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
+
 
     <Define>
         <DefineName>CVPLAYERAI_CONGO_CAN_ALWAYS_TRADE_SLAVES</DefineName>        <!-- 大于0的数字表明当人类玩家为刚果时，交易奴隶可以减少限制。此项为刚果三角贸易新的UP  0为默认模式， mediv01  2021年8月版本新增内容 -->
@@ -1560,239 +891,64 @@
     </Define>
 
     <Define>
-        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD</DefineName>        <!-- 大于0的数字表明是游戏分数的新计算方式 0为默认模式， mediv01  2021年8月版本新增内容 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_BUILDING_SCORE</DefineName>        <!-- 大于0的数字表明普通建筑的分数，奇观分数为5 0为默认模式， mediv01  2021年8月版本新增内容 -->
-        <iDefineIntVal>2</iDefineIntVal>
-    </Define>
-	
-    <Define>
-        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_MONEY_SCORE</DefineName>        <!-- 大于0的数字表明每10000金币的分数 0为默认模式， mediv01  2021年8月版本新增内容 -->
-        <iDefineIntVal>100</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_MONEY_SCORE_PER_TURN</DefineName>        <!-- 大于0的数字表明每1回合金币的分数 0为默认模式， mediv01  2021年8月版本新增内容 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_ARMY_SCORE</DefineName>        <!-- 大于0的数字表明每100点军力的分数 0为默认模式， mediv01  2021年8月版本新增内容 -->
-        <iDefineIntVal>10</iDefineIntVal>
-    </Define>
-	
-    <Define>
         <DefineName>CVTEAMAI_CITY_TRADEVAL_MULTIPLIERTIMES10000</DefineName>        <!-- 大于0的数字为AI与人类进行城市交易时的乘数，数字需要除以10000  0和10000为默认模式， mediv01  2021年8月版本新增内容 -->
         <iDefineIntVal>1000</iDefineIntVal>
     </Define>
+
 	
-	
-    <Define>
-        <DefineName>CVPLAYER_CAN_ALWAYS_TRADE_CITY</DefineName>        <!-- 大于0的数字为总是可以交易城市（包括首都）  0为默认模式， mediv01  2021年8月版本新增内容 -->
+	<Define>
+        <DefineName>CVUNIT_HUMAN_SPY_CANNOT_REVEAL</DefineName>        <!-- 大于0的数字为人类的间谍不会被暴露杀害 0为默认模式， mediv01  2021年8月版本新增内容 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
+	
 
     <Define>
         <DefineName>CVTEAMAI_CITY_TRADEVAL_FOR_VASSAL_MULTIPLIERTIMES10000</DefineName>        <!-- 大于0的数字为AI与人类附庸后，进行城市交易时的乘数，数字需要除以10000  0和10000为默认模式， mediv01  2021年8月版本新增内容 -->
         <iDefineIntVal>0</iDefineIntVal>
     </Define>
 	
-	
 	<Define>
+        <DefineName>CVPLAYER_ASK_RESOURCE_CANNOT_BE_DECLARED_WAR</DefineName>        <!-- 大于0的数字为当勒索AI资源不成功时，不会造成战争 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVPLAYER_CAN_ALWAYS_TRADE_CITY</DefineName>        <!-- 大于0的数字为总是可以交易城市（包括首都）  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+		<Define>
         <DefineName>CVUNIT_CAN_CAPTURE_WORKER_WITHOUT_SLAVERY</DefineName>        <!-- 大于0的数字为无需奴隶制也能抓工人 0为默认模式， mediv01  2021年8月版本新增内容 -->
         <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
+    </Define>	
+
+		
 	<Define>
-        <DefineName>CVUNIT_HUMAN_SPY_CANNOT_REVEAL</DefineName>        <!-- 大于0的数字为人类的间谍不会被暴露杀害 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <DefineName>CVUNIT_CAN_CAPTURE_GREAT_PEOPLE</DefineName>        <!-- 大于0的数字为可以抓取伟人 0为默认模式， mediv01  2021年8月版本新增内容 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
-    <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  BUGFIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-    <Define>
-        <DefineName>CVGAMECORE_FIX_NULL_POINTER_BUG1</DefineName>        <!-- 1为修正游戏中的PLOT的空指针错误， 0为默认模式 此项目不可XML配置，写死在CvGLOBAL.h里，需要修改的话可以重新生成DLL mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>CVGAMECORE_FIX_NULL_POINTER_BUG2</DefineName>        <!-- 1为修正游戏中的内存泄露错误， 0为默认模式 此项目不可XML配置，写死在CvGLOBAL.h里，需要修改的话可以重新生成DLL mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>CVGAMECORE_FIX_BUG_PERFORMANCE_UP01</DefineName>        <!-- 1为修正游戏中的内存泄露错误， 0为默认模式 此项目不可XML配置，写死在CvGLOBAL.h里，需要修改的话可以重新生成DLL mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	
 	<Define>
-        <DefineName>CVGAMECORE_NEW_AUTOSAVE_FEATURE</DefineName>        <!-- 在游戏回合结束时保存游戏，而不是游戏回合开始时 0为默认模式 此项目不可XML配置，写死在CvGLOBAL.h里，需要修改的话可以重新生成DLL mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <DefineName>CVCITY_MAX_SHRINE_LIMIT</DefineName>        <!-- 大于0的数字为圣殿能够带来的最大收入 0或者20为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>40</iDefineIntVal>
     </Define>
 
-
-    <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  调试相关 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-	
 	<Define>
-        <DefineName>CVGAMECORE_DLL_DEBUG</DefineName>        <!-- 大于0的数字为触发手动DEBUG事件  仅为调试输出使用，请设置为0  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <DefineName>CVPLAYER_GOLEN_AGE_UNIT_REQUIRED</DefineName>        <!-- 大于0的数字为黄金时代烧伟人的数量为固定数量限制，例如数字1表示开启黄金时代固定烧1个伟人 0为默认模式， mediv01  2021年8月版本新增内容 -->
         <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-	
-	<Define>
-        <DefineName>CVGAMECORE_DLL_AUTO_DEBUGMODE</DefineName>        <!-- 1为自动进入系统调试模式 仅为调试输出使用，请设置为0 0为默认模式， mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-    <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  LOG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-    <Define>
-        <DefineName>PYTHON_USE_LOG</DefineName>        <!-- 1为打开日志功能 此选项为日志功能的总开关   0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-
-    <Define>
-        <DefineName>PYTHON_OUTPUT_DEBUG_TEXT_TO_LOG</DefineName>        <!-- 1为将DEBUG的信息输出为LOG文件 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_AIACTION</DefineName>        <!-- 1为记录AI行为的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_CONGRESS</DefineName>        <!-- 1为记录国际会议的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_STABILITY</DefineName>        <!-- 1为记录稳定度详情的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_MAIN_BARBS</DefineName>        <!-- 1为记录野蛮人入侵的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_MAIN_MINOR</DefineName>        <!-- 1为记录独立城邦的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_MAIN_RISE_AND_FALL</DefineName>        <!-- 1为记录国家兴起与崩溃的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_MAIN_AIWAR</DefineName>        <!-- 1为记录AIWAR的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_MAIN_PLAGUE</DefineName>        <!-- 1为记录瘟疫的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_WONDER</DefineName>        <!-- 1为记录奇观建成的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_GREATPEOPLE</DefineName>        <!-- 1为记录伟人的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_BUILDING</DefineName>        <!-- 1为记录普通建筑的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_UNIT</DefineName>        <!-- 1为记录普通单位的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_TECH</DefineName>        <!-- 1为记录科技获取的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_CITY_BUILD</DefineName>        <!-- 1为记录城市建立的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_CITY_CONQUEST</DefineName>        <!-- 1为记录城市被攻占的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_RELIGION</DefineName>        <!-- 1为记录城市宗教传播的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_TECHSCORE</DefineName>        <!-- 1为记录科技得分的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_POWERSCORE</DefineName>        <!-- 1为记录军事实力传播的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-
-    <Define>
-        <DefineName>PYTHON_LOG_MANUAL_DEBUG_SCORE</DefineName>        <!-- 1为在打开信息界面时自动输出每回合科技、军事排名信息，仅为调试时使用 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-
-    <Define>
-        <DefineName>PYTHON_LOG_ON_RANDOMEVENT</DefineName>        <!-- 1为记录日常随机事件 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
+    </Define>	
 
 
 
-    <Define>
-        <DefineName>CVGAMECORE_LOG_PATH</DefineName>
-        <DefineTextVal>D:\\DoC_Log\\</DefineTextVal>
-    </Define>
 
-    <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  DLL LOG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->	
-	<Define>
-        <DefineName>CVGAMECORE_DLL_LOG</DefineName>        <!-- 1为新增了DLL的LOG函数IO总开关 0为默认模式， mediv01  -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	<Define>
-        <DefineName>CVGAMECORE_LOG_AI_BUILDCITY</DefineName>        <!-- 1为新增了DLL的LOG函数，记录AI建城决策 0为默认模式， mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
-	
-	<Define>
-        <DefineName>CVGAMECORE_LOG_SHOW_CITY_TRADE_VALUE</DefineName>        <!-- 1为在DLL记录城市的价值 0为默认模式， mediv01  -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
 
+  
 
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  PYTHON 第一部分 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 
     <Define>
-        <DefineName>PYTHON_AUTO_SAVE_EVERYTURN</DefineName>        <!-- 1为每回合都自动保存 0为默认模式 mediv01 -->
+        <DefineName>PYTHON_AUTO_SAVE_EVERYTURN</DefineName>        <!-- 1为每回合都自动保存 0为默认模式 此参数已经在DLL里实现，建议设置为0  mediv01 -->
         <iDefineIntVal>0</iDefineIntVal>
     </Define>
     <Define>
@@ -1912,6 +1068,15 @@
     </Define>
 
 
+
+
+
+
+
+
+
+
+
     
     <Define>
         <DefineName>PYTHON_USE_ADVANCE_ALERT</DefineName>        <!-- 1为可以使用高级提示信息 0为默认模式 mediv01 -->
@@ -1982,7 +1147,7 @@
 
     <Define>
         <DefineName>PYTHON_DISABLE_HARAPPA_DESTROY_CITY</DefineName>        <!-- 1为关闭哈拉帕崩溃时自动毁灭城市 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
 
@@ -2104,6 +1269,12 @@
     <Define>
         <DefineName>STABILITY_PY_HANDICAP_BONUS</DefineName>        <!-- 1为不同难度下稳定度的红利  0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+
+    <Define>
+        <DefineName>STABILITY_PY_HUMAN_BONUS</DefineName>        <!-- 大于0的数字为人类玩家固定增加的稳定度，如果数字为10，人类玩家的稳定度就是从10开始计算  0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
 
@@ -2264,7 +1435,7 @@
 	
 	<Define>
         <DefineName>PYTHON_SHOW_CIV_MONEY_ON_PANNEL</DefineName>        <!--  大于0的数字为在界面显示国家可用金币，0为默认模式  mediv01 2021年8月版本 -->
-        <iDefineIntVal>1000</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 	
 
@@ -2275,11 +1446,203 @@
 	
 	
 	<Define>
-        <DefineName>PYTHON_TECHTRADE_VALUE_MIN_PERCENT</DefineName>        <!--  大于0的数字为在界面显示国家可用金币，0为默认模式  mediv01 2021年8月版本 -->
+        <DefineName>PYTHON_TECHTRADE_VALUE_MIN_PERCENT</DefineName>        <!--  大于0的数字为显示可交易科技最低价值的阈值，95代表95%，0为默认模式  mediv01 2021年8月版本 -->
         <iDefineIntVal>95</iDefineIntVal>
     </Define>
 
+	<Define>
+        <DefineName>STABILITY_CORE_POPULATION_HELPER_WITH_NETHERLAND</DefineName>        <!--  大于0的数字表示荷兰计算稳定度的时候额外的核心人口，防止荷兰丢失阿姆斯特丹后崩溃，0为默认模式  mediv01 2021年8月版本 -->
+        <iDefineIntVal>5</iDefineIntVal>
+    </Define>
+
+
+  <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  LOG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <Define>
+        <DefineName>PYTHON_USE_LOG</DefineName>        <!-- 1为打开日志功能 此选项为日志功能的总开关   0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+
+    <Define>
+        <DefineName>PYTHON_OUTPUT_DEBUG_TEXT_TO_LOG</DefineName>        <!-- 1为将DEBUG的信息输出为LOG文件 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_AIACTION</DefineName>        <!-- 1为记录AI行为的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_CONGRESS</DefineName>        <!-- 1为记录国际会议的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_STABILITY</DefineName>        <!-- 1为记录稳定度详情的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_MAIN_BARBS</DefineName>        <!-- 1为记录野蛮人入侵的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_MAIN_MINOR</DefineName>        <!-- 1为记录独立城邦的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_MAIN_RISE_AND_FALL</DefineName>        <!-- 1为记录国家兴起与崩溃的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_MAIN_AIWAR</DefineName>        <!-- 1为记录AIWAR的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_MAIN_PLAGUE</DefineName>        <!-- 1为记录瘟疫的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_WONDER</DefineName>        <!-- 1为记录奇观建成的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_GREATPEOPLE</DefineName>        <!-- 1为记录伟人的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_BUILDING</DefineName>        <!-- 1为记录普通建筑的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_UNIT</DefineName>        <!-- 1为记录普通单位的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_TECH</DefineName>        <!-- 1为记录科技获取的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_CITY_BUILD</DefineName>        <!-- 1为记录城市建立的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_CITY_CONQUEST</DefineName>        <!-- 1为记录城市被攻占的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_RELIGION</DefineName>        <!-- 1为记录城市宗教传播的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_TECHSCORE</DefineName>        <!-- 1为记录科技得分的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_POWERSCORE</DefineName>        <!-- 1为记录军事实力传播的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_MODIFIER_CHANGE</DefineName>        <!-- 1为记录文明科研参数变动的的日志 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+
+    <Define>
+        <DefineName>PYTHON_LOG_MANUAL_DEBUG_SCORE</DefineName>        <!-- 1为在打开信息界面时自动输出每回合科技、军事排名信息，仅为调试时使用 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>PYTHON_LOG_ON_RANDOMEVENT</DefineName>        <!-- 1为记录日常随机事件 0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+
+
+    <Define>
+        <DefineName>CVGAMECORE_LOG_PATH</DefineName>    <!-- 日志存放的文件夹 mediv01 -->
+        <DefineTextVal>Mods\\RFC Dawn of Civilization 1.16.2\\Logs\\</DefineTextVal>
+    </Define>
+
+    <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  DLL LOG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->	
+	<Define>
+        <DefineName>CVGAMECORE_DLL_LOG</DefineName>        <!-- 1为新增了DLL的LOG函数IO总开关 0为默认模式， mediv01  -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+	<Define>
+        <DefineName>CVGAMECORE_LOG_AI_CONQUEST_TECH_AND_GOLD</DefineName>        <!-- 1为新增了DLL的LOG函数，记录AI征服获得金币和科技 0为默认模式， mediv01  -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>CVGAMECORE_LOG_AI_BUILDCITY</DefineName>        <!-- 1为新增了DLL的LOG函数，记录AI建城决策 0为默认模式， mediv01  -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>CVGAMECORE_LOG_SHOW_CITY_TRADE_VALUE</DefineName>        <!-- 1为在DLL记录城市的价值 0为默认模式， mediv01  -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+    <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  调试相关 请勿更改 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	
+	<Define>
+        <DefineName>CVGAMECORE_DLL_DEBUG</DefineName>        <!-- 大于0的数字为触发手动DEBUG事件  仅为调试输出使用，设置为1会很卡，请设置为0  0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>CVGAMECORE_DLL_AUTO_DEBUGMODE</DefineName>        <!-- 1为自动进入系统调试模式 仅为调试输出使用，设置为1会很卡，请设置为0 0为默认模式， mediv01  -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+	
+	    <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  BUGFIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <Define>
+        <DefineName>CVGAMECORE_FIX_NULL_POINTER_BUG1</DefineName>        <!-- 1为修正游戏中的PLOT的空指针错误， 0为默认模式 此项目不可XML配置，写死在CvGLOBAL.h里，需要修改的话可以重新生成DLL mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVGAMECORE_FIX_NULL_POINTER_BUG2</DefineName>        <!-- 1为修正游戏中的内存泄露错误， 0为默认模式 此项目不可XML配置，写死在CvGLOBAL.h里，需要修改的话可以重新生成DLL mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+    <Define>
+        <DefineName>CVGAMECORE_FIX_BUG_PERFORMANCE_UP01</DefineName>        <!-- 1为修正游戏中的内存泄露错误， 0为默认模式 此项目不可XML配置，写死在CvGLOBAL.h里，需要修改的话可以重新生成DLL mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	
+	<Define>
+        <DefineName>CVGAMECORE_NEW_AUTOSAVE_FEATURE</DefineName>        <!-- 在游戏回合结束时保存游戏，而不是游戏回合开始时 0为默认模式 此项目不可XML配置，写死在CvGLOBAL.h里，需要修改的话可以重新生成DLL mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
 	<![CDATA[ 
+
     <Define>
         <DefineName>ANYFUN_EVENT_CONTROL</DefineName><!-- 1为启用ANYFUN的事件控制机制，0为默认模式，这个代码貌似还没起作用，建议设置为0  mediv01 -->
         <iDefineIntVal>0</iDefineIntVal>
@@ -2304,7 +1667,6 @@
         <DefineName>ANYFUN_NEW4_ADD_EVENT</DefineName><!-- 1为启用没有额外事件，0为默认模式，mediv01 -->
         <iDefineIntVal>0</iDefineIntVal>
     </Define>
-
 
     <Define>
         <DefineName>CVGAMETEXT_HURRY_ALERT_MORE_THAN_ONCE</DefineName><!-- 1为允许多次提醒加速人口信息  0为默认模式， 暂时无作用，先用0  mediv01  -->

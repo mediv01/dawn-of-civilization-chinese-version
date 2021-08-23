@@ -1182,7 +1182,7 @@ int CvDeal::turnsToCancel(PlayerTypes eByPlayer)
 	}
 	//mediv01 禁止主动取消任何交易（只有战争）
 	if (GC.getDefineINT("CVDEAL_NOT_ALLOW_TO_CANCEL_DEAL_ANYTIME") == 1) {
-		return 10;
+		return 1000;
 	}
 
 	return (getInitialGameTurn() + GC.getDefineINT("PEACE_TREATY_LENGTH") - GC.getGameINLINE().getGameTurn());

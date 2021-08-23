@@ -4907,24 +4907,8 @@ class CvMainInterface:
 # BUG - WHEOOH - end
 # BUG - Num Cities - start
 												if (ScoreOpt.isShowCountCities()):
-													if (PlayerUtil.canSeeCityList(ePlayer)):
-														szTempBuffer = u"%d" % PlayerUtil.getNumCities(ePlayer)
-														iGoldThrehold=gc.getDefineINT("PYTHON_SHOW_CIV_MONEY_ON_PANNEL")
-														if (iGoldThrehold > 0):
-															iGold = gc.getPlayer(ePlayer).AI_maxGoldTrade(gc.getGame().getActivePlayer())
-															if (iGold>=iGoldThrehold):
-																szTempBuffer = u"C:%d  G:%d" % (PlayerUtil.getNumCities(ePlayer),iGold)
-													else:
-														szTempBuffer = BugUtil.colorText(u"%d" % PlayerUtil.getNumRevealedCities(ePlayer), "COLOR_CYAN")
-														iGoldThrehold=gc.getDefineINT("PYTHON_SHOW_CIV_MONEY_ON_PANNEL")
-														if (iGoldThrehold > 0):
-															iGold = gc.getPlayer(ePlayer).AI_maxGoldTrade(gc.getGame().getActivePlayer())
-															if (iGold>=iGoldThrehold):
-																szTempBuffer = BugUtil.colorText(u"C:%d  G:%d" % (PlayerUtil.getNumRevealedCities(ePlayer),iGold), "COLOR_CYAN")
-													szBuffer = szBuffer + " " + szTempBuffer
-													if (bAlignIcons):
-														scores.setNumCities(szTempBuffer)
-# BUG - Num Cities - end
+													szBuffer = self.screen_showmoney(bAlignIcons, ePlayer, scores, szBuffer)
+											# BUG - Num Cities - end
 											
 											if (CyGame().isNetworkMultiPlayer()):
 												szTempBuffer = CyGameTextMgr().getNetStats(ePlayer)
@@ -4980,7 +4964,30 @@ class CvMainInterface:
 						yCoord = yResolution - 68
 					screen.setPanelSize( "ScoreBackground", xResolution - 21 - iWidth, yCoord - (iBtnHeight * iCount) - 4, iWidth + 12, (iBtnHeight * iCount) + 8 )
 					screen.show( "ScoreBackground" )
-# BUG - Align Icons - end
+
+	def screen_showmoney(self, bAlignIcons, ePlayer, scores, szBuffer):
+		if (PlayerUtil.canSeeCityList(ePlayer)):
+			szTempBuffer = u"%d" % PlayerUtil.getNumCities(ePlayer)
+			iGoldThrehold = gc.getDefineINT("PYTHON_SHOW_CIV_MONEY_ON_PANNEL")
+			if (iGoldThrehold > 0):
+				iGold = gc.getPlayer(ePlayer).AI_maxGoldTrade(gc.getGame().getActivePlayer())
+				iGoldPerTurn = gc.getPlayer(ePlayer).AI_maxGoldPerTurnTrade(gc.getGame().getActivePlayer())
+				if (iGold >= iGoldThrehold):
+					szTempBuffer = u"C:%d  G:%d(%d)" % (PlayerUtil.getNumCities(ePlayer), iGold, iGoldPerTurn)
+		else:
+			szTempBuffer = BugUtil.colorText(u"%d" % PlayerUtil.getNumRevealedCities(ePlayer), "COLOR_CYAN")
+			iGoldThrehold = gc.getDefineINT("PYTHON_SHOW_CIV_MONEY_ON_PANNEL")
+			if (iGoldThrehold > 0):
+				iGold = gc.getPlayer(ePlayer).AI_maxGoldTrade(gc.getGame().getActivePlayer())
+				iGoldPerTurn = gc.getPlayer(ePlayer).AI_maxGoldPerTurnTrade(gc.getGame().getActivePlayer())
+				if (iGold >= iGoldThrehold):
+					szTempBuffer = BugUtil.colorText(u"C:%d  G:%d(%d)" % (PlayerUtil.getNumRevealedCities(ePlayer), iGold, iGoldPerTurn), "COLOR_CYAN")
+		szBuffer = szBuffer + " " + szTempBuffer
+		if (bAlignIcons):
+			scores.setNumCities(szTempBuffer)
+		return szBuffer
+
+	# BUG - Align Icons - end
 
 	# Will update the help Strings
 	def updateHelpStrings( self ):

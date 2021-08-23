@@ -237,18 +237,7 @@ class AIWars:
             if(iID<200):
                 utils.log2("AI WAR ["+str(iID)+"] GAME TURN LEFT: "+str(iStartTurn - iGameTurn),'DoC_SmallMap_Log_AIWar')
                 pass
-        if (iStartTurn - iGameTurn == 2 and gc.getDefineINT("AIWAR_PY_HUMAN_AI_WAR_ALERT") == 1 and utils.getHumanID() == iPreferredTarget):  #mediv01  alert for AIWAR
 
-            tem_text = '&#35686;&#25253;&#65306;&#25932;&#22269;&#27491;&#22312;&#25105;&#22269;&#36793;&#22659;&#38598;&#32467;&#22823;&#20891;&#65281;&#25112;&#20105;&#30340;&#38452;&#20113;&#31548;&#32617;&#22312;&#25105;&#22269;&#19978;&#31354;&#65281;'  #警报：敌国正在我国边境集结大军！战争的阴云笼罩在我国上空！
-            utils.show(tem_text)
-            CyInterface().addMessage(gc.getGame().getActivePlayer(), False, iDuration, tem_text, "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
-            pass
-        if (iStartTurn - iGameTurn == 2 and gc.getDefineINT("AIWAR_PY_HUMAN_AI_WAR_ALERT") == 1 and utils.getHumanID() == iPlayer):  #mediv01  alert for AIWAR
-
-            tem_text = '&#35686;&#25253;&#65306;&#25932;&#20891;&#27491;&#22312;&#36793;&#22659;&#25361;&#34885;&#25105;&#26041;&#20891;&#38431;&#65292;&#25112;&#20105;&#30340;&#38452;&#20113;&#31548;&#32617;&#22312;&#25105;&#22269;&#19978;&#31354;&#65281;&#10;'  #警报：敌军正在边境挑衅我方军队，战争的阴云笼罩在我国上空！
-            utils.show(tem_text)
-            CyInterface().addMessage(gc.getGame().getActivePlayer(), False, iDuration, tem_text, "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
-            pass
         if iGameTurn <= getTurnForYear(tBirth[iPlayer]) + 3: return
 
         if not (iStartTurn <= iGameTurn <= iStartTurn + iIntervalTurns): return
@@ -281,6 +270,17 @@ class AIWars:
                         return
             pass
 
+        if (iStartTurn - iGameTurn == 2 and gc.getDefineINT("AIWAR_PY_HUMAN_AI_WAR_ALERT") == 1 and utils.getHumanID() == iPreferredTarget):  #mediv01  alert for AIWAR
+            tem_text = '&#35686;&#25253;&#65306;&#25932;&#22269;&#27491;&#22312;&#25105;&#22269;&#36793;&#22659;&#38598;&#32467;&#22823;&#20891;&#65281;&#25112;&#20105;&#30340;&#38452;&#20113;&#31548;&#32617;&#22312;&#25105;&#22269;&#19978;&#31354;&#65281;'  #警报：敌国正在我国边境集结大军！战争的阴云笼罩在我国上空！
+            utils.show(tem_text)
+            CyInterface().addMessage(gc.getGame().getActivePlayer(), False, iDuration, tem_text, "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
+            pass
+        if (iStartTurn - iGameTurn == 2 and gc.getDefineINT("AIWAR_PY_HUMAN_AI_WAR_ALERT") == 1 and utils.getHumanID() == iPlayer):  #mediv01  alert for AIWAR
+
+            tem_text = '&#35686;&#25253;&#65306;&#25932;&#20891;&#27491;&#22312;&#36793;&#22659;&#25361;&#34885;&#25105;&#26041;&#20891;&#38431;&#65292;&#25112;&#20105;&#30340;&#38452;&#20113;&#31548;&#32617;&#22312;&#25105;&#22269;&#19978;&#31354;&#65281;&#10;'  #警报：敌军正在边境挑衅我方军队，战争的阴云笼罩在我国上空！
+            utils.show(tem_text)
+            CyInterface().addMessage(gc.getGame().getActivePlayer(), False, iDuration, tem_text, "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
+            pass
 
         if(iID<len(data.lConquest)):
             if data.lConquest[iID]: return

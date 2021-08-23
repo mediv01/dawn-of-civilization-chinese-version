@@ -185,7 +185,8 @@ class RFCUtils:
     #新增输出日志的功能
     def log_path(self):
         #filepath='D:\\DoC_Log\\'
-        filepath = BugPath.join(BugPath.getRootDir(), 'Saves', 'logs', '')
+        #filepath = BugPath.join(BugPath.getRootDir(), 'Saves', 'logs', '')
+        filepath = gc.getDefineSTRING("CVGAMECORE_LOG_PATH")
         return filepath
 
     def log_gettime(self):
@@ -245,69 +246,42 @@ class RFCUtils:
 
     def log_reset(self):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log_AI.log", 'w')
-            f.write('')
-            f.close
-            f = open(self.log_path()+"DoC_SmallMap_Log_Main.log", 'w')
-            f.write('')
-            f.close
-            f = open(self.log_path()+"DoC_SmallMap_Log_Stability.log", 'w')
-            f.write('')
-            f.close
-            f = open(self.log_path()+"DoC_SmallMap_Log_Congress.log", 'w')
-            f.write('')
-            f.close
+            PythonLogList=['DoC_SmallMap_Log_Main.log',
+                           'DoC_SmallMap_Log_AI.log',
+                           "DoC_SmallMap_Log_Stability.log",
+                           "DoC_SmallMap_Log_Congress.log",
+                           "DoC_SmallMap_Log_Great_People.log",
+                           "DoC_SmallMap_Log_Wonder.log",
+                           "DoC_SmallMap_Log_Building.log",
+                           "DoC_SmallMap_Log_Unit.log",
+                           "DoC_SmallMap_Log_Tech.log",
+                           "DoC_SmallMap_Log_City_Build.log",
+                           "DoC_SmallMap_Log_City_Conquest.log",
+                           "DoC_SmallMap_Log_City_Religion.log",
+                           "DoC_SmallMap_Log_TechScore.log",
+                           "DoC_SmallMap_Log_PowerScore.log",
+                           "DoC_SmallMap_Log_RandomEvent.log",
+                           "DoC_SmallMap_Log_AIWar.log",
+                           "DoC_SmallMap_Log_Congress_Prob.log",
+                           'DoC_SmallMap_Log_ModifiersChange.log'
+                           ]
 
-            f = open(self.log_path()+"DoC_SmallMap_Log_Great_People.log", 'w')
-            f.write('')
-            f.close
+            DLLLogList = [
+                "DoC_SmallMap_DLL_Log_ALL.log",
+                'DoC_SmallMap_DLL_Log_Conquest.log',
+                'DoC_SmallMap_DLL_Log_AI_TradeCityVal.log',
+                'DoC_SmallMap_DLL_Log_AI_BuildCity.log'
+            ]
 
-            f = open(self.log_path()+"DoC_SmallMap_Log_Wonder.log", 'w')
-            f.write('')
-            f.close
+            for filename in PythonLogList:
+                f = open(self.log_path() + filename, 'w')
+                f.write('')
+                f.close
 
-            f = open(self.log_path()+"DoC_SmallMap_Log_Building.log", 'w')
-            f.write('')
-            f.close
-
-            f = open(self.log_path()+"DoC_SmallMap_Log_Unit.log", 'w')
-            f.write('')
-            f.close
-
-            f = open(self.log_path()+"DoC_SmallMap_Log_Tech.log", 'w')
-            f.write('')
-            f.close
-
-            f = open(self.log_path()+"DoC_SmallMap_Log_City_Build.log", 'w')
-            f.write('')
-            f.close
-
-            f = open(self.log_path()+"DoC_SmallMap_Log_City_Conquest.log", 'w')
-            f.write('')
-            f.close
-
-            f = open(self.log_path()+"DoC_SmallMap_Log_City_Religion.log", 'w')
-            f.write('')
-            f.close
-
-            f = open(self.log_path() + "DoC_SmallMap_Log_TechScore.log", 'w')
-            f.write('')
-            f.close
-            f = open(self.log_path() + "DoC_SmallMap_Log_PowerScore.log", 'w')
-            f.write('')
-            f.close
-
-            f = open(self.log_path() + "DoC_SmallMap_Log_RandomEvent.log", 'w')
-            f.write('')
-            f.close
-
-            f = open(self.log_path() + "DoC_SmallMap_Log_AIWar.log", 'w')
-            f.write('')
-
-            f = open(self.log_path() + "DoC_SmallMap_Log_Congress_Prob.log", 'w')
-            f.write('')
-
-            f.close
+            for filename in DLLLogList:
+                f = open(self.log_path() + filename, 'w')
+                f.write('')
+                f.close
 
 
     def logwithid(self,id,strText):

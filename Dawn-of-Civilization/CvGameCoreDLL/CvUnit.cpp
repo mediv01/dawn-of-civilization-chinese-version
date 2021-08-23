@@ -472,7 +472,7 @@ void CvUnit::setupGraphical()
 	}
 }
 
-
+// 单位升级的函数
 void CvUnit::convert(CvUnit* pUnit)
 {
 	CvPlot* pPlot = plot();
@@ -496,7 +496,7 @@ void CvUnit::convert(CvUnit* pUnit)
 	iNewExperience /= iOldModifier;
 
 	// Leoreth: includes German UP
-	//mediv01 德国的UP
+	//mediv01 德国的UP 升级的经验保留
 	if (getLeaderUnitType() == NO_UNIT && getOwner() != GERMANY)
 	{
 		int iOldCombat = GC.getUnitInfo(pUnit->getUnitType()).getCombat();
@@ -587,6 +587,7 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	static std::vector<IDInfo> oldUnits;
 	oldUnits.clear();
 	pUnitNode = pPlot->headUnitNode();
+
 
 	while (pUnitNode != NULL)
 	{
@@ -724,6 +725,10 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	eCapturingPlayer = getCapturingPlayer();
 	eCaptureUnitType = ((eCapturingPlayer != NO_PLAYER) ? getCaptureUnitType(GET_PLAYER(eCapturingPlayer).getCivilizationType()) : NO_UNIT);
 
+
+
+
+
 	// captured workers become slaves with Slavery (disabled)
 	//mediv01 老代码 抓工人做奴隶
 	/*if (eCaptureUnitType != NO_UNIT && GC.getUnitInfo(eCaptureUnitType).isWorker())
@@ -750,6 +755,8 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	UnitTypes eCapturedUnitType = getUnitType();
 // BUG - Unit Captured Event - end
 
+
+
 	setXY(INVALID_PLOT_COORD, INVALID_PLOT_COORD, true);
 
 	joinGroup(NULL, false, false);
@@ -758,10 +765,44 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 
 	GET_PLAYER(getOwnerINLINE()).deleteUnit(getID());
 
+
+
+	//mediv01 可以抓敌方的伟人
+	if (GC.getDefineINT("CVUNIT_CAN_CAPTURE_GREAT_PEOPLE") > 0) {
+		if (eCapturingPlayer != NO_PLAYER && eCapturedUnitType != NO_UNIT) {
+			int eCapturedUnitTypeID = (int)eCapturedUnitType;
+			std::vector<int> greatpeople_list;
+			greatpeople_list.push_back(iGreatProphet);
+			greatpeople_list.push_back(iGreatArtist);
+			greatpeople_list.push_back(iGreatScientist);
+			greatpeople_list.push_back(iGreatMerchant);
+			greatpeople_list.push_back(iGreatEngineer);
+			greatpeople_list.push_back(iGreatStatesman);
+
+			if (std::count(greatpeople_list.begin(), greatpeople_list.end(), eCapturedUnitTypeID)) {
+				UnitTypes eGreatPersonUnit = eCapturedUnitType;
+				CvUnit* pGreatPeopleUnit = GET_PLAYER(eCapturingPlayer).initUnit(eGreatPersonUnit, pPlot->getX_INLINE(), pPlot->getY_INLINE());
+				if (pGreatPeopleUnit != NULL) {
+					szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_CAPTURED_UNIT", GC.getUnitInfo(eGreatPersonUnit).getTextKeyWide());
+					gDLL->getInterfaceIFace()->addMessage(eCapturingPlayer, true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, pGreatPeopleUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
+				}
+			}
+
+
+		}
+
+	}
+
+
+
+
 	if (eCapturingPlayer != NO_PLAYER && eCaptureUnitType != NO_UNIT)
 	{
 		UnitClassTypes eCaptureUnitClassType = (UnitClassTypes)GC.getUnitInfo(eCaptureUnitType).getUnitClassType();
 		UnitTypes eOwnCaptureUnitType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(eCapturingPlayer).getCivilizationType()).getCivilizationUnits(eCaptureUnitClassType);
+
+
+
 
 		bool bCanCapture = true;
 
@@ -870,6 +911,7 @@ void CvUnit::doTurn()
 		collectBlockadeGold();
 	}
 
+	// 判定间谍是否被发现
 	if (isSpy() && isIntruding() && !isCargo())
 	{
 		TeamTypes eTeam = plot()->getTeam();
@@ -6318,6 +6360,7 @@ bool CvUnit::join(SpecialistTypes eSpecialist)
 	{
 		pCity->changeFreeSpecialistCount(eSpecialist, 1);
 
+		// mediv01 新天鹅堡的效果：安置伟人恢复25%
 		// Leoreth: Neuschwanstein Castle effect
 		if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)NEUSCHWANSTEIN))
 		{
@@ -7193,6 +7236,7 @@ bool CvUnit::testSpyIntercepted(PlayerTypes eTargetPlayer, int iModifier)
 		return false;
 	}
 
+	// mediv01 布莱切利园的效果
 	// Leoreth: Bletchley Park effect
 	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BLETCHLEY_PARK))
 	{
@@ -7467,6 +7511,7 @@ bool CvUnit::build(BuildTypes eBuild)
 
 	int iWorkRate = workRate(false);
 
+	// mediv01 芳堤娜城堡的特效
 	// Leoreth: Chateau Frontenac effect
 	if (eBuild != NO_BUILD && GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)FRONTENAC))
 	{
@@ -7584,6 +7629,7 @@ void CvUnit::promote(PromotionTypes ePromotion, int iLeaderUnitId)
 	{
 		changeLevel(1);
 
+		// mediv01 凯旋门特效
 		// Leoreth: Triumphal Arch effect
 		int iDamageHealed = GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)TRIUMPHAL_ARCH) ? getDamage() * 3 / 4 : getDamage() / 2;
 		changeDamage(-iDamageHealed);

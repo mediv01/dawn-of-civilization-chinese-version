@@ -10386,6 +10386,7 @@ int CvCityAI::AI_buildingWeight(BuildingTypes eBuilding) const
 			return -MAX_INT;
 		}
 	}
+	// mediv01 马丘比丘特效
 	else if (eBuilding == MACHU_PICCHU || eBuilding == MOLE_ANTONELLIANA)
 	{
 		int iPeakCount = 0;

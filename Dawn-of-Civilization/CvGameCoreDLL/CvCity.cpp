@@ -1,5 +1,5 @@
 // city.cpp
-//mediv01 阅读修改于20200812
+//mediv01 阅读修改于20200812 跟城市相关的游戏逻辑代码
 #include "CvGameCoreDLL.h"
 #include "CvGlobals.h"
 #include "CvCity.h"
@@ -251,6 +251,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		}
 	}
 
+	// 改变城市视野
 	for (iI = 0; iI < MAX_TEAMS; iI++)
 	{
 		if (GET_TEAM(getTeam()).isVassal((TeamTypes)iI))
@@ -267,6 +268,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 	if (lResult == 1)
 	{
+		// mediv01 城市地块有森林，建城免费获得90锤子
 		if (GC.getDefineINT("CVCITY_FOUND_CITY_CAN_USE_FOREST") > 0) {
 			if (pPlot->getFeatureType() == FEATURE_FOREST) {
 				 CvCity* pCity = pPlot->getPlotCity();
@@ -328,19 +330,20 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	{
 		changeReligionYieldChange(GET_PLAYER(eOwner).getStateReligion(), (YieldTypes)iI, GET_PLAYER(eOwner).getReligionYieldChange((YieldTypes)iI));
 	}
-
-	// Leoreth: Chinese UP: +25% food kept on city growth  //mediv01 中国UP 食物增长特效
+	// mediv01 中国UP 食物增长特效
+	// Leoreth: Chinese UP: +25% food kept on city growth  
 	if (getOwnerINLINE() == CHINA)
 	{
 		changeMaxFoodKeptPercent(25);
 	}
-
+	
+	// 普兰巴南神庙奇观特效 增加城市25%的食物留存
 	// Leoreth: Prambanan effect: +25% food kept on city growth
 	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)PRAMBANAN))
 	{
 		changeMaxFoodKeptPercent(25);
 	}
-
+	// 老犹太教堂的特效：每个犹太教建筑+2金币
 	// Leoreth: Old Synagogue effect: +2 gold for Jewish religious buildings
 	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)OLD_SYNAGOGUE))
 	{
@@ -353,9 +356,9 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 			}
 		}
 	}
-
+	// 拉哈斯大教堂： 所有城市的治愈率提高10%
 	// Leoreth: Las Lajas Sanctuary effect: +10% heal rate in all cities
-	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)LAS_LAJAS_SANCTUARY))  //mediv01 医疗效果
+	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)LAS_LAJAS_SANCTUARY)) 
 	{
 		changeHealRate(10);
 	}
@@ -363,6 +366,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	int iCurrentEra = GET_PLAYER(eOwner).getCurrentEra();
 	int iExtraPopulation = iCurrentEra > 0 ? iCurrentEra : 0;
 
+	// 有了地理探索科技后，额外多1人口
 	if (GET_TEAM(GET_PLAYER(eOwner).getTeam()).isHasTech((TechTypes)EXPLORATION))
 	{
 		if (isColony())
@@ -371,17 +375,20 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		}
 	}
 
-    // Leoreth: Harappan UU (City Builder) //mediv01 哈拉帕UP 城市人口为2
+    // Leoreth: Harappan UU (City Builder) 
+	// mediv01 哈拉帕UP 城市人口为2
 	if (getOwnerINLINE() == HARAPPA)
 	{
 		iExtraPopulation += 1;
 	}
 
-	changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPopulation);//mediv01 初始城市人口
+	changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPopulation);
+	// mediv01 初始城市人口
 	//changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPop);
 	//Rhye - end switch
 
-	changeAirUnitCapacity(GC.getDefineINT("CITY_AIR_UNIT_CAPACITY"));//mediv01 城市容纳空军数量
+	changeAirUnitCapacity(GC.getDefineINT("CITY_AIR_UNIT_CAPACITY"));
+	// mediv01 城市容纳空军数量
 
 	updateFreshWaterHealth();
 	updateFeatureHealth();
@@ -1151,22 +1158,26 @@ void CvCity::doTurn()
 		}
 	}
 
+	// 滨海湾花园特效：额外的健康度带来2金币收入
 	// Leoreth: Gardens by the Bay effect
 	if (isHasBuildingEffect((BuildingTypes)GARDENS_BY_THE_BAY))
 	{
 		setBuildingYieldChange((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)GARDENS_BY_THE_BAY).getBuildingClassType(), YIELD_COMMERCE, 2 * std::max(0, goodHealth() - badHealth()));
 	}
 
+	// 文化扩张时间
 	if (getCultureUpdateTimer() > 0)
 	{
 		changeCultureUpdateTimer(-1);
 	}
 
+	// 占领反抗时间
 	if (getOccupationTimer() > 0)
 	{
 		changeOccupationTimer(-1);
 	}
 
+	// 毁灭城市，需要人口一步步减少到0，才算真正毁灭
 	// razing cities reduces population to 0 during occupation, so if that happened raze the city and return
 	if (getPopulation() == 0)
 	{
@@ -1206,6 +1217,7 @@ void CvCity::doTurn()
 		changeEspionageHappinessCounter(iUnhappinessDecay);
 	}
 
+	// 我们爱国王节日的设置
 	if (isOccupation() || (angryPopulation() > 0) || (healthRate() < 0))
 	{
 		setWeLoveTheKingDay(false);
@@ -1368,19 +1380,21 @@ void CvCity::updateVisibility()
 	CvDLLEntity::setVisible(isRevealed(GC.getGameINLINE().getActiveTeam(), true));
 }
 
-
+// 城市诞生伟人
 void CvCity::createGreatPeople(UnitTypes eGreatPersonUnit, bool bIncrementThreshold, bool bIncrementExperience)
 {
 	GET_PLAYER(getOwnerINLINE()).createGreatPeople(eGreatPersonUnit, bIncrementThreshold, bIncrementExperience, getX_INLINE(), getY_INLINE());
 }
 
 
-void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool bAlt, bool bShift, bool bCtrl)//mediv01 攻入城市时的几个选项
+void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool bAlt, bool bShift, bool bCtrl)
+// mediv01 攻入城市时的几个选项
 {
 	switch (eTask)
 	{
 	case TASK_RAZE:
-		GET_PLAYER(getOwnerINLINE()).raze(this);//mediv01 烧毁城市
+		GET_PLAYER(getOwnerINLINE()).raze(this);
+		// mediv01 烧毁城市
 		break;
 
 	case TASK_DISBAND:
@@ -1908,7 +1922,7 @@ UnitTypes CvCity::allUpgradesAvailable(UnitTypes eUnit, int iUpgradeCount) const
 	return NO_UNIT;
 }
 
-
+// 奇观最大数量的限制 mediv01
 bool CvCity::isWorldWondersMaxed() const
 {
 	if (GC.getGameINLINE().isOption(GAMEOPTION_ONE_CITY_CHALLENGE) && isHuman())
@@ -1928,18 +1942,16 @@ bool CvCity::isWorldWondersMaxed() const
 
 	int iWonderLimit = GC.getCultureLevelInfo(getCultureLevel()).getWonderLimit();
 
-	//mediv01  no limit for wonder 奇观无限制
+	// mediv01  no limit for wonder 奇观无限制
 	if (GC.getDefineINT("MAX_WORLD_WONDERS_PER_CITY_MEDIV01") == -1)
 	{
 		return false;
 	}
-
+	// mediv01  no limit for wonder 奇观固定数量限制
 	if (GC.getDefineINT("MAX_WORLD_WONDERS_PER_CITY_MEDIV01") >= 1)
 	{
 		iWonderLimit= GC.getDefineINT("MAX_WORLD_WONDERS_PER_CITY_MEDIV01");
 	}
-
-	//mediv01  no limit for wonder
 
 
 	if (isCapital())
@@ -1983,7 +1995,7 @@ bool CvCity::isNationalWondersMaxed() const
 
 	int iMaxNumWonders = GC.getCultureLevelInfo(getCultureLevel()).getNationalWonderLimit();
 
-	//mediv01  no limit for national wonder
+	// mediv01  no limit for national wonder 国家奇观数量无限制
 	if (GC.getDefineINT("MAX_WORLD_NATIONAL_WONDERS_PER_CITY_MEDIV01") == -1)
 	{
 		return false;
@@ -1993,7 +2005,7 @@ bool CvCity::isNationalWondersMaxed() const
 	{
 		iMaxNumWonders = GC.getDefineINT("MAX_WORLD_NATIONAL_WONDERS_PER_CITY_MEDIV01");
 	}
-	//mediv01  no limit for national wonder
+	// mediv01  limit for national wonder 国家奇观数量固定限制
 
 	if (iMaxNumWonders == -1)
 	{
@@ -2122,7 +2134,7 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 	}
 
 	// Leoreth - build settlers only in cities on the same continent as the capital until the discovery of Exploration
-	//mediv01 建造开拓者需要在同一大陆，除非发现地理大发现
+	// mediv01 建造开拓者需要在同一大陆，除非发现地理大发现
 	if((int)eUnit == 4) // settler
 	{
 		int iCapitalRegion = GET_PLAYER(getOwner()).getCapitalCity()->getRegionID();
@@ -2381,6 +2393,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 			}
 		}
 
+		// 两个宗教 只要满足1个条件就可以建造
 		// Leoreth: two alternative religion requirements
 		bool bReligion = GC.getBuildingInfo(eBuilding).getPrereqReligion() == NO_RELIGION || isHasReligion((ReligionTypes)GC.getBuildingInfo(eBuilding).getPrereqReligion());
 		bool bOrReligion = GC.getBuildingInfo(eBuilding).getOrPrereqReligion() != NO_RELIGION && isHasReligion((ReligionTypes)GC.getBuildingInfo(eBuilding).getOrPrereqReligion());
@@ -2433,7 +2446,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 			return false;
 		}
 	}
-
+	// 复活节岛巨像 需要周围有20个水格 
 	// Leoreth: Moai Statues require 20 water tiles
 	if (eBuilding == MOAI_STATUES)
 	{
@@ -2445,7 +2458,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 
 		if (iNumWaterTiles < 20) return false;
 	}
-
+	// mediv01 瓜达卢佩圣母堂的建造条件限制
 	// Leoreth: Guadalupe Basilica needs to be on different continent than Catholic holy city
 	if (eBuilding == GUADALUPE_BASILICA)
 	{
@@ -2524,7 +2537,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 			}
 		}
 	}
-
+	// mediv01 佩特拉古城 需要城市半径内的绿洲
 	// Leoreth: Al Khazneh requires Oasis in city radius
 	if (eBuilding == AL_KHAZNEH)
 	{
@@ -3046,7 +3059,8 @@ int CvCity::getProductionExperience(UnitTypes eUnit)
 			}
 		}
 	}
-	//mediv01 军事单位经验代码
+	// mediv01 军事单位经验代码
+	// 查普尔特佩克城堡 每个文化级别1个经验
 	// Leoreth: Chapultepec Castle
 	if (eUnit != NO_UNIT)
 	{
@@ -4876,7 +4890,7 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 				changeBuildingGreatPeopleRateChange((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), iChange * GC.getBuildingInfo(eBuilding).getGreatPeopleRateChange());
 			}
 		}
-
+		// mediv01 卢浮宫特效：+2文化每个奇观
 		// Louvre
 		if (eBuilding == LOUVRE)
 		{
@@ -4951,7 +4965,7 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 
 			changeBuildingGreatPeopleRateChange((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)ITSUKUSHIMA_SHRINE).getBuildingClassType(), iChange * iNumWater);
 		}
-
+		// mediv01 安托内利尖塔的特效
 		// Mole Antonelliana
 		else if (eBuilding == MOLE_ANTONELLIANA)
 		{
@@ -4966,7 +4980,7 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 
 			changeBuildingYieldChange((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)MOLE_ANTONELLIANA).getBuildingClassType(), YIELD_PRODUCTION, iChange * 2 * iNumPeaks);
 		}
-
+		// mediv01 大都会地铁特效
 		// Metropolitain
 		else if (eBuilding == METROPOLITAIN)
 		{
@@ -5007,6 +5021,7 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 			changeFreeSpecialist(iChange * iNumDefensivePacts);
 		}
 
+		// mediv01 原子塔的效果 +1科研每个核武器 
 		// Atomium
 		else if (eBuilding == ATOMIUM)
 		{
@@ -5048,6 +5063,7 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 			changeBuildingYieldChange((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), YIELD_COMMERCE, iChange * 2 * std::max(0, goodHealth() - badHealth()));
 		}
 
+		// mediv01 国际热核聚变实验堆的特效
 		// ITER
 		else if (eBuilding == ITER)
 		{
@@ -11081,8 +11097,14 @@ int CvCity::getBuildingCommerceByBuilding(CommerceTypes eIndex, BuildingTypes eB
 					}
 				}
 				
+				// 圣殿收入 最大是20
 				// modified by Leoreth to account for the Dome of the Rock effect
 				int iShrineLimit = GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)DOME_OF_THE_ROCK) ? 2 * MAX_COM_SHRINE : MAX_COM_SHRINE;
+
+				// 圣殿收入 手工配置 mediv01
+				if (GC.getDefineINT("CVCITY_MAX_SHRINE_LIMIT") > 0) {
+					iShrineLimit = GC.getDefineINT("CVCITY_MAX_SHRINE_LIMIT");
+				}
 
 				if (GC.getBuildingInfo(eBuilding).getGlobalReligionCommerce() != NO_RELIGION)
 				{
@@ -11090,6 +11112,7 @@ int CvCity::getBuildingCommerceByBuilding(CommerceTypes eIndex, BuildingTypes eB
                     iCommerce += std::min(iShrineLimit, (GC.getReligionInfo((ReligionTypes)(GC.getBuildingInfo(eBuilding).getGlobalReligionCommerce())).getGlobalReligionCommerce(eIndex) * GC.getGameINLINE().countReligionLevels((ReligionTypes)(GC.getBuildingInfo(eBuilding).getGlobalReligionCommerce()))));
 				}
 
+				// mediv01 瓜达卢佩圣母堂的特效
 				// Leoreth: Guadalupe Basilica effect
 				if (eBuilding == GUADALUPE_BASILICA && eIndex == COMMERCE_GOLD)
 				{
@@ -12310,7 +12333,7 @@ void CvCity::setTradeRoute(PlayerTypes eIndex, bool bNewValue)
 	}
 }
 
-
+// 判定城市是否被发现，地图全开与这个有关
 bool CvCity::isRevealed(TeamTypes eIndex, bool bDebug) const
 {
 	if (bDebug && GC.getGameINLINE().isDebugMode())
@@ -16168,26 +16191,27 @@ void CvCity::doGreatPeople()
 		}
 
 
+
 		//固定伟人点
 		const int mediv01 = GC.getDefineINT("CVCITY_FIX_GENERATE_GREAT_PEOPLE");
 		if (mediv01 > 0 && isHuman()) {
 			if (mediv01 == 1) {  //大预言家
-				eGreatPeopleUnit = ((UnitTypes)190);
+				eGreatPeopleUnit = ((UnitTypes)iGreatProphet);
 			}
 			else if (mediv01 == 2) {  //大艺术家
-				eGreatPeopleUnit = ((UnitTypes)191);
+				eGreatPeopleUnit = ((UnitTypes)iGreatArtist);
 			}
 			else if (mediv01 == 3) {  //大科学家
-				eGreatPeopleUnit = ((UnitTypes)192);
+				eGreatPeopleUnit = ((UnitTypes)iGreatScientist);
 			}
 			else if (mediv01 == 4) {  //大商业家
-				eGreatPeopleUnit = ((UnitTypes)193);
+				eGreatPeopleUnit = ((UnitTypes)iGreatMerchant);
 			}
 			else if (mediv01 == 5) {  //大工程师
-				eGreatPeopleUnit = ((UnitTypes)194);
+				eGreatPeopleUnit = ((UnitTypes)iGreatEngineer);
 			}
 			else if (mediv01 == 6) {  //大政治家
-				eGreatPeopleUnit = ((UnitTypes)195);
+				eGreatPeopleUnit = ((UnitTypes)iGreatStatesman);
 			}
 			else {
 

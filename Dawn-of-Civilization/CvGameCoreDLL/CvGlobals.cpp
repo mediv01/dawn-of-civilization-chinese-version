@@ -4027,51 +4027,7 @@ void Vector_Template() {
 	//std::sort(iValueVector.begin(), iValueVector.end(), VectorComparator);
 }
 
-void CvGlobals::logs(const CvWString& buf, CvString filename) const {
-	/*
-	//日志函数用法1
-			CvWString log_CWstring;
-			log_CWstring = gDLL->getText("TXT_KEY_VICTORY_ARABIA_UHV3_JERUSALEM");
-			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
-	//日志函数用法2
-			CvWString log_CWstring;
-			log_CWstring.Format(L"%s 准备在AI_getCitySite建立城市，坐标( %d , %d) 城市价值： %d", GET_PLAYER(getOwner()).getCivilizationDescription(), plot()->getX(), plot()->getY(), iPlotValue);
-			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
-	*/
-	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
-	if (mediv01 == 1) {
 
-
-
-		const wchar* gg;
-		gg = buf.GetCString();
-		char hh[16384];
-		WideCharToMultiByte(CP_ACP, 0, gg, wcslen(gg) + 1, hh, 256, NULL, NULL);
-
-		std::wfstream flog;
-		CvString filenamepath;
-		if (filename == "") {
-			filename = "DoC_SmallMap_DLL_Log_Default.log";
-		}
-		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << hh;
-		flog << "\n";
-		flog.close();
-
-		filename = "DoC_SmallMap_DLL_Log_ALL.log";
-		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << hh;
-		flog << "\n";
-		flog.close();
-	}
-}
 void CvGlobals::logs(CvWString& buf, CvString filename) const {
 	/*
 	//日志函数用法1
@@ -4082,9 +4038,12 @@ void CvGlobals::logs(CvWString& buf, CvString filename) const {
 			CvWString log_CWstring;
 			log_CWstring.Format(L"%s 准备在AI_getCitySite建立城市，坐标( %d , %d) 城市价值： %d", GET_PLAYER(getOwner()).getCivilizationDescription(), plot()->getX(), plot()->getY(), iPlotValue);
 			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+	// 日志函数用法3
+			log_CWstring.Format(L" 勒索WAR!!");
+			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_TEST.log");
 	*/
-	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
-	if (mediv01 == 1) {
+	static const int mediv01_log = getDefineINT("CVGAMECORE_DLL_LOG");
+	if (mediv01_log == 1) {
 
 
 
@@ -4117,199 +4076,241 @@ void CvGlobals::logs(CvWString& buf, CvString filename) const {
 	}
 }
 
+//void CvGlobals::logs(const CvWString& buf, CvString filename) const {
+//	/*
+//	//日志函数用法1
+//			CvWString log_CWstring;
+//			log_CWstring = gDLL->getText("TXT_KEY_VICTORY_ARABIA_UHV3_JERUSALEM");
+//			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+//	//日志函数用法2
+//			CvWString log_CWstring;
+//			log_CWstring.Format(L"%s 准备在AI_getCitySite建立城市，坐标( %d , %d) 城市价值： %d", GET_PLAYER(getOwner()).getCivilizationDescription(), plot()->getX(), plot()->getY(), iPlotValue);
+//			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+//	// 日志函数用法3
+//			log_CWstring.Format(L" 勒索WAR!!");
+//			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_TEST.log");
+//	*/
+//	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
+//	if (mediv01 == 1) {
+//
+//
+//
+//		const wchar* gg;
+//		gg = buf.GetCString();
+//		char hh[16384];
+//		WideCharToMultiByte(CP_ACP, 0, gg, wcslen(gg) + 1, hh, 256, NULL, NULL);
+//
+//		std::wfstream flog;
+//		CvString filenamepath;
+//		if (filename == "") {
+//			filename = "DoC_SmallMap_DLL_Log_Default.log";
+//		}
+//		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+//		flog.open(filenamepath, std::ios::app | std::ios::out);
+//
+//		flog << logs_gettime();
+//		flog << logs_getgameturn().c_str();
+//		flog << hh;
+//		flog << "\n";
+//		flog.close();
+//
+//		filename = "DoC_SmallMap_DLL_Log_ALL.log";
+//		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+//		flog.open(filenamepath, std::ios::app | std::ios::out);
+//		flog << logs_gettime();
+//		flog << logs_getgameturn().c_str();
+//		flog << hh;
+//		flog << "\n";
+//		flog.close();
+//	}
+//}
+//void CvGlobals::logs(CvString buf, CvString filename) const {
+//	/*    //日志用法 建议不再使用
+//	CvString log_CvString;
+//	int playerid = (int)GC.getGameINLINE().getActivePlayer();
+//	log_CvString = log_CvString.format("当前玩家为 %d ", playerid);
+//	GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_String.log");
+//	*/
+//
+//	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
+//	if (mediv01 == 1) {
+//
+//
+//		std::wfstream flog;
+//		CvString filenamepath;
+//		if (filename == "") {
+//			filename = "DoC_SmallMap_DLL_Log_Default.log";
+//		}
+//		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+//		flog.open(filenamepath, std::ios::app | std::ios::out);
+//		flog << logs_gettime();
+//		flog << logs_getgameturn().c_str();
+//		flog << "" << buf.c_str() << "\n";
+//		flog.close();
+//
+//		filename = "DoC_SmallMap_DLL_Log_ALL.log";
+//		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+//		flog.open(filenamepath, std::ios::app | std::ios::out);
+//		flog << logs_gettime();
+//		flog << logs_getgameturn().c_str();
+//		flog << "" << buf.c_str() << "\n";
+//		flog.close();
+//	}
+//}
+//void CvGlobals::logs(char* buf, CvString filename) const {
+//	//日志用法 建议不再使用
+//	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
+//	if (mediv01 == 1) {
+//
+//
+//		std::wfstream flog;
+//		CvString filenamepath;
+//		if (filename == "") {
+//			filename = "DoC_SmallMap_DLL_Log_Default.log";
+//		}
+//		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+//		flog.open(filenamepath, std::ios::app | std::ios::out);
+//		flog << logs_gettime();
+//		flog << logs_getgameturn().c_str();
+//		flog << "" << buf << "\n";
+//		flog.close();
+//
+//		filename = "DoC_SmallMap_DLL_Log_ALL.log";
+//		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+//		flog.open(filenamepath, std::ios::app | std::ios::out);
+//		flog << logs_gettime();
+//		flog << logs_getgameturn().c_str();
+//		flog << "" << buf << "\n";
+//		flog.close();
+//	}
+//}
+//void CvGlobals::logs(const wchar* buf, CvString filename) const {
+//	/*
+//
+//	*/
+//	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
+//	if (mediv01 == 1) {
+//
+//
+//
+//		const wchar* gg;
+//		gg = buf;
+//		char hh[16384];
+//		WideCharToMultiByte(CP_ACP, 0, gg, wcslen(gg) + 1, hh, 256, NULL, NULL);
+//
+//		std::wfstream flog;
+//		CvString filenamepath;
+//		if (filename == "") {
+//			filename = "DoC_SmallMap_DLL_Log_Default.log";
+//		}
+//		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+//		flog.open(filenamepath, std::ios::app | std::ios::out);
+//		flog << logs_gettime();
+//		flog << logs_getgameturn().c_str();
+//		flog << hh;
+//		flog << "\n";
+//		flog.close();
+//
+//
+//		filename = "DoC_SmallMap_DLL_Log_ALL.log";
+//		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+//		flog.open(filenamepath, std::ios::app | std::ios::out);
+//		flog << logs_gettime();
+//		flog << logs_getgameturn().c_str();
+//		flog << hh;
+//		flog << "\n";
+//		flog.close();
+//	}
+//}
+//void CvGlobals::logs(wchar* buf, CvString filename) const {
+//	/*
+//
+//	*/
+//	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
+//	if (mediv01 == 1) {
+//
+//
+//
+//		const wchar* gg;
+//		gg = buf;
+//		char hh[16384];
+//		WideCharToMultiByte(CP_ACP, 0, gg, wcslen(gg) + 1, hh, 256, NULL, NULL);
+//
+//		std::wfstream flog;
+//		CvString filenamepath;
+//		if (filename == "") {
+//			filename = "DoC_SmallMap_DLL_Log_Default.log";
+//		}
+//		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+//		flog.open(filenamepath, std::ios::app | std::ios::out);
+//		flog << logs_gettime();
+//		flog << logs_getgameturn().c_str();
+//		flog << hh;
+//		flog << "\n";
+//		flog.close();
+//
+//		filename = "DoC_SmallMap_DLL_Log_ALL.log";
+//		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+//		flog.open(filenamepath, std::ios::app | std::ios::out);
+//		flog << logs_gettime();
+//		flog << logs_getgameturn().c_str();
+//		flog << hh;
+//		flog << "\n";
+//		flog.close();
+//	}
+//}
+//void CvGlobals::logs(const char* buf, CvString filename) const {
+//	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
+//	if (mediv01 == 1) {
+//
+//
+//		std::wfstream flog;
+//		CvString filenamepath;
+//		if (filename == "") {
+//			filename = "DoC_SmallMap_DLL_Log_Default.log";
+//		}
+//		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+//		flog.open(filenamepath, std::ios::app | std::ios::out);
+//		flog << logs_gettime();
+//		flog << logs_getgameturn().c_str();
+//		flog << "" << buf << "\n";
+//		flog.close();
+//
+//		filename = "DoC_SmallMap_DLL_Log_ALL.log";
+//		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+//		flog.open(filenamepath, std::ios::app | std::ios::out);
+//		flog << logs_gettime();
+//		flog << logs_getgameturn().c_str();
+//		flog << "" << buf << "\n";
+//		flog.close();
+//	}
+//}
+///*
+//void CvGlobals::logs(const CvString buf, CvString filename) const {
+//
+//
+//	if (getDefineINT("CVGAMECORE_DLL_LOG") == 1) {
+//		const int BUFLEN = 255;
+//		time_t t1 = time(0);
+//		char TimeStr[BUFLEN];
+//		strftime(TimeStr, BUFLEN, "[%Y-%m-%d %H:%M:%S] ", localtime(&t1)); //format date     and time.
+//
+//		std::wfstream flog;
+//		CvString filenamepath;
+//		if (filename == "") {
+//			filename = "DoC_SmallMap_DLL_Log_Default.log";
+//		}
+//		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+//		flog.open(filenamepath, std::ios::app | std::ios::out);
+//		flog << TimeStr;
+//		flog << "" << buf.c_str() << "\n";
+//
+//		flog.close();
+//	}
+//	}
+//	*/
 
-void CvGlobals::logs(CvString buf, CvString filename) const {
-	/*    //日志用法 建议不再使用
-	CvString log_CvString;
-	int playerid = (int)GC.getGameINLINE().getActivePlayer();
-	log_CvString = log_CvString.format("当前玩家为 %d ", playerid);
-	GC.logs(log_CvString, (CvString)"DoCGameCoreDLL_String.log");
-	*/
 
-	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
-	if (mediv01 == 1) {
-
-
-		std::wfstream flog;
-		CvString filenamepath;
-		if (filename == "") {
-			filename = "DoC_SmallMap_DLL_Log_Default.log";
-		}
-		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << "" << buf.c_str() << "\n";
-		flog.close();
-
-		filename = "DoC_SmallMap_DLL_Log_ALL.log";
-		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << "" << buf.c_str() << "\n";
-		flog.close();
-	}
-}
-
-void CvGlobals::logs(char* buf, CvString filename) const {
-	//日志用法 建议不再使用
-	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
-	if (mediv01 == 1) {
-
-
-		std::wfstream flog;
-		CvString filenamepath;
-		if (filename == "") {
-			filename = "DoC_SmallMap_DLL_Log_Default.log";
-		}
-		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << "" << buf << "\n";
-		flog.close();
-
-		filename = "DoC_SmallMap_DLL_Log_ALL.log";
-		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << "" << buf << "\n";
-		flog.close();
-	}
-}
-
-void CvGlobals::logs(const wchar* buf, CvString filename) const {
-	/*
-
-	*/
-	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
-	if (mediv01 == 1) {
-
-
-
-		const wchar* gg;
-		gg = buf;
-		char hh[16384];
-		WideCharToMultiByte(CP_ACP, 0, gg, wcslen(gg) + 1, hh, 256, NULL, NULL);
-
-		std::wfstream flog;
-		CvString filenamepath;
-		if (filename == "") {
-			filename = "DoC_SmallMap_DLL_Log_Default.log";
-		}
-		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << hh;
-		flog << "\n";
-		flog.close();
-
-
-		filename = "DoC_SmallMap_DLL_Log_ALL.log";
-		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << hh;
-		flog << "\n";
-		flog.close();
-	}
-}
-
-void CvGlobals::logs(wchar* buf, CvString filename) const {
-	/*
-
-	*/
-	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
-	if (mediv01 == 1) {
-
-
-
-		const wchar* gg;
-		gg = buf;
-		char hh[16384];
-		WideCharToMultiByte(CP_ACP, 0, gg, wcslen(gg) + 1, hh, 256, NULL, NULL);
-
-		std::wfstream flog;
-		CvString filenamepath;
-		if (filename == "") {
-			filename = "DoC_SmallMap_DLL_Log_Default.log";
-		}
-		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << hh;
-		flog << "\n";
-		flog.close();
-
-		filename = "DoC_SmallMap_DLL_Log_ALL.log";
-		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << hh;
-		flog << "\n";
-		flog.close();
-	}
-}
-
-
-
-void CvGlobals::logs(const char* buf, CvString filename) const {
-	const int mediv01 = getDefineINT("CVGAMECORE_DLL_LOG");
-	if (mediv01 == 1) {
-
-
-		std::wfstream flog;
-		CvString filenamepath;
-		if (filename == "") {
-			filename = "DoC_SmallMap_DLL_Log_Default.log";
-		}
-		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << "" << buf << "\n";
-		flog.close();
-
-		filename = "DoC_SmallMap_DLL_Log_ALL.log";
-		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << "" << buf << "\n";
-		flog.close();
-	}
-}
-
-/*
-void CvGlobals::logs(const CvString buf, CvString filename) const {
-
-
-	if (getDefineINT("CVGAMECORE_DLL_LOG") == 1) {
-		const int BUFLEN = 255;
-		time_t t1 = time(0);
-		char TimeStr[BUFLEN];
-		strftime(TimeStr, BUFLEN, "[%Y-%m-%d %H:%M:%S] ", localtime(&t1)); //format date     and time.
-
-		std::wfstream flog;
-		CvString filenamepath;
-		if (filename == "") {
-			filename = "DoC_SmallMap_DLL_Log_Default.log";
-		}
-		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << TimeStr;
-		flog << "" << buf.c_str() << "\n";
-
-		flog.close();
-	}
-	}
-	*/
 int CvGlobals::AItradeTechValList(PlayerTypes eWhoTo, PlayerTypes eMyPlayer, TechTypes iTech, OperationType Operation) const {
 	// eMyPlayer为 -1表示为AI卖科技给我们，遍历的是AI，因此eWhoTo 为 human
 	// eWhoTo 为-1 表示我们卖科技给AI，遍历的是AI，，因此eMyPlayer 为human

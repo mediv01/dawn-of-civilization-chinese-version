@@ -6364,7 +6364,7 @@ int CvPlayerAI::getAIdealValuetoMoney(int ePlayerID, int myPlayerID,int tradetyp
 
 		}
 	}
-
+	/*
 	if (tradetype == TRADE_RESOURCES) {
 		// 不成熟的代码
 		BonusTypes tradeBonus = (BonusTypes)(tradeitemID);
@@ -6382,6 +6382,7 @@ int CvPlayerAI::getAIdealValuetoMoney(int ePlayerID, int myPlayerID,int tradetyp
 		GC.logs(log_CWstring, "TESTBonusTrade.log");
 
 	}
+	*/
 
 
 	
