@@ -23,6 +23,11 @@
 #define RANDPLOT_NOT_VISIBLE_TO_CIV						(0x00000020)
 #define RANDPLOT_NOT_CITY											(0x00000040)
 
+
+//#define and &&
+//#define or ||
+//#define not !
+
 #ifdef _USRDLL
 #define MAX_CIV_PLAYERS												(49) //Rhye, Leoreth: +17 for Byzantium, Korea, Indonesia, Mughals, Thailand, Turks, Prussia/HRE, Italy, Tamils, Poland, Moors, Congo, Tibet, Brazil, Argentina, Canada, Polynesia, Harappa
 #else

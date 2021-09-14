@@ -15,6 +15,7 @@ import CvScreenEnums
 import time
 
 import sys
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -25,19 +26,21 @@ PyPlayer = PyHelpers.PyPlayer
 localText = CyTranslator()
 
 tCol = (
-'255,255,255',
-'200,200,200',
-'150,150,150',
-'128,128,128'
+    '255,255,255',
+    '200,200,200',
+    '150,150,150',
+    '128,128,128'
 )
 
 lChineseCities = [(102, 47), (103, 44), (103, 43), (106, 44), (107, 43), (105, 39), (104, 39)]
+
+
 # Beijing, Kaifeng, Luoyang, Shanghai, Hangzhou, Guangzhou, Haojing
 
 class RFCUtils:
     bStabilityOverlay = False
 
-    #Victory
+    # Victory
     def countAchievedGoals(self, iPlayer):
         iResult = 0
         for iGoal in range(3):
@@ -45,8 +48,7 @@ class RFCUtils:
                 iResult += 1
         return iResult
 
-
-    #Plague
+    # Plague
     def getRandomCity(self, iPlayer):
         return self.getRandomEntry(self.getCityList(iPlayer))
 
@@ -64,8 +66,6 @@ class RFCUtils:
             return self.getRandomEntry(plotList)
         # if no plot is found, return that player's capital
         return Areas.getCapital(iPlayer)
-
-
 
     def isMortalUnit(self, unit):
         if unit.getUpgradeDiscount() >= 100: return False
@@ -96,18 +96,18 @@ class RFCUtils:
 
         return False
 
-    #AIWars
+    # AIWars
     def checkUnitsInEnemyTerritory(self, iCiv1, iCiv2):
         unitList = PyPlayer(iCiv1).getUnitList()
         if unitList:
             for unit in unitList:
                 iX = unit.getX()
                 iY = unit.getY()
-                if gc.getMap().plot( iX, iY ).getOwner() == iCiv2:
+                if gc.getMap().plot(iX, iY).getOwner() == iCiv2:
                     return True
         return False
 
-    #AIWars
+    # AIWars
     def restorePeaceAI(self, iMinorCiv, bOpenBorders):
         teamMinor = gc.getTeam(gc.getPlayer(iMinorCiv).getTeam())
         for iActiveCiv in range(iNumActivePlayers):
@@ -120,7 +120,7 @@ class RFCUtils:
                         if bOpenBorders:
                             teamMinor.signOpenBorders(iActiveCiv)
 
-    #AIWars
+    # AIWars
     def restorePeaceHuman(self, iMinorCiv, bOpenBorders):
         teamMinor = gc.getTeam(gc.getPlayer(iMinorCiv).getTeam())
         iHuman = self.getHumanID()
@@ -131,7 +131,7 @@ class RFCUtils:
                 if not bActiveUnitsInIndependentTerritory and not bIndependentUnitsInActiveTerritory:
                     teamMinor.makePeace(iHuman)
 
-    #AIWars
+    # AIWars
     def minorWars(self, iMinorCiv):
         teamMinor = gc.getTeam(gc.getPlayer(iMinorCiv).getTeam())
         for city in self.getCityList(iMinorCiv):
@@ -144,133 +144,135 @@ class RFCUtils:
                             teamMinor.declareWar(iActiveCiv, False, WarPlanTypes.WARPLAN_LIMITED)
                             print ("Minor war", city.getName(), gc.getPlayer(iActiveCiv).getCivilizationAdjective(0))
 
-
-    #RiseAndFall, Stability
+    # RiseAndFall, Stability
     def calculateDistance(self, x1, y1, x2, y2):
-        dx = abs(x2-x1)
-        dy = abs(y2-y1)
+        dx = abs(x2 - x1)
+        dy = abs(y2 - y1)
         return max(dx, dy)
 
     def calculateDistanceTuples(self, t1, t2):
         return self.calculateDistance(t1[0], t1[1], t2[0], t2[1])
 
-    def minimalDistance(self, tuple, list, entryFunction = lambda x: True):
+    def minimalDistance(self, tuple, list, entryFunction=lambda x: True):
         return self.getHighestEntry([self.calculateDistanceTuples(tuple, x) for x in list if entryFunction(x)], lambda x: -x)
 
-
-    def getCivName(self,iPlayer):
+    def getCivName(self, iPlayer):
         return gc.getCivilizationInfo(iPlayer).getShortDescription(0)
 
-    def getCivChineseName(self,iPlayer):
+    def getCivChineseName(self, iPlayer):
         return gc.getPlayer(iPlayer).getCivilizationDescription(0)
 
-    def getTechNameEn(self,iTech):
+    def getTechNameEn(self, iTech):
         text_tag = gc.getTechInfo(iTech).getTextKey()
         text = text_tag
         if (text_tag[0:13] == 'TXT_KEY_TECH_'):
             text = text_tag[13:len(text_tag)]
-            text=text
+            text = text
             pass
         return str(text).lower().capitalize()
-    def getTechNameCn(self,iTech):
-        text = gc.getTechInfo(iTech).getDescription() +'( ' + self.getTechNameEn(iTech) + ' )'
+
+    def getTechNameCn(self, iTech):
+        text = gc.getTechInfo(iTech).getDescription() + '( ' + self.getTechNameEn(iTech) + ' )'
         return text
 
-    def getRegionNameCn(self,iRegionID):
+    def getRegionNameCn(self, iRegionID):
         return CyTranslator().getText("TXT_KEY_REGION_" + str(iRegionID), ()) + self.getText('TXT_KEY_PYTHON_LOGGER_CHINESE_LOCATION')
 
-    def getText(self,TextKey):
-        return CyTranslator().getText(TextKey,())
-    #RiseAndFall
-    #新增输出日志的功能
+    def getText(self, TextKey):
+        return CyTranslator().getText(TextKey, ())
+
+    # RiseAndFall
+    # 新增输出日志的功能
     def log_path(self):
-        #filepath='D:\\DoC_Log\\'
-        #filepath = BugPath.join(BugPath.getRootDir(), 'Saves', 'logs', '')
+        # filepath='D:\\DoC_Log\\'
+        # filepath = BugPath.join(BugPath.getRootDir(), 'Saves', 'logs', '')
         filepath = gc.getDefineSTRING("CVGAMECORE_LOG_PATH")
         return filepath
 
     def log_gettime(self):
         curtime1 = str(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
-        #curtime1 = str(time.strftime('%Y-%m-%d %H:%M:%S', time.time()))
-        strturn=u' ['+str(gc.getGame().getGameTurnYear())+']  T['+str(gc.getGame().getGameTurn())+']  '
-        log_gettime=curtime1+strturn
+        # curtime1 = str(time.strftime('%Y-%m-%d %H:%M:%S', time.time()))
+        strturn = u' [' + str(gc.getGame().getGameTurnYear()) + ']  T[' + str(gc.getGame().getGameTurn()) + ']  '
+        log_gettime = curtime1 + strturn
         return log_gettime
 
-    def log(self,strText):
+    def log(self, strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log_Main.log", 'a')
+            f = open(self.log_path() + "DoC_SmallMap_Log_Main.log", 'a')
             import HTMLParser
-            strText=HTMLParser.HTMLParser().unescape(strText)
-            f.write((self.log_gettime()+strText.decode('utf-8')+u''))
+            strText = HTMLParser.HTMLParser().unescape(strText)
+            f.write((self.log_gettime() + strText.decode('utf-8') + u''))
             f.write('\n')
             f.close
 
-    def log2(self,strText,LogName):
+    def log2(self, strText, LogName):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+LogName+".log", 'a')
-            f.write((self.log_gettime()+str(strText)+u'').encode('utf8', 'xmlcharrefreplace'))
-            f.write('\n')
-            f.close
-    def debug_manual(self,strText,LogName):
-        if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+LogName+".log", 'a')
-            f.write((self.log_gettime()+str(strText)+u'').encode('utf8', 'xmlcharrefreplace'))
+            f = open(self.log_path() + LogName + ".log", 'a')
+            f.write((self.log_gettime() + str(strText) + u'').encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
             f.close
 
-    def log_congress(self,strText):
+    def debug_manual(self, strText, LogName):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log_Congress.log", 'a')
-            f.write((self.log_gettime()+str(strText)+u'').encode('utf8', 'xmlcharrefreplace'))
+            f = open(self.log_path() + LogName + ".log", 'a')
+            f.write((self.log_gettime() + str(strText) + u'').encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
             f.close
 
-    def log_congress_prob(self,strText):
+    def log_congress(self, strText):
+        if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
+            f = open(self.log_path() + "DoC_SmallMap_Log_Congress.log", 'a')
+            f.write((self.log_gettime() + str(strText) + u'').encode('utf8', 'xmlcharrefreplace'))
+            f.write('\n')
+            f.close
+
+    def log_congress_prob(self, strText):
         # 模拟计算统一不进行日志IO
         return 0
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
 
-            f = open(self.log_path()+"DoC_SmallMap_Log_Congress_Prob.log", 'a')
-            f.write((self.log_gettime()+str(strText)+u'').encode('utf8', 'xmlcharrefreplace'))
+            f = open(self.log_path() + "DoC_SmallMap_Log_Congress_Prob.log", 'a')
+            f.write((self.log_gettime() + str(strText) + u'').encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
             f.close
 
-    def log_AI_Action(self,strText): #可能会报错
+    def log_AI_Action(self, strText):  # 可能会报错
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
 
-            f = open(self.log_path()+"DoC_SmallMap_Log_AI.log", 'a')
-            f.write((self.log_gettime()+strText.encode('utf8', 'xmlcharrefreplace')).encode('utf8', 'xmlcharrefreplace'))
+            f = open(self.log_path() + "DoC_SmallMap_Log_AI.log", 'a')
+            f.write((self.log_gettime() + strText.encode('utf8', 'xmlcharrefreplace')).encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
             f.close
-
 
     def log_reset(self):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            PythonLogList=['DoC_SmallMap_Log_Main.log',
-                           'DoC_SmallMap_Log_AI.log',
-                           "DoC_SmallMap_Log_Stability.log",
-                           "DoC_SmallMap_Log_Congress.log",
-                           "DoC_SmallMap_Log_Great_People.log",
-                           "DoC_SmallMap_Log_Wonder.log",
-                           "DoC_SmallMap_Log_Building.log",
-                           "DoC_SmallMap_Log_Unit.log",
-                           "DoC_SmallMap_Log_Tech.log",
-                           "DoC_SmallMap_Log_City_Build.log",
-                           "DoC_SmallMap_Log_City_Conquest.log",
-                           "DoC_SmallMap_Log_City_Religion.log",
-                           "DoC_SmallMap_Log_TechScore.log",
-                           "DoC_SmallMap_Log_PowerScore.log",
-                           "DoC_SmallMap_Log_RandomEvent.log",
-                           "DoC_SmallMap_Log_AIWar.log",
-                           "DoC_SmallMap_Log_Congress_Prob.log",
-                           'DoC_SmallMap_Log_ModifiersChange.log'
-                           ]
+            PythonLogList = ['DoC_SmallMap_Log_Main.log',
+                             'DoC_SmallMap_Log_AI.log',
+                             "DoC_SmallMap_Log_Stability.log",
+                             "DoC_SmallMap_Log_Congress.log",
+                             "DoC_SmallMap_Log_Great_People.log",
+                             "DoC_SmallMap_Log_Wonder.log",
+                             "DoC_SmallMap_Log_Building.log",
+                             "DoC_SmallMap_Log_Unit.log",
+                             "DoC_SmallMap_Log_Tech.log",
+                             "DoC_SmallMap_Log_City_Build.log",
+                             "DoC_SmallMap_Log_City_Conquest.log",
+                             "DoC_SmallMap_Log_City_Religion.log",
+                             "DoC_SmallMap_Log_TechScore.log",
+                             "DoC_SmallMap_Log_PowerScore.log",
+                             "DoC_SmallMap_Log_RandomEvent.log",
+                             "DoC_SmallMap_Log_AIWar.log",
+                             "DoC_SmallMap_Log_Congress_Prob.log",
+                             'DoC_SmallMap_Log_ModifiersChange.log'
+                             ]
 
             DLLLogList = [
                 "DoC_SmallMap_DLL_Log_ALL.log",
+                "DoC_SmallMap_DLL_Log_TEST.log",
                 'DoC_SmallMap_DLL_Log_Conquest.log',
                 'DoC_SmallMap_DLL_Log_AI_TradeCityVal.log',
-                'DoC_SmallMap_DLL_Log_AI_BuildCity.log'
+                'DoC_SmallMap_DLL_Log_AI_BuildCity.log',
+                'DoC_SmallMap_DLL_Log_Building_Damage.log'
             ]
 
             for filename in PythonLogList:
@@ -283,86 +285,82 @@ class RFCUtils:
                 f.write('')
                 f.close
 
-
-    def logwithid(self,id,strText):
+    def logwithid(self, id, strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log_Main.log", 'a')
-            f.write((str(self.log_gettime()+'['+gc.getPlayer(id).getCivilizationShortDescription(0))+'] ').encode('utf8', 'xmlcharrefreplace'))
-            f.write(str(u''+strText))
+            f = open(self.log_path() + "DoC_SmallMap_Log_Main.log", 'a')
+            f.write((str(self.log_gettime() + '[' + gc.getPlayer(id).getCivilizationShortDescription(0)) + '] ').encode('utf8', 'xmlcharrefreplace'))
+            f.write(str(u'' + strText))
             f.write('\n')
             f.close
 
-
-
-    def logwithid_stability(self,id,strText):
+    def logwithid_stability(self, id, strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log_Stability.log", 'a')
-            f.write((str(self.log_gettime()+'['+gc.getPlayer(id).getCivilizationShortDescription(0))+'] ').encode('utf8', 'xmlcharrefreplace'))
+            f = open(self.log_path() + "DoC_SmallMap_Log_Stability.log", 'a')
+            f.write((str(self.log_gettime() + '[' + gc.getPlayer(id).getCivilizationShortDescription(0)) + '] ').encode('utf8', 'xmlcharrefreplace'))
             f.write((strText).encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
             f.close
 
-    def logwithid_great_people(self,id,strText):
+    def logwithid_great_people(self, id, strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log_Great_People.log", 'a')
-            f.write((str(self.log_gettime()+'['+gc.getPlayer(id).getCivilizationShortDescription(0))+'] ').encode('utf8', 'xmlcharrefreplace'))
+            f = open(self.log_path() + "DoC_SmallMap_Log_Great_People.log", 'a')
+            f.write((str(self.log_gettime() + '[' + gc.getPlayer(id).getCivilizationShortDescription(0)) + '] ').encode('utf8', 'xmlcharrefreplace'))
             f.write((strText).encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
             f.close
 
-    def logwithid_wonder(self,id,strText):
+    def logwithid_wonder(self, id, strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log_Wonder.log", 'a')
-            f.write((str(self.log_gettime()+'['+gc.getPlayer(id).getCivilizationShortDescription(0))+'] ').encode('utf8', 'xmlcharrefreplace'))
+            f = open(self.log_path() + "DoC_SmallMap_Log_Wonder.log", 'a')
+            f.write((str(self.log_gettime() + '[' + gc.getPlayer(id).getCivilizationShortDescription(0)) + '] ').encode('utf8', 'xmlcharrefreplace'))
             f.write((strText).encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
             f.close
 
-    def logwithid_building(self,id,strText):
+    def logwithid_building(self, id, strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log_Building.log", 'a')
-            f.write((str(self.log_gettime()+'['+gc.getPlayer(id).getCivilizationShortDescription(0))+'] ').encode('utf8', 'xmlcharrefreplace'))
+            f = open(self.log_path() + "DoC_SmallMap_Log_Building.log", 'a')
+            f.write((str(self.log_gettime() + '[' + gc.getPlayer(id).getCivilizationShortDescription(0)) + '] ').encode('utf8', 'xmlcharrefreplace'))
             f.write((strText).encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
             f.close
 
-    def logwithid_unit(self,id,strText):
+    def logwithid_unit(self, id, strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log_Unit.log", 'a')
-            f.write((str(self.log_gettime()+'['+gc.getPlayer(id).getCivilizationShortDescription(0))+'] ').encode('utf8', 'xmlcharrefreplace'))
+            f = open(self.log_path() + "DoC_SmallMap_Log_Unit.log", 'a')
+            f.write((str(self.log_gettime() + '[' + gc.getPlayer(id).getCivilizationShortDescription(0)) + '] ').encode('utf8', 'xmlcharrefreplace'))
             f.write((strText).encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
             f.close
 
-    def logwithid_tech(self,id,strText):
+    def logwithid_tech(self, id, strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log_Tech.log", 'a')
-            f.write((str(self.log_gettime()+'['+gc.getPlayer(id).getCivilizationShortDescription(0))+'] ').encode('utf8', 'xmlcharrefreplace'))
+            f = open(self.log_path() + "DoC_SmallMap_Log_Tech.log", 'a')
+            f.write((str(self.log_gettime() + '[' + gc.getPlayer(id).getCivilizationShortDescription(0)) + '] ').encode('utf8', 'xmlcharrefreplace'))
             f.write((strText).encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
             f.close
 
-    def logwithid_city_build(self,id,strText):
+    def logwithid_city_build(self, id, strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log_City_Build.log", 'a')
-            f.write((str(self.log_gettime()+'['+gc.getPlayer(id).getCivilizationShortDescription(0))+'] ').encode('utf8', 'xmlcharrefreplace'))
+            f = open(self.log_path() + "DoC_SmallMap_Log_City_Build.log", 'a')
+            f.write((str(self.log_gettime() + '[' + gc.getPlayer(id).getCivilizationShortDescription(0)) + '] ').encode('utf8', 'xmlcharrefreplace'))
             f.write((strText).encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
             f.close
 
-
-    def logwithid_city_conquest(self,id,strText):
+    def logwithid_city_conquest(self, id, strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log_City_Conquest.log", 'a')
-            f.write((str(self.log_gettime()+'['+gc.getPlayer(id).getCivilizationShortDescription(0))+'] ').encode('utf8', 'xmlcharrefreplace'))
+            f = open(self.log_path() + "DoC_SmallMap_Log_City_Conquest.log", 'a')
+            f.write((str(self.log_gettime() + '[' + gc.getPlayer(id).getCivilizationShortDescription(0)) + '] ').encode('utf8', 'xmlcharrefreplace'))
             f.write((strText).encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
             f.close
 
-    def logwithid_religion(self,id,strText):
+    def logwithid_religion(self, id, strText):
         if (gc.getDefineINT("PYTHON_USE_LOG") == 1):  # output the debug info
-            f = open(self.log_path()+"DoC_SmallMap_Log_City_Religion.log", 'a')
-            f.write((str(self.log_gettime()+'['+gc.getPlayer(id).getCivilizationShortDescription(0))+'] ').encode('utf8', 'xmlcharrefreplace'))
+            f = open(self.log_path() + "DoC_SmallMap_Log_City_Religion.log", 'a')
+            f.write((str(self.log_gettime() + '[' + gc.getPlayer(id).getCivilizationShortDescription(0)) + '] ').encode('utf8', 'xmlcharrefreplace'))
             f.write((strText).encode('utf8', 'xmlcharrefreplace'))
             f.write('\n')
             f.close
@@ -374,19 +372,18 @@ class RFCUtils:
             strText_ascii = strText.encode('utf8', 'xmlcharrefreplace')
             self.log(strText_ascii)
 
-
             pass
 
     def debugTextPopup_WarWeariness(self, strText):
         if MainOpt.isShowDebugPopups():
             self.show(strText)
         if (gc.getDefineINT("PYTHON_OUTPUT_DEBUG_TEXT_TO_LOG") == 1 and gc.getDefineINT("PYTHON_LOG_ON_AIACTION") == 1):  # output the debug info
-            strText_ascii=strText.encode('utf8', 'xmlcharrefreplace')
+            strText_ascii = strText.encode('utf8', 'xmlcharrefreplace')
             self.log_AI_Action(strText_ascii)
 
-
             pass
-    #日志输出增加结束
+
+    # 日志输出增加结束
     def show(self, message):
         popup = Popup.PyPopup()
         popup.setBodyString(message)
@@ -397,20 +394,20 @@ class RFCUtils:
         popup.setHeaderString(title)
         popup.setBodyString(message)
         for i in labels:
-            popup.addButton( i )
+            popup.addButton(i)
         popup.launch(len(labels) == 0)
 
-    #RiseAndFall
-    def updateMinorTechs( self, iMinorCiv, iMajorCiv):
+    # RiseAndFall
+    def updateMinorTechs(self, iMinorCiv, iMajorCiv):
         for iTech in range(iNumTechs):
             if gc.getTeam(gc.getPlayer(iMajorCiv).getTeam()).isHasTech(iTech):
-                    gc.getTeam(gc.getPlayer(iMinorCiv).getTeam()).setHasTech(iTech, True, iMinorCiv, False, False)
+                gc.getTeam(gc.getPlayer(iMinorCiv).getTeam()).setHasTech(iTech, True, iMinorCiv, False, False)
 
-
-    #RiseAndFall, Religions, Congresses, UniquePowers
-    def makeUnit(self, iUnit, iPlayer, tCoords, iNum, sAdj="", iExp = 0): #by LOQ
+    # RiseAndFall, Religions, Congresses, UniquePowers
+    def makeUnit(self, iUnit, iPlayer, tCoords, iNum, sAdj="", iExp=0):  # by LOQ
         'Makes iNum units for player iPlayer of the type iUnit at tCoords.'
         for i in range(iNum):
+            if not iPlayer: return
             player = gc.getPlayer(iPlayer)
             unit = player.initUnit(iUnit, tCoords[0], tCoords[1], UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
             if sAdj != "":
@@ -418,7 +415,7 @@ class RFCUtils:
             if iExp > 0:
                 unit.changeExperience(iExp, 100, False, False, False)
 
-    def makeUnitAI(self, iUnit, iPlayer, tCoords, iAI, iNum, sAdj=""): #by LOQ, modified by Leoreth
+    def makeUnitAI(self, iUnit, iPlayer, tCoords, iAI, iNum, sAdj=""):  # by LOQ, modified by Leoreth
         'Makes iNum units for player iPlayer of the type iUnit at tCoords.'
         for i in range(iNum):
             player = gc.getPlayer(iPlayer)
@@ -426,15 +423,13 @@ class RFCUtils:
             if sAdj != "":
                 unit.setName(CyTranslator().getText(sAdj, ()) + ' ' + unit.getName())
 
-    #RiseAndFall, Religions, Congresses
+    # RiseAndFall, Religions, Congresses
     def getHumanID(self):
         return gc.getGame().getActivePlayer()
 
-
-
-    #RiseAndFall
+    # RiseAndFall
     def flipUnitsInCityBefore(self, tCityPlot, iNewOwner, iOldOwner):
-        #print ("tCityPlot Before", tCityPlot)
+        # print ("tCityPlot Before", tCityPlot)
         plotCity = gc.getMap().plot(tCityPlot[0], tCityPlot[1])
         iNumUnitsInAPlot = plotCity.getNumUnits()
         if iNumUnitsInAPlot > 0:
@@ -448,9 +443,9 @@ class RFCUtils:
                         lFlipUnits.append(iUnitType)
             data.lFlippingUnits = lFlipUnits
 
-    #RiseAndFall
+    # RiseAndFall
     def flipUnitsInCityAfter(self, tCityPlot, iCiv):
-        #moves new units back in their place
+        # moves new units back in their place
         print ("tCityPlot After", tCityPlot)
         lFlipUnits = data.lFlippingUnits
         if lFlipUnits:
@@ -471,7 +466,7 @@ class RFCUtils:
             for unit in lUnits:
                 unit.kill(False, iBarbarian)
 
-    #RiseAndFall
+    # RiseAndFall
     def flipUnitsInArea(self, lPlots, iNewOwner, iOldOwner, bSkipPlotCity, bKillSettlers):
         """Creates a list of all flipping units, deletes old ones and places new ones
         If bSkipPlotCity is True, units in a city won't flip. This is to avoid converting barbarian units that would capture a city before the flip delay"""
@@ -480,16 +475,16 @@ class RFCUtils:
         for (x, y) in lPlots:
             killPlot = gc.getMap().plot(x, y)
             if bSkipPlotCity and killPlot.isCity():
-                #print (killPlot.isCity())
-                #print 'do nothing'
+                # print (killPlot.isCity())
+                # print 'do nothing'
                 continue
             lPlotUnits = []
             iNumUnitsInAPlot = killPlot.getNumUnits()
             if iNumUnitsInAPlot > 0:
-                #print ("killplot", x, y)
+                # print ("killplot", x, y)
                 for iUnit in reversed(range(iNumUnitsInAPlot)):
                     unit = killPlot.getUnit(iUnit)
-                    #print ("killplot", x, y, unit.getUnitType(), unit.getOwner(), "j", j)
+                    # print ("killplot", x, y, unit.getUnitType(), unit.getOwner(), "j", j)
                     if unit.getOwner() == iOldOwner:
                         # Leoreth: Italy shouldn't flip so it doesn't get too strong by absorbing French or German armies attacking Rome
                         if iNewOwner == iItaly and iOldOwner < iNumPlayers:
@@ -511,7 +506,7 @@ class RFCUtils:
                 for iUnit in lPlotUnits:
                     self.makeUnit(iUnit, iNewOwner, (x, y), 1)
 
-    #Congresses, RiseAndFall
+    # Congresses, RiseAndFall
     def flipCity(self, tCityPlot, bFlipType, bKillUnits, iNewOwner, iOldOwners):
         """Changes owner of city specified by tCityPlot.
         bFlipType specifies if it's conquered or traded.
@@ -527,26 +522,26 @@ class RFCUtils:
                 if iOldOwner in iOldOwners or not iOldOwners:
 
                     if bKillUnits:
-                        killPlot = gc.getMap().plot( tCityPlot[0], tCityPlot[1] )
+                        killPlot = gc.getMap().plot(tCityPlot[0], tCityPlot[1])
                         for i in range(killPlot.getNumUnits()):
                             unit = killPlot.getUnit(0)
                             unit.kill(False, iNewOwner)
 
-                    if bFlipType: #conquest
+                    if bFlipType:  # conquest
                         if city.getPopulation() <= 2:
                             city.changePopulation(1)
                         pNewOwner.acquireCity(city, True, False)
-                    else: #trade
+                    else:  # trade
                         pNewOwner.acquireCity(city, False, True)
 
                     # Leoreth: reset unhappiness timers
-                    #iHurryAngerTime = city.getHurryAngerTimer()
-                    #iConscriptAngerTime = city.getConscriptAngerTimer()
+                    # iHurryAngerTime = city.getHurryAngerTimer()
+                    # iConscriptAngerTime = city.getConscriptAngerTimer()
 
-                    #if iHurryAngerTime > 0:
+                    # if iHurryAngerTime > 0:
                     #	city.changeHurryAngerTimer(-iHurryAngerTime)
 
-                    #if iConscriptAngerTime > 0:
+                    # if iConscriptAngerTime > 0:
                     #	city.changeConscriptAngerTimer(-iConscriptAngerTime)
 
                     city.setInfoDirty(True)
@@ -555,25 +550,24 @@ class RFCUtils:
                     return True
         return False
 
-
-    #Congresses, RiseAndFall
+    # Congresses, RiseAndFall
     def cultureManager(self, tCityPlot, iCulturePercent, iNewOwner, iOldOwner, bBarbarian2x2Decay, bBarbarian2x2Conversion, bAlwaysOwnPlots):
         """Converts the culture of the city and of the surrounding plots to the new owner of a city.
         iCulturePercent determine the percentage that goes to the new owner.
         If old owner is barbarian, all the culture is converted"""
 
-        #city
+        # city
         if gc.getMap().plot(tCityPlot[0], tCityPlot[1]).isCity():
             city = gc.getMap().plot(tCityPlot[0], tCityPlot[1]).getPlotCity()
             iCurrentCityCulture = city.getCulture(iOldOwner)
-            city.setCulture(iOldOwner, iCurrentCityCulture*(100-iCulturePercent)/100, False)
+            city.setCulture(iOldOwner, iCurrentCityCulture * (100 - iCulturePercent) / 100, False)
             if iNewOwner != iBarbarian:
                 city.setCulture(iBarbarian, 0, True)
-            city.setCulture(iNewOwner, iCurrentCityCulture*iCulturePercent/100, False)
+            city.setCulture(iNewOwner, iCurrentCityCulture * iCulturePercent / 100, False)
             if city.getCulture(iNewOwner) <= 10:
                 city.setCulture(iNewOwner, 20, False)
 
-        #halve barbarian culture in a broader area
+        # halve barbarian culture in a broader area
         if bBarbarian2x2Decay or bBarbarian2x2Conversion:
             if iNewOwner not in [iBarbarian, iIndependent, iIndependent2]:
                 for (x, y) in self.surroundingPlots(tCityPlot, 2):
@@ -583,36 +577,34 @@ class RFCUtils:
                             iMinorCulture = gc.getMap().plot(x, y).getCulture(iMinor)
                             if iMinorCulture > 0:
                                 if bBarbarian2x2Decay:
-                                    gc.getMap().plot(x, y).setCulture(iMinor, iMinorCulture/4, True)
+                                    gc.getMap().plot(x, y).setCulture(iMinor, iMinorCulture / 4, True)
                                 if bBarbarian2x2Conversion:
                                     gc.getMap().plot(x, y).setCulture(iMinor, 0, True)
                                     gc.getMap().plot(x, y).setCulture(iNewOwner, iMinorCulture, True)
 
-        #plot
+        # plot
         for (x, y) in self.surroundingPlots(tCityPlot):
             pPlot = gc.getMap().plot(x, y)
 
             iCurrentPlotCulture = pPlot.getCulture(iOldOwner)
 
             if pPlot.isCity():
-                pPlot.setCulture(iNewOwner, iCurrentPlotCulture*iCulturePercent/100, True)
-                pPlot.setCulture(iOldOwner, iCurrentPlotCulture*(100-iCulturePercent)/100, True)
+                pPlot.setCulture(iNewOwner, iCurrentPlotCulture * iCulturePercent / 100, True)
+                pPlot.setCulture(iOldOwner, iCurrentPlotCulture * (100 - iCulturePercent) / 100, True)
             else:
-                pPlot.setCulture(iNewOwner, iCurrentPlotCulture*iCulturePercent/3/100, True)
-                pPlot.setCulture(iOldOwner, iCurrentPlotCulture*(100-iCulturePercent/3)/100, True)
+                pPlot.setCulture(iNewOwner, iCurrentPlotCulture * iCulturePercent / 3 / 100, True)
+                pPlot.setCulture(iOldOwner, iCurrentPlotCulture * (100 - iCulturePercent / 3) / 100, True)
 
                 if bAlwaysOwnPlots:
                     pPlot.setOwner(iNewOwner)
                 else:
-                    if pPlot.getCulture(iNewOwner)*4 > pPlot.getCulture(iOldOwner):
+                    if pPlot.getCulture(iNewOwner) * 4 > pPlot.getCulture(iOldOwner):
                         pPlot.setOwner(iNewOwner)
-                #print ("NewOwner", pPlot.getOwner())
+                # print ("NewOwner", pPlot.getOwner())
 
-            #print (x, y, pPlot.getCulture(iNewOwner), ">", pPlot.getCulture(iOldOwner))
+            # print (x, y, pPlot.getCulture(iNewOwner), ">", pPlot.getCulture(iOldOwner))
 
-
-
-    #handler
+    # handler
     def spreadMajorCulture(self, iMajorCiv, tPlot):
         for (x, y) in self.surroundingPlots(tPlot, 3):
             pPlot = gc.getMap().plot(x, y)
@@ -627,12 +619,12 @@ class RFCUtils:
                         iDen = 15
 
                     iMinorCityCulture = city.getCulture(iMinor)
-                    city.setCulture(iMajorCiv, iMinorCityCulture/iDen, True)
+                    city.setCulture(iMajorCiv, iMinorCityCulture / iDen, True)
 
                     iMinorPlotCulture = pPlot.getCulture(iMinor)
-                    pPlot.setCulture(iMajorCiv, iMinorPlotCulture/iDen, True)
+                    pPlot.setCulture(iMajorCiv, iMinorPlotCulture / iDen, True)
 
-    #UniquePowers
+    # UniquePowers
     def convertPlotCulture(self, plot, iPlayer, iPercent, bOwner):
         if plot.isCity():
             city = plot.getPlotCity()
@@ -641,7 +633,7 @@ class RFCUtils:
                 if iLoopPlayer != iPlayer:
                     iLoopCulture = city.getCulture(iLoopPlayer)
                     iConvertedCulture += iLoopCulture * iPercent / 100
-                    city.setCulture(iLoopPlayer, iLoopCulture * (100-iPercent) / 100, True)
+                    city.setCulture(iLoopPlayer, iLoopCulture * (100 - iPercent) / 100, True)
 
             city.changeCulture(iPlayer, iConvertedCulture, True)
 
@@ -650,7 +642,7 @@ class RFCUtils:
             if iLoopPlayer != iPlayer:
                 iLoopCulture = plot.getCulture(iLoopPlayer)
                 iConvertedCulture += iLoopCulture * iPercent / 100
-                plot.setCulture(iLoopPlayer, iLoopCulture * (100-iPercent) / 100, True)
+                plot.setCulture(iLoopPlayer, iLoopCulture * (100 - iPercent) / 100, True)
 
         plot.changeCulture(iPlayer, iConvertedCulture, True)
 
@@ -664,7 +656,7 @@ class RFCUtils:
             if bOwner:
                 plot.setOwner(iPlayer)
 
-    #DynamicCivs
+    # DynamicCivs
     def getMaster(self, iCiv):
         team = gc.getTeam(gc.getPlayer(iCiv).getTeam())
         if team.isAVassal():
@@ -673,8 +665,7 @@ class RFCUtils:
                     return iMaster
         return -1
 
-
-    #Congresses, RiseAndFall
+    # Congresses, RiseAndFall
     def pushOutGarrisons(self, tCityPlot, iOldOwner):
         x, y = tCityPlot
         tDestination = (-1, -1)
@@ -729,7 +720,7 @@ class RFCUtils:
                             print("SETXY utils 4")
                             unit.setXY(capital.getX(), capital.getY(), False, True, False)
 
-    #Congresses, RiseAndFall
+    # Congresses, RiseAndFall
     def relocateSeaGarrisons(self, tCityPlot, iOldOwner):
         x, y = tCityPlot
         tDestination = (-1, -1)
@@ -744,17 +735,15 @@ class RFCUtils:
                 if unit.getOwner() == iOldOwner and unit.getDomainType() == DomainTypes.DOMAIN_SEA:
                     unit.setXY(tDestination[0], tDestination[1], False, True, False)
 
-
-    #Congresses, RiseAndFall
+    # Congresses, RiseAndFall
     def createGarrisons(self, tCityPlot, iNewOwner, iNumUnits):
         x, y = tCityPlot
-        #plotCity = gc.getMap().plot(x, y)
-        #iNumUnitsInAPlot = plotCity.getNumUnits()
+        # plotCity = gc.getMap().plot(x, y)
+        # iNumUnitsInAPlot = plotCity.getNumUnits()
 
         iUnitType = self.getBestDefender(iNewOwner)
 
         self.makeUnit(iUnitType, iNewOwner, (x, y), iNumUnits)
-
 
     def resetUHV(self, iPlayer):
         if iPlayer < iNumMajorPlayers:
@@ -767,14 +756,13 @@ class RFCUtils:
             if city.hasBuilding(iPlague):
                 city.setHasRealBuilding(iPlague, False)
 
-
-    #AIWars, by CyberChrist
+    # AIWars, by CyberChrist
 
     def isAVassal(self, iCiv):
         return gc.getTeam(gc.getPlayer(iCiv).getTeam()).isAVassal()
 
-    #Barbs, RiseAndFall
-    def squareSearch(self, tTopLeft, tBottomRight, function, argsList, tExceptions = ()): #by LOQ
+    # Barbs, RiseAndFall
+    def squareSearch(self, tTopLeft, tBottomRight, function, argsList, tExceptions=()):  # by LOQ
         """Searches all tile in the square from tTopLeft to tBottomRight and calls function for
         every tile, passing argsList. The function called must return a tuple: (1) a (2) if
         a plot should be painted and (3) if the search should continue."""
@@ -784,11 +772,11 @@ class RFCUtils:
         tPaintedList = []
         for tPlot in lPlots:
             bPaintPlot = function(tPlot, argsList)
-            if bPaintPlot: # paint plot
+            if bPaintPlot:  # paint plot
                 tPaintedList.append(tPlot)
         return tPaintedList
 
-    #Barbs, RiseAndFall
+    # Barbs, RiseAndFall
     def outerInvasion(self, tCoords, argsList):
         """Checks validity of the plot at the current tCoords, returns plot if valid (which stops the search).
         Plot is valid if it's hill or flatlands, it isn't marsh or jungle, it isn't occupied by a unit or city and if it isn't a civ's territory"""
@@ -804,18 +792,18 @@ class RFCUtils:
                         return True
         return False
 
-    #Barbs
-    def innerSeaSpawn(self, tCoords, argsList): # Unused
+    # Barbs
+    def innerSeaSpawn(self, tCoords, argsList):  # Unused
         """Checks validity of the plot at the current tCoords, returns plot if valid (which stops the search).
         Plot is valid if it's water and it isn't occupied by any unit. Unit check extended to adjacent plots"""
         return self.seaSpawn(tCoords, argsList, False)
 
-    def outerSeaSpawn(self, tCoords, argsList): # Unused
+    def outerSeaSpawn(self, tCoords, argsList):  # Unused
         """Checks validity of the plot at the current tCoords, returns plot if valid (which stops the search).
         Plot is valid if it's water and it isn't occupied by any unit and if it isn't a civ's territory. Unit check extended to adjacent plots"""
         return self.seaSpawn(tCoords, argsList, True)
 
-    def seaSpawn(self, tCoords, argsList, bOuter): # Used by unused functions
+    def seaSpawn(self, tCoords, argsList, bOuter):  # Used by unused functions
         x, y = tCoords
         pPlot = gc.getMap().plot(x, y)
         if pPlot.isWater():
@@ -827,7 +815,7 @@ class RFCUtils:
                     return True
         return False
 
-    def outerCoastSpawn(self, tCoords, argsList): # Unused
+    def outerCoastSpawn(self, tCoords, argsList):  # Unused
         """Checks validity of the plot at the current tCoords, returns plot if valid (which stops the search).
         Plot is valid if it's water and it isn't occupied by any unit and if it isn't a civ's territory. Unit check extended to adjacent plots"""
         x, y = tCoords
@@ -841,8 +829,8 @@ class RFCUtils:
                     return True
         return False
 
-    #Barbs
-    def outerSpawn(self, tCoords, argsList): # Unused
+    # Barbs
+    def outerSpawn(self, tCoords, argsList):  # Unused
         """Checks validity of the plot at the current tCoords, returns plot if valid (which stops the search).
         Plot is valid if it's hill or flatlands, it isn't marsh or jungle, it isn't occupied by a unit or city and if it isn't a civ's territory.
         Unit check extended to adjacent plots"""
@@ -865,13 +853,13 @@ class RFCUtils:
                             return True
         return False
 
-    #RiseAndFall
+    # RiseAndFall
     def innerInvasion(self, tCoords, argsList):
         """Checks validity of the plot at the current tCoords, returns plot if valid (which stops the search).
         Plot is valid if it's hill or flatlands, it isn't marsh or jungle, it isn't occupied by a unit or city and if it isn't a civ's territory"""
         return self.invasion(tCoords, argsList, False)
 
-    def internalInvasion(self, tCoords, argsList): # Unused
+    def internalInvasion(self, tCoords, argsList):  # Unused
         """Like inner invasion, but ignores territory, to allow for more barbarians"""
         x, y = tCoords
         pPlot = gc.getMap().plot(x, y)
@@ -886,7 +874,7 @@ class RFCUtils:
         Plot is valid if it's hill or flatlands, it isn't marsh or jungle, it isn't occupied by a unit or city and if it isn't a civ's territory"""
         return self.landSpawn(tCoords, argsList, False)
 
-    #RiseAndFall
+    # RiseAndFall
     def goodPlots(self, tCoords, argsList):
         """Checks validity of the plot at the current tCoords, returns plot if valid (which stops the search).
         Plot is valid if it's hill or flatlands, it isn't desert, tundra, marsh or jungle; it isn't occupied by a unit or city and if it isn't a civ's territory.
@@ -901,7 +889,7 @@ class RFCUtils:
                             return True
         return False
 
-    #RiseAndFall
+    # RiseAndFall
     def cityPlots(self, tCoords, argsList):
         x, y = tCoords
         pPlot = gc.getMap().plot(x, y)
@@ -919,18 +907,18 @@ class RFCUtils:
                 return True
         return False
 
-    def ownedCityPlotsAdjacentArea(self, tCoords, argsList): # Unused
+    def ownedCityPlotsAdjacentArea(self, tCoords, argsList):  # Unused
         """Checks validity of the plot at the current tCoords, returns plot if valid (which stops the search).
         Plot is valid if it contains a city belonging to the civ"""
         x, y = tCoords
         pPlot = gc.getMap().plot(x, y)
-        #print(tCoords[0], tCoords[1], pPlot.isCity(), pPlot.getOwner() == argsList[0], pPlot.isAdjacentToArea(gc.getMap().plot(argsList[1][0],argsList[1][1]).area()))
-        if pPlot.getOwner() == argsList[0] and pPlot.isAdjacentToArea(gc.getMap().plot(argsList[1][0],argsList[1][1]).area()):
+        # print(tCoords[0], tCoords[1], pPlot.isCity(), pPlot.getOwner() == argsList[0], pPlot.isAdjacentToArea(gc.getMap().plot(argsList[1][0],argsList[1][1]).area()))
+        if pPlot.getOwner() == argsList[0] and pPlot.isAdjacentToArea(gc.getMap().plot(argsList[1][0], argsList[1][1]).area()):
             if pPlot.isCity():
                 return True
         return False
 
-    def foundedCityPlots(self, tCoords, argsList): # Unused
+    def foundedCityPlots(self, tCoords, argsList):  # Unused
         """Checks validity of the plot at the current tCoords, returns plot if valid (which stops the search).
         Plot is valid if it contains a city belonging to the civ"""
         x, y = tCoords
@@ -940,7 +928,7 @@ class RFCUtils:
                 return True
         return False
 
-    def ownedPlots(self, tCoords, argsList): # Unused
+    def ownedPlots(self, tCoords, argsList):  # Unused
         """Checks validity of the plot at the current tCoords, returns plot if valid (which stops the search).
         Plot is valid if it is in civ's territory."""
         x, y = tCoords
@@ -949,7 +937,7 @@ class RFCUtils:
             return True
         return False
 
-    def goodOwnedPlots(self, tCoords, argsList): # Unused
+    def goodOwnedPlots(self, tCoords, argsList):  # Unused
         """Checks validity of the plot at the current tCoords, returns plot if valid (which stops the search).
         Plot is valid if it's hill or flatlands; it isn't marsh or jungle, it isn't occupied by a unit and if it is in civ's territory."""
         x, y = tCoords
@@ -957,22 +945,27 @@ class RFCUtils:
         if pPlot.isHills() or pPlot.isFlatlands():
             if pPlot.getTerrainType() != iMarsh and pPlot.getFeatureType() != iJungle:
                 if not pPlot.isCity() and not pPlot.isUnit():
-                        if pPlot.getOwner() == argsList:
-                            return True
+                    if pPlot.getOwner() == argsList:
+                        return True
         return False
 
-    def getTurns(self, turns): # edead
+    def getTurns(self, turns):  # edead
         """Returns the amount of turns modified adequately for the game's speed.
         Values are based on CIV4GameSpeedInfos.xml. Use this only for durations, intervals etc.;
         for year->turn conversions, use the DLL function getTurnForYear(int year)."""
         iGameSpeed = gc.getGame().getGameSpeedType()
-        if iGameSpeed == 2: return turns # normal
-        elif iGameSpeed == 1: # epic
-            if turns == 3: return 5 # getTurns(6) must be a multiple of getTurns(3) for turn divisors in Stability.py
-            elif turns == 6: return 10
-            else: return turns*3/2
-        elif iGameSpeed == 0: return turns*3 # marathon
-        #elif iGameSpeed == 3: return turns*2/3 # quick
+        if iGameSpeed == 2:
+            return turns  # normal
+        elif iGameSpeed == 1:  # epic
+            if turns == 3:
+                return 5  # getTurns(6) must be a multiple of getTurns(3) for turn divisors in Stability.py
+            elif turns == 6:
+                return 10
+            else:
+                return turns * 3 / 2
+        elif iGameSpeed == 0:
+            return turns * 3  # marathon
+        # elif iGameSpeed == 3: return turns*2/3 # quick
         return turns
 
     # Leoreth - RiseAndFall
@@ -1004,7 +997,7 @@ class RFCUtils:
     def getCoreUnitList(self, iCiv, reborn):
         unitList = []
         for (x, y) in Areas.getCoreArea(iCiv, bReborn):
-            plot = gc.getMap().plot(x,y)
+            plot = gc.getMap().plot(x, y)
             if not plot.isCity():
                 for i in range(plot.getNumUnits()):
                     unitList.append(plot.getUnit(i))
@@ -1013,23 +1006,22 @@ class RFCUtils:
     def getCivRectangleCities(self, iCiv, tTL, tBR):
         cityList = []
         for (x, y) in self.getPlotList(tTL, tBR):
-            plot = gc.getMap().plot(x,y)
+            plot = gc.getMap().plot(x, y)
             if plot.isCity():
                 cityList.append(plot.getPlotCity())
         return cityList
-
 
     def removeReligionByArea(self, lPlotList, iReligion):
         lCityList = []
         for city in self.getAreaCities(lPlotList):
             if city.isHasReligion(iReligion) and not city.isHolyCity():
                 city.setHasReligion(iReligion, False, False, False)
-            if city.hasBuilding(iTemple + iReligion*4):
-                city.setHasRealBuilding((iTemple + iReligion*4), False)
-            if city.hasBuilding(iCathedral + iReligion*4):
-                city.setHasRealBuilding((iCathedral + iReligion*4), False)
-            if city.hasBuilding(iMonastery + iReligion*4):
-                city.setHasRealBuilding((iMonastery + iReligion*4), False)
+            if city.hasBuilding(iTemple + iReligion * 4):
+                city.setHasRealBuilding((iTemple + iReligion * 4), False)
+            if city.hasBuilding(iCathedral + iReligion * 4):
+                city.setHasRealBuilding((iCathedral + iReligion * 4), False)
+            if city.hasBuilding(iMonastery + iReligion * 4):
+                city.setHasRealBuilding((iMonastery + iReligion * 4), False)
 
     def getEasternmostCity(self, iCiv):
         pResultCity = pPlayer.getCapitalCity()
@@ -1069,8 +1061,8 @@ class RFCUtils:
         for (i, j) in self.surroundingPlots(tPlot):
             current = gc.getMap().plot(i, j)
             if not current.isCity() and not current.isPeak() and not current.isWater():
-                #if not current.getFeatureType() == iJungle and not current.getTerrainType() == iMarsh:
-                lFreePlots.append((i,j))
+                # if not current.getFeatureType() == iJungle and not current.getTerrainType() == iMarsh:
+                lFreePlots.append((i, j))
 
         if iTargetCiv != -1 and not gc.getTeam(iCiv).isAtWar(iTargetCiv):
             gc.getTeam(iCiv).declareWar(iTargetCiv, True, WarPlanTypes.WARPLAN_TOTAL)
@@ -1096,8 +1088,7 @@ class RFCUtils:
             self.makeUnit(iSiege, iCiv, tTargetPlot, iNumUnits, '', 2)
 
         if iInfantry:
-            self.makeUnit(iInfantry, iCiv, tTargetPlot, 2*iNumUnits, '', 2)
-
+            self.makeUnit(iInfantry, iCiv, tTargetPlot, 2 * iNumUnits, '', 2)
 
     def colonialAcquisition(self, iCiv, tPlot):
         x, y = tPlot
@@ -1112,7 +1103,7 @@ class RFCUtils:
             if iInfantry:
                 self.makeUnit(iInfantry, iCiv, tPlot, iNumUnits)
             if gc.getPlayer(iCiv).getStateReligion() != -1:
-                self.makeUnit(iMissionary+gc.getPlayer(iCiv).getStateReligion(), iCiv, (x, y), 1)
+                self.makeUnit(iMissionary + gc.getPlayer(iCiv).getStateReligion(), iCiv, (x, y), 1)
         else:
             gc.getMap().plot(x, y).setCulture(iCiv, 10, True)
             gc.getMap().plot(x, y).setOwner(iCiv)
@@ -1131,7 +1122,7 @@ class RFCUtils:
             if iInfantry:
                 self.makeUnit(iInfantry, iCiv, tPlot, 2)
             if gc.getPlayer(iCiv).getStateReligion() != -1:
-                self.makeUnit(iMissionary+gc.getPlayer(iCiv).getStateReligion(), iCiv, tPlot, 1)
+                self.makeUnit(iMissionary + gc.getPlayer(iCiv).getStateReligion(), iCiv, tPlot, 1)
 
     def getColonialTargets(self, iPlayer, bEmpty=False):
         if iPlayer == iSpain or iPlayer == iFrance:
@@ -1141,8 +1132,6 @@ class RFCUtils:
 
         if iPlayer == iPortugal:
             iNumCities = 5
-
-
 
         lCivList = [iSpain, iFrance, iEngland, iPortugal, iNetherlands]
         id = lCivList.index(iPlayer)
@@ -1217,13 +1206,13 @@ class RFCUtils:
 
         return []
 
-    def getBorderPlots(self, iPlayer, tTL, tBR, iDirection = DirectionTypes.NO_DIRECTION, iNumPlots = 1):
+    def getBorderPlots(self, iPlayer, tTL, tBR, iDirection=DirectionTypes.NO_DIRECTION, iNumPlots=1):
         dConstraints = {
-            DirectionTypes.NO_DIRECTION : lambda (x, y): 0,
-            DirectionTypes.DIRECTION_EAST : lambda (x, y): x,
-            DirectionTypes.DIRECTION_WEST : lambda (x, y): -x,
-            DirectionTypes.DIRECTION_NORTH : lambda (x, y): y,
-            DirectionTypes.DIRECTION_SOUTH : lambda (x, y): -y
+            DirectionTypes.NO_DIRECTION: lambda (x, y): 0,
+            DirectionTypes.DIRECTION_EAST: lambda (x, y): x,
+            DirectionTypes.DIRECTION_WEST: lambda (x, y): -x,
+            DirectionTypes.DIRECTION_NORTH: lambda (x, y): y,
+            DirectionTypes.DIRECTION_SOUTH: lambda (x, y): -y
         }
 
         constraint = dConstraints[iDirection]
@@ -1240,7 +1229,7 @@ class RFCUtils:
         lFirstRing = self.surroundingPlots(tCityPlot)
         lSecondRing = [tPlot for tPlot in self.surroundingPlots(tCityPlot, 2) if not tPlot in lFirstRing and not gc.getMap().plot(tPlot[0], tPlot[1]).isCity()]
 
-        lBorderPlots = [tPlot for tPlot in lSecondRing if constraint(tPlot) >= constraint(tCityPlot)and not gc.getMap().plot(tPlot[0], tPlot[1]).isWater()]
+        lBorderPlots = [tPlot for tPlot in lSecondRing if constraint(tPlot) >= constraint(tCityPlot) and not gc.getMap().plot(tPlot[0], tPlot[1]).isWater()]
 
         return self.getRandomEntry(lBorderPlots)
 
@@ -1293,7 +1282,7 @@ class RFCUtils:
 
     def surroundingPlots(self, tPlot, iRadius=1, filter=lambda (x, y): False):
         x, y = tPlot
-        return [(i % iWorldX, j) for i in range(x-iRadius, x+iRadius+1) for j in range(y-iRadius, y+iRadius+1) if 0 <= j < iWorldY and not filter((i, j))]
+        return [(i % iWorldX, j) for i in range(x - iRadius, x + iRadius + 1) for j in range(y - iRadius, y + iRadius + 1) if 0 <= j < iWorldY and not filter((i, j))]
 
     def getUnitList(self, tPlot):
         x, y = tPlot
@@ -1341,7 +1330,7 @@ class RFCUtils:
         if iScenario:
             if self.getScenario() != iScenario: return
 
-        #if gc.getGame().getGameTurn() > getTurnForYear(tBirth[iPlayer])+3: return
+        # if gc.getGame().getGameTurn() > getTurnForYear(tBirth[iPlayer])+3: return
 
         x, y = tPlot
         gc.getPlayer(iPlayer).found(x, y)
@@ -1499,7 +1488,7 @@ class RFCUtils:
         return iWorker
 
     def getPlotList(self, tTL, tBR, tExceptions=()):
-        return [(x, y) for x in range(tTL[0], tBR[0]+1) for y in range(tTL[1], tBR[1]+1) if (x, y) not in tExceptions]
+        return [(x, y) for x in range(tTL[0], tBR[0] + 1) for y in range(tTL[1], tBR[1] + 1) if (x, y) not in tExceptions]
 
     def getAreaCities(self, lPlots):
         lCities = []
@@ -1513,7 +1502,7 @@ class RFCUtils:
     def getAreaCitiesCiv(self, iCiv, lPlots):
         return [city for city in self.getAreaCities(lPlots) if city.getOwner() == iCiv]
 
-    def completeCityFlip(self, x, y, iCiv, iOwner, iCultureChange, bBarbarianDecay = True, bBarbarianConversion = False, bAlwaysOwnPlots = False, bFlipUnits = False, bPermanentCultureChange = True):
+    def completeCityFlip(self, x, y, iCiv, iOwner, iCultureChange, bBarbarianDecay=True, bBarbarianConversion=False, bAlwaysOwnPlots=False, bFlipUnits=False, bPermanentCultureChange=True):
         tPlot = (x, y)
         plot = gc.getMap().plot(x, y)
 
@@ -1612,15 +1601,15 @@ class RFCUtils:
 
         self.makeUnit(iMissionary + iReligion, iPlayer, Areas.getCapital(iPlayer), iNumUnits)
 
-    def getSortedList(self, lList, function, bReverse = False):
+    def getSortedList(self, lList, function, bReverse=False):
         return sorted(lList, key=lambda element: function(element), reverse=bReverse)
 
-    def getHighestEntry(self, lList, function = lambda x: x):
+    def getHighestEntry(self, lList, function=lambda x: x):
         if not lList: return None
         lSortedList = self.getSortedList(lList, function, True)
         return lSortedList[0]
 
-    def getHighestIndex(self, lList, function = lambda x: x):
+    def getHighestIndex(self, lList, function=lambda x: x):
         if not lList: return None
         lSortedList = self.getSortedList(lList, function, True)
         return lList.index(lSortedList[0])
@@ -1675,7 +1664,7 @@ class RFCUtils:
         popup.setHeaderString(title)
         popup.setBodyString(message)
         for i in labels:
-            popup.addButton( i )
+            popup.addButton(i)
         popup.launch(False)
 
     def cityConquestCulture(self, city, iPlayer, iPreviousOwner):
@@ -1797,19 +1786,19 @@ class RFCUtils:
         for x, y in lTuples:
             Sx += x
             Sy += y
-            Sxx += x*x
-            Syy += y*y
-            Sxy += x*y
+            Sxx += x * x
+            Syy += y * y
+            Sxy += x * y
 
         det = n * Sxx - Sx * Sx
         a, b = (n * Sxy - Sy * Sx) / det, (Sxx * Sy - Sx * Sxy) / det
 
-        #meanerror = residual = 0.0
-        #for x, y in zip(lx, ly):
+        # meanerror = residual = 0.0
+        # for x, y in zip(lx, ly):
         #	meanerror += (y - Sy/n)**2
         #	residual += (y - a * x - b)**2
 
-        #RR = 1 - residual/meanerror
+        # RR = 1 - residual/meanerror
 
         return a, b
 
@@ -1862,7 +1851,7 @@ class RFCUtils:
 
         return False
 
-    def canEverRespawn(self, iPlayer, iGameTurn = None):
+    def canEverRespawn(self, iPlayer, iGameTurn=None):
         if not tResurrectionIntervals[iPlayer]:
             return False
 
@@ -1886,8 +1875,10 @@ class RFCUtils:
         x = city.getX()
         y = city.getY()
 
-        if x < 0 or y < 0: unit.kill(False, -1)
-        else: unit.setXY(x, y, False, True, False)
+        if x < 0 or y < 0:
+            unit.kill(False, -1)
+        else:
+            unit.setXY(x, y, False, True, False)
 
     def evacuate(self, iPlayer, tPlot):
         for tLoopPlot in self.surroundingPlots(tPlot):
@@ -1917,7 +1908,7 @@ class RFCUtils:
         SettlerMaps.updateMap(iPlayer, bReborn)
         WarMaps.updateMap(iPlayer, bReborn)
 
-    def toggleStabilityOverlay(self, iPlayer = -1):
+    def toggleStabilityOverlay(self, iPlayer=-1):
         bReturn = self.bStabilityOverlay
         self.removeStabilityOverlay()
 
@@ -1959,13 +1950,13 @@ class RFCUtils:
                         iPlotType = -1
                 if iPlotType != -1:
                     szColor = lStabilityColors[iPlotType]
-                    engine.fillAreaBorderPlotAlt(plot.getX(), plot.getY(), 1000+iPlotType, szColor, 0.7)
+                    engine.fillAreaBorderPlotAlt(plot.getX(), plot.getY(), 1000 + iPlotType, szColor, 0.7)
 
     def removeStabilityOverlay(self):
         engine = CyEngine()
         # clear the highlight
         for i in range(50):
-            engine.clearAreaBorderPlots(1000+i)
+            engine.clearAreaBorderPlots(1000 + i)
         self.bStabilityOverlay = False
         CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE).setState("StabilityOverlay", False)
 
@@ -2173,11 +2164,11 @@ class RFCUtils:
         if len(lUnits) < iNumDefenders:
             self.makeUnit(self.getBestDefender(iPlayer), iPlayer, tPlot, iNumDefenders - len(lUnits))
 
-    def getGoalText(self, iPlayer, iGoal, bTitle = False):
+    def getGoalText(self, iPlayer, iGoal, bTitle=False):
         iCiv = gc.getPlayer(iPlayer).getCivilizationType()
         iGameSpeed = gc.getGame().getGameSpeedType()
 
-        baseKey = "TXT_KEY_UHV_" + gc.getCivilizationInfo(iCiv).getIdentifier() + str(iGoal+1)
+        baseKey = "TXT_KEY_UHV_" + gc.getCivilizationInfo(iCiv).getIdentifier() + str(iGoal + 1)
 
         fullKey = baseKey
 
@@ -2192,17 +2183,17 @@ class RFCUtils:
 
         return localText.getText(str(baseKey), ())
 
-    def getReligiousGoalText(self, iReligion, iGoal, bTitle = False):
+    def getReligiousGoalText(self, iReligion, iGoal, bTitle=False):
         iGameSpeed = gc.getGame().getGameSpeedType()
 
         if iReligion < iNumReligions:
             religionKey = gc.getReligionInfo(iReligion).getText()[:3].upper()
         elif iReligion == iNumReligions:
             religionKey = "POL"
-        elif iReligion == iNumReligions+1:
+        elif iReligion == iNumReligions + 1:
             religionKey = "SEC"
 
-        baseKey = "TXT_KEY_URV_" + religionKey + str(iGoal+1)
+        baseKey = "TXT_KEY_URV_" + religionKey + str(iGoal + 1)
 
         fullKey = baseKey
 
@@ -2224,8 +2215,10 @@ class RFCUtils:
 
         fullKey = baseKey
 
-        if iScenario == i600AD: fullKey += "_600AD"
-        elif iScenario == i1700AD: fullKey += "_1700AD"
+        if iScenario == i600AD:
+            fullKey += "_600AD"
+        elif iScenario == i1700AD:
+            fullKey += "_1700AD"
 
         translation = localText.getText(str(fullKey), ())
 
@@ -2273,5 +2266,6 @@ class RFCUtils:
             if plot.isCore(iLoopPlayer):
                 return True
         return False
+
 
 utils = RFCUtils()

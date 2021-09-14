@@ -1,11 +1,23 @@
 from Consts import *
 from RFCUtils import utils
 
+from GlobalDefineAlt import PYTHON_HUMAN_MODIFIER_ENABLE,PYTHON_HUMAN_MODIFIER
+def getHumanModifer(iPlayer,iModifier):
+	if (utils.getHumanID() is not iPlayer) or (PYTHON_HUMAN_MODIFIER_ENABLE is not 1):
+		return 1
+	iHumanModifier = 1
+	iHumanModifier *= PYTHON_HUMAN_MODIFIER[iModifier] / 100
+	return iHumanModifier
+
 def getModifier(iPlayer, iModifier):
 	iCivilization = gc.getPlayer(iPlayer).getCivilizationType()
+	iHumanModifier = getHumanModifer(iPlayer,iModifier)
+
 	if iCivilization in lOrder:
-		return tModifiers[iModifier][lOrder.index(iCivilization)]
-	return tDefaults[iModifier]
+		initmodifier = tModifiers[iModifier][lOrder.index(iCivilization)]
+		initmodifier *= iHumanModifier
+		return initmodifier
+	return tDefaults[iModifier] * iHumanModifier
 	
 def getAdjustedModifier(iPlayer, iModifier):
 	if utils.getScenario() > i3000BC and iPlayer < iVikings:

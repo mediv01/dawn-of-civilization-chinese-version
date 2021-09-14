@@ -113,6 +113,7 @@ CvPlayer::CvPlayer()
 
 	m_ppaaiSpecialistExtraYield = NULL;
 	m_ppaaiImprovementYieldChange = NULL;
+	m_eCILastKillMe = NO_PLAYER;
 
 	//Rhye (jdog) - start ---------------------
 	CvWString m_szName;
@@ -3132,8 +3133,8 @@ void CvPlayer::doTurn()
 	}
 
 	//mediv01 每回合执行函数doturn入口
-
-	if (getID() == GC.getGameINLINE().getActivePlayer()) {
+	
+	if (GC.isHuman(getID())) {
 		GC.debug();
 	if (GC.getDefineINT("CVGAMECORE_DLL_AUTO_DEBUGMODE") > 0) {
 		//GC.setDefineINT("CVGAMECORE_DLL_AUTO_DEBUGMODE", 2);
@@ -3314,7 +3315,7 @@ void CvPlayer::doTurnUnits()
 		}
 	}
 
-	if (getID() == GC.getGameINLINE().getActivePlayer())
+	if (GC.isHuman(getID()))
 	{
 		gDLL->getFAStarIFace()->ForceReset(&GC.getInterfacePathFinder());
 
@@ -5859,7 +5860,7 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 
 bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 {
-	//mediv01 玩家可建立城市代码
+	// mediv01 玩家可建立城市代码
 	CvPlot* pPlot;
 	CvPlot* pLoopPlot;
 	bool bValid;
@@ -5894,11 +5895,29 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 		}
 	}
 
+	// mediv01 非历史区不能建城市的功能
+	int iSettlerValue = GET_PLAYER(getID()).getSettlerValue(pPlot->getX(), pPlot->getY());
+	if (GC.getDefineINT("CVPLAYER_HUMAN_CANNOT_BUILD_CITY_IN_NOT_HISTORY") > 0) {
+		if (GC.isHuman(getID())) {			
+			if (iSettlerValue < 90) {
+				return false;
+			}
+		}
+	}
+	if (GC.getDefineINT("CVPLAYER_AI_CANNOT_BUILD_CITY_IN_NOT_HISTORY") > 0) {
+		if (!GC.isHuman(getID())) {
+			if (iSettlerValue < 90) {
+				return false;
+			}
+		}
+	}
+
+
 	if (pPlot->isImpassable())
 	{
 		return false;
 	}
-	//mediv01 刚果UP 可以在丛林建城
+	// mediv01 刚果UP 可以在丛林建城
 	if (pPlot->getFeatureType() != NO_FEATURE && getID() != CONGO)	//Leoreth: Congolese UP: can found in jungle
 	{
 		if (GC.getFeatureInfo(pPlot->getFeatureType()).isNoCity())
@@ -8507,7 +8526,7 @@ void CvPlayer::revolution(CivicTypes* paeNewCivics, bool bForce)
 
 	setRevolutionTimer(std::max(1, ((100 + getAnarchyModifier()) * GC.getDefineINT("MIN_REVOLUTION_TURNS")) / 100) + iAnarchyLength);
 
-	if (getID() == GC.getGameINLINE().getActivePlayer())
+	if (GC.isHuman(getID()))
 	{
 		gDLL->getInterfaceIFace()->setDirty(Popup_DIRTY_BIT, true); // to force an update of the civic chooser popup
 	}
@@ -9478,7 +9497,7 @@ void CvPlayer::setGold(int iNewValue)
 	{
 		m_iGold = iNewValue;
 
-		if (getID() == GC.getGameINLINE().getActivePlayer())
+		if (GC.isHuman(getID()))
 		{
 			gDLL->getInterfaceIFace()->setDirty(MiscButtons_DIRTY_BIT, true);
 			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
@@ -12119,27 +12138,38 @@ void CvPlayer::doConquestIncentive(const PlayerTypes& eOldOwner)
 	int iI, iLoop;
 
 
+	PlayerTypes PlayerKilled = eOldOwner;
+	PlayerTypes PlayerWinner = GET_PLAYER(PlayerKilled).getCILastKillMe();
+
+
+	if (PlayerKilled == NULL || PlayerWinner == NULL) {
+		return;
+	}
+	if (PlayerKilled == NO_PLAYER || PlayerWinner == NO_PLAYER) {
+		return;
+	}
+
 	if (GC.getDefineINT("ANYFUN_CONQUEST_GET_GOLD") == 1)
 	{
 		const int year = GC.getGame().getGameTurnYear();
-		if ((year == -3000 || year == 600 || year == 1700) && getID() == 0) {
-		}
-		else {
+
+		
 
 
-			int old_player_gold = kTragePlayer.getGold();
-			GET_PLAYER(kTragePlayer.getCILastKillMe()).changeGold(old_player_gold);
+
+			int old_player_gold = GET_PLAYER(PlayerKilled).getGold();
+			GET_PLAYER(PlayerWinner).changeGold(old_player_gold);
 			
 			if (GC.getDefineINT("CVGAMECORE_LOG_AI_CONQUEST_TECH_AND_GOLD") > 0) {
-				log_CWstring.Format(L"%s 征服了 %s", GET_PLAYER(getID()).getCivilizationDescription(), kTragePlayer.getCivilizationDescription());
-				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
-				log_CWstring.Format(L"%s 征服文明获得金币: %d ", GET_PLAYER(getID()).getCivilizationDescription(), old_player_gold);
-				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
+				log_CWstring.Format(L"%s 征服了 %s", GET_PLAYER(PlayerWinner).getCivilizationDescription(), GET_PLAYER(PlayerKilled).getCivilizationDescription());
+				GC.logswithid(PlayerWinner,log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
+				log_CWstring.Format(L"%s 征服文明获得金币: %d ", GET_PLAYER(PlayerWinner).getCivilizationDescription(), old_player_gold);
+				GC.logswithid(PlayerWinner,log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
 			}
 			gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), log_CWstring, NULL, MESSAGE_TYPE_MAJOR_EVENT);
 
 
-		}
+		
 
 	}
 
@@ -12149,16 +12179,21 @@ void CvPlayer::doConquestIncentive(const PlayerTypes& eOldOwner)
 	{
 		for (iI = 0; iI < GC.getNumTechInfos(); ++iI)
 		{
-			if (GET_TEAM(kTragePlayer.getTeam()).isHasTech((TechTypes)iI))
+			if (GET_TEAM(GET_PLAYER(PlayerKilled).getTeam()).isHasTech((TechTypes)iI))
 			{
 
-				if (!GET_TEAM(getTeam()).isHasTech((TechTypes)iI))
+				if (!GET_TEAM(GET_PLAYER(PlayerWinner).getTeam()).isHasTech((TechTypes)iI))
 				{
+
 					if (GC.getDefineINT("CVGAMECORE_LOG_AI_CONQUEST_TECH_AND_GOLD") > 0) {
-						log_CWstring.Format(L"%s 征服文明获得科技: %s", GET_PLAYER(getID()).getCivilizationDescription(), GC.getTechInfo((TechTypes)iI).getDescription());
-						GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
+						log_CWstring.Format(L"%s 征服文明获得科技: %s", GET_PLAYER(PlayerWinner).getCivilizationDescription(), GC.getTechInfo((TechTypes)iI).getDescription());
+						GC.logswithid(PlayerWinner,log_CWstring, "DoC_SmallMap_DLL_Log_Conquest.log");
 					}
-					GET_TEAM(getTeam()).setHasTech((TechTypes)iI, true, NO_PLAYER, false, false);
+
+
+					GET_TEAM(GET_PLAYER(PlayerWinner).getTeam()).setHasTech((TechTypes)iI, true, NO_PLAYER, false, false);
+
+
 					szBuffer.Format(L"%s" SETCOLR L"%s" ENDCOLR, gDLL->getText("TXT_KEY_ANYFUNMOD_GAME_OPTION_CONQUEST_TECH_MSG").GetCString(), TEXT_COLOR("COLOR_YELLOW"), GC.getTechInfo((TechTypes)iI).getDescription());
 					gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MAJOR_EVENT);
 				}

@@ -1,3 +1,4 @@
+# coding=utf-8
 import AutoSave
 
 import os.path
@@ -49,16 +50,23 @@ def saveGame(type="auto", variant=None):
 
     All in the types except WORLDBUILDER allow the AUTO variant while only SINGLE allows QUICK.
     """
+    human_id = utils.getHumanID()
     if(gc.getDefineINT("PYTHON_AUTO_SAVE_WHEN_AUTO_PLAY") == 1):
         pass
     else:
-        human_id=utils.getHumanID()
+
         if gc.getGame().getGameTurnYear()<tBirth[human_id]-30:
             return
         pass
 
+    if gc.getGame().getGameTurnYear() >= tBirth[human_id]:
+        return
 
 
+    gc.getGame().autosave()
+
+    # 手动写的自动保存代码，已废弃
+    '''
     if (gc.getDefineINT("PYTHON_AUTO_SAVE_EVERY_TURN_DIR") == 1):
         savedir=''
     else:
@@ -72,4 +80,5 @@ def saveGame(type="auto", variant=None):
                                 names,epoch,abs(gc.getGame().getGameTurnYear())
                                 , gc.getGame().getGameTurn(),curtime1))
     gc.getGame().saveGame(filePath.encode('utf8', 'xmlcharrefreplace'))
+    '''
 

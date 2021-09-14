@@ -349,22 +349,7 @@ def checkTurn(iGameTurn, iPlayer):
 
     elif iPlayer == iChina:
 
-        # first goal: build two Confucian and Taoist Cathedrals by 1000 AD
-        if iGameTurn == getTurnForYear(1000):
-            expire(iChina, 0)
-
-        # second goal: be first to discover Compass, Gunpowder, Paper and Printing Press
-
-        # third goal: experience four golden ages by 1800 AD
-        if isPossible(iChina, 2):
-            if data.iChineseGoldenAgeTurns >= utils.getTurns(32):
-                win(iChina, 2)
-
-            if pChina.isGoldenAge() and not pChina.isAnarchy():
-                data.iChineseGoldenAgeTurns += 1
-
-        if iGameTurn == getTurnForYear(1800):
-            expire(iChina, 2)
+        UHV_China(iGameTurn)
 
     elif iPlayer == iGreece:
 
@@ -1873,6 +1858,46 @@ def checkTurn(iGameTurn, iPlayer):
             gc.getGame().setWinner(iPlayer, 8)
 
 
+def UHV_China(iGameTurn):
+    # first goal: build two Confucian and Taoist Cathedrals by 1000 AD
+    if iGameTurn == getTurnForYear(1000):
+        expire(iChina, 0)
+    # second goal: be first to discover Compass, Gunpowder, Paper and Printing Press
+    # third goal: experience four golden ages by 1800 AD
+    if isPossible(iChina, 2):
+        if data.iChineseGoldenAgeTurns >= utils.getTurns(32):
+            win(iChina, 2)
+
+        if pChina.isGoldenAge() and not pChina.isAnarchy():
+            data.iChineseGoldenAgeTurns += 1
+    if iGameTurn == getTurnForYear(1800):
+        expire(iChina, 2)
+
+def UHV_China_UHV2(iBuilding):
+    if isPossible(iChina, 0):
+        if iBuilding in [iConfucianCathedral, iTaoistCathedral]:
+            iConfucian = getNumBuildings(iChina, iConfucianCathedral)
+            iTaoist = getNumBuildings(iChina, iTaoistCathedral)
+            if iConfucian >= 2 and iTaoist >= 2:
+                win(iChina, 0)
+
+
+def UHVHelp_China(aHelp, iGoal):
+    if iGoal == 0:
+        iConfucianCounter = getNumBuildings(iChina, iConfucianCathedral)
+        iTaoistCounter = getNumBuildings(iChina, iTaoistCathedral)
+        aHelp.append(getIcon(iConfucianCounter >= 2) + localText.getText("TXT_KEY_VICTORY_NUM_CONFUCIAN_ACADEMIES", (iConfucianCounter, 2)) + ' ' + getIcon(iTaoistCounter >= 2) + localText.getText("TXT_KEY_VICTORY_NUM_TAOIST_PAGODAS", (iTaoistCounter, 2)))
+    elif iGoal == 1:
+        bCompass = data.lFirstDiscovered[iCompass] == iChina
+        bPaper = data.lFirstDiscovered[iPaper] == iChina
+        bGunpowder = data.lFirstDiscovered[iGunpowder] == iChina
+        bPrintingPress = data.lFirstDiscovered[iPrinting] == iChina
+        aHelp.append(getIcon(bCompass) + localText.getText("TXT_KEY_TECH_COMPASS", ()) + ' ' + getIcon(bPaper) + localText.getText("TXT_KEY_TECH_PAPER", ()) + ' ' + getIcon(bGunpowder) + localText.getText("TXT_KEY_TECH_GUNPOWDER", ()) + ' ' + getIcon(bPrintingPress) + localText.getText("TXT_KEY_TECH_PRINTING", ()))
+    elif iGoal == 2:
+        iGoldenAgeTurns = data.iChineseGoldenAgeTurns
+        aHelp.append(getIcon(iGoldenAgeTurns >= utils.getTurns(32)) + localText.getText("TXT_KEY_VICTORY_GOLDEN_AGES", (iGoldenAgeTurns / utils.getTurns(8), 4)))
+
+
 def checkHistoricalVictory(iPlayer):
     pPlayer = gc.getPlayer(iPlayer)
     if (gc.getDefineINT("PYTHON_NO_UHV_AND_URV_CHECK") == 1):
@@ -2140,12 +2165,7 @@ def onBuildingBuilt(iPlayer, iBuilding):
 
     # first Chinese goal: build two Confucian and Taoist Cathedrals by 1000 AD
     if iPlayer == iChina:
-        if isPossible(iChina, 0):
-            if iBuilding in [iConfucianCathedral, iTaoistCathedral]:
-                iConfucian = getNumBuildings(iChina, iConfucianCathedral)
-                iTaoist = getNumBuildings(iChina, iTaoistCathedral)
-                if iConfucian >= 2 and iTaoist >= 2:
-                    win(iChina, 0)
+        UHV_China_UHV2(iBuilding)
 
     # second Harappan goal: build three Baths, two Granaries and two Smokehouses by 1500 BC
     elif iPlayer == iHarappa:
@@ -2231,6 +2251,8 @@ def onBuildingBuilt(iPlayer, iBuilding):
             if iBuilding == iTambo:
                 if isRoad(iInca, lAndeanCoast) and getNumBuildings(iInca, iTambo) >= 5:
                     win(iInca, 0)
+
+
 
 
 def checkWonderGoal(iPlayer, lWonders):
@@ -4139,19 +4161,7 @@ def checkUHVhelp3000(iPlayer, iGoal, aHelp):
             aHelp.append(getIcon(bBestCity) + localText.getText("TXT_KEY_VICTORY_MOST_CULTURED_CITY", (pBestCity.getName(),)))
 
     elif iPlayer == iChina:
-        if iGoal == 0:
-            iConfucianCounter = getNumBuildings(iChina, iConfucianCathedral)
-            iTaoistCounter = getNumBuildings(iChina, iTaoistCathedral)
-            aHelp.append(getIcon(iConfucianCounter >= 2) + localText.getText("TXT_KEY_VICTORY_NUM_CONFUCIAN_ACADEMIES", (iConfucianCounter, 2)) + ' ' + getIcon(iTaoistCounter >= 2) + localText.getText("TXT_KEY_VICTORY_NUM_TAOIST_PAGODAS", (iTaoistCounter, 2)))
-        elif iGoal == 1:
-            bCompass = data.lFirstDiscovered[iCompass] == iChina
-            bPaper = data.lFirstDiscovered[iPaper] == iChina
-            bGunpowder = data.lFirstDiscovered[iGunpowder] == iChina
-            bPrintingPress = data.lFirstDiscovered[iPrinting] == iChina
-            aHelp.append(getIcon(bCompass) + localText.getText("TXT_KEY_TECH_COMPASS", ()) + ' ' + getIcon(bPaper) + localText.getText("TXT_KEY_TECH_PAPER", ()) + ' ' + getIcon(bGunpowder) + localText.getText("TXT_KEY_TECH_GUNPOWDER", ()) + ' ' + getIcon(bPrintingPress) + localText.getText("TXT_KEY_TECH_PRINTING", ()))
-        elif iGoal == 2:
-            iGoldenAgeTurns = data.iChineseGoldenAgeTurns
-            aHelp.append(getIcon(iGoldenAgeTurns >= utils.getTurns(32)) + localText.getText("TXT_KEY_VICTORY_GOLDEN_AGES", (iGoldenAgeTurns / utils.getTurns(8), 4)))
+        UHVHelp_China(aHelp, iGoal)
 
     elif iPlayer == iGreece:
         if iGoal == 0:
@@ -4393,6 +4403,8 @@ def checkUHVhelp3000(iPlayer, iGoal, aHelp):
                 else:
                     aHelp.append(getIcon(iCulture >= iRequiredCulture) + localText.getText("TXT_KEY_VICTORY_CAPITAL_CULTURE", (capital.getName(), iCulture, iRequiredCulture)))
     return aHelp
+
+
 
 def checkUHVhelp600(iPlayer, iGoal, aHelp):
     if iPlayer == iArabia:  # mediv01 修改UHV

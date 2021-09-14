@@ -423,12 +423,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HELP_HIMEJI_CASTLE</Tag>
-		<English>[ICON_BULLET]新建的肉搏单位以及投射单位自带城防一级和操练一级[NEWLINE][ICON_BULLET]所有掠夺所获的[ICON_GOLD]增加一倍</English>
+		<English>[ICON_BULLET]城市防御的增加能够增加城市的文化输出。[NEWLINE][ICON_BULLET]+1[ICON_CULTURE] 每1个在城市的防御单位</English>
 		<L1/>
 		<L2/>
 		<L3/>
 		<L4/>
-		<Chinese>[ICON_BULLET]新建的肉搏单位以及投射单位自带城防一级和操练一级[NEWLINE][ICON_BULLET]所有掠夺所获的[ICON_GOLD]增加一倍</Chinese>
+		<Chinese>[ICON_BULLET]城市防御的增加能够增加城市的文化输出。[NEWLINE][ICON_BULLET]+1[ICON_CULTURE] 每1个在城市的防御单位</Chinese>
 		<French>[ICON_BULLET]City defense increases culture output in all cities[NEWLINE][ICON_BULLET]+1[ICON_CULTURE] per level of every fully fortified unit in the city</French>
 	</TEXT>
 	<TEXT>
@@ -1713,12 +1713,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ITSUKUSHIMA_SHRINE_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]严岛神社[COLOR_REVERT]为城市半径内的每一块水格提供了一个绝佳的人民点。它还增加了生成[COLOR_UNIT_TEXT]大先知[COLOR_REVERT]的机会。</English>
+		<English>[COLOR_BUILDING_TEXT]严岛神社[COLOR_REVERT]为城市半径内的每一块水格提供了1个伟人点。它还增加了生成[COLOR_UNIT_TEXT]大先知[COLOR_REVERT]的机会。</English>
 		<L1/>
 		<L2/>
 		<L3/>
 		<L4/>
-		<Chinese>[COLOR_BUILDING_TEXT]严岛神社[COLOR_REVERT]为城市半径内的每一块水格提供了一个绝佳的人民点。它还增加了生成[COLOR_UNIT_TEXT]大先知[COLOR_REVERT]的机会。</Chinese>
+		<Chinese>[COLOR_BUILDING_TEXT]严岛神社[COLOR_REVERT]为城市半径内的每一块水格提供了1个伟人点。它还增加了生成[COLOR_UNIT_TEXT]大先知[COLOR_REVERT]的机会。</Chinese>
 		<French>The [COLOR_BUILDING_TEXT]Itsukushima Shrine[COLOR_REVERT] provides a Great People point for every water tile in the city radius. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
 	</TEXT>
 	<TEXT>

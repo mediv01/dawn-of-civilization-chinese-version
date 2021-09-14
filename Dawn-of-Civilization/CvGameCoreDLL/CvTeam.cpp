@@ -2691,6 +2691,119 @@ int CvTeam::countEnemyDangerByArea(CvArea* pArea) const
 	return iCount;
 }
 
+//bool CvTeam::isTechBePunishedByTechCol(TechTypes eTech) const
+//{
+//	int iModifer = 100;
+//	bool bTechPunished = false;
+//	int iGameTurnYear = GC.getGameTurnYear();
+//	int iTechCol = GC.getTechInfo(eTech).getGridX() - 1;
+//
+//
+//	int iTechYearThreshold = -4000;
+//
+//	if (iTechCol <= SIZE_OF_TECH_COL_YEAR) {
+//		iTechYearThreshold = TechColYear[iTechCol];
+//	}
+//
+//	if (iGameTurnYear < iTechYearThreshold) {
+//		bTechPunished = true;
+//	}
+//	return bTechPunished;
+//}
+//
+//
+//bool CvTeam::isTechBePunishedByTechEra(TechTypes eTech) const
+//{
+//	bool bTechPunished = false;
+//	int iGameTurnYear = GC.getGameTurnYear();
+//	int iTechEra = GC.getTechInfo(eTech).getEra() ;
+//
+//
+//	int iTechYearThreshold = -4000;
+//
+//	if (iTechEra <= SIZE_OF_TECH_ERA_YEAR) {
+//		iTechYearThreshold = TechEraYear[iTechEra];
+//	}
+//	//log_CWstring.Format(L" 科技 %s 科技所在时代：%d 当前年份 %d  惩罚阈值年份 %d", GC.getTechInfo(eTech).getDescription(), iTechEra, iGameTurnYear, iTechYearThreshold);
+//	//GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_TEST.log");
+//	if (iGameTurnYear < iTechYearThreshold) {
+//		bTechPunished = true;
+//	}
+//	return bTechPunished;
+//}
+
+int CvTeam::getTechBePunishedByTechCol(TechTypes eTech) const
+{
+	int iModifer = 100;
+	bool bTechPunished = false;
+	int iGameTurnYear = GC.getGameTurnYear();
+	int iTechCol = GC.getTechInfo(eTech).getGridX() - 1;
+
+
+	int iTechYearThreshold = -4000;
+
+	if (iTechCol <= SIZE_OF_TECH_COL_YEAR) {
+		iTechYearThreshold = TechColYear[iTechCol];
+	}
+
+	if (iGameTurnYear < iTechYearThreshold) {
+		bTechPunished = true;
+	}
+
+	int iPlayerCol = 0;
+	int iPlayerTechDiff = 0;
+	if (bTechPunished) {
+		
+		for (int i = 0; i <= SIZE_OF_TECH_COL_YEAR; i++) {
+			if (iGameTurnYear >= TechColYear[i]) {
+				iPlayerCol = i;
+			}
+		}
+		iPlayerTechDiff = abs ( iTechCol - iPlayerCol);
+		double iExpCalc = exp((double)iPlayerTechDiff * 0.5);
+		iExpCalc = (iExpCalc > 100 )? 100 : iExpCalc;
+		iExpCalc = (iExpCalc < 1) ? 1 : iExpCalc;
+		iModifer = (int)(100 * iExpCalc);
+
+
+		//log_CWstring.Format(L" 科技 %s 科技所在列：%d 当前年份 %d 当前年份所属的列: %d  惩罚阈值年份 %d  列差: %d 惩罚系数: %d", GC.getTechInfo(eTech).getDescription(), iTechCol, iGameTurnYear, iPlayerCol , iTechYearThreshold, iPlayerTechDiff,iModifer);
+		//GC.logswithid(getLeaderID(),log_CWstring, "DoC_SmallMap_DLL_Log_TEST.log");
+	}
+
+
+	return iModifer;
+}
+
+int CvTeam::getResearchCostByTech(TechTypes eTech, PlayerTypes iPlayer) const
+{
+	int iModifer = 100;
+	// 科技惩罚与科技时代与年份挂钩
+	if (GC.getDefineINT("CVTEAM_TECH_COST_BY_ERA") > 0) {
+
+		int iNewModifer = getTechBePunishedByTechCol(eTech);
+
+		if (GC.isHuman(iPlayer)) {
+			if (GC.getDefineINT("CVTEAM_TECH_COST_BY_ERA_TO_HUMAN") > 0) {
+				iModifer = iNewModifer;
+				return iModifer;
+			}
+			else {
+				return 100;
+			}
+		}
+		else {
+			if (GC.getDefineINT("CVTEAM_TECH_COST_BY_ERA_TO_AI") > 0) {
+				iModifer = iNewModifer;
+				return iModifer;
+			}
+			else {
+				return 100;
+			}
+		}
+	}
+
+	return iModifer;
+}
 
 int CvTeam::getResearchCost(TechTypes eTech, bool bModifiers) const
 {
@@ -2702,6 +2815,9 @@ int CvTeam::getResearchCost(TechTypes eTech, bool bModifiers) const
 
 	//iCost *= GC.getHandicapInfo(getHandicapType()).getResearchPercent(); //Rhye
 	iCost *= GC.getHandicapInfo(getHandicapType()).getResearchPercentByID(getLeaderID()); //Rhye
+	iCost /= 100;
+
+	iCost *= getResearchCostByTech(eTech, getLeaderID());
 	iCost /= 100;
 
 	iCost *= getScenarioResearchModifier();

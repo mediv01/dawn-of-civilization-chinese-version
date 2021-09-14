@@ -701,19 +701,19 @@
 
     <Define>
         <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H2</DefineName>        <!-- 2等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
-        <iDefineIntVal>150</iDefineIntVal>
-    </Define>
-    <Define>
-        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H3</DefineName>        <!-- 3等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
         <iDefineIntVal>200</iDefineIntVal>
     </Define>
     <Define>
-        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H4</DefineName>        <!-- 4等难度下AI科研费用的乘数百分比 100为默认模式  已校准 mediv01  -->
+        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H3</DefineName>        <!-- 3等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
         <iDefineIntVal>300</iDefineIntVal>
     </Define>
     <Define>
-        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H5</DefineName>        <!-- 5等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
+        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H4</DefineName>        <!-- 4等难度下AI科研费用的乘数百分比 100为默认模式  已校准 mediv01  -->
         <iDefineIntVal>400</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H5</DefineName>        <!-- 5等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
+        <iDefineIntVal>500</iDefineIntVal>
     </Define>
 
     <Define>
@@ -938,27 +938,71 @@
         <iDefineIntVal>0</iDefineIntVal>
     </Define>	
 
+	<Define>
+        <DefineName>CVCITY_RELACE_RELIGION_WITHOUT_REMOVE_BUILDING</DefineName>        <!-- 大于0的数字为城市宗教消失时，不会让宗教建筑失效 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>	
 
+	<Define>
+        <DefineName>CVCITY_PAGAN_TEMPLE_NOT_DISAPPEAR</DefineName>        <!-- 大于0的数字为城市拥有宗教后，原始神庙不消失 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
-
-
+	<Define>
+        <DefineName>CVCITY_RELIGON_NOT_DISAPPEAR</DefineName>        <!-- 大于0的数字为城市拥有宗教后，宗教不会消失 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
   
+	<Define>
+        <DefineName>CVCITY_SATELLITE_CAN_ALWAYS_JOIN_CITY</DefineName>        <!-- 大于0的数字为卫星总是可以加入城市 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>CVPLAYER_HUMAN_CANNOT_BUILD_CITY_IN_NOT_HISTORY</DefineName>        <!-- 大于0的数字为人类玩家不能在历史区外建立城市 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>	
+	
+	
+	<Define>
+        <DefineName>CVPLAYER_AI_CANNOT_BUILD_CITY_IN_NOT_HISTORY</DefineName>        <!-- 大于0的数字为AI玩家不能在历史区外建立城市 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	
+		<Define>
+        <DefineName>CVTEAM_TECH_COST_BY_ERA</DefineName>        <!-- 大于0的数字为玩家科技费用跟玩家当前时代挂钩，如果超前研究太多，就会遭受惩罚 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+		<Define>
+        <DefineName>CVTEAM_TECH_COST_BY_ERA_TO_HUMAN</DefineName>        <!-- 大于0的数字为人类玩家科技费用跟玩家当前时代挂钩，如果超前研究太多，就会遭受惩罚 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
 
+
+		<Define>
+        <DefineName>CVTEAM_TECH_COST_BY_ERA_TO_AI</DefineName>        <!-- 大于0的数字为人类玩家科技费用跟玩家当前时代挂钩，如果超前研究太多，就会遭受惩罚 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>	
+	
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  PYTHON 第一部分 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 
     <Define>
-        <DefineName>PYTHON_AUTO_SAVE_EVERYTURN</DefineName>        <!-- 1为每回合都自动保存 0为默认模式 此参数已经在DLL里实现，建议设置为0  mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <DefineName>PYTHON_AUTO_SAVE_EVERY_TURN</DefineName>        <!-- 1为每回合都自动保存 0为默认模式 此参数可以实现自动过回合时自动保存，有利于BUG调试，默认值为0  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
+	
+	
     <Define>
-        <DefineName>PYTHON_AUTO_SAVE_EVERY_TURN_DIR</DefineName>        <!-- 1为每回合都自动保存到SINGLE下 0为保存到AUTO下 0为默认模式 mediv01 -->
+        <DefineName>PYTHON_AUTO_SAVE_EVERY_TURN_DIR</DefineName>        <!-- 1为每回合都自动保存到SINGLE下 0为保存到AUTO下 该参数已废弃 0为默认模式 mediv01 -->
         <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
     <Define>
-        <DefineName>PYTHON_AUTO_SAVE_WHEN_AUTO_PLAY</DefineName>        <!-- 1为自动过回合时也自动保存，此操作大部分情况下无意义，建议设置为0 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <DefineName>PYTHON_AUTO_SAVE_WHEN_AUTO_PLAY</DefineName>        <!-- 1为自动过回合时也自动保存 0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1592,8 +1636,13 @@
     </Define>
 
 	<Define>
-        <DefineName>CVGAMECORE_LOG_AI_CONQUEST_TECH_AND_GOLD</DefineName>        <!-- 1为新增了DLL的LOG函数，记录AI征服获得金币和科技 0为默认模式， mediv01  -->
+        <DefineName>CVGAMECORE_LOG_ON_TEST</DefineName>        <!-- 1为记录TEST里的日志，0为默认模式， mediv01  -->
         <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+	<Define>
+        <DefineName>CVGAMECORE_LOG_AI_CONQUEST_TECH_AND_GOLD</DefineName>        <!-- 1为新增了DLL的LOG函数，记录AI征服获得金币和科技 0为默认模式， mediv01  -->
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 	
 	<Define>
@@ -1603,6 +1652,12 @@
 	
 	<Define>
         <DefineName>CVGAMECORE_LOG_SHOW_CITY_TRADE_VALUE</DefineName>        <!-- 1为在DLL记录城市的价值 0为默认模式， mediv01  -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+	
+	
+	<Define>
+        <DefineName>CVGAMECORE_LOG_SHOW_CITY_DISAPPEAR_BUILDING</DefineName>        <!-- 1为在DLL记录城市里消失的建筑（劫掠、过时） 0为默认模式， mediv01  -->
         <iDefineIntVal>0</iDefineIntVal>
     </Define>
 

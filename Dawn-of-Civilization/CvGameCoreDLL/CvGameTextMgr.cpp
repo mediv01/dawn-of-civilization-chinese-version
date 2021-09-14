@@ -8767,6 +8767,63 @@ void CvGameTextMgr::setTechTradeHelp(CvWStringBuffer &szBuffer, TechTypes eTech,
 
 
     if (((GC.getGameINLINE().getGameTurn() >= GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getBirthTurn()) && GC.getGameINLINE().getGameTurn() > 0)) {
+
+
+        // 提示科技是否超前
+        if (GC.getDefineINT("CVTEAM_TECH_COST_BY_ERA") > 0) {
+
+            int iModifer = 100;
+            bool bTechPunished = false;
+            int iGameTurnYear = GC.getGameTurnYear();
+            int iTechCol = GC.getTechInfo(eTech).getGridX() - 1;
+
+
+            int iTechYearThreshold = -4000;
+
+            if (iTechCol <= SIZE_OF_TECH_COL_YEAR) {
+                iTechYearThreshold = TechColYear[iTechCol];
+            }
+
+            if (iGameTurnYear < iTechYearThreshold) {
+                bTechPunished = true;
+            }
+
+            int iPlayerCol = 0;
+            int iPlayerTechDiff = 0;
+            if (bTechPunished) {
+
+                for (int i = 0; i <= SIZE_OF_TECH_COL_YEAR; i++) {
+                    if (iGameTurnYear >= TechColYear[i]) {
+                        iPlayerCol = i;
+                    }
+                }
+                iPlayerTechDiff = abs(iTechCol - iPlayerCol);
+                double iExpCalc = exp((double)iPlayerTechDiff * 0.5);
+                iExpCalc = (iExpCalc > 100) ? 100 : iExpCalc;
+                iExpCalc = (iExpCalc < 1) ? 1 : iExpCalc;
+                iModifer = (int)(100 * iExpCalc);
+
+
+            }
+
+            szBuffer.append(NEWLINE);
+            szBuffer.append(CvWString::format(SETCOLR L"科技组年份：" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_YELLOW"), iTechYearThreshold));
+            szBuffer.append(CvWString::format(SETCOLR L"%d" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_CYAN"), iTechYearThreshold));
+
+            if (GC.getDefineINT("CVTEAM_TECH_COST_BY_ERA_TO_HUMAN") > 0) {
+            }
+            else {
+                bTechPunished = false;
+            }
+
+            if (bTechPunished) {
+                szBuffer.append(NEWLINE);
+                szBuffer.append(CvWString::format(SETCOLR L" 科研惩罚：%d " ENDCOLR, TEXT_COLOR("COLOR_PLAYER_RED"), iModifer));
+            }
+
+        }
+
+
         int iTechShowPlayer = NUM_MAJOR_PLAYERS + 2;
             //mediv01 是否首发科技
             bool bTechFirst = (GC.getGameINLINE().countKnownTechNumTeams(eTech) == 0);

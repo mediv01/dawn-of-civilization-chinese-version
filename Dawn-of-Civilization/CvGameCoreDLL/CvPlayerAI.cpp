@@ -8097,7 +8097,7 @@ int CvPlayerAI::AI_cityTradeVal(CvCity* pCity) const
 	
 	if (GC.getDefineINT("CVGAMECORE_LOG_SHOW_CITY_TRADE_VALUE") > 0) {
 		log_CWstring.Format(L"%s 城市，坐标( %d , %d) 城市价值： %d", GET_PLAYER(pCity->getOwnerINLINE()).getCivilizationDescription(), pCity->getX_INLINE(), pCity->getY_INLINE(), iValue);
-		GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_TradeCityVal.log");
+		GC.logswithid(getID(),log_CWstring, "DoC_SmallMap_DLL_Log_AI_TradeCityVal.log");
 	}
 
 	int returnVal = 0;

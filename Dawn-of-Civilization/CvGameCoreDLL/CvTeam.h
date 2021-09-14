@@ -85,6 +85,16 @@ public:
 	int countEnemyDangerByArea(CvArea* pArea) const;																		// Exposed to Python
 
 	int getResearchCost(TechTypes eTech, bool bModifiers = true) const;																// Exposed to Python
+	int getResearchCostByTech(TechTypes eTech, PlayerTypes iPlayer) const;
+	
+	
+	
+	// mediv01
+	bool isTechBePunishedByTechCol(TechTypes eTech) const;
+	bool isTechBePunishedByTechEra(TechTypes eTech) const;
+	int getTechBePunishedByTechCol(TechTypes eTech) const;
+	int getTechBePunishedByTechEra(TechTypes eTech) const;
+
 	int getResearchLeft(TechTypes eTech) const;																// Exposed to Python
 
 	// Leoreth

@@ -4007,6 +4007,46 @@ const CvString logs_getgameturn() {
 	return Return_Text;
 }
 
+
+
+int CvGlobals::getGameTurn() {
+	return  GC.getGame().getGameTurn();
+}
+
+int CvGlobals::getGameTurnYear() {
+	return  GC.getGame().getGameTurnYear();
+}
+
+PlayerTypes CvGlobals::getHumanID() {
+	return  GC.getGameINLINE().getActivePlayer();
+}
+
+bool CvGlobals::isHuman(PlayerTypes PlayerID)  {
+	//static bool boolisHuman = GC.getInitCore().getHuman(PlayerID);
+	static bool boolisHuman = (((int)GC.getGameINLINE().getActivePlayer()) == (int)PlayerID);
+	//if (isHuman) {
+	//	log_CWstring.Format(L" HUMAN!!");
+	//	GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_TEST.log");
+	//}
+
+	//else {
+	//	log_CWstring.Format(L" NOT HUMAN!!  %d %d", GC.getGameINLINE().getActivePlayer(), PlayerID);
+	//	GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_TEST.log");
+	//}
+	
+	return boolisHuman;
+	/*
+	int activeplayer = GC.getGameINLINE().getActivePlayer();
+	if (activeplayer == PlayerID) {
+		return true;
+	}
+	else {
+		return false;
+	}
+	*/
+
+}
+
 void Vector_Template() {
 
 	int iI = 1;
@@ -4028,6 +4068,88 @@ void Vector_Template() {
 }
 
 
+void log_output1(PlayerTypes PlayerID,std::wfstream& flog, CvString& filenamepath, char  log_text_tochar[65536])
+{
+	flog.open(filenamepath, std::ios::app | std::ios::out);
+	flog << logs_gettime();
+	flog << logs_getgameturn().c_str();
+	if (PlayerID != NO_PLAYER) {
+		log_CWstring.Format(L" [ %s ] ", GET_PLAYER(PlayerID).getCivilizationShortDescription());
+		static const wchar* logtext;
+		logtext = log_CWstring.GetCString();
+		static char log_text_tochar2[65536];
+		WideCharToMultiByte(CP_ACP, 0, logtext, wcslen(logtext) + 1, log_text_tochar2, 256, NULL, NULL);
+		flog << log_text_tochar2;
+	}
+	flog << log_text_tochar;
+	flog << "\n";
+	flog.close();
+}
+
+void CvGlobals::logswithid(PlayerTypes PlayerID,CvWString& buf, CvString filename) const {
+	/*
+	//日志函数用法1
+			CvWString log_CWstring;
+			log_CWstring = gDLL->getText("TXT_KEY_VICTORY_ARABIA_UHV3_JERUSALEM");
+			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+	//日志函数用法2
+			CvWString log_CWstring;
+			log_CWstring.Format(L"%s 准备在AI_getCitySite建立城市，坐标( %d , %d) 城市价值： %d", GET_PLAYER(getOwner()).getCivilizationDescription(), plot()->getX(), plot()->getY(), iPlotValue);
+			log_CWstring.Format(L" [ %s ] 的  [%s] 城的建筑 %s 已经失效！", GET_PLAYER(getOwner()).getCivilizationDescription(), getName().GetCString(), GC.getBuildingInfo(eIndex).getText());
+	// 日志函数用法3
+			log_CWstring.Format(L" 勒索WAR!!");
+			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_TEST.log");
+	*/
+	static int mediv01_log = getDefineINT("CVGAMECORE_DLL_LOG");
+	if (mediv01_log == 1) {
+		static const wchar* logtext;
+		logtext = buf.GetCString();
+		static char log_text_tochar[65536];
+		WideCharToMultiByte(CP_ACP, 0, logtext, wcslen(logtext) + 1, log_text_tochar, 256, NULL, NULL);
+
+		static std::wfstream flog;
+		static CvString filenamepath;
+
+		if (filename == "") {
+			filename = "DoC_SmallMap_DLL_Log_Default.log";
+		}
+		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+		//log_output1(PlayerID,flog, filenamepath, log_text_tochar);
+		flog.open(filenamepath, std::ios::app | std::ios::out);
+		flog << logs_gettime();
+		flog << logs_getgameturn().c_str();
+		if (PlayerID != NO_PLAYER) {
+			log_CWstring.Format(L" [ %s ] ", GET_PLAYER(PlayerID).getCivilizationShortDescription());
+			static const wchar* logtext2;
+			logtext2 = log_CWstring.GetCString();
+			static char log_text_tochar2[65536];
+			WideCharToMultiByte(CP_ACP, 0, logtext2, wcslen(logtext2) + 1, log_text_tochar2, 256, NULL, NULL);
+			flog << log_text_tochar2;
+		}
+		flog << log_text_tochar;
+		flog << "\n";
+		flog.close();
+
+		filename = "DoC_SmallMap_DLL_Log_ALL.log";
+		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
+		//log_output1(PlayerID,flog, filenamepath, log_text_tochar);
+		flog.open(filenamepath, std::ios::app | std::ios::out);
+		flog << logs_gettime();
+		flog << logs_getgameturn().c_str();
+		if (PlayerID != NO_PLAYER) {
+			log_CWstring.Format(L" [ %s ] ", GET_PLAYER(PlayerID).getCivilizationShortDescription());
+			static const wchar* logtext2;
+			logtext2 = log_CWstring.GetCString();
+			static char log_text_tochar2[65536];
+			WideCharToMultiByte(CP_ACP, 0, logtext2, wcslen(logtext2) + 1, log_text_tochar2, 256, NULL, NULL);
+			flog << log_text_tochar2;
+		}
+		flog << log_text_tochar;
+		flog << "\n";
+		flog.close();
+	}
+}
+
 void CvGlobals::logs(CvWString& buf, CvString filename) const {
 	/*
 	//日志函数用法1
@@ -4037,44 +4159,49 @@ void CvGlobals::logs(CvWString& buf, CvString filename) const {
 	//日志函数用法2
 			CvWString log_CWstring;
 			log_CWstring.Format(L"%s 准备在AI_getCitySite建立城市，坐标( %d , %d) 城市价值： %d", GET_PLAYER(getOwner()).getCivilizationDescription(), plot()->getX(), plot()->getY(), iPlotValue);
-			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+			log_CWstring.Format(L" [ %s ] 的  [%s] 城的建筑 %s 已经失效！", GET_PLAYER(getOwner()).getCivilizationDescription(), getName().GetCString(), GC.getBuildingInfo(eIndex).getText());
 	// 日志函数用法3
 			log_CWstring.Format(L" 勒索WAR!!");
 			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_TEST.log");
 	*/
-	static const int mediv01_log = getDefineINT("CVGAMECORE_DLL_LOG");
+	if (filename == "DoC_SmallMap_DLL_Log_TEST.log") {
+		if (GC.getDefineINT("CVGAMECORE_LOG_ON_TEST") > 0) {
+
+		}
+
+		else {
+			return ;
+		}
+	}
+	logswithid((PlayerTypes)NO_PLAYER,buf, filename);
+
+
+	// 老版本的代码 已废弃
+	/*
+	static int mediv01_log = getDefineINT("CVGAMECORE_DLL_LOG");
 	if (mediv01_log == 1) {
+		static const wchar* logtext;
+		logtext = buf.GetCString();
+		static char log_text_tochar[16384];
+		WideCharToMultiByte(CP_ACP, 0, logtext, wcslen(logtext) + 1, log_text_tochar, 256, NULL, NULL);
 
+		static std::wfstream flog;
+		static CvString filenamepath;
 
-
-		const wchar* gg;
-		gg = buf.GetCString();
-		char hh[16384];
-		WideCharToMultiByte(CP_ACP, 0, gg, wcslen(gg) + 1, hh, 256, NULL, NULL);
-
-		std::wfstream flog;
-		CvString filenamepath;
 		if (filename == "") {
 			filename = "DoC_SmallMap_DLL_Log_Default.log";
 		}
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << hh;
-		flog << "\n";
-		flog.close();
+		log_output1(flog, filenamepath, log_text_tochar);
 
 		filename = "DoC_SmallMap_DLL_Log_ALL.log";
 		filenamepath = getDefineSTRING("CVGAMECORE_LOG_PATH") + filename;
-		flog.open(filenamepath, std::ios::app | std::ios::out);
-		flog << logs_gettime();
-		flog << logs_getgameturn().c_str();
-		flog << hh;
-		flog << "\n";
-		flog.close();
+		log_output1(flog, filenamepath, log_text_tochar);
 	}
+	*/
 }
+
+
 
 //void CvGlobals::logs(const CvWString& buf, CvString filename) const {
 //	/*

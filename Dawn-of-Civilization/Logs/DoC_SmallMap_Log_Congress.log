@@ -1,0 +1,812 @@
+2021-09-14 13:45:36 [1825]  T[1056]  *****************START vote city AI************************
+2021-09-14 13:45:36 [1825]  T[1056]  *****************英格兰文明    要求           Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  *****************葡萄牙文明    Vote For      英格兰文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: Portugal
+Claimant: England
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 21
+FavorOwner: 3
+Claim Validity: -14
+2021-09-14 13:45:36 [1825]  T[1056]  Portugal Voted YES: claimant favor higher than owner favor to England
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************奥斯曼文明    Vote For      英格兰文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: Turkey
+Claimant: England
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 6
+FavorOwner: 9
+Claim Validity: -23
+2021-09-14 13:45:36 [1825]  T[1056]  Turkey Voted NO: claimant favor and validity lower than owner favor to England
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************刚果文明[F]    Vote For      英格兰文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: Congo
+Claimant: England
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 21
+FavorOwner: 4
+Claim Validity: -17
+2021-09-14 13:45:36 [1825]  T[1056]  Congo Voted YES: claimant favor higher than owner favor to England
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************美利坚文明    Vote For      英格兰文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: America
+Claimant: England
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 21
+FavorOwner: 9
+Claim Validity: -17
+2021-09-14 13:45:36 [1825]  T[1056]  America Voted NO: claimant favor and validity lower than owner favor to England
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************俄罗斯文明    Vote For      英格兰文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: Russia
+Claimant: England
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 6
+FavorOwner: 14
+Claim Validity: -13
+2021-09-14 13:45:36 [1825]  T[1056]  Russia Voted NO: claimant favor and validity lower than owner favor to England
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************法兰西文明    Vote For      英格兰文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: France
+Claimant: England
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 1
+FavorOwner: 12
+Claim Validity: -20
+2021-09-14 13:45:36 [1825]  T[1056]  France Voted NO: claimant favor and validity lower than owner favor to England
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************维京文明[F]    Vote For      英格兰文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: Sweden
+Claimant: England
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 16
+FavorOwner: 24
+Claim Validity: -4
+2021-09-14 13:45:36 [1825]  T[1056]  Sweden Voted NO: claimant favor and validity lower than owner favor to England
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************华夏文明    Vote For      英格兰文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: China
+Claimant: England
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 0
+FavorOwner: -8
+Claim Validity: -27
+2021-09-14 13:45:36 [1825]  T[1056]  China Voted NO: claim on own city towards to England
+2021-09-14 13:45:36 [1825]  T[1056]  *****************印加文明    Vote For      英格兰文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: Inca
+Claimant: England
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 11
+FavorOwner: 19
+Claim Validity: -17
+2021-09-14 13:45:36 [1825]  T[1056]  Inca Voted NO: claimant favor and validity lower than owner favor to England
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************END vote city AI************************
+2021-09-14 13:45:36 [1825]  T[1056]  *****************START vote city AI************************
+2021-09-14 13:45:36 [1825]  T[1056]  *****************葡萄牙文明    要求           Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  *****************奥斯曼文明    Vote For      葡萄牙文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: Turkey
+Claimant: Portugal
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 23
+FavorOwner: 9
+Claim Validity: -17
+2021-09-14 13:45:36 [1825]  T[1056]  Turkey Voted NO: claimant favor and validity lower than owner favor to Portugal
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************刚果文明[F]    Vote For      葡萄牙文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: Congo
+Claimant: Portugal
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 43
+FavorOwner: 4
+Claim Validity: -17
+2021-09-14 13:45:36 [1825]  T[1056]  Congo Voted YES: claimant favor higher than owner favor to Portugal
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************美利坚文明    Vote For      葡萄牙文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: America
+Claimant: Portugal
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 13
+FavorOwner: 9
+Claim Validity: -17
+2021-09-14 13:45:36 [1825]  T[1056]  America Voted NO: claimant favor and validity lower than owner favor to Portugal
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************俄罗斯文明    Vote For      葡萄牙文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: Russia
+Claimant: Portugal
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 3
+FavorOwner: 14
+Claim Validity: -13
+2021-09-14 13:45:36 [1825]  T[1056]  Russia Voted NO: claimant favor and validity lower than owner favor to Portugal
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************法兰西文明    Vote For      葡萄牙文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: France
+Claimant: Portugal
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 18
+FavorOwner: 12
+Claim Validity: -14
+2021-09-14 13:45:36 [1825]  T[1056]  France Voted NO: claimant favor and validity lower than owner favor to Portugal
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************维京文明[F]    Vote For      葡萄牙文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: Sweden
+Claimant: Portugal
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 23
+FavorOwner: 24
+Claim Validity: -4
+2021-09-14 13:45:36 [1825]  T[1056]  Sweden Voted NO: claimant favor and validity lower than owner favor to Portugal
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************华夏文明    Vote For      葡萄牙文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: China
+Claimant: Portugal
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 0
+FavorOwner: -8
+Claim Validity: -27
+2021-09-14 13:45:36 [1825]  T[1056]  China Voted NO: claim on own city towards to Portugal
+2021-09-14 13:45:36 [1825]  T[1056]  *****************印加文明    Vote For      葡萄牙文明         on      Guangzhou(华夏文明)************************
+2021-09-14 13:45:36 [1825]  T[1056]  
+Vote City AI Debug
+Voter: Inca
+Claimant: Portugal
+City claim: Guangzhou
+Owner: China
+2021-09-14 13:45:36 [1825]  T[1056]  FavorClaimant: 23
+FavorOwner: 19
+Claim Validity: -17
+2021-09-14 13:45:36 [1825]  T[1056]  Inca Voted NO: claimant favor and validity lower than owner favor to Portugal
+2021-09-14 13:45:36 [1825]  T[1056]  End vote city AI
+2021-09-14 13:45:36 [1825]  T[1056]  *****************END vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************START vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************泰国文明    要求           Palembang(独立城邦)************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************法兰西文明    Vote For      泰国文明         on      Palembang(独立城邦)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: France
+Claimant: Thailand
+City claim: Palembang
+Owner: Independents
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: -6
+2021-09-14 14:34:40 [1858]  T[1101]  France Voted NO: invalid claim on minors to Thailand
+2021-09-14 14:34:40 [1858]  T[1101]  *****************英格兰文明    Vote For      泰国文明         on      Palembang(独立城邦)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: England
+Claimant: Thailand
+City claim: Palembang
+Owner: Independents
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: -8
+2021-09-14 14:34:40 [1858]  T[1101]  England Voted NO: invalid claim on minors to Thailand
+2021-09-14 14:34:40 [1858]  T[1101]  *****************美利坚文明    Vote For      泰国文明         on      Palembang(独立城邦)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: America
+Claimant: Thailand
+City claim: Palembang
+Owner: Independents
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: -8
+2021-09-14 14:34:40 [1858]  T[1101]  America Voted NO: invalid claim on minors to Thailand
+2021-09-14 14:34:40 [1858]  T[1101]  *****************葡萄牙文明    Vote For      泰国文明         on      Palembang(独立城邦)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Portugal
+Claimant: Thailand
+City claim: Palembang
+Owner: Independents
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: -3
+Claim Validity: -6
+2021-09-14 14:34:40 [1858]  T[1101]  Portugal Voted NO: invalid claim on minors to Thailand
+2021-09-14 14:34:40 [1858]  T[1101]  *****************俄罗斯文明    Vote For      泰国文明         on      Palembang(独立城邦)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Russia
+Claimant: Thailand
+City claim: Palembang
+Owner: Independents
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: -6
+2021-09-14 14:34:40 [1858]  T[1101]  Russia Voted NO: invalid claim on minors to Thailand
+2021-09-14 14:34:40 [1858]  T[1101]  *****************巴西文明    Vote For      泰国文明         on      Palembang(独立城邦)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Brazil
+Claimant: Thailand
+City claim: Palembang
+Owner: Independents
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: -6
+2021-09-14 14:34:40 [1858]  T[1101]  Brazil Voted NO: invalid claim on minors to Thailand
+2021-09-14 14:34:40 [1858]  T[1101]  *****************印加文明    Vote For      泰国文明         on      Palembang(独立城邦)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Inca
+Claimant: Thailand
+City claim: Palembang
+Owner: Independents
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: -6
+2021-09-14 14:34:40 [1858]  T[1101]  Inca Voted NO: invalid claim on minors to Thailand
+2021-09-14 14:34:40 [1858]  T[1101]  *****************华夏文明    Vote For      泰国文明         on      Palembang(独立城邦)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: China
+Claimant: Thailand
+City claim: Palembang
+Owner: Independents
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: -6
+2021-09-14 14:34:40 [1858]  T[1101]  China Voted NO: invalid claim on minors to Thailand
+2021-09-14 14:34:40 [1858]  T[1101]  *****************西班牙文明    Vote For      泰国文明         on      Palembang(独立城邦)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Spain
+Claimant: Thailand
+City claim: Palembang
+Owner: Independents
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: -6
+2021-09-14 14:34:40 [1858]  T[1101]  Spain Voted NO: invalid claim on minors to Thailand
+2021-09-14 14:34:40 [1858]  T[1101]  *****************END vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************START vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************美利坚文明    要求           Montr&#233;al(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************法兰西文明    Vote For      美利坚文明         on      Montr&#233;al(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: France
+Claimant: America
+City claim: Montr&#233;al
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: -11
+Claim Validity: -22
+2021-09-14 14:34:40 [1858]  T[1101]  France Voted NO: claim on own city towards to America
+2021-09-14 14:34:40 [1858]  T[1101]  *****************英格兰文明    Vote For      美利坚文明         on      Montr&#233;al(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: England
+Claimant: America
+City claim: Montr&#233;al
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 16
+FavorOwner: 10
+Claim Validity: -19
+2021-09-14 14:34:40 [1858]  T[1101]  England Voted NO: bad claim to America
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************葡萄牙文明    Vote For      美利坚文明         on      Montr&#233;al(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Portugal
+Claimant: America
+City claim: Montr&#233;al
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 26
+FavorOwner: 38
+Claim Validity: -19
+2021-09-14 14:34:40 [1858]  T[1101]  Portugal Voted NO: bad claim to America
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************俄罗斯文明    Vote For      美利坚文明         on      Montr&#233;al(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Russia
+Claimant: America
+City claim: Montr&#233;al
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 16
+FavorOwner: 3
+Claim Validity: -19
+2021-09-14 14:34:40 [1858]  T[1101]  Russia Voted NO: bad claim to America
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************巴西文明    Vote For      美利坚文明         on      Montr&#233;al(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Brazil
+Claimant: America
+City claim: Montr&#233;al
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 16
+FavorOwner: 13
+Claim Validity: -11
+2021-09-14 14:34:40 [1858]  T[1101]  Brazil Voted NO: bad claim to America
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************印加文明    Vote For      美利坚文明         on      Montr&#233;al(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Inca
+Claimant: America
+City claim: Montr&#233;al
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 11
+FavorOwner: 28
+Claim Validity: -11
+2021-09-14 14:34:40 [1858]  T[1101]  Inca Voted NO: bad claim to America
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************华夏文明    Vote For      美利坚文明         on      Montr&#233;al(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: China
+Claimant: America
+City claim: Montr&#233;al
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 1
+FavorOwner: 33
+Claim Validity: -14
+2021-09-14 14:34:40 [1858]  T[1101]  China Voted NO: bad claim to America
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************西班牙文明    Vote For      美利坚文明         on      Montr&#233;al(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Spain
+Claimant: America
+City claim: Montr&#233;al
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 11
+FavorOwner: 13
+Claim Validity: -19
+2021-09-14 14:34:40 [1858]  T[1101]  Spain Voted NO: bad claim to America
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************END vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************START vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************巴西文明    要求           Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************法兰西文明    Vote For      巴西文明         on      Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: France
+Claimant: Brazil
+City claim: Concepci&#243;n
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: -5
+2021-09-14 14:34:40 [1858]  T[1101]  France Voted NO: claim on own city towards to Brazil
+2021-09-14 14:34:40 [1858]  T[1101]  *****************英格兰文明    Vote For      巴西文明         on      Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: England
+Claimant: Brazil
+City claim: Concepci&#243;n
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 13
+FavorOwner: 13
+Claim Validity: -4
+2021-09-14 14:34:40 [1858]  T[1101]  England Voted NO: bad claim to Brazil
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************葡萄牙文明    Vote For      巴西文明         on      Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Portugal
+Claimant: Brazil
+City claim: Concepci&#243;n
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 13
+FavorOwner: 35
+Claim Validity: -4
+2021-09-14 14:34:40 [1858]  T[1101]  Portugal Voted NO: bad claim to Brazil
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************俄罗斯文明    Vote For      巴西文明         on      Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Russia
+Claimant: Brazil
+City claim: Concepci&#243;n
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 3
+FavorOwner: 3
+Claim Validity: -5
+2021-09-14 14:34:40 [1858]  T[1101]  Russia Voted NO: bad claim to Brazil
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************印加文明    Vote For      巴西文明         on      Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Inca
+Claimant: Brazil
+City claim: Concepci&#243;n
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 8
+FavorOwner: 23
+Claim Validity: -4
+2021-09-14 14:34:40 [1858]  T[1101]  Inca Voted NO: bad claim to Brazil
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************华夏文明    Vote For      巴西文明         on      Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: China
+Claimant: Brazil
+City claim: Concepci&#243;n
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: -2
+FavorOwner: 33
+Claim Validity: -5
+2021-09-14 14:34:40 [1858]  T[1101]  China Voted NO: bad claim to Brazil
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************西班牙文明    Vote For      巴西文明         on      Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Spain
+Claimant: Brazil
+City claim: Concepci&#243;n
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 8
+FavorOwner: 6
+Claim Validity: -4
+2021-09-14 14:34:40 [1858]  T[1101]  Spain Voted NO: bad claim to Brazil
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************END vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************START vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************西班牙文明    要求           Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************法兰西文明    Vote For      西班牙文明         on      Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: France
+Claimant: Spain
+City claim: Concepci&#243;n
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: 24
+2021-09-14 14:34:40 [1858]  T[1101]  France Voted NO: claim on own city towards to Spain
+2021-09-14 14:34:40 [1858]  T[1101]  *****************英格兰文明    Vote For      西班牙文明         on      Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: England
+Claimant: Spain
+City claim: Concepci&#243;n
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 15
+FavorOwner: 13
+Claim Validity: 24
+2021-09-14 14:34:40 [1858]  T[1101]  England Voted YES: claimant favor higher than owner favor to Spain
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************葡萄牙文明    Vote For      西班牙文明         on      Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Portugal
+Claimant: Spain
+City claim: Concepci&#243;n
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 20
+FavorOwner: 35
+Claim Validity: 24
+2021-09-14 14:34:40 [1858]  T[1101]  Portugal Voted NO: random to Spain
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************俄罗斯文明    Vote For      西班牙文明         on      Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Russia
+Claimant: Spain
+City claim: Concepci&#243;n
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 5
+FavorOwner: 3
+Claim Validity: 24
+2021-09-14 14:34:40 [1858]  T[1101]  Russia Voted YES: claimant favor higher than owner favor to Spain
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************印加文明    Vote For      西班牙文明         on      Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Inca
+Claimant: Spain
+City claim: Concepci&#243;n
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 10
+FavorOwner: 23
+Claim Validity: 24
+2021-09-14 14:34:40 [1858]  T[1101]  Inca Voted YES: random to Spain
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************华夏文明    Vote For      西班牙文明         on      Concepci&#243;n(法兰西文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: China
+Claimant: Spain
+City claim: Concepci&#243;n
+Owner: France
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 5
+FavorOwner: 33
+Claim Validity: 24
+2021-09-14 14:34:40 [1858]  T[1101]  China Voted NO: claimant favor and validity lower than owner favor to Spain
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************END vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************START vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************法兰西文明    要求           Portland(美利坚文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************英格兰文明    Vote For      法兰西文明         on      Portland(美利坚文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: England
+Claimant: France
+City claim: Portland
+Owner: America
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 7
+FavorOwner: 16
+Claim Validity: -1
+2021-09-14 14:34:40 [1858]  T[1101]  England Voted NO: bad claim to France
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************葡萄牙文明    Vote For      法兰西文明         on      Portland(美利坚文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Portugal
+Claimant: France
+City claim: Portland
+Owner: America
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 33
+FavorOwner: 31
+Claim Validity: 15
+2021-09-14 14:34:40 [1858]  T[1101]  Portugal Voted YES: claimant favor higher than owner favor to France
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************俄罗斯文明    Vote For      法兰西文明         on      Portland(美利坚文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Russia
+Claimant: France
+City claim: Portland
+Owner: America
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 3
+FavorOwner: 21
+Claim Validity: 9
+2021-09-14 14:34:40 [1858]  T[1101]  Russia Voted NO: claimant favor and validity lower than owner favor to France
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************印加文明    Vote For      法兰西文明         on      Portland(美利坚文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Inca
+Claimant: France
+City claim: Portland
+Owner: America
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 28
+FavorOwner: 16
+Claim Validity: -3
+2021-09-14 14:34:40 [1858]  T[1101]  Inca Voted YES: likes claimant enough despite bad claim to France
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************华夏文明    Vote For      法兰西文明         on      Portland(美利坚文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: China
+Claimant: France
+City claim: Portland
+Owner: America
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 28
+FavorOwner: 6
+Claim Validity: 2
+2021-09-14 14:34:40 [1858]  T[1101]  China Voted YES: claimant favor higher than owner favor to France
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************美利坚文明    Vote For      法兰西文明         on      Portland(美利坚文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: America
+Claimant: France
+City claim: Portland
+Owner: America
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: -10
+FavorOwner: 0
+Claim Validity: -9
+2021-09-14 14:34:40 [1858]  T[1101]  America Voted NO: claim on own city towards to France
+2021-09-14 14:34:40 [1858]  T[1101]  *****************END vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************START vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************英格兰文明    要求           Dunedin(独立城邦2)************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************葡萄牙文明    Vote For      英格兰文明         on      Dunedin(独立城邦2)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Portugal
+Claimant: England
+City claim: Dunedin
+Owner: Independents2
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: 21
+2021-09-14 14:34:40 [1858]  T[1101]  Portugal Voted YES: valid claim on minors to England
+2021-09-14 14:34:40 [1858]  T[1101]  *****************俄罗斯文明    Vote For      英格兰文明         on      Dunedin(独立城邦2)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Russia
+Claimant: England
+City claim: Dunedin
+Owner: Independents2
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: 21
+2021-09-14 14:34:40 [1858]  T[1101]  Russia Voted YES: valid claim on minors to England
+2021-09-14 14:34:40 [1858]  T[1101]  *****************印加文明    Vote For      英格兰文明         on      Dunedin(独立城邦2)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Inca
+Claimant: England
+City claim: Dunedin
+Owner: Independents2
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: 7
+2021-09-14 14:34:40 [1858]  T[1101]  Inca Voted YES: valid claim on minors to England
+2021-09-14 14:34:40 [1858]  T[1101]  *****************华夏文明    Vote For      英格兰文明         on      Dunedin(独立城邦2)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: China
+Claimant: England
+City claim: Dunedin
+Owner: Independents2
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: 1
+2021-09-14 14:34:40 [1858]  T[1101]  China Voted YES: valid claim on minors to England
+2021-09-14 14:34:40 [1858]  T[1101]  *****************美利坚文明    Vote For      英格兰文明         on      Dunedin(独立城邦2)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: America
+Claimant: England
+City claim: Dunedin
+Owner: Independents2
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: 7
+2021-09-14 14:34:40 [1858]  T[1101]  America Voted YES: valid claim on minors to England
+2021-09-14 14:34:40 [1858]  T[1101]  *****************END vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************START vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************俄罗斯文明    要求           Sur(奥斯曼文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************葡萄牙文明    Vote For      俄罗斯文明         on      Sur(奥斯曼文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Portugal
+Claimant: Russia
+City claim: Sur
+Owner: Turkey
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: -1
+FavorOwner: 17
+Claim Validity: 12
+2021-09-14 14:34:40 [1858]  T[1101]  Portugal Voted NO: claimant favor and validity lower than owner favor to Russia
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************印加文明    Vote For      俄罗斯文明         on      Sur(奥斯曼文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Inca
+Claimant: Russia
+City claim: Sur
+Owner: Turkey
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 4
+FavorOwner: 12
+Claim Validity: 2
+2021-09-14 14:34:40 [1858]  T[1101]  Inca Voted NO: claimant favor and validity lower than owner favor to Russia
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************华夏文明    Vote For      俄罗斯文明         on      Sur(奥斯曼文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: China
+Claimant: Russia
+City claim: Sur
+Owner: Turkey
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 14
+FavorOwner: -8
+Claim Validity: 5
+2021-09-14 14:34:40 [1858]  T[1101]  China Voted YES: claimant favor higher than owner favor to Russia
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************美利坚文明    Vote For      俄罗斯文明         on      Sur(奥斯曼文明)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: America
+Claimant: Russia
+City claim: Sur
+Owner: Turkey
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 13
+FavorOwner: -3
+Claim Validity: 5
+2021-09-14 14:34:40 [1858]  T[1101]  America Voted YES: claimant favor higher than owner favor to Russia
+2021-09-14 14:34:40 [1858]  T[1101]  End vote city AI
+2021-09-14 14:34:40 [1858]  T[1101]  *****************END vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************START vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************葡萄牙文明    要求           Bathurst(原住民)************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************印加文明    Vote For      葡萄牙文明         on      Bathurst(原住民)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: Inca
+Claimant: Portugal
+City claim: Bathurst
+Owner: Natives
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: 1
+2021-09-14 14:34:40 [1858]  T[1101]  Inca Voted YES: valid claim on minors to Portugal
+2021-09-14 14:34:40 [1858]  T[1101]  *****************华夏文明    Vote For      葡萄牙文明         on      Bathurst(原住民)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: China
+Claimant: Portugal
+City claim: Bathurst
+Owner: Natives
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: -3
+2021-09-14 14:34:40 [1858]  T[1101]  China Voted NO: invalid claim on minors to Portugal
+2021-09-14 14:34:40 [1858]  T[1101]  *****************美利坚文明    Vote For      葡萄牙文明         on      Bathurst(原住民)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: America
+Claimant: Portugal
+City claim: Bathurst
+Owner: Natives
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: 1
+2021-09-14 14:34:40 [1858]  T[1101]  America Voted YES: valid claim on minors to Portugal
+2021-09-14 14:34:40 [1858]  T[1101]  *****************END vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************START vote city AI************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************印加文明    要求           Tucuman(独立城邦2)************************
+2021-09-14 14:34:40 [1858]  T[1101]  *****************华夏文明    Vote For      印加文明         on      Tucuman(独立城邦2)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: China
+Claimant: Inca
+City claim: Tucuman
+Owner: Independents2
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: 2
+2021-09-14 14:34:40 [1858]  T[1101]  China Voted YES: valid claim on minors to Inca
+2021-09-14 14:34:40 [1858]  T[1101]  *****************美利坚文明    Vote For      印加文明         on      Tucuman(独立城邦2)************************
+2021-09-14 14:34:40 [1858]  T[1101]  
+Vote City AI Debug
+Voter: America
+Claimant: Inca
+City claim: Tucuman
+Owner: Independents2
+2021-09-14 14:34:40 [1858]  T[1101]  FavorClaimant: 0
+FavorOwner: -2
+Claim Validity: 2
+2021-09-14 14:34:40 [1858]  T[1101]  America Voted YES: valid claim on minors to Inca
+2021-09-14 14:34:40 [1858]  T[1101]  *****************END vote city AI************************

@@ -739,10 +739,13 @@ def onReligionFounded(iPlayer):
 
 def checkTurn(iGameTurn):
     for iPlayer in range(iNumPlayers):
-        checkName(iPlayer)
-        checkLeader(iPlayer)
+        if iPlayer:
+            checkName(iPlayer)
+            checkLeader(iPlayer)
 
 def checkName(iPlayer):
+    if not iPlayer: return
+    if not gc.getPlayer(iPlayer): return
     if not gc.getPlayer(iPlayer).isAlive(): return
     if iPlayer >= iNumPlayers: return
     if gc.getPlayer(iPlayer).getNumCities() == 0: return

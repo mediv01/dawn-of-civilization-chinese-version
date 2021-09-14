@@ -153,7 +153,7 @@ void CvCityAI::AI_reset()
 
 void CvCityAI::AI_doTurn()
 {
-	//mediv01 ai过回合 可以多线程优化
+	// mediv01 ai过回合 可以多线程优化
 	PROFILE_FUNC();
 
 	int iI;
@@ -171,21 +171,25 @@ void CvCityAI::AI_doTurn()
 	    AI_stealPlots();
 	}
 
+	// mediv01 指派工人去哪里
 	AI_updateWorkersNeededHere();
 
+	// mediv01 AI指派工人做什么
 	AI_updateBestBuild();
 
+	// mediv01 AI寻找城市间的道路
 	AI_updateRouteToCity();
 
 	if (isHuman())
 	{
 	    if (isProductionAutomated())
 	    {
+			// mediv01 AI加速生产
 	        AI_doHurry();
 	    }
 		return;
 	}
-
+	// AI感受到战争威胁而加紧军事准备
 	AI_doPanic();
 
 	AI_doDraft();
@@ -2140,7 +2144,7 @@ void CvCityAI::AI_chooseProduction()
 	}
 }
 
-
+// mediv01 AI选择生产最优单位的入口
 UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAITypes* peBestUnitAI)
 {
 	CvArea* pWaterArea;
@@ -3093,6 +3097,7 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 									}
 								}
 
+								// mediv01 人类玩家为希腊时，AI建造神谕的可能性降低1/3
 								//Rhye - start switch for the UHV
 								//see CvCity::canConstruct
 								if (iI == ORACLE)
@@ -5080,7 +5085,7 @@ bool CvCityAI::AI_isAirDefended(int iExtra)
 	return ((plot()->plotCount(PUF_canAirDefend, -1, -1, getOwnerINLINE(), NO_TEAM, PUF_isDomainType, DOMAIN_AIR) + iExtra) >= AI_neededAirDefenders()); // XXX check for other team's units?
 }
 
-
+// mediv01 判断AI是否需要防御者
 int CvCityAI::AI_neededDefenders()
 {
 	PROFILE_FUNC();
@@ -5282,7 +5287,7 @@ int CvCityAI::AI_neededAirDefenders()
 	return iDefenders;
 }
 
-
+// 判断城市是否处于危险
 bool CvCityAI::AI_isDanger()
 {
 	return GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 2, false);
@@ -9044,6 +9049,7 @@ int CvCityAI::AI_cityValue() const
 	return iValue;
 }
 
+// AI感到恐慌 会加速生产 mediv01
 bool CvCityAI::AI_doPanic()
 {
 

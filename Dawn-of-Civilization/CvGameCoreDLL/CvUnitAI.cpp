@@ -1163,7 +1163,7 @@ void CvUnitAI::AI_settleMove()
 	int iPlotValue = 0;
 	if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 		log_CWstring.Format(L"***************** %s 开始进行移民建城判定，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-		GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+		GC.logswithid(getOwner(),log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 	}
 
 
@@ -1174,12 +1174,12 @@ void CvUnitAI::AI_settleMove()
 			if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 				iPlotValue = GC.AI_foundValue(getOwner(),plot()->getX(), plot()->getY(),-1,false);
 				log_CWstring.Format(L"%s 准备建立初始城市，坐标( %d , %d) 城市价值： %d", GET_PLAYER(getOwner()).getCivilizationDescription(), plot()->getX(), plot()->getY(), iPlotValue);
-				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+				GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 			}
 			getGroup()->pushMission(MISSION_FOUND);
 			if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 				log_CWstring.Format(L"***************** %s 结束移民建城判定，准备建城，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+				GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 			}
 			return;
 		}
@@ -1212,7 +1212,7 @@ void CvUnitAI::AI_settleMove()
 		{
 			if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 				log_CWstring.Format(L"***************** %s 结束移民建城判定，准备重建，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+				GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 			}
 			return;
 		}
@@ -1246,12 +1246,12 @@ void CvUnitAI::AI_settleMove()
 					if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 						iPlotValue = GC.AI_foundValue(getOwner(), plot()->getX(), plot()->getY(), -1, false);
 						log_CWstring.Format(L"%s 准备在AI_getCitySite建立城市，坐标( %d , %d) 城市价值： %d", GET_PLAYER(getOwner()).getCivilizationDescription(), plot()->getX(), plot()->getY(), iPlotValue);
-						GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+						GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 					}
 					getGroup()->pushMission(MISSION_FOUND);
 					if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) { 
 						log_CWstring.Format(L"***************** %s 结束移民建城判定，建城，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-						GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+						GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 					}
 					return;
 				}
@@ -1281,7 +1281,7 @@ void CvUnitAI::AI_settleMove()
 				{
 					if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 						log_CWstring.Format(L"***************** %s 结束移民建城判定，准备重建，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-						GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+						GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 					}
 					return;
 				}
@@ -1300,7 +1300,7 @@ void CvUnitAI::AI_settleMove()
 		{
 			if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 				log_CWstring.Format(L"***************** %s 结束移民建城判定，移动到没有敌人的领土，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+				GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 			}
 			return;
 		}
@@ -1313,13 +1313,13 @@ void CvUnitAI::AI_settleMove()
 			
 			if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 				log_CWstring.Format(L"%s 准备建立城市，坐标( %d , %d) 城市价值： %d", GET_PLAYER(getOwner()).getCivilizationDescription(), plot()->getX(), plot()->getY(), iAreaBestFoundValue);
-				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+				GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 			}
 
 			getGroup()->pushMission(MISSION_FOUND);
 			if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 				log_CWstring.Format(L"***************** %s 结束移民建城判定，建城，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+				GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 			}
 			return;
 		}
@@ -1331,7 +1331,7 @@ void CvUnitAI::AI_settleMove()
 		if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 			
 			log_CWstring.Format(L"***************** %s 结束移民建城判定，准备重建城市，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+			GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 		}
 		return;
 	}
@@ -1342,7 +1342,7 @@ void CvUnitAI::AI_settleMove()
 		{
 			if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 				log_CWstring.Format(L"***************** %s 结束移民建城判定，永远和平且撤离城市，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+				GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 			}
 			return;
 		}
@@ -1358,7 +1358,7 @@ void CvUnitAI::AI_settleMove()
 				getGroup()->pushMission(MISSION_SKIP);
 				if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 					log_CWstring.Format(L"***************** %s 结束移民建城判定，操作跳过，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-					GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+					GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 				}
 				return;
 			}
@@ -1371,7 +1371,7 @@ void CvUnitAI::AI_settleMove()
 		{
 			if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 				log_CWstring.Format(L"***************** %s 结束移民建城判定，城市距离不够，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+				GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 			}
 			return;
 		}
@@ -1380,7 +1380,7 @@ void CvUnitAI::AI_settleMove()
 		{
 			if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 				log_CWstring.Format(L"***************** %s 移民建城，结束移民建城判定，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+				GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 			}
 			return;
 		}
@@ -1392,7 +1392,7 @@ void CvUnitAI::AI_settleMove()
 		{
 			if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 				log_CWstring.Format(L"***************** %s 移民移动至没有敌人的领土，结束移民建城判定，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-				GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+				GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 			}
 			return;
 		}
@@ -1402,7 +1402,7 @@ void CvUnitAI::AI_settleMove()
 	{
 		if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 			log_CWstring.Format(L"***************** %s 移民撤离到城市，结束移民建城判定，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+			GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 		}
 		return;
 	}
@@ -1411,7 +1411,7 @@ void CvUnitAI::AI_settleMove()
 	{
 		if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 			log_CWstring.Format(L"***************** %s 因为移民安全，结束移民建城判定，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+			GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 		}
 		return;
 	}
@@ -1419,7 +1419,7 @@ void CvUnitAI::AI_settleMove()
 	getGroup()->pushMission(MISSION_SKIP);
 	if (GC.getDefineINT("CVGAMECORE_LOG_AI_BUILDCITY") > 0) {
 		log_CWstring.Format(L"***************** %s 移民回合跳过，结束移民建城判定，移民坐标( %d , %d )************", GET_PLAYER(getOwner()).getCivilizationDescription(), getX_INLINE(), getY_INLINE());
-		GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
+		GC.logswithid(getOwner(), log_CWstring, "DoC_SmallMap_DLL_Log_AI_BuildCity.log");
 	}
 	return;
 }

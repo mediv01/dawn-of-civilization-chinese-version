@@ -56,7 +56,18 @@ class PlayerData:
 		self.lGoals = [-1, -1, -1]
 		self.lGoalTurns = [-1, -1, -1]
 		self.bHistoricalGoldenAge = False
-		
+
+
+		# NewVictory
+		self.newUHVGoals=[]
+		self.newUHVTurns=[]
+		self.newUHVGoldenAge=[]
+		for i in range(30):
+			self.newUHVGoals.append(-1)
+			self.newUHVTurns.append(-1)
+			self.newUHVGoldenAge.append(-1)
+
+
 		# Stability
 		
 		self.resetStability()

@@ -311,15 +311,15 @@
 			<iBarbarianDefenders>3</iBarbarianDefenders>
 			<iAIDeclareWarProb>160</iAIDeclareWarProb>
 			<iAIWorkRateModifier>50</iAIWorkRateModifier>
-			<iAIGrowthPercent>70</iAIGrowthPercent>
-			<iAITrainPercent>80</iAITrainPercent>
-			<iAIWorldTrainPercent>70</iAIWorldTrainPercent>
-			<iAIConstructPercent>65</iAIConstructPercent>
+			<iAIGrowthPercent>60</iAIGrowthPercent>
+			<iAITrainPercent>70</iAITrainPercent>
+			<iAIWorldTrainPercent>60</iAIWorldTrainPercent>
+			<iAIConstructPercent>55</iAIConstructPercent>
 			<iAIWorldConstructPercent>80</iAIWorldConstructPercent>
-			<iAICreatePercent>60</iAICreatePercent>
+			<iAICreatePercent>50</iAICreatePercent>
 			<iAIWorldCreatePercent>80</iAIWorldCreatePercent>
 			<iAICivicUpkeepPercent>50</iAICivicUpkeepPercent>
-			<iAIUnitCostPercent>90</iAIUnitCostPercent>
+			<iAIUnitCostPercent>80</iAIUnitCostPercent>
 			<iAIUnitSupplyPercent>25</iAIUnitSupplyPercent>
 			<iAIUnitUpgradePercent>5</iAIUnitUpgradePercent>
 			<iAIInflationPercent>55</iAIInflationPercent>
@@ -398,18 +398,18 @@
 			<iBarbarianDefenders>3</iBarbarianDefenders>
 			<iAIDeclareWarProb>160</iAIDeclareWarProb>
 			<iAIWorkRateModifier>50</iAIWorkRateModifier>
-			<iAIGrowthPercent>70</iAIGrowthPercent>
-			<iAITrainPercent>70</iAITrainPercent>
+			<iAIGrowthPercent>60</iAIGrowthPercent>
+			<iAITrainPercent>60</iAITrainPercent>
 			<iAIWorldTrainPercent>70</iAIWorldTrainPercent>
-			<iAIConstructPercent>65</iAIConstructPercent>
+			<iAIConstructPercent>50</iAIConstructPercent>
 			<iAIWorldConstructPercent>70</iAIWorldConstructPercent>
 			<iAICreatePercent>60</iAICreatePercent>
-			<iAIWorldCreatePercent>80</iAIWorldCreatePercent>
+			<iAIWorldCreatePercent>60</iAIWorldCreatePercent>
 			<iAICivicUpkeepPercent>50</iAICivicUpkeepPercent>
-			<iAIUnitCostPercent>90</iAIUnitCostPercent>
+			<iAIUnitCostPercent>60</iAIUnitCostPercent>
 			<iAIUnitSupplyPercent>25</iAIUnitSupplyPercent>
 			<iAIUnitUpgradePercent>5</iAIUnitUpgradePercent>
-			<iAIInflationPercent>55</iAIInflationPercent>
+			<iAIInflationPercent>50</iAIInflationPercent>
 			<iAIWarWearinessPercent>20</iAIWarWearinessPercent>
 			<iAIPerEraModifier>-2</iAIPerEraModifier>
 			<iAIAdvancedStartPercent>150</iAIAdvancedStartPercent>

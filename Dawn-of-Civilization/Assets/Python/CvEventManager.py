@@ -929,6 +929,7 @@ class CvEventManager(object):
 		#Rhye - end bugfix
 		
 		razor = PyPlayer(iPlayer)
+		if ((not owner) or (not razor)): return
 		CvUtil.pyPrint('Player %d Civilization %s City %s was razed by Player %d' 
 			%(owner.getID(), owner.getCivilizationName(), city.getName(), razor.getID()))
 		

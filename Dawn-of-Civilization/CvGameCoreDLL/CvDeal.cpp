@@ -1,5 +1,5 @@
 // CvDeal.cpp
-//mediv01 20200813阅读修改
+//mediv01 20200813阅读修改 交易的底层函数实现 不涉及AI
 #include "CvGameCoreDLL.h"
 #include "CvGlobals.h"
 #include "CvGameAI.h"

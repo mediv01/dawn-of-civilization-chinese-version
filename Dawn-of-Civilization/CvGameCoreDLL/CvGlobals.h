@@ -29,6 +29,17 @@ static const int CVGAMECORE_NEW_AUTOSAVE_FEATURE = 1;
 static CvWString log_CWstring;
 static CvString log_CvString;
 
+
+// 每列科技对应的真实年份
+static const int SIZE_OF_TECH_COL_YEAR = 22;
+static const int TechColYear[SIZE_OF_TECH_COL_YEAR] = { -4000 ,-4000,-4000,    -2000,-1500, -1000,    -500,0,500,   1000,1300,1500,   1600,1700,1800, 1850,1890,1920, 1940,1960,1970,1970 };
+
+
+// 每个时代对应的真实年份
+const int SIZE_OF_TECH_ERA_YEAR = 7;
+static const int TechEraYear[SIZE_OF_TECH_ERA_YEAR] = { -4000 ,-2000,-500, 1000, 1600, 1850,1940 };
+
+
 #ifndef CIV4_GLOBALS_H
 #define CIV4_GLOBALS_H
 
@@ -723,8 +734,9 @@ public:
 	int AItradeTechValList(PlayerTypes eWhoTo, PlayerTypes eMyPlayer, TechTypes iTech, OperationType Operation) const;
 	bool CvGlobals::AIcantradeTech(PlayerTypes eWhoTo, PlayerTypes eMyPlayer, TechTypes iTech) const;
 
+	DllExport void logswithid(PlayerTypes PlayerID, CvWString& buf, CvString filename) const;
 	DllExport void logs(CvWString& buf, CvString filename) const;
-	DllExport void logs(CvString buf, CvString filename) const;
+	//DllExport void logs(CvString buf, CvString filename) const;
 	DllExport void logs(wchar* buf, CvString filename) const;
 	DllExport void logs(char* buf, CvString filename) const;
 	DllExport void logs(const CvWString& buf, CvString filename) const;
@@ -733,6 +745,11 @@ public:
 	DllExport void logs(const char* buf, CvString filename) const;
 	DllExport void debug() const;
 	DllExport int showAIstrategy(int iPlayer) const;
+
+	DllExport bool isHuman(PlayerTypes PlayerID);
+	PlayerTypes getHumanID();
+	int getGameTurn();
+	int getGameTurnYear();
 
 	// ***** EXPOSED TO PYTHON *****
 	DllExport int getDefineINT( const char * szName ) const;
@@ -1330,3 +1347,4 @@ inline CvGlobals& CvGlobals::getInstance()
 #endif
 
 #endif
+

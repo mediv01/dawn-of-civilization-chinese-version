@@ -306,6 +306,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 
 	case BUTTONPOPUP_RAZECITY:
 		if (pPopupReturn->getButtonClicked() == 1) // raze
+			// mediv01 烧毁城市
 		{
 			log("selected raze");
 			CvCity* pCity = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCity(info.getData1());
@@ -315,6 +316,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 			}
 		}
 		else if (pPopupReturn->getButtonClicked() == 2) // gift
+			// mediv01 赠送城市
 		{
 			log("selected gift");
 			CvCity* pCity = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCity(info.getData1());
@@ -326,7 +328,8 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 
 			CvMessageControl::getInstance().sendDoTask(info.getData1(), TASK_GIFT, info.getData2(), -1, false, false, false, false);
 		}
-		else if (pPopupReturn->getButtonClicked() == 3) // examine
+		else if (pPopupReturn->getButtonClicked() == 3) // examine 
+		// mediv01 考察城市
 		{
 			log("selected examine");
 			CvCity* pCity = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCity(info.getData1());
@@ -362,6 +365,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 		}
 		else if (pPopupReturn->getButtonClicked() == 5) // spare
 		{
+			// mediv01 安抚城市
 			log("select spare");
 			CvCity* pCity = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCity(info.getData1());
 			if (NULL != pCity)
