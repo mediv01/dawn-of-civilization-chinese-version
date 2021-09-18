@@ -3134,7 +3134,7 @@ void CvPlayer::doTurn()
 
 	//mediv01 每回合执行函数doturn入口
 	
-	if (GC.isHuman(getID())) {
+	if (getID() == GC.getGameINLINE().getActivePlayer()) {
 		GC.debug();
 	if (GC.getDefineINT("CVGAMECORE_DLL_AUTO_DEBUGMODE") > 0) {
 		//GC.setDefineINT("CVGAMECORE_DLL_AUTO_DEBUGMODE", 2);
@@ -3315,7 +3315,7 @@ void CvPlayer::doTurnUnits()
 		}
 	}
 
-	if (GC.isHuman(getID()))
+	if (getID() == GC.getGameINLINE().getActivePlayer())
 	{
 		gDLL->getFAStarIFace()->ForceReset(&GC.getInterfacePathFinder());
 
@@ -5905,7 +5905,7 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 		}
 	}
 	if (GC.getDefineINT("CVPLAYER_AI_CANNOT_BUILD_CITY_IN_NOT_HISTORY") > 0) {
-		if (!GC.isHuman(getID())) {
+		if (!GC.isHuman(getID()) && getID() <=CANADA  && getID() >= EGYPT) {
 			if (iSettlerValue < 90) {
 				return false;
 			}
@@ -8526,7 +8526,7 @@ void CvPlayer::revolution(CivicTypes* paeNewCivics, bool bForce)
 
 	setRevolutionTimer(std::max(1, ((100 + getAnarchyModifier()) * GC.getDefineINT("MIN_REVOLUTION_TURNS")) / 100) + iAnarchyLength);
 
-	if (GC.isHuman(getID()))
+	if (getID() == GC.getGameINLINE().getActivePlayer())
 	{
 		gDLL->getInterfaceIFace()->setDirty(Popup_DIRTY_BIT, true); // to force an update of the civic chooser popup
 	}
@@ -9497,7 +9497,7 @@ void CvPlayer::setGold(int iNewValue)
 	{
 		m_iGold = iNewValue;
 
-		if (GC.isHuman(getID()))
+		if (getID() == GC.getGameINLINE().getActivePlayer())
 		{
 			gDLL->getInterfaceIFace()->setDirty(MiscButtons_DIRTY_BIT, true);
 			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);

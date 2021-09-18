@@ -4009,21 +4009,21 @@ const CvString logs_getgameturn() {
 
 
 
-int CvGlobals::getGameTurn() {
+int CvGlobals::getGameTurn() const {
 	return  GC.getGame().getGameTurn();
 }
 
-int CvGlobals::getGameTurnYear() {
+int CvGlobals::getGameTurnYear() const{
 	return  GC.getGame().getGameTurnYear();
 }
 
-PlayerTypes CvGlobals::getHumanID() {
+PlayerTypes CvGlobals::getHumanID() const{
 	return  GC.getGameINLINE().getActivePlayer();
 }
 
-bool CvGlobals::isHuman(PlayerTypes PlayerID)  {
+bool CvGlobals::isHuman(PlayerTypes PlayerID) const  {
 	//static bool boolisHuman = GC.getInitCore().getHuman(PlayerID);
-	static bool boolisHuman = (((int)GC.getGameINLINE().getActivePlayer()) == (int)PlayerID);
+	bool boolisHuman = ((GC.getGameINLINE().getActivePlayer()) == PlayerID);
 	//if (isHuman) {
 	//	log_CWstring.Format(L" HUMAN!!");
 	//	GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_TEST.log");
@@ -4075,9 +4075,9 @@ void log_output1(PlayerTypes PlayerID,std::wfstream& flog, CvString& filenamepat
 	flog << logs_getgameturn().c_str();
 	if (PlayerID != NO_PLAYER) {
 		log_CWstring.Format(L" [ %s ] ", GET_PLAYER(PlayerID).getCivilizationShortDescription());
-		static const wchar* logtext;
+		const wchar* logtext;
 		logtext = log_CWstring.GetCString();
-		static char log_text_tochar2[65536];
+		char log_text_tochar2[65536];
 		WideCharToMultiByte(CP_ACP, 0, logtext, wcslen(logtext) + 1, log_text_tochar2, 256, NULL, NULL);
 		flog << log_text_tochar2;
 	}
@@ -4100,9 +4100,9 @@ void CvGlobals::logswithid(PlayerTypes PlayerID,CvWString& buf, CvString filenam
 			log_CWstring.Format(L" ÀÕË÷WAR!!");
 			GC.logs(log_CWstring, "DoC_SmallMap_DLL_Log_TEST.log");
 	*/
-	static int mediv01_log = getDefineINT("CVGAMECORE_DLL_LOG");
+	int mediv01_log = getDefineINT("CVGAMECORE_DLL_LOG");
 	if (mediv01_log == 1) {
-		static const wchar* logtext;
+		const wchar* logtext;
 		logtext = buf.GetCString();
 		static char log_text_tochar[65536];
 		WideCharToMultiByte(CP_ACP, 0, logtext, wcslen(logtext) + 1, log_text_tochar, 256, NULL, NULL);
@@ -4120,7 +4120,7 @@ void CvGlobals::logswithid(PlayerTypes PlayerID,CvWString& buf, CvString filenam
 		flog << logs_getgameturn().c_str();
 		if (PlayerID != NO_PLAYER) {
 			log_CWstring.Format(L" [ %s ] ", GET_PLAYER(PlayerID).getCivilizationShortDescription());
-			static const wchar* logtext2;
+			const wchar* logtext2;
 			logtext2 = log_CWstring.GetCString();
 			static char log_text_tochar2[65536];
 			WideCharToMultiByte(CP_ACP, 0, logtext2, wcslen(logtext2) + 1, log_text_tochar2, 256, NULL, NULL);

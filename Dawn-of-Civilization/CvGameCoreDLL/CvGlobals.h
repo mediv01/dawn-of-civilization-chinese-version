@@ -746,10 +746,10 @@ public:
 	DllExport void debug() const;
 	DllExport int showAIstrategy(int iPlayer) const;
 
-	DllExport bool isHuman(PlayerTypes PlayerID);
-	PlayerTypes getHumanID();
-	int getGameTurn();
-	int getGameTurnYear();
+	DllExport bool isHuman(PlayerTypes PlayerID) const;
+	PlayerTypes getHumanID() const;
+	int getGameTurn() const;
+	int getGameTurnYear() const;
 
 	// ***** EXPOSED TO PYTHON *****
 	DllExport int getDefineINT( const char * szName ) const;

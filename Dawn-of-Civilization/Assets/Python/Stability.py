@@ -1332,6 +1332,14 @@ def calculateStability(iPlayer):
         elif iHandicap == 4 and utils.getHumanID() == iPlayer:
             iCivicEraTechStability -= 5
 
+    # 修复AI腓尼基过强的BUG
+    if iPlayer == iCarthage:
+        if utils.getHumanID() is not iPlayer:
+            if gc.getGame().getGameTurn() >= getTurnForYear(300):
+                iCivicEraTechStability -= 20
+
+
+
     # 人类玩家固定的稳定度红利，属于WB选项，觉得自己的稳定度常年太低可以调高这个数值
     if (gc.getDefineINT("STABILITY_PY_HUMAN_BONUS") > 0):
         if utils.getHumanID() == iPlayer:
