@@ -596,19 +596,19 @@
 
     <Define>
         <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H2</DefineName>        <!-- 2等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
-        <iDefineIntVal>200</iDefineIntVal>
+        <iDefineIntVal>135</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H3</DefineName>        <!-- 3等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
-        <iDefineIntVal>300</iDefineIntVal>
+        <iDefineIntVal>160</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H4</DefineName>        <!-- 4等难度下AI科研费用的乘数百分比 100为默认模式  已校准 mediv01  -->
-        <iDefineIntVal>400</iDefineIntVal>
+        <iDefineIntVal>200</iDefineIntVal>
     </Define>
     <Define>
         <DefineName>CVINFOS_REAEARCH_COST_MULTIPLIER_DYNAMIC_H5</DefineName>        <!-- 5等难度下AI科研费用的乘数百分比 100为默认模式 已校准 mediv01  -->
-        <iDefineIntVal>500</iDefineIntVal>
+        <iDefineIntVal>300</iDefineIntVal>
     </Define>
 
     <Define>

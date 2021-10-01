@@ -32,7 +32,11 @@ static CvString log_CvString;
 
 // 每列科技对应的真实年份
 static const int SIZE_OF_TECH_COL_YEAR = 22;
-static const int TechColYear[SIZE_OF_TECH_COL_YEAR] = { -4000 ,-4000,-4000,    -2000,-1500, -1000,    -500,0,500,   1000,1300,1500,   1600,1700,1800, 1850,1890,1920, 1940,1960,1970,1970 };
+//static const int TechColYear[SIZE_OF_TECH_COL_YEAR] = { -4000 ,-4000,-4000,    -2000,-1500, -1000,    -500,0,500,   1000,1300,1500,   1600,1700,1800, 1850,1890,1920, 1940,1960,1970,1970 };
+
+
+
+static const int TechColYear[SIZE_OF_TECH_COL_YEAR] = { -4000 ,-4000,-2000,    -1000,-500, 0,    500,850,1100,   1300,1450,1600,   1700,1800,1850, 1900,1920,1940, 1960,1970,1980,1990 };
 
 
 // 每个时代对应的真实年份

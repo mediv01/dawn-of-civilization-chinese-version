@@ -89,7 +89,8 @@ def Check_Resurrection_Civ_with_Year(iGameTurn,iCiv,year_start,year_end):
 def doResurrection_Civ(iCiv):
 
     lCityList = sta.getResurrectionCities(iCiv)
-    sta.doResurrection(iCiv, lCityList)
+    if lCityList:
+        sta.doResurrection(iCiv, lCityList)
 
 
 

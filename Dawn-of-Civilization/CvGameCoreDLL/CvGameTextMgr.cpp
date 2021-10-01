@@ -8779,10 +8779,18 @@ void CvGameTextMgr::setTechTradeHelp(CvWStringBuffer &szBuffer, TechTypes eTech,
 
 
             int iTechYearThreshold = -4000;
+            int iTechYear2 = 2020;
+            const int TechColYear2[SIZE_OF_TECH_COL_YEAR] = { -3000 ,-2000,-1000,    -500,0, 500,    850,1100,1400,   1500,1600,1700,   1800,1850,1900, 1930,1950,1970, 1990,2010,2035,2050 };
 
             if (iTechCol <= SIZE_OF_TECH_COL_YEAR) {
                 iTechYearThreshold = TechColYear[iTechCol];
+                iTechYear2 = TechColYear2[iTechCol];
             }
+
+
+
+
+
 
             if (iGameTurnYear < iTechYearThreshold) {
                 bTechPunished = true;
@@ -8808,7 +8816,7 @@ void CvGameTextMgr::setTechTradeHelp(CvWStringBuffer &szBuffer, TechTypes eTech,
 
             szBuffer.append(NEWLINE);
             szBuffer.append(CvWString::format(SETCOLR L"科技组年份：" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_YELLOW"), iTechYearThreshold));
-            szBuffer.append(CvWString::format(SETCOLR L"%d" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_CYAN"), iTechYearThreshold));
+            szBuffer.append(CvWString::format(SETCOLR L"%d - %d " ENDCOLR, TEXT_COLOR("COLOR_PLAYER_CYAN"), iTechYearThreshold, iTechYear2));
 
             if (GC.getDefineINT("CVTEAM_TECH_COST_BY_ERA_TO_HUMAN") > 0) {
             }

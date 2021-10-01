@@ -756,6 +756,7 @@ def completeCollapse(iPlayer):
 
     # secede all cities, destroy close and less important ones
     bRazeMinorCities = (gc.getPlayer(iPlayer).getCurrentEra() <= iMedieval)
+    if not lCities: return
     secedeCities(iPlayer, lCities, bRazeMinorCities)
 
     # take care of the remnants of the civ
