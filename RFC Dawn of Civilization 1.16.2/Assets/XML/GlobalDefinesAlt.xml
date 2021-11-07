@@ -288,6 +288,33 @@
         <iDefineIntVal>6</iDefineIntVal>
     </Define>
 
+	<Define>
+        <DefineName>CVGAMETEXT_SHOW_REAL_COMMERCE_PROMOTE_IN_BUILDING</DefineName>        <!-- 1为在建筑帮助文字显示建筑对城市科研、金币的提升  0为默认模式 mediv01 2021年11月新增内容  -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+	<Define>
+        <DefineName>CVGAMETEXT_SHOW_REAL_YIELD_PROMOTE_IN_BUILDING</DefineName>        <!-- 1为在建筑帮助文字显示建筑对城市产量的提升  0为默认模式 mediv01 2021年11月新增内容  -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+
+	<Define>
+        <DefineName>CVGAMETEXT_SHOW_BIRTH_PLACE_IN_DOCM</DefineName>        <!-- 显示文明的出生点 0为默认模式  mediv01 2021年11月新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+	<Define>
+        <DefineName>CVGAMETEXT_SHOW_HURRYINFO_IN_CITY_BAR_TOHUMAN</DefineName>        <!-- 1为在城市界面用H0显示能否加速，以及加速的红脸 用于人类城市 0为默认模式 mediv01 2021年11月新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>	
+	
+	<Define>
+        <DefineName>CVGAMETEXT_SHOW_HURRYINFO_IN_CITY_BAR_TOAI</DefineName>        <!-- 1为在城市界面用H0显示能否加速，以及加速的红脸 用于AI城市  0为默认模式 2021年11月新增内容 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>	
+	
+	
 
 
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  DLL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
@@ -1565,31 +1592,7 @@
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   20211107新增选项 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 
-	<Define>
-        <DefineName>CVGAMETEXT_SHOW_REAL_COMMERCE_PROMOTE_IN_BUILDING</DefineName>        <!-- 1为在建筑帮助文字显示建筑对城市科研、金币的提升  0为默认模式 mediv01 2021年11月新增内容  -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
 
-	<Define>
-        <DefineName>CVGAMETEXT_SHOW_REAL_YIELD_PROMOTE_IN_BUILDING</DefineName>        <!-- 1为在建筑帮助文字显示建筑对城市产量的提升  0为默认模式 mediv01 2021年11月新增内容  -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-
-	<Define>
-        <DefineName>CVGAMETEXT_SHOW_BIRTH_PLACE_IN_DOCM</DefineName>        <!-- 显示文明的出生点 0为默认模式  mediv01 2021年11月新增内容 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-
-	<Define>
-        <DefineName>CVGAMETEXT_SHOW_HURRYINFO_IN_CITY_BAR_TOHUMAN</DefineName>        <!-- 1为在城市界面用H0显示能否加速，以及加速的红脸 用于人类城市 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>	
-	
-	<Define>
-        <DefineName>CVGAMETEXT_SHOW_HURRYINFO_IN_CITY_BAR_TOAI</DefineName>        <!-- 1为在城市界面用H0显示能否加速，以及加速的红脸 用于AI城市  0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>	
 
 
 
