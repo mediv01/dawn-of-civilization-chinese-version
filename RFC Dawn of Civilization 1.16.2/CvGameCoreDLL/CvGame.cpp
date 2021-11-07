@@ -5375,6 +5375,12 @@ int CvGame::getPlayerScore(PlayerTypes ePlayer)	const
 {
 	FAssertMsg(ePlayer >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(ePlayer < MAX_PLAYERS, "ePlayer is expected to be within maximum bounds (invalid Index)");
+	if ((int)ePlayer >= NUM_MAJOR_PLAYERS) {
+		int multi = GC.getDefineINT("CVGAME_MINOR_CITY_LOW_SCORE_ON_SCREEN");
+		if (multi > 0) {
+			return m_aiPlayerScore[ePlayer] / multi;
+		}
+	}
 	return m_aiPlayerScore[ePlayer];
 }
 

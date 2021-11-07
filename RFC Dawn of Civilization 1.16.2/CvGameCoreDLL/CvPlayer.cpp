@@ -16981,6 +16981,24 @@ bool CvPlayer::doEspionageMission(EspionageMissionTypes eMission, PlayerTypes eT
 					iNumTotalGold /= std::max(1, GET_PLAYER(eTargetPlayer).getTotalPopulation());
 				}
 			}
+			if (GC.getDefineINT("CVPLAYER_HUMAN_CANNOT_BE_STOLEN_TREASURE") > 0) {
+				if (eTargetPlayer == GC.getHumanID()) {
+					iNumTotalGold = 0;
+				}
+			}
+
+
+			if (GC.getDefineINT("CVPLAYER_STOLEN_TREASURE_ALERT") > 0) {
+				PlayerTypes iOwner = getID();
+				CvWString szBuffer;
+
+				szBuffer.Format(L"%s" SETCOLR L"窃取了%s 的国库，窃取了 %d 金币" ENDCOLR, GET_PLAYER((PlayerTypes)iOwner).getCivilizationShortDescription(), TEXT_COLOR("COLOR_YELLOW"), GET_PLAYER((PlayerTypes)eTargetPlayer).getCivilizationShortDescription(), iNumTotalGold);
+				gDLL->getInterfaceIFace()->addMessage(GC.getHumanID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MAJOR_EVENT);
+				if (GC.getDefineINT("CVGAMECORE_LOG_AI_Espionage") > 0) {
+					GC.logswithid(getID(), szBuffer, "RFCEM_DLL_Log_Espionage.log");
+				}
+
+			}
 
 			szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_STEAL_TREASURY").GetCString();
 			changeGold(iNumTotalGold);
@@ -17001,8 +17019,30 @@ bool CvPlayer::doEspionageMission(EspionageMissionTypes eMission, PlayerTypes eT
 		int iTech = iExtraData;
 
 		szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_TARGET_TECH_BOUGHT", GC.getTechInfo((TechTypes) iTech).getDescription()).GetCString();
-		GET_TEAM(getTeam()).setHasTech((TechTypes) iTech, true, getID(), false, true);
-		GET_TEAM(getTeam()).setNoTradeTech((TechTypes)iTech, true);
+
+		bool bNotSteal = false;
+		if (GC.getDefineINT("CVPLAYER_HUMAN_CANNOT_BE_STOLEN_TECH") > 0) {
+			if (eTargetPlayer == GC.getHumanID()) {
+				bNotSteal = true;
+			}
+		}
+		if (!bNotSteal) {
+			GET_TEAM(getTeam()).setHasTech((TechTypes)iTech, true, getID(), false, true);
+			GET_TEAM(getTeam()).setNoTradeTech((TechTypes)iTech, true);
+		}
+
+		if (GC.getDefineINT("CVPLAYER_STOLEN_TECH_ALERT") > 0) {
+			PlayerTypes iOwner = getID();
+			CvWString szBuffer;
+
+			szBuffer.Format(L"%s" SETCOLR L"窃取了%s 的科技 %s" ENDCOLR, GET_PLAYER((PlayerTypes)iOwner).getCivilizationShortDescription(), TEXT_COLOR("COLOR_YELLOW"), GET_PLAYER((PlayerTypes)eTargetPlayer).getCivilizationShortDescription(), GC.getTechInfo((TechTypes)iTech).getDescription());
+			gDLL->getInterfaceIFace()->addMessage(GC.getHumanID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MAJOR_EVENT);
+
+			if (GC.getDefineINT("CVGAMECORE_LOG_AI_Espionage") > 0) {
+				GC.logswithid(getID(), szBuffer, "RFCEM_DLL_Log_Espionage.log");
+			}
+
+		}
 
 		bSomethingHappened = true;
 

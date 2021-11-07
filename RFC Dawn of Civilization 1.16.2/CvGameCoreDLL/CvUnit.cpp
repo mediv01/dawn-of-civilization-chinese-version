@@ -7448,6 +7448,14 @@ bool CvUnit::goldenAge()
 		return false;
 	}
 
+	if (GC.getDefineINT("CVUNIT_GOLDEN_AGE_ALERT_WHEN_USER_GREAT_PEOPLE") > 0) {
+		PlayerTypes iOwner = getOwner();
+		CvWString szBuffer;
+
+		szBuffer.Format(L"%s" SETCOLR L"%s" ENDCOLR, GET_PLAYER((PlayerTypes)iOwner).getCivilizationShortDescription(), TEXT_COLOR("COLOR_YELLOW"), L"的伟人们献祭于自己的事业，开启了黄金时代");
+		gDLL->getInterfaceIFace()->addMessage(GC.getHumanID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MAJOR_EVENT);
+	}
+
 	GET_PLAYER(getOwnerINLINE()).killGoldenAgeUnits(this);
 
 	GET_PLAYER(getOwnerINLINE()).changeGoldenAgeTurns(GET_PLAYER(getOwnerINLINE()).getGoldenAgeLength());

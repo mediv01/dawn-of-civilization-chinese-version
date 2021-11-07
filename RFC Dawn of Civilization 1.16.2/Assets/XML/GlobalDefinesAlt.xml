@@ -792,6 +792,37 @@
     </Define>	
 
 
+	<Define>
+        <DefineName>CVUNIT_GOLDEN_AGE_ALERT_WHEN_USER_GREAT_PEOPLE</DefineName>        <!-- 大于0的数字为当烧伟人开启黄金时代时，会有提醒 0为默认模式， mediv01  2021年11月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+
+	<Define>
+        <DefineName>CVPLAYER_HUMAN_CANNOT_BE_STOLEN_TREASURE</DefineName>        <!-- 大于0的数字为人类不能被盗窃国库 0为默认模式， mediv01  2021年11月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+	<Define>
+        <DefineName>CVPLAYER_STOLEN_TREASURE_ALERT</DefineName>        <!-- 大于0的数字为盗窃国库时发出提醒 0为默认模式， mediv01  2021年11月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+	<Define>
+        <DefineName>CVPLAYER_HUMAN_CANNOT_BE_STOLEN_TECH</DefineName>        <!-- 大于0的数字为人类不能被盗窃国库 0为默认模式， mediv01  2021年11月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+	<Define>
+        <DefineName>CVPLAYER_STOLEN_TECH_ALERT</DefineName>        <!-- 大于0的数字为盗窃国库时发出提醒 0为默认模式， mediv01  2021年11月版本新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>CVGAME_MINOR_CITY_LOW_SCORE_ON_SCREEN</DefineName>        <!-- 大于0的数字为积分榜上独立城邦的积分被缩减处理的倍数  0为默认模式， mediv01  2021年11月版本新增内容 -->
+        <iDefineIntVal>5</iDefineIntVal>
+    </Define>	
+
 
 
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  DLL 平衡性选项 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
