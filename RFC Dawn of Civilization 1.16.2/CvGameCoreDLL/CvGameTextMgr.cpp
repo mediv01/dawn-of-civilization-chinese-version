@@ -20261,15 +20261,69 @@ void CvGameTextMgr::buildCityBillboardProductionString( CvWStringBuffer& szBuffe
 {
     if (pCity->getOrderQueueLength() > 0)
     {
-        szBuffer.assign(pCity->getProductionName());
-
-        if (gDLL->getGraphicOption(GRAPHICOPTION_CITY_DETAIL))
+        int iTurns = pCity->getProductionTurnsLeft();
+        if (iTurns >= MAX_INT)
         {
-            int iTurns = pCity->getProductionTurnsLeft();
+            iTurns = MAX_INT;
+        }
 
-            if (iTurns < MAX_INT)
+        bool showhuman = GC.getDefineINT("CVGAMETEXT_SHOW_HURRYINFO_IN_CITY_BAR_TOHUMAN") > 0;
+        bool showai = GC.getDefineINT("CVGAMETEXT_SHOW_HURRYINFO_IN_CITY_BAR_TOAI") > 0;
+        if (showhuman || showai) {
+            szBuffer.clear();
+
+
+            bool hurryflag = false;
+            int hurryanger = 999;
+            if (pCity->canHurry((HurryTypes)0)) {
+                hurryflag = true;
+                hurryanger = pCity->getHurryAngerTimer();
+            }
+
+            if (GC.isHuman(pCity->getOwner())) {
+                if (!showhuman) {
+                    hurryflag = false;
+                }
+            }
+            else {
+                if (!showai) {
+                    hurryflag = false;
+                }
+            }
+
+
+            if (hurryflag) {
+                if (hurryanger > -1) {
+                    if (pCity->getProduction() > 0) {
+                        szBuffer.append(CvWString::format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_YELLOW"), pCity->getProductionName()));
+                        szBuffer.append(CvWString::format(SETCOLR L" H%d(%d)" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_YELLOW"), hurryanger, iTurns));
+                    }
+                    else {
+                        szBuffer.append(CvWString::format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_YELLOW"), pCity->getProductionName()));
+                        szBuffer.append(CvWString::format(SETCOLR L" SH%d(%d)" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_YELLOW"), hurryanger, iTurns));
+                    }
+                }
+            }
+            else {
+                szBuffer.append(CvWString::format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_WHITE"), pCity->getProductionName()));
+                szBuffer.append(CvWString::format(SETCOLR L" (%d)" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_WHITE"), iTurns));
+            }
+        }
+        else {
+
+
+
+
+            szBuffer.assign(pCity->getProductionName());
+
+            if (gDLL->getGraphicOption(GRAPHICOPTION_CITY_DETAIL))
             {
-                szBuffer.append(CvWString::format(L" (%d)", iTurns));
+                int iTurns = pCity->getProductionTurnsLeft();
+
+                if (iTurns < MAX_INT)
+                {
+                    szBuffer.append(CvWString::format(L" (%d)", iTurns));
+                }
             }
         }
     }
