@@ -1065,7 +1065,15 @@
     </Define>
 	
 	
+		<Define>
+        <DefineName>CVCITY_CAN_ALWAYS_HURRY_WITH_CIVICS_HUMAN</DefineName>        <!-- 人类玩家可以不受政策的限制减速单位和建筑   0为默认模式 2021年11月版本新增内容  mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
 	
+	<Define>
+        <DefineName>CVCITY_CAN_ALWAYS_HURRY_WITH_CIVICS_AI</DefineName>        <!-- AI玩家可以不受政策的限制减速单位和建筑   0为默认模式  2021年11月版本新增内容  mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
 	
 	
 	

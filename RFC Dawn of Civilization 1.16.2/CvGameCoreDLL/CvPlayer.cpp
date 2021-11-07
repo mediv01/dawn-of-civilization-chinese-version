@@ -13968,7 +13968,25 @@ int CvPlayer::getHurryCount(HurryTypes eIndex) const
 
 bool CvPlayer::canHurry(HurryTypes eIndex) const
 {
-	return (getHurryCount(eIndex) > 0);
+	bool canHurry = (getHurryCount(eIndex) > 0);
+	bool human = (GC.getDefineINT("CVCITY_CAN_ALWAYS_HURRY_WITH_CIVICS_HUMAN") > 0);
+	bool ai = (GC.getDefineINT("CVCITY_CAN_ALWAYS_HURRY_WITH_CIVICS_AI") > 0);
+
+
+	if (human || ai) {
+		if (GC.isHuman(getID())) {
+			if (human) {
+				canHurry = true;
+			}
+		}
+		else {
+			if (ai) {
+				canHurry = true;
+			}
+		}
+
+	}
+	return canHurry;
 }
 
 
