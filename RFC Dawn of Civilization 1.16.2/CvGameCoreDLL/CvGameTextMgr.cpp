@@ -4821,8 +4821,10 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                         szTempBuffer.Format(L"%s   ", GET_PLAYER((PlayerTypes)PlayerNum).getCivilizationDescription());
                         szString.append(szTempBuffer);
                     }
+                    //szString.append(NEWLINE);
                 }
-                szString.append(NEWLINE);
+
+                
             }
 
             if (GC.getDefineINT("CVGAMETEXT_SHOW_BIRTH_PLACE_IN_DOCM") == 1) {//mediv01 显示地块是否为出生区
@@ -4894,7 +4896,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                     szString.append(NEWLINE);
                 }
             }
-            szString.append(NEWLINE);
+            //szString.append(NEWLINE);
 
             if (GC.getDefineINT("GAME_TEXT_SHOW_RELIGION_MAP") == 1) {//mediv01 显示宗教数值
                 for (iI = 0; iI < NUM_RELIGIONS; iI++)
@@ -4937,12 +4939,13 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 
                         //if (pCity->plot()->getSpreadFactor(eReligion) >= REGION_SPREAD_HISTORICAL)//mediv01 主动创建宗教的条件
                     if (iReligionvalue > 0) {
+                        szString.append(NEWLINE);
                         szString.append(CvWString::format(L" %c", (GC.getReligionInfo((ReligionTypes)iI).getChar())));
                         //GC.getReligionInfo((ReligionTypes)iI).getDescription()
                         szString.append(StringReligionFound);
                         szString.append(CvWString::format(L"    影响力： %d", (iReligionvalue)));
 
-                        szString.append(NEWLINE);
+                        
                     }
                 }
                 //mediv01
@@ -4962,6 +4965,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                 if ((int)(pIntList1.size()) > 0) {
 
                     //szTempBuffer.Format(L", " SETCOLR L"d=%d" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"), iDeadlockCount);
+                    szString.append(NEWLINE);
                     szTempBuffer.Format(SETCOLR L"公司类型：" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"));
                     szString.append(szTempBuffer);
                     for (int i = 1; i <= (int)(pIntList1.size()); i++) {
@@ -4983,7 +4987,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                         }
                         szString.append(szTempBuffer);
                     }
-                    szString.append(NEWLINE);
+                    
                 }
             }
 
@@ -4999,6 +5003,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                 if ((int)(pIntList1.size()) > 0) {
 
                     //szTempBuffer.Format(L", " SETCOLR L"d=%d" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"), iDeadlockCount);
+                    szString.append(NEWLINE);
                     szTempBuffer.Format(SETCOLR L"贸易公司刷兵点：" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_CYAN"));
                     szString.append(szTempBuffer);
                     for (int i = 1; i <= (int)(pIntList1.size()); i++) {
@@ -5023,7 +5028,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                         }
                         szString.append(szTempBuffer);
                     }
-                    szString.append(NEWLINE);
+                    
                 }
             }
 
@@ -5037,6 +5042,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                 if ((int)(pIntList1.size()) > 0) {
 
                     //szTempBuffer.Format(L", " SETCOLR L"d=%d" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"), iDeadlockCount);
+                    szString.append(NEWLINE);
                     szTempBuffer.Format(SETCOLR L"AIWAR刷兵地块：" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"));
                     szString.append(szTempBuffer);
 
@@ -5203,11 +5209,12 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 
 
                     }
-                    szString.append(NEWLINE);
+                    
                 }
+
             }
 
-
+            
 
 
 
