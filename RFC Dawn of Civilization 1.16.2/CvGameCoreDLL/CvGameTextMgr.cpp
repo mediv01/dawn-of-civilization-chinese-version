@@ -4373,6 +4373,80 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                 }
             }
         }
+
+
+        if (GC.getDefineINT("GAME_TEXT_SHOW_SETTLER_MAP") == 1) {
+
+            std::vector<int> valuelist;
+            std::map<int, int> valuehashmap;
+            int iSettlerValue2 = 0;
+            int mincityvalue = 0;
+            mincityvalue = GC.getDefineINT("GAME_TEXT_SHOW_SETTLER_MAP_MINVALUE");
+            for (int iJ = 0; iJ < MAX_PLAYERS; iJ++)
+            {
+
+                //iSettlerValue2 = GET_PLAYER((PlayerTypes)iJ).AI_foundValue(pPlot->getX(), pPlot->getY(), -1, false);
+                iSettlerValue2 = GC.AI_foundValue(iJ, pPlot->getX(), pPlot->getY(), -1, false);
+                valuelist.push_back(iSettlerValue2);
+
+
+
+            }
+
+            int max_country = GC.getDefineINT("GAME_TEXT_SHOW_SETTLER_MAP_MAXCOUNTRY");
+            if (max_country >= MAX_PLAYERS)
+            {
+                max_country = 10;
+            }
+            bool bmutiflag = false;
+            std::sort(valuelist.begin(), valuelist.end());
+            //std::reverse(valuelist.begin(), valuelist.end());
+            int mincityvalue2 = valuelist[valuelist.size() - max_country];
+
+
+
+            if (valuelist[valuelist.size() - max_country] == valuelist[valuelist.size() - max_country - 1]) {
+                //mincityvalue2 += 1;
+                bmutiflag = true;
+                //有重复数据
+
+            }
+
+            for (int iJ = 0; iJ < MAX_PLAYERS; iJ++)
+            {
+                int iSettlerValue = GET_PLAYER((PlayerTypes)iJ).getSettlerValue(pPlot->getX(), pPlot->getY());
+                //int iSettlerValue2 = 0;
+                //iSettlerValue2 = GET_PLAYER((PlayerTypes)iJ).AI_foundValue(pPlot->getX(), pPlot->getY(), -1, false);
+                iSettlerValue2 = GC.AI_foundValue(iJ, pPlot->getX(), pPlot->getY(), -1, false);
+
+
+                if (iSettlerValue2 >= mincityvalue && iSettlerValue2 >= mincityvalue2) {
+                    if (bmutiflag && iSettlerValue2 == mincityvalue2) {
+                        bmutiflag = false;
+                        mincityvalue2 += 1;
+                    }
+
+                    szTempBuffer.Format(L"%s ", GET_PLAYER((PlayerTypes)iJ).getCivilizationDescription());
+                    szString.append(szTempBuffer);
+                    szString.append(CvWString::format(L" 历史 : %d", (iSettlerValue)));//mediv01 显示SettlerMap的数值
+                    szString.append(CvWString::format(L" 城市 : %d", (iSettlerValue2)));//mediv01 显示AIFoundValue的数值
+                    szString.append(NEWLINE);
+                }
+            }
+
+            /*
+            int iSettlerValue = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getSettlerValue(pPlot->getX(), pPlot->getY());
+            //CvPlayerAI cv1;
+            int iSettlerValue2 = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).AI_foundValue(pPlot->getX(), pPlot->getY());
+            if (iSettlerValue >= 0) {
+                szString.append(CvWString::format(L" V1 : %d", (iSettlerValue)));//mediv01 显示SettlerMap的数值
+                szString.append(CvWString::format(L"   V2 : %d", (iSettlerValue2)));//mediv01 显示AIFoundValue的数值
+                szString.append(NEWLINE);
+            }
+
+            */
+        }
+
     }
     else if (bShift && bAlt && (gDLL->getChtLvl() > 0))
     {
@@ -4680,85 +4754,10 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 
 
                     }
-                    if (GC.getDefineINT("GAME_TEXT_SHOW_SETTLER_MAP") == 1) {
-
-                        std::vector<int> valuelist;
-                        std::map<int, int> valuehashmap;
-                        int iSettlerValue2 = 0;
-                        int mincityvalue = 0;
-                        mincityvalue = GC.getDefineINT("GAME_TEXT_SHOW_SETTLER_MAP_MINVALUE");
-                        for (int iJ = 0; iJ < MAX_PLAYERS; iJ++)
-                        {
-                            
-                            //iSettlerValue2 = GET_PLAYER((PlayerTypes)iJ).AI_foundValue(pPlot->getX(), pPlot->getY(), -1, false);
-                            iSettlerValue2 = GC.AI_foundValue(iJ, pPlot->getX(), pPlot->getY(), -1, false);
-                            valuelist.push_back(iSettlerValue2);
-                            
-
-
-                        }
-                        
-                        int max_country = GC.getDefineINT("GAME_TEXT_SHOW_SETTLER_MAP_MAXCOUNTRY");
-                        if (max_country >= MAX_PLAYERS)
-                        {
-                            max_country = 10;
-                        }
-                        bool bmutiflag = false;
-                        std::sort(valuelist.begin(), valuelist.end());
-                        //std::reverse(valuelist.begin(), valuelist.end());
-                        int mincityvalue2 = valuelist[valuelist.size()-max_country];
-
-
-
-                        if (valuelist[valuelist.size() - max_country] == valuelist[valuelist.size() - max_country-1]) {
-                            //mincityvalue2 += 1;
-                            bmutiflag = true;
-                            //有重复数据
-
-                        }
-
-                        for (int iJ = 0; iJ < MAX_PLAYERS; iJ++)
-                        {
-                            int iSettlerValue = GET_PLAYER((PlayerTypes)iJ).getSettlerValue(pPlot->getX(), pPlot->getY());
-                            //int iSettlerValue2 = 0;
-                            //iSettlerValue2 = GET_PLAYER((PlayerTypes)iJ).AI_foundValue(pPlot->getX(), pPlot->getY(), -1, false);
-                            iSettlerValue2 = GC.AI_foundValue(iJ, pPlot->getX(), pPlot->getY(), -1, false);
-
-                            
-                            if (iSettlerValue2 >= mincityvalue && iSettlerValue2>= mincityvalue2) {
-                                if (bmutiflag && iSettlerValue2== mincityvalue2) {
-                                    bmutiflag = false;
-                                    mincityvalue2 += 1;
-                                }
-
-                                szTempBuffer.Format(L"%s ", GET_PLAYER((PlayerTypes)iJ).getCivilizationDescription());
-                                szString.append(szTempBuffer);
-                                szString.append(CvWString::format(L" 历史 : %d", (iSettlerValue)));//mediv01 显示SettlerMap的数值
-                                szString.append(CvWString::format(L" 城市 : %d", (iSettlerValue2)));//mediv01 显示AIFoundValue的数值
-                                szString.append(NEWLINE);
-                            }
-                        }
-
-                        /*
-                        int iSettlerValue = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getSettlerValue(pPlot->getX(), pPlot->getY());
-                        //CvPlayerAI cv1;
-                        int iSettlerValue2 = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).AI_foundValue(pPlot->getX(), pPlot->getY());
-                        if (iSettlerValue >= 0) {
-                            szString.append(CvWString::format(L" V1 : %d", (iSettlerValue)));//mediv01 显示SettlerMap的数值
-                            szString.append(CvWString::format(L"   V2 : %d", (iSettlerValue2)));//mediv01 显示AIFoundValue的数值
-                            szString.append(NEWLINE);
-                        }
-
-                        */
-                    }
+                    
                 }
             }
 
-            //if (1 == 1) {
-                //debug only 
-                //szString.append(CvWString::format(L"     RELIGION : %d", (GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getStateReligion())));
-
-            //}
 
 
 
@@ -4884,7 +4883,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                 argsList.add(pPlot->getY());
                 gDLL->getPythonIFace()->callFunction(PYScreensModule, "CheckMinorInDll", argsList.makeFunctionArgs(), &pIntList1);
                 if ((int)(pIntList1.size()) > 0) {
-
+                    szString.append(NEWLINE);
                     //szTempBuffer.Format(L", " SETCOLR L"d=%d" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"), iDeadlockCount);
                     szTempBuffer.Format(SETCOLR L"独立城邦诞生年份：" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"));
                     szString.append(szTempBuffer);
@@ -4893,7 +4892,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                         szTempBuffer.Format(L"%d   ", PlayerNum);
                         szString.append(szTempBuffer);
                     }
-                    szString.append(NEWLINE);
+                    
                 }
             }
             //szString.append(NEWLINE);
@@ -5214,9 +5213,118 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 
             }
 
-            
+            if (pPlot != NULL) {
+                if (!pPlot->isCity()) {
+                    if (GC.getDefineINT("GAME_TEXT_SHOW_SETTLER_MAP") == 1) {
+
+                        std::vector<int> valuelist;
+                        std::map<int, int> valuehashmap;
+                        
+
+                        int iSettlerValue2 = 0;
+                        int mincityvalue = 0;
+                        mincityvalue = GC.getDefineINT("GAME_TEXT_SHOW_SETTLER_MAP_MINVALUE");
+                        for (int iJ = 0; iJ < MAX_PLAYERS; iJ++)
+                        {
+
+                            
+                            iSettlerValue2 = GC.AI_foundValue(iJ, pPlot->getX(), pPlot->getY(), -1, false);
+                            valuelist.push_back(iSettlerValue2);
+                            std::vector<int> valuelist_temp;
+                            
 
 
+
+                        }
+
+                        int max_country = GC.getDefineINT("GAME_TEXT_SHOW_SETTLER_MAP_MAXCOUNTRY");
+                        if (max_country >= MAX_PLAYERS)
+                        {
+                            max_country = 10;
+                        }
+                        bool bmutiflag = false;
+                        std::sort(valuelist.begin(), valuelist.end());
+                        //std::reverse(valuelist.begin(), valuelist.end());
+                        int mincityvalue2 = valuelist[valuelist.size() - max_country];
+
+
+
+                        if (valuelist[valuelist.size() - max_country] == valuelist[valuelist.size() - max_country - 1]) {
+                            //mincityvalue2 += 1;
+                            bmutiflag = true;
+                            //有重复数据
+
+                        }
+
+                        for (int iJ = 0; iJ < MAX_PLAYERS; iJ++)
+                        {
+                            int iSettlerValue = GET_PLAYER((PlayerTypes)iJ).getSettlerValue(pPlot->getX(), pPlot->getY());
+                            //int iSettlerValue2 = 0;
+                            //iSettlerValue2 = GET_PLAYER((PlayerTypes)iJ).AI_foundValue(pPlot->getX(), pPlot->getY(), -1, false);
+                            iSettlerValue2 = GC.AI_foundValue(iJ, pPlot->getX(), pPlot->getY(), -1, false);
+
+
+                            if (iSettlerValue2 >= mincityvalue && iSettlerValue2 >= mincityvalue2) {
+                                if (bmutiflag && iSettlerValue2 == mincityvalue2) {
+                                    bmutiflag = false;
+                                    mincityvalue2 += 1;
+                                }
+                                szString.append(NEWLINE);
+                                szTempBuffer.Format(SETCOLR L"%s " ENDCOLR, TEXT_COLOR("COLOR_PLAYER_YELLOW"), GET_PLAYER((PlayerTypes)iJ).getCivilizationDescription());
+                                szString.append(szTempBuffer);
+
+
+                                szTempBuffer.Format(SETCOLR L" 历史：" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_WHITE"));
+                                szString.append(szTempBuffer);
+                                CvString ColorText = "COLOR_PLAYER_WHITE";
+                                if (iSettlerValue >= 90) {
+                                    ColorText = "COLOR_PLAYER_GREEN";
+                                }
+                                if (iSettlerValue >= 200) {
+                                    ColorText = "COLOR_PLAYER_CYAN";
+                                }
+                                if (iSettlerValue >= 400) {
+                                    ColorText = "COLOR_PLAYER_YELLOW";
+                                }
+
+                                szTempBuffer.Format(SETCOLR L" %d" ENDCOLR, TEXT_COLOR(ColorText), iSettlerValue);
+                                szString.append(szTempBuffer);
+                                szTempBuffer.Format(SETCOLR L" 城市：" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_WHITE"));
+                                szString.append(szTempBuffer);
+
+                                ColorText = "COLOR_PLAYER_WHITE";
+                                if (iSettlerValue2 >= 500) {
+                                    ColorText = "COLOR_PLAYER_GREEN";
+                                }
+                                if (iSettlerValue2 >= 1000) {
+                                    ColorText = "COLOR_PLAYER_CYAN";
+                                }
+                                if (iSettlerValue2 >= 2000) {
+                                    ColorText = "COLOR_PLAYER_YELLOW";
+                                }
+                                szTempBuffer.Format(SETCOLR L" %d" ENDCOLR, TEXT_COLOR(ColorText), iSettlerValue2);
+                                szString.append(szTempBuffer);
+
+                                
+                                //szString.append(CvWString::format(L" 城市 : %d", (iSettlerValue2)));//mediv01 显示AIFoundValue的数值
+                                
+                            }
+                        }
+
+                        /*
+                        int iSettlerValue = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getSettlerValue(pPlot->getX(), pPlot->getY());
+                        //CvPlayerAI cv1;
+                        int iSettlerValue2 = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).AI_foundValue(pPlot->getX(), pPlot->getY());
+                        if (iSettlerValue >= 0) {
+                            szString.append(CvWString::format(L" V1 : %d", (iSettlerValue)));//mediv01 显示SettlerMap的数值
+                            szString.append(CvWString::format(L"   V2 : %d", (iSettlerValue2)));//mediv01 显示AIFoundValue的数值
+                            szString.append(NEWLINE);
+                        }
+
+                        */
+                    }
+                }
+            }
 
 
             szString.append(NEWLINE);

@@ -111,7 +111,7 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
     <Define>
-        <DefineName>GAME_TEXT_SHOW_SETTLER_MAP</DefineName>        <!-- 1为可以显示城市SETTLERMAP的数值  0为默认模式 mediv01 -->
+        <DefineName>GAME_TEXT_SHOW_SETTLER_MAP</DefineName>        <!-- 1为可以显示城市SETTLERMAP的数值 需要按住ALT才生效  0为默认模式 mediv01 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 	
