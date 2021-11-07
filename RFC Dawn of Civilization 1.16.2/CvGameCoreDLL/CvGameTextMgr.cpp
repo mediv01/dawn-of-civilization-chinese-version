@@ -5131,18 +5131,31 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                             }
                         }
                         if (GC.getDefineINT("CVGAMETEXT_AIWAR_IN_MAP_SHOW_LATE_MODERN") == 1) {
+
+                            if (PlayerNum >= 29 && PlayerNum <= 36) {
+                                szTempBuffer.Format(L"  第1次世界大战");
+                            }
+
+                            else if (PlayerNum >= 37 && PlayerNum <= 50) {
+                                szTempBuffer.Format(L"  第2次世界大战 ");
+                            }
+
+                            /*
                             if (PlayerNum >= 29 && PlayerNum <= 32) {
                                 szTempBuffer.Format(L"  第一次世界大战  第一阶段  ");
                             }
+                            
                             else if (PlayerNum >= 33 && PlayerNum <= 36) {
                                 szTempBuffer.Format(L"  第一次世界大战  第二阶段  ");
                             }
+                            
                             else if (PlayerNum >= 37 && PlayerNum <= 42) {
                                 szTempBuffer.Format(L"  第二次世界大战  第一阶段  ");
                             }
                             else if (PlayerNum >= 43 && PlayerNum <= 50) {
                                 szTempBuffer.Format(L"  第二次世界大战  第二阶段  ");
                             }
+                            */
                         }
 
                         int PlayerNum_Rec;
@@ -5158,6 +5171,16 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                         else if (PlayerNum >= 25 && PlayerNum <= 28) {
                             PlayerNum_Rec = 25;
                         }
+
+
+                        else if (PlayerNum >= 29 && PlayerNum <= 36) {
+                            PlayerNum_Rec = 29;
+                        }
+                        else if (PlayerNum >= 37 && PlayerNum <= 50) {
+                            PlayerNum_Rec = 37;
+                        }
+
+                        /*
                         else if (PlayerNum >= 29 && PlayerNum <= 32) {
                             PlayerNum_Rec = 29;
                         }
@@ -5170,6 +5193,9 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                         else if (PlayerNum >= 43 && PlayerNum <= 50) {
                             PlayerNum_Rec = 43;
                         }
+                        */
+
+
                         else {
                             PlayerNum_Rec = PlayerNum;
                         }
