@@ -4916,11 +4916,16 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 
                     }
                     else if (iReligionFactor == REGION_SPREAD_HISTORICAL) {
-                        StringReligionFound.append(CvWString::format(L"  历史区，可创教"));
+                        StringReligionFound.append(CvWString::format(SETCOLR L" 历史区，" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_GREEN")));
+                        StringReligionFound.append(CvWString::format(SETCOLR L" 可创教" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_YELLOW")));
+
+                        //StringReligionFound.append(CvWString::format(L"  历史区，可创教"));
 
                     }
                     else if (iReligionFactor == REGION_SPREAD_CORE) {
-                        StringReligionFound.append(CvWString::format(L"  核心区，可创教"));
+                        StringReligionFound.append(CvWString::format(SETCOLR L" 核心区，" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_CYAN")));
+                        StringReligionFound.append(CvWString::format(SETCOLR L" 可创教" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_YELLOW")));
+                        //StringReligionFound.append(CvWString::format(L"  核心区，可创教"));
 
                     }
                     else {
