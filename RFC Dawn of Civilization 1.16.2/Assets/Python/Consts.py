@@ -2,6 +2,7 @@
 # globals
 
 from CvPythonExtensions import *
+from Mediv01_Utils import *
 
 gc = CyGlobalContext()
 

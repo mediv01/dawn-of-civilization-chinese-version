@@ -5369,10 +5369,8 @@ class CvMainInterface:
 				iGoldPerTurn = gc.getPlayer(ePlayer).AI_maxGoldPerTurnTrade(gc.getGame().getActivePlayer())
 				iNumCity = PlayerUtil.getNumCities(ePlayer)
 				if (iGold >= iGoldThrehold):
-					#szTempBuffer = u"C:%d  G:%d(%d)" % (PlayerUtil.getNumCities(ePlayer), iGold, iGoldPerTurn)
-					sSpace1 = s * (6 - len(str(iGoldPerTurn)))
-					sSpace2 = s * (8 - len(str(iGold)))
-					szTempBuffer = u"C:%d  G:%s%d%s(%d)" % (iNumCity,sSpace2, iGold,sSpace1 ,iGoldPerTurn)
+					iGold = min(iGold,99999)
+					szTempBuffer = BugUtil.colorText(u"%s - %s   (%s)" % (FillNumberToText(iNumCity, 2), FillNumberToText(iGold, 5), FillNumberToText(iGoldPerTurn, 2)), "COLOR_WHITE")
 		else:
 			szTempBuffer = BugUtil.colorText(u"%d" % PlayerUtil.getNumRevealedCities(ePlayer), "COLOR_CYAN")
 			iGoldThrehold = gc.getDefineINT("PYTHON_SHOW_CIV_MONEY_ON_PANNEL")
@@ -5381,10 +5379,8 @@ class CvMainInterface:
 				iGoldPerTurn = gc.getPlayer(ePlayer).AI_maxGoldPerTurnTrade(gc.getGame().getActivePlayer())
 				iNumCity = PlayerUtil.getNumRevealedCities(ePlayer)
 				if (iGold >= iGoldThrehold):
-					sSpace1 = s * (6 - len(str(iGoldPerTurn)))
-					sSpace2 = s * (8 - len(str(iGold)))
-					#szTempBuffer = BugUtil.colorText(u"C:%d  G:%d(%d)" % ( iNumCity,iGold, iGoldPerTurn), "COLOR_CYAN")
-					szTempBuffer = BugUtil.colorText(u"C:%d  G:%s%d%s(%d)" % (iNumCity,sSpace2 ,iGold,sSpace1 ,iGoldPerTurn), "COLOR_CYAN")
+					iGold = min(iGold, 99999)
+					szTempBuffer = BugUtil.colorText(u"%s - %s   (%s)" % (FillNumberToText(iNumCity,2),FillNumberToText(iGold,5),FillNumberToText(iGoldPerTurn,2)), "COLOR_CYAN")
 		szBuffer = szBuffer + " " + szTempBuffer
 		if (bAlignIcons):
 			scores.setNumCities(szTempBuffer)
