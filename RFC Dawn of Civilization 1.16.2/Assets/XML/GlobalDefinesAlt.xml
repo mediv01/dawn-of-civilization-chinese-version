@@ -1471,6 +1471,11 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 	
+	<Define>
+        <DefineName>PYTHON_SHOW_CIV_STABILITY_ON_PANNEL</DefineName>        <!--  大于0的数字为在界面显示国家稳定度，0为默认模式 该参数没有成功  mediv01 2021年8月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
 
 	<Define>
         <DefineName>PYTHON_CAN_USE_TECHTRADE_VALUE_ALERT</DefineName>        <!--  大于0的数字为开启科技交易提示功能，0为默认模式  mediv01 2021年8月版本 -->

@@ -33,6 +33,7 @@ import ReligionUtil
 # BUG - Limit/Extra Religions - end
 
 # BUG - PLE - start
+
 import MonkeyTools as mt
 import string
 from AStarTools import *
@@ -231,6 +232,9 @@ FontSymbols.UNSTABLE_CHAR,
 FontSymbols.STABLE_CHAR,
 FontSymbols.SOLID_CHAR,
 FontSymbols.SOLID_CHAR,)
+
+from Mediv01_Utils import FillNumberToText
+
 
 class CvMainInterface:
 	"Main Interface Screen"
@@ -5273,6 +5277,11 @@ class CvMainInterface:
 													elif iStabilityLevel > iStabilityUnstable: cStab = unichr(CyGame().getSymbolID(FontSymbols.STABLE_CHAR))
 													else: cStab = unichr(CyGame().getSymbolID(FontSymbols.UNSTABLE_CHAR))
 													szBuffer += cStab
+													if (gc.getDefineINT("PYTHON_SHOW_CIV_STABILITY_ON_PANNEL")>0):
+														#import Stability
+														#szBuffer += u"("+str(Stability.calculateStability(ePlayer))+u")"
+														#szBuffer += cStab
+														pass
 													if (bAlignIcons):
 														scores.setStability(cStab)
 # BUG - Refuses to Talk - start
@@ -5362,25 +5371,38 @@ class CvMainInterface:
 	def screen_showmoney(self, bAlignIcons, ePlayer, scores, szBuffer):
 		s = ' '
 		if (PlayerUtil.canSeeCityList(ePlayer)):
-			szTempBuffer = u"%d" % PlayerUtil.getNumCities(ePlayer)
-			iGoldThrehold = gc.getDefineINT("PYTHON_SHOW_CIV_MONEY_ON_PANNEL")
-			if (iGoldThrehold > 0):
-				iGold = gc.getPlayer(ePlayer).AI_maxGoldTrade(gc.getGame().getActivePlayer())
-				iGoldPerTurn = gc.getPlayer(ePlayer).AI_maxGoldPerTurnTrade(gc.getGame().getActivePlayer())
-				iNumCity = PlayerUtil.getNumCities(ePlayer)
-				if (iGold >= iGoldThrehold):
-					iGold = min(iGold,99999)
-					szTempBuffer = BugUtil.colorText(u"%s - %s   (%s)" % (FillNumberToText(iNumCity, 2), FillNumberToText(iGold, 5), FillNumberToText(iGoldPerTurn, 2)), "COLOR_WHITE")
+			iNumCity = PlayerUtil.getNumCities(ePlayer)
+			szTempBuffer = BugUtil.colorText(u"%s " % (FillNumberToText(iNumCity, 2)), "COLOR_WHITE")
 		else:
-			szTempBuffer = BugUtil.colorText(u"%d" % PlayerUtil.getNumRevealedCities(ePlayer), "COLOR_CYAN")
-			iGoldThrehold = gc.getDefineINT("PYTHON_SHOW_CIV_MONEY_ON_PANNEL")
-			if (iGoldThrehold > 0):
-				iGold = gc.getPlayer(ePlayer).AI_maxGoldTrade(gc.getGame().getActivePlayer())
-				iGoldPerTurn = gc.getPlayer(ePlayer).AI_maxGoldPerTurnTrade(gc.getGame().getActivePlayer())
-				iNumCity = PlayerUtil.getNumRevealedCities(ePlayer)
-				if (iGold >= iGoldThrehold):
-					iGold = min(iGold, 99999)
-					szTempBuffer = BugUtil.colorText(u"%s - %s   (%s)" % (FillNumberToText(iNumCity,2),FillNumberToText(iGold,5),FillNumberToText(iGoldPerTurn,2)), "COLOR_CYAN")
+			iNumCity = PlayerUtil.getNumRevealedCities(ePlayer)
+			szTempBuffer = BugUtil.colorText(u"%s " % (FillNumberToText(iNumCity, 2)), "COLOR_CYAN")
+
+		# 金钱部分
+		iGoldThrehold = gc.getDefineINT("PYTHON_SHOW_CIV_MONEY_ON_PANNEL")
+		if (iGoldThrehold > 0):
+			iGold = gc.getPlayer(ePlayer).AI_maxGoldTrade(gc.getGame().getActivePlayer())
+			iGoldPerTurn = gc.getPlayer(ePlayer).AI_maxGoldPerTurnTrade(gc.getGame().getActivePlayer())
+			if (iGold >= 0):
+				iGold = min(iGold,99999)
+				if (iGold>1000):
+					szTempBuffer += BugUtil.colorText(u"- %s" % (FillNumberToText(iGold, 5)), "COLOR_YELLOW")
+				elif (iGold>500):
+					szTempBuffer += BugUtil.colorText(u"- %s" % (FillNumberToText(iGold, 5)), "COLOR_CYAN")
+				else:
+					szTempBuffer += BugUtil.colorText(u"- %s" % (FillNumberToText(iGold, 5)), "COLOR_WHITE")
+
+
+				if (iGoldPerTurn>20) :
+					szTempBuffer += BugUtil.colorText(u"   (%s)" % (FillNumberToText(iGoldPerTurn, 3)), "COLOR_YELLOW")
+				elif (iGoldPerTurn>10):
+					szTempBuffer += BugUtil.colorText(u"   (%s)" % (FillNumberToText(iGoldPerTurn, 3)), "COLOR_CYAN")
+				else:
+					szTempBuffer += BugUtil.colorText(u"   (%s)" % (FillNumberToText(iGoldPerTurn, 3)), "COLOR_WHITE")
+
+		# 可勒索金币部分
+
+
+
 		szBuffer = szBuffer + " " + szTempBuffer
 		if (bAlignIcons):
 			scores.setNumCities(szTempBuffer)

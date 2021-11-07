@@ -391,27 +391,27 @@
 	
 	<TEXT>
 		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BEFORE_AD</Tag>
-		<English>在公元</English>
+		<English>在公元 </English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>在公元</Chinese>
-		<French>在公元</French>
+		<Chinese>在公元 </Chinese>
+		<French>在公元 </French>
 	</TEXT>
 
 	<TEXT>
 		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_AND_YEAR</Tag>
-		<English>年蛮族</English>
+		<English> 年，蛮族 </English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>年蛮族</Chinese>
-		<French>年蛮族</French>
+		<Chinese> 年，蛮族 </Chinese>
+		<French> 年，蛮族 </French>
 	</TEXT>
 
 
 	<TEXT>
 		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_START_TO_INVADE</Tag>
-		<English>即将开始大规模入侵</English>
+		<English> 即将开始大规模入侵</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>即将开始大规模入侵</Chinese>
-		<French>即将开始大规模入侵</French>
+		<Chinese> 即将开始大规模入侵</Chinese>
+		<French> 即将开始大规模入侵</French>
 	</TEXT>
 	
 	<TEXT>
@@ -424,35 +424,35 @@
 	
 	<TEXT>
 		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_LOCATION</Tag>
-		<English>坐标范围：( </English>
+		<English>，坐标范围：( </English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>坐标范围：( </Chinese>
-		<French>坐标范围：( </French>
+		<Chinese>，坐标范围：( </Chinese>
+		<French>，坐标范围：( </French>
 	</TEXT>	
 	
 	
 	<TEXT>
 		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_INDIPENDENT</Tag>
-		<English>年独立城邦</English>
+		<English> 年，独立城邦 </English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>年独立城邦</Chinese>
-		<French>年独立城邦</French>
+		<Chinese> 年，独立城邦 </Chinese>
+		<French> 年，独立城邦 </French>
 	</TEXT>
 	
 	<TEXT>
 		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_INDIPENDENT_START</Tag>
-		<English>已经建立于</English>
+		<English> 已经建立于</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>已经建立于</Chinese>
-		<French>已经建立于</French>
+		<Chinese> 已经建立于</Chinese>
+		<French> 已经建立于</French>
 	</TEXT>
 	
 	<TEXT>
 		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_INDIPENDENT_START_LOCATION</Tag>
-		<English>坐标：</English>
+		<English>，坐标：</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>坐标：</Chinese>
-		<French>坐标：</French>
+		<Chinese>，坐标：</Chinese>
+		<French>，坐标：</French>
 	</TEXT>
 	
 	
