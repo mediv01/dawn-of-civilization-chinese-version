@@ -1562,6 +1562,33 @@
 
 
 
+    <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   20211107新增选项 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+
+	<Define>
+        <DefineName>CVGAMETEXT_SHOW_REAL_COMMERCE_PROMOTE_IN_BUILDING</DefineName>        <!-- 1为在建筑帮助文字显示建筑对城市科研、金币的提升  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+	<Define>
+        <DefineName>CVGAMETEXT_SHOW_REAL_YIELD_PROMOTE_IN_BUILDING</DefineName>        <!-- 1为在建筑帮助文字显示建筑对城市产量的提升  0为默认模式 mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  LOG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
