@@ -8,7 +8,29 @@ gc = CyGlobalContext()
 
 
 
+def SearchBirthPlace(x, y):
+    tList = []
+    import Areas
+    for iPlayer in range(iNumPlayers):
+        tSearchCapital=Areas.getCapital(iPlayer)
+        if x is tSearchCapital[0] and y is tSearchCapital[1]:
+            tList.append(iPlayer)
 
+    return tList
+
+def getBirthDate(x, y):
+    tList = [-3000, 2020]
+    tBirthDate = tBirth
+    tCollapseDate = tFall
+
+    if (x not in dRebirthCiv):
+        tList[0] = tBirthDate[x]
+        tList[1] = tCollapseDate[y]
+    else :
+        tList[0] = dRebirth.get(x)
+        tList[1] = 2020
+
+    return tList
 
 def isCityInArea(tCityPos, tTL, tBR):
 

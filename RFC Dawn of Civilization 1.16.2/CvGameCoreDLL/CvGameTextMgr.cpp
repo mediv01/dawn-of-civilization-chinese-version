@@ -4824,6 +4824,52 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                 }
                 szString.append(NEWLINE);
             }
+
+            if (GC.getDefineINT("CVGAMETEXT_SHOW_BIRTH_PLACE_IN_DOCM") == 1) {//mediv01 显示地块是否为出生区
+    //long lResult = 0;
+
+
+
+                std::vector<int> pIntList1;
+                CyArgsList argsList;
+                argsList.add(pPlot->getX());
+                argsList.add(pPlot->getY());
+                gDLL->getPythonIFace()->callFunction(PYScreensModule, "CheckBirthPlaceInDll", argsList.makeFunctionArgs(), &pIntList1);
+                if (pIntList1.size() > 0) {
+                    szString.append(NEWLINE);
+                    //szTempBuffer.Format(L", " SETCOLR L"d=%d" ENDCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT"), iDeadlockCount);
+                    szTempBuffer.Format(SETCOLR L"文明出生区：" ENDCOLR, TEXT_COLOR("COLOR_ALT_HIGHLIGHT_TEXT"));//绿色
+                    szString.append(szTempBuffer);
+                    for (int i = 1; i <= (int)(pIntList1.size()); i++) {
+                        int PlayerNum = pIntList1[i - 1];
+
+                        std::vector<int> pIntList2;
+                        CyArgsList argsList2;
+                        argsList2.add(PlayerNum);
+                        argsList2.add(PlayerNum);
+                        int BirthDate = 500;
+                        int FallDate = 1800;
+
+                        gDLL->getPythonIFace()->callFunction(PYScreensModule, "CheckBirthFallDateInDll", argsList2.makeFunctionArgs(), &pIntList2);
+                        if (pIntList2.size() > 0) {
+
+                            BirthDate = pIntList2[0];
+                            FallDate = pIntList2[1];
+
+
+                        }
+
+
+
+                        szTempBuffer.Format(L"%s ( %d 至 %d ) ", GET_PLAYER((PlayerTypes)PlayerNum).getCivilizationShortDescription(), BirthDate, FallDate);
+                        szString.append(szTempBuffer);
+                    }
+                }
+
+
+
+            }
+
             //
             //szString.append(NEWLINE);
             //szString.append(CvWString::format(L"111"));//mediv01
