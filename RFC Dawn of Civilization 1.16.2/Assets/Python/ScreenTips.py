@@ -91,6 +91,28 @@ def calculateTopCities_FOOD():
     lCities = lCities
     return lCities
 
+def getTechValue(BuyTechPlayer, tradeitemID, sellTechPlayer=utils.getHumanID()):
+    tradetypeID = TRADE_TECHNOLOGIES
+    techmoney = gc.getAIdealValuetoMoney(sellTechPlayer, BuyTechPlayer, tradetypeID, tradeitemID)
+    return techmoney
+
+
+def canTradeTech(BuyPlayer, tradeitemID, SellPlayer=utils.getHumanID()):
+    team = gc.getTeam(gc.getPlayer(SellPlayer).getTeam())
+    if not team.isHasTech(tradeitemID):
+        return False
+
+    tradeData = TradeData()
+    tradeData.ItemType = TradeableItems.TRADE_TECHNOLOGIES
+    tradeData.iData = tradeitemID
+
+    bTechTrade = (gc.getPlayer(SellPlayer).canTradeItem(BuyPlayer, tradeData, False))
+    if not bTechTrade:
+        return False
+
+    return True
+
+
 def getScreenHelp():
 
     import Debug
@@ -107,6 +129,86 @@ def getScreenHelp():
         txtScenario=['BC3000', 'AD600', 'AD1700']
         aHelp.append(' Scenario : ' + str(txtScenario[iScenario]))
 
+    # 勒索国家金币的信息
+    if (gc.getDefineINT("PYTHON_SCREEN_VICTORY_TIPS_SHOW_AITRADE_ON_MONEY") >0):
+        aHelp.append(' ')
+        aHelp.append('可勒索金币数量排名')
+        for iCiv in range(iNumPlayers):
+            if (gc.getPlayer(iCiv).isAlive() and iCiv is not utils.getHumanID()):
+                iPlayer = iCiv
+                human = utils.getHumanID()
+                cantrade = gc.getPlayer(iPlayer).canTradeNetworkWith(human)
+                a = gc.AI_considerOfferThreshold(human, iPlayer)  # 3是中国
+                b = gc.getPlayer(iPlayer).AI_maxGoldTrade(human)
+                c = min(a, b)
+                if cantrade and c > 0:
+                    civname = gc.getPlayer(iCiv).getCivilizationShortDescription(0)
+                    aHelp.append(civname + ':' + str(c))
+
+        pass
+
+    # 科技交易信息
+    if (gc.getDefineINT("PYTHON_SCREEN_VICTORY_TIPS_SHOW_AITRADE_ON_TECH") >0):
+        aHelp.append(' ')
+        aHelp.append('AI可卖科技列表：')
+        for iCiv in range(iNumPlayers):
+            iPlayer = iCiv
+            human = utils.getHumanID()
+            if (gc.getPlayer(iCiv).isAlive() and iCiv is not human):
+                for iTech in range(iNumTechs):
+                    cantrade = gc.getPlayer(iPlayer).canTradeNetworkWith(human)
+                    buyplayer = human
+                    sellplayer = iPlayer
+                    AIhastech = gc.getTeam(gc.getPlayer(iPlayer).getTeam()).isHasTech(iTech)
+                    Humanhastech = gc.getTeam(gc.getPlayer(human).getTeam()).isHasTech(iTech)
+                    if (AIhastech and not Humanhastech):
+                        techvalue = getTechValue(buyplayer, iTech, sellplayer)
+                        if techvalue > 0:
+                            civname = gc.getPlayer(iCiv).getCivilizationShortDescription(0)
+                            techname = utils.getTechNameCn(iTech)
+                            cantradetext = ''
+                            bcantradetech = canTradeTech(buyplayer, iTech, sellplayer)
+                            if (not cantrade or not bcantradetech):
+                                cantradetext = '[目前无法交易]'
+                            aHelp.append(civname + ':     ' + techname + '(' + str(techvalue) + ')' + cantradetext)
+
+        aHelp.append(' ')
+        aHelp.append('人类可卖科技列表：')
+        for iCiv in range(iNumPlayers):
+            iPlayer = iCiv
+            human = utils.getHumanID()
+            if (gc.getPlayer(iCiv).isAlive() and iCiv is not human):
+                for iTech in range(iNumTechs):
+                    cantrade = gc.getPlayer(iPlayer).canTradeNetworkWith(human)
+                    buyplayer = iPlayer
+                    sellplayer = human
+                    AIhastech = gc.getTeam(gc.getPlayer(iPlayer).getTeam()).isHasTech(iTech)
+                    Humanhastech = gc.getTeam(gc.getPlayer(human).getTeam()).isHasTech(iTech)
+                    if (not AIhastech and Humanhastech):
+                        techvalue = getTechValue(buyplayer, iTech, sellplayer)
+                        if techvalue > 0:
+                            civname = gc.getPlayer(iCiv).getCivilizationShortDescription(0)
+                            techname = utils.getTechNameCn(iTech)
+                            cantradetext = ''
+                            bcantradetech = canTradeTech(buyplayer, iTech, sellplayer)
+
+                            bTradeWorth = False
+                            iAImaxMoney = gc.getPlayer(buyplayer).AI_maxGoldTrade(utils.getHumanID())
+                            PYTHON_TECHTRADE_VALUE_MIN_PERCENT = 80
+                            iMinPercent = PYTHON_TECHTRADE_VALUE_MIN_PERCENT
+                            iThreshold = techvalue * iMinPercent / 100
+                            if (iAImaxMoney >= iThreshold):
+                                bTradeWorth = True
+
+                            if (not cantrade or not bcantradetech or not bTradeWorth):
+                                cantradetext = '[目前无法交易]'
+                                # aHelp.append(civname + ':     ' + techname + '(' + str(techvalue) + ')' + cantradetext)
+                            else:
+                                txt = '%s:    %s  :  %d (%d' % (civname, techname, techvalue, iAImaxMoney * 100 / techvalue) + '%)'
+                                aHelp.append(txt)
+                                # aHelp.append(civname + ':     ' + techname+'('+str(techvalue)+')' + cantradetext)
+
+        pass
 
     #部落村庄信息：
     if (gc.getDefineINT("PYTHON_SCREEN_VICTORY_TIPS_11") > 0):

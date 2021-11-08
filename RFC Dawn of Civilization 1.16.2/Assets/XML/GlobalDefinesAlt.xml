@@ -1157,8 +1157,15 @@
     </Define>
 
 
+    <Define>
+        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_SHOW_AITRADE_ON_MONEY</DefineName>        <!-- 大于0的数字为提示可勒索金币数量 0为默认模式 mediv01 2021年11月新增内容 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
-
+    <Define>
+        <DefineName>PYTHON_SCREEN_VICTORY_TIPS_SHOW_AITRADE_ON_TECH</DefineName>        <!-- 大于0的数字为提示可勒索金币数量 0为默认模式 2021年11月新增内容  mediv01 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  PYTHON 第一部分 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 	

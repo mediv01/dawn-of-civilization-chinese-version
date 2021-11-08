@@ -5382,6 +5382,9 @@ class CvMainInterface:
 		if (iGoldThrehold > 0):
 			iGold = gc.getPlayer(ePlayer).AI_maxGoldTrade(gc.getGame().getActivePlayer())
 			iGoldPerTurn = gc.getPlayer(ePlayer).AI_maxGoldPerTurnTrade(gc.getGame().getActivePlayer())
+			if ePlayer is utils.getHumanID():
+				iGold = 0
+				iGoldPerTurn = 0
 			if (iGold >= 0):
 				iGold = min(iGold,99999)
 				if (iGold>1000):

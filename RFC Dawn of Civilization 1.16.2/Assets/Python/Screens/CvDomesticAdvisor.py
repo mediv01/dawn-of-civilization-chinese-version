@@ -145,6 +145,8 @@ class CvDomesticAdvisor:
 		screen.setTableColumnHeader( "CityListBackground", 16, "", (25 * self.nTableWidth) / self.nNormalizedTableWidth )
 
 	# Function to draw the contents of the cityList passed in
+
+
 	def drawContents (self):
 	
 		# Get the screen and the player
@@ -283,14 +285,32 @@ class CvDomesticAdvisor:
 		# Garrison
 		screen.setTableInt( "CityListBackground", 14, i, unicode(pLoopCity.plot().getNumDefenders(pLoopCity.getOwner())), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
-		# Producing	
-		screen.setTableText( "CityListBackground", 15, i, pLoopCity.getProductionName() + " (" + str(pLoopCity.getGeneralProductionTurnsLeft()) + ")", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		# Producing
+		hurrytext = self.mediv01_hurrytext_compute(pLoopCity)
+		#hurrytext = '123'
+		screen.setTableText( "CityListBackground", 15, i, hurrytext+pLoopCity.getProductionName() + " (" + str(pLoopCity.getGeneralProductionTurnsLeft()) + ")", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 		# Liberation
 		if pLoopCity.getLiberationPlayer(false) != -1:			
 			screen.setTableText( "CityListBackground", 16, i, "<font=2>" + (u"%c" % CyGame().getSymbolID(FontSymbols.OCCUPATION_CHAR)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		
-		
+
+	def mediv01_hurrytext_compute(self, pLoopCity):
+		hurrytext = ''
+		isshowhuman = gc.getDefineINT("CVGAMETEXT_SHOW_HURRYINFO_IN_CITY_BAR_TOHUMAN") > 0;
+		isshowai = gc.getDefineINT("CVGAMETEXT_SHOW_HURRYINFO_IN_CITY_BAR_TOAI") > 0;
+		if (isshowhuman or isshowai):
+			hurryflag = False
+			hurryanger = 999
+			if (pLoopCity.canHurry(0, False)):
+				hurryflag = True
+				hurryanger = pLoopCity.getHurryAngerTimer()
+			startflag = ''
+			if (pLoopCity.getProduction()==0):
+				startflag = 'S'
+			if (hurryflag):
+				hurrytext ='['+startflag+'H' + str(hurryanger) + '] '
+		return hurrytext
 	# Draw the specialist and their increase and decrease buttons
 	def drawSpecialists(self):
 		screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
