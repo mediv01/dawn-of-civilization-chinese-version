@@ -1167,6 +1167,20 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
+	<Define>
+        <DefineName>PYTHON_SHOW_CIV_MONEY_ON_PANNEL</DefineName>        <!--  大于0的数字为在界面显示国家可用金币，0为默认模式  mediv01 2021年8月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+	
+	<Define>
+        <DefineName>PYTHON_SHOW_CIV_STABILITY_ON_PANNEL</DefineName>        <!--  大于0的数字为在界面显示国家稳定度，0为默认模式 该参数没有成功  mediv01 2021年8月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+
+	<Define>
+        <DefineName>PYTHON_SHOW_CIV_ASKMONEY_ON_PANNEL</DefineName>        <!--  大于0的数字为在界面显示可勒索金币，0为默认模式 该参数没有成功  mediv01 2021年8月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  PYTHON 第一部分 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 	
 	
@@ -1473,15 +1487,6 @@
     </Define>
 	
 	
-	<Define>
-        <DefineName>PYTHON_SHOW_CIV_MONEY_ON_PANNEL</DefineName>        <!--  大于0的数字为在界面显示国家可用金币，0为默认模式  mediv01 2021年8月版本 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
-	
-	<Define>
-        <DefineName>PYTHON_SHOW_CIV_STABILITY_ON_PANNEL</DefineName>        <!--  大于0的数字为在界面显示国家稳定度，0为默认模式 该参数没有成功  mediv01 2021年8月版本 -->
-        <iDefineIntVal>1</iDefineIntVal>
-    </Define>
 	
 
 	<Define>

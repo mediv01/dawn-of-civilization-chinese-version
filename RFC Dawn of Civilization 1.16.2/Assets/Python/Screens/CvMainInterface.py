@@ -5403,6 +5403,21 @@ class CvMainInterface:
 					szTempBuffer += BugUtil.colorText(u"   (%s)" % (FillNumberToText(iGoldPerTurn, 3)), "COLOR_WHITE")
 
 		# 可勒索金币部分
+		if (gc.getDefineINT("PYTHON_SHOW_CIV_ASKMONEY_ON_PANNEL")>0):
+			iCiv = ePlayer
+			if (gc.getPlayer(iCiv).isAlive()):
+				iPlayer = iCiv
+				human = utils.getHumanID()
+				cantrade = gc.getPlayer(iPlayer).canTradeNetworkWith(human)
+				a = gc.AI_considerOfferThreshold(human, iPlayer)  # 3是中国
+				b = gc.getPlayer(iPlayer).AI_maxGoldTrade(human)
+				c = min(a, b)
+				if iCiv is human:
+					c = 0
+				if cantrade and c > 0:
+					szTempBuffer += BugUtil.colorText(u"- A(%s)" % (FillNumberToText(c, 4)), "COLOR_YELLOW")
+				else:
+					szTempBuffer += BugUtil.colorText(u"-                ", "COLOR_WHITE")
 
 
 
