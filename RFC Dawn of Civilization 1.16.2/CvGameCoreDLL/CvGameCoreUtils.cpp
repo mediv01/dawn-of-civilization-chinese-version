@@ -381,6 +381,9 @@ int getWonderScore(BuildingClassTypes eWonderClass)
 {
 	if (isLimitedWonderClass(eWonderClass))
 	{
+		if (GC.getDefineINT("CVPLAYER_NEW_GAMESCORE_METHOD_WONDER_SCORE") > 0) {
+			return GC.getDefineINT("CVPLAYER_NEW_GAMESCORE_METHOD_WONDER_SCORE");
+		}
 		return 5;
 	}
 	else

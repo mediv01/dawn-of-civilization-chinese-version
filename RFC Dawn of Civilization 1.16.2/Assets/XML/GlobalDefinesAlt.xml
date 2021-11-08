@@ -673,9 +673,15 @@
     </Define>
 
     <Define>
-        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_BUILDING_SCORE</DefineName>        <!-- 大于0的数字表明普通建筑的分数，奇观分数为5 0为默认模式， mediv01  2021年8月版本新增内容 -->
-        <iDefineIntVal>2</iDefineIntVal>
+        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_BUILDING_SCORE</DefineName>        <!-- 大于0的数字表明普通建筑的分数，奇观分数为5  为了鼓励玩家发展城市，避免只暴兵做球长，分数设置为10 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>10</iDefineIntVal>
     </Define>
+
+    <Define>
+        <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_WONDER_SCORE</DefineName>        <!-- 大于0的数字表明奇观的分数，奇观分数初始为5 为了鼓励种田，DOCM设置为50 0为默认模式， mediv01  2021年8月版本新增内容 -->
+        <iDefineIntVal>50</iDefineIntVal>
+    </Define>
+	
 	
     <Define>
         <DefineName>CVPLAYER_NEW_GAMESCORE_METHOD_MONEY_SCORE</DefineName>        <!-- 大于0的数字表明每10000金币的分数 0为默认模式， mediv01  2021年8月版本新增内容 -->
