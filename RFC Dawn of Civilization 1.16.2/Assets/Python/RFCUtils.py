@@ -181,6 +181,9 @@ class RFCUtils:
     def getText(self, TextKey):
         return CyTranslator().getText(TextKey, ())
 
+    def getTurnForYear(self, iYear):
+        return getTurnForYear(iYear)
+
     # RiseAndFall
     # 新增输出日志的功能
     def log_path(self):

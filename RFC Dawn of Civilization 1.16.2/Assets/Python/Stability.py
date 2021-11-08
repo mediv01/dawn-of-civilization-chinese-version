@@ -932,6 +932,15 @@ def calculateStability(iPlayer):
             else:
                 iCulturePercent = 100
 
+            bExpansionExceptions_Persia = (iPlayer == iPersia and utils.getTurns() <= utils.getTurnForYear(200) and bHistorical)
+            bExpansionExceptions_Rome = (iPlayer == iRome and utils.getTurns() <= utils.getTurnForYear(100) and bHistorical)
+            bExpansionExceptions_Greece = (iPlayer == iGreece and utils.getTurns() <= utils.getTurnForYear(-200) and bHistorical)
+            bExpansionExceptions_Arabia = (iPlayer == iArabia and utils.getTurns() <= utils.getTurnForYear(900) and bHistorical)
+            bExpansionExceptions_Turks = (iPlayer == iTurks and utils.getTurns() <= utils.getTurnForYear(900) and bHistorical)
+            bExpansionExceptions_Mongo = (iPlayer == iMongolia and utils.getTurns() <= utils.getTurnForYear(1400) and bHistorical)
+            bExpansionExceptions_iOttoman = (iPlayer == iOttomans and utils.getTurns() <= utils.getTurnForYear(1600) and bHistorical)
+            bExpansionExceptions2 = bExpansionExceptions_Persia or bExpansionExceptions_Rome or bExpansionExceptions_Greece or bExpansionExceptions_Arabia or bExpansionExceptions_Turks or bExpansionExceptions_Mongo or bExpansionExceptions_iOttoman
+
             bExpansionExceptions = ((bHistorical and iPlayer == iMongolia) or bTotalitarianism)
             # bExpansionExceptionss = ((bHistorical and iPlayer == iMongolia) or bTotalitarianism)
             # 极权主义或者蒙古历史区域免扩张惩罚
@@ -976,6 +985,18 @@ def calculateStability(iPlayer):
             if not bExpansionExceptions:
                 if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(
                     25): iModifier += 1
+
+                if (gc.getDefineINT("STABILITY_NEWLY_CAPTURE_CITY_WITH_MORE_PUNISHMENT")>0):
+                    if (not bExpansionExceptions2):
+                        if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(
+                                3): iModifier += 8
+                        if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(
+                                7): iModifier += 5
+                        if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(
+                                14): iModifier += 3
+                        if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(
+                                21): iModifier += 2
+
 
             # not majority culture (includes foreign core and Persian UP)
             # 城市文化修正值，因此高文化等级很重要

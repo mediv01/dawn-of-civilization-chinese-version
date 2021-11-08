@@ -1510,6 +1510,11 @@
         <DefineName>STABILITY_CORE_POPULATION_HELPER_WITH_NETHERLAND</DefineName>        <!--  大于0的数字表示荷兰计算稳定度的时候额外的核心人口，防止荷兰丢失阿姆斯特丹后崩溃，0为默认模式  mediv01 2021年8月版本 -->
         <iDefineIntVal>5</iDefineIntVal>
     </Define>
+	
+	<Define>
+        <DefineName>STABILITY_NEWLY_CAPTURE_CITY_WITH_MORE_PUNISHMENT</DefineName>        <!--  大于0的数字表示计算稳定度时，新占领的城市惩罚较大，0为默认模式  mediv01 2021年11月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
   <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  PYTHON平衡性选项 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
@@ -1695,7 +1700,7 @@
 
     <Define>
         <DefineName>PYTHON_USE_LOG</DefineName>        <!-- 1为打开日志功能 此选项为日志功能的总开关   0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1716,7 +1721,7 @@
 
     <Define>
         <DefineName>PYTHON_LOG_ON_STABILITY</DefineName>        <!-- 1为记录稳定度详情的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
     <Define>
