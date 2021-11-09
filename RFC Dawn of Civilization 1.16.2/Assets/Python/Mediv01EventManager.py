@@ -20,3 +20,6 @@ def checkturn(iGameTurn):
 
     import DynamicModifiers
     DynamicModifiers.checkturn(iGameTurn)
+
+    import DOC_UAV
+    DOC_UAV.CheckTurn(iGameTurn)
