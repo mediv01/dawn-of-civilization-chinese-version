@@ -932,13 +932,13 @@ def calculateStability(iPlayer):
             else:
                 iCulturePercent = 100
 
-            bExpansionExceptions_Persia = (iPlayer == iPersia and utils.getTurns() <= utils.getTurnForYear(200) and bHistorical)
-            bExpansionExceptions_Rome = (iPlayer == iRome and utils.getTurns() <= utils.getTurnForYear(100) and bHistorical)
-            bExpansionExceptions_Greece = (iPlayer == iGreece and utils.getTurns() <= utils.getTurnForYear(-200) and bHistorical)
-            bExpansionExceptions_Arabia = (iPlayer == iArabia and utils.getTurns() <= utils.getTurnForYear(900) and bHistorical)
-            bExpansionExceptions_Turks = (iPlayer == iTurks and utils.getTurns() <= utils.getTurnForYear(900) and bHistorical)
-            bExpansionExceptions_Mongo = (iPlayer == iMongolia and utils.getTurns() <= utils.getTurnForYear(1400) and bHistorical)
-            bExpansionExceptions_iOttoman = (iPlayer == iOttomans and utils.getTurns() <= utils.getTurnForYear(1600) and bHistorical)
+            bExpansionExceptions_Persia = (iPlayer == iPersia and utils.getGameTurn() <= utils.getTurnForYear(200) and bHistorical)
+            bExpansionExceptions_Rome = (iPlayer == iRome and utils.getGameTurn() <= utils.getTurnForYear(100) and bHistorical)
+            bExpansionExceptions_Greece = (iPlayer == iGreece and utils.getGameTurn() <= utils.getTurnForYear(-200) and bHistorical)
+            bExpansionExceptions_Arabia = (iPlayer == iArabia and utils.getGameTurn() <= utils.getTurnForYear(900) and bHistorical)
+            bExpansionExceptions_Turks = (iPlayer == iTurks and utils.getGameTurn() <= utils.getTurnForYear(900) and bHistorical)
+            bExpansionExceptions_Mongo = (iPlayer == iMongolia and utils.getGameTurn() <= utils.getTurnForYear(1400) and bHistorical)
+            bExpansionExceptions_iOttoman = (iPlayer == iOttomans and utils.getGameTurn() <= utils.getTurnForYear(1600) and bHistorical)
             bExpansionExceptions2 = bExpansionExceptions_Persia or bExpansionExceptions_Rome or bExpansionExceptions_Greece or bExpansionExceptions_Arabia or bExpansionExceptions_Turks or bExpansionExceptions_Mongo or bExpansionExceptions_iOttoman
 
             bExpansionExceptions = ((bHistorical and iPlayer == iMongolia) or bTotalitarianism)
@@ -989,13 +989,13 @@ def calculateStability(iPlayer):
                 if (gc.getDefineINT("STABILITY_NEWLY_CAPTURE_CITY_WITH_MORE_PUNISHMENT")>0):
                     if (not bExpansionExceptions2):
                         if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(
-                                3): iModifier += 8
+                                3): iModifier += 1
                         if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(
-                                7): iModifier += 5
+                                7): iModifier += 1
                         if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(
-                                14): iModifier += 3
+                                14): iModifier += 1
                         if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(
-                                21): iModifier += 2
+                                21): iModifier += 1
 
 
             # not majority culture (includes foreign core and Persian UP)

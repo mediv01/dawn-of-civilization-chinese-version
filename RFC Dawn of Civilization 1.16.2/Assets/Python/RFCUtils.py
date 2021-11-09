@@ -184,6 +184,9 @@ class RFCUtils:
     def getTurnForYear(self, iYear):
         return getTurnForYear(iYear)
 
+    def getGameTurn(self):
+        return gc.getGame().getGameTurn()
+
     # RiseAndFall
     # 新增输出日志的功能
     def log_path(self):
