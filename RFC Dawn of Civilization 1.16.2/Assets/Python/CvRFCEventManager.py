@@ -75,6 +75,7 @@ class CvRFCEventManager(CvEventManager.CvEventManager, object):
 	    7629 : ('ByzantineBriberyEvent', self.rnfEventApply7629, self.rnfEventBegin7629),
 	    7630 : ('CongressClaimCityEvent', self.congEventApply7630, self.congEventBegin7630),
 	    7631 : ('CongressVoteCityEvent', self.congEventApply7631, self.congEventBegin7631),
+        4568 : ('RiseAndFallPopupEvent', self.rnfEventApply4568, self.rnfEventBegin4568),
         }
 
         # --> INSERT EVENT HANDLER INITIALIZATION HERE <--
@@ -192,6 +193,13 @@ class CvRFCEventManager(CvEventManager.CvEventManager, object):
        
     def rnfEventApply7614(self, playerID, netUserData, popupReturn):
             self.rnf.eventApply7614(popupReturn)
+
+    def rnfEventBegin4568(self):
+        pass
+
+    def rnfEventApply4568(self, playerID, netUserData, popupReturn):
+        #self.rnf.eventApply7614(popupReturn)
+        pass
 
     def rnfEventBegin7615(self):
             pass

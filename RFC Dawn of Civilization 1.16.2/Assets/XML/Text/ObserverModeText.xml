@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Colors -->
+<Civ4GameText>
+
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_OBSERVER_MODE_HEADER</Tag>
+		<English>文明4小地图DOCM观海模式</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>文明4小地图DOCM观海模式</Chinese>
+		<French>文明4小地图DOCM观海模式</French>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_OBSERVER_MODE_BODY</Tag>
+		<English>请输入观海模式截止年份</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>请输入观海模式截止年份</Chinese>
+		<French>请输入观海模式截止年份</French>
+	</TEXT>
+
+
+</Civ4GameText>

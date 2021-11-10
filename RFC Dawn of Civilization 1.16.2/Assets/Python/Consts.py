@@ -3,8 +3,11 @@
 
 from CvPythonExtensions import *
 
+### GLOBALS ###
 
 gc = CyGlobalContext()
+localText = CyTranslator()
+
 
 iWorldX = 124
 iWorldY = 68

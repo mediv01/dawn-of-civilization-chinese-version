@@ -1658,15 +1658,21 @@
 
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   20211107新增选项 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
+	<Define>
+        <DefineName>PYTHON_ENABLE_OBSERVER_MODE</DefineName>        <!--  1为启用观海模式选项，0为默认模式  mediv01 2021年11月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
 
 
 
+    <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   UAV相关 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 
-
-
-
+	<Define>
+        <DefineName>PYTHON_UAV_ENABLE_TO_USE_UAV</DefineName>        <!--  1为禁用对人类玩家的铁路战争，0为默认模式  mediv01 2021年11月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
 
 

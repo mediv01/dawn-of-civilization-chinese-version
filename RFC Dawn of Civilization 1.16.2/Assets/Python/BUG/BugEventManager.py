@@ -221,6 +221,7 @@ class BugEventManager(CvEventManager.CvEventManager):
 		    #7627 : ('PersecutionEvent', self.rnfEventApply7627, self.rnfEventBegin7627),
 		    7628 : ('RespawnPopupEvent', self.rnfEventApply7628, self.rnfEventBegin7628),
 		    7629 : ('ByzantineBriberyEvent', self.rnfEventApply7629, self.rnfEventBegin7629),
+			4568: ('RiseAndFallPopupEvent', self.rnfEventApply4568, self.rnfEventBegin4568),
 		}
 
 		# --> INSERT EVENT HANDLER INITIALIZATION HERE <--
@@ -584,6 +585,15 @@ class BugEventManager(CvEventManager.CvEventManager):
 
 	def rnfEventApply7614(self, playerID, netUserData, popupReturn):
 		self.rnf.eventApply7614(popupReturn)
+
+	def rnfEventBegin4568(self):
+		pass
+
+	def rnfEventApply4568(self, playerID, netUserData, popupReturn):
+		# self.rnf.eventApply7614(popupReturn)
+		import ObserverMode
+		ObserverMode.rnfEventApply4568(playerID, netUserData, popupReturn)
+		pass
 
 	def rnfEventBegin7615(self):
 		pass

@@ -258,7 +258,8 @@ class CvEventManager(object):
 			theKey=int(key)
 			
 			CvCameraControls.g_CameraControls.handleInput( theKey )
-						
+
+
 			if (self.bAllowCheats):
 				# Shift - T (Debug - No MP)
 				if (theKey == int(InputTypes.KB_T)):

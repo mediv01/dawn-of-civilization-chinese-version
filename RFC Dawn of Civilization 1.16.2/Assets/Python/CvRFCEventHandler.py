@@ -958,7 +958,12 @@ class CvRFCEventHandler:
 		eventType,key,mx,my,px,py = argsList
 			
 		theKey=int(key)
-		
+
+		if (eventType == self.EventKeyDown and theKey == int(InputTypes.KB_C) and self.eventManager.bShift):
+			import ObserverMode
+			ObserverMode.KeyDownEvent()
+			pass
+
 		if ( eventType == self.EventKeyDown and theKey == int(InputTypes.KB_Q) and self.eventManager.bAlt and self.eventManager.bShift):
 			print("SHIFT-ALT-Q") #enables squatting
 			self.rnf.setCheatMode(True);

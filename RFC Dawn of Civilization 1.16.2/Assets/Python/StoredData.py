@@ -68,6 +68,9 @@ class PlayerData:
 			self.newUHVGoldenAge.append(-1)
 
 
+
+
+
 		# Stability
 		
 		self.resetStability()
@@ -277,6 +280,13 @@ class GameData:
 		self.bCrisisImminent = False
 		
 		self.dSecedingCities = {}
+
+		# UAV
+		self.UAVGoals = [-1, -1, -1]
+
+		#ObserverMode
+		self.iBeforeObserverSlot = -1
+		self.ObserverTurn = -1
 		
 	def timedConquest(self, iPlayer, tPlot):
 		self.lTimedConquests.append((iPlayer, tPlot))

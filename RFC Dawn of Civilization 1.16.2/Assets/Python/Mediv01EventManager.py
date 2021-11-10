@@ -23,3 +23,6 @@ def checkturn(iGameTurn):
 
     import DOC_UAV
     DOC_UAV.CheckTurn(iGameTurn)
+
+    import ObserverMode
+    ObserverMode.CheckTurn(iGameTurn)

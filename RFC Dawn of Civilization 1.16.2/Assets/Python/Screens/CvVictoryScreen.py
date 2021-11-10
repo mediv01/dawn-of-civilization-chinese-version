@@ -1623,6 +1623,20 @@ class CvVictoryScreen:
 				if (bEntriesFound):
 					screen.appendTableRow(szTable)
 					screen.appendTableRow(szTable)
+
+		if (gc.getDefineINT("PYTHON_UAV_ENABLE_TO_USE_UAV")>0):
+			iRow = screen.appendTableRow(szTable)
+			screen.setTableText(szTable, 0, iRow, localText.getText("TXT_KEY_VICTORY_UAV_TIP", ()), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+
+			import DOC_UAV
+			aHelpStrings=DOC_UAV.getScreenHelp()
+			if len(aHelpStrings) > 0:
+				for szHelp in aHelpStrings:
+					iRow = screen.appendTableRow(szTable)
+					szHelp = '    ' + szHelp
+					screen.setTableText(szTable, 0, iRow, szHelp, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+
+
 		if (gc.getDefineINT("PYTHON_SCREEN_VICTORY_TIPS") == 1):
 			iRow = screen.appendTableRow(szTable)
 			screen.setTableText(szTable, 0, iRow, localText.getText("TXT_KEY_VICTORY_TIPS_IN_SCREEN", ()), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
