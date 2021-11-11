@@ -48,7 +48,7 @@ def KeyDownEvent():
 def StartObServerMode(iTurns):
     data.ObserverTurn = iTurns
     data.iBeforeObserverSlot = utils.getHumanID()
-    if (utils.getTurnForYear(1860) - utils.getGameTurn()>0):
+    if gc.getPlayer(iHarappa).isAlive():
         iObserverSlot = iCanada
     else:
         iObserverSlot = iHarappa
