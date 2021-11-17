@@ -69,6 +69,31 @@ class PlayerData:
 
 
 
+		# UAV
+		self.UAVGoals = [
+			-1,
+			-1,
+			-1,
+			-1,
+			-1,
+			-1,
+			-1,
+		]
+		self.UAVEraGoals = [
+			[-1, -1, -1],
+			[-1, -1, -1],
+			[-1, -1, -1],
+			[-1, -1, -1],
+			[-1, -1, -1],
+			[-1, -1, -1],
+			[-1, -1, -1],
+		]
+
+
+
+
+
+
 
 
 		# Stability
@@ -281,12 +306,10 @@ class GameData:
 		
 		self.dSecedingCities = {}
 
-		# UAV
-		self.UAVGoals = [-1, -1, -1]
-
 		#ObserverMode
 		self.iBeforeObserverSlot = -1
 		self.ObserverTurn = -1
+		self.iObserverSlot = -1
 		
 	def timedConquest(self, iPlayer, tPlot):
 		self.lTimedConquests.append((iPlayer, tPlot))

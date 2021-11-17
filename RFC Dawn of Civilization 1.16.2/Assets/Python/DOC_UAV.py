@@ -26,8 +26,8 @@ import DynamicCivs as dc
 def getScreenHelp():
     aHelp = []
     aHelp.append(localText.getText("TXT_KEY_VICTORY_UAV01_TECH", ()))
-    aHelp.append(str(data.UAVGoals[0]))
-    aHelp.append(str(data.UAVGoals[1]))
+    #aHelp.append(str(data.UAVGoals[0]))
+    #aHelp.append(str(data.UAVGoals[1]))
 
 
     aHelp.append(" ")
@@ -37,8 +37,65 @@ def getScreenHelp():
     return aHelp
 
 def CheckTurn(iGameTurn):
+    iPlayer = utils.getHumanID()
+
+
+    CheckUAVVictory(iPlayer)
     pass
 
+
+def SetUAVGoals(iPlayer):
+    UAVGoals = data.players[iPlayer].UAVGoals
+    UAVEraGoals = data.players[iPlayer].UAVEraGoals
+    for i in range(len(UAVGoals)):
+        bUAVEraWin = True
+        for eachUAVEraGoal in UAVEraGoals[i]:
+            if (eachUAVEraGoal is not 1):
+                bUAVEraWin = False
+
+        if bUAVEraWin:
+            UAVGoals[i] = 1
+
+    data.players[iPlayer].UAVGoals = UAVGoals
+
+def CheckUAVGoals(iPlayer):
+    UAVGoals = data.players[iPlayer].UAVGoals
+    UAVVictoryCount = 0
+    for i in range(len(UAVGoals)):
+        if (UAVGoals[i] is 1):
+            UAVVictoryCount += 1
+
+    if (UAVVictoryCount>=6):
+        utils.show("玩家获得时代胜利！")
+    pass
+
+def CheckUAVVictory(iPlayer):
+
+    SetUAVGoals(iPlayer)
+    CheckUAVGoals(iPlayer)
+    pass
+
+
+
+
+
+def SetUAVEraGoal(iPlayer):
+    iEra = gc.getPlayer(iPlayer).getCurrentEra()
+    iUAVCondition = False
+    if (iEra == iAncient):
+        iUAVCondition = UAV1(iPlayer)
+    elif (iEra == iClassical):
+        iUAVCondition = UAV2(iPlayer)
+    elif (iEra == iMedieval):
+        iUAVCondition = UAV3(iPlayer)
+    elif (iEra == iRenaissance):
+        iUAVCondition = UAV4(iPlayer)
+    elif (iEra == iIndustrial):
+        iUAVCondition = UAV5(iPlayer)
+    elif (iEra == iGlobal):
+        iUAVCondition = UAV5(iPlayer)
+    elif (iEra == iDigital):
+        iUAVCondition = UAV5(iPlayer)
 
 def UAV1(iPlayer):
     if not gc.getPlayer(iPlayer).isAlive():
