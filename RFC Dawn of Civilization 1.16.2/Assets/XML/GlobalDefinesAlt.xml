@@ -1663,8 +1663,15 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
+	<Define>
+        <DefineName>PYTHON_FIX_UHV_TEXTBUG_IN_CHINESE</DefineName>        <!--  1为修复在中文模式下UHV文本的BUG，0为默认模式  mediv01 2021年11月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
-
+	<Define>
+        <DefineName>PYTHON_FIX_URV_TEXTBUG_IN_CHINESE</DefineName>        <!--  1为修复在中文模式下UHV文本的BUG，0为默认模式  mediv01 2021年11月版本 -->
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
 
     <!--  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   UAV相关 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 

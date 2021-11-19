@@ -2179,9 +2179,13 @@ class RFCUtils:
         fullKey = baseKey
 
         if bTitle:
-            fullKey += "_TITLE"
+            pass
+            fullKey += u"_TITLE"
         elif iGameSpeed < 2:
-            fullKey += "_" + gc.getGameSpeedInfo(iGameSpeed).getText().upper()
+            if (gc.getDefineINT("PYTHON_FIX_UHV_TEXTBUG_IN_CHINESE") > 0):
+                pass
+            else:
+                fullKey += "_" + gc.getGameSpeedInfo(iGameSpeed).getText().upper()
 
         translation = localText.getText(str(fullKey), ())
 
@@ -2193,7 +2197,18 @@ class RFCUtils:
         iGameSpeed = gc.getGame().getGameSpeedType()
 
         if iReligion < iNumReligions:
-            religionKey = gc.getReligionInfo(iReligion).getText()[:3].upper()
+            ReligionText = {iJudaism: "JUD",
+                            iOrthodoxy: "ORT",
+                            iCatholicism: "CAT",
+                            iProtestantism: "PRO",
+                            iIslam: "ISL",
+                            iHinduism: "HIN",
+                            iBuddhism: "BUD",
+                            iConfucianism: "CON",
+                            iTaoism: "TAO",
+                            iZoroastrianism: "ZOR"}
+            religionKey = ReligionText.get(iReligion).upper()
+            #religionKey = gc.getReligionInfo(iReligion).getText()[:3].upper()
         elif iReligion == iNumReligions:
             religionKey = "POL"
         elif iReligion == iNumReligions + 1:
@@ -2206,7 +2221,10 @@ class RFCUtils:
         if bTitle:
             fullKey += "_TITLE"
         elif iGameSpeed < 2:
-            fullKey += "_" + gc.getGameSpeedInfo(iGameSpeed).getText().upper()
+            if (gc.getDefineINT("PYTHON_FIX_URV_TEXTBUG_IN_CHINESE") > 0):
+                pass
+            else:
+                fullKey += "_" + gc.getGameSpeedInfo(iGameSpeed).getText().upper()
 
         translation = localText.getText(str(fullKey), ())
 
