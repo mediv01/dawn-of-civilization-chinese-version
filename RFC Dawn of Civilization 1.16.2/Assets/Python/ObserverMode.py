@@ -52,6 +52,7 @@ def StartObServerMode(iTurns):
         iObserverSlot = iCanada
     else:
         iObserverSlot = iHarappa
+        gc.getTeam(gc.getPlayer(iHarappa).getTeam()).setHasTech(iCalendar, True, iHarappa, False, False)
     utils.makeUnit(iCatapult,iObserverSlot, (0, 0),1)
     gc.getGame().setActivePlayer(iObserverSlot, False)
     gc.getGame().setAIAutoPlay(iTurns)

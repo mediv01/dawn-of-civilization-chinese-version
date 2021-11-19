@@ -25,6 +25,7 @@ import DynamicCivs as dc
 
 def getScreenHelp():
     aHelp = []
+    return aHelp
     aHelp.append(localText.getText("TXT_KEY_VICTORY_UAV01_TECH", ()))
     #aHelp.append(str(data.UAVGoals[0]))
     #aHelp.append(str(data.UAVGoals[1]))

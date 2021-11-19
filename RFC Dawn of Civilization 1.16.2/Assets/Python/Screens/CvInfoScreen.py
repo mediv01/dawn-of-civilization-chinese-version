@@ -2928,7 +2928,7 @@ class CvInfoScreen:
 		pPlayer = gc.getPlayer(iPlayer)
 		tPlayer = gc.getTeam(pPlayer.getTeam())
 		from StoredData import data
-		if (tPlayer.isHasTech(iCalendar) or year < tBirth[iPlayer] or data.ObserverTurn>0):
+		if (tPlayer.isHasTech(iCalendar) or year < tBirth[iPlayer] or data.iBeforeObserverSlot is not -1):
 			if (year < 0):
 			    return localText.getText("TXT_KEY_TIME_BC", (-year,))
 			else:
