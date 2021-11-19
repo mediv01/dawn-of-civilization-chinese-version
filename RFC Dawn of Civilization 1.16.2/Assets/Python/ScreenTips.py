@@ -1,3 +1,4 @@
+# coding=utf-8
 from StoredData import data # edead
 from CvPythonExtensions import *
 from StoredData import data
@@ -127,7 +128,14 @@ def getScreenHelp():
         aHelp.append(' Handicap Level (1-5): '+str(iHandicap+1))
         iScenario=utils.getScenario()
         txtScenario=['BC3000', 'AD600', 'AD1700']
-        aHelp.append(' Scenario : ' + str(txtScenario[iScenario]))
+        iGameSpeed = gc.getGame().getGameSpeedType()
+        speedtext = u"正常速度"
+        if iGameSpeed==0:
+            speedtext = "马拉松速度"
+        elif iGameSpeed==1:
+            speedtext = "史诗速度"
+
+        aHelp.append(' Scenario : ' + str(txtScenario[iScenario]) + "     Speed: " + str(speedtext))
 
     # 勒索国家金币的信息
     if (gc.getDefineINT("PYTHON_SCREEN_VICTORY_TIPS_SHOW_AITRADE_ON_MONEY") >0):

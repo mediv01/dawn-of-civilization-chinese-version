@@ -3483,9 +3483,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_FIRST_GREAT_PEOPLE</Tag>
-		<English>出生的第一批伟人：d1/%d2</English>
+		<English>出生的第一批伟人：%d1/%d2</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>出生的第一批伟人：d1/%d2</Chinese>
+		<Chinese>出生的第一批伟人：%d1/%d2</Chinese>
 		<French>First great people born: %d1 / %d2</French>
 	</TEXT>
 	<TEXT>
@@ -3658,9 +3658,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_HIGHEST_TRADE_CITY</Tag>
-		<English>贸易收入最高的城市：</English>
+		<English>贸易收入最高的城市：%s1_city</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>贸易收入最高的城市：</Chinese>
+		<Chinese>贸易收入最高的城市：%s1_city</Chinese>
 		<French>City with the highest trade income: %s1_city</French>
 	</TEXT>
 	<TEXT>
@@ -3756,9 +3756,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_LEGENDARY_CULTURE_CITY</Tag>
-		<English>%s1中的传奇文化</English>
+		<English>%s1 中的传奇文化</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>%s1中的传奇文化</Chinese>
+		<Chinese>%s1 中的传奇文化</Chinese>
 		<French>Legendary culture in %s1</French>
 	</TEXT>
 	<TEXT>
@@ -4183,9 +4183,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_ORTHODOX_CATHEDRALS</Tag>
-		<English>Orthdox cathedrals：%D1/%D2</English>
+		<English>Orthdox cathedrals：%d1/%d2</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Orthdox cathedrals：%D1/%D2</Chinese>
+		<Chinese>Orthdox cathedrals：%d1/%d2</Chinese>
 		<French>Orthodox cathedrals: %d1 / %d2</French>
 	</TEXT>
 	<TEXT>
@@ -4232,9 +4232,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_PIRACY</Tag>
-		<English>来自海盗的黄金 %d1/%d2</English>
+		<English>来自海盗的黄金 %d1 / %d2</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>来自海盗的黄金 %d1/%d2</Chinese>
+		<Chinese>来自海盗的黄金 %d1 / %d2</Chinese>
 		<French>Gold from piracy: %d1 / %d2</French>
 	</TEXT>
 	<TEXT>
@@ -4554,9 +4554,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_WE_LOVE_RULER_TURNS</Tag>
-		<English>“我们爱国王”日的回合数：d1/%d2</English>
+		<English>“我们爱国王”日的回合数：%d1/%d2</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>“我们爱国王”日的回合数：d1/%d2</Chinese>
+		<Chinese>“我们爱国王”日的回合数：%d1/%d2</Chinese>
 		<French>Turns of "We Love the King" days: %d1 / %d2</French>
 	</TEXT>
 	<TEXT>

@@ -10570,7 +10570,7 @@ const wchar* CvCivilizationInfo::getAdjectiveKey() const
 {
 	return m_szAdjectiveKey;
 }
-
+ 
 // Leoreth
 const wchar* CvCivilizationInfo::getPaganReligionName(uint uiForm)
 {

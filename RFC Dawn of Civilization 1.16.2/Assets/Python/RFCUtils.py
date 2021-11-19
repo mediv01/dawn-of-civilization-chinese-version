@@ -2183,6 +2183,12 @@ class RFCUtils:
             fullKey += u"_TITLE"
         elif iGameSpeed < 2:
             if (gc.getDefineINT("PYTHON_FIX_UHV_TEXTBUG_IN_CHINESE") > 0):
+                speedtext = ""
+                if iGameSpeed == 1:
+                    speedtext = "EPIC"
+                elif iGameSpeed == 0:
+                    speedtext = "MARATHON"
+                fullKey += "_" + speedtext
                 pass
             else:
                 fullKey += "_" + gc.getGameSpeedInfo(iGameSpeed).getText().upper()
@@ -2222,6 +2228,12 @@ class RFCUtils:
             fullKey += "_TITLE"
         elif iGameSpeed < 2:
             if (gc.getDefineINT("PYTHON_FIX_URV_TEXTBUG_IN_CHINESE") > 0):
+                speedtext = ""
+                if iGameSpeed == 1:
+                    speedtext = "EPIC"
+                elif iGameSpeed == 0:
+                    speedtext = "MARATHON"
+                fullKey += "_" + speedtext
                 pass
             else:
                 fullKey += "_" + gc.getGameSpeedInfo(iGameSpeed).getText().upper()
