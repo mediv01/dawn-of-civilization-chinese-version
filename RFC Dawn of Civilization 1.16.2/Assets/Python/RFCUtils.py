@@ -2201,7 +2201,7 @@ class RFCUtils:
 
     def getReligiousGoalText(self, iReligion, iGoal, bTitle=False):
         iGameSpeed = gc.getGame().getGameSpeedType()
-
+        religionKey = ""
         if iReligion < iNumReligions:
             ReligionText = {iJudaism: "JUD",
                             iOrthodoxy: "ORT",
