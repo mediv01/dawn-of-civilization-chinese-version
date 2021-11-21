@@ -1,0 +1,1841 @@
+2021-11-21 17:31:44 [-3000]  T[0]  Check resurrection
+2021-11-21 17:31:44 [-3000]  T[0]  在公元-3000年，独立城邦Yerushalayim已经建立于美索不达米亚地区，坐标： (73,38)
+2021-11-21 17:31:44 [-3000]  T[0]  在公元-3000年，独立城邦Shushan已经建立于波斯地区，坐标： (79,40)
+2021-11-21 17:31:44 [-2700]  T[10]  Check resurrection
+2021-11-21 17:31:44 [-2400]  T[20]  Check resurrection
+2021-11-21 17:31:44 [-2130]  T[29]  [China] Start Birth
+2021-11-21 17:31:44 [-2100]  T[30]  Check resurrection
+2021-11-21 17:31:44 [-2000]  T[34]  在公元-2000年，独立城邦Afrasiyab已经建立于波斯地区，坐标： (85,47)
+2021-11-21 17:31:44 [-1975]  T[35]  在公元-1975年，蛮族赫梯 已经入侵安纳托利亚地区，坐标范围：(68,42) To (74,45)
+2021-11-21 17:31:44 [-1900]  T[38]  在公元-1900年，独立城邦ZhongDu已经建立于中国地区，坐标： (103,47)
+2021-11-21 17:31:44 [-1900]  T[38]  在公元-1900年，独立城邦DongYi已经建立于中国地区，坐标： (106,45)
+2021-11-21 17:31:44 [-1900]  T[38]  在公元-1900年，独立城邦GuSu已经建立于中国地区，坐标： (107,42)
+2021-11-21 17:31:44 [-1900]  T[38]  在公元-1900年，独立城邦MiaoRen已经建立于中国地区，坐标： (104,42)
+2021-11-21 17:31:44 [-1850]  T[40]  Check resurrection
+2021-11-21 17:31:44 [-1700]  T[46]  在公元-1700年，独立城邦Constantinople已经建立于巴尔干地区，坐标： (68,45)
+2021-11-21 17:31:44 [-1650]  T[48]  [Greece] Start Birth
+2021-11-21 17:31:44 [-1600]  T[50]  Check resurrection
+2021-11-21 17:31:44 [-1575]  T[51]  在公元-1575年，蛮族赫梯 已经入侵安纳托利亚地区，坐标范围：(68,42) To (74,45)
+2021-11-21 17:31:44 [-1575]  T[51]  在公元-1575年，蛮族埃兰 已经入侵波斯地区，坐标范围：(81,37) To (87,45)
+2021-11-21 17:31:44 [-1550]  T[52]  [India] Start Birth
+2021-11-21 17:31:44 [-1525]  T[53]  [Harappa] iHarappa lRemovedCities append: ( 87,40 )
+2021-11-21 17:31:44 [-1525]  T[53]  [Harappa] RazeMinorCities lRemovedCities append: ( 86,38 )
+2021-11-21 17:31:44 [-1525]  T[53]  [Harappa] RazeMinorCities lRemovedCities append: ( 87,42 )
+2021-11-21 17:31:44 [-1525]  T[53]  [Harappa] RazeMinorCities lRemovedCities append: ( 87,36 )
+2021-11-21 17:31:44 [-1525]  T[53]  [Harappa] Start fall down
+2021-11-21 17:31:44 [-1525]  T[53]  在公元-1525年，独立城邦Indraprastha已经建立于印度地区，坐标： (90,40)
+2021-11-21 17:31:44 [-1375]  T[59]  在公元-1375年，蛮族埃兰 已经入侵波斯地区，坐标范围：(81,37) To (87,45)
+2021-11-21 17:31:44 [-1350]  T[60]  Check resurrection
+2021-11-21 17:31:44 [-1250]  T[64]  [Phoenicia] Start Birth
+2021-11-21 17:31:44 [-1175]  T[67]  在公元-1175年，蛮族赫梯 已经入侵安纳托利亚地区，坐标范围：(68,42) To (74,45)
+2021-11-21 17:31:44 [-1175]  T[67]  在公元-1175年，蛮族埃兰 已经入侵波斯地区，坐标范围：(81,37) To (87,45)
+2021-11-21 17:31:44 [-1100]  T[70]  Check resurrection
+2021-11-21 17:31:44 [-1050]  T[72]  [Polynesia] Start Birth
+2021-11-21 17:33:52 [-1000]  T[74]  在公元-1000年，独立城邦BaiYue已经建立于中国地区，坐标： (104,39)
+2021-11-21 17:33:52 [-1000]  T[74]  在公元-1000年，独立城邦Ankuwash已经建立于安纳托利亚地区，坐标： (72,44)
+2021-11-21 17:33:52 [-910]  T[80]  Check resurrection
+2021-11-21 17:33:52 [-910]  T[80]  在公元-910年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:33:52 [-880]  T[82]  [Carthage]  Start settle in Qart-Hadasht
+2021-11-21 17:33:52 [-880]  T[82]  [Persia] Start Birth
+2021-11-21 17:33:52 [-865]  T[83]  在公元-865年，蛮族赫梯 已经入侵安纳托利亚地区，坐标范围：(68,42) To (74,45)
+2021-11-21 17:33:52 [-850]  T[84]  [Greece] Start Early Colonists
+2021-11-21 17:33:52 [-820]  T[86]  在公元-820年，蛮族斯泰基 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:33:52 [-805]  T[87]  在公元-805年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:33:52 [-790]  T[88]  [Rome] Start Birth
+2021-11-21 17:33:52 [-760]  T[90]  Check resurrection
+2021-11-21 17:33:52 [-760]  T[90]  在公元-760年，独立城邦Melpum已经建立于意大利地区，坐标： (59,47)
+2021-11-21 17:33:52 [-745]  T[91]  在公元-745年，独立城邦Simiyan hoton已经建立于朝鲜半岛地区，坐标： (107,48)
+2021-11-21 17:33:52 [-700]  T[94]  [Carthage] Start Early Colonists
+2021-11-21 17:33:52 [-700]  T[94]  在公元-700年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:33:52 [-700]  T[94]  在公元-700年，蛮族斯泰基 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:33:52 [-610]  T[100]  Check resurrection
+2021-11-21 17:33:52 [-595]  T[101]  [Rome] Start Early Colonists
+2021-11-21 17:33:52 [-595]  T[101]  在公元-595年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:33:52 [-580]  T[102]  在公元-580年，蛮族斯泰基 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:33:52 [-565]  T[103]  在公元-565年，蛮族诺斯 已经入侵!，坐标范围：(50,49) To (61,55)
+2021-11-21 17:33:52 [-490]  T[108]  在公元-490年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:33:52 [-460]  T[110]  Check resurrection
+2021-11-21 17:33:52 [-460]  T[110]  在公元-460年，蛮族斯泰基 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:33:52 [-430]  T[112]  [Maya] Start Birth
+2021-11-21 17:33:52 [-415]  T[113]  [Greece]  Start AI WAR with Babylonia
+2021-11-21 17:33:52 [-415]  T[113]  [Greece]  Start AI WAR with Egypt
+2021-11-21 17:33:52 [-415]  T[113]  [Greece]  Start AI WAR with Persia
+2021-11-21 17:33:52 [-400]  T[114]  [Rome] Start Early Colonists
+2021-11-21 17:33:52 [-385]  T[115]  在公元-385年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:33:52 [-340]  T[118]  在公元-340年，蛮族斯泰基 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:33:52 [-325]  T[119]  [Tamils] Start Birth
+2021-11-21 17:33:52 [-325]  T[119]  [Ethiopia] Start Birth
+2021-11-21 17:33:52 [-310]  T[120]  Check resurrection
+2021-11-21 17:33:52 [-295]  T[121]   波斯文明即将崩溃！
+2021-11-21 17:33:52 [-295]  T[121]  在公元-295年，独立城邦Burdigala已经建立于欧洲地区，坐标： (53,48)
+2021-11-21 17:33:52 [-280]  T[122]  在公元-280年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:33:52 [-265]  T[123]  [Greece] is ready to Collapse to Core
+2021-11-21 17:33:52 [-265]  T[123]  在公元-265年，蛮族诺斯 已经入侵!，坐标范围：(50,49) To (61,55)
+2021-11-21 17:33:52 [-265]  T[123]  在公元-265年，蛮族吐蕃 已经入侵西藏地区，坐标范围：(92,41) To (99,45)
+2021-11-21 17:36:00 [-250]  T[124]  在公元-250年，独立城邦Danibaan已经建立于中美洲地区，坐标： (19,35)
+2021-11-21 17:36:00 [-235]  T[125]  [Rome]  Start AI WAR with Carthage
+2021-11-21 17:36:00 [-235]  T[125]  [Carthage]  Start AI WAR with Rome
+2021-11-21 17:36:00 [-220]  T[126]  在公元-220年，蛮族斯泰基 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:36:00 [-175]  T[129]  在公元-175年，蛮族匈奴 已经入侵中亚地区，坐标范围：(94,48) To (107,54)
+2021-11-21 17:36:00 [-175]  T[129]  在公元-175年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:36:00 [-160]  T[130]  Check resurrection
+2021-11-21 17:36:00 [-160]  T[130]  [Rome]  Start AI WAR with Greece
+2021-11-21 17:36:00 [-145]  T[131]  在公元-145年，蛮族帕提亚 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:36:00 [-130]  T[132]  在公元-130年，蛮族吐蕃 已经入侵西藏地区，坐标范围：(92,41) To (99,45)
+2021-11-21 17:36:00 [-115]  T[133]  在公元-115年，蛮族日耳曼 已经入侵欧洲地区，坐标范围：(50,45) To (63,52)
+2021-11-21 17:36:00 [-115]  T[133]  [Rome]  Start AI WAR with Greece
+2021-11-21 17:36:00 [-100]  T[134]  在公元-100年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,31) To (67,35)
+2021-11-21 17:36:00 [-100]  T[134]  在公元-100年，独立城邦Dunhuang已经建立于中亚地区，坐标： (95,47)
+2021-11-21 17:36:00 [-100]  T[134]  [Barbarians]  Start AI WAR with Rome
+2021-11-21 17:36:00 [-85]  T[135]  [Korea] Start Birth
+2021-11-21 17:36:00 [-85]  T[135]  在公元-85年，蛮族匈奴 已经入侵中亚地区，坐标范围：(94,48) To (107,54)
+2021-11-21 17:36:00 [-70]  T[136]   希腊文明[F]即将崩溃！
+2021-11-21 17:36:00 [-70]  T[136]  在公元-70年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:36:00 [-70]  T[136]  [Rome]  Start AI WAR with Celtia
+2021-11-21 17:36:00 [-55]  T[137]  在公元-55年，蛮族日耳曼 已经入侵欧洲地区，坐标范围：(64,49) To (69,55)
+2021-11-21 17:36:00 [-55]  T[137]  在公元-55年，蛮族帕提亚 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:36:00 [-10]  T[140]  Check resurrection
+2021-11-21 17:36:00 [-10]  T[140]  [Rome]  Start AI WAR with Egypt
+2021-11-21 17:36:00 [5]  T[141]  在公元5年，蛮族匈奴 已经入侵中亚地区，坐标范围：(94,48) To (107,54)
+2021-11-21 17:36:00 [5]  T[141]  在公元5年，蛮族吐蕃 已经入侵西藏地区，坐标范围：(92,41) To (99,45)
+2021-11-21 17:36:00 [20]  T[142]  在公元20年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,31) To (67,35)
+2021-11-21 17:36:00 [35]  T[143]  在公元35年，蛮族诺斯 已经入侵!，坐标范围：(50,49) To (61,55)
+2021-11-21 17:36:00 [35]  T[143]  在公元35年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:36:00 [35]  T[143]  在公元35年，蛮族日耳曼 已经入侵欧洲地区，坐标范围：(50,45) To (63,52)
+2021-11-21 17:36:00 [35]  T[143]  在公元35年，蛮族帕提亚 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:36:00 [95]  T[147]  在公元95年，蛮族匈奴 已经入侵中亚地区，坐标范围：(94,48) To (107,54)
+2021-11-21 17:36:00 [95]  T[147]  在公元95年，独立城邦Tolan已经建立于中美洲地区，坐标： (18,37)
+2021-11-21 17:36:00 [95]  T[147]  在公元95年，独立城邦Sana'a已经建立于阿拉伯地区，坐标： (76,30)
+2021-11-21 17:36:00 [110]  T[148]   埃及文明即将崩溃！
+2021-11-21 17:36:00 [110]  T[148]  [Egypt] is ready to Complete Collapse
+2021-11-21 17:36:00 [110]  T[148]  在公元110年，独立城邦Pagan已经建立于中南半岛地区，坐标： (98,36)
+2021-11-21 17:36:00 [125]  T[149]  在公元125年，蛮族日耳曼 已经入侵欧洲地区，坐标范围：(64,49) To (69,55)
+2021-11-21 17:36:00 [125]  T[149]  在公元125年，蛮族帕提亚 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:36:00 [140]  T[150]  Check resurrection
+2021-11-21 17:36:00 [140]  T[150]  在公元140年，蛮族吐蕃 已经入侵西藏地区，坐标范围：(92,41) To (99,45)
+2021-11-21 17:36:00 [140]  T[150]  在公元140年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:36:00 [140]  T[150]  在公元140年，蛮族贵霜 已经入侵波斯地区，坐标范围：(84,40) To (89,43)
+2021-11-21 17:38:08 [170]  T[152]  在公元170年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,31) To (67,35)
+2021-11-21 17:38:08 [185]  T[153]  在公元185年，蛮族匈奴 已经入侵中亚地区，坐标范围：(94,48) To (107,54)
+2021-11-21 17:38:08 [185]  T[153]  在公元185年，蛮族日耳曼 已经入侵欧洲地区，坐标范围：(50,45) To (63,52)
+2021-11-21 17:38:08 [200]  T[154]  在公元200年，独立城邦Barbara已经建立于埃塞俄比亚地区，坐标： (75,28)
+2021-11-21 17:38:08 [215]  T[155]  在公元215年，蛮族帕提亚 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:38:08 [245]  T[157]  在公元245年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:38:08 [275]  T[159]  在公元275年，蛮族匈奴 已经入侵中亚地区，坐标范围：(94,48) To (107,54)
+2021-11-21 17:38:08 [275]  T[159]  在公元275年，蛮族吐蕃 已经入侵西藏地区，坐标范围：(92,41) To (99,45)
+2021-11-21 17:38:08 [290]  T[160]  Check resurrection
+2021-11-21 17:38:08 [305]  T[161]  [Byzantium] Start Birth
+2021-11-21 17:38:08 [305]  T[161]  在公元305年，蛮族日耳曼 已经入侵欧洲地区，坐标范围：(64,49) To (69,55)
+2021-11-21 17:38:08 [305]  T[161]  在公元305年，蛮族帕提亚 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:38:08 [305]  T[161]  在公元305年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,31) To (67,35)
+2021-11-21 17:38:08 [335]  T[163]  在公元335年，蛮族诺斯 已经入侵!，坐标范围：(50,49) To (61,55)
+2021-11-21 17:38:08 [335]  T[163]  在公元335年，蛮族日耳曼 已经入侵欧洲地区，坐标范围：(50,45) To (63,52)
+2021-11-21 17:38:08 [335]  T[163]  在公元335年，蛮族匈 已经入侵欧洲地区，坐标范围：(55,49) To (65,53)
+2021-11-21 17:38:08 [350]  T[164]  在公元350年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:38:08 [365]  T[165]  在公元365年，蛮族匈奴 已经入侵中亚地区，坐标范围：(94,48) To (107,54)
+2021-11-21 17:38:08 [395]  T[167]  在公元395年，蛮族帕提亚 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:38:08 [410]  T[168]  在公元410年，蛮族蓝突厥（阿史那突厥） 已经入侵中亚地区，坐标范围：(91,50) To (107,54)
+2021-11-21 17:38:08 [410]  T[168]  在公元410年，蛮族吐蕃 已经入侵西藏地区，坐标范围：(92,41) To (99,45)
+2021-11-21 17:38:08 [410]  T[168]  在公元410年，蛮族匈 已经入侵欧洲地区，坐标范围：(55,49) To (65,53)
+2021-11-21 17:38:08 [440]  T[170]   腓尼基文明即将崩溃！
+2021-11-21 17:38:08 [440]  T[170]  [Carthage] is ready to Complete Collapse
+2021-11-21 17:38:08 [440]  T[170]  Check resurrection
+2021-11-21 17:38:08 [440]  T[170]  在公元440年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,31) To (67,35)
+2021-11-21 17:38:08 [455]  T[171]  在公元455年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:38:08 [485]  T[173]   罗马文明[F]即将崩溃！
+2021-11-21 17:38:08 [485]  T[173]  [Rome] is ready to Complete Collapse
+2021-11-21 17:38:08 [485]  T[173]  [China] is ready to Collapse to Core
+2021-11-21 17:38:08 [485]  T[173]  在公元485年，蛮族蓝突厥（阿史那突厥） 已经入侵中亚地区，坐标范围：(91,50) To (107,54)
+2021-11-21 17:38:08 [485]  T[173]  在公元485年，蛮族匈 已经入侵欧洲地区，坐标范围：(55,49) To (65,53)
+2021-11-21 17:38:08 [485]  T[173]  在公元485年，蛮族帕提亚 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:38:08 [485]  T[173]  在公元485年，蛮族加纳 已经入侵!，坐标范围：(48,22) To (63,29)
+2021-11-21 17:38:08 [500]  T[174]  [Japan] Start Birth
+2021-11-21 17:38:08 [515]  T[175]  [Vikings] Start Birth
+2021-11-21 17:38:08 [515]  T[175]  [Turkestan] Start Birth
+2021-11-21 17:38:08 [530]  T[176]  [China] is ready to Collapse to Core
+2021-11-21 17:38:08 [545]  T[177]  [China] is ready to Collapse to Core
+2021-11-21 17:38:08 [545]  T[177]  在公元545年，蛮族吐蕃 已经入侵西藏地区，坐标范围：(92,41) To (99,45)
+2021-11-21 17:38:08 [560]  T[178]  在公元560年，蛮族蓝突厥（阿史那突厥） 已经入侵中亚地区，坐标范围：(91,50) To (107,54)
+2021-11-21 17:38:08 [560]  T[178]  在公元560年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:38:08 [575]  T[179]  在公元575年，蛮族帕提亚 已经入侵波斯地区，坐标范围：(79,41) To (84,49)
+2021-11-21 17:38:08 [575]  T[179]  在公元575年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,31) To (67,35)
+2021-11-21 17:40:16 [590]  T[180]  Check resurrection
+2021-11-21 17:40:16 [590]  T[180]  [Tamils] starting plague with iWorstHealth: -12
+2021-11-21 17:40:16 [590]  T[180]  [Tamils]  is spreading plague
+2021-11-21 17:40:16 [590]  T[180]  Start Plague
+2021-11-21 17:40:16 [600]  T[181]  [Tamils]  plague is spreading through trade route
+2021-11-21 17:40:16 [600]  T[181]  [China]  is spreading plague
+2021-11-21 17:40:16 [600]  T[181]  [Tamils]  plague is spreading between city
+2021-11-21 17:40:16 [600]  T[181]  [Arabia] Start Birth
+2021-11-21 17:40:16 [610]  T[182]  [China]  plague is spreading between city
+2021-11-21 17:40:16 [610]  T[182]  [India]  is spreading plague
+2021-11-21 17:40:16 [610]  T[182]  [India]  is infecting near city
+2021-11-21 17:40:16 [610]  T[182]  [India]  is infecting near city
+2021-11-21 17:40:16 [610]  T[182]  [Tibet] Start Birth
+2021-11-21 17:40:16 [620]  T[183]  [Independents]  is spreading plague
+2021-11-21 17:40:16 [620]  T[183]  [Independents]  is infecting near city
+2021-11-21 17:40:16 [620]  T[183]  [Independents]  is infecting near city
+2021-11-21 17:40:16 [620]  T[183]  [Independents]  is infecting near city
+2021-11-21 17:40:16 [620]  T[183]  [Independents]  is infecting near city
+2021-11-21 17:40:16 [620]  T[183]  [China]  plague is spreading between city
+2021-11-21 17:40:16 [620]  T[183]  [India]  plague is spreading through trade route
+2021-11-21 17:40:16 [620]  T[183]  [Byzantium]  is spreading plague
+2021-11-21 17:40:16 [620]  T[183]  [India]  plague is spreading between city
+2021-11-21 17:40:16 [620]  T[183]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:40:16 [620]  T[183]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:40:16 [620]  T[183]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:40:16 [620]  T[183]  [Byzantium]  plague is spreading between city
+2021-11-21 17:40:16 [620]  T[183]  [Barbarians]  is spreading plague
+2021-11-21 17:40:16 [620]  T[183]  [Barbarians]  is infecting near city
+2021-11-21 17:40:16 [620]  T[183]  [Korea]  is spreading plague
+2021-11-21 17:40:16 [620]  T[183]  [Korea]  is infecting near city
+2021-11-21 17:40:16 [620]  T[183]  [Independents2]  is spreading plague
+2021-11-21 17:40:16 [620]  T[183]  [Independents2]  is infecting near city
+2021-11-21 17:40:16 [620]  T[183]  [Independents]  plague is spreading through trade route
+2021-11-21 17:40:16 [620]  T[183]  [Independents2]  plague is spreading through trade route
+2021-11-21 17:40:16 [620]  T[183]  [Independents2]  plague is spreading between city
+2021-11-21 17:40:16 [620]  T[183]  在公元620年，蛮族蓝突厥（阿史那突厥） 已经入侵中亚地区，坐标范围：(91,50) To (107,54)
+2021-11-21 17:40:16 [630]  T[184]  [India]  plague is spreading through trade route
+2021-11-21 17:40:16 [630]  T[184]  [Ethiopia]  is spreading plague
+2021-11-21 17:40:16 [630]  T[184]  [India]  plague is spreading through trade route
+2021-11-21 17:40:16 [630]  T[184]  [India]  plague is spreading between city
+2021-11-21 17:40:16 [630]  T[184]  [Ethiopia]  plague is spreading between city
+2021-11-21 17:40:16 [630]  T[184]  [Korea]  plague is spreading through trade route
+2021-11-21 17:40:16 [630]  T[184]  [Korea]  plague is spreading through trade route
+2021-11-21 17:40:16 [630]  T[184]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:40:16 [630]  T[184]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:40:16 [630]  T[184]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:40:16 [630]  T[184]  [Byzantium]  plague is spreading between city
+2021-11-21 17:40:16 [630]  T[184]  [Indonesia] Start Birth
+2021-11-21 17:40:16 [640]  T[185]  [India]  plague is spreading through trade route
+2021-11-21 17:40:16 [640]  T[185]  [India]  plague is spreading between city
+2021-11-21 17:40:16 [640]  T[185]  [Ethiopia]  plague is spreading between city
+2021-11-21 17:40:16 [640]  T[185]  [Korea]  plague is spreading through trade route
+2021-11-21 17:40:16 [640]  T[185]  [Korea]  plague is spreading through trade route
+2021-11-21 17:40:16 [640]  T[185]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:40:16 [640]  T[185]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:40:16 [640]  T[185]  [Byzantium]  plague is spreading between city
+2021-11-21 17:40:16 [640]  T[185]  在公元640年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:40:16 [650]  T[186]  [India]  plague is spreading between city
+2021-11-21 17:40:16 [650]  T[186]  [Korea]  plague is spreading through trade route
+2021-11-21 17:40:16 [650]  T[186]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:40:16 [650]  T[186]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:40:16 [650]  T[186]  [Byzantium]  plague is spreading between city
+2021-11-21 17:40:16 [650]  T[186]  在公元650年，蛮族吐蕃 已经入侵西藏地区，坐标范围：(92,41) To (99,45)
+2021-11-21 17:40:16 [660]  T[187]  [India]  plague is spreading through trade route
+2021-11-21 17:40:16 [660]  T[187]  [India]  plague is spreading between city
+2021-11-21 17:40:16 [660]  T[187]  [Tamils]  plague is spreading through trade route
+2021-11-21 17:40:16 [660]  T[187]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:40:16 [660]  T[187]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:40:16 [660]  T[187]  [Byzantium]  plague is spreading between city
+2021-11-21 17:40:16 [670]  T[188]  在公元670年，蛮族蓝突厥（阿史那突厥） 已经入侵中亚地区，坐标范围：(91,50) To (107,54)
+2021-11-21 17:40:16 [670]  T[188]  在公元670年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,31) To (67,35)
+2021-11-21 17:40:16 [680]  T[189]  在公元680年，蛮族加纳 已经入侵!，坐标范围：(48,22) To (63,29)
+2021-11-21 17:40:16 [690]  T[190]  [Moors] Start Birth
+2021-11-21 17:40:16 [690]  T[190]  Check resurrection
+2021-11-21 17:40:16 [700]  T[191]  [Spain] Start Birth
+2021-11-21 17:40:16 [700]  T[191]  在公元700年，蛮族阿瓦尔 已经入侵欧洲地区，坐标范围：(64,45) To (69,49)
+2021-11-21 17:40:16 [710]  T[192]  在公元710年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:40:16 [720]  T[193]  在公元720年，蛮族蓝突厥（阿史那突厥） 已经入侵中亚地区，坐标范围：(91,50) To (107,54)
+2021-11-21 17:40:16 [730]  T[194]  [France] Start Birth
+2021-11-21 17:40:16 [730]  T[194]  在公元730年，独立城邦Tiwanaku已经建立于秘鲁地区，坐标： (30,20)
+2021-11-21 17:40:16 [740]  T[195]  在公元740年，蛮族吐蕃 已经入侵西藏地区，坐标范围：(92,41) To (99,45)
+2021-11-21 17:40:16 [760]  T[197]  在公元760年，蛮族阿瓦尔 已经入侵欧洲地区，坐标范围：(64,45) To (69,49)
+2021-11-21 17:40:16 [760]  T[197]  在公元760年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,31) To (67,35)
+2021-11-21 17:40:16 [770]  T[198]  在公元770年，蛮族蓝突厥（阿史那突厥） 已经入侵中亚地区，坐标范围：(91,50) To (107,54)
+2021-11-21 17:40:16 [780]  T[199]  [高棉] Start Birth
+2021-11-21 17:40:16 [780]  T[199]  在公元780年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:40:16 [790]  T[200]  Check resurrection
+2021-11-21 17:40:16 [800]  T[201]  [England] Start Birth
+2021-11-21 17:40:16 [800]  T[201]  在公元800年，独立城邦Vindobona已经建立于欧洲地区，坐标： (62,49)
+2021-11-21 17:42:24 [820]  T[203]  [神圣罗马] Start Birth
+2021-11-21 17:42:24 [820]  T[203]  在公元820年，蛮族蓝突厥（阿史那突厥） 已经入侵中亚地区，坐标范围：(91,50) To (107,54)
+2021-11-21 17:42:24 [820]  T[203]  在公元820年，蛮族阿瓦尔 已经入侵欧洲地区，坐标范围：(64,45) To (69,49)
+2021-11-21 17:42:24 [830]  T[204]  在公元830年，蛮族吐蕃 已经入侵西藏地区，坐标范围：(92,41) To (99,45)
+2021-11-21 17:42:24 [830]  T[204]  在公元830年，独立城邦Hamburg已经建立于欧洲地区，坐标： (59,54)
+2021-11-21 17:42:24 [840]  T[205]  [Russia] Start Birth
+2021-11-21 17:42:24 [840]  T[205]  在公元840年，蛮族加纳 已经入侵!，坐标范围：(48,22) To (63,29)
+2021-11-21 17:42:24 [850]  T[206]  在公元850年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:42:24 [850]  T[206]  在公元850年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,31) To (67,35)
+2021-11-21 17:42:24 [870]  T[208]  在公元870年，蛮族蓝突厥（阿史那突厥） 已经入侵中亚地区，坐标范围：(91,50) To (107,54)
+2021-11-21 17:42:24 [870]  T[208]  在公元870年，独立城邦Hanoi已经建立于中南半岛地区，坐标： (101,37)
+2021-11-21 17:42:24 [870]  T[208]  [Tamils]  Start AI WAR with Indonesia
+2021-11-21 17:42:24 [880]  T[209]  [Vikings] Start give Raiders
+2021-11-21 17:42:24 [880]  T[209]  在公元880年，蛮族阿瓦尔 已经入侵欧洲地区，坐标范围：(64,45) To (69,49)
+2021-11-21 17:42:24 [880]  T[209]  在公元880年，独立城邦Buda已经建立于欧洲地区，坐标： (65,48)
+2021-11-21 17:42:24 [890]  T[210]   印度尼西亚文明即将崩溃！
+2021-11-21 17:42:24 [890]  T[210]  Check resurrection
+2021-11-21 17:42:24 [900]  T[211]  在公元900年，独立城邦Tucume已经建立于哥伦比亚地区，坐标： (24,26)
+2021-11-21 17:42:24 [900]  T[211]  在公元900年，独立城邦Chan Chan已经建立于秘鲁地区，坐标： (25,23)
+2021-11-21 17:42:24 [900]  T[211]  在公元900年，独立城邦Kyiv已经建立于俄罗斯地区，坐标： (69,52)
+2021-11-21 17:42:24 [900]  T[211]  在公元900年，独立城邦Muqdisho已经建立于埃塞俄比亚地区，坐标： (74,25)
+2021-11-21 17:44:32 [910]  T[212]  [Indonesia] RazeMinorCities lRemovedCities append: ( 101,29 )
+2021-11-21 17:44:32 [920]  T[213]  在公元920年，蛮族女真 已经入侵中亚地区，坐标范围：(94,48) To (107,54)
+2021-11-21 17:44:32 [920]  T[213]  在公元920年，蛮族吐蕃 已经入侵西藏地区，坐标范围：(92,41) To (99,45)
+2021-11-21 17:44:32 [920]  T[213]  在公元920年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:44:32 [930]  T[214]  在公元930年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 17:44:32 [940]  T[215]  在公元940年，蛮族阿瓦尔 已经入侵欧洲地区，坐标范围：(64,45) To (69,49)
+2021-11-21 17:44:32 [970]  T[218]  [Mali] Start Birth
+2021-11-21 17:46:40 [980]  T[219]  [Vikings] Start give Raiders
+2021-11-21 17:46:40 [980]  T[219]  在公元980年，蛮族女真 已经入侵中亚地区，坐标范围：(94,48) To (107,54)
+2021-11-21 17:46:40 [990]  T[220]  [China] is ready to Collapse to Core
+2021-11-21 17:46:40 [990]  T[220]   阿拉伯文明[F]即将崩溃！
+2021-11-21 17:46:40 [990]  T[220]  [Arabia] is ready to Complete Collapse
+2021-11-21 17:46:40 [990]  T[220]  Check resurrection
+2021-11-21 17:46:40 [990]  T[220]  [Egypt] :check resurrection
+2021-11-21 17:46:40 [990]  T[220]  [Egypt] :city cannot resurrection: city not in minor, now in Arabia
+2021-11-21 17:46:40 [990]  T[220]  [Egypt] :Respawn Roll Prob: 28
+2021-11-21 17:46:40 [990]  T[220]  [Egypt] :tResurrectionProb: 25
+2021-11-21 17:46:40 [990]  T[220]  在公元990年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:46:40 [990]  T[220]  [Turkestan]  Start AI WAR with Arabia
+2021-11-21 17:46:40 [1000]  T[221]  [China] is ready to Collapse to Core
+2021-11-21 17:46:40 [1000]  T[221]  [Poland] Start Birth
+2021-11-21 17:46:40 [1000]  T[221]  在公元1000年，蛮族阿瓦尔 已经入侵欧洲地区，坐标范围：(64,45) To (69,49)
+2021-11-21 17:46:40 [1000]  T[221]  在公元1000年，蛮族加纳 已经入侵!，坐标范围：(48,22) To (63,29)
+2021-11-21 17:46:40 [1000]  T[221]  在公元1000年，独立城邦Quelimane已经建立于埃塞俄比亚地区，坐标： (71,17)
+2021-11-21 17:46:40 [1010]  T[222]  在公元1010年，蛮族吐蕃 已经入侵西藏地区，坐标范围：(92,41) To (99,45)
+2021-11-21 17:46:40 [1020]  T[223]  在公元1020年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 17:46:40 [1030]  T[224]  [Korea] is ready to Collapse to Core
+2021-11-21 17:46:40 [1040]  T[225]  [China] is ready to Collapse to Core
+2021-11-21 17:46:40 [1040]  T[225]  在公元1040年，蛮族女真 已经入侵中亚地区，坐标范围：(94,48) To (107,54)
+2021-11-21 17:46:40 [1060]  T[227]  在公元1060年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:46:40 [1080]  T[229]  [Vikings] Start give Raiders
+2021-11-21 17:46:40 [1090]  T[230]  Check resurrection
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] :check resurrection
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] :do resurrection when city in minor
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 0 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  鞣毛制造( Tanning )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 1 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  采矿( Mining )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 2 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  制陶术( Pottery )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 3 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  畜牧( Pastoralism )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 4 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  农业( Agriculture )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 5 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  神话( Mythology )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 6 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  航行术( Sailing )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 7 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  金属熔炼( Smelting )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 8 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  石工术( Masonry )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 9 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  简单机械( Leverage )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 10 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  私有制( Property )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 11 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  宗教仪式( Ceremony )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 12 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  占卜学( Divination )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 13 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  航海( Seafaring )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 14 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  合金( Alloys )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 15 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  建筑构造学( Construction )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 16 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  骑术( Riding )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 17 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  算术( Arithmetics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 18 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  文字( Writing )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 19 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  历法( Calendar )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 20 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  造船( Shipbuilding )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 21 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  铁器( Bloomery )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 22 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  水泥( Cement )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 23 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  数学( Mathematics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 24 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  契约精神( Contract )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 25 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  文献( Literature )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 26 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  祭司制度( Priesthood )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 27 iThreshold:7  iCount:10
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  导航学( Navigation )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 28 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  指挥学( Generalship )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 29 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  工程学( Engineering )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 30 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  美学( Aesthetics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 31 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  货币制度( Currency )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 32 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  律法( Law )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 33 iThreshold:7  iCount:10
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  哲学( Philosophy )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 34 iThreshold:7  iCount:10
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  传统医学( Medicine )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 35 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  贵族( Nobility )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 36 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  炼钢( Steel )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 37 iThreshold:7  iCount:11
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  建筑( Architecture )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 38 iThreshold:7  iCount:10
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  手工业( Artisanry )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 39 iThreshold:7  iCount:10
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  政治学( Politics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 40 iThreshold:7  iCount:8
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  奖学金制度( Scholarship )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 41 iThreshold:7  iCount:8
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  伦理学( Ethics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 42 iThreshold:7  iCount:7    封建制度( Feudalism )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 43 iThreshold:7  iCount:7    防御工事( Fortification )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 44 iThreshold:7  iCount:9
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Resurrection Tech:  机械( Machinery )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 45 iThreshold:7  iCount:5    炼金术( Alchemy )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 46 iThreshold:7  iCount:6    行会( Guilds )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 47 iThreshold:7  iCount:4    文官制度( Civil_service )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 48 iThreshold:7  iCount:6    神学( Theology )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 49 iThreshold:7  iCount:1    公社( Commune )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 50 iThreshold:7  iCount:0    作物轮作术( Crop_rotation )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 51 iThreshold:7  iCount:0    造纸术( Paper )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 52 iThreshold:7  iCount:4    罗盘( Compass )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 53 iThreshold:7  iCount:0    艺术赞助( Patronage )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 54 iThreshold:7  iCount:1    教育学( Education )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 55 iThreshold:7  iCount:1    宗教教条( Doctrine )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 56 iThreshold:7  iCount:0    火药( Gunpowder )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 57 iThreshold:7  iCount:0    公司制( Companies )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 58 iThreshold:7  iCount:0    金融学( Finance )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 59 iThreshold:7  iCount:0    地图学( Cartography )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 60 iThreshold:7  iCount:0    人文科学( Humanities )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 61 iThreshold:7  iCount:0    印刷术( Printing )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 62 iThreshold:7  iCount:0    司法( Judiciary )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 63 iThreshold:7  iCount:0    热兵器军队( Firearms )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 64 iThreshold:7  iCount:0    物流( Logistics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 65 iThreshold:7  iCount:0    地理探索( Exploration )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 66 iThreshold:7  iCount:0    光学( Optics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 67 iThreshold:7  iCount:0    学术精神( Academia )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 68 iThreshold:7  iCount:0    治国术( Statecraft )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 69 iThreshold:7  iCount:0    遗产( Heritage )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 70 iThreshold:7  iCount:0    联合兵种( Combined_arms )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 71 iThreshold:7  iCount:0    经济学( Economics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 72 iThreshold:7  iCount:0    地理学( Geography )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 73 iThreshold:7  iCount:0    科学方法( Scientific_method )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 74 iThreshold:7  iCount:0    城市规划( Urban_planning )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 75 iThreshold:7  iCount:0    公民自由( Civil_liberties )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 76 iThreshold:7  iCount:0    园艺( Horticulture )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 77 iThreshold:7  iCount:0    可更换部件( Replaceable_parts )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 78 iThreshold:7  iCount:0    水利工程( Hydraulics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 79 iThreshold:7  iCount:0    物理学( Physics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 80 iThreshold:7  iCount:0    地质学( Geology )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 81 iThreshold:7  iCount:0    测量学( Measurement )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 82 iThreshold:7  iCount:0    社会学( Sociology )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 83 iThreshold:7  iCount:0    社会契约论( Social_contract )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 84 iThreshold:7  iCount:0    机床( Machine_tools )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 85 iThreshold:7  iCount:0    蒸汽机( Thermodynamics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 86 iThreshold:7  iCount:0    冶金术( Metallurgy )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 87 iThreshold:7  iCount:0    化学( Chemistry )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 88 iThreshold:7  iCount:0    生物学( Biology )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 89 iThreshold:7  iCount:0    民意代表( Representation )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 90 iThreshold:7  iCount:0    民族主义( Nationalism )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 91 iThreshold:7  iCount:0    弹道学( Ballistics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 92 iThreshold:7  iCount:0    内燃机( Engine )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 93 iThreshold:7  iCount:0    铁路( Railroad )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 94 iThreshold:7  iCount:0    电学( Electricity )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 95 iThreshold:7  iCount:0    制冷( Refrigeration )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 96 iThreshold:7  iCount:0    工会( Labour_unions )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 97 iThreshold:7  iCount:0    新闻业( Journalism )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 98 iThreshold:7  iCount:0    气体力学( Pneumatics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 99 iThreshold:7  iCount:0    生产流水线( Assembly_line )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 100 iThreshold:7  iCount:0    石油精炼( Refining )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 101 iThreshold:7  iCount:0    电影( Film )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 102 iThreshold:7  iCount:0    微生物学( Microbiology )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 103 iThreshold:7  iCount:0    消费主义( Consumerism )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 104 iThreshold:7  iCount:0    公民权利( Civil_rights )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 105 iThreshold:7  iCount:0    基础设施( Infrastructure )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 106 iThreshold:7  iCount:0    航空( Flight )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 107 iThreshold:7  iCount:0    石油化工( Synthetics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 108 iThreshold:7  iCount:0    无线电( Radio )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 109 iThreshold:7  iCount:0    心理学( Psychology )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 110 iThreshold:7  iCount:0    宏观经济学( Macroeconomics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 111 iThreshold:7  iCount:0    社会服务( Social_services )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 112 iThreshold:7  iCount:0    航空学( Aviation )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 113 iThreshold:7  iCount:0    火箭( Rocketry )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 114 iThreshold:7  iCount:0    核裂变( Fission )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 115 iThreshold:7  iCount:0    数码产品( Electronics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 116 iThreshold:7  iCount:0    电视机( Television )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 117 iThreshold:7  iCount:0    军力投送( Power_projection )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 118 iThreshold:7  iCount:0    全球化思潮( Globalism )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 119 iThreshold:7  iCount:0    雷达技术( Radar )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 120 iThreshold:7  iCount:0    太空飞行( Spaceflight )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 121 iThreshold:7  iCount:0    核能( Nuclear_power )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 122 iThreshold:7  iCount:0    激光( Laser )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 123 iThreshold:7  iCount:0    电子计算机( Computers )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 124 iThreshold:7  iCount:0    旅游业( Tourism )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 125 iThreshold:7  iCount:0    生态学( Ecology )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 126 iThreshold:7  iCount:0    空气动力学( Aerodynamics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 127 iThreshold:7  iCount:0    人造卫星( Satellites )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 128 iThreshold:7  iCount:0    超导( Superconductors )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 129 iThreshold:7  iCount:0    机器人( Robotics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 130 iThreshold:7  iCount:0    移动通信( Telecommunications )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 131 iThreshold:7  iCount:0    可再生能源( Renewable_energy )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 132 iThreshold:7  iCount:0    遗传学( Genetics )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 133 iThreshold:7  iCount:0    超级材料( Supermaterials )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 134 iThreshold:7  iCount:0    核聚变( Fusion )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 135 iThreshold:7  iCount:0    纳米技术( Nanotechnology )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 136 iThreshold:7  iCount:0    自动化( Automation )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 137 iThreshold:7  iCount:0    生物科技( Biotechnology )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 138 iThreshold:7  iCount:0    统一场论( Unified_theory )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 139 iThreshold:7  iCount:0    人工智能( Artificial_intelligence )
+2021-11-21 17:46:40 [1090]  T[230]  [Egypt] Tech 140 iThreshold:7  iCount:0    未来科技( Transhumanism )
+2021-11-21 17:48:48 [1090]  T[230]  [Turkestan]  Start AI WAR with Byzantium
+2021-11-21 17:48:48 [1100]  T[231]  在公元1100年，蛮族女真 已经入侵中亚地区，坐标范围：(94,48) To (107,54)
+2021-11-21 17:48:48 [1100]  T[231]  在公元1100年，蛮族吐蕃 已经入侵西藏地区，坐标范围：(92,41) To (99,45)
+2021-11-21 17:48:48 [1100]  T[231]  在公元1100年，独立城邦Mombasa已经建立于埃塞俄比亚地区，坐标： (71,20)
+2021-11-21 17:48:48 [1110]  T[232]  [Portugal] Start Birth
+2021-11-21 17:48:48 [1110]  T[232]  在公元1110年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 17:48:48 [1130]  T[234]  [Inca] Start Birth
+2021-11-21 17:48:48 [1130]  T[234]  在公元1130年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:48:48 [1150]  T[236]  [Italy] Start Birth
+2021-11-21 17:48:48 [1160]  T[237]  [China] is ready to Collapse to Core
+2021-11-21 17:48:48 [1160]  T[237]  在公元1160年，蛮族加纳 已经入侵!，坐标范围：(48,22) To (63,29)
+2021-11-21 17:48:48 [1170]  T[238]  [Mongolia] Start Birth
+2021-11-21 17:48:48 [1170]  T[238]  [Aztecs] Start Birth
+2021-11-21 17:48:48 [1180]  T[239]  [Vikings] Start give Raiders
+2021-11-21 17:48:48 [1180]  T[239]  [China] is ready to Collapse to Core
+2021-11-21 17:48:48 [1190]  T[240]  [Mughals] Start Birth
+2021-11-21 17:48:48 [1190]  T[240]  Check resurrection
+2021-11-21 17:48:48 [1190]  T[240]  [Spain]  Start AI WAR with Moors
+2021-11-21 17:48:48 [1200]  T[241]  在公元1200年，蛮族Hindi已经入侵德干地区，坐标范围：(87,23) To (96,37)
+2021-11-21 17:48:48 [1200]  T[241]  在公元1200年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 17:48:48 [1200]  T[241]  在公元1200年，独立城邦Qazan已经建立于俄罗斯地区，坐标： (77,55)
+2021-11-21 17:48:48 [1210]  T[242]  在公元1210年，蛮族鞑靼 已经入侵俄罗斯地区，坐标范围：(74,47) To (81,47)
+2021-11-21 17:48:48 [1210]  T[242]  [Mongolia] Start MONGOlIA WAR to Byzantium
+2021-11-21 17:50:56 [1230]  T[244]  [Mongolia]  Start AI WAR with Turkestan
+2021-11-21 17:50:56 [1230]  T[244]  [Mongolia] Start MONGOlIA WAR to Russia
+2021-11-21 17:50:56 [1250]  T[246]  [Ethiopia] is ready to Collapse to Core
+2021-11-21 17:50:56 [1260]  T[247]   摩尔文明即将崩溃！
+2021-11-21 17:50:56 [1260]  T[247]  [Turkey] Start Birth
+2021-11-21 17:50:56 [1260]  T[247]  在公元1260年，蛮族加纳 已经入侵西非地区，坐标范围：(48,26) To (65,37)
+2021-11-21 17:50:56 [1270]  T[248]   高棉文明[F]即将崩溃！
+2021-11-21 17:50:56 [1270]  T[248]  [高棉] is ready to Complete Collapse
+2021-11-21 17:50:56 [1280]  T[249]  [China] is ready to Collapse to Core
+2021-11-21 17:50:56 [1280]  T[249]   玻利尼西亚文明即将崩溃！
+2021-11-21 17:50:56 [1280]  T[249]  [Polynesia] is ready to Complete Collapse
+2021-11-21 17:50:56 [1290]  T[250]  Check resurrection
+2021-11-21 17:50:56 [1290]  T[250]  在公元1290年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 17:50:56 [1290]  T[250]  [高棉] RazeMinorCities lRemovedCities append: ( 104,33 )
+2021-11-21 17:53:04 [1310]  T[252]  [China] is ready to Collapse to Core
+2021-11-21 17:53:04 [1320]  T[253]  在公元1320年，蛮族桑海 已经入侵!，坐标范围：(48,22) To (63,29)
+2021-11-21 17:53:04 [1320]  T[253]  [China] is ready to Collapse to Core
+2021-11-21 17:53:04 [1330]  T[254]  [Thailand] Start Birth
+2021-11-21 17:53:04 [1340]  T[255]   埃及文明[F]即将崩溃！
+2021-11-21 17:53:04 [1340]  T[255]  [Egypt] is ready to Complete Collapse
+2021-11-21 17:53:04 [1360]  T[257]   高丽文明[F]即将崩溃！
+2021-11-21 17:53:04 [1360]  T[257]  [Korea] is ready to Complete Collapse
+2021-11-21 17:53:04 [1370]  T[258]  [Congo] Start Birth
+2021-11-21 17:53:04 [1370]  T[258]  [England]  Start AI WAR with France
+2021-11-21 17:53:04 [1380]  T[259]   印度文明[F]即将崩溃！
+2021-11-21 17:53:04 [1380]  T[259]  [India] is ready to Complete Collapse
+2021-11-21 17:53:04 [1380]  T[259]  在公元1380年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 17:53:04 [1390]  T[260]  Check resurrection
+2021-11-21 17:53:04 [1390]  T[260]  [Mali] starting plague with iWorstHealth: -11
+2021-11-21 17:53:04 [1390]  T[260]  [Mali]  is spreading plague
+2021-11-21 17:53:04 [1390]  T[260]  Start Plague
+2021-11-21 17:53:04 [1400]  T[261]  在公元1400年，蛮族乌兹别克 已经入侵中亚地区，坐标范围：(80,47) To (88,53)
+2021-11-21 17:53:04 [1400]  T[261]  在公元1400年，独立城邦Saigon已经建立于中南半岛地区，坐标： (104,33)
+2021-11-21 17:55:12 [1410]  T[263]  在公元1410年，蛮族桑海 已经入侵西非地区，坐标范围：(48,26) To (65,37)
+2021-11-21 17:55:12 [1415]  T[264]  [Portugal] starting plague with iWorstHealth: -3
+2021-11-21 17:55:12 [1415]  T[264]  [Portugal]  is spreading plague
+2021-11-21 17:55:12 [1420]  T[265]  [Independents2]  is spreading plague
+2021-11-21 17:55:12 [1420]  T[265]  [Independents2]  is infecting near city
+2021-11-21 17:55:12 [1420]  T[265]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1420]  T[265]  [England]  is spreading plague
+2021-11-21 17:55:12 [1420]  T[265]  [Portugal]  plague is spreading between city
+2021-11-21 17:55:12 [1420]  T[265]  [Independents2]  plague is spreading through trade route
+2021-11-21 17:55:12 [1420]  T[265]  [Independents2]  plague is spreading through trade route
+2021-11-21 17:55:12 [1420]  T[265]  [Independents2]  plague is spreading through trade route
+2021-11-21 17:55:12 [1420]  T[265]  [Independents2]  plague is spreading between city
+2021-11-21 17:55:12 [1425]  T[266]  [China] is ready to Collapse to Core
+2021-11-21 17:55:12 [1425]  T[266]  [France]  is spreading plague
+2021-11-21 17:55:12 [1425]  T[266]  [France]  is infecting near city
+2021-11-21 17:55:12 [1425]  T[266]  [France]  is infecting near city
+2021-11-21 17:55:12 [1425]  T[266]  [England]  plague is spreading through trade route
+2021-11-21 17:55:12 [1425]  T[266]  [Byzantium]  is spreading plague
+2021-11-21 17:55:12 [1425]  T[266]  [England]  plague is spreading through trade route
+2021-11-21 17:55:12 [1425]  T[266]  [England]  plague is spreading through trade route
+2021-11-21 17:55:12 [1425]  T[266]  [神圣罗马]  is spreading plague
+2021-11-21 17:55:12 [1425]  T[266]  [England]  plague is spreading between city
+2021-11-21 17:55:12 [1425]  T[266]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1425]  T[266]  [Vikings]  is spreading plague
+2021-11-21 17:55:12 [1425]  T[266]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1425]  T[266]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1425]  T[266]  [神圣罗马]  plague is spreading between city
+2021-11-21 17:55:12 [1425]  T[266]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1425]  T[266]  [Portugal]  plague is spreading between city
+2021-11-21 17:55:12 [1425]  T[266]  [Ethiopia]  is spreading plague
+2021-11-21 17:55:12 [1425]  T[266]  [Ethiopia]  is infecting near city
+2021-11-21 17:55:12 [1425]  T[266]  [Independents]  is spreading plague
+2021-11-21 17:55:12 [1425]  T[266]  [Independents]  is infecting near city
+2021-11-21 17:55:12 [1425]  T[266]  [Independents]  is infecting near city
+2021-11-21 17:55:12 [1425]  T[266]  [Barbarians]  is spreading plague
+2021-11-21 17:55:12 [1425]  T[266]  [Barbarians]  is infecting near city
+2021-11-21 17:55:12 [1425]  T[266]  [Spain]  is spreading plague
+2021-11-21 17:55:12 [1425]  T[266]  [Spain]  is infecting near city
+2021-11-21 17:55:12 [1425]  T[266]  [Independents2]  plague is spreading between city
+2021-11-21 17:55:12 [1430]  T[267]  [Ethiopia]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [Ethiopia]  plague is spreading between city
+2021-11-21 17:55:12 [1430]  T[267]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [Byzantium]  plague is spreading between city
+2021-11-21 17:55:12 [1430]  T[267]  [Vikings]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [Vikings]  plague is spreading between city
+2021-11-21 17:55:12 [1430]  T[267]  [Spain]  plague is spreading between city
+2021-11-21 17:55:12 [1430]  T[267]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [France]  plague is spreading between city
+2021-11-21 17:55:12 [1430]  T[267]  [England]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [England]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [England]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [England]  plague is spreading between city
+2021-11-21 17:55:12 [1430]  T[267]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [Italy]  is spreading plague
+2021-11-21 17:55:12 [1430]  T[267]  [Italy]  is infecting near city
+2021-11-21 17:55:12 [1430]  T[267]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [神圣罗马]  plague is spreading between city
+2021-11-21 17:55:12 [1430]  T[267]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [Portugal]  plague is spreading between city
+2021-11-21 17:55:12 [1430]  T[267]  [Independents]  plague is spreading through trade route
+2021-11-21 17:55:12 [1430]  T[267]  [Independents]  plague is spreading between city
+2021-11-21 17:55:12 [1435]  T[268]  [Ethiopia]  plague is spreading between city
+2021-11-21 17:55:12 [1435]  T[268]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [Mongolia]  is spreading plague
+2021-11-21 17:55:12 [1435]  T[268]  [Mongolia]  is infecting near city
+2021-11-21 17:55:12 [1435]  T[268]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [Vikings]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [Vikings]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [Mughals]  is spreading plague
+2021-11-21 17:55:12 [1435]  T[268]  [Vikings]  plague is spreading between city
+2021-11-21 17:55:12 [1435]  T[268]  [Spain]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [Spain]  plague is spreading between city
+2021-11-21 17:55:12 [1435]  T[268]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [France]  plague is spreading between city
+2021-11-21 17:55:12 [1435]  T[268]  [England]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [England]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [England]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [Poland]  is spreading plague
+2021-11-21 17:55:12 [1435]  T[268]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [神圣罗马]  plague is spreading between city
+2021-11-21 17:55:12 [1435]  T[268]  [Poland]  plague is spreading between city
+2021-11-21 17:55:12 [1435]  T[268]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [Mongolia]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [Tamils]  is spreading plague
+2021-11-21 17:55:12 [1435]  T[268]  [Mongolia]  plague is spreading between city
+2021-11-21 17:55:12 [1435]  T[268]  [Mughals]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [Japan]  is spreading plague
+2021-11-21 17:55:12 [1435]  T[268]  [Mughals]  plague is spreading between city
+2021-11-21 17:55:12 [1435]  T[268]  [Tibet]  is spreading plague
+2021-11-21 17:55:12 [1435]  T[268]  [Tibet]  is infecting near city
+2021-11-21 17:55:12 [1435]  T[268]  [Independents]  plague is spreading through trade route
+2021-11-21 17:55:12 [1435]  T[268]  [Independents]  plague is spreading between city
+2021-11-21 17:55:12 [1435]  T[268]  在公元1435年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 17:55:12 [1440]  T[269]  [Tamils]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Tamils]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [China]  is spreading plague
+2021-11-21 17:55:12 [1440]  T[269]  [Turkey]  is spreading plague
+2021-11-21 17:55:12 [1440]  T[269]  [Turkey]  is infecting near city
+2021-11-21 17:55:12 [1440]  T[269]  [Turkey]  is infecting near city
+2021-11-21 17:55:12 [1440]  T[269]  [Ethiopia]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Russia]  is spreading plague
+2021-11-21 17:55:12 [1440]  T[269]  [Ethiopia]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Japan]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Japan]  plague is spreading between city
+2021-11-21 17:55:12 [1440]  T[269]  [Vikings]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Vikings]  plague is spreading between city
+2021-11-21 17:55:12 [1440]  T[269]  [Spain]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Spain]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Spain]  plague is spreading between city
+2021-11-21 17:55:12 [1440]  T[269]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [France]  plague is spreading between city
+2021-11-21 17:55:12 [1440]  T[269]  [England]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [神圣罗马]  plague is spreading between city
+2021-11-21 17:55:12 [1440]  T[269]  [Russia]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Russia]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Russia]  plague is spreading between city
+2021-11-21 17:55:12 [1440]  T[269]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Mongolia]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Mongolia]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Turkestan]  is spreading plague
+2021-11-21 17:55:12 [1440]  T[269]  [Mongolia]  plague is spreading between city
+2021-11-21 17:55:12 [1440]  T[269]  [Mughals]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Mughals]  plague is spreading between city
+2021-11-21 17:55:12 [1440]  T[269]  [Turkey]  plague is spreading through trade route
+2021-11-21 17:55:12 [1440]  T[269]  [Turkey]  plague is spreading between city
+2021-11-21 17:55:12 [1440]  T[269]  [Independents]  plague is spreading between city
+2021-11-21 17:55:12 [1440]  T[269]  在公元1440年，蛮族乌兹别克 已经入侵中亚地区，坐标范围：(80,47) To (88,53)
+2021-11-21 17:55:12 [1440]  T[269]  在公元1440年，蛮族桑海 已经入侵!，坐标范围：(48,22) To (63,29)
+2021-11-21 17:55:12 [1440]  T[269]  [France]  Start AI WAR with England
+2021-11-21 17:55:12 [1445]  T[270]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Japan]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Japan]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Japan]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Japan]  plague is spreading between city
+2021-11-21 17:55:12 [1445]  T[270]  [Turkestan]  plague is spreading between city
+2021-11-21 17:55:12 [1445]  T[270]  [Spain]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Spain]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Spain]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Spain]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [France]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [France]  plague is spreading between city
+2021-11-21 17:55:12 [1445]  T[270]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [神圣罗马]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Portugal]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Mongolia]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Mongolia]  plague is spreading between city
+2021-11-21 17:55:12 [1445]  T[270]  [Mughals]  plague is spreading through trade route
+2021-11-21 17:55:12 [1445]  T[270]  [Mughals]  plague is spreading between city
+2021-11-21 17:55:12 [1445]  T[270]  [Independents]  plague is spreading between city
+2021-11-21 17:55:12 [1445]  T[270]  Check resurrection
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] :check resurrection
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] :do resurrection when city in minor
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 0 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  鞣毛制造( Tanning )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 1 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  采矿( Mining )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 2 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  制陶术( Pottery )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 3 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  畜牧( Pastoralism )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 4 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  农业( Agriculture )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 5 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  神话( Mythology )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 6 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  航行术( Sailing )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 7 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  金属熔炼( Smelting )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 8 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  石工术( Masonry )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 9 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  简单机械( Leverage )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 10 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  私有制( Property )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 11 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  宗教仪式( Ceremony )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 12 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  占卜学( Divination )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 13 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  航海( Seafaring )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 14 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  合金( Alloys )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 15 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  建筑构造学( Construction )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 16 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  骑术( Riding )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 17 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  算术( Arithmetics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 18 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  文字( Writing )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 19 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  历法( Calendar )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 20 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  造船( Shipbuilding )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 21 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  铁器( Bloomery )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 22 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  水泥( Cement )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 23 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  数学( Mathematics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 24 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  契约精神( Contract )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 25 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  文献( Literature )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 26 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  祭司制度( Priesthood )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 27 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  导航学( Navigation )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 28 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  指挥学( Generalship )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 29 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  工程学( Engineering )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 30 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  美学( Aesthetics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 31 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  货币制度( Currency )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 32 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  律法( Law )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 33 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  哲学( Philosophy )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 34 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  传统医学( Medicine )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 35 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  贵族( Nobility )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 36 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  炼钢( Steel )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 37 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  建筑( Architecture )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 38 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  手工业( Artisanry )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 39 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  政治学( Politics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 40 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  奖学金制度( Scholarship )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 41 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  伦理学( Ethics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 42 iThreshold:7  iCount:8
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  封建制度( Feudalism )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 43 iThreshold:7  iCount:9
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  防御工事( Fortification )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 44 iThreshold:7  iCount:11
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  机械( Machinery )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 45 iThreshold:7  iCount:9
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  炼金术( Alchemy )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 46 iThreshold:7  iCount:9
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  行会( Guilds )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 47 iThreshold:7  iCount:10
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  文官制度( Civil_service )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 48 iThreshold:7  iCount:10
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Resurrection Tech:  神学( Theology )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 49 iThreshold:7  iCount:7    公社( Commune )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 50 iThreshold:7  iCount:6    作物轮作术( Crop_rotation )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 51 iThreshold:7  iCount:5    造纸术( Paper )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 52 iThreshold:7  iCount:7    罗盘( Compass )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 53 iThreshold:7  iCount:5    艺术赞助( Patronage )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 54 iThreshold:7  iCount:6    教育学( Education )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 55 iThreshold:7  iCount:6    宗教教条( Doctrine )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 56 iThreshold:7  iCount:5    火药( Gunpowder )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 57 iThreshold:7  iCount:3    公司制( Companies )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 58 iThreshold:7  iCount:1    金融学( Finance )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 59 iThreshold:7  iCount:0    地图学( Cartography )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 60 iThreshold:7  iCount:0    人文科学( Humanities )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 61 iThreshold:7  iCount:1    印刷术( Printing )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 62 iThreshold:7  iCount:3    司法( Judiciary )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 63 iThreshold:7  iCount:1    热兵器军队( Firearms )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 64 iThreshold:7  iCount:0    物流( Logistics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 65 iThreshold:7  iCount:0    地理探索( Exploration )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 66 iThreshold:7  iCount:0    光学( Optics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 67 iThreshold:7  iCount:0    学术精神( Academia )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 68 iThreshold:7  iCount:0    治国术( Statecraft )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 69 iThreshold:7  iCount:0    遗产( Heritage )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 70 iThreshold:7  iCount:0    联合兵种( Combined_arms )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 71 iThreshold:7  iCount:0    经济学( Economics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 72 iThreshold:7  iCount:0    地理学( Geography )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 73 iThreshold:7  iCount:0    科学方法( Scientific_method )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 74 iThreshold:7  iCount:0    城市规划( Urban_planning )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 75 iThreshold:7  iCount:0    公民自由( Civil_liberties )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 76 iThreshold:7  iCount:0    园艺( Horticulture )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 77 iThreshold:7  iCount:0    可更换部件( Replaceable_parts )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 78 iThreshold:7  iCount:0    水利工程( Hydraulics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 79 iThreshold:7  iCount:0    物理学( Physics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 80 iThreshold:7  iCount:0    地质学( Geology )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 81 iThreshold:7  iCount:0    测量学( Measurement )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 82 iThreshold:7  iCount:0    社会学( Sociology )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 83 iThreshold:7  iCount:0    社会契约论( Social_contract )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 84 iThreshold:7  iCount:0    机床( Machine_tools )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 85 iThreshold:7  iCount:0    蒸汽机( Thermodynamics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 86 iThreshold:7  iCount:0    冶金术( Metallurgy )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 87 iThreshold:7  iCount:0    化学( Chemistry )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 88 iThreshold:7  iCount:0    生物学( Biology )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 89 iThreshold:7  iCount:0    民意代表( Representation )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 90 iThreshold:7  iCount:0    民族主义( Nationalism )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 91 iThreshold:7  iCount:0    弹道学( Ballistics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 92 iThreshold:7  iCount:0    内燃机( Engine )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 93 iThreshold:7  iCount:0    铁路( Railroad )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 94 iThreshold:7  iCount:0    电学( Electricity )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 95 iThreshold:7  iCount:0    制冷( Refrigeration )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 96 iThreshold:7  iCount:0    工会( Labour_unions )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 97 iThreshold:7  iCount:0    新闻业( Journalism )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 98 iThreshold:7  iCount:0    气体力学( Pneumatics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 99 iThreshold:7  iCount:0    生产流水线( Assembly_line )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 100 iThreshold:7  iCount:0    石油精炼( Refining )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 101 iThreshold:7  iCount:0    电影( Film )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 102 iThreshold:7  iCount:0    微生物学( Microbiology )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 103 iThreshold:7  iCount:0    消费主义( Consumerism )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 104 iThreshold:7  iCount:0    公民权利( Civil_rights )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 105 iThreshold:7  iCount:0    基础设施( Infrastructure )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 106 iThreshold:7  iCount:0    航空( Flight )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 107 iThreshold:7  iCount:0    石油化工( Synthetics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 108 iThreshold:7  iCount:0    无线电( Radio )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 109 iThreshold:7  iCount:0    心理学( Psychology )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 110 iThreshold:7  iCount:0    宏观经济学( Macroeconomics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 111 iThreshold:7  iCount:0    社会服务( Social_services )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 112 iThreshold:7  iCount:0    航空学( Aviation )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 113 iThreshold:7  iCount:0    火箭( Rocketry )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 114 iThreshold:7  iCount:0    核裂变( Fission )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 115 iThreshold:7  iCount:0    数码产品( Electronics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 116 iThreshold:7  iCount:0    电视机( Television )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 117 iThreshold:7  iCount:0    军力投送( Power_projection )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 118 iThreshold:7  iCount:0    全球化思潮( Globalism )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 119 iThreshold:7  iCount:0    雷达技术( Radar )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 120 iThreshold:7  iCount:0    太空飞行( Spaceflight )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 121 iThreshold:7  iCount:0    核能( Nuclear_power )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 122 iThreshold:7  iCount:0    激光( Laser )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 123 iThreshold:7  iCount:0    电子计算机( Computers )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 124 iThreshold:7  iCount:0    旅游业( Tourism )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 125 iThreshold:7  iCount:0    生态学( Ecology )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 126 iThreshold:7  iCount:0    空气动力学( Aerodynamics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 127 iThreshold:7  iCount:0    人造卫星( Satellites )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 128 iThreshold:7  iCount:0    超导( Superconductors )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 129 iThreshold:7  iCount:0    机器人( Robotics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 130 iThreshold:7  iCount:0    移动通信( Telecommunications )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 131 iThreshold:7  iCount:0    可再生能源( Renewable_energy )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 132 iThreshold:7  iCount:0    遗传学( Genetics )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 133 iThreshold:7  iCount:0    超级材料( Supermaterials )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 134 iThreshold:7  iCount:0    核聚变( Fusion )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 135 iThreshold:7  iCount:0    纳米技术( Nanotechnology )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 136 iThreshold:7  iCount:0    自动化( Automation )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 137 iThreshold:7  iCount:0    生物科技( Biotechnology )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 138 iThreshold:7  iCount:0    统一场论( Unified_theory )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 139 iThreshold:7  iCount:0    人工智能( Artificial_intelligence )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors] Tech 140 iThreshold:7  iCount:0    未来科技( Transhumanism )
+2021-11-21 17:55:12 [1445]  T[270]  [Moors]  is spreading plague
+2021-11-21 17:55:12 [1445]  T[270]  [Moors]  is infecting near city
+2021-11-21 17:57:20 [1450]  T[271]  [China]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Spain]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Spain]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Spain]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Spain]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [France]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [France]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [France]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [France]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [France]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [France]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [France]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [England]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Ethiopia]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Russia]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Italy]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Mongolia]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Mongolia]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Mongolia]  plague is spreading between city
+2021-11-21 17:57:20 [1450]  T[271]  [Mughals]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Mughals]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Mughals]  plague is spreading between city
+2021-11-21 17:57:20 [1450]  T[271]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Turkestan]  plague is spreading between city
+2021-11-21 17:57:20 [1450]  T[271]  [Turkey]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Turkey]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Tibet]  plague is spreading through trade route
+2021-11-21 17:57:20 [1450]  T[271]  [Independents]  plague is spreading between city
+2021-11-21 17:57:20 [1455]  T[272]  [China]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Byzantium]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Russia]  plague is spreading between city
+2021-11-21 17:57:20 [1455]  T[272]  [Poland]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Poland]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Italy]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Mughals]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Mughals]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Turkey]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Turkey]  plague is spreading through trade route
+2021-11-21 17:57:20 [1455]  T[272]  [Turkey]  plague is spreading between city
+2021-11-21 17:57:20 [1460]  T[273]  [China]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Tamils]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Japan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Poland]  plague is spreading through trade route
+2021-11-21 17:57:20 [1460]  T[273]  [Poland]  plague is spreading through trade route
+2021-11-21 17:57:20 [1465]  T[274]  [China]  plague is spreading through trade route
+2021-11-21 17:57:20 [1465]  T[274]  [Tamils]  plague is spreading through trade route
+2021-11-21 17:57:20 [1465]  T[274]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1465]  T[274]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1465]  T[274]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1465]  T[274]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1465]  T[274]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1465]  T[274]  [Turkestan]  plague is spreading through trade route
+2021-11-21 17:57:20 [1470]  T[275]  [China]  plague is spreading through trade route
+2021-11-21 17:57:20 [1480]  T[277]  在公元1480年，蛮族乌兹别克 已经入侵中亚地区，坐标范围：(80,47) To (88,53)
+2021-11-21 17:57:20 [1480]  T[277]  在公元1480年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 17:59:28 [1490]  T[279]  在公元1490年，蛮族桑海 已经入侵西非地区，坐标范围：(48,26) To (65,37)
+2021-11-21 17:59:28 [1495]  T[280]   蒙古文明即将崩溃！
+2021-11-21 17:59:28 [1495]  T[280]  [Mongolia] is ready to Complete Collapse
+2021-11-21 17:59:28 [1495]  T[280]  Check resurrection
+2021-11-21 17:59:28 [1500]  T[281]  [Japan] is ready to Collapse to Core
+2021-11-21 17:59:28 [1500]  T[281]  [Iran] Start ReBirth
+2021-11-21 17:59:28 [1505]  T[282]   玛雅文明[F]即将崩溃！
+2021-11-21 17:59:28 [1505]  T[282]  [Maya] is ready to Complete Collapse
+2021-11-21 17:59:28 [1505]  T[282]  [France]  Colonists: 1 / 5
+2021-11-21 17:59:28 [1505]  T[282]  [Norway]  Colonists: 1 / 1
+2021-11-21 17:59:28 [1505]  T[282]  [Iran] Start Second ReBirth
+2021-11-21 17:59:28 [1520]  T[285]  在公元1520年，蛮族乌兹别克 已经入侵中亚地区，坐标范围：(80,47) To (88,53)
+2021-11-21 17:59:28 [1520]  T[285]  在公元1520年，蛮族桑海 已经入侵!，坐标范围：(48,22) To (63,29)
+2021-11-21 17:59:28 [1525]  T[286]  [Spain]  Colonists: 1 / 7
+2021-11-21 17:59:28 [1525]  T[286]  在公元1525年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 18:01:36 [1530]  T[287]  在公元1530年，蛮族鞑靼 已经入侵俄罗斯地区，坐标范围：(74,47) To (81,47)
+2021-11-21 18:01:36 [1535]  T[288]   阿兹特克文明[F]即将崩溃！
+2021-11-21 18:01:36 [1535]  T[288]  [Aztecs] is ready to Complete Collapse
+2021-11-21 18:01:36 [1545]  T[290]   埃塞俄比亚文明即将崩溃！
+2021-11-21 18:01:36 [1545]  T[290]  [Ethiopia] is ready to Complete Collapse
+2021-11-21 18:01:36 [1545]  T[290]  [France]  Colonists: 2 / 5
+2021-11-21 18:01:36 [1545]  T[290]  Check resurrection
+2021-11-21 18:01:36 [1545]  T[290]  [Aztecs] RazeMinorCities lRemovedCities append: ( 16,39 )
+2021-11-21 18:01:36 [1555]  T[292]  [Spain] Start early trade company
+2021-11-21 18:01:36 [1560]  T[293]   泰米尔文明[F]即将崩溃！
+2021-11-21 18:01:36 [1560]  T[293]  [Tamils] is ready to Complete Collapse
+2021-11-21 18:01:36 [1560]  T[293]  在公元1560年，蛮族乌兹别克 已经入侵中亚地区，坐标范围：(80,47) To (88,53)
+2021-11-21 18:01:36 [1565]  T[294]  [Spain]  Colonists: 2 / 7
+2021-11-21 18:03:44 [1570]  T[295]  [荷兰] Start Birth
+2021-11-21 18:03:44 [1570]  T[295]  在公元1570年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 18:03:44 [1570]  T[295]  在公元1570年，蛮族桑海 已经入侵西非地区，坐标范围：(48,26) To (65,37)
+2021-11-21 18:03:44 [1575]  T[296]  [Sweden]  is infecting new world civ city
+2021-11-21 18:03:44 [1575]  T[296]  [Inca]  plague is spreading between city
+2021-11-21 18:03:44 [1575]  T[296]  在公元1575年，蛮族鞑靼 已经入侵俄罗斯地区，坐标范围：(74,47) To (81,47)
+2021-11-21 18:03:44 [1580]  T[297]  [Inca]  plague is spreading between city
+2021-11-21 18:03:44 [1585]  T[298]  [Inca]  plague is spreading between city
+2021-11-21 18:03:44 [1585]  T[298]  [France]  Colonists: 3 / 5
+2021-11-21 18:03:44 [1585]  T[298]  [Portugal]  Colonists: 1 / 6
+2021-11-21 18:03:44 [1585]  T[298]  [荷兰]  Colonists: 1 / 6
+2021-11-21 18:03:44 [1595]  T[300]  Check resurrection
+2021-11-21 18:03:44 [1600]  T[301]   拜占庭文明[F]即将崩溃！
+2021-11-21 18:03:44 [1600]  T[301]  [Byzantium] is ready to Complete Collapse
+2021-11-21 18:03:44 [1600]  T[301]  在公元1600年，蛮族乌兹别克 已经入侵中亚地区，坐标范围：(80,47) To (88,53)
+2021-11-21 18:03:44 [1600]  T[301]  在公元1600年，蛮族桑海 已经入侵!，坐标范围：(48,22) To (63,29)
+2021-11-21 18:05:52 [1605]  T[302]  [Spain]  Colonists: 3 / 7
+2021-11-21 18:05:52 [1615]  T[304]  在公元1615年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 18:05:52 [1620]  T[305]  [Portugal]  Trade company war to Natives
+2021-11-21 18:05:52 [1620]  T[305]  [Portugal]  Trade company war to Congo
+2021-11-21 18:05:52 [1620]  T[305]  [Portugal]  Trade company war to Independents2
+2021-11-21 18:05:52 [1620]  T[305]  [Portugal] Start early trade company
+2021-11-21 18:05:52 [1625]  T[306]  [England]  Colonists: 1 / 6
+2021-11-21 18:05:52 [1625]  T[306]  [France]  Colonists: 4 / 5
+2021-11-21 18:05:52 [1625]  T[306]  [Portugal]  Colonists: 2 / 6
+2021-11-21 18:05:52 [1625]  T[306]  [荷兰]  Colonists: 2 / 6
+2021-11-21 18:08:00 [1640]  T[309]  在公元1640年，蛮族乌兹别克 已经入侵中亚地区，坐标范围：(80,47) To (88,53)
+2021-11-21 18:08:00 [1645]  T[310]  [Spain]  Colonists: 4 / 7
+2021-11-21 18:08:00 [1645]  T[310]  Check resurrection
+2021-11-21 18:08:00 [1650]  T[311]  在公元1650年，蛮族桑海 已经入侵西非地区，坐标范围：(48,26) To (65,37)
+2021-11-21 18:08:00 [1660]  T[313]  在公元1660年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 18:08:00 [1665]  T[314]  [England]  Colonists: 2 / 6
+2021-11-21 18:08:00 [1665]  T[314]  [France]  Colonists: 5 / 5
+2021-11-21 18:08:00 [1665]  T[314]  [Portugal]  Colonists: 3 / 6
+2021-11-21 18:08:00 [1665]  T[314]  [荷兰]  Colonists: 3 / 6
+2021-11-21 18:10:08 [1680]  T[317]   维京文明[F]即将崩溃！
+2021-11-21 18:10:08 [1680]  T[317]  [Sweden] is ready to Complete Collapse
+2021-11-21 18:10:08 [1680]  T[317]  在公元1680年，蛮族乌兹别克 已经入侵中亚地区，坐标范围：(80,47) To (88,53)
+2021-11-21 18:10:08 [1680]  T[317]  在公元1680年，蛮族桑海 已经入侵!，坐标范围：(48,22) To (63,29)
+2021-11-21 18:10:08 [1685]  T[318]  [Spain]  Colonists: 5 / 7
+2021-11-21 18:10:08 [1690]  T[319]  [Germany] Start Birth
+2021-11-21 18:12:16 [1695]  T[320]   波兰文明[F]即将崩溃！
+2021-11-21 18:12:16 [1695]  T[320]  [Poland] is ready to Complete Collapse
+2021-11-21 18:12:16 [1695]  T[320]   吐蕃文明[F]即将崩溃！
+2021-11-21 18:12:16 [1695]  T[320]  [Tibet] is ready to Complete Collapse
+2021-11-21 18:12:16 [1695]  T[320]  Check resurrection
+2021-11-21 18:12:16 [1703]  T[322]  [England]  Colonists: 3 / 6
+2021-11-21 18:12:16 [1703]  T[322]  [Portugal]  Colonists: 4 / 6
+2021-11-21 18:12:16 [1703]  T[322]  [荷兰]  Colonists: 4 / 6
+2021-11-21 18:12:16 [1703]  T[322]  [Germany]  Colonists: 1 / 2
+2021-11-21 18:12:16 [1703]  T[322]  在公元1703年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 18:14:24 [1709]  T[324]   土库曼文明[F]即将崩溃！
+2021-11-21 18:14:24 [1709]  T[324]  [Turkestan] is ready to Complete Collapse
+2021-11-21 18:14:24 [1715]  T[326]  [Spain]  Colonists: 6 / 7
+2021-11-21 18:14:24 [1715]  T[326]  [Germany]  Colonists: 1 / 2
+2021-11-21 18:16:32 [1727]  T[330]  [England]  Colonists: 4 / 6
+2021-11-21 18:16:32 [1727]  T[330]  [Portugal]  Colonists: 5 / 6
+2021-11-21 18:16:32 [1727]  T[330]  [荷兰]  Colonists: 5 / 6
+2021-11-21 18:16:32 [1727]  T[330]  [Germany]  Colonists: 2 / 2
+2021-11-21 18:16:32 [1727]  T[330]  Check resurrection
+2021-11-21 18:16:32 [1730]  T[331]  在公元1730年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 18:16:32 [1739]  T[334]  [France] Start late trade company
+2021-11-21 18:16:32 [1739]  T[334]  [Spain]  Colonists: 7 / 7
+2021-11-21 18:16:32 [1739]  T[334]  [Spain]  is infecting new world civ city
+2021-11-21 18:16:32 [1742]  T[335]  [Inca]  plague is spreading between city
+2021-11-21 18:18:40 [1745]  T[336]  [Inca]  plague is spreading between city
+2021-11-21 18:18:40 [1748]  T[337]   摩尔文明即将崩溃！
+2021-11-21 18:18:40 [1748]  T[337]  [Moors] is ready to Complete Collapse
+2021-11-21 18:18:40 [1748]  T[337]  [Inca]  plague is spreading between city
+2021-11-21 18:18:40 [1751]  T[338]  [Inca]  plague is spreading between city
+2021-11-21 18:18:40 [1751]  T[338]  [荷兰] Start late trade company
+2021-11-21 18:18:40 [1751]  T[338]  [England]  Colonists: 5 / 6
+2021-11-21 18:18:40 [1751]  T[338]  [Portugal]  Colonists: 6 / 6
+2021-11-21 18:18:40 [1751]  T[338]  [荷兰]  Colonists: 6 / 6
+2021-11-21 18:20:48 [1757]  T[340]  [Spain] is ready to Collapse to Core
+2021-11-21 18:20:48 [1757]  T[340]  Check resurrection
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] :check resurrection
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] :do resurrection when city in minor
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 0 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  鞣毛制造( Tanning )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 1 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  采矿( Mining )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 2 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  制陶术( Pottery )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 3 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  畜牧( Pastoralism )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 4 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  农业( Agriculture )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 5 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  神话( Mythology )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 6 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  航行术( Sailing )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 7 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  金属熔炼( Smelting )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 8 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  石工术( Masonry )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 9 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  简单机械( Leverage )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 10 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  私有制( Property )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 11 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  宗教仪式( Ceremony )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 12 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  占卜学( Divination )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 13 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  航海( Seafaring )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 14 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  合金( Alloys )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 15 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  建筑构造学( Construction )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 16 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  骑术( Riding )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 17 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  算术( Arithmetics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 18 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  文字( Writing )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 19 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  历法( Calendar )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 20 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  造船( Shipbuilding )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 21 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  铁器( Bloomery )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 22 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  水泥( Cement )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 23 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  数学( Mathematics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 24 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  契约精神( Contract )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 25 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  文献( Literature )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 26 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  祭司制度( Priesthood )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 27 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  导航学( Navigation )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 28 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  指挥学( Generalship )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 29 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  工程学( Engineering )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 30 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  美学( Aesthetics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 31 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  货币制度( Currency )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 32 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  律法( Law )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 33 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  哲学( Philosophy )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 34 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  传统医学( Medicine )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 35 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  贵族( Nobility )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 36 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  炼钢( Steel )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 37 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  建筑( Architecture )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 38 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  手工业( Artisanry )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 39 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  政治学( Politics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 40 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  奖学金制度( Scholarship )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 41 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  伦理学( Ethics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 42 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  封建制度( Feudalism )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 43 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  防御工事( Fortification )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 44 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  机械( Machinery )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 45 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  炼金术( Alchemy )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 46 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  行会( Guilds )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 47 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  文官制度( Civil_service )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 48 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  神学( Theology )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 49 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  公社( Commune )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 50 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  作物轮作术( Crop_rotation )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 51 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  造纸术( Paper )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 52 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  罗盘( Compass )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 53 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  艺术赞助( Patronage )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 54 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  教育学( Education )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 55 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  宗教教条( Doctrine )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 56 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  火药( Gunpowder )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 57 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  公司制( Companies )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 58 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  金融学( Finance )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 59 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  地图学( Cartography )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 60 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  人文科学( Humanities )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 61 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  印刷术( Printing )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 62 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  司法( Judiciary )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 63 iThreshold:7  iCount:10
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  热兵器军队( Firearms )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 64 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  物流( Logistics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 65 iThreshold:7  iCount:10
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  地理探索( Exploration )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 66 iThreshold:7  iCount:10
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  光学( Optics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 67 iThreshold:7  iCount:10
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  学术精神( Academia )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 68 iThreshold:7  iCount:11
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  治国术( Statecraft )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 69 iThreshold:7  iCount:10
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  遗产( Heritage )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 70 iThreshold:7  iCount:8
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  联合兵种( Combined_arms )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 71 iThreshold:7  iCount:6    经济学( Economics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 72 iThreshold:7  iCount:8
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  地理学( Geography )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 73 iThreshold:7  iCount:9
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Resurrection Tech:  科学方法( Scientific_method )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 74 iThreshold:7  iCount:1    城市规划( Urban_planning )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 75 iThreshold:7  iCount:5    公民自由( Civil_liberties )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 76 iThreshold:7  iCount:4    园艺( Horticulture )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 77 iThreshold:7  iCount:3    可更换部件( Replaceable_parts )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 78 iThreshold:7  iCount:0    水利工程( Hydraulics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 79 iThreshold:7  iCount:2    物理学( Physics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 80 iThreshold:7  iCount:3    地质学( Geology )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 81 iThreshold:7  iCount:0    测量学( Measurement )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 82 iThreshold:7  iCount:1    社会学( Sociology )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 83 iThreshold:7  iCount:1    社会契约论( Social_contract )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 84 iThreshold:7  iCount:0    机床( Machine_tools )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 85 iThreshold:7  iCount:0    蒸汽机( Thermodynamics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 86 iThreshold:7  iCount:0    冶金术( Metallurgy )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 87 iThreshold:7  iCount:0    化学( Chemistry )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 88 iThreshold:7  iCount:0    生物学( Biology )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 89 iThreshold:7  iCount:0    民意代表( Representation )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 90 iThreshold:7  iCount:0    民族主义( Nationalism )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 91 iThreshold:7  iCount:0    弹道学( Ballistics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 92 iThreshold:7  iCount:0    内燃机( Engine )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 93 iThreshold:7  iCount:0    铁路( Railroad )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 94 iThreshold:7  iCount:0    电学( Electricity )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 95 iThreshold:7  iCount:0    制冷( Refrigeration )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 96 iThreshold:7  iCount:0    工会( Labour_unions )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 97 iThreshold:7  iCount:0    新闻业( Journalism )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 98 iThreshold:7  iCount:0    气体力学( Pneumatics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 99 iThreshold:7  iCount:0    生产流水线( Assembly_line )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 100 iThreshold:7  iCount:0    石油精炼( Refining )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 101 iThreshold:7  iCount:0    电影( Film )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 102 iThreshold:7  iCount:0    微生物学( Microbiology )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 103 iThreshold:7  iCount:0    消费主义( Consumerism )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 104 iThreshold:7  iCount:0    公民权利( Civil_rights )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 105 iThreshold:7  iCount:0    基础设施( Infrastructure )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 106 iThreshold:7  iCount:0    航空( Flight )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 107 iThreshold:7  iCount:0    石油化工( Synthetics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 108 iThreshold:7  iCount:0    无线电( Radio )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 109 iThreshold:7  iCount:0    心理学( Psychology )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 110 iThreshold:7  iCount:0    宏观经济学( Macroeconomics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 111 iThreshold:7  iCount:0    社会服务( Social_services )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 112 iThreshold:7  iCount:0    航空学( Aviation )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 113 iThreshold:7  iCount:0    火箭( Rocketry )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 114 iThreshold:7  iCount:0    核裂变( Fission )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 115 iThreshold:7  iCount:0    数码产品( Electronics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 116 iThreshold:7  iCount:0    电视机( Television )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 117 iThreshold:7  iCount:0    军力投送( Power_projection )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 118 iThreshold:7  iCount:0    全球化思潮( Globalism )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 119 iThreshold:7  iCount:0    雷达技术( Radar )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 120 iThreshold:7  iCount:0    太空飞行( Spaceflight )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 121 iThreshold:7  iCount:0    核能( Nuclear_power )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 122 iThreshold:7  iCount:0    激光( Laser )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 123 iThreshold:7  iCount:0    电子计算机( Computers )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 124 iThreshold:7  iCount:0    旅游业( Tourism )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 125 iThreshold:7  iCount:0    生态学( Ecology )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 126 iThreshold:7  iCount:0    空气动力学( Aerodynamics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 127 iThreshold:7  iCount:0    人造卫星( Satellites )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 128 iThreshold:7  iCount:0    超导( Superconductors )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 129 iThreshold:7  iCount:0    机器人( Robotics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 130 iThreshold:7  iCount:0    移动通信( Telecommunications )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 131 iThreshold:7  iCount:0    可再生能源( Renewable_energy )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 132 iThreshold:7  iCount:0    遗传学( Genetics )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 133 iThreshold:7  iCount:0    超级材料( Supermaterials )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 134 iThreshold:7  iCount:0    核聚变( Fusion )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 135 iThreshold:7  iCount:0    纳米技术( Nanotechnology )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 136 iThreshold:7  iCount:0    自动化( Automation )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 137 iThreshold:7  iCount:0    生物科技( Biotechnology )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 138 iThreshold:7  iCount:0    统一场论( Unified_theory )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 139 iThreshold:7  iCount:0    人工智能( Artificial_intelligence )
+2021-11-21 18:20:48 [1757]  T[340]  [Sweden] Tech 140 iThreshold:7  iCount:0    未来科技( Transhumanism )
+2021-11-21 18:20:48 [1757]  T[340]  在公元1757年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 18:22:56 [1769]  T[344]   伊朗文明即将崩溃！
+2021-11-21 18:22:56 [1769]  T[344]  [Iran] is ready to Complete Collapse
+2021-11-21 18:22:56 [1769]  T[344]  [America] Start Birth
+2021-11-21 18:22:56 [1775]  T[346]  [England]  Colonists: 6 / 6
+2021-11-21 18:27:12 [1784]  T[349]  [Turkey] is ready to Collapse to Core
+2021-11-21 18:27:12 [1784]  T[349]  在公元1784年，蛮族柏柏尔 已经入侵西非地区，坐标范围：(54,27) To (67,35)
+2021-11-21 18:27:12 [1787]  T[350]  Check resurrection
+2021-11-21 18:27:12 [1787]  T[350]  [France]  Start AI WAR with Germany
+2021-11-21 18:27:12 [1787]  T[350]  [France]  Start AI WAR with Austria
+2021-11-21 18:27:12 [1787]  T[350]  [France]  Start AI WAR with Russia
+2021-11-21 18:29:20 [1790]  T[351]  [Portugal] is ready to Collapse to Core
+2021-11-21 18:29:20 [1790]  T[351]  [Spain] is ready to Collapse to Core
+2021-11-21 18:29:20 [1796]  T[353]   莫卧儿文明[F]即将崩溃！
+2021-11-21 18:29:20 [1796]  T[353]  [Mughals] is ready to Complete Collapse
+2021-11-21 18:31:28 [1802]  T[355]  [England] Start late trade company
+2021-11-21 18:33:36 [1805]  T[356]  [Argentina] Start Birth
+2021-11-21 18:33:36 [1805]  T[356]  [France]  Start AI WAR with Italy
+2021-11-21 18:33:36 [1808]  T[357]  [Spain] is ready to Collapse to Core
+2021-11-21 18:33:36 [1808]  T[357]  [Portugal] is ready to Collapse to Core
+2021-11-21 18:33:36 [1811]  T[358]  [France] is ready to Collapse to Core
+2021-11-21 18:35:44 [1811]  T[358]  [Mexico] Start ReBirth
+2021-11-21 18:35:44 [1811]  T[358]  [Italy]  Start AI WAR with France
+2021-11-21 18:35:44 [1811]  T[358]  [Russia]  Start AI WAR with France
+2021-11-21 18:35:44 [1814]  T[359]  [Colombia] Start ReBirth
+2021-11-21 18:35:44 [1814]  T[359]  [Mexico] Start Second ReBirth
+2021-11-21 18:35:44 [1817]  T[360]  [Turkey] is ready to Collapse to Core
+2021-11-21 18:37:52 [1817]  T[360]  [Brazil] Start Birth
+2021-11-21 18:37:52 [1817]  T[360]  Check resurrection
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] :check resurrection
+2021-11-21 18:37:52 [1817]  T[360]  [Greece] :check resurrection
+2021-11-21 18:37:52 [1817]  T[360]  [Korea] :check resurrection
+2021-11-21 18:37:52 [1817]  T[360]  [Moors] :check resurrection
+2021-11-21 18:37:52 [1817]  T[360]  [Greece] :city cannot resurrection: city not in minor, now in France
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] :do resurrection when city in minor
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 0 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  鞣毛制造( Tanning )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 1 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  采矿( Mining )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 2 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  制陶术( Pottery )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 3 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  畜牧( Pastoralism )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 4 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  农业( Agriculture )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 5 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  神话( Mythology )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 6 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  航行术( Sailing )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 7 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  金属熔炼( Smelting )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 8 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  石工术( Masonry )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 9 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  简单机械( Leverage )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 10 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  私有制( Property )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 11 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  宗教仪式( Ceremony )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 12 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  占卜学( Divination )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 13 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  航海( Seafaring )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 14 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  合金( Alloys )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 15 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  建筑构造学( Construction )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 16 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  骑术( Riding )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 17 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  算术( Arithmetics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 18 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  文字( Writing )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 19 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  历法( Calendar )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 20 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  造船( Shipbuilding )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 21 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  铁器( Bloomery )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 22 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  水泥( Cement )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 23 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  数学( Mathematics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 24 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  契约精神( Contract )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 25 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  文献( Literature )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 26 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  祭司制度( Priesthood )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 27 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  导航学( Navigation )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 28 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  指挥学( Generalship )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 29 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  工程学( Engineering )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 30 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  美学( Aesthetics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 31 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  货币制度( Currency )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 32 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  律法( Law )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 33 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  哲学( Philosophy )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 34 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  传统医学( Medicine )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 35 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  贵族( Nobility )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 36 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  炼钢( Steel )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 37 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  建筑( Architecture )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 38 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  手工业( Artisanry )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 39 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  政治学( Politics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 40 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  奖学金制度( Scholarship )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 41 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  伦理学( Ethics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 42 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  封建制度( Feudalism )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 43 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  防御工事( Fortification )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 44 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  机械( Machinery )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 45 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  炼金术( Alchemy )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 46 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  行会( Guilds )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 47 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  文官制度( Civil_service )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 48 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  神学( Theology )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 49 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  公社( Commune )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 50 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  作物轮作术( Crop_rotation )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 51 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  造纸术( Paper )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 52 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  罗盘( Compass )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 53 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  艺术赞助( Patronage )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 54 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  教育学( Education )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 55 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  宗教教条( Doctrine )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 56 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  火药( Gunpowder )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 57 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  公司制( Companies )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 58 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  金融学( Finance )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 59 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  地图学( Cartography )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 60 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  人文科学( Humanities )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 61 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  印刷术( Printing )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 62 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  司法( Judiciary )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 63 iThreshold:6  iCount:6    热兵器军队( Firearms )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 64 iThreshold:6  iCount:8
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  物流( Logistics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 65 iThreshold:6  iCount:9
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  地理探索( Exploration )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 66 iThreshold:6  iCount:7
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  光学( Optics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 67 iThreshold:6  iCount:7
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  学术精神( Academia )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 68 iThreshold:6  iCount:7
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  治国术( Statecraft )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 69 iThreshold:6  iCount:8
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  遗产( Heritage )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 70 iThreshold:6  iCount:6    联合兵种( Combined_arms )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 71 iThreshold:6  iCount:5    经济学( Economics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 72 iThreshold:6  iCount:7
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  地理学( Geography )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 73 iThreshold:6  iCount:7
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  科学方法( Scientific_method )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 74 iThreshold:6  iCount:5    城市规划( Urban_planning )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 75 iThreshold:6  iCount:7
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Resurrection Tech:  公民自由( Civil_liberties )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 76 iThreshold:6  iCount:6    园艺( Horticulture )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 77 iThreshold:6  iCount:5    可更换部件( Replaceable_parts )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 78 iThreshold:6  iCount:3    水利工程( Hydraulics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 79 iThreshold:6  iCount:3    物理学( Physics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 80 iThreshold:6  iCount:5    地质学( Geology )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 81 iThreshold:6  iCount:2    测量学( Measurement )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 82 iThreshold:6  iCount:2    社会学( Sociology )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 83 iThreshold:6  iCount:2    社会契约论( Social_contract )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 84 iThreshold:6  iCount:0    机床( Machine_tools )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 85 iThreshold:6  iCount:2    蒸汽机( Thermodynamics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 86 iThreshold:6  iCount:0    冶金术( Metallurgy )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 87 iThreshold:6  iCount:1    化学( Chemistry )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 88 iThreshold:6  iCount:0    生物学( Biology )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 89 iThreshold:6  iCount:1    民意代表( Representation )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 90 iThreshold:6  iCount:0    民族主义( Nationalism )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 91 iThreshold:6  iCount:0    弹道学( Ballistics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 92 iThreshold:6  iCount:0    内燃机( Engine )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 93 iThreshold:6  iCount:0    铁路( Railroad )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 94 iThreshold:6  iCount:0    电学( Electricity )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 95 iThreshold:6  iCount:0    制冷( Refrigeration )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 96 iThreshold:6  iCount:0    工会( Labour_unions )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 97 iThreshold:6  iCount:0    新闻业( Journalism )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 98 iThreshold:6  iCount:0    气体力学( Pneumatics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 99 iThreshold:6  iCount:0    生产流水线( Assembly_line )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 100 iThreshold:6  iCount:0    石油精炼( Refining )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 101 iThreshold:6  iCount:0    电影( Film )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 102 iThreshold:6  iCount:0    微生物学( Microbiology )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 103 iThreshold:6  iCount:0    消费主义( Consumerism )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 104 iThreshold:6  iCount:0    公民权利( Civil_rights )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 105 iThreshold:6  iCount:0    基础设施( Infrastructure )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 106 iThreshold:6  iCount:0    航空( Flight )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 107 iThreshold:6  iCount:0    石油化工( Synthetics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 108 iThreshold:6  iCount:0    无线电( Radio )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 109 iThreshold:6  iCount:0    心理学( Psychology )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 110 iThreshold:6  iCount:0    宏观经济学( Macroeconomics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 111 iThreshold:6  iCount:0    社会服务( Social_services )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 112 iThreshold:6  iCount:0    航空学( Aviation )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 113 iThreshold:6  iCount:0    火箭( Rocketry )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 114 iThreshold:6  iCount:0    核裂变( Fission )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 115 iThreshold:6  iCount:0    数码产品( Electronics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 116 iThreshold:6  iCount:0    电视机( Television )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 117 iThreshold:6  iCount:0    军力投送( Power_projection )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 118 iThreshold:6  iCount:0    全球化思潮( Globalism )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 119 iThreshold:6  iCount:0    雷达技术( Radar )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 120 iThreshold:6  iCount:0    太空飞行( Spaceflight )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 121 iThreshold:6  iCount:0    核能( Nuclear_power )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 122 iThreshold:6  iCount:0    激光( Laser )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 123 iThreshold:6  iCount:0    电子计算机( Computers )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 124 iThreshold:6  iCount:0    旅游业( Tourism )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 125 iThreshold:6  iCount:0    生态学( Ecology )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 126 iThreshold:6  iCount:0    空气动力学( Aerodynamics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 127 iThreshold:6  iCount:0    人造卫星( Satellites )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 128 iThreshold:6  iCount:0    超导( Superconductors )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 129 iThreshold:6  iCount:0    机器人( Robotics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 130 iThreshold:6  iCount:0    移动通信( Telecommunications )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 131 iThreshold:6  iCount:0    可再生能源( Renewable_energy )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 132 iThreshold:6  iCount:0    遗传学( Genetics )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 133 iThreshold:6  iCount:0    超级材料( Supermaterials )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 134 iThreshold:6  iCount:0    核聚变( Fusion )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 135 iThreshold:6  iCount:0    纳米技术( Nanotechnology )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 136 iThreshold:6  iCount:0    自动化( Automation )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 137 iThreshold:6  iCount:0    生物科技( Biotechnology )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 138 iThreshold:6  iCount:0    统一场论( Unified_theory )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 139 iThreshold:6  iCount:0    人工智能( Artificial_intelligence )
+2021-11-21 18:37:52 [1817]  T[360]  [Egypt] Tech 140 iThreshold:6  iCount:0    未来科技( Transhumanism )
+2021-11-21 18:37:52 [1817]  T[360]  [Colombia] Start Second ReBirth
+2021-11-21 18:40:00 [1823]  T[362]   意大利文明即将崩溃！
+2021-11-21 18:40:00 [1826]  T[363]   意大利文明[正在崩溃][1]即将崩溃！
+2021-11-21 18:42:08 [1829]  T[364]   维京文明[F]即将崩溃！
+2021-11-21 18:42:08 [1829]  T[364]  [Sweden] is ready to Complete Collapse
+2021-11-21 18:46:24 [1841]  T[368]  [Spain] is ready to Collapse to Core
+2021-11-21 18:48:32 [1846]  T[370]  Check resurrection
+2021-11-21 18:48:32 [1846]  T[370]  [Greece] :check resurrection
+2021-11-21 18:48:32 [1846]  T[370]  [Iran] :check resurrection
+2021-11-21 18:48:32 [1846]  T[370]  [Korea] :check resurrection
+2021-11-21 18:48:32 [1846]  T[370]  [Moors] :check resurrection
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] :check resurrection
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] :do resurrection when city in minor
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 0 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  鞣毛制造( Tanning )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 1 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  采矿( Mining )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 2 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  制陶术( Pottery )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 3 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  畜牧( Pastoralism )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 4 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  农业( Agriculture )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 5 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  神话( Mythology )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 6 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  航行术( Sailing )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 7 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  金属熔炼( Smelting )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 8 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  石工术( Masonry )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 9 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  简单机械( Leverage )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 10 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  私有制( Property )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 11 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  宗教仪式( Ceremony )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 12 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  占卜学( Divination )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 13 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  航海( Seafaring )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 14 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  合金( Alloys )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 15 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  建筑构造学( Construction )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 16 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  骑术( Riding )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 17 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  算术( Arithmetics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 18 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  文字( Writing )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 19 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  历法( Calendar )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 20 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  造船( Shipbuilding )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 21 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  铁器( Bloomery )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 22 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  水泥( Cement )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 23 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  数学( Mathematics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 24 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  契约精神( Contract )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 25 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  文献( Literature )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 26 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  祭司制度( Priesthood )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 27 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  导航学( Navigation )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 28 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  指挥学( Generalship )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 29 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  工程学( Engineering )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 30 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  美学( Aesthetics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 31 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  货币制度( Currency )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 32 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  律法( Law )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 33 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  哲学( Philosophy )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 34 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  传统医学( Medicine )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 35 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  贵族( Nobility )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 36 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  炼钢( Steel )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 37 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  建筑( Architecture )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 38 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  手工业( Artisanry )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 39 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  政治学( Politics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 40 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  奖学金制度( Scholarship )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 41 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  伦理学( Ethics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 42 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  封建制度( Feudalism )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 43 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  防御工事( Fortification )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 44 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  机械( Machinery )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 45 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  炼金术( Alchemy )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 46 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  行会( Guilds )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 47 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  文官制度( Civil_service )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 48 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  神学( Theology )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 49 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  公社( Commune )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 50 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  作物轮作术( Crop_rotation )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 51 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  造纸术( Paper )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 52 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  罗盘( Compass )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 53 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  艺术赞助( Patronage )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 54 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  教育学( Education )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 55 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  宗教教条( Doctrine )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 56 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  火药( Gunpowder )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 57 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  公司制( Companies )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 58 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  金融学( Finance )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 59 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  地图学( Cartography )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 60 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  人文科学( Humanities )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 61 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  印刷术( Printing )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 62 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  司法( Judiciary )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 63 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  热兵器军队( Firearms )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 64 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  物流( Logistics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 65 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  地理探索( Exploration )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 66 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  光学( Optics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 67 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  学术精神( Academia )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 68 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  治国术( Statecraft )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 69 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  遗产( Heritage )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 70 iThreshold:7  iCount:10
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  联合兵种( Combined_arms )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 71 iThreshold:7  iCount:10
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  经济学( Economics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 72 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  地理学( Geography )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 73 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  科学方法( Scientific_method )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 74 iThreshold:7  iCount:9
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  城市规划( Urban_planning )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 75 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  公民自由( Civil_liberties )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 76 iThreshold:7  iCount:10
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  园艺( Horticulture )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 77 iThreshold:7  iCount:10
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  可更换部件( Replaceable_parts )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 78 iThreshold:7  iCount:7    水利工程( Hydraulics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 79 iThreshold:7  iCount:10
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  物理学( Physics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 80 iThreshold:7  iCount:11
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Resurrection Tech:  地质学( Geology )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 81 iThreshold:7  iCount:7    测量学( Measurement )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 82 iThreshold:7  iCount:6    社会学( Sociology )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 83 iThreshold:7  iCount:5    社会契约论( Social_contract )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 84 iThreshold:7  iCount:1    机床( Machine_tools )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 85 iThreshold:7  iCount:3    蒸汽机( Thermodynamics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 86 iThreshold:7  iCount:1    冶金术( Metallurgy )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 87 iThreshold:7  iCount:2    化学( Chemistry )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 88 iThreshold:7  iCount:1    生物学( Biology )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 89 iThreshold:7  iCount:3    民意代表( Representation )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 90 iThreshold:7  iCount:2    民族主义( Nationalism )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 91 iThreshold:7  iCount:1    弹道学( Ballistics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 92 iThreshold:7  iCount:0    内燃机( Engine )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 93 iThreshold:7  iCount:0    铁路( Railroad )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 94 iThreshold:7  iCount:0    电学( Electricity )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 95 iThreshold:7  iCount:0    制冷( Refrigeration )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 96 iThreshold:7  iCount:0    工会( Labour_unions )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 97 iThreshold:7  iCount:0    新闻业( Journalism )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 98 iThreshold:7  iCount:0    气体力学( Pneumatics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 99 iThreshold:7  iCount:0    生产流水线( Assembly_line )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 100 iThreshold:7  iCount:0    石油精炼( Refining )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 101 iThreshold:7  iCount:0    电影( Film )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 102 iThreshold:7  iCount:0    微生物学( Microbiology )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 103 iThreshold:7  iCount:0    消费主义( Consumerism )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 104 iThreshold:7  iCount:0    公民权利( Civil_rights )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 105 iThreshold:7  iCount:0    基础设施( Infrastructure )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 106 iThreshold:7  iCount:0    航空( Flight )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 107 iThreshold:7  iCount:0    石油化工( Synthetics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 108 iThreshold:7  iCount:0    无线电( Radio )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 109 iThreshold:7  iCount:0    心理学( Psychology )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 110 iThreshold:7  iCount:0    宏观经济学( Macroeconomics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 111 iThreshold:7  iCount:0    社会服务( Social_services )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 112 iThreshold:7  iCount:0    航空学( Aviation )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 113 iThreshold:7  iCount:0    火箭( Rocketry )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 114 iThreshold:7  iCount:0    核裂变( Fission )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 115 iThreshold:7  iCount:0    数码产品( Electronics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 116 iThreshold:7  iCount:0    电视机( Television )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 117 iThreshold:7  iCount:0    军力投送( Power_projection )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 118 iThreshold:7  iCount:0    全球化思潮( Globalism )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 119 iThreshold:7  iCount:0    雷达技术( Radar )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 120 iThreshold:7  iCount:0    太空飞行( Spaceflight )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 121 iThreshold:7  iCount:0    核能( Nuclear_power )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 122 iThreshold:7  iCount:0    激光( Laser )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 123 iThreshold:7  iCount:0    电子计算机( Computers )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 124 iThreshold:7  iCount:0    旅游业( Tourism )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 125 iThreshold:7  iCount:0    生态学( Ecology )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 126 iThreshold:7  iCount:0    空气动力学( Aerodynamics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 127 iThreshold:7  iCount:0    人造卫星( Satellites )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 128 iThreshold:7  iCount:0    超导( Superconductors )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 129 iThreshold:7  iCount:0    机器人( Robotics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 130 iThreshold:7  iCount:0    移动通信( Telecommunications )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 131 iThreshold:7  iCount:0    可再生能源( Renewable_energy )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 132 iThreshold:7  iCount:0    遗传学( Genetics )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 133 iThreshold:7  iCount:0    超级材料( Supermaterials )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 134 iThreshold:7  iCount:0    核聚变( Fusion )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 135 iThreshold:7  iCount:0    纳米技术( Nanotechnology )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 136 iThreshold:7  iCount:0    自动化( Automation )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 137 iThreshold:7  iCount:0    生物科技( Biotechnology )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 138 iThreshold:7  iCount:0    统一场论( Unified_theory )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 139 iThreshold:7  iCount:0    人工智能( Artificial_intelligence )
+2021-11-21 18:48:32 [1846]  T[370]  [Austria] Tech 140 iThreshold:7  iCount:0    未来科技( Transhumanism )
+2021-11-21 18:48:32 [1848]  T[371]   刚果文明[F]即将崩溃！
+2021-11-21 18:48:32 [1848]  T[371]  [Congo] is ready to Complete Collapse
+2021-11-21 18:52:48 [1860]  T[377]  [Turkey] is ready to Collapse to Core
+2021-11-21 18:52:48 [1862]  T[378]  [Canada] Start Birth

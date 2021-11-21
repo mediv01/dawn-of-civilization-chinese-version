@@ -1,0 +1,480 @@
+2021-11-21 18:46:24 [1841]  T[368]  *****************START vote city AI************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************华夏文明    要求           Shin'you(日本文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************法兰西文明    Vote For      华夏文明         on      Shin'you(日本文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: France
+Claimant: China
+City claim: Shin'you
+Owner: Japan
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 16
+FavorOwner: 16
+Claim Validity: 12
+2021-11-21 18:46:24 [1841]  T[368]  France Voted YES: random to China
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************英格兰文明    Vote For      华夏文明         on      Shin'you(日本文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: England
+Claimant: China
+City claim: Shin'you
+Owner: Japan
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 1
+FavorOwner: 6
+Claim Validity: 5
+2021-11-21 18:46:24 [1841]  T[368]  England Voted NO: random to China
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************美利坚文明    Vote For      华夏文明         on      Shin'you(日本文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: America
+Claimant: China
+City claim: Shin'you
+Owner: Japan
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 10
+FavorOwner: 6
+Claim Validity: 12
+2021-11-21 18:46:24 [1841]  T[368]  America Voted YES: claimant favor higher than owner favor to China
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************西班牙文明    Vote For      华夏文明         on      Shin'you(日本文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Spain
+Claimant: China
+City claim: Shin'you
+Owner: Japan
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 6
+FavorOwner: 6
+Claim Validity: 5
+2021-11-21 18:46:24 [1841]  T[368]  Spain Voted YES: random to China
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************巴西文明    Vote For      华夏文明         on      Shin'you(日本文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Brazil
+Claimant: China
+City claim: Shin'you
+Owner: Japan
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 11
+FavorOwner: 6
+Claim Validity: 12
+2021-11-21 18:46:24 [1841]  T[368]  Brazil Voted YES: claimant favor higher than owner favor to China
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************墨西哥文明    Vote For      华夏文明         on      Shin'you(日本文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Mexico
+Claimant: China
+City claim: Shin'you
+Owner: Japan
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 16
+FavorOwner: 16
+Claim Validity: 12
+2021-11-21 18:46:24 [1841]  T[368]  Mexico Voted NO: random to China
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************日本文明    Vote For      华夏文明         on      Shin'you(日本文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Japan
+Claimant: China
+City claim: Shin'you
+Owner: Japan
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: -5
+FavorOwner: 0
+Claim Validity: 12
+2021-11-21 18:46:24 [1841]  T[368]  Japan Voted NO: claim on own city towards to China
+2021-11-21 18:46:24 [1841]  T[368]  *****************END vote city AI************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************START vote city AI************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************美利坚文明    要求           Montreal(法兰西文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************法兰西文明    Vote For      美利坚文明         on      Montreal(法兰西文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: France
+Claimant: America
+City claim: Montreal
+Owner: France
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 0
+FavorOwner: -11
+Claim Validity: -22
+2021-11-21 18:46:24 [1841]  T[368]  France Voted NO: claim on own city towards to America
+2021-11-21 18:46:24 [1841]  T[368]  *****************英格兰文明    Vote For      美利坚文明         on      Montreal(法兰西文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: England
+Claimant: America
+City claim: Montreal
+Owner: France
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 2
+FavorOwner: 18
+Claim Validity: -19
+2021-11-21 18:46:24 [1841]  T[368]  England Voted NO: bad claim to America
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************西班牙文明    Vote For      美利坚文明         on      Montreal(法兰西文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Spain
+Claimant: America
+City claim: Montreal
+Owner: France
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 12
+FavorOwner: 21
+Claim Validity: -19
+2021-11-21 18:46:24 [1841]  T[368]  Spain Voted NO: bad claim to America
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************巴西文明    Vote For      美利坚文明         on      Montreal(法兰西文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Brazil
+Claimant: America
+City claim: Montreal
+Owner: France
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 17
+FavorOwner: 16
+Claim Validity: -11
+2021-11-21 18:46:24 [1841]  T[368]  Brazil Voted NO: bad claim to America
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************墨西哥文明    Vote For      美利坚文明         on      Montreal(法兰西文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Mexico
+Claimant: America
+City claim: Montreal
+Owner: France
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 2
+FavorOwner: 36
+Claim Validity: -14
+2021-11-21 18:46:24 [1841]  T[368]  Mexico Voted NO: bad claim to America
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************日本文明    Vote For      美利坚文明         on      Montreal(法兰西文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Japan
+Claimant: America
+City claim: Montreal
+Owner: France
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 7
+FavorOwner: 31
+Claim Validity: -14
+2021-11-21 18:46:24 [1841]  T[368]  Japan Voted NO: bad claim to America
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************END vote city AI************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************START vote city AI************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************巴西文明    要求           Cayenne(法兰西文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************法兰西文明    Vote For      巴西文明         on      Cayenne(法兰西文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: France
+Claimant: Brazil
+City claim: Cayenne
+Owner: France
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 0
+FavorOwner: -7
+Claim Validity: -10
+2021-11-21 18:46:24 [1841]  T[368]  France Voted NO: claim on own city towards to Brazil
+2021-11-21 18:46:24 [1841]  T[368]  *****************英格兰文明    Vote For      巴西文明         on      Cayenne(法兰西文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: England
+Claimant: Brazil
+City claim: Cayenne
+Owner: France
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 13
+FavorOwner: 21
+Claim Validity: -9
+2021-11-21 18:46:24 [1841]  T[368]  England Voted NO: bad claim to Brazil
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************西班牙文明    Vote For      巴西文明         on      Cayenne(法兰西文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Spain
+Claimant: Brazil
+City claim: Cayenne
+Owner: France
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 8
+FavorOwner: 18
+Claim Validity: -9
+2021-11-21 18:46:24 [1841]  T[368]  Spain Voted NO: bad claim to Brazil
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************墨西哥文明    Vote For      巴西文明         on      Cayenne(法兰西文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Mexico
+Claimant: Brazil
+City claim: Cayenne
+Owner: France
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 3
+FavorOwner: 36
+Claim Validity: -3
+2021-11-21 18:46:24 [1841]  T[368]  Mexico Voted NO: bad claim to Brazil
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************日本文明    Vote For      巴西文明         on      Cayenne(法兰西文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Japan
+Claimant: Brazil
+City claim: Cayenne
+Owner: France
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 3
+FavorOwner: 31
+Claim Validity: -6
+2021-11-21 18:46:24 [1841]  T[368]  Japan Voted NO: bad claim to Brazil
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************END vote city AI************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************START vote city AI************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************日本文明    要求           Trowulan(泰国文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************法兰西文明    Vote For      日本文明         on      Trowulan(泰国文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: France
+Claimant: Japan
+City claim: Trowulan
+Owner: Thailand
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 11
+FavorOwner: -8
+Claim Validity: 8
+2021-11-21 18:46:24 [1841]  T[368]  France Voted YES: claimant favor higher than owner favor to Japan
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************英格兰文明    Vote For      日本文明         on      Trowulan(泰国文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: England
+Claimant: Japan
+City claim: Trowulan
+Owner: Thailand
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: -2
+FavorOwner: 2
+Claim Validity: 5
+2021-11-21 18:46:24 [1841]  T[368]  England Voted NO: random to Japan
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************西班牙文明    Vote For      日本文明         on      Trowulan(泰国文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Spain
+Claimant: Japan
+City claim: Trowulan
+Owner: Thailand
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 1
+FavorOwner: 2
+Claim Validity: 5
+2021-11-21 18:46:24 [1841]  T[368]  Spain Voted NO: random to Japan
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************墨西哥文明    Vote For      日本文明         on      Trowulan(泰国文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Mexico
+Claimant: Japan
+City claim: Trowulan
+Owner: Thailand
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 11
+FavorOwner: 2
+Claim Validity: 8
+2021-11-21 18:46:24 [1841]  T[368]  Mexico Voted YES: claimant favor higher than owner favor to Japan
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************END vote city AI************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************START vote city AI************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************西班牙文明    要求           The Valley(荷兰文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************法兰西文明    Vote For      西班牙文明         on      The Valley(荷兰文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: France
+Claimant: Spain
+City claim: The Valley
+Owner: 荷兰
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: -1
+FavorOwner: -5
+Claim Validity: -2
+2021-11-21 18:46:24 [1841]  T[368]  France Voted YES: likes claimant enough despite bad claim to Spain
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************英格兰文明    Vote For      西班牙文明         on      The Valley(荷兰文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: England
+Claimant: Spain
+City claim: The Valley
+Owner: 荷兰
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 10
+FavorOwner: 10
+Claim Validity: -2
+2021-11-21 18:46:24 [1841]  T[368]  England Voted NO: bad claim to Spain
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************墨西哥文明    Vote For      西班牙文明         on      The Valley(荷兰文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Mexico
+Claimant: Spain
+City claim: The Valley
+Owner: 荷兰
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 8
+FavorOwner: 15
+Claim Validity: -2
+2021-11-21 18:46:24 [1841]  T[368]  Mexico Voted NO: bad claim to Spain
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************荷兰文明    Vote For      西班牙文明         on      The Valley(荷兰文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: 荷兰
+Claimant: Spain
+City claim: The Valley
+Owner: 荷兰
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: -9
+FavorOwner: 0
+Claim Validity: -2
+2021-11-21 18:46:24 [1841]  T[368]  荷兰 Voted NO: bad claim to Spain
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************END vote city AI************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************START vote city AI************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************法兰西文明    要求           Portland(美利坚文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************英格兰文明    Vote For      法兰西文明         on      Portland(美利坚文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: England
+Claimant: France
+City claim: Portland
+Owner: America
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 15
+FavorOwner: 7
+Claim Validity: 5
+2021-11-21 18:46:24 [1841]  T[368]  England Voted YES: claimant favor higher than owner favor to France
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************墨西哥文明    Vote For      法兰西文明         on      Portland(美利坚文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Mexico
+Claimant: France
+City claim: Portland
+Owner: America
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 31
+FavorOwner: 2
+Claim Validity: -3
+2021-11-21 18:46:24 [1841]  T[368]  Mexico Voted YES: likes claimant enough despite bad claim to France
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************荷兰文明    Vote For      法兰西文明         on      Portland(美利坚文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: 荷兰
+Claimant: France
+City claim: Portland
+Owner: America
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 1
+FavorOwner: 7
+Claim Validity: -1
+2021-11-21 18:46:24 [1841]  T[368]  荷兰 Voted NO: bad claim to France
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************美利坚文明    Vote For      法兰西文明         on      Portland(美利坚文明)************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: America
+Claimant: France
+City claim: Portland
+Owner: America
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: -10
+FavorOwner: 0
+Claim Validity: -9
+2021-11-21 18:46:24 [1841]  T[368]  America Voted NO: bad claim to France
+2021-11-21 18:46:24 [1841]  T[368]  End vote city AI
+2021-11-21 18:46:24 [1841]  T[368]  *****************END vote city AI************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************START vote city AI************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************英格兰文明    要求            ************************
+2021-11-21 18:46:24 [1841]  T[368]  *****************墨西哥文明    Vote For      英格兰文明         on       ************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: Mexico
+Claimant: England
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: 7
+2021-11-21 18:46:24 [1841]  T[368]  Mexico Voted YES: random with empty territory to England
+2021-11-21 18:46:24 [1841]  T[368]  *****************荷兰文明    Vote For      英格兰文明         on       ************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: 荷兰
+Claimant: England
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: 4
+2021-11-21 18:46:24 [1841]  T[368]  荷兰 Voted NO: random with empty territory to England
+2021-11-21 18:46:24 [1841]  T[368]  *****************美利坚文明    Vote For      英格兰文明         on       ************************
+2021-11-21 18:46:24 [1841]  T[368]  
+Vote City AI Debug
+Voter: America
+Claimant: England
+2021-11-21 18:46:24 [1841]  T[368]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: 2
+2021-11-21 18:46:24 [1841]  T[368]  America Voted YES: random with empty territory to England
+2021-11-21 18:46:24 [1841]  T[368]  *****************END vote city AI************************
+2021-11-21 18:48:32 [1852]  T[373]  *****************START vote city AI************************
+2021-11-21 18:48:32 [1852]  T[373]  *****************法兰西文明    要求           Rhein-Main Air Base(荷兰文明)************************
+2021-11-21 18:48:32 [1852]  T[373]  *****************刚果文明[F][正在崩溃][1]    Vote For      法兰西文明         on      Rhein-Main Air Base(荷兰文明)************************
+2021-11-21 18:48:32 [1852]  T[373]  
+Vote City AI Debug
+Voter: Congo
+Claimant: France
+City claim: Rhein-Main Air Base
+Owner: 荷兰
+2021-11-21 18:48:32 [1852]  T[373]  FavorClaimant: 57
+FavorOwner: 20
+Claim Validity: 22
+2021-11-21 18:48:32 [1852]  T[373]  Congo Voted YES: claimant favor higher than owner favor to France
+2021-11-21 18:48:32 [1852]  T[373]  End vote city AI
+2021-11-21 18:48:32 [1852]  T[373]  *****************俄罗斯文明    Vote For      法兰西文明         on      Rhein-Main Air Base(荷兰文明)************************
+2021-11-21 18:48:32 [1852]  T[373]  
+Vote City AI Debug
+Voter: Russia
+Claimant: France
+City claim: Rhein-Main Air Base
+Owner: 荷兰
+2021-11-21 18:48:32 [1852]  T[373]  FavorClaimant: 26
+FavorOwner: 20
+Claim Validity: 22
+2021-11-21 18:48:32 [1852]  T[373]  Russia Voted YES: claimant favor higher than owner favor to France
+2021-11-21 18:48:32 [1852]  T[373]  End vote city AI
+2021-11-21 18:48:32 [1852]  T[373]  *****************英格兰文明    Vote For      法兰西文明         on      Rhein-Main Air Base(荷兰文明)************************
+2021-11-21 18:48:32 [1852]  T[373]  
+Vote City AI Debug
+Voter: England
+Claimant: France
+City claim: Rhein-Main Air Base
+Owner: 荷兰
+2021-11-21 18:48:32 [1852]  T[373]  FavorClaimant: 21
+FavorOwner: 10
+Claim Validity: 22
+2021-11-21 18:48:32 [1852]  T[373]  England Voted YES: claimant favor higher than owner favor to France
+2021-11-21 18:48:32 [1852]  T[373]  End vote city AI
+2021-11-21 18:48:32 [1852]  T[373]  *****************美利坚文明    Vote For      法兰西文明         on      Rhein-Main Air Base(荷兰文明)************************
+2021-11-21 18:48:32 [1852]  T[373]  
+Vote City AI Debug
+Voter: America
+Claimant: France
+City claim: Rhein-Main Air Base
+Owner: 荷兰
+2021-11-21 18:48:32 [1852]  T[373]  FavorClaimant: 16
+FavorOwner: 5
+Claim Validity: 15
+2021-11-21 18:48:32 [1852]  T[373]  America Voted YES: claimant favor higher than owner favor to France
+2021-11-21 18:48:32 [1852]  T[373]  End vote city AI
+2021-11-21 18:48:32 [1852]  T[373]  *****************华夏文明    Vote For      法兰西文明         on      Rhein-Main Air Base(荷兰文明)************************
+2021-11-21 18:48:32 [1852]  T[373]  
+Vote City AI Debug
+Voter: China
+Claimant: France
+City claim: Rhein-Main Air Base
+Owner: 荷兰
+2021-11-21 18:48:32 [1852]  T[373]  FavorClaimant: 27
+FavorOwner: 15
+Claim Validity: 22
+2021-11-21 18:48:32 [1852]  T[373]  China Voted YES: claimant favor higher than owner favor to France
+2021-11-21 18:48:32 [1852]  T[373]  End vote city AI
+2021-11-21 18:48:32 [1852]  T[373]  *****************荷兰文明    Vote For      法兰西文明         on      Rhein-Main Air Base(荷兰文明)************************
+2021-11-21 18:48:32 [1852]  T[373]  
+Vote City AI Debug
+Voter: 荷兰
+Claimant: France
+City claim: Rhein-Main Air Base
+Owner: 荷兰
+2021-11-21 18:48:32 [1852]  T[373]  FavorClaimant: 0
+FavorOwner: 0
+Claim Validity: 22
+2021-11-21 18:48:32 [1852]  T[373]  荷兰 Voted NO: random to France
+2021-11-21 18:48:32 [1852]  T[373]  End vote city AI
+2021-11-21 18:48:32 [1852]  T[373]  *****************END vote city AI************************
