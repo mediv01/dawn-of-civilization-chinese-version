@@ -125,10 +125,6 @@
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
-    <Define>
-        <DefineName>GAME_TEXT_DISABLE_DYNAMIC_NAMES</DefineName>        <!-- 1为关闭动态国家名称  0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
-    </Define>
 
     <Define>
         <DefineName>CVGAMETEXT_SHOW_FLIP_ZONE_IN_MAP</DefineName>        <!-- 地块显示是否是翻转区，0为默认模式  mediv01 -->
@@ -806,7 +802,7 @@
 
 	<Define>
         <DefineName>CVPLAYER_HUMAN_CANNOT_BE_STOLEN_TREASURE</DefineName>        <!-- 大于0的数字为人类不能被盗窃国库 0为默认模式， mediv01  2021年11月版本新增内容 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
 	<Define>
@@ -815,8 +811,8 @@
     </Define>
 
 	<Define>
-        <DefineName>CVPLAYER_HUMAN_CANNOT_BE_STOLEN_TECH</DefineName>        <!-- 大于0的数字为人类不能被盗窃国库 0为默认模式， mediv01  2021年11月版本新增内容 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <DefineName>CVPLAYER_HUMAN_CANNOT_BE_STOLEN_TECH</DefineName>        <!-- 大于0的数字为人类不能被盗窃科技 0为默认模式， mediv01  2021年11月版本新增内容 -->
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
 	<Define>
@@ -1320,7 +1316,7 @@
 	
 	<Define>
         <DefineName>PYTHON_LEADER_DISABLE_MAO</DefineName>        <!-- 1为启用在领袖菜单中禁用MAO，主要为了视频合规（伟人头像相关的游戏视频不可上传）写的参数 0为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
     <Define>
@@ -1375,7 +1371,7 @@
 
     <Define>
         <DefineName>STABILITY_PY_AI_STABILITY_BONUS</DefineName>        <!-- AI负面稳定度修正系数，最终AI的稳定度=稳定度/2，减小AI负面稳定度的惩罚  2为默认模式 mediv01 -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>2</iDefineIntVal>
     </Define>
 
 
@@ -1447,7 +1443,7 @@
 
     <Define>
         <DefineName>CVCITY_INCREASE_RELIGION_CHANCE_ONLY_FOR_STATERELIGION</DefineName>        <!-- 大于0的参数为传播参数仅仅对人类文明的国教有效，对其他宗教无效 需要CVCITY_INCREASE_RELIGION_CHANCE参数为0才起作用  0为默认模式， mediv01  -->
-        <iDefineIntVal>10</iDefineIntVal>
+        <iDefineIntVal>5</iDefineIntVal>
     </Define>
 
 
@@ -1669,7 +1665,7 @@
     </Define>
 
 	<Define>
-        <DefineName>PYTHON_FIX_URV_TEXTBUG_IN_CHINESE</DefineName>        <!--  1为修复在中文模式下UHV文本的BUG，0为默认模式  mediv01 2021年11月版本 -->
+        <DefineName>PYTHON_FIX_URV_TEXTBUG_IN_CHINESE</DefineName>        <!--  1为修复在中文模式下URV文本的BUG，0为默认模式  mediv01 2021年11月版本 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
@@ -1677,7 +1673,7 @@
 
 
 	<Define>
-        <DefineName>PYTHON_UAV_ENABLE_TO_USE_UAV</DefineName>        <!--  1为禁用对人类玩家的铁路战争，0为默认模式  mediv01 2021年11月版本 -->
+        <DefineName>PYTHON_UAV_ENABLE_TO_USE_UAV</DefineName>        <!--  1为启用UAV机制，0为默认模式  mediv01 2021年11月版本 -->
         <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
@@ -1785,7 +1781,7 @@
 
     <Define>
         <DefineName>PYTHON_LOG_ON_TECH</DefineName>        <!-- 1为记录科技获取的日志 0为默认模式 mediv01 -->
-        <iDefineIntVal>0</iDefineIntVal>
+        <iDefineIntVal>1</iDefineIntVal>
     </Define>
 
 
@@ -1846,7 +1842,7 @@
 
 	<Define>
         <DefineName>CVGAMECORE_LOG_ON_TEST</DefineName>        <!-- 1为记录TEST里的日志，0为默认模式， mediv01  -->
-        <iDefineIntVal>1</iDefineIntVal>
+        <iDefineIntVal>0</iDefineIntVal>
     </Define>
 
 	<Define>
@@ -1975,6 +1971,12 @@
         <DefineName>CVUNIT_GREAT_WALL_DYNAMIC</DefineName><!-- 1为长城动态变化 0为默认模式，参数有问题，会导致全部国家都有长城效果，而且很卡，建议取消 已经取消  mediv01  -->
 <iDefineIntVal>0</iDefineIntVal>
 </Define>    
+
+
+    <Define>
+        <DefineName>GAME_TEXT_DISABLE_DYNAMIC_NAMES</DefineName>        <!-- 1为关闭动态国家名称  0为默认模式 mediv01 -->
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
     ]]>
 
 </Civ4Defines>
