@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Portugal -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_DESC</Tag>
+		<English>葡萄牙文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙文明</Chinese><French>The Portuguese</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_PEOPLES</Tag>
+		<English>葡萄牙</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙</Chinese><French>Lusitanian Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_DEFAULT</Tag>
+		<English>Portugal</English>
+		<L1/><L2/><L3/><L4/><Chinese>Portugal</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_COMMUNIST</Tag>
+		<English>葡萄牙</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙</Chinese><French>%s2 Continuing Revolutionary Process</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_FASCIST</Tag>
+		<English>葡萄牙</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙</Chinese><French>New State of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_EMPIRE</Tag>
+		<English>葡萄牙帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙帝国</Chinese><French>Portuguese Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_BRAZIL</Tag>
+		<English>葡萄牙-巴西联合王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙-巴西联合王国</Chinese><French>United Kingdom of %s1 and Brazil</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_EXILE</Tag>
+		<English>葡萄牙流亡政府</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙流亡政府</Chinese><French>%s2 Government in Exile</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGUESE_INDIA</Tag>
+		<English>葡萄牙—印度</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙—印度</Chinese><French>Viceroyalty of %s2 %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGUESE_INDONESIA</Tag>
+		<English>葡萄牙—印尼</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙—印尼</Chinese><French>%s2 East Indies</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGUESE_CONGO</Tag>
+		<English>葡萄牙—刚果</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙—刚果</Chinese><French>%s2 West Africa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGUESE_MALI</Tag>
+		<English>葡萄牙—马里</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙—马里</Chinese><French>%s2 Gold Coast</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGUESE_BRAZIL</Tag>
+		<English>葡萄牙—拜占庭</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙—拜占庭</Chinese><French>State of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_ADJECTIVE</Tag>
+		<English>
+			<Text>Portuguese:Portuguese</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<L1/><L2/><L3/><L4/><French>State of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_SHORT_DESC</Tag>
+		<English>Portugal</English>
+		<L1/><L2/><L3/><L4/><Chinese>Portugal</Chinese><French>Portugal</French></TEXT>
+</Civ4GameText>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Improvements -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_OCEAN_FISHERY</Tag>
+		<English>海洋渔场</English>
+		<L1/><L2/><L3/><L4/><Chinese>海洋渔场</Chinese><French>Ocean Fishery</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_SLAVE_PLANTATION</Tag>
+		<English>奴隶种植园</English>
+		<L1/><L2/><L3/><L4/><Chinese>奴隶种植园</Chinese><French>Slave Plantation</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_ORCHARD</Tag>
+		<English>果园</English>
+		<L1/><L2/><L3/><L4/><Chinese>果园</Chinese><French>Orchard</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_NATURE_RESERVE</Tag>
+		<English>自然保护区</English>
+		<L1/><L2/><L3/><L4/><Chinese>自然保护区</Chinese><French>Nature Reserve</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_MARINE_RESERVE</Tag>
+		<English>海洋保护区</English>
+		<L1/><L2/><L3/><L4/><Chinese>海洋保护区</Chinese><French>Marine Reserve</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_PADDY_FIELD</Tag>
+		<English>水田</English>
+		<L1/><L2/><L3/><L4/><Chinese>水田</Chinese><French>Paddy Field</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ROUTE_ROMAN_ROAD</Tag>
+		<English>罗马大道</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马大道</Chinese><French>Roman Road</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ROUTE_HIGHWAY</Tag>
+		<English>公路</English>
+		<L1/><L2/><L3/><L4/><Chinese>公路</Chinese><French>Highway</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_TRIBAL_VILLAGE</Tag>
+		<English>部落村庄</English>
+		<L1/><L2/><L3/><L4/><Chinese>部落村庄</Chinese><French>Tribal Village</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_SOLAR_COLLECTOR</Tag>
+		<English>太阳能收集器</English>
+		<L1/><L2/><L3/><L4/><Chinese>太阳能收集器</Chinese><French>Solar Collector</French></TEXT>
+</Civ4GameText>

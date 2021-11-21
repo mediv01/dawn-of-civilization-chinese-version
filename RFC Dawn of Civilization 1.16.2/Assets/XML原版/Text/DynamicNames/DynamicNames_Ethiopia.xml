@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Ethiopia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_DESC</Tag>
+		<English>埃塞俄比亚文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞俄比亚文明</Chinese><French>The Ethiopians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_PEOPLES</Tag>
+		<English>埃塞俄比亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞俄比亚</Chinese><French>Abyssinian Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_DEFAULT</Tag>
+		<English>Ethiopia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Ethiopia</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_FASCIST</Tag>
+		<English>埃塞俄比亚军政府</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞俄比亚军政府</Chinese><French>%s2 Junta</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_REPUBLIC</Tag>
+		<English>埃塞俄比亚联邦民主共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞俄比亚联邦民主共和国</Chinese><French>Federal Democratic Republic of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_COMMUNIST</Tag>
+		<English>埃塞俄比亚人民共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞俄比亚人民共和国</Chinese><French>People's Democratic Republic of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_AKSUM</Tag>
+		<English>埃塞尔比亚阿克苏姆</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞尔比亚阿克苏姆</Chinese><French>Aksum</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_AKSUMITE</Tag>
+		<English>埃塞尔比亚阿克苏姆</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞尔比亚阿克苏姆</Chinese><French>Aksumite</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_ADAL</Tag>
+		<English>埃塞尔比亚-阿达尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞尔比亚-阿达尔</Chinese><French>Adal</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_ADJECTIVE</Tag>
+		<English>
+			<Text>Ethiopian:Ethiopians</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<L1/><L2/><L3/><L4/><French>Adal</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_SHORT_DESC</Tag>
+		<English>Ethiopia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Ethiopia</Chinese><French>Ethiopia</French></TEXT>
+</Civ4GameText>

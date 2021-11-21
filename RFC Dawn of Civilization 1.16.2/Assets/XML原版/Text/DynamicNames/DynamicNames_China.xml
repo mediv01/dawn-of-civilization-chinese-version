@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- China -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_DESC</Tag>
+		<English>华夏文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>华夏文明</Chinese><French>The Chinese</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_PEOPLES</Tag>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Han Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_DEFAULT</Tag>
+		<English>China</English>
+		<L1/><L2/><L3/><L4/><Chinese>China</Chinese><French>Middle Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_FASCIST</Tag>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Nation of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_ZHOU</Tag>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Zhou</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_HAN</Tag>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Han</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_QIN</Tag>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Qin</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_SUI</Tag>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Sui</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_TANG</Tag>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Tang</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_SONG</Tag>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>Song</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_MING</Tag>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>the Great Ming</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_QING</Tag>
+		<English>中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>中国</Chinese><French>the Great Qing</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_VASSAL</Tag>
+		<English> %s4 封国</English>
+		<L1/><L2/><L3/><L4/><Chinese> %s4 封国</Chinese><French>Tributary %s4 State</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_KOREA</Tag>
+		<English>安东都护府</English>
+		<L1/><L2/><L3/><L4/><Chinese>安东都护府</Chinese><French>Protectorate General to Pacify the East</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_TURKS</Tag>
+		<English>安西都护府</English>
+		<L1/><L2/><L3/><L4/><Chinese>安西都护府</Chinese><French>Protectorate General to Pacify the West</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_MONGOLIA</Tag>
+		<English>安北都护府</English>
+		<L1/><L2/><L3/><L4/><Chinese>安北都护府</Chinese><French>Protectorate General to Pacify the North</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_EGYPT</Tag>
+		<English>埃及</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及</Chinese><French>Haixi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_INDIA</Tag>
+		<English>印度</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度</Chinese><French>Shendu</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_BABYLONIA</Tag>
+		<English>巴比伦</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦</Chinese><French>Tiaozhi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_PERSIA</Tag>
+		<English>波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯</Chinese><French>Anxi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_ROME</Tag>
+		<English>罗马</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马</Chinese><French>Daqin</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_JAPAN</Tag>
+		<English>日本</English>
+		<L1/><L2/><L3/><L4/><Chinese>日本</Chinese><French>Wo</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_KOREA</Tag>
+		<English>朝鲜</English>
+		<L1/><L2/><L3/><L4/><Chinese>朝鲜</Chinese><French>Chaoxian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_BYZANTIUM</Tag>
+		<English>拜占庭</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭</Chinese><French>Daqin</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_ARABIA</Tag>
+		<English>阿拉伯</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯</Chinese><French>Dashi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_KHMER</Tag>
+		<English>安南（高棉）</English>
+		<L1/><L2/><L3/><L4/><Chinese>安南（高棉）</Chinese><French>Jiaozhi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_MONGOLIA</Tag>
+		<English>蒙古</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古</Chinese><French>Meng</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_OTTOMANS</Tag>
+		<English>奥斯曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥斯曼</Chinese><French>Tujue</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_TIBET</Tag>
+		<English>西藏</English>
+		<L1/><L2/><L3/><L4/><Chinese>西藏</Chinese><French>Xizang</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINESE_ADJECTIVE_INDONESIA</Tag>
+		<English>印度尼西亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度尼西亚</Chinese><French>Yindunixiya</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_ADJECTIVE</Tag>
+		<English>China</English>
+		<L1/><L2/><L3/><L4/><Chinese>China</Chinese><French>Chinese</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_SHORT_DESC</Tag>
+		<English>China</English>
+		<L1/><L2/><L3/><L4/><Chinese>China</Chinese><French>China</French></TEXT>
+</Civ4GameText>

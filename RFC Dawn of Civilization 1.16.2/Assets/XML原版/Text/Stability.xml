@@ -1,0 +1,760 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Stability -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_0</Tag>
+		<English>外交</English>
+		<L1/><L2/><L3/><L4/><Chinese>外交</Chinese><French>Diplomacy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_1</Tag>
+		<English>邻邦</English>
+		<L1/><L2/><L3/><L4/><Chinese>邻邦</Chinese><French>Neighbors</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_10</Tag>
+		<English>城市数目</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市数目</Chinese><French>Civic Number of Cities</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_11</Tag>
+		<English>政体覆盖</English>
+		<L1/><L2/><L3/><L4/><Chinese>政体覆盖</Chinese><French>Civic Cap</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_12</Tag>
+		<English>政体科技</English>
+		<L1/><L2/><L3/><L4/><Chinese>政体科技</Chinese><French>Civic Techs</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_13</Tag>
+		<English>外国核心区域</English>
+		<L1/><L2/><L3/><L4/><Chinese>外国核心区域</Chinese><French>Foreign Core Cities</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_14</Tag>
+		<English>城市快乐指数</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市快乐指数</Chinese><French>City Happiness</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_15</Tag>
+		<English>城市政体</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市政体</Chinese><French>City Civics</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_16</Tag>
+		<English>城市文化</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市文化</Chinese><French>City Culture</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_17</Tag>
+		<English>城市稳定度总和</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市稳定度总和</Chinese><French>Total City Stability</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_18</Tag>
+		<English>贸易</English>
+		<L1/><L2/><L3/><L4/><Chinese>贸易</Chinese><French>Trade</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_19</Tag>
+		<English>经济</English>
+		<L1/><L2/><L3/><L4/><Chinese>经济</Chinese><French>Economy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_2</Tag>
+		<English>附庸</English>
+		<L1/><L2/><L3/><L4/><Chinese>附庸</Chinese><French>Vassals</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_20</Tag>
+		<English>快乐指数</English>
+		<L1/><L2/><L3/><L4/><Chinese>快乐指数</Chinese><French>Happiness</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_21</Tag>
+		<English>额外经济</English>
+		<L1/><L2/><L3/><L4/><Chinese>额外经济</Chinese><French>Economy Extra</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_22</Tag>
+		<English>大萧条</English>
+		<L1/><L2/><L3/><L4/><Chinese>大萧条</Chinese><French>Great Depression</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_23</Tag>
+		<English>国外大萧条</English>
+		<L1/><L2/><L3/><L4/><Chinese>国外大萧条</Chinese><French>Foreign Great Depression</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_24</Tag>
+		<English>共产主义危机</English>
+		<L1/><L2/><L3/><L4/><Chinese>共产主义危机</Chinese><French>Post-Communist Crisis</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_25</Tag>
+		<English>民主主义过渡</English>
+		<L1/><L2/><L3/><L4/><Chinese>民主主义过渡</Chinese><French>Transition to Democracy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_26</Tag>
+		<English>城市数目</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市数目</Chinese><French>Number of Cities</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_27</Tag>
+		<English>战斗</English>
+		<L1/><L2/><L3/><L4/><Chinese>战斗</Chinese><French>Combat</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_28</Tag>
+		<English>额外战斗</English>
+		<L1/><L2/><L3/><L4/><Chinese>额外战斗</Chinese><French>Combat Extra</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_29</Tag>
+		<English>无政府状态</English>
+		<L1/><L2/><L3/><L4/><Chinese>无政府状态</Chinese><French>Anarchy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_3</Tag>
+		<English>帝国主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>帝国主义</Chinese><French>Imperialism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_30</Tag>
+		<English>黄金时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>黄金时代</Chinese><French>Golden Age</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_31</Tag>
+		<English>衰退</English>
+		<L1/><L2/><L3/><L4/><Chinese>衰退</Chinese><French>Fall</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_32</Tag>
+		<English>基础稳定度</English>
+		<L1/><L2/><L3/><L4/><Chinese>基础稳定度</Chinese><French>Base Stability</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_4</Tag>
+		<English>联系</English>
+		<L1/><L2/><L3/><L4/><Chinese>联系</Chinese><French>Contacts</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_5</Tag>
+		<English>扩张</English>
+		<L1/><L2/><L3/><L4/><Chinese>扩张</Chinese><French>Expansion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_6</Tag>
+		<English>对外扩张</English>
+		<L1/><L2/><L3/><L4/><Chinese>对外扩张</Chinese><French>Outer Expansion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_7</Tag>
+		<English>占领核心区域</English>
+		<L1/><L2/><L3/><L4/><Chinese>占领核心区域</Chinese><French>Occupied Core</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_8</Tag>
+		<English>政体组合</English>
+		<L1/><L2/><L3/><L4/><Chinese>政体组合</Chinese><French>Civic Combinations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_9</Tag>
+		<English>政体时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>政体时代</Chinese><French>Civic Era</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_ADVISOR_TITLE</Tag>
+		<English>稳定度: </English>
+		<L1/><L2/><L3/><L4/><Chinese>稳定度: </Chinese><French>STABILITY: </French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_ANARCHY</Tag>
+		<English>无政府状态</English>
+		<L1/><L2/><L3/><L4/><Chinese>无政府状态</Chinese><French>Anarchy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_BAD_RELATIONS</Tag>
+		<English>不良关系</English>
+		<L1/><L2/><L3/><L4/><Chinese>不良关系</Chinese><French>Bad Relations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_BARBARIAN_LOSSES</Tag>
+		<English>输给野蛮人</English>
+		<L1/><L2/><L3/><L4/><Chinese>输给野蛮人</Chinese><French>Lost Battles to Barbarians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_BASE</Tag>
+		<English>基础稳定度</English>
+		<L1/><L2/><L3/><L4/><Chinese>基础稳定度</Chinese><French>Base Stability</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_BUILDINGS</Tag>
+		<English>建筑</English>
+		<L1/><L2/><L3/><L4/><Chinese>建筑</Chinese><French>Buildings</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CANCEL_CAPITULATION</Tag>
+		<English>%s1不再承认我们的霸主地位并宣布主权！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1不再承认我们的霸主地位并宣布主权！</Chinese><French>%s1 no longer recognizes our overlordship and declares sovereignty!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CANCEL_DEFENSIVE_PACT</Tag>
+		<English>%s1取消了与我们的防御协议！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1取消了与我们的防御协议！</Chinese><French>%s1 has canceled their defensive pact with us!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CANCEL_PEACE_VASSAL</Tag>
+		<English>%s1不再希望成为我们的附庸！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1不再希望成为我们的附庸！</Chinese><French>%s1 no longer wishes to be our vassal!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CANCEL_TRADE</Tag>
+		<English>%s1取消了与我们的开放边界协议！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1取消了与我们的开放边界协议！</Chinese><French>%s1 has canceled their open borders agreement with us!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CAP</Tag>
+		<English>稳定度范围</English>
+		<L1/><L2/><L3/><L4/><Chinese>稳定度范围</Chinese><French>Stability Limits</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CATEGORY_DOMESTIC</Tag>
+		<English>内政</English>
+		<L1/><L2/><L3/><L4/><Chinese>内政</Chinese><French>Domestic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CATEGORY_ECONOMY</Tag>
+		<English>经济</English>
+		<L1/><L2/><L3/><L4/><Chinese>经济</Chinese><French>Economy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CATEGORY_EXPANSION</Tag>
+		<English>扩展</English>
+		<L1/><L2/><L3/><L4/><Chinese>扩展</Chinese><French>Expansion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CATEGORY_FOREIGN</Tag>
+		<English>国际</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际</Chinese><French>Foreign</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CATEGORY_MILITARY</Tag>
+		<English>军事</English>
+		<L1/><L2/><L3/><L4/><Chinese>军事</Chinese><French>Military</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CHANGE_NEGATIVE</Tag>
+		<English>如果我们的稳定性不提高，我们将在下次评定中降低一个稳定度水平</English>
+		<L1/><L2/><L3/><L4/><Chinese>如果我们的稳定性不提高，我们将在下次评定中降低一个稳定度水平</Chinese><French>If our stability does not improve, we will lose a stability level at the next check</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CHANGE_POSITIVE</Tag>
+		<English>除非我们的稳定度降低，否则下次检查时我们将提升一个稳定度水平</English>
+		<L1/><L2/><L3/><L4/><Chinese>除非我们的稳定度降低，否则下次检查时我们将提升一个稳定度水平</Chinese><French>Unless our stability decreases, we will gain a stability level at the next check</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CENTRAL_PLANNING_TRADE_FREE_MARKET</Tag>
+		<English>中央计划：与自由市场文明的贸易</English>
+		<L1/><L2/><L3/><L4/><Chinese>中央计划：与自由市场文明的贸易</Chinese><French>Central Planning: Trade with Free Market Civilizations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CHECKF2</Tag>
+		<English>查看内政顾问界面(F2)了解详情</English>
+		<L1/><L2/><L3/><L4/><Chinese>查看内政顾问界面(F2)了解详情</Chinese><French>Check the Interior Advisor (F2) for details</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CITIES_BUILT</Tag>
+		<English>建立城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>建立城市</Chinese><French>Cities Built</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CITIES_CONQUERED</Tag>
+		<English>征服城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>征服城市</Chinese><French>Cities Conquered</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CITIES_LOST</Tag>
+		<English>丢失城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>丢失城市</Chinese><French>Cities Lost</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CITIES_RAZED</Tag>
+		<English>夷平城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>夷平城市</Chinese><French>Cities Razed</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CITIES_TITLE</Tag>
+		<English>城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市</Chinese><French>CITIES</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CITY_CHANGED_OWNER</Tag>
+		<English>%s1加入了%s2文明！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1加入了%s2文明！</Chinese><French>%s1 has joined the %s2 civilization!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CITY_CHANGED_OWNER_US</Tag>
+		<English>%s1加入了我们的文明！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1加入了我们的文明！</Chinese><French>%s1 has joined our civilization!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CITY_CIVICS</Tag>
+		<English>政体</English>
+		<L1/><L2/><L3/><L4/><Chinese>政体</Chinese><French>Civics</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CITY_CULTURE</Tag>
+		<English>文化</English>
+		<L1/><L2/><L3/><L4/><Chinese>文化</Chinese><French>Culture</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CITY_HAPPINESS</Tag>
+		<English>快乐点数</English>
+		<L1/><L2/><L3/><L4/><Chinese>快乐点数</Chinese><French>Happiness</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CITY_INDEPENDENCE</Tag>
+		<English>%s1宣布独立！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1宣布独立！</Chinese><French>%s1 has declared independence!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CITY_TERRITORY</Tag>
+		<English>城市地块</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市地块</Chinese><French>City Territory</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CIVIC_COMBINATIONS</Tag>
+		<English>组合</English>
+		<L1/><L2/><L3/><L4/><Chinese>组合</Chinese><French>Combinations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CIVIC_ERA</Tag>
+		<English>时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>时代</Chinese><French>Era</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CIVIC_NUMBER_CITIES</Tag>
+		<English>城市数目</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市数目</Chinese><French>Number of Cities</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CIVIC_TECH</Tag>
+		<English>科技</English>
+		<L1/><L2/><L3/><L4/><Chinese>科技</Chinese><French>Technologies</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CIVICS_TITLE</Tag>
+		<English>政体</English>
+		<L1/><L2/><L3/><L4/><Chinese>政体</Chinese><French>CIVICS</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CIVILWAR</Tag>
+		<English>陷入了内战!</English>
+		<L1/><L2/><L3/><L4/><Chinese>陷入了内战!</Chinese><French>is descending into civil war!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CIVILWAR_HUMAN</Tag>
+		<English>你的帝国陷入了内战!</English>
+		<L1/><L2/><L3/><L4/><Chinese>你的帝国陷入了内战!</Chinese><French>Your empire is descending into civil war!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_COLLAPSE_TO_CORE</Tag>
+		<English>我们正在失去对整个帝国的控制！</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们正在失去对整个帝国的控制！</Chinese><French>We are losing control over our entire empire!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_COLLAPSING</Tag>
+		<English>正在崩溃</English>
+		<L1/><L2/><L3/><L4/><Chinese>正在崩溃</Chinese><French>Collapsing</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_COMBAT</Tag>
+		<English>战斗</English>
+		<L1/><L2/><L3/><L4/><Chinese>战斗</Chinese><French>Combat</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_COMPATIBLE_CIVICS</Tag>
+		<English>与时代兼容的政体</English>
+		<L1/><L2/><L3/><L4/><Chinese>与时代兼容的政体</Chinese><French>Compatible Civics</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_COMPLETE_COLLAPSE</Tag>
+		<English>%s1文明已经崩溃！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1文明已经崩溃！</Chinese><French>The %s1 civilization has collapsed!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CONQUERED_CITIES</Tag>
+		<English>被征服的城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>被征服的城市</Chinese><French>Conquered Cities</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CONTACTS</Tag>
+		<English>联系</English>
+		<L1/><L2/><L3/><L4/><Chinese>联系</Chinese><French>Contacts</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CONTEMPORARY_CIVICS</Tag>
+		<English>时宜的政体</English>
+		<L1/><L2/><L3/><L4/><Chinese>时宜的政体</Chinese><French>Contemporary Civics</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CONTESTED_AREA</Tag>
+		<English>受争议区域</English>
+		<L1/><L2/><L3/><L4/><Chinese>受争议区域</Chinese><French>Contested Area</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CORE_AREA</Tag>
+		<English>核心区域</English>
+		<L1/><L2/><L3/><L4/><Chinese>核心区域</Chinese><French>Core Area</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CORE_PERIPHERY_INFO</Tag>
+		<English>扩张</English>
+		<L1/><L2/><L3/><L4/><Chinese>扩张</Chinese><French>Expansion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CORE_PERIPHERY_NEGATIVE</Tag>
+		<English>过度扩张</English>
+		<L1/><L2/><L3/><L4/><Chinese>过度扩张</Chinese><French>Overextension</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CRISIS_IMMINENT</Tag>
+		<English>如果我们的稳定得不到改善，我们将在下次的稳定评判中遇到危机！</English>
+		<L1/><L2/><L3/><L4/><Chinese>如果我们的稳定得不到改善，我们将在下次的稳定评判中遇到危机！</Chinese><French>If our stability does not improve, we will experience a crisis at the next stability check!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CRISIS_IMMINENT_MESSAGE</Tag>
+		<English>%s1危机迫在眉睫！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1危机迫在眉睫！</Chinese><French>A %s1 crisis is imminent!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CRISIS_LEVEL_MINOR</Tag>
+		<English>少数的</English>
+		<L1/><L2/><L3/><L4/><Chinese>少数的</Chinese><French>minor</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CRISIS_LEVEL_MODERATE</Tag>
+		<English>适度的</English>
+		<L1/><L2/><L3/><L4/><Chinese>适度的</Chinese><French>moderate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CRISIS_LEVEL_SEVERE</Tag>
+		<English>严峻的</English>
+		<L1/><L2/><L3/><L4/><Chinese>严峻的</Chinese><French>severe</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CRISIS_LEVEL_TERMINAL</Tag>
+		<English>终端</English>
+		<L1/><L2/><L3/><L4/><Chinese>终端</Chinese><French>terminal</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CRISIS_MESSAGE</Tag>
+		<English>我们的文明正经历一场%s1%s2危机！</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们的文明正经历一场%s1%s2危机！</Chinese><French>Our civilization is experiencing a %s1 %s2 crisis!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CRISIS_TYPE_DOMESTIC</Tag>
+		<English>国内的</English>
+		<L1/><L2/><L3/><L4/><Chinese>国内的</Chinese><French>domestic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CRISIS_TYPE_ECONOMY</Tag>
+		<English>经济的</English>
+		<L1/><L2/><L3/><L4/><Chinese>经济的</Chinese><French>economic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CRISIS_TYPE_EXPANSION</Tag>
+		<English>领土</English>
+		<L1/><L2/><L3/><L4/><Chinese>领土</Chinese><French>territorial</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CRISIS_TYPE_FOREIGN</Tag>
+		<English>外交的</English>
+		<L1/><L2/><L3/><L4/><Chinese>外交的</Chinese><French>diplomatic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CRISIS_TYPE_MILITARY</Tag>
+		<English>军事的</English>
+		<L1/><L2/><L3/><L4/><Chinese>军事的</Chinese><French>military</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_DAMAGE_RELATIONS</Tag>
+		<English>我们与%s1的关系恶化了！</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们与%s1的关系恶化了！</Chinese><French>Our relations with %s1 have deteriorated!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_DEFENSIVE_PACTS</Tag>
+		<English>防御协定</English>
+		<L1/><L2/><L3/><L4/><Chinese>防御协定</Chinese><French>Defensive Pacts</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_DEMOCRACY</Tag>
+		<English>民主制度转型导致动荡!</English>
+		<L1/><L2/><L3/><L4/><Chinese>民主制度转型导致动荡!</Chinese><French>instability caused by transition to democracy!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_DEMOCRACY_TRANSITION</Tag>
+		<English>民主过渡</English>
+		<L1/><L2/><L3/><L4/><Chinese>民主过渡</Chinese><French>Transition to Democracy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_DIFFICULTY</Tag>
+		<English>游戏难度</English>
+		<L1/><L2/><L3/><L4/><Chinese>游戏难度</Chinese><French>Difficulty Level</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_DIPLOMACY</Tag>
+		<English>外交</English>
+		<L1/><L2/><L3/><L4/><Chinese>外交</Chinese><French>Diplomacy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_DIPLOMACY_TITLE</Tag>
+		<English>外交</English>
+		<L1/><L2/><L3/><L4/><Chinese>外交</Chinese><French>FOREIGN</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_DOMESTIC_CRISIS</Tag>
+		<English>我们的文明正在进入内战时期！</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们的文明正在进入内战时期！</Chinese><French>Our civilization is descending into a period of civil war!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_DOWNGRADE_COTTAGES</Tag>
+		<English>经济危机阻碍了我们的小屋的成长！</English>
+		<L1/><L2/><L3/><L4/><Chinese>经济危机阻碍了我们的小屋的成长！</Chinese><French>The economic crisis is impeding our cottage growth!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_ECONOMIC_CRISIS</Tag>
+		<English>经济危机正在使我们的文明瘫痪！</English>
+		<L1/><L2/><L3/><L4/><Chinese>经济危机正在使我们的文明瘫痪！</Chinese><French>The economic crisis is paralyzing our civilization!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_ECONOMIC_DECLINE</Tag>
+		<English>经济衰退</English>
+		<L1/><L2/><L3/><L4/><Chinese>经济衰退</Chinese><French>Recession</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_ECONOMIC_GROWTH</Tag>
+		<English>经济增长</English>
+		<L1/><L2/><L3/><L4/><Chinese>经济增长</Chinese><French>Economic Growth</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_ECONOMIC_STAGNATION</Tag>
+		<English>经济停滞</English>
+		<L1/><L2/><L3/><L4/><Chinese>经济停滞</Chinese><French>Economic Stagnation</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_ECONOMY</Tag>
+		<English>经济</English>
+		<L1/><L2/><L3/><L4/><Chinese>经济</Chinese><French>Economy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_ECONOMY_TITLE</Tag>
+		<English>经济</English>
+		<L1/><L2/><L3/><L4/><Chinese>经济</Chinese><French>ECONOMY</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_EXPANSION_TITLE</Tag>
+		<English>扩张</English>
+		<L1/><L2/><L3/><L4/><Chinese>扩张</Chinese><French>EXPANSION</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_FALL</Tag>
+		<English>史实性</English>
+		<L1/><L2/><L3/><L4/><Chinese>史实性</Chinese><French>Historicity</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_FOREIGN_AREA</Tag>
+		<English>外国区域</English>
+		<L1/><L2/><L3/><L4/><Chinese>外国区域</Chinese><French>Foreign Area</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_FOREIGN_CORE_AREA</Tag>
+		<English>外国核心区域</English>
+		<L1/><L2/><L3/><L4/><Chinese>外国核心区域</Chinese><French>Foreign Core Area</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_FOREIGN_GREAT_DEPRESSION</Tag>
+		<English>大萧条 (国外因素)</English>
+		<L1/><L2/><L3/><L4/><Chinese>大萧条 (国外因素)</Chinese><French>Great Depression (foreign)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_FOREIGN_SECESSION</Tag>
+		<English>我们正在失去对外国领土的控制！</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们正在失去对外国领土的控制！</Chinese><French>We are losing control over our foreign territory!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_GOLDEN_AGE</Tag>
+		<English>黄金时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>黄金时代</Chinese><French>Golden Age</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_GOOD_RELATIONS</Tag>
+		<English>良好的关系</English>
+		<L1/><L2/><L3/><L4/><Chinese>良好的关系</Chinese><French>Good Relations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_GREAT_DEPRESSION</Tag>
+		<English>大萧条</English>
+		<L1/><L2/><L3/><L4/><Chinese>大萧条</Chinese><French>Great Depression</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_GREAT_DEPRESSION_INFLUENCE</Tag>
+		<English>%s1的长期萧条已对我们的经济造成严重的负面影响！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1的长期萧条已对我们的经济造成严重的负面影响！</Chinese><French>The period of Great Depression in the %s1 is negatively influencing our economy!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_GREAT_DEPRESSION_INFLUENCE1</Tag>
+		<English>工商业大萧条席卷</English>
+		<L1/><L2/><L3/><L4/><Chinese>工商业大萧条席卷</Chinese><French>The period of Great Depression in the</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_GREAT_DEPRESSION_INFLUENCE2</Tag>
+		<English>并对经济造成严重影响!</English>
+		<L1/><L2/><L3/><L4/><Chinese>并对经济造成严重影响!</Chinese><French>is negatively influencing our economy!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_HAPPINESS</Tag>
+		<English>快乐指数</English>
+		<L1/><L2/><L3/><L4/><Chinese>快乐指数</Chinese><French>Happiness</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_HISTORICAL_AREA</Tag>
+		<English>历史区域</English>
+		<L1/><L2/><L3/><L4/><Chinese>历史区域</Chinese><French>Historical Area</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_IMMOBILIZED_UNITS</Tag>
+		<English>由于军事危机，我们暂时失去了对部队的控制！</English>
+		<L1/><L2/><L3/><L4/><Chinese>由于军事危机，我们暂时失去了对部队的控制！</Chinese><French>Due to the military crisis, we have temporarily lost control over our units!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_INCOMPATIBLE_CIVICS</Tag>
+		<English>不相容的政体</English>
+		<L1/><L2/><L3/><L4/><Chinese>不相容的政体</Chinese><French>Incompatible Civics</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_INSUFFICIENT_TRADE</Tag>
+		<English>经济孤立</English>
+		<L1/><L2/><L3/><L4/><Chinese>经济孤立</Chinese><French>Economic Isolation</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_ISOLATIONISM</Tag>
+		<English>孤立主义：核心区外无城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>孤立主义：核心区外无城市</Chinese><French>Isolationism: no Cities outside of Core Area</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_LOSING_WARS</Tag>
+		<English>输掉战争</English>
+		<L1/><L2/><L3/><L4/><Chinese>输掉战争</Chinese><French>Losing Wars</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_LOST_BATTLES</Tag>
+		<English>失败的战斗</English>
+		<L1/><L2/><L3/><L4/><Chinese>失败的战斗</Chinese><French>Lost Battles</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_LOST_CITIES</Tag>
+		<English>失去城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>失去城市</Chinese><French>Lost Cities</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_LOST_COMMERCE</Tag>
+		<English>由于我们的经济危机，我们损失了%d1[ICON_GOLD]和%d2[ICON_RESEARCH]!！</English>
+		<L1/><L2/><L3/><L4/><Chinese>由于我们的经济危机，我们损失了%d1[ICON_GOLD]和%d2[ICON_RESEARCH]!！</Chinese><French>Due to our economic crisis we have lost %d1[ICON_GOLD] and %d2[ICON_RESEARCH]!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_LOST_TERRITORY</Tag>
+		<English>我们在%s1左右失去了对我们领土的控制！</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们在%s1左右失去了对我们领土的控制！</Chinese><French>We have lost control over our territory around %s1!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_MERCANTILISM_TRADE_RICHER</Tag>
+		<English>重商主义：与更加富裕文明的贸易</English>
+		<L1/><L2/><L3/><L4/><Chinese>重商主义：与更加富裕文明的贸易</Chinese><French>Mercantilism: Trade with Wealthier Civilizations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_MISC_TITLE</Tag>
+		<English>杂项</English>
+		<L1/><L2/><L3/><L4/><Chinese>杂项</Chinese><French>MISCELLANEOUS</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_NEIGHBORS</Tag>
+		<English>崩溃的邻邦</English>
+		<L1/><L2/><L3/><L4/><Chinese>崩溃的邻邦</Chinese><French>Collapsing Neighbors</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_NO_CHANGE</Tag>
+		<English>如果我们的稳定性不变，下次检查时稳定性水平将保持不变</English>
+		<L1/><L2/><L3/><L4/><Chinese>如果我们的稳定性不变，下次检查时稳定性水平将保持不变</Chinese><French>If our stability does not change, the stability level will remain constant at the next check</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_NORMALIZATION</Tag>
+		<English>正常化</English>
+		<L1/><L2/><L3/><L4/><Chinese>正常化</Chinese><French>Normalization</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_OCCUPIED_CORE</Tag>
+		<English>占领核心区域</English>
+		<L1/><L2/><L3/><L4/><Chinese>占领核心区域</Chinese><French>Occupied Core</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_OCCUPIED_FOREIGN_CORE</Tag>
+		<English>占领外国核心区域</English>
+		<L1/><L2/><L3/><L4/><Chinese>占领外国核心区域</Chinese><French>Occupied Foreign Core</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_OUTDATED_CIVICS</Tag>
+		<English>过时的政体组合</English>
+		<L1/><L2/><L3/><L4/><Chinese>过时的政体组合</Chinese><French>Outdated Civics</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_OUTER_TERRITORY</Tag>
+		<English>外界地块</English>
+		<L1/><L2/><L3/><L4/><Chinese>外界地块</Chinese><French>Outer Territory</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_OVERALL</Tag>
+		<English>稳定度总和</English>
+		<L1/><L2/><L3/><L4/><Chinese>稳定度总和</Chinese><French>Overall Stability</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_PARAMETER_CITIES</Tag>
+		<English>城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市</Chinese><French>CITIES</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_PARAMETER_CIVICS</Tag>
+		<English>内政法令</English>
+		<L1/><L2/><L3/><L4/><Chinese>内政法令</Chinese><French>CIVICS</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_PARAMETER_ECONOMY</Tag>
+		<English>经济因素</English>
+		<L1/><L2/><L3/><L4/><Chinese>经济因素</Chinese><French>ECONOMY</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_PARAMETER_EXPANSION</Tag>
+		<English>扩张因素</English>
+		<L1/><L2/><L3/><L4/><Chinese>扩张因素</Chinese><French>EXPANSION</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_PARAMETER_FOREIGN</Tag>
+		<English>国外因素</English>
+		<L1/><L2/><L3/><L4/><Chinese>国外因素</Chinese><French>FOREIGN</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_PERIOD</Tag>
+		<English>你的帝国正在进入</English>
+		<L1/><L2/><L3/><L4/><Chinese>你的帝国正在进入</Chinese><French>Your empire is experiencing a period of</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_POST_COMMUNISM</Tag>
+		<English>共产主义危机</English>
+		<L1/><L2/><L3/><L4/><Chinese>共产主义危机</Chinese><French>Post-Communist Crisis</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_RAZED_CITIES</Tag>
+		<English>夷为平地的城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>夷为平地的城市</Chinese><French>Razed Cities</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_RECENT_EXPANSION</Tag>
+		<English>最近的扩展</English>
+		<L1/><L2/><L3/><L4/><Chinese>最近的扩展</Chinese><French>Recent Expansion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_RELIGION</Tag>
+		<English>官方宗教</English>
+		<L1/><L2/><L3/><L4/><Chinese>官方宗教</Chinese><French>Religion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_RELIGIOUS_DISUNITY</Tag>
+		<English>宗教不统一</English>
+		<L1/><L2/><L3/><L4/><Chinese>宗教不统一</Chinese><French>Religious Disunity</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_RELIGIOUS_UNITY</Tag>
+		<English>宗教团结</English>
+		<L1/><L2/><L3/><L4/><Chinese>宗教团结</Chinese><French>Religious Unity</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_REMOVE_DEFENSES</Tag>
+		<English>军事危机使我们的城市失去了有效的防御！</English>
+		<L1/><L2/><L3/><L4/><Chinese>军事危机使我们的城市失去了有效的防御！</Chinese><French>The military crisis leaves our cities without effective defenses!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_REMOVE_GPP</Tag>
+		<English>经济危机阻止了伟人的出现！</English>
+		<L1/><L2/><L3/><L4/><Chinese>经济危机阻止了伟人的出现！</Chinese><French>The economic crisis is preventing the emergence of great people!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_SECEDE_UNHAPPY</Tag>
+		<English>不愉快的城市正在离开我们的文明！</English>
+		<L1/><L2/><L3/><L4/><Chinese>不愉快的城市正在离开我们的文明！</Chinese><French>Unhappy cities are leaving our civilization!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_SECESSION</Tag>
+		<English>宣布独立建国!</English>
+		<L1/><L2/><L3/><L4/><Chinese>宣布独立建国!</Chinese><French>has declared its independence!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_SHAKY</Tag>
+		<English>脆弱</English>
+		<L1/><L2/><L3/><L4/><Chinese>脆弱</Chinese><French>Shaky</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_SOCIETY_TITLE</Tag>
+		<English>社会</English>
+		<L1/><L2/><L3/><L4/><Chinese>社会</Chinese><French>SOCIETY</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_SOLID</Tag>
+		<English>稳固</English>
+		<L1/><L2/><L3/><L4/><Chinese>稳固</Chinese><French>Solid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_STABLE</Tag>
+		<English>安定</English>
+		<L1/><L2/><L3/><L4/><Chinese>安定</Chinese><French>Stable</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_STABLE_VASSALS</Tag>
+		<English>稳定的附庸</English>
+		<L1/><L2/><L3/><L4/><Chinese>稳定的附庸</Chinese><French>Stable Vassals</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_SUMMARY_TITLE</Tag>
+		<English>总结</English>
+		<L1/><L2/><L3/><L4/><Chinese>总结</Chinese><French>SUMMARY</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_TARGET_CITY_UNREST</Tag>
+		<English>同情敌人的城市正在公开反抗！</English>
+		<L1/><L2/><L3/><L4/><Chinese>同情敌人的城市正在公开反抗！</Chinese><French>Cities sympathetic to the enemy are in open revolt!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_TECH</Tag>
+		<English>科技</English>
+		<L1/><L2/><L3/><L4/><Chinese>科技</Chinese><French>Technology</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_TITLE</Tag>
+		<English>稳定度： %s1</English>
+		<L1/><L2/><L3/><L4/><Chinese>稳定度： %s1</Chinese><French>STABILITY: %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_TRADE</Tag>
+		<English>贸易</English>
+		<L1/><L2/><L3/><L4/><Chinese>贸易</Chinese><French>Trade</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_UNHAPPINESS</Tag>
+		<English>不快乐</English>
+		<L1/><L2/><L3/><L4/><Chinese>不快乐</Chinese><French>Unhappiness</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_UNIT_DESERTION</Tag>
+		<English>军事危机导致了%d1部队的撤离！</English>
+		<L1/><L2/><L3/><L4/><Chinese>军事危机导致了%d1部队的撤离！</Chinese><French>The military crisis led to the desertion of %d1 units!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_UNSTABLE</Tag>
+		<English>动荡</English>
+		<L1/><L2/><L3/><L4/><Chinese>动荡</Chinese><French>Unstable</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_UNSTABLE_VASSALS</Tag>
+		<English>不稳定的附庸</English>
+		<L1/><L2/><L3/><L4/><Chinese>不稳定的附庸</Chinese><French>Unstable Vassals</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_VASSALS</Tag>
+		<English>附庸</English>
+		<L1/><L2/><L3/><L4/><Chinese>附庸</Chinese><French>Vassals</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_VERYSOLID</Tag>
+		<English>极其稳固</English>
+		<L1/><L2/><L3/><L4/><Chinese>极其稳固</Chinese><French>Very Solid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_WAR_WEARINESS</Tag>
+		<English>厌战</English>
+		<L1/><L2/><L3/><L4/><Chinese>厌战</Chinese><French>War Weariness</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_WARFARE_TITLE</Tag>
+		<English>战争</English>
+		<L1/><L2/><L3/><L4/><Chinese>战争</Chinese><French>WARFARE</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_WARS_NATIONHOOD</Tag>
+		<English>民族国家：发动战争</English>
+		<L1/><L2/><L3/><L4/><Chinese>民族国家：发动战争</Chinese><French>Nationhood: Waging Wars</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_WARS_BROTHERS_OF_FAITH</Tag>
+		<English>神权政治：信仰的战斗兄弟</English>
+		<L1/><L2/><L3/><L4/><Chinese>神权政治：信仰的战斗兄弟</Chinese><French>Theocracy: Fighting Brothers of Faith</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_WARS_HEATHENS</Tag>
+		<English>神权政治：对抗异教徒</English>
+		<L1/><L2/><L3/><L4/><Chinese>神权政治：对抗异教徒</Chinese><French>Theocracy: Fighting Heathens</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_WARS_MULTILATERALISM</Tag>
+		<English>多边主义：处于战争状态</English>
+		<L1/><L2/><L3/><L4/><Chinese>多边主义：处于战争状态</Chinese><French>Multilateralism: Being at War</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_WINNING_WARS</Tag>
+		<English>赢得战争</English>
+		<L1/><L2/><L3/><L4/><Chinese>赢得战争</Chinese><French>Winning Wars</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_WON_BATTLES</Tag>
+		<English>赢得战斗</English>
+		<L1/><L2/><L3/><L4/><Chinese>赢得战斗</Chinese><French>Won Battles</French></TEXT>
+	<TEXT> <!-- Merijn, by edead -->
+		<Tag>TXT_KEY_STABILITY_OVERLAY_WIDGET</Tag>
+		<English>切换稳定性显示</English>
+		<L1/><L2/><L3/><L4/><Chinese>切换稳定性显示</Chinese><French>Toggle Stability Display</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_OVERLAY_HELP</Tag>
+		<English>[COLOR_PLAYER_CYAN]青蓝色[COLOR_REVERT]: 核心区[NEWLINE][COLOR_PLAYER_GREEN_TEXT]绿色[COLOR_REVERT]: 历史区域[NEWLINE][COLOR_PLAYER_YELLOW_TEXT]黄色[COLOR_REVERT]: 争议地区[NEWLINE][COLOR_PLAYER_DARK_RED_TEXT]红色COLOR_REVERT]: 外国区域</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_PLAYER_CYAN]青蓝色[COLOR_REVERT]: 核心区[NEWLINE][COLOR_PLAYER_GREEN_TEXT]绿色[COLOR_REVERT]: 历史区域[NEWLINE][COLOR_PLAYER_YELLOW_TEXT]黄色[COLOR_REVERT]: 争议地区[NEWLINE][COLOR_PLAYER_DARK_RED_TEXT]红色COLOR_REVERT]: 外国区域</Chinese><French>[COLOR_PLAYER_CYAN]Cyan[COLOR_REVERT]: core area[NEWLINE][COLOR_PLAYER_GREEN_TEXT]Green[COLOR_REVERT]: historical area[NEWLINE][COLOR_PLAYER_YELLOW_TEXT]Yellow[COLOR_REVERT]: contested area[NEWLINE][COLOR_PLAYER_DARK_RED_TEXT]Red[COLOR_REVERT]: foreign core</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CITIES_SECEDED</Tag>
+		<English>%s1正在经历一个不稳定的时期，%d2城市已经脱离了他们的文明！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1正在经历一个不稳定的时期，%d2城市已经脱离了他们的文明！</Chinese><French>The %s1 is going through a period of instability, and %d2 cities have seceded from their civilization!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_COLLAPSING_WARNING</Tag>
+		<English>我们的文明正在崩溃！除非我们的稳定得到改善，否则我们有完全崩溃的危险。</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们的文明正在崩溃！除非我们的稳定得到改善，否则我们有完全崩溃的危险。</Chinese><French>Our civilisation is collapsing! Unless our stability improves, we are in danger of a complete collapse.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_</Tag>
+		<English/>
+		<L1/><L2/><L3/><L4/><French></French></TEXT>
+</Civ4GameText>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Korea -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KOREA_DESC</Tag>
+		<English>高丽文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>高丽文明</Chinese><French>The Koreans</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KOREA_DEFAULT</Tag>
+		<English>Korea</English>
+		<L1/><L2/><L3/><L4/><Chinese>Korea</Chinese><French>Three Kingdoms of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KOREA_PEOPLES</Tag>
+		<English>高丽</English>
+		<L1/><L2/><L3/><L4/><Chinese>高丽</Chinese><French>Korean Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KOREA_COMMUNIST</Tag>
+		<English>高丽</English>
+		<L1/><L2/><L3/><L4/><Chinese>高丽</Chinese><French>Democratic People's Republic of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KOREA_FASCIST</Tag>
+		<English>高丽</English>
+		<L1/><L2/><L3/><L4/><Chinese>高丽</Chinese><French>Supreme Council for National Reconstruction</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KOREA_SAMHAN</Tag>
+		<English>高丽</English>
+		<L1/><L2/><L3/><L4/><Chinese>高丽</Chinese><French>Samhan Confederacies</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KOREA_GORYEO</Tag>
+		<English>高丽王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>高丽王国</Chinese><French>Goryeo</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KOREA_GOGURYEO</Tag>
+		<English>高句丽王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>高句丽王国</Chinese><French>Goguryeo</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KOREA_JOSEON</Tag>
+		<English>大朝鲜王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>大朝鲜王国</Chinese><French>Greater Joseon</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KOREA_ADJECTIVE</Tag>
+		<English>
+			<Text>Korean:Koreans</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<L1/><L2/><L3/><L4/><French>Greater Joseon</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KOREA_SHORT_DESC</Tag>
+		<English>Korea</English>
+		<L1/><L2/><L3/><L4/><Chinese>Korea</Chinese><French>Korea</French></TEXT>
+</Civ4GameText>

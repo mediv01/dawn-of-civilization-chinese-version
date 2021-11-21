@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Spain -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_DESC</Tag>
+		<English>西班牙文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙文明</Chinese><French>The Spanish</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_PEOPLES</Tag>
+		<English>西班牙-阿斯图里亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-阿斯图里亚</Chinese><French>Asturian Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_DEFAULT</Tag>
+		<English>Spain</English>
+		<L1/><L2/><L3/><L4/><Chinese>Spain</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_COMMUNIST</Tag>
+		<English>西班牙共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙共和国</Chinese><French>Republic of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_FASCIST</Tag>
+		<English>西班牙共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙共和国</Chinese><French>%s2 State</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_AL_ANDALUS</Tag>
+		<English>西班牙-安达卢斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-安达卢斯</Chinese><French>Al-Andalus</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_CASTILE</Tag>
+		<English>西班牙-卡斯蒂尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-卡斯蒂尔</Chinese><French>Castile</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_CASTILIAN</Tag>
+		<English>西班牙-卡斯蒂连</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-卡斯蒂连</Chinese><French>Castilian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_IBERIA</Tag>
+		<English>西班牙-伊比利亚王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-伊比利亚王国</Chinese><French>Iberia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_IBERIAN</Tag>
+		<English>西班牙-伊比利亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-伊比利亚</Chinese><French>Iberian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_CROWN_OF</Tag>
+		<English>西班牙王冠</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙王冠</Chinese><French>Crown of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_ARAGON</Tag>
+		<English>西班牙-阿拉贡王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-阿拉贡王国</Chinese><French>Aragon</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_ARAGONESE</Tag>
+		<English>西班牙-阿拉贡</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-阿拉贡</Chinese><French>Aragonese</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_VASSAL</Tag>
+		<English>%s1 总督</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 总督</Chinese><French>Viceroyalty of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_CARTHAGE</Tag>
+		<English>西班牙-黎巴嫩</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-黎巴嫩</Chinese><French>%s2 Lebanon</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_ETHIOPIA</Tag>
+		<English>西班牙-东非</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-东非</Chinese><French>%s2 East Africa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_MAYA</Tag>
+		<English>西班牙-尤卡坦</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-尤卡坦</Chinese><French>Diocesis of Yucatán</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_BYZANTIUM</Tag>
+		<English>西班牙-拜占庭</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-拜占庭</Chinese><French>Latin Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_INDONESIA</Tag>
+		<English>西班牙-印尼</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-印尼</Chinese><French>%s2 East Indies</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_MOORS</Tag>
+		<English>西班牙-摩尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-摩尔</Chinese><French>%s2 Protectorate of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_FRANCE</Tag>
+		<English>西班牙-法国</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-法国</Chinese><French>Autonomous Community of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_NETHERLANDS</Tag>
+		<English>西班牙-荷兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-荷兰</Chinese><French>%s2 %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_MALI</Tag>
+		<English>西班牙-马里</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-马里</Chinese><French>%s2 West Africa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_PORTUGAL</Tag>
+		<English>西班牙-葡萄牙</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-葡萄牙</Chinese><French>Autonomous Community of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_AMERICA</Tag>
+		<English>西班牙-美利坚</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-美利坚</Chinese><French>Province of New Mexico</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_ARGENTINA</Tag>
+		<English>西班牙-阿根廷</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-阿根廷</Chinese><French>Viceroyalty of the Rio de la Plata</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_COLOMBIA</Tag>
+		<English>西班牙-哥伦比亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-哥伦比亚</Chinese><French>Viceroyalty of New Granada</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_NAME_KHMER</Tag>
+		<English>西班牙-中南半岛</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-中南半岛</Chinese><French>Indochina</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_NAME_AZTECS</Tag>
+		<English>西班牙-北美殖民地</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-北美殖民地</Chinese><French>New Spain</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPANISH_NAME_MUGHALS</Tag>
+		<English>西印度</English>
+		<L1/><L2/><L3/><L4/><Chinese>西印度</Chinese><French>West India</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_ADJECTIVE</Tag>
+		<English>Spanish</English>
+		<L1/><L2/><L3/><L4/><Chinese>Spanish</Chinese><French>Spanish</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_SHORT_DESC</Tag>
+		<English>Spain</English>
+		<L1/><L2/><L3/><L4/><Chinese>Spain</Chinese><French>Spain</French></TEXT>
+</Civ4GameText>

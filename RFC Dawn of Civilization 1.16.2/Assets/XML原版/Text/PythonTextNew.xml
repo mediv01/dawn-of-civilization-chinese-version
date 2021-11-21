@@ -1,0 +1,546 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Colors -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARABIA_UHV3_JERUSALEM</Tag>
+		<English>控制耶路撒冷</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制耶路撒冷</Chinese>
+		<French>控制耶路撒冷</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARABIA_UHV3_MECCA</Tag>
+		<English>控制麦加</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制麦加</Chinese>
+		<French>控制麦加</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN</Tag>
+		<English>***************信息提示系统****************</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>***************信息提示系统****************</Chinese>
+		<French>***************信息提示系统****************</French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_BASIC</Tag>
+		<English>0.游戏基本信息：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>0.游戏基本信息：</Chinese>
+		<French>0.游戏基本信息：</French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CONGRESS</Tag>
+		<English>1.国际会议剩余回合：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>1.国际会议剩余回合：</Chinese>
+		<French>1.国际会议剩余回合：</French>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_COLONIST</Tag>
+		<English>2.西欧国家殖民地进度：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>2.西欧国家殖民地进度：</Chinese>
+		<French>2.西欧国家殖民地进度：</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_PLAGUE</Tag>
+		<English>3.全球瘟疫进度：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>3.全球瘟疫进度：</Chinese>
+		<French>3.全球瘟疫进度：</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_TECHRANK</Tag>
+		<English>4.全球科技排名：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>4.全球科技排名：</Chinese>
+		<French>4.全球科技排名：</French>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_ARMYRANK</Tag>
+		<English>5.全球军力排名：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>5.全球军力排名：</Chinese>
+		<French>5.全球军力排名：</French>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CULTURERANK</Tag>
+		<English>全球文化排名：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>全球文化排名：</Chinese>
+		<French>全球文化排名：</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CITY_RANK_POP</Tag>
+		<English>6.全球城市排名（人口）：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>6.全球城市排名（人口）</Chinese>
+		<French>6.全球城市排名（人口）</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CITY_RANK_CUL</Tag>
+		<English>7.全球城市排名（文化）：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>7.全球城市排名（文化）：</Chinese>
+		<French>7.全球城市排名（文化）：</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CITY_RANK_PRO</Tag>
+		<English>8.全球城市排名（产量）：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>8.全球城市排名（产量）：</Chinese>
+		<French>8.全球城市排名（产量）：</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CITY_RANK_COM</Tag>
+		<English>9.全球城市排名（金币）：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>9.全球城市排名（金币）：</Chinese>
+		<French>9.全球城市排名（金币）：</French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CITY_RANK_FOOD</Tag>
+		<English>10.全球城市排名（食物）：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>10.全球城市排名（食物）：</Chinese>
+		<French>10.全球城市排名（食物）：</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIPS_IN_SCREEN_CITY_RANK_GOODY</Tag>
+		<English>部落村庄情况：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>部落村庄情况：</Chinese>
+		<French>部落村庄情况：</French>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_INCA_MachuPicchu</Tag>
+		<English>控制马丘比丘</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制马丘比丘</Chinese>
+		<French>控制马丘比丘</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_INCA_Goleden_One</Tag>
+		<English>控制黄金国</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制黄金国</Chinese>
+		<French>控制黄金国</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_INCA_Resouce_GOLD</Tag>
+		<English>控制贵金属资源的数量： %d1 / %d2</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制贵金属资源的数量： %d1 / %d2</Chinese>
+		<French>控制贵金属资源的数量： %d1 / %d2</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_INCA_CONTROL_SOUTH_PACIFIC</Tag>
+		<English>控制南太平洋的复活节岛</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制南太平洋的复活节岛</Chinese>
+		<French>控制南太平洋的复活节岛</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_INCA_CONTROL_WestAmazon</Tag>
+		<English>控制西亚马逊丛林，已建立的据点： %d1 / %d2</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制西亚马逊丛林，已建立的据点： %d1 / %d2</Chinese>
+		<French>控制西亚马逊丛林，已建立的据点： %d1 / %d2</French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_INCA_CONTROL_LaPlata</Tag>
+		<English>控制拉普拉塔入海口（布宜诺斯艾利斯）</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制拉普拉塔入海口（布宜诺斯艾利斯）</Chinese>
+		<French>控制拉普拉塔入海口（布宜诺斯艾利斯）</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_REGION_-1</Tag>
+		<English>未知领地</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>未知领地</Chinese>
+		<French>未知领地</French>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG1_CONTROL_Lapulata</Tag>
+		<English>控制拉普拉塔河流域</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制拉普拉塔河流域</Chinese>
+		<French>控制拉普拉塔河流域</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG1_CONTROL_bIguacu</Tag>
+		<English>控制伊瓜苏大瀑布</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制伊瓜苏大瀑布</Chinese>
+		<French>控制伊瓜苏大瀑布</French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG1_CONTROL_bUyuni</Tag>
+		<English>控制乌尤尼盐沼</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制乌尤尼盐沼</Chinese>
+		<French>控制乌尤尼盐沼</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG2_CONTROL_SouthAmerican</Tag>
+		<English>控制南美洲</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制南美洲</Chinese>
+		<French>控制南美洲</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG2_CONTROL_SouthAmerican_Tip</Tag>
+		<English>尚未控制的国家：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>尚未控制的国家：</Chinese>
+		<French>尚未控制的国家：</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG2_CONTROL_Falkland</Tag>
+		<English>控制马尔维纳斯群岛</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制马尔维纳斯群岛</Chinese>
+		<French>控制马尔维纳斯群岛</French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG2_Railway</Tag>
+		<English>连接布宜诺斯艾利斯到洛杉矶的铁路</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>连接布宜诺斯艾利斯到洛杉矶的铁路</Chinese>
+		<French>连接布宜诺斯艾利斯到洛杉矶的铁路</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG3_GDP</Tag>
+		<English>GDP排名:  %d1 / %d2  </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>GDP排名:  %d1 / %d2  </Chinese>
+		<French>GDP排名:  %d1 / %d2  </French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG3_MONEY</Tag>
+		<English>金币储量排名:  %d1 / %d2 </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>金币储量排名:  %d1 / %d2  </Chinese>
+		<French>金币储量排名:  %d1 / %d2  </French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG3_SCORE</Tag>
+		<English>综合国力排名:  %d1 / %d2  </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>综合国力排名:  %d1 / %d2  </Chinese>
+		<French>综合国力排名:  %d1 / %d2 </French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ARG3_CULTURE</Tag>
+		<English>布宜诺斯艾利斯的文化： %d1 / %d2 </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>布宜诺斯艾利斯的文化： %d1 / %d2 </Chinese>
+		<French>布宜诺斯艾利斯的文化： %d1 / %d2 </French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_BRZ2_BRAZILIA</Tag>
+		<English>在巴西利亚建立首都，并且拥有1座飞机场</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>在巴西利亚建立首都，并且拥有1座飞机场</Chinese>
+		<French>在巴西利亚建立首都，并且拥有1座飞机场</French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_BRZ2_BRAZILIA_TIP1</Tag>
+		<English>建立巴西利亚</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>建立巴西利亚</Chinese>
+		<French>建立巴西利亚</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_BRZ2_BRAZILIA_TIP2</Tag>
+		<English>巴西利亚为首都</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>巴西利亚为首都</Chinese>
+		<French>巴西利亚为首都</French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_BRZ2_BRAZILIA_TIP3</Tag>
+		<English>巴西利亚拥有1座飞机场</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>巴西利亚拥有1座飞机场</Chinese>
+		<French>巴西利亚拥有1座飞机场</French>
+	</TEXT>
+
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_HRE3_TIP1</Tag>
+		<English>控制或者附庸古罗马帝国历史区域比例： </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制或者附庸古罗马帝国历史区域比例： </Chinese>
+		<French>控制或者附庸古罗马帝国历史区域比例： </French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_HRE3_TIP2_1</Tag>
+		<English>控制或附庸：罗马</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制或附庸：罗马</Chinese>
+		<French>控制或附庸：罗马</French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_HRE3_TIP2_2</Tag>
+		<English>控制或附庸：君士坦丁堡</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制或附庸：君士坦丁堡</Chinese>
+		<French>控制或附庸：君士坦丁堡</French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_HRE3_TIP3</Tag>
+		<English>拥有1座文化程度为影响深远的城市</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>拥有1座文化程度为影响深远的城市</Chinese>
+		<French>拥有1座文化程度为影响深远的城市</French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ITA3_TIP3_1</Tag>
+		<English>高卢战争：控制法兰西</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>高卢战争：控制法兰西</Chinese>
+		<French>高卢战争：控制法兰西</French>
+	</TEXT>
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ITA3_TIP3_2</Tag>
+		<English>再战条顿堡：控制神圣罗马帝国</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>再战条顿堡：控制神圣罗马帝国</Chinese>
+		<French>再战条顿堡：控制神圣罗马帝国</French>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_RISEANDFALL_NEWSETTLER</Tag>
+		<English>正在开拓新航路，进行新大陆的殖民！</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>正在开拓新航路，进行新大陆的殖民！</Chinese>
+		<French>正在开拓新航路，进行新大陆的殖民！</French>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BEFORE_AD</Tag>
+		<English>在公元 </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>在公元 </Chinese>
+		<French>在公元 </French>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_AND_YEAR</Tag>
+		<English> 年，蛮族 </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese> 年，蛮族 </Chinese>
+		<French> 年，蛮族 </French>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_START_TO_INVADE</Tag>
+		<English> 即将开始大规模入侵</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese> 即将开始大规模入侵</Chinese>
+		<French> 即将开始大规模入侵</French>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_START_TO_INVADE2</Tag>
+		<English> 已经入侵</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese> 已经入侵</Chinese>
+		<French> 已经入侵</French>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_LOCATION</Tag>
+		<English>，坐标范围：( </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>，坐标范围：( </Chinese>
+		<French>，坐标范围：( </French>
+	</TEXT>	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_INDIPENDENT</Tag>
+		<English> 年，独立城邦 </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese> 年，独立城邦 </Chinese>
+		<French> 年，独立城邦 </French>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_INDIPENDENT_START</Tag>
+		<English> 已经建立于 </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese> 已经建立于 </Chinese>
+		<French> 已经建立于 </French>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_BARBS_INDIPENDENT_START_LOCATION</Tag>
+		<English>，坐标：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>，坐标：</Chinese>
+		<French>，坐标：</French>
+	</TEXT>
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_LOCATION</Tag>
+		<English> 地区</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese> 地区</Chinese>
+		<French> 地区</French>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_PYTHON_LOGGER_CHINESE_START_FALL</Tag>
+		<English>即将崩溃！</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>即将崩溃！</Chinese>
+		<French>即将崩溃！</French>
+	</TEXT>
+	
+	
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME1_TIP1_1</Tag>
+		<English>控制美国所有的核心地区</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制美国所有的核心地区</Chinese>
+		<French>控制美国所有的核心地区</French>
+	</TEXT>
+	
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME1_TIP1_2</Tag>
+		<English>控制洛杉矶</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制洛杉矶</Chinese>
+		<French>控制洛杉矶</French>
+	</TEXT>	
+	
+	
+	
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME1_TIP1_3</Tag>
+		<English>控制西雅图</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>控制西雅图</Chinese>
+		<French>控制西雅图</French>
+	</TEXT>	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME1_TIP1_4</Tag>
+		<English>修建连通纽约、华盛顿、洛杉矶和西雅图的铁路</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>修建连通纽约、华盛顿、洛杉矶和西雅图的铁路</Chinese>
+		<French>修建连通纽约、华盛顿、洛杉矶和西雅图的铁路</French>
+	</TEXT>	
+	
+	
+		<TEXT>
+		<Tag>TXT_KEY_PROJECT_THEINTERNET_PROJECT</Tag>
+		<English>因特网工程</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>因特网工程</Chinese>
+		<French>因特网工程</French>
+	</TEXT>	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME2_TIP1_1</Tag>
+		<English>率先发现：  </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>率先发现：  </Chinese>
+		<French>率先发现：  </French>
+	</TEXT>	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME2_TIP1_2</Tag>
+		<English>率先建成：  </English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>率先建成：  </Chinese>
+		<French>率先建成：  </French>
+	</TEXT>	
+	
+		<TEXT>
+		<Tag>TXT_KEY_VICTORY_AME1_TIP1_5</Tag>
+		<English>美国中西部城市数量：</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>美国中西部城市数量：</Chinese>
+		<French>美国中西部城市数量：</French>
+	</TEXT>	
+
+</Civ4GameText>

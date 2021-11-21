@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Harappa -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HARAPPA_DESC</Tag>
+		<English>印度河哈拉帕文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度河哈拉帕文明</Chinese><French>The Harappans</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HARAPPA_PEOPLES</Tag>
+		<English>印度河哈拉帕</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度河哈拉帕</Chinese><French>Indus Valley Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HARAPPA_DEFAULT</Tag>
+		<English>Harappa</English>
+		<L1/><L2/><L3/><L4/><Chinese>Harappa</Chinese><French>Indus Valley City States</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HARAPPA_REPUBLIC</Tag>
+		<English>印度河共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度河共和国</Chinese><French>Indus River Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HARAPPA_COMMUNIST</Tag>
+		<English>印度民主共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度民主共和国</Chinese><French>Democratic Republic of the Indus</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HARAPPA_FASCIST</Tag>
+		<English>印度共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度共和国</Chinese><French>National Republic of the Indus</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HARAPPA_INDUS</Tag>
+		<English>印度河</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度河</Chinese><French>Indus</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HARAPPANS_ADJECTIVE</Tag>
+		<English>哈拉帕</English>
+		<L1/><L2/><L3/><L4/><Chinese>哈拉帕</Chinese><French>Harappan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HARAPPANS_DESC</Tag>
+		<English>哈拉帕文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>哈拉帕文明</Chinese><French>The Harappans</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HARAPPANS_SHORT_DESC</Tag>
+		<English>Harappa</English>
+		<L1/><L2/><L3/><L4/><Chinese>Harappa</Chinese><French>Harappa</French></TEXT>
+</Civ4GameText>

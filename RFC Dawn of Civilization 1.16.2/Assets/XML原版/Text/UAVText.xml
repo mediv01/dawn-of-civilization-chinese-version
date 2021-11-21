@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Colors -->
+<Civ4GameText>
+
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_UAV_TIP</Tag>
+		<English>时代任务</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>时代任务</Chinese>
+		<French>时代任务</French>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_UAV01_TECH</Tag>
+		<English>首先进入青铜器时代（发现合金科技）</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>首先进入青铜器时代（发现合金科技）</Chinese>
+		<French>首先进入青铜器时代（发现合金科技）</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_UAV02_TECH</Tag>
+		<English>首先进入铁器时代（发现铁器科技）</English>
+		<L1/><L2/><L3/><L4/>
+		<Chinese>首先进入铁器时代（发现铁器科技）</Chinese>
+		<French>首先进入铁器时代（发现铁器科技）</French>
+	</TEXT>
+
+
+</Civ4GameText>

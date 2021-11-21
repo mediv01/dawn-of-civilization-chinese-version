@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Canada -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CANADA_DESC</Tag>
+		<English>加拿大文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>加拿大文明</Chinese><French>The Canadians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CANADA_PEOPLES</Tag>
+		<English>加拿大文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>加拿大文明</Chinese><French>Canadian Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CANADA_DEFAULT</Tag>
+		<English>Canada</English>
+		<L1/><L2/><L3/><L4/><Chinese>Canada</Chinese><French>Dominion of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CANADA_REPUBLIC</Tag>
+		<English>%s2联盟</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2联盟</Chinese><French>%s2 Confederation</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CANADA_COMMUNIST</Tag>
+		<English>%s2工人联合会</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2工人联合会</Chinese><French>%s2 Worker's Commonwealth</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CANADA_FASCIST</Tag>
+		<English>%s2帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2帝国</Chinese><French>%s2 Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CANADA_ADJECTIVE</Tag>
+		<English>Canada</English>
+		<L1/><L2/><L3/><L4/><Chinese>Canada</Chinese><French>Canadian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CANADA_SHORT_DESC</Tag>
+		<English>Canada</English>
+		<L1/><L2/><L3/><L4/><Chinese>Canada</Chinese><French>Canada</French></TEXT>
+</Civ4GameText>

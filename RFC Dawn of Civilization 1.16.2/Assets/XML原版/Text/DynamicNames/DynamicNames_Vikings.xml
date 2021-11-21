@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Vikings -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKING_DESC</Tag>
+		<English>维京文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>维京文明</Chinese><French>The Vikings</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SWEDEN_DESC</Tag>
+		<English>瑞典文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>瑞典文明</Chinese><French>The Swedish</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SWEDEN_SHORT_DESC</Tag>
+		<English>Sweden</English>
+		<L1/><L2/><L3/><L4/><Chinese>Sweden</Chinese><French>Sweden</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SWEDEN_ADJECTIVE</Tag>
+		<English>Swedish</English>
+		<L1/><L2/><L3/><L4/><Chinese>Swedish</Chinese><French>Swedish</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_DENMARK_SHORT_DESC</Tag>
+		<English>Denmark</English>
+		<L1/><L2/><L3/><L4/><Chinese>Denmark</Chinese><French>Denmark</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_DENMARK_DEFAULT</Tag>
+		<English>Denmark</English>
+		<L1/><L2/><L3/><L4/><Chinese>Denmark</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_DENMARK_ADJECTIVE</Tag>
+		<English>Danish</English>
+		<L1/><L2/><L3/><L4/><Chinese>Danish</Chinese><French>Danish</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORWAY_SHORT_DESC</Tag>
+		<English>Norway</English>
+		<L1/><L2/><L3/><L4/><Chinese>Norway</Chinese><French>Norway</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORWAY_DEFAULT</Tag>
+		<English>Norway</English>
+		<L1/><L2/><L3/><L4/><Chinese>Norway</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORWAY_ADJECTIVE</Tag>
+		<English>Norway</English>
+		<L1/><L2/><L3/><L4/><Chinese>Norway</Chinese><French>Norwegian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SWEDEN_DEFAULT</Tag>
+		<English>Sweden</English>
+		<L1/><L2/><L3/><L4/><Chinese>Sweden</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SWEDEN_FASCIST</Tag>
+		<English>瑞典帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>瑞典帝国</Chinese><French>National Gathering of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_PEOPLES</Tag>
+		<English>挪威人</English>
+		<L1/><L2/><L3/><L4/><Chinese>挪威人</Chinese><French>Norse Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_DEFAULT</Tag>
+		<English>Vikings</English>
+		<L1/><L2/><L3/><L4/><Chinese>Vikings</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_COMMUNIST</Tag>
+		<English>维京文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>维京文明</Chinese><French>Democratic Republic of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_FASCIST</Tag>
+		<English>维京文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>维京文明</Chinese><French>National Gathering of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_NORSE_KINGDOMS</Tag>
+		<English>挪威王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>挪威王国</Chinese><French>Norse Kingdoms</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_KALMAR_UNION</Tag>
+		<English>维京-卡尔马同盟</English>
+		<L1/><L2/><L3/><L4/><Chinese>维京-卡尔马同盟</Chinese><French>Kalmar Union</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_ALTHINGS</Tag>
+		<English>维京-诸事谷</English>
+		<L1/><L2/><L3/><L4/><Chinese>维京-诸事谷</Chinese><French>%s2 Althings</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_NORTH_SEA_EMPIRE</Tag>
+		<English>维京-北海帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>维京-北海帝国</Chinese><French>North Sea Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_SWEDISH</Tag>
+		<English>瑞典</English>
+		<L1/><L2/><L3/><L4/><Chinese>瑞典</Chinese><French>Swedish</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_DENMARK_NORWAY</Tag>
+		<English>丹麦-挪威王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>丹麦-挪威王国</Chinese><French>Denmark-Norway</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_NORWAY</Tag>
+		<English>挪威王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>挪威王国</Chinese><French>Norway</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_SWEDEN</Tag>
+		<English>瑞典王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>瑞典王国</Chinese><French>Sweden</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_DENMARK</Tag>
+		<English>丹麦王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>丹麦王国</Chinese><French>Denmark</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_SCANDINAVIA</Tag>
+		<English>斯堪的纳维亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>斯堪的纳维亚</Chinese><French>Scandinavia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKINGS_SCANDINAVIAN</Tag>
+		<English>斯堪的纳维亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>斯堪的纳维亚</Chinese><French>Scandinavian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKING_ENGLAND</Tag>
+		<English>维京-英格兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>维京-英格兰</Chinese><French>Danelaw</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKING_RUSSIA</Tag>
+		<English>维京-罗斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>维京-罗斯</Chinese><French>Varangian Principalities</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKING_ADJECTIVE</Tag>
+		<English>Viking</English>
+		<L1/><L2/><L3/><L4/><Chinese>Viking</Chinese><French>Viking</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIKING_SHORT_DESC</Tag>
+		<English>Vikings</English>
+		<L1/><L2/><L3/><L4/><Chinese>Vikings</Chinese><French>Vikings</French></TEXT>
+</Civ4GameText>

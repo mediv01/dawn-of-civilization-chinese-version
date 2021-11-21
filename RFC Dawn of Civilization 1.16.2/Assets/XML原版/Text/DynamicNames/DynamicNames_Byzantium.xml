@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Byzantium -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_DESC</Tag>
+		<English>拜占庭文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭文明</Chinese><French>The Byzantines</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_PEOPLES</Tag>
+		<English>拜占庭人民</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭人民</Chinese><French>Byzantine Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_DEFAULT</Tag>
+		<English>Byzantium</English>
+		<L1/><L2/><L3/><L4/><Chinese>Byzantium</Chinese><French>%s2 Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_REPUBLIC</Tag>
+		<English>罗马尼亚共和国（拜占庭）</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马尼亚共和国（拜占庭）</Chinese><French>Republic of Rhomania</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_FASCIST</Tag>
+		<English>拜占庭帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭帝国</Chinese><French>Despotate of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_EASTERN</Tag>
+		<English>东罗马</English>
+		<L1/><L2/><L3/><L4/><Chinese>东罗马</Chinese><French>Eastern Roman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_TREBIZOND</Tag>
+		<English>拜占庭-特拉布松帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-特拉布松帝国</Chinese><French>Trebizond</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_DESPOTATE</Tag>
+		<English>拜占庭帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭帝国</Chinese><French>Despotate of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_RUM</Tag>
+		<English>拜占庭-朗姆</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-朗姆</Chinese><French>R&#251;m</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_MOREA</Tag>
+		<English>拜占庭-摩里亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-摩里亚</Chinese><French>the Morea</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_NICAEA</Tag>
+		<English>拜占庭-尼西亚帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-尼西亚帝国</Chinese><French>Nicaea</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_EPIRUS</Tag>
+		<English>拜占庭-伊庇鲁斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-伊庇鲁斯</Chinese><French>Epirus</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTINE_VASSAL</Tag>
+		<English>东罗马帝国总督- %s1</English>
+		<L1/><L2/><L3/><L4/><Chinese>东罗马帝国总督- %s1</Chinese><French>Exarchate of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTINE_EGYPT</Tag>
+		<English>拜占庭-埃及</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-埃及</Chinese><French>Exarchate of Alexandria</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTINE_BABYLONIA</Tag>
+		<English>拜占庭-巴比伦</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-巴比伦</Chinese><French>Exarchate of Ctesiphon</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTINE_GREECE</Tag>
+		<English>拜占庭-希腊</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-希腊</Chinese><French>Exarchate of Achaia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTINE_CARTHAGE</Tag>
+		<English>拜占庭-迦太基</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-迦太基</Chinese><French>Exarchate of Africa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTINE_PERSIA</Tag>
+		<English>拜占庭-波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-波斯</Chinese><French>Exarchate of Parthia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTINE_ROME</Tag>
+		<English>拜占庭-罗马</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-罗马</Chinese><French>Exarchate of Ravenna</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTINE_SPAIN</Tag>
+		<English>拜占庭-西班牙</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-西班牙</Chinese><French>Exarchate of Spania</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_ADJECTIVE</Tag>
+		<English>
+			<Text>Byzantine:Byzantines</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<L1/><L2/><L3/><L4/><French>Exarchate of Spania</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BYZANTIUM_SHORT_DESC</Tag>
+		<English>Byzantium</English>
+		<L1/><L2/><L3/><L4/><Chinese>Byzantium</Chinese><French>Byzantium</French></TEXT>
+</Civ4GameText>

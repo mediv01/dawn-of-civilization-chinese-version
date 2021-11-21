@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Egypt -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_DESC</Tag>
+		<English>埃及文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及文明</Chinese><French>The Egyptians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_PEOPLES</Tag>
+		<English>尼罗河文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>尼罗河文明</Chinese><French>Peoples of the Nile</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_DEFAULT</Tag>
+		<English>Egypt</English>
+		<L1/><L2/><L3/><L4/><Chinese>Egypt</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_FASCIST</Tag>
+		<English>埃及军国</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及军国</Chinese><French>Officers' %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_COMMUNIST</Tag>
+		<English>埃及自由王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及自由王国</Chinese><French>Liberation Rally of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_PTOLEMAIC</Tag>
+		<English>埃及-托勒密帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及-托勒密帝国</Chinese><French>Ptolemaic Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_OLD_KINGDOM</Tag>
+		<English>埃及古王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及古王国</Chinese><French>Old Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_MIDDLE_KINGDOM</Tag>
+		<English>埃及中王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及中王国</Chinese><French>Middle Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_NEW_KINGDOM</Tag>
+		<English>埃及新王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及新王国</Chinese><French>New Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_COPTIC</Tag>
+		<English>埃及-科普特王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及-科普特王国</Chinese><French>Coptic Kingdom</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_MAMLUK</Tag>
+		<English>埃及马穆鲁克王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及马穆鲁克王国</Chinese><French>Mamluk</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_FATIMID</Tag>
+		<English>埃及法蒂玛</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及法蒂玛</Chinese><French>Fatimid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_AYYUBID</Tag>
+		<English>埃及阿尤普</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及阿尤普</Chinese><French>Ayyubid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPTIAN_PHOENICIA</Tag>
+		<English>埃及雷杰努省</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及雷杰努省</Chinese><French>Province of Retjenu</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPTIAN_ETHIOPIA</Tag>
+		<English>埃及朋特王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及朋特王国</Chinese><French>Kingdom of Punt</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_ADJECTIVE</Tag>
+		<English>Egypt</English>
+		<L1/><L2/><L3/><L4/><Chinese>Egypt</Chinese><French>Egyptian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_EGYPT_SHORT_DESC</Tag>
+		<English>Egypt</English>
+		<L1/><L2/><L3/><L4/><Chinese>Egypt</Chinese><French>Egypt</French></TEXT>
+</Civ4GameText>

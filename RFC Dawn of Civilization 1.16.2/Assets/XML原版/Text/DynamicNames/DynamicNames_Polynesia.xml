@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Polynesia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_DESC</Tag>
+		<English>玻利尼西亚文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>玻利尼西亚文明</Chinese><French>The Polynesians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_PEOPLES</Tag>
+		<English>玻利尼西亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>玻利尼西亚</Chinese><French>Polynesian Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_DEFAULT</Tag>
+		<English>Polynesia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Polynesia</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_REPUBLIC</Tag>
+		<English>玻利尼西亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>玻利尼西亚</Chinese><French>Polynesian Republics</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_FASCIST</Tag>
+		<English>玻利尼西亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>玻利尼西亚</Chinese><French>Oceania</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_TONGA</Tag>
+		<English>玻利尼西亚-汤加</English>
+		<L1/><L2/><L3/><L4/><Chinese>玻利尼西亚-汤加</Chinese><French>Tonga</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_TUI_TONGA</Tag>
+		<English>玻利尼西亚-汤加</English>
+		<L1/><L2/><L3/><L4/><Chinese>玻利尼西亚-汤加</Chinese><French>Tu'i Tonga</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_HAWAII</Tag>
+		<English>波利尼西亚-夏威夷</English>
+		<L1/><L2/><L3/><L4/><Chinese>波利尼西亚-夏威夷</Chinese><French>Hawaii</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_SAMOA</Tag>
+		<English>波利尼西亚-萨摩亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>波利尼西亚-萨摩亚</Chinese><French>Samoa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_TUI_MANUA</Tag>
+		<English>波利尼西亚-曼努</English>
+		<L1/><L2/><L3/><L4/><Chinese>波利尼西亚-曼努</Chinese><French>Tu'i Manu'a</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_NIUE</Tag>
+		<English>波利尼西亚-纽埃</English>
+		<L1/><L2/><L3/><L4/><Chinese>波利尼西亚-纽埃</Chinese><French>Niue</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_TAHITI</Tag>
+		<English>玻利尼西亚-大溪地</English>
+		<L1/><L2/><L3/><L4/><Chinese>玻利尼西亚-大溪地</Chinese><French>Tahiti</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_ADJECTIVE</Tag>
+		<English>Polynesia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Polynesia</Chinese><French>Polynesian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_POLYNESIA_SHORT_DESC</Tag>
+		<English>Polynesia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Polynesia</Chinese><French>Polynesia</French></TEXT>
+</Civ4GameText>

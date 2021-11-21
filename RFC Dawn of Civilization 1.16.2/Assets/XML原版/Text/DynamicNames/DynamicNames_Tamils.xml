@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Tamils -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_DESC</Tag>
+		<English>泰米尔文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔文明</Chinese><French>The Tamils</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_PEOPLES</Tag>
+		<English>泰米尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔</Chinese><French>Dravidian Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_DEFAULT</Tag>
+		<English>Tamils</English>
+		<L1/><L2/><L3/><L4/><Chinese>Tamils</Chinese><French>%s2 Kingdom</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_REPUBLIC</Tag>
+		<English>泰米尔共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔共和国</Chinese><French>Republic of Tamil Nadu</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_FASCIST</Tag>
+		<English>泰米尔共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔共和国</Chinese><French>Dravidian Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_VIJAYANAGARA</Tag>
+		<English>泰米尔-维贾亚纳加拉</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔-维贾亚纳加拉</Chinese><French>Vijayanagara</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_MYSORE</Tag>
+		<English>泰米尔-迈索尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔-迈索尔</Chinese><French>Mysore</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_CHOLA</Tag>
+		<English>泰米尔-朱罗</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔-朱罗</Chinese><French>Chola</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_PANDYAN</Tag>
+		<English>泰米尔-潘地亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔-潘地亚</Chinese><French>Pandyan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_CHERA</Tag>
+		<English>泰米尔-切拉</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔-切拉</Chinese><French>Chera</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_DRAVIDA</Tag>
+		<English>泰米尔-德拉维达</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔-德拉维达</Chinese><French>Dravida</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_BAHMANI</Tag>
+		<English>泰米尔-巴哈马</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔-巴哈马</Chinese><French>Bahmani</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_TAMIL_NADU</Tag>
+		<English>泰米尔纳德邦</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔纳德邦</Chinese><French>Tamil Nadu</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_ADJECTIVE</Tag>
+		<English>Tamil</English>
+		<L1/><L2/><L3/><L4/><Chinese>Tamil</Chinese><French>Tamil</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TAMILS_SHORT_DESC</Tag>
+		<English>Tamils</English>
+		<L1/><L2/><L3/><L4/><Chinese>Tamils</Chinese><French>Tamils</French></TEXT>
+</Civ4GameText>

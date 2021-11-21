@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Italy -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ITALY_PEOPLES</Tag>
+		<English>伦巴第人</English>
+		<L1/><L2/><L3/><L4/><Chinese>伦巴第人</Chinese><French>Lombard Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ITALY_DEFAULT</Tag>
+		<English>Italy</English>
+		<L1/><L2/><L3/><L4/><Chinese>Italy</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ITALY_FASCIST</Tag>
+		<English>意大利法西斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>意大利法西斯</Chinese><French>National Fascist %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ITALY_LEAGUE</Tag>
+		<English>意大利</English>
+		<L1/><L2/><L3/><L4/><Chinese>意大利</Chinese><French>%s2 League</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ITALY_LOMBARD</Tag>
+		<English>伦巴第</English>
+		<L1/><L2/><L3/><L4/><Chinese>伦巴第</Chinese><French>Lombard</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ITALY_TUSCANY</Tag>
+		<English>托斯卡纳</English>
+		<L1/><L2/><L3/><L4/><Chinese>托斯卡纳</Chinese><French>Tuscany</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ITALY_MARITIME_REPUBLICS</Tag>
+		<English>意大利海上共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>意大利海上共和国</Chinese><French>%s2 Maritime Republics</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ITALY_DUCHY_OF</Tag>
+		<English>意大利公国</English>
+		<L1/><L2/><L3/><L4/><Chinese>意大利公国</Chinese><French>Duchy of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ITALY_PAPAL_STATES</Tag>
+		<English>教皇国</English>
+		<L1/><L2/><L3/><L4/><Chinese>教皇国</Chinese><French>Papal States</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ITALY_ADJECTIVE</Tag>
+		<English>Italian</English>
+		<L1/><L2/><L3/><L4/><Chinese>Italian</Chinese><French>Italian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ITALY_DESC</Tag>
+		<English>意大利文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>意大利文明</Chinese><French>The Italians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ITALY_SHORT_DESC</Tag>
+		<English>Italy</English>
+		<L1/><L2/><L3/><L4/><Chinese>Italy</Chinese><French>Italy</French></TEXT>
+</Civ4GameText>

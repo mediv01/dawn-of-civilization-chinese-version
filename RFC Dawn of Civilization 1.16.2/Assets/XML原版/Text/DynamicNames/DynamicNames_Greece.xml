@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Greece -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREECE_DESC</Tag>
+		<English>希腊文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>希腊文明</Chinese><French>The Greeks</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREECE_PEOPLES</Tag>
+		<English>希腊-迈锡尼文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>希腊-迈锡尼文明</Chinese><French>Mycenean Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREECE_DEFAULT</Tag>
+		<English>Greece</English>
+		<L1/><L2/><L3/><L4/><Chinese>Greece</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREECE_REPUBLIC</Tag>
+		<English>希腊共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>希腊共和国</Chinese><French>Hellenic Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREECE_COMMUNIST</Tag>
+		<English>希腊民主共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>希腊民主共和国</Chinese><French>Democratic Army of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREECE_FASCIST</Tag>
+		<English>希腊爱国联盟</English>
+		<L1/><L2/><L3/><L4/><Chinese>希腊爱国联盟</Chinese><French>Patriotic Alliance of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREECE_LEAGUE</Tag>
+		<English>希腊联盟</English>
+		<L1/><L2/><L3/><L4/><Chinese>希腊联盟</Chinese><French>%s2 League</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREEK_PERSIA</Tag>
+		<English>希腊-波斯王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>希腊-波斯王国</Chinese><French>Seleucid Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREEK_EGYPT</Tag>
+		<English>托勒密王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>托勒密王国</Chinese><French>Ptolemaic Kingdom</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREEK_INDIA</Tag>
+		<English>希腊-印度帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>希腊-印度帝国</Chinese><French>Greco-Bactrian Kingdom</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREEK_ROME</Tag>
+		<English>希腊-罗马帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>希腊-罗马帝国</Chinese><French>Magna Graecia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREECE_MACEDONIA</Tag>
+		<English>马其顿帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>马其顿帝国</Chinese><French>Macedonia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREECE_MACEDONIAN</Tag>
+		<English>马其顿帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>马其顿帝国</Chinese><French>Macedonian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREEK_NAME_TURKS</Tag>
+		<English>土耳其地区</English>
+		<L1/><L2/><L3/><L4/><Chinese>土耳其地区</Chinese><French>Transoxiana</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREECE_ADJECTIVE</Tag>
+		<English>Greece</English>
+		<L1/><L2/><L3/><L4/><Chinese>Greece</Chinese><French>Greek</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GREECE_SHORT_DESC</Tag>
+		<English>Greece</English>
+		<L1/><L2/><L3/><L4/><Chinese>Greece</Chinese><French>Greece</French></TEXT>
+</Civ4GameText>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Japan -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_JAPAN_DESC</Tag>
+		<English>日本文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>日本文明</Chinese><French>The Japanese</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_JAPAN_PEOPLES</Tag>
+		<English>大和人</English>
+		<L1/><L2/><L3/><L4/><Chinese>大和人</Chinese><French>Yamato Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_JAPAN_DEFAULT</Tag>
+		<English>Japan</English>
+		<L1/><L2/><L3/><L4/><Chinese>Japan</Chinese><French>%s2 Shogunate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_JAPAN_FASCIST</Tag>
+		<English>日本帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>日本帝国</Chinese><French>Empire of Greater %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_JAPANESE_VASSAL</Tag>
+		<English>日本帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>日本帝国</Chinese><French>Co-Prosperity %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_JAPANESE_CHINA</Tag>
+		<English>日占中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>日占中国</Chinese><French>Reorganized National Government of China</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_JAPANESE_KOREA</Tag>
+		<English>日占朝鲜</English>
+		<L1/><L2/><L3/><L4/><Chinese>日占朝鲜</Chinese><French>Governor-General of Chosen</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_JAPANESE_MONGOLIA</Tag>
+		<English>日占孟加拉</English>
+		<L1/><L2/><L3/><L4/><Chinese>日占孟加拉</Chinese><French>Mengjiang United Autonomous Government</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_JAPANESE_INDIA</Tag>
+		<English>日占印度</English>
+		<L1/><L2/><L3/><L4/><Chinese>日占印度</Chinese><French>Azad Hind</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_JAPAN_ADJECTIVE</Tag>
+		<English>Japanese</English>
+		<L1/><L2/><L3/><L4/><Chinese>Japanese</Chinese><French>Japanese</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_JAPAN_SHORT_DESC</Tag>
+		<English>Japan</English>
+		<L1/><L2/><L3/><L4/><Chinese>Japan</Chinese><French>Japan</French></TEXT>
+</Civ4GameText>

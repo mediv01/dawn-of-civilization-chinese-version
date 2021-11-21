@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Computers -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELT_ADJECTIVE</Tag>
+		<English>
+			<Text>Celtic:Celts</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<L1/><L2/><L3/><L4/><French>英文</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELT_DESC</Tag>
+		<English>凯尔特文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>凯尔特文明</Chinese><French>Celtic Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELT_SHORT_DESC</Tag>
+		<English>Celtia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Celtia</Chinese><French>Celtia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDEPENDENT_ADJECTIVE</Tag>
+		<English>Independents</English>
+		<L1/><L2/><L3/><L4/><Chinese>Independents</Chinese><French>Independent</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDEPENDENT2_ADJECTIVE</Tag>
+		<English>Independents2</English>
+		<L1/><L2/><L3/><L4/><Chinese>Independents2</Chinese><French>Independent2</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDEPENDENT_DESC</Tag>
+		<English>独立城邦</English>
+		<L1/><L2/><L3/><L4/><Chinese>独立城邦</Chinese><French>Independent Cities</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDEPENDENT2_DESC</Tag>
+		<English>独立城邦2</English>
+		<L1/><L2/><L3/><L4/><Chinese>独立城邦2</Chinese><French>Independent Cities2</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDEPENDENT_SHORT_DESC</Tag>
+		<English>Independents</English>
+		<L1/><L2/><L3/><L4/><Chinese>Independents</Chinese><French>Independents</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDEPENDENT2_SHORT_DESC</Tag>
+		<English>Independents2</English>
+		<L1/><L2/><L3/><L4/><Chinese>Independents2</Chinese><French>Independents2</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NATIVE_ADJECTIVE</Tag>
+		<English>Natives</English>
+		<L1/><L2/><L3/><L4/><Chinese>Natives</Chinese><French>Native</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NATIVE_DESC</Tag>
+		<English>原住民</English>
+		<L1/><L2/><L3/><L4/><Chinese>原住民</Chinese><French>Native Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NATIVE_SHORT_DESC</Tag>
+		<English>Natives</English>
+		<L1/><L2/><L3/><L4/><Chinese>Natives</Chinese><French>Natives</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SELJUK_ADJECTIVE</Tag>
+		<English>Seljuk</English>
+		<L1/><L2/><L3/><L4/><Chinese>Seljuk</Chinese><French>Seljuk</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SELJUK_DESC</Tag>
+		<English>塞尔柱帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>塞尔柱帝国</Chinese><French>Seljuk Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SELJUK_SHORT_DESC</Tag>
+		<English>Seljuks</English>
+		<L1/><L2/><L3/><L4/><Chinese>Seljuks</Chinese><French>Seljuks</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ZULU_ADJECTIVE</Tag>
+		<English>ZULU<Text>Zulu:Zulu</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<L1/><L2/><L3/><L4/><Chinese>ZULU</Chinese><French>ZULU</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BARBARIAN_ADJECTIVE</Tag>
+		<English>Barbarian</English>
+		<L1/><L2/><L3/><L4/><Chinese>Barbarian</Chinese><French>Barbarian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BARBARIAN_DESC</Tag>
+		<English>蛮族国家</English>
+		<L1/><L2/><L3/><L4/><Chinese>蛮族国家</Chinese><French>Barbarian State</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BARBARIAN_SHORT_DESC</Tag>
+		<English>Barbarians</English>
+		<L1/><L2/><L3/><L4/><Chinese>Barbarians</Chinese><French>Barbarians</French></TEXT>
+</Civ4GameText>

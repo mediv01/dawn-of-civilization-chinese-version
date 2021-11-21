@@ -1,0 +1,1579 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Interface -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_FIRST_FREE_TECH</Tag>
+		<English>[ICON_BULLET]率先发现者获得一项[COLOR_TECH_TEXT]免费科技[COLOR_REVERT]从你现在或更早的时代当中</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]率先发现者获得一项[COLOR_TECH_TEXT]免费科技[COLOR_REVERT]从你现在或更早的时代当中</Chinese><French>[ICON_BULLET]First to Discover Receives a [COLOR_TECH_TEXT]Free Technology[COLOR_REVERT] from your current or earlier Era</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_FIRST_FREE_TECHS</Tag>
+		<English>[ICON_BULLET]率先发现者自动获得%d1_Num项[COLOR_TECH_TEXT]免费科技[COLOR_REVERT]从你现在或更早的时代当中</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]率先发现者自动获得%d1_Num项[COLOR_TECH_TEXT]免费科技[COLOR_REVERT]从你现在或更早的时代当中</Chinese><French>[ICON_BULLET]First to Discover Receives [COLOR_TECH_TEXT] Free Technologies[COLOR_REVERT] from your current or earlier Era</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ENSLAVE_LOSE</Tag>
+		<English>你的单位被敌人俘获！</English>
+		<L1/><L2/><L3/><L4/><Chinese>你的单位被敌人俘获！</Chinese><French>Your unit has been enslaved!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ENSLAVE_WIN</Tag>
+		<English>敌方单位被俘获！</English>
+		<L1/><L2/><L3/><L4/><Chinese>敌方单位被俘获！</Chinese><French>An enemy unit has been enslaved!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_EMIGRATION</Tag>
+		<English>我国%s1的部分人口移民新大陆！</English>
+		<L1/><L2/><L3/><L4/><Chinese>我国%s1的部分人口移民新大陆！</Chinese><French>A part of our population from %s1 is emigrating to the New World!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_BASE_COST</Tag>
+		<English> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]基础成本:[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]基础成本:[COLOR_REVERT]</Chinese><French> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Base Cost:[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_EMPIRE_SIZE</Tag>
+		<English> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]帝国规模:[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]帝国规模:[COLOR_REVERT]</Chinese><French> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Empire Size:[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNITS_CONTRACTED_OUT</Tag>
+		<English>已签订雇佣契约</English>
+		<L1/><L2/><L3/><L4/><Chinese>已签订雇佣契约</Chinese><French>Units Contracted Out</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_LEADER_MODIFIER</Tag>
+		<English> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]科技领导者:[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]科技领导者:[COLOR_REVERT]</Chinese><French> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Tech Lead:[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MODERNIZATION_MODIFIER</Tag>
+		<English> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]现代化:[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]现代化:[COLOR_REVERT]</Chinese><French> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Modernization:[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SPAWN_MODIFIER</Tag>
+		<English> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]文明的崛起:[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]文明的崛起:[COLOR_REVERT]</Chinese><French> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Rise of Civilization:[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SPREAD_MODIFIER</Tag>
+		<English> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]科技传播:[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]科技传播:[COLOR_REVERT]</Chinese><French> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Tech Spread:[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_FOUND_BUDDHISM</Tag>
+		<English>[ICON_BULLET]建成一座印度教神庙后创立</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]建成一座印度教神庙后创立</Chinese><French>[ICON_BULLET]Founded when a Hindu Temple is built</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_FOUND_CATHOLICISM</Tag>
+		<English>[ICON_BULLET]建立时基督教文明控制着少于一半的基督教城市[NEWLINE][ICON_BULLET]或者由一个不控制东正教圣城的文明建造东正教大教堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]建立时基督教文明控制着少于一半的基督教城市[NEWLINE][ICON_BULLET]或者由一个不控制东正教圣城的文明建造东正教大教堂</Chinese><French>[ICON_BULLET]Founded when Christian civilizations control less than half of all Christian cities[NEWLINE][ICON_BULLET]Alternately founded by the first civilization to build an Orthodox Cathedral without controlling the Orthodox holy city</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EXTRA_UPKEEP_TEXT</Tag>
+		<English>[ICON_BULLET]花费 %d1 [ICON_GOLD] 额外的维护费</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]花费 %d1 [ICON_GOLD] 额外的维护费</Chinese><French>[ICON_BULLET]Costs %d1 [ICON_GOLD] Additional Upkeep</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_NO_UPGRADE</Tag>
+		<English>[ICON_BULLET]不能被晋升</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]不能被晋升</Chinese><French>[ICON_BULLET]Cannot Be Upgraded</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTE_MOD_CAPITAL_ROUTE</Tag>
+		<English>%D1_Mod%%: 与其他文明首都的交易</English>
+		<L1/><L2/><L3/><L4/><Chinese>%D1_Mod%%: 与其他文明首都的交易</Chinese><French>%D1_Mod%%: for trading through Capital</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTE_MOD_DEFENSIVE_PACT</Tag>
+		<English>%D1_Mod%%: 与防御协定伙伴的交易</English>
+		<L1/><L2/><L3/><L4/><Chinese>%D1_Mod%%: 与防御协定伙伴的交易</Chinese><French>%D1_Mod%%: for trading with Defensive Pact partner</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTE_MOD_DISTANCE</Tag>
+		<English>%D1%%: 来自城市距离</English>
+		<L1/><L2/><L3/><L4/><Chinese>%D1%%: 来自城市距离</Chinese><French>%D1%%: from City Distance</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_BUILDING_DOUBLE_PRODUCTION</Tag>
+		<English>[ICON_BULLET]对[LINK=literal]%s1_unit_or_building[\LINK]拥有两倍建造速度</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]对[LINK=literal]%s1_unit_or_building[\LINK]拥有两倍建造速度</Chinese><French>[ICON_BULLET]Double Production Speed for [LINK=literal]%s1_unit_or_building[\LINK]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_BUILDING_DOUBLE_PRODUCTION_BUILDING</Tag>
+		<English>[LINK=literal]%s1_unit_or_building[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[LINK=literal]%s1_unit_or_building[\LINK]</Chinese><French>[LINK=literal]%s1_unit_or_building[\LINK]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_BUILDING_DOUBLE_PRODUCTION_START</Tag>
+		<English>[ICON_BULLET]两倍建造速度于</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]两倍建造速度于</Chinese><French>[ICON_BULLET]Double Production Speed for</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_BUILDING_PRODUCTION_MODIFIER</Tag>
+		<English>[ICON_BULLET]建造[LINK=literal]%s2_unit_or_building[\LINK] %d1_Mod%% 更快</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]建造[LINK=literal]%s2_unit_or_building[\LINK] %d1_Mod%% 更快</Chinese><French>[ICON_BULLET]Builds [LINK=literal]%s2_unit_or_building[\LINK] %d1_Mod%% Faster</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ANGER_CORPORATION</Tag>
+		<English>%D1_Change[ICON_UNHAPPY]: "我们的工作岗位被挤占了！"</English>
+		<L1/><L2/><L3/><L4/><Chinese>%D1_Change[ICON_UNHAPPY]: "我们的工作岗位被挤占了！"</Chinese><French>%D1_Change[ICON_UNHAPPY]: "Our workers are being exploited!"</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ANGER_SPECIALISTS</Tag>
+		<English>%D1_Change[ICON_UNHAPPY]: “我们的奴隶渴望自由！”</English>
+		<L1/><L2/><L3/><L4/><Chinese>%D1_Change[ICON_UNHAPPY]: “我们的奴隶渴望自由！”</Chinese><French>%D1_Change[ICON_UNHAPPY]: "Our slaves are longing for freedom!"</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COMMERCE_BONUS</Tag>
+		<English>[ICON_BULLET]交易资源减少时不降低稳定度</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]交易资源减少时不降低稳定度</Chinese><French>[ICON_BULLET]No negative Stability Points for low amount of traded resources</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONQUEST_BONUS</Tag>
+		<English>[ICON_BULLET]征服城市稳定点数+2</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]征服城市稳定点数+2</Chinese><French>[ICON_BULLET]+2 additional Stability Points on city conquest</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CORE_FREE_SPECIALISTS</Tag>
+		<English>[ICON_BULLET]%D1_Change 每个核心城市赠送免费专家</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Change 每个核心城市赠送免费专家</Chinese><French>[ICON_BULLET]%D1_Change Free Specialist per Core City</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_LIMITED_UNIT_HAPPINESS</Tag>
+		<English>[ICON_BULLET]城市驻军一单位，提升%D1_PerUnit%F2_HappyOrSad，上限为%D3</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]城市驻军一单位，提升%D1_PerUnit%F2_HappyOrSad，上限为%D3</Chinese><French>[ICON_BULLET]%D1_PerUnit%F2_HappyOrSad per Military Unit Stationed in a City up to a Maximum of %D3</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_CONSUL</Tag>
+		<English>"我们热爱执政官日"</English>
+		<L1/><L2/><L3/><L4/><Chinese>"我们热爱执政官日"</Chinese><French>"We Love the Consul Day"</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WONDER_PRODUCTION</Tag>
+		<English>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] 在建造奇观时</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] 在建造奇观时</Chinese><French>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] when building Wonders</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_VASSAL_CITY_COMMERCE</Tag>
+		<English>[ICON_BULLET]%D1_Change[ICON_COMMERCE] 在首都，对于每个附庸城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Change[ICON_COMMERCE] 在首都，对于每个附庸城市</Chinese><French>[ICON_BULLET]%D1_Change[ICON_COMMERCE] in Capital for every Vassal City</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COLONY_COMMERCE</Tag>
+		<English>[ICON_BULLET]%D1_Change[ICON_COMMERCE] 在首都，对于每个殖民地</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Change[ICON_COMMERCE] 在首都，对于每个殖民地</Chinese><French>[ICON_BULLET]%D1_Change[ICON_COMMERCE] in Capital for every Colony</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_VASSAL_BONUS</Tag>
+		<English>[ICON_BULLET]每收纳一个附庸国稳定点数+4</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]每收纳一个附庸国稳定点数+4</Chinese><French>[ICON_BULLET]+4 Stability Points for each vassal</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_VASSAL_BONUS_VANILLA</Tag>
+		<English>[ICON_BULLET]每控制一个文明发源地稳定点数+4</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]每控制一个文明发源地稳定点数+4</Chinese><French>[ICON_BULLET]+4 Stability Points for each civilization starting point controlled</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MINIMAL_SPECIALISTS</Tag>
+		<English>[ICON_BULLET]至少有%D1个[SPACE]槽位</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]至少有%D1个[SPACE]槽位</Chinese><French>[ICON_BULLET]At least %D1 slots for[SPACE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_AT_LEAST_ONE_SPECIALIST</Tag>
+		<English>[ICON_BULLET]至少有一个[SPACE]槽位</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]至少有一个[SPACE]槽位</Chinese><French>[ICON_BULLET]At least one slot for[SPACE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_UNLIMITED</Tag>
+		<English>[ICON_BULLET]有两倍[SPACE]的槽位</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]有两倍[SPACE]的槽位</Chinese><French>[ICON_BULLET]Double slots for[SPACE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_POST_COMMUNISM</Tag>
+		<English>[ICON_BULLET]每座城市只能入驻一种公司[NEWLINE][ICON_BULLET]改变共产主义经济制度将导致经济危机</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]每座城市只能入驻一种公司[NEWLINE][ICON_BULLET]改变共产主义经济制度将导致经济危机</Chinese><French>[ICON_BULLET]No more than one corporation per city[NEWLINE][ICON_BULLET]Post-communist crisis in case of economic system switch</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PROCESS_MODIFIER</Tag>
+		<English>[ICON_BULLET]能够将产能转换为贸易%D1_Mod%%效率</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]能够将产能转换为贸易%D1_Mod%%效率</Chinese><French>[ICON_BULLET]Can convert production to commerce with %D1_Mod%% efficiency</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PER_SPECIALIST_THRESHOLD</Tag>
+		<English>[SPACE]每个城市中的每个专家最多在%d1个地块上工作</English>
+		<L1/><L2/><L3/><L4/><Chinese>[SPACE]每个城市中的每个专家最多在%d1个地块上工作</Chinese><French>[SPACE]per Specialist for every city that works at most %d1 land tiles</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PER_EXCESS_HAPPINESS</Tag>
+		<English>[SPACE]每一额外快乐</English>
+		<L1/><L2/><L3/><L4/><Chinese>[SPACE]每一额外快乐</Chinese><French>[SPACE]per Excess Happiness</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PER_ANGRY_POPULATION</Tag>
+		<English>[SPACE]每一愤怒人口</English>
+		<L1/><L2/><L3/><L4/><Chinese>[SPACE]每一愤怒人口</Chinese><French>[SPACE]per Angry Population</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FOR_UNIMPROVED_TILES</Tag>
+		<English>无设施地块[SPACE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>无设施地块[SPACE]</Chinese><French>[SPACE]from No Improvement</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_POLLUTION_MODIFIER</Tag>
+		<English>[ICON_BULLET]疾病点数减少%D1_Mod%%</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]疾病点数减少%D1_Mod%%</Chinese><French>[ICON_BULLET]%D1_Mod%% [ICON_UNHEALTHY]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NO_FOREIGN_TRADE_MODIFIER</Tag>
+		<English>[ICON_BULLET]海外商路没有额外收入</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]海外商路没有额外收入</Chinese><French>[ICON_BULLET]No Additional Income from Foreign Trade Routes</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NO_UNHAPPINESS_CORPORATION</Tag>
+		<English>[ICON_BULLET]没有来自公司的[ICON_UNHAPPY]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]没有来自公司的[ICON_UNHAPPY]</Chinese><French>[ICON_BULLET]No [ICON_UNHAPPY] from Corporations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NO_UNHAPPINESS_CORPORATION_MOD</Tag>
+		<English>[ICON_BULLET]来自公司的%D1_Mod%% [ICON_UNHAPPY]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]来自公司的%D1_Mod%% [ICON_UNHAPPY]</Chinese><French>[ICON_BULLET]%D1_Mod%% [ICON_UNHAPPY] from Corporations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FOUND_BONUS</Tag>
+		<English>[ICON_BULLET]每建立一个距离首都15格以上的城市时，稳定点数+2</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]每建立一个距离首都15格以上的城市时，稳定点数+2</Chinese><French>[ICON_BULLET]+2 additional Stability Points for each city founded at least 15 tiles from the capital</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CORPORATION_COMMERCE</Tag>
+		<English>[ICON_BULLET]公司的商业产值增加%D1_Mod%%</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]公司的商业产值增加%D1_Mod%%</Chinese><French>[ICON_BULLET]%D1_Mod%% Corporation Commerce</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DEFENSIVE_PACT_TRADE_MODIFIER</Tag>
+		<English>[ICON_BULLET]%D1_Mod%% 来自防御协定盟友的收入 [ICON_TRADE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Mod%% 来自防御协定盟友的收入 [ICON_TRADE]</Chinese><French>[ICON_BULLET]%D1_Mod%% Income from [ICON_TRADE] with Defensive Pact partners</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DEPRESSION</Tag>
+		<English>[ICON_BULLET]可能发生大萧条</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可能发生大萧条</Chinese><French>[ICON_BULLET]Risk of Great Depression</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DOMAIN_PRODUCTION</Tag>
+		<English>[ICON_BULLET]%D1_Mod%%产能对于所有的%s2</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Mod%%产能对于所有的%s2</Chinese><French>[ICON_BULLET]%D1_Mod%% Production For All %s2</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DOMAIN_XP</Tag>
+		<English>[ICON_BULLET]对于所有的%s2 +%d1经验</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]对于所有的%s2 +%d1经验</Chinese><French>[ICON_BULLET]+%d1 Experience For All %s2</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAPITAL_TRADE_MODIFIER</Tag>
+		<English>[ICON_BULLET]%D1_Mod%% 产生收入于 [ICON_TRADE] 经过你首都的</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Mod%% 产生收入于 [ICON_TRADE] 经过你首都的</Chinese><French>[ICON_BULLET]%D1_Mod%% Income from [ICON_TRADE] going through your Capital</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_REQUIRES_CIVIC</Tag>
+		<English>[COLOR_WARNING_TEXT]需要[LINK=literal]%s1[\LINK][COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]需要[LINK=literal]%s1[\LINK][COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Requires [LINK=literal]%s1[\LINK][COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_REQUIRES_NUM_COLONIES</Tag>
+		<English>[COLOR_WARNING_TEXT]需要至少%d1_Num个殖民地[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]需要至少%d1_Num个殖民地[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Requires at least %d1_Num Colony[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_REQUIRES_PERCENT_SPECIAL_BUILDINGS_NO_CITY</Tag>
+		<!-- %s1_Name = Can be Buildings, Units, etc -->
+		<English>[COLOR_WARNING_TEXT]需要%s1_Name (所有城市中的%d2%个)[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]需要%s1_Name (所有城市中的%d2%个)[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Requires %s1_Name (In %d2% Of All Cities)[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_REQUIRES_RIVER</Tag>
+		<English>[ICON_BULLET]需要沿河</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]需要沿河</Chinese><French>[COLOR_WARNING_TEXT]Requires a River[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_REQUIRES_WATER</Tag>
+		<English>[ICON_BULLET]需要沿海</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]需要沿海</Chinese><French>[COLOR_WARNING_TEXT]Requires Access to Coast[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FREE_TECH</Tag>
+		<English>[ICON_BULLET]从现在或更早的时代当中，获得1项免费科技</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]从现在或更早的时代当中，获得1项免费科技</Chinese><French>[ICON_BULLET]1 Free Technology From Your Current Or Earlier Eras</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FREE_TECHS</Tag>
+		<English>[ICON_BULLET]从现在或更早的时代当中，获得%d1_Num项免费科技</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]从现在或更早的时代当中，获得%d1_Num项免费科技</Chinese><French>[ICON_BULLET]%d1_Num Free Technologies From Your Current Or Earlier Eras</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BONUS_PLOTS</Tag>
+		<English>修建设施[LINK=literal]%s1[\LINK]的地块</English>
+		<L1/><L2/><L3/><L4/><Chinese>修建设施[LINK=literal]%s1[\LINK]的地块</Chinese><French>Improved [LINK=literal]%s1[\LINK] Tiles</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_LIBERATE_MINOR</Tag>
+		<English>给予%s1_city自由</English>
+		<L1/><L2/><L3/><L4/><Chinese>给予%s1_city自由</Chinese><French>Grant independence to %s1_city</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_BONUS_PLAYER_TRADE</Tag>
+		<English>贸易</English>
+		<L1/><L2/><L3/><L4/><Chinese>贸易</Chinese><French>Trade</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_CONCEPT</Tag>
+		<English>“文明的兴衰”特有概念</English>
+		<L1/><L2/><L3/><L4/><Chinese>“文明的兴衰”特有概念</Chinese><French>RFC Concepts</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_UPGRADES</Tag>
+		<English>单位晋升</English>
+		<L1/><L2/><L3/><L4/><Chinese>单位晋升</Chinese><French>Unit Upgrades</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RATING_STAR</Tag>
+		<English>[ICON_STAR]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_STAR]</Chinese><French>[ICON_STAR]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_1STAR</Tag>
+		<English>%F1_HealthOrUn</English>
+		<L1/><L2/><L3/><L4/><Chinese>%F1_HealthOrUn</Chinese><French>%F1_HealthOrUn</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_2STARS</Tag>
+		<English>%F1_HealthOrUn%F2_HealthOrUn</English>
+		<L1/><L2/><L3/><L4/><Chinese>%F1_HealthOrUn%F2_HealthOrUn</Chinese><French>%F1_HealthOrUn%F2_HealthOrUn</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_3STARS</Tag>
+		<English>%F1_HealthOrUn%F2_HealthOrUn%F3_HealthOrUn</English>
+		<L1/><L2/><L3/><L4/><Chinese>%F1_HealthOrUn%F2_HealthOrUn%F3_HealthOrUn</Chinese><French>%F1_HealthOrUn%F2_HealthOrUn%F3_HealthOrUn</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_4STARS</Tag>
+		<English>%F1_HealthOrUn%F2_HealthOrUn%F3_HealthOrUn%F4_HealthOrUn</English>
+		<L1/><L2/><L3/><L4/><Chinese>%F1_HealthOrUn%F2_HealthOrUn%F3_HealthOrUn%F4_HealthOrUn</Chinese><French>%F1_HealthOrUn%F2_HealthOrUn%F3_HealthOrUn%F4_HealthOrUn</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_5STARS</Tag>
+		<English>%F1_HealthOrUn%F2_HealthOrUn%F3_HealthOrUn%F4_HealthOrUn%F5_HealthOrUn</English>
+		<L1/><L2/><L3/><L4/><Chinese>%F1_HealthOrUn%F2_HealthOrUn%F3_HealthOrUn%F4_HealthOrUn%F5_HealthOrUn</Chinese><French>%F1_HealthOrUn%F2_HealthOrUn%F3_HealthOrUn%F4_HealthOrUn%F5_HealthOrUn</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DEFORESTATION_EVENT</Tag>
+		<English>移除%s2附近的一处%s1，并为你的国库带来了%d3[ICON_GOLD]的收入。</English>
+		<L1/><L2/><L3/><L4/><Chinese>移除%s2附近的一处%s1，并为你的国库带来了%d3[ICON_GOLD]的收入。</Chinese><French>Removing a %s1 near your city of %s2 has created %d3 [ICON_GOLD] for your treasury.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BC</Tag>
+		<English>BC</English>
+		<L1/><L2/><L3/><L4/><Chinese>BC</Chinese><French>BC</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AD</Tag>
+		<English>AD</English>
+		<L1/><L2/><L3/><L4/><Chinese>AD</Chinese><French>AD</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YEAR_BC</Tag>
+		<English>%d1 BC</English>
+		<L1/><L2/><L3/><L4/><Chinese>%d1 BC</Chinese><French>%d1 BC</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YEAR_AD</Tag>
+		<English>%d1 AD</English>
+		<L1/><L2/><L3/><L4/><Chinese>%d1 AD</Chinese><French>%d1 AD</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AGE_BRONZE</Tag>
+		<English>青铜时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>青铜时代</Chinese><French>Bronze Age</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AGE_IRON</Tag>
+		<English>铁器时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>铁器时代</Chinese><French>Iron Age</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AGE_MEDIEVAL</Tag>
+		<English>中古时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>中古时代</Chinese><French>Medieval Age</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AGE_RENAISSANCE</Tag>
+		<English>启蒙时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>启蒙时代</Chinese><French>Renaissance Age</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AGE_STONE</Tag>
+		<English>石器时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>石器时代</Chinese><French>Stone Age</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FINANCIAL_ADVISOR_MERCENARY_CONTRACT_INCOME</Tag>
+		<English>雇佣契约收入</English>
+		<L1/><L2/><L3/><L4/><Chinese>雇佣契约收入</Chinese><French>Mercenary Contract Income</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FINANCIAL_ADVISOR_MERCENARY_MAINTENANCE_COST</Tag>
+		<English>雇佣维护费</English>
+		<L1/><L2/><L3/><L4/><Chinese>雇佣维护费</Chinese><French>Mercenary Maintenance Cost</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FINANCIAL_ADVISOR_TITLE</Tag>
+		<English>内政顾问</English>
+		<L1/><L2/><L3/><L4/><Chinese>内政顾问</Chinese><French>Interior Advisor</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_CITY_EXPANSION_TURNS</Tag>
+		<English>在%d1回合后扩展疆域</English>
+		<L1/><L2/><L3/><L4/><Chinese>在%d1回合后扩展疆域</Chinese><French>Border expands in: %d1 Turns</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MILITARY_BONUS</Tag>
+		<English>军事加成</English>
+		<L1/><L2/><L3/><L4/><Chinese>军事加成</Chinese><French>Military Bonus</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_APOSTOLIC_PALACE_COLLECT_TITHE</Tag>
+		<English>我们自天主教国家%d1收取了什一税</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们自天主教国家%d1收取了什一税</Chinese><French>We have collected a tithe of %d1 from the Catholic world.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AUTOPLAY_TURNS_REMAINING</Tag>
+		<English>自动游戏剩余回合数: %d1_Num</English>
+		<L1/><L2/><L3/><L4/><Chinese>自动游戏剩余回合数: %d1_Num</Chinese><French>AUTO-PLAY TURNS REMAINING:  %d1_Num</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AVAILABLE_MERCENARIES</Tag>
+		<English>现有雇佣军</English>
+		<L1/><L2/><L3/><L4/><Chinese>现有雇佣军</Chinese><French>Available Mercenaries</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AVAILABLE_MERCENARY_GROUPS</Tag>
+		<English>现有雇佣军集团</English>
+		<L1/><L2/><L3/><L4/><Chinese>现有雇佣军集团</Chinese><French>Available Mercenary Groups</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AVAILABLE_UNITS</Tag>
+		<English>现有单位</English>
+		<L1/><L2/><L3/><L4/><Chinese>现有单位</Chinese><French>Available Units</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMBASSY_ESTABLISHED</Tag>
+		<English>一座%s1使馆已建立于</English>
+		<L1/><L2/><L3/><L4/><Chinese>一座%s1使馆已建立于</Chinese><French>A %s1 embassy has been established in</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ENSLAVE</Tag>
+		<English>奴役</English>
+		<L1/><L2/><L3/><L4/><Chinese>奴役</Chinese><French>ENSLAVE</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ESCAPE_TEXT</Tag>
+		<English>你已爬出谷底并重掌%s1的统治权。现在好好给敌人们上一课！</English>
+		<L1/><L2/><L3/><L4/><Chinese>你已爬出谷底并重掌%s1的统治权。现在好好给敌人们上一课！</Chinese><French>You have escaped and regained control of %s1 territory. Now let's teach our enemies a lesson!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ESCAPE_TEXT1</Tag>
+		<English>你已爬出谷底并重掌</English>
+		<L1/><L2/><L3/><L4/><Chinese>你已爬出谷底并重掌</Chinese><French>You have escaped and regained control of </French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ESCAPE_TEXT2</Tag>
+		<English>的统治权。现在好好给敌人上一课！</English>
+		<L1/><L2/><L3/><L4/><Chinese>的统治权。现在好好给敌人上一课！</Chinese><French>territory. Now let's teach our enemies a lesson!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ESCAPE_TITLE</Tag>
+		<English>重振雄风！</English>
+		<L1/><L2/><L3/><L4/><Chinese>重振雄风！</Chinese><French>You have escaped!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EXILE_TEXT</Tag>
+		<English>你已被%s1:2抓获并流放到偏远的%s2之地。你必须在短时间内夺回首都以恢复权力。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你已被%s1:2抓获并流放到偏远的%s2之地。你必须在短时间内夺回首都以恢复权力。</Chinese><French>You have been captured by the %s1:2 and exiled to the unimportant lands of %s2. You have a short period of time for retaking your capital and gain back your position.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EXILE_TEXT1</Tag>
+		<English>你已被</English>
+		<L1/><L2/><L3/><L4/><Chinese>你已被</Chinese><French>You have been captured by the</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EXILE_TEXT2</Tag>
+		<English>抓获并流放到偏远的</English>
+		<L1/><L2/><L3/><L4/><Chinese>抓获并流放到偏远的</Chinese><French>and exiled to the unimportant lands of</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EXILE_TEXT3</Tag>
+		<English>。你必须在短时间内夺回首都以恢复权力。</English>
+		<L1/><L2/><L3/><L4/><Chinese>。你必须在短时间内夺回首都以恢复权力。</Chinese><French>. You have a short period of time for retaking your capital and gain back your position.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EXILE_TITLE</Tag>
+		<English>流放！</English>
+		<L1/><L2/><L3/><L4/><Chinese>流放！</Chinese><French>Exile!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FINANCE_ADVISOR_STABILITY</Tag>
+		<English>%s1[NEWLINE]------------------------[NEWLINE]总共 %s2 稳定度: %s3%d4</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1[NEWLINE]------------------------[NEWLINE]总共 %s2 稳定度: %s3%d4</Chinese><French>%s1[NEWLINE]------------------------[NEWLINE]Total %s2 Stability: %s3%d4</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FINANCE_ADVISOR_STABILITY_HEAD</Tag>
+		<English>%s1 稳定度:</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 稳定度:</Chinese><French>%s1 Stability:</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FIRST_CONTACT_NEWWORLD</Tag>
+		<English>地理大发现：来自遥远大陆的征服者开始入侵我们的领土，疯狂掠取财富！</English>
+		<L1/><L2/><L3/><L4/><Chinese>地理大发现：来自遥远大陆的征服者开始入侵我们的领土，疯狂掠取财富！</Chinese><French>Conquerors from a far away continent are invading our lands searching for wealth!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FIRST_CONTACT_OLDWORLD</Tag>
+		<English>地理大发现：我国的一支探险队已经抵达新大陆，寻找传说中的财富！</English>
+		<L1/><L2/><L3/><L4/><Chinese>地理大发现：我国的一支探险队已经抵达新大陆，寻找传说中的财富！</Chinese><French>A group of our own adventurers has arrived in the new world searching for wealth!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FLIP_AGREED</Tag>
+		<English>接受他们的要求！</English>
+		<L1/><L2/><L3/><L4/><Chinese>接受他们的要求！</Chinese><French>We agreed to the flip!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FLIP_BETRAYAL</Tag>
+		<English>我们的部分军队加入了叛乱者，为他们的独立而战！</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们的部分军队加入了叛乱者，为他们的独立而战！</Chinese><French>Some of our forces are joining the enemy to help their war of liberation!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FLIP_BETRAYAL_NEW</Tag>
+		<English>敌人的部分军队决定反戈一击，为我们的独立而战！</English>
+		<L1/><L2/><L3/><L4/><Chinese>敌人的部分军队决定反戈一击，为我们的独立而战！</Chinese><French>Some of our enemy's forces are joining us to help our war of liberation!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FLIP_REFUSED</Tag>
+		<English>拒绝他们的要求，这意味着战争！</English>
+		<L1/><L2/><L3/><L4/><Chinese>拒绝他们的要求，这意味着战争！</Chinese><French>We refused the flip, this means war!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FLIP_TO_US</Tag>
+		<English>一些地方的城市加入了我们正在崛起的帝国！</English>
+		<L1/><L2/><L3/><L4/><Chinese>一些地方的城市加入了我们正在崛起的帝国！</Chinese><French>Cities in the area have joined our rising empire!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FLIPMESSAGE1</Tag>
+		<English>以下城市:[NEWLINE][NEWLINE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>以下城市:[NEWLINE][NEWLINE]</Chinese><French>The following cities:[NEWLINE][NEWLINE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FLIPMESSAGE2</Tag>
+		<English>[NEWLINE]一个渴求独立的新文明。如果我们拒绝可能导致战争的爆发及部分军队的叛离。我们要给予他们自由吗？</English>
+		<L1/><L2/><L3/><L4/><Chinese>[NEWLINE]一个渴求独立的新文明。如果我们拒绝可能导致战争的爆发及部分军队的叛离。我们要给予他们自由吗？</Chinese><French>[NEWLINE]want to flip to a rising civilization. Our refusal may lead to a war and some of our troops may join it. Should we let them go?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FOOD_PRODUCED</Tag>
+		<English>[ICON_BULLET]建造时消耗[ICON_FOOD]而不是[ICON_PRODUCTION]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]建造时消耗[ICON_FOOD]而不是[ICON_PRODUCTION]</Chinese><French>[ICON_BULLET]Production consumes [ICON_FOOD]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FREE_PROMOTION</Tag>
+		<English>免费晋升: (%s1)</English>
+		<L1/><L2/><L3/><L4/><Chinese>免费晋升: (%s1)</Chinese><French>Free Promotion: (%s1)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPY_CORPORATION</Tag>
+		<English>%D1_Change[ICON_HAPPY]: "我们城市的公司超级棒!"</English>
+		<L1/><L2/><L3/><L4/><Chinese>%D1_Change[ICON_HAPPY]: "我们城市的公司超级棒!"</Chinese><French>%D1_Change[ICON_HAPPY]: "Our corporations treat us well!"</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPY_HEALTH</Tag>
+		<English>%D1_Change[ICON_HAPPY]: "我们的城市整洁卫生!"</English>
+		<L1/><L2/><L3/><L4/><Chinese>%D1_Change[ICON_HAPPY]: "我们的城市整洁卫生!"</Chinese><French>%D1_Change[ICON_HAPPY]: "Our city is clean!"</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPY_SPECIALISTS</Tag>
+		<English>%D1_Change[ICON_HAPPY]: “入驻的大艺术家向我们提供各项娱乐！”</English>
+		<L1/><L2/><L3/><L4/><Chinese>%D1_Change[ICON_HAPPY]: “入驻的大艺术家向我们提供各项娱乐！”</Chinese><French>%D1_Change[ICON_HAPPY]: "Our specialists increase the prestige of our city!"</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HIRED_MERCENARIES</Tag>
+		<English>已征召雇佣军</English>
+		<L1/><L2/><L3/><L4/><Chinese>已征召雇佣军</Chinese><French>Hired Mercenaries</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HIRED_MERCENARY_GROUPS</Tag>
+		<English>已征召雇佣军集团</English>
+		<L1/><L2/><L3/><L4/><Chinese>已征召雇佣军集团</Chinese><French>Hired Mercenary Groups</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HURRY_GOLD_BUILDINGS</Tag>
+		<English>能够花费黄金来完成建筑生产</English>
+		<L1/><L2/><L3/><L4/><Chinese>能够花费黄金来完成建筑生产</Chinese><French>Can Spend Gold to Finish Building Production in a City</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HURRY_GOLD_UNITS</Tag>
+		<English>能够花费黄金来组建军事单位</English>
+		<L1/><L2/><L3/><L4/><Chinese>能够花费黄金来组建军事单位</Chinese><French>Can Spend Gold to Finish Military Unit Production in a City</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ICON_BULLET</Tag>
+		<English>[ICON_BULLET]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]</Chinese><French>[ICON_BULLET]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INDEPENDENCE1</Tag>
+		<English/>
+		<L1/><L2/><L3/><L4/><French></French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INDEPENDENCE2</Tag>
+		<English>一些城市宣布脱离外来统治独立建国！</English>
+		<L1/><L2/><L3/><L4/><Chinese>一些城市宣布脱离外来统治独立建国！</Chinese><French>cities have declared independence from their foreign domination!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INDEPENDENCE_TEXT</Tag>
+		<English>%s1人宣布脱离外来统治独立建国！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1人宣布脱离外来统治独立建国！</Chinese><French>%s1 cities have declared their independence from their foreign domination!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INDONESIAN_UP</Tag>
+		<English>水路贸易让我们带来了 %d1 [ICON_GOLD] !</English>
+		<L1/><L2/><L3/><L4/><Chinese>水路贸易让我们带来了 %d1 [ICON_GOLD] !</Chinese><French>The trade passing through our waters brings %d1 [ICON_GOLD] to our treasury!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INVADERS_HUMAN</Tag>
+		<English>%s1的军队已经入侵了我国领土！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1的军队已经入侵了我国领土！</Chinese><French>%s1 armies have invaded our territory!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LOADING_TIME_MINUTES</Tag>
+		<English>(预计加载时间: %d1 分钟)[NEWLINE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>(预计加载时间: %d1 分钟)[NEWLINE]</Chinese><French>(Estimated loading time: %d1 minutes)[NEWLINE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAYA_HOLKAN_EFFECT</Tag>
+		<English>你的霍坎武士打败了 %s1 %s2, 获得 %d3 [ICON_FOOD] %s4.</English>
+		<L1/><L2/><L3/><L4/><Chinese>你的霍坎武士打败了 %s1 %s2, 获得 %d3 [ICON_FOOD] %s4.</Chinese><French>Your Holkan has defeated a %s1 %s2, acquiring %d3 [ICON_FOOD] for %s4.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MERCENARIES_DISABLED</Tag>
+		<English>民族主义的兴起改变了军队的构成：雇佣军已经不合时宜！</English>
+		<L1/><L2/><L3/><L4/><Chinese>民族主义的兴起改变了军队的构成：雇佣军已经不合时宜！</Chinese><French>Nationalism has changed the conception of armies: Mercenaries no longer fit in!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MERCENARIES_SCREEN_TITLE</Tag>
+		<English>雇佣军管理</English>
+		<L1/><L2/><L3/><L4/><Chinese>雇佣军管理</Chinese><French>Mercenary Manager</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MERCENARY_CONTRACTS_SCREEN_TITLE</Tag>
+		<English>雇佣契约</English>
+		<L1/><L2/><L3/><L4/><Chinese>雇佣契约</Chinese><French>Mercenary Contracts</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MERCENARY_GROUP_INFORMATION</Tag>
+		<English>雇佣军集团信息</English>
+		<L1/><L2/><L3/><L4/><Chinese>雇佣军集团信息</Chinese><French>Mercenary Group Information</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MERCENARY_GROUPS_SCREEN_TITLE</Tag>
+		<English>雇佣军集团</English>
+		<L1/><L2/><L3/><L4/><Chinese>雇佣军集团</Chinese><French>Mercenary Groups</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MERCENARY_INFORMATION</Tag>
+		<English>雇佣军信息</English>
+		<L1/><L2/><L3/><L4/><Chinese>雇佣军信息</Chinese><French>Mercenary Information</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MERCENARY_SCREEN_TITLE</Tag>
+		<English>雇佣军</English>
+		<L1/><L2/><L3/><L4/><Chinese>雇佣军</Chinese><French>Mercenaries</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_PERSECUTION</Tag>
+		<English>你的宗教审判从%s1_city移除了%s2_religion，并且在异教徒处收取了%d3_gold[ICON_GOLD]</English>
+		<L1/><L2/><L3/><L4/><Chinese>你的宗教审判从%s1_city移除了%s2_religion，并且在异教徒处收取了%d3_gold[ICON_GOLD]</Chinese><French>Your persecutor has successfully purged %s2_religion from %s1_city and confiscated %d3_gold[ICON_GOLD] from the victims.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_PERSECUTION_FAIL</Tag>
+		<English>你在%s1_city的宗教审判没有成功。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你在%s1_city的宗教审判没有成功。</Chinese><French>Your persecutor in %s1_city was unsuccessful.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEZQUITA_FREE_GP</Tag>
+		<English>在%s2年，一位%s1在科尔多瓦清真寺建成后诞生!</English>
+		<L1/><L2/><L3/><L4/><Chinese>在%s2年，一位%s1在科尔多瓦清真寺建成后诞生!</Chinese><French>A %s1 has been born after the construction of La Mezquita in %s2!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_BONUS_PLAYER_TRADE</Tag>
+		<English>[ICON_BULLET]允许贸易于[SPACE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]允许贸易于[SPACE]</Chinese><French>[ICON_BULLET]Allows Trade of[SPACE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_CITY_WAS_TRADED_TO</Tag>
+		<English>%s1_CityName已和%s2_CivName进行贸易!!!</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1_CityName已和%s2_CivName进行贸易!!!</Chinese><French>%s1_CityName was traded to the %s2_CivName!!!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_CIV_IS_BORN</Tag>
+		<English>一个新文明在%s1_CityName诞生了</English>
+		<L1/><L2/><L3/><L4/><Chinese>一个新文明在%s1_CityName诞生了</Chinese><French>A new civilization is born: %s1_CityName</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_DEFEAT</Tag>
+		<English/>
+		<L1/><L2/><L3/><L4/><French></French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_DEFEAT2</Tag>
+		<English>你失败了!!!蛤蛤蛤蛤</English>
+		<L1/><L2/><L3/><L4/><Chinese>你失败了!!!蛤蛤蛤蛤</Chinese><French>You have been defeated!!!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_ESPIONAGE_EXPERIENCE</Tag>
+		<English>间谍经验</English>
+		<L1/><L2/><L3/><L4/><Chinese>间谍经验</Chinese><French>Espionage Experience</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_EVENT_RESOURCE_EXHAUSTED</Tag>
+		<English>Our source of [COLOR_HIGHLIGHT_TEXT]%s1_BonusName[COLOR_REVERT] near %s2_CityName has been exhausted!</English>
+		<L1/><L2/><L3/><L4/><Chinese>Our source of [COLOR_HIGHLIGHT_TEXT]%s1_BonusName[COLOR_REVERT] near %s2_CityName has been exhausted!</Chinese><French>Our source of [COLOR_HIGHLIGHT_TEXT]%s1_BonusName[COLOR_REVERT] near %s2_CityName has been exhausted!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CORPORATION_FOUNDED_FIRST</Tag>
+		<English>[ICON_BULLET]由率先获得[COLOR_TECH_TEXT][LINK=literal]%s1_TechName[\LINK][COLOR_REVERT]者创立</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]由率先获得[COLOR_TECH_TEXT][LINK=literal]%s1_TechName[\LINK][COLOR_REVERT]者创立</Chinese><French>[ICON_BULLET]Requires [COLOR_TECH_TEXT][LINK=literal]%s1_TechName[\LINK][COLOR_REVERT] to spread to your cities</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_FIRST_DISCOVER_INCORPORATES</Tag>
+		<English>[ICON_BULLET]需要传播[SPACE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]需要传播[SPACE]</Chinese><French>[ICON_BULLET]Required for the spread of[SPACE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_GOLD_TURN</Tag>
+		<English>/回合)</English>
+		<L1/><L2/><L3/><L4/><Chinese>/回合)</Chinese><French>/Turn)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_GOOD_HEALTH_FROM_HAPPINESS</Tag>
+		<English>来自额外快乐的%D1_Change[ICON_HEALTHY]</English>
+		<L1/><L2/><L3/><L4/><Chinese>来自额外快乐的%D1_Change[ICON_HEALTHY]</Chinese><French>%D1_Change[ICON_HEALTHY] from Excess Happiness</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_GOOD_HEALTH_FROM_SPECIALISTS</Tag>
+		<English>来自专家的%D1_Change[ICON_HEALTHY]</English>
+		<L1/><L2/><L3/><L4/><Chinese>来自专家的%D1_Change[ICON_HEALTHY]</Chinese><French>%D1_Change[ICON_HEALTHY] from Specialists</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_GP_BORN_OUTSIDE</Tag>
+		<English>%s1_GPName在%s2_CityName附近出生了!</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1_GPName在%s2_CityName附近出生了!</Chinese><French>%s1_GPName has been born near %s2_CityName!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_GREAT_SPY</Tag>
+		<English>大间谍:%d1_Curr/%d2_Need经验</English>
+		<L1/><L2/><L3/><L4/><Chinese>大间谍:%d1_Curr/%d2_Need经验</Chinese><French>Great Spy: %d1_Curr/%d2_Need Experience</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HEALTH_FROM_CORPORATIONS</Tag>
+		<English>来自公司的%D1_Change[ICON_UNHEALTHY]</English>
+		<L1/><L2/><L3/><L4/><Chinese>来自公司的%D1_Change[ICON_UNHEALTHY]</Chinese><French>%D1_Change[ICON_UNHEALTHY] from Corporations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HEALTH_FROM_IMPROVEMENTS</Tag>
+		<English>来自设施的%D1_Change[ICON_UNHEALTHY]</English>
+		<L1/><L2/><L3/><L4/><Chinese>来自设施的%D1_Change[ICON_UNHEALTHY]</Chinese><French>%D1_Change[ICON_UNHEALTHY] from Improvements</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ANGER_IMPROVEMENTS</Tag>
+		<English>+%d1_Change[ICON_UNHAPPY]: "村里都很挤！"</English>
+		<L1/><L2/><L3/><L4/><Chinese>+%d1_Change[ICON_UNHAPPY]: "村里都很挤！"</Chinese><French>+%d1_Change[ICON_UNHAPPY]: "The countryside is overcrowded!"</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPY_IMPROVEMENTS</Tag>
+		<English>+%d1_Change[ICON_HAPPY]: "我们热爱国家公园！"</English>
+		<L1/><L2/><L3/><L4/><Chinese>+%d1_Change[ICON_HAPPY]: "我们热爱国家公园！"</Chinese><French>+%d1_Change[ICON_HAPPY]: "We love our National Parks!"</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_FOOD_FROM_HEALTH</Tag>
+		<English>[ICON_BULLET]%D1%F2来自额外的[ICON_HEALTHY]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1%F2来自额外的[ICON_HEALTHY]</Chinese><French>[ICON_BULLET]%D1%F2 from Excess [ICON_HEALTHY]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_HIMEJI_UNIT_CULTURE</Tag>
+		<English>[ICON_BULLET]%D1%F2来自强化的部队</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1%F2来自强化的部队</Chinese><French>[ICON_BULLET]%D1%F2 from Fortified Units</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_PROD_CIVIC</Tag>
+		<English>来自民众的%s2_unit_or_building[ICON_BULLET]%D1%%[ICON_PRODUCTION]</English>
+		<L1/><L2/><L3/><L4/><Chinese>来自民众的%s2_unit_or_building[ICON_BULLET]%D1%%[ICON_PRODUCTION]</Chinese><French>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for %s2_unit_or_building from Civics</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_PROD_HOLY_ROME</Tag>
+		<English>来自国教建筑的[ICON_BULLET]%D1%%[ICON_PRODUCTION] </English>
+		<L1/><L2/><L3/><L4/><Chinese>来自国教建筑的[ICON_BULLET]%D1%%[ICON_PRODUCTION] </Chinese><French>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for State Religion Building</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_PROD_ROME</Tag>
+		<English>首都中已建造的建筑[ICON_BULLET]%D1%%[ICON_PRODUCTION]</English>
+		<L1/><L2/><L3/><L4/><Chinese>首都中已建造的建筑[ICON_BULLET]%D1%%[ICON_PRODUCTION]</Chinese><French>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for having the current building in your capital</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_STATUE_OF_ZEUS_EFFECT</Tag>
+		<English>[ICON_BULLET]%D1%%[ICON_PRODUCTION] 来自%s2_unit_or_building宙斯神像</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1%%[ICON_PRODUCTION] 来自%s2_unit_or_building宙斯神像</Chinese><French>[ICON_BULLET]%D1%%[ICON_PRODUCTION] from %s2_unit_or_building with Statue of Zeus</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_PLAYER_GOLDEN_AGE_BEGINS</Tag>
+		<English>%s1_PlyrAdject的黄金时代开始了</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1_PlyrAdject的黄金时代开始了</Chinese><French>The %s1_PlyrAdject Golden Age begins</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_PLAYER_GOLDEN_AGE_ENDED</Tag>
+		<English>%s1_PlyrAdject的黄金时代结束了...</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1_PlyrAdject的黄金时代结束了...</Chinese><French>The %s1_PlyrAdject Golden Age has ended...</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_PLAYER_GOLDEN_AGE_HAS_BEGUN</Tag>
+		<English>%s1_PlyrAdject的黄金时代开始了!!!</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1_PlyrAdject的黄金时代开始了!!!</Chinese><French>The %s1_PlyrAdject Golden Age has begun!!!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_POLLUTION_MODIFIER</Tag>
+		<English>%D1_Change[ICON_UNHEALTHY]来自市民</English>
+		<L1/><L2/><L3/><L4/><Chinese>%D1_Change[ICON_UNHEALTHY]来自市民</Chinese><French>%D1_Change[ICON_UNHEALTHY] from civics</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_SPY_UPGRADED</Tag>
+		<English>你的间谍到达了大间谍的地位！</English>
+		<L1/><L2/><L3/><L4/><Chinese>你的间谍到达了大间谍的地位！</Chinese><French>Your Spy has reached the status of a Great Spy!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_TRADED_UNIT_TO_YOU</Tag>
+		<English>%s1已向你贩卖%s2。</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1已向你贩卖%s2。</Chinese><French>%s1 has traded %s2 to you.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MM_CULTURE</Tag>
+		<English>[ICON_BULLET]文化: </English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]文化: </Chinese><French>[ICON_BULLET]Culture: </French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MM_GOLD</Tag>
+		<English>[ICON_BULLET]金币: </English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]金币: </Chinese><French>[ICON_BULLET]Gold: </French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MM_GROWTH</Tag>
+		<English>[ICON_BULLET]人口: </English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]人口: </Chinese><French>[ICON_BULLET]Growth: </French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MM_PRODUCTION</Tag>
+		<English>[ICON_BULLET]产能: </English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]产能: </Chinese><French>[ICON_BULLET]Production: </French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MM_SCIENCE</Tag>
+		<English>[ICON_BULLET]科研: </English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]科研: </Chinese><French>[ICON_BULLET]Science: </French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MM_STARTING_SITUATION</Tag>
+		<English>[ICON_BULLET]初始位置: </English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]初始位置: </Chinese><French>[ICON_BULLET]Starting situation: </French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MM_TRADE</Tag>
+		<English>[ICON_BULLET]商业: </English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]商业: </Chinese><French>[ICON_BULLET]Trade: </French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MONGOL_HORDE</Tag>
+		<English>蒙古游牧部落入侵了%s1_civ_adjective领土!</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古游牧部落入侵了%s1_civ_adjective领土!</Chinese><French>The Mongol hordes have invaded %s1_civ_adjective territory!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MONGOL_HORDE_HUMAN</Tag>
+		<English>蒙古游牧部落入侵了我国领土!</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古游牧部落入侵了我国领土!</Chinese><French>The Mongol hordes have invaded our territory!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NEW_MERCENARIES</Tag>
+		<English>有新的雇佣军可供征召。</English>
+		<L1/><L2/><L3/><L4/><Chinese>有新的雇佣军可供征召。</Chinese><French>There are new mercenaries available for hiring.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NEWCIV_MESSAGE</Tag>
+		<English>你是否希望接手控制%s1文明？</English>
+		<L1/><L2/><L3/><L4/><Chinese>你是否希望接手控制%s1文明？</Chinese><French>Do you wish to take permanent control of the %s1 civilization?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NEWCIV_TITLE</Tag>
+		<English>一个新的文明诞生了</English>
+		<L1/><L2/><L3/><L4/><Chinese>一个新的文明诞生了</Chinese><French>A new civilization is being born</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_NEW_CIV_SWITCH</Tag>
+		<English>[H1]一个新的文明诞生了[\H1][NEWLINE]你愿意控制%s1文明吗？</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]一个新的文明诞生了[\H1][NEWLINE]你愿意控制%s1文明吗？</Chinese><French>[H1]A new civilization is being born[\H1][NEWLINE]Do you wish to take permanent control of the %s1 civilization?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NEWS_EVENT_FAMINE_2</Tag>
+		<English>来自%s2_city的慷慨捐赠挽救了许多濒临死亡的%s4_city居民，这次无私的人道主义行动拉近了两国的关系。</English>
+		<L1/><L2/><L3/><L4/><Chinese>来自%s2_city的慷慨捐赠挽救了许多濒临死亡的%s4_city居民，这次无私的人道主义行动拉近了两国的关系。</Chinese><French>The generous people of %s2_city have donated famine relief to the endangered people of %s4_city. This humanitarian effort has brought the two nations closer together.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NEWS_EVENT_FAMINE_3</Tag>
+		<English>来自%s2_city的慷慨捐赠帮助了大批面临饥荒的%s4_city居民，这次无私的人道主义行动大幅拉近了两国的关系。</English>
+		<L1/><L2/><L3/><L4/><Chinese>来自%s2_city的慷慨捐赠帮助了大批面临饥荒的%s4_city居民，这次无私的人道主义行动大幅拉近了两国的关系。</Chinese><French>The generous people of %s2_city have donated massive famine relief to the starving people of %s4_city. This generous humanitarian effort has brought the two nations much closer together.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NEWS_EVENT_HORTICULTURE_3</Tag>
+		<English>%s1_civ_adjective在医药方面的投资获得了回报！一项新兴特色产业正在%s2_city发展壮大，推进了民众健康和科研工作。</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1_civ_adjective在医药方面的投资获得了回报！一项新兴特色产业正在%s2_city发展壮大，推进了民众健康和科研工作。</Chinese><French>%s1_civ_adjective investments in horticulture have paid off! A new minor industry is thriving in %s2_city, boosting health and research.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NO_RELIGIOUS_GOALS</Tag>
+		<English>您的国教没有宗教胜利目标！</English>
+		<L1/><L2/><L3/><L4/><Chinese>您的国教没有宗教胜利目标！</Chinese><French>You lack a state religion with religious goals!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_OVERFLOW</Tag>
+		<English>Overflow in (%d1, %d2), method: %s3</English>
+		<L1/><L2/><L3/><L4/><Chinese>Overflow in (%d1, %d2), method: %s3</Chinese><French>Overflow in (%d1, %d2), method: %s3</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PAGAN_TEMPLE_REMOVED</Tag>
+		<English>%s1在%s2的传播导致市民们放弃了他们的原始神庙</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1在%s2的传播导致市民们放弃了他们的原始神庙</Chinese><French>The spread of %s1 to our city of %s2 caused its citizens to abandon their Pagan Temple.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PAGAN_TEMPLE_REPLACED</Tag>
+		<English>%s1在%s2的传播导致市民们把他们的原始神庙转换为%s3.</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1在%s2的传播导致市民们把他们的原始神庙转换为%s3.</Chinese><French>The spread of %s1 to our city of %s2 caused its citizens to repurpose their Pagan Temple as a %s3.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PANTHEON_REQUIREMENT</Tag>
+		<English>[ICON_BULLET]需要[LINK=literal]众神论[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]需要[LINK=literal]众神论[\LINK]</Chinese><French>[ICON_BULLET]Requires [LINK=literal]Pantheon[\LINK]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PERSECUTION_MESSAGE</Tag>
+		<English>你想从%s1中移除哪种宗教？</English>
+		<L1/><L2/><L3/><L4/><Chinese>你想从%s1中移除哪种宗教？</Chinese><French>Which religion do you want to persecute in %s1?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PERSECUTION_PERFORMED</Tag>
+		<English>%s2的宗教审判把%s1从这座城市中移除。</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2的宗教审判把%s1从这座城市中移除。</Chinese><French>Religious persecution in %s2 has removed %s1 from the city.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAGUE_PROCESS_CITY</Tag>
+		<English>瘟疫导致居民死亡，地点：</English>
+		<L1/><L2/><L3/><L4/><Chinese>瘟疫导致居民死亡，地点：</Chinese><French>Plague is killing people in</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAGUE_PROCESS_UNIT</Tag>
+		<English>瘟疫造成单位损失，地点：</English>
+		<L1/><L2/><L3/><L4/><Chinese>瘟疫造成单位损失，地点：</Chinese><French>Plague has killed our unit near</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAGUE_SPREAD_CITY</Tag>
+		<English>瘟疫传入：</English>
+		<L1/><L2/><L3/><L4/><Chinese>瘟疫传入：</Chinese><French>Plague has spread in</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_ELECTION_COLLECT_TITHE</Tag>
+		<English>收缴什一税(需要%d1票，总计%d2票)</English>
+		<L1/><L2/><L3/><L4/><Chinese>收缴什一税(需要%d1票，总计%d2票)</Chinese><French>Collect Tithe (Requires %d1 of %d2 Total Votes)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_ELECTION_DECOLONIZE</Tag>
+		<English>联合国决议 - 解放%s1_city (%s2_player) (需要%d3_ReqNum，总计%d4_TotNum票)</English>
+		<L1/><L2/><L3/><L4/><Chinese>联合国决议 - 解放%s1_city (%s2_player) (需要%d3_ReqNum，总计%d4_TotNum票)</Chinese><French>UN Resolution - Decolonize %s1_city (%s2_player) (Requires %d3_ReqNum of %d4_TotNum Total Votes)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_ELECTION_EXCOMMUNICATION</Tag>
+		<English>革除%s1的教籍 (需要%d2票，总计%d3票)</English>
+		<L1/><L2/><L3/><L4/><Chinese>革除%s1的教籍 (需要%d2票，总计%d3票)</Chinese><French>Excommunicate %s1 (Requires %d2 of %d3 Total Votes)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_ELECTION_FORCE_WAR</Tag>
+		<English>对%s1_player发起十字军运动 (需要%d2_ReqNum票，总计%d3_TotNum票)</English>
+		<L1/><L2/><L3/><L4/><Chinese>对%s1_player发起十字军运动 (需要%d2_ReqNum票，总计%d3_TotNum票)</Chinese><French>Crusade against %s1_player (Requires %d2_ReqNum of %d3_TotNum Total Votes)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_ELECTION_INQUISITION</Tag>
+		<English>对%s1发起宗教裁判 (需要%d2票，总计%d3票)</English>
+		<L1/><L2/><L3/><L4/><Chinese>对%s1发起宗教裁判 (需要%d2票，总计%d3票)</Chinese><French>Send Inquisition to %s1 (Requires %d2 of %d3 Total Votes)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_ELECTION_RELEASE</Tag>
+		<English>联合国决议 - 让%s1_player从%s2_civ_adjective的附庸下独立(需要%d3_ReqNum，总计%d4_TotNum票)</English>
+		<L1/><L2/><L3/><L4/><Chinese>联合国决议 - 让%s1_player从%s2_civ_adjective的附庸下独立(需要%d3_ReqNum，总计%d4_TotNum票)</Chinese><French>UN Resolution - Free %s1_player from %s2_civ_adjective Control (Requires %d3_ReqNum of %d4_TotNum Total Votes)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_VOTE_NO</Tag>
+		<English>反对</English>
+		<L1/><L2/><L3/><L4/><Chinese>反对</Chinese><French>Vote NO</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_VOTE_YES</Tag>
+		<English>赞成</English>
+		<L1/><L2/><L3/><L4/><Chinese>赞成</Chinese><French>Vote YES</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RATING</Tag>
+		<English>评级</English>
+		<L1/><L2/><L3/><L4/><Chinese>评级</Chinese><French>Rating</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REBELLION_TEXT</Tag>
+		<English>%s1人宣布独立建国并赶走了我们的驻军。我们要给予他们自由吗？</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1人宣布独立建国并赶走了我们的驻军。我们要给予他们自由吗？</Chinese><French>%s1 cities are about to declare their independence and break away from our civilization. Shall we let them go peacefully?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REBELLION_TITLE</Tag>
+		<English>独立！</English>
+		<L1/><L2/><L3/><L4/><Chinese>独立！</Chinese><French>Independence!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REFORMATION_MESSAGE</Tag>
+		<English>印刷机的发明已经推动了一波新的思潮。新教反对教皇在基督教内至高无上的权力。我们是否应该实施宗教改革？我们所有信仰天主教的城市将自动皈依新教。若我们现在实施改革，我们将迅速控制教会资产并获得500金币。</English>
+		<L1/><L2/><L3/><L4/><Chinese>印刷机的发明已经推动了一波新的思潮。新教反对教皇在基督教内至高无上的权力。我们是否应该实施宗教改革？我们所有信仰天主教的城市将自动皈依新教。若我们现在实施改革，我们将迅速控制教会资产并获得500金币。</Chinese><French>The establishment of Academia has unleashed a wave of new doctrines. Protestant churches are opposing the power of the Pope over Christian affairs. Shall we embrace the Reformation? All our Catholic cities and buildings will be converted to the new religion. If we convert now, we will receive a bonus of 500 gold for rapidly taking control of Church assets.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REFORMATION_TITLE</Tag>
+		<English>宗教改革!</English>
+		<L1/><L2/><L3/><L4/><Chinese>宗教改革!</Chinese><French>The Reformation!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELEASE_CIVILIZATION</Tag>
+		<English>释放%s1_citylist给%s2</English>
+		<L1/><L2/><L3/><L4/><Chinese>释放%s1_citylist给%s2</Chinese><French>Release %s1_citylist to %s2</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REPUBLIC_REQUIREMENT</Tag>
+		<English>[ICON_BULLET]需要[LINK=literal]共和制[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]需要[LINK=literal]共和制[\LINK]</Chinese><French>[ICON_BULLET]Requires [LINK=literal]Republic[\LINK]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RHYES_DAWN_OF_MAN_TEXT</Tag>
+		<English>%s1_year年第一天的太阳已经升起。%s2_civ人民决定结束游牧生活，并为你建造一座城市。[NEWLINE][NEWLINE]%s3_leader，你的人民愿意赋予你最高的权力。并坚信你能开创一个历久弥新的文明！</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1_year年第一天的太阳已经升起。%s2_civ人民决定结束游牧生活，并为你建造一座城市。[NEWLINE][NEWLINE]%s3_leader，你的人民愿意赋予你最高的权力。并坚信你能开创一个历久弥新的文明！</Chinese><French>The sun rises on the year %s1_year. The %s2_civ people are ready to settle down and found your first city. [NEWLINE][NEWLINE]%s3_leader, your people have vested absolute power in you, trusting that you can build a Civilization to stand the test of time!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SAVEGAME_TURN</Tag>
+		<English>回合%d1_TurnNum</English>
+		<L1/><L2/><L3/><L4/><Chinese>回合%d1_TurnNum</Chinese><French>Turn %d1_TurnNum</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCHISM_MESSAGE</Tag>
+		<English>天主教会已经存在了几个世纪了。然而，教皇声称自己是地球上神的唯一代表，这行为严重影响了我们的宗教权威。 他所诠释的上帝之道偏离了基督教的原始经典，这引起了我们文明的许多牧师的担忧。我们是否应该在宗教分裂中脱离天主教会并且皈依东正教？</English>
+		<L1/><L2/><L3/><L4/><Chinese>天主教会已经存在了几个世纪了。然而，教皇声称自己是地球上神的唯一代表，这行为严重影响了我们的宗教权威。 他所诠释的上帝之道偏离了基督教的原始经典，这引起了我们文明的许多牧师的担忧。我们是否应该在宗教分裂中脱离天主教会并且皈依东正教？</Chinese><French>While Christianity has since its existence consisted of various sects, our central government could still uphold Christian Orthodoxy. But with worldly control over the Christian world fracturing, the Patriarch of %s1 has declared himself Pope and claims to be the sole representative of God on Earth. Now a theological schism divides Christianity, and several cities outside of our direct control have joined this new Catholic sect.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCHISM_TITLE</Tag>
+		<English>教会分裂</English>
+		<L1/><L2/><L3/><L4/><Chinese>教会分裂</Chinese><French>The Great Schism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SELJUK_HORDES</Tag>
+		<English>一支庞大的塞尔柱突厥军队正在向西横跨伊朗高原！</English>
+		<L1/><L2/><L3/><L4/><Chinese>一支庞大的塞尔柱突厥军队正在向西横跨伊朗高原！</Chinese><French>A vast army of Seljuk Turks has been spotted moving west across the Iranian Plateau!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_BAD_HAPPINESS</Tag>
+		<English>, %D1_Change[ICON_UNHAPPY]</English>
+		<L1/><L2/><L3/><L4/><Chinese>, %D1_Change[ICON_UNHAPPY]</Chinese><French>, %D1_Change[ICON_UNHAPPY]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_GOOD_HAPPINESS</Tag>
+		<English>, %D1_Change[ICON_HAPPY]</English>
+		<L1/><L2/><L3/><L4/><Chinese>, %D1_Change[ICON_HAPPY]</Chinese><French>, %D1_Change[ICON_HAPPY]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_GREAT_STATESMAN</Tag>
+		<English>大政治家</English>
+		<L1/><L2/><L3/><L4/><Chinese>大政治家</Chinese><French>Great Statesman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_SLAVE</Tag>
+		<English>奴隶</English>
+		<L1/><L2/><L3/><L4/><Chinese>奴隶</Chinese><French>Slave</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_STATESMAN</Tag>
+		<English>政治家</English>
+		<L1/><L2/><L3/><L4/><Chinese>政治家</Chinese><French>Statesman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STARTING_YEAR</Tag>
+		<English>初始年份</English>
+		<L1/><L2/><L3/><L4/><Chinese>初始年份</Chinese><French>Starting year</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_RELIGION</Tag>
+		<English>国教</English>
+		<L1/><L2/><L3/><L4/><Chinese>国教</Chinese><French>State Religion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIQUE_POWER</Tag>
+		<English>特殊能力</English>
+		<L1/><L2/><L3/><L4/><Chinese>特殊能力</Chinese><French>Unique Power</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VASSALAGE_ALLOWS</Tag>
+		<English>[ICON_BULLET]允许训练[LINK=literal]征召民兵[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]允许训练[LINK=literal]征召民兵[\LINK]</Chinese><French>[ICON_BULLET]Required to train [LINK=literal]Levy[\LINK]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VASSALAGE_REQUIREMENT</Tag>
+		<English>[ICON_BULLET]需要[LINK=literal]分封制度[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]需要[LINK=literal]分封制度[\LINK]</Chinese><French>[ICON_BULLET]Requires [LINK=literal]Vassalage[\LINK]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VIKING_NAVAL_UP</Tag>
+		<English>通过击沉%s2 %s3，你掠夺了%d1 [ICON_GOLD]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>通过击沉%s2 %s3，你掠夺了%d1 [ICON_GOLD]。</Chinese><French>You have acquired %d1 [ICON_GOLD] by sinking a %s2 %s3.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VOTE_COLLECT_TITHE</Tag>
+		<English>收缴什一税</English>
+		<L1/><L2/><L3/><L4/><Chinese>收缴什一税</Chinese><French>Collect Tithe</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VOTE_EGALITARIANISM</Tag>
+		<English>联合国第743号决议（全球政体-平等主义）</English>
+		<L1/><L2/><L3/><L4/><Chinese>联合国第743号决议（全球政体-平等主义）</Chinese><French>U.N. Resolution #743 (Global Civic - Egalitarianism)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VOTE_EXCOMMUNICATION</Tag>
+		<English>革除教籍</English>
+		<L1/><L2/><L3/><L4/><Chinese>革除教籍</Chinese><French>Excommunication</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VOTE_FORCE_WAR</Tag>
+		<English>发起十字军</English>
+		<L1/><L2/><L3/><L4/><Chinese>发起十字军</Chinese><French>Crusade</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VOTE_INQUISITION</Tag>
+		<English>宗教审判</English>
+		<L1/><L2/><L3/><L4/><Chinese>宗教审判</Chinese><French>Inquisition</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VOTE_MULTILATERALISM</Tag>
+		<English>联合国第413号决议（全球政体-多元主义）</English>
+		<L1/><L2/><L3/><L4/><Chinese>联合国第413号决议（全球政体-多元主义）</Chinese><French>U.N. Resolution #413 (Global Civic - Multilateralism)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VOTE_PUBLIC_WELFARE</Tag>
+		<English>联合国第631号决议（全球政体-社会福利）</English>
+		<L1/><L2/><L3/><L4/><Chinese>联合国第631号决议（全球政体-社会福利）</Chinese><French>U.N. Resolution #631 (Global Civic - Public Welfare)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VOTE_DEMOCRACY</Tag>
+		<English>联合国第3345号决议（全球政体-民主制度）</English>
+		<L1/><L2/><L3/><L4/><Chinese>联合国第3345号决议（全球政体-民主制度）</Chinese><French>U.N. Resolution #3445 (Global Civic - Democracy)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VOTE_CONSTITUTION</Tag>
+		<English>联合国第791号决议（全球政体-宪法制度）</English>
+		<L1/><L2/><L3/><L4/><Chinese>联合国第791号决议（全球政体-宪法制度）</Chinese><French>U.N. Resolution #791 (Global Civic - Constitution)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VOTE_SECULARISM</Tag>
+		<English>联合国第427号决议（全球政体-世俗主义）</English>
+		<L1/><L2/><L3/><L4/><Chinese>联合国第427号决议（全球政体-世俗主义）</Chinese><French>U.N. Resolution #427 (Global Civic - Secularism)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VOTE_UN_DECOLONIZE</Tag>
+		<English>解放</English>
+		<L1/><L2/><L3/><L4/><Chinese>解放</Chinese><French>Decolonization</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VOTE_UN_RELEASE_CIVILIZATION</Tag>
+		<English>释放文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>释放文明</Chinese><French>Release Civilization</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_CANNOT_SPREAD_UNLESS_STATE</Tag>
+		<English>[ICON_BULLET]传教士无法在具有不同国教的文明中传播</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]传教士无法在具有不同国教的文明中传播</Chinese><French>[ICON_BULLET]Missionaries cannot spread in civilizations that have a different state religion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_CANNOT_CONVERT_UNLESS_HOLY_CITY</Tag>
+		<English>[ICON_BULLET]皈依这种宗教需要控制它的圣城</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]皈依这种宗教需要控制它的圣城</Chinese><French>[ICON_BULLET]Converting to this religion requires controlling its holy city</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RELIGION_BUILDINGS</Tag>
+		<English>所有%F1_RelIcon建筑</English>
+		<L1/><L2/><L3/><L4/><Chinese>所有%F1_RelIcon建筑</Chinese><French>All %F1_RelIcon Buildings</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_RELIGION_DISAPPEARANCE</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]%s1_RelName[COLOR_REVERT]从%s2_CityName消失了。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_HIGHLIGHT_TEXT]%s1_RelName[COLOR_REVERT]从%s2_CityName消失了。</Chinese><French>[COLOR_HIGHLIGHT_TEXT]%s1_RelName[COLOR_REVERT] has disappeared from %s2_CityName.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_CORPORATIONS</Tag>
+		<English>公司</English>
+		<L1/><L2/><L3/><L4/><Chinese>公司</Chinese><French>Corporations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_MILITARY_UNITS</Tag>
+		<English>军事部队</English>
+		<L1/><L2/><L3/><L4/><Chinese>军事部队</Chinese><French>Military Units</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_UNIQUE_UNITS</Tag>
+		<English>独特单位</English>
+		<L1/><L2/><L3/><L4/><Chinese>独特单位</Chinese><French>Unique Units</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_UNIT_CHARTS</Tag>
+		<English>单位图表</English>
+		<L1/><L2/><L3/><L4/><Chinese>单位图表</Chinese><French>Unit Charts</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_UNIQUE_BUILDINGS</Tag>
+		<English>独特建筑</English>
+		<L1/><L2/><L3/><L4/><Chinese>独特建筑</Chinese><French>Unique Buildings</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_GREAT_PEOPLE_BUILDINGS</Tag>
+		<English>伟人创造的建筑</English>
+		<L1/><L2/><L3/><L4/><Chinese>伟人创造的建筑</Chinese><French>Great Buildings</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_RELIGIOUS_BUILDINGS</Tag>
+		<English>宗教建筑</English>
+		<L1/><L2/><L3/><L4/><Chinese>宗教建筑</Chinese><French>Religion Buildings</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_WORLD_WONDERS</Tag>
+		<English>世界奇观</English>
+		<L1/><L2/><L3/><L4/><Chinese>世界奇观</Chinese><French>Great Wonders</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_CONCEPTS</Tag>
+		<English>概念</English>
+		<L1/><L2/><L3/><L4/><Chinese>概念</Chinese><French>Concepts</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_FAVOURITES</Tag>
+		<English>最喜爱的</English>
+		<L1/><L2/><L3/><L4/><Chinese>最喜爱的</Chinese><French>Favourites</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_DETAILS</Tag>
+		<English>细节</English>
+		<L1/><L2/><L3/><L4/><Chinese>细节</Chinese><French>Details</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_RELIGIOUS_VICTORY</Tag>
+		<English>[BOLD]宗教胜利[\BOLD][NEWLINE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[BOLD]宗教胜利[\BOLD][NEWLINE]</Chinese><French>[BOLD]Religious victory[\BOLD][NEWLINE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_LEADERS</Tag>
+		<English>领袖</English>
+		<L1/><L2/><L3/><L4/><Chinese>领袖</Chinese><French>Leaders</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_TERRAIN_FEATURE</Tag>
+		<English>地形特征</English>
+		<L1/><L2/><L3/><L4/><Chinese>地形特征</Chinese><French>Terrain Feature</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_TERRAIN</Tag>
+		<English>地形特征</English>
+		<L1/><L2/><L3/><L4/><Chinese>地形特征</Chinese><French>Terrain</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_USED_BY</Tag>
+		<English>从属于</English>
+		<L1/><L2/><L3/><L4/><Chinese>从属于</Chinese><French>Used by</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_SOURCES</Tag>
+		<English>资源</English>
+		<L1/><L2/><L3/><L4/><Chinese>资源</Chinese><French>Sources</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_ABILITIES</Tag>
+		<English>能力</English>
+		<L1/><L2/><L3/><L4/><Chinese>能力</Chinese><French>Abilities</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_REPLACEMENTS_UPGRADES</Tag>
+		<English>替代与升级</English>
+		<L1/><L2/><L3/><L4/><Chinese>替代与升级</Chinese><French>Replacements and Upgrades</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_REPLACEMENTS</Tag>
+		<English>被替代者</English>
+		<L1/><L2/><L3/><L4/><Chinese>被替代者</Chinese><French>Replaced By</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_UPGRADES</Tag>
+		<English>晋升为</English>
+		<L1/><L2/><L3/><L4/><Chinese>晋升为</Chinese><French>Upgraded To</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_APPEAR_CONDITIONS</Tag>
+		<English>出现条件</English>
+		<L1/><L2/><L3/><L4/><Chinese>出现条件</Chinese><French>Appearing conditions</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CORPORATION_HQ_WEALTH</Tag>
+		<English>[ICON_BULLET]总公司:每个城市+%d1[ICON_GOLD]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]总公司:每个城市+%d1[ICON_GOLD]</Chinese><French>[ICON_BULLET]Headquarters: +%d1[ICON_GOLD] per City</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CORPORATION_HQ_RESEARCH</Tag>
+		<English>[ICON_BULLET]总公司:每个城市+%d1[ICON_RESEARCH]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]总公司:每个城市+%d1[ICON_RESEARCH]</Chinese><French>[ICON_BULLET]Headquarters: +%d1[ICON_RESEARCH] per City</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CORPORATION_HQ_CULTURE</Tag>
+		<English>[ICON_BULLET]总公司:每个城市 +%d1[ICON_CULTURE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]总公司:每个城市 +%d1[ICON_CULTURE]</Chinese><French>[ICON_BULLET]Headquarters: +%d1[ICON_CULTURE] per City</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CORPORATION_HQ_ESPIONAGE</Tag>
+		<English>[ICON_BULLET]总公司:每个城市 +%d1[ICON_ESPIONAGE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]总公司:每个城市 +%d1[ICON_ESPIONAGE]</Chinese><French>[ICON_BULLET]Headquarters: +%d1[ICON_ESPIONAGE] per City</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_HEADER_RELIGION</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</Chinese><French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_HEADER_SPECIALIST</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]专家[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_HIGHLIGHT_TEXT]专家[COLOR_REVERT]</Chinese><French>[COLOR_HIGHLIGHT_TEXT]Specialists[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_HEADER_SATELLITE</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]卫星[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_HIGHLIGHT_TEXT]卫星[COLOR_REVERT]</Chinese><French>[COLOR_HIGHLIGHT_TEXT]Satellites[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_HEADER_GREAT_SPECIALIST</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]伟人[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_HIGHLIGHT_TEXT]伟人[COLOR_REVERT]</Chinese><French>[COLOR_HIGHLIGHT_TEXT]Great Specialists[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPROVEMENT_HAPPINESS</Tag>
+		<English>[ICON_BULLET]+%s1%F2_HappyOrUn 每[SPACE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]+%s1%F2_HappyOrUn 每[SPACE]</Chinese><French>[ICON_BULLET]+%s1%F2_HappyOrUn per[SPACE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPROVEMENT_HEALTH</Tag>
+		<English>[ICON_BULLET]+%s1%F2_HealthOrUn 每[SPACE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]+%s1%F2_HealthOrUn 每[SPACE]</Chinese><French>[ICON_BULLET]+%s1%F2_HealthOrUn per[SPACE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_UNIGNORABLE_BOMBARD_DEFENSE_MOD</Tag>
+		<English>[ICON_BULLET]%D1_Mod%%受损（防御轰击）</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Mod%%受损（防御轰击）</Chinese><French>[ICON_BULLET]%D1_Mod%% Damage to Defenses from Bombardment</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CULTURE_BIRTH_RATE_MOD</Tag>
+		<English>[ICON_BULLET]每个文化等级%D1_Mod%% [ICON_GREATPEOPLE]出生率</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]每个文化等级%D1_Mod%% [ICON_GREATPEOPLE]出生率</Chinese><French>[ICON_BULLET]%D1_Mod%% [ICON_GREATPEOPLE] Birth Rate per Culture Level</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CULTURE_LEVEL_HAPPINESS</Tag>
+		<English>[ICON_BULLET]每个文化等级%D1_Change%F2_HappyOrUn</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]每个文化等级%D1_Change%F2_HappyOrUn</Chinese><French>[ICON_BULLET]%D1_Change%F2_HappyOrUn per Culture Level</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BABYLONIAN_UP</Tag>
+		<English>作为文明摇篮，我们可以选择一项免费科技：</English>
+		<L1/><L2/><L3/><L4/><Chinese>作为文明摇篮，我们可以选择一项免费科技：</Chinese><French>As the Cradle of Civilization, we can choose another free technology:</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SPECIALIST_HAPPINESS</Tag>
+		<English>[ICON_BULLET]每个专家%D1_Change%F2_HappyOrUn</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]每个专家%D1_Change%F2_HappyOrUn</Chinese><French>[ICON_BULLET]%D1_Change%F2_HappyOrUn per Specialist</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAPTURE_GOLD_MODIFIER</Tag>
+		<English>[ICON_BULLET]城市征服时获得%D1_Mod%% [ICON_GOLD]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]城市征服时获得%D1_Mod%% [ICON_GOLD]</Chinese><French>[ICON_BULLET]%D1_Mod%% [ICON_GOLD] on City Conquest</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAPTURE_GOLD_MODIFIER</Tag>
+		<English>[ICON_BULLET]城市征服时获得%D1_Mod%% [ICON_GOLD]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]城市征服时获得%D1_Mod%% [ICON_GOLD]</Chinese><French>[ICON_BULLET]%D1_Mod%% [ICON_GOLD] on City Conquest</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WORKER_COST</Tag>
+		<English>[ICON_BULLET]训练工人需要%D1_Mod%% [ICON_PRODUCTION]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]训练工人需要%D1_Mod%% [ICON_PRODUCTION]</Chinese><French>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] required to train Workers</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAN_ENSLAVE</Tag>
+		<English>[ICON_BULLET]可以奴役人口</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以奴役人口</Chinese><French>[ICON_BULLET]Can Enslave Population</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAN_USE_SLAVES</Tag>
+		<English>[ICON_BULLET]可以使用奴隶</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以使用奴隶</Chinese><French>[ICON_BULLET]Can Use Slaves</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CANNOT_USE_SLAVES</Tag>
+		<English>[ICON_BULLET]不能使用奴隶</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]不能使用奴隶</Chinese><French>[ICON_BULLET]Cannot Use Slaves</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAN_USE_SLAVES</Tag>
+		<English>[ICON_BULLET]可以使用奴隶</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以使用奴隶</Chinese><French>[ICON_BULLET]Can Use Slaves</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAN_CAPTURE_WORKERS</Tag>
+		<English>[ICON_BULLET]可以俘获工人</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以俘获工人</Chinese><French>[ICON_BULLET]Can Capture Workers</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAN_USE_SLAVES_IN_COLONIES</Tag>
+		<English>[ICON_BULLET]可以在殖民地使用奴隶</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以在殖民地使用奴隶</Chinese><French>[ICON_BULLET]Can Use Slaves in Colonies</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAN_CAPTURE_SLAVES</Tag>
+		<English>[ICON_BULLET]可以俘获奴隶</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以俘获奴隶</Chinese><French>[ICON_BULLET]Can Capture Slaves</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAN_CAPTURE_AND_TRADE_SLAVES</Tag>
+		<English>[ICON_BULLET]可以俘获和交易奴隶</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以俘获和交易奴隶</Chinese><French>[ICON_BULLET]Can Capture and Trade Slaves</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REQUIRES_PAGAN_RELIGION</Tag>
+		<English>[COLOR_WARNING_TEXT]需要%s1[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]需要%s1[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Requires %s1[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WORK_RATE_MODIFIER</Tag>
+		<English>[ICON_BULLET]建造设施提速%D1_Mod%%</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]建造设施提速%D1_Mod%%</Chinese><French>[ICON_BULLET]Constructs Improvements %D1_Mod%% Faster</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WORKER_LIMIT</Tag>
+		<English>[ICON_BULLET]工人(每个城市允许一名)</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]工人(每个城市允许一名)</Chinese><French>[ICON_BULLET]Worker (1 Allowed per City)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WORKER_LEFT</Tag>
+		<English>[SPACE]剩下%d1_Num</English>
+		<L1/><L2/><L3/><L4/><Chinese>[SPACE]剩下%d1_Num</Chinese><French>[SPACE]%d1_Num Left</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CULTURE_TRADE_ROUTE_MOD</Tag>
+		<English>[ICON_BULLET]每个文化等级增长商路%D1_Mod%%</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]每个文化等级增长商路%D1_Mod%%</Chinese><French>[ICON_BULLET]%D1_Mod%% Trade Route Yield per Culture Level</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WORLD_WONDERS_PER_CULTURE_LEVEL</Tag>
+		<English>[COLOR_WARNING_TEXT]只可以建造%d1_Num个世界奇观，在%s2_LevelName文化[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]只可以建造%d1_Num个世界奇观，在%s2_LevelName文化[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Can only Construct %d1_Num World Wonders with %s2_LevelName Culture[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WORLD_WONDERS_NONE_FOR_CULTURE_LEVEL</Tag>
+		<English>[COLOR_WARNING_TEXT]无法建造世界奇观在%s1_LevelName文化[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]无法建造世界奇观在%s1_LevelName文化[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Cannot Construct World Wonders with %s1_LevelName Culture[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIONAL_WONDERS_PER_CULTURE_LEVEL</Tag>
+		<English>[COLOR_WARNING_TEXT]只可以建造%d1_Num个文明奇观，在%s2_LevelName文化[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]只可以建造%d1_Num个文明奇观，在%s2_LevelName文化[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Can only Construct %d1_Num National Wonders with %s2_LevelName Culture[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIONAL_WONDERS_NONE_FOR_CULTURE_LEVEL</Tag>
+		<English>[COLOR_WARNING_TEXT]不能建造文明奇观在%s1_LevelName文化[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]不能建造文明奇观在%s1_LevelName文化[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Cannot Construct National Wonders with %s1_LevelName Culture[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CARRIER_BASE</Tag>
+		<English>[ICON_BULLET]能够基于[LINK=UNIT_CARRIER]运载[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]能够基于[LINK=UNIT_CARRIER]运载[\LINK]</Chinese><French>[ICON_BULLET]Can be Based on [LINK=UNIT_CARRIER]Carriers[\LINK]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNITCOMBAT_HEAVY_CAVALRY</Tag>
+		<English>重骑兵单位</English>
+		<L1/><L2/><L3/><L4/><Chinese>重骑兵单位</Chinese><French>Heavy Cavalry Units</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNITCOMBAT_LIGHT_CAVALRY</Tag>
+		<English>轻骑兵单位</English>
+		<L1/><L2/><L3/><L4/><Chinese>轻骑兵单位</Chinese><French>Light Cavalry Units</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PLAINS_STRENGTH</Tag>
+		<English>[ICON_BULLET]%D1_Change%%开放地形战斗力</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Change%%开放地形战斗力</Chinese><French>[ICON_BULLET]%D1_Change%% Open Terrain Strength</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PLAINS_ATTACK</Tag>
+		<English>[ICON_BULLET]%D1_Change%%开放地形攻击</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Change%%开放地形攻击</Chinese><French>[ICON_BULLET]%D1_Change%% Open Terrain Attack</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PLAINS_DEFENSE</Tag>
+		<English>[ICON_BULLET]%D1_Change%%开放地形防御</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Change%%开放地形防御</Chinese><French>[ICON_BULLET]%D1_Change%% Open Terrain Defense</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMBAT_PLOT_PLAINS_MOD</Tag>
+		<English>[ICON_BULLET]%D1_Bonus%%来自开放地形 (单位能力)</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Bonus%%来自开放地形 (单位能力)</Chinese><French>[ICON_BULLET]%D1_Bonus%% from Open Terrain (Unit Ability)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_PLAINS_ATTACK_TEXT</Tag>
+		<English>[ICON_BULLET]%D1_Bonus%%开放地形攻击</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Bonus%%开放地形攻击</Chinese><French>[ICON_BULLET]%D1_Bonus%% Open Terrain Attack</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_PLAINS_DEFENSE_TEXT</Tag>
+		<English>[ICON_BULLET]%D1_Bonus%%开放地形防御</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Bonus%%开放地形防御</Chinese><French>[ICON_BULLET]%D1_Bonus%% Open Terrain Defense</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_CULTURE_LEVELS</Tag>
+		<English>文化等级</English>
+		<L1/><L2/><L3/><L4/><Chinese>文化等级</Chinese><French>Culture Levels</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_BUILDINGS</Tag>
+		<English>建筑</English>
+		<L1/><L2/><L3/><L4/><Chinese>建筑</Chinese><French>Buildings</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_SPECIALISTS</Tag>
+		<English>专家</English>
+		<L1/><L2/><L3/><L4/><Chinese>专家</Chinese><French>Specialists</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_WONDER_LIMIT</Tag>
+		<English>每个城市能够建造%d1个世界奇观</English>
+		<L1/><L2/><L3/><L4/><Chinese>每个城市能够建造%d1个世界奇观</Chinese><French>Can build %d1 World Wonders per City</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_NATIONAL_WONDER_LIMIT</Tag>
+		<English>每个城市能够建造%d1个文明奇观</English>
+		<L1/><L2/><L3/><L4/><Chinese>每个城市能够建造%d1个文明奇观</Chinese><French>Can build %d1 National Wonders per City</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_GREATPEOPLE_CULTURE_LEVEL</Tag>
+		<English>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE]来自文化等级</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE]来自文化等级</Chinese><French>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] from Culture Level</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_MINOR_RELIGION_PAGANISM</Tag>
+		<English>异神教宗教</English>
+		<L1/><L2/><L3/><L4/><Chinese>异神教宗教</Chinese><French>Pagan Religion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_GREATPEOPLE_UNIQUE_POWER</Tag>
+		<English>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE]来自独特能力</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE]来自独特能力</Chinese><French>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] from Unique Power</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_YIELD_PLAYER</Tag>
+		<English>[ICON_BULLET]%D1%%%F2来自独特能力</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1%%%F2来自独特能力</Chinese><French>[ICON_BULLET]%D1%%%F2 from Unique Power</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFECTED_CITIES</Tag>
+		<English>支持%d1个城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>支持%d1个城市</Chinese><French>Supplies %d1 Cities</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_CULTURE_RANK</Tag>
+		<English>文化排名: %d1</English>
+		<L1/><L2/><L3/><L4/><Chinese>文化排名: %d1</Chinese><French>Culture Rank: %d1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_CITY_SUPPLIED</Tag>
+		<English>[SPACE](%d2_num_bonus available - 需要足够数量的 %s1_city)[SPACE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[SPACE](%d2_num_bonus available - 需要足够数量的 %s1_city)[SPACE]</Chinese><French>[SPACE](%d2_num_bonus available - as much as needed for %s1_city)[SPACE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_CITY_OVERSUPPLIED</Tag>
+		<English>[SPACE](%d2_num_bonus available - %d3_num_bonus 不再需要 %s1_city)[SPACE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[SPACE](%d2_num_bonus available - %d3_num_bonus 不再需要 %s1_city)[SPACE]</Chinese><French>[SPACE](%d2_num_bonus available - %d3_num_bonus more than needed for %s1_city)[SPACE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_CITY_REQUIRES</Tag>
+		<English>[SPACE](%d2_num_bonus available - %d3_num_bonus 更多的需求 %s1_city)[SPACE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[SPACE](%d2_num_bonus available - %d3_num_bonus 更多的需求 %s1_city)[SPACE]</Chinese><French>[SPACE](%d2_num_bonus available - %d3_num_bonus more required for %s1_city)[SPACE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_UNIT_JOINED_YOU</Tag>
+		<English>一个 %s1_UnitName加入了我们的军队</English>
+		<L1/><L2/><L3/><L4/><Chinese>一个 %s1_UnitName加入了我们的军队</Chinese><French>A %s1_UnitName has joined our armies</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PER_CULTURE_LEVEL</Tag>
+		<English>[SPACE]每一文化等级</English>
+		<L1/><L2/><L3/><L4/><Chinese>[SPACE]每一文化等级</Chinese><French>[SPACE]per Culture Level</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_YIELD_CULTURE</Tag>
+		<English>[ICON_BULLET]%D1%%%F2来自于文化等级</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1%%%F2来自于文化等级</Chinese><French>[ICON_BULLET]%D1%%%F2 from Culture Level</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_FOOD_FROM_HAPPINESS</Tag>
+		<English>[ICON_BULLET]%D1%F2 由于过量 [ICON_HAPPY]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1%F2 由于过量 [ICON_HAPPY]</Chinese><French>[ICON_BULLET]%D1%F2 from Excess [ICON_HAPPY]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_FOOD_NON_STATE_RELIGIONS</Tag>
+		<English>[ICON_BULLET]%D1%F2 由于非国家的 [ICON_RELIGION]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1%F2 由于非国家的 [ICON_RELIGION]</Chinese><French>[ICON_BULLET]%D1%F2 from Non-State [ICON_RELIGION]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTE_MOD_FRIENDLY_RELATION</Tag>
+		<English>%D1%%: 友好关系</English>
+		<L1/><L2/><L3/><L4/><Chinese>%D1%%: 友好关系</Chinese><French>%D1%%: for Friendly Relations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_EXPANSION_STABILITY</Tag>
+		<English>[ICON_BULLET]减少稳定度的扩张惩罚</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]减少稳定度的扩张惩罚</Chinese><French>[ICON_BULLET]Reduces expansion stability penalty</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_INSTABILITY_CULTURE</Tag>
+		<English>文化控制：稳定度的扩张惩罚</English>
+		<L1/><L2/><L3/><L4/><Chinese>文化控制：稳定度的扩张惩罚</Chinese><French>Cultural Control: expansion stability penalty</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_HIGH_INSTABILITY_CULTURE</Tag>
+		<English>文化控制：严重的稳定度扩张惩罚</English>
+		<L1/><L2/><L3/><L4/><Chinese>文化控制：严重的稳定度扩张惩罚</Chinese><French>Cultural Control: severe expansion stability penalty</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_CITY_CORE_POPULATION</Tag>
+		<English>核心人口: %d1</English>
+		<L1/><L2/><L3/><L4/><Chinese>核心人口: %d1</Chinese><French>Core Population: %d1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_CITY_PERIPHERY_POPULATION</Tag>
+		<English>周边人口: %d1</English>
+		<L1/><L2/><L3/><L4/><Chinese>周边人口: %d1</Chinese><French>Periphery Population: %d1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BUILDING_UNHEALTH_MODIFIER</Tag>
+		<English>[ICON_BULLET]%s1%% [ICON_UNHEALTHY] 来自建筑</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%s1%% [ICON_UNHEALTHY] 来自建筑</Chinese><French>[ICON_BULLET]%s1%% [ICON_UNHEALTHY] From Buildings</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CORPORATION_UNHEALTH_MODIFIER</Tag>
+		<English>[ICON_BULLET]%s1%% [ICON_UNHEALTHY] 来自公司</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%s1%% [ICON_UNHEALTHY] 来自公司</Chinese><French>[ICON_BULLET]%s1%% [ICON_UNHEALTHY] From Corporations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPROVED_RESOURCE_YIELDS</Tag>
+		<English>[ICON_BULLET]%s1 改进 [LINK=literal]%s2[\LINK] 资源</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%s1 改进 [LINK=literal]%s2[\LINK] 资源</Chinese><French>[ICON_BULLET]%s1 on improved [LINK=literal]%s2[\LINK] resources</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_RESEARCH_SATELLITE</Tag>
+		<English>科研卫星</English>
+		<L1/><L2/><L3/><L4/><Chinese>科研卫星</Chinese><French>Research Satellite</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_COMMERCIAL_SATELLITE</Tag>
+		<English>商业卫星</English>
+		<L1/><L2/><L3/><L4/><Chinese>商业卫星</Chinese><French>Commercial Satellite</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_MILITARY_SATELLITE</Tag>
+		<English>军事卫星</English>
+		<L1/><L2/><L3/><L4/><Chinese>军事卫星</Chinese><French>Military Satellite</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INVISIBLE_SATELLITE</Tag>
+		<English>卫星</English>
+		<L1/><L2/><L3/><L4/><Chinese>卫星</Chinese><French>Satellites</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_ENABLES_SPECIAL_PLAYER</Tag>
+		<!-- %s1_Name = Can be Buildings, Units, Projects, etc -->
+		<English>[ICON_BULLET]能够 %s1_Name</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]能够 %s1_Name</Chinese><French>[ICON_BULLET]Enables %s1_Name</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_GOLDEN_AGE</Tag>
+		<English>[ICON_BULLET]进入黄金时代</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]进入黄金时代</Chinese><French>[ICON_BULLET]Starts a Golden Age</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_FIRST_FREE_UNIT</Tag>
+		<English>[ICON_BULLET]首发者将获得一个免费的 [LINK=literal]%s1_Name[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]首发者将获得一个免费的 [LINK=literal]%s1_Name[\LINK]</Chinese><French>[ICON_BULLET]First to complete receives a free [LINK=literal]%s1_Name[\LINK]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_FIRST_ENEMY_ANARCHY</Tag>
+		<English>[ICON_BULLET]首先完成项目将会造成无政府状态</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]首先完成项目将会造成无政府状态</Chinese><French>[ICON_BULLET]First to complete causes Anarchy for everyone working on the project</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_PROJECT_ANARCHY</Tag>
+		<English>在得知%s1在我们之前就完成了%s2，这对我们的文明是个巨大的冲击！</English>
+		<L1/><L2/><L3/><L4/><Chinese>在得知%s1在我们之前就完成了%s2，这对我们的文明是个巨大的冲击！</Chinese><French>It's been a huge shock to our civilization to learn that %s1 has managed to complete the %s2 before we could!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_PROJECT_ANARCHY_CAUSED</Tag>
+		<English>我们成功完成了%s1，并给了与我们竞争同一项目的%s2文明巨大的打击！</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们成功完成了%s1，并给了与我们竞争同一项目的%s2文明巨大的打击！</Chinese><French>Our success in completing the %s1 has caused great shock in the %s2 civilization, who were working on the same project!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_FIRST_AIR_EXPERIENCE</Tag>
+		<English>[ICON_BULLET]率先完成将会使你的空军单位获得%s1经验</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]率先完成将会使你的空军单位获得%s1经验</Chinese><French>[ICON_BULLET]First to complete receives %s1 experience for Air units</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_PROD_EXISTING_PROJECT</Tag>
+		<English>[ICON_BULLET]%D1%%[ICON_PRODUCTION] 来自未完成的工程</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1%%[ICON_PRODUCTION] 来自未完成的工程</Chinese><French>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for building an existing project</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_DOUBLE_SPEED_EXISTING</Tag>
+		<English>当其他文明已经完成时，获得双倍产能</English>
+		<L1/><L2/><L3/><L4/><Chinese>当其他文明已经完成时，获得双倍产能</Chinese><French>Double Production Speed when already completed by another civilization</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_BUILDS_FASTER_EXISTING</Tag>
+		<English>当其他文明已经完成时，建造%d1_Mod%%更快</English>
+		<L1/><L2/><L3/><L4/><Chinese>当其他文明已经完成时，建造%d1_Mod%%更快</Chinese><French>Builds %d1_Mod%% Faster when already completed by another civilization</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_AIR_EXPERIENCE</Tag>
+		<English>[ICON_BULLET]%s1空军经验</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%s1空军经验</Chinese><French>[ICON_BULLET]%s1 experience for Air units</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_FREE_PROMOTION</Tag>
+		<English>[ICON_BULLET]所有单位得到[LINK=literal]%s1[\LINK]提升</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]所有单位得到[LINK=literal]%s1[\LINK]提升</Chinese><French>[ICON_BULLET]All units receive the [LINK=literal]%s1[\LINK] promotion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SATELLITE_INTERCEPT</Tag>
+		<English>[ICON_BULLET]卫星可以拦截核武器</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]卫星可以拦截核武器</Chinese><French>[ICON_BULLET]Satellites can intercept Nuclear Weapons</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_NUKE_INTERCEPTED_SATELLITE</Tag>
+		<English>一颗 %s1 %s2_UnitName 已经被%s3 SDI %s4拦截!!!</English>
+		<L1/><L2/><L3/><L4/><Chinese>一颗 %s1 %s2_UnitName 已经被%s3 SDI %s4拦截!!!</Chinese><French>A %s1 %s2_UnitName has been intercepted by a %s3 SDI %s4!!!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SATELLITE_ATTACK</Tag>
+		<English>[ICON_BULLET]卫星可以攻击敌人的卫星</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]卫星可以攻击敌人的卫星</Chinese><French>[ICON_BULLET]Satellites can attack enemy Satellites</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_REQUIRES_ONE</Tag>
+		<!-- %s1_Name = Can be Buildings, Units, Projects, etc -->
+		<English>[COLOR_WARNING_TEXT]需要 [LINK=literal]%s1[\LINK][COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]需要 [LINK=literal]%s1[\LINK][COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Requires [LINK=literal]%s1[\LINK][COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_COMMERCE_SPACE_PRODUCTION</Tag>
+		<English>[ICON_BULLET]%D1%%%F2 来自宇宙飞船产能加成</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1%%%F2 来自宇宙飞船产能加成</Chinese><French>[ICON_BULLET]%D1%%%F2 from Spaceship Production</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUTTON_LAUNCH_SPACESHIP</Tag>
+		<English>发射</English>
+		<L1/><L2/><L3/><L4/><Chinese>发射</Chinese><French>Launch</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_COASTAL</Tag>
+		<English>[SPACE]在海滨</English>
+		<L1/><L2/><L3/><L4/><Chinese>[SPACE]在海滨</Chinese><French>[SPACE]on the Coast</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SLAVE_LIMIT</Tag>
+		<English>[ICON_BULLET]只可以在奴隶人口小于城市一半人口时加入城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]只可以在奴隶人口小于城市一半人口时加入城市</Chinese><French>[ICON_BULLET]Can join a city only if its number of slaves is less than half its population</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SATELLITE_LIMIT</Tag>
+		<English>[ICON_BULLET]只可以在卫星数量小于城市专家槽的1/5时加入城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]只可以在卫星数量小于城市专家槽的1/5时加入城市</Chinese><French>[ICON_BULLET]Can join a city only if its number of satellites is less than a fifth of its total specialist slots</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_CIVILIZATION_CULTURE_MODIFIER</Tag>
+		<English>[ICON_BULLET]%D1%%%F2 来自世界编辑器</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1%%%F2 来自世界编辑器</Chinese><French>[ICON_BULLET]%D1%%%F2 from Civilization modifier</French></TEXT>
+	<TEXT>
+		<Tag>INTERFACE_CITY_WONDER_LIMIT</Tag>
+		<English>%d1/%d2%F3</English>
+		<L1/><L2/><L3/><L4/><Chinese>%d1/%d2%F3</Chinese><French>%d1/%d2%F3</French></TEXT>
+	<TEXT>
+		<Tag>INTERFACE_CITY_NATIONAL_WONDER_LIMIT_HELP</Tag>
+		<English>%s3文化程度下，%d1不满足建造民族奇观%d2</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s3文化程度下，%d1不满足建造民族奇观%d2</Chinese><French>%d1 out of %d2 National Wonders at %s3 culture</French></TEXT>
+	<TEXT>
+		<Tag>INTERFACE_CITY_WORLD_WONDER_LIMIT_HELP</Tag>
+		<English>%s3文化程度下，%d1不满足建造奇观%d2</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s3文化程度下，%d1不满足建造奇观%d2</Chinese><French>%d1 out of %d2 non-obsolete World Wonders at %s3 culture</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ATTACK_AND_DEFENSE</Tag>
+		<English>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat战斗力</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat战斗力</Chinese><French>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat Strength</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAYA_UP_EFFECT</Tag>
+		<English>在发现了%s1之后, 你的城市得到了%d2[ICON_FOOD]</English>
+		<L1/><L2/><L3/><L4/><Chinese>在发现了%s1之后, 你的城市得到了%d2[ICON_FOOD]</Chinese><French>After the discovery of %s1, your cities have received %d2 [ICON_FOOD]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_GOLD_CITY_CAPTURE</Tag>
+		<English>你从占领的%s2_CityName掠夺到%d1_Num[ICON_GOLD]!!!你希望保留它吗？</English>
+		<L1/><L2/><L3/><L4/><Chinese>你从占领的%s2_CityName掠夺到%d1_Num[ICON_GOLD]!!!你希望保留它吗？</Chinese><French>You have pillaged %d1_Num [ICON_GOLD] from the capture of %s2_CityName!!! What are your next orders for our troops?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_CITY_CAPTURE_KEEP</Tag>
+		<English>你占领了%s1_CityName!!!你希望保留它吗？</English>
+		<L1/><L2/><L3/><L4/><Chinese>你占领了%s1_CityName!!!你希望保留它吗？</Chinese><French>You have captured %s1_CityName!!! What are your next orders for our troops?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_KEEP_CAPTURED_CITY</Tag>
+		<English>好啊！建立个新的地方政府...</English>
+		<L1/><L2/><L3/><L4/><Chinese>好啊！建立个新的地方政府...</Chinese><French>Establish control and install a new governor.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_RAZE_CAPTURED_CITY</Tag>
+		<English>不！烧了它，烧掉!!!</English>
+		<L1/><L2/><L3/><L4/><Chinese>不！烧了它，烧掉!!!</Chinese><French>Destroy the city! Burn it all down!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_RETURN_ALLIED_CITY</Tag>
+		<English>不，把它还给%s1_CivName</English>
+		<L1/><L2/><L3/><L4/><Chinese>不，把它还给%s1_CivName</Chinese><French>Return control to the %s1_CivName</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_SACK_CITY</Tag>
+		<English>洗劫这座城市！能抢多少抢多少！</English>
+		<L1/><L2/><L3/><L4/><Chinese>洗劫这座城市！能抢多少抢多少！</Chinese><French>Sack the city! Take as much as you can!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_SPARE_CITY</Tag>
+		<English>花费%d1黄金，尽快恢复秩序</English>
+		<L1/><L2/><L3/><L4/><Chinese>花费%d1黄金，尽快恢复秩序</Chinese><French>Distribute %d1 gold and see that the city is spared.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_CREATED_WORK_ON_NEXT_SPACESHIP</Tag>
+		<English>%s2_CityName已完成了太空船组件——[COLOR_HIGHLIGHT_TEXT]%s1_PrjtName[COLOR_REVERT]。下一个项目是什么？</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2_CityName已完成了太空船组件——[COLOR_HIGHLIGHT_TEXT]%s1_PrjtName[COLOR_REVERT]。下一个项目是什么？</Chinese><French>%s2_CityName has added [COLOR_HIGHLIGHT_TEXT]%s1_PrjtName[COLOR_REVERT] to the Mars colony. What would you like to work on next?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_LEVEL_MODIFIER</Tag>
+		<English>[ICON_BULLET]%D1%%单位晋升经验需要</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]%D1%%单位晋升经验需要</Chinese><French>[ICON_BULLET]%D1%% experience needed for unit promotions</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NO_RESISTANCE</Tag>
+		<English>[ICON_BULLET]城市征服时没有[ICON_OCCUPATION]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]城市征服时没有[ICON_OCCUPATION]</Chinese><French>[ICON_BULLET]No [ICON_OCCUPATION] on City Conquest</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NO_RESISTANCE</Tag>
+		<English>[ICON_BULLET]城市征服时没有[ICON_OCCUPATION]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]城市征服时没有[ICON_OCCUPATION]</Chinese><French>[ICON_BULLET]No [ICON_OCCUPATION] on City Conquest</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NO_TEMPORARY_UNHAPPINESS</Tag>
+		<English>[ICON_BULLET]没有暂时的[ICON_UNHAPPY]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]没有暂时的[ICON_UNHAPPY]</Chinese><French>[ICON_BULLET]No temporary [ICON_UNHAPPY]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_UNHAPPINESS_DECAY_MODIFIER</Tag>
+		<English>[ICON_BULLET]暂时的[ICON_UNHAPPY]消失的速度增快%D1%%</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]暂时的[ICON_UNHAPPY]消失的速度增快%D1%%</Chinese><French>[ICON_BULLET]Temporary [ICON_UNHAPPY] decays %D1%% faster</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_UNHAPPINESS_DECAY_MODIFIER_DOUBLE</Tag>
+		<English>[ICON_BULLET]暂时的[ICON_UNHAPPY]以两倍速度消失</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]暂时的[ICON_UNHAPPY]以两倍速度消失</Chinese><French>[ICON_BULLET]Temporary [ICON_UNHAPPY] decays twice as fast</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SCREEN_FILTER_KNOWN</Tag>
+		<English>隐藏已知科技</English>
+		<L1/><L2/><L3/><L4/><Chinese>隐藏已知科技</Chinese><French>Hide Known Technologies</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SCREEN_FILTER_CLAIMED</Tag>
+		<English>隐藏利益不再可用</English>
+		<L1/><L2/><L3/><L4/><Chinese>隐藏利益不再可用</Chinese><French>Hide Benefits No Longer Available</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROVIDES_POWER</Tag>
+		<English>[ICON_BULLET]提供电力([ICON_POWER])</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]提供电力([ICON_POWER])</Chinese><French>[ICON_BULLET]Provides Power ([ICON_POWER])</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROVIDES_CLEAN_POWER</Tag>
+		<English>[ICON_BULLET]提供清洁的电力([ICON_CLEAN_POWER])</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]提供清洁的电力([ICON_CLEAN_POWER])</Chinese><French>[ICON_BULLET]Provides clean Power ([ICON_CLEAN_POWER])</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROVIDES_AREA_CLEAN_POWER</Tag>
+		<English>[ICON_BULLET]为所在大陆的所有城市提供清洁电力([ICON_POWER])</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]为所在大陆的所有城市提供清洁电力([ICON_POWER])</Chinese><French>[ICON_BULLET]Provides clean Power ([ICON_CLEAN_POWER]) for All Cities on this Continent</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROVIDES_POWER_WITH</Tag>
+		<English>[ICON_BULLET]提供电力, 需要[COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1_BonusName[\LINK][COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]提供电力, 需要[COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1_BonusName[\LINK][COLOR_REVERT]</Chinese><French>[ICON_BULLET]Provides Power ([ICON_POWER]) with [COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1_BonusName[\LINK][COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROVIDES_CLEAN_POWER_WITH</Tag>
+		<English>[ICON_BULLET]当存在[COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1_BonusName[\LINK][COLOR_REVERT]时，提供洁净的电力([ICON_CLEAN_POWER])</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]当存在[COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1_BonusName[\LINK][COLOR_REVERT]时，提供洁净的电力([ICON_CLEAN_POWER])</Chinese><French>[ICON_BULLET]Provides clean Power ([ICON_CLEAN_POWER]) with [COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1_BonusName[\LINK][COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WITH_CLEAN_POWER</Tag>
+		<English>[SPACE]当存在电力([ICON_CLEAN_POWER])时</English>
+		<L1/><L2/><L3/><L4/><Chinese>[SPACE]当存在电力([ICON_CLEAN_POWER])时</Chinese><French>[SPACE]with Power ([ICON_CLEAN_POWER])</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English/>
+		<L1/><L2/><L3/><L4/><French></French></TEXT>
+</Civ4GameText>

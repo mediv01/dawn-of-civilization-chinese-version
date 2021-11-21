@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Argentina -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARGENTINA_DESC</Tag>
+		<English>阿根廷文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿根廷文明</Chinese><French>The Argentinians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARGENTINA_PEOPLES</Tag>
+		<English>阿根廷人民</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿根廷人民</Chinese><French>Argentine Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARGENTINA_DEFAULT</Tag>
+		<English>Argentina</English>
+		<L1/><L2/><L3/><L4/><Chinese>Argentina</Chinese><French>United Provinces of the River Plate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARGENTINA_FASCIST</Tag>
+		<English>阿根廷塔库拉民族主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿根廷塔库拉民族主义</Chinese><French>Tacuara Nationalist Movement</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARGENTINA_CONFEDERATION</Tag>
+		<English>%s2 联盟</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 联盟</Chinese><French>%s2 Confederation</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARGENTINA_ADJECTIVE</Tag>
+		<English>Argentina</English>
+		<L1/><L2/><L3/><L4/><Chinese>Argentina</Chinese><French>Argentine</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARGENTINA_SHORT_DESC</Tag>
+		<English>Argentina</English>
+		<L1/><L2/><L3/><L4/><Chinese>Argentina</Chinese><French>Argentina</French></TEXT>
+</Civ4GameText>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Khmer -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHMER_DESC</Tag>
+		<English>高棉文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>高棉文明</Chinese><French>The Khmer</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHMER_PEOPLES</Tag>
+		<English>高棉人</English>
+		<L1/><L2/><L3/><L4/><Chinese>高棉人</Chinese><French>Khmer Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHMER_DEFAULT</Tag>
+		<English>Khmer</English>
+		<L1/><L2/><L3/><L4/><Chinese>Khmer</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHMER_COMMUNIST</Tag>
+		<English>高棉人</English>
+		<L1/><L2/><L3/><L4/><Chinese>高棉人</Chinese><French>Democratic %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHMER_FASCIST</Tag>
+		<English>高棉人</English>
+		<L1/><L2/><L3/><L4/><Chinese>高棉人</Chinese><French>Nationalist %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHMER_DAI_VIET</Tag>
+		<English>越南</English>
+		<L1/><L2/><L3/><L4/><Chinese>越南</Chinese><French>Dai Viet</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHMER_BURMA</Tag>
+		<English>高棉-缅甸王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>高棉-缅甸王国</Chinese><French>Burma</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHMER_NANZHAO</Tag>
+		<English>高棉-南诏王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>高棉-南诏王国</Chinese><French>Nanzhao</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHMER_KAMPUCHEA</Tag>
+		<English>柬埔寨</English>
+		<L1/><L2/><L3/><L4/><Chinese>柬埔寨</Chinese><French>Kampuchea</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHMER_KAMPUCHEAN</Tag>
+		<English>柬埔寨</English>
+		<L1/><L2/><L3/><L4/><Chinese>柬埔寨</Chinese><French>Kampuchean</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHMER_ADJECTIVE</Tag>
+		<English>
+			<Text>Khmer:Khmer</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<L1/><L2/><L3/><L4/><French>Kampuchean</French></TEXT>
+</Civ4GameText>

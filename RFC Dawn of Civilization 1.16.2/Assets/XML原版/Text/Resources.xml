@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Resources -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_COTTON</Tag>
+		<English>棉花</English>
+		<L1/><L2/><L3/><L4/><Chinese>棉花</Chinese><French>Cotton</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_HIT_MOVIES</Tag>
+		<English>热门电影</English>
+		<L1/><L2/><L3/><L4/><Chinese>热门电影</Chinese><French>Hit Movies</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_SWAMP_PEDIA</Tag>
+		<English>Swamp</English>
+		<L1/><L2/><L3/><L4/><French>Hit Movies</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_COFFEE</Tag>
+		<English>咖啡</English>
+		<L1/><L2/><L3/><L4/><Chinese>咖啡</Chinese><French>Coffee</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_HIT_SINGLES</Tag>
+		<English>热门单曲</English>
+		<L1/><L2/><L3/><L4/><Chinese>热门单曲</Chinese><French>Hit Singles</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_HIT_FOOTBALL_EVENT</Tag>
+		<English>热门足球赛事</English>
+		<L1/><L2/><L3/><L4/><Chinese>热门足球赛事</Chinese><French>Hit Football Event</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_PEARL</Tag>
+		<English>珍珠</English>
+		<L1/><L2/><L3/><L4/><Chinese>珍珠</Chinese><French>Pearls</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_TEA</Tag>
+		<English>茶叶</English>
+		<L1/><L2/><L3/><L4/><Chinese>茶叶</Chinese><French>Tea</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_TOBACCO</Tag>
+		<English>烟草</English>
+		<L1/><L2/><L3/><L4/><Chinese>烟草</Chinese><French>Tobacco</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_CAMEL</Tag>
+		<English>骆驼</English>
+		<L1/><L2/><L3/><L4/><Chinese>骆驼</Chinese><French>Camel</French></TEXT>
+</Civ4GameText>

@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Rome -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROME_DESC</Tag>
+		<English>罗马文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马文明</Chinese><French>The Romans</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROME_PEOPLES</Tag>
+		<English>罗马</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马</Chinese><French>Italic Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROME_DEFAULT</Tag>
+		<English>Rome</English>
+		<L1/><L2/><L3/><L4/><Chinese>Rome</Chinese><French>%s2 Kingdom</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROME_COMMUNIST</Tag>
+		<English>罗马共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马共和国</Chinese><French>Plebeian Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROME_FASCIST</Tag>
+		<English>罗马帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马帝国</Chinese><French>New Roman Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROME_WESTERN</Tag>
+		<English>西罗马帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>西罗马帝国</Chinese><French>Western Roman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_VASSAL</Tag>
+		<English>%s1 行省</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 行省</Chinese><French>Province of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_EGYPT</Tag>
+		<English>罗马-埃及行省</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-埃及行省</Chinese><French>Aegyptus</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_CHINA</Tag>
+		<English>罗马-中国</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-中国</Chinese><French>Sinae</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_BABYLONIA</Tag>
+		<English>罗马-巴比伦</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-巴比伦</Chinese><French>Mesopotamia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_GREECE</Tag>
+		<English>罗马-希腊</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-希腊</Chinese><French>Magna Graecia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_PERSIA</Tag>
+		<English>罗马-帕提亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-帕提亚</Chinese><French>Parthia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_PHOENICIA</Tag>
+		<English>罗马-叙利亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-叙利亚</Chinese><French>Syria</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_CARTHAGE</Tag>
+		<English>罗马-北非</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-北非</Chinese><French>Africa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_ETHIOPIA</Tag>
+		<English>罗马-东非</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-东非</Chinese><French>Aethiopia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_BYZANTIUM</Tag>
+		<English>罗马-色雷斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-色雷斯</Chinese><French>Thracia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_VIKINGS</Tag>
+		<English>罗马-北欧</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-北欧</Chinese><French>Scandia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_KHMER</Tag>
+		<English>罗马-高棉</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-高棉</Chinese><French>Aurea Chersonesus</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_SPAIN</Tag>
+		<English>罗马-西班牙</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-西班牙</Chinese><French>Hispania</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_THAILAND</Tag>
+		<English>罗马-暹罗</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-暹罗</Chinese><French>Siam</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_FRANCE</Tag>
+		<English>罗马-高卢</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-高卢</Chinese><French>Gaul</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_ENGLAND</Tag>
+		<English>罗马-不列颠</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-不列颠</Chinese><French>Britannia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_HOLY_ROME</Tag>
+		<English>罗马-德国</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-德国</Chinese><French>Germania</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_GERMANY</Tag>
+		<English>罗马-日耳曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-日耳曼</Chinese><French>Borussia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_TURKS</Tag>
+		<English>罗马-土耳其</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-土耳其</Chinese><French>Transoxiana</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_RUSSIA</Tag>
+		<English>罗马-罗斯地区</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-罗斯地区</Chinese><French>Sarmatia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_NETHERLANDS</Tag>
+		<English>罗马-比利时</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-比利时</Chinese><French>Belgica</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_MALI</Tag>
+		<English>罗马-马里</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-马里</Chinese><French>Gaetulia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_PORTUGAL</Tag>
+		<English>罗马-葡萄牙</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-葡萄牙</Chinese><French>Lusitania</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_MONGOLIA</Tag>
+		<English>罗马-蒙古</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-蒙古</Chinese><French>Serica</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROMAN_NAME_OTTOMANS</Tag>
+		<English>罗马-奥斯曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-奥斯曼</Chinese><French>Asia Minor</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROME_ADJECTIVE</Tag>
+		<English>Roman</English>
+		<L1/><L2/><L3/><L4/><Chinese>Roman</Chinese><French>Roman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ROME_SHORT_DESC</Tag>
+		<English>Rome</English>
+		<L1/><L2/><L3/><L4/><Chinese>Rome</Chinese><French>Rome</French></TEXT>
+</Civ4GameText>

@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='GBK'?>
+<!--Civ4lerts
+	Options Game Text
+	Copyright (c) 2009 The BUG Mod
+
+	Copyright (c) 2005-2006, Gillmer J. Derge.
+
+	This file is part of Civilization IV Alerts mod.
+
+	Civilization IV Alerts mod is free software; you can redistribute
+	it and/or modify it under the terms of the GNU General Public
+	License as published by the Free Software Foundation; either
+	version 2 of the License, or (at your option) any later version.
+
+	Civilization IV Alerts mod is distributed in the hope that it will
+	be useful, but WITHOUT ANY WARRANTY; without even the implied
+	warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+	See the GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with Civilization IV Alerts mod; if not, write to the Free
+	Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+	02110-1301 USA -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+<!-- Civ4lerts Options -->
+
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__ENABLED_TEXT</Tag>
+		<English>可启用的Civ4lerts</English>
+		<L1/><L2/><L3/><L4/><Chinese>可启用的Civ4lerts</Chinese><French>Enable Civ4lerts</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__ENABLED_HOVER</Tag>
+		<English>选中时，将显示消息，使用Elmer Jiggle博士的Civ4lerts mod警告您各种未决和现有的情况。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中时，将显示消息，使用Elmer Jiggle博士的Civ4lerts mod警告您各种未决和现有的情况。</Chinese><French>When checked, messages are displayed to alert you to various pending and existing conditions using Dr. Elmer Jiggle's Civ4lerts mod.</French></TEXT>
+<!-- Cities -->
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYPENDINGGROWTH_TEXT</Tag>
+		<English>悬而未决的</English>
+		<L1/><L2/><L3/><L4/><Chinese>悬而未决的</Chinese><French>Pending</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYPENDINGGROWTH_HOVER</Tag>
+		<English>选中时，显示下一轮城市人口增长或减少时的警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中时，显示下一轮城市人口增长或减少时的警报。</Chinese><French>When checked, displays an alert when a city's population will grow or shrink next turn.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYGROWTH_TEXT</Tag>
+		<English>成长</English>
+		<L1/><L2/><L3/><L4/><Chinese>成长</Chinese><French>Growth</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYGROWTH_HOVER</Tag>
+		<English>选中时，显示城市人口增长或减少时的警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中时，显示城市人口增长或减少时的警报。</Chinese><French>When checked, displays an alert when a city's population has grown or shrunk.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYPENDINGHAPPINESS_TEXT</Tag>
+		<English>悬而未决的</English>
+		<L1/><L2/><L3/><L4/><Chinese>悬而未决的</Chinese><French>Pending</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYPENDINGHAPPINESS_HOVER</Tag>
+		<English>选中此选项后，将显示下一回合某个城市将变得高兴或不高兴时的警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中此选项后，将显示下一回合某个城市将变得高兴或不高兴时的警报。</Chinese><French>When checked, displays an alert when a city will become happy or unhappy next turn.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYHAPPINESS_TEXT</Tag>
+		<English>幸福</English>
+		<L1/><L2/><L3/><L4/><Chinese>幸福</Chinese><French>Happiness</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYHAPPINESS_HOVER</Tag>
+		<English>选中时，当城市变得高兴或不高兴时显示警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中时，当城市变得高兴或不高兴时显示警报。</Chinese><French>When checked, displays an alert when a city has become happy or unhappy.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYPENDINGHEALTHINESS_TEXT</Tag>
+		<English>悬而未决的</English>
+		<L1/><L2/><L3/><L4/><Chinese>悬而未决的</Chinese><French>Pending</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYPENDINGHEALTHINESS_HOVER</Tag>
+		<English>选中时，将显示下一回合某个城市将变得健康或不健康时的警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中时，将显示下一回合某个城市将变得健康或不健康时的警报。</Chinese><French>When checked, displays an alert when a city will become healthy or unhealthy next turn.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYHEALTHINESS_TEXT</Tag>
+		<English>健康</English>
+		<L1/><L2/><L3/><L4/><Chinese>健康</Chinese><French>Healthiness</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYHEALTHINESS_HOVER</Tag>
+		<English>选中时，当城市变得健康或不健康时显示警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中时，当城市变得健康或不健康时显示警报。</Chinese><French>When checked, displays an alert when a city has become healthy or unhealthy.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYPENDINGOCCUPATION_TEXT</Tag>
+		<English>悬而未决的</English>
+		<L1/><L2/><L3/><L4/><Chinese>悬而未决的</Chinese><French>Pending</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYPENDINGOCCUPATION_HOVER</Tag>
+		<English>勾选后，显示下一个回合某个城市将被平定、结束占领时的警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>勾选后，显示下一个回合某个城市将被平定、结束占领时的警报。</Chinese><French>When checked, displays an alert when a city will be pacified next turn, ending occupation.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYOCCUPATION_TEXT</Tag>
+		<English>安抚</English>
+		<L1/><L2/><L3/><L4/><Chinese>安抚</Chinese><French>Pacification</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYOCCUPATION_HOVER</Tag>
+		<English>选中此选项后，当某个城市已平静下来并结束占领时，将显示警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中此选项后，当某个城市已平静下来并结束占领时，将显示警报。</Chinese><French>When checked, displays an alert when a city has been pacified, ending occupation.</French></TEXT>
+<!-- Hurry -->
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYCANHURRYPOP_TEXT</Tag>
+		<English>能赶人口</English>
+		<L1/><L2/><L3/><L4/><Chinese>能赶人口</Chinese><French>Can Hurry with Population</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYCANHURRYPOP_HOVER</Tag>
+		<English>勾选后，当一个城市可以用鞭子加速它正在建设的项目时，显示一个警告。</English>
+		<L1/><L2/><L3/><L4/><Chinese>勾选后，当一个城市可以用鞭子加速它正在建设的项目时，显示一个警告。</Chinese><French>When checked, displays an alert once a city can hurry the item it's building with the whip.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYCANHURRYGOLD_TEXT</Tag>
+		<English>带着金子可以快点</English>
+		<L1/><L2/><L3/><L4/><Chinese>带着金子可以快点</Chinese><French>Can Hurry with Gold</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__CITYCANHURRYGOLD_HOVER</Tag>
+		<English>勾选后，当一个城市可以加快它用黄金建造的项目时，显示一个警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>勾选后，当一个城市可以加快它用黄金建造的项目时，显示一个警报。</Chinese><French>When checked, displays an alert once a city can hurry the item it's building with gold.</French></TEXT>
+<!-- Diplomacy -->
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__REFUSESTOTALK_TEXT</Tag>
+		<English>拒绝说话</English>
+		<L1/><L2/><L3/><L4/><Chinese>拒绝说话</Chinese><French>Refuses to Talk</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__REFUSESTOTALK_HOVER</Tag>
+		<English>勾选后，当一个文明改变了他们谈判的意愿时，显示警告。</English>
+		<L1/><L2/><L3/><L4/><Chinese>勾选后，当一个文明改变了他们谈判的意愿时，显示警告。</Chinese><French>When checked, displays an alert when a civilization changes their willingness to negotiate.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__WORSTENEMY_TEXT</Tag>
+		<English>最坏的敌人</English>
+		<L1/><L2/><L3/><L4/><Chinese>最坏的敌人</Chinese><French>Worst Enemy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__WORSTENEMY_HOVER</Tag>
+		<English>勾选后，当文明最坏的敌人改变时显示警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>勾选后，当文明最坏的敌人改变时显示警报。</Chinese><French>When checked, displays an alert when a civilization's worst enemy changes.</French></TEXT>
+<!-- Trade -->
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__GOLDTRADE_TEXT</Tag>
+		<English>黄金</English>
+		<L1/><L2/><L3/><L4/><Chinese>黄金</Chinese><French>Gold</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__GOLDTRADE_HOVER</Tag>
+		<English>选中时，当文明可以交易指定数量的黄金时显示警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中时，当文明可以交易指定数量的黄金时显示警报。</Chinese><French>When checked, displays an alert when a civilization can trade a specified amount of gold.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__GOLDTRADETHRESH_TEXT</Tag>
+		<English>阈值</English>
+		<L1/><L2/><L3/><L4/><Chinese>阈值</Chinese><French>Threshold</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__GOLDTRADETHRESH_HOVER</Tag>
+		<English>确定将显示警报的黄金量的阈值。</English>
+		<L1/><L2/><L3/><L4/><Chinese>确定将显示警报的黄金量的阈值。</Chinese><French>Determines the threshold for the amount of gold that will display an alert.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__GOLDPERTURNTRADE_TEXT</Tag>
+		<English>每回合黄金</English>
+		<L1/><L2/><L3/><L4/><Chinese>每回合黄金</Chinese><French>Gold Per Turn</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__GOLDPERTURNTRADE_HOVER</Tag>
+		<English>选中此选项后，当一个文明可以每回合交易指定数量的黄金时，将显示警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中此选项后，当一个文明可以每回合交易指定数量的黄金时，将显示警报。</Chinese><French>When checked, displays an alert when a civilization can trade a specified amount of gold per turn.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__GOLDPERTURNTRADETHRESH_TEXT</Tag>
+		<English>阈值</English>
+		<L1/><L2/><L3/><L4/><Chinese>阈值</Chinese><French>Threshold</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_CIV4LERTS__GOLDPERTURNTRADETHRESH_HOVER</Tag>
+		<English>确定每回合显示警报的黄金阈值。</English>
+		<L1/><L2/><L3/><L4/><Chinese>确定每回合显示警报的黄金阈值。</Chinese><French>Determines the threshold for gold per turn that will display an alert.</French></TEXT>
+
+<!-- Civ4lerts_CIV4GameText -->
+
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_REFUSES_TO_TALK</Tag>
+		<English>[COLOR_NEGATIVE_TEXT]%s1 拒绝谈判！.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_NEGATIVE_TEXT]%s1 拒绝谈判！.[COLOR_REVERT]</Chinese><French>[COLOR_NEGATIVE_TEXT]%s1 refuses to talk.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_WILLING_TO_TALK</Tag>
+		<English>[COLOR_POSITIVE_TEXT]%s1 打算谈判.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_POSITIVE_TEXT]%s1 打算谈判.[COLOR_REVERT]</Chinese><French>[COLOR_POSITIVE_TEXT]%s1 is willing to negotiate.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_YOU_WORST_ENEMY</Tag>
+		<English>[COLOR_NEGATIVE_TEXT]你是 %s1的最坏的敌人.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_NEGATIVE_TEXT]你是 %s1的最坏的敌人.[COLOR_REVERT]</Chinese><French>[COLOR_NEGATIVE_TEXT]You are the worst enemy of %s1.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_WORST_ENEMY</Tag>
+		<English>[COLOR_YIELD_FOOD]%s2 是 %s1的最坏敌人.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_YIELD_FOOD]%s2 是 %s1的最坏敌人.[COLOR_REVERT]</Chinese><French>[COLOR_YIELD_FOOD]%s2 is the worst enemy of %s1.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_SWITCH_WORST_ENEMY_FROM_YOU</Tag>
+		<English>[COLOR_YIELD_FOOD]%s2 是 %s1 新的最坏敌人 (曾经是你).[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_YIELD_FOOD]%s2 是 %s1 新的最坏敌人 (曾经是你).[COLOR_REVERT]</Chinese><French>[COLOR_YIELD_FOOD]%s2 is the new worst enemy of %s1 (was you).[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_SWITCH_WORST_ENEMY_TO_YOU</Tag>
+		<English>[COLOR_NEGATIVE_TEXT]你是 %s1 的最坏的敌人 (曾经是 %s2).[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_NEGATIVE_TEXT]你是 %s1 的最坏的敌人 (曾经是 %s2).[COLOR_REVERT]</Chinese><French>[COLOR_NEGATIVE_TEXT]You are the new worst enemy of %s1 (was %s2).[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_SWITCH_WORST_ENEMY</Tag>
+		<English>[COLOR_YIELD_FOOD]%s2 是 %s1 新的最坏敌人 (曾经是 %s3).[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_YIELD_FOOD]%s2 是 %s1 新的最坏敌人 (曾经是 %s3).[COLOR_REVERT]</Chinese><French>[COLOR_YIELD_FOOD]%s2 is the new worst enemy of %s1 (was %s3).[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_NO_WORST_ENEMY</Tag>
+		<English>[COLOR_POSITIVE_TEXT]%s2 不再是 %s1的最坏的敌人.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_POSITIVE_TEXT]%s2 不再是 %s1的最坏的敌人.[COLOR_REVERT]</Chinese><French>[COLOR_POSITIVE_TEXT]%s2 is no longer the worst enemy of %s1.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_YOU_NO_WORST_ENEMY</Tag>
+		<English>[COLOR_POSITIVE_TEXT]你不再是 %s1 最坏的敌人 .[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_POSITIVE_TEXT]你不再是 %s1 最坏的敌人 .[COLOR_REVERT]</Chinese><French>[COLOR_POSITIVE_TEXT]You are no longer the worst enemy of %s1.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_GOLD_TRADE</Tag>
+		<English>[COLOR_YIELD_COMMERCE]%s1 有 %d2 金币用来贸易.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_YIELD_COMMERCE]%s1 有 %d2 金币用来贸易.[COLOR_REVERT]</Chinese><French>[COLOR_YIELD_COMMERCE]%s1 has %d2 gold available for trade.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_SLAVE_TRADE</Tag>
+		<English>[COLOR_YIELD_COMMERCE]%s1 有 %d2 奴隶用来交易.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_YIELD_COMMERCE]%s1 有 %d2 奴隶用来交易.[COLOR_REVERT]</Chinese><French>[COLOR_YIELD_COMMERCE]%s1 has %d2 slaves available for trade.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_GOLD_PER_TURN_TRADE</Tag>
+		<English>[COLOR_YIELD_COMMERCE]%s1 有 %d2 回合金用来贸易[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_YIELD_COMMERCE]%s1 有 %d2 回合金用来贸易[COLOR_REVERT]</Chinese><French>[COLOR_YIELD_COMMERCE]%s1 has %d2 gold per turn available for trade.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_PENDING_GROWTH</Tag>
+		<English>[COLOR_YIELD_FOOD]%s1 下一回合会增长到 %d2 .[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_YIELD_FOOD]%s1 下一回合会增长到 %d2 .[COLOR_REVERT]</Chinese><French>[COLOR_YIELD_FOOD]%s1 will grow to size %d2 on the next turn.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_PENDING_SHRINKAGE</Tag>
+		<English>[COLOR_WARNING_TEXT]%s1 下一回合会缩减到 %d2 [COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]%s1 下一回合会缩减到 %d2 [COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]%s1 will shrink to size %d2 on the next turn.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_PENDING_UNHEALTHY</Tag>
+		<English>[COLOR_WARNING_TEXT]%s1 下一回合会变为不健康.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]%s1 下一回合会变为不健康.[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]%s1 will become unhealthy on the next turn.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_PENDING_HEALTHY</Tag>
+		<English>[COLOR_POSITIVE_TEXT]%s1 下一回合会变为健康.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_POSITIVE_TEXT]%s1 下一回合会变为健康.[COLOR_REVERT]</Chinese><French>[COLOR_POSITIVE_TEXT]%s1 will become healthy on the next turn.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_PENDING_UNHAPPY</Tag>
+		<English>[COLOR_WARNING_TEXT]%s1 下一回合会变为不开心.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]%s1 下一回合会变为不开心.[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]%s1 will become unhappy on the next turn.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_PENDING_HAPPY</Tag>
+		<English>[COLOR_POSITIVE_TEXT]%s1 下一回合会变为开心.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_POSITIVE_TEXT]%s1 下一回合会变为开心.[COLOR_REVERT]</Chinese><French>[COLOR_POSITIVE_TEXT]%s1 will become happy on the next turn.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_UNHEALTHY</Tag>
+		<English>[COLOR_WARNING_TEXT]%s1 变得不健康.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]%s1 变得不健康.[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]%s1 has become unhealthy.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_HEALTHY</Tag>
+		<English>[COLOR_POSITIVE_TEXT]%s1 变为不健康.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_POSITIVE_TEXT]%s1 变为不健康.[COLOR_REVERT]</Chinese><French>[COLOR_POSITIVE_TEXT]%s1 has become healthy.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_UNHAPPY</Tag>
+		<English>[COLOR_WARNING_TEXT]%s1 变得不开心.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]%s1 变得不开心.[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]%s1 has become unhappy.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_HAPPY</Tag>
+		<English>[COLOR_POSITIVE_TEXT]%s1 变为开心.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_POSITIVE_TEXT]%s1 变为开心.[COLOR_REVERT]</Chinese><French>[COLOR_POSITIVE_TEXT]%s1 has become happy.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_GROWTH</Tag>
+		<English>[COLOR_YIELD_FOOD]%s1 的人口已经增长到 %d2.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_YIELD_FOOD]%s1 的人口已经增长到 %d2.[COLOR_REVERT]</Chinese><French>[COLOR_YIELD_FOOD]%s1 has grown to size %d2.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_SHRINKAGE</Tag>
+		<English>[COLOR_WARNING_TEXT]%s1 的人口缩减到 %d2.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]%s1 的人口缩减到 %d2.[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]%s1 has shrunk to size %d2.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_PENDING_PACIFIED</Tag>
+		<English>[COLOR_POSITIVE_TEXT]%s1 下一回合将要和平.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_POSITIVE_TEXT]%s1 下一回合将要和平.[COLOR_REVERT]</Chinese><French>[COLOR_POSITIVE_TEXT]%s1 will be pacified on the next turn.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_PACIFIED</Tag>
+		<English>[COLOR_POSITIVE_TEXT]%s1 已经和平了.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_POSITIVE_TEXT]%s1 已经和平了.[COLOR_REVERT]</Chinese><French>[COLOR_POSITIVE_TEXT]%s1 has been pacified.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_CAN_HURRY_POP</Tag>
+		<English>[COLOR_YIELD_FOOD]%s1 可以加速 %s2 for %d3[ICON_ANGRYPOP] with %d4[ICON_PRODUCTION] 溢出，并增加1个[ICON_UNHAPPY] 持续 %d5 回合.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_YIELD_FOOD]%s1 可以加速 %s2 for %d3[ICON_ANGRYPOP] with %d4[ICON_PRODUCTION] 溢出，并增加1个[ICON_UNHAPPY] 持续 %d5 回合.[COLOR_REVERT]</Chinese><French>[COLOR_YIELD_FOOD]%s1 can hurry %s2 for %d3[ICON_ANGRYPOP] with %d4[ICON_PRODUCTION] overflow and +1[ICON_UNHAPPY] for %d5 turns.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_CAN_HURRY_POP_PLUS_GOLD</Tag>
+		<English>[COLOR_YIELD_FOOD]%s1 可以加速 %s2 for %d3[ICON_ANGRYPOP] with %d4[ICON_PRODUCTION] 溢出, %d6[ICON_GOLD] 增加到国库, 并增加1个[ICON_UNHAPPY] 持续 %d5  回合.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_YIELD_FOOD]%s1 可以加速 %s2 for %d3[ICON_ANGRYPOP] with %d4[ICON_PRODUCTION] 溢出, %d6[ICON_GOLD] 增加到国库, 并增加1个[ICON_UNHAPPY] 持续 %d5  回合.[COLOR_REVERT]</Chinese><French>[COLOR_YIELD_FOOD]%s1 can hurry %s2 for %d3[ICON_ANGRYPOP] with %d4[ICON_PRODUCTION] overflow, %d6[ICON_GOLD] added to the treasury, and +1[ICON_UNHAPPY] for %d5 turns.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV4LERTS_ON_CITY_CAN_HURRY_GOLD</Tag>
+		<English>[COLOR_YIELD_FOOD]%s1 可以加速 %s2 for %d3[ICON_GOLD].[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_YIELD_FOOD]%s1 可以加速 %s2 for %d3[ICON_GOLD].[COLOR_REVERT]</Chinese><French>[COLOR_YIELD_FOOD]%s1 can hurry %s2 for %d3[ICON_GOLD].[COLOR_REVERT]</French></TEXT>
+
+<!-- MoreCiv4alerts Options -->
+
+<!-- Cities -->
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__CITYFOUNDED_TEXT</Tag>
+		<English>竞争对手建立的城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>竞争对手建立的城市</Chinese><French>City Founded by Rival</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__CITYFOUNDED_HOVER</Tag>
+		<English>选中时，当竞争对手发现城市时显示警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中时，当竞争对手发现城市时显示警报。</Chinese><French>When checked, displays an alert when a rival founds a city.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__CITYPENDINGBORDEREXPANSION_TEXT</Tag>
+		<English>待扩展边界</English>
+		<L1/><L2/><L3/><L4/><Chinese>待扩展边界</Chinese><French>Pending Border Expansion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__CITYPENDINGBORDEREXPANSION_HOVER</Tag>
+		<English>选中时，显示下一轮城市将扩展其文化边界时的警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中时，显示下一轮城市将扩展其文化边界时的警报。</Chinese><French>When checked, displays an alert when a city will expand its cultural borders next turn.</French></TEXT>
+<!-- Diplomacy -->
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__OPENBORDERSTRADE_TEXT</Tag>
+		<English>开放边界</English>
+		<L1/><L2/><L3/><L4/><Chinese>开放边界</Chinese><French>Open Borders</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__OPENBORDERSTRADE_HOVER</Tag>
+		<English>勾选后，当一个文明愿意签署“开放边界”协议时，显示警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>勾选后，当一个文明愿意签署“开放边界”协议时，显示警报。</Chinese><French>When checked, displays an alert when a civilization is willing to sign an "Open Borders" agreement.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__DEFENSIVEPACTTRADE_TEXT</Tag>
+		<English>防御协定</English>
+		<L1/><L2/><L3/><L4/><Chinese>防御协定</Chinese><French>Defensive Pact</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__DEFENSIVEPACTTRADE_HOVER</Tag>
+		<English>勾选后，当一个文明愿意签署“防御协议”时，显示警告。</English>
+		<L1/><L2/><L3/><L4/><Chinese>勾选后，当一个文明愿意签署“防御协议”时，显示警告。</Chinese><French>When checked, displays an alert when a civilization is willing to sign a "Defensive Pact" agreement.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__PERMANENTALLIANCETRADE_TEXT</Tag>
+		<English>永久联盟</English>
+		<L1/><L2/><L3/><L4/><Chinese>永久联盟</Chinese><French>Permanent Alliance</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__PERMANENTALLIANCETRADE_HOVER</Tag>
+		<English>勾选后，当一个文明愿意签署“永久联盟”协议时，将显示警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>勾选后，当一个文明愿意签署“永久联盟”协议时，将显示警报。</Chinese><French>When checked, displays an alert when a civilization is willing to sign a "Permanent Alliance" agreement.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__VASSALTRADE_TEXT</Tag>
+		<English>附庸</English>
+		<L1/><L2/><L3/><L4/><Chinese>附庸</Chinese><French>Vassal</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__VASSALTRADE_HOVER</Tag>
+		<English>勾选后，当一个文明愿意成为你的附庸时，显示警告。</English>
+		<L1/><L2/><L3/><L4/><Chinese>勾选后，当一个文明愿意成为你的附庸时，显示警告。</Chinese><French>When checked, displays an alert when a civilization is willing to become your vassal.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__PEACETRADE_TEXT</Tag>
+		<English>和平条约</English>
+		<L1/><L2/><L3/><L4/><Chinese>和平条约</Chinese><French>Peace Treaty</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__PEACETRADE_HOVER</Tag>
+		<English>如果选中，则在文明愿意签署和平条约时显示警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>如果选中，则在文明愿意签署和平条约时显示警报。</Chinese><French>When checked, displays an alert when a civilization is willing to sign a Peace Treaty.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__SURRENDERTRADE_TEXT</Tag>
+		<English>投降</English>
+		<L1/><L2/><L3/><L4/><Chinese>投降</Chinese><French>Capitulation</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__SURRENDERTRADE_HOVER</Tag>
+		<English>勾选后，当一个文明愿意在战争中投降时显示警告。</English>
+		<L1/><L2/><L3/><L4/><Chinese>勾选后，当一个文明愿意在战争中投降时显示警告。</Chinese><French>When checked, displays an alert when a civilization is willing to capitulate during war.</French></TEXT>
+<!-- Trade -->
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__TECHTRADE_TEXT</Tag>
+		<English>技术</English>
+		<L1/><L2/><L3/><L4/><Chinese>技术</Chinese><French>Technologies</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__TECHTRADE_HOVER</Tag>
+		<English>勾选后，当一个文明愿意交换技术时显示警告。</English>
+		<L1/><L2/><L3/><L4/><Chinese>勾选后，当一个文明愿意交换技术时显示警告。</Chinese><French>When checked, displays an alert when a civilization is willing to trade technologies.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__BONUSTRADE_TEXT</Tag>
+		<English>资源</English>
+		<L1/><L2/><L3/><L4/><Chinese>资源</Chinese><French>Resources</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__BONUSTRADE_HOVER</Tag>
+		<English>选中时，显示文明愿意交换资源时的警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中时，显示文明愿意交换资源时的警报。</Chinese><French>When checked, displays an alert when a civilization is willing to trade resources.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__MAPTRADE_TEXT</Tag>
+		<English>地图</English>
+		<L1/><L2/><L3/><L4/><Chinese>地图</Chinese><French>Maps</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__MAPTRADE_HOVER</Tag>
+		<English>选中时，显示文明愿意交换地图时的警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中时，显示文明愿意交换地图时的警报。</Chinese><French>When checked, displays an alert when a civilization is willing to trade their map.</French></TEXT>
+<!-- Victory -->
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__DOMPOP_TEXT</Tag>
+		<English>统治：人口</English>
+		<L1/><L2/><L3/><L4/><Chinese>统治：人口</Chinese><French>Domination: Population</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__DOMPOP_HOVER</Tag>
+		<English>选中时，当您的人口接近或超过统治胜利的限制时显示警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>选中时，当您的人口接近或超过统治胜利的限制时显示警报。</Chinese><French>When checked, displays an alert when your population is close to or exceeds the limit for a Domination victory.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__DOMPOPTHRESH_TEXT</Tag>
+		<English>弹出阈值</English>
+		<L1/><L2/><L3/><L4/><Chinese>弹出阈值</Chinese><French>Pop Threshold</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__DOMPOPTHRESH_HOVER</Tag>
+		<English>统治胜利的人口门槛。</English>
+		<L1/><L2/><L3/><L4/><Chinese>统治胜利的人口门槛。</Chinese><French>Population threshold for Domination victory.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__DOMLAND_TEXT</Tag>
+		<English>统治：土地</English>
+		<L1/><L2/><L3/><L4/><Chinese>统治：土地</Chinese><French>Domination: Land</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__DOMLAND_HOVER</Tag>
+		<English>勾选后，当您的土地面积接近或超过统治胜利的限制时，显示警报。</English>
+		<L1/><L2/><L3/><L4/><Chinese>勾选后，当您的土地面积接近或超过统治胜利的限制时，显示警报。</Chinese><French>When checked, displays an alert when your land area is close to or exceeds the limit for a Domination victory.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__DOMLANDTHRESH_TEXT</Tag>
+		<English>土地阈值</English>
+		<L1/><L2/><L3/><L4/><Chinese>土地阈值</Chinese><French>Land Threshold</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__DOMLANDTHRESH_HOVER</Tag>
+		<English>统治胜利的土地门槛。</English>
+		<L1/><L2/><L3/><L4/><Chinese>统治胜利的土地门槛。</Chinese><French>Land threshold for Domination victory.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__SHOWUHVFAILPOPUP_TEXT</Tag>
+		<English>UHV失败提示</English>
+		<L1/><L2/><L3/><L4/><Chinese>UHV失败提示</Chinese><French>UHV Fail Popup</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUG_OPT_MORECIV4LERTS__SHOWUHVFAILPOPUP_HOVER</Tag>
+		<English>当超高频失败时，一个播放</English>
+		<L1/><L2/><L3/><L4/><Chinese>当超高频失败时，一个播放</Chinese><French>When checked, a popup shows when the UHV fails</French></TEXT>
+
+	<!-- MoreCiv4lerts_CIV4GameText -->
+
+	<TEXT>
+		<Tag>TXT_KEY_MISC_BORDERS_EXPANDED</Tag>
+		<English>[COLOR_MAGENTA]%s1_CityName 的边界已经拓展![COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_MAGENTA]%s1_CityName 的边界已经拓展![COLOR_REVERT]</Chinese><French>[COLOR_MAGENTA]The borders of %s1_CityName have expanded![COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_CITY_TO_EXPAND</Tag>
+		<English>[COLOR_MAGENTA] %s1 的边界准备要拓展了.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_MAGENTA] %s1 的边界准备要拓展了.[COLOR_REVERT]</Chinese><French>[COLOR_MAGENTA]The borders of %s1 are about to expand.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_CITY_NEXT_CULTURE_LEVEL</Tag>
+		<English>[COLOR_MAGENTA]%s1 准备要达到新的文化高度.[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_MAGENTA]%s1 准备要达到新的文化高度.[COLOR_REVERT]</Chinese><French>[COLOR_MAGENTA]%s1 is about to reach a new culture level.[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_CITY_FOUNDED</Tag>
+		<English>%s1_Player 已经创建 %s2_City.</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1_Player 已经创建 %s2_City.</Chinese><French>%s1_Player has founded %s2_City.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_CITY_FOUNDED_UNSEEN</Tag>
+		<English>%s1_Player 在遥远的地方已经创建 %s2_City .</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1_Player 在遥远的地方已经创建 %s2_City .</Chinese><French>%s1_Player has founded %s2_City in a distant land.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_POP_EXCEEDS_LIMIT</Tag>
+		<English>[COLOR_WARNING_TEXT]你的人口:%d1 (%s2)超过统治性要求: %d3 (%s4)[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]你的人口:%d1 (%s2)超过统治性要求: %d3 (%s4)[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Your population: %d1 (%s2) exceeds the Domination Limit: %d3 (%s4)[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_POP_CLOSE_TO_LIMIT</Tag>
+		<English>[COLOR_WARNING_TEXT]你的人口:%d1 (%s2) 接近统治性要求: %d3 (%s4)[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]你的人口:%d1 (%s2) 接近统治性要求: %d3 (%s4)[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Your population: %d1 (%s2) is close to the Domination Limit: %d3 (%s4)[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_POP_GROWTH_EXCEEDS_LIMIT</Tag>
+		<English>[COLOR_WARNING_TEXT]你的人口:%d1, 加上增长: %d2 (%s3) 会超过统治性要求: %d4 (%s5)[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]你的人口:%d1, 加上增长: %d2 (%s3) 会超过统治性要求: %d4 (%s5)[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Your population: %d1, plus growth: %d2 (%s3) will exceed the Domination Limit: %d4 (%s5)[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_POP_GROWTH_CLOSE_TO_LIMIT</Tag>
+		<English>[COLOR_WARNING_TEXT]你的人口:%d1, 加上增长: %d2 (%s3) 会接近统治性要求: %d4 (%s5)[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]你的人口:%d1, 加上增长: %d2 (%s3) 会接近统治性要求: %d4 (%s5)[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Your population: %d1, plus growth: %d2 (%s3) will put close to the Domination Limit: %d4 (%s5)[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_LAND_EXCEEDS_LIMIT</Tag>
+		<English>[COLOR_WARNING_TEXT]你的国土面积: %d1 (%s2)超过统治性要求: %d3 (%s4)[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]你的国土面积: %d1 (%s2)超过统治性要求: %d3 (%s4)[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Your land area: %d1 (%s2) exceeds the Domination Limit: %d3 (%s4)[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_LAND_CLOSE_TO_LIMIT</Tag>
+		<English>[COLOR_WARNING_TEXT]你的国土面积: %d1 (%s2) is close to 统治性要求: %d3 (%s4)[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_WARNING_TEXT]你的国土面积: %d1 (%s2) is close to 统治性要求: %d3 (%s4)[COLOR_REVERT]</Chinese><French>[COLOR_WARNING_TEXT]Your land area: %d1 (%s2) is close to the Domination Limit: %d3 (%s4)[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_NEW_TECH_AVAIL</Tag>
+		<English>[COLOR_TECH_TEXT]%s1 会交易 %s2[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_TECH_TEXT]%s1 会交易 %s2[COLOR_REVERT]</Chinese><French>[COLOR_TECH_TEXT]%s1 will trade %s2[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_TECH_NOT_AVAIL</Tag>
+		<English>[COLOR_TECH_TEXT]%s1 不会交易 %s2[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_TECH_TEXT]%s1 不会交易 %s2[COLOR_REVERT]</Chinese><French>[COLOR_TECH_TEXT]%s1 won't trade %s2[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_NEW_BONUS_AVAIL</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]%s1 会交易 %s2[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_HIGHLIGHT_TEXT]%s1 会交易 %s2[COLOR_REVERT]</Chinese><French>[COLOR_HIGHLIGHT_TEXT]%s1 will trade %s2[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_BONUS_NOT_AVAIL</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]%s1 不会交易 %s2[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_HIGHLIGHT_TEXT]%s1 不会交易 %s2[COLOR_REVERT]</Chinese><French>[COLOR_HIGHLIGHT_TEXT]%s1 won't trade %s2[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_MAP</Tag>
+		<English>[COLOR_TECH_TEXT]会交易地图: %s1[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_TECH_TEXT]会交易地图: %s1[COLOR_REVERT]</Chinese><French>[COLOR_TECH_TEXT]Will Trade Map: %s1[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_OPEN_BORDERS</Tag>
+		<English>[COLOR_TECH_TEXT]会签署边界开放条约: %s1[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_TECH_TEXT]会签署边界开放条约: %s1[COLOR_REVERT]</Chinese><French>[COLOR_TECH_TEXT]Will Sign Open Borders: %s1[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_DEFENSIVE_PACT</Tag>
+		<English>[COLOR_TECH_TEXT]会签署共同防御协定: %s1[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_TECH_TEXT]会签署共同防御协定: %s1[COLOR_REVERT]</Chinese><French>[COLOR_TECH_TEXT]Will Sign a Defensive Pact: %s1[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_PERMANENT_ALLIANCE</Tag>
+		<English>[COLOR_TECH_TEXT]会签署永久联盟条约: %s1[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_TECH_TEXT]会签署永久联盟条约: %s1[COLOR_REVERT]</Chinese><French>[COLOR_TECH_TEXT]Will Sign a Permanent Alliance: %s1[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_VASSAL</Tag>
+		<English>[COLOR_TECH_TEXT]会变成附庸: %s1[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_TECH_TEXT]会变成附庸: %s1[COLOR_REVERT]</Chinese><French>[COLOR_TECH_TEXT]Will Become a Vassal: %s1[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_SURRENDER</Tag>
+		<English>[COLOR_TECH_TEXT]会投降: %s1[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_TECH_TEXT]会投降: %s1[COLOR_REVERT]</Chinese><French>[COLOR_TECH_TEXT]Will Capitulate: %s1[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MORECIV4LERTS_PEACE_TREATY</Tag>
+		<English>[COLOR_TECH_TEXT]会签署边界和平条约: %s1[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_TECH_TEXT]会签署边界和平条约: %s1[COLOR_REVERT]</Chinese><French>[COLOR_TECH_TEXT]Will Sign Peace Treaty: %s1[COLOR_REVERT]</French></TEXT>
+</Civ4GameText>

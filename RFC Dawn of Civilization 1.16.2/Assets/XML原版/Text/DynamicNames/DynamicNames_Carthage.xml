@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Carthage -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHOENICIA_DESC</Tag>
+		<English>腓尼基文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>腓尼基文明</Chinese><French>The Phoenicians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHOENICIA_SHORT_DESC</Tag>
+		<English>Phoenicia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Phoenicia</Chinese><French>Phoenicia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHOENICIA_ADJECTIVE</Tag>
+		<English>Phoenicia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Phoenicia</Chinese><French>Phoenician</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHOENICIA_PEOPLES</Tag>
+		<English>腓尼基</English>
+		<L1/><L2/><L3/><L4/><Chinese>腓尼基</Chinese><French>Canaanite Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHOENICIA_DEFAULT</Tag>
+		<English>Phoenicia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Phoenicia</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHOENICIA_REPUBLIC</Tag>
+		<English>黎巴嫩（腓尼基）</English>
+		<L1/><L2/><L3/><L4/><Chinese>黎巴嫩（腓尼基）</Chinese><French>Lebanese Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHOENICIA_COMMUNIST</Tag>
+		<English>黎巴嫩人民共和国（腓尼基）</English>
+		<L1/><L2/><L3/><L4/><Chinese>黎巴嫩人民共和国（腓尼基）</Chinese><French>People's Republic of Lebanon</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHOENICIA_FASCIST</Tag>
+		<English>黎巴嫩国（腓尼基）</English>
+		<L1/><L2/><L3/><L4/><Chinese>黎巴嫩国（腓尼基）</Chinese><French>National Lebanon</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CARTHAGE_REPUBLIC</Tag>
+		<English>腓尼基</English>
+		<L1/><L2/><L3/><L4/><Chinese>腓尼基</Chinese><French>Punic Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CARTHAGE_COMMUNIST</Tag>
+		<English>腓尼基</English>
+		<L1/><L2/><L3/><L4/><Chinese>腓尼基</Chinese><French>Punic People's Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CARTHAGE_FASCIST</Tag>
+		<English>新迦太基帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>新迦太基帝国</Chinese><French>New Carthaginian Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CARTHAGE_DEFAULT</Tag>
+		<English>Carthage</English>
+		<L1/><L2/><L3/><L4/><Chinese>Carthage</Chinese><French>Carthaginian Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CARTHAGE_EMPIRE</Tag>
+		<English>迦太基帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>迦太基帝国</Chinese><French>Carthaginian Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CARTHAGE_ADJECTIVE</Tag>
+		<English>
+			<Text>Carthaginian</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<L1/><L2/><L3/><L4/><French>Carthaginian Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CARTHAGE_SHORT_DESC</Tag>
+		<English>Carthage</English>
+		<L1/><L2/><L3/><L4/><Chinese>Carthage</Chinese><French>Carthage</French></TEXT>
+</Civ4GameText>

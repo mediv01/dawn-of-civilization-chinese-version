@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Projects -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_</Tag>
+		<English/>
+		<L1/><L2/><L3/><L4/><French></French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_INTERSTELLAR_PROBE</Tag>
+		<English>星际探测器</English>
+		<L1/><L2/><L3/><L4/><Chinese>星际探测器</Chinese><French>Interstellar Probe</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_HUMAN_GENOME_PROJECT</Tag>
+		<English>人类基因组计划</English>
+		<L1/><L2/><L3/><L4/><Chinese>人类基因组计划</Chinese><French>Human Genome Project</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_HUMAN_GENOME_PROJECT_HELP</Tag>
+		<English>[ICON_BULLET]+1[ICON_FOOD]用于[LINK=literal]镇[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]+1[ICON_FOOD]用于[LINK=literal]镇[\LINK]</Chinese><French>[ICON_BULLET]+1[ICON_FOOD] for [LINK=literal]Town[\LINK]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_HUMAN_GENOME_PROJECT_IMPROVEMENT_HELP</Tag>
+		<English>[ICON_BULLET]+1[ICON_FOOD]和[LINK=literal]人类基因组计划[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]+1[ICON_FOOD]和[LINK=literal]人类基因组计划[\LINK]</Chinese><French>[ICON_BULLET]+1[ICON_FOOD] with [LINK=literal]Human Genome Project[\LINK]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_THE_INTERNET_HELP</Tag>
+		<English>[ICON_BULLET]+1[ICON_COMMERCE] 每个专家</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]+1[ICON_COMMERCE] 每个专家</Chinese><French>[ICON_BULLET]+1[ICON_COMMERCE] per Specialist</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MARS_FRAMING</Tag>
+		<English>火星农场</English>
+		<L1/><L2/><L3/><L4/><Chinese>火星农场</Chinese><French>Mars Framing</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MARS_POWER_SOURCE</Tag>
+		<English>火星能源</English>
+		<L1/><L2/><L3/><L4/><Chinese>火星能源</Chinese><French>Mars Power Source</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MARS_EXTRACTOR</Tag>
+		<English>火星提取器</English>
+		<L1/><L2/><L3/><L4/><Chinese>火星提取器</Chinese><French>Mars Extractor</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MARS_HABITAT</Tag>
+		<English>火星栖息地</English>
+		<L1/><L2/><L3/><L4/><Chinese>火星栖息地</Chinese><French>Mars Habitat</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MARS_HYDROPONICS</Tag>
+		<English>火星水培</English>
+		<L1/><L2/><L3/><L4/><Chinese>火星水培</Chinese><French>Mars Hydroponics</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MARS_LABORATORY</Tag>
+		<English>火星实验室</English>
+		<L1/><L2/><L3/><L4/><Chinese>火星实验室</Chinese><French>Mars Laboratory</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MARS_CONTROL_CENTER</Tag>
+		<English>火星控制中心</English>
+		<L1/><L2/><L3/><L4/><Chinese>火星控制中心</Chinese><French>Mars Control Center</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_GOLDEN_RECORD</Tag>
+		<English>黄金唱片</English>
+		<L1/><L2/><L3/><L4/><Chinese>黄金唱片</Chinese><French>Golden Record</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_GOLDEN_RECORD_HELP</Tag>
+		<English>[ICON_BULLET]+3[ICON_CULTURE] 卫星[NEWLINE][ICON_BULLET]一半的宇宙飞船生产修正也会增加文化输出</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]+3[ICON_CULTURE] 卫星[NEWLINE][ICON_BULLET]一半的宇宙飞船生产修正也会增加文化输出</Chinese><French>[ICON_BULLET]+3[ICON_CULTURE] for Satellites[NEWLINE][ICON_BULLET]Half the spaceship production modifier also increases culture output</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_LUNAR_COLONY</Tag>
+		<English>月球殖民地</English>
+		<L1/><L2/><L3/><L4/><Chinese>月球殖民地</Chinese><French>Lunar Colony</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_LUNAR_COLONY_HELP</Tag>
+		<English>[ICON_BULLET]+2[ICON_PRODUCTION] 用于卫星</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]+2[ICON_PRODUCTION] 用于卫星</Chinese><French>[ICON_BULLET]+2[ICON_PRODUCTION] for Satellites</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_STATEGIC_DEFENSE_INITIATIVE</Tag>
+		<English>战略防御计划</English>
+		<L1/><L2/><L3/><L4/><Chinese>战略防御计划</Chinese><French>Strategic Defense Initiative</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_GLOBAL_POSITIONING_SYSTEM</Tag>
+		<English>全球定位系统</English>
+		<L1/><L2/><L3/><L4/><Chinese>全球定位系统</Chinese><French>Global Positioning System</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_INTERNATIONAL_SPACE_STATION</Tag>
+		<English>国际空间站</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际空间站</Chinese><French>International Space Station</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_INTERNATIONAL_SPACE_STATION_HELP</Tag>
+		<English>[ICON_BULLET]+2[ICON_GREATPEOPLE] 用于卫星</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]+2[ICON_GREATPEOPLE] 用于卫星</Chinese><French>[ICON_BULLET]+2[ICON_GREATPEOPLE] for Satellites</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_BALLISTIC_MISSILE</Tag>
+		<English>弹道导弹</English>
+		<L1/><L2/><L3/><L4/><Chinese>弹道导弹</Chinese><French>Ballistic Missile</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_FIRST_SATELLITE</Tag>
+		<English>第一颗卫星</English>
+		<L1/><L2/><L3/><L4/><Chinese>第一颗卫星</Chinese><French>First Satellite</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MAN_IN_SPACE</Tag>
+		<English>太空人</English>
+		<L1/><L2/><L3/><L4/><Chinese>太空人</Chinese><French>Man in Space</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_LUNAR_LANDING</Tag>
+		<English>登月</English>
+		<L1/><L2/><L3/><L4/><Chinese>登月</Chinese><French>Lunar Landing</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MARS_MISSION</Tag>
+		<English>火星任务</English>
+		<L1/><L2/><L3/><L4/><Chinese>火星任务</Chinese><French>Mission to Mars</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_APOLLO_PROGRAM_STRATEGY</Tag>
+		<English>用于建造太空飞船组件。</English>
+		<L1/><L2/><L3/><L4/><Chinese>用于建造太空飞船组件。</Chinese><French>The [COLOR_PROJECT_TEXT]Apollo Program[COLOR_REVERT] is required to create the [COLOR_PROJECT_TEXT]SS Cockpit[COLOR_REVERT], [COLOR_PROJECT_TEXT]SS Life Support[COLOR_REVERT], [COLOR_PROJECT_TEXT]SS Stasis Chamber[COLOR_REVERT], [COLOR_PROJECT_TEXT]SS Docking Bay[COLOR_REVERT], [COLOR_PROJECT_TEXT]SS Engines[COLOR_REVERT], [COLOR_PROJECT_TEXT]SS Casings[COLOR_REVERT] and [COLOR_PROJECT_TEXT]SS Thrusters[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_PERSECUTION</Tag>
+		<English>宗教审判</English>
+		<L1/><L2/><L3/><L4/><Chinese>宗教审判</Chinese><French>Persecution</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_PERSECUTION_HELP</Tag>
+		<English>[ICON_BULLET]从这座城市中移除非官方宗教[NEWLINE][ICON_BULLET]这将导致叛乱和不满</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]从这座城市中移除非官方宗教[NEWLINE][ICON_BULLET]这将导致叛乱和不满</Chinese><French>[ICON_BULLET]Removes one non-state religion from this city[NEWLINE][ICON_BULLET]Causes temporary disorder and unhappiness</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MANHATTAN_PROJECT_STRATEGY</Tag>
+		<English>所有玩家可建造[COLOR_UNIT_TEXT]战略导弹[COLOR_REVERT]与[COLOR_BUILDING_TEXT]防空洞[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>所有玩家可建造[COLOR_UNIT_TEXT]战略导弹[COLOR_REVERT]与[COLOR_BUILDING_TEXT]防空洞[COLOR_REVERT]。</Chinese><French>The [COLOR_PROJECT_TEXT]Manhattan Project[COLOR_REVERT] is required to create [COLOR_PROJECT_TEXT]SDI[COLOR_REVERT]. It also allows you to construct [COLOR_UNIT_TEXT]ICBMs[COLOR_REVERT], [COLOR_UNIT_TEXT]Tactical Nukes[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SDI_STRATEGY</Tag>
+		<English>+75%%几率拦截[COLOR_UNIT_TEXT]战略导弹[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>+75%%几率拦截[COLOR_UNIT_TEXT]战略导弹[COLOR_REVERT]。</Chinese><French>[COLOR_PROJECT_TEXT]SDI[COLOR_REVERT] gives a fifty percent chance of intercepting nukes.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SPACE_CASING_STRATEGY</Tag>
+		<English>[COLOR_PROJECT_TEXT]SS外壳[COLOR_REVERT]需要达到[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。增加飞船成功执行任务的机会。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_PROJECT_TEXT]SS外壳[COLOR_REVERT]需要达到[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。增加飞船成功执行任务的机会。</Chinese><French>[COLOR_PROJECT_TEXT]SS Casings[COLOR_REVERT] are required to achieve the [COLOR_HIGHLIGHT_TEXT]Space Race[COLOR_REVERT] victory condition. Increases the chance of a successful mission for the spaceship.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SPACE_COCKPIT_STRATEGY</Tag>
+		<English>需要使用[COLOR_PROJECT_TEXT]SS驾驶舱[COLOR_REVERT]来实现[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。</English>
+		<L1/><L2/><L3/><L4/><Chinese>需要使用[COLOR_PROJECT_TEXT]SS驾驶舱[COLOR_REVERT]来实现[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。</Chinese><French>The [COLOR_PROJECT_TEXT]SS Cockpit[COLOR_REVERT] is required to achieve the [COLOR_HIGHLIGHT_TEXT]Space Race[COLOR_REVERT] victory condition.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SPACE_DOCKING_BAY_STRATEGY</Tag>
+		<English>需要使用[COLOR_PROJECT_TEXT]SS对接架[COLOR_REVERT]才能达到[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。</English>
+		<L1/><L2/><L3/><L4/><Chinese>需要使用[COLOR_PROJECT_TEXT]SS对接架[COLOR_REVERT]才能达到[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。</Chinese><French>The [COLOR_PROJECT_TEXT]SS Docking Bay[COLOR_REVERT] is required to achieve the [COLOR_HIGHLIGHT_TEXT]Space Race[COLOR_REVERT] victory condition.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SPACE_ENGINE_STRATEGY</Tag>
+		<English>[COLOR_PROJECT_TEXT]SS引擎[COLOR_REVERT]需要达到[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。它们还提高了宇宙飞船的速度。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_PROJECT_TEXT]SS引擎[COLOR_REVERT]需要达到[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。它们还提高了宇宙飞船的速度。</Chinese><French>[COLOR_PROJECT_TEXT]SS Engines[COLOR_REVERT] are required to achieve the [COLOR_HIGHLIGHT_TEXT]Space Race[COLOR_REVERT] victory condition. They also increase the speed of the spaceship.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SPACE_LIFE_SUPPORT_STRATEGY</Tag>
+		<English>需要[COLOR_PROJECT_TEXT]SS生命支持[COLOR_REVERT]来实现[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。</English>
+		<L1/><L2/><L3/><L4/><Chinese>需要[COLOR_PROJECT_TEXT]SS生命支持[COLOR_REVERT]来实现[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。</Chinese><French>The [COLOR_PROJECT_TEXT]SS Life Support[COLOR_REVERT] is required to achieve the [COLOR_HIGHLIGHT_TEXT]Space Race[COLOR_REVERT] victory condition.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SPACE_STASIS_STRATEGY</Tag>
+		<English>需要使用[COLOR_PROJECT_TEXT]SS Station Chamber[COLOR_REVERT]来实现[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。</English>
+		<L1/><L2/><L3/><L4/><Chinese>需要使用[COLOR_PROJECT_TEXT]SS Station Chamber[COLOR_REVERT]来实现[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。</Chinese><French>The [COLOR_PROJECT_TEXT]SS Stasis Chamber[COLOR_REVERT] is required to achieve the [COLOR_HIGHLIGHT_TEXT]Space Race[COLOR_REVERT] victory condition.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SPACE_THRUSTERS_STRATEGY</Tag>
+		<English>[COLOR_PROJECT_TEXT]SS推进器需要[COLOR_REVERT]来实现[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。它们还提高了宇宙飞船的速度。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_PROJECT_TEXT]SS推进器需要[COLOR_REVERT]来实现[COLOR_HIGHLIGHT_TEXT]太空竞赛[COLOR_REVERT]的胜利条件。它们还提高了宇宙飞船的速度。</Chinese><French>[COLOR_PROJECT_TEXT]SS Thrusters[COLOR_REVERT] are required to achieve the [COLOR_HIGHLIGHT_TEXT]Space Race[COLOR_REVERT] victory condition. They also increase the speed of the spaceship.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_THE_INTERNET_STRATEGY</Tag>
+		<English>建造者自动获得所有已被两个文明发现的科技。</English>
+		<L1/><L2/><L3/><L4/><Chinese>建造者自动获得所有已被两个文明发现的科技。</Chinese><French>The [COLOR_PROJECT_TEXT]Internet[COLOR_REVERT] grants all technologies that are already discovered by 2 known civilizations.</French></TEXT>
+</Civ4GameText>

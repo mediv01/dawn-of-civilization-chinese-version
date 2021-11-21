@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Mexico -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MEXICO_DESC</Tag>
+		<English>墨西哥文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>墨西哥文明</Chinese><French>The Mexicans</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MEXICO_SHORT_DESC</Tag>
+		<English>Mexico</English>
+		<L1/><L2/><L3/><L4/><Chinese>Mexico</Chinese><French>Mexico</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MEXICO_ADJECTIVE</Tag>
+		<English>墨西哥</English>
+		<L1/><L2/><L3/><L4/><Chinese>墨西哥</Chinese><French>Mexican</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MEXICO_PEOPLES</Tag>
+		<English>墨西哥</English>
+		<L1/><L2/><L3/><L4/><Chinese>墨西哥</Chinese><French>Mexican Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MEXICO_DEFAULT</Tag>
+		<English>Mexico</English>
+		<L1/><L2/><L3/><L4/><Chinese>Mexico</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MEXICO_REPUBLIC</Tag>
+		<English>墨西哥</English>
+		<L1/><L2/><L3/><L4/><Chinese>墨西哥</Chinese><French>United %s2 States</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MEXICO_COMMUNIST</Tag>
+		<English>墨西哥</English>
+		<L1/><L2/><L3/><L4/><Chinese>墨西哥</Chinese><French>Anti-Reelectionist %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MEXICO_FASCIST</Tag>
+		<English>墨西哥</English>
+		<L1/><L2/><L3/><L4/><Chinese>墨西哥</Chinese><French>Synarchist Union of %s1</French></TEXT>
+</Civ4GameText>

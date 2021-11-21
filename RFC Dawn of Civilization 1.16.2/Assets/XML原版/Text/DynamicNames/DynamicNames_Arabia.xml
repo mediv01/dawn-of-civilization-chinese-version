@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Arabia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIA_DESC</Tag>
+		<English>阿拉伯文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯文明</Chinese><French>The Arabs</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIA_PEOPLES</Tag>
+		<English>阿拉伯人</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯人</Chinese><French>Bedouin Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIA_DEFAULT</Tag>
+		<English>Arabia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Arabia</Chinese><French>%s2 Sultanates</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIA_REPUBLIC</Tag>
+		<English>阿拉伯联盟</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯联盟</Chinese><French>Arab League</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIA_FASCIST</Tag>
+		<English>泛阿拉伯国家</English>
+		<L1/><L2/><L3/><L4/><Chinese>泛阿拉伯国家</Chinese><French>Pan Arab State</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIA_COMMUNIST</Tag>
+		<English>阿拉伯复兴党</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯复兴党</Chinese><French>Baathist %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIA_SAUDI</Tag>
+		<English>沙特阿拉伯王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>沙特阿拉伯王国</Chinese><French>Saudi-Arabia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIA_RASHIDUN</Tag>
+		<English>阿拉伯-拉希顿</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯-拉希顿</Chinese><French>Rashidun</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIA_UMMAYAD</Tag>
+		<English>阿拉伯-倭玛亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯-倭玛亚</Chinese><French>Umayyad</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIA_ABBASID</Tag>
+		<English>阿拉伯-阿巴斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯-阿巴斯</Chinese><French>Abbasid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_VASSAL</Tag>
+		<English>%s1 酋长国 </English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 酋长国 </Chinese><French>Emirate of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_NAME_EGYPT</Tag>
+		<English>埃及</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及</Chinese><French>Misr</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_NAME_BABYLONIA</Tag>
+		<English>巴比伦</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦</Chinese><French>Iraq</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_NAME_PERSIA</Tag>
+		<English>波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯</Chinese><French>Fars</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_NAME_CARTHAGE</Tag>
+		<English>迦太基</English>
+		<L1/><L2/><L3/><L4/><Chinese>迦太基</Chinese><French>Ifriqiya</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_NAME_ROME</Tag>
+		<English>罗马</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马</Chinese><French>Italiya</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_NAME_INDONESIA</Tag>
+		<English>印度尼西亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度尼西亚</Chinese><French>Zabag</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_NAME_ETHIOPIA</Tag>
+		<English>埃塞尔比亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞尔比亚</Chinese><French>Al-Habash</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_NAME_BYZANTIUM</Tag>
+		<English>拜占庭</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭</Chinese><French>R&#251;m</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_NAME_MOORS</Tag>
+		<English>摩尔人</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔人</Chinese><French>Al-Andalus</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_NAME_SPAIN</Tag>
+		<English>西班牙</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙</Chinese><French>Esbanya</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_NAME_PORTUGAL</Tag>
+		<English>葡萄牙</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙</Chinese><French>Al-Garb</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_NAME_TURKS</Tag>
+		<English>土耳其</English>
+		<L1/><L2/><L3/><L4/><Chinese>土耳其</Chinese><French>Bilad al-Turk</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_OTTOMANS</Tag>
+		<English>阿拉伯-奥斯曼苏丹国</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯-奥斯曼苏丹国</Chinese><French>Ottoman Sultanate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_MUGHALS</Tag>
+		<English>阿拉伯-德里酋长国</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯-德里酋长国</Chinese><French>Emirate of Delhi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIA_ADJECTIVE</Tag>
+		<English>Arabia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Arabia</Chinese><French>Arabian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIA_SHORT_DESC</Tag>
+		<English>Arabia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Arabia</Chinese><French>Arabia</French></TEXT>
+</Civ4GameText>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Tibet -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIBET_DESC</Tag>
+		<English>吐蕃文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>吐蕃文明</Chinese><French>The Tibetans</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIBET_PEOPLES</Tag>
+		<English>吐蕃</English>
+		<L1/><L2/><L3/><L4/><Chinese>吐蕃</Chinese><French>Tibetan Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIBET_DEFAULT</Tag>
+		<English>China Tibetans</English>
+		<L1/><L2/><L3/><L4/><Chinese>China Tibetans</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIBET_FASCIST</Tag>
+		<English>吐蕃</English>
+		<L1/><L2/><L3/><L4/><Chinese>吐蕃</Chinese><French>%s2 Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIBET_ADJECTIVE</Tag>
+		<English>Tibetan</English>
+		<L1/><L2/><L3/><L4/><Chinese>Tibetan</Chinese><French>Tibetan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIBET_SHORT_DESC</Tag>
+		<English>Tibet</English>
+		<L1/><L2/><L3/><L4/><Chinese>Tibet</Chinese><French>Tibet</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIBETAN_VASSAL</Tag>
+		<English>%s3 附属</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s3 附属</Chinese><French>Khrom of %s3</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIBETAN_NAME_CHINA</Tag>
+		<English>吐蕃</English>
+		<L1/><L2/><L3/><L4/><Chinese>吐蕃</Chinese><French>Gyanak</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIBETAN_NAME_INDIA</Tag>
+		<English>吐蕃</English>
+		<L1/><L2/><L3/><L4/><Chinese>吐蕃</Chinese><French>Gyakar</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIBETAN_NAME_TURKS</Tag>
+		<English>吐蕃</English>
+		<L1/><L2/><L3/><L4/><Chinese>吐蕃</Chinese><French>Liyul</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIBETAN_NAME_MONGOLIA</Tag>
+		<English>吐蕃</English>
+		<L1/><L2/><L3/><L4/><Chinese>吐蕃</Chinese><French>Me Hor</French></TEXT>
+</Civ4GameText>

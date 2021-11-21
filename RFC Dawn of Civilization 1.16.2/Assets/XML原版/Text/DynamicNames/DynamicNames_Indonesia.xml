@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Indonesia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDONESIA_DESC</Tag>
+		<English>印度尼西亚文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度尼西亚文明</Chinese><French>The Indonesians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDONESIA_PEOPLES</Tag>
+		<English>马来文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>马来文明</Chinese><French>Malay Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDONESIA_DEFAULT</Tag>
+		<English>Indonesia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Indonesia</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDONESIA_FASCIST</Tag>
+		<English>印度尼西亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度尼西亚</Chinese><French>%s2 New Order</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDONESIA_MATARAM</Tag>
+		<English>印尼-马塔兰苏丹国</English>
+		<L1/><L2/><L3/><L4/><Chinese>印尼-马塔兰苏丹国</Chinese><French>Mataram</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDONESIA_SRIVIJAYA</Tag>
+		<English>印尼-室利佛逝王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>印尼-室利佛逝王国</Chinese><French>Srivijaya</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDONESIA_MAJAPAHIT</Tag>
+		<English>印尼-满者伯夷王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>印尼-满者伯夷王国</Chinese><French>Majapahit</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDONESIAN_VASSAL</Tag>
+		<English>印度尼西亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度尼西亚</Chinese><French>Kedatuan of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDONESIA_ADJECTIVE</Tag>
+		<English>Indonesia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Indonesia</Chinese><French>Indonesian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDONESIA_SHORT_DESC</Tag>
+		<English>Indonesia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Indonesia</Chinese><French>Indonesia</French></TEXT>
+</Civ4GameText>

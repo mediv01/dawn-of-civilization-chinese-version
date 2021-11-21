@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- England -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_DESC</Tag>
+		<English>英格兰文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>英格兰文明</Chinese><French>The English</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_PEOPLES</Tag>
+		<English>盎格鲁撒克逊（英国）</English>
+		<L1/><L2/><L3/><L4/><Chinese>盎格鲁撒克逊（英国）</Chinese><French>Anglo-Saxon Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_DEFAULT</Tag>
+		<English>England</English>
+		<L1/><L2/><L3/><L4/><Chinese>England</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_REPUBLIC</Tag>
+		<English>英格兰联邦</English>
+		<L1/><L2/><L3/><L4/><Chinese>英格兰联邦</Chinese><French>Commonwealth of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_COMMUNIST</Tag>
+		<English>英格兰工人联合会</English>
+		<L1/><L2/><L3/><L4/><Chinese>英格兰工人联合会</Chinese><French>%s2 Worker's Commonwealth</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_FASCIST</Tag>
+		<English>英格兰联合王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>英格兰联合王国</Chinese><French>%s2 Union</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_GREAT_BRITAIN</Tag>
+		<English>大不列颠王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>大不列颠王国</Chinese><French>Great Britain</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_BRITISH</Tag>
+		<English>英国</English>
+		<L1/><L2/><L3/><L4/><Chinese>英国</Chinese><French>British</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_UNITED_KINGDOM_OF</Tag>
+		<English>英国</English>
+		<L1/><L2/><L3/><L4/><Chinese>英国</Chinese><French>United Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_ANGEVIN_EMPIRE</Tag>
+		<English>英格兰-安茹帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>英格兰-安茹帝国</Chinese><French>Angevin Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_UNITED_REPUBLIC</Tag>
+		<English>英格兰共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>英格兰共和国</Chinese><French>United Republic of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_EXILE</Tag>
+		<English>英国流亡政府</English>
+		<L1/><L2/><L3/><L4/><Chinese>英国流亡政府</Chinese><French>%s2 Government in Exile</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_VASSAL</Tag>
+		<English>%s1的统治</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1的统治</Chinese><French>Dominion of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_INDIA</Tag>
+		<English>%s2 统印度</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 统印度</Chinese><French>%s2 Raj</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_BABYLONIA</Tag>
+		<English>%s2 统美索不达米亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 统美索不达米亚</Chinese><French>%s2 Mandate of Mesopotamia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_PHOENICIA</Tag>
+		<English>%s2 统黎巴嫩</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 统黎巴嫩</Chinese><French>%s2 Mandate of Lebanon</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_ETHIOPIA</Tag>
+		<English>%s2 统东非</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 统东非</Chinese><French>%s2 East Africa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_MAYA</Tag>
+		<English>%s2 统洪都拉斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 统洪都拉斯</Chinese><French>Colony of %s2 Honduras</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_BYZANTIUM</Tag>
+		<English>英属拜占庭</English>
+		<L1/><L2/><L3/><L4/><Chinese>英属拜占庭</Chinese><French>Latin Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_VIKINGS</Tag>
+		<English>英属斯堪的纳维亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>英属斯堪的纳维亚</Chinese><French>Duchy of Scandinavia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_INDONESIA</Tag>
+		<English>英属马来</English>
+		<L1/><L2/><L3/><L4/><Chinese>英属马来</Chinese><French>Federated Malay States</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_FRANCE</Tag>
+		<English>英属法国</English>
+		<L1/><L2/><L3/><L4/><Chinese>英属法国</Chinese><French>Duchy of Anjou</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_HOLY_ROME</Tag>
+		<English>英属神罗</English>
+		<L1/><L2/><L3/><L4/><Chinese>英属神罗</Chinese><French>Duchy of Hanover</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_GERMANY</Tag>
+		<English>英属法国</English>
+		<L1/><L2/><L3/><L4/><Chinese>英属法国</Chinese><French>%s2-Occupied Germany</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_NETHERLANDS</Tag>
+		<English>英属荷兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>英属荷兰</Chinese><French>Duchy of Flanders</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_MALI</Tag>
+		<English>英属拜占庭</English>
+		<L1/><L2/><L3/><L4/><Chinese>英属拜占庭</Chinese><French>%s2 West Africa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_AMERICA</Tag>
+		<English>英属北美十三州</English>
+		<L1/><L2/><L3/><L4/><Chinese>英属北美十三州</Chinese><French>Thirteen Colonies</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_NAME_KHMER</Tag>
+		<English>英属东南亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>英属东南亚</Chinese><French>Indochina</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLISH_NAME_MUGHALS</Tag>
+		<English>英属印度</English>
+		<L1/><L2/><L3/><L4/><Chinese>英属印度</Chinese><French>Pakistan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_ADJECTIVE</Tag>
+		<English>England</English>
+		<L1/><L2/><L3/><L4/><Chinese>England</Chinese><French>English</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_SHORT_DESC</Tag>
+		<English>England</English>
+		<L1/><L2/><L3/><L4/><Chinese>England</Chinese><French>England</French></TEXT>
+</Civ4GameText>

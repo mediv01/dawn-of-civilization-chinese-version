@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Holy Rome -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROMAN_DESC</Tag>
+		<English>神圣罗马文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>神圣罗马文明</Chinese><French>The Germans</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AUSTRIA_DESC</Tag>
+		<English>奥地利文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥地利文明</Chinese><French>The Austrians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROME_PEOPLES</Tag>
+		<English>日耳曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>日耳曼</Chinese><French>Germanic Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROME_DEFAULT</Tag>
+		<English>HOLY ROME</English>
+		<L1/><L2/><L3/><L4/><Chinese>HOLY ROME</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROME_FASCIST</Tag>
+		<English>神圣罗马帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>神圣罗马帝国</Chinese><French>Greater %s2 Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROME_AUSTRO_HUNGARIAN</Tag>
+		<English>奥匈帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥匈帝国</Chinese><French>Austro-Hungarian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROME_ARCHDUCHY_OF</Tag>
+		<English>奥地利公国</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥地利公国</Chinese><French>Archduchy of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROME_HABSBURG</Tag>
+		<English>德国哈布斯堡</English>
+		<L1/><L2/><L3/><L4/><Chinese>德国哈布斯堡</Chinese><French>Habsburg</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROME_GERMANY</Tag>
+		<English>德国</English>
+		<L1/><L2/><L3/><L4/><Chinese>德国</Chinese><French>Germany</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROME_GERMAN</Tag>
+		<English>德国</English>
+		<L1/><L2/><L3/><L4/><Chinese>德国</Chinese><French>German</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AUSTRIA_DEFAULT</Tag>
+		<English>Austria</English>
+		<L1/><L2/><L3/><L4/><Chinese>Austria</Chinese><French>Archduchy of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AUSTRIA_FASCIST</Tag>
+		<English>奥地利联邦</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥地利联邦</Chinese><French>Federal State of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AUSTRIA_SHORT_DESC</Tag>
+		<English>Austria</English>
+		<L1/><L2/><L3/><L4/><Chinese>Austria</Chinese><French>Austria</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AUSTRIA_ADJECTIVE</Tag>
+		<English>奥地利</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥地利</Chinese><French>Austrian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROMAN_ITALY</Tag>
+		<English>神罗-意大利</English>
+		<L1/><L2/><L3/><L4/><Chinese>神罗-意大利</Chinese><French>Crown of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROMAN_FRANCE</Tag>
+		<English>神罗-法兰西</English>
+		<L1/><L2/><L3/><L4/><Chinese>神罗-法兰西</Chinese><French>West Francia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROMAN_NETHERLANDS</Tag>
+		<English>神罗-布拉班特公国</English>
+		<L1/><L2/><L3/><L4/><Chinese>神罗-布拉班特公国</Chinese><French>Duchy of Brabant</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROMAN_BYZANTIUM</Tag>
+		<English>神罗-拜占庭</English>
+		<L1/><L2/><L3/><L4/><Chinese>神罗-拜占庭</Chinese><French>Latin Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROMAN_POLAND</Tag>
+		<English>神罗-波兰公国</English>
+		<L1/><L2/><L3/><L4/><Chinese>神罗-波兰公国</Chinese><French>Duchy of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AUSTRIAN_POLAND</Tag>
+		<English>奥地利-波兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥地利-波兰</Chinese><French>Kingdom of Galicia and Lodomeria</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AUSTRIAN_ITALY</Tag>
+		<English>奥地利-意大利</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥地利-意大利</Chinese><French>Grand Duchy of Tuscany</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROME_HUNGARY</Tag>
+		<English>匈牙利</English>
+		<L1/><L2/><L3/><L4/><Chinese>匈牙利</Chinese><French>Hungary</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOLY_ROME_HUNGARIAN</Tag>
+		<English>匈牙利</English>
+		<L1/><L2/><L3/><L4/><Chinese>匈牙利</Chinese><French>Hungarian</French></TEXT>
+</Civ4GameText>

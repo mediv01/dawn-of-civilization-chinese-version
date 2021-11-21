@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Russian -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_DESC</Tag>
+		<English>俄罗斯文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯文明</Chinese><French>The Russians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_PEOPLES</Tag>
+		<English>俄罗斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯</Chinese><French>Rus' Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_DEFAULT</Tag>
+		<English>Russia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Russia</Chinese><French>Grand Duchy of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_REPUBLIC</Tag>
+		<English>俄罗斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯</Chinese><French>%s2 Federation</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_COMMUNIST</Tag>
+		<English>俄罗斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯</Chinese><French>Union of Soviet Socialist Republics</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_TSARDOM_OF</Tag>
+		<English>俄罗斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯</Chinese><French>Tsardom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_FASCIST</Tag>
+		<English>俄罗斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯</Chinese><French>Panslavic Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_MUSCOVY</Tag>
+		<English>俄罗斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯</Chinese><French>Muscovy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_KIEVAN_RUS</Tag>
+		<English>俄罗斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯</Chinese><French>Kievan Rus</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_RUS</Tag>
+		<English>俄罗斯 %s1</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯 %s1</Chinese><French>Rus of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIAN_VASSAL</Tag>
+		<English>%s1 附属国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 附属国</Chinese><French>%s1 Krai</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIAN_POLAND</Tag>
+		<English>苏联-波兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>苏联-波兰</Chinese><French>Congress %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_SOVIET</Tag>
+		<English>俄罗斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯</Chinese><French>Soviet %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_SOVIET_REPUBLIC_ADJECTIVE</Tag>
+		<English>俄罗斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯</Chinese><French>%s2 Soviet Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIAN_NAME_PERSIA</Tag>
+		<English>苏维埃波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>苏维埃波斯</Chinese><French>Gilan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_SOVIET_JAPAN</Tag>
+		<English>苏维埃日本</English>
+		<L1/><L2/><L3/><L4/><Chinese>苏维埃日本</Chinese><French>Far Eastern Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_SOVIET_OTTOMANS</Tag>
+		<English>苏维埃外高加索</English>
+		<L1/><L2/><L3/><L4/><Chinese>苏维埃外高加索</Chinese><French>Transcaucasian Socialist Federative Soviet Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_SOVIET_TURKS</Tag>
+		<English>苏维埃土耳其</English>
+		<L1/><L2/><L3/><L4/><Chinese>苏维埃土耳其</Chinese><French>%s4 Soviet Socialist Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_SOVIET_GERMANY</Tag>
+		<English>苏维埃德国</English>
+		<L1/><L2/><L3/><L4/><Chinese>苏维埃德国</Chinese><French>%s4 Democratic Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_ADJECTIVE</Tag>
+		<English>Russian</English>
+		<L1/><L2/><L3/><L4/><Chinese>Russian</Chinese><French>Russian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_SHORT_DESC</Tag>
+		<English>Russia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Russia</Chinese><French>Russia</French></TEXT>
+</Civ4GameText>

@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- National Wonders -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIONAL_THEATRE</Tag>
+		<English>国家剧院</English>
+		<L1/><L2/><L3/><L4/><Chinese>国家剧院</Chinese><French>National Theatre</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIONAL_THEATRE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]国家剧院[COLOR_REVERT] 增加了城市的文化产出，也增加了城市的幸福感。它增加了这个城市产生大艺术家的机会。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]国家剧院[COLOR_REVERT] 增加了城市的文化产出，也增加了城市的幸福感。它增加了这个城市产生大艺术家的机会。</Chinese><French>The [COLOR_BUILDING_TEXT]National Theatre[COLOR_REVERT] increases the cultural output of the city as well as increasing the city's happiness. It increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIONAL_GALLERY</Tag>
+		<English>国家美术馆</English>
+		<L1/><L2/><L3/><L4/><Chinese>国家美术馆</Chinese><French>National Gallery</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIONAL_GALLERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]国家美术馆[COLOR_REVERT] 使城市的文化输出翻倍，增加了产生[COLOR_UNIT_TEXT]大艺术家[COLOR_REVERT] 的机会。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]国家美术馆[COLOR_REVERT] 使城市的文化输出翻倍，增加了产生[COLOR_UNIT_TEXT]大艺术家[COLOR_REVERT] 的机会。</Chinese><French>The [COLOR_BUILDING_TEXT]National Gallery[COLOR_REVERT] doubles its city's cultural output and increases its chances of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIONAL_PARK_STRATEGY</Tag>
+		<English>建成[COLOR_BUILDING_TEXT]国家公园[COLOR_REVERT]可消除所在城市因人口规模导致的疾病点数。所在城市范围内的每块[COLOR_HIGHLIGHT_TEXT]森林保护区[COLOR_REVERT]可免费供养一位专业人员，并提升[COLOR_UNIT_TEXT]大科学家[COLOR_REVERT]的出现几率。</English>
+		<L1/><L2/><L3/><L4/><Chinese>建成[COLOR_BUILDING_TEXT]国家公园[COLOR_REVERT]可消除所在城市因人口规模导致的疾病点数。所在城市范围内的每块[COLOR_HIGHLIGHT_TEXT]森林保护区[COLOR_REVERT]可免费供养一位专业人员，并提升[COLOR_UNIT_TEXT]大科学家[COLOR_REVERT]的出现几率。</Chinese><French>The [COLOR_BUILDING_TEXT]National Park[COLOR_REVERT] greatly increases the health in your city. It also provides a free specialist for each [COLOR_HIGHLIGHT_TEXT]Forest Preserve[COLOR_REVERT] in its city radius and increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SECRET_SERVICE</Tag>
+		<English>特勤局</English>
+		<L1/><L2/><L3/><L4/><Chinese>特勤局</Chinese><French>Secret Service</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SECRET_SERVICE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]特勤局[COLOR_REVERT] 增加其城市的间谍输出，并为其城市中建立的[COLOR_UNIT_TEXT]间谍单位[COLOR_REVERT] 提供经验点。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]特勤局[COLOR_REVERT] 增加其城市的间谍输出，并为其城市中建立的[COLOR_UNIT_TEXT]间谍单位[COLOR_REVERT] 提供经验点。</Chinese><French>The [COLOR_BUILDING_TEXT]Secret Service[COLOR_REVERT] increases its city's espionage output and gives experience points to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in it's city.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RED_CROSS_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]红十字会[COLOR_REVERT]使所在城市组建的单位获得[COLOR_HIGHLIGHT_TEXT]医疗一级[COLOR_REVERT]晋升，并提升该城市产生[COLOR_UNIT_TEXT]大科学家[COLOR_REVERT]的几率。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]红十字会[COLOR_REVERT]使所在城市组建的单位获得[COLOR_HIGHLIGHT_TEXT]医疗一级[COLOR_REVERT]晋升，并提升该城市产生[COLOR_UNIT_TEXT]大科学家[COLOR_REVERT]的几率。</Chinese><French>The [COLOR_BUILDING_TEXT]Red Cross[COLOR_REVERT] gives all units built in its city the [COLOR_HIGHLIGHT_TEXT]Medic I[COLOR_REVERT] promotion, and it increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TRADING_COMPANY</Tag>
+		<English>贸易公司</English>
+		<L1/><L2/><L3/><L4/><Chinese>贸易公司</Chinese><French>Trading Company</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TRADING_COMPANY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]贸易公司[COLOR_REVERT]为贸易公司扩展到的每个城市创造收入，并提供两条贸易路线。它为城市带来健康，可以使用[COLOR_HIGHLIGHT_TEXT]香料[COLOR_REVERT]，为城市带来幸福，可以使用[COLOR_HIGHLIGHT_TEXT]咖啡[COLOR_REVERT]，[COLOR_HIGHLIGHT_TEXT]糖[COLOR_REVERT]，[COLOR_HIGHLIGHT_TEXT]茶[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]烟草[COLOR_REVERT]。它增加了城市产生[COLOR_UNIT_TEXT]大商人[COLOR_REVERT]的几率。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]贸易公司[COLOR_REVERT]为贸易公司扩展到的每个城市创造收入，并提供两条贸易路线。它为城市带来健康，可以使用[COLOR_HIGHLIGHT_TEXT]香料[COLOR_REVERT]，为城市带来幸福，可以使用[COLOR_HIGHLIGHT_TEXT]咖啡[COLOR_REVERT]，[COLOR_HIGHLIGHT_TEXT]糖[COLOR_REVERT]，[COLOR_HIGHLIGHT_TEXT]茶[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]烟草[COLOR_REVERT]。它增加了城市产生[COLOR_UNIT_TEXT]大商人[COLOR_REVERT]的几率。</Chinese><French>The [COLOR_BUILDING_TEXT]Trading Company[COLOR_REVERT] generates income for each city that Trading Company has spread to and provides two trade routes. It generates health for its city with access to [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT] and happiness for its city with access to [COLOR_HIGHLIGHT_TEXT]Coffee[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Tea[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Tobacco[COLOR_REVERT]. It increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STOCK_EXCHANGE</Tag>
+		<English>证券交易所</English>
+		<L1/><L2/><L3/><L4/><Chinese>证券交易所</Chinese><French>Stock Exchange</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STOCK_EXCHANGE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]证券交易所[COLOR_REVERT] 增加了城市的财富生产。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]证券交易所[COLOR_REVERT] 增加了城市的财富生产。</Chinese><French>The [COLOR_BUILDING_TEXT]Stock Exchange[COLOR_REVERT] increases its city's production of wealth.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IRONWORKS</Tag>
+		<English>大铁厂</English>
+		<L1/><L2/><L3/><L4/><Chinese>大铁厂</Chinese><French>Ironworks</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IRONWORKS_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]大铁厂[COLOR_REVERT]可提升城市生产能力（如果城市拥有煤炭或铁），但也会影响健康度。并可提升城市产生[COLOR_UNIT_TEXT]大工程师[COLOR_REVERT]的几率。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]大铁厂[COLOR_REVERT]可提升城市生产能力（如果城市拥有煤炭或铁），但也会影响健康度。并可提升城市产生[COLOR_UNIT_TEXT]大工程师[COLOR_REVERT]的几率。</Chinese><French>The [COLOR_BUILDING_TEXT]Ironworks[COLOR_REVERT] increases a city's production if that city has access to coal and/or iron, but also adds unhealthiness. It increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MANUFACTORY</Tag>
+		<English>制造厂</English>
+		<L1/><L2/><L3/><L4/><Chinese>制造厂</Chinese><French>Manufactory</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MANUFACTORY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]制造厂[COLOR_REVERT] 增加一个城市的产量和增加贸易路线的产出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]制造厂[COLOR_REVERT] 增加一个城市的产量和增加贸易路线的产出。</Chinese><French>[COLOR_BUILDING_TEXT]Manufactories[COLOR_REVERT] increase a city's production and increase trade route yield.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MUSEUM</Tag>
+		<English>博物馆</English>
+		<L1/><L2/><L3/><L4/><Chinese>博物馆</Chinese><French>Museum</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MUSEUM_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]博物馆[COLOR_REVERT] 大大增加了一个城市的文化输出。他们还根据文化水平提高了一个城市的[COLOR_HIGHLIGHT_TEXT]伟人[COLOR_REVERT] 出生率。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]博物馆[COLOR_REVERT] 大大增加了一个城市的文化输出。他们还根据文化水平提高了一个城市的[COLOR_HIGHLIGHT_TEXT]伟人[COLOR_REVERT] 出生率。</Chinese><French>[COLOR_BUILDING_TEXT]Musea[COLOR_REVERT] greatly increase a city's cultural output. They also increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate depending on the culture level.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARMOURY</Tag>
+		<English>军械库</English>
+		<L1/><L2/><L3/><L4/><Chinese>军械库</Chinese><French>Armoury</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARMOURY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]军械库[COLOR_REVERT] 增加一个城市的军事单位产量。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]军械库[COLOR_REVERT] 增加一个城市的军事单位产量。</Chinese><French>[COLOR_BUILDING_TEXT]Armouries[COLOR_REVERT] increase a city's military unit production.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIONAL_COLLEGE</Tag>
+		<English>国立大学</English>
+		<L1/><L2/><L3/><L4/><Chinese>国立大学</Chinese><French>National College</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIONAL_COLLEGE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]国立学院[COLOR_REVERT] 极大地提高了城市的科学产出。它还允许你将三个市民转变为科学家，并增加城市生成[COLOR_UNIT_TEXT]大科学家[COLOR_REVERT]的机会。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]国立学院[COLOR_REVERT] 极大地提高了城市的科学产出。它还允许你将三个市民转变为科学家，并增加城市生成[COLOR_UNIT_TEXT]大科学家[COLOR_REVERT]的机会。</Chinese><French>The [COLOR_BUILDING_TEXT]National College[COLOR_REVERT] greatly increases the scientific output of its city. It also allows you to change three citizens into scientists and increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIONAL_MONUMENT</Tag>
+		<English>国家纪念碑</English>
+		<L1/><L2/><L3/><L4/><Chinese>国家纪念碑</Chinese><French>National Monument</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIONAL_MONUMENT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]国家纪念碑[COLOR_REVERT] 大大提高了其城市产生 [COLOR_HIGHLIGHT_TEXT]伟人[COLOR_REVERT] 的速度，特别是[COLOR_UNIT_TEXT]大艺术家[COLOR_REVERT] 。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]国家纪念碑[COLOR_REVERT] 大大提高了其城市产生 [COLOR_HIGHLIGHT_TEXT]伟人[COLOR_REVERT] 的速度，特别是[COLOR_UNIT_TEXT]大艺术家[COLOR_REVERT] 。</Chinese><French>The [COLOR_BUILDING_TEXT]National Monument[COLOR_REVERT] greatly increases the rate at which its city produces [COLOR_HIGHLIGHT_TEXT]Great People[COLOR_REVERT], particularly [COLOR_UNIT_TEXT]Great Artists[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MILITARY_ACADEMY</Tag>
+		<English>军事学院</English>
+		<L1/><L2/><L3/><L4/><Chinese>军事学院</Chinese><French>Military Academy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MILITARY_ACADEMY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]军事学院[COLOR_REVERT]增加一个城市的军事单位产量，授予所有单位[COLOR_REVERT]领导权[COLOR_REVERT]晋升，并增加城市产生[COLOR_REVERT]大政治家[COLOR_REVERT]的机会。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]军事学院[COLOR_REVERT]增加一个城市的军事单位产量，授予所有单位[COLOR_REVERT]领导权[COLOR_REVERT]晋升，并增加城市产生[COLOR_REVERT]大政治家[COLOR_REVERT]的机会。</Chinese><French>The [COLOR_BUILDING_TEXT]Military Academy[COLOR_REVERT] increases a city's military unit production, grants the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion to all units and increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CENTRAL_BANK</Tag>
+		<English>中央银行</English>
+		<L1/><L2/><L3/><L4/><Chinese>中央银行</Chinese><French>Central Bank</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CENTRAL_BANK_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]中央银行[COLOR_REVERT]使其城市的财富产出翻了一番，并增加了产生[COLOR_UNIT_TEXT]大商业家[COLOR_REVERT]的机会。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]中央银行[COLOR_REVERT]使其城市的财富产出翻了一番，并增加了产生[COLOR_UNIT_TEXT]大商业家[COLOR_REVERT]的机会。</Chinese><French>The [COLOR_BUILDING_TEXT]Central Bank[COLOR_REVERT] doubles its city's wealth output and increases its chances of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPACEPORT</Tag>
+		<English>太空港</English>
+		<L1/><L2/><L3/><L4/><Chinese>太空港</Chinese><French>Spaceport</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPACEPORT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]太空港[COLOR_REVERT]增加了所有城市的宇宙飞船产量，并增加了生成[COLOR_UNIT_TEXT]大工程师[COLOR_REVERT]的机会。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]太空港[COLOR_REVERT]增加了所有城市的宇宙飞船产量，并增加了生成[COLOR_UNIT_TEXT]大工程师[COLOR_REVERT]的机会。</Chinese><French>The [COLOR_BUILDING_TEXT]Spaceport[COLOR_REVERT] increases spaceship production in all cities and increases its chances of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_</Tag>
+		<English>建筑</English>
+		<L1/><L2/><L3/><L4/><Chinese>建筑</Chinese><French></French></TEXT>
+</Civ4GameText>

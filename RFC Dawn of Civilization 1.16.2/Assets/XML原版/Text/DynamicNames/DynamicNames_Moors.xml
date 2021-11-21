@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Moors -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOORS_DESC</Tag>
+		<English>摩尔文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔文明</Chinese><French>The Moors</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOORS_PEOPLES</Tag>
+		<English>摩尔-安达卢西亚人</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔-安达卢西亚人</Chinese><French>Andalusian Peoples</French></TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOROCCO_SHORT_DESC</Tag>
+		<English>Morocco</English>
+		<L1/><L2/><L3/><L4/><Chinese>Morocco</Chinese><French>Morocco</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOROCCO_ADJECTIVE</Tag>
+		<English>Moroccan</English>
+		<L1/><L2/><L3/><L4/><Chinese>Moroccan</Chinese><French>Moroccan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOORS_DEFAULT</Tag>
+		<English>Moors</English>
+		<L1/><L2/><L3/><L4/><Chinese>Moors</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOROCCO_DEFAULT</Tag>
+		<English>Morocco</English>
+		<L1/><L2/><L3/><L4/><Chinese>Morocco</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOROCCO_FASCIST</Tag>
+		<English>摩洛哥</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩洛哥</Chinese><French>%s2 State</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOORS_FASCIST</Tag>
+		<English>摩尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔</Chinese><French>%s2 State</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOORS_EMIRATE_OF</Tag>
+		<English>摩尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔</Chinese><French>Emirate of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOORS_ALMOHAD</Tag>
+		<English>摩尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔</Chinese><French>Almohad</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOORS_MOROCCO</Tag>
+		<English>Morocco</English>
+		<L1/><L2/><L3/><L4/><Chinese>Morocco</Chinese><French>Morocco</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOORS_MOROCCAN</Tag>
+		<English>摩洛哥</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩洛哥</Chinese><French>Moroccan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOORS_TAIFAS</Tag>
+		<English>摩尔-安达卢斯塔伊法斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔-安达卢斯塔伊法斯</Chinese><French>Andalusian Taifas</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOORISH_ARABIA</Tag>
+		<English>摩尔-阿拉伯</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔-阿拉伯</Chinese><French>East Umayyad Caliphate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOORISH_MALI</Tag>
+		<English>摩尔-马里</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔-马里</Chinese><French>Pashalik of Timbuktu</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARABIAN_NAME_ARABIA</Tag>
+		<English>摩尔-阿拉伯</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔-阿拉伯</Chinese><French>Hejaz</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOORS_ADJECTIVE</Tag>
+		<English>Moorish</English>
+		<L1/><L2/><L3/><L4/><Chinese>Moorish</Chinese><French>Moorish</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOORS_SHORT_DESC</Tag>
+		<English>Moors</English>
+		<L1/><L2/><L3/><L4/><Chinese>Moors</Chinese><French>Moors</French></TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_CIV_MOROCCO_PEOPLES</Tag>
+		<English>摩洛哥人</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩洛哥人</Chinese><French>Morocco</French></TEXT>
+</Civ4GameText>

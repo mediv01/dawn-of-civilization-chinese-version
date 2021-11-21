@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Leaders -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ABBAS</Tag>
+		<English>波斯-阿巴斯一世</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯-阿巴斯一世</Chinese><French>Abbas I</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_AFONSO</Tag>
+		<English>葡萄牙-阿方索&#12539;恩里克斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙-阿方索&#12539;恩里克斯</Chinese><French>Afonso Henriques</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_AHOEITU</Tag>
+		<English>汤加-阿霍·埃图</English>
+		<L1/><L2/><L3/><L4/><Chinese>汤加-阿霍·埃图</Chinese><French>Aho'eitu</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_AKBAR</Tag>
+		<English>莫卧儿-阿克巴</English>
+		<L1/><L2/><L3/><L4/><Chinese>莫卧儿-阿克巴</Chinese><French>Akbar</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ALFRED</Tag>
+		<English>英格兰-阿尔弗雷德</English>
+		<L1/><L2/><L3/><L4/><Chinese>英格兰-阿尔弗雷德</Chinese><French>Alfred</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ALP_ARSLAN</Tag>
+		<English>塞尔柱-阿尔普·阿尔斯兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>塞尔柱-阿尔普·阿尔斯兰</Chinese><French>Alp Arslan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ATATURK</Tag>
+		<English>奥斯曼-凯末尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥斯曼-凯末尔</Chinese><French>Atatürk</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_AUGUSTUS</Tag>
+		<English>罗马-奥古斯都&#12539;恺撒</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马-奥古斯都&#12539;恺撒</Chinese><French>Augustus Caesar</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_BAIBARS</Tag>
+		<English>埃及-拜伯尔斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及-拜伯尔斯</Chinese><French>Baibars</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_BARBAROSSA</Tag>
+		<English>神罗-巴巴罗萨</English>
+		<L1/><L2/><L3/><L4/><Chinese>神罗-巴巴罗萨</Chinese><French>Barbarossa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_BASIL</Tag>
+		<English>拜占庭-巴西尔二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭-巴西尔二世</Chinese><French>Basil II</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_BOLIVAR</Tag>
+		<English>委内瑞拉-玻利瓦尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>委内瑞拉-玻利瓦尔</Chinese><French>Bolivar</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_BUMIN</Tag>
+		<English>土库曼-阿史那土门</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼-阿史那土门</Chinese><French>Bumin</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CARDENAS</Tag>
+		<English>墨西哥-卡德纳斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>墨西哥-卡德纳斯</Chinese><French>Cardenas</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CASIMIR</Tag>
+		<English>波兰-卡齐米日三世</English>
+		<L1/><L2/><L3/><L4/><Chinese>波兰-卡齐米日三世</Chinese><French>Casimir III</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CAVOUR</Tag>
+		<English>意大利-加富尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>意大利-加富尔</Chinese><French>Cavour</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CHANDRAGUPTA</Tag>
+		<English>印度-旃陀罗笈多</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度-旃陀罗笈多</Chinese><French>Chandragupta</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CHARLES</Tag>
+		<English>神罗-查理五世</English>
+		<L1/><L2/><L3/><L4/><Chinese>神罗-查理五世</Chinese><French>Charles V</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_DHARMASETU</Tag>
+		<English>印尼-哈马舍陀</English>
+		<L1/><L2/><L3/><L4/><Chinese>印尼-哈马舍陀</Chinese><French>Dharmasetu</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_DOM_PEDRO</Tag>
+		<English>巴西-佩德罗二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴西-佩德罗二世</Chinese><French>Pedro II</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_FILIPE</Tag>
+		<English>西班牙-腓力二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-腓力二世</Chinese><French>Philip II</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_FRANCIS</Tag>
+		<English>神罗-弗朗茨一世</English>
+		<L1/><L2/><L3/><L4/><Chinese>神罗-弗朗茨一世</Chinese><French>Francis I</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_FRANCO</Tag>
+		<English>西班牙-佛朗哥</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙-佛朗哥</Chinese><French>Franco</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_GILGAMESH</Tag>
+		<English>巴比伦-吉尔伽美什</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦-吉尔伽美什</Chinese><French>Sargon</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_GUSTAV</Tag>
+		<English>瑞典-古斯塔夫&#12539;阿道夫</English>
+		<L1/><L2/><L3/><L4/><Chinese>瑞典-古斯塔夫&#12539;阿道夫</Chinese><French>Gustav Adolph</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MENELIK</Tag>
+		<English>埃塞尔比亚-梅内利克</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞尔比亚-梅内利克</Chinese><French>Menelik</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HANNIBAL</Tag>
+		<English>迦太基-汉尼拔</English>
+		<L1/><L2/><L3/><L4/><Chinese>迦太基-汉尼拔</Chinese><French>Hannibal</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HARUN</Tag>
+		<English>阿拉伯-哈伦&#12539;拉希德</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯-哈伦&#12539;拉希德</Chinese><French>Harun al-Rashid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HATSHEPSUT</Tag>
+		<English>古埃及-克里奥帕特拉
+   </English>
+		<L1/><L2/><L3/><L4/><Chinese>古埃及-克里奥帕特拉
+   </Chinese><French>Cleopatra</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HAYAM_WURUK</Tag>
+		<English>印尼-哈奄·武禄</English>
+		<L1/><L2/><L3/><L4/><Chinese>印尼-哈奄·武禄</Chinese><French>Hayam Wuruk</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HIRAM</Tag>
+		<English>腓尼基-希兰</English>
+		<L1/><L2/><L3/><L4/><Chinese>腓尼基-希兰</Chinese><French>Hiram</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HITLER</Tag>
+		<English>德意志-希特勒</English>
+		<L1/><L2/><L3/><L4/><Chinese>德意志-希特勒</Chinese><French>Hitler</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HONGWU</Tag>
+		<English>明太祖</English>
+		<L1/><L2/><L3/><L4/><Chinese>明太祖</Chinese><French>Hongwu</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_IBN_TUGHLUQ</Tag>
+		<English>德里苏丹-穆罕默德&#12539;宾&#12539;图格鲁克</English>
+		<L1/><L2/><L3/><L4/><Chinese>德里苏丹-穆罕默德&#12539;宾&#12539;图格鲁克</Chinese><French>Muhammad ibn Tughluq</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_INDEPENDENT</Tag>
+		<English>城邦领袖</English>
+		<L1/><L2/><L3/><L4/><Chinese>城邦领袖</Chinese><French>Independent Leader</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_KANGXI</Tag>
+		<English>康熙</English>
+		<L1/><L2/><L3/><L4/><Chinese>康熙</Chinese><French>Kangxi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_JIMMU</Tag>
+		<English>日本-桓武天皇</English>
+		<L1/><L2/><L3/><L4/><Chinese>日本-桓武天皇</Chinese><French>Kammu</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_JUAREZ</Tag>
+		<English>墨西哥-华雷斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>墨西哥-华雷斯</Chinese><French>Juarez</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_KHOMEINI</Tag>
+		<English>伊朗-霍梅尼</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊朗-霍梅尼</Chinese><French>Khomeini</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_KRISHNA_DEVA_RAYA</Tag>
+		<English>德里苏丹-克里希纳</English>
+		<L1/><L2/><L3/><L4/><Chinese>德里苏丹-克里希纳</Chinese><French>Krishna Deva Raya</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_LOBSANG_GYATSO</Tag>
+		<English>中华吐蕃-罗桑嘉措</English>
+		<L1/><L2/><L3/><L4/><Chinese>中华吐蕃-罗桑嘉措</Chinese><French>Lobsang Gyatso</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_LORENZO</Tag>
+		<English>意大利-洛伦佐·德·美第奇</English>
+		<L1/><L2/><L3/><L4/><Chinese>意大利-洛伦佐·德·美第奇</Chinese><French>Lorenzo de' Medici</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MARIA_II</Tag>
+		<English>葡萄牙-玛丽亚二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙-玛丽亚二世</Chinese><French>Maria II</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MBEMBA</Tag>
+		<English>刚果-姆本巴</English>
+		<L1/><L2/><L3/><L4/><Chinese>刚果-姆本巴</Chinese><French>Mbemba</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MEHMED</Tag>
+		<English>奥斯曼-穆罕默德二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥斯曼-穆罕默德二世</Chinese><French>Mehmed II</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MEIJI</Tag>
+		<English>明治天皇</English>
+		<L1/><L2/><L3/><L4/><Chinese>明治天皇</Chinese><French>Meiji</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MONGKUT</Tag>
+		<English>泰国-拉玛四世</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰国-拉玛四世</Chinese><French>Mongkut</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_NARESUAN</Tag>
+		<English>暹罗-纳瑞宣</English>
+		<L1/><L2/><L3/><L4/><Chinese>暹罗-纳瑞宣</Chinese><French>Naresuan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_NASSER</Tag>
+		<English>埃及-纳赛尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及-纳赛尔</Chinese><French>Nasser</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_NATIVE</Tag>
+		<English>土著首领</English>
+		<L1/><L2/><L3/><L4/><Chinese>土著首领</Chinese><French>Native Leader</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ALEXANDER_II</Tag>
+		<English>俄罗斯-亚历山大二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯-亚历山大二世</Chinese><French>Alexander II</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_PERON</Tag>
+		<English>阿根廷-庇隆</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿根廷-庇隆</Chinese><French>Perón</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_RAHMAN</Tag>
+		<English>摩尔-阿卜杜&#12539;拉赫曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔-阿卜杜&#12539;拉赫曼</Chinese><French>Abd-ar-Rahman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_RAJENDRA</Tag>
+		<English>拉金德拉&#12539;朱罗</English>
+		<L1/><L2/><L3/><L4/><Chinese>拉金德拉&#12539;朱罗</Chinese><French>Rajendra Chola</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_RAMESSES</Tag>
+		<English>埃及-拉美西斯二世</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及-拉美西斯二世</Chinese><French>Ramesses II</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SAN_MARTIN</Tag>
+		<English>阿根廷-圣马丁</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿根廷-圣马丁</Chinese><French>San Martin</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SANTA_ANNA</Tag>
+		<English>墨西哥-桑塔&#12539;安纳</English>
+		<L1/><L2/><L3/><L4/><Chinese>墨西哥-桑塔&#12539;安纳</Chinese><French>Santa Anna</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SHIVAJI</Tag>
+		<English>印度-希瓦吉</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度-希瓦吉</Chinese><French>Shahuji</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SOBIESKI</Tag>
+		<English>波兰-索别斯基</English>
+		<L1/><L2/><L3/><L4/><Chinese>波兰-索别斯基</Chinese><French>Sobieski</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SONGTSEN</Tag>
+		<English>松赞干布</English>
+		<L1/><L2/><L3/><L4/><Chinese>松赞干布</Chinese><French>Songtsen Gampo</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SUHARTO</Tag>
+		<English>印尼-苏哈托</English>
+		<L1/><L2/><L3/><L4/><Chinese>印尼-苏哈托</Chinese><French>Suharto</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TAMERLANE</Tag>
+		<English>土库曼-帖木儿</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼-帖木儿</Chinese><French>Tamerlane</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TAIZONG</Tag>
+		<English>唐太宗</English>
+		<L1/><L2/><L3/><L4/><Chinese>唐太宗</Chinese><French>Tang Taizong</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TOKUGAWA</Tag>
+		<English>德川家康</English>
+		<L1/><L2/><L3/><L4/><Chinese>德川家康</Chinese><French>Oda Nobunaga</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TRUDEAU</Tag>
+		<English>加拿大-特鲁多</English>
+		<L1/><L2/><L3/><L4/><Chinese>加拿大-特鲁多</Chinese><French>Trudeau</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TIPU_SULTAN</Tag>
+		<English>泰米尔-提普苏丹</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔-提普苏丹</Chinese><French>Tipu Sultan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_VATAVELLI</Tag>
+		<English>哈拉帕-维塔维利</English>
+		<L1/><L2/><L3/><L4/><Chinese>哈拉帕-维塔维利</Chinese><French>Vatavelli</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_WANGKON</Tag>
+		<English>高丽-王建</English>
+		<L1/><L2/><L3/><L4/><Chinese>高丽-王建</Chinese><French>Wang Kon</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_YAQUB</Tag>
+		<English>摩尔-雅库布&#12539;曼苏尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔-雅库布&#12539;曼苏尔</Chinese><French>Yaqub al-Mansur</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_BHUTTO</Tag>
+		<English>德里苏丹-布托·贝纳齐尔</English>
+		<L1/><L2/><L3/><L4/><Chinese>德里苏丹-布托·贝纳齐尔</Chinese><French>Benazir Bhutto</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_GERHARDSEN</Tag>
+		<English>挪威-盖哈德森</English>
+		<L1/><L2/><L3/><L4/><Chinese>挪威-盖哈德森</Chinese><French>Gerhardsen</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_IVAN_IV</Tag>
+		<English>俄国-伊凡四世</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄国-伊凡四世</Chinese><French>Ivan IV</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MACDONALD</Tag>
+		<English>加拿大-麦克唐纳</English>
+		<L1/><L2/><L3/><L4/><Chinese>加拿大-麦克唐纳</Chinese><French>MacDonald</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MUSSOLINI</Tag>
+		<English>意大利-墨索里尼</English>
+		<L1/><L2/><L3/><L4/><Chinese>意大利-墨索里尼</Chinese><French>Mussolini</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SEJONG</Tag>
+		<English>朝鲜世宗</English>
+		<L1/><L2/><L3/><L4/><Chinese>朝鲜世宗</Chinese><French>Sejong</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_PILSUDSKI</Tag>
+		<English>波兰-毕苏斯基</English>
+		<L1/><L2/><L3/><L4/><Chinese>波兰-毕苏斯基</Chinese><French>Pilsudski</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_VARGAS</Tag>
+		<English>巴西-瓦加斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴西-瓦加斯</Chinese><French>Vargas</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_WALESA</Tag>
+		<English>波兰-瓦尔萨</English>
+		<L1/><L2/><L3/><L4/><Chinese>波兰-瓦尔萨</Chinese><French>Walesa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CASTILLA</Tag>
+		<English>秘鲁-卡斯蒂利亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>秘鲁-卡斯蒂利亚</Chinese><French>Castilla</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_WILLIAM_III</Tag>
+		<English>荷兰-威廉三世</English>
+		<L1/><L2/><L3/><L4/><Chinese>荷兰-威廉三世</Chinese><French>William III</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_GEORGE_I</Tag>
+		<English>英国-乔治一世</English>
+		<L1/><L2/><L3/><L4/><Chinese>英国-乔治一世</Chinese><French>George I</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_KHOSROW</Tag>
+		<English>伊朗-霍斯劳一世</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊朗-霍斯劳一世</Chinese><French>Khosrow I</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_EZANA</Tag>
+		<English>埃塞尔比亚-以萨纳</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞尔比亚-以萨纳</Chinese><French>Ezana</French></TEXT>
+</Civ4GameText>

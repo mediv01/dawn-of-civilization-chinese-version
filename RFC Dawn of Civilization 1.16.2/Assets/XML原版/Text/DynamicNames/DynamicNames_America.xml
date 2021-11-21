@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- America -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICA_DESC</Tag>
+		<English>美利坚文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>美利坚文明</Chinese><French>The Americans</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICA_PEOPLES</Tag>
+		<English>美利坚</English>
+		<L1/><L2/><L3/><L4/><Chinese>美利坚</Chinese><French>American Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICA_DEFAULT</Tag>
+		<English>America</English>
+		<L1/><L2/><L3/><L4/><Chinese>America</Chinese><French>United Principalities of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICA_REPUBLIC</Tag>
+		<English>美利坚 %s1</English>
+		<L1/><L2/><L3/><L4/><Chinese>美利坚 %s1</Chinese><French>United States of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICA_COMMUNIST</Tag>
+		<English>美利坚 %s1</English>
+		<L1/><L2/><L3/><L4/><Chinese>美利坚 %s1</Chinese><French>United Socialist States of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICA_FASCIST</Tag>
+		<English>美利坚</English>
+		<L1/><L2/><L3/><L4/><Chinese>美利坚</Chinese><French>New World Order</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICA_CSA</Tag>
+		<English>美利坚 %s1</English>
+		<L1/><L2/><L3/><L4/><Chinese>美利坚 %s1</Chinese><French>Confederate States of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICA_GOLDEN_CIRCLE</Tag>
+		<English>美国黄金圈</English>
+		<L1/><L2/><L3/><L4/><Chinese>美国黄金圈</Chinese><French>Golden Circle</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICAN_ENGLAND</Tag>
+		<English>美占英国</English>
+		<L1/><L2/><L3/><L4/><Chinese>美占英国</Chinese><French>Airstrip One</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICAN_JAPAN</Tag>
+		<English>美国盟国管制理事会 %s1</English>
+		<L1/><L2/><L3/><L4/><Chinese>美国盟国管制理事会 %s1</Chinese><French>Allied Council for %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICAN_GERMANY</Tag>
+		<English>美占 %s1</English>
+		<L1/><L2/><L3/><L4/><Chinese>美占 %s1</Chinese><French>US-Occupied %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICAN_KOREA</Tag>
+		<English>美占 %s1</English>
+		<L1/><L2/><L3/><L4/><Chinese>美占 %s1</Chinese><French>Commander Naval Forces %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICAN_MEXICO</Tag>
+		<English>新墨西哥美国</English>
+		<L1/><L2/><L3/><L4/><Chinese>新墨西哥美国</Chinese><French>New Mexico</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICAN_MAYA</Tag>
+		<English>%s2 尤卡坦</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 尤卡坦</Chinese><French>%s2 Yucatán</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICA_ADJECTIVE</Tag>
+		<English>America</English>
+		<L1/><L2/><L3/><L4/><Chinese>America</Chinese><French>American</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICA_SHORT_DESC</Tag>
+		<English>America</English>
+		<L1/><L2/><L3/><L4/><Chinese>America</Chinese><French>America</French></TEXT>
+</Civ4GameText>

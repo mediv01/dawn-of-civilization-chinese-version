@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Babylonia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_DESC</Tag>
+		<English>巴比伦文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦文明</Chinese><French>The Babylonians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_PEOPLES</Tag>
+		<English>美索不达米亚人</English>
+		<L1/><L2/><L3/><L4/><Chinese>美索不达米亚人</Chinese><French>Mesopotamian Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_DEFAULT</Tag>
+		<English>Babylonia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Babylonia</Chinese><French>%s2 Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_FASCIST</Tag>
+		<English>叙利亚-巴比伦</English>
+		<L1/><L2/><L3/><L4/><Chinese>叙利亚-巴比伦</Chinese><French>Baathist %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_COMMUNIST</Tag>
+		<English>巴比伦</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦</Chinese><French>%s2 Golden Square</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_MESOPOTAMIAN</Tag>
+		<English>美索不达米亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>美索不达米亚</Chinese><French>Mesopotamian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_ASSYRIA</Tag>
+		<English>巴比伦-亚述帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦-亚述帝国</Chinese><French>Assyria</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_ASSYRIAN</Tag>
+		<English>巴比伦-亚述帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦-亚述帝国</Chinese><French>Assyrian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_ASSYRIA_ADJECTIVE</Tag>
+		<English>巴比伦-亚述帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦-亚述帝国</Chinese><French>Assyrian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_NEO_EMPIRE</Tag>
+		<English>新巴比伦帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>新巴比伦帝国</Chinese><French>Neo-%s2 Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHOENICIA_BABYLONIAN_VASSAL</Tag>
+		<English>巴比伦-腓尼基</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦-腓尼基</Chinese><French>Babylonian Phoenicia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_ADJECTIVE</Tag>
+		<English>
+			<Text>Babylonian:Babylonians</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<L1/><L2/><L3/><L4/><French>Babylonian Phoenicia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BABYLONIA_SHORT_DESC</Tag>
+		<English>Babylonia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Babylonia</Chinese><French>Babylonia</French></TEXT>
+</Civ4GameText>

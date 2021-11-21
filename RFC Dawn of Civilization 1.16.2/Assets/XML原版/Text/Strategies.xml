@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Strategies -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_</Tag>
+		<English/>
+		<L1/><L2/><L3/><L4/><French></French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_CONDITIONAL_SPAWNS</Tag>
+		<English>文明的孕育</English>
+		<L1/><L2/><L3/><L4/><Chinese>文明的孕育</Chinese><French>Conditional Spawns</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_CONGRESSES</Tag>
+		<English>国际会议</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际会议</Chinese><French>Congresses</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_CONTINENTS</Tag>
+		<English>大洲、国家与特色历史胜利</English>
+		<L1/><L2/><L3/><L4/><Chinese>大洲、国家与特色历史胜利</Chinese><French>Continents, Countries and Unique Historical Victories</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_DIPLOMATIC_INSTITUTIONS</Tag>
+		<English>外交机构</English>
+		<L1/><L2/><L3/><L4/><Chinese>外交机构</Chinese><French>Diplomatic Institutions</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_DOC_ODDS</Tag>
+		<English>“文明的曙光”中的杂项</English>
+		<L1/><L2/><L3/><L4/><Chinese>“文明的曙光”中的杂项</Chinese><French>Odds and Ends in DoC</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_EMBASSIES</Tag>
+		<English>使馆</English>
+		<L1/><L2/><L3/><L4/><Chinese>使馆</Chinese><French>Embassies</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_HISTORICALSTARTS</Tag>
+		<English>史实开局</English>
+		<L1/><L2/><L3/><L4/><Chinese>史实开局</Chinese><French>Historical Starts</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_MERCENARIES</Tag>
+		<English>雇佣军</English>
+		<L1/><L2/><L3/><L4/><Chinese>雇佣军</Chinese><French>Mercenaries</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_NEW_CORPORATIONS</Tag>
+		<English>“文明的曙光”中的公司</English>
+		<L1/><L2/><L3/><L4/><Chinese>“文明的曙光”中的公司</Chinese><French>Corporations in DoC</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_ODDS</Tag>
+		<English>杂项</English>
+		<L1/><L2/><L3/><L4/><Chinese>杂项</Chinese><French>Odds and Ends</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_PLAGUE</Tag>
+		<English>瘟疫</English>
+		<L1/><L2/><L3/><L4/><Chinese>瘟疫</Chinese><French>Plague</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_REFORMATION</Tag>
+		<English>改革</English>
+		<L1/><L2/><L3/><L4/><Chinese>改革</Chinese><French>Reformation</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_RESPAWNS</Tag>
+		<English>“文明的曙光”中的重生</English>
+		<L1/><L2/><L3/><L4/><Chinese>“文明的曙光”中的重生</Chinese><French>Respawns in DoC</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_RFCINTRO</Tag>
+		<English>欢迎进入“文明的兴衰”</English>
+		<L1/><L2/><L3/><L4/><Chinese>欢迎进入“文明的兴衰”</Chinese><French>Welcome to Rhye's and Fall of Civilization</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_SCHISM</Tag>
+		<English>东西教会大分裂</English>
+		<L1/><L2/><L3/><L4/><Chinese>东西教会大分裂</Chinese><French>Great Christian Schism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_SLAVERY</Tag>
+		<English>奴隶制度</English>
+		<L1/><L2/><L3/><L4/><Chinese>奴隶制度</Chinese><French>Slavery</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_STABILITY</Tag>
+		<English>稳定度</English>
+		<L1/><L2/><L3/><L4/><Chinese>稳定度</Chinese><French>Stability</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_STABILITY_INFLUENCES</Tag>
+		<English>稳定性影响因素</English>
+		<L1/><L2/><L3/><L4/><Chinese>稳定性影响因素</Chinese><French>Stability Influence Factors</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_STABILITY_TOOLTIP</Tag>
+		<English>地块稳定度显示</English>
+		<L1/><L2/><L3/><L4/><Chinese>地块稳定度显示</Chinese><French>Tile Stability Display</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_TRADING_COMPANY_CONQUERORS</Tag>
+		<English>贸易公司</English>
+		<L1/><L2/><L3/><L4/><Chinese>贸易公司</Chinese><French>Trading Companies</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_UP_UHV</Tag>
+		<English>特色专长与历史胜利条件</English>
+		<L1/><L2/><L3/><L4/><Chinese>特色专长与历史胜利条件</Chinese><French>Unique Powers and Historical Victories</French></TEXT>
+</Civ4GameText>

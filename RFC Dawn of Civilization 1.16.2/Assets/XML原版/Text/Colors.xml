@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Colors -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_COLOR_BLACK</Tag>
+		<English>黑色</English>
+		<L1/><L2/><L3/><L4/><Chinese>黑色</Chinese><French>Black</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COLOR_BLUE</Tag>
+		<English>蓝色</English>
+		<L1/><L2/><L3/><L4/><Chinese>蓝色</Chinese><French>Blue</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COLOR_CYAN</Tag>
+		<English>青色</English>
+		<L1/><L2/><L3/><L4/><Chinese>青色</Chinese><French>Cyan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COLOR_DARK_GREY</Tag>
+		<English>深灰色</English>
+		<L1/><L2/><L3/><L4/><Chinese>深灰色</Chinese><French>Dark Grey</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COLOR_GREEN</Tag>
+		<English>绿色</English>
+		<L1/><L2/><L3/><L4/><Chinese>绿色</Chinese><French>Green</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COLOR_GREY</Tag>
+		<English>灰色</English>
+		<L1/><L2/><L3/><L4/><Chinese>灰色</Chinese><French>Grey</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COLOR_LIGHT_GREY</Tag>
+		<English>浅灰色</English>
+		<L1/><L2/><L3/><L4/><Chinese>浅灰色</Chinese><French>Light Grey</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COLOR_MAGENTA</Tag>
+		<English>洋红色</English>
+		<L1/><L2/><L3/><L4/><Chinese>洋红色</Chinese><French>Magenta</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COLOR_RED</Tag>
+		<English>红色</English>
+		<L1/><L2/><L3/><L4/><Chinese>红色</Chinese><French>Red</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COLOR_WHITE</Tag>
+		<English>白色</English>
+		<L1/><L2/><L3/><L4/><Chinese>白色</Chinese><French>White</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COLOR_YELLOW</Tag>
+		<English>黄色</English>
+		<L1/><L2/><L3/><L4/><Chinese>黄色</Chinese><French>Yellow</French></TEXT>
+</Civ4GameText>

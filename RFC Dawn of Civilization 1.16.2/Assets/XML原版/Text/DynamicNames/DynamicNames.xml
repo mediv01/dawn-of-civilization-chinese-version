@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Generic Dynamic Names -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_PEOPLES_OF</Tag>
+		<English>%s1 人民</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s1 人民</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEOPLES_ADJECTIVE</Tag>
+		<English>%s2 人民</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s2 人民</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPIRE_OF</Tag>
+		<English>%s1 帝国</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s1 帝国</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPIRE_ADJECTIVE</Tag>
+		<English>%s2 帝国</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s2 帝国</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_KINGDOM_OF</Tag>
+		<English>%s1 王国</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s1 王国</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_KINGDOM_ADJECTIVE</Tag>
+		<English>%s2 王国</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s2 王国</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REPUBLIC_OF</Tag>
+		<English>%s1 共和国</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s1 共和国</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REPUBLIC_ADJECTIVE</Tag>
+		<English>%s2 共和国</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s2 共和国</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SOCIALIST_REPUBLIC_OF</Tag>
+		<English>%s1 社会主义共和国</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s1 社会主义共和国</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SOCIALIST_REPUBLIC_ADJECTIVE</Tag>
+		<English>%s2 社会主义共和国</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s2 社会主义共和国</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNITED_STATES_OF</Tag>
+		<English>%s1 合众国 </English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s1 合众国 </Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNITED_STATES_ADJECTIVE</Tag>
+		<English>%s2 合众国 </English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s2 合众国 </Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEOPLES_REPUBLIC_OF</Tag>
+		<English>%s1 人民共和国 </English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s1 人民共和国 </Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEOPLES_REPUBLIC_ADJECTIVE</Tag>
+		<English>%s2 人民共和国</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s2 人民共和国</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_STATES_OF</Tag>
+		<English>%s1 城邦</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s1 城邦</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_STATES_ADJECTIVE</Tag>
+		<English>%s2 城邦</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s2 城邦</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ADJECTIVE_TITLE</Tag>
+		<English>%s2 %s1</English>
+
+	<L1/><L2/><L3/><L4/><Chinese>%s2 %s1</Chinese></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CALIPHATE_ADJECTIVE</Tag>
+		<English>%s2 哈里发</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 哈里发</Chinese><French>%s2 Caliphate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CALIPHATE_OF</Tag>
+		<English>%s1 哈里发</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 哈里发</Chinese><French>Caliphate of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SULTANATE_ADJECTIVE</Tag>
+		<English>%s2 苏丹国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 苏丹国</Chinese><French>%s2 Sultanate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SULTANATE_OF</Tag>
+		<English>%s1 苏丹国 </English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 苏丹国 </Chinese><French>Sultanate of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONFEDERACY_ADJECTIVE</Tag>
+		<English>%s2 邦联</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 邦联</Chinese><French>%s2 Confederacy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ISLAMIC_REPUBLIC_OF</Tag>
+		<English>%s1 伊斯兰共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 伊斯兰共和国</Chinese><French>Islamic Republic of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ISLAMIC_REPUBLIC_ADJECTIVE</Tag>
+		<English>%s2 伊斯兰共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 伊斯兰共和国</Chinese><French>%s2 Islamic Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MANDATE_OF</Tag>
+		<English>%s1的授权国%s2 </English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1的授权国%s2 </Chinese><French>%s2 Mandate of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONFEDERATION_ADJECTIVE</Tag>
+		<English>%s2 联盟</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 联盟</Chinese><French>%s2 Confederation</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROTECTORATE_OF</Tag>
+		<English>%s1 保护国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 保护国</Chinese><French>Protectorate of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COLONY_OF</Tag>
+		<English>%s1 殖民地</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 殖民地</Chinese><French>Colony of %s1</French></TEXT>
+</Civ4GameText>

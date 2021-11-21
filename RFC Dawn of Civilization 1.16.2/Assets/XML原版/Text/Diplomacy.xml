@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Diplomacy -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_JUAREZ_1</Tag>
+		<English>请支持[OUR_CIV_SHORT]以及她的子民。我们依赖您的帮助！</English>
+		<L1/><L2/><L3/><L4/><Chinese>请支持[OUR_CIV_SHORT]以及她的子民。我们依赖您的帮助！</Chinese><French>Please support [OUR_CIV_SHORT] and its people. We depend on your help!</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_PEDRO_II</Tag>
+		<English>这对我们是公平互利的，难道您不这样认为吗？</English>
+		<L1/><L2/><L3/><L4/><Chinese>这对我们是公平互利的，难道您不这样认为吗？</Chinese><French>This will be of mutual benefit for us both, don't you think so?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_RAGNAR_LODBROK_1</Tag>
+		<English>你好 [CT_NAME]! 我是 [OUR_NAME],  [OUR_CIV_SHORT]的荣耀统治者. [CT_CIV_SHORT] 有很多富饶而没有防备的海岸城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>你好 [CT_NAME]! 我是 [OUR_NAME],  [OUR_CIV_SHORT]的荣耀统治者. [CT_CIV_SHORT] 有很多富饶而没有防备的海岸城市</Chinese><French>Hail and well met, [CT_NAME]! I am [OUR_NAME], ruler of the glorious [OUR_CIV_SHORT]. So tell me: does [CT_CIV_SHORT] have a lot of rich and unprotected coastal cities, or what?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_RAMESSES_II_1</Tag>
+		<English>你好 [OUR_NAME], 我们 [OUR_CIV_SHORT] 欢迎你, [CT_NAME]! 如果你有这种心情，你可以在恐惧和敬畏中卑躬屈膝。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你好 [OUR_NAME], 我们 [OUR_CIV_SHORT] 欢迎你, [CT_NAME]! 如果你有这种心情，你可以在恐惧和敬畏中卑躬屈膝。</Chinese><French>Mighty [OUR_NAME], all-powerful god-king of [OUR_CIV_SHORT] welcomes you, [CT_NAME]! Feel free to grovel in terror and awe if the mood takes you.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_SAN_MARTIN</Tag>
+		<English>我们的军队已经整装待发，我认为如果现在开战我们将会取胜。当然，我还是更希望在谈判桌上，而不是战场上解决这个问题。</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们的军队已经整装待发，我认为如果现在开战我们将会取胜。当然，我还是更希望在谈判桌上，而不是战场上解决这个问题。</Chinese><French>Our armies are evenly matched, but I believe in a battle I would win out. So that this does not occur I ask you to meet our demands.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_JUAREZ_1</Tag>
+		<English>[OUR_CIV_SHORT]需要它，请您帮助我们！</English>
+		<L1/><L2/><L3/><L4/><Chinese>[OUR_CIV_SHORT]需要它，请您帮助我们！</Chinese><French>[OUR_CIV_SHORT] needs this and demands your assistance!</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_PEDRO_II</Tag>
+		<English>从很多方面来看，巴西都十分强大，[CT_NAME]，别指望我们会屈服于你的威势！</English>
+		<L1/><L2/><L3/><L4/><Chinese>从很多方面来看，巴西都十分强大，[CT_NAME]，别指望我们会屈服于你的威势！</Chinese><French>Brazil is strong in many ways, [CT_NAME]. Do not force me to show you how strong.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_SAN_MARTIN</Tag>
+		<English>你们的军队已经完全落后于时代了，我建议你乖乖地把我们想要的东西交出来。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你们的军队已经完全落后于时代了，我建议你乖乖地把我们想要的东西交出来。</Chinese><French>You are outgunned and outclassed. I suggest you give me what I demand.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_JUAREZ_1</Tag>
+		<English>你能为[OUR_EMPIRE]慷慨解囊么？</English>
+		<L1/><L2/><L3/><L4/><Chinese>你能为[OUR_EMPIRE]慷慨解囊么？</Chinese><French>Can you spare this for the people of the [OUR_EMPIRE]?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_PEDRO_II</Tag>
+		<English>我肩负我国人民的重托，[CT_NAME]。请您不要让我使他们失望。</English>
+		<L1/><L2/><L3/><L4/><Chinese>我肩负我国人民的重托，[CT_NAME]。请您不要让我使他们失望。</Chinese><French>My people have faith in me, [CT_NAME]. Please help me not to disappoint them.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_SAN_MARTIN</Tag>
+		<English>对我们来说，只要你能够一路获胜，我们就能得到我们所需要的东西。</English>
+		<L1/><L2/><L3/><L4/><Chinese>对我们来说，只要你能够一路获胜，我们就能得到我们所需要的东西。</Chinese><French>The simplest strategy is for me to ask you for what we need and hope your good will wins out.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_GENERIC</Tag>
+		<English>您好，[CT_NAME]！我是[OUR_NAME]，强大的[OUR_CIV_SHORT]文明的领导者。</English>
+		<L1/><L2/><L3/><L4/><Chinese>您好，[CT_NAME]！我是[OUR_NAME]，强大的[OUR_CIV_SHORT]文明的领导者。</Chinese><French>Greetings, [CT_NAME]! I am [OUR_NAME], leader of the great civilization of [OUR_CIV_SHORT].</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_HARUN_1</Tag>
+		<English>愿你平安 [CT_NAME] of [CT_CIV_SHORT]. 如果你期待真主的祝福，善待他的子民，因为真主会帮助走真主道路的人。</English>
+		<L1/><L2/><L3/><L4/><Chinese>愿你平安 [CT_NAME] of [CT_CIV_SHORT]. 如果你期待真主的祝福，善待他的子民，因为真主会帮助走真主道路的人。</Chinese><French>Peace be upon you, [CT_NAME] of [CT_CIV_SHORT]. If you would expect the blessings of Allah, be kind to his people, for Allah will help him who moves the ways of Allah.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_ATATURK_1</Tag>
+		<English>我就是[OUR_NAME]，土耳其人民的总统。我们土耳其人从不考虑那些上天带来的教条。我们获得的启示既不来源于上天，也不来源于那个看不见的时间，而是来源于生活。</English>
+		<L1/><L2/><L3/><L4/><Chinese>我就是[OUR_NAME]，土耳其人民的总统。我们土耳其人从不考虑那些上天带来的教条。我们获得的启示既不来源于上天，也不来源于那个看不见的时间，而是来源于生活。</Chinese><French>I am [OUR_NAME], the President of the Turkish people. We Turks do not consider our principles as dogmas contained in books that are said to come from heaven. We derive our inspiration not from heaven, or from an unseen world, but directly from life.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_CARDENAS_1</Tag>
+		<English>你好。我是[OUR_EMPIRE]的[OUR_NAME]。我深信，对于统治者来说，徒有善意是不够的。而工人阶级所代表的集体意志是不可或缺的。你不这么认为吗，[CT_NAME]？</English>
+		<L1/><L2/><L3/><L4/><Chinese>你好。我是[OUR_EMPIRE]的[OUR_NAME]。我深信，对于统治者来说，徒有善意是不够的。而工人阶级所代表的集体意志是不可或缺的。你不这么认为吗，[CT_NAME]？</Chinese><French>Hola. I am [OUR_NAME] of the [OUR_EMPIRE]. I am convinced that the good intentions of a ruler are simply not enough and that the collective factor represented by the workers is indispensable. Don't you agree [CT_NAME]?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_CHARLES_1</Tag>
+		<English>欢迎，[CT_NAME]。我们欢迎与你交朋友，你热爱于领土、和平与安宁么?</English>
+		<L1/><L2/><L3/><L4/><Chinese>欢迎，[CT_NAME]。我们欢迎与你交朋友，你热爱于领土、和平与安宁么?</Chinese><French>Welcome [CT_NAME]. We would welcome friendship with you. Are you greedy of territory, or greedy of piece and quiet?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MENELIK_1</Tag>
+		<English>以上帝的名义致意, [CT_NAME] of [CT_CIV_SHORT]. We are Emperor [OUR_NAME] of [OUR_CIV_SHORT]. 我们知道物质和精神的进步对人类是必不可少的。你愿意加入我们，不停地工作，以实现双方的平等吗？</English>
+		<L1/><L2/><L3/><L4/><Chinese>以上帝的名义致意, [CT_NAME] of [CT_CIV_SHORT]. We are Emperor [OUR_NAME] of [OUR_CIV_SHORT]. 我们知道物质和精神的进步对人类是必不可少的。你愿意加入我们，不停地工作，以实现双方的平等吗？</Chinese><French>Greetings in the name of God, [CT_NAME] of [CT_CIV_SHORT]. We are Emperor [OUR_NAME] of [OUR_CIV_SHORT]. We know that material and spiritual progress are essential to man. Will you join us as we ceaselessly work for the equal attainment of both?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_JUAREZ_1</Tag>
+		<English>贵安，[CT_NAME]。我是[OUR_NAME]，[OUR_CIV_SHORT]的总统，我的座右铭是：尊重他人的权利就是和平！</English>
+		<L1/><L2/><L3/><L4/><Chinese>贵安，[CT_NAME]。我是[OUR_NAME]，[OUR_CIV_SHORT]的总统，我的座右铭是：尊重他人的权利就是和平！</Chinese><French>Greetings, [CT_NAME]. My name is [OUR_NAME], and I am the president of [OUR_CIV_SHORT]. My motto is: when there is respect, there is peace!</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_KHOMEINI_1</Tag>
+		<English>我，来自[OUR_CIV]的[OUR_NAME]向您问候。我知道，整天谈论着民族、民主什么的那些人想要让我们的国家远离正途。</English>
+		<L1/><L2/><L3/><L4/><Chinese>我，来自[OUR_CIV]的[OUR_NAME]向您问候。我知道，整天谈论着民族、民主什么的那些人想要让我们的国家远离正途。</Chinese><French>I, [OUR_NAME] of the [OUR_EMPIRE], greet you. Know that those who speak of nationalism, democracy, and such things want to take our nation away from its mission.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_ALEXANDER_II_1</Tag>
+		<English>你好，我是 [OUR_NAME], Emperor of [OUR_CIV_SHORT]. 为了人民的福祉，我将尽我所能，像我的先辈一样，捍卫专制的观念。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你好，我是 [OUR_NAME], Emperor of [OUR_CIV_SHORT]. 为了人民的福祉，我将尽我所能，像我的先辈一样，捍卫专制的观念。</Chinese><French>Greetings. I am [OUR_NAME], Emperor of [OUR_CIV_SHORT]. Dedicating all my efforts to the well-being of my people, I shall guard the concept of Autocracy like all my forefathers did.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PEDRO_II</Tag>
+		<English>谦逊的[OUR_CIV_SHORT]欢迎你。我是[OUR_NAME]，领导着这影响深远且不断进步的国家。告诉我，你是谁？</English>
+		<L1/><L2/><L3/><L4/><Chinese>谦逊的[OUR_CIV_SHORT]欢迎你。我是[OUR_NAME]，领导着这影响深远且不断进步的国家。告诉我，你是谁？</Chinese><French>Welcome to humble [OUR_CIV_SHORT]. I am [OUR_NAME], leader of this far-reaching and ever progressing country. Tell me, who are you?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SAN_MARTIN</Tag>
+		<English>你好，我的朋友。我叫[OUR_NAME]，当然你可以叫我何塞，或者也可以叫我弗朗西斯科，再或者直接叫我马丁也行，就是千万别叫我留下来吃晚餐。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你好，我的朋友。我叫[OUR_NAME]，当然你可以叫我何塞，或者也可以叫我弗朗西斯科，再或者直接叫我马丁也行，就是千万别叫我留下来吃晚餐。</Chinese><French>Hello, friend. My name is [OUR_NAME], but you can call me Jose. Or you can call me Francisco. Or you can call me Martin. Just don't call me late for dinner. </French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SANTA_ANNA_1</Tag>
+		<English>你好，[CT_NAME]。我是桑塔&#12539;安纳将军。墨西哥的救世主！你是专程过来赞美我的么？</English>
+		<L1/><L2/><L3/><L4/><Chinese>你好，[CT_NAME]。我是桑塔&#12539;安纳将军。墨西哥的救世主！你是专程过来赞美我的么？</Chinese><French>Hello, [CT_NAME]. I am General Santa Anna, Savior of Mexico! What have you come to offer me in tribute?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_TAIZONG_1</Tag>
+		<English>贵安，[CT_NAME]。朕，[OUR_NAME]，乃普天之共主。欲犯我大唐者，虽远必诛！</English>
+		<L1/><L2/><L3/><L4/><Chinese>贵安，[CT_NAME]。朕，[OUR_NAME]，乃普天之共主。欲犯我大唐者，虽远必诛！</Chinese><French>Greetings [CT_NAME]. I am [OUR_NAME], emperor of all the lands below the heavens. With absolute power over numberless minions, do you dare hurt the divine ruler of mighty [OUR_CIV_SHORT]?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_IVAN_IV_1</Tag>
+		<English>[OUR_NAME] of [OUR_CIV_SHORT] 欢迎你。我不赞美自己，也不赞美自己的勇气，但我赞美上帝，因为他保护我这个罪人，使我免受致命的危险，创造了我，使我能够做许多人类的事情。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[OUR_NAME] of [OUR_CIV_SHORT] 欢迎你。我不赞美自己，也不赞美自己的勇气，但我赞美上帝，因为他保护我这个罪人，使我免受致命的危险，创造了我，使我能够做许多人类的事情。</Chinese><French>[OUR_NAME] of [OUR_CIV_SHORT] greets you. I do not praise myself or my courage, but I praise God, for he protected me, a sinful man, from deadly dangers and created me capable of doing many human things.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_ATATURK_1</Tag>
+		<English>我们必须着手建立两国人民之间的友谊。如何让人民为此而奋斗？通过加强我们之间存在的天然桥梁。语言是一座桥梁……宗教是一座桥梁……历史是一座桥梁……</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们必须着手建立两国人民之间的友谊。如何让人民为此而奋斗？通过加强我们之间存在的天然桥梁。语言是一座桥梁……宗教是一座桥梁……历史是一座桥梁……</Chinese><French>We must get ready to build up the friendship between our peoples. How does a people get prepared for such an endeavour? By strengthening the natural bridges that exist between us. Language is a bridge... Religion is a bridge... History is a bridge...</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_MENELIK_1</Tag>
+		<English>你好, [CT_NAME]. 想象力，奉献精神，毅力，加上神圣的恩典，将确保你的成功。我们讨论什么？</English>
+		<L1/><L2/><L3/><L4/><Chinese>你好, [CT_NAME]. 想象力，奉献精神，毅力，加上神圣的恩典，将确保你的成功。我们讨论什么？</Chinese><French>Welcome, [CT_NAME]. Imagination, devotion, perseverance, together with divine grace, will assure your success. What shall we discuss?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_JUAREZ_1</Tag>
+		<English>您好，[CT_NAME]！这对于你祖国的和平时多么的有利啊！</English>
+		<L1/><L2/><L3/><L4/><Chinese>您好，[CT_NAME]！这对于你祖国的和平时多么的有利啊！</Chinese><French>Greetings, [CT_NAME]! It is so great to be at peace with you glorious nation!</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_PEDRO_II</Tag>
+		<English>我知道你来了，[CT_NAME]。告诉我，你想讨论些什么？</English>
+		<L1/><L2/><L3/><L4/><Chinese>我知道你来了，[CT_NAME]。告诉我，你想讨论些什么？</Chinese><French>I see you have come to visit, [CT_NAME]. Tell me what is it you wish to discuss.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_SAN_MARTIN</Tag>
+		<English>终于能和一个棋逢对手的人交谈了。我们的[OUR_EMPIRE]能为您做些什么吗？</English>
+		<L1/><L2/><L3/><L4/><Chinese>终于能和一个棋逢对手的人交谈了。我们的[OUR_EMPIRE]能为您做些什么吗？</Chinese><French>Finally I get to talk to a worthy adversary. What can the [OUR_EMPIRE] do for you?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_MENELIK_1</Tag>
+		<English>世界上有很多人希望统治和支配他人。像你这样的人。</English>
+		<L1/><L2/><L3/><L4/><Chinese>世界上有很多人希望统治和支配他人。像你这样的人。</Chinese><French>The world is well supplied with people who wish to rule and dominate others. People like you.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_JUAREZ_1</Tag>
+		<English>哦，你又……你又想抱怨些什么？</English>
+		<L1/><L2/><L3/><L4/><Chinese>哦，你又……你又想抱怨些什么？</Chinese><French>Oh, you again... What are you going to complain about?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_KHOMEINI_1</Tag>
+		<English>如果一个人允许异教徒继续为非作歹，那么他的精神上将会受到极大的苦难。如果一个人杀死异教徒，那么他先前犯下的罪恶就能得到救赎，他的死将是对他的祝福。</English>
+		<L1/><L2/><L3/><L4/><Chinese>如果一个人允许异教徒继续为非作歹，那么他的精神上将会受到极大的苦难。如果一个人杀死异教徒，那么他先前犯下的罪恶就能得到救赎，他的死将是对他的祝福。</Chinese><French>If one permits an infidel to continue in his role as a corrupter of the earth, the infidel's moral suffering will be all the worse. If one kills the infidel, and this stops him from perpetrating his misdeeds, his death will be a blessing to him.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_ALEXANDER_II_1</Tag>
+		<English>背叛、懦弱和谎言无处不在——你们的国家也不例外。</English>
+		<L1/><L2/><L3/><L4/><Chinese>背叛、懦弱和谎言无处不在——你们的国家也不例外。</Chinese><French>Treachery, cowardice and lies are everywhere - and your nation is no exception.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_PEDRO_II</Tag>
+		<English>长话短说， [CT_CIV_ADJ]。 我的日程表可是排得很紧的。</English>
+		<L1/><L2/><L3/><L4/><Chinese>长话短说， [CT_CIV_ADJ]。 我的日程表可是排得很紧的。</Chinese><French>Speak fast [CT_CIV_ADJ]. I have enough on my schedule already.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_SAN_MARTIN</Tag>
+		<English>你那微不足道的狡猾并不足以欺骗我，我警告你，下次你再敢这样就等着好看吧！ </English>
+		<L1/><L2/><L3/><L4/><Chinese>你那微不足道的狡猾并不足以欺骗我，我警告你，下次你再敢这样就等着好看吧！ </Chinese><French>You lack the guile to trick me. Be warned I will not react well to deceit. </French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_JUAREZ_1</Tag>
+		<English>[OUR_EMPIRE]政府将履行其维护独立的职责以击退外国入侵，并且承诺会与挑衅势力相抗衡！</English>
+		<L1/><L2/><L3/><L4/><Chinese>[OUR_EMPIRE]政府将履行其维护独立的职责以击退外国入侵，并且承诺会与挑衅势力相抗衡！</Chinese><French>The government of the [OUR_EMPIRE] will fulfill its duty to defend its independence and to repel foreign aggression, and accept the struggle to which it has been provoked!</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_PEDRO_II</Tag>
+		<English>没门！你将为你针对 [OUR_CIV_SHORT] 以及她的人民所犯下的罪恶而受到惩罚！</English>
+		<L1/><L2/><L3/><L4/><Chinese>没门！你将为你针对 [OUR_CIV_SHORT] 以及她的人民所犯下的罪恶而受到惩罚！</Chinese><French>No way! I shall punish you for your crimes against [OUR_CIV_SHORT] and its people!</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_SAN_MARTIN</Tag>
+		<English>我知道你终于要来乞求和平了，但是我是不会答应的――除非你投降！</English>
+		<L1/><L2/><L3/><L4/><Chinese>我知道你终于要来乞求和平了，但是我是不会答应的――除非你投降！</Chinese><French>I knew you would beg for peace eventually, but there will be no peace until you surrender.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_JUAREZ_1</Tag>
+		<English>滚出我的办公室！</English>
+		<L1/><L2/><L3/><L4/><Chinese>滚出我的办公室！</Chinese><French>Get out of my office!</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_PEDRO_II</Tag>
+		<English>你让我很失望，[CT_NAME]。走开。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你让我很失望，[CT_NAME]。走开。</Chinese><French>You make me sad, [CT_NAME]. Go away.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_SAN_MARTIN</Tag>
+		<English>我将用我平生所学的所有战术来躲开你。</English>
+		<L1/><L2/><L3/><L4/><Chinese>我将用我平生所学的所有战术来躲开你。</Chinese><French>I will now use my cunning knowledge of tactics to ignore you.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_NATIVE_1</Tag>
+		<English>你的话不过是病猪的咕噜声。我听不到。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你的话不过是病猪的咕噜声。我听不到。</Chinese><French>Your words are but the grunts of a diseased pig, [CT_NAME]. I do not hear them.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_NATIVE_1</Tag>
+		<English>把这个给我，也许我们两个国家可以和平相处一段时间。</English>
+		<L1/><L2/><L3/><L4/><Chinese>把这个给我，也许我们两个国家可以和平相处一段时间。</Chinese><French>Give me this, [CT_NAME] and perhaps our two nations can live in peace for a while longer.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_NATIVE_1</Tag>
+		<English>把这个交给我，[CT_NAME]，我可能会让你继续存在一段时间。</English>
+		<L1/><L2/><L3/><L4/><Chinese>把这个交给我，[CT_NAME]，我可能会让你继续存在一段时间。</Chinese><French>Hand this over, [CT_NAME], and I might let you continue to exist for a short while longer.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_NATIVE_1</Tag>
+		<English>虽然看起来不太可能，但似乎你们的弱小文明有我们想要的东西。我建议你快点把它交上来。</English>
+		<L1/><L2/><L3/><L4/><Chinese>虽然看起来不太可能，但似乎你们的弱小文明有我们想要的东西。我建议你快点把它交上来。</Chinese><French>Unlikely as it may seem, it appears that your puny civilization has something that we want. I suggest you hand it over quickly. </French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_NATIVE_1</Tag>
+		<English>欢迎，[CT_NAME]。你们的文明是如何发展起来的？</English>
+		<L1/><L2/><L3/><L4/><Chinese>欢迎，[CT_NAME]。你们的文明是如何发展起来的？</Chinese><French>Welcome, [CT_NAME]. And how is that undefended civilization of yours coming along?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_NATIVE_1</Tag>
+		<English>没有机会 [OUR_CIV_ADJ] 人民不愿意与像你这样的偷牛贼和好。</English>
+		<L1/><L2/><L3/><L4/><Chinese>没有机会 [OUR_CIV_ADJ] 人民不愿意与像你这样的偷牛贼和好。</Chinese><French>Not a chance. The mighty [OUR_CIV_ADJ] people do not care to make peace with cattle-stealing brigands like you.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_NATIVE_1</Tag>
+		<English>你好, [CT_NAME]! The [OUR_CIV_ADJ] 人民总是喜欢遇见脆弱和不设防的新文明！</English>
+		<L1/><L2/><L3/><L4/><Chinese>你好, [CT_NAME]! The [OUR_CIV_ADJ] 人民总是喜欢遇见脆弱和不设防的新文明！</Chinese><French>Greetings, [CT_NAME]! The [OUR_CIV_ADJ] people always enjoy meeting vulnerable and undefended new civilizations!</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_NATIVE_1</Tag>
+		<English>所以你已经从你恶臭的国家出来，来到我这里，[CT_NAME]。我为什么要得到这个令人怀疑的荣誉？</English>
+		<L1/><L2/><L3/><L4/><Chinese>所以你已经从你恶臭的国家出来，来到我这里，[CT_NAME]。我为什么要得到这个令人怀疑的荣誉？</Chinese><French>So you have emerged from your fetid country and come to me, [CT_NAME]. To what do I owe this extremely dubious honor?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_MEHMED_1</Tag>
+		<English>We require mighty [CT_CIV_SHORT]'s assistance. I hope you won't disappoint us.</English>
+		<L1/><L2/><L3/><L4/><Chinese>We require mighty [CT_CIV_SHORT]'s assistance. I hope you won't disappoint us.</Chinese><French>We require mighty [CT_CIV_SHORT]'s assistance. I hope you won't disappoint us.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_DEFENSIVE_PACT</Tag>
+		<English>共同防御协定――双方同意在对方遭到第三方攻击时自动向其宣战。</English>
+		<L1/><L2/><L3/><L4/><Chinese>共同防御协定――双方同意在对方遭到第三方攻击时自动向其宣战。</Chinese><French>A Mutual Protection Pact - Each Party Agrees to Automatically Declare War if the Other Party is Attacked.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_SLAVE</Tag>
+		<English>奴隶贸易</English>
+		<L1/><L2/><L3/><L4/><Chinese>奴隶贸易</Chinese><French>Slave Trade</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_TRUDEAU_1</Tag>
+		<English>你好，祝你愉快。我们的公民希望和平，但坚持我们必须成为自己家的主人。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你好，祝你愉快。我们的公民希望和平，但坚持我们必须成为自己家的主人。</Chinese><French>Good day and bonjour to you, [CT_NAME]. The [OUR_CIV_ADJ] people wish for peace, but insists that masters in our own house we must be.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MEIJI_1</Tag>
+		<English>我们终于见面了，我一直在等你的到来。我是日本明治天皇睦仁。来吧，我们有很多事情要讨论。你的衣服很漂亮，你的军队给我留下了深刻的印象。请，告诉我你的路，我会告诉你日本的奇迹。。。</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们终于见面了，我一直在等你的到来。我是日本明治天皇睦仁。来吧，我们有很多事情要讨论。你的衣服很漂亮，你的军队给我留下了深刻的印象。请，告诉我你的路，我会告诉你日本的奇迹。。。</Chinese><French>Finally we meet [CT_NAME], I have been awaiting your arrival. I am Meiji of Japan. Come, we have much to discuss. You have very nice dress, and I am impressed by your armies. Please, show me your ways and I shall show you the wonders of Japan...</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_AFONSO_1</Tag>
+		<English>欢迎来到 [OUR_CIV_ADJ]土地！我是国王[OUR_NAME]，会承认 [OUR_CIV_SHORT]政权吗？还是我需要用我的军队说服你？</English>
+		<L1/><L2/><L3/><L4/><Chinese>欢迎来到 [OUR_CIV_ADJ]土地！我是国王[OUR_NAME]，会承认 [OUR_CIV_SHORT]政权吗？还是我需要用我的军队说服你？</Chinese><French>Welcome to the independent [OUR_CIV_ADJ] lands! I am the king [OUR_NAME], will [CT_CIV_SHORT] recognize [OUR_CIV_SHORT]'s independence or do I need to convince you with my armies?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_AFONSO_1</Tag>
+		<English>我最好的朋友来了！今天是什么风把你吹来的？</English>
+		<L1/><L2/><L3/><L4/><Chinese>我最好的朋友来了！今天是什么风把你吹来的？</Chinese><French>Here comes my best friend, [CT_NAME]! What brings you today to [OUR_CIV_SHORT]?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_AFONSO_1</Tag>
+		<English>你是我们的敌人，但我会和你谈谈。</English>
+		<L1/><L2/><L3/><L4/><Chinese>你是我们的敌人，但我会和你谈谈。</Chinese><French>You are an enemy of [OUR_CIV_SHORT], but I will talk to you.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_AFONSO_1</Tag>
+		<English>我们急切地请求您的帮助，[CT_NAME]！我们的未来取决于你！</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们急切地请求您的帮助，[CT_NAME]！我们的未来取决于你！</Chinese><French>We desperatedly demand your assistance, [CT_NAME]! [OUR_CIV_SHORT]'s future depends on you!</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_AFONSO_1</Tag>
+		<English>你有机会和 [OUR_CIV_SHORT]分享你的财富吗？</English>
+		<L1/><L2/><L3/><L4/><Chinese>你有机会和 [OUR_CIV_SHORT]分享你的财富吗？</Chinese><French>Any chance you share your wealth with [OUR_CIV_SHORT]?</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_AFONSO_1</Tag>
+		<English>仅仅承认我是 [OUR_CIV_SHORT]帝国的国王是不够的！我要求以下几点表示敬意！</English>
+		<L1/><L2/><L3/><L4/><Chinese>仅仅承认我是 [OUR_CIV_SHORT]帝国的国王是不够的！我要求以下几点表示敬意！</Chinese><French>Recognizing me as king of the [OUR_EMPIRE] is not enough! I demand the following in tribute!</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_BUMIN_1</Tag>
+		<English>我是卡恩·布明，我们人民翱翔在腾格里的天空下，铸造自由之子的利剑，借以锻造我国国民的力量。</English>
+		<L1/><L2/><L3/><L4/><Chinese>我是卡恩·布明，我们人民翱翔在腾格里的天空下，铸造自由之子的利剑，借以锻造我国国民的力量。</Chinese><French>I, Qaghan Bumin, was called slave, but I am free. And by rights of sharp swords the son of free men, forging the strength of my people to ride under the sky of Tengri.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_ALP_ARSLAN_1</Tag>
+		<English>我想知道你对囚犯做了什么。我的惩罚是最重的，因为我会原谅你，让你在东西方之间自由驰骋。</English>
+		<L1/><L2/><L3/><L4/><Chinese>我想知道你对囚犯做了什么。我的惩罚是最重的，因为我会原谅你，让你在东西方之间自由驰骋。</Chinese><French>I would like to know as to what you do with your prisoners. My punishment is the heaviest, for I would forgive you and set you to ride free between the west and the east.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_TAMERLANE_1</Tag>
+		<English>我用我的钢剑，征服了世界的大部分地区，使撒马尔罕和布哈拉成为我的首都和居住地；你这个可怜的家伙，会把这两座城市换成鼹鼠。事实上，真理就是安全。</English>
+		<L1/><L2/><L3/><L4/><Chinese>我用我的钢剑，征服了世界的大部分地区，使撒马尔罕和布哈拉成为我的首都和居住地；你这个可怜的家伙，会把这两座城市换成鼹鼠。事实上，真理就是安全。</Chinese><French>By the blows of my well tempered sword I have conquered the greater part of the world to enlarge Samarkand and Bukhara, my capitals and residences; and you, pitiful creature, would exchange these two cities for a mole. Indeed, truth is safety.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_SACKED_CITY</Tag>
+		<English>“你洗劫了我们的一座城市！”</English>
+		<L1/><L2/><L3/><L4/><Chinese>“你洗劫了我们的一座城市！”</Chinese><French>"You sacked one of our cities!"</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_HONGWU</Tag>
+		<English>我的统治者，中央王国会告诉你，你的声音太重要了。为臣民服务，不要咕哝，不要犹豫！大声，清楚，没有恐惧！</English>
+		<L1/><L2/><L3/><L4/><Chinese>我的统治者，中央王国会告诉你，你的声音太重要了。为臣民服务，不要咕哝，不要犹豫！大声，清楚，没有恐惧！</Chinese><French>My fellow ruler, the Middle Kingdom will teach you that your voice is all too important. To serve your subjects, do not mumble, do not hesitate! Speak loudly, clearly, and without fear!</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_TAIZONG</Tag>
+		<English>生活中有那么多是一面镜子。铜镜给了我更好的衣服，古董镜给了我王国的兴衰，朋友镜给了你自己。我的镜子丢了！不要失去你的！别忘了谁是你最亲爱的！</English>
+		<L1/><L2/><L3/><L4/><Chinese>生活中有那么多是一面镜子。铜镜给了我更好的衣服，古董镜给了我王国的兴衰，朋友镜给了你自己。我的镜子丢了！不要失去你的！别忘了谁是你最亲爱的！</Chinese><French>So much in life is a mirror. The mirror of bronze gave me better clothes, the mirror of antiquity showed me the rise and fall of my realm, the mirror of friends will show you yourself. I have lost my mirror! Do not lose yours! Do not forget who is dear to you!</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_KHOSROW</Tag>
+		<English>作为波斯的万王之王，我继承了被我们浩瀚的军队征服的一千片土地的力量和丰富。明智的做法是，你抛开你的骄傲，接受我的伟大，除非你想成为它的新获得者。</English>
+		<L1/><L2/><L3/><L4/><Chinese>作为波斯的万王之王，我继承了被我们浩瀚的军队征服的一千片土地的力量和丰富。明智的做法是，你抛开你的骄傲，接受我的伟大，除非你想成为它的新获得者。</Chinese><French>As Shahanshah of Persia, I have inherited the power and richness of a thousand lands conquered by our vast armies. It would be wise that you leave aside your pride and accept my greatness, unless you want to be a new acquisition for it.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_LEADER_KHOSROW</Tag>
+		<English>因为你的名字是万王之王，你对我们的一切统治意味着你的智者应该比我们的智者更聪明。你要么给我们解释一下这盘棋，要么给我们寄去税收和贡品。</English>
+		<L1/><L2/><L3/><L4/><Chinese>因为你的名字是万王之王，你对我们的一切统治意味着你的智者应该比我们的智者更聪明。你要么给我们解释一下这盘棋，要么给我们寄去税收和贡品。</Chinese><French>As your name is the King of Kings, all your emperorship over us connotes that your wise men should be wiser than ours. Either you send us an explanation of this game of chess or send revenue and tribute us.</French></TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_</Tag>
+		<English/>
+		<L1/><L2/><L3/><L4/><French></French></TEXT>
+</Civ4GameText>

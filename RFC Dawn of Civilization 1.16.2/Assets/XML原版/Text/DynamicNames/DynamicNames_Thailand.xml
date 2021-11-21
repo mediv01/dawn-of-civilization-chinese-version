@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Thailand -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_THAILAND_DESC</Tag>
+		<English>泰国文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰国文明</Chinese><French>The Thais</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_THAILAND_PEOPLES</Tag>
+		<English>泰国</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰国</Chinese><French>Thai Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_THAILAND_DEFAULT</Tag>
+		<English>Thailand</English>
+		<L1/><L2/><L3/><L4/><Chinese>Thailand</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_THAILAND_FASCIST</Tag>
+		<English>泰国</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰国</Chinese><French>%s2 Junta</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_THAILAND_AYUTTHAYA</Tag>
+		<English>泰国-大城王国</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰国-大城王国</Chinese><French>Ayutthaya</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_THAILAND_SIAM</Tag>
+		<English>泰国-暹罗</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰国-暹罗</Chinese><French>Siam</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_THAILAND_SIAMESE</Tag>
+		<English>泰国-暹罗</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰国-暹罗</Chinese><French>Siamese</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_THAI_VASSAL</Tag>
+		<English>%s1 附庸</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 附庸</Chinese><French>Mueang of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_THAILAND_ADJECTIVE</Tag>
+		<English>Thai</English>
+		<L1/><L2/><L3/><L4/><Chinese>Thai</Chinese><French>Thai</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_THAILAND_SHORT_DESC</Tag>
+		<English>Thailand</English>
+		<L1/><L2/><L3/><L4/><Chinese>Thailand</Chinese><French>Thailand</French></TEXT>
+</Civ4GameText>

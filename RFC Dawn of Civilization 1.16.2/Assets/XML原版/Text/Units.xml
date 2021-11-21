@@ -1,0 +1,1368 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Units -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AMERICAN_MINUTEMAN</Tag>
+		<English>一分钟人</English>
+		<L1/><L2/><L3/><L4/><Chinese>一分钟人</Chinese><French>Minuteman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AMERICAN_MINUTEMAN_STRATEGY</Tag>
+		<English>一分钟人是美国文明的特色单位，替代来复枪兵。只需花费等同于火枪手的产能即可生产他们。</English>
+		<L1/><L2/><L3/><L4/><Chinese>一分钟人是美国文明的特色单位，替代来复枪兵。只需花费等同于火枪手的产能即可生产他们。</Chinese><French>The [COLOR_UNIT_TEXT]Minuteman[COLOR_REVERT], the American replacement for the the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], is cheaper and begins with the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARGENTINE_GRENADIER_CAVALRY</Tag>
+		<English>掷弹骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>掷弹骑兵</Chinese><French>Grenadier Cavalry</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARABIAN_CAMEL_ARCHER</Tag>
+		<English>骆驼射手</English>
+		<L1/><L2/><L3/><L4/><Chinese>骆驼射手</Chinese><French>Camel Archer</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARCHER_STRATEGY</Tag>
+		<English>这种原始的射击部队是最初期用来防御你的城市的明智选择。它有机会获得1个先发打击点数，在城市和丘陵地带可获得额外防御加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这种原始的射击部队是最初期用来防御你的城市的明智选择。它有机会获得1个先发打击点数，在城市和丘陵地带可获得额外防御加成。</Chinese><French>[COLOR_UNIT_TEXT]Archers[COLOR_REVERT] have one first strike, have a defensive bonus in cities, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARGENTINE_GRENADIER_CAVALRY_STRATEGY</Tag>
+		<English>这是一种能够克制来复枪兵的骑座单位</English>
+		<L1/><L2/><L3/><L4/><Chinese>这是一种能够克制来复枪兵的骑座单位</Chinese><French>The [COLOR_UNIT_TEXT]Grenadier Cavalry[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARTILLERY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]火炮[COLOR_REVERT]在攻击敌方城市时非常有效；它们可以轰击敌方城防，当战斗失败时也有一定几率可安全撤退。同时,和火炮也会对与目标处于同一位置的其他敌军造成附带损害。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]火炮[COLOR_REVERT]在攻击敌方城市时非常有效；它们可以轰击敌方城防，当战斗失败时也有一定几率可安全撤退。同时,和火炮也会对与目标处于同一位置的其他敌军造成附带损害。</Chinese><French>[COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AZTEC_JAGUAR_STRATEGY</Tag>
+		<English>这是阿兹特克的特色肉搏单位（替代[COLOR_UNIT_TEXT]剑士[COLOR_REVERT]），不需要拥有特殊资源，在[COLOR_UNIT_TEXT]丛林[COLOR_REVERT]地形具有优势加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这是阿兹特克的特色肉搏单位（替代[COLOR_UNIT_TEXT]剑士[COLOR_REVERT]），不需要拥有特殊资源，在[COLOR_UNIT_TEXT]丛林[COLOR_REVERT]地形具有优势加成。</Chinese><French>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Alloys[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Bloomery[COLOR_REVERT] technology, is cheaper, doesn't require the [COLOR_HIGHLIGHT_TEXT]Iron[COLOR_REVERT] resource, is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_KUSHAN_ASVAKA</Tag>
+		<English>伊朗骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊朗骑兵</Chinese><French>Asvaka</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AXEMAN_STRATEGY</Tag>
+		<English>这种肉搏单位在对付其他肉搏单位时具有特殊战斗优势加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这种肉搏单位在对付其他肉搏单位时具有特殊战斗优势加成。</Chinese><French>[COLOR_UNIT_TEXT]Axemen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NUCLEAR_SUBMARINE</Tag>
+		<English>核潜艇</English>
+		<L1/><L2/><L3/><L4/><Chinese>核潜艇</Chinese><French>Nuclear Submarine</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NUCLEAR_SUBMARINE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]核潜艇[COLOR_UNIT_TEXT]可以携带一艘[COLOR_UNIT_TEXT]侦察机[COLOR_UNIT_TEXT]，[COLOR_UNIT_TEXT]探险家[COLOR_UNIT_TEXT]，[COLOR_UNIT_TEXT]传教士[COLOR_UNIT_TEXT]，[COLOR_UNIT_TEXT]间谍[COLOR_UNIT_TEXT]或[COLOR_UNIT_TEXT]大人物[COLOR_UNIT_TEXT]，对[COLOR_UNIT_TEXT]潜艇[COLOR_UNIT_TEXT]单位有攻击加成，可以参见[COLOR_UNIT_TEXT]潜艇[COLOR_UNIT_TEXT]和[COLOR_UNIT_TEXT]核潜艇[COLOR_UNIT_TEXT]单位，可以进入[COLOR_UNIT_TEXT]冰[COLOR_UNIT_TEXT]，可以探索敌方领土，可以退出战斗，对除[COLOR_UNIT_TEXT]驱逐舰[COLOR_UNIT_TEXT]以外的所有单位都不可见，[COLOR_UNIT_TEXT]隐形驱逐舰[COLOR_UNIT_TEXT]，[COLOR_UNIT_TEXT]潜艇[COLOR_UNIT_TEXT]和[COLOR_UNIT_TEXT]攻击潜艇[COLOR_UNIT_TEXT]单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]核潜艇[COLOR_UNIT_TEXT]可以携带一艘[COLOR_UNIT_TEXT]侦察机[COLOR_UNIT_TEXT]，[COLOR_UNIT_TEXT]探险家[COLOR_UNIT_TEXT]，[COLOR_UNIT_TEXT]传教士[COLOR_UNIT_TEXT]，[COLOR_UNIT_TEXT]间谍[COLOR_UNIT_TEXT]或[COLOR_UNIT_TEXT]大人物[COLOR_UNIT_TEXT]，对[COLOR_UNIT_TEXT]潜艇[COLOR_UNIT_TEXT]单位有攻击加成，可以参见[COLOR_UNIT_TEXT]潜艇[COLOR_UNIT_TEXT]和[COLOR_UNIT_TEXT]核潜艇[COLOR_UNIT_TEXT]单位，可以进入[COLOR_UNIT_TEXT]冰[COLOR_UNIT_TEXT]，可以探索敌方领土，可以退出战斗，对除[COLOR_UNIT_TEXT]驱逐舰[COLOR_UNIT_TEXT]以外的所有单位都不可见，[COLOR_UNIT_TEXT]隐形驱逐舰[COLOR_UNIT_TEXT]，[COLOR_UNIT_TEXT]潜艇[COLOR_UNIT_TEXT]和[COLOR_UNIT_TEXT]攻击潜艇[COLOR_UNIT_TEXT]单位。</Chinese><French>[COLOR_UNIT_TEXT]Nuclear Submarines[COLOR_REVERT] can carry one [COLOR_UNIT_TEXT]Scout[COLOR_REVERT], [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], [COLOR_UNIT_TEXT]Missionary[COLOR_REVERT], [COLOR_UNIT_TEXT]Spy[COLOR_REVERT] or [COLOR_UNIT_TEXT]Great Person[COLOR_REVERT], has an attack bonus against [COLOR_UNIT_TEXT]Submarine[COLOR_REVERT] units, can see [COLOR_UNIT_TEXT]Submarine[COLOR_REVERT] and [COLOR_UNIT_TEXT]Nuclear Submarine[COLOR_REVERT] units, is able to enter [COLOR_HIGHLIGHT_TEXT]Ice[COLOR_REVERT], can explore rival territory, can withdraw from combat and are invisible to all units except the [COLOR_UNIT_TEXT]Destroyer[COLOR_REVERT], [COLOR_UNIT_TEXT]Stealth Destroyer[COLOR_REVERT], [COLOR_UNIT_TEXT]Submarine[COLOR_REVERT] and [COLOR_UNIT_TEXT]Attack Submarine[COLOR_REVERT] units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AT_INFANTRY_STRATEGY</Tag>
+		<English>此种后期火器单位组建成本低廉，专用于克制装甲单位，并天然拥有[COLOR_HIGHLIGHT_TEXT]伏击能力[COLOR_REVERT]晋升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>此种后期火器单位组建成本低廉，专用于克制装甲单位，并天然拥有[COLOR_HIGHLIGHT_TEXT]伏击能力[COLOR_REVERT]晋升。</Chinese><French>[COLOR_UNIT_TEXT]Anti-Tanks[COLOR_REVERT] can intercept aircraft, have a combat bonus against [COLOR_UNIT_TEXT]Armored Units[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Ambush[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_KUSHAN_ASVAKA_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Asvaka[COLOR_REVERT]是公元30年至220年在中亚繁衍的野蛮人单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]Asvaka[COLOR_REVERT]是公元30年至220年在中亚繁衍的野蛮人单位。</Chinese><French>The [COLOR_UNIT_TEXT]Asvaka[COLOR_REVERT] is a barbarian unit that spawns in Central Asia from 30 to 220 AD.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BABYLONIAN_ASHARITTU_BOWMAN</Tag>
+		<English>巴比伦长弓手</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦长弓手</Chinese><French>Asharittu Bowman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BEAR_STRATEGY</Tag>
+		<English>熊是公元前3000年至850年在西伯利亚产卵的野蛮单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>熊是公元前3000年至850年在西伯利亚产卵的野蛮单位。</Chinese><French>[COLOR_UNIT_TEXT]Bears[COLOR_REVERT] are Barbarian units that spawn in Siberia from 3000 to 850 BC.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BATTLESHIP_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]战列舰[COLOR_REVERT]是最强的水面舰艇。战列舰能击沉大多数舰只（但对潜艇和空袭却显得无能为力）。类似的，[COLOR_UNIT_TEXT]战列舰[COLOR_REVERT]的攻击也会对目标同一位置的其他单位造成附带损害。战列舰也能轰击城防。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]战列舰[COLOR_REVERT]是最强的水面舰艇。战列舰能击沉大多数舰只（但对潜艇和空袭却显得无能为力）。类似的，[COLOR_UNIT_TEXT]战列舰[COLOR_REVERT]的攻击也会对目标同一位置的其他单位造成附带损害。战列舰也能轰击城防。</Chinese><French>[COLOR_UNIT_TEXT]Battleships[COLOR_REVERT] can bombard city defenses and causes collateral damage.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BABYLONIAN_ASHARITTU_BOWMAN_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT] 阿沙里图长弓手 [COLOR_REVERT]是[COLOR_UNIT_TEXT] Archer [COLOR_REVERT]的巴比伦替代品，在攻击敌方单位时会造成附带伤害。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT] 阿沙里图长弓手 [COLOR_REVERT]是[COLOR_UNIT_TEXT] Archer [COLOR_REVERT]的巴比伦替代品，在攻击敌方单位时会造成附带伤害。</Chinese><French>The [COLOR_UNIT_TEXT]Asharittu Bowman[COLOR_REVERT], the Babylonian replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], causes collateral damage when attacking enemy units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BOMBARD</Tag>
+		<English>射石炮</English>
+		<L1/><L2/><L3/><L4/><Chinese>射石炮</Chinese><French>Bombard</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BOMBARD_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]轰炸机[COLOR_REVERT]不能占领敌人的城市或单位，不能获得防御加成，攻击城市时有战斗加成，造成附带伤害，对[COLOR_UNIT_TEXT]攻城武器的附带伤害免疫，并且可以轰炸城市防御。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]轰炸机[COLOR_REVERT]不能占领敌人的城市或单位，不能获得防御加成，攻击城市时有战斗加成，造成附带伤害，对[COLOR_UNIT_TEXT]攻城武器的附带伤害免疫，并且可以轰炸城市防御。</Chinese><French>[COLOR_UNIT_TEXT]Bombards[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BOMBER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]轰炸机[COLOR_REVERT]是陆基航空兵。它们可以攻击敌军地面部队（也能攻击水面部队，但效果略差），也能破坏敌军城防。轰炸机也会造成附带损害。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]轰炸机[COLOR_REVERT]是陆基航空兵。它们可以攻击敌军地面部队（也能攻击水面部队，但效果略差），也能破坏敌军城防。轰炸机也会造成附带损害。</Chinese><French>[COLOR_UNIT_TEXT]Bombers[COLOR_REVERT] can destroy improvements, lower city defenses, perform recon missions, damage enemy units, cause collateral damage and have a combat penalty against [COLOR_UNIT_TEXT]Water Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BRAZILIAN_MADEIREIRO</Tag>
+		<English>巴西工人</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴西工人</Chinese><French>Madeireiro</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BRAZILIAN_MADEIREIRO_HELP</Tag>
+		<English>[ICON_BULLET]移除丛林、雨林和森林时创造产量和黄金</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]移除丛林、雨林和森林时创造产量和黄金</Chinese><French>[ICON_BULLET]Create Production and Gold when Removing Jungles, Rainforest and Forests</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BRAZILIAN_MADEIREIRO_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]伐木工人[COLOR_REVERT]是[COLOR_UNIT_TEXT]劳工[COLOR_REVERT]的巴西替代品，它以[COLOR_HIGHLIGHT_TEXT]Woodsman II[COLOR_REVERT]促销活动开始，在砍伐丛林、雨林和森林时提供额外的黄金和产量。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]伐木工人[COLOR_REVERT]是[COLOR_UNIT_TEXT]劳工[COLOR_REVERT]的巴西替代品，它以[COLOR_HIGHLIGHT_TEXT]Woodsman II[COLOR_REVERT]促销活动开始，在砍伐丛林、雨林和森林时提供额外的黄金和产量。</Chinese><French>The [COLOR_UNIT_TEXT]Madeireiro[COLOR_REVERT], the Brazilian replacement for the [COLOR_UNIT_TEXT]Labourer[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Woodsman II[COLOR_REVERT] promotion and provides extra gold and production when it chops jungles, rainforest and forests.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BYZANTINE_CATAPHRACT_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]重甲骑兵[COLOR_REVERT]是拜占庭的特色单位，替代[COLOR_UNIT_TEXT]骑士[COLOR_REVERT]，战斗力更强，但是不对先发打击免疫。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]重甲骑兵[COLOR_REVERT]是拜占庭的特色单位，替代[COLOR_UNIT_TEXT]骑士[COLOR_REVERT]，战斗力更强，但是不对先发打击免疫。</Chinese><French>The [COLOR_UNIT_TEXT]Cataphract[COLOR_REVERT], the Byzantine replacement for the the [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Nobility[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Feudalism[COLOR_REVERT] technology and begins with the [COLOR_HIGHLIGHT_TEXT]Shock[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAN_DIPLOMATIC_MISSION</Tag>
+		<English>[ICON_BULLET]可以执行外交任务</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以执行外交任务</Chinese><French>[ICON_BULLET]Can Conduct Diplomatic Missions</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAN_PERSECUTE</Tag>
+		<English>[ICON_BULLET]可以移除非国家宗教和相关建筑</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以移除非国家宗教和相关建筑</Chinese><French>[ICON_BULLET]Can remove non-state religions and associated buildings</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAN_REFORM_GOVERNMENT</Tag>
+		<English>[ICON_BULLET]可以改革政府</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以改革政府</Chinese><French>[ICON_BULLET]Can Reform the Government</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAN_RESOLVE_CRISIS</Tag>
+		<English>[ICON_BULLET]可以解决危机</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以解决危机</Chinese><French>[ICON_BULLET]Can Resolve a Crisis</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CANADIAN_CORVETTE</Tag>
+		<English>加拿大护卫舰</English>
+		<L1/><L2/><L3/><L4/><Chinese>加拿大护卫舰</Chinese><French>Corvette</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PHOENICIAN_NUMIDIAN_CAVALRY</Tag>
+		<English>努米迪亚骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>努米迪亚骑兵</Chinese><French>Numidian Cavalry</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CATAPULT_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]投石车[COLOR_REVERT]可以轰击敌方城防，当战斗失败时也有一定几率可安全撤退。当投石车攻击时，会对和目标处于同一位置的其他单位造成附带损害。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]投石车[COLOR_REVERT]可以轰击敌方城防，当战斗失败时也有一定几率可安全撤退。当投石车攻击时，会对和目标处于同一位置的其他单位造成附带损害。</Chinese><French>[COLOR_UNIT_TEXT]Catapults[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHINESE_CHOKONU</Tag>
+		<English>诸葛弩</English>
+		<L1/><L2/><L3/><L4/><Chinese>诸葛弩</Chinese><French>Cho-Ko-Nu</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHINESE_CHOKONU_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]诸葛弩[COLOR_REVERT]是[COLOR_UNIT_TEXT]弩手[COLOR_REVERT]的中国替代品，它有额外的第一一击，并造成附带伤害。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]诸葛弩[COLOR_REVERT]是[COLOR_UNIT_TEXT]弩手[COLOR_REVERT]的中国替代品，它有额外的第一一击，并造成附带伤害。</Chinese><French>The [COLOR_UNIT_TEXT]Cho Ko Nu[COLOR_REVERT], the Chinese replacement for the [COLOR_UNIT_TEXT]Crossbowman[COLOR_REVERT], has an extra first strike and causes collateral damage.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAVALRY_STRATEGY</Tag>
+		<English>这种最强大的骑乘单位特别适于用于探索地形，并能从战斗中撤退。在攻击[COLOR_UNIT_TEXT]加农炮[COLOR_REVERT]时拥有奖励加成，但不能获得防御时的地形奖励。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这种最强大的骑乘单位特别适于用于探索地形，并能从战斗中撤退。在攻击[COLOR_UNIT_TEXT]加农炮[COLOR_REVERT]时拥有奖励加成，但不能获得防御时的地形奖励。</Chinese><French>[COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, has a combat bonus against [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units and has a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Atillery[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHARIOT_STRATEGY</Tag>
+		<English>当你关注行军的速度时，可以训练这种最原始的骑乘单位，但记住使他们一直保持进攻，因为它们无法获得防御加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>当你关注行军的速度时，可以训练这种最原始的骑乘单位，但记住使他们一直保持进攻，因为它们无法获得防御加成。</Chinese><French>[COLOR_UNIT_TEXT]Chariots[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat and have a combat bonus on open terrain.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CELTIC_GALLIC_WARRIOR_STRATEGY</Tag>
+		<English>高卢战士是凯尔特人特有的强大肉搏单位（替代[COLOR_UNIT_TEXT]剑士[COLOR_REVERT]），该单位天然拥有[COLOR_HIGHLIGHT_TEXT]游击一级[COLOR_REVERT]晋升，非常适宜丘陵防御作战。</English>
+		<L1/><L2/><L3/><L4/><Chinese>高卢战士是凯尔特人特有的强大肉搏单位（替代[COLOR_UNIT_TEXT]剑士[COLOR_REVERT]），该单位天然拥有[COLOR_HIGHLIGHT_TEXT]游击一级[COLOR_REVERT]晋升，非常适宜丘陵防御作战。</Chinese><French>The [COLOR_UNIT_TEXT]Gallic Warrior[COLOR_REVERT] is a barbarian unit that spawns in Europe from 650 to 110 BC.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CELTIC_CIDAINH</Tag>
+		<English>希丹</English>
+		<L1/><L2/><L3/><L4/><Chinese>希丹</Chinese><French>Cidainh</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CROSSBOWMAN_STRATEGY</Tag>
+		<English>这是一种强大的投射部队，在对抗肉搏部队时获有加成。将这些部队与[COLOR_UNIT_TEXT]长枪兵[COLOR_REVERT]和[COLOR_UNIT_TEXT]钉锤手[COLOR_REVERT]混编时可获得很强的综合战力。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这是一种强大的投射部队，在对抗肉搏部队时获有加成。将这些部队与[COLOR_UNIT_TEXT]长枪兵[COLOR_REVERT]和[COLOR_UNIT_TEXT]钉锤手[COLOR_REVERT]混编时可获得很强的综合战力。</Chinese><French>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, have a defense bonus in cities and hills and have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CELTIC_CIDAINH_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Cidainh[COLOR_REVERT]是一个在高卢漫游的野蛮人单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]Cidainh[COLOR_REVERT]是一个在高卢漫游的野蛮人单位。</Chinese><French>The [COLOR_UNIT_TEXT]Cidainh[COLOR_REVERT] is a barbarian unit roaming in Gaul.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CANADIAN_CORVETTE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]护卫舰[COLOR_UNIT_TEXT]，加拿大的[COLOR_UNIT_TEXT]驱逐舰的替代品[COLOR_UNIT_TEXT]，更便宜，力量点少四点，有两个额外的移动点，失去轰炸城市的能力，从[COLOR_UNIT_TEXT]哨兵[COLOR_UNIT_TEXT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]护卫舰[COLOR_UNIT_TEXT]，加拿大的[COLOR_UNIT_TEXT]驱逐舰的替代品[COLOR_UNIT_TEXT]，更便宜，力量点少四点，有两个额外的移动点，失去轰炸城市的能力，从[COLOR_UNIT_TEXT]哨兵[COLOR_UNIT_TEXT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Corvette[COLOR_REVERT], the Canadian replacement for the [COLOR_UNIT_TEXT]Destroyer[COLOR_REVERT], is cheaper, has four less strength points, has two additional movement points, loses the ability to bombard cities and starts with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COLOMBIAN_ALBION_LEGION</Tag>
+		<English>阿尔比恩掷弹兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿尔比恩掷弹兵</Chinese><French>Albion Legion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COLOMBIAN_ALBION_LEGION_STRATEGY</Tag>
+		<English>作为掷弹兵的替代兵种，移动力和攻城能力更强。</English>
+		<L1/><L2/><L3/><L4/><Chinese>作为掷弹兵的替代兵种，移动力和攻城能力更强。</Chinese><French>The [COLOR_UNIT_TEXT]Albion Legion[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], has an additional movement point and is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CUIRASSIER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]胸甲骑兵[COLOR_REVERT]标志着骑乘单位从冷兵器时代发展到火器时代，是[COLOR_UNIT_TEXT]近代骑兵[COLOR_REVERT]出现之前最强大的陆军兵种。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]胸甲骑兵[COLOR_REVERT]标志着骑乘单位从冷兵器时代发展到火器时代，是[COLOR_UNIT_TEXT]近代骑兵[COLOR_REVERT]出现之前最强大的陆军兵种。</Chinese><French>[COLOR_UNIT_TEXT]Cuirassiers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities and can withdraw from combat.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EGYPTIAN_WARCHARIOT</Tag>
+		<English>埃及战车</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及战车</Chinese><French>War Chariot</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EGYPTIAN_WARCHARIOT_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]战车[COLOR_REVERT]，埃及替代[COLOR_UNIT_TEXT]战车[COLOR_REVERT]，有一个额外的力量点，对第一次攻击免疫，并以[COLOR_HIGHLIGHT_TEXT]沙漠适应[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]战车[COLOR_REVERT]，埃及替代[COLOR_UNIT_TEXT]战车[COLOR_REVERT]，有一个额外的力量点，对第一次攻击免疫，并以[COLOR_HIGHLIGHT_TEXT]沙漠适应[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]War Chariot[COLOR_REVERT], the Egyptian replacement for the [COLOR_UNIT_TEXT]Chariot[COLOR_REVERT], has an additional strength point, is immune to first strikes and begins with the [COLOR_HIGHLIGHT_TEXT]Desert Adaptation[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DESTROYER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]驱逐舰[COLOR_REVERT]有一定的防空作用，而且还能很好的探测并摧毁敌方[COLOR_UNIT_TEXT]潜艇[COLOR_REVERT]（对其他大多数单位隐形）。它们通常与[COLOR_UNIT_TEXT]航空母舰[COLOR_REVERT]和[COLOR_UNIT_TEXT]运输舰[COLOR_REVERT]一起行动。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]驱逐舰[COLOR_REVERT]有一定的防空作用，而且还能很好的探测并摧毁敌方[COLOR_UNIT_TEXT]潜艇[COLOR_REVERT]（对其他大多数单位隐形）。它们通常与[COLOR_UNIT_TEXT]航空母舰[COLOR_REVERT]和[COLOR_UNIT_TEXT]运输舰[COLOR_REVERT]一起行动。</Chinese><French>[COLOR_UNIT_TEXT]Destroyers[COLOR_REVERT] can see the [COLOR_UNIT_TEXT]Submarine[COLOR_REVERT] and [COLOR_UNIT_TEXT]Nuclear Submarine[COLOR_REVERT] units, intercept air units and bombard city defenses and have an combat bonus against [COLOR_UNIT_TEXT]Submarine[COLOR_REVERT], [COLOR_UNIT_TEXT]Nuclear Submarine[COLOR_REVERT] and [COLOR_UNIT_TEXT]Torpedo Boat[COLOR_REVERT] units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ENGLISH_REDCOAT_STRATEGY</Tag>
+		<English>这种强大的火器近战部队（英国用以取代[COLOR_UNIT_TEXT]来复枪兵[COLOR_REVERT]）在攻击骑乘单位及其他火器部队时可以得到一定加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这种强大的火器近战部队（英国用以取代[COLOR_UNIT_TEXT]来复枪兵[COLOR_REVERT]）在攻击骑乘单位及其他火器部队时可以得到一定加成。</Chinese><French>The [COLOR_UNIT_TEXT]Redcoat[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], causes collateral damage.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EXPLORER_STRATEGY</Tag>
+		<English>组建[COLOR_UNIT_TEXT]探险家[COLOR_REVERT]探索未知地域，相比[COLOR_UNIT_TEXT]侦察兵[COLOR_REVERT]移动力更高；探访[COLOR_HIGHLIGHT_TEXT]部落村庄[COLOR_REVERT]时能获得更好的收获。但是他们不能用于攻击。</English>
+		<L1/><L2/><L3/><L4/><Chinese>组建[COLOR_UNIT_TEXT]探险家[COLOR_REVERT]探索未知地域，相比[COLOR_UNIT_TEXT]侦察兵[COLOR_REVERT]移动力更高；探访[COLOR_HIGHLIGHT_TEXT]部落村庄[COLOR_REVERT]时能获得更好的收获。但是他们不能用于攻击。</Chinese><French>[COLOR_UNIT_TEXT]Explorers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MANDE_FARARI</Tag>
+		<English>法拉里骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>法拉里骑兵</Chinese><French>Farari</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FIGHTER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]战斗机[COLOR_REVERT]可攻击敌方空军单位并侦察敌方领土，当其被配置在[COLOR_UNIT_TEXT]航空母舰[COLOR_REVERT]上时非常有用。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]战斗机[COLOR_REVERT]可攻击敌方空军单位并侦察敌方领土，当其被配置在[COLOR_UNIT_TEXT]航空母舰[COLOR_REVERT]上时非常有用。</Chinese><French>[COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] can intercept enemy air units, destroy improvements, bomb city defenses, perform recon missions and damage enemy units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MANDE_FARARI_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]法拉利[COLOR_REVERT]是一个野蛮人单位，在公元450年至1700年的撒哈拉沙漠中繁殖。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]法拉利[COLOR_REVERT]是一个野蛮人单位，在公元450年至1700年的撒哈拉沙漠中繁殖。</Chinese><French>The [COLOR_UNIT_TEXT]Farari[COLOR_REVERT] is a barbarian unit that spawns in the Sahara from 450 to 1700 AD.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PHOENICIAN_NUMIDIAN_CAVALRY_STRATEGY</Tag>
+		<English>努米迪亚骑兵[COLOR_REVERT]，腓尼基人代替[COLOR_REVERT]骑兵，攻击城市时没有战斗惩罚，对[COLOR\u HIGHLIGHT\u TEXT]近战单位[COLOR\u REVERT]有战斗奖励，并从[COLOR\u HIGHLIGHT\u TEXT]脱离I[COLOR\u REVERT]和[COLOR\u HIGHLIGHT\u TEXT]沙漠适应[COLOR\u REVERT]升级开始。</English>
+		<L1/><L2/><L3/><L4/><Chinese>努米迪亚骑兵[COLOR_REVERT]，腓尼基人代替[COLOR_REVERT]骑兵，攻击城市时没有战斗惩罚，对[COLOR\u HIGHLIGHT\u TEXT]近战单位[COLOR\u REVERT]有战斗奖励，并从[COLOR\u HIGHLIGHT\u TEXT]脱离I[COLOR\u REVERT]和[COLOR\u HIGHLIGHT\u TEXT]沙漠适应[COLOR\u REVERT]升级开始。</Chinese><French>The [COLOR_UNIT_TEXT]Numidian Cavalry[COLOR_REVERT], the Phoenician replacement for the [COLOR_UNIT_TEXT]Horseman[COLOR_REVERT], doesn't have a combat penalty when attacking cities, has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Melee Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Desert Adaptation[COLOR_REVERT] promotions.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CARRIER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]航空母舰[COLOR_REVERT]本身只有中等战力，但它们的主要作用是运载三架[COLOR_UNIT_TEXT]战斗机[COLOR_REVERT]。战斗机可用于防空、侦察、轰炸敌方部队和城市。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]航空母舰[COLOR_REVERT]本身只有中等战力，但它们的主要作用是运载三架[COLOR_UNIT_TEXT]战斗机[COLOR_REVERT]。战斗机可用于防空、侦察、轰炸敌方部队和城市。</Chinese><French>[COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can carry three [COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT], [COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] or [COLOR_UNIT_TEXT]Jet Fighters[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CANNON_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]加农炮[COLOR_REVERT]可以轰击敌方城防，当战斗失败时也有一定几率可安全撤退。当投石车攻击时，会对和目标处于同一位置的其他单位造成附带损害。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]加农炮[COLOR_REVERT]可以轰击敌方城防，当战斗失败时也有一定几率可安全撤退。当投石车攻击时，会对和目标处于同一位置的其他单位造成附带损害。</Chinese><French>[COLOR_UNIT_TEXT]Cannons[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CARAVEL_STRATEGY</Tag>
+		<English>这种小型快速帆船能探索大洋和敌方区域。[COLOR_UNIT_TEXT]轻帆船[COLOR_REVERT]可以运载一个特殊单位――[COLOR_UNIT_TEXT]侦察兵[COLOR_REVERT]、[COLOR_UNIT_TEXT]探险家[COLOR_REVERT]、[COLOR_UNIT_TEXT]间谍[COLOR_REVERT]、[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]或者[COLOR_UNIT_TEXT]历史伟人[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这种小型快速帆船能探索大洋和敌方区域。[COLOR_UNIT_TEXT]轻帆船[COLOR_REVERT]可以运载一个特殊单位――[COLOR_UNIT_TEXT]侦察兵[COLOR_REVERT]、[COLOR_UNIT_TEXT]探险家[COLOR_REVERT]、[COLOR_UNIT_TEXT]间谍[COLOR_REVERT]、[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]或者[COLOR_UNIT_TEXT]历史伟人[COLOR_REVERT]。</Chinese><French>[COLOR_UNIT_TEXT]Caravels[COLOR_REVERT] can explore rival territory and carry one [COLOR_UNIT_TEXT]Scout[COLOR_REVERT], [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], [COLOR_UNIT_TEXT]Missionary[COLOR_REVERT], [COLOR_UNIT_TEXT]Spy[COLOR_REVERT] or [COLOR_UNIT_TEXT]Great Person[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GALLEY_STRATEGY</Tag>
+		<English>最早出现的武装船只，[COLOR_UNIT_TEXT]桨帆船[COLOR_REVERT]能运载两个地面单位。桨帆船不能进入大洋。</English>
+		<L1/><L2/><L3/><L4/><Chinese>最早出现的武装船只，[COLOR_UNIT_TEXT]桨帆船[COLOR_REVERT]能运载两个地面单位。桨帆船不能进入大洋。</Chinese><French>[COLOR_UNIT_TEXT]Galleys[COLOR_REVERT] have two cargo spaces, cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], cannot pass [COLOR_HIGHLIGHT_TEXT]Capes[COLOR_REVERT] until [COLOR_TECH_TEXT]Compass[COLOR_REVERT] and can withdraw from combat.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRIGATE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]三桅战舰[COLOR_REVERT]是游戏中最强大的木制战舰。它能击沉敌舰并炮轰敌方海滨城防。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]三桅战舰[COLOR_REVERT]是游戏中最强大的木制战舰。它能击沉敌舰并炮轰敌方海滨城防。</Chinese><French>[COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the early Renaissance.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GALLEON_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]大帆船[COLOR_REVERT]是大航海时代最好的运输船。它可以运载三个单位，并能安全地出入大洋。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]大帆船[COLOR_REVERT]是大航海时代最好的运输船。它可以运载三个单位，并能安全地出入大洋。</Chinese><French>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_STATESMAN_STRATEGY</Tag>
+		<English>伟大的政治家可以开始黄金时代，发现新技术，改革政府，解决危机，执行外交任务，探索敌对领土，作为[COLOR_HIGHLIGHT_TEXT]伟大政治家[COLOR_REVERT]专家在城市定居，并可建造 [COLOR_BUILDING_TEXT]行政中心[COLOR_REVERT]大楼。</English>
+		<L1/><L2/><L3/><L4/><Chinese>伟大的政治家可以开始黄金时代，发现新技术，改革政府，解决危机，执行外交任务，探索敌对领土，作为[COLOR_HIGHLIGHT_TEXT]伟大政治家[COLOR_REVERT]专家在城市定居，并可建造 [COLOR_BUILDING_TEXT]行政中心[COLOR_REVERT]大楼。</Chinese><French>[COLOR_UNIT_TEXT]Great Statesmen[COLOR_REVERT] can begin golden ages, discover new technologies, reform the government, resolve a crisis, perform a diplomatic mission, explore rival territory, settle in a city as a [COLOR_HIGHLIGHT_TEXT]Great Statesman[COLOR_REVERT] specialist and can construct the [COLOR_BUILDING_TEXT]Administrative Center[COLOR_REVERT] building.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_SPY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]大间谍[COLOR_REVERT]可用于探察敌方领地，大量增加针对特定文明的谍报点数，或是建造[COLOR_BUILDING_TEXT]苏格兰场[COLOR_REVERT]以提升谍报点数产出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]大间谍[COLOR_REVERT]可用于探察敌方领地，大量增加针对特定文明的谍报点数，或是建造[COLOR_BUILDING_TEXT]苏格兰场[COLOR_REVERT]以提升谍报点数产出。</Chinese><French>[COLOR_UNIT_TEXT]Great Spies[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Great Spy[COLOR_REVERT] specialist, can construct the [COLOR_BUILDING_TEXT]Secret Service[COLOR_REVERT] building, is invisible to all units, can explore rival territory and can infiltrate another player's city.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_HEAVY_CANNON_STRATEGY</Tag>
+		<English>[COLOR UNIT TEXT]Culverin是[COLOR UNIT TEXT]大炮[COLOR UNIT REVERT]的法国替代品，对[COLOR UNIT TEXT]攻城武器[COLOR UNIT REVERT]和[COLOR UNIT TEXT]火药单元[COLOR UNIT REVERT]有战斗加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR UNIT TEXT]Culverin是[COLOR UNIT TEXT]大炮[COLOR UNIT REVERT]的法国替代品，对[COLOR UNIT TEXT]攻城武器[COLOR UNIT REVERT]和[COLOR UNIT TEXT]火药单元[COLOR UNIT REVERT]有战斗加成。</Chinese><French>The [COLOR_UNIT_TEXT]Culverin[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_SCIENTIST_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]大科学家[COLOR_REVERT]能创立[COLOR_BUILDING_TEXT]科学院[COLOR_REVERT]，极大地增加城市的研发投入。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]大科学家[COLOR_REVERT]能创立[COLOR_BUILDING_TEXT]科学院[COLOR_REVERT]，极大地增加城市的研发投入。</Chinese><French>[COLOR_UNIT_TEXT]Great Scientists[COLOR_REVERT] can begin golden ages, discover new technologies, settle in a city as a [COLOR_HIGHLIGHT_TEXT]Great Scientist[COLOR_REVERT] specialist and can construct the [COLOR_BUILDING_TEXT]Academy[COLOR_REVERT] building.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_MERCHANT_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]大商业家[COLOR_REVERT]能在外国城市开展[COLOR_HIGHLIGHT_TEXT]贸易活动[COLOR_REVERT]，获得大笔金钱收入。外国城市距离本国越远越好。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]大商业家[COLOR_REVERT]能在外国城市开展[COLOR_HIGHLIGHT_TEXT]贸易活动[COLOR_REVERT]，获得大笔金钱收入。外国城市距离本国越远越好。</Chinese><French>[COLOR_UNIT_TEXT]Great Merchants[COLOR_REVERT] can begin golden ages, discover new technologies, settle in a city as a [COLOR_HIGHLIGHT_TEXT]Great Merchant[COLOR_REVERT] specialist, can construct the [COLOR_BUILDING_TEXT]Stock Exchange[COLOR_REVERT] building, can explore rival territory and can conduct a trade mission.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_PROPHET_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]大预言家[COLOR_REVERT]允许你立即建成宗教[COLOR_BUILDING_TEXT]圣坛[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]大预言家[COLOR_REVERT]允许你立即建成宗教[COLOR_BUILDING_TEXT]圣坛[COLOR_REVERT]。</Chinese><French>[COLOR_UNIT_TEXT]Great Prophets[COLOR_REVERT] can begin golden ages, discover new technologies, settle in a city as a [COLOR_HIGHLIGHT_TEXT]Great Prophet[COLOR_REVERT] specialist and can construct [COLOR_BUILDING_TEXT]All Saints' Church[COLOR_REVERT], the [COLOR_BUILDING_TEXT]Church of the Holy Sepulchre[COLOR_REVERT], the [COLOR_BUILDING_TEXT]Hagia Sophia[COLOR_REVERT],  the [COLOR_BUILDING_TEXT]Masjid al-Haram[COLOR_REVERT], the [COLOR_BUILDING_TEXT]Mahabodhi[COLOR_REVERT], the [COLOR_BUILDING_TEXT]Kashi Vishwanath[COLOR_REVERT], the [COLOR_BUILDING_TEXT]Kong Lin[COLOR_REVERT], the [COLOR_BUILDING_TEXT]Dai Miao[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]Adur Farnbag[COLOR_REVERT] World Wonders and can perform a Great Mission.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_PROPHET_HELP</Tag>
+		<English>[ICON_BULLET]可以完成一个伟大的任务</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以完成一个伟大的任务</Chinese><French>[ICON_BULLET]Can perform a Great Mission</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_GENERAL_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]大军事家[COLOR_REVERT]能够与特定单位结合为一体，并为所在地块的其他单位提供一次性的作战经验奖励。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]大军事家[COLOR_REVERT]能够与特定单位结合为一体，并为所在地块的其他单位提供一次性的作战经验奖励。</Chinese><French>[COLOR_UNIT_TEXT]Great Generals[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Great Military Instructor[COLOR_REVERT] specialist, can construct the [COLOR_BUILDING_TEXT]Armoury[COLOR_REVERT] building and can attach itself to a unit which gives 20 experience and the [COLOR_HIGHLIGHT_TEXT]Lead by Warlord[COLOR_REVERT] promotion to the unit.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_ENGINEER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]大工程师[COLOR_REVERT]能立刻完成城市当前的建设项目。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]大工程师[COLOR_REVERT]能立刻完成城市当前的建设项目。</Chinese><French>[COLOR_UNIT_TEXT]Great Engineers[COLOR_REVERT] can begin golden ages, discover new technologies, settle in a city as a [COLOR_HIGHLIGHT_TEXT]Great Engineer[COLOR_REVERT] specialist, can construct the [COLOR_BUILDING_TEXT]Manufactory[COLOR_REVERT] building and can hurry production in a city.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_ARTIST_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]大艺术家[COLOR_REVERT]能创作[COLOR_HIGHLIGHT_TEXT]艺术杰作[COLOR_REVERT]为所在城市大量积累文化。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]大艺术家[COLOR_REVERT]能创作[COLOR_HIGHLIGHT_TEXT]艺术杰作[COLOR_REVERT]为所在城市大量积累文化。</Chinese><French>[COLOR_UNIT_TEXT]Great Artists[COLOR_REVERT] can begin golden ages, discover new technologies, settle in a city as a [COLOR_HIGHLIGHT_TEXT]Great Artist[COLOR_REVERT] specialist, can construct the [COLOR_BUILDING_TEXT]Museum[COLOR_REVERT] building, and can create a great work which generates 800 culture per game era.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GERMAN_PANZER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]德国坦克杀手[COLOR_REVERT]是德国的特色单位（替代[COLOR_UNIT_TEXT]坦克[COLOR_REVERT]），在攻击普通坦克时占有优势。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]德国坦克杀手[COLOR_REVERT]是德国的特色单位（替代[COLOR_UNIT_TEXT]坦克[COLOR_REVERT]），在攻击普通坦克时占有优势。</Chinese><French>The [COLOR_UNIT_TEXT]Panzer[COLOR_REVERT], the Prussian replacement for the [COLOR_UNIT_TEXT]Tank[COLOR_REVERT], has a combat bonus against the [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT] units and begins with the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_STATESMAN</Tag>
+		<English>大政治家</English>
+		<L1/><L2/><L3/><L4/><Chinese>大政治家</Chinese><French>Great Statesman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREEK_HOPLITE</Tag>
+		<English>希腊方阵步兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>希腊方阵步兵</Chinese><French>Hoplite</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GUNSHIP_STRATEGY</Tag>
+		<English>此种旋翼单位行动迅速，是装甲部队的天敌。你可以用它们迟滞敌军，但你仍需依靠地面部队占领城市。</English>
+		<L1/><L2/><L3/><L4/><Chinese>此种旋翼单位行动迅速，是装甲部队的天敌。你可以用它们迟滞敌军，但你仍需依靠地面部队占领城市。</Chinese><French>[COLOR_UNIT_TEXT]Gunships[COLOR_REVERT] are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], cannot capture enemy cities or units, don't receive defensive bonuses, ignore terrain movement costs, can withdraw from combat, have a combat bonus against [COLOR_UNIT_TEXT]Armored Units[COLOR_REVERT], have a flank attack against [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GUIDED_MISSILE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]巡航导弹[COLOR_REVERT]是现代战争不可缺少的一员，这种武器可对在其射程之内的任何地块造成极大破坏。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]巡航导弹[COLOR_REVERT]是现代战争不可缺少的一员，这种武器可对在其射程之内的任何地块造成极大破坏。</Chinese><French>[COLOR_UNIT_TEXT]Guided Missiles[COLOR_REVERT] are immune to interception, can destroy improvements, bomb city defenses and damage enemy units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GRENADIER_STRATEGY</Tag>
+		<English>训练这种中等战力的火器部队可以有效地对抗拥有大量[COLOR_UNIT_TEXT]来复枪兵[COLOR_REVERT]的部队。</English>
+		<L1/><L2/><L3/><L4/><Chinese>训练这种中等战力的火器部队可以有效地对抗拥有大量[COLOR_UNIT_TEXT]来复枪兵[COLOR_REVERT]的部队。</Chinese><French>[COLOR_UNIT_TEXT]Grenadiers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage, have an attack bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]City Raider I[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREEK_HOPLITE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]希腊重装步兵[COLOR_REVERT]是[COLOR_UNIT_TEXT]枪兵[COLOR_REVERT]的希腊替代品，它有一个额外的强度点，从[COLOR_HIGHLIGHT_TEXT]封面[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]休克[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]希腊重装步兵[COLOR_REVERT]是[COLOR_UNIT_TEXT]枪兵[COLOR_REVERT]的希腊替代品，它有一个额外的强度点，从[COLOR_HIGHLIGHT_TEXT]封面[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]休克[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Hoplite[COLOR_REVERT], the Greek replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], has one additional strength point and begins with the [COLOR_HIGHLIGHT_TEXT]Cover[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Shock[COLOR_REVERT] promotions.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HORSE_ARCHER_STRATEGY</Tag>
+		<English>这种骑乘单位在早期是十分强大的，尤其擅长对抗装备投石机的敌军部队。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这种骑乘单位在早期是十分强大的，尤其擅长对抗装备投石机的敌军部队。</Chinese><French>[COLOR_UNIT_TEXT]Horse Archers[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat and have a combat bonus on open terrain.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HOLY_ROMAN_LANDSKNECHT_STRATEGY</Tag>
+		<English>此种强力肉搏兵种是神圣罗马的特色单位，替代[COLOR_UNIT_TEXT]长枪兵[COLOR_REVERT]，对骑乘单位和肉搏单位均有战斗加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>此种强力肉搏兵种是神圣罗马的特色单位，替代[COLOR_UNIT_TEXT]长枪兵[COLOR_REVERT]，对骑乘单位和肉搏单位均有战斗加成。</Chinese><French>The [COLOR_UNIT_TEXT]Landsknecht[COLOR_REVERT], the German replacement for the the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Melee Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HARAPPAN_CITY_BUILDER</Tag>
+		<English>哈拉帕移民</English>
+		<L1/><L2/><L3/><L4/><Chinese>哈拉帕移民</Chinese><French>City Builder</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HARAPPAN_CITY_BUILDER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]哈拉帕移民[COLOR_REVERT]，替代[COLOR_UNIT_TEXT]定居者[COLOR_REVERT]的哈拉帕人，可以找到以额外人口开始的新城市。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]哈拉帕移民[COLOR_REVERT]，替代[COLOR_UNIT_TEXT]定居者[COLOR_REVERT]的哈拉帕人，可以找到以额外人口开始的新城市。</Chinese><French>The [COLOR_UNIT_TEXT]City Builder[COLOR_REVERT], the Harappan replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], can found new cities that start with additional population.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NUBIAN_MEDJAY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]守护者[COLOR_REVERT]是公元前800年至公元1300年在埃及诞生的野蛮人单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]守护者[COLOR_REVERT]是公元前800年至公元1300年在埃及诞生的野蛮人单位。</Chinese><French>The [COLOR_UNIT_TEXT]Medjay[COLOR_REVERT] is a barbarian unit that spawns in Egypt from 800 BC to 1300 AD.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HARAPPAN_CITY_BUILDER_HELP</Tag>
+		<English>[ICON_BULLET]新城市从人口增加开始</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]新城市从人口增加开始</Chinese><French>[ICON_BULLET]New cities start with additional population</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MECHANIZED_INFANTRY_STRATEGY</Tag>
+		<English>最强大的火器部队。较其他步兵移动更快，有一定几率拦截对方的飞行器。天生具有[COLOR_HIGHLIGHT_TEXT]长途行军[COLOR_REVERT]晋升</English>
+		<L1/><L2/><L3/><L4/><Chinese>最强大的火器部队。较其他步兵移动更快，有一定几率拦截对方的飞行器。天生具有[COLOR_HIGHLIGHT_TEXT]长途行军[COLOR_REVERT]晋升</Chinese><French>[COLOR_UNIT_TEXT]Mechanized Infantry[COLOR_REVERT] can intercept aircraft and begin with the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MAYAN_HOLKAN</Tag>
+		<English>玛雅战士</English>
+		<L1/><L2/><L3/><L4/><Chinese>玛雅战士</Chinese><French>Holkan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MAYAN_HOLKAN_STRATEGY</Tag>
+		<English>玛雅人取代[COLOR_UNIT_TEXT]玛雅战士[COLOR_REVERT]的[COLOR_UNIT_TEXT]霍尔坎[COLOR_REVERT]，能够进入[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]，在赢得战斗时向最近的城市提供食物，并且有更高的机会退出战斗。</English>
+		<L1/><L2/><L3/><L4/><Chinese>玛雅人取代[COLOR_UNIT_TEXT]玛雅战士[COLOR_REVERT]的[COLOR_UNIT_TEXT]霍尔坎[COLOR_REVERT]，能够进入[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]，在赢得战斗时向最近的城市提供食物，并且有更高的机会退出战斗。</Chinese><French>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a higher chance to withdraw from combat.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDIAN_PATIYODHA_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Patiyodha[COLOR_REVERT]，印度替代[COLOR_UNIT_TEXT]Longbowman[COLOR_REVERT]，需要[COLOR_TECH_TEXT]贵族[COLOR_REVERT]，而不是[COLOR_TECH_TEXT]公社[COLOR_REVERT]，力量点更少，价格更低，在攻击[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]时有战斗奖励，能够进入[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]，并以[COLOR_HIGHLIGHT_TEXT]阵型[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]伍德斯曼I[COLOR_REVERT]促销活动开始。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]Patiyodha[COLOR_REVERT]，印度替代[COLOR_UNIT_TEXT]Longbowman[COLOR_REVERT]，需要[COLOR_TECH_TEXT]贵族[COLOR_REVERT]，而不是[COLOR_TECH_TEXT]公社[COLOR_REVERT]，力量点更少，价格更低，在攻击[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]时有战斗奖励，能够进入[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]，并以[COLOR_HIGHLIGHT_TEXT]阵型[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]伍德斯曼I[COLOR_REVERT]促销活动开始。</Chinese><French>The [COLOR_UNIT_TEXT]Patiyodha[COLOR_REVERT], the Indian replacement for the [COLOR_UNIT_TEXT]Longbowman[COLOR_REVERT], requires [COLOR_TECH_TEXT]Nobility[COLOR_REVERT] instead of [COLOR_TECH_TEXT]Commune[COLOR_REVERT], has one less strength point, is cheaper, has an combat bonus when attacking [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT], is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Formation[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HITTITE_HULUGANNI</Tag>
+		<English>赫梯战车</English>
+		<L1/><L2/><L3/><L4/><Chinese>赫梯战车</Chinese><French>Huluganni</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INCAN_AUCAC_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]印加战士[COLOR_REVERT]是[COLOR_UNIT_TEXT]剑客[COLOR_REVERT]的印加替代品，需要[COLOR_TECH_TEXT]挖掘[COLOR_REVERT]技术，不需要[COLOR_TECH_TEXT]Bloomery[COLOR_REVERT]技术，不需要[COLOR_HIGHLIGHT_TEXT]铁[COLOR_REVERT]资源，对[COLOR\u HIGHLIGHT\u TEXT]射箭单位[COLOR\u REVERT]和[COLOR\u HIGHLIGHT\u TEXT]近战单位[COLOR\u REVERT]有战斗奖励，并从[COLOR\u HIGHLIGHT\u TEXT]战斗I[COLOR\u REVERT]升级开始。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]印加战士[COLOR_REVERT]是[COLOR_UNIT_TEXT]剑客[COLOR_REVERT]的印加替代品，需要[COLOR_TECH_TEXT]挖掘[COLOR_REVERT]技术，不需要[COLOR_TECH_TEXT]Bloomery[COLOR_REVERT]技术，不需要[COLOR_HIGHLIGHT_TEXT]铁[COLOR_REVERT]资源，对[COLOR\u HIGHLIGHT\u TEXT]射箭单位[COLOR\u REVERT]和[COLOR\u HIGHLIGHT\u TEXT]近战单位[COLOR\u REVERT]有战斗奖励，并从[COLOR\u HIGHLIGHT\u TEXT]战斗I[COLOR\u REVERT]升级开始。</Chinese><French>The [COLOR_UNIT_TEXT]Aucac[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Mining[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Bloomery[COLOR_REVERT] technology, doesn't require the [COLOR_HIGHLIGHT_TEXT]Iron[COLOR_REVERT] resource, has a combat bonus against [COLOR_HIGHLIGHT_TEXT]Archery Units[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Melee Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Combat I[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ICBM_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]战略导弹[COLOR_REVERT]能攻击敌方城市，造成建筑、部队和附近地区的极大损伤。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]战略导弹[COLOR_REVERT]能攻击敌方城市，造成建筑、部队和附近地区的极大损伤。</Chinese><French>[COLOR_UNIT_TEXT]ICBMs[COLOR_REVERT] can nuke enemy lands and cannot be moved from the city it is constructed in.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HITTITE_HULUGANNI_STRATEGY</Tag>
+		<English>赫梯战车[COLOR_return]是一个野蛮人单位，在公元前2000年到公元前800年在小亚细亚繁殖。</English>
+		<L1/><L2/><L3/><L4/><Chinese>赫梯战车[COLOR_return]是一个野蛮人单位，在公元前2000年到公元前800年在小亚细亚繁殖。</Chinese><French>The [COLOR_UNIT_TEXT]Huluganni[COLOR_REVERT] is a barbarian unit that spawns in Asia Minor from 2000 to 800 BC.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INCAN_AUCAC</Tag>
+		<English>印加战士</English>
+		<L1/><L2/><L3/><L4/><Chinese>印加战士</Chinese><French>Aucac</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDIAN_PATIYODHA</Tag>
+		<English>印度长弓手</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度长弓手</Chinese><French>Patiyodha</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDIAN_PUNJABI_WORKER</Tag>
+		<English>旁遮普工人</English>
+		<L1/><L2/><L3/><L4/><Chinese>旁遮普工人</Chinese><French>Punjabi Worker</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INFANTRY_STRATEGY</Tag>
+		<English>这种部队是第一种现代军事单位，可以对抗大量火器部队。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这种部队是第一种现代军事单位，可以对抗大量火器部队。</Chinese><French>[COLOR_UNIT_TEXT]Infantry[COLOR_REVERT] is the basic [COLOR_UNIT_TEXT]Gunpowder Unit[COLOR_REVERT] of the Modern Era.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INFORMATION</Tag>
+		<English>单位信息</English>
+		<L1/><L2/><L3/><L4/><Chinese>单位信息</Chinese><French>Unit Information</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JAPANESE_SAMURAI</Tag>
+		<English>日本武士</English>
+		<L1/><L2/><L3/><L4/><Chinese>日本武士</Chinese><French>Samurai</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JAPANESE_SAMURAI_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]武士[COLOR_REVERT]，日本人取代[COLOR_UNIT_TEXT]重剑手[COLOR_REVERT]，从[COLOR_REVERT]领导层[COLOR_REVERT]晋升开始，不能用[COLOR_REVERT]铜[COLOR_REVERT]资源建立。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]武士[COLOR_REVERT]，日本人取代[COLOR_UNIT_TEXT]重剑手[COLOR_REVERT]，从[COLOR_REVERT]领导层[COLOR_REVERT]晋升开始，不能用[COLOR_REVERT]铜[COLOR_REVERT]资源建立。</Chinese><French>The [COLOR_UNIT_TEXT]Samurai[COLOR_REVERT], the Japanese replacement for the [COLOR_UNIT_TEXT]Heavy Swordsman[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion and cannot be built with the [COLOR_HIGHLIGHT_TEXT]Copper[COLOR_REVERT] resource.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LANCER</Tag>
+		<English>骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>骑兵</Chinese><French>Lancer</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LANCER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]骑兵[COLOR_UNIT_TEXT]对第一次攻击免疫，不获得防御奖励，在城市有战斗惩罚，并且对[COLOR_UNIT_TEXT]弹射器[COLOR_UNIT_TEXT]和[COLOR_UNIT_TEXT]投石机[COLOR_UNIT_TEXT]单位有侧翼攻击。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]骑兵[COLOR_UNIT_TEXT]对第一次攻击免疫，不获得防御奖励，在城市有战斗惩罚，并且对[COLOR_UNIT_TEXT]弹射器[COLOR_UNIT_TEXT]和[COLOR_UNIT_TEXT]投石机[COLOR_UNIT_TEXT]单位有侧翼攻击。</Chinese><French>[COLOR_UNIT_TEXT]Lancers[COLOR_REVERT] are immune to first strikes, don't receive defensive bonuses, have a combat penalty in cities and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT] and [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT] units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_KHMER_BALLISTA_ELEPHANT_STRATEGY</Tag>
+		<English>此种强力肉搏兵种是高棉的特色单位，替代[COLOR_UNIT_TEXT]战象[COLOR_REVERT]，可优先攻击敌军集群中的骑乘单位，充分发挥其克制骑兵的特长。</English>
+		<L1/><L2/><L3/><L4/><Chinese>此种强力肉搏兵种是高棉的特色单位，替代[COLOR_UNIT_TEXT]战象[COLOR_REVERT]，可优先攻击敌军集群中的骑乘单位，充分发挥其克制骑兵的特长。</Chinese><French>The [COLOR_UNIT_TEXT]Ballista Elephant[COLOR_REVERT], the Khmer replacement for the [COLOR_UNIT_TEXT]War Elephant[COLOR_REVERT], will attack [COLOR_UNIT_TEXT]Heavy Cavalry Units[COLOR_REVERT] in a stack before other units in combat outside of cities and has a combat bonus when attacking cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JET_FIGHTER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]喷气式战斗机[COLOR_REVERT]比普通[COLOR_UNIT_TEXT]战斗机[COLOR_REVERT]的作战范围更大，也能更有效的拦截敌方空军。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]喷气式战斗机[COLOR_REVERT]比普通[COLOR_UNIT_TEXT]战斗机[COLOR_REVERT]的作战范围更大，也能更有效的拦截敌方空军。</Chinese><French>[COLOR_UNIT_TEXT]Jet Fighters[COLOR_REVERT] can intercept enemy air units, destroy improvements, bomb city defenses, perform recon missions and damage enemy units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MARINE_STRATEGY</Tag>
+		<English>训练这种强大的现代步兵可对抗[COLOR_UNIT_TEXT]炮兵[COLOR_REVERT]和[COLOR_UNIT_TEXT]重机枪[COLOR_REVERT]。它天生拥有[COLOR_HIGHLIGHT_TEXT]两栖作战[COLOR_REVERT]晋升，因此可以用它们从船上攻击，或跨河攻击。</English>
+		<L1/><L2/><L3/><L4/><Chinese>训练这种强大的现代步兵可对抗[COLOR_UNIT_TEXT]炮兵[COLOR_REVERT]和[COLOR_UNIT_TEXT]重机枪[COLOR_REVERT]。它天生拥有[COLOR_HIGHLIGHT_TEXT]两栖作战[COLOR_REVERT]晋升，因此可以用它们从船上攻击，或跨河攻击。</Chinese><French>[COLOR_UNIT_TEXT]Marines[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Machine Gun[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units, are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HEAVY_SWORDSMAN</Tag>
+		<English>重剑手</English>
+		<L1/><L2/><L3/><L4/><Chinese>重剑手</Chinese><French>Heavy Swordsman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HEAVY_SWORDSMAN_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]重剑手[COLOR_REVERT]攻击城市时有战斗奖励。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]重剑手[COLOR_REVERT]攻击城市时有战斗奖励。</Chinese><French>[COLOR_UNIT_TEXT]Heavy Swordsmen[COLOR_REVERT] have a combat bonus when attacking cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MANDE_KELEBOLO</Tag>
+		<English>马里游击兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>马里游击兵</Chinese><French>Kelebolo</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MANDE_KELEBOLO_STRATEGY</Tag>
+		<English>在沙漠和对抗近战单位的战斗中，马里取代了游击兵[COLOR_REVERT]，并且能够进入[COLOR_REVERT]丛林[COLOR_REVERT]，[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_HIGHLIGHT_TEXT]和沼泽[COLOR_HIGHLIGHT_TEXT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在沙漠和对抗近战单位的战斗中，马里取代了游击兵[COLOR_REVERT]，并且能够进入[COLOR_REVERT]丛林[COLOR_REVERT]，[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_HIGHLIGHT_TEXT]和沼泽[COLOR_HIGHLIGHT_TEXT]。</Chinese><French>The [COLOR_UNIT_TEXT]Kelebolo[COLOR_REVERT], the Mali replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], has additional strength in deserts and against [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] and is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MACHINE_GUN_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]重机枪[COLOR_REVERT]是有力的防御武器，尤其是在对付敌方的火器单位时。重机枪部队不能发起攻击，因此通常被用于守卫城市。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]重机枪[COLOR_REVERT]是有力的防御武器，尤其是在对付敌方的火器单位时。重机枪部队不能发起攻击，因此通常被用于守卫城市。</Chinese><French>[COLOR_UNIT_TEXT]Machine Guns[COLOR_REVERT] can only defend, have one first strike, can intercept aircraft, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LONGBOWMAN_STRATEGY</Tag>
+		<English>这种强大的投射部队在防御城市和丘陵时可获得一定防御加成。训练它们来取代你过时的[COLOR_UNIT_TEXT]弓箭手[COLOR_REVERT]和[COLOR_UNIT_TEXT]马里突击手[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>这种强大的投射部队在防御城市和丘陵时可获得一定防御加成。训练它们来取代你过时的[COLOR_UNIT_TEXT]弓箭手[COLOR_REVERT]和[COLOR_UNIT_TEXT]马里突击手[COLOR_REVERT]</Chinese><French>[COLOR_UNIT_TEXT]Longbowmen[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in hills, forests and rainforests[COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_KOREAN_HWACHA_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]火厢车[COLOR_REVERT]为高丽特色单位，替代[COLOR_UNIT_TEXT]投石车[COLOR_REVERT]，除了传统压制武器的威力，还拥有对肉搏单位的战斗加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]火厢车[COLOR_REVERT]为高丽特色单位，替代[COLOR_UNIT_TEXT]投石车[COLOR_REVERT]，除了传统压制武器的威力，还拥有对肉搏单位的战斗加成。</Chinese><French>The [COLOR_UNIT_TEXT]Hwacha[COLOR_REVERT], the Korean replacement for the [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], has three extra strength points and has an reduced attack bonus when attacking cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LION_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]狮子[COLOR_REVERT]是公元前3000年至850年在非洲繁殖的野蛮单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]狮子[COLOR_REVERT]是公元前3000年至850年在非洲繁殖的野蛮单位。</Chinese><French>[COLOR_UNIT_TEXT]Lions[COLOR_REVERT] are Barbarian units that spawn in Africa from 3000 to 850 BC.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CONGOLESE_POMBOS_STRATEGY</Tag>
+		<English>刚果人取代[COLOR_UNIT_TEXT]重剑手[COLOR_REVERT]，可以进入[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]沼泽[COLOR_REVERT]，对[COLOR_UNIT_REVERT]火药单位[COLOR_REVERT]有战斗奖励，并且不需要[COLOR_HIGHT_TEXT]铜[COLOR_REVERT]或[COLOR_HIGHT_TEXT]铁[COLOR_REVERT]资源。</English>
+		<L1/><L2/><L3/><L4/><Chinese>刚果人取代[COLOR_UNIT_TEXT]重剑手[COLOR_REVERT]，可以进入[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]沼泽[COLOR_REVERT]，对[COLOR_UNIT_REVERT]火药单位[COLOR_REVERT]有战斗奖励，并且不需要[COLOR_HIGHT_TEXT]铜[COLOR_REVERT]或[COLOR_HIGHT_TEXT]铁[COLOR_REVERT]资源。</Chinese><French>The [COLOR_UNIT_TEXT]Pombos[COLOR_REVERT], the Congolese replacement for the [COLOR_UNIT_TEXT]Heavy Swordsman[COLOR_REVERT], is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT] and doesn't require the [COLOR_HIGHLIGHT_TEXT]Copper[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Iron[COLOR_REVERT] resources.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CONGOLESE_POMBOS</Tag>
+		<English>刚果战士</English>
+		<L1/><L2/><L3/><L4/><Chinese>刚果战士</Chinese><French>Pombos</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MAIN_BATTLE_TANK_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]主战坦克[COLOR_REVERT]有一次第一次攻击，不获得防御奖励，从[COLOR_REVERT]闪电战[COLOR_REVERT]升级开始。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]主战坦克[COLOR_REVERT]有一次第一次攻击，不获得防御奖励，从[COLOR_REVERT]闪电战[COLOR_REVERT]升级开始。</Chinese><French>[COLOR_UNIT_TEXT]Main Battle Tanks[COLOR_REVERT] have one first strike, don't receive defensive bonuses and begin with the [COLOR_HIGHLIGHT_TEXT]Blitz[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOBILE_SAM_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]防空导弹车[COLOR_REVERT]是最有效的陆基防空武器。专门用于拦截敌方固定翼飞机，或是对付[COLOR_UNIT_TEXT]武装直升机[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]防空导弹车[COLOR_REVERT]是最有效的陆基防空武器。专门用于拦截敌方固定翼飞机，或是对付[COLOR_UNIT_TEXT]武装直升机[COLOR_REVERT]。</Chinese><French>[COLOR_UNIT_TEXT]Mobile SAMs[COLOR_REVERT] cannot capture enemy cities and untis, can intercept aircraft and have a combat bonus against [COLOR_UNIT_TEXT]Helicopter Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MAYAN_HOLKAN_HELP</Tag>
+		<English>[ICON_BULLET]获得[ICON_FOOD]以击败敌军</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]获得[ICON_FOOD]以击败敌军</Chinese><French>[ICON_BULLET]Receives [ICON_FOOD] for Defeating Enemy Units</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NUBIAN_MEDJAY</Tag>
+		<English>埃及守护者</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃及守护者</Chinese><French>Medjay</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MEXICAN_RURAL</Tag>
+		<English>墨西哥骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>墨西哥骑兵</Chinese><French>Rural</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOBILE_ARTILLERY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]自行火炮[COLOR_REVERT]是最快速、最强大的压制武器，同时拥有对压制武器的额外战斗力加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]自行火炮[COLOR_REVERT]是最快速、最强大的压制武器，同时拥有对压制武器的额外战斗力加成。</Chinese><French>[COLOR_UNIT_TEXT]Mobile Artillery[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MISSILE_CRUISER_STRATEGY</Tag>
+		<English>此种现代舰船是杀伤力最强的海上单位，可携带四枚导弹。</English>
+		<L1/><L2/><L3/><L4/><Chinese>此种现代舰船是杀伤力最强的海上单位，可携带四枚导弹。</Chinese><French>[COLOR_UNIT_TEXT]Missile Cruiser[COLOR_REVERT] can bombard city defenses, causes collateral damage and can carry four [COLOR_UNIT_TEXT]Missile Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MEXICAN_RURAL_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Rural[COLOR_REVERT]是墨西哥取代[COLOR_UNIT_TEXT]骑兵[COLOR_REVERT]的装备，价格更便宜，获得防御奖励，并从[COLOR_HIGHLIGHT_TEXT]战斗I[COLOR_REVERT]升级开始。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]Rural[COLOR_REVERT]是墨西哥取代[COLOR_UNIT_TEXT]骑兵[COLOR_REVERT]的装备，价格更便宜，获得防御奖励，并从[COLOR_HIGHLIGHT_TEXT]战斗I[COLOR_REVERT]升级开始。</Chinese><French>The [COLOR_UNIT_TEXT]Rural[COLOR_REVERT], the Mexican replacement for the [COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT], is cheaper, receives a defensive bonus and begins with the [COLOR_HIGHLIGHT_TEXT]Combat I[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MAIN_BATTLE_TANK</Tag>
+		<English>主战坦克</English>
+		<L1/><L2/><L3/><L4/><Chinese>主战坦克</Chinese><French>Main Battle Tank</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_IROQUOIS_MOHAWK</Tag>
+		<English>北美火枪手</English>
+		<L1/><L2/><L3/><L4/><Chinese>北美火枪手</Chinese><French>Mohawk</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MONGOLIAN_KESHIK</Tag>
+		<English>蒙古怯薛</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古怯薛</Chinese><French>Keshik</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_IROQUOIS_MOHAWK_STRATEGY</Tag>
+		<English>莫霍克是一个野蛮人单位，公元1500年至1850年在北美西部繁殖。</English>
+		<L1/><L2/><L3/><L4/><Chinese>莫霍克是一个野蛮人单位，公元1500年至1850年在北美西部繁殖。</Chinese><French>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT] is a barbarian unit that spawns in Western North America from 1500 to 1850 AD.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MONGOLIAN_KESHIK_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]克什克[COLOR_UNIT_TEXT]，蒙古人代替[COLOR_UNIT_TEXT]长矛[COLOR_UNIT_TEXT]不需要[COLOR_UNIT_TEXT]铁[COLOR_UNIT_TEXT]资源，有额外的移动点，造成附带伤害，有第一次打击，并且在攻击城市时获得战斗加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]克什克[COLOR_UNIT_TEXT]，蒙古人代替[COLOR_UNIT_TEXT]长矛[COLOR_UNIT_TEXT]不需要[COLOR_UNIT_TEXT]铁[COLOR_UNIT_TEXT]资源，有额外的移动点，造成附带伤害，有第一次打击，并且在攻击城市时获得战斗加成。</Chinese><French>The [COLOR_UNIT_TEXT]Keshik[COLOR_REVERT], the Mongol replacement for the the [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] doesn't require the [COLOR_HIGHLIGHT_TEXT]Iron[COLOR_REVERT] resource, has an additional movement point, causes collateral damage, has a first strike, and receives a combat bonus when attacking cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOORISH_CORSAIR</Tag>
+		<English>摩尔私掠舰</English>
+		<L1/><L2/><L3/><L4/><Chinese>摩尔私掠舰</Chinese><French>Corsair</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOORISH_CORSAIR_HELP</Tag>
+		<English>[ICON_BULLET]因击沉敌舰而获得[ICON_GOLD]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]因击沉敌舰而获得[ICON_GOLD]</Chinese><French>[ICON_BULLET]Receives [ICON_GOLD] for Sinking Enemy Ships</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOORISH_CORSAIR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]海盗船[COLOR_REVERT]，摩尔人取代[COLOR_UNIT_TEXT]海盗船[COLOR_REVERT]，减少一个移动点，减少两个力量点，更便宜，在[COLOR_HIGHLIGHT_TEXT]海岸[COLOR_REVERT]有战斗加成，对[COLOR_UNIT_TEXT]海盗船[COLOR_REVERT]有战斗加成，并提供一些击沉敌舰时的黄金。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]海盗船[COLOR_REVERT]，摩尔人取代[COLOR_UNIT_TEXT]海盗船[COLOR_REVERT]，减少一个移动点，减少两个力量点，更便宜，在[COLOR_HIGHLIGHT_TEXT]海岸[COLOR_REVERT]有战斗加成，对[COLOR_UNIT_TEXT]海盗船[COLOR_REVERT]有战斗加成，并提供一些击沉敌舰时的黄金。</Chinese><French>The [COLOR_UNIT_TEXT]Corsair[COLOR_REVERT], the Moorish replacement for the [COLOR_UNIT_TEXT]Privateer[COLOR_REVERT], has one less movement point, has two less strength points, is cheaper, has a combat bonus on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT], has a combat bonus against the [COLOR_UNIT_TEXT]Privateer[COLOR_REVERT] unit and provides some gold when sinking enemy ships.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SIOUX_MOUNTED_BRAVE</Tag>
+		<English>印第安骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>印第安骑兵</Chinese><French>Mounted Brave</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SIOUX_MOUNTED_BRAVE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]印第安骑兵[COLOR_REVERT]是一个野蛮人单位，在公元1700年至1900年在北美中部繁衍。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]印第安骑兵[COLOR_REVERT]是一个野蛮人单位，在公元1700年至1900年在北美中部繁衍。</Chinese><French>The [COLOR_UNIT_TEXT]Mounted Brave[COLOR_REVERT] is a barbarian unit that spawns in Central North America from 1700 to 1900 AD.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OTTOMAN_JANISSARY_STRATEGY</Tag>
+		<English>苏丹亲兵是奥斯曼人特有的早期火器单位（替代[COLOR_UNIT_TEXT]火枪手[COLOR_REVERT]），该单位非常适宜对抗肉搏、投射类以及骑乘类单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>苏丹亲兵是奥斯曼人特有的早期火器单位（替代[COLOR_UNIT_TEXT]火枪手[COLOR_REVERT]），该单位非常适宜对抗肉搏、投射类以及骑乘类单位。</Chinese><French>The [COLOR_UNIT_TEXT]Janissary[COLOR_REVERT], the Turkish replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Archery Units[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cavalry Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PARATROOPER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]伞兵[COLOR_REVERT]是出现于游戏后期的火器单位，能够在航程范围内[COLOR_HIGHLIGHT_TEXT]空降[COLOR_REVERT]至任何已探明的敌方地域。要注意敌方空军的动向，伞兵执行空降任务时可能遭到拦截。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]伞兵[COLOR_REVERT]是出现于游戏后期的火器单位，能够在航程范围内[COLOR_HIGHLIGHT_TEXT]空降[COLOR_REVERT]至任何已探明的敌方地域。要注意敌方空军的动向，伞兵执行空降任务时可能遭到拦截。</Chinese><French>[COLOR_UNIT_TEXT]Paratroopers[COLOR_REVERT] can evade interception and can perform paradrops.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PANTHER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]黑豹[COLOR_REVERT]是公元前3000年至850年在非洲繁殖的野蛮单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]黑豹[COLOR_REVERT]是公元前3000年至850年在非洲繁殖的野蛮单位。</Chinese><French>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Africa from 3000 to 850 BC.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DUTCH_EAST_INDIAMAN</Tag>
+		<English>东印度商船</English>
+		<L1/><L2/><L3/><L4/><Chinese>东印度商船</Chinese><French>East Indiaman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DUTCH_EAST_INDIAMAN_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]东印度商船[COLOR_REVERT]，荷兰人取代[COLOR_UNIT_TEXT]加隆[COLOR_REVERT]，有两个额外的优势点，有一个额外的货舱，可以探索竞争领土。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]东印度商船[COLOR_REVERT]，荷兰人取代[COLOR_UNIT_TEXT]加隆[COLOR_REVERT]，有两个额外的优势点，有一个额外的货舱，可以探索竞争领土。</Chinese><French>The [COLOR_UNIT_TEXT]East Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NATIVE_AMERICAN_DOG_SOLDIER</Tag>
+		<English>安第斯战士</English>
+		<L1/><L2/><L3/><L4/><Chinese>安第斯战士</Chinese><French>Dog Soldier</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NATIVE_AMERICAN_DOG_SOLDIER_STRATEGY</Tag>
+		<English>狗兵是一个野蛮人单位，从公元600-1800年在北美中部和安第斯山脉繁殖。</English>
+		<L1/><L2/><L3/><L4/><Chinese>狗兵是一个野蛮人单位，从公元600-1800年在北美中部和安第斯山脉繁殖。</Chinese><French>The [COLOR_UNIT_TEXT]Dog Soldier[COLOR_REVERT] is a Barbarian unit that spawns in Central North America and the Andes Mountains from 600 - 1800 AD.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARQUEBUSIER_STRATEGY</Tag>
+		<English>葡萄牙火绳枪兵是第一个可用的火药单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙火绳枪兵是第一个可用的火药单位。</Chinese><French>[COLOR_UNIT_TEXT]Arquebusiers[COLOR_REVERT] are the first [COLOR_UNIT_TEXT]Gunpowder Unit[COLOR_REVERT] available.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MUGHAL_SIEGE_ELEPHANT</Tag>
+		<English>攻城战象</English>
+		<L1/><L2/><L3/><L4/><Chinese>攻城战象</Chinese><French>Siege Elephant</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MUGHAL_SIEGE_ELEPHANT_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]攻城大象[COLOR_REVERT]，莫卧儿人代替[COLOR_UNIT_TEXT]轰炸[COLOR_REVERT]，需要[COLOR_UNIT_TEXT]象牙[COLOR_REVERT]资源，有一个额外的力量点，并且对[COLOR_UNIT_TEXT]射箭单位[COLOR_REVERT]和[COLOR_UNIT_TEXT]火药单位[COLOR_REVERT]有战斗加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]攻城大象[COLOR_REVERT]，莫卧儿人代替[COLOR_UNIT_TEXT]轰炸[COLOR_REVERT]，需要[COLOR_UNIT_TEXT]象牙[COLOR_REVERT]资源，有一个额外的力量点，并且对[COLOR_UNIT_TEXT]射箭单位[COLOR_REVERT]和[COLOR_UNIT_TEXT]火药单位[COLOR_REVERT]有战斗加成。</Chinese><French>The [COLOR_UNIT_TEXT]Siege Elephant[COLOR_REVERT], the Mughal replacement for the [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], requires the [COLOR_HIGHLIGHT_TEXT]Ivory[COLOR_REVERT] resource, has one additional strength point and has a combat bonus against [COLOR_UNIT_TEXT]Archery Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OTTOMAN_JANISSARY</Tag>
+		<English>苏丹亲兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>苏丹亲兵</Chinese><French>Janissary</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PERSIAN_IMMORTAL</Tag>
+		<English>波斯长矛兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯长矛兵</Chinese><French>Immortal</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PERSIAN_IMMORTAL_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]波斯长矛兵[COLOR_REVERT]，波斯人取代了[COLOR_UNIT_TEXT]长矛人[COLOR_REVERT]，对[COLOR_UNIT_TEXT]弓箭手[COLOR_REVERT]有攻击加成，价格更便宜，并且从[COLOR_HIGHLIGHT_TEXT]三月[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]波斯长矛兵[COLOR_REVERT]，波斯人取代了[COLOR_UNIT_TEXT]长矛人[COLOR_REVERT]，对[COLOR_UNIT_TEXT]弓箭手[COLOR_REVERT]有攻击加成，价格更便宜，并且从[COLOR_HIGHLIGHT_TEXT]三月[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Immortal[COLOR_REVERT], the Persian replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], has an attack bonus against [COLOR_UNIT_TEXT]Archers[COLOR_REVERT], is cheaper and begins with the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RELIGIOUS_PERSECUTOR</Tag>
+		<English>宗教裁判</English>
+		<L1/><L2/><L3/><L4/><Chinese>宗教裁判</Chinese><French>Religious Persecutor</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RELIGIOUS_PERSECUTOR_STRATEGY</Tag>
+		<English>宗教迫害者可以将非国家宗教从城市中移除。</English>
+		<L1/><L2/><L3/><L4/><Chinese>宗教迫害者可以将非国家宗教从城市中移除。</Chinese><French>[COLOR_UNIT_TEXT]Religious Persecutors[COLOR_REVERT] can remove non-state religions from a city.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PHOENICIAN_BIREME</Tag>
+		<English>双层桨战船</English>
+		<L1/><L2/><L3/><L4/><Chinese>双层桨战船</Chinese><French>Bireme</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SCOUT_STRATEGY</Tag>
+		<English>组建[COLOR_UNIT_TEXT]侦察兵[COLOR_REVERT]以探索未知地域；探访[COLOR_HIGHLIGHT_TEXT]部落村庄[COLOR_REVERT]时能获得更好的收获。但是他们不能用于攻击。</English>
+		<L1/><L2/><L3/><L4/><Chinese>组建[COLOR_UNIT_TEXT]侦察兵[COLOR_REVERT]以探索未知地域；探访[COLOR_HIGHLIGHT_TEXT]部落村庄[COLOR_REVERT]时能获得更好的收获。但是他们不能用于攻击。</Chinese><French>[COLOR_UNIT_TEXT]Scouts[COLOR_REVERT] are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend and have a combat bonus against [COLOR_UNIT_TEXT]Animal Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SAM_INFANTRY_STRATEGY</Tag>
+		<English>这种火器近战部队装备有地对空导弹，这使他们在同飞行器和直升机作战时获得加成。可以将它们与易受空中打击的其他部队部署在一起。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这种火器近战部队装备有地对空导弹，这使他们在同飞行器和直升机作战时获得加成。可以将它们与易受空中打击的其他部队部署在一起。</Chinese><French>[COLOR_UNIT_TEXT]SAM Infantry[COLOR_REVERT] can intercept aircraft and have a combat bonus against [COLOR_UNIT_TEXT]Helicopter Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RUSSIAN_COSSACK</Tag>
+		<English>哥萨克骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥萨克骑兵</Chinese><French>Cossack</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RUSSIAN_COSSACK_STRATEGY</Tag>
+		<English>俄罗斯取代[COLOR_UNIT_TEXT]轻骑兵[COLOR_REVERT]的[COLOR_UNIT_TEXT]哥萨克[COLOR_REVERT]，要求[COLOR_TECH_TEXT]测量[COLOR_REVERT]，而不是[COLOR_TECH_TEXT]民族主义[COLOR_REVERT]和[COLOR_TECH_TEXT]生物[COLOR_REVERT]，并对[COLOR_UNIT_TEXT]挂载单位[COLOR_REVERT]有战斗加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄罗斯取代[COLOR_UNIT_TEXT]轻骑兵[COLOR_REVERT]的[COLOR_UNIT_TEXT]哥萨克[COLOR_REVERT]，要求[COLOR_TECH_TEXT]测量[COLOR_REVERT]，而不是[COLOR_TECH_TEXT]民族主义[COLOR_REVERT]和[COLOR_TECH_TEXT]生物[COLOR_REVERT]，并对[COLOR_UNIT_TEXT]挂载单位[COLOR_REVERT]有战斗加成。</Chinese><French>The [COLOR_UNIT_TEXT]Cossack[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Hussar[COLOR_REVERT], requires [COLOR_TECH_TEXT]Measurement[COLOR_REVERT] instead of [COLOR_TECH_TEXT]Nationalism[COLOR_REVERT] and [COLOR_TECH_TEXT]Biology[COLOR_REVERT], and has a combat bonus against [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROMAN_LEGION_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]军团[COLOR_REVERT]，罗马取代[COLOR_UNIT_TEXT]剑客[COLOR_REVERT]，有两个额外的力量点，价格更高，可以建造[COLOR_HIGHLIGHT_TEXT]罗马道路[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]军团[COLOR_REVERT]，罗马取代[COLOR_UNIT_TEXT]剑客[COLOR_REVERT]，有两个额外的力量点，价格更高，可以建造[COLOR_HIGHLIGHT_TEXT]罗马道路[COLOR_REVERT]。</Chinese><French>The [COLOR_UNIT_TEXT]Legion[COLOR_REVERT], the Roman replacement for the the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], has two additional strength points, is more expensive and can construct [COLOR_HIGHLIGHT_TEXT]Roman Roads[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RIFLEMAN_STRATEGY</Tag>
+		<English>训练这种中等战力的火器部队可以有效地对抗[COLOR_UNIT_TEXT]近代骑兵[COLOR_REVERT]等骑乘单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>训练这种中等战力的火器部队可以有效地对抗[COLOR_UNIT_TEXT]近代骑兵[COLOR_REVERT]等骑乘单位。</Chinese><French>[COLOR_UNIT_TEXT]Riflemen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT] of the Industrial Era.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PRIVATEER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]私掠舰[COLOR_REVERT]出现于游戏中期，最大特点是隐藏国籍，可在不宣战的情况下骚扰你的对手。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]私掠舰[COLOR_REVERT]出现于游戏中期，最大特点是隐藏国籍，可在不宣战的情况下骚扰你的对手。</Chinese><French>[COLOR_UNIT_TEXT]Privateers[COLOR_REVERT] has hidden nationality can attack enemy units without declaring war, can withdraw from combat and begins with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PORTUGUESE_CARRACK</Tag>
+		<English>卡拉克船</English>
+		<L1/><L2/><L3/><L4/><Chinese>卡拉克船</Chinese><French>Carrack</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PORTUGUESE_CARRACK_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]卡拉克船[COLOR_REVERT]，葡萄牙语替代[COLOR_UNIT_TEXT]运输船[COLOR_REVERT]，可以运输任何单位，具有额外的货舱，并以[COLOR_HIGHLIGHT_TEXT]哨兵[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]卡拉克船[COLOR_REVERT]，葡萄牙语替代[COLOR_UNIT_TEXT]运输船[COLOR_REVERT]，可以运输任何单位，具有额外的货舱，并以[COLOR_HIGHLIGHT_TEXT]哨兵[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Carrack[COLOR_REVERT], the Portuguese replacement for the the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], can transport any unit, has an additional cargo space and begins with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLYNESIAN_WAKA_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]瓦卡[COLOR_REVERT]，波利尼西亚取代[COLOR_UNIT_TEXT]大帆船[COLOR_REVERT]，有两个额外的移动点，更便宜，有一个较少的货舱，可以创造[COLOR_HIGHLIGHT_TEXT]渔船[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]瓦卡[COLOR_REVERT]，波利尼西亚取代[COLOR_UNIT_TEXT]大帆船[COLOR_REVERT]，有两个额外的移动点，更便宜，有一个较少的货舱，可以创造[COLOR_HIGHLIGHT_TEXT]渔船[COLOR_REVERT]。</Chinese><French>The [COLOR_UNIT_TEXT]Waka[COLOR_REVERT], the Polynesian replacement for the [COLOR_UNIT_TEXT]Galley[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLISH_WINGED_HUSSAR</Tag>
+		<English>波兰翼骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>波兰翼骑兵</Chinese><French>Winged Hussar</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PIKEMAN_STRATEGY</Tag>
+		<English>此种肉搏单位对骑乘单位具有特殊优势加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>此种肉搏单位对骑乘单位具有特殊优势加成。</Chinese><French>[COLOR_UNIT_TEXT]Pikemen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLISH_WINGED_HUSSAR_STRATEGY</Tag>
+		<English>[COLOR U UNIT TEXT]翼轻骑兵[COLOR_REVERT]是[COLOR U UNIT TEXT]护甲师[COLOR_REVERT]的波兰替代品，对[COLOR U UNIT TEXT]Arquebusier[COLOR_REVERT]和[COLOR UNIT TET TEXT]火枪手[COLOR_REVERT]有战斗加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR U UNIT TEXT]翼轻骑兵[COLOR_REVERT]是[COLOR U UNIT TEXT]护甲师[COLOR_REVERT]的波兰替代品，对[COLOR U UNIT TEXT]Arquebusier[COLOR_REVERT]和[COLOR UNIT TET TEXT]火枪手[COLOR_REVERT]有战斗加成。</Chinese><French>The [COLOR_UNIT_TEXT]Winged Hussar[COLOR_REVERT], the Polish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], has a combat bonus against the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT] and [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT] units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLYNESIAN_WAKA</Tag>
+		<English>波利尼西亚独木舟</English>
+		<L1/><L2/><L3/><L4/><Chinese>波利尼西亚独木舟</Chinese><French>Waka</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_IRANIAN_QIZILBASH</Tag>
+		<English>伊朗火枪兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊朗火枪兵</Chinese><French>Qizilbash</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_IRANIAN_QIZILBASH_STRATEGY</Tag>
+		<English>伊朗的[COLOR_UNIT_TEXT] 齐齐尔巴什 [COLOR_REVERT]，是[COLOR_UNIT_TEXT] 火绳枪兵 [COLOR_REVERT]的伊朗人替代品。</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊朗的[COLOR_UNIT_TEXT] 齐齐尔巴什 [COLOR_REVERT]，是[COLOR_UNIT_TEXT] 火绳枪兵 [COLOR_REVERT]的伊朗人替代品。</Chinese><French>The [COLOR_UNIT_TEXT]Qizilbash[COLOR_REVERT], the Iranian replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], has a combat bonus against other [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_IRONCLAD_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]铁甲舰[COLOR_REVERT]速度缓慢而强大。它能炮击敌方城防但不能进入大洋。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]铁甲舰[COLOR_REVERT]速度缓慢而强大。它能炮击敌方城防但不能进入大洋。</Chinese><French>[COLOR_UNIT_TEXT]Ironclads[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial age.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROMAN_LEGION</Tag>
+		<English>罗马军团</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马军团</Chinese><French>Legion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SHIP_OF_THE_LINE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]主力战舰[COLOR_REVERT]是木质舰船发展的最高峰，虽然航速不及[COLOR_UNIT_TEXT]三桅战舰[COLOR_REVERT]，但却拥有强得多的攻击力。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]主力战舰[COLOR_REVERT]是木质舰船发展的最高峰，虽然航速不及[COLOR_UNIT_TEXT]三桅战舰[COLOR_REVERT]，但却拥有强得多的攻击力。</Chinese><French>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the late Renaissance.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NUCLEAR_BOMBER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]核轰炸机[COLOR_REVERT]可以用核弹攻击敌人的土地。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]核轰炸机[COLOR_REVERT]可以用核弹攻击敌人的土地。</Chinese><French>[COLOR_UNIT_TEXT]Nuclear Bombers[COLOR_REVERT] can nuke enemy lands.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SWORDSMAN_STRATEGY</Tag>
+		<English>这是强大的早期肉搏单位，适合进攻城市。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这是强大的早期肉搏单位，适合进攻城市。</Chinese><French>[COLOR_UNIT_TEXT]Swordsmen[COLOR_REVERT] have a combat bonus when attacking cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SUMERIAN_VULTURE</Tag>
+		<English>兀鹫战士</English>
+		<L1/><L2/><L3/><L4/><Chinese>兀鹫战士</Chinese><French>Vulture</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SUMERIAN_VULTURE_STRATEGY</Tag>
+		<English>此种早期肉搏兵种是苏美尔的特色单位，替代[COLOR_UNIT_TEXT]斧兵[COLOR_REVERT]，战斗力相当于[COLOR_UNIT_TEXT]剑士[COLOR_REVERT]，并仍拥有针对肉搏单位的战斗加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>此种早期肉搏兵种是苏美尔的特色单位，替代[COLOR_UNIT_TEXT]斧兵[COLOR_REVERT]，战斗力相当于[COLOR_UNIT_TEXT]剑士[COLOR_REVERT]，并仍拥有针对肉搏单位的战斗加成。</Chinese><French>The [COLOR_UNIT_TEXT]Vulture[COLOR_REVERT] is a Barbarian unit that spawns in the Middle East from 1600 BC to 300 AD.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SPEARMAN_STRATEGY</Tag>
+		<English>组建此类早期肉搏单位用于对付大量骑乘单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>组建此类早期肉搏单位用于对付大量骑乘单位。</Chinese><French>[COLOR_UNIT_TEXT]Spearmen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Heavy Cavalry Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SUBMARINE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]潜艇[COLOR_REVERT]对大多数单位隐身。它们能探索敌方区域并运载特殊单位，但易遭受敌方[COLOR_UNIT_TEXT]驱逐舰[COLOR_REVERT]和其他潜艇的攻击。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]潜艇[COLOR_REVERT]对大多数单位隐身。它们能探索敌方区域并运载特殊单位，但易遭受敌方[COLOR_UNIT_TEXT]驱逐舰[COLOR_REVERT]和其他潜艇的攻击。</Chinese><French>[COLOR_UNIT_TEXT]Submarines[COLOR_REVERT] can see [COLOR_UNIT_TEXT]Submarine[COLOR_REVERT] and [COLOR_UNIT_TEXT]Nuclear Submarine[COLOR_REVERT] units, is able to enter [COLOR_HIGHLIGHT_TEXT]Ice[COLOR_REVERT], can explore rival territory, can withdraw from combat and are invisible to all units except [COLOR_UNIT_TEXT]Destroyers[COLOR_REVERT], [COLOR_UNIT_TEXT]Stealth Destroyers[COLOR_REVERT], [COLOR_UNIT_TEXT]Submarines[COLOR_REVERT] and [COLOR_UNIT_TEXT]Attack Submarines[COLOR_REVERT] units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_STEALTH_DESTROYER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]隐形驱逐舰[COLOR_REVERT]不会被任何其他单位发现，是一种强大的现代海军舰船，只有用另外一艘[COLOR_UNIT_TEXT]隐形驱逐舰[COLOR_REVERT]才能对付它。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]隐形驱逐舰[COLOR_REVERT]不会被任何其他单位发现，是一种强大的现代海军舰船，只有用另外一艘[COLOR_UNIT_TEXT]隐形驱逐舰[COLOR_REVERT]才能对付它。</Chinese><French>[COLOR_UNIT_TEXT]Stealth Destroyers[COLOR_REVERT] are invisible to all units to all units except [COLOR_UNIT_TEXT]Stealth Destroyers[COLOR_REVERT], have two first strikes and can see [COLOR_UNIT_TEXT]Submarine[COLOR_REVERT], [COLOR_UNIT_TEXT]Nuclear Submarine[COLOR_REVERT] and [COLOR_UNIT_TEXT]Stealth Destroyer[COLOR_REVERT] units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_STEALTH_BOMBER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]隐形轰炸机[COLOR_REVERT]可以攻击敌军地面部队（也能攻击水面部队，但效果略差）。轰炸会造成附带损害。地方空军很难拦截并击落隐形轰炸机。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]隐形轰炸机[COLOR_REVERT]可以攻击敌军地面部队（也能攻击水面部队，但效果略差）。轰炸会造成附带损害。地方空军很难拦截并击落隐形轰炸机。</Chinese><French>[COLOR_UNIT_TEXT]Stealth Bombers[COLOR_REVERT] can destroy improvements, bomb city defenses, perform recon missions, damage enemy units, have an increased chance to evade interception, causes collateral damage and has a combat malus against [COLOR_UNIT_TEXT]Water Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SPY_STRATEGY</Tag>
+		<English>组建[COLOR_UNIT_TEXT]间谍[COLOR_REVERT]查探敌方领土。并可实施[COLOR_HIGHLIGHT_TEXT]谍报任务[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>组建[COLOR_UNIT_TEXT]间谍[COLOR_REVERT]查探敌方领土。并可实施[COLOR_HIGHLIGHT_TEXT]谍报任务[COLOR_REVERT]。</Chinese><French>[COLOR_UNIT_TEXT]Spies[COLOR_REVERT] are invisible to all units, can explore rival territory, help thwart rival spies and can perform espionage missions.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SPANISH_CONQUISTADOR_STRATEGY</Tag>
+		<English>这种强大的骑乘单位（西班牙用以取代[COLOR_UNIT_TEXT]胸甲骑兵[COLOR_REVERT]）在攻击肉搏部队时拥有加成，并且可以获得地形防御加成，这不同与其他骑乘单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这种强大的骑乘单位（西班牙用以取代[COLOR_UNIT_TEXT]胸甲骑兵[COLOR_REVERT]）在攻击肉搏部队时拥有加成，并且可以获得地形防御加成，这不同与其他骑乘单位。</Chinese><French>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Exploration[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Combined Arms[COLOR_REVERT] technology, receives a defensive bonus, is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], has an attack bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] except for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Militia[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SETTLER_STRATEGY</Tag>
+		<English>组建[COLOR_UNIT_TEXT]移民[COLOR_REVERT]建立新城市，扩张你的文明。</English>
+		<L1/><L2/><L3/><L4/><Chinese>组建[COLOR_UNIT_TEXT]移民[COLOR_REVERT]建立新城市，扩张你的文明。</Chinese><French>[COLOR_UNIT_TEXT]Settlers[COLOR_REVERT] can found new cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SLAVE</Tag>
+		<English>奴隶</English>
+		<L1/><L2/><L3/><L4/><Chinese>奴隶</Chinese><French>Slave</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SLAVE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]本地奴隶[COLOR_REVERT]建筑改进，包括[COLOR_HIGHLIGHT_TEXT]奴隶种植园[COLOR_REVERT]，可以作为[COLOR_HIGHLIGHT_TEXT]奴隶[COLOR_REVERT]专家在城市定居。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]本地奴隶[COLOR_REVERT]建筑改进，包括[COLOR_HIGHLIGHT_TEXT]奴隶种植园[COLOR_REVERT]，可以作为[COLOR_HIGHLIGHT_TEXT]奴隶[COLOR_REVERT]专家在城市定居。</Chinese><French>[COLOR_UNIT_TEXT]Native Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT] and can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SLAVE_HELP</Tag>
+		<English>[ICON_BULLET]可以建立[LINK=literal]奴隶种植园[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以建立[LINK=literal]奴隶种植园[\LINK]</Chinese><French>[ICON_BULLET]Can build [LINK=literal]Slave Plantation[\LINK]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AZTEC_SLAVE</Tag>
+		<English>阿兹特克奴隶</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿兹特克奴隶</Chinese><French>Aztec Slave</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AZTEC_SLAVE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]阿兹特克奴隶[COLOR_REVERT]建筑改进，包括[COLOR_REVERT]奴隶种植园[COLOR_REVERT]，可以作为[COLOR_REVERT]奴隶[COLOR_REVERT]专家在城市定居，可以在城市中加快生产，可以在城市中牺牲以获得暂时的幸福。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]阿兹特克奴隶[COLOR_REVERT]建筑改进，包括[COLOR_REVERT]奴隶种植园[COLOR_REVERT]，可以作为[COLOR_REVERT]奴隶[COLOR_REVERT]专家在城市定居，可以在城市中加快生产，可以在城市中牺牲以获得暂时的幸福。</Chinese><French>[COLOR_UNIT_TEXT]Aztec Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT], can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TAMIL_DHARANI</Tag>
+		<English>三桅轻帆</English>
+		<L1/><L2/><L3/><L4/><Chinese>三桅轻帆</Chinese><French>Dharani</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TANK_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]坦克[COLOR_REVERT]是很有效的进攻武器。它有2点移动力，并能在同一回合中攻击两次。坦克能轻易击溃任意现代之前出现的单位，但在防守时没有地形加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]坦克[COLOR_REVERT]是很有效的进攻武器。它有2点移动力，并能在同一回合中攻击两次。坦克能轻易击溃任意现代之前出现的单位，但在防守时没有地形加成。</Chinese><French>[COLOR_UNIT_TEXT]Tanks[COLOR_REVERT] don't receive defensive bonuses and begin with the [COLOR_HIGHLIGHT_TEXT]Blitz[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TAMIL_DHARANI_STRATEGY</Tag>
+		<English>泰米尔人取代[COLOR_UNIT_TEXT]轮齿[COLOR_REVERT]的[COLOR_UNIT_TEXT]轮齿[COLOR_REVERT]有两个额外的力量点，两个额外的移动点和两个第一击。</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔人取代[COLOR_UNIT_TEXT]轮齿[COLOR_REVERT]的[COLOR_UNIT_TEXT]轮齿[COLOR_REVERT]有两个额外的力量点，两个额外的移动点和两个第一击。</Chinese><French>The [COLOR_UNIT_TEXT]Dharani[COLOR_REVERT], the Tamil replacement for the [COLOR_UNIT_TEXT]Cog[COLOR_REVERT], has two extra strength points, two extra movement points and two first strikes.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_THAI_CHANG_SUEK</Tag>
+		<English>暹罗战象</English>
+		<L1/><L2/><L3/><L4/><Chinese>暹罗战象</Chinese><French>Chang Suek</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_THAI_CHANG_SUEK_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]昌苏克[COLOR_REVERT]，泰国替代[COLOR_UNIT_TEXT]柳叶刀[COLOR_REVERT]，需要[COLOR_HIGHLIGHT_TEXT]象牙[COLOR_REVERT]，而不是[COLOR_HIGHLIGHT_TEXT]马[COLOR_REVERT]，不需要[COLOR_HIGHLIGHT_TEXT]铁[COLOR_REVERT]，能够进入[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]，对[COLOR_UNIT_TEXT]重骑兵单位[COLOR_REVERT]有战斗加成，对[COLOR_UNIT_TEXT]火箭炮单位[COLOR_REVERT]和[COLOR_UNIT_TEXT]火枪手单位[COLOR_REVERT]有攻击加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]昌苏克[COLOR_REVERT]，泰国替代[COLOR_UNIT_TEXT]柳叶刀[COLOR_REVERT]，需要[COLOR_HIGHLIGHT_TEXT]象牙[COLOR_REVERT]，而不是[COLOR_HIGHLIGHT_TEXT]马[COLOR_REVERT]，不需要[COLOR_HIGHLIGHT_TEXT]铁[COLOR_REVERT]，能够进入[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]，对[COLOR_UNIT_TEXT]重骑兵单位[COLOR_REVERT]有战斗加成，对[COLOR_UNIT_TEXT]火箭炮单位[COLOR_REVERT]和[COLOR_UNIT_TEXT]火枪手单位[COLOR_REVERT]有攻击加成。</Chinese><French>The [COLOR_UNIT_TEXT]Chang Suek[COLOR_REVERT], the Thai replacement for the [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT], requires [COLOR_HIGHLIGHT_TEXT]Ivory[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Horse[COLOR_REVERT], doesn't require [COLOR_HIGHLIGHT_TEXT]Iron[COLOR_REVERT], is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Heavy Cavalry Units[COLOR_REVERT] and receives an offensive bonus against [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT] and [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT] units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TIBETAN_KHAMPA</Tag>
+		<English>康藏骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>康藏骑兵</Chinese><French>Khampa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WAR_GALLEY</Tag>
+		<English>战斗桨帆船</English>
+		<L1/><L2/><L3/><L4/><Chinese>战斗桨帆船</Chinese><French>War Galley</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WAR_GALLEY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]战舰[COLOR_REVERT]无法进入[COLOR_HIGHLIGHT_TEXT]海洋[COLOR_REVERT]，无法通过[COLOR_HIGHLIGHT_TEXT]斗篷[COLOR_REVERT]直到[COLOR_TECH_TEXT]指南针[COLOR_REVERT]并可以退出战斗。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]战舰[COLOR_REVERT]无法进入[COLOR_HIGHLIGHT_TEXT]海洋[COLOR_REVERT]，无法通过[COLOR_HIGHLIGHT_TEXT]斗篷[COLOR_REVERT]直到[COLOR_TECH_TEXT]指南针[COLOR_REVERT]并可以退出战斗。</Chinese><French>[COLOR_UNIT_TEXT]War Galleys[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], cannot pass [COLOR_HIGHLIGHT_TEXT]Capes[COLOR_REVERT] until [COLOR_TECH_TEXT]Compass[COLOR_REVERT] and can withdraw from combat.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TREBUCHET_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]抛石机[COLOR_REVERT]非常适宜进行攻城战，能够快速破坏城防，并具有较高的撤退几率。进行直接攻击时能对同一地块的其他敌方单位造成附带伤害。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]抛石机[COLOR_REVERT]非常适宜进行攻城战，能够快速破坏城防，并具有较高的撤退几率。进行直接攻击时能对同一地块的其他敌方单位造成附带伤害。</Chinese><French>[COLOR_UNIT_TEXT]Trebuchets[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TRANSPORT_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]运输舰[COLOR_REVERT]能运载四个单位，并可以出入大洋。但是运输舰无法抵御飞机和现代战舰的攻击。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]运输舰[COLOR_REVERT]能运载四个单位，并可以出入大洋。但是运输舰无法抵御飞机和现代战舰的攻击。</Chinese><French>[COLOR_UNIT_TEXT]Transports[COLOR_REVERT] have four cargo spaces and can withdraw from combat.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TIBETAN_KHAMPA_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]坎帕[COLOR_REVERT]，藏人代替[COLOR_UNIT_TEXT]马弓箭手[COLOR_REVERT]，能够进入[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]，可以探索敌对领土，在攻击城市时有攻击加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]坎帕[COLOR_REVERT]，藏人代替[COLOR_UNIT_TEXT]马弓箭手[COLOR_REVERT]，能够进入[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]，可以探索敌对领土，在攻击城市时有攻击加成。</Chinese><French>The [COLOR_UNIT_TEXT]Khampa[COLOR_REVERT], the Tibetan replacement for the the [COLOR_UNIT_TEXT]Horse Archer[COLOR_REVERT], is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT], can explore rival territory and has an attack bonus when attacking cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_VIKING_HUSCARL</Tag>
+		<English>维京战士</English>
+		<L1/><L2/><L3/><L4/><Chinese>维京战士</Chinese><French>Huscarl</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WORKER_STRATEGY</Tag>
+		<English>使用[COLOR_UNIT_TEXT]工人[COLOR_REVERT]在城市周围改造地块，并修建道路方便贸易的开展。</English>
+		<L1/><L2/><L3/><L4/><Chinese>使用[COLOR_UNIT_TEXT]工人[COLOR_REVERT]在城市周围改造地块，并修建道路方便贸易的开展。</Chinese><French>[COLOR_UNIT_TEXT]Workers[COLOR_REVERT] can build [COLOR_HIGHLIGHT_TEXT]Roads[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Railroads[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Farms[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Mines[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Workshops[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Lumbermills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Windmills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Watermills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Plantations[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Quarries[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Pastures[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Camps[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wells[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wineries[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Cottages[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Forts[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Forest Preserves[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WORK_BOAT_STRATEGY</Tag>
+		<English>这种非武装船只可用于建造渔船、捕鲸船和海上平台（游戏后期）。[COLOR_UNIT_TEXT]工船[COLOR_REVERT]不能进入大洋。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这种非武装船只可用于建造渔船、捕鲸船和海上平台（游戏后期）。[COLOR_UNIT_TEXT]工船[COLOR_REVERT]不能进入大洋。</Chinese><French>[COLOR_UNIT_TEXT]Work Boats[COLOR_REVERT] can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Whaling boats[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Offshore Platforms[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Marine Reserves[COLOR_REVERT], cannot enter the ocean until [COLOR_TECH_TEXT]Optics[COLOR_REVERT] and cannot pass capes until [COLOR_TECH_TEXT]Cartography[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_VIKING_HUSCARL_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]赫斯卡尔[COLOR_UNIT_TEXT]，海盗取代[COLOR_UNIT_TEXT]重剑手[COLOR_REVERT]，以[COLOR_HIGHLIGHT_TEXT]两栖[COLOR_REVERT]开始，攻击城市时有额外的攻击加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]赫斯卡尔[COLOR_UNIT_TEXT]，海盗取代[COLOR_UNIT_TEXT]重剑手[COLOR_REVERT]，以[COLOR_HIGHLIGHT_TEXT]两栖[COLOR_REVERT]开始，攻击城市时有额外的攻击加成。</Chinese><French>The [COLOR_UNIT_TEXT]Huscarl[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Heavy Swordsman[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] and has an additional attack bonus when attacking cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WOLF_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]狼[COLOR_REVERT]是公元前3000年至850年在西伯利亚繁殖的野蛮单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]狼[COLOR_REVERT]是公元前3000年至850年在西伯利亚繁殖的野蛮单位。</Chinese><French>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Siberia from 3000 to 850 BC.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MILITIA_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]民兵[COLOR_REVERT]在城市有防御加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]民兵[COLOR_REVERT]在城市有防御加成。</Chinese><French>[COLOR_UNIT_TEXT]Militia[COLOR_REVERT] have a defensive bonus in cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WAR_ELEPHANT_STRATEGY</Tag>
+		<English>这种早期骑乘作战单位速度较慢，但比骑射手等单位更强大。</English>
+		<L1/><L2/><L3/><L4/><Chinese>这种早期骑乘作战单位速度较慢，但比骑射手等单位更强大。</Chinese><French>[COLOR_UNIT_TEXT]War Elephants[COLOR_REVERT] are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT], don't receive defensive bonuses and have a combat bonus against [COLOR_UNIT_TEXT]Heavy Cavalry Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ZULU_IMPI</Tag>
+		<English>祖鲁矛兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>祖鲁矛兵</Chinese><French>Impi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ZULU_IMPI_STRATEGY</Tag>
+		<English>祖鲁矛兵是祖鲁人特有的强大肉搏单位（替代[COLOR_UNIT_TEXT]矛兵[COLOR_REVERT]），该单位天然拥有[COLOR_HIGHLIGHT_TEXT]机动能力[COLOR_REVERT]晋升，非常适宜对抗骑乘单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>祖鲁矛兵是祖鲁人特有的强大肉搏单位（替代[COLOR_UNIT_TEXT]矛兵[COLOR_REVERT]），该单位天然拥有[COLOR_HIGHLIGHT_TEXT]机动能力[COLOR_REVERT]晋升，非常适宜对抗骑乘单位。</Chinese><French>The [COLOR_UNIT_TEXT]Impi[COLOR_REVERT] is a Barbarian unit that spawns in the Sahara and in Sub-Equatorial Africa from 450 to 1700 AD.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_SPY</Tag>
+		<English>大间谍</English>
+		<L1/><L2/><L3/><L4/><Chinese>大间谍</Chinese><French>Great Spy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JEWISH_MISSIONARY</Tag>
+		<English>犹太教传教士</English>
+		<L1/><L2/><L3/><L4/><Chinese>犹太教传教士</Chinese><French>Jewish Rabbi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JEWISH_MISSIONARY_STRATEGY</Tag>
+		<English>信仰并且在友好的城市积极传播[COLOR_HIGHLIGHT_TEXT]新教[COLOR_REVERT]（或与您签订[COLOR_HIGHLIGHT_TEXT]开放边界[COLOR_REVERT]的敌对城市)。 此时您拥有的[COLOR_BUILDING_TEXT]诸圣堂[COLOR_REVERT]便能增加您的收入。</English>
+		<L1/><L2/><L3/><L4/><Chinese>信仰并且在友好的城市积极传播[COLOR_HIGHLIGHT_TEXT]新教[COLOR_REVERT]（或与您签订[COLOR_HIGHLIGHT_TEXT]开放边界[COLOR_REVERT]的敌对城市)。 此时您拥有的[COLOR_BUILDING_TEXT]诸圣堂[COLOR_REVERT]便能增加您的收入。</Chinese><French>[COLOR_UNIT_TEXT]Rabbis[COLOR_REVERT] ([COLOR_UNIT_TEXT]Jewish Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Judaism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ORTHODOX_MISSIONARY</Tag>
+		<English>东正教传教士</English>
+		<L1/><L2/><L3/><L4/><Chinese>东正教传教士</Chinese><French>Orthodox Missionary</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ORTHODOX_MISSIONARY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]（[COLOR_UNIT_TEXT]东正教传教士[COLOR_REVERT]）可以在友好城市（或与您有[COLOR_REVERT]开放边界[COLOR_REVERT]的竞争城市）传播[COLOR_REVERT]正统观念。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]（[COLOR_UNIT_TEXT]东正教传教士[COLOR_REVERT]）可以在友好城市（或与您有[COLOR_REVERT]开放边界[COLOR_REVERT]的竞争城市）传播[COLOR_REVERT]正统观念。</Chinese><French>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Orthodox Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Orthodoxy[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CATHOLIC_MISSIONARY</Tag>
+		<English>天主教传教士</English>
+		<L1/><L2/><L3/><L4/><Chinese>天主教传教士</Chinese><French>Catholic Missionary</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CATHOLIC_MISSIONARY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]（[COLOR_UNIT_TEXT]天主教传教士[COLOR_REVERT]）可以在友好城市（或与您有[COLOR_REVERT]开放边界[COLOR_REVERT]的竞争城市）传播[COLOR_REVERT]天主教[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]（[COLOR_UNIT_TEXT]天主教传教士[COLOR_REVERT]）可以在友好城市（或与您有[COLOR_REVERT]开放边界[COLOR_REVERT]的竞争城市）传播[COLOR_REVERT]天主教[COLOR_REVERT]。</Chinese><French>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Catholic Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Catholicism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PROTESTANT_MISSIONARY</Tag>
+		<English>新教传教士</English>
+		<L1/><L2/><L3/><L4/><Chinese>新教传教士</Chinese><French>Protestant Missionary</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PROTESTANT_MISSIONARY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]（[COLOR_UNIT_TEXT]新教传教士[COLOR_REVERT]）可以在友好城市（或与您有[COLOR_REVERT]开放边界[COLOR_REVERT]的竞争城市）传播[COLOR_REVERT]新教[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]（[COLOR_UNIT_TEXT]新教传教士[COLOR_REVERT]）可以在友好城市（或与您有[COLOR_REVERT]开放边界[COLOR_REVERT]的竞争城市）传播[COLOR_REVERT]新教[COLOR_REVERT]。</Chinese><French>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Protestant Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ISLAMIC_MISSIONARY</Tag>
+		<English>穆斯林阿訇</English>
+		<L1/><L2/><L3/><L4/><Chinese>穆斯林阿訇</Chinese><French>Islamic Imam</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ISLAMIC_MISSIONARY_STRATEGY</Tag>
+		<English>使用此传教单位传播[COLOR_HIGHLIGHT_TEXT]伊斯兰教[COLOR_REVERT]到友好城市（或对手的城市，如果双方[COLOR_HIGHLIGHT_TEXT]开放边界[COLOR_REVERT]）。如果拥有[COLOR_BUILDING_TEXT]克尔白天房[COLOR_REVERT]将可增加收入。</English>
+		<L1/><L2/><L3/><L4/><Chinese>使用此传教单位传播[COLOR_HIGHLIGHT_TEXT]伊斯兰教[COLOR_REVERT]到友好城市（或对手的城市，如果双方[COLOR_HIGHLIGHT_TEXT]开放边界[COLOR_REVERT]）。如果拥有[COLOR_BUILDING_TEXT]克尔白天房[COLOR_REVERT]将可增加收入。</Chinese><French>[COLOR_UNIT_TEXT]Imams[COLOR_REVERT] ([COLOR_UNIT_TEXT]Islamic Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Islam[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HINDU_MISSIONARY</Tag>
+		<English>印度教宗师</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度教宗师</Chinese><French>Hindu Guru</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HINDU_MISSIONARY_STRATEGY</Tag>
+		<English>使用此传教单位传播[COLOR_HIGHLIGHT_TEXT]印度教[COLOR_REVERT]到友好城市（或对手的城市，如果双方[COLOR_HIGHLIGHT_TEXT]开放边界[COLOR_REVERT]）。如果拥有[COLOR_BUILDING_TEXT]印度教黄金殿[COLOR_REVERT]将可增加收入。</English>
+		<L1/><L2/><L3/><L4/><Chinese>使用此传教单位传播[COLOR_HIGHLIGHT_TEXT]印度教[COLOR_REVERT]到友好城市（或对手的城市，如果双方[COLOR_HIGHLIGHT_TEXT]开放边界[COLOR_REVERT]）。如果拥有[COLOR_BUILDING_TEXT]印度教黄金殿[COLOR_REVERT]将可增加收入。</Chinese><French>[COLOR_UNIT_TEXT]Gurus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Hindu Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Hinduism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BUDDHIST_MISSIONARY</Tag>
+		<English>佛教僧人</English>
+		<L1/><L2/><L3/><L4/><Chinese>佛教僧人</Chinese><French>Buddhist Bhikku</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BUDDHIST_MISSIONARY_STRATEGY</Tag>
+		<English>使用此传教单位传播[COLOR_HIGHLIGHT_TEXT]佛教[COLOR_REVERT]到友好城市（或对手的城市，如果双方[COLOR_HIGHLIGHT_TEXT]开放边界[COLOR_REVERT]）。如果拥有[COLOR_BUILDING_TEXT]大菩提寺[COLOR_REVERT]将可增加收入。</English>
+		<L1/><L2/><L3/><L4/><Chinese>使用此传教单位传播[COLOR_HIGHLIGHT_TEXT]佛教[COLOR_REVERT]到友好城市（或对手的城市，如果双方[COLOR_HIGHLIGHT_TEXT]开放边界[COLOR_REVERT]）。如果拥有[COLOR_BUILDING_TEXT]大菩提寺[COLOR_REVERT]将可增加收入。</Chinese><French>[COLOR_UNIT_TEXT]Bhikkus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Buddhist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Buddhism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CONFUCIAN_MISSIONARY</Tag>
+		<English>儒士</English>
+		<L1/><L2/><L3/><L4/><Chinese>儒士</Chinese><French>Confucian Scholar</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CONFUCIAN_MISSIONARY_STRATEGY</Tag>
+		<English>使用此传教单位传播[COLOR_HIGHLIGHT_TEXT]儒学[COLOR_REVERT]到友好城市（或对手的城市，如果双方[COLOR_HIGHLIGHT_TEXT]开放边界[COLOR_REVERT]）。如果拥有[COLOR_BUILDING_TEXT]孔庙[COLOR_REVERT]将可增加收入。</English>
+		<L1/><L2/><L3/><L4/><Chinese>使用此传教单位传播[COLOR_HIGHLIGHT_TEXT]儒学[COLOR_REVERT]到友好城市（或对手的城市，如果双方[COLOR_HIGHLIGHT_TEXT]开放边界[COLOR_REVERT]）。如果拥有[COLOR_BUILDING_TEXT]孔庙[COLOR_REVERT]将可增加收入。</Chinese><French>[COLOR_UNIT_TEXT]Scholars[COLOR_REVERT] ([COLOR_UNIT_TEXT]Confucian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Confucianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TAOIST_MISSIONARY</Tag>
+		<English>道士</English>
+		<L1/><L2/><L3/><L4/><Chinese>道士</Chinese><French>Taoist Daoshi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TAOIST_MISSIONARY_STRATEGY</Tag>
+		<English>使用此传教单位传播[COLOR_HIGHLIGHT_TEXT]道教[COLOR_REVERT]到友好城市（或对手的城市，如果双方[COLOR_HIGHLIGHT_TEXT]开放边界[COLOR_REVERT]）。如果拥有[COLOR_BUILDING_TEXT]岱庙[COLOR_REVERT]将可增加收入。</English>
+		<L1/><L2/><L3/><L4/><Chinese>使用此传教单位传播[COLOR_HIGHLIGHT_TEXT]道教[COLOR_REVERT]到友好城市（或对手的城市，如果双方[COLOR_HIGHLIGHT_TEXT]开放边界[COLOR_REVERT]）。如果拥有[COLOR_BUILDING_TEXT]岱庙[COLOR_REVERT]将可增加收入。</Chinese><French>[COLOR_UNIT_TEXT]Daoshis[COLOR_REVERT] ([COLOR_UNIT_TEXT]Taoist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Taoism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ZOROASTRIAN_MISSIONARY</Tag>
+		<English>祆教祭司</English>
+		<L1/><L2/><L3/><L4/><Chinese>祆教祭司</Chinese><French>Zoroastrian Magus</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ZOROASTRIAN_MISSIONARY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Magi[COLOR_REVERT]（[COLOR_UNIT_TEXT]琐罗亚斯德传教士[COLOR_REVERT]）可以在友好城市（或与您有[COLOR_REVERT]开放边界[COLOR_REVERT]的竞争城市）传播[COLOR_REVERT]琐罗亚斯德教[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]Magi[COLOR_REVERT]（[COLOR_UNIT_TEXT]琐罗亚斯德传教士[COLOR_REVERT]）可以在友好城市（或与您有[COLOR_REVERT]开放边界[COLOR_REVERT]的竞争城市）传播[COLOR_REVERT]琐罗亚斯德教[COLOR_REVERT]。</Chinese><French>[COLOR_UNIT_TEXT]Magi[COLOR_REVERT] ([COLOR_UNIT_TEXT]Zoroastrian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Zoroastrianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SPREAD_REQUIRES_GEOGRAPHY</Tag>
+		<English>[ICON_BULLET]只能在 [LINK=literal]%s1[\LINK] 的历史区域传播，或者如果它是流行的国家宗教</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]只能在 [LINK=literal]%s1[\LINK] 的历史区域传播，或者如果它是流行的国家宗教</Chinese><French>[ICON_BULLET]Can Only Spread in Historical Regions for、or if it is the Prevalent State Religion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SPREAD_REQUIRES_STATE_RELIGION</Tag>
+		<English>[ICON_BULLET]无法在具有不同国家宗教的文明中传播[LINK=literal]%s1[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]无法在具有不同国家宗教的文明中传播[LINK=literal]%s1[\LINK]</Chinese><French>[ICON_BULLET]Cannot Spread [LINK=literal]%s1[\LINK] within a Civilization that has a Different State Religion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NUCLEAR_BOMBER</Tag>
+		<English>核轰炸机</English>
+		<L1/><L2/><L3/><L4/><Chinese>核轰炸机</Chinese><French>Nuclear Bomber</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SKIRMISHER</Tag>
+		<English>标枪兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>标枪兵</Chinese><French>Skirmisher</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SKIRMISHER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]散兵[COLOR_REVERT]有一次第一次攻击，可以退出战斗，造成附带伤害并且在[COLOR_REVERT]山[COLOR_REVERT]、[COLOR_REVERT]森林[COLOR_REVERT]和[COLOR_REVERT]雨林[COLOR_REVERT]有攻击加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]散兵[COLOR_REVERT]有一次第一次攻击，可以退出战斗，造成附带伤害并且在[COLOR_REVERT]山[COLOR_REVERT]、[COLOR_REVERT]森林[COLOR_REVERT]和[COLOR_REVERT]雨林[COLOR_REVERT]有攻击加成。</Chinese><French>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HORSEMAN</Tag>
+		<English>骑手</English>
+		<L1/><L2/><L3/><L4/><Chinese>骑手</Chinese><French>Horseman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HORSEMAN_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]骑兵[COLOR_UNIT_TEXT]不获得防御奖励，可以退出战斗，在城市中受到战斗惩罚，对[COLOR_UNIT_TEXT]攻城单位[COLOR_UNIT_TEXT]有奖励，对[COLOR_UNIT_TEXT]弹射器单位有侧翼攻击。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]骑兵[COLOR_UNIT_TEXT]不获得防御奖励，可以退出战斗，在城市中受到战斗惩罚，对[COLOR_UNIT_TEXT]攻城单位[COLOR_UNIT_TEXT]有奖励，对[COLOR_UNIT_TEXT]弹射器单位有侧翼攻击。</Chinese><French>[COLOR_UNIT_TEXT]Horsemen[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat penalty in cities, have a bonus against [COLOR_UNIT_TEXT]Siege Units[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT] units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HEAVY_GALLEY</Tag>
+		<English>重型桨帆船</English>
+		<L1/><L2/><L3/><L4/><Chinese>重型桨帆船</Chinese><French>Heavy Galley</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HEAVY_GALLEY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]重型战舰[COLOR_REVERT]不能进入[COLOR_HIGHLIGHT_TEXT]海洋[COLOR_REVERT]，不能通过[COLOR_HIGHLIGHT_TEXT]斗篷[COLOR_REVERT]，直到[COLOR U TECH U TEXT]指南针[COLOR_REVERT]有战斗奖励攻击[COLOR_HIGHLIGHT_TEXT]海岸[COLOR_REVERT]，并且可以退出战斗。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]重型战舰[COLOR_REVERT]不能进入[COLOR_HIGHLIGHT_TEXT]海洋[COLOR_REVERT]，不能通过[COLOR_HIGHLIGHT_TEXT]斗篷[COLOR_REVERT]，直到[COLOR U TECH U TEXT]指南针[COLOR_REVERT]有战斗奖励攻击[COLOR_HIGHLIGHT_TEXT]海岸[COLOR_REVERT]，并且可以退出战斗。</Chinese><French>[COLOR_UNIT_TEXT]Heavy Galleys[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], cannot pass [COLOR_HIGHLIGHT_TEXT]Capes[COLOR_REVERT] until [COLOR_TECH_TEXT]Compass[COLOR_REVERT], have a combat bonus attacking on [COLOR_HIGHLIGHT_TEXT]coast[COLOR_REVERT] and can withdraw from combat.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COG</Tag>
+		<English>运输船</English>
+		<L1/><L2/><L3/><L4/><Chinese>运输船</Chinese><French>Cog</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COG_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]运输船[COLOR_REVERT]有两个货位，不能进入[COLOR_HIGHLIGHT_TEXT]海洋[COLOR_REVERT]，不能通过[COLOR_HIGHLIGHT_TEXT]岬角[COLOR_REVERT]，直到[COLOR U TECH U TEXT]指南针[COLOR_REVERT]才能退出战斗。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]运输船[COLOR_REVERT]有两个货位，不能进入[COLOR_HIGHLIGHT_TEXT]海洋[COLOR_REVERT]，不能通过[COLOR_HIGHLIGHT_TEXT]岬角[COLOR_REVERT]，直到[COLOR U TECH U TEXT]指南针[COLOR_REVERT]才能退出战斗。</Chinese><French>[COLOR_UNIT_TEXT]Cogs[COLOR_REVERT] have two cargo spaces, cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], cannot pass [COLOR_HIGHLIGHT_TEXT]Capes[COLOR_REVERT] until [COLOR_TECH_TEXT]Compass[COLOR_REVERT] and can withdraw from combat.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GALLEASS</Tag>
+		<English>帆船</English>
+		<L1/><L2/><L3/><L4/><Chinese>帆船</Chinese><French>Galleass</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GALLEASS_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]帆船[COLOR_REVERT]不能进入[COLOR_HIGHLIGHT_TEXT]海洋[COLOR_REVERT]，不能通过[COLOR_HIGHLIGHT_TEXT]Capes[COLOR_REVERT]直到[COLOR U TECH U TEXT]指南针[COLOR_REVERT]并且在[COLOR_HIGHLIGHT_TEXT]海岸[COLOR_REVERT]有战斗。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]帆船[COLOR_REVERT]不能进入[COLOR_HIGHLIGHT_TEXT]海洋[COLOR_REVERT]，不能通过[COLOR_HIGHLIGHT_TEXT]Capes[COLOR_REVERT]直到[COLOR U TECH U TEXT]指南针[COLOR_REVERT]并且在[COLOR_HIGHLIGHT_TEXT]海岸[COLOR_REVERT]有战斗。</Chinese><French>[COLOR_UNIT_TEXT]Galleasses[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], cannot pass [COLOR_HIGHLIGHT_TEXT]Capes[COLOR_REVERT] until [COLOR_TECH_TEXT]Compass[COLOR_REVERT] and have a combat bonus on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TORPEDO_BOAT</Tag>
+		<English>鱼雷艇</English>
+		<L1/><L2/><L3/><L4/><Chinese>鱼雷艇</Chinese><French>Torpedo Boat</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TORPEDO_BOAT_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]鱼雷艇[COLOR_REVERT]不能进入[COLOR_HIGHLIGHT_TEXT]海洋[COLOR_REVERT]，有第一次攻击，可以退出战斗，并且在[COLOR_HIGHLIGHT_TEXT]海岸[COLOR_REVERT]有战斗加成攻击。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]鱼雷艇[COLOR_REVERT]不能进入[COLOR_HIGHLIGHT_TEXT]海洋[COLOR_REVERT]，有第一次攻击，可以退出战斗，并且在[COLOR_HIGHLIGHT_TEXT]海岸[COLOR_REVERT]有战斗加成攻击。</Chinese><French>[COLOR_UNIT_TEXT]Torpedo Boats[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], have a first strike, can withdraw from combat and have a combat bonus attacking on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CRUISER</Tag>
+		<English>巡洋舰</English>
+		<L1/><L2/><L3/><L4/><Chinese>巡洋舰</Chinese><French>Cruiser</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CRUISER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]巡洋舰[COLOR_REVERT]可以轰炸城市防御，是工业时代的基本[COLOR_UNIT_TEXT]海军单位[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]巡洋舰[COLOR_REVERT]可以轰炸城市防御，是工业时代的基本[COLOR_UNIT_TEXT]海军单位[COLOR_REVERT]。</Chinese><French>[COLOR_UNIT_TEXT]Cruisers[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial Era.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BIPLANE</Tag>
+		<English>双翼飞机</English>
+		<L1/><L2/><L3/><L4/><Chinese>双翼飞机</Chinese><French>Biplane</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BIPLANE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]双翼飞机[COLOR_REVERT]可以拦截敌人的空中单位，摧毁改进，轰炸城市防御，执行侦察任务和损害敌人的单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]双翼飞机[COLOR_REVERT]可以拦截敌人的空中单位，摧毁改进，轰炸城市防御，执行侦察任务和损害敌人的单位。</Chinese><French>[COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT] can intercept enemy air units, destroy improvements, bomb city defenses, perform recon missions and damage enemy units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MILITIA</Tag>
+		<English>民兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>民兵</Chinese><French>Militia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARQUEBUSIER</Tag>
+		<English>火绳枪兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>火绳枪兵</Chinese><French>Arquebusier</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HEAVY_SPEARMAN</Tag>
+		<English>重矛兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>重矛兵</Chinese><French>Heavy Spearman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HEAVY_SPEARMAN_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]重矛人[COLOR_REVERT]对[COLOR_UNIT_TEXT]重骑兵[COLOR_REVERT]有战斗加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]重矛人[COLOR_REVERT]对[COLOR_UNIT_TEXT]重骑兵[COLOR_REVERT]有战斗加成。</Chinese><French>[COLOR_UNIT_TEXT]Heavy Spearmen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Heavy Mounted Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HOWITZER</Tag>
+		<English>榴弹炮</English>
+		<L1/><L2/><L3/><L4/><Chinese>榴弹炮</Chinese><French>Howitzer</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HOWITZER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]榴弹炮[COLOR_REVERT]不能捕获敌人的城市或单位，不能获得防御奖励，攻击城市时有战斗奖励，造成附带伤害，对[COLOR_UNIT_TEXT]攻城武器[COLOR_REVERT]的附带伤害免疫，并且可以轰炸城市防御。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]榴弹炮[COLOR_REVERT]不能捕获敌人的城市或单位，不能获得防御奖励，攻击城市时有战斗奖励，造成附带伤害，对[COLOR_UNIT_TEXT]攻城武器[COLOR_REVERT]的附带伤害免疫，并且可以轰炸城市防御。</Chinese><French>[COLOR_UNIT_TEXT]Howitzers[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DRAGOON</Tag>
+		<English>龙骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>龙骑兵</Chinese><French>Dragoon</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DRAGOON_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]龙骑兵[COLOR_REVERT]不会获得防御奖励，是工业时代基本的[COLOR_UNIT_TEXT]装备单位[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]龙骑兵[COLOR_REVERT]不会获得防御奖励，是工业时代基本的[COLOR_UNIT_TEXT]装备单位[COLOR_REVERT]。</Chinese><French>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses and are basic [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] in the Industrial Era.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PISTOLIER</Tag>
+		<English>手枪骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>手枪骑兵</Chinese><French>Pistolier</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PISTOLIER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]手枪手[COLOR_REVERT]对第一次攻击免疫，不接受防御加成，可以退出战斗，在开阔地形上有战斗加成，并且对[COLOR_UNIT_TEXT]弹射器[COLOR_REVERT]，[COLOR_UNIT_TEXT]投石机[COLOR_REVERT]，[COLOR_UNIT_TEXT]轰炸[COLOR_REVERT]和[COLOR_UNIT_TEXT]加农炮[COLOR_REVERT]单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]手枪手[COLOR_REVERT]对第一次攻击免疫，不接受防御加成，可以退出战斗，在开阔地形上有战斗加成，并且对[COLOR_UNIT_TEXT]弹射器[COLOR_REVERT]，[COLOR_UNIT_TEXT]投石机[COLOR_REVERT]，[COLOR_UNIT_TEXT]轰炸[COLOR_REVERT]和[COLOR_UNIT_TEXT]加农炮[COLOR_REVERT]单位。</Chinese><French>[COLOR_UNIT_TEXT]Pistoliers[COLOR_REVERT] are immune to first strikes, don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HUSSAR</Tag>
+		<English>轻骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>轻骑兵</Chinese><French>Hussar</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HUSSAR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]轻骑兵[COLOR_REVERT]不获得防御加成，可以退出战斗，在开阔地形上有战斗加成，对[COLOR_UNIT_TEXT]大炮[COLOR_REVERT]和[COLOR_UNIT_TEXT]大炮[COLOR_REVERT]单位有攻击加成，对[COLOR_UNIT_TEXT]弹射器[COLOR_REVERT]有侧翼攻击，[COLOR_UNIT_TEXT]投石机[COLOR_REVERT]，[COLOR_UNIT_TEXT]轰炸[COLOR_REVERT]，[COLOR_UNIT_TEXT]大炮[COLOR_REVERT]和[COLOR_UNIT_TEXT]大炮[COLOR_REVERT]单位。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]轻骑兵[COLOR_REVERT]不获得防御加成，可以退出战斗，在开阔地形上有战斗加成，对[COLOR_UNIT_TEXT]大炮[COLOR_REVERT]和[COLOR_UNIT_TEXT]大炮[COLOR_REVERT]单位有攻击加成，对[COLOR_UNIT_TEXT]弹射器[COLOR_REVERT]有侧翼攻击，[COLOR_UNIT_TEXT]投石机[COLOR_REVERT]，[COLOR_UNIT_TEXT]轰炸[COLOR_REVERT]，[COLOR_UNIT_TEXT]大炮[COLOR_REVERT]和[COLOR_UNIT_TEXT]大炮[COLOR_REVERT]单位。</Chinese><French>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHT_SWORDSMAN</Tag>
+		<English>轻剑客</English>
+		<L1/><L2/><L3/><L4/><Chinese>轻剑客</Chinese><French>Light Swordsman</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHT_SWORDSMAN_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]轻剑客[COLOR_REVERT]是基本的[COLOR_UNIT_TEXT]近战单位[COLOR_REVERT]或古典时代。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]轻剑客[COLOR_REVERT]是基本的[COLOR_UNIT_TEXT]近战单位[COLOR_REVERT]或古典时代。</Chinese><French>[COLOR_UNIT_TEXT]Light Swordsmen[COLOR_REVERT] are the basic [COLOR_UNIT_TEXT]Melee units[COLOR_REVERT] or the Classical Era.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LABOURER</Tag>
+		<English>劳动者</English>
+		<L1/><L2/><L3/><L4/><Chinese>劳动者</Chinese><French>Labourer</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LABOURER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]工人[COLOR_REVERT]得到改进[COLOR_UNIT_TEXT]工人[COLOR_REVERT]。他们可以建造[COLOR_HIGHLIGHT_TEXT]道路[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]铁路[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]农场[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]矿山[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]车间[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]伐木场[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]风车[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]水厂[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]种植园[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]采石场[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]牧场[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]营地[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]水井[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]酒厂[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]村舍[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]Forts[COLOR_HIGHLIGHT_TEXT]和[COLOR_HIGHLIGHT_TEXT]森林保留[COLOR_HIGHLIGHT_TEXT]，但速度更快。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]工人[COLOR_REVERT]得到改进[COLOR_UNIT_TEXT]工人[COLOR_REVERT]。他们可以建造[COLOR_HIGHLIGHT_TEXT]道路[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]铁路[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]农场[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]矿山[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]车间[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]伐木场[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]风车[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]水厂[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]种植园[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]采石场[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]牧场[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]营地[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]水井[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]酒厂[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]村舍[COLOR_HIGHLIGHT_TEXT]，[COLOR_HIGHLIGHT_TEXT]Forts[COLOR_HIGHLIGHT_TEXT]和[COLOR_HIGHLIGHT_TEXT]森林保留[COLOR_HIGHLIGHT_TEXT]，但速度更快。</Chinese><French>[COLOR_UNIT_TEXT]Labourers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Workers[COLOR_REVERT]. They can build [COLOR_HIGHLIGHT_TEXT]Roads[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Railroads[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Farms[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Mines[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Workshops[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Lumbermills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Windmills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Watermills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Plantations[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Quarries[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Pastures[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Camps[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wells[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wineries[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Cottages[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Forts[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Forest Preserves[COLOR_REVERT], but at a faster rate.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MUSKETEER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]火枪手[COLOR_REVERT]不需要特殊资源。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]火枪手[COLOR_REVERT]不需要特殊资源。</Chinese><French>[COLOR_UNIT_TEXT]Musketeers[COLOR_REVERT] requires no special resources.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MUSKETEER</Tag>
+		<English>火枪手</English>
+		<L1/><L2/><L3/><L4/><Chinese>火枪手</Chinese><French>Musketeer</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ENGLISH_REDCOAT</Tag>
+		<English>皇家来复枪兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>皇家来复枪兵</Chinese><French>Redcoat</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TURKIC_OGHUZ</Tag>
+		<English>土库曼骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼骑兵</Chinese><French>Oghuz</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TURKIC_OGHUZ_STRATEGY</Tag>
+		<English>土库曼骑兵取代了马弓箭手奥古兹[COLOR_REVERT]，开始于3月[COLOR_HIGHLIGHT_TEXT]的晋升，拥有隐藏的国籍，可以攻击其他文明的单位而不宣战。</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼骑兵取代了马弓箭手奥古兹[COLOR_REVERT]，开始于3月[COLOR_HIGHLIGHT_TEXT]的晋升，拥有隐藏的国籍，可以攻击其他文明的单位而不宣战。</Chinese><French>The [COLOR_UNIT_TEXT]Oghuz[COLOR_REVERT], the Turkic replacement for the [COLOR_UNIT_TEXT]Horse Archer[COLOR_REVERT], starts with the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion, have hidden nationality and can attack units of other civilizations without declaring war.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DRONE</Tag>
+		<English>无人机</English>
+		<L1/><L2/><L3/><L4/><Chinese>无人机</Chinese><French>Drone</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DRONE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]无人机[COLOR_REVERT]对所有单位都是隐形的，可以探索敌方领土，可以摧毁改进，轰炸城市防御，执行侦察任务，损害敌方单位，并有更多的机会逃避拦截。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]无人机[COLOR_REVERT]对所有单位都是隐形的，可以探索敌方领土，可以摧毁改进，轰炸城市防御，执行侦察任务，损害敌方单位，并有更多的机会逃避拦截。</Chinese><French>[COLOR_UNIT_TEXT]Drones[COLOR_REVERT] are invisible to all units, can explore rival territory, can destroy improvements, bomb city defenses, perform recon missions, damage enemy units and have an increased chance to evade interception.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SATELLITE</Tag>
+		<English>卫星</English>
+		<L1/><L2/><L3/><L4/><Chinese>卫星</Chinese><French>Satellite</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SATELLITE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]卫星[COLOR_REVERT]可以看到其他[COLOR_UNIT_TEXT]卫星[COLOR_REVERT]单元，作为[COLOR_HIGHLIGHT_TEXT]研究卫星[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]商业卫星[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]军事卫星[COLOR_REVERT]专家在一个城市定居，可以探索竞争领土，对所有单位都不可见，除了[COLOR_UNIT_TEXT]卫星[COLOR_REVERT]单位，并以[COLOR_HIGHLIGHT_TEXT]哨兵[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]卫星[COLOR_REVERT]可以看到其他[COLOR_UNIT_TEXT]卫星[COLOR_REVERT]单元，作为[COLOR_HIGHLIGHT_TEXT]研究卫星[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]商业卫星[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]军事卫星[COLOR_REVERT]专家在一个城市定居，可以探索竞争领土，对所有单位都不可见，除了[COLOR_UNIT_TEXT]卫星[COLOR_REVERT]单位，并以[COLOR_HIGHLIGHT_TEXT]哨兵[COLOR_REVERT]提升。</Chinese><French>[COLOR_UNIT_TEXT]Satellites[COLOR_REVERT] can see other [COLOR_UNIT_TEXT]Satellite[COLOR_REVERT] units, settle in a city as a [COLOR_HIGHLIGHT_TEXT]Research Satellite[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Commercial Satellite[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Military Satellite[COLOR_REVERT] specialist, can explore rival territory, are invisible to all units except [COLOR_UNIT_TEXT]Satellite[COLOR_REVERT] units and begin with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALUNIT_SATELLITE</Tag>
+		<English>卫星</English>
+		<L1/><L2/><L3/><L4/><Chinese>卫星</Chinese><French>Satellite</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALUNIT_ICBM</Tag>
+		<English>洲际弹道导弹</English>
+		<L1/><L2/><L3/><L4/><Chinese>洲际弹道导弹</Chinese><French>ICBM</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAMEL_RIDER</Tag>
+		<English>骆驼骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>骆驼骑兵</Chinese><French>Camel Rider</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAMEL_RIDER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]骆驼骑兵[COLOR_UNIT_TEXT]不获得防御奖励，可以退出战斗，在城市受到战斗惩罚，对[COLOR_UNIT_TEXT]攻城单位[COLOR_UNIT_TEXT]和[COLOR_UNIT_TEXT]重骑兵单位[COLOR_UNIT_TEXT]有奖励，对[COLOR_UNIT_TEXT]弹弓单位进行侧翼攻击，在[COLOR_HIGHLIGHT_TEXT]沙漠[COLOR_REVERT]中获得战斗奖励，并从[COLOR_HIGHLIGHT_TEXT]沙漠适应[COLOR_REVERT]升级开始。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]骆驼骑兵[COLOR_UNIT_TEXT]不获得防御奖励，可以退出战斗，在城市受到战斗惩罚，对[COLOR_UNIT_TEXT]攻城单位[COLOR_UNIT_TEXT]和[COLOR_UNIT_TEXT]重骑兵单位[COLOR_UNIT_TEXT]有奖励，对[COLOR_UNIT_TEXT]弹弓单位进行侧翼攻击，在[COLOR_HIGHLIGHT_TEXT]沙漠[COLOR_REVERT]中获得战斗奖励，并从[COLOR_HIGHLIGHT_TEXT]沙漠适应[COLOR_REVERT]升级开始。</Chinese><French>[COLOR_UNIT_TEXT]Camel Riders[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat penalty in cities, have a bonus against [COLOR_UNIT_TEXT]Siege Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Heavy Cavalry Units[COLOR_REVERT] units, have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT] units, have a combat bonus in [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Desert Adaptation[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAMEL_ARCHER</Tag>
+		<English>骆驼射手</English>
+		<L1/><L2/><L3/><L4/><Chinese>骆驼射手</Chinese><French>Camel Archer</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAMEL_ARCHER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]骆驼弓箭手[COLOR_UNIT_TEXT]不获得防御加成，可以退出战斗，在开阔地形上有战斗加成，对[COLOR_UNIT_TEXT]重骑兵单位有加成，在[COLOR_HIGHLIGHT_TEXT]沙漠[COLOR_REVERT]中获得战斗奖励，并从[COLOR_HIGHLIGHT_TEXT]沙漠适应[COLOR_REVERT]升级开始。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]骆驼弓箭手[COLOR_UNIT_TEXT]不获得防御加成，可以退出战斗，在开阔地形上有战斗加成，对[COLOR_UNIT_TEXT]重骑兵单位有加成，在[COLOR_HIGHLIGHT_TEXT]沙漠[COLOR_REVERT]中获得战斗奖励，并从[COLOR_HIGHLIGHT_TEXT]沙漠适应[COLOR_REVERT]升级开始。</Chinese><French>[COLOR_UNIT_TEXT]Camel Archers[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a bonus against [COLOR_UNIT_TEXT]Heavy Cavalry Units[COLOR_REVERT] units, have a combat bonus in [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Desert Adaptation[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAMEL_GUNNER</Tag>
+		<English>骆驼枪手</English>
+		<L1/><L2/><L3/><L4/><Chinese>骆驼枪手</Chinese><French>Camel Gunner</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAMEL_GUNNER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]骆驼炮手[COLOR_UNIT_TEXT]对第一次攻击免疫，不接受防御加成，可以退出战斗，在开阔地形上有战斗加成，并且对[COLOR_UNIT_TEXT]弹射器[COLOR_UNIT_TEXT]，[COLOR_UNIT_TEXT]投石机[COLOR_UNIT_TEXT]，[COLOR_UNIT_TEXT]轰炸[COLOR_UNIT_TEXT]和[COLOR_UNIT_TEXT]加农炮[COLOR_UNIT_TEXT]单位，对[COLOR_UNIT_TEXT]重骑兵单位有加成，在[COLOR_UNIT_TEXT]沙漠[COLOR_UNIT_TEXT]有战斗加成，从[COLOR_UNIT_TEXT]沙漠适应[COLOR_UNIT_TEXT]升级开始。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]骆驼炮手[COLOR_UNIT_TEXT]对第一次攻击免疫，不接受防御加成，可以退出战斗，在开阔地形上有战斗加成，并且对[COLOR_UNIT_TEXT]弹射器[COLOR_UNIT_TEXT]，[COLOR_UNIT_TEXT]投石机[COLOR_UNIT_TEXT]，[COLOR_UNIT_TEXT]轰炸[COLOR_UNIT_TEXT]和[COLOR_UNIT_TEXT]加农炮[COLOR_UNIT_TEXT]单位，对[COLOR_UNIT_TEXT]重骑兵单位有加成，在[COLOR_UNIT_TEXT]沙漠[COLOR_UNIT_TEXT]有战斗加成，从[COLOR_UNIT_TEXT]沙漠适应[COLOR_UNIT_TEXT]升级开始。</Chinese><French>[COLOR_UNIT_TEXT]Camel Gunners[COLOR_REVERT] are immune to first strikes, don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units, have a bonus against [COLOR_UNIT_TEXT]Heavy Cavalry Units[COLOR_REVERT] units, have a combat bonus in [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Desert Adaptation[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARABIAN_MOBILE_GUARD</Tag>
+		<English>阿拉伯骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯骑兵</Chinese><French>Mobile Guard</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARABIAN_MOBILE_GUARD_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]移动卫兵[COLOR_REVERT]是[COLOR_UNIT_TEXT]Lancer[COLOR_REVERT]的阿拉伯替代品，不需要[COLOR戋u HIGHLIGHT戋TEXT]铁[COLOR_REVERT]资源，可以退出战斗，攻击城市时不受战斗惩罚。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]移动卫兵[COLOR_REVERT]是[COLOR_UNIT_TEXT]Lancer[COLOR_REVERT]的阿拉伯替代品，不需要[COLOR戋u HIGHLIGHT戋TEXT]铁[COLOR_REVERT]资源，可以退出战斗，攻击城市时不受战斗惩罚。</Chinese><French>The [COLOR_UNIT_TEXT]Mobile Guard[COLOR_REVERT], the Arabian replacement for the [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT], doesn't require the [COLOR_HIGHLIGHT_TEXT]Iron[COLOR_REVERT] resource, can withdraw from combat and doesn't have a combat penalty when attacking cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARABIAN_GHAZI</Tag>
+		<English>阿拉伯重剑士</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿拉伯重剑士</Chinese><French>Ghazi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARABIAN_GHAZI_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]阿拉伯重剑士[COLOR_REVERT]是[COLOR_UNIT_TEXT]重剑手[COLOR_REVERT]的阿拉伯替代品，在攻击城市时有一个额外的移动点和额外的攻击加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]阿拉伯重剑士[COLOR_REVERT]是[COLOR_UNIT_TEXT]重剑手[COLOR_REVERT]的阿拉伯替代品，在攻击城市时有一个额外的移动点和额外的攻击加成。</Chinese><French>The [COLOR_UNIT_TEXT]Ghazi[COLOR_REVERT], the Arabian replacement for the [COLOR_UNIT_TEXT]Heavy Swordsman[COLOR_REVERT], has one additional movement point and has an additional attack bonus when attacking cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ETHIOPIAN_SHOTELAI</Tag>
+		<English>埃塞尔比亚剑士</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞尔比亚剑士</Chinese><French>Shotelai</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ETHIOPIAN_SHOTELAI_STRATEGY</Tag>
+		<English>埃塞俄比亚人取代[COLOR_UNIT_TEXT]剑客[COLOR_REVERT]的[COLOR_UNIT_TEXT]Shotelai[COLOR_REVERT]不需要[COLOR_HIGHLIGHT_TEXT]铁[COLOR_REVERT]资源，而是从[COLOR_HIGHLIGHT_TEXT]游击队I[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞俄比亚人取代[COLOR_UNIT_TEXT]剑客[COLOR_REVERT]的[COLOR_UNIT_TEXT]Shotelai[COLOR_REVERT]不需要[COLOR_HIGHLIGHT_TEXT]铁[COLOR_REVERT]资源，而是从[COLOR_HIGHLIGHT_TEXT]游击队I[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Shotelai[COLOR_REVERT], the Ethiopian replacement for the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], doesn't require the [COLOR_HIGHLIGHT_TEXT]Iron[COLOR_REVERT] resource and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AMERICAN_PIONEER</Tag>
+		<English>美国大篷车</English>
+		<L1/><L2/><L3/><L4/><Chinese>美国大篷车</Chinese><French>Pioneer</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AMERICAN_PIONEER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]拓荒者[COLOR_REVERT]，[COLOR_UNIT_TEXT]定居者[COLOR_REVERT]的美国替代者，当它在北美建立一座城市时，可以保护自己并在其中产生一名防御者和一名工人。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]拓荒者[COLOR_REVERT]，[COLOR_UNIT_TEXT]定居者[COLOR_REVERT]的美国替代者，当它在北美建立一座城市时，可以保护自己并在其中产生一名防御者和一名工人。</Chinese><French>The [COLOR_UNIT_TEXT]Pioneer[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], can defend itself and spawns a defender and a worker in when it founds a city in North America.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREEK_COMPANION</Tag>
+		<English>希腊骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>希腊骑兵</Chinese><French>Companion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREEK_COMPANION_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]希腊骑兵[COLOR_REVERT]，[COLOR U TEXT]骑兵[COLOR_REVERT]的希腊替代品，在攻击城市时没有战斗惩罚，并以[COLOR_HIGHLIGHT_TEXT]三月[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]闪电战[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]希腊骑兵[COLOR_REVERT]，[COLOR U TEXT]骑兵[COLOR_REVERT]的希腊替代品，在攻击城市时没有战斗惩罚，并以[COLOR_HIGHLIGHT_TEXT]三月[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]闪电战[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Companion[COLOR_REVERT], the Greek replacement for the [COLOR_UNIT_TEXT]Horseman[COLOR_REVERT], doesn't have a combat penalty when attacking cities and begins with the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Blitz[COLOR_REVERT] promotions.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ENGLISH_MAN_OF_WAR</Tag>
+		<English>英国战船</English>
+		<L1/><L2/><L3/><L4/><Chinese>英国战船</Chinese><French>Man-of-War</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ENGLISH_MAN_OF_WAR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]英国战船[COLOR_REVERT]，英国替换的[COLOR_UNIT_TEXT]船，有三个额外的力量点，一个额外的移动点，并对一个以上的单位造成附带伤害。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]英国战船[COLOR_REVERT]，英国替换的[COLOR_UNIT_TEXT]船，有三个额外的力量点，一个额外的移动点，并对一个以上的单位造成附带伤害。</Chinese><French>The [COLOR_UNIT_TEXT]Man-of-War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_KOREAN_KOBUKSON</Tag>
+		<English>高丽龟船</English>
+		<L1/><L2/><L3/><L4/><Chinese>高丽龟船</Chinese><French>Kobukson</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_KOREAN_KOBUKSON_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Kobukson[COLOR_REVERT]是[COLOR_UNIT_TEXT]Gallass[COLOR_REVERT]的韩语替代品，它有两个额外的强度点，并且以[COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]Kobukson[COLOR_REVERT]是[COLOR_UNIT_TEXT]Gallass[COLOR_REVERT]的韩语替代品，它有两个额外的强度点，并且以[COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Kobukson[COLOR_REVERT], the Korean replacement for the [COLOR_UNIT_TEXT]Galleass[COLOR_REVERT], has two additional strength points and begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT] promotions.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROMAN_BALLISTA</Tag>
+		<English>罗马弩炮</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗马弩炮</Chinese><French>Ballista</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROMAN_BALLISTA_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]弩炮[COLOR_REVERT]，罗马取代[COLOR_UNIT_TEXT]弹射器[COLOR_REVERT]，有两个额外的力量点，攻击城市时没有加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]弩炮[COLOR_REVERT]，罗马取代[COLOR_UNIT_TEXT]弹射器[COLOR_REVERT]，有两个额外的力量点，攻击城市时没有加成。</Chinese><French>The [COLOR_UNIT_TEXT]Ballista[COLOR_REVERT], the Roman replacement for the [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], has two additional strength points and doesn't have a bonus when attacking cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JAPANESE_ZERO</Tag>
+		<English>日本战机</English>
+		<L1/><L2/><L3/><L4/><Chinese>日本战机</Chinese><French>Zero</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JAPANESE_ZERO_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]日本战机[COLOR_REVERT]，日本取代[COLOR_UNIT_TEXT]战斗机[COLOR_REVERT]，更便宜，可以躲避拦截，并且对[COLOR_UNIT_TEXT]水上部队[COLOR_REVERT]有战斗加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]日本战机[COLOR_REVERT]，日本取代[COLOR_UNIT_TEXT]战斗机[COLOR_REVERT]，更便宜，可以躲避拦截，并且对[COLOR_UNIT_TEXT]水上部队[COLOR_REVERT]有战斗加成。</Chinese><French>The [COLOR_UNIT_TEXT]Zero[COLOR_REVERT], the Japanese replacement for the [COLOR_UNIT_TEXT]Fighter[COLOR_REVERT], is cheaper, can evade interception and has a combat bonus against [COLOR_UNIT_TEXT]Water Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PHOENICIAN_SACRED_BAND</Tag>
+		<English>腓尼基矛兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>腓尼基矛兵</Chinese><French>Sacred Band</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PHOENICIAN_SACRED_BAND_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]圣带[COLOR_REVERT]，腓尼基人取代[COLOR_UNIT_TEXT]矛兵[COLOR_REVERT]，在攻防城市时有战斗奖励，并从[COLOR戋u HIGHLIGHT戋TEXT]两栖[COLOR_REVERT]升级开始。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]圣带[COLOR_REVERT]，腓尼基人取代[COLOR_UNIT_TEXT]矛兵[COLOR_REVERT]，在攻防城市时有战斗奖励，并从[COLOR戋u HIGHLIGHT戋TEXT]两栖[COLOR_REVERT]升级开始。</Chinese><French>The [COLOR_UNIT_TEXT]Sacred Band[COLOR_REVERT], the Phoenician replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], has a combat bonus when attacking and defending cities and starts with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SPANISH_TERCIO</Tag>
+		<English>西班牙火枪手</English>
+		<L1/><L2/><L3/><L4/><Chinese>西班牙火枪手</Chinese><French>Tercio</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SPANISH_TERCIO_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]西班牙大方阵[COLOR_REVERT]是[COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT]的西班牙语替代品，它以[COLOR_HIGHLIGHT_TEXT]夹点[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]形成[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]西班牙大方阵[COLOR_REVERT]是[COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT]的西班牙语替代品，它以[COLOR_HIGHLIGHT_TEXT]夹点[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]形成[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Pinch[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Formation[COLOR_REVERT] promotions.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_GUARD</Tag>
+		<English>法国龙骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>法国龙骑兵</Chinese><French>Guard</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_GUARD_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]守卫[COLOR_REVERT]，[COLOR_UNIT_TEXT]龙骑兵[COLOR_REVERT]的法国替代品，从[COLOR_HIGHLIGHT_TEXT]夹[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]领导层[COLOR_REVERT]的晋升开始。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]守卫[COLOR_REVERT]，[COLOR_UNIT_TEXT]龙骑兵[COLOR_REVERT]的法国替代品，从[COLOR_HIGHLIGHT_TEXT]夹[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]领导层[COLOR_REVERT]的晋升开始。</Chinese><French>The [COLOR_UNIT_TEXT]Guard[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Pinch[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotions.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_GENDARME</Tag>
+		<English>法国近卫骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>法国近卫骑兵</Chinese><French>Gendarme</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_GENDARME_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]宪兵队[COLOR_REVERT]，[COLOR_UNIT_TEXT]护甲队[COLOR_REVERT]的法文替代品，从[COLOR_HIGHLIGHT_TEXT]夹[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]领导层[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]宪兵队[COLOR_REVERT]，[COLOR_UNIT_TEXT]护甲队[COLOR_REVERT]的法文替代品，从[COLOR_HIGHLIGHT_TEXT]夹[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]领导层[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Gendarme[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Pinch[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotions.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HOLY_ROMAN_GRENZER</Tag>
+		<English>神罗边防军</English>
+		<L1/><L2/><L3/><L4/><Chinese>神罗边防军</Chinese><French>Grenzer</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HOLY_ROMAN_GRENZER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]神罗边防军[COLOR_REVERT]，神圣罗马取代[COLOR_UNIT_TEXT]掷弹机[COLOR_REVERT]，需要[COLOR_TECH_TEXT]地理[COLOR_REVERT]，而不是[COLOR_TECH_TEXT]化学[COLOR_REVERT]，从[COLOR_HIGHLIGHT_TEXT]游击队I[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]脱离I[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]神罗边防军[COLOR_REVERT]，神圣罗马取代[COLOR_UNIT_TEXT]掷弹机[COLOR_REVERT]，需要[COLOR_TECH_TEXT]地理[COLOR_REVERT]，而不是[COLOR_TECH_TEXT]化学[COLOR_REVERT]，从[COLOR_HIGHLIGHT_TEXT]游击队I[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]脱离I[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Grenzer[COLOR_REVERT], the Holy Roman replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], requires [COLOR_TECH_TEXT]Geography[COLOR_REVERT] instead of [COLOR_TECH_TEXT]Chemistry[COLOR_REVERT], and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotions.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_VIKING_LONGSHIP</Tag>
+		<English>维京战舰</English>
+		<L1/><L2/><L3/><L4/><Chinese>维京战舰</Chinese><French>Longship</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_VIKING_LONGSHIP_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]长舰[COLOR_REVERT]，海盗取代[COLOR_UNIT_TEXT]的重型战舰[COLOR_REVERT]有两个额外的移动点，可以轰炸城市防御，有两个货舱，并以[COLOR_HIGHLIGHT_TEXT]DISGAGE I[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]长舰[COLOR_REVERT]，海盗取代[COLOR_UNIT_TEXT]的重型战舰[COLOR_REVERT]有两个额外的移动点，可以轰炸城市防御，有两个货舱，并以[COLOR_HIGHLIGHT_TEXT]DISGAGE I[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Heavy Galley[COLOR_REVERT] has two extra movement points, can bombard city defenses, has two cargo spaces and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BYZANTINE_DROMON</Tag>
+		<English>拜占庭战舰</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭战舰</Chinese><French>Dromon</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BYZANTINE_DROMON_STRATEGY</Tag>
+		<English>拜占庭人取代[COLOR_UNIT_TEXT]战舰[COLOR_REVERT]的[COLOR_UNIT_TEXT]Dromon[COLOR_REVERT]，有一个额外的力量点，并造成附带伤害。</English>
+		<L1/><L2/><L3/><L4/><Chinese>拜占庭人取代[COLOR_UNIT_TEXT]战舰[COLOR_REVERT]的[COLOR_UNIT_TEXT]Dromon[COLOR_REVERT]，有一个额外的力量点，并造成附带伤害。</Chinese><French>The [COLOR_UNIT_TEXT]Dromon[COLOR_REVERT], the Byzantine replacement for the [COLOR_UNIT_TEXT]War Galley[COLOR_REVERT], has one additional strength point and causes collateral damage.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ITALIAN_LANTERNAS</Tag>
+		<English>热那亚战船</English>
+		<L1/><L2/><L3/><L4/><Chinese>热那亚战船</Chinese><French>Lanternas</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ITALIAN_LANTERNAS_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]意大利战船[COLOR_REVERT]，意大利语替代[COLOR_UNIT_TEXT]Galleass[COLOR_REVERT]，更便宜，有两个额外的力量点和一个额外的移动点。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]意大利战船[COLOR_REVERT]，意大利语替代[COLOR_UNIT_TEXT]Galleass[COLOR_REVERT]，更便宜，有两个额外的力量点和一个额外的移动点。</Chinese><French>The [COLOR_UNIT_TEXT]Lanternas[COLOR_REVERT], the Italian replacement for the [COLOR_UNIT_TEXT]Galleass[COLOR_REVERT], is cheaper, has two additional strength points and one additional movement point.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ITALIAN_BALESTRIERE</Tag>
+		<English>热那亚弩手</English>
+		<L1/><L2/><L3/><L4/><Chinese>热那亚弩手</Chinese><French>Balestriere</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ITALIAN_BALESTRIERE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]意大利弩手[COLOR_REVERT]是[COLOR_UNIT_TEXT]弩手[COLOR_REVERT]的意大利替代品，它有一个额外的第一次攻击，并以[COLOR_HIGHLIGHT_TEXT]两栖[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]意大利弩手[COLOR_REVERT]是[COLOR_UNIT_TEXT]弩手[COLOR_REVERT]的意大利替代品，它有一个额外的第一次攻击，并以[COLOR_HIGHLIGHT_TEXT]两栖[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Balestriere[COLOR_REVERT], the Italian replacement for the [COLOR_UNIT_TEXT]Crossbowman[COLOR_REVERT], has an additional first strike and begins with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GERMAN_FUSILIER</Tag>
+		<English>普鲁士燧发枪兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>普鲁士燧发枪兵</Chinese><French>Fusilier</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GERMAN_FUSILIER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]燧发枪士兵[COLOR_REVERT]，普鲁士取代[COLOR_UNIT_TEXT]火枪手[COLOR_REVERT]，以[COLOR_HIGHLIGHT_TEXT]钻一[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]钻二[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]燧发枪士兵[COLOR_REVERT]，普鲁士取代[COLOR_UNIT_TEXT]火枪手[COLOR_REVERT]，以[COLOR_HIGHLIGHT_TEXT]钻一[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]钻二[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], the Prussian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT] promotions.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COLOMBIAN_LLANERO</Tag>
+		<English>哥伦比亚骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥伦比亚骑兵</Chinese><French>Llanero</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COLOMBIAN_LLANERO_STRATEGY</Tag>
+		<English>哥伦比亚替代[COLOR_UNIT_TEXT]轻骑兵[COLOR_REVERT]的[COLOR_UNIT_TEXT]利亚内罗[COLOR_REVERT]，不需要 [COLOR_TECH_TEXT]生物[COLOR_REVERT]技术，对[COLOR_UNIT_TEXT]火枪手[COLOR_UNIT_TEXT]和[COLOR_UNIT_TEXT]步枪兵[COLOR_UNIT_TEXT]单位有战斗奖励，并且从[COLOR_UNIT_TEXT]移动升级开始。</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥伦比亚替代[COLOR_UNIT_TEXT]轻骑兵[COLOR_REVERT]的[COLOR_UNIT_TEXT]利亚内罗[COLOR_REVERT]，不需要 [COLOR_TECH_TEXT]生物[COLOR_REVERT]技术，对[COLOR_UNIT_TEXT]火枪手[COLOR_UNIT_TEXT]和[COLOR_UNIT_TEXT]步枪兵[COLOR_UNIT_TEXT]单位有战斗奖励，并且从[COLOR_UNIT_TEXT]移动升级开始。</Chinese><French>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Hussar[COLOR_REVERT], doesn't require the [COLOR_TECH_TEXT]Biology[COLOR_REVERT] technology, has a combat bonus against the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT] and [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] units and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MONGOLIAN_MANGUDAI</Tag>
+		<English>蒙古突骑</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古突骑</Chinese><French>Mangudai</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MONGOLIAN_MANGUDAI_STRATEGY</Tag>
+		<English>蒙古语替代的[COLOR_UNIT_TEXT]马弓箭手[COLOR_REVERT]，有两个额外的力量点和一个额外的移动点。</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古语替代的[COLOR_UNIT_TEXT]马弓箭手[COLOR_REVERT]，有两个额外的力量点和一个额外的移动点。</Chinese><French>The [COLOR_UNIT_TEXT]Mangudai[COLOR_REVERT], the Mongolian replacement for the [COLOR_UNIT_TEXT]Horse Archer[COLOR_REVERT], has two additional strength points and one additional movement point.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE</Tag>
+		<English>葡萄牙探险家</English>
+		<L1/><L2/><L3/><L4/><Chinese>葡萄牙探险家</Chinese><French>Bandeirante</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_HELP</Tag>
+		<English>[ICON_BULLET]保证捕获[LINK=UNIT_SLAVE]从机[\LINK]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]保证捕获[LINK=UNIT_SLAVE]从机[\LINK]</Chinese><French>[ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT]，葡萄牙人取代了[COLOR_UNIT_TEXT]探险家[COLOR_REVERT]，拥有四个额外的力量点，可以攻击，可以从战斗中撤退，并保证捕获奴隶。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT]，葡萄牙人取代了[COLOR_UNIT_TEXT]探险家[COLOR_REVERT]，拥有四个额外的力量点，可以攻击，可以从战斗中撤退，并保证捕获奴隶。</Chinese><French>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is guaranteed to capture slaves.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PERSIAN_SAVARAN</Tag>
+		<English>波斯骑兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯骑兵</Chinese><French>Savaran</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PERSIAN_SAVARAN_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]萨瓦兰[COLOR_REVERT]，波斯人取代[COLOR_UNIT_TEXT]柳叶刀[COLOR_REVERT]，需要 [COLOR_TECH_TEXT]将军[COLOR_REVERT]，而不是 [COLOR_TECH_TEXT]封建主义[COLOR_REVERT]，有两个较少的力量点和没有战斗惩罚时攻击城市。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]萨瓦兰[COLOR_REVERT]，波斯人取代[COLOR_UNIT_TEXT]柳叶刀[COLOR_REVERT]，需要 [COLOR_TECH_TEXT]将军[COLOR_REVERT]，而不是 [COLOR_TECH_TEXT]封建主义[COLOR_REVERT]，有两个较少的力量点和没有战斗惩罚时攻击城市。</Chinese><French>The [COLOR_UNIT_TEXT]Savaran[COLOR_REVERT], the Persian replacement for the [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT], requires [COLOR_TECH_TEXT]Generalship[COLOR_REVERT] instead of [COLOR_TECH_TEXT]Feudalism[COLOR_REVERT], has two less strength points and doesn't have a combat penalty when attacking cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDIAN_VARU</Tag>
+		<English>印度象兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度象兵</Chinese><French>Varu</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDIAN_VARU_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]瓦鲁[COLOR_REVERT]，印第安人取代[COLOR_UNIT_TEXT]战象[COLOR_REVERT]，需要[COLOR_HIGHLIGHT_TEXT]象牙[COLOR_REVERT]，而不是[COLOR_HIGHLIGHT_TEXT]马[COLOR_REVERT]，更贵，有两个额外的力量点和一个较少的移动点，能够进入[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]，并且对[COLOR_UNIT_TEXT]重骑兵[COLOR_REVERT]有战斗加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]瓦鲁[COLOR_REVERT]，印第安人取代[COLOR_UNIT_TEXT]战象[COLOR_REVERT]，需要[COLOR_HIGHLIGHT_TEXT]象牙[COLOR_REVERT]，而不是[COLOR_HIGHLIGHT_TEXT]马[COLOR_REVERT]，更贵，有两个额外的力量点和一个较少的移动点，能够进入[COLOR_HIGHLIGHT_TEXT]丛林[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]雨林[COLOR_REVERT]，并且对[COLOR_UNIT_TEXT]重骑兵[COLOR_REVERT]有战斗加成。</Chinese><French>The [COLOR_UNIT_TEXT]Varu[COLOR_REVERT], the Indian replacement for the [COLOR_UNIT_TEXT]War Elephant[COLOR_REVERT], requires [COLOR_HIGHLIGHT_TEXT]Ivory[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT], is more expensive, has two additional strength points and one less movement point, is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and has a combat bonus against [COLOR_UNIT_TEXT]Heavy Mounted Units[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDONESIAN_DJONG</Tag>
+		<English>印尼战船</English>
+		<L1/><L2/><L3/><L4/><Chinese>印尼战船</Chinese><French>Djong</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDONESIAN_DJONG_STRATEGY</Tag>
+		<English>印度尼西亚替代[COLOR UNIT TEXT]Galeass[COLOR REVERT]的[COLOR UNIT TEXT]Djong[COLOR REVERT]需要[COLOR TECH TEXT]指南针[COLOR REVERT]，而不是[COLOR TECH TEXT]火药[COLOR REVERT]，在[COLOR HIGHLIGHT TEXT]海岸[COLOR REVERT]有额外的防御战斗加成，并且对[COLOR UNIT TEXT]私掠船[COLOR REVERT]有战斗加成。</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度尼西亚替代[COLOR UNIT TEXT]Galeass[COLOR REVERT]的[COLOR UNIT TEXT]Djong[COLOR REVERT]需要[COLOR TECH TEXT]指南针[COLOR REVERT]，而不是[COLOR TECH TEXT]火药[COLOR REVERT]，在[COLOR HIGHLIGHT TEXT]海岸[COLOR REVERT]有额外的防御战斗加成，并且对[COLOR UNIT TEXT]私掠船[COLOR REVERT]有战斗加成。</Chinese><French>The [COLOR_UNIT_TEXT]Djong[COLOR_REVERT], the Indonesian replacement for the [COLOR_UNIT_TEXT]Galeass[COLOR_REVERT], requires [COLOR_TECH_TEXT]Compass[COLOR_REVERT] instead of [COLOR_TECH_TEXT]Gunpowder[COLOR_REVERT], has an additional defensive combat bonus on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT] and has a combat bonus against [COLOR_UNIT_TEXT]Privateers[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TAMIL_ROCKETEER</Tag>
+		<English>泰米尔火弹兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>泰米尔火弹兵</Chinese><French>Rocketeer</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TAMIL_ROCKETEER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]火箭兵[COLOR_REVERT]，泰米尔人代替[COLOR_UNIT_TEXT]掷弹兵[COLOR_REVERT]，有两个额外的力量点，并对另外两个单位造成附带伤害。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]火箭兵[COLOR_REVERT]，泰米尔人代替[COLOR_UNIT_TEXT]掷弹兵[COLOR_REVERT]，有两个额外的力量点，并对另外两个单位造成附带伤害。</Chinese><French>The [COLOR_UNIT_TEXT]Rocketeer[COLOR_REVERT], the Tamil replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], has two additional strength points and does collateral damage to two more units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OROMO_WARRIOR</Tag>
+		<English>奥罗莫火枪手</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥罗莫火枪手</Chinese><French>Oromo Warrior</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OROMO_WARRIOR_STRATEGY</Tag>
+		<English>奥罗莫火枪手是公元1500年至1700年在非洲繁殖的野蛮人。</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥罗莫火枪手是公元1500年至1700年在非洲繁殖的野蛮人。</Chinese><French>The [COLOR_UNIT_TEXT]Oromo Warrior[COLOR_REVERT] is a barbarian unit that spawns in Africa from 1500 to 1700 AD.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AMERICAN_PIONEER_HELP</Tag>
+		<English>北美的新城市从一名后卫和一名工人开始</English>
+		<L1/><L2/><L3/><L4/><Chinese>北美的新城市从一名后卫和一名工人开始</Chinese><French>[ICON_BULLET]New cities in North America start with a defender and a worker</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OTTOMAN_GREAT_BOMBARD</Tag>
+		<English>土耳其火炮</English>
+		<L1/><L2/><L3/><L4/><Chinese>土耳其火炮</Chinese><French>Great Bombard</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OTTOMAN_GREAT_BOMBARD_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]大轰炸[COLOR_REVERT]，奥斯曼帝国取代[COLOR_UNIT_TEXT]轰炸[COLOR_REVERT]，在攻击城市时有战斗奖励。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]大轰炸[COLOR_REVERT]，奥斯曼帝国取代[COLOR_UNIT_TEXT]轰炸[COLOR_REVERT]，在攻击城市时有战斗奖励。</Chinese><French>The [COLOR_UNIT_TEXT]Great Bombard[COLOR_REVERT], the Ottoman replacement for the [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], has a combat bonus when attacking cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHINESE_FIRELANCER</Tag>
+		<English>神机营</English>
+		<L1/><L2/><L3/><L4/><Chinese>神机营</Chinese><French>Firelancer</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHINESE_FIRELANCER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]火枪手[COLOR_REVERT]，中国人取代[COLOR_UNIT_TEXT]火枪手[COLOR_REVERT]，需要[COLOR U TECH U TEXT]火药[COLOR_REVERT]而不是[COLOR U TECH U TEXT]枪械[COLOR_REVERT]，力量点减少一点，造成附带伤害。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]火枪手[COLOR_REVERT]，中国人取代[COLOR_UNIT_TEXT]火枪手[COLOR_REVERT]，需要[COLOR U TECH U TEXT]火药[COLOR_REVERT]而不是[COLOR U TECH U TEXT]枪械[COLOR_REVERT]，力量点减少一点，造成附带伤害。</Chinese><French>The [COLOR_UNIT_TEXT]Firelancer[COLOR_REVERT], the Chinese replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], requires [COLOR_TECH_TEXT]Gunpowder[COLOR_REVERT] instead of [COLOR_TECH_TEXT]Firearms[COLOR_REVERT], has one less strength point and causes collateral damage.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RUSSIAN_STRELETS</Tag>
+		<English>俄国卫兵</English>
+		<L1/><L2/><L3/><L4/><Chinese>俄国卫兵</Chinese><French>Strelets</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RUSSIAN_STRELETS_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]俄国卫兵[COLOR_REVERT]，俄国人取代[COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT]，有一个额外的移动点，以[COLOR_HIGHLIGHT_TEXT]城市卫戍I[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]俄国卫兵[COLOR_REVERT]，俄国人取代[COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT]，有一个额外的移动点，以[COLOR_HIGHLIGHT_TEXT]城市卫戍I[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Strelets[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], has one additional movement point and begins with the [COLOR_HIGHLIGHT_TEXT]City Garrison I[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ETHIOPIAN_MEHAL_SEFARI</Tag>
+		<English>埃塞尔比亚步枪手</English>
+		<L1/><L2/><L3/><L4/><Chinese>埃塞尔比亚步枪手</Chinese><French>Mehal Sefari</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ETHIOPIAN_MEHAL_SEFARI_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Mehal Sefari[COLOR_REVERT]，埃塞俄比亚取代[COLOR_UNIT_TEXT]步枪兵[COLOR_REVERT]，从[COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT]提升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]Mehal Sefari[COLOR_REVERT]，埃塞俄比亚取代[COLOR_UNIT_TEXT]步枪兵[COLOR_REVERT]，从[COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT]提升。</Chinese><French>The [COLOR_UNIT_TEXT]Mehal Sefari[COLOR_REVERT], the Ethiopian replacement for the [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT] promotions.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_STEAMSHIP</Tag>
+		<English>轮船</English>
+		<L1/><L2/><L3/><L4/><Chinese>轮船</Chinese><French>Steamship</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_STEAMSHIP_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]轮船[COLOR_REVERT]有三个货舱，可以退出战斗。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_UNIT_TEXT]轮船[COLOR_REVERT]有三个货舱，可以退出战斗。</Chinese><French>[COLOR_UNIT_TEXT]Steamships[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_</Tag>
+		<English>单位信息</English>
+		<L1/><L2/><L3/><L4/><Chinese>单位信息</Chinese><French></French></TEXT>
+</Civ4GameText>

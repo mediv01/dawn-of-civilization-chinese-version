@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Resources -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS</Tag>
+		<English>修正</English>
+		<L1/><L2/><L3/><L4/><Chinese>修正</Chinese><French>Modifiers</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS_0</Tag>
+		<English>文化</English>
+		<L1/><L2/><L3/><L4/><Chinese>文化</Chinese><French>Culture</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS_1</Tag>
+		<English>单位维护费</English>
+		<L1/><L2/><L3/><L4/><Chinese>单位维护费</Chinese><French>Unit upkeep</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS_2</Tag>
+		<English>研究费用</English>
+		<L1/><L2/><L3/><L4/><Chinese>研究费用</Chinese><French>Research cost</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS_3</Tag>
+		<English>距离维护费</English>
+		<L1/><L2/><L3/><L4/><Chinese>距离维护费</Chinese><French>Distance maintenance</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS_4</Tag>
+		<English>数量维护费</English>
+		<L1/><L2/><L3/><L4/><Chinese>数量维护费</Chinese><French>Cities maintenance</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS_5</Tag>
+		<English>政体维护费</English>
+		<L1/><L2/><L3/><L4/><Chinese>政体维护费</Chinese><French>Civic upkeep</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS_6</Tag>
+		<English>自由健康</English>
+		<L1/><L2/><L3/><L4/><Chinese>自由健康</Chinese><French>Free health</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS_7</Tag>
+		<English>单位生产成本</English>
+		<L1/><L2/><L3/><L4/><Chinese>单位生产成本</Chinese><French>Unit production costs</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS_8</Tag>
+		<English>奇迹成本</English>
+		<L1/><L2/><L3/><L4/><Chinese>奇迹成本</Chinese><French>Wonder costs</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS_9</Tag>
+		<English>建筑成本</English>
+		<L1/><L2/><L3/><L4/><Chinese>建筑成本</Chinese><French>Building costs</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS_10</Tag>
+		<English>通货膨胀率</English>
+		<L1/><L2/><L3/><L4/><Chinese>通货膨胀率</Chinese><French>Inflation rate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS_11</Tag>
+		<English>GP阈值</English>
+		<L1/><L2/><L3/><L4/><Chinese>GP阈值</Chinese><French>GP threshold</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MODIFIERS_12</Tag>
+		<English>生长阈值</English>
+		<L1/><L2/><L3/><L4/><Chinese>生长阈值</Chinese><French>Growth threshold</French></TEXT>
+</Civ4GameText>

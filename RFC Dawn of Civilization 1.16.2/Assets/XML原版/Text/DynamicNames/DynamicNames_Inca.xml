@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INCA_DESC</Tag>
+		<English>印加文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>印加文明</Chinese><French>The Inca</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INCA_PEOPLES</Tag>
+		<English>安第斯人民</English>
+		<L1/><L2/><L3/><L4/><Chinese>安第斯人民</Chinese><French>Andean Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INCA_DEFAULT</Tag>
+		<English>Inca</English>
+		<L1/><L2/><L3/><L4/><Chinese>Inca</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INCA_COMMUNIST</Tag>
+		<English>印加革命军</English>
+		<L1/><L2/><L3/><L4/><Chinese>印加革命军</Chinese><French>%s2 Revolutionary Movement</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INCA_FASCIST</Tag>
+		<English>印加革命联盟</English>
+		<L1/><L2/><L3/><L4/><Chinese>印加革命联盟</Chinese><French>Revolutionary Union of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERU_DEFAULT</Tag>
+		<English>Peru</English>
+		<L1/><L2/><L3/><L4/><Chinese>Peru</Chinese><French>Kingdom of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERU_COMMUNIST</Tag>
+		<English>秘鲁</English>
+		<L1/><L2/><L3/><L4/><Chinese>秘鲁</Chinese><French>%s2 Revolutionary Movement</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERU_FASCIST</Tag>
+		<English>秘鲁</English>
+		<L1/><L2/><L3/><L4/><Chinese>秘鲁</Chinese><French>Government of the %s2 Armed Forces</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERU_SHORT_DESC</Tag>
+		<English>秘鲁</English>
+		<L1/><L2/><L3/><L4/><Chinese>秘鲁</Chinese><French>Peru</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERU_ADJECTIVE</Tag>
+		<English>秘鲁</English>
+		<L1/><L2/><L3/><L4/><Chinese>秘鲁</Chinese><French>Peruvian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INCA_FOUR_REGIONS</Tag>
+		<English>Inca</English>
+		<L1/><L2/><L3/><L4/><Chinese>Inca</Chinese><French>Four %s2 Regions</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INCA_BOLIVIA</Tag>
+		<English>玻利维亚共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>玻利维亚共和国</Chinese><French>Bolivia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INCA_BOLIVIAN</Tag>
+		<English>玻利维亚共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>玻利维亚共和国</Chinese><French>Bolivian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INCA_ADJECTIVE</Tag>
+		<English>Incan</English>
+		<L1/><L2/><L3/><L4/><Chinese>Incan</Chinese><French>Incan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INCA_SHORT_DESC</Tag>
+		<English>Inca</English>
+		<L1/><L2/><L3/><L4/><Chinese>Inca</Chinese><French>Inca</French></TEXT>
+</Civ4GameText>

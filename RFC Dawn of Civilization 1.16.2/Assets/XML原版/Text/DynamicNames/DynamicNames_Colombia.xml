@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Colombia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_COLOMBIA_DESC</Tag>
+		<English>哥伦比亚文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥伦比亚文明</Chinese><French>The Colombians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_COLOMBIA_PEOPLES</Tag>
+		<English>哥伦比亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥伦比亚</Chinese><French>Colombian Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_COLOMBIA_DEFAULT</Tag>
+		<English>Colombia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Colombia</Chinese><French>Kingdom of New Granada</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_COLOMBIA_REPUBLIC</Tag>
+		<English>哥伦比亚共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥伦比亚共和国</Chinese><French>Republic of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_COLOMBIA_COMMUNIST</Tag>
+		<English>哥伦比亚社会主义共和国</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥伦比亚社会主义共和国</Chinese><French>Socialist Republic of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_COLOMBIA_FASCIST</Tag>
+		<English>哥伦比亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥伦比亚</Chinese><French>Falangist %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_COLOMBIA_EMPIRE</Tag>
+		<English>哥伦比亚帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥伦比亚帝国</Chinese><French>Empire of Gran Colombia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_COLOMBIA_EMPIRE_ANDES</Tag>
+		<English>哥伦比亚-安第斯帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥伦比亚-安第斯帝国</Chinese><French>Empire of the Andes</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_COLOMBIA_FEDERATION_ANDES</Tag>
+		<English>哥伦比亚-安第斯联盟</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥伦比亚-安第斯联盟</Chinese><French>Federation of the Andes</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_COLOMBIA_ADJECTIVE</Tag>
+		<English>Colombia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Colombia</Chinese><French>Colombian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_COLOMBIA_SHORT_DESC</Tag>
+		<English>Colombia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Colombia</Chinese><French>Colombia</French></TEXT>
+</Civ4GameText>

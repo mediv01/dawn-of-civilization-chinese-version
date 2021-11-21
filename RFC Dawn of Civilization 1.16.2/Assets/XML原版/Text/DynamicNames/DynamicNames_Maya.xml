@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Maya -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAYA_DESC</Tag>
+		<English>玛雅文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>玛雅文明</Chinese><French>The Maya</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAYA_PEOPLES</Tag>
+		<English>玛雅文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>玛雅文明</Chinese><French>Maya Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAYA_DEFAULT</Tag>
+		<English>Maya</English>
+		<L1/><L2/><L3/><L4/><Chinese>Maya</Chinese><French>%s2 City-States</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAYA_REPUBLIC</Tag>
+		<English>玛雅文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>玛雅文明</Chinese><French>%s2 Federal Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAYA_COMMUNIST</Tag>
+		<English>玛雅文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>玛雅文明</Chinese><French>%s2 Free State</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAYA_FASCIST</Tag>
+		<English>玛雅文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>玛雅文明</Chinese><French>%s2 Junta</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAYA_YUCATAN</Tag>
+		<English>尤卡坦</English>
+		<L1/><L2/><L3/><L4/><Chinese>尤卡坦</Chinese><French>Yucatán</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAYA_ADJECTIVE</Tag>
+		<English>
+			<Text>Maya:Maya</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<L1/><L2/><L3/><L4/><French>Yucatán</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAYA_SHORT_DESC</Tag>
+		<English>Maya</English>
+		<L1/><L2/><L3/><L4/><Chinese>Maya</Chinese><French>Maya</French></TEXT>
+</Civ4GameText>

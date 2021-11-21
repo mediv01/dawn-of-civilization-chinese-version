@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Monoglia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOL_DESC</Tag>
+		<English>蒙古文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古文明</Chinese><French>The Mongols</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOLIA_PEOPLES</Tag>
+		<English>蒙古</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古</Chinese><French>Mongolian Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOLIA_DEFAULT</Tag>
+		<English>Mongolia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Mongolia</Chinese><French>%s2 State</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOLIA_REPUBLIC</Tag>
+		<English>蒙古</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古</Chinese><French>United %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOLIA_FASCIST</Tag>
+		<English>蒙古</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古</Chinese><French>Nationalist %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOLIA_TIMURID</Tag>
+		<English>蒙古-帖木儿帝国</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古-帖木儿帝国</Chinese><French>Timurid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOLIA_HULAGU</Tag>
+		<English>蒙古-旭烈兀汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古-旭烈兀汗国</Chinese><French>Hulagu</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOLIA_ILKHANATE</Tag>
+		<English>蒙古-伊尔汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古-伊尔汗国</Chinese><French>Ilkhanate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOLIA_KHANATE</Tag>
+		<English>%s2 汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 汗国</Chinese><French>%s2 Khanate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOLIA_CHAGATAI</Tag>
+		<English>蒙古-察合台汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古-察合台汗国</Chinese><French>Chagatai</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOLIA_YUAN</Tag>
+		<English>元</English>
+		<L1/><L2/><L3/><L4/><Chinese>元</Chinese><French>Yuan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOLIA_KHAMAG</Tag>
+		<English>蒙古汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古汗国</Chinese><French>Khamag Mongol</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOL_VASSAL</Tag>
+		<English>%s1 汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 汗国</Chinese><French>Khanate of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOL_ILKHANATE</Tag>
+		<English>蒙古-伊尔汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古-伊尔汗国</Chinese><French>Ilkhanate of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOL_CHINA</Tag>
+		<English>元</English>
+		<L1/><L2/><L3/><L4/><Chinese>元</Chinese><French>Yuan Khanate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOL_BABYLONIA</Tag>
+		<English>巴比伦汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴比伦汗国</Chinese><French>Ilkhanate of Mesopotamia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOL_PHOENICIA</Tag>
+		<English>叙利亚伊尔汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>叙利亚伊尔汗国</Chinese><French>Ilkhanate of Syria</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOL_BYZANTIUM</Tag>
+		<English>安纳托利亚汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>安纳托利亚汗国</Chinese><French>Khanate of Anatolia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOL_RUSSIA</Tag>
+		<English>罗斯汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>罗斯汗国</Chinese><French>Khanate of the Golden Horde</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOL_OTTOMANS</Tag>
+		<English>土耳其斯坦汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>土耳其斯坦汗国</Chinese><French>Khanate of Turkestan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOL_MUGHALS</Tag>
+		<English>德里汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>德里汗国</Chinese><French>Khanate of Delhi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOLIA_MONGOL</Tag>
+		<English>蒙古</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古</Chinese><French>Mongol</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOL_NAME_TURKS</Tag>
+		<English>蒙古斯坦</English>
+		<L1/><L2/><L3/><L4/><Chinese>蒙古斯坦</Chinese><French>Moghulistan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOL_ADJECTIVE</Tag>
+		<English>Mongolian</English>
+		<L1/><L2/><L3/><L4/><Chinese>Mongolian</Chinese><French>Mongolian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOL_SHORT_DESC</Tag>
+		<English>Mongolia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Mongolia</Chinese><French>Mongolia</French></TEXT>
+</Civ4GameText>

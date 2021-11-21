@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Turkey -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_DESC</Tag>
+		<English>土库曼文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼文明</Chinese><French>The Turks</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_SHORT_DESC</Tag>
+		<English>Turkestan</English>
+		<L1/><L2/><L3/><L4/><Chinese>Turkestan</Chinese><French>Turkestan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_ADJECTIVE</Tag>
+		<English>Turkic</English>
+		<L1/><L2/><L3/><L4/><Chinese>Turkic</Chinese><French>Turkic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UZBEKS_DESC</Tag>
+		<English>乌兹别克</English>
+		<L1/><L2/><L3/><L4/><Chinese>乌兹别克</Chinese><French>The Uzbeks</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UZBEKS_SHORT_DESC</Tag>
+		<English>Uzbekistan</English>
+		<L1/><L2/><L3/><L4/><Chinese>Uzbekistan</Chinese><French>Uzbekistan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UZBEKS_ADJECTIVE</Tag>
+		<English>Uzbek</English>
+		<L1/><L2/><L3/><L4/><Chinese>Uzbek</Chinese><French>Uzbek</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKESTAN_PEOPLES</Tag>
+		<English>土库曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼</Chinese><French>Turkic Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKESTAN_DEFAULT</Tag>
+		<English>Turkestan</English>
+		<L1/><L2/><L3/><L4/><Chinese>Turkestan</Chinese><French>%s2 Khanate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKESTAN_FASCIST</Tag>
+		<English>土库曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼</Chinese><French>Pan-Turkic Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_KURULTAI</Tag>
+		<English>土库曼-忽里勒台</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼-忽里勒台</Chinese><French>%s2 Kurultai</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_GREAT_EMPIRE</Tag>
+		<English>土库曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼</Chinese><French>Great %s2 Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_KHAGANATE</Tag>
+		<English>%s2 汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 汗国</Chinese><French>%s2 Khaganate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_KHANATE_OF</Tag>
+		<English>%s1 汗国</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 汗国</Chinese><French>Khanate of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_TIMURID</Tag>
+		<English>土库曼-帖木儿</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼-帖木儿</Chinese><French>Timurid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_SHAYBANID</Tag>
+		<English>土库曼-昔班尼</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼-昔班尼</Chinese><French>Shaybanid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_KHAZARIA</Tag>
+		<English>土库曼-可萨</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼-可萨</Chinese><French>Khazaria</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_KHAZAR</Tag>
+		<English>土库曼-保加尔汗</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼-保加尔汗</Chinese><French>Khazar</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_RUM</Tag>
+		<English>土库曼-罗姆</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼-罗姆</Chinese><French>Rum</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_SELJUK</Tag>
+		<English>土库曼-塞尔柱</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼-塞尔柱</Chinese><French>Seljuk</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_UZBEKISTAN</Tag>
+		<English>乌兹别克斯坦</English>
+		<L1/><L2/><L3/><L4/><Chinese>乌兹别克斯坦</Chinese><French>Uzbekistan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_UZBEK</Tag>
+		<English>乌兹别克斯坦</English>
+		<L1/><L2/><L3/><L4/><Chinese>乌兹别克斯坦</Chinese><French>Uzbek</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_WESTERN_TURKIC</Tag>
+		<English>土库曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼</Chinese><French>Western Turkic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_EASTERN_TURKIC</Tag>
+		<English>土库曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>土库曼</Chinese><French>Eastern Turkic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKIC_VASSAL</Tag>
+		<English>%s3 附属</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s3 附属</Chinese><French>Atabeylik of %s3</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TURKS_</Tag>
+		<English/>
+		<L1/><L2/><L3/><L4/><French>Atabeylik of %s3</French></TEXT>
+</Civ4GameText>

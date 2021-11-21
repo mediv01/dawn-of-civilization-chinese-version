@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Civics -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CENTRAL_PLANNING</Tag>
+		<English>中央计划</English>
+		<L1/><L2/><L3/><L4/><Chinese>中央计划</Chinese><French>Central Planning</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CENTRAL_PLANNING_STRATEGY</Tag>
+		<English>专家的额外生产；来自工坊和水力磨坊的额外食物；来自矿山和水力磨坊的额外商业；工厂、煤电厂、水电厂、电网和自动化工厂的建造速度加倍</English>
+		<L1/><L2/><L3/><L4/><Chinese>专家的额外生产；来自工坊和水力磨坊的额外食物；来自矿山和水力磨坊的额外商业；工厂、煤电厂、水电厂、电网和自动化工厂的建造速度加倍</Chinese><French>Extra production from specialists; extra food from Workshops and Watermills; extra commerce from Mines and Watermills; double production speed for Factories, Coal Plants, Hydro Plants, Electrical Grids and Automated Factories</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ANIMISM</Tag>
+		<English>泛灵论</English>
+		<L1/><L2/><L3/><L4/><Chinese>泛灵论</Chinese><French>Animism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ANIMISM_STRATEGY</Tag>
+		<English>最原始的宗教政体</English>
+		<L1/><L2/><L3/><L4/><Chinese>最原始的宗教政体</Chinese><French>The most primitive Religion civic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SOVEREIGNTY</Tag>
+		<English>国家主权</English>
+		<L1/><L2/><L3/><L4/><Chinese>国家主权</Chinese><French>Sovereignty</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SOVEREIGNTY_STRATEGY</Tag>
+		<English>最原始的国土政体</English>
+		<L1/><L2/><L3/><L4/><Chinese>最原始的国土政体</Chinese><French>The most primitive Territory civic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_EGALITARIANISM</Tag>
+		<English>平等主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>平等主义</Chinese><French>Egalitarianism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_EGALITARIANISM_STRATEGY</Tag>
+		<English>为艺术家、科学家和工程师提供两个空位；专家提供额外研究；不能使用奴隶</English>
+		<L1/><L2/><L3/><L4/><Chinese>为艺术家、科学家和工程师提供两个空位；专家提供额外研究；不能使用奴隶</Chinese><French>Double available slots for artists, scientists and engineers; extra research from specialists; cannot use slaves</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MULTILATERALISM</Tag>
+		<English>多边主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>多边主义</Chinese><French>Multilateralism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MULTILATERALISM_STRATEGY</Tag>
+		<English>空军的额外经验；与防御协定伙伴的贸易路线产生的额外收益；贸易路线产生的生产；额外的厌战；不能使用奴隶</English>
+		<L1/><L2/><L3/><L4/><Chinese>空军的额外经验；与防御协定伙伴的贸易路线产生的额外收益；贸易路线产生的生产；额外的厌战；不能使用奴隶</Chinese><French>Extra experience for air units; extra yield from trade routes with defensive pact partners; trade routes yield production; extra war weariness; cannot use slaves</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PUBLIC_WELFARE</Tag>
+		<English>社会福利</English>
+		<L1/><L2/><L3/><L4/><Chinese>社会福利</Chinese><French>Public Welfare</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PUBLIC_WELFARE_STRATEGY</Tag>
+		<English>减少来自公司的不快；额外的商业来自额外的快乐；额外的商业来自风车、自然保护区和海洋保护区；可以花费黄金完成建筑生产</English>
+		<L1/><L2/><L3/><L4/><Chinese>减少来自公司的不快；额外的商业来自额外的快乐；额外的商业来自风车、自然保护区和海洋保护区；可以花费黄金完成建筑生产</Chinese><French>Reduced unhappiness from corporations; extra commerce from excess happiness; extra commerce from Windmills, Nature Preserves and Marine Preserves; can spend gold to finish building production</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REPUBLIC</Tag>
+		<English>共和制度</English>
+		<L1/><L2/><L3/><L4/><Chinese>共和制度</Chinese><French>Republic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REPUBLIC_STRATEGY</Tag>
+		<English>专家提供额外食物；农场、种植园、农舍、小村庄、村庄和城镇减少的食物；至少为艺术家、科学家、商人和政治家提供一个位置</English>
+		<L1/><L2/><L3/><L4/><Chinese>专家提供额外食物；农场、种植园、农舍、小村庄、村庄和城镇减少的食物；至少为艺术家、科学家、商人和政治家提供一个位置</Chinese><French>Extra food from specialists; reduced food from farms, plantations, cottages, hamlets, villages and towns; at least one slot for artists, scientists, merchants and statesmen</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SECULARISM</Tag>
+		<English>世俗主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>世俗主义</Chinese><French>Secularism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SECULARISM_STRATEGY</Tag>
+		<English>没有国教；所有城市都增加了科研；非国教宗教带来了额外的快乐；医院、大学、天文台、实验室和超级计算机的建造速度加倍；可以建造需要国教的奇观</English>
+		<L1/><L2/><L3/><L4/><Chinese>没有国教；所有城市都增加了科研；非国教宗教带来了额外的快乐；医院、大学、天文台、实验室和超级计算机的建造速度加倍；可以建造需要国教的奇观</Chinese><French>No state religion; increased science in all cities; extra happiness from non-state religions; double production speed for Hospitals, Universities, Observatories, Laboratories and Supercomputers; can build wonders that require a state religion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Tag>
+		<English>能捕获工人；采石场提供额外生产；矿山和种植园提供额外商业</English>
+		<L1/><L2/><L3/><L4/><Chinese>能捕获工人；采石场提供额外生产；矿山和种植园提供额外商业</Chinese><French>Can capture Workers; extra production from Quarries; extra commerce from Mines and Plantations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_THEOCRACY_STRATEGY</Tag>
+		<English>提供两个牧师空位；有国家宗教的城市提供额外的经验；没有非国教宗教的传播</English>
+		<L1/><L2/><L3/><L4/><Chinese>提供两个牧师空位；有国家宗教的城市提供额外的经验；没有非国教宗教的传播</Chinese><French>Double available slots for priests; cities with state religion give extra experience; no spread of non-state religions</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TOTALITARIANISM</Tag>
+		<English>极权主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>极权主义</Chinese><French>Totalitarianism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TOTALITARIANISM_STRATEGY</Tag>
+		<English>军事单位生产更快；没有战争带来的不愉快；不愉快人口带来额外生产；城市征服没有动乱</English>
+		<L1/><L2/><L3/><L4/><Chinese>军事单位生产更快；没有战争带来的不愉快；不愉快人口带来额外生产；城市征服没有动乱</Chinese><French>Faster military unit production; no war weariness; extra production from unhappy population; no unrest on city conquest</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRIBALISM_STRATEGY</Tag>
+		<English>最原始的社会制度</English>
+		<L1/><L2/><L3/><L4/><Chinese>最原始的社会制度</Chinese><French>The most primitive Society civic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_VASSALAGE_STRATEGY</Tag>
+		<English>无需维护费的额外单位；大城市存在额外幸福；农场提供额外生产</English>
+		<L1/><L2/><L3/><L4/><Chinese>无需维护费的额外单位；大城市存在额外幸福；农场提供额外生产</Chinese><French>Additional units without upkeep; extra happiness in largest cities; extra production from Farms</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVICOPTION_TERRITORY</Tag>
+		<English>国土政策</English>
+		<L1/><L2/><L3/><L4/><Chinese>国土政策</Chinese><French>Territory</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVICOPTION_SOCIETY</Tag>
+		<English>社会制度</English>
+		<L1/><L2/><L3/><L4/><Chinese>社会制度</Chinese><French>Society</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVICOPTION_LEGITIMACY</Tag>
+		<English>政权来源</English>
+		<L1/><L2/><L3/><L4/><Chinese>政权来源</Chinese><French>Legitimacy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CHIEFDOM</Tag>
+		<English>酋邦制度</English>
+		<L1/><L2/><L3/><L4/><Chinese>酋邦制度</Chinese><French>Chiefdom</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CHIEFDOM_STRATEGY</Tag>
+		<English>最原始的政府政体</English>
+		<L1/><L2/><L3/><L4/><Chinese>最原始的政府政体</Chinese><French>The most primitve Government civic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MONARCHY</Tag>
+		<English>君主制度</English>
+		<L1/><L2/><L3/><L4/><Chinese>君主制度</Chinese><French>Monarchy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Tag>
+		<English>军队带来的额外快乐；距离维护费；监狱的生产速度加倍</English>
+		<L1/><L2/><L3/><L4/><Chinese>军队带来的额外快乐；距离维护费；监狱的生产速度加倍</Chinese><French>Extra happiness from military units; reduced maintenance from distance to Palace; double production speed for Jails</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ELECTIVE</Tag>
+		<English>代议制度</English>
+		<L1/><L2/><L3/><L4/><Chinese>代议制度</Chinese><French>Elective</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ELECTIVE_STRATEGY</Tag>
+		<English>砖瓦加价，不改进；营地和牧场加价；宫殿加倍生产速度</English>
+		<L1/><L2/><L3/><L4/><Chinese>砖瓦加价，不改进；营地和牧场加价；宫殿加倍生产速度</Chinese><French>Extra commerce from tiles without improvement; extra commerce from camps and pastures; double production speed for Palace</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_STATE_PARTY</Tag>
+		<English>党国一体</English>
+		<L1/><L2/><L3/><L4/><Chinese>党国一体</Chinese><French>State Party</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_STATE_PARTY_STRATEGY</Tag>
+		<English>没有城市数量维护费；专家提供额外间谍点数</English>
+		<L1/><L2/><L3/><L4/><Chinese>没有城市数量维护费；专家提供额外间谍点数</Chinese><French>No maintenance costs from number of cities; extra espionage from specialists</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONSTITUTION</Tag>
+		<English>宪法政治</English>
+		<L1/><L2/><L3/><L4/><Chinese>宪法政治</Chinese><French>Constitution</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONSTITUTION_STRATEGY</Tag>
+		<English>所有城市都有额外的免费专家；为政治家提供两个名额；法院建造速度加倍</English>
+		<L1/><L2/><L3/><L4/><Chinese>所有城市都有额外的免费专家；为政治家提供两个名额；法院建造速度加倍</Chinese><French>Extra free specialist in all cities; double available slots for statesmen; double production speed for Courthouses</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_AUTHORITY</Tag>
+		<English>威权控制</English>
+		<L1/><L2/><L3/><L4/><Chinese>威权控制</Chinese><French>Authority</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_AUTHORITY_STRATEGY</Tag>
+		<English>最原始的合法性政体</English>
+		<L1/><L2/><L3/><L4/><Chinese>最原始的合法性政体</Chinese><French>The most primitve Legitimacy civic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CITIZENSHIP</Tag>
+		<English>公民身份</English>
+		<L1/><L2/><L3/><L4/><Chinese>公民身份</Chinese><French>Citizenship</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CITIZENSHIP_STRATEGY</Tag>
+		<English>图书馆、水渠、剧院和市场的双重生产速度；可以用黄金完成单位生产</English>
+		<L1/><L2/><L3/><L4/><Chinese>图书馆、水渠、剧院和市场的双重生产速度；可以用黄金完成单位生产</Chinese><French>Double production speed for Libraries, Aqueducts, Theatres and Markets; can spend gold to finish unit production</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MERITOCRACY</Tag>
+		<English>精英统治</English>
+		<L1/><L2/><L3/><L4/><Chinese>精英统治</Chinese><French>Meritocracy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MERITOCRACY_STRATEGY</Tag>
+		<English>单位晋升需要经验减少；稻田提供额外食物；风力磨坊和水力磨坊提供额外商业；专家提供额外商业</English>
+		<L1/><L2/><L3/><L4/><Chinese>单位晋升需要经验减少；稻田提供额外食物；风力磨坊和水力磨坊提供额外商业；专家提供额外商业</Chinese><French>Less experience needed for unit promotions; extra food from Paddy Fields; extra commerce from Windmills and Watermills; extra commerce from specialists</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CENTRALISM</Tag>
+		<English>中央主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>中央主义</Chinese><French>Centralism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CENTRALISM_STRATEGY</Tag>
+		<English>在首都提高收入和产能</English>
+		<L1/><L2/><L3/><L4/><Chinese>在首都提高收入和产能</Chinese><French>Increased production and gold in capital</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REVOLUTIONISM</Tag>
+		<English>革命主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>革命主义</Chinese><French>Revolutionism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REVOLUTIONISM_STRATEGY</Tag>
+		<English>提高大军事家的出生率；消除暂时的不愉快；工坊和伐木场提供额外生产；新闻媒体和广播塔提供额外快乐</English>
+		<L1/><L2/><L3/><L4/><Chinese>提高大军事家的出生率；消除暂时的不愉快；工坊和伐木场提供额外生产；新闻媒体和广播塔提供额外快乐</Chinese><French>Increased great general birth rate; no temporary unhappiness; extra production from Workshops and Lumbermills; extra happiness from News Press and Broadcasting Tower</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DEMOCRACY</Tag>
+		<English>民主制度</English>
+		<L1/><L2/><L3/><L4/><Chinese>民主制度</Chinese><French>Democracy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DEMOCRACY_STRATEGY</Tag>
+		<English>伟人出生率提高</English>
+		<L1/><L2/><L3/><L4/><Chinese>伟人出生率提高</Chinese><French>Increased great people birth rate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRADITIONALISM</Tag>
+		<English>传统主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>传统主义</Chinese><French>Traditionalism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRADITIONALISM_STRATEGY</Tag>
+		<English>最原始的社会政体</English>
+		<L1/><L2/><L3/><L4/><Chinese>最原始的社会政体</Chinese><French>The most primitve Society civic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MANORIALISM</Tag>
+		<English>庄园主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>庄园主义</Chinese><French>Manorialism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MANORIALISM_STRATEGY</Tag>
+		<English>降低工人成本；牧场提供额外生产；农场和果园提供额外贸易</English>
+		<L1/><L2/><L3/><L4/><Chinese>降低工人成本；牧场提供额外生产；农场和果园提供额外贸易</Chinese><French>Reduced worker cost; extra production from Pastures; extra commerce from Farms and Orchards</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_INDIVIDUALISM</Tag>
+		<English>个人主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>个人主义</Chinese><French>Individualism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_INDIVIDUALISM_STRATEGY</Tag>
+		<English>村舍、小村庄和村庄的增长速度加快；小镇提供额外商业</English>
+		<L1/><L2/><L3/><L4/><Chinese>村舍、小村庄和村庄的增长速度加快；小镇提供额外商业</Chinese><French>Increased growth rate for Cottages, Hamlets and Villages; extra commerce from Villages and Towns</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_RECIPROCITY</Tag>
+		<English>互惠制度</English>
+		<L1/><L2/><L3/><L4/><Chinese>互惠制度</Chinese><French>Reciprocity</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_RECIPROCITY_STRATEGY</Tag>
+		<English>最原始的经济政体</English>
+		<L1/><L2/><L3/><L4/><Chinese>最原始的经济政体</Chinese><French>The most primitive Economy civic</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REDISTRIBUTION</Tag>
+		<English>重新分配</English>
+		<L1/><L2/><L3/><L4/><Chinese>重新分配</Chinese><French>Redistribution</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REDISTRIBUTION_STRATEGY</Tag>
+		<English>首都粮食增加；贸易路线上的贸易减少；粮仓建造速度加快</English>
+		<L1/><L2/><L3/><L4/><Chinese>首都粮食增加；贸易路线上的贸易减少；粮仓建造速度加快</Chinese><French>Increased food in capital; reduced commerce from trade routes; increased production speed for Granaries</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MERCHANT_TRADE</Tag>
+		<English>批发贸易</English>
+		<L1/><L2/><L3/><L4/><Chinese>批发贸易</Chinese><French>Merchant Trade</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MERCHANT_TRADE_STRATEGY</Tag>
+		<English>所有城市存在额外贸易路线；绿洲提供额外快乐</English>
+		<L1/><L2/><L3/><L4/><Chinese>所有城市存在额外贸易路线；绿洲提供额外快乐</Chinese><French>Extra trade route in all cities; extra happiness from Oasis</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REGULATED_TRADE</Tag>
+		<English>管制贸易</English>
+		<L1/><L2/><L3/><L4/><Chinese>管制贸易</Chinese><French>Regulated Trade</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REGULATED_TRADE_STRATEGY</Tag>
+		<English>首都商业增长；工厂、种植园和奴隶种植园提供额外商业；海关建造速度加倍</English>
+		<L1/><L2/><L3/><L4/><Chinese>首都商业增长；工厂、种植园和奴隶种植园提供额外商业；海关建造速度加倍</Chinese><French>Increased commerce in capital; extra commerce from Workshops, Plantations and Slave Plantations; double production speed for Customs House</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FREE_ENTERPRISE</Tag>
+		<English>自由市场</English>
+		<L1/><L2/><L3/><L4/><Chinese>自由市场</Chinese><French>Free Enterprise</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FREE_ENTERPRISE_STRATEGY</Tag>
+		<English>为商人提供两个空位；通过贸易路线增加贸易；通过公司增加贸易</English>
+		<L1/><L2/><L3/><L4/><Chinese>为商人提供两个空位；通过贸易路线增加贸易；通过公司增加贸易</Chinese><French>Double available slots for merchants; increased commerce from trade routes; increased commerce from corporations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DEIFICATION</Tag>
+		<English>神化领袖</English>
+		<L1/><L2/><L3/><L4/><Chinese>神化领袖</Chinese><French>Deification</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DEIFICATION_STRATEGY</Tag>
+		<English>奇迹生产速度加快；国教带来额外不快；异教寺庙带来额外幸福</English>
+		<L1/><L2/><L3/><L4/><Chinese>奇迹生产速度加快；国教带来额外不快；异教寺庙带来额外幸福</Chinese><French>Increased wonder production speed; extra unhappiness from state religion; extra happiness from Pagan Temples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CLERGY</Tag>
+		<English>祭司制度</English>
+		<L1/><L2/><L3/><L4/><Chinese>祭司制度</Chinese><French>Clergy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CLERGY_STRATEGY</Tag>
+		<English>信仰国教的城市建筑产能增加</English>
+		<L1/><L2/><L3/><L4/><Chinese>信仰国教的城市建筑产能增加</Chinese><French>Increased building production in cities with state religion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MONASTICISM</Tag>
+		<English>静修主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>静修主义</Chinese><French>Monasticism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MONASTICISM_STRATEGY</Tag>
+		<English>信仰国教的城市伟人出生率增加</English>
+		<L1/><L2/><L3/><L4/><Chinese>信仰国教的城市伟人出生率增加</Chinese><French>Increased great people birth rate in cities with state religion</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TOLERANCE</Tag>
+		<English>求同存异</English>
+		<L1/><L2/><L3/><L4/><Chinese>求同存异</Chinese><French>Tolerance</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TOLERANCE_STRATEGY</Tag>
+		<English>来自非国家宗教的额外幸福；首都文化的增长；可以培训没有修道院的传教士</English>
+		<L1/><L2/><L3/><L4/><Chinese>来自非国家宗教的额外幸福；首都文化的增长；可以培训没有修道院的传教士</Chinese><French>Extra happiness from non-state religions; increased culture in capital; can train missionaries without monasteries</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONQUEST</Tag>
+		<English>暴力征服</English>
+		<L1/><L2/><L3/><L4/><Chinese>暴力征服</Chinese><French>Conquest</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONQUEST_STRATEGY</Tag>
+		<English>陆地单位提供额外经验；村舍、小村庄和村庄的增长速度降低；城市征服带来额外黄金</English>
+		<L1/><L2/><L3/><L4/><Chinese>陆地单位提供额外经验；村舍、小村庄和村庄的增长速度降低；城市征服带来额外黄金</Chinese><French>Extra experience for land units; reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRIBUTARIES</Tag>
+		<English>附庸纳贡</English>
+		<L1/><L2/><L3/><L4/><Chinese>附庸纳贡</Chinese><French>Tributaries</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRIBUTARIES_STRATEGY</Tag>
+		<English>附庸城市在首都存在额外贸易；生产军队时食物提供产能；贸易路线带来额外贸易</English>
+		<L1/><L2/><L3/><L4/><Chinese>附庸城市在首都存在额外贸易；生产军队时食物提供产能；贸易路线带来额外贸易</Chinese><French>Extra commerce in capital from vassal cities; military units are produced with food; extra commerce from trade routes</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ISOLATIONISM</Tag>
+		<English>孤立主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>孤立主义</Chinese><French>Isolationism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_STRATEGY</Tag>
+		<English>所有城市都有额外的免费专家；没有外贸路线；首都间谍点数增加</English>
+		<L1/><L2/><L3/><L4/><Chinese>所有城市都有额外的免费专家；没有外贸路线；首都间谍点数增加</Chinese><French>Extra free specialist in all cities; no foreign trade routes; increased espionage in capital</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COLONIALISM</Tag>
+		<English>殖民主义</English>
+		<L1/><L2/><L3/><L4/><Chinese>殖民主义</Chinese><French>Colonialism</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COLONIALISM_STRATEGY</Tag>
+		<English>殖民地首都存在额外贸易；奴隶种植带来额外产能和贸易；水面单位带来额外经验；可以捕获奴隶</English>
+		<L1/><L2/><L3/><L4/><Chinese>殖民地首都存在额外贸易；奴隶种植带来额外产能和贸易；水面单位带来额外经验；可以捕获奴隶</Chinese><French>Extra commerce in capital from colonies; extra production and commerce for Slave Plantations; extra experience for water units; can capture slaves</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NATIONHOOD</Tag>
+		<English>民族国家</English>
+		<L1/><L2/><L3/><L4/><Chinese>民族国家</Chinese><French>Nationhood</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NATIONHOOD_STRATEGY</Tag>
+		<English>能征召单位；小镇存在额外产能</English>
+		<L1/><L2/><L3/><L4/><Chinese>能征召单位；小镇存在额外产能</Chinese><French>Can draft units; extra production from Towns</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DESPOTISM_STRATEGY</Tag>
+		<English>牺牲人口就能加快单位生产</English>
+		<L1/><L2/><L3/><L4/><Chinese>牺牲人口就能加快单位生产</Chinese><French>Can hurry unit production by sacrificing population</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CASTE_SYSTEM_STRATEGY</Tag>
+		<English>加快改善建设；种植园的额外食物</English>
+		<L1/><L2/><L3/><L4/><Chinese>加快改善建设；种植园的额外食物</Chinese><French>Faster improvement construction; extra food from Plantations</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_IGNORE_STATE_RELIGION</Tag>
+		<English>[ICON_BULLET]可以建造奇观，无视国教 [ICON_RELIGION]要求</English>
+		<L1/><L2/><L3/><L4/><Chinese>[ICON_BULLET]可以建造奇观，无视国教 [ICON_RELIGION]要求</Chinese><French>[ICON_BULLET]Can build wonders regardless of State [ICON_RELIGION] requirements</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_</Tag>
+		<English> </English>
+		<L1/><L2/><L3/><L4/><Chinese> </Chinese><French> </French></TEXT>
+</Civ4GameText>

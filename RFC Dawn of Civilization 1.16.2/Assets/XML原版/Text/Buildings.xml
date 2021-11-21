@@ -1,0 +1,1226 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Buildings -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ACADEMY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]科学院[COLOR_REVERT]可提升城市的科研能力，同时提供少量文化产出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]科学院[COLOR_REVERT]可提升城市的科研能力，同时提供少量文化产出。</Chinese><French>The [COLOR_BUILDING_TEXT]Academy[COLOR_REVERT] increases a city's scientific research as well as providing a small amount of culture.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ADMINISTRATIVE_CENTER</Tag>
+		<English>行政中心</English>
+		<L1/><L2/><L3/><L4/><Chinese>行政中心</Chinese><French>Administrative Center</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AIRPORT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]机场[COLOR_REVERT]为所在城市新增一条商路，为城市新建[COLOR_UNIT_TEXT]空军单位[COLOR_REVERT]增加经验，并提升城市可容纳空军单位数量。拥有[COLOR_BUILDING_TEXT]机场[COLOR_REVERT]的城市每回合可空运一个单位到其他城市，空军单位容纳数量+4（总计为8）。同时，[COLOR_BUILDING_TEXT]机场[COLOR_REVERT]也会增加城市不健康度。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]机场[COLOR_REVERT]为所在城市新增一条商路，为城市新建[COLOR_UNIT_TEXT]空军单位[COLOR_REVERT]增加经验，并提升城市可容纳空军单位数量。拥有[COLOR_BUILDING_TEXT]机场[COLOR_REVERT]的城市每回合可空运一个单位到其他城市，空军单位容纳数量+4（总计为8）。同时，[COLOR_BUILDING_TEXT]机场[COLOR_REVERT]也会增加城市不健康度。</Chinese><French>[COLOR_BUILDING_TEXT]Airports[COLOR_REVERT] add an additional trade route, provide an experience bonus to [COLOR_UNIT_TEXT]Air Units[COLOR_REVERT], house four extra Air Units for a total of eight and can airlift one unit per turn to any of your other cities. [COLOR_BUILDING_TEXT]Airports[COLOR_REVERT] also add unhealthiness.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AMERICAN_MALL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]购物中心[COLOR_REVERT]是美国的特色建筑，替代[COLOR_BUILDING_TEXT]百货商店[COLOR_REVERT]，在城市通电的情况下，可大幅增加城市金币产出，并能增加[COLOR_HIGHLIGHT_TEXT]热门足球赛事[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]热门单曲[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]卖座电影[COLOR_REVERT]资源为城市带来的快乐度。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]购物中心[COLOR_REVERT]是美国的特色建筑，替代[COLOR_BUILDING_TEXT]百货商店[COLOR_REVERT]，在城市通电的情况下，可大幅增加城市金币产出，并能增加[COLOR_HIGHLIGHT_TEXT]热门足球赛事[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]热门单曲[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]卖座电影[COLOR_REVERT]资源为城市带来的快乐度。</Chinese><French>The [COLOR_BUILDING_TEXT]Mall[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Department Store[COLOR_REVERT], greatly increases the wealth output of the city when it has access to power and increases the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Hit Football Events[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Hit Movies[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ADMINISTRATIVE_CENTER_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]行政中心[COLOR_REVERT]降低了附近城市的维护成本。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]行政中心[COLOR_REVERT]降低了附近城市的维护成本。</Chinese><French>The [COLOR_BUILDING_TEXT]Administrative Center[COLOR_REVERT] reduces the maintenance costs in nearby cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARABIAN_ALCHEMIST</Tag>
+		<English>炼金作坊</English>
+		<L1/><L2/><L3/><L4/><Chinese>炼金作坊</Chinese><French>Alchemist</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARABIAN_ALCHEMIST_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]炼金作坊[COLOR_REVERT]是阿拉伯的特色建筑，替代[COLOR_BUILDING_TEXT]药房[COLOR_REVERT]，增加城市的科研产出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]炼金作坊[COLOR_REVERT]是阿拉伯的特色建筑，替代[COLOR_BUILDING_TEXT]药房[COLOR_REVERT]，增加城市的科研产出。</Chinese><French>The [COLOR_BUILDING_TEXT]Alchemist[COLOR_REVERT], the Arabian replacement for the [COLOR_BUILDING_TEXT]Pharmacy[COLOR_REVERT], increases the city's science output.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AQUEDUCT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]引水渠[COLOR_REVERT]为所在城市储存食物，以加快人口增长速度。
+所在城市拥有[COLOR_BUILDING_TEXT]引水渠[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]浴场[COLOR_REVERT]的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]引水渠[COLOR_REVERT]为所在城市储存食物，以加快人口增长速度。
+所在城市拥有[COLOR_BUILDING_TEXT]引水渠[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]浴场[COLOR_REVERT]的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Aqueducts[COLOR_REVERT] store food to help increase a city's growth rate. [COLOR_BUILDING_TEXT]Aqueducts[COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARGENTINE_REFRIGERATION_PLANT</Tag>
+		<English>冷藏库</English>
+		<L1/><L2/><L3/><L4/><Chinese>冷藏库</Chinese><French>Cold Storage Plant</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARGENTINE_REFRIGERATION_PLANT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]冷藏库[COLOR_REVERT]是阿根廷的特色建筑，替代COLOR_BUILDING_TEXT]超级市场[COLOR_REVERT]，增加已开发的[COLOR_HIGHLIGHT_TEXT]牛[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]鹿[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]猪[COLOR_REVERT]资源地块产出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]冷藏库[COLOR_REVERT]是阿根廷的特色建筑，替代COLOR_BUILDING_TEXT]超级市场[COLOR_REVERT]，增加已开发的[COLOR_HIGHLIGHT_TEXT]牛[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]鹿[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]猪[COLOR_REVERT]资源地块产出。</Chinese><French>The [COLOR_BUILDING_TEXT]Cold Storage Plant[COLOR_REVERT], the Argentine replacement for the [COLOR_BUILDING_TEXT]Supermarket[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AZTEC_SACRIFICIAL_ALTAR_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]人牲祭坛[COLOR_REVERT]是阿兹特克的特色建筑，替代[COLOR_BUILDING_TEXT]监狱[COLOR_REVERT]，建造成本更低，可减少通过牺牲人口加速生产造成不满所持续的时间。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]人牲祭坛[COLOR_REVERT]是阿兹特克的特色建筑，替代[COLOR_BUILDING_TEXT]监狱[COLOR_REVERT]，建造成本更低，可减少通过牺牲人口加速生产造成不满所持续的时间。</Chinese><French>The [COLOR_BUILDING_TEXT]Sacrificial Altar[COLOR_REVERT], the Aztec replacements for the [COLOR_BUILDING_TEXT]Jail[COLOR_REVERT], is cheaper and reduces the anger duration from sacrificing population.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BANK_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]银行[COLOR_REVERT]可大幅提升城市的金币产出，并允许你将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]商人[COLOR_REVERT]。
+[COLOR_BUILDING_TEXT]银行[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]中央银行[COLOR_REVERT]国家奇观的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]银行[COLOR_REVERT]可大幅提升城市的金币产出，并允许你将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]商人[COLOR_REVERT]。
+[COLOR_BUILDING_TEXT]银行[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]中央银行[COLOR_REVERT]国家奇观的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Banks[COLOR_REVERT] greatly increase a city's production of wealth and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Banks[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Central Bank[COLOR_REVERT] national wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIVE_AMERICAN_TOTEM_POLE</Tag>
+		<English>图腾柱</English>
+		<L1/><L2/><L3/><L4/><Chinese>图腾柱</Chinese><French>Totem Pole</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIVE_AMERICAN_TOTEM_POLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]图腾柱[COLOR_REVERT]是美洲土著的特色建筑，取代[COLOR_BUILDING_TEXT]原始神庙[COLOR_REVERT]，为城市新组建投射单位+3经验。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]图腾柱[COLOR_REVERT]是美洲土著的特色建筑，取代[COLOR_BUILDING_TEXT]原始神庙[COLOR_REVERT]，为城市新组建投射单位+3经验。</Chinese><French>The [COLOR_BUILDING_TEXT]Totem Pole[COLOR_REVERT], the Native American replacement for the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT], grants archery units three bonus experience.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BARRACKS_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]兵营[COLOR_REVERT]为所在城市组建的[COLOR_UNIT_TEXT]陆地单位[COLOR_REVERT]提供经验。[COLOR_BUILDING_TEXT]兵营[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]军事学院[COLOR_REVERT]国家奇观的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]兵营[COLOR_REVERT]为所在城市组建的[COLOR_UNIT_TEXT]陆地单位[COLOR_REVERT]提供经验。[COLOR_BUILDING_TEXT]兵营[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]军事学院[COLOR_REVERT]国家奇观的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT] grant experience points to [COLOR_UNIT_TEXT]Land Units[COLOR_REVERT] built in its city. [COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Military Academy[COLOR_REVERT] national wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BOMB_SHELTER_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]防空洞[COLOR_REVERT]减少核打击造成的破坏。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]防空洞[COLOR_REVERT]减少核打击造成的破坏。</Chinese><French>[COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT] reduce damage from nuclear attacks.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BROADCAST_TOWER_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]广播塔[COLOR_REVERT]可在城市通电的情况下，大幅提升城市文化产出，可通过调整文化杠杆增加快乐值，能增加[COLOR_HIGHLIGHT_TEXT]热门单曲[COLOR_REVERT]资源带来的快乐。所在城市可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_REVERT]。
+[COLOR_BUILDING_TEXT]广播塔[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]加拿大国家电视塔[COLOR_REVERT]世界奇观的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]广播塔[COLOR_REVERT]可在城市通电的情况下，大幅提升城市文化产出，可通过调整文化杠杆增加快乐值，能增加[COLOR_HIGHLIGHT_TEXT]热门单曲[COLOR_REVERT]资源带来的快乐。所在城市可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_REVERT]。
+[COLOR_BUILDING_TEXT]广播塔[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]加拿大国家电视塔[COLOR_REVERT]世界奇观的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Broadcast Towers[COLOR_REVERT] greatly increase a city's cultural output with access to power. They also increase the happiness output from using the culture slider, or if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Broadcast Towers[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]CN Tower[COLOR_REVERT] world wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BRAZILIAN_FAZENDA</Tag>
+		<English>巴西农场</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴西农场</Chinese><French>Fazenda</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BRAZILIAN_FAZENDA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]巴西农场[COLOR_REVERT]是巴西的特色建筑，替代[COLOR_BUILDING_TEXT]庄园[COLOR_REVERT]，增加已开发的[COLOR_HIGHLIGHT_TEXT]香蕉[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]香料[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]糖[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]咖啡[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]烟草[COLOR_REVERT]资源地块产出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]巴西农场[COLOR_REVERT]是巴西的特色建筑，替代[COLOR_BUILDING_TEXT]庄园[COLOR_REVERT]，增加已开发的[COLOR_HIGHLIGHT_TEXT]香蕉[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]香料[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]糖[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]咖啡[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]烟草[COLOR_REVERT]资源地块产出。</Chinese><French>The [COLOR_BUILDING_TEXT]Fazenda[COLOR_REVERT], the Brazilian replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Bananas[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Coffee[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Tobacco[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BUNKER_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]地堡[COLOR_REVERT]减少空中单位造成的破坏。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]地堡[COLOR_REVERT]减少空中单位造成的破坏。</Chinese><French>[COLOR_BUILDING_TEXT]Bunkers[COLOR_REVERT] reduce damage from air attacks.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CANADIAN_ROYAL_MOUNTED_POLICE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]皇家骑警署[COLOR_REVERT]是加拿大的特色建筑，替代[COLOR_BUILDING_TEXT]警察局[COLOR_REVERT]，能增加[COLOR_HIGHLIGHT_TEXT]马[COLOR_REVERT]资源带来的快乐。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]皇家骑警署[COLOR_REVERT]是加拿大的特色建筑，替代[COLOR_BUILDING_TEXT]警察局[COLOR_REVERT]，能增加[COLOR_HIGHLIGHT_TEXT]马[COLOR_REVERT]资源带来的快乐。</Chinese><French>The [COLOR_BUILDING_TEXT]Royal Mounted Police[COLOR_REVERT], the Canadian replacement for the [COLOR_BUILDING_TEXT]Constabulary[COLOR_REVERT], provides extra happiness with access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BYZANTINE_HIPPODROME_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]赛马场[COLOR_REVERT]为拜占庭的特色建筑，替代[COLOR_BUILDING_TEXT]剧场[COLOR_REVERT]，为所在城市增加快乐值，拥有[COLOR_HIGHLIGHT_TEXT]马[COLOR_REVERT]资源可额外增加快乐值，并可通过调整文化杠杆增加快乐值。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]赛马场[COLOR_REVERT]为拜占庭的特色建筑，替代[COLOR_BUILDING_TEXT]剧场[COLOR_REVERT]，为所在城市增加快乐值，拥有[COLOR_HIGHLIGHT_TEXT]马[COLOR_REVERT]资源可额外增加快乐值，并可通过调整文化杠杆增加快乐值。</Chinese><French>The [COLOR_BUILDING_TEXT]Hippodrome[COLOR_REVERT], the Byzantine replacement for the [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT], increases happiness, increases the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT] and increases the happiness output from using the culture slider.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CANADIAN_ROYAL_MOUNTED_POLICE</Tag>
+		<English>皇家骑警署</English>
+		<L1/><L2/><L3/><L4/><Chinese>皇家骑警署</Chinese><French>Royal Mounted Police</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CASTLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]城堡[COLOR_REVERT]提升城市对火器出现之前单位的防御能力，产出少量文化，并为新组建[COLOR_UNIT_TEXT]压制武器单位[COLOR_REVERT]增加经验。[COLOR_BUILDING_TEXT]城堡[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]骑士堡[COLOR_REVERT]世界奇观的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]城堡[COLOR_REVERT]提升城市对火器出现之前单位的防御能力，产出少量文化，并为新组建[COLOR_UNIT_TEXT]压制武器单位[COLOR_REVERT]增加经验。[COLOR_BUILDING_TEXT]城堡[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]骑士堡[COLOR_REVERT]世界奇观的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] increase your cities' defense against pre-gunpowder units, generate a small amount of culture and also grant experience to [COLOR_UNIT_TEXT]Siege Units[COLOR_REVERT]. [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Krak des Chevalier[COLOR_REVERT] world wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CHINESE_TAIXUE</Tag>
+		<English>太学</English>
+		<L1/><L2/><L3/><L4/><Chinese>太学</Chinese><French>Taixue</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CHINESE_TAIXUE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]太学[COLOR_REVERT]是中国的特色建筑，替代[COLOR_BUILDING_TEXT]图书馆[COLOR_REVERT]，提供额外的文化，所在城市可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]，可将三个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]科学家[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]太学[COLOR_REVERT]是中国的特色建筑，替代[COLOR_BUILDING_TEXT]图书馆[COLOR_REVERT]，提供额外的文化，所在城市可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]，可将三个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]科学家[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Taixue[COLOR_REVERT], the Chinese replacement for the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], provides extra culture and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] and one more [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COAL_PLANT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]火电厂[COLOR_REVERT]在有[COLOR_HIGHLIGHT_TEXT]煤[COLOR_REVERT]资源的情况下为城市提供不清洁的电能。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]火电厂[COLOR_REVERT]在有[COLOR_HIGHLIGHT_TEXT]煤[COLOR_REVERT]资源的情况下为城市提供不清洁的电能。</Chinese><French>[COLOR_BUILDING_TEXT]Coal Plants[COLOR_REVERT] provide dirty power with access to [COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COLOMBIAN_HACIENDA</Tag>
+		<English>哥伦比亚庄园</English>
+		<L1/><L2/><L3/><L4/><Chinese>哥伦比亚庄园</Chinese><French>Hacienda</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COLOMBIAN_HACIENDA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]哥伦比亚庄园[COLOR_REVERT]是哥伦比亚的特色建筑，替代[COLOR_BUILDING_TEXT]庄园[COLOR_REVERT]，增加已开发的[COLOR_HIGHLIGHT_TEXT]香蕉[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]咖啡[COLOR_REVERT]资源地块产出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]哥伦比亚庄园[COLOR_REVERT]是哥伦比亚的特色建筑，替代[COLOR_BUILDING_TEXT]庄园[COLOR_REVERT]，增加已开发的[COLOR_HIGHLIGHT_TEXT]香蕉[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]咖啡[COLOR_REVERT]资源地块产出。</Chinese><French>The [COLOR_BUILDING_TEXT]Hacienda[COLOR_REVERT], the Colombian replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Bananas[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Coffee[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARENA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]竞技场[COLOR_REVERT]增加城市的快乐值，并可通过调整文化杠杆增加快乐值。所在城市拥有[COLOR_BUILDING_TEXT]竞技场[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]体育场[COLOR_REVERT]的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]竞技场[COLOR_REVERT]增加城市的快乐值，并可通过调整文化杠杆增加快乐值。所在城市拥有[COLOR_BUILDING_TEXT]竞技场[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]体育场[COLOR_REVERT]的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] increase a city's happiness and its happiness output from using the culture slider. [COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Stadium[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COURTHOUSE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]法庭[COLOR_REVERT]降低城市维护费，增加谍报点数产出，所在城市可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]。[COLOR_BUILDING_TEXT]法庭[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]威斯敏斯特宫[COLOR_REVERT]世界奇观的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]法庭[COLOR_REVERT]降低城市维护费，增加谍报点数产出，所在城市可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]。[COLOR_BUILDING_TEXT]法庭[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]威斯敏斯特宫[COLOR_REVERT]世界奇观的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Courthouses[COLOR_REVERT] lower city maintenance costs, provide you with a bonus to espionage and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Courthouses[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Westminster Palace[COLOR_REVERT] world wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CUSTOMS_HOUSE</Tag>
+		<English>海关</English>
+		<L1/><L2/><L3/><L4/><Chinese>海关</Chinese><French>Customs House</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CUSTOMS_HOUSE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]海关[COLOR_REVERT]增加城市海外商路产生的商业。所在城市拥有[COLOR_BUILDING_TEXT]海关[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]集装箱码头[COLOR_REVERT]的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]海关[COLOR_REVERT]增加城市海外商路产生的商业。所在城市拥有[COLOR_BUILDING_TEXT]海关[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]集装箱码头[COLOR_REVERT]的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT] increase the commerce generated by a city's foreign trade routes. [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Container Terminal[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DRYDOCK_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]干船坞[COLOR_REVERT]能更快地建造[COLOR_UNIT_TEXT]水上单位[COLOR_REVERT]，并为[COLOR_UNIT_TEXT]海军单位[COLOR_REVERT]提供额外经验点，但[COLOR_BUILDING_TEXT]干船坞[COLOR_REVERT]也会增加城市不健康度。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]干船坞[COLOR_REVERT]能更快地建造[COLOR_UNIT_TEXT]水上单位[COLOR_REVERT]，并为[COLOR_UNIT_TEXT]海军单位[COLOR_REVERT]提供额外经验点，但[COLOR_BUILDING_TEXT]干船坞[COLOR_REVERT]也会增加城市不健康度。</Chinese><French>[COLOR_BUILDING_TEXT]Drydocks[COLOR_REVERT] build [COLOR_UNIT_TEXT]Water Units[COLOR_REVERT] much faster and grant [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] experience points, but also add unhealthiness to the city.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_EGYPTIAN_OBELISK</Tag>
+		<English>方尖碑</English>
+		<L1/><L2/><L3/><L4/><Chinese>方尖碑</Chinese><French>Obelisk</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_EGYPTIAN_OBELISK_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]方尖碑[COLOR_REVERT]是埃及的特色建筑，替代[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]，为所在城市带来大量文化产出，可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]神学家[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]方尖碑[COLOR_REVERT]是埃及的特色建筑，替代[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]，为所在城市带来大量文化产出，可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]神学家[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Obelisk[COLOR_REVERT], the Egyptian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides a major bonus to Culture output in your city and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CELTIC_DUN_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]丘堡[COLOR_REVERT]是凯尔特的特色建筑，替代[COLOR_BUILDING_TEXT]城墙[COLOR_REVERT]，可提升城市防御冷兵器时代单位的能力，并使所在城市新组建的单位自动获得[COLOR_HIGHLIGHT_TEXT]游击一级[COLOR_REVERT]晋升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]丘堡[COLOR_REVERT]是凯尔特的特色建筑，替代[COLOR_BUILDING_TEXT]城墙[COLOR_REVERT]，可提升城市防御冷兵器时代单位的能力，并使所在城市新组建的单位自动获得[COLOR_HIGHLIGHT_TEXT]游击一级[COLOR_REVERT]晋升。</Chinese><French>The [COLOR_BUILDING_TEXT]Dun[COLOR_REVERT], the Celtic replacement for [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT], gives all eligible units built in this city the [COLOR_HIGHLIGHT_TEXT]Guerrilla I[COLOR_REVERT] promotion.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ENGLISH_ROYAL_EXCHANGE</Tag>
+		<English>皇家交易所</English>
+		<L1/><L2/><L3/><L4/><Chinese>皇家交易所</Chinese><French>Royal Exchange</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ENGLISH_ROYAL_EXCHANGE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]皇家交易所[COLOR_REVERT]是英格兰的特色建筑，替代[COLOR_BUILDING_TEXT]银行[COLOR_REVERT]，更大幅增加所在城市的金币产出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]皇家交易所[COLOR_REVERT]是英格兰的特色建筑，替代[COLOR_BUILDING_TEXT]银行[COLOR_REVERT]，更大幅增加所在城市的金币产出。</Chinese><French>The [COLOR_BUILDING_TEXT]Royal Exchange[COLOR_REVERT], the English replacement for a [COLOR_BUILDING_TEXT]Bank[COLOR_REVERT], increases a city's wealth more.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ETHIOPIAN_STELE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]纪念石柱[COLOR_REVERT]是埃塞俄比亚的特色建筑，替代[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]，可将两个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]神学家[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]纪念石柱[COLOR_REVERT]是埃塞俄比亚的特色建筑，替代[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]，可将两个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]神学家[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Stele[COLOR_REVERT], the Ethiopian replacement for the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT], allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FACTORY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]工厂[COLOR_REVERT]增加所在城市的不健康度。并提升城市产能，在城市通电时，能输出更多的产能，可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]。所在城市拥有[COLOR_BUILDING_TEXT]工厂[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]工业园区[COLOR_REVERT]、[COLOR_BUILDING_TEXT]火电厂[COLOR_REVERT]、[COLOR_BUILDING_TEXT]水电厂[COLOR_REVERT]、[COLOR_BUILDING_TEXT]太阳能电厂[COLOR_REVERT]、[COLOR_BUILDING_TEXT]核电站[COLOR_REVERT]和[COLOR_BUILDING_TEXT]自动化工厂[COLOR_REVERT]的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]工厂[COLOR_REVERT]增加所在城市的不健康度。并提升城市产能，在城市通电时，能输出更多的产能，可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]。所在城市拥有[COLOR_BUILDING_TEXT]工厂[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]工业园区[COLOR_REVERT]、[COLOR_BUILDING_TEXT]火电厂[COLOR_REVERT]、[COLOR_BUILDING_TEXT]水电厂[COLOR_REVERT]、[COLOR_BUILDING_TEXT]太阳能电厂[COLOR_REVERT]、[COLOR_BUILDING_TEXT]核电站[COLOR_REVERT]和[COLOR_BUILDING_TEXT]自动化工厂[COLOR_REVERT]的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Factories[COLOR_REVERT] increase a city's unhealthiness. They also increase a city's production, increase production output in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Factories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Industrial Parks[COLOR_REVERT], [COLOR_BUILDING_TEXT]Coal Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Hydro Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Automation Factory[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDUSTRIAL_PARK_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]工业园区[COLOR_REVERT]在拥有[COLOR_HIGHLIGHT_TEXT]铝[COLOR_REVERT]资源和[COLOR_HIGHLIGHT_TEXT]石油[COLOR_REVERT]资源时，提升城市产能，增加城市不健康度。可将两个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]工业园区[COLOR_REVERT]在拥有[COLOR_HIGHLIGHT_TEXT]铝[COLOR_REVERT]资源和[COLOR_HIGHLIGHT_TEXT]石油[COLOR_REVERT]资源时，提升城市产能，增加城市不健康度。可将两个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]。</Chinese><French>[COLOR_BUILDING_TEXT]Industrial Parks[COLOR_REVERT] increase a city's production output and unhealthiness with access to [COLOR_HIGHLIGHT_TEXT]Aluminium[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT]. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INTELLIGENCE_AGENCY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]情报局[COLOR_REVERT]增加城市谍报点数，并为所在城市组建的[COLOR_UNIT_TEXT]间谍单位[COLOR_REVERT]提供经验。[COLOR_BUILDING_TEXT]广播塔[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]卢比扬卡[COLOR_REVERT]世界奇观的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]情报局[COLOR_REVERT]增加城市谍报点数，并为所在城市组建的[COLOR_UNIT_TEXT]间谍单位[COLOR_REVERT]提供经验。[COLOR_BUILDING_TEXT]广播塔[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]卢比扬卡[COLOR_REVERT]世界奇观的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] increase the espionage points created by the city and grant experience points to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in their city. [COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Lubyanka[COLOR_REVERT] world wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IRANIAN_CARAVANSERAI</Tag>
+		<English>伊朗商站</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊朗商站</Chinese><French>Caravanserai</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IRANIAN_CARAVANSERAI_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]伊朗商站[COLOR_REVERT]是伊朗的特色建筑，替代[COLOR_BUILDING_TEXT]邮局[COLOR_REVERT]，额外增加一条商路，增加已开发的[COLOR_HIGHLIGHT_TEXT]熏香[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]丝绸[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]香料[COLOR_REVERT]资源地块产出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]伊朗商站[COLOR_REVERT]是伊朗的特色建筑，替代[COLOR_BUILDING_TEXT]邮局[COLOR_REVERT]，额外增加一条商路，增加已开发的[COLOR_HIGHLIGHT_TEXT]熏香[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]丝绸[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]香料[COLOR_REVERT]资源地块产出。</Chinese><French>The [COLOR_BUILDING_TEXT]Caravanserai[COLOR_REVERT], the Iranian replacement for the [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], provides an extra trade route, increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FORGE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]煅造场[COLOR_REVERT]可提升城市产能，并能增加[COLOR_HIGHLIGHT_TEXT]宝石[COLOR_REVERT]资源、[COLOR_HIGHLIGHT_TEXT]金[COLOR_REVERT]资源和[COLOR_HIGHLIGHT_TEXT]银[COLOR_REVERT]资源为城市带来的快乐度，但也会增加城市不健康度。[COLOR_BUILDING_TEXT]煅造场[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]埃菲尔铁塔[COLOR_REVERT]、[COLOR_BUILDING_TEXT]铁柱[COLOR_REVERT]和[COLOR_BUILDING_TEXT]自由女神像[COLOR_REVERT]世界奇观，以及[COLOR_BUILDING_TEXT]大铁厂[COLOR_REVERT]国家奇观的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]煅造场[COLOR_REVERT]可提升城市产能，并能增加[COLOR_HIGHLIGHT_TEXT]宝石[COLOR_REVERT]资源、[COLOR_HIGHLIGHT_TEXT]金[COLOR_REVERT]资源和[COLOR_HIGHLIGHT_TEXT]银[COLOR_REVERT]资源为城市带来的快乐度，但也会增加城市不健康度。[COLOR_BUILDING_TEXT]煅造场[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]埃菲尔铁塔[COLOR_REVERT]、[COLOR_BUILDING_TEXT]铁柱[COLOR_REVERT]和[COLOR_BUILDING_TEXT]自由女神像[COLOR_REVERT]世界奇观，以及[COLOR_BUILDING_TEXT]大铁厂[COLOR_REVERT]国家奇观的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Forges[COLOR_REVERT] increase production, increase the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Gems[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Silver[COLOR_REVERT], but also add unhealthiness. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Forges[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Eiffel Tower[COLOR_REVERT], [COLOR_BUILDING_TEXT]Iron Pillar[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] world wonders, and the [COLOR_BUILDING_TEXT]Ironworks[COLOR_REVERT] national wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FRENCH_SALON_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]沙龙[COLOR_REVERT]是法国的特色建筑，替代[COLOR_BUILDING_TEXT]天文台[COLOR_REVERT]，提升所在城市文化，加快[COLOR_HIGHLIGHT_TEXT]伟人[COLOR_REVERT]出现速度，可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]沙龙[COLOR_REVERT]是法国的特色建筑，替代[COLOR_BUILDING_TEXT]天文台[COLOR_REVERT]，提升所在城市文化，加快[COLOR_HIGHLIGHT_TEXT]伟人[COLOR_REVERT]出现速度，可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Salon[COLOR_REVERT], the French replacement for the [COLOR_BUILDING_TEXT]Coffee House[COLOR_REVERT], provides a cultural bonus, increases the birthrate of [COLOR_HIGHLIGHT_TEXT]Great People[COLOR_REVERT] and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GERMAN_ASSEMBLY_PLANT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]装配工厂[COLOR_REVERT]是德国的特色建筑，替代[COLOR_BUILDING_TEXT]工厂[COLOR_REVERT]，为所在城市组建的装甲单位提供经验，并在所在城市增加一名免费[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]，可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]。拥有[COLOR_HIGHLIGHT_TEXT]煤[COLOR_REVERT]资源可使装配工厂建造速度加快50%。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]装配工厂[COLOR_REVERT]是德国的特色建筑，替代[COLOR_BUILDING_TEXT]工厂[COLOR_REVERT]，为所在城市组建的装甲单位提供经验，并在所在城市增加一名免费[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]，可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]。拥有[COLOR_HIGHLIGHT_TEXT]煤[COLOR_REVERT]资源可使装配工厂建造速度加快50%。</Chinese><French>The [COLOR_BUILDING_TEXT]Assembly Plant[COLOR_REVERT], the German replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], grants experience points to armored units built in its city, gives one free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist, allows you to hire one more [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist and is produced 50% faster with access to [COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GRANARY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]粮仓[COLOR_REVERT]为所在城市储存食物，以加快人口增长速度。在拥有[COLOR_HIGHLIGHT_TEXT]玉米[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]大米[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]小麦[COLOR_REVERT]资源的情况下可提升城市健康度。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]粮仓[COLOR_REVERT]为所在城市储存食物，以加快人口增长速度。在拥有[COLOR_HIGHLIGHT_TEXT]玉米[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]大米[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]小麦[COLOR_REVERT]资源的情况下可提升城市健康度。</Chinese><French>[COLOR_BUILDING_TEXT]Granaries[COLOR_REVERT] store food to help increase a city's growth rate and increase the city's health with access to [COLOR_HIGHLIGHT_TEXT]Corn[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONGOLIAN_GER</Tag>
+		<English>毡帐</English>
+		<L1/><L2/><L3/><L4/><Chinese>毡帐</Chinese><French>Ger</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONGOLIAN_GER_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]毡帐[COLOR_REVERT]是蒙古的特色建筑，替代[COLOR_BUILDING_TEXT]马厩[COLOR_REVERT]，为所在城市组建的[COLOR_UNIT_TEXT]骑座单位[COLOR_REVERT]提供更多的经验。同时增加已开发的[COLOR_HIGHLIGHT_TEXT]马[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]牛[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]羊[COLOR_REVERT]资源地块产出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]毡帐[COLOR_REVERT]是蒙古的特色建筑，替代[COLOR_BUILDING_TEXT]马厩[COLOR_REVERT]，为所在城市组建的[COLOR_UNIT_TEXT]骑座单位[COLOR_REVERT]提供更多的经验。同时增加已开发的[COLOR_HIGHLIGHT_TEXT]马[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]牛[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]羊[COLOR_REVERT]资源地块产出。</Chinese><French>The [COLOR_BUILDING_TEXT]Ger[COLOR_REVERT], the Mongol replacement for the [COLOR_BUILDING_TEXT]Stable[COLOR_REVERT], grant even more experience points to [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] built in its city. It also increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GREEK_ODEON_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]露天剧场[COLOR_REVERT]是希腊的特色建筑，替代[COLOR_BUILDING_TEXT]剧场[COLOR_REVERT]，提升城市快乐度，可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]露天剧场[COLOR_REVERT]是希腊的特色建筑，替代[COLOR_BUILDING_TEXT]剧场[COLOR_REVERT]，提升城市快乐度，可将一个[COLOR_HIGHLIGHT_TEXT]市民[COLOR_REVERT]转化为[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Odeon[COLOR_REVERT], the Greek replacement for the [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT], increase a city's happiness and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HARAPPAN_RESERVOIR</Tag>
+		<English>蓄水池</English>
+		<L1/><L2/><L3/><L4/><Chinese>蓄水池</Chinese><French>Reservoir</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HARAPPAN_RESERVOIR_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]蓄水池[COLOR_REVERT]是哈拉帕的特色建筑，替代[COLOR_BUILDING_TEXT]浴场[COLOR_REVERT]，需要[COLOR_TECH_TEXT]石工术[COLOR_REVERT]科技而不是[COLOR_TECH_TEXT]传统医学[COLOR_REVERT]科技即可建造，并且建造时无需[COLOR_BUILDING_TEXT]引水渠[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]蓄水池[COLOR_REVERT]是哈拉帕的特色建筑，替代[COLOR_BUILDING_TEXT]浴场[COLOR_REVERT]，需要[COLOR_TECH_TEXT]石工术[COLOR_REVERT]科技而不是[COLOR_TECH_TEXT]传统医学[COLOR_REVERT]科技即可建造，并且建造时无需[COLOR_BUILDING_TEXT]引水渠[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Reservoir[COLOR_REVERT], the Harappan replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Masonry[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Medicine[COLOR_REVERT] technology and doesn't require an [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HARBOR_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]港口[COLOR_REVERT]增加海域产生的食物。[COLOR_BUILDING_TEXT]港口[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]海关[COLOR_REVERT], [COLOR_BUILDING_TEXT]码头[COLOR_REVERT]和[COLOR_BUILDING_TEXT]圣马可广场[COLOR_REVERT]世界奇观的前提.</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]港口[COLOR_REVERT]增加海域产生的食物。[COLOR_BUILDING_TEXT]港口[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]海关[COLOR_REVERT], [COLOR_BUILDING_TEXT]码头[COLOR_REVERT]和[COLOR_BUILDING_TEXT]圣马可广场[COLOR_REVERT]世界奇观的前提.</Chinese><French>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]San Marco Basilica[COLOR_REVERT] world wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOLY_ROMAN_RATHAUS_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]议会厅[COLOR_REVERT]为神圣罗马的特色建筑，替代[COLOR_BUILDING_TEXT]法庭[COLOR_REVERT]，可使城市维护费大幅减少。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]议会厅[COLOR_REVERT]为神圣罗马的特色建筑，替代[COLOR_BUILDING_TEXT]法庭[COLOR_REVERT]，可使城市维护费大幅减少。</Chinese><French>The [COLOR_BUILDING_TEXT]Rathaus[COLOR_REVERT], the German replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], lowers city maintenance.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOSPITAL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]医院[COLOR_REVERT]可帮助单位恢复战斗力，并提升城市健康度。[COLOR_BUILDING_TEXT]医院[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]红十字会[COLOR_REVERT]国家奇观的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]医院[COLOR_REVERT]可帮助单位恢复战斗力，并提升城市健康度。[COLOR_BUILDING_TEXT]医院[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]红十字会[COLOR_REVERT]国家奇观的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Hospitals[COLOR_REVERT] help units heal damage more quickly and add health to a city. [COLOR_BUILDING_TEXT]Hospitals[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Red Cross Society[COLOR_REVERT] national wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INCAN_TAMBO</Tag>
+		<English>土堡驿站</English>
+		<L1/><L2/><L3/><L4/><Chinese>土堡驿站</Chinese><French>Tambo</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INCAN_TAMBO_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT]是[COLOR_BUILDING_TEXT]邮局[COLOR_REVERT]的印加替代品，它需要[COLOR_TECH_TEXT]工程[COLOR_REVERT]技术，而不是[COLOR_TECH_TEXT]纸张[COLOR_REVERT]技术，成本更低，并提高了贸易路线的收益率。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT]是[COLOR_BUILDING_TEXT]邮局[COLOR_REVERT]的印加替代品，它需要[COLOR_TECH_TEXT]工程[COLOR_REVERT]技术，而不是[COLOR_TECH_TEXT]纸张[COLOR_REVERT]技术，成本更低，并提高了贸易路线的收益率。</Chinese><French>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Incan replacement for the [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Engineering[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology, is cheaper and increases trade route yield.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDIAN_EDICT</Tag>
+		<English>印度纪念碑</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度纪念碑</Chinese><French>Edict</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDIAN_EDICT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]法令[COLOR_REVERT]，印度取代[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]，降低了城市维护成本。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]法令[COLOR_REVERT]，印度取代[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]，降低了城市维护成本。</Chinese><French>The [COLOR_BUILDING_TEXT]Edict[COLOR_REVERT], the Indian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], lowers city maintenance costs.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MUGHAL_MAUSOLEUM</Tag>
+		<English>陵墓</English>
+		<L1/><L2/><L3/><L4/><Chinese>陵墓</Chinese><French>Mausoleum</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MUGHAL_MAUSOLEUM_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]陵墓[COLOR_REVERT]，莫卧儿人取代[COLOR_BUILDING_TEXT]庄园[COLOR_REVERT]，需要[COLOR_TECH_TEXT]遗产[COLOR_REVERT]技术，而不是[COLOR_TECH_TEXT]园艺[COLOR_REVERT]技术，并提供免费[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_REVERT]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]陵墓[COLOR_REVERT]，莫卧儿人取代[COLOR_BUILDING_TEXT]庄园[COLOR_REVERT]，需要[COLOR_TECH_TEXT]遗产[COLOR_REVERT]技术，而不是[COLOR_TECH_TEXT]园艺[COLOR_REVERT]技术，并提供免费[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_REVERT]</Chinese><French>The [COLOR_BUILDING_TEXT]Mausoleum[COLOR_REVERT], the Mughal replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Heritage[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Horticulture[COLOR_REVERT] technology and provides a free [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDONESIAN_CANDI</Tag>
+		<English>浮屠</English>
+		<L1/><L2/><L3/><L4/><Chinese>浮屠</Chinese><French>Candi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDONESIAN_CANDI_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]浮屠[COLOR_REVERT]代替[COLOR_BUILDING_TEXT]剧院[COLOR_REVERT]为印尼提供+1快乐和额外的文化。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]浮屠[COLOR_REVERT]代替[COLOR_BUILDING_TEXT]剧院[COLOR_REVERT]为印尼提供+1快乐和额外的文化。</Chinese><French>The [COLOR_BUILDING_TEXT]Candi[COLOR_REVERT], the Indonesian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides one production.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ITALIAN_ART_STUDIO</Tag>
+		<English>艺术作坊</English>
+		<L1/><L2/><L3/><L4/><Chinese>艺术作坊</Chinese><French>Art Studio</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ITALIAN_ART_STUDIO_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]艺术工作室[COLOR_REVERT]，意大利替代[COLOR_BUILDING_TEXT]锻造[COLOR_REVERT]，提供了一个大的文化促进，并允许你雇用一个[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_REVERT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]艺术工作室[COLOR_REVERT]，意大利替代[COLOR_BUILDING_TEXT]锻造[COLOR_REVERT]，提供了一个大的文化促进，并允许你雇用一个[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_REVERT]专家。</Chinese><French>The [COLOR_BUILDING_TEXT]Art Studio[COLOR_REVERT], the Italian replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], provides a big culture boost and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JAIL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]监狱[COLOR_REVERT]减少城市的[COLOR_HIGHLIGHT_TEXT]厌战情绪[COLOR_REVERT]，并增加谍报点数产出。可在要卷入长期战争时，或在市民提出要求时建造。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]监狱[COLOR_REVERT]减少城市的[COLOR_HIGHLIGHT_TEXT]厌战情绪[COLOR_REVERT]，并增加谍报点数产出。可在要卷入长期战争时，或在市民提出要求时建造。</Chinese><French>[COLOR_BUILDING_TEXT]Jails[COLOR_REVERT] lower city maintenance costs and increase espionage. [COLOR_BUILDING_TEXT]Jails[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Constabularies[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HYDRO_PLANT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]水电站[COLOR_REVERT]为[COLOR_BUILDING_TEXT]工厂[COLOR_REVERT]提供电力，且不会造成污染。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]水电站[COLOR_REVERT]为[COLOR_BUILDING_TEXT]工厂[COLOR_REVERT]提供电力，且不会造成污染。</Chinese><French>[COLOR_BUILDING_TEXT]Hydro Plants[COLOR_REVERT] provide pollution-free power.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NUCLEAR_PLANT_STRATEGY</Tag>
+		<English>在拥有[COLOR_HIGHLIGHT_TEXT]铀[COLOR_REVERT]的情况下，[COLOR_BUILDING_TEXT]核电站[COLOR_REVERT]可为[COLOR_BUILDING_TEXT]工厂[COLOR_REVERT]提供电力。</English>
+		<L1/><L2/><L3/><L4/><Chinese>在拥有[COLOR_HIGHLIGHT_TEXT]铀[COLOR_REVERT]的情况下，[COLOR_BUILDING_TEXT]核电站[COLOR_REVERT]可为[COLOR_BUILDING_TEXT]工厂[COLOR_REVERT]提供电力。</Chinese><French>[COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] provide pollution-free power with access to [COLOR_HIGHLIGHT_TEXT]Uranium[COLOR_REVERT], allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist and allow the city to build [COLOR_UNIT_TEXT]ICBM[COLOR_REVERT]. [COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]ITER[COLOR_REVERT] world wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OBSERVATORY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]天文台[COLOR_REVERT]提升城市科研能力。是建造[COLOR_BUILDING_TEXT]实验室[COLOR_REVERT]的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]天文台[COLOR_REVERT]提升城市科研能力。是建造[COLOR_BUILDING_TEXT]实验室[COLOR_REVERT]的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Observatories[COLOR_REVERT] increase a city's scientific research and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Observatories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JAPANESE_ZAIBATSU_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]财阀[COLOR_REVERT]，日本取代[COLOR_BUILDING_TEXT]工厂[COLOR_REVERT]，更便宜，给一个免费的[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]专家和提高商业产出的水田。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]财阀[COLOR_REVERT]，日本取代[COLOR_BUILDING_TEXT]工厂[COLOR_REVERT]，更便宜，给一个免费的[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]专家和提高商业产出的水田。</Chinese><French>The [COLOR_BUILDING_TEXT]Zaibatsu[COLOR_REVERT], the Japanese replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], is cheaper, gives one free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist and improves the commerce output of water plots.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JAPANESE_ZAIBATSU</Tag>
+		<English>日本财阀</English>
+		<L1/><L2/><L3/><L4/><Chinese>日本财阀</Chinese><French>Zaibatsu</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONGOLESE_MBWADI</Tag>
+		<English>姆瓦迪</English>
+		<L1/><L2/><L3/><L4/><Chinese>姆瓦迪</Chinese><French>Mbwadi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONGOLESE_MBWADI_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]姆瓦迪[COLOR_REVERT]，刚果人取代[COLOR_BUILDING_TEXT]编织者[COLOR_REVERT]，增加了城市的财富产出，并允许你雇用一个[COLOR_HIGHLIGHT_TEXT]商人[COLOR_REVERT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]姆瓦迪[COLOR_REVERT]，刚果人取代[COLOR_BUILDING_TEXT]编织者[COLOR_REVERT]，增加了城市的财富产出，并允许你雇用一个[COLOR_HIGHLIGHT_TEXT]商人[COLOR_REVERT]专家。</Chinese><French>The [COLOR_BUILDING_TEXT]Mbwadi[COLOR_REVERT], the Congolese replacement for the [COLOR_BUILDING_TEXT]Weaver[COLOR_REVERT], increases the city's wealth output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_KHMER_BARAY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]人工湖[COLOR_REVERT]为高棉特色建筑，替代[COLOR_BUILDING_TEXT]引水渠[COLOR_REVERT]，除提供健康加成外还额外提供食物奖励。[COLOR_BUILDING_TEXT]人工湖[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]空中花园[COLOR_REVERT]的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]人工湖[COLOR_REVERT]为高棉特色建筑，替代[COLOR_BUILDING_TEXT]引水渠[COLOR_REVERT]，除提供健康加成外还额外提供食物奖励。[COLOR_BUILDING_TEXT]人工湖[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]空中花园[COLOR_REVERT]的前提。</Chinese><French>The [COLOR_BUILDING_TEXT]Baray[COLOR_REVERT], the Khmer replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], provides two extra food.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MARKET_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]市场[COLOR_REVERT]提升城市商业收入。如拥有[COLOR_HIGHLIGHT_TEXT]毛皮[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]象牙[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]丝绸[COLOR_REVERT]，或[COLOR_HIGHLIGHT_TEXT]鲸鱼[COLOR_REVERT]还可提升城市快乐度。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]市场[COLOR_REVERT]提升城市商业收入。如拥有[COLOR_HIGHLIGHT_TEXT]毛皮[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]象牙[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]丝绸[COLOR_REVERT]，或[COLOR_HIGHLIGHT_TEXT]鲸鱼[COLOR_REVERT]还可提升城市快乐度。</Chinese><French>[COLOR_BUILDING_TEXT]Markets[COLOR_REVERT] increase a city's wealth. They also increase the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Fur[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Ivory[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Whales[COLOR_REVERT] and allow you to hire two [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialists. [COLOR_BUILDING_TEXT]Markets[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MANDE_MINT</Tag>
+		<English>铸币厂</English>
+		<L1/><L2/><L3/><L4/><Chinese>铸币厂</Chinese><French>Mint</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MANDE_MINT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]铸币厂[COLOR_REVERT]，曼丁卡替代[COLOR_BUILDING_TEXT]锻造厂[COLOR_REVERT]，提供了一个小的财富增长。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]铸币厂[COLOR_REVERT]，曼丁卡替代[COLOR_BUILDING_TEXT]锻造厂[COLOR_REVERT]，提供了一个小的财富增长。</Chinese><French>The [COLOR_BUILDING_TEXT]Mint[COLOR_REVERT], the Mandinka replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], provides a small increase in wealth.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LEVEE_STRATEGY</Tag>
+		<English>建造[COLOR_BUILDING_TEXT]防洪堤[COLOR_REVERT]可使沿河地块额外增加1单位产能。</English>
+		<L1/><L2/><L3/><L4/><Chinese>建造[COLOR_BUILDING_TEXT]防洪堤[COLOR_REVERT]可使沿河地块额外增加1单位产能。</Chinese><French>[COLOR_BUILDING_TEXT]Levees[COLOR_REVERT] provide a production bonus from all river tiles worked by the city. [COLOR_BUILDING_TEXT]Levees[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Brooklyn Bridge[COLOR_REVERT] world wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LIGHTHOUSE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]灯塔[COLOR_REVERT]可提升水域的食物产出。[COLOR_BUILDING_TEXT]灯塔[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]大灯塔[COLOR_REVERT]奇观的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]灯塔[COLOR_REVERT]可提升水域的食物产出。[COLOR_BUILDING_TEXT]灯塔[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]大灯塔[COLOR_REVERT]奇观的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Lighthouses[COLOR_REVERT] provide an extra trade route.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_KOREAN_SEOWON_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]私塾[COLOR_REVERT]是高丽的特色建筑，替代[COLOR_BUILDING_TEXT]大学[COLOR_REVERT]，提升城市科研能力的作用比[COLOR_BUILDING_TEXT]大学[COLOR_REVERT]更强，并能提供文化点数。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]私塾[COLOR_REVERT]是高丽的特色建筑，替代[COLOR_BUILDING_TEXT]大学[COLOR_REVERT]，提升城市科研能力的作用比[COLOR_BUILDING_TEXT]大学[COLOR_REVERT]更强，并能提供文化点数。</Chinese><French>The [COLOR_BUILDING_TEXT]Seowon[COLOR_REVERT], the Korean replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology and instead of the [COLOR_TECH_TEXT]Academia[COLOR_REVERT] technology.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_UNIVERSITY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]大学[COLOR_REVERT]提升城市的科研能力并产生文化值。[COLOR_BUILDING_TEXT]大学[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]牛津大学[COLOR_REVERT]国家奇观的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]大学[COLOR_REVERT]提升城市的科研能力并产生文化值。[COLOR_BUILDING_TEXT]大学[COLOR_REVERT]是建造[COLOR_BUILDING_TEXT]牛津大学[COLOR_REVERT]国家奇观的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Universities[COLOR_REVERT] increase a city's research and provide culture. [COLOR_BUILDING_TEXT]Universities[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]National College[COLOR_REVERT] national wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VIKING_TRADING_POST_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]贸易据点[COLOR_REVERT]是维京的特色建筑，替代[COLOR_BUILDING_TEXT]灯塔[COLOR_REVERT]，可提升城市水域的食物产出，并使城市组建的船只自动获得[COLOR_HIGHLIGHT_TEXT]导航一级[COLOR_REVERT]晋升。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]贸易据点[COLOR_REVERT]是维京的特色建筑，替代[COLOR_BUILDING_TEXT]灯塔[COLOR_REVERT]，可提升城市水域的食物产出，并使城市组建的船只自动获得[COLOR_HIGHLIGHT_TEXT]导航一级[COLOR_REVERT]晋升。</Chinese><French>The [COLOR_BUILDING_TEXT]Trading Post[COLOR_REVERT], the Viking replacement for the [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT], gives all ships built in this city the [COLOR_HIGHLIGHT_TEXT]Navigation I[COLOR_REVERT] promotion and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LIBRARY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]图书馆[COLOR_REVERT]促进城市的科研并提供文化产出。是建造[COLOR_BUILDING_TEXT]大学[COLOR_REVERT]、[COLOR_BUILDING_TEXT]大图书馆[COLOR_REVERT]奇观，以及[COLOR_BUILDING_TEXT]民族史诗[COLOR_REVERT]和[COLOR_BUILDING_TEXT]英雄史诗[COLOR_REVERT]国家奇观的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]图书馆[COLOR_REVERT]促进城市的科研并提供文化产出。是建造[COLOR_BUILDING_TEXT]大学[COLOR_REVERT]、[COLOR_BUILDING_TEXT]大图书馆[COLOR_REVERT]奇观，以及[COLOR_BUILDING_TEXT]民族史诗[COLOR_REVERT]和[COLOR_BUILDING_TEXT]英雄史诗[COLOR_REVERT]国家奇观的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Libraries[COLOR_REVERT] boost your city's research and provide culture. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialists. [COLOR_BUILDING_TEXT]Libraries[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Universities[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LABORATORY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]实验室[COLOR_REVERT]可提升城市的科研能力及太空飞船建造能力，但也会影响健康度。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]实验室[COLOR_REVERT]可提升城市的科研能力及太空飞船建造能力，但也会影响健康度。</Chinese><French>[COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT] increase a city's scientific research with access to power and its spaceship production and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Supercomputers[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]CERN Research Complex[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Large Hadron Collider[COLOR_REVERT] world wonders.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MAYAN_BALL_COURT</Tag>
+		<English>球场</English>
+		<L1/><L2/><L3/><L4/><Chinese>球场</Chinese><French>Ball Court</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MAYAN_BALL_COURT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]足球场[COLOR_REVERT]，玛雅人取代[COLOR_BUILDING_TEXT]竞技场[COLOR_REVERT]，更便宜，增加了进入[COLOR_HIGHLIGHT_TEXT]击中足球事件[COLOR_REVERT]的快乐，并授予在其城市中建造的近战和射箭单位经验点。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]足球场[COLOR_REVERT]，玛雅人取代[COLOR_BUILDING_TEXT]竞技场[COLOR_REVERT]，更便宜，增加了进入[COLOR_HIGHLIGHT_TEXT]击中足球事件[COLOR_REVERT]的快乐，并授予在其城市中建造的近战和射箭单位经验点。</Chinese><French>The [COLOR_BUILDING_TEXT]Ball Court[COLOR_REVERT], the Mayan replacement for the [COLOR_BUILDING_TEXT]Arena[COLOR_REVERT], is cheaper, increases happiness from access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT] and grants experience points to melee and archery units built in its city.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MEXICAN_CHARREADA</Tag>
+		<English>查雷达竞技场</English>
+		<L1/><L2/><L3/><L4/><Chinese>查雷达竞技场</Chinese><French>Charreada Arena</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MEXICAN_CHARREADA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Charreada竞技场[COLOR_REVERT]，墨西哥替代[COLOR_BUILDING_TEXT]竞技场[COLOR_REVERT]，为在其城市中建造的骑兵单位提供经验点，并增加进入[COLOR_HIGHLIGHT_TEXT]马匹[COLOR_REVERT]的快乐度。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]Charreada竞技场[COLOR_REVERT]，墨西哥替代[COLOR_BUILDING_TEXT]竞技场[COLOR_REVERT]，为在其城市中建造的骑兵单位提供经验点，并增加进入[COLOR_HIGHLIGHT_TEXT]马匹[COLOR_REVERT]的快乐度。</Chinese><French>The [COLOR_BUILDING_TEXT]Charreada Arena[COLOR_REVERT], the Mexican replacement for the [COLOR_BUILDING_TEXT]Arena[COLOR_REVERT], grants experience points to mounted units built in its city and increases happiness from access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOORISH_NORIA</Tag>
+		<English>戽水车</English>
+		<L1/><L2/><L3/><L4/><Chinese>戽水车</Chinese><French>Noria</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOORISH_NORIA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]诺里亚[COLOR_REVERT]，摩尔人取代[COLOR_BUILDING_TEXT]渡槽[COLOR_REVERT]，更便宜，并提供生产奖金。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]诺里亚[COLOR_REVERT]，摩尔人取代[COLOR_BUILDING_TEXT]渡槽[COLOR_REVERT]，更便宜，并提供生产奖金。</Chinese><French>The [COLOR_BUILDING_TEXT]Noria[COLOR_REVERT], the Moorish replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], is cheaper and provides a production bonus.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DUTCH_DIKE</Tag>
+		<English>堤防</English>
+		<L1/><L2/><L3/><L4/><Chinese>堤防</Chinese><French>Dike</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DUTCH_DIKE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]堤坝[COLOR_REVERT]，荷兰人取代了[COLOR_BUILDING_TEXT]堤坝[COLOR_REVERT]，从一个城市生产的所有水砖中获得生产奖金。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]堤坝[COLOR_REVERT]，荷兰人取代了[COLOR_BUILDING_TEXT]堤坝[COLOR_REVERT]，从一个城市生产的所有水砖中获得生产奖金。</Chinese><French>The [COLOR_BUILDING_TEXT]Dike[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Levee[COLOR_REVERT], provides a production bonus from all water tiles worked by a city.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WALLS_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]城墙[COLOR_REVERT]提升城市对火器时代以前单位的防御能力。建造城墙可抵御敌国或蛮族的攻击。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]城墙[COLOR_REVERT]提升城市对火器时代以前单位的防御能力。建造城墙可抵御敌国或蛮族的攻击。</Chinese><French>[COLOR_BUILDING_TEXT]Walls[COLOR_REVERT] increase a city's defenses against pre-gunpowder units. [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PAGAN_TEMPLE</Tag>
+		<English>原始神庙</English>
+		<L1/><L2/><L3/><L4/><Chinese>原始神庙</Chinese><French>Pagan Temple</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PERSIAN_APOTHECARY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]药剂店[COLOR_REVERT]是波斯的特色建筑，替代[COLOR_BUILDING_TEXT]杂货店[COLOR_REVERT]，可增加城市的财富积累和健康点数。在拥有[COLOR_HIGHLIGHT_TEXT]香料[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]食糖[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]酒类[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]香蕉[COLOR_REVERT]的条件下还能额外提供健康点数。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]药剂店[COLOR_REVERT]是波斯的特色建筑，替代[COLOR_BUILDING_TEXT]杂货店[COLOR_REVERT]，可增加城市的财富积累和健康点数。在拥有[COLOR_HIGHLIGHT_TEXT]香料[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]食糖[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]酒类[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]香蕉[COLOR_REVERT]的条件下还能额外提供健康点数。</Chinese><French>The [COLOR_BUILDING_TEXT]Apothecary[COLOR_REVERT], the Persian replacement for the [COLOR_BUILDING_TEXT]Pharmacy[COLOR_REVERT], requires [COLOR_TECH_TEXT]Medicine[COLOR_REVERT] instead of [COLOR_TECH_TEXT]Alchemy[COLOR_REVERT], increases a city's health and increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PAGAN_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]异教寺庙[COLOR_REVERT]提供少量文化。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]异教寺庙[COLOR_REVERT]提供少量文化。</Chinese><French>[COLOR_BUILDING_TEXT]Pagan Temples[COLOR_REVERT] provide a small amount of culture.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OTTOMAN_HAMMAM_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]土耳其浴室[COLOR_REVERT]是奥斯曼的特色建筑，替代[COLOR_BUILDING_TEXT]引水渠[COLOR_REVERT]，可提升城市的快乐度和健康度。在城市规模需要扩大或是市民的提出要求时建造[COLOR_BUILDING_TEXT]土耳其浴室[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]土耳其浴室[COLOR_REVERT]是奥斯曼的特色建筑，替代[COLOR_BUILDING_TEXT]引水渠[COLOR_REVERT]，可提升城市的快乐度和健康度。在城市规模需要扩大或是市民的提出要求时建造[COLOR_BUILDING_TEXT]土耳其浴室[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Hammam[COLOR_REVERT], the Turkish replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], increases a city's happiness.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PHOENICIAN_GLASSMAKER</Tag>
+		<English>玻璃作坊</English>
+		<L1/><L2/><L3/><L4/><Chinese>玻璃作坊</Chinese><French>Glassmaker</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PHOENICIAN_GLASSMAKER_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]玻璃制造厂[COLOR_REVERT]，腓尼基人取代[COLOR_BUILDING_TEXT]市场[COLOR_REVERT]，增加城市的贸易路线产量。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]玻璃制造厂[COLOR_REVERT]，腓尼基人取代[COLOR_BUILDING_TEXT]市场[COLOR_REVERT]，增加城市的贸易路线产量。</Chinese><French>The [COLOR_BUILDING_TEXT]Glassmaker[COLOR_REVERT], the Phoenician replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], increases a city's trade route yield.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PLAGUE</Tag>
+		<English>瘟疫</English>
+		<L1/><L2/><L3/><L4/><Chinese>瘟疫</Chinese><French>Plague</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PORTUGUESE_FEITORIA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Feitoria[COLOR_REVERT]，葡萄牙人取代[COLOR_BUILDING_TEXT]海关[COLOR_REVERT]，提高了水田的商业产出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]Feitoria[COLOR_REVERT]，葡萄牙人取代[COLOR_BUILDING_TEXT]海关[COLOR_REVERT]，提高了水田的商业产出。</Chinese><French>The [COLOR_BUILDING_TEXT]Feitoria[COLOR_REVERT], the Portuguese replacement for the [COLOR_BUILDING_TEXT]Customs House[COLOR_REVERT], improves the commerce output of water plots.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PORTUGUESE_FEITORIA</Tag>
+		<English>费里亚托</English>
+		<L1/><L2/><L3/><L4/><Chinese>费里亚托</Chinese><French>Feitoria</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POLISH_SEJMIK</Tag>
+		<English>贵族议会</English>
+		<L1/><L2/><L3/><L4/><Chinese>贵族议会</Chinese><French>Sejmik</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POLISH_SEJMIK_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]波兰地区议会[COLOR_REVERT]，波兰替代[COLOR_BUILDING_TEXT]法院[COLOR_REVERT]，提供少量现金和幸福奖金。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]波兰地区议会[COLOR_REVERT]，波兰替代[COLOR_BUILDING_TEXT]法院[COLOR_REVERT]，提供少量现金和幸福奖金。</Chinese><French>The [COLOR_BUILDING_TEXT]Sejmik[COLOR_REVERT], the Polish replacement for the [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT], provides a small cash and happiness bonus.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POLYNESIAN_MALAE</Tag>
+		<English>玛拉</English>
+		<L1/><L2/><L3/><L4/><Chinese>玛拉</Chinese><French>Mala'e</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POLYNESIAN_MALAE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]玛拉[COLOR_REVERT]，波利尼西亚人取代[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]，提供额外的文化，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_REVERT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]玛拉[COLOR_REVERT]，波利尼西亚人取代[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]，提供额外的文化，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_REVERT]专家。</Chinese><French>The [COLOR_BUILDING_TEXT]Mala'e[COLOR_REVERT], the Polynesian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides additional culture and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RECYCLING_CENTER_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]回收中心[COLOR_REVERT]可消除城市设施带来的污染，例如[COLOR_BUILDING_TEXT]煅造场[COLOR_REVERT]和[COLOR_BUILDING_TEXT]工场[COLOR_REVERT]，污染问题在大城市中相当严重。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]回收中心[COLOR_REVERT]可消除城市设施带来的污染，例如[COLOR_BUILDING_TEXT]煅造场[COLOR_REVERT]和[COLOR_BUILDING_TEXT]工场[COLOR_REVERT]，污染问题在大城市中相当严重。</Chinese><French>[COLOR_BUILDING_TEXT]Recycling Centres[COLOR_REVERT] reduce unhealthiness from corporations.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PUBLIC_TRANSPORTATION_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]公交系统[COLOR_REVERT]提升城市健康度，如有[COLOR_HIGHLIGHT_TEXT]石油[COLOR_REVERT]再额外增加健康，如实行[COLOR_HIGHLIGHT_TEXT]绿色经济[COLOR_REVERT]再额外增加健康度。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]公交系统[COLOR_REVERT]提升城市健康度，如有[COLOR_HIGHLIGHT_TEXT]石油[COLOR_REVERT]再额外增加健康，如实行[COLOR_HIGHLIGHT_TEXT]绿色经济[COLOR_REVERT]再额外增加健康度。</Chinese><French>[COLOR_BUILDING_TEXT]Public Transportation[COLOR_REVERT] increases a city's health and even more increase the city's healthiness with access to [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RUSSIAN_RESEARCH_INSTITUTE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]研究所[COLOR_REVERT]是俄国的特色建筑，替代[COLOR_BUILDING_TEXT]实验室[COLOR_REVERT]，使所在城市可免费额外供养科学家，并提升科学研究和太空飞船建造速度。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]研究所[COLOR_REVERT]是俄国的特色建筑，替代[COLOR_BUILDING_TEXT]实验室[COLOR_REVERT]，使所在城市可免费额外供养科学家，并提升科学研究和太空飞船建造速度。</Chinese><French>The [COLOR_BUILDING_TEXT]Research Institute[COLOR_REVERT], the Russian replacement for the [COLOR_BUILDING_TEXT]Laboratory[COLOR_REVERT], provides a free [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist and allows you to hire one extra [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SECURITY_BUREAU</Tag>
+		<English>安全局</English>
+		<L1/><L2/><L3/><L4/><Chinese>安全局</Chinese><French>Security Bureau</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STABLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]马厩[COLOR_REVERT]为骑乘单位提供额外经验值。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]马厩[COLOR_REVERT]为骑乘单位提供额外经验值。</Chinese><French>[COLOR_BUILDING_TEXT]Stables[COLOR_REVERT] grant experience points to [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] built in their cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SECURITY_BUREAU_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]安全局[COLOR_REVERT]增加敌方在其城市的间谍任务成本，并将[COLOR_HIGHLIGHT_TEXT]线人I[COLOR_REVERT]授予在其城市建造的[COLOR_UNIT_TEXT]间谍单元[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]安全局[COLOR_REVERT]增加敌方在其城市的间谍任务成本，并将[COLOR_HIGHLIGHT_TEXT]线人I[COLOR_REVERT]授予在其城市建造的[COLOR_UNIT_TEXT]间谍单元[COLOR_REVERT]。</Chinese><French>[COLOR_BUILDING_TEXT]Security Bureaus[COLOR_REVERT] increase the cost of enemy espionage missions in their city and grant [COLOR_HIGHLIGHT_TEXT]Informant I[COLOR_REVERT] to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in its city.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPANISH_CITADEL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]城防要塞[COLOR_REVERT]是西班牙的特色建筑，替代[COLOR_BUILDING_TEXT]城堡[COLOR_REVERT]，可提升城市防御冷兵器时代单位的能力，并使所在城市新组建的压制武器获得额外经验值。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]城防要塞[COLOR_REVERT]是西班牙的特色建筑，替代[COLOR_BUILDING_TEXT]城堡[COLOR_REVERT]，可提升城市防御冷兵器时代单位的能力，并使所在城市新组建的压制武器获得额外经验值。</Chinese><French>The [COLOR_BUILDING_TEXT]Citadel[COLOR_REVERT], the Spanish replacement for the [COLOR_BUILDING_TEXT]Castle[COLOR_REVERT], is half the production cost and lowers city maintenance.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SMOKEHOUSE</Tag>
+		<English>熏肉坊</English>
+		<L1/><L2/><L3/><L4/><Chinese>熏肉坊</Chinese><French>Smokehouse</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SMOKEHOUSE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]熏房[COLOR_REVERT]通过访问[COLOR_HIGHLIGHT_TEXT]奶牛[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]鹿[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]猪[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]羊[COLOR_REVERT]来增加城市的健康。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]熏房[COLOR_REVERT]通过访问[COLOR_HIGHLIGHT_TEXT]奶牛[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]鹿[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]猪[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]羊[COLOR_REVERT]来增加城市的健康。</Chinese><French>[COLOR_BUILDING_TEXT]Smokehouses[COLOR_REVERT] increase the city's health with access to [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROMAN_FORUM_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]中心广场[COLOR_REVERT]是罗马的特色建筑，替代[COLOR_BUILDING_TEXT]市场[COLOR_REVERT]，可增加城市财富积累以及 [COLOR_HIGHLIGHT_TEXT]历史伟人[COLOR_REVERT]的产生几率。在拥有[COLOR_HIGHLIGHT_TEXT]毛皮[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]象牙[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]丝绸[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]鲸鱼[COLOR_REVERT]的条件下还能额外提供快乐点数。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]中心广场[COLOR_REVERT]是罗马的特色建筑，替代[COLOR_BUILDING_TEXT]市场[COLOR_REVERT]，可增加城市财富积累以及 [COLOR_HIGHLIGHT_TEXT]历史伟人[COLOR_REVERT]的产生几率。在拥有[COLOR_HIGHLIGHT_TEXT]毛皮[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]象牙[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]丝绸[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]鲸鱼[COLOR_REVERT]的条件下还能额外提供快乐点数。</Chinese><French>The [COLOR_BUILDING_TEXT]Forum[COLOR_REVERT], the Roman replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], increases a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allows you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BABYLONIAN_ZIGGURAT</Tag>
+		<English>自贡</English>
+		<L1/><L2/><L3/><L4/><Chinese>自贡</Chinese><French>Ziggurat</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BABYLONIAN_ZIGGURAT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]之古拉[COLOR_BUILDING_TEXT]是继[COLOR_HIGHLIGHT_TEXT]阿努纳基[COLOR_BUILDING_TEXT]之后起源于美索不达米亚的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]之古拉[COLOR_BUILDING_TEXT]是继[COLOR_HIGHLIGHT_TEXT]阿努纳基[COLOR_BUILDING_TEXT]之后起源于美索不达米亚的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Ziggurat[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Anunnaki[COLOR_REVERT] and originate in Mesopotamia.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SUPERMARKET_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]超级市场[COLOR_REVERT]提升城市健康度，如拥有[COLOR_HIGHLIGHT_TEXT]野鹿[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]牛群[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]家猪[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]绵羊[COLOR_REVERT]还可提升其效果。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]超级市场[COLOR_REVERT]提升城市健康度，如拥有[COLOR_HIGHLIGHT_TEXT]野鹿[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]牛群[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]家猪[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]绵羊[COLOR_REVERT]还可提升其效果。</Chinese><French>[COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT] increase food output in cities with access to power.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAMIL_SANGAM</Tag>
+		<English>桑迦姆</English>
+		<L1/><L2/><L3/><L4/><Chinese>桑迦姆</Chinese><French>Sangam</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAMIL_SANGAM_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Sangam[COLOR_REVERT]，泰米尔替代品[COLOR_BUILDING_TEXT]库[COLOR_REVERT]，提供额外的文化提升，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_REVERT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]Sangam[COLOR_REVERT]，泰米尔替代品[COLOR_BUILDING_TEXT]库[COLOR_REVERT]，提供额外的文化提升，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_REVERT]专家。</Chinese><French>The [COLOR_BUILDING_TEXT]Sangam[COLOR_REVERT], the Tamil replacement the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], provides an extra cultural boost and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ZULU_IKHANDA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]特训兵营[COLOR_REVERT]是祖鲁的特色建筑，替代[COLOR_BUILDING_TEXT]兵营[COLOR_REVERT]，可使所在城市新组建的单位获得额外经验值，并减少城市维护费。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]特训兵营[COLOR_REVERT]是祖鲁的特色建筑，替代[COLOR_BUILDING_TEXT]兵营[COLOR_REVERT]，可使所在城市新组建的单位获得额外经验值，并减少城市维护费。</Chinese><French>The [COLOR_BUILDING_TEXT]Ikhanda[COLOR_REVERT], the Zulu replacement for the [COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT], are more expensive and lower city maintenance costs.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_THAI_HO_TRAI</Tag>
+		<English>藏经阁</English>
+		<L1/><L2/><L3/><L4/><Chinese>藏经阁</Chinese><French>Ho Trai</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_THAI_HO_TRAI_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]何特拉[COLOR_REVERT]，泰语替代[COLOR_BUILDING_TEXT]库[COLOR_REVERT]，增加幸福感，而且更便宜。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]何特拉[COLOR_REVERT]，泰语替代[COLOR_BUILDING_TEXT]库[COLOR_REVERT]，增加幸福感，而且更便宜。</Chinese><French>The [COLOR_BUILDING_TEXT]Ho Trai[COLOR_REVERT], the Thai replacement for the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], increases happiness and is cheaper.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_THEATRE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]剧场[COLOR_REVERT]提升城市文化值，并可通过文化滑杆调整快乐度。[COLOR_BUILDING_TEXT]剧场[COLOR_REVERT]也是建造[COLOR_BUILDING_TEXT]环球剧场[COLOR_REVERT]国家奇观的前提。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]剧场[COLOR_REVERT]提升城市文化值，并可通过文化滑杆调整快乐度。[COLOR_BUILDING_TEXT]剧场[COLOR_REVERT]也是建造[COLOR_BUILDING_TEXT]环球剧场[COLOR_REVERT]国家奇观的前提。</Chinese><French>[COLOR_BUILDING_TEXT]Theatres[COLOR_REVERT] increase a city's culture. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Theatres[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Cinemas[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Theatre[COLOR_REVERT] national wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TIBETAN_GOMPA</Tag>
+		<English>禅修堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>禅修堂</Chinese><French>Gompa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TIBETAN_GOMPA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]贡帕[COLOR_REVERT]，藏语替代[COLOR_BUILDING_TEXT]大学[COLOR_REVERT]，提供较少的研究，增加一个城市对预火药单位的防御，允许你雇用一个[COLOR_HIGHLIGHT_TEXT]牧师[COLOR_REVERT]专家，提供免费的[COLOR_HIGHLIGHT_TEXT]牧师[COLOR_REVERT]专家，不需要[COLOR_BUILDING_TEXT]库[COLOR_REVERT]，并且需要[COLOR_TECH_TEXT]纸张[COLOR_REVERT]技术，而不是[COLOR_TECH_TEXT]学术界[COLOR_REVERT]技术。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]贡帕[COLOR_REVERT]，藏语替代[COLOR_BUILDING_TEXT]大学[COLOR_REVERT]，提供较少的研究，增加一个城市对预火药单位的防御，允许你雇用一个[COLOR_HIGHLIGHT_TEXT]牧师[COLOR_REVERT]专家，提供免费的[COLOR_HIGHLIGHT_TEXT]牧师[COLOR_REVERT]专家，不需要[COLOR_BUILDING_TEXT]库[COLOR_REVERT]，并且需要[COLOR_TECH_TEXT]纸张[COLOR_REVERT]技术，而不是[COLOR_TECH_TEXT]学术界[COLOR_REVERT]技术。</Chinese><French>The [COLOR_BUILDING_TEXT]Gompa[COLOR_REVERT], the Tibetan replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], provides less research, increases a city's defenses against pre-gunpowder units, allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist, provides a free [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist, doesn't require a [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], and requires the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Academia[COLOR_REVERT] technology.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JEWISH_TEMPLE</Tag>
+		<English>犹太教堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>犹太教堂</Chinese><French>Jewish Synagogue</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JEWISH_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]寺庙[COLOR_REVERT]提升城市的快乐度和文化值。在游戏早期是扩展文明边界的有效方法。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]寺庙[COLOR_REVERT]提升城市的快乐度和文化值。在游戏早期是扩展文明边界的有效方法。</Chinese><French>[COLOR_BUILDING_TEXT]Synagogues[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Jewish Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Synagogues[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Jewish Sanhedrin[COLOR_REVERT] building.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JEWISH_MONASTERY</Tag>
+		<English>犹太教堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>犹太教堂</Chinese><French>Jewish Yeshiva</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JEWISH_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]允许你组建[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]，用于向其他城市传播信仰。并能提供文化产出，并对科研有少量促进作用。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]允许你组建[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]，用于向其他城市传播信仰。并能提供文化产出，并对科研有少量促进作用。</Chinese><French>[COLOR_BUILDING_TEXT]Yeshivas[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Jewish Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Jewish Rabbis[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Judaism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JEWISH_CATHEDRAL</Tag>
+		<English>犹太议会</English>
+		<L1/><L2/><L3/><L4/><Chinese>犹太议会</Chinese><French>Jewish Sanhedrin</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JEWISH_CATHEDRAL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]新教大教堂[COLOR_REVERT]极大地提高了所在城市的文化输出。它能使城市人口快乐 (若设定[COLOR_HIGHLIGHT_TEXT]新教[COLOR_REVERT]为国教)。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]新教大教堂[COLOR_REVERT]极大地提高了所在城市的文化输出。它能使城市人口快乐 (若设定[COLOR_HIGHLIGHT_TEXT]新教[COLOR_REVERT]为国教)。</Chinese><French>The [COLOR_BUILDING_TEXT]Sanhedrin[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Jewish Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Judaism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JEWISH_SHRINE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]诸圣堂[COLOR_REVERT] ([COLOR_BUILDING_TEXT]新教圣坛[COLOR_REVERT]) 能在每一个信仰 [COLOR_HIGHLIGHT_TEXT]新教[COLOR_REVERT]的城市获得每回合1金币的收入。它也向整个世界传播[COLOR_HIGHLIGHT_TEXT]新教[COLOR_REVERT]并且于所在城市中获得一位[COLOR_UNIT_TEXT]大预言家[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]诸圣堂[COLOR_REVERT] ([COLOR_BUILDING_TEXT]新教圣坛[COLOR_REVERT]) 能在每一个信仰 [COLOR_HIGHLIGHT_TEXT]新教[COLOR_REVERT]的城市获得每回合1金币的收入。它也向整个世界传播[COLOR_HIGHLIGHT_TEXT]新教[COLOR_REVERT]并且于所在城市中获得一位[COLOR_UNIT_TEXT]大预言家[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Temple of Solomon[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Jewish Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Judaism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Judaism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ORTHODOX_TEMPLE</Tag>
+		<English>东正教礼拜堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>东正教礼拜堂</Chinese><French>Orthodox Church</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ORTHODOX_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]正统寺庙[COLOR_REVERT]）增加城市的幸福感和文化。[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]需要建造[COLOR_BUILDING_TEXT]东正教大教堂[COLOR_REVERT]建筑。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]正统寺庙[COLOR_REVERT]）增加城市的幸福感和文化。[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]需要建造[COLOR_BUILDING_TEXT]东正教大教堂[COLOR_REVERT]建筑。</Chinese><French>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Orthodox Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Orthodox Cathedral[COLOR_REVERT] building.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ORTHODOX_MONASTERY</Tag>
+		<English>东正教修道院</English>
+		<L1/><L2/><L3/><L4/><Chinese>东正教修道院</Chinese><French>Orthodox Monastery</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ORTHODOX_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]（[COLOR_BUILDING_TEXT]东正教修道院[COLOR_REVERT]）允许您创建[COLOR_UNIT_TEXT]东正教传教士[COLOR_REVERT]，他们可以在其他城市传播[COLOR_HIGHLIGHT_TEXT]正统教[COLOR_REVERT]。它们也为研究提供了文化和些许推动。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]（[COLOR_BUILDING_TEXT]东正教修道院[COLOR_REVERT]）允许您创建[COLOR_UNIT_TEXT]东正教传教士[COLOR_REVERT]，他们可以在其他城市传播[COLOR_HIGHLIGHT_TEXT]正统教[COLOR_REVERT]。它们也为研究提供了文化和些许推动。</Chinese><French>[COLOR_BUILDING_TEXT]Monasteries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Orthodox Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Orthodox Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Orthodoxy[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ORTHODOX_CATHEDRAL</Tag>
+		<English>东正教大教堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>东正教大教堂</Chinese><French>Orthodox Cathedral</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ORTHODOX_CATHEDRAL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]大教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]东正教大教堂[COLOR_REVERT]）极大地增加了城市的文化产出。如果你的国家宗教是正统的[COLOR_REVERT]，或者你有权使用[COLOR_REVERT]香[COLOR_REVERT]，这会增加城市的幸福感。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]大教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]东正教大教堂[COLOR_REVERT]）极大地增加了城市的文化产出。如果你的国家宗教是正统的[COLOR_REVERT]，或者你有权使用[COLOR_REVERT]香[COLOR_REVERT]，这会增加城市的幸福感。</Chinese><French>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Orthodox Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Orthodoxy[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ORTHODOX_SHRINE</Tag>
+		<English>阿纳斯塔西斯教堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿纳斯塔西斯教堂</Chinese><French>Church of the Anastasis</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ORTHODOX_SHRINE_STRATEGY</Tag>
+		<English>阿纳斯塔西斯[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]东正教神殿[COLOR_REVERT]）为世界上每一个实行[COLOR_HIGHLIGHT_TEXT]正统[COLOR_REVERT]的城市每转产生一个金币，上限为20金币。它还传播了正统的[COLOR_REVERT]思想，并增加了城市产生一个[COLOR_UNIT_TEXT]伟大先知[COLOR_REVERT]的机会。</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿纳斯塔西斯[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]东正教神殿[COLOR_REVERT]）为世界上每一个实行[COLOR_HIGHLIGHT_TEXT]正统[COLOR_REVERT]的城市每转产生一个金币，上限为20金币。它还传播了正统的[COLOR_REVERT]思想，并增加了城市产生一个[COLOR_UNIT_TEXT]伟大先知[COLOR_REVERT]的机会。</Chinese><French>The [COLOR_BUILDING_TEXT]Church of the Anastasis[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Orthodox Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Orthodoxy[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Orthodoxy[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CATHOLIC_TEMPLE</Tag>
+		<English>天主教会</English>
+		<L1/><L2/><L3/><L4/><Chinese>天主教会</Chinese><French>Catholic Church</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CATHOLIC_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]天主教寺庙[COLOR_REVERT]）增加城市的幸福感和文化。[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]需要建造[COLOR_BUILDING_TEXT]天主教大教堂[COLOR_REVERT]建筑。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]天主教寺庙[COLOR_REVERT]）增加城市的幸福感和文化。[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]需要建造[COLOR_BUILDING_TEXT]天主教大教堂[COLOR_REVERT]建筑。</Chinese><French>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Catholic Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Catholic Cathedral[COLOR_REVERT] building.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CATHOLIC_MONASTERY</Tag>
+		<English>天主教修道院</English>
+		<L1/><L2/><L3/><L4/><Chinese>天主教修道院</Chinese><French>Catholic Monastery</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CATHOLIC_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]（[COLOR_BUILDING_TEXT]天主教修道院[COLOR_REVERT]）允许您创建[COLOR_UNIT_TEXT]天主教传教士[COLOR_REVERT]，他们可以在其他城市传播[COLOR_HIGHLIGHT_TEXT]天主教[COLOR_REVERT]。它们也为研究提供了文化和些许推动。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]（[COLOR_BUILDING_TEXT]天主教修道院[COLOR_REVERT]）允许您创建[COLOR_UNIT_TEXT]天主教传教士[COLOR_REVERT]，他们可以在其他城市传播[COLOR_HIGHLIGHT_TEXT]天主教[COLOR_REVERT]。它们也为研究提供了文化和些许推动。</Chinese><French>[COLOR_BUILDING_TEXT]Monasteries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Catholic Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Catholic Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Catholicism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CATHOLIC_CATHEDRAL</Tag>
+		<English>天主教大教堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>天主教大教堂</Chinese><French>Catholic Cathedral</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CATHOLIC_CATHEDRAL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]大教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]天主教大教堂[COLOR_REVERT]）极大地增加了城市的文化输出。如果天主教是你的国教，或者你有权使用香薰，这会增加城市的幸福感。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]大教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]天主教大教堂[COLOR_REVERT]）极大地增加了城市的文化输出。如果天主教是你的国教，或者你有权使用香薰，这会增加城市的幸福感。</Chinese><French>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Catholic Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Catholicism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CATHOLIC_SHRINE</Tag>
+		<English>圣彼得大教堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>圣彼得大教堂</Chinese><French>Saint Peter's Basilica</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CATHOLIC_SHRINE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]圣彼得大教堂[COLOR_BUILDING_TEXT]（[COLOR_BUILDING_TEXT]天主教神殿[COLOR_BUILDING_TEXT]）为世界上每一个信奉[COLOR_BUILDING_TEXT]天主教[COLOR_BUILDING_TEXT]的城市每转一圈生产一枚黄金。它还传播了天主教（COLOR_HIGHLIGHT_TEXT）的思想，并增加了它的城市产生一个（COLOR_UNIT_TEXT）伟大先知（COLOR_REVERT）的机会。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]圣彼得大教堂[COLOR_BUILDING_TEXT]（[COLOR_BUILDING_TEXT]天主教神殿[COLOR_BUILDING_TEXT]）为世界上每一个信奉[COLOR_BUILDING_TEXT]天主教[COLOR_BUILDING_TEXT]的城市每转一圈生产一枚黄金。它还传播了天主教（COLOR_HIGHLIGHT_TEXT）的思想，并增加了它的城市产生一个（COLOR_UNIT_TEXT）伟大先知（COLOR_REVERT）的机会。</Chinese><French>[COLOR_BUILDING_TEXT]Saint Peter's Basilica[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Catholic Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Catholicism[COLOR_REVERT]. It also spreads [COLOR_HIGHLIGHT_TEXT]Catholicism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROTESTANT_TEMPLE</Tag>
+		<English>新教教堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>新教教堂</Chinese><French>Protestant Church</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROTESTANT_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]新教寺庙[COLOR_REVERT]）增加城市的幸福感和文化。[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]需要建造[COLOR_BUILDING_TEXT]新教大教堂[COLOR_REVERT]建筑。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]新教寺庙[COLOR_REVERT]）增加城市的幸福感和文化。[COLOR_BUILDING_TEXT]教堂[COLOR_REVERT]需要建造[COLOR_BUILDING_TEXT]新教大教堂[COLOR_REVERT]建筑。</Chinese><French>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Protestant Cathedral[COLOR_REVERT] building.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROTESTANT_MONASTERY</Tag>
+		<English>新教神学院</English>
+		<L1/><L2/><L3/><L4/><Chinese>新教神学院</Chinese><French>Protestant Seminary</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROTESTANT_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]神学院[COLOR_REVERT]（[COLOR_BUILDING_TEXT]新教修道院[COLOR_REVERT]）允许您创建[COLOR_UNIT_TEXT]新教传教士[COLOR_REVERT]，他们可以在其他城市传播[COLOR_HIGHLIGHT_TEXT]新教[COLOR_REVERT]。它们也为研究提供了文化和些许推动。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]神学院[COLOR_REVERT]（[COLOR_BUILDING_TEXT]新教修道院[COLOR_REVERT]）允许您创建[COLOR_UNIT_TEXT]新教传教士[COLOR_REVERT]，他们可以在其他城市传播[COLOR_HIGHLIGHT_TEXT]新教[COLOR_REVERT]。它们也为研究提供了文化和些许推动。</Chinese><French>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Protestant Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROTESTANT_CATHEDRAL</Tag>
+		<English>新教大教堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>新教大教堂</Chinese><French>Protestant Cathedral</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROTESTANT_CATHEDRAL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]大教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]新教大教堂[COLOR_REVERT]）极大地增加了城市的文化产出。如果你的国教是新教，或者你有权使用香，那么这会增加城市的幸福感。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]大教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]新教大教堂[COLOR_REVERT]）极大地增加了城市的文化产出。如果你的国教是新教，或者你有权使用香，那么这会增加城市的幸福感。</Chinese><French>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROTESTANT_SHRINE</Tag>
+		<English>新教圣坛</English>
+		<L1/><L2/><L3/><L4/><Chinese>新教圣坛</Chinese><French>All Saints' Church</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROTESTANT_SHRINE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]所有圣徒教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]新教神殿[COLOR_REVERT]）为世界上每一个实行[COLOR_HIGHLIGHT_TEXT]新教[COLOR_REVERT]的城市每转产生一枚金币，上限为20枚。它还传播了新教的思想，增加了城市产生伟大先知的机会。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]所有圣徒教堂[COLOR_REVERT]（[COLOR_BUILDING_TEXT]新教神殿[COLOR_REVERT]）为世界上每一个实行[COLOR_HIGHLIGHT_TEXT]新教[COLOR_REVERT]的城市每转产生一枚金币，上限为20枚。它还传播了新教的思想，增加了城市产生伟大先知的机会。</Chinese><French>The [COLOR_BUILDING_TEXT]All Saints' Church[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ISLAMIC_TEMPLE</Tag>
+		<English>伊斯兰礼拜堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊斯兰礼拜堂</Chinese><French>Islamic Mosque</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ISLAMIC_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]寺庙[COLOR_REVERT]提升城市的快乐度和文化值。在游戏早期是扩展文明边界的有效方法。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]寺庙[COLOR_REVERT]提升城市的快乐度和文化值。在游戏早期是扩展文明边界的有效方法。</Chinese><French>[COLOR_BUILDING_TEXT]Mosques[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Islamic Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Mosques[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Islamic Grand Mosque[COLOR_REVERT] building.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ISLAMIC_MONASTERY</Tag>
+		<English>伊斯兰修道院</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊斯兰修道院</Chinese><French>Islamic Madrassa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ISLAMIC_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]允许你组建[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]，用于向其他城市传播信仰。并能提供文化产出，并对科研有少量促进作用。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]允许你组建[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]，用于向其他城市传播信仰。并能提供文化产出，并对科研有少量促进作用。</Chinese><French>[COLOR_BUILDING_TEXT]Madrasahs[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Islamic Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Islamic Imams[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Islam[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ISLAMIC_CATHEDRAL</Tag>
+		<English>伊斯兰清真寺</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊斯兰清真寺</Chinese><French>Islamic Grand Mosque</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ISLAMIC_CATHEDRAL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]伊斯兰清真寺[COLOR_REVERT]（[COLOR_BUILDING_TEXT]伊斯兰大教堂[COLOR_REVERT]）可大幅提升城市的文化产出。能使市民更快乐（如果[COLOR_HIGHLIGHT_TEXT]伊斯兰教[COLOR_REVERT]是官方信仰）。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]伊斯兰清真寺[COLOR_REVERT]（[COLOR_BUILDING_TEXT]伊斯兰大教堂[COLOR_REVERT]）可大幅提升城市的文化产出。能使市民更快乐（如果[COLOR_HIGHLIGHT_TEXT]伊斯兰教[COLOR_REVERT]是官方信仰）。</Chinese><French>The [COLOR_BUILDING_TEXT]Grand Mosque[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Islamic Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Islam[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ISLAMIC_SHRINE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]克尔白天房[COLOR_REVERT]（[COLOR_BUILDING_TEXT]伊斯兰教圣坛[COLOR_REVERT]）每回合可从每座信仰[COLOR_HIGHLIGHT_TEXT]伊斯兰教[COLOR_REVERT]的城市获得一个金币。并能向世界传播[COLOR_HIGHLIGHT_TEXT]伊斯兰教[COLOR_REVERT]，还可提升城市产生[COLOR_UNIT_TEXT]历史伟人[COLOR_REVERT]的几率。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]克尔白天房[COLOR_REVERT]（[COLOR_BUILDING_TEXT]伊斯兰教圣坛[COLOR_REVERT]）每回合可从每座信仰[COLOR_HIGHLIGHT_TEXT]伊斯兰教[COLOR_REVERT]的城市获得一个金币。并能向世界传播[COLOR_HIGHLIGHT_TEXT]伊斯兰教[COLOR_REVERT]，还可提升城市产生[COLOR_UNIT_TEXT]历史伟人[COLOR_REVERT]的几率。</Chinese><French>The [COLOR_BUILDING_TEXT]Masjid al-Haram[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Islamic Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Islam[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Islam[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HINDU_TEMPLE</Tag>
+		<English>印度教神庙</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度教神庙</Chinese><French>Hindu Mandir</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HINDU_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]寺庙[COLOR_REVERT]提升城市的快乐度和文化值。在游戏早期是扩展文明边界的有效方法。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]寺庙[COLOR_REVERT]提升城市的快乐度和文化值。在游戏早期是扩展文明边界的有效方法。</Chinese><French>[COLOR_BUILDING_TEXT]Mandirs[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Hindu Temples[COLOR_REVERT]) increase a city's happiness and culture. The first player to build a [COLOR_BUILDING_TEXT]Mandir[COLOR_REVERT] founds Buddhism. [COLOR_BUILDING_TEXT]Mandirs[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Hindu Kshetra[COLOR_REVERT] building.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HINDU_MONASTERY</Tag>
+		<English>印度教静修院</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度教静修院</Chinese><French>Hindu Ashram</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HINDU_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]允许你组建[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]，用于向其他城市传播信仰。并能提供文化产出，并对科研有少量促进作用。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]允许你组建[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]，用于向其他城市传播信仰。并能提供文化产出，并对科研有少量促进作用。</Chinese><French>[COLOR_BUILDING_TEXT]Ashrams[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Hindu Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Hindu Gurus[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Hinduism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HINDU_CATHEDRAL</Tag>
+		<English>印度教神殿</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度教神殿</Chinese><French>Hindu Kshetra</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HINDU_CATHEDRAL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]印度教神殿[COLOR_REVERT]（[COLOR_BUILDING_TEXT]印度教大教堂[COLOR_REVERT]）可大幅提升城市的文化产出。能使市民更快乐（如果[COLOR_HIGHLIGHT_TEXT]印度教[COLOR_REVERT]是官方信仰）。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]印度教神殿[COLOR_REVERT]（[COLOR_BUILDING_TEXT]印度教大教堂[COLOR_REVERT]）可大幅提升城市的文化产出。能使市民更快乐（如果[COLOR_HIGHLIGHT_TEXT]印度教[COLOR_REVERT]是官方信仰）。</Chinese><French>The [COLOR_BUILDING_TEXT]Kshetra[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Hindu Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Hinduism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HINDU_SHRINE</Tag>
+		<English>印度教黄金殿</English>
+		<L1/><L2/><L3/><L4/><Chinese>印度教黄金殿</Chinese><French>Vishwanath</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HINDU_SHRINE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]印度教黄金殿[COLOR_REVERT]（[COLOR_BUILDING_TEXT]印度教圣坛[COLOR_REVERT]）每回合可从每座信仰[COLOR_HIGHLIGHT_TEXT]印度教[COLOR_REVERT]的城市获得一个金币。并能向世界传播[COLOR_HIGHLIGHT_TEXT]印度教[COLOR_REVERT]，还可提升城市产生[COLOR_UNIT_TEXT]历史伟人[COLOR_REVERT]的几率。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]印度教黄金殿[COLOR_REVERT]（[COLOR_BUILDING_TEXT]印度教圣坛[COLOR_REVERT]）每回合可从每座信仰[COLOR_HIGHLIGHT_TEXT]印度教[COLOR_REVERT]的城市获得一个金币。并能向世界传播[COLOR_HIGHLIGHT_TEXT]印度教[COLOR_REVERT]，还可提升城市产生[COLOR_UNIT_TEXT]历史伟人[COLOR_REVERT]的几率。</Chinese><French>The [COLOR_BUILDING_TEXT]Vishwanath[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Hindu Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Hinduism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Hinduism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BUDDHIST_TEMPLE</Tag>
+		<English>佛堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>佛堂</Chinese><French>Buddhist Stupa</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BUDDHIST_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]寺庙[COLOR_REVERT]提升城市的快乐度和文化值。在游戏早期是扩展文明边界的有效方法。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]寺庙[COLOR_REVERT]提升城市的快乐度和文化值。在游戏早期是扩展文明边界的有效方法。</Chinese><French>[COLOR_BUILDING_TEXT]Stupas[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Buddhist Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Stupas[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Buddhist Chaitya[COLOR_REVERT] building.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BUDDHIST_MONASTERY</Tag>
+		<English>佛院</English>
+		<L1/><L2/><L3/><L4/><Chinese>佛院</Chinese><French>Buddhist Sangha</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BUDDHIST_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]允许你组建[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]，用于向其他城市传播信仰。并能提供文化产出，并对科研有少量促进作用。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]允许你组建[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]，用于向其他城市传播信仰。并能提供文化产出，并对科研有少量促进作用。</Chinese><French>[COLOR_BUILDING_TEXT]Sanghas[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Buddhist Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Buddhist Bhikkus[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Buddhism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BUDDHIST_CATHEDRAL</Tag>
+		<English>佛寺</English>
+		<L1/><L2/><L3/><L4/><Chinese>佛寺</Chinese><French>Buddhist Chaitya</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BUDDHIST_CATHEDRAL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]佛寺[COLOR_REVERT]（[COLOR_BUILDING_TEXT]佛教大教堂[COLOR_REVERT]）可大幅提升城市的文化产出。能使市民更快乐（如果[COLOR_HIGHLIGHT_TEXT]佛教[COLOR_REVERT]是官方信仰）。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]佛寺[COLOR_REVERT]（[COLOR_BUILDING_TEXT]佛教大教堂[COLOR_REVERT]）可大幅提升城市的文化产出。能使市民更快乐（如果[COLOR_HIGHLIGHT_TEXT]佛教[COLOR_REVERT]是官方信仰）。</Chinese><French>The [COLOR_BUILDING_TEXT]Chaitya[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Buddhist Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Buddhism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BUDDHIST_SHRINE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]大菩提寺[COLOR_REVERT]（[COLOR_BUILDING_TEXT]佛教圣坛[COLOR_REVERT]）每回合可从每座信仰[COLOR_HIGHLIGHT_TEXT]佛教[COLOR_REVERT]的城市获得一个金币。并能向世界传播[COLOR_HIGHLIGHT_TEXT]佛教[COLOR_REVERT]，并提升城市产生[COLOR_UNIT_TEXT]历史伟人[COLOR_REVERT]的几率。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]大菩提寺[COLOR_REVERT]（[COLOR_BUILDING_TEXT]佛教圣坛[COLOR_REVERT]）每回合可从每座信仰[COLOR_HIGHLIGHT_TEXT]佛教[COLOR_REVERT]的城市获得一个金币。并能向世界传播[COLOR_HIGHLIGHT_TEXT]佛教[COLOR_REVERT]，并提升城市产生[COLOR_UNIT_TEXT]历史伟人[COLOR_REVERT]的几率。</Chinese><French>The [COLOR_BUILDING_TEXT]Mahabodhi[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Buddhist Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Buddhism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Buddhism[COLOR_REVERT] throughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFUCIAN_TEMPLE</Tag>
+		<English>学馆</English>
+		<L1/><L2/><L3/><L4/><Chinese>学馆</Chinese><French>Confucian Miao</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFUCIAN_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]寺庙[COLOR_REVERT]提升城市的快乐度和文化值。在游戏早期是扩展文明边界的有效方法。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]寺庙[COLOR_REVERT]提升城市的快乐度和文化值。在游戏早期是扩展文明边界的有效方法。</Chinese><French>[COLOR_BUILDING_TEXT]Miaos[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Confucian Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Miaos[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Confucian Xue Gong[COLOR_REVERT] building.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFUCIAN_MONASTERY</Tag>
+		<English>书院</English>
+		<L1/><L2/><L3/><L4/><Chinese>书院</Chinese><French>Confucian Academy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFUCIAN_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]允许你组建[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]，用于向其他城市传播信仰。并能提供文化产出，并对科研有少量促进作用。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]允许你组建[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]，用于向其他城市传播信仰。并能提供文化产出，并对科研有少量促进作用。</Chinese><French>[COLOR_BUILDING_TEXT]Academies[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Confucian Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Confucian Scholars[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Confucianism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFUCIAN_CATHEDRAL</Tag>
+		<English>学宫</English>
+		<L1/><L2/><L3/><L4/><Chinese>学宫</Chinese><French>Confucian Guozijian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFUCIAN_CATHEDRAL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]书院[COLOR_REVERT]（[COLOR_BUILDING_TEXT]儒学大教堂[COLOR_REVERT]）可大幅提升城市的文化产出。能使市民更快乐（如果[COLOR_HIGHLIGHT_TEXT]儒学[COLOR_REVERT]是官方信仰）。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]书院[COLOR_REVERT]（[COLOR_BUILDING_TEXT]儒学大教堂[COLOR_REVERT]）可大幅提升城市的文化产出。能使市民更快乐（如果[COLOR_HIGHLIGHT_TEXT]儒学[COLOR_REVERT]是官方信仰）。</Chinese><French>The [COLOR_BUILDING_TEXT]Guozijian[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Confucian Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Confucianism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFUCIAN_SHRINE</Tag>
+		<English>孔庙</English>
+		<L1/><L2/><L3/><L4/><Chinese>孔庙</Chinese><French>San Kong</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFUCIAN_SHRINE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]孔庙[COLOR_REVERT]（[COLOR_BUILDING_TEXT]儒学圣坛[COLOR_REVERT]）每回合可从每座信仰[COLOR_HIGHLIGHT_TEXT]儒学[COLOR_REVERT]的城市获得一个金币。并能向世界传播[COLOR_HIGHLIGHT_TEXT]儒学[COLOR_REVERT]，还可提升城市产生[COLOR_UNIT_TEXT]历史伟人[COLOR_REVERT]的几率。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]孔庙[COLOR_REVERT]（[COLOR_BUILDING_TEXT]儒学圣坛[COLOR_REVERT]）每回合可从每座信仰[COLOR_HIGHLIGHT_TEXT]儒学[COLOR_REVERT]的城市获得一个金币。并能向世界传播[COLOR_HIGHLIGHT_TEXT]儒学[COLOR_REVERT]，还可提升城市产生[COLOR_UNIT_TEXT]历史伟人[COLOR_REVERT]的几率。</Chinese><French>The [COLOR_BUILDING_TEXT]San Kong[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Confucian Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Confucianism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Confucianism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAOIST_TEMPLE</Tag>
+		<English>道观</English>
+		<L1/><L2/><L3/><L4/><Chinese>道观</Chinese><French>Taoist Guan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAOIST_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]寺庙[COLOR_REVERT]提升城市的快乐度和文化值。在游戏早期是扩展文明边界的有效方法。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]寺庙[COLOR_REVERT]提升城市的快乐度和文化值。在游戏早期是扩展文明边界的有效方法。</Chinese><French>[COLOR_BUILDING_TEXT]Guans[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Taoist Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Guans[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Taoist Gong[COLOR_REVERT] building.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAOIST_MONASTERY</Tag>
+		<English>道院</English>
+		<L1/><L2/><L3/><L4/><Chinese>道院</Chinese><French>Taoist Dongtian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAOIST_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]允许你组建[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]，用于向其他城市传播信仰。并能提供文化产出，并对科研有少量促进作用。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]修道院[COLOR_REVERT]允许你组建[COLOR_UNIT_TEXT]传教士[COLOR_REVERT]，用于向其他城市传播信仰。并能提供文化产出，并对科研有少量促进作用。</Chinese><French>[COLOR_BUILDING_TEXT]Dongtianas[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Taoist Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Taoist Daoshis[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Taoism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAOIST_CATHEDRAL</Tag>
+		<English>道宫</English>
+		<L1/><L2/><L3/><L4/><Chinese>道宫</Chinese><French>Taoist Gong</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAOIST_CATHEDRAL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]道宫[COLOR_REVERT]（[COLOR_BUILDING_TEXT]道教大教堂[COLOR_REVERT]）可大幅提升城市的文化产出。能使市民更快乐（如果[COLOR_HIGHLIGHT_TEXT]道教[COLOR_REVERT]是官方信仰）。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]道宫[COLOR_REVERT]（[COLOR_BUILDING_TEXT]道教大教堂[COLOR_REVERT]）可大幅提升城市的文化产出。能使市民更快乐（如果[COLOR_HIGHLIGHT_TEXT]道教[COLOR_REVERT]是官方信仰）。</Chinese><French>The [COLOR_BUILDING_TEXT]Gong[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Taoist Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Taoism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAOIST_SHRINE</Tag>
+		<English>岱庙</English>
+		<L1/><L2/><L3/><L4/><Chinese>岱庙</Chinese><French>The Temple of Heaven</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAOIST_SHRINE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]岱庙[COLOR_REVERT]（[COLOR_BUILDING_TEXT]道教圣坛[COLOR_REVERT]）每回合可从每座信仰[COLOR_HIGHLIGHT_TEXT]道教[COLOR_REVERT]的城市获得一个金币。并能向世界传播[COLOR_HIGHLIGHT_TEXT]道教[COLOR_REVERT]，还可提升城市产生[COLOR_UNIT_TEXT]历史伟人[COLOR_REVERT]的几率。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]岱庙[COLOR_REVERT]（[COLOR_BUILDING_TEXT]道教圣坛[COLOR_REVERT]）每回合可从每座信仰[COLOR_HIGHLIGHT_TEXT]道教[COLOR_REVERT]的城市获得一个金币。并能向世界传播[COLOR_HIGHLIGHT_TEXT]道教[COLOR_REVERT]，还可提升城市产生[COLOR_UNIT_TEXT]历史伟人[COLOR_REVERT]的几率。</Chinese><French>The [COLOR_BUILDING_TEXT]Temple of Heaven[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Taoist Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Taoism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Taoism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ZOROASTRIAN_TEMPLE</Tag>
+		<English>祆祠</English>
+		<L1/><L2/><L3/><L4/><Chinese>祆祠</Chinese><French>Zoroastrian Fire Temple</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ZOROASTRIAN_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]火神庙[COLOR_REVERT]（[COLOR_BUILDING_TEXT]琐罗亚斯德教神庙[COLOR_REVERT]）增加城市的幸福感和文化。[COLOR_BUILDING_TEXT]建造[COLOR_BUILDING_TEXT]琐罗亚斯德王朝皇家火灾[COLOR_BUILDING_TEXT]建筑需要火神庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]火神庙[COLOR_REVERT]（[COLOR_BUILDING_TEXT]琐罗亚斯德教神庙[COLOR_REVERT]）增加城市的幸福感和文化。[COLOR_BUILDING_TEXT]建造[COLOR_BUILDING_TEXT]琐罗亚斯德王朝皇家火灾[COLOR_BUILDING_TEXT]建筑需要火神庙[COLOR_REVERT]。</Chinese><French>[COLOR_BUILDING_TEXT]Fire Temples[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Zoroastrian Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Fire Temples[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Zoroastrian Royal Fire[COLOR_REVERT] building.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ZOROASTRIAN_MONASTERY</Tag>
+		<English>祆教会堂</English>
+		<L1/><L2/><L3/><L4/><Chinese>祆教会堂</Chinese><French>Zoroastrian Pir</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ZOROASTRIAN_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Pirs[COLOR_REVERT]（[COLOR_BUILDING_TEXT]琐罗亚斯德修道院[COLOR_REVERT]）允许您创建[COLOR_UNIT_TEXT]琐罗亚斯德教Magu[COLOR_REVERT]，他们可以在其他城市传播[COLOR_HIGHLIGHT_TEXT]琐罗亚斯德教[COLOR_REVERT]。它们也为研究提供了文化和些许推动。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]Pirs[COLOR_REVERT]（[COLOR_BUILDING_TEXT]琐罗亚斯德修道院[COLOR_REVERT]）允许您创建[COLOR_UNIT_TEXT]琐罗亚斯德教Magu[COLOR_REVERT]，他们可以在其他城市传播[COLOR_HIGHLIGHT_TEXT]琐罗亚斯德教[COLOR_REVERT]。它们也为研究提供了文化和些许推动。</Chinese><French>[COLOR_BUILDING_TEXT]Pirs[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Zoroastrian Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Zoroastrian Magu[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Zoroastrianism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ZOROASTRIAN_CATHEDRAL</Tag>
+		<English>祆教圣火</English>
+		<L1/><L2/><L3/><L4/><Chinese>祆教圣火</Chinese><French>Zoroastrian Royal Fire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ZOROASTRIAN_CATHEDRAL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]皇家火灾[COLOR_REVERT]（[COLOR_BUILDING_TEXT]琐罗亚斯德大教堂[COLOR_REVERT]）极大地增加了城市的文化产出。如果你的国家宗教是琐罗亚斯德教，或者你有权使用熏香，这会增加城市的幸福感。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]皇家火灾[COLOR_REVERT]（[COLOR_BUILDING_TEXT]琐罗亚斯德大教堂[COLOR_REVERT]）极大地增加了城市的文化产出。如果你的国家宗教是琐罗亚斯德教，或者你有权使用熏香，这会增加城市的幸福感。</Chinese><French>The [COLOR_BUILDING_TEXT]Royal Fire[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Zoroastrian Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Zoroastrianism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ZOROASTRIAN_SHRINE</Tag>
+		<English>法恩贝格圣火坛</English>
+		<L1/><L2/><L3/><L4/><Chinese>法恩贝格圣火坛</Chinese><French>Adur Farnbag</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ZOROASTRIAN_SHRINE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]阿德尔·法恩巴格[COLOR_REVERT]（[COLOR_BUILDING_TEXT]琐罗亚斯德教圣殿[COLOR_REVERT]）为世界上每一个实行[COLOR_HIGHLIGHT_TEXT]琐罗亚斯德教[COLOR_REVERT]的城市每转产生一枚金币，上限为20枚金币。它也在全世界传播了琐罗亚斯德教[COLOR_REVERT]，并增加了这个城市产生[COLOR_REVERT]伟大先知[COLOR_REVERT]的机会。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]阿德尔·法恩巴格[COLOR_REVERT]（[COLOR_BUILDING_TEXT]琐罗亚斯德教圣殿[COLOR_REVERT]）为世界上每一个实行[COLOR_HIGHLIGHT_TEXT]琐罗亚斯德教[COLOR_REVERT]的城市每转产生一枚金币，上限为20枚金币。它也在全世界传播了琐罗亚斯德教[COLOR_REVERT]，并增加了这个城市产生[COLOR_REVERT]伟大先知[COLOR_REVERT]的机会。</Chinese><French>The [COLOR_BUILDING_TEXT]Adur Farnbag[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Zoroastrian Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Zoroastrianism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Zoroastrianism[COLOR_REVERT] throughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WEAVER</Tag>
+		<English>织布工坊</English>
+		<L1/><L2/><L3/><L4/><Chinese>织布工坊</Chinese><French>Weaver</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WEAVER_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]织工[COLOR_REVERT]增加城市的文化产出。他们还可以使用[COLOR_HIGHLIGHT_TEXT]绵羊[COLOR_HIGHLIGHT_TEXT]、[COLOR_HIGHLIGHT_TEXT]棉花[COLOR_HIGHLIGHT_TEXT]或[COLOR_HIGHLIGHT_TEXT]染料[COLOR_HIGHLIGHT_TEXT]，增加城市的幸福感，并允许您雇佣两名[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_HIGHLIGHT_TEXT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]织工[COLOR_REVERT]增加城市的文化产出。他们还可以使用[COLOR_HIGHLIGHT_TEXT]绵羊[COLOR_HIGHLIGHT_TEXT]、[COLOR_HIGHLIGHT_TEXT]棉花[COLOR_HIGHLIGHT_TEXT]或[COLOR_HIGHLIGHT_TEXT]染料[COLOR_HIGHLIGHT_TEXT]，增加城市的幸福感，并允许您雇佣两名[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_HIGHLIGHT_TEXT]专家。</Chinese><French>[COLOR_BUILDING_TEXT]Weavers[COLOR_REVERT] increase a city's cultural output. They also increase the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Cotton[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Dye[COLOR_REVERT] and allow you to hire two [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialists.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BATH</Tag>
+		<English>浴室</English>
+		<L1/><L2/><L3/><L4/><Chinese>浴室</Chinese><French>Bath</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BATH_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]浴室[COLOR_REVERT]增加城市的文化产出，为城市增加健康。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]浴室[COLOR_REVERT]增加城市的文化产出，为城市增加健康。</Chinese><French>[COLOR_BUILDING_TEXT]Baths[COLOR_REVERT] increase a city's cultural output and add health to a city.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONSTABULARY</Tag>
+		<English>警察局</English>
+		<L1/><L2/><L3/><L4/><Chinese>警察局</Chinese><French>Constabulary</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONSTABULARY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]警察局[COLOR_REVERT]降低城市的[COLOR_HIGHLIGHT_TEXT]厌战[COLOR_REVERT]并增加间谍活动。他们还增加了使用间谍滑块的幸福输出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]警察局[COLOR_REVERT]降低城市的[COLOR_HIGHLIGHT_TEXT]厌战[COLOR_REVERT]并增加间谍活动。他们还增加了使用间谍滑块的幸福输出。</Chinese><French>[COLOR_BUILDING_TEXT]Constabularies[COLOR_REVERT] lower a city's [COLOR_HIGHLIGHT_TEXT]War Weariness[COLOR_REVERT] and increase espionage. They also increase the happiness output from using the espionage slider.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COFFEEHOUSE</Tag>
+		<English>咖啡馆</English>
+		<L1/><L2/><L3/><L4/><Chinese>咖啡馆</Chinese><French>Coffee House</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COFFEEHOUSE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]咖啡馆[COLOR_REVERT]增加城市的文化产出。他们还可以使用[COLOR_HIGHLIGHT_TEXT]咖啡[COLOR_HIGHLIGHT_TEXT]、[COLOR_HIGHLIGHT_TEXT]糖[COLOR_HIGHLIGHT_TEXT]、[COLOR_HIGHLIGHT_TEXT]茶[COLOR_HIGHLIGHT_TEXT]或[COLOR_HIGHLIGHT_TEXT]烟草[COLOR_HIGHLIGHT_TEXT]，增加城市的幸福感。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]咖啡馆[COLOR_REVERT]增加城市的文化产出。他们还可以使用[COLOR_HIGHLIGHT_TEXT]咖啡[COLOR_HIGHLIGHT_TEXT]、[COLOR_HIGHLIGHT_TEXT]糖[COLOR_HIGHLIGHT_TEXT]、[COLOR_HIGHLIGHT_TEXT]茶[COLOR_HIGHLIGHT_TEXT]或[COLOR_HIGHLIGHT_TEXT]烟草[COLOR_HIGHLIGHT_TEXT]，增加城市的幸福感。</Chinese><French>[COLOR_BUILDING_TEXT]Coffee Houses[COLOR_REVERT] increase a city's cultural output. They also increase the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Coffee[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Tea[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Tabacco[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POST_OFFICE</Tag>
+		<English>邮局</English>
+		<L1/><L2/><L3/><L4/><Chinese>邮局</Chinese><French>Post Office</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POST_OFFICE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]邮局[COLOR_REVERT]提供额外的贸易路线并增加间谍活动。他们还允许你雇用一位[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_HIGHLIGHT_TEXT]和[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_HIGHLIGHT_TEXT]专家。[COLOR_BUILDING_TEXT]邮局[COLOR_REVERT]需要建立[COLOR_BUILDING_TEXT]新闻出版社[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]邮局[COLOR_REVERT]提供额外的贸易路线并增加间谍活动。他们还允许你雇用一位[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_HIGHLIGHT_TEXT]和[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_HIGHLIGHT_TEXT]专家。[COLOR_BUILDING_TEXT]邮局[COLOR_REVERT]需要建立[COLOR_BUILDING_TEXT]新闻出版社[COLOR_REVERT]。</Chinese><French>[COLOR_BUILDING_TEXT]Post Offices[COLOR_REVERT] provide an extra trade route and increase espionage. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Post Offices[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]News Presses[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WHARF</Tag>
+		<English>码头</English>
+		<L1/><L2/><L3/><L4/><Chinese>码头</Chinese><French>Wharf</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WHARF_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]码头[COLOR_REVERT]增加该城市的贸易路线收入，并增加该城市的健康，因为可以访问[COLOR_HIGHLIGHT_TEXT]蚌[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]蟹[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]鱼[COLOR_REVERT]资源。建造[COLOR_BUILDING_TEXT]特拉法加广场[COLOR_REVERT]世界奇观需要一个[COLOR_BUILDING_TEXT]码头[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]码头[COLOR_REVERT]增加该城市的贸易路线收入，并增加该城市的健康，因为可以访问[COLOR_HIGHLIGHT_TEXT]蚌[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]蟹[COLOR_REVERT]和[COLOR_HIGHLIGHT_TEXT]鱼[COLOR_REVERT]资源。建造[COLOR_BUILDING_TEXT]特拉法加广场[COLOR_REVERT]世界奇观需要一个[COLOR_BUILDING_TEXT]码头[COLOR_REVERT]。</Chinese><French>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CIVIC_SQUARE</Tag>
+		<English>市民广场</English>
+		<L1/><L2/><L3/><L4/><Chinese>市民广场</Chinese><French>Civic Square</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CIVIC_SQUARE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]市民广场[COLOR_REVERT]增加城市的文化输出。他们还提高了一个城市的[COLOR_HIGHLIGHT_TEXT]伟人[COLOR_REVERT]出生率，并允许你雇用一位[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]市民广场[COLOR_REVERT]增加城市的文化输出。他们还提高了一个城市的[COLOR_HIGHLIGHT_TEXT]伟人[COLOR_REVERT]出生率，并允许你雇用一位[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]专家。</Chinese><French>[COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] increase a city's cultural output. They also increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SEWER</Tag>
+		<English>城市排水系统（可由阿倍米尔斯排水站提供）</English>
+		<L1/><L2/><L3/><L4/><Chinese>城市排水系统（可由阿倍米尔斯排水站提供）</Chinese><French>Sewer</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SEWER_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]下水道[COLOR_REVERT]改善城市健康。[COLOR_BUILDING_TEXT]建造[COLOR_BUILDING_TEXT]修道院米尔斯[COLOR_REVERT]世界奇观需要下水道[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]下水道[COLOR_REVERT]改善城市健康。[COLOR_BUILDING_TEXT]建造[COLOR_BUILDING_TEXT]修道院米尔斯[COLOR_REVERT]世界奇观需要下水道[COLOR_REVERT]。</Chinese><French>[COLOR_BUILDING_TEXT]Sewers[COLOR_REVERT] improve a city's health. [COLOR_BUILDING_TEXT]Sewers[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Abbey Mills[COLOR_REVERT] world wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DISTILLERY</Tag>
+		<English>酿酒厂</English>
+		<L1/><L2/><L3/><L4/><Chinese>酿酒厂</Chinese><French>Distillery</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DISTILLERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]酒厂[COLOR_REVERT]增加城市的不健康，并提高COLOR_HIGHLIGHT_TEXT]大米[COLOR_REVERT]、COLOR_HIGHLIGHT_TEXT]小麦[COLOR_REVERT]、COLOR_HIGHLIGHT_TEXT]糖[COLOR_REVERT]和COLOR_HIGHLIGHT_TEXT]葡萄酒[COLOR_REVERT]的瓷砖产量。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]酒厂[COLOR_REVERT]增加城市的不健康，并提高COLOR_HIGHLIGHT_TEXT]大米[COLOR_REVERT]、COLOR_HIGHLIGHT_TEXT]小麦[COLOR_REVERT]、COLOR_HIGHLIGHT_TEXT]糖[COLOR_REVERT]和COLOR_HIGHLIGHT_TEXT]葡萄酒[COLOR_REVERT]的瓷砖产量。</Chinese><French>[COLOR_BUILDING_TEXT]Distilleries[COLOR_REVERT] increase the city's unhealthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NEWS_PRESS</Tag>
+		<English>新闻出版社</English>
+		<L1/><L2/><L3/><L4/><Chinese>新闻出版社</Chinese><French>News Press</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NEWS_PRESS_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]新闻媒体[COLOR_REVERT]增加城市的文化产出。他们还提高了一个城市的[COLOR_HIGHLIGHT_TEXT]伟人[COLOR_REVERT]出生率，并允许你雇用一位[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]新闻媒体[COLOR_REVERT]增加城市的文化产出。他们还提高了一个城市的[COLOR_HIGHLIGHT_TEXT]伟人[COLOR_REVERT]出生率，并允许你雇用一位[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]专家。</Chinese><French>[COLOR_BUILDING_TEXT]News Presses[COLOR_REVERT] increase a city's cultural output. They also increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CINEMA</Tag>
+		<English>电影院</English>
+		<L1/><L2/><L3/><L4/><Chinese>电影院</Chinese><French>Cinema</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CINEMA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]电影院[COLOR_REVERT]增加城市的文化产出。它们还可以增加幸福感的输出，如果你可以访问[COLOR_HIGHLIGHT_TEXT]热门单曲[COLOR_REVERT]，并允许你雇佣一位[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_REVERT]专家，则会增加幸福感的输出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]电影院[COLOR_REVERT]增加城市的文化产出。它们还可以增加幸福感的输出，如果你可以访问[COLOR_HIGHLIGHT_TEXT]热门单曲[COLOR_REVERT]，并允许你雇佣一位[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_REVERT]专家，则会增加幸福感的输出。</Chinese><French>[COLOR_BUILDING_TEXT]Cinemas[COLOR_REVERT] increase a city's cultural output. They also increase the happiness output and even more if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOTEL</Tag>
+		<English>酒店</English>
+		<L1/><L2/><L3/><L4/><Chinese>酒店</Chinese><French>Hotel</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOTEL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]酒店[COLOR_REVERT]增加城市的文化输出。它们还增加了贸易路线的产量，并增加了贸易路线的产量，每一个层次的文化。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]酒店[COLOR_REVERT]增加城市的文化输出。它们还增加了贸易路线的产量，并增加了贸易路线的产量，每一个层次的文化。</Chinese><French>[COLOR_BUILDING_TEXT]Hotels[COLOR_REVERT] increase a city's cultural output. They also increase trade route yield and increase trade route yield even more for each level of culture.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PARK</Tag>
+		<English>公园</English>
+		<L1/><L2/><L3/><L4/><Chinese>公园</Chinese><French>Park</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PARK_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]公园[COLOR_REVERT]增加城市的健康和幸福。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]公园[COLOR_REVERT]增加城市的健康和幸福。</Chinese><French>[COLOR_BUILDING_TEXT]Parks[COLOR_REVERT] increase a city's health and happiness.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SOLAR_PLANT</Tag>
+		<English>太阳能发电厂</English>
+		<L1/><L2/><L3/><L4/><Chinese>太阳能发电厂</Chinese><French>Solar Plant</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SOLAR_PLANT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]太阳能发电厂[COLOR_REVERT]提供无污染电力。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]太阳能发电厂[COLOR_REVERT]提供无污染电力。</Chinese><French>[COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT] provide pollution-free power.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ESTATE</Tag>
+		<English>庄园</English>
+		<L1/><L2/><L3/><L4/><Chinese>庄园</Chinese><French>Estate</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ESTATE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]庄园[COLOR_REVERT]大幅增加了一个城市的文化产出。它们还可以通过使用文化滑块增加幸福感输出，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_HIGHLIGHT_TEXT]和[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_HIGHLIGHT_TEXT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]庄园[COLOR_REVERT]大幅增加了一个城市的文化产出。它们还可以通过使用文化滑块增加幸福感输出，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]艺术家[COLOR_HIGHLIGHT_TEXT]和[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_HIGHLIGHT_TEXT]专家。</Chinese><French>[COLOR_BUILDING_TEXT]Estates[COLOR_REVERT] greatly increase a city's cultural output. They also increase the happiness output from using the culture slider and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PHARMACY</Tag>
+		<English>药店</English>
+		<L1/><L2/><L3/><L4/><Chinese>药店</Chinese><French>Pharmacy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PHARMACY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]药房[COLOR_REVERT]通过访问[COLOR_HIGHLIGHT_TEXT]香蕉[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]香料[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]葡萄酒[COLOR_REVERT]，增加城市的健康，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]科学家[COLOR_REVERT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]药房[COLOR_REVERT]通过访问[COLOR_HIGHLIGHT_TEXT]香蕉[COLOR_REVERT]、[COLOR_HIGHLIGHT_TEXT]香料[COLOR_REVERT]或[COLOR_HIGHLIGHT_TEXT]葡萄酒[COLOR_REVERT]，增加城市的健康，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]科学家[COLOR_REVERT]专家。</Chinese><French>[COLOR_BUILDING_TEXT]Pharmacies[COLOR_REVERT] increase the city's healthiness with access to [COLOR_HIGHLIGHT_TEXT]Banana[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RAILWAY_STATION</Tag>
+		<English>火车站</English>
+		<L1/><L2/><L3/><L4/><Chinese>火车站</Chinese><French>Railway Station</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RAILWAY_STATION_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]火车站[COLOR_REVERT]增加城市的不健康，提供额外的贸易路线，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]专家。[COLOR_BUILDING_TEXT]火车站[COLOR_REVERT]需要建造[COLOR_BUILDING_TEXT]城堡Frontenac[COLOR_REVERT]world wonder</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]火车站[COLOR_REVERT]增加城市的不健康，提供额外的贸易路线，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]专家。[COLOR_BUILDING_TEXT]火车站[COLOR_REVERT]需要建造[COLOR_BUILDING_TEXT]城堡Frontenac[COLOR_REVERT]world wonder</Chinese><French>[COLOR_BUILDING_TEXT]Railway Stations[COLOR_REVERT] increase a city's unhealthiness, provide an extra trade route and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Railway Stations[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] world wonder</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DEPARTMENT_STORE</Tag>
+		<English>百货商场</English>
+		<L1/><L2/><L3/><L4/><Chinese>百货商场</Chinese><French>Department Store</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DEPARTMENT_STORE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]百货商店[COLOR_REVERT]在有权使用电力的城市增加财富，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]商人[COLOR_REVERT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]百货商店[COLOR_REVERT]在有权使用电力的城市增加财富，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]商人[COLOR_REVERT]专家。</Chinese><French>[COLOR_BUILDING_TEXT]Department Stores[COLOR_REVERT] increase wealth in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STAR_FORT</Tag>
+		<English>星堡</English>
+		<L1/><L2/><L3/><L4/><Chinese>星堡</Chinese><French>Star Fort</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STAR_FORT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]星际堡垒[COLOR_REVERT]减少所有单位的轰炸伤害。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]星际堡垒[COLOR_REVERT]减少所有单位的轰炸伤害。</Chinese><French>[COLOR_BUILDING_TEXT]Star Forts[COLOR_REVERT] reduces damage from bombards from all units.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ELECTRICAL_GRID</Tag>
+		<English>电网</English>
+		<L1/><L2/><L3/><L4/><Chinese>电网</Chinese><French>Electrical Grid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ELECTRICAL_GRID_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]电网[COLOR_REVERT]增加有电力供应的城市的商业产出。[COLOR_BUILDING_TEXT]构建[COLOR_BUILDING_TEXT]光纤网络[COLOR_REVERT]需要电网[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]电网[COLOR_REVERT]增加有电力供应的城市的商业产出。[COLOR_BUILDING_TEXT]构建[COLOR_BUILDING_TEXT]光纤网络[COLOR_REVERT]需要电网[COLOR_REVERT]。</Chinese><French>[COLOR_BUILDING_TEXT]Electrical Grids[COLOR_REVERT] increase commerce output in cities with access to power. [COLOR_BUILDING_TEXT]Electrical Grids [COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Fiber Network[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BABYLONIAN_EDUBBA</Tag>
+		<English>泥版书屋</English>
+		<L1/><L2/><L3/><L4/><Chinese>泥版书屋</Chinese><French>Edubba</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BABYLONIAN_EDUBBA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]埃杜巴[COLOR_REVERT]，巴比伦人取代[COLOR_BUILDING_TEXT]Libary[COLOR_REVERT]，是生产成本的一半，增加了科学产出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]埃杜巴[COLOR_REVERT]，巴比伦人取代[COLOR_BUILDING_TEXT]Libary[COLOR_REVERT]，是生产成本的一半，增加了科学产出。</Chinese><French>The [COLOR_BUILDING_TEXT]Edubba[COLOR_REVERT], the Babylonian replacement for the [COLOR_BUILDING_TEXT]Libary[COLOR_REVERT], is half the production cost and increases science output.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PESEDJET_TEMPLE</Tag>
+		<English>佩塞德杰神庙</English>
+		<L1/><L2/><L3/><L4/><Chinese>佩塞德杰神庙</Chinese><French>Pesedjet Temple</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PESEDJET_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]佩塞德杰神庙[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]佩塞德杰[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]佩塞德杰神庙[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]佩塞德杰[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Pesedjet Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Pesedjet[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ANCESTOR_SHRINE</Tag>
+		<English>祖祠</English>
+		<L1/><L2/><L3/><L4/><Chinese>祖祠</Chinese><French>Ancestor Shrine</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ANCESTOR_SHRINE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]祖先神龛[COLOR_REVERT]是[COLOR_BUILDING_TEXT]神道[COLOR_REVERT]之后的文明异教徒神殿[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]祖先神龛[COLOR_REVERT]是[COLOR_BUILDING_TEXT]神道[COLOR_REVERT]之后的文明异教徒神殿[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Ancestor Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Shendao[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VEDIC_TEMPLE</Tag>
+		<English>吠陀神庙</English>
+		<L1/><L2/><L3/><L4/><Chinese>吠陀神庙</Chinese><French>Vedic Temple</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VEDIC_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]吠陀神庙[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]吠陀[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]吠陀神庙[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]吠陀[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Vedic Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Vedism[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OLYMPIAN_TEMPLE</Tag>
+		<English>奥林匹亚神庙</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥林匹亚神庙</Chinese><French>Olympian Temple</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OLYMPIAN_TEMPLE_STRATEGY</Tag>
+		<English>奥林匹亚圣殿是遵循奥林匹亚主义的文明的异教徒圣殿。</English>
+		<L1/><L2/><L3/><L4/><Chinese>奥林匹亚圣殿是遵循奥林匹亚主义的文明的异教徒圣殿。</Chinese><French>The [COLOR_BUILDING_TEXT]Olympian Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Olympianism[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAALIST_TEMPLE</Tag>
+		<English>巴利斯特神庙</English>
+		<L1/><L2/><L3/><L4/><Chinese>巴利斯特神庙</Chinese><French>Baalist Temple</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAALIST_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]巴利斯特神庙[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]巴利斯特[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]巴利斯特神庙[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]巴利斯特[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Baalist Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Baalism[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ATUA_SHRINE</Tag>
+		<English>阿图亚神社</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿图亚神社</Chinese><French>Atua Shrine</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ATUA_SHRINE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]阿图亚神殿[COLOR_REVERT]是[COLOR_BUILDING_TEXT]阿图亚[COLOR_REVERT]之后的文明的异教徒神庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]阿图亚神殿[COLOR_REVERT]是[COLOR_BUILDING_TEXT]阿图亚[COLOR_REVERT]之后的文明的异教徒神庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Atua Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Atua[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MAZDAIST_TEMPLE</Tag>
+		<English>玛兹岱寺</English>
+		<L1/><L2/><L3/><L4/><Chinese>玛兹岱寺</Chinese><French>Mazdaist Temple</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MAZDAIST_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]妈祖庙[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]妈祖庙[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]妈祖庙[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]妈祖庙[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Mazdaist Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Mazdaism[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEOTL_STEP_PYRAMID</Tag>
+		<English>梯阶金字塔</English>
+		<L1/><L2/><L3/><L4/><Chinese>梯阶金字塔</Chinese><French>Teotl Step Pyramid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEOTL_STEP_PYRAMID_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Teotl Step Pyramid[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]Teotl[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]Teotl Step Pyramid[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]Teotl[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Teotl Step Pyramid[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Teotl[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SHINTO_SHRINE</Tag>
+		<English>神社</English>
+		<L1/><L2/><L3/><L4/><Chinese>神社</Chinese><French>Shinto Shrine</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SHINTO_SHRINE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]神道神社[COLOR_REVERT]是[COLOR_BUILDING_TEXT]神道神社[COLOR_REVERT]之后的文明的异教徒神殿[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]神道神社[COLOR_REVERT]是[COLOR_BUILDING_TEXT]神道神社[COLOR_REVERT]之后的文明的异教徒神殿[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Shinto Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Shinto[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ASATRU_HOF</Tag>
+		<English>阿萨特鲁霍夫</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿萨特鲁霍夫</Chinese><French>Asatru Hof</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ASATRU_HOF_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Asatru Hof[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]Asatru[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]Asatru Hof[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]Asatru[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Asatru Hof[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Asatru[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DRUIDIC_NEMETON</Tag>
+		<English>德鲁伊的尼梅顿</English>
+		<L1/><L2/><L3/><L4/><Chinese>德鲁伊的尼梅顿</Chinese><French>Druidic Nemeton</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DRUIDIC_NEMETON_STRATEGY</Tag>
+		<English>德鲁伊德鲁伊尼梅顿（COLOR_REVERT）是继德鲁伊德鲁伊主义（COLOR_HIGHLIGHT_TEXT）之后的文明的异教徒神庙（COLOR_REVERT）。</English>
+		<L1/><L2/><L3/><L4/><Chinese>德鲁伊德鲁伊尼梅顿（COLOR_REVERT）是继德鲁伊德鲁伊主义（COLOR_HIGHLIGHT_TEXT）之后的文明的异教徒神庙（COLOR_REVERT）。</Chinese><French>The [COLOR_BUILDING_TEXT]Druidic Nemeton[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Druidism[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PERUN_SHRINE</Tag>
+		<English>佩伦神殿</English>
+		<L1/><L2/><L3/><L4/><Chinese>佩伦神殿</Chinese><French>Shrine of Perun</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PERUN_SHRINE_STRATEGY</Tag>
+		<English>佩伦的[COLOR_BUILDING_TEXT]神龛[COLOR_REVERT]是[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]的文明遵循[COLOR_HIGHLIGHT_TEXT]罗德诺弗瑞[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>佩伦的[COLOR_BUILDING_TEXT]神龛[COLOR_REVERT]是[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]的文明遵循[COLOR_HIGHLIGHT_TEXT]罗德诺弗瑞[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Shrine of Perun[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Rodnovery[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_YORUBA_TEMPLE</Tag>
+		<English>约鲁巴神庙</English>
+		<L1/><L2/><L3/><L4/><Chinese>约鲁巴神庙</Chinese><French>Yoruba Temple</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_YORUBA_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]约鲁巴神庙[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]约鲁巴[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]约鲁巴神庙[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]约鲁巴[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Yoruba Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Yoruba[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INTI_TEMPLE</Tag>
+		<English>印地安寺</English>
+		<L1/><L2/><L3/><L4/><Chinese>印地安寺</Chinese><French>Inti Temple</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INTI_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Inti Temple[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]Inti[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]Inti Temple[COLOR_REVERT]是遵循[COLOR_HIGHLIGHT_TEXT]Inti[COLOR_REVERT]的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Inti Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Inti[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TENGRI_OBO</Tag>
+		<English>天顶欧博</English>
+		<L1/><L2/><L3/><L4/><Chinese>天顶欧博</Chinese><French>Tengri Obo</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TENGRI_OBO_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]腾格里奥博[COLOR_REVERT]是继[COLOR_HIGHLIGHT_TEXT]腾格里[COLOR_REVERT]之后的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]腾格里奥博[COLOR_REVERT]是继[COLOR_HIGHLIGHT_TEXT]腾格里[COLOR_REVERT]之后的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Tengri Obo[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Tengri[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HUBAL_TEMPLE</Tag>
+		<English>胡巴尔庙</English>
+		<L1/><L2/><L3/><L4/><Chinese>胡巴尔庙</Chinese><French>Hubal Temple</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HUBAL_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]胡巴尔神庙[COLOR_REVERT]是继[COLOR_HIGHLIGHT_TEXT]阿努纳基[COLOR_REVERT]之后起源于阿拉伯半岛的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]胡巴尔神庙[COLOR_REVERT]是继[COLOR_HIGHLIGHT_TEXT]阿努纳基[COLOR_REVERT]之后起源于阿拉伯半岛的文明的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Hubal Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Anunnaki[COLOR_REVERT] and originate in the Arabian peninsula.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ASTAR_TEMPLE</Tag>
+		<English>阿斯塔神庙</English>
+		<L1/><L2/><L3/><L4/><Chinese>阿斯塔神庙</Chinese><French>Astar Temple</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ASTAR_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]阿斯塔神庙[COLOR_REVERT]是埃塞俄比亚的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]阿斯塔神庙[COLOR_REVERT]是埃塞俄比亚的[COLOR_BUILDING_TEXT]异教徒神庙[COLOR_REVERT]。</Chinese><French>The [COLOR_BUILDING_TEXT]Astar Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of Ethiopia.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONUMENT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]可提供少量文化点数，适宜在早期扩展城市的文化边界。可以由阿帕达那宫提供。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]纪念碑[COLOR_REVERT]可提供少量文化点数，适宜在早期扩展城市的文化边界。可以由阿帕达那宫提供。</Chinese><French>[COLOR_BUILDING_TEXT]Monuments[COLOR_REVERT] increase a city's cultural output. They are also required to build [COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Monument[COLOR_REVERT] national wonder.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TURKIC_DIVAN</Tag>
+		<English>迪凡</English>
+		<L1/><L2/><L3/><L4/><Chinese>迪凡</Chinese><French>Divan</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TURKIC_DIVAN_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]迪凡[COLOR_REVERT]，土库曼民族取代[COLOR_BUILDING_TEXT]监狱[COLOR_REVERT]，降低了城市的维护成本，并允许你雇用一名[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]迪凡[COLOR_REVERT]，土库曼民族取代[COLOR_BUILDING_TEXT]监狱[COLOR_REVERT]，降低了城市的维护成本，并允许你雇用一名[COLOR_HIGHLIGHT_TEXT]政治家[COLOR_REVERT]专家。</Chinese><French>The [COLOR_BUILDING_TEXT]Divan[COLOR_REVERT], the Turkic replacement for the [COLOR_BUILDING_TEXT]Jail[COLOR_REVERT], lowers the city's maintenance costs and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BABYLONIAN_GARDEN</Tag>
+		<English>花园</English>
+		<L1/><L2/><L3/><L4/><Chinese>花园</Chinese><French>Garden</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WAREHOUSE</Tag>
+		<English>仓库</English>
+		<L1/><L2/><L3/><L4/><Chinese>仓库</Chinese><French>Warehouse</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WAREHOUSE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]仓库[COLOR_REVERT]增加一个城市的财富，允许你雇佣两个[COLOR_HIGHLIGHT_TEXT]商人[COLOR_REVERT]专家。[COLOR_BUILDING_TEXT]仓库[COLOR_REVERT]需要建立[COLOR_BUILDING_TEXT]物流中心[COLOR_REVERT]。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]仓库[COLOR_REVERT]增加一个城市的财富，允许你雇佣两个[COLOR_HIGHLIGHT_TEXT]商人[COLOR_REVERT]专家。[COLOR_BUILDING_TEXT]仓库[COLOR_REVERT]需要建立[COLOR_BUILDING_TEXT]物流中心[COLOR_REVERT]。</Chinese><French>[COLOR_BUILDING_TEXT]Warehouses[COLOR_REVERT] increase a city's wealth and allow you to hire two [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialists. [COLOR_BUILDING_TEXT]Warehouses[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Logistics Centers[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AUTOMATED_FACTORY</Tag>
+		<English>自动化工厂</English>
+		<L1/><L2/><L3/><L4/><Chinese>自动化工厂</Chinese><French>Automated Factory</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AUTOMATED_FACTORY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]自动化工厂[COLOR_REVERT]在有电力供应的城市增加产量，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]自动化工厂[COLOR_REVERT]在有电力供应的城市增加产量，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]工程师[COLOR_REVERT]专家。</Chinese><French>[COLOR_BUILDING_TEXT]Automated Factories[COLOR_REVERT] increase production output in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONTAINER_TERMINAL</Tag>
+		<English>集装箱码头</English>
+		<L1/><L2/><L3/><L4/><Chinese>集装箱码头</Chinese><French>Container Terminal</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONTAINER_TERMINAL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]集装箱码头[COLOR_REVERT]增加城市外贸路线产生的商业。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]集装箱码头[COLOR_REVERT]增加城市外贸路线产生的商业。</Chinese><French>[COLOR_BUILDING_TEXT]Container Terminals[COLOR_REVERT] increase the commerce generated by a city's foreign trade routes.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LOGISTICS_CENTER</Tag>
+		<English>物流中心</English>
+		<L1/><L2/><L3/><L4/><Chinese>物流中心</Chinese><French>Logistics Center</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LOGISTICS_CENTER_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]物流中心[COLOR_REVERT]增加城市的财富，获得电力，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]商人[COLOR_REVERT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]物流中心[COLOR_REVERT]增加城市的财富，获得电力，并允许您雇用一名[COLOR_HIGHLIGHT_TEXT]商人[COLOR_REVERT]专家。</Chinese><French>[COLOR_BUILDING_TEXT]Logistics Centers[COLOR_REVERT] increase wealth in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VERTICAL_FARM</Tag>
+		<English>垂直农场</English>
+		<L1/><L2/><L3/><L4/><Chinese>垂直农场</Chinese><French>Vertical Farm</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VERTICAL_FARM_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]垂直农场[COLOR_REVERT]在有电力供应的城市增加粮食产量。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]垂直农场[COLOR_REVERT]在有电力供应的城市增加粮食产量。</Chinese><French>[COLOR_BUILDING_TEXT]Vertical Farms[COLOR_REVERT] increase food output in cities with access to power.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FIBER_NETWORK</Tag>
+		<English>光纤网络</English>
+		<L1/><L2/><L3/><L4/><Chinese>光纤网络</Chinese><French>Fiber Network</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FIBER_NETWORK_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]光纤网络[COLOR_REVERT]增加有电力供应的城市的商业产出。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]光纤网络[COLOR_REVERT]增加有电力供应的城市的商业产出。</Chinese><French>[COLOR_BUILDING_TEXT]Fiber Networks[COLOR_REVERT] increase commerce output in cities with access to power.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SUPERCOMPUTER</Tag>
+		<English>超级计算机</English>
+		<L1/><L2/><L3/><L4/><Chinese>超级计算机</Chinese><French>Supercomputer</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SUPERCOMPUTER_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]超级计算机[COLOR_REVERT]增加了一个城市的科学研究，使你有机会获得电力，并允许你雇用一位[COLOR_HIGHLIGHT_TEXT]科学家[COLOR_REVERT]专家。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]超级计算机[COLOR_REVERT]增加了一个城市的科学研究，使你有机会获得电力，并允许你雇用一位[COLOR_HIGHLIGHT_TEXT]科学家[COLOR_REVERT]专家。</Chinese><French>[COLOR_BUILDING_TEXT]Supercomputers[COLOR_REVERT] increase a city's scientific research with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STADIUM</Tag>
+		<English>体育场</English>
+		<L1/><L2/><L3/><L4/><Chinese>体育场</Chinese><French>Stadium</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STADIUM_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]体育场[COLOR_REVERT]提供快乐，增加城市的文化产出，获得权力。如果你能进入 [COLOR_HIGHLIGHT_TEXT]足球比赛[COLOR_REVERT]，他们也会增加你的快乐。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[COLOR_BUILDING_TEXT]体育场[COLOR_REVERT]提供快乐，增加城市的文化产出，获得权力。如果你能进入 [COLOR_HIGHLIGHT_TEXT]足球比赛[COLOR_REVERT]，他们也会增加你的快乐。</Chinese><French>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARENA</Tag>
+		<English>竞技场</English>
+		<L1/><L2/><L3/><L4/><Chinese>竞技场</Chinese><French>Arena</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_</Tag>
+		<English>建筑</English>
+		<L1/><L2/><L3/><L4/><Chinese>建筑</Chinese><French></French></TEXT>
+</Civ4GameText>

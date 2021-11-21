@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Terrain -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_MARSH</Tag>
+		<English>沼泽地</English>
+	<L1/><L2/><L3/><L4/><Chinese>沼泽地</Chinese></TEXT>
+
+</Civ4GameText>

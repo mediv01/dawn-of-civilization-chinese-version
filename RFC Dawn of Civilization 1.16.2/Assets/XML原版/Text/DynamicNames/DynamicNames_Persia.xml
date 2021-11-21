@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Persia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIA_DESC</Tag>
+		<English>波斯文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯文明</Chinese><French>The Persians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIA_PEOPLES</Tag>
+		<English>波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯</Chinese><French>Parsi Peoples</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIA_DEFAULT</Tag>
+		<English>Persia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Persia</Chinese><French>%s2 Shahdom</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIA_FASCIST</Tag>
+		<English>波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯</Chinese><French>Neo-Persian Empire</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IRAN_DEFAULT</Tag>
+		<English>Persia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Persia</Chinese><French>%s2 Shahdom</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IRAN_FASCIST</Tag>
+		<English>波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯</Chinese><French>National-Socialist Workers' %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIA_MEDIAN</Tag>
+		<English>波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯</Chinese><French>Median</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIA_PARTHIAN</Tag>
+		<English>波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯</Chinese><French>Parthian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIA_ACHAEMENID</Tag>
+		<English>波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯</Chinese><French>Achaemenid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIA_SASSANID</Tag>
+		<English>波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯</Chinese><French>Sassanid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIA_SAFAVID</Tag>
+		<English>波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯</Chinese><French>Safavid</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIA_QAJAR</Tag>
+		<English>波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯</Chinese><French>Qajar</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIA_PAHLAVI</Tag>
+		<English>波斯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯</Chinese><French>Pahlavi</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIAN_VASSAL</Tag>
+		<English>%s1 附属</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1 附属</Chinese><French>Satrapy of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIAN_EGYPT</Tag>
+		<English>波斯-埃及</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯-埃及</Chinese><French>Sixth Satrapy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIAN_INDIA</Tag>
+		<English>波斯-印度</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯-印度</Chinese><French>Twentieth Satrapy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIAN_BABYLONIA</Tag>
+		<English>波斯-巴比伦</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯-巴比伦</Chinese><French>Ninth Satrapy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIAN_GREECE</Tag>
+		<English>波斯-希腊</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯-希腊</Chinese><French>First Satrapy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIAN_ETHIOPIA</Tag>
+		<English>波斯-东非</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯-东非</Chinese><French>Seventeenth Satrapy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIAN_ARABIA</Tag>
+		<English>波斯-阿拉伯</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯-阿拉伯</Chinese><French>Fifth Satrapy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIAN_MONGOLIA</Tag>
+		<English>波斯-蒙古</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯-蒙古</Chinese><French>Fifteenth Satrapy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIAN_OTTOMANS</Tag>
+		<English>波斯-奥斯曼</English>
+		<L1/><L2/><L3/><L4/><Chinese>波斯-奥斯曼</Chinese><French>Fourth Satrapy</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIAN_NAME_BYZANTIUM</Tag>
+		<English>安纳托利亚</English>
+		<L1/><L2/><L3/><L4/><Chinese>安纳托利亚</Chinese><French>Anatolia</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIAN_NAME_INDONESIA</Tag>
+		<English>马六甲</English>
+		<L1/><L2/><L3/><L4/><Chinese>马六甲</Chinese><French>Malacca</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIAN_NAME_TURKS</Tag>
+		<English>土耳其</English>
+		<L1/><L2/><L3/><L4/><Chinese>土耳其</Chinese><French>Sogdiana</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IRAN_ADJECTIVE</Tag>
+		<English>Iranian</English>
+		<L1/><L2/><L3/><L4/><Chinese>Iranian</Chinese><French>Iranian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IRAN_DESC</Tag>
+		<English>伊朗文明</English>
+		<L1/><L2/><L3/><L4/><Chinese>伊朗文明</Chinese><French>The Iranians</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IRAN_SHORT_DESC</Tag>
+		<English>Iran</English>
+		<L1/><L2/><L3/><L4/><Chinese>Iran</Chinese><French>Iran</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIA_ADJECTIVE</Tag>
+		<English>Persian</English>
+		<L1/><L2/><L3/><L4/><Chinese>Persian</Chinese><French>Persian</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PERSIA_SHORT_DESC</Tag>
+		<English>Persia</English>
+		<L1/><L2/><L3/><L4/><Chinese>Persia</Chinese><French>Persia</French></TEXT>
+</Civ4GameText>

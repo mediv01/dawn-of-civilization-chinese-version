@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Congress -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_ACCEPT</Tag>
+		<English>接受</English>
+		<L1/><L2/><L3/><L4/><Chinese>接受</Chinese><French>Accept</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_ACCEPT_DECISION</Tag>
+		<English>同意放弃该城</English>
+		<L1/><L2/><L3/><L4/><Chinese>同意放弃该城</Chinese><French>Accept the decision and leave the city</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_BRIBE_GOLD</Tag>
+		<English>试图贿赂他们的代表（%s2:%d1[ICON_GOLD]）</English>
+		<L1/><L2/><L3/><L4/><Chinese>试图贿赂他们的代表（%s2:%d1[ICON_GOLD]）</Chinese><French>Attempt to bribe their representatives (%s2: %d1 [ICON_GOLD])</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_BRIBE_OWN_CITY</Tag>
+		<English>国际会议目前正在就%s2在我们的城市%s3的主张进行辩论，可能会影响%s1的决定。我们该怎么办？</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际会议目前正在就%s2在我们的城市%s3的主张进行辩论，可能会影响%s1的决定。我们该怎么办？</Chinese><French>The congress is currently debating the %s2 claim on our city of %s3, and it might be possible to influence the %s1 decision. What should we do?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_BRIBE_OWN_CLAIM_CITY</Tag>
+		<English>%s1我们对%s2城市%s3的索赔有不同的意见。可能会影响他们的决定。我们该怎么办？</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1我们对%s2城市%s3的索赔有不同的意见。可能会影响他们的决定。我们该怎么办？</Chinese><French>%s1 opinion on our claim on the %s2 city of %s3 is divided. It might be possible to influence their decision. What should we do?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_BRIBE_OWN_CLAIM_COLONY</Tag>
+		<English>%s1对我们在%s3附近殖民%s2领土的要求，s1意见分歧。可能会影响他们的决定。我们该怎么办？</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1对我们在%s3附近殖民%s2领土的要求，s1意见分歧。可能会影响他们的决定。我们该怎么办？</Chinese><French>%s1 opinion on our request to colonize the %s2 territory near %s3 is divided. It might be possible to influence their decision. What should we do?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_BRIBE_OWN_CLAIM_FAILURE</Tag>
+		<English>%s1拒绝了我们影响他们决定的笨拙尝试！他们投票反对我们的要求，我们的关系因此恶化。</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1拒绝了我们影响他们决定的笨拙尝试！他们投票反对我们的要求，我们的关系因此恶化。</Chinese><French>%s1 has rejected our clumsy attempts to influence their decision! They have voted against our claim, and our relations have soured in consequence.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_BRIBE_OWN_CLAIM_SUCCESS</Tag>
+		<English>尝试成功了！%s1现在将支持我们的索赔。</English>
+		<L1/><L2/><L3/><L4/><Chinese>尝试成功了！%s1现在将支持我们的索赔。</Chinese><French>The attempt was successful! %s1 will now support our claim.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_BRIBE_OWN_TERRITORY</Tag>
+		<English>国际会议目前正在讨论%s2在%s3附近殖民我们领土的请求，可能会影响%s1的决定。我们该怎么办？</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际会议目前正在讨论%s2在%s3附近殖民我们领土的请求，可能会影响%s1的决定。我们该怎么办？</Chinese><French>The congress is currently debating the %s2 request to colonize our territory near %s3, and it might be possible to influence the %s1 decision. What should we do?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_BRIBE_THEIR_CLAIM_FAILURE</Tag>
+		<English>%s1拒绝了我们影响他们决定的笨拙尝试！他们现在将支持对我们的要求，我们的关系因此恶化。</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1拒绝了我们影响他们决定的笨拙尝试！他们现在将支持对我们的要求，我们的关系因此恶化。</Chinese><French>%s1 has rejected our clumsy attempts to influence their decision! They will now support the claim against us, and our relations have soured in consequence.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_BRIBE_THEIR_CLAIM_SUCCESS</Tag>
+		<English>尝试成功了！%s1现在将投票反对对我们的领土主张。</English>
+		<L1/><L2/><L3/><L4/><Chinese>尝试成功了！%s1现在将投票反对对我们的领土主张。</Chinese><French>The attempt was successful! %s1 will now vote against the claim against us.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_CANNOT_AFFORD_BRIBE</Tag>
+		<English>不幸的是，我们没有任何举措能够改变。</English>
+		<L1/><L2/><L3/><L4/><Chinese>不幸的是，我们没有任何举措能够改变。</Chinese><French>Unfortunately, we lack the means to do anything.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_CHANCE_AVERAGE</Tag>
+		<English>平均</English>
+		<L1/><L2/><L3/><L4/><Chinese>平均</Chinese><French>Average</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_CHANCE_HIGH</Tag>
+		<English>高</English>
+		<L1/><L2/><L3/><L4/><Chinese>高</Chinese><French>High</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_CHANCE_VERY_HIGH</Tag>
+		<English>非常高</English>
+		<L1/><L2/><L3/><L4/><Chinese>非常高</Chinese><French>Very High</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_CLAIM_CITY</Tag>
+		<English>现在轮到我们提出要求了。</English>
+		<L1/><L2/><L3/><L4/><Chinese>现在轮到我们提出要求了。</Chinese><French>It is now our turn to make a demand.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_CORRUPTION_ENEMY</Tag>
+		<English>他们严词拒绝了我们的贿赂。现在他们的投票甚至可能不利于我们！</English>
+		<L1/><L2/><L3/><L4/><Chinese>他们严词拒绝了我们的贿赂。现在他们的投票甚至可能不利于我们！</Chinese><French>They refused our proposal with indignation. Now they might even vote against our interests!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_CORRUPTION_GOLD</Tag>
+		<English>我们需要为此花多少钱？</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们需要为此花多少钱？</Chinese><French>How much gold shall we use for this purpose?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_CORRUPTION_NO</Tag>
+		<English>他们拒绝受贿。</English>
+		<L1/><L2/><L3/><L4/><Chinese>他们拒绝受贿。</Chinese><French>They refused our proposal.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_CORRUPTION_REQUEST</Tag>
+		<English>我们可以用金钱贿赂其他文明根据我们的利益投票。你愿意进行这种尝试吗？</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们可以用金钱贿赂其他文明根据我们的利益投票。你愿意进行这种尝试吗？</Chinese><French>We can use some of our gold to try to bribe another civilization to vote for our interests. Do you want to attempt?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_CORRUPTION_YES</Tag>
+		<English>他们接受了贿赂。他们将根据我们的利益投票。</English>
+		<L1/><L2/><L3/><L4/><Chinese>他们接受了贿赂。他们将根据我们的利益投票。</Chinese><French>They accepted our proposal. They will vote for our interests.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_DEMAND_CITY</Tag>
+		<English>国际会议决定把我们的城市从%s2移交给%s1。我们能满足他们的要求吗？拒绝可能导致对这个决定的支持者的战争。以下文明投票反对我们：[新线]%s3</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际会议决定把我们的城市从%s2移交给%s1。我们能满足他们的要求吗？拒绝可能导致对这个决定的支持者的战争。以下文明投票反对我们：[新线]%s3</Chinese><French>The congress has decided to hand over our city of %s2 to %s1. Shall we comply with their demand? Refusal may lead to war against the supporters of this decision. The following civilizations voted against us:[NEWLINE]%s3</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_DEMAND_TERRITORY</Tag>
+		<English>国际会议决定允许%s1在%s2附近殖民我们的领土。我们能满足他们的要求吗？拒绝可能导致对这个决定的支持者的战争。以下文明投票反对我们：[新线]%s3</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际会议决定允许%s1在%s2附近殖民我们的领土。我们能满足他们的要求吗？拒绝可能导致对这个决定的支持者的战争。以下文明投票反对我们：[新线]%s3</Chinese><French>The congress has decided to allow %s1 to colonize our territory near %s2. Shall we comply with their demand? Refusal may lead to war against the supporters of this decision. The following civilizations voted against us:[NEWLINE]%s3</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_HUMAN_REQUEST</Tag>
+		<English>我们应该要求哪座城市?</English>
+		<L1/><L2/><L3/><L4/><Chinese>我们应该要求哪座城市?</Chinese><French>What city shall we ask for?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_INTRO</Tag>
+		<English>一次国际会议即将召开。[NEWLINE]各主要国家的领袖齐聚一堂讨论如何保持世界的力量平衡。[NEWLINE][NEWLINE]各方均有机会要求一座城市的统治权，如在会议上获得通过，则城市现在的所有者必须接受。[NEWLINE]如果你拒绝接受会谈结果，可能与投下赞成票的国家开战。</English>
+		<L1/><L2/><L3/><L4/><Chinese>一次国际会议即将召开。[NEWLINE]各主要国家的领袖齐聚一堂讨论如何保持世界的力量平衡。[NEWLINE][NEWLINE]各方均有机会要求一座城市的统治权，如在会议上获得通过，则城市现在的所有者必须接受。[NEWLINE]如果你拒绝接受会谈结果，可能与投下赞成票的国家开战。</Chinese><French>A new international Congress is about to start.[NEWLINE]The leaders of some of the most important nations will meet there to discuss the balance of the world.[NEWLINE][NEWLINE]Each side will have its turn to ask a city; if the decision is approved the owner of the city that is being traded must accept it.[NEWLINE]If you refuse a decision, you are likely to face a war against some of the sides that voted YES.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_INTRO_NOT_INVITED</Tag>
+		<English>一次国际会议正在召开，但我们未获邀请。也许因为我们还不够强大。[NEWLINE][NEWLINE]目前我们只能期待他们的会谈能有合理的结果。</English>
+		<L1/><L2/><L3/><L4/><Chinese>一次国际会议正在召开，但我们未获邀请。也许因为我们还不够强大。[NEWLINE][NEWLINE]目前我们只能期待他们的会谈能有合理的结果。</Chinese><French>A World Congress is being held, but we haven't been invited. Maybe we aren't important enough.[NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_INTRODUCTION</Tag>
+		<English>[H1]Congress of %s1[\H1][NEWLINE]届大会新的国际会议正在举行。世界上最重要文明的领导人开会讨论世界的平衡。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]每个文明都被允许宣称拥有一座城市或要求殖民未定居的领土。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]Congress of %s1[\H1][NEWLINE]届大会新的国际会议正在举行。世界上最重要文明的领导人开会讨论世界的平衡。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]每个文明都被允许宣称拥有一座城市或要求殖民未定居的领土。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A new international congress is being held. The leaders of the world's most important civilizations convene to discuss the balance of the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Every civilization is allowed to either claim a city or request to colonize unsettled territory. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_INTRODUCTION_AI</Tag>
+		<English>[H1]Congress of %s1[\H1][NEWLINE]一个国际会议正在举行，但是我们没有被邀请。显然我们不够重要。世界的命运现在掌握在下列文明的手中：[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]现在我们只能等待他们的决定，相信他们的常识。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]Congress of %s1[\H1][NEWLINE]一个国际会议正在举行，但是我们没有被邀请。显然我们不够重要。世界的命运现在掌握在下列文明的手中：[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]现在我们只能等待他们的决定，相信他们的常识。</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A world congress is being held, but we haven't been invited. Apparently we are not important enough. The fate of the world is now in the hands of the following civilizations:[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_INTRODUCTION_AI_WAR_EXCLUDED</Tag>
+		<English>[H1]%s1[\H1][NEWLINE]国际会议正在举行，而我们正卷入一场全球战争，所以他没有被邀请。世界的命运现在掌握在下列文明的手中：[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]现在我们只能等待他们的决定，相信他们的常识。</English>
+		<!-- needs translation -->
+		<L1/><L2/><L3/><L4/><Chinese>[H1]%s1[\H1][NEWLINE]国际会议正在举行，而我们正卷入一场全球战争，所以他没有被邀请。世界的命运现在掌握在下列文明的手中：[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]现在我们只能等待他们的决定，相信他们的常识。</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A congress is being held while we are involved in a global war, so he haven't been invited. The fate of the world is now in the hands of the following civilizations:[NEWLINE]%s2[NEWLINE][NEWLINE][NEWLINE]Now we can only await their decisions and trust in their common sense.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_INTRODUCTION_WAR</Tag>
+		<English>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。有关权力在国际会议开会讨论如何恢复世界秩序。我们没有参与战争，但由于国际地位，我们仍然受到邀请。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]每一个处于战争胜利一方的文明都可以从失败的一方夺回一座城市，而那些已经失败的文明可能会夺回在战争中被征服的城市。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。有关权力在国际会议开会讨论如何恢复世界秩序。我们没有参与战争，但由于国际地位，我们仍然受到邀请。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]每一个处于战争胜利一方的文明都可以从失败的一方夺回一座城市，而那些已经失败的文明可能会夺回在战争中被征服的城市。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. We were not involved, but were still invited due to our international importance. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Every civilization on the winning side of the war is allowed to claim a city from the losing side, while the civilizations that have lost may reclaim cities conquered during the war. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_INTRODUCTION_WAR_WON</Tag>
+		<English>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。有关权力在国际会议开会讨论如何恢复世界秩序。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]因为我们站在胜利的一边，我们可以从战争的失败者手中夺回城市，而他们可能试图夺回战争期间征服的城市。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。有关权力在国际会议开会讨论如何恢复世界秩序。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]因为我们站在胜利的一边，我们可以从战争的失败者手中夺回城市，而他们可能试图夺回战争期间征服的城市。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]Since we are on the winning side we can claim cities from the losers of the war, while they may attempt to reclaim cities conquered during the war. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_INTRODUCTION_WAR_LOST</Tag>
+		<English>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。有关权力在国际会议开会讨论如何恢复世界秩序。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]作为战争的失败者，我们可以试图收回在战争中失去的城市，而胜利者可能会对我们提出更多的要求。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。有关权力在国际会议开会讨论如何恢复世界秩序。除了我们的文明，参与者还有：[NEWLINE]%s2[NEWLINE][NEWLINE]作为战争的失败者，我们可以试图收回在战争中失去的城市，而胜利者可能会对我们提出更多的要求。如果有足够多的文明赞成，请求就被批准了。拒绝遵守国际会议的决定可能导致与支持它的文明之间的战争！</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The involved powers convene in a congress to discuss how to restore order to the world. Besides our civilization, the participants are:[NEWLINE]%s2[NEWLINE][NEWLINE]As a loser of the war we can attempt to reclaim cities lost during the war, while the winners may make additional claims against us. If enough civilizations approve, the request is granted. Refusal to comply with the decision of the congress may lead to war with the civilizations that supported it!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_INTRODUCTION_WAR_AI</Tag>
+		<English>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。交战国在国际会议开会讨论如何恢复世界秩序，但我们既没有参与，也没有重要到足以影响这一进程：[NEWLINE]%s2[NEWLINE][NEWLINE]作为一个非交战国，没有人可以宣称我们的城市。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]%s1[\H1][NEWLINE]一场伟大的国际战争已经结束。交战国在国际会议开会讨论如何恢复世界秩序，但我们既没有参与，也没有重要到足以影响这一进程：[NEWLINE]%s2[NEWLINE][NEWLINE]作为一个非交战国，没有人可以宣称我们的城市。</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]A great international war has come to an end. The belligerents convene in a congress to discuss how to restore order to the world, but we were neither involved nor important enough to influence the process:[NEWLINE]%s2[NEWLINE][NEWLINE]As a non-belligerent, nobody can claim our cities.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_INVITATION</Tag>
+		<English>两回合后将召开一次国际会议。我们已收到邀请函。你同意参加吗？</English>
+		<L1/><L2/><L3/><L4/><Chinese>两回合后将召开一次国际会议。我们已收到邀请函。你同意参加吗？</Chinese><French>An international Congress is being held in 2 turns. You have been invited to participate. Will you accept the invitation?</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_INVITE</Tag>
+		<English>[NEWLINE][ICON_BULLET]%s1</English>
+		<L1/><L2/><L3/><L4/><Chinese>[NEWLINE][ICON_BULLET]%s1</Chinese><French>[NEWLINE][ICON_BULLET]%s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_MANIPULATION</Tag>
+		<English>渗透到他们的代表团中 (%s2: %d1 [ICON_ESPIONAGE])</English>
+		<L1/><L2/><L3/><L4/><Chinese>渗透到他们的代表团中 (%s2: %d1 [ICON_ESPIONAGE])</Chinese><French>Infiltrate their delegation (%s2: %d1 [ICON_ESPIONAGE])</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_NEW</Tag>
+		<English>新的国际会议</English>
+		<L1/><L2/><L3/><L4/><Chinese>新的国际会议</Chinese><French>New Congress</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_NO_AI_REQUEST</Tag>
+		<English>无要求</English>
+		<L1/><L2/><L3/><L4/><Chinese>无要求</Chinese><French>makes no requests</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_NO_BRIBE</Tag>
+		<English>让他们随意投票</English>
+		<L1/><L2/><L3/><L4/><Chinese>让他们随意投票</Chinese><French>Let them vote as they please.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_NO_CITY</Tag>
+		<English>没有可要求的城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>没有可要求的城市</Chinese><French>There is no appropriate city to ask</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_NO_REQUEST</Tag>
+		<English>无要求</English>
+		<L1/><L2/><L3/><L4/><Chinese>无要求</Chinese><French>NO REQUEST</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_NO_RESULTS</Tag>
+		<English>成员们决定维持现状。</English>
+		<L1/><L2/><L3/><L4/><Chinese>成员们决定维持现状。</Chinese><French>[NEWLINE]The members decided to uphold the status quo.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_NOTIFY_YES</Tag>
+		<English>已移交给%s1统治</English>
+		<L1/><L2/><L3/><L4/><Chinese>已移交给%s1统治</Chinese><French>is passing under %s1 control</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_NOTIFY_YES1</Tag>
+		<English>已经移交给</English>
+		<L1/><L2/><L3/><L4/><Chinese>已经移交给</Chinese><French>is passing under</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_NOTIFY_YES2</Tag>
+		<English>统治</English>
+		<L1/><L2/><L3/><L4/><Chinese>统治</Chinese><French>control</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_OF</Tag>
+		<English>国际会议:</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际会议:</Chinese><French>Congress of %s1</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_OK</Tag>
+		<English>确定</English>
+		<L1/><L2/><L3/><L4/><Chinese>确定</Chinese><French>OK</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_POPUP_ABSTAINS</Tag>
+		<English>弃权票[NEWLINE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>弃权票[NEWLINE]</Chinese><French>abstains[NEWLINE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_POPUP_NO_WINS</Tag>
+		<English>[NEWLINE]未获通过</English>
+		<L1/><L2/><L3/><L4/><Chinese>[NEWLINE]未获通过</Chinese><French>[NEWLINE]NO wins</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_POPUP_VOTES_NO</Tag>
+		<English>反对票[NEWLINE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>反对票[NEWLINE]</Chinese><French>votes NO[NEWLINE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_POPUP_VOTES_YES</Tag>
+		<English>赞成票[NEWLINE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>赞成票[NEWLINE]</Chinese><French>votes YES[NEWLINE]</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_POPUP_YES_WINS</Tag>
+		<English>[NEWLINE]获得通过</English>
+		<L1/><L2/><L3/><L4/><Chinese>[NEWLINE]获得通过</Chinese><French>[NEWLINE]YES wins</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_REFUSE</Tag>
+		<English>拒绝</English>
+		<L1/><L2/><L3/><L4/><Chinese>拒绝</Chinese><French>Refuse</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_REFUSE_DECISION</Tag>
+		<English>拒绝放弃该城!</English>
+		<L1/><L2/><L3/><L4/><Chinese>拒绝放弃该城!</Chinese><French>Refuse leaving the city!</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_REQUEST</Tag>
+		<English>%s1要求%s2(%s3)</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1要求%s2(%s3)</Chinese><French>%s1 wants %s2 (%s3)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_REQUEST1</Tag>
+		<English>国际会议决定</English>
+		<L1/><L2/><L3/><L4/><Chinese>国际会议决定</Chinese><French>The Congress has decided that</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_REQUEST2</Tag>
+		<English>应该移交给</English>
+		<L1/><L2/><L3/><L4/><Chinese>应该移交给</Chinese><French>should be assigned to</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_REQUEST3</Tag>
+		<English>统治。[NEWLINE]你同意吗？(拒绝可能导致战争)</English>
+		<L1/><L2/><L3/><L4/><Chinese>统治。[NEWLINE]你同意吗？(拒绝可能导致战争)</Chinese><French>control.[NEWLINE]Do you agree? (Our refusal may lead to a war)</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_REQUEST_CITY</Tag>
+		<English>%s1声明%s3的%s2城市</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1声明%s3的%s2城市</Chinese><French>%s1 claims the %s2 city of %s3</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_REQUEST_SETTLE_EMPTY</Tag>
+		<English>%s1要求找到未结算区域%s2</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1要求找到未结算区域%s2</Chinese><French>%s1 claims unsettled territory to found %s2</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_REQUEST_SETTLE_FOREIGN</Tag>
+		<English>%s1声明找到%s3的%s2区域</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1声明找到%s3的%s2区域</Chinese><French>%s1 claims %s2 territory to found %s3</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_REQUEST_SETTLE_OWN</Tag>
+		<English>%s1请求在其自己的领土上找到%s2</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s1请求在其自己的领土上找到%s2</Chinese><French>%s1 requests to found %s2 on their own territory</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_RESULT_ASSIGNMENT</Tag>
+		<English>%s2 %s1 受 %s3控制。</English>
+		<L1/><L2/><L3/><L4/><Chinese>%s2 %s1 受 %s3控制。</Chinese><French>[NEWLINE][ICON_BULLET]%s2 %s1 falls under %s3 control.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_RESULT_COLONY</Tag>
+		<English>[NEWLINE][ICON_BULLET]%s2 可能找到 %s1。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[NEWLINE][ICON_BULLET]%s2 可能找到 %s1。</Chinese><French>[NEWLINE][ICON_BULLET]%s2 may found %s1.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_RESULT_COLONY_TERRITORY</Tag>
+		<English>[NEWLINE][ICON_BULLET]%s3 可能在%s2 区域中找到%s1 。</English>
+		<L1/><L2/><L3/><L4/><Chinese>[NEWLINE][ICON_BULLET]%s3 可能在%s2 区域中找到%s1 。</Chinese><French>[NEWLINE][ICON_BULLET]%s3 may found %s1 in %s2 territory.</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONGRESS_RESULTS</Tag>
+		<English>[H1]Congress of %s1[\H1][NEWLINE]组成的国际会议经过长时间的谈判，有投票权的国际会议成员做出了如下决定：[NEWLINE]</English>
+		<L1/><L2/><L3/><L4/><Chinese>[H1]Congress of %s1[\H1][NEWLINE]组成的国际会议经过长时间的谈判，有投票权的国际会议成员做出了如下决定：[NEWLINE]</Chinese><French>[H1]Congress of %s1[\H1][NEWLINE]After long negotiations, the voting members of the Congress have come to the following decision:[NEWLINE]</French></TEXT>
+</Civ4GameText>

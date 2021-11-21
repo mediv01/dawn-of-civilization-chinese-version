@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='GBK'?>
+<!-- Features -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_CAPE</Tag>
+		<English>海岬</English>
+		<L1/><L2/><L3/><L4/><Chinese>海岬</Chinese><French>Cape</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ISLANDS</Tag>
+		<English>岛屿</English>
+		<L1/><L2/><L3/><L4/><Chinese>岛屿</Chinese><French>Islands</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_RAINFOREST</Tag>
+		<English>雨林</English>
+		<L1/><L2/><L3/><L4/><Chinese>雨林</Chinese><French>Rainforest</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_MARSH</Tag>
+		<English>沼泽</English>
+		<L1/><L2/><L3/><L4/><Chinese>沼泽</Chinese><French>Marsh</French></TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_NO_IMPROVEMENT</Tag>
+		<English>[NEWLINE][ICON_BULLET]此地形无法修建任何设施</English>
+		<L1/><L2/><L3/><L4/><Chinese>[NEWLINE][ICON_BULLET]此地形无法修建任何设施</Chinese><French>[NEWLINE][ICON_BULLET]Cannot build any improvements on this feature</French></TEXT>
+</Civ4GameText>
