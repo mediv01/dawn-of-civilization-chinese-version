@@ -2639,434 +2639,434 @@
 		<Tag>TXT_KEY_URV_JUD1</Tag>
 		<English>Chosen People: Have a total of 15 Great Prophets, Scientists and Statesmen in your cities</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Chosen People: Have a total of 15 Great Prophets, Scientists and Statesmen in your cities</Chinese>
+		<Chinese>天选之人: 在城市中拥有 15位大预言家、大科学家和大政治家</Chinese>
 		<French>Chosen People: Have a total of 15 Great Prophets, Scientists and Statesmen in your cities</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_JUD2</Tag>
 		<English>Promised Land: Have legendary culture in the Jewish holy city</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Promised Land: Have legendary culture in the Jewish holy city</Chinese>
+		<Chinese>应许之地: 犹太教圣城达到传奇文化</Chinese>
 		<French>Promised Land: Have legendary culture in the Jewish holy city</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_JUD3</Tag>
 		<English>Diaspora: Have friendly relations with six civilizations with a Jewish minority</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Diaspora: Have friendly relations with six civilizations with a Jewish minority</Chinese>
+		<Chinese>流散之民: 与6个拥有犹太宗教且犹太教为少数宗教的国家保持良好关系</Chinese>
 		<French>Diaspora: Have friendly relations with six civilizations with a Jewish minority</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_BUD1</Tag>
 		<English>Sila: Be at peace for 100 turns</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Sila: Be at peace for 100 turns</Chinese>
+		<Chinese>杀生戒律: 保持100回合的和平</Chinese>
 		<French>Sila: Be at peace for 100 turns</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_BUD1_EPIC</Tag>
 		<English>Sila: Be at peace for 150 turns</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Sila: Be at peace for 150 turns</Chinese>
+		<Chinese>杀生戒律: 保持150回合的和平</Chinese>
 		<French>Sila: Be at peace for 150 turns</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_BUD1_MARATHON</Tag>
 		<English>Sila: Be at peace for 300 turns</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Sila: Be at peace for 300 turns</Chinese>
+		<Chinese>杀生戒律: 保持300回合的和平</Chinese>
 		<French>Sila: Be at peace for 300 turns</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_BUD2</Tag>
 		<English>Nirvana: Have the highest approval rating in the world for 100 turns</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Nirvana: Have the highest approval rating in the world for 100 turns</Chinese>
+		<Chinese>极乐净土: 在100回合获得最高的支持率</Chinese>
 		<French>Nirvana: Have the highest approval rating in the world for 100 turns</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_BUD2_EPIC</Tag>
 		<English>Nirvana: Have the highest approval rating in the world for 150 turns</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Nirvana: Have the highest approval rating in the world for 150 turns</Chinese>
+		<Chinese>极乐净土: 在150回合获得最高的支持率</Chinese>
 		<French>Nirvana: Have the highest approval rating in the world for 150 turns</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_BUD2_MARATHON</Tag>
 		<English>Nirvana: Have the highest approval rating in the world for 300 turns</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Nirvana: Have the highest approval rating in the world for 300 turns</Chinese>
+		<Chinese>极乐净土: 在300回合获得最高的支持率</Chinese>
 		<French>Nirvana: Have the highest approval rating in the world for 300 turns</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_BUD3</Tag>
 		<English>Middle Way: Have cautious or better relations with all civilizations</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Middle Way: Have cautious or better relations with all civilizations</Chinese>
+		<Chinese>中道修行: 与所有文明保持谨慎或更好的关系</Chinese>
 		<French>Middle Way: Have cautious or better relations with all civilizations</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_CAT1</Tag>
 		<English>Holy See: Be Pope for 100 turns</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Holy See: Be Pope for 100 turns</Chinese>
+		<Chinese>教廷洗礼: 当100回合教皇</Chinese>
 		<French>Holy See: Be Pope for 100 turns</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_CAT1_EPIC</Tag>
 		<English>Holy See: Be Pope for 150 turns</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Holy See: Be Pope for 150 turns</Chinese>
+		<Chinese>教廷洗礼: 当150回合教皇</Chinese>
 		<French>Holy See: Be Pope for 150 turns</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_CAT1_MARATHON</Tag>
 		<English>Holy See: Be Pope for 300 turns</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Holy See: Be Pope for 300 turns</Chinese>
+		<Chinese>教廷洗礼: 当300回合教皇</Chinese>
 		<French>Holy See: Be Pope for 300 turns</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_CAT2</Tag>
 		<English>Holy Land: Control the Catholic shrine and make sure that at least 12 great prophets are settled in Catholic civilizations</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Holy Land: Control the Catholic shrine and make sure that at least 12 great prophets are settled in Catholic civilizations</Chinese>
+		<Chinese>天国王朝：控制天主教圣地，确保至少有12位大先知在天主教文明中定居</Chinese>
 		<French>Holy Land: Control the Catholic shrine and make sure that at least 12 great prophets are settled in Catholic civilizations</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_CAT3</Tag>
 		<English>Holy Mission: Make sure at least 50% of the world is controlled by Catholic civilizations</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Holy Mission: Make sure at least 50% of the world is controlled by Catholic civilizations</Chinese>
+		<Chinese>神圣天命：确保至少50%的世界被天主教文明所控制</Chinese>
 		<French>Holy Mission: Make sure at least 50% of the world is controlled by Catholic civilizations</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_CON1</Tag>
 		<English>Harmony: Have friendly relations with five civilizations</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Harmony: Have friendly relations with five civilizations</Chinese>
+		<Chinese>和而不同：与至少5个文明友好相处</Chinese>
 		<French>Harmony: Have friendly relations with five civilizations</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_CON2</Tag>
 		<English>Ritual: Have five wonders in the Confucian holy city</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Ritual: Have five wonders in the Confucian holy city</Chinese>
+		<Chinese>礼乐之邦：儒家圣城有5个世界奇观</Chinese>
 		<French>Ritual: Have five wonders in the Confucian holy city</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_CON3</Tag>
 		<English>Loyalty: Control an army of 200 non-obsolete melee or gunpowder units</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Loyalty: Control an army of 200 non-obsolete melee or gunpowder units</Chinese>
+		<Chinese>内圣外王: 拥有200单位的火药部队</Chinese>
 		<French>Loyalty: Control an army of 200 non-obsolete melee or gunpowder units</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_HIN1</Tag>
 		<English>Varna: Settle five different great people in the Hindu holy city</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Varna: Settle five different great people in the Hindu holy city</Chinese>
+		<Chinese>娑摩吠陀: 在印度教的圣城定居5位不同的伟人</Chinese>
 		<French>Varna: Settle five different great people in the Hindu holy city</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_HIN2</Tag>
 		<English>Artha: Experience 24 turns of golden age</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Artha: Experience 24 turns of golden age</Chinese>
+		<Chinese>轮回解脱: 经历24回合的黄金时代</Chinese>
 		<French>Artha: Experience 24 turns of golden age</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_HIN2_EPIC</Tag>
 		<English>Artha: Experience 36 turns of golden age</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Artha: Experience 36 turns of golden age</Chinese>
+		<Chinese>轮回解脱: 经历36回合的黄金时代</Chinese>
 		<French>Artha: Experience 36 turns of golden age</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_HIN2_MARATHON</Tag>
 		<English>Artha: Experience 72 turns of golden age</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Artha: Experience 72 turns of golden age</Chinese>
+		<Chinese>轮回解脱: 经历72回合的黄金时代</Chinese>
 		<French>Artha: Experience 72 turns of golden age</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_HIN3</Tag>
 		<English>Kama: Make sure the five largest cities in the world are Hindu</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Kama: Make sure the five largest cities in the world are Hindu</Chinese>
+		<Chinese>梵我合一: 世界上人口最多的5座城市都属于印度</Chinese>
 		<French>Kama: Make sure the five largest cities in the world are Hindu</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_ISL1</Tag>
 		<English>Shahada: Spread Islam to 40%</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Shahada: Spread Islam to 40%</Chinese>
+		<Chinese>安拉至上: 将伊斯兰教传播至 40%</Chinese>
 		<French>Shahada: Spread Islam to 40%</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_ISL2</Tag>
 		<English>Hajj: Settle seven great people in the Muslim holy city</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Hajj: Settle seven great people in the Muslim holy city</Chinese>
+		<Chinese>真主显圣: 在穆斯林教圣城，有7位伟人定居</Chinese>
 		<French>Hajj: Settle seven great people in the Muslim holy city</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_ISL3</Tag>
 		<English>Jihad: Control five shrines</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Jihad: Control five shrines</Chinese>
+		<Chinese>圣战召唤: 控制5座宗教圣殿</Chinese>
 		<French>Jihad: Control five shrines</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_ORT1</Tag>
 		<English>Patriarchates: Build four Orthodox Cathedrals</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Patriarchates: Build four Orthodox Cathedrals</Chinese>
+		<Chinese>弥撒礼拜: 建造4个东正教大教堂</Chinese>
 		<French>Patriarchates: Build four Orthodox Cathedrals</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_ORT2</Tag>
 		<English>Iconography: Make sure the five most cultured cities in the world are Orthodox</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Iconography: Make sure the five most cultured cities in the world are Orthodox</Chinese>
+		<Chinese>哈利路亚: 确保世界上前5个最有文化的城市都是东正教领土</Chinese>
 		<French>Iconography: Make sure the five most cultured cities in the world are Orthodox</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_ORT3</Tag>
 		<English>Communion: Make sure there are no Catholic civilizations in the world</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Communion: Make sure there are no Catholic civilizations in the world</Chinese>
+		<Chinese>以马内利: 确保当前世界没有天主教文明的存在</Chinese>
 		<French>Communion: Make sure there are no Catholic civilizations in the world</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL1</Tag>
 		<English>Make sure there are 15 pagan temples in the world</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Make sure there are 15 pagan temples in the world</Chinese>
+		<Chinese>确保世界上有15座异教徒寺庙</Chinese>
 		<French>Make sure there are 15 pagan temples in the world</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_ANUNNAKI</Tag>
 		<English>Have more wonders in your capital than any other city in the world</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Have more wonders in your capital than any other city in the world</Chinese>
+		<Chinese>在你的首都有比世界上任何其他城市都多的世界奇观迹</Chinese>
 		<French>Have more wonders in your capital than any other city in the world</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_ASATRU</Tag>
 		<English>Have five units of level five</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Have five units of level five</Chinese>
+		<Chinese>拥有5个五级单位</Chinese>
 		<French>Have five units of level five</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_ATUA</Tag>
 		<English>Acquire four pearl resources and control 50 ocean tiles</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Acquire four pearl resources and control 50 ocean tiles</Chinese>
+		<Chinese>控制4个珍珠资源，控制50块海洋地块</Chinese>
 		<French>Acquire four pearl resources and control 50 ocean tiles</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_BAALISM</Tag>
 		<English>Make your capital the city with the highest trade income in the world</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Make your capital the city with the highest trade income in the world</Chinese>
+		<Chinese>让你的首都成为世界上贸易收入最高的城市</Chinese>
 		<French>Make your capital the city with the highest trade income in the world</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_DRUIDISM</Tag>
 		<English>Control 20 unimproved forest or marsh tiles</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Control 20 unimproved forest or marsh tiles</Chinese>
+		<Chinese>控制20片未改良的森林或沼泽地</Chinese>
 		<French>Control 20 unimproved forest or marsh tiles</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_INTI</Tag>
 		<English>Have more gold in your treasury than the rest of the world combined</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Have more gold in your treasury than the rest of the world combined</Chinese>
+		<Chinese>你的国库里的黄金比世界其他地方的总和还要多</Chinese>
 		<French>Have more gold in your treasury than the rest of the world combined</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_MAZDAISM</Tag>
 		<English>Acquire six incense resources</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Acquire six incense resources</Chinese>
+		<Chinese>获取6种香料资源</Chinese>
 		<French>Acquire six incense resources</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_OLYMPIANISM</Tag>
 		<English>Control ten wonders that require no state religion</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Control ten wonders that require no state religion</Chinese>
+		<Chinese>控制不需要国家宗教的10个世界奇观</Chinese>
 		<French>Control ten wonders that require no state religion</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_PESEDJET</Tag>
 		<English>Be first to create three different types of great person</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Be first to create three different types of great person</Chinese>
+		<Chinese>首先创造3种不同类型的伟人</Chinese>
 		<French>Be first to create three different types of great person</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_RODNOVERY</Tag>
 		<English>Acquire seven fur resources</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Acquire seven fur resources</Chinese>
+		<Chinese>获取7个毛皮资源</Chinese>
 		<French>Acquire seven fur resources</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_SHENDAO</Tag>
 		<English>Control 25% of the world's population</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Control 25% of the world's population</Chinese>
+		<Chinese>控制着世界25%的人口</Chinese>
 		<French>Control 25% of the world's population</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_SHINTO</Tag>
 		<English>Settle three great spies in your capital</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Settle three great spies in your capital</Chinese>
+		<Chinese>在你的首都定居3个大间谍</Chinese>
 		<French>Settle three great spies in your capital</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_TENGRI</Tag>
 		<English>Acquire eight horse resources</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Acquire eight horse resources</Chinese>
+		<Chinese>获取8匹马资源</Chinese>
 		<French>Acquire eight horse resources</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_TEOTL</Tag>
 		<English>Sacrifice ten slaves</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Sacrifice ten slaves</Chinese>
+		<Chinese>献祭10个奴隶</Chinese>
 		<French>Sacrifice ten slaves</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_TEOTL_MAYA</Tag>
 		<English>Acquire 50 food from combat</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Acquire 50 food from combat</Chinese>
+		<Chinese>从战斗中获得50个食物</Chinese>
 		<French>Acquire 50 food from combat</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_VEDISM</Tag>
 		<English>Have 100 turns of cities celebrating "We Love the King" day</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Have 100 turns of cities celebrating "We Love the King" day</Chinese>
+		<Chinese>有100回合庆祝“我们爱国王日”</Chinese>
 		<French>Have 100 turns of cities celebrating "We Love the King" day</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL2_YORUBA</Tag>
 		<English>Acquire eight ivory resources and six gem resources</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Acquire eight ivory resources and six gem resources</Chinese>
+		<Chinese>获取8个象牙资源和6个宝石资源</Chinese>
 		<French>Acquire eight ivory resources and six gem resources</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_POL3</Tag>
 		<English>Don't allow more than half of your cities to have a religion</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Don't allow more than half of your cities to have a religion</Chinese>
+		<Chinese>不要让超过一半的城市有宗教信仰</Chinese>
 		<French>Don't allow more than half of your cities to have a religion</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_PRO1</Tag>
 		<English>Enlightenment: Be first to discover Civil Liberties, Social Contract and Economics</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Enlightenment: Be first to discover Civil Liberties, Social Contract and Economics</Chinese>
+		<Chinese>福音启示：率先发现公民自由、社会契约和经济学</Chinese>
 		<French>Enlightenment: Be first to discover Civil Liberties, Social Contract and Economics</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_PRO2</Tag>
 		<English>Work Ethic: Make sure five great merchants and five great engineers are settled in Protestant civilizations</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Work Ethic: Make sure five great merchants and five great engineers are settled in Protestant civilizations</Chinese>
+		<Chinese>因信称义：确保五位大商人和五位大工程师在新教文明中定居</Chinese>
 		<French>Work Ethic: Make sure five great merchants and five great engineers are settled in Protestant civilizations</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_PRO3</Tag>
 		<English>Religious Freedom: Make sure at least half of all civilizations are Protestant or secular</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Religious Freedom: Make sure at least half of all civilizations are Protestant or secular</Chinese>
+		<Chinese>宗教自由：确保所有文明中至少有一半是新教或世俗的</Chinese>
 		<French>Religious Freedom: Make sure at least half of all civilizations are Protestant or secular</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_SEC1</Tag>
 		<English>Tolerance: Control the Cathedrals of all religions</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Tolerance: Control the Cathedrals of all religions</Chinese>
+		<Chinese>宗教宽容：控制所有宗教的大教堂</Chinese>
 		<French>Tolerance: Control the Cathedrals of all religions</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_SEC2</Tag>
 		<English>Humanism: Make sure there are 25 Universities, 10 Great Scientists and 10 Great Statesmen in secular civilizations</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Humanism: Make sure there are 25 Universities, 10 Great Scientists and 10 Great Statesmen in secular civilizations</Chinese>
+		<Chinese>人文主义：确保世俗文明中有25所大学、10位大科学家和10位大政治家</Chinese>
 		<French>Humanism: Make sure there are 25 Universities, 10 Great Scientists and 10 Great Statesmen in secular civilizations</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_SEC3</Tag>
 		<English>Modernity: Make sure that the five most advanced independent civilizations are secular</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Modernity: Make sure that the five most advanced independent civilizations are secular</Chinese>
+		<Chinese>现代科学：确保5个最先进的独立文明是世俗的</Chinese>
 		<French>Modernity: Make sure that the five most advanced independent civilizations are secular</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_TAO1</Tag>
 		<English>Compassion: Have the highest life expectancy rating in the world for 100 turns</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Compassion: Have the highest life expectancy rating in the world for 100 turns</Chinese>
+		<Chinese>无为而治: 在100回合里拥有最高的预期寿命</Chinese>
 		<French>Compassion: Have the highest life expectancy rating in the world for 100 turns</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_TAO1_EPIC</Tag>
 		<English>Compassion: Have the highest life expectancy rating in the world for 150 turns</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Compassion: Have the highest life expectancy rating in the world for 150 turns</Chinese>
+		<Chinese>无为而治: 在150回合里拥有最高的预期寿命</Chinese>
 		<French>Compassion: Have the highest life expectancy rating in the world for 150 turns</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_TAO1_MARATHON</Tag>
 		<English>Compassion: Have the highest life expectancy rating in the world for 300 turns</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Compassion: Have the highest life expectancy rating in the world for 300 turns</Chinese>
+		<Chinese>无为而治: 在300回合里拥有最高的预期寿命</Chinese>
 		<French>Compassion: Have the highest life expectancy rating in the world for 300 turns</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_TAO2</Tag>
 		<English>Moderation: Control the Confucian and Taoist shrines and combine their income to 40 gold</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Moderation: Control the Confucian and Taoist shrines and combine their income to 40 gold</Chinese>
+		<Chinese>道法自然: 控制儒教和道教的大圣坛，并让圣坛收入之和大于等于40金币</Chinese>
 		<French>Moderation: Control the Confucian and Taoist shrines and combine their income to 40 gold</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_TAO3</Tag>
 		<English>Humility: Have legendary culture in the Taoist holy city</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Humility: Have legendary culture in the Taoist holy city</Chinese>
+		<Chinese>万物归一: 在道教圣城拥有传奇文化</Chinese>
 		<French>Humility: Have legendary culture in the Taoist holy city</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_ZOR1</Tag>
 		<English>Adar: Acquire six incense resources</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Adar: Acquire six incense resources</Chinese>
+		<Chinese>即索什扬：获得6种香资源</Chinese>
 		<French>Adar: Acquire six incense resources</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_ZOR2</Tag>
 		<English>Mathra: Spread Zoroastrianism to 10%</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Mathra: Spread Zoroastrianism to 10%</Chinese>
+		<Chinese>庇护光明：将琐罗亚斯德教传播到10%</Chinese>
 		<French>Mathra: Spread Zoroastrianism to 10%</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_ZOR3</Tag>
 		<English>Shahnameh: Have legendary culture in the Zoroastrian holy city</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>Shahnameh: Have legendary culture in the Zoroastrian holy city</Chinese>
+		<Chinese>智慧之主：在琐罗亚斯德教圣城拥有传奇文化</Chinese>
 		<French>Shahnameh: Have legendary culture in the Zoroastrian holy city</French>
 	</TEXT>
 	<TEXT>
@@ -3329,9 +3329,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_CONTROL_HOLY_CITY</Tag>
-		<English>控件%s1</English>
+		<English>控制%s1</English>
 		<L1/><L2/><L3/><L4/>
-		<Chinese>控件%s1</Chinese>
+		<Chinese>控制%s1</Chinese>
 		<French>Control %s1</French>
 	</TEXT>
 	<TEXT>
